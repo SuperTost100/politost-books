@@ -1,0 +1,43 @@
+name: check
+# pull_request, never pull_request_target: PRs from forks get a read-only token and no secrets.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # the version-bump rule and build.ts read git history
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Check books
+        run: |
+          if [ "${{ github.event_name }}" = pull_request ]; then
+            npm run check -- --base origin/${{ github.base_ref }}
+          else
+            npm run check
+          fi
+      - name: Pack the changed books
+        if: github.event_name == 'pull_request'
+        run: npm run build -- --only-changed --base origin/${{ github.base_ref }}
+      - name: Pack every book
+        if: github.event_name == 'push'
+        run: npm run build
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'pull_request'
+        with:
+          name: preview-packages
+          path: dist/books/*.ptsb
+          if-no-files-found: ignore
+          retention-days: 14

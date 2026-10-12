@@ -1,0 +1,17 @@
+{
+  "name": "politost-books",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsx scripts/check.ts",
+    "build": "tsx scripts/build.ts",
+    "test": "tsx --test scripts/*.test.ts"
+  },
+  "devDependencies": {
+    "@politost/content-core": "https://github.com/SuperTost100/politost-content/releases/download/content-core-v0.5.0/politost-content-core-0.5.0.tgz",
+    "tsx": "^4.22.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
