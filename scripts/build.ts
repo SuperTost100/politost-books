@@ -15,6 +15,13 @@ const options = readOptions();
 const changed = options.onlyChanged ? changedBooks(options.base!) : null;
 const books = listBooks().filter((folder) => !changed || changed.has(folder));
 
+// A shallow clone (Cloudflare Pages may make one) dates every book at its newest commit,
+// which would change the bytes of an unchanged version. Fetch the history first.
+if (git('rev-parse', '--is-shallow-repository') === 'true') {
+  console.log('shallow clone: fetching the full history');
+  git('fetch', '--unshallow', '--quiet');
+}
+
 rmSync(DIST, { recursive: true, force: true });
 mkdirSync(join(DIST, 'books'), { recursive: true });
 
