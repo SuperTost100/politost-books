@@ -250,8 +250,39 @@ function exerciseHtml(ctx: Context, ex: Exercise, chapters: Chapter[]): string {
   ].join('\n');
 }
 
+/**
+ * KaTeX writes every formula twice: MathML, which carries the TeX source, and a pile of styled
+ * spans that draw it. Crawlers need only the MathML, which browsers draw natively, and dropping
+ * the spans makes a page about four times smaller. The class changes too, because katex.css
+ * hides .katex-mathml from sight.
+ */
+export function mathmlOnly(html: string): string {
+  const open = '<span class="katex-html" aria-hidden="true">';
+  let out = '';
+  let from = 0;
+  for (let start = html.indexOf(open); start >= 0; start = html.indexOf(open, from)) {
+    out += html.slice(from, start);
+    let depth = 1;
+    let at = start + open.length;
+    while (depth > 0) {
+      const next = html.indexOf('<span', at);
+      const close = html.indexOf('</span>', at);
+      if (close < 0) throw new Error('unbalanced KaTeX markup');
+      if (next >= 0 && next < close) {
+        depth += 1;
+        at = next + 5;
+      } else {
+        depth -= 1;
+        at = close + 7;
+      }
+    }
+    from = at;
+  }
+  return (out + html.slice(from)).replaceAll('<span class="katex-mathml">', '<span class="ssr-math">');
+}
+
 function wrap(...parts: string[]): string {
-  return `<main class="ssr-page sb-page sb-page-reading">\n${parts.filter(Boolean).join('\n')}\n</main>\n`;
+  return mathmlOnly(`<main class="ssr-page sb-page sb-page-reading">\n${parts.filter(Boolean).join('\n')}\n</main>\n`);
 }
 
 /** Write the HTML pages of one book and return what the Worker needs to know about them. */

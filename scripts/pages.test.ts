@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { parsePtsbEntries } from '@politost/content-core';
 import { collectFiles } from './books.ts';
-import { describe, plainText, writePages } from './pages.ts';
+import { describe, mathmlOnly, plainText, writePages } from './pages.ts';
 
 function renderEsempio() {
   const dist = mkdtempSync(join(tmpdir(), 'pages-'));
@@ -87,4 +87,10 @@ test('describe cuts at a word and stays within the limit', () => {
   assert.ok(out.length <= 155);
   assert.ok(out.endsWith('parola…'));
   assert.equal(describe('breve'), 'breve');
+});
+
+test('mathmlOnly keeps the MathML of a formula and drops the spans that draw it', () => {
+  const katex = '<span class="katex"><span class="katex-mathml"><math><mi>x</mi></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord">x</span></span></span></span>';
+  assert.equal(mathmlOnly(`a ${katex} b`), 'a <span class="katex"><span class="ssr-math"><math><mi>x</mi></math></span></span> b');
+  assert.equal(mathmlOnly('no math'), 'no math');
 });
