@@ -1,6 +1,6 @@
-# Politost books
+# PoliTost books
 
-The free smartbooks that the [Politost reader](https://politost.it/reader) opens. Each book is a folder of Markdown chapters. When a pull request merges, CI packs every book into a `.ptsb` file and publishes it to [books.politost.it](https://books.politost.it), and the reader picks it up without a deploy of its own.
+The free smartbooks that the [PoliTost reader](https://politost.it/reader) opens. Each book is a folder of Markdown chapters. When a pull request merges, CI packs every book into a `.ptsb` file and publishes it to [books.politost.it](https://books.politost.it), and the reader picks it up without a deploy of its own.
 
 [![checks](https://img.shields.io/github/actions/workflow/status/SuperTost100/politost-books/check.yml?branch=main&label=checks)](https://github.com/SuperTost100/politost-books/actions/workflows/check.yml)
 [![Content: CC BY-SA 4.0](https://img.shields.io/badge/content-CC%20BY--SA%204.0-0f6e66)](LICENSE-CONTENT)
@@ -14,6 +14,7 @@ Anyone with a GitHub account can add a book or fix one through a pull request. R
 2. **CI checks.** `npm run check` runs the same validation the reader runs on import, so a book that passes here opens there. A pull request that changes a book must also raise its `version`.
 3. **CI packs a preview.** Each pull request uploads the packed `.ptsb` of the books it changes as a workflow artifact. Reviewers import it into the reader with the upload button.
 4. **Merge publishes.** Cloudflare Pages builds `main` and serves `catalog.json`, the packages and a plain index page at `books.politost.it`.
+5. **Search engines read the HTML.** The build also renders every chapter, the formulario, the exercises and the exams as plain HTML. The reader's Worker puts that HTML into the page it sends for `politost.it/reader/libro/<id>/...`, so Google, Bing and AI crawlers, which don't run the reader's JavaScript, read the book at its own URL.
 
 There is no server and no database. The books site is static files, and the reader runs in the browser.
 
@@ -41,17 +42,24 @@ dist/
 ├── catalog.json                  # what the reader fetches
 ├── books/esempio@1.0.0.ptsb      # one package per book, named id@version
 ├── covers/                       # only for books with a cover.svg
+├── pages/esempio@1.0.0/          # the book as HTML for the reader's Worker
+│   ├── meta.json                 # title and description of every page
+│   ├── capitolo/<chapter>.html   # plus <chapter>.md for agents that ask for Markdown
+│   ├── formulario.html, esercizi.html, esami.html
+│   └── assets/                   # the book's images
 ├── index.html                    # the list at books.politost.it
 └── _headers                      # CORS and caching for Cloudflare Pages
 ```
 
 Both scripts take `--base <ref>`. `check` then also enforces the version bump against that ref, and `--only-changed` limits either script to books changed since it.
 
-Packages are cached for a year under their `id@version` name, and `catalog.json` pins the sha256 of each one. `build` sets the package timestamp to the last commit that touched the book, so building the same commit twice gives identical files.
+Packages and pages are cached for a year under their `id@version` name, and `catalog.json` pins the sha256 of each package. `build` sets the package timestamp to the last commit that touched the book, so building the same commit twice gives identical files.
 
 ## Deployment
 
 Cloudflare Pages project `politost-books`, connected to this repository. Pushes to `main` build with `npm run build` and publish `dist/`, served at `books.politost.it`. GitHub Actions runs the checks on every pull request. Publishing needs no Cloudflare token in GitHub.
+
+Every file on `books.politost.it` is sent with `X-Robots-Tag: noindex`. The books are indexed at `politost.it/reader`, so this host shouldn't compete with it in search results.
 
 ## License
 

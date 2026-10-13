@@ -3,10 +3,11 @@
  * the reader fetches. Run `npm run check` first: this script trusts the books it packs.
  */
 import { createHash } from 'node:crypto';
-import { copyFileSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { packBook } from '@politost/content-core';
 import { BOOKS_DIR, COVER_FILE, changedBooks, collectFiles, git, listBooks, readOptions } from './books.ts';
+import { writePages } from './pages.ts';
 
 const DIST = 'dist';
 const READER_URL = 'https://politost.it/reader';
@@ -42,6 +43,9 @@ const entries = books.map((folder) => {
   const { config } = bundle;
   const file = `books/${config.id}@${config.version}.ptsb`;
   writeFileSync(join(DIST, file), bytes);
+  // A LICENSE file in the book's folder replaces the repository's CC BY-SA 4.0.
+  const ownLicense = readdirSync(join(BOOKS_DIR, folder)).some((name) => /^LICEN[CS]E/i.test(name));
+  const pages = writePages(DIST, bundle, lastChange(folder), ownLicense);
 
   let cover: string | undefined;
   if (existsSync(join(BOOKS_DIR, folder, COVER_FILE))) {
@@ -63,6 +67,7 @@ const entries = books.map((folder) => {
     bytes: bytes.length,
     sha256: createHash('sha256').update(bytes).digest('hex'),
     cover,
+    pages: `pages/${pages.id}@${pages.version}/`,
   };
 });
 
