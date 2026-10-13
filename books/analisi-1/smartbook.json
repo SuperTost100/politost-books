@@ -1,0 +1,120 @@
+{
+  "id": "analisi-1",
+  "title": "Analisi Matematica 1",
+  "subject": "Analisi 1",
+  "access": "public",
+  "authors": [
+    "Tost"
+  ],
+  "version": "1.0.0",
+  "specVersion": "1.1",
+  "sections": {
+    "smartbook": {
+      "enabled": true,
+      "label": "Capitoli"
+    },
+    "formulario": {
+      "enabled": true,
+      "label": "Formulario"
+    },
+    "esercizi": {
+      "enabled": true,
+      "label": "Esercizi"
+    },
+    "esami": {
+      "enabled": true,
+      "label": "Prove d'esame"
+    },
+    "ide": {
+      "enabled": false,
+      "label": "Laboratorio"
+    },
+    "grafici": {
+      "enabled": true,
+      "label": "Grafici & Calcoli"
+    },
+    "risposte": {
+      "enabled": false,
+      "label": "Soluzioni"
+    }
+  },
+  "chapters": [
+    {
+      "id": "numeri-reali",
+      "number": 1,
+      "title": "Numeri reali",
+      "file": "01-numeri-reali.md",
+      "printable": true
+    },
+    {
+      "id": "numeri-complessi",
+      "number": 2,
+      "title": "Numeri complessi",
+      "file": "02-numeri-complessi.md",
+      "printable": true
+    },
+    {
+      "id": "funzioni-reali",
+      "number": 3,
+      "title": "Funzioni reali",
+      "file": "03-funzioni-reali.md",
+      "printable": true
+    },
+    {
+      "id": "limiti-e-successioni",
+      "number": 4,
+      "title": "Limiti e successioni",
+      "file": "04-limiti-e-successioni.md",
+      "printable": true
+    },
+    {
+      "id": "continuita",
+      "number": 5,
+      "title": "Continuità",
+      "file": "05-continuita.md",
+      "printable": true
+    },
+    {
+      "id": "limiti-notevoli-e-confronto-asintotico",
+      "number": 6,
+      "title": "Limiti notevoli e confronto asintotico",
+      "file": "06-limiti-notevoli-e-confronto-asintotico.md",
+      "printable": true
+    },
+    {
+      "id": "calcolo-differenziale",
+      "number": 7,
+      "title": "Calcolo differenziale",
+      "file": "07-calcolo-differenziale.md",
+      "printable": true
+    },
+    {
+      "id": "taylor-e-studio-di-funzione",
+      "number": 8,
+      "title": "Formula di Taylor e studio di funzione",
+      "file": "08-taylor-e-studio-di-funzione.md",
+      "printable": true
+    },
+    {
+      "id": "calcolo-integrale",
+      "number": 9,
+      "title": "Calcolo integrale",
+      "file": "09-calcolo-integrale.md",
+      "printable": true
+    },
+    {
+      "id": "integrali-impropri",
+      "number": 10,
+      "title": "Integrali impropri",
+      "file": "10-integrali-impropri.md",
+      "printable": true
+    },
+    {
+      "id": "equazioni-differenziali",
+      "number": 11,
+      "title": "Equazioni differenziali",
+      "file": "11-equazioni-differenziali.md",
+      "printable": true
+    }
+  ]
+}
