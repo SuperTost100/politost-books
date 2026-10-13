@@ -1,6 +1,6 @@
 # Contributing a book
 
-Thanks for writing for Politost. This guide covers a new book, a new chapter and a fix to an existing book. All three follow the same path: edit the folder, run the check, preview in the reader, open a pull request.
+Thanks for writing for PoliTost. This guide covers a new book, a new chapter and a fix to an existing book. All three follow the same path: edit the folder, run the check, preview in the reader, open a pull request.
 
 ## What you need
 

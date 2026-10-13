@@ -1,3 +1,6 @@
+/library.json
+  Cache-Control: public, max-age=300
+
 /catalog.json
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=300
@@ -7,10 +10,15 @@
   Cache-Control: public, max-age=31536000, immutable
   Content-Type: application/octet-stream
 
+/pages/*
+  Cache-Control: public, max-age=31536000, immutable
+
 /covers/*
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=86400
 
+# The books are indexed at politost.it/reader, not here. This host only serves files.
 /*
+  X-Robots-Tag: noindex
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
