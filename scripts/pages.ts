@@ -3,8 +3,8 @@
  * JavaScript. The reader's Worker at politost.it/reader puts these files into the page it sends,
  * so a chapter's text is in the HTML at its own URL. In the browser the app replaces them.
  *
- * Writes dist/pages/<id>@<version>/:
- *   meta.json               title and description of every page, read by the Worker
+ * build.ts collects what writePages returns into dist/library.json, the one file the Worker
+ * reads to know every book and page. Writes dist/pages/<id>@<version>/:
  *   capitolo/<id>.html      one per chapter, plus a .md copy for agents that ask for Markdown
  *   formulario.html, esercizi.html, esami.html   when the section is on and not empty
  *   assets/...              the book's images, which the HTML links to
@@ -52,6 +52,8 @@ export interface BookPages {
   chapters: { id: string; number: number; title: string; paragraphs: { id: string; title: string }[] }[];
   /** Route under /reader/libro/<id>/, without a leading slash, to its title and description. */
   pages: Record<string, PageMeta>;
+  /** The folder under the books site that holds this book's pages, such as `pages/esempio@1.0.1/`. */
+  folder: string;
 }
 
 interface Context {
@@ -59,6 +61,16 @@ interface Context {
   base: string;
   formulas: Map<string, FormulaRef>;
   chapters: Chapter[];
+  /** False when the book turns the formulario off: formula links then go to the chapter. */
+  formulario: boolean;
+}
+
+/** Where a numbered formula is shown: its line in the formulario, or its block in the chapter. */
+function formulaHref(ctx: Context, id: string): string | null {
+  if (ctx.formulario) return `${bookPath(ctx, 'formulario')}#formula-${id}`;
+  const formula = ctx.formulas.get(id);
+  const chapter = formula && ctx.chapters.find((c) => c.meta.number === formula.chapter);
+  return chapter ? `${chapterPath(ctx, chapter)}#formula-${id}` : null;
 }
 
 const attr = (text: string) => escapeHtml(text);
@@ -68,7 +80,7 @@ const chapterPath = (ctx: Context, chapter: Chapter) => bookPath(ctx, `capitolo/
 /** `ref:chapter/3#p2` and `ref:formula/2.1` as the URL the reader opens. */
 function refHref(ctx: Context, ref: string): string | null {
   const formula = /^formula\/([\d.]+)$/.exec(ref);
-  if (formula) return `${bookPath(ctx, 'formulario')}#formula-${formula[1]}`;
+  if (formula) return formulaHref(ctx, formula[1]);
   const chapter = /^chapter\/(\d+)#(p\d+)$/.exec(ref);
   const target = chapter && ctx.chapters.find((c) => c.meta.number === Number(chapter[1]));
   return target ? `${chapterPath(ctx, target)}#${chapter![2]}` : null;
@@ -91,10 +103,10 @@ function inline(ctx: Context, segments: InlineSegment[]): string {
           const href = refHref(ctx, seg.ref);
           return href ? `<a href="${attr(href)}">${inline(ctx, seg.children)}</a>` : inline(ctx, seg.children);
         }
-        case 'hover':
-          return ctx.formulas.has(seg.formulaId)
-            ? `<a href="${attr(`${bookPath(ctx, 'formulario')}#formula-${seg.formulaId}`)}">(${escapeHtml(seg.formulaId)})</a>`
-            : `(${escapeHtml(seg.formulaId)})`;
+        case 'hover': {
+          const href = ctx.formulas.has(seg.formulaId) ? formulaHref(ctx, seg.formulaId) : null;
+          return href ? `<a href="${attr(href)}">(${escapeHtml(seg.formulaId)})</a>` : `(${escapeHtml(seg.formulaId)})`;
+        }
       }
     })
     .join('');
@@ -258,7 +270,14 @@ export function writePages(dist: string, bundle: PtsbBundle, updated: string, ow
     parsed.meta = meta;
     return parsed;
   });
-  const ctx: Context = { bookId: config.id, base: `${BOOKS_URL}/${folder}`, formulas: buildFormulaIndex(chapters), chapters };
+  const formulas = buildFormulaIndex(chapters);
+  const ctx: Context = {
+    bookId: config.id,
+    base: `${BOOKS_URL}/${folder}`,
+    formulas,
+    chapters,
+    formulario: config.sections.formulario.enabled && formulas.size > 0,
+  };
   const esercizi = config.sections.esercizi.enabled ? parseExercises(bundle.eserciziRaw, 'esercizio') : [];
   const esami = config.sections.esami.enabled ? parseExercises(bundle.esamiRaw, 'esame') : [];
   const formulaCount = chapters.reduce((n, c) => n + c.formulas.length, 0);
@@ -337,6 +356,7 @@ export function writePages(dist: string, bundle: PtsbBundle, updated: string, ow
   for (const [path, bytes] of Object.entries(bundle.assets)) write(path, bytes);
 
   const book: BookPages = {
+    folder,
     id: config.id,
     version,
     title: config.title,
@@ -347,6 +367,5 @@ export function writePages(dist: string, bundle: PtsbBundle, updated: string, ow
     chapters: chapters.map((c) => ({ id: c.meta.id, number: c.meta.number, title: c.meta.title, paragraphs: c.paragraphs.map((p) => ({ id: p.id, title: p.title })) })),
     pages,
   };
-  write('meta.json', `${JSON.stringify(book, null, 2)}\n`);
   return book;
 }

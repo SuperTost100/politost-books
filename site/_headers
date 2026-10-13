@@ -1,3 +1,6 @@
+/library.json
+  Cache-Control: public, max-age=300
+
 /catalog.json
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=300

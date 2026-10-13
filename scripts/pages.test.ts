@@ -49,6 +49,21 @@ test('a chapter page holds its text, numbered formulas and links that work witho
   }
 });
 
+test('without a formulario, formula links go to the formula in its chapter', () => {
+  const dist = mkdtempSync(join(tmpdir(), 'pages-'));
+  try {
+    const bundle = parsePtsbEntries(collectFiles('esempio'));
+    bundle.config.sections.formulario.enabled = false;
+    const book = writePages(dist, bundle, '2026-10-13T00:00:00.000Z', false);
+    assert.ok(!('formulario' in book.pages));
+    const html = readFileSync(join(dist, book.folder, 'capitolo/nel-libro.html'), 'utf-8');
+    assert.match(html, /href="\/reader\/libro\/esempio\/capitolo\/nel-libro#formula-2\.1">\(2\.1\)<\/a>/);
+    assert.doesNotMatch(html, /formulario#/);
+  } finally {
+    rmSync(dist, { recursive: true, force: true });
+  }
+});
+
 test('exercise pages keep hints and solutions in collapsed blocks', () => {
   const { read, done } = renderEsempio();
   try {

@@ -42,8 +42,8 @@ dist/
 ├── catalog.json                  # what the reader fetches
 ├── books/esempio@1.0.0.ptsb      # one package per book, named id@version
 ├── covers/                       # only for books with a cover.svg
+├── library.json                  # every book and page, with titles and descriptions, for the reader's Worker
 ├── pages/esempio@1.0.0/          # the book as HTML for the reader's Worker
-│   ├── meta.json                 # title and description of every page
 │   ├── capitolo/<chapter>.html   # plus <chapter>.md for agents that ask for Markdown
 │   ├── formulario.html, esercizi.html, esami.html
 │   └── assets/                   # the book's images

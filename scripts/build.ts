@@ -35,6 +35,7 @@ function lastChange(folder: string): string {
   return (date ? new Date(date) : new Date()).toISOString();
 }
 
+const library: ReturnType<typeof writePages>[] = [];
 const entries = books.map((folder) => {
   const { bytes, bundle } = packBook(collectFiles(folder), {
     createdAt: lastChange(folder),
@@ -46,6 +47,7 @@ const entries = books.map((folder) => {
   // A LICENSE file in the book's folder replaces the repository's CC BY-SA 4.0.
   const ownLicense = readdirSync(join(BOOKS_DIR, folder)).some((name) => /^LICEN[CS]E/i.test(name));
   const pages = writePages(DIST, bundle, lastChange(folder), ownLicense);
+  library.push(pages);
 
   let cover: string | undefined;
   if (existsSync(join(BOOKS_DIR, folder, COVER_FILE))) {
@@ -67,7 +69,7 @@ const entries = books.map((folder) => {
     bytes: bytes.length,
     sha256: createHash('sha256').update(bytes).digest('hex'),
     cover,
-    pages: `pages/${pages.id}@${pages.version}/`,
+    pages: pages.folder,
   };
 });
 
@@ -75,6 +77,8 @@ writeFileSync(
   join(DIST, 'catalog.json'),
   `${JSON.stringify({ catalogVersion: 1, generatedAt: new Date().toISOString(), books: entries }, null, 2)}\n`,
 );
+// Every book and page in one file, so the reader's Worker needs a single request for the library and the sitemap.
+writeFileSync(join(DIST, 'library.json'), `${JSON.stringify({ libraryVersion: 1, books: library })}\n`);
 copyFileSync(join('site', '_headers'), join(DIST, '_headers'));
 
 const escape = (text: string) =>
