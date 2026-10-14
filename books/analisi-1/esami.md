@@ -5449,6 +5449,7 @@ $$
 
 $$
 B = \{z^2 : z \in A\}.
+$$
 
 :::solution
 **Esercizio 2**
@@ -5572,6 +5573,7 @@ $$
 
 $$
 B = \{z^3 : z \in A\}.
+$$
 
 :::solution
 **Esercizio 2**
@@ -5604,6 +5606,7 @@ In forma polare $z = re^{i\theta}$ abbiamo $w = z^3 = r^3e^{i3\theta}$. Quindi
 
 $$
 B = \{w = \rho e^{i\phi} : 1 \le \rho \le 8,\ -3\pi/4 \le \phi \le 0\}.
+$$
 :::
 :::
 
