@@ -7,7 +7,7 @@ import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync,
 import { join } from 'node:path';
 import { packBook } from '@politost/content-core';
 import { BOOKS_DIR, COVER_FILE, changedBooks, collectFiles, git, listBooks, readOptions } from './books.ts';
-import { writePages } from './pages.ts';
+import { writePages, type BookPages } from './pages.ts';
 
 const DIST = 'dist';
 const READER_URL = 'https://politost.it/reader';
@@ -35,8 +35,9 @@ function lastChange(folder: string): string {
   return (date ? new Date(date) : new Date()).toISOString();
 }
 
-const library: ReturnType<typeof writePages>[] = [];
-const entries = books.map((folder) => {
+const library: BookPages[] = [];
+const entries = [];
+for (const folder of books) {
   const { bytes, bundle } = packBook(collectFiles(folder), {
     createdAt: lastChange(folder),
     producer: 'politost-books',
@@ -46,7 +47,7 @@ const entries = books.map((folder) => {
   writeFileSync(join(DIST, file), bytes);
   // A LICENSE file in the book's folder replaces the repository's CC BY-SA 4.0.
   const ownLicense = readdirSync(join(BOOKS_DIR, folder)).some((name) => /^LICEN[CS]E/i.test(name));
-  const pages = writePages(DIST, bundle, lastChange(folder), ownLicense);
+  const pages = await writePages(DIST, bundle, lastChange(folder), ownLicense);
   library.push(pages);
 
   let cover: string | undefined;
@@ -57,7 +58,7 @@ const entries = books.map((folder) => {
   }
 
   console.log(`packed ${file} (${bytes.length} bytes)`);
-  return {
+  entries.push({
     id: config.id,
     title: config.title,
     subject: config.subject,
@@ -70,8 +71,8 @@ const entries = books.map((folder) => {
     sha256: createHash('sha256').update(bytes).digest('hex'),
     cover,
     pages: pages.folder,
-  };
-});
+  });
+}
 
 writeFileSync(
   join(DIST, 'catalog.json'),
