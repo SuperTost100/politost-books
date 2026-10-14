@@ -7,15 +7,15 @@ import { parsePtsbEntries } from '@politost/content-core';
 import { collectFiles } from './books.ts';
 import { describe, mathmlOnly, plainText, writePages } from './pages.ts';
 
-function renderEsempio() {
+async function renderEsempio() {
   const dist = mkdtempSync(join(tmpdir(), 'pages-'));
-  const book = writePages(dist, parsePtsbEntries(collectFiles('esempio')), '2026-10-13T00:00:00.000Z', false);
+  const book = await writePages(dist, parsePtsbEntries(collectFiles('esempio')), '2026-10-13T00:00:00.000Z', false);
   const read = (path: string) => readFileSync(join(dist, `pages/esempio@${book.version}`, path), 'utf-8');
   return { book, read, done: () => rmSync(dist, { recursive: true, force: true }) };
 }
 
-test('writePages lists every chapter and section with a title and a description', () => {
-  const { book, done } = renderEsempio();
+test('writePages lists every chapter and section with a title and a description', async () => {
+  const { book, done } = await renderEsempio();
   try {
     assert.deepEqual(Object.keys(book.pages), ['capitolo/benvenuto', 'capitolo/nel-libro', 'capitolo/prova-tu', 'formulario', 'esercizi', 'esami']);
     for (const page of Object.values(book.pages)) {
@@ -28,8 +28,8 @@ test('writePages lists every chapter and section with a title and a description'
   }
 });
 
-test('a chapter page holds its text, numbered formulas and links that work without JavaScript', () => {
-  const { read, done } = renderEsempio();
+test('a chapter page holds its text, numbered formulas and links that work without JavaScript', async () => {
+  const { read, done } = await renderEsempio();
   try {
     const html = read('capitolo/nel-libro.html');
     assert.match(html, /<h1>2\. Cosa trovi nel libro<\/h1>/);
@@ -49,12 +49,12 @@ test('a chapter page holds its text, numbered formulas and links that work witho
   }
 });
 
-test('without a formulario, formula links go to the formula in its chapter', () => {
+test('without a formulario, formula links go to the formula in its chapter', async () => {
   const dist = mkdtempSync(join(tmpdir(), 'pages-'));
   try {
     const bundle = parsePtsbEntries(collectFiles('esempio'));
     bundle.config.sections.formulario.enabled = false;
-    const book = writePages(dist, bundle, '2026-10-13T00:00:00.000Z', false);
+    const book = await writePages(dist, bundle, '2026-10-13T00:00:00.000Z', false);
     assert.ok(!('formulario' in book.pages));
     const html = readFileSync(join(dist, book.folder, 'capitolo/nel-libro.html'), 'utf-8');
     assert.match(html, /href="\/reader\/libro\/esempio\/capitolo\/nel-libro#formula-2\.1">\(2\.1\)<\/a>/);
@@ -64,8 +64,8 @@ test('without a formulario, formula links go to the formula in its chapter', () 
   }
 });
 
-test('exercise pages keep hints and solutions in collapsed blocks', () => {
-  const { read, done } = renderEsempio();
+test('exercise pages keep hints and solutions in collapsed blocks', async () => {
+  const { read, done } = await renderEsempio();
   try {
     const html = read('esercizi.html');
     assert.match(html, /<article class="ssr-exercise" id="E1\.1">/);

@@ -11,6 +11,7 @@
  */
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
+import { setImmediate as nextTurn } from 'node:timers/promises';
 import { JSDOM } from 'jsdom';
 import {
   buildFormulaIndex,
@@ -30,6 +31,9 @@ import {
 } from '@politost/content-core';
 
 // content-core sanitizes its HTML with DOMPurify, which needs a window. Node has none.
+// DOMPurify walks each fragment with a NodeIterator, and jsdom tracks those through WeakRefs. V8 keeps a
+// WeakRef's target alive until the current task ends, so writePages awaits a turn of the event loop after
+// every chapter and exercise. Without that, one large book holds about 4 GB until the build exits.
 (globalThis as { window?: unknown }).window ??= new JSDOM('').window;
 
 export const BOOKS_URL = process.env.BOOKS_URL ?? 'https://books.politost.it';
@@ -286,7 +290,7 @@ function wrap(...parts: string[]): string {
 }
 
 /** Write the HTML pages of one book and return what the Worker needs to know about them. */
-export function writePages(dist: string, bundle: PtsbBundle, updated: string, ownLicense: boolean): BookPages {
+export async function writePages(dist: string, bundle: PtsbBundle, updated: string, ownLicense: boolean): Promise<BookPages> {
   const { config } = bundle;
   const version = config.version ?? '0.0.0';
   const folder = `pages/${config.id}@${version}/`;
@@ -320,7 +324,7 @@ export function writePages(dist: string, bundle: PtsbBundle, updated: string, ow
   const nav = bookNav(ctx, config, sections);
   const pages: Record<string, PageMeta> = {};
 
-  chapters.forEach((chapter, i) => {
+  for (const [i, chapter] of chapters.entries()) {
     const route = `capitolo/${chapter.meta.id}`;
     const heading = `${chapter.meta.number}. ${chapter.meta.title}`;
     const sectionsHtml = chapter.paragraphs
@@ -348,7 +352,8 @@ export function writePages(dist: string, bundle: PtsbBundle, updated: string, ow
       title: heading,
       description: describe(first ? plainText(first.content) : `${config.title}, capitolo ${chapter.meta.number}.`),
     };
-  });
+    await nextTurn();
+  }
 
   if (sections.includes('formulario')) {
     const groups = chapters
@@ -376,7 +381,12 @@ export function writePages(dist: string, bundle: PtsbBundle, updated: string, ow
   for (const [key, list] of [['esercizi', esercizi], ['esami', esami]] as const) {
     if (!list.length) continue;
     const label = config.sections[key].label;
-    write(`${key}.html`, wrap(crumbs(ctx, config.title, label), `<h1>${escapeHtml(label)}</h1>`, list.map((ex) => exerciseHtml(ctx, ex, chapters)).join('\n'), nav));
+    const items: string[] = [];
+    for (const ex of list) {
+      items.push(exerciseHtml(ctx, ex, chapters));
+      await nextTurn();
+    }
+    write(`${key}.html`, wrap(crumbs(ctx, config.title, label), `<h1>${escapeHtml(label)}</h1>`, items.join('\n'), nav));
     const what = key === 'esercizi' ? (list.length === 1 ? 'esercizio' : 'esercizi') : list.length === 1 ? "prova d'esame" : "prove d'esame";
     pages[key] = {
       title: label,
