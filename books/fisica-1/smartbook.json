@@ -1,0 +1,141 @@
+{
+  "id": "fisica-1",
+  "title": "Fisica 1",
+  "subject": "Fisica 1",
+  "access": "public",
+  "authors": [
+    "Tost"
+  ],
+  "version": "1.0.0",
+  "specVersion": "1.1",
+  "sections": {
+    "smartbook": {
+      "enabled": true,
+      "label": "Capitoli"
+    },
+    "formulario": {
+      "enabled": true,
+      "label": "Formulario"
+    },
+    "esercizi": {
+      "enabled": true,
+      "label": "Esercizi"
+    },
+    "esami": {
+      "enabled": true,
+      "label": "Prove d'esame"
+    },
+    "ide": {
+      "enabled": false,
+      "label": "Laboratorio"
+    },
+    "grafici": {
+      "enabled": true,
+      "label": "Grafici & Calcoli"
+    },
+    "risposte": {
+      "enabled": false,
+      "label": "Soluzioni"
+    }
+  },
+  "chapters": [
+    {
+      "id": "misure-e-vettori",
+      "number": 1,
+      "title": "Misure e vettori",
+      "file": "01-misure-e-vettori.md",
+      "printable": true
+    },
+    {
+      "id": "cinematica-del-punto",
+      "number": 2,
+      "title": "Cinematica del punto",
+      "file": "02-cinematica-del-punto.md",
+      "printable": true
+    },
+    {
+      "id": "dinamica-del-punto",
+      "number": 3,
+      "title": "Dinamica del punto",
+      "file": "03-dinamica-del-punto.md",
+      "printable": true
+    },
+    {
+      "id": "lavoro-ed-energia",
+      "number": 4,
+      "title": "Lavoro ed energia",
+      "file": "04-lavoro-ed-energia.md",
+      "printable": true
+    },
+    {
+      "id": "momento-angolare",
+      "number": 5,
+      "title": "Momento angolare",
+      "file": "05-momento-angolare.md",
+      "printable": true
+    },
+    {
+      "id": "moti-relativi",
+      "number": 6,
+      "title": "Moti relativi",
+      "file": "06-moti-relativi.md",
+      "printable": true
+    },
+    {
+      "id": "sistemi-di-punti",
+      "number": 7,
+      "title": "Sistemi di punti",
+      "file": "07-sistemi-di-punti.md",
+      "printable": true
+    },
+    {
+      "id": "corpo-rigido-cinematica-e-inerzia",
+      "number": 8,
+      "title": "Corpo rigido: cinematica e inerzia",
+      "file": "08-corpo-rigido-cinematica-e-inerzia.md",
+      "printable": true
+    },
+    {
+      "id": "dinamica-del-corpo-rigido",
+      "number": 9,
+      "title": "Dinamica del corpo rigido",
+      "file": "09-dinamica-del-corpo-rigido.md",
+      "printable": true
+    },
+    {
+      "id": "gravitazione-ed-elettrostatica",
+      "number": 10,
+      "title": "Gravitazione ed elettrostatica",
+      "file": "10-gravitazione-ed-elettrostatica.md",
+      "printable": true
+    },
+    {
+      "id": "meccanica-dei-fluidi",
+      "number": 11,
+      "title": "Meccanica dei fluidi",
+      "file": "11-meccanica-dei-fluidi.md",
+      "printable": true
+    },
+    {
+      "id": "temperatura-e-calore",
+      "number": 12,
+      "title": "Temperatura e calore",
+      "file": "12-temperatura-e-calore.md",
+      "printable": true
+    },
+    {
+      "id": "primo-principio-e-gas-ideali",
+      "number": 13,
+      "title": "Primo principio e gas ideali",
+      "file": "13-primo-principio-e-gas-ideali.md",
+      "printable": true
+    },
+    {
+      "id": "secondo-principio-ed-entropia",
+      "number": 14,
+      "title": "Secondo principio ed entropia",
+      "file": "14-secondo-principio-ed-entropia.md",
+      "printable": true
+    }
+  ]
+}
