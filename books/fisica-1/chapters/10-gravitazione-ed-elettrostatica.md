@@ -119,9 +119,15 @@ il valore minimo di $v_F$ corrisponde a $v_\infty = 0$, cioè il corpo arriva al
 $$v_F = \sqrt{\frac{2GM}{R}}$$
 :::
 
+:::image{src="assets/0a630f03-velocita-orbitale-vs-fuga.svg" alt="Due curve decrescenti, v(r) e v_F(r), con v_F sempre sopra v" caption="Fig. 10.1 — Velocità orbitale circolare v(r) e velocità di fuga v_F(r) in funzione della distanza r dal centro del corpo attrattore: la seconda è sempre radice di 2 volte la prima, ed entrambe decrescono al crescere di r."}
+:::
+
 La velocità di fuga non dipende dalla massa del corpo lanciato, ma solo dalla massa e dal raggio del corpo celeste da cui si vuole fuggire.
 
 **Esempio 10.1.** Un satellite viene posto in orbita circolare a $300\ \mathrm{km}$ di altezza sopra la superficie terrestre. Si vuole calcolare la sua velocità orbitale e il periodo, e confrontarli con la velocità di fuga dalla superficie terrestre.
+
+:::image{src="assets/0a630f03-satellite-orbita-bassa.jpg" alt="Satellite artificiale in orbita attorno alla Terra vista dallo spazio" caption="Fig. 10.2 — Un satellite artificiale in orbita bassa attorno alla Terra, come quello dell'esempio a 300 km di altezza. Foto: NASA Johnson Space Center / Wikimedia Commons, Public domain"}
+:::
 
 Dati: raggio terrestre $R_T = 6{,}37\cdot 10^6\ \mathrm{m}$, massa terrestre $M_T = 5{,}98\cdot 10^{24}\ \mathrm{kg}$, altitudine $h = 300\ \mathrm{km} = 3{,}00\cdot 10^5\ \mathrm{m}$, $G = 6{,}67\cdot 10^{-11}\ \mathrm{N\cdot m^2/kg^2}$.
 
@@ -208,6 +214,9 @@ Le linee di forza offrono una rappresentazione grafica del campo: il vettore cam
 
 *Schema.* Per simmetria rispetto all'asse $y$, i due vettori campo $\vec{G}_1$ e $\vec{G}_2$ hanno uguale modulo e sono simmetrici rispetto a tale asse: le componenti orizzontali si elidono, quelle verticali si sommano.
 
+:::image{src="assets/c1ffc0ec-esempio-campo-due-masse-geometria.svg" alt="Punti A, B e P nel piano xy con le distanze dell'esempio" caption="Fig. 10.3 — Geometria dell'esempio: le masse identiche in A e B sono simmetriche rispetto all'asse y, mentre P si trova sull'asse y a quota 2,0 m."}
+:::
+
 *Riferimento.* Assi cartesiani $x,y$ con origine nel punto medio di $AB$, versori $\hat{u}_x$, $\hat{u}_y$.
 
 *Equazioni.* La distanza di $P$ da ciascuna massa è
@@ -235,6 +244,9 @@ Quindi $\vec{G}(P) \approx -4{,}8\cdot10^{-8}\,\hat{u}_y$ m/s².
 **Errore tipico 10.2** (somma scalare invece che vettoriale). Un errore frequente consiste nel sommare i moduli dei singoli campi $G_i$ invece delle loro componenti vettoriali, ottenendo nell'esempio precedente un valore eccessivo rispetto a quello corretto, perché si ignora la cancellazione delle componenti orizzontali imposta dalla simmetria del problema. Il principio di sovrapposizione richiede sempre di decomporre ciascun $\vec{G}_i$ nelle sue componenti cartesiane e di sommare componente per componente, come indicato dalla {{formula:10.6}}.
 
 **Errore tipico 10.3** (dipendenza errata dalla distanza). Un secondo errore tipico è confondere la dipendenza del campo dalla distanza, scrivendo $G \propto 1/r$ invece di $G \propto 1/r^2$. Il controllo dimensionale smaschera immediatamente l'errore: con $\lbrack G_{\text{cost}}\rbrack  = \text{m}^3/(\text{kg}\cdot\text{s}^2)$, la formula $a = G_{\text{cost}}\,M/r^2$ dà $\lbrack a\rbrack =\text{m/s}^2$ (corretta), mentre $a = G_{\text{cost}}\,M/r$ darebbe $\lbrack a\rbrack  = \text{m}^2/\text{s}^2$, privo di senso per un'accelerazione. Più in generale, un risultato numericamente sbagliato resta comunque un risultato, mentre una scrittura dimensionalmente inconsistente è priva di significato fisico e costituisce un errore ben più grave; per questo ogni passaggio intermedio del calcolo di un campo va sempre accompagnato dalle unità di misura.
+
+:::image{src="assets/c1ffc0ec-campo-gravitazionale-dipendenza-r.svg" alt="Confronto tra l'andamento 1/r² del campo gravitazionale e l'errato 1/r" caption="Fig. 10.4 — Il campo gravitazionale di una massa puntiforme decresce come l'inverso del quadrato della distanza, non come l'inverso della distanza: la differenza tra le due dipendenze diventa evidente già a distanze moderate."}
+:::
 
 ## p4 | Angolo solido
 
@@ -296,6 +308,9 @@ $$\Omega = 2\pi (1-\cos\alpha).$$
 
 *Controllo.* Per $\alpha \to \pi$ (cono che si apre su tutto lo spazio) si ha $\cos\alpha \to -1$ e $\Omega \to 4\pi$ sr, in accordo con l'angolo solido totale attorno a un punto. Per $\alpha \to 0$ (cono molto stretto) $\Omega \to 0$, come atteso.
 
+:::image{src="assets/9e3c7d96-angolo-solido-cono.svg" alt="Grafico dell'angolo solido Ω in funzione della semiapertura angolare α del cono, con asintoto orizzontale a 4π sr." caption="Fig. 10.5 — Angolo solido Ω sotteso da un cono di semiapertura α, secondo Ω = 2π(1−cos α): parte da 0 per α→0 e tende a 4π sr per α→π, come l'angolo solido totale attorno a un punto."}
+:::
+
 **Errore tipico 10.4.** Nella formula per l'angolo solido infinitesimo, il numeratore è un prodotto scalare tra vettori. Il suo valore assoluto dà l'angolo solido non orientato, mentre il prodotto con segno dà quello orientato, usato negli integrali di flusso. Scrivere $\hat{u}_r dS/r^2$ senza il punto del prodotto scalare o confondere $\hat{u}_r \cdot \hat{u}_n$ con il modulo di $dS$ porta a risultati dimensionalmente corretti ma concettualmente sbagliati, perché si perde la dipendenza dall'inclinazione della superficie rispetto alla direzione di osservazione.
 
 ## p5 | Potenziale gravitazionale e teorema di Gauss
@@ -318,6 +333,9 @@ Dividendo $E_p$ per la massa $m_2$ che subisce l'interazione si ottiene una gran
 
 :::formula{id="10.10" label="Potenziale gravitazionale"}
 $$V_1 = \frac{E_p}{m_2} = -\frac{G m_1}{r}$$
+:::
+
+:::image{src="assets/3c70884c-potenziale-gravitazionale-andamento.svg" alt="Grafico di V(r): curva negativa che tende a meno infinito per r che tende a zero e cresce asintoticamente a zero per r che tende a infinito" caption="Fig. 10.6 — Andamento del potenziale gravitazionale V(r) = -Gm₁/r generato da una massa puntiforme m₁, in funzione della distanza r dal centro"}
 :::
 
 La situazione è simmetrica nelle due masse: si può scrivere altrettanto bene $E_p = m_1 V_2$ con $V_2 = -Gm_2/r$ visto come potenziale generato da $m_2$ nel punto in cui si trova $m_1$. Il potenziale si misura in J/kg e rappresenta l'energia potenziale per unità di massa posta in quel punto del campo.
@@ -400,7 +418,7 @@ $$G(r) = \frac{4}{3}\pi G\rho_0\, r, \qquad r < R.$$
 
 All'interno di una sfera omogenea il campo cresce quindi linearmente con la distanza dal centro, annullandosi nel centro stesso, mentre all'esterno decresce come $1/r^2$; il massimo si trova in $r=R$, dove le due espressioni coincidono.
 
-:::image{src="assets/3c70884c-campo-sfera-omogenea.svg" alt="Grafico di G(r): crescita lineare per r minore di R, decrescenza come 1 su r al quadrato per r maggiore di R, con massimo in r = R" caption="Fig. 10.1 — Andamento del campo gravitazionale G(r) di una sfera omogenea di raggio R e massa M, in funzione della distanza r dal centro"}
+:::image{src="assets/3c70884c-campo-sfera-omogenea.svg" alt="Grafico di G(r): crescita lineare per r minore di R, decrescenza come 1 su r al quadrato per r maggiore di R, con massimo in r = R" caption="Fig. 10.7 — Andamento del campo gravitazionale G(r) di una sfera omogenea di raggio R e massa M, in funzione della distanza r dal centro"}
 :::
 
 **Esempio 10.3.** Modelliamo la Terra come una sfera omogenea di massa $M_T = 5,98\cdot10^{24}\ \text{kg}$ e raggio $R_T = 6,37\cdot10^{6}\ \text{m}$. Calcoliamo il campo gravitazionale sulla superficie e a metà del raggio.
@@ -489,6 +507,9 @@ Dividendo $E_p$ per la carica di prova $q_0$ si definisce il **potenziale elettr
 
 :::formula{id="10.22" label="Potenziale elettrostatico di una carica puntiforme"}
 $$V(r) = \frac{Q}{4\pi\varepsilon_0 r} = k\,\frac{Q}{r}$$
+:::
+
+:::image{src="assets/0dc2501f-potenziale-elettrostatico-puntiforme.svg" alt="Grafico del potenziale elettrostatico V in funzione della distanza r, con andamento 1 su r" caption="Fig. 10.8 — Potenziale elettrostatico V(r) generato da una carica puntiforme Q positiva: decresce come 1/r e tende a zero per r che tende a infinito, a differenza del campo E che decresce come 1/r²."}
 :::
 
 legato al campo dalla relazione $V(A)-V(B) = \int_{A,\gamma}^{B}\vec{E}\cdot d\vec{s}$, e il lavoro compiuto dal campo su una carica $q_0$ che si sposta da $A$ a $B$ vale

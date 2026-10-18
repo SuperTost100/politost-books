@@ -103,6 +103,9 @@ Numeri: per $L = 1,00$ m e $g = 9,81$ m/s², $T = 2\pi\sqrt{\dfrac{2(1,00\ \text
 
 Controllo: il risultato ha le dimensioni corrette di un tempo e l'ordine di grandezza è ragionevole per un'asta di circa un metro; per confronto, un pendolo semplice della stessa lunghezza $L$ avrebbe periodo $2\pi\sqrt{L/g} \approx 2,01$ s, maggiore, perché la sua lunghezza ridotta $l = 2L/3$ è minore di $L$.
 
+:::image{src="assets/6fe3911d-periodo-pendolo-composto-vs-semplice.svg" alt="Grafico del periodo T in funzione di L per il pendolo composto (asta) e per il pendolo semplice" caption="Fig. 9.1 — Periodo delle piccole oscillazioni in funzione della lunghezza L: il pendolo composto dato dall'asta oscillante attorno a un estremo ha sempre periodo minore del pendolo semplice di pari lunghezza, perché la sua lunghezza ridotta è 2L/3."}
+:::
+
 ### Sistemi con carrucole e fili
 
 Molti problemi coinvolgono punti materiali collegati da fili inestensibili a una carrucola di massa non trascurabile e momento d'inerzia $I$ rispetto al proprio asse, con il filo che non slitta sulla carrucola (puro rotolamento filo-carrucola) e un perno privo di attrito. In questi sistemi occorre scrivere un'equazione per ciascun corpo materiale e, per la carrucola, due equazioni distinte: una per il moto traslatorio del centro di massa (che, se l'asse è fisso, resta fermo) e una per il moto rotatorio attorno al centro di massa, perché la carrucola è un corpo rigido esteso e non un punto materiale.
@@ -380,6 +383,9 @@ e la corrispondente velocità angolare $\omega(t^*) = v_{CM}(t^*)/R = 27$ rad/s.
 
 *Controllo.* Le unità sono corrette (tempo in secondi, velocità in m/s) e il risultato $v_{CM}(t^*) < v_0$ è dimensionalmente e fisicamente ragionevole, poiché l'attrito dinamico ha solo decelerato la traslazione e accelerato la rotazione fino a eguagliarle; da $t^*$ in avanti, se non intervengono altre forze esterne, il disco prosegue di puro rotolamento a velocità costante.
 
+:::image{src="assets/5eaa0825-transizione-rotolamento-strisciamento.svg" alt="Due rette, una decrescente che rappresenta v_CM(t) e una crescente che rappresenta ωR(t), che si incontrano nel punto t* = 0,68 s, v = 2,7 m/s" caption="Fig. 9.2 — Velocità del centro di massa v_CM(t) e velocità del bordo ωR(t) durante la fase di strisciamento del disco lanciato con v0 = 4,0 m/s e ω0 = 0: le due curve si incontrano all'istante t* = 0,68 s, quando inizia il puro rotolamento."}
+:::
+
 Questo stesso meccanismo spiega perché, in generale, il rotolamento comporta necessariamente una fase di strisciamento ogniqualvolta le condizioni iniziali di $v_{CM}$ e $\omega$ non siano già compatibili con {{formula:9.8}}: tale fase dissipa energia meccanica, perché durante lo strisciamento l'attrito è dinamico e compie lavoro negativo (a differenza del caso di puro rotolamento, in cui il lavoro dell'attrito è sempre nullo).
 
 ## p5 | Urti con corpi rigidi
@@ -502,6 +508,9 @@ $$L_{z,\text{dopo}} = (I_D + md^2)\,\omega'$$
 Dalla conservazione $L_{z,\text{prima}} = L_{z,\text{dopo}}$:
 
 $$I_D\,\omega = (I_D+md^2)\,\omega' \quad\Rightarrow\quad \omega' = \omega\,\frac{1}{1+2\dfrac{m}{M}\dfrac{d^2}{R^2}}$$
+
+:::image{src="assets/98f7db94-omega-finale-vs-distanza-impatto.svg" alt="Grafico del rapporto omega primo su omega in funzione di d su R per il disco con massa incollata" caption="Fig. 9.3 — Rapporto ω'/ω tra la velocità angolare del disco dopo e prima dell'urto, in funzione della distanza relativa d/R a cui il punto materiale si incolla, per m/M = 0,5: più l'urto è eccentrico, più il momento d'inerzia aumenta e la rotazione si rallenta."}
+:::
 
 Il risultato mostra, in modo del tutto analogo al caso del disco libero visto nella sezione sul [rotolamento](ref:chapter/9#p4) e nei [teoremi di König](ref:chapter/8#p4), che l'aumento del momento d'inerzia dovuto alla massa aggiunta rallenta la rotazione, proprio come previsto dalla conservazione del momento angolare assiale introdotta nella sezione sulla [rotazione attorno a un asse fisso](ref:chapter/9#p2).
 

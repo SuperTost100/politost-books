@@ -57,7 +57,7 @@ Every book is a set of chapters. Most add exercises, past-exam practice and inte
 
 **Read online.** Open [politost.it/reader](https://politost.it/reader) and press Apri on a book. The reader needs no account. It downloads the book when you open it and keeps a copy in your browser.
 
-**Download a book.** Every book is a `.ptsb` file at `https://books.politost.it/books/<id>@<version>.ptsb`, for example [`fisica-1@1.0.0.ptsb`](https://books.politost.it/books/fisica-1@1.0.0.ptsb). The [index page](https://books.politost.it) lists them. You can import one into the reader, or into [Pyxis](https://github.com/SuperTost100/politost-pyxis), which keeps its chapters and exercises.
+**Download a book.** Every book is a `.ptsb` file at `https://books.politost.it/books/<id>@<version>.ptsb`, for example [`fisica-1@1.1.0.ptsb`](https://books.politost.it/books/fisica-1@1.1.0.ptsb). The [index page](https://books.politost.it) lists them. You can import one into the reader, or into [Pyxis](https://github.com/SuperTost100/politost-pyxis), which keeps its chapters and exercises.
 
 **Read the Markdown.** Each chapter in `books/<id>/chapters/` is a plain Markdown file that renders on GitHub.
 

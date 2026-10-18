@@ -125,6 +125,9 @@ con $R = 8{,}314\ \mathrm{J/(mol\,K)}$ costante universale dei gas e $T$ la temp
 
 Quando il gas percorre una trasformazione quasi-statica da uno stato $A$ a uno stato $B$, il punto rappresentativo si muove con continuità nel piano di Clapeyron $(V,p)$ seguendo una curva definita, perché in ogni istante il gas si trova in uno stato di equilibrio; se invece la trasformazione non è quasi-statica, gli stati intermedi non sono di equilibrio e non esiste una curva ben definita da tracciare, indipendentemente dal fatto che la trasformazione sia reversibile o irreversibile. Questa distinzione, già introdotta nella sezione su [Sistemi termodinamici ed equilibrio](ref:chapter/12#p2), tornerà centrale nella sezione sulle [Trasformazioni dei gas ideali](ref:chapter/13#p4).
 
+:::image{src="assets/861fbdaf-clapeyron-trasformazione-quasi-statica.svg" alt="Curva continua nel piano V-p che collega il punto A al punto B" caption="Fig. 13.1 — Nel piano di Clapeyron (V,p), una trasformazione quasi-statica da A a B è una curva continua di stati di equilibrio"}
+:::
+
 ### L'energia interna del gas ideale dipende solo da T
 
 La sezione precedente ha enunciato il primo principio nella forma $\Delta U = Q - W$ con la convenzione di segno del libro, e ha mostrato che $U$ è una funzione di stato (si veda [Primo principio ed energia interna](ref:chapter/13#p2)). Resta da stabilire da quali variabili dipenda $U$ per un gas ideale; la risposta si ottiene dall'esperienza di Joule sull'espansione libera.
@@ -135,7 +138,7 @@ Da questa osservazione seguono due conseguenze. Primo, il gas non scambia calore
 
 **Definizione 13.2** (espansione libera adiabatica). Un gas in espansione libera adiabatica, in un sistema chiuso che non scambia calore con l'esterno, non varia la propria energia interna. Se il gas potesse scambiare calore con l'ambiente durante l'espansione, l'assenza di lavoro ($W=0$) non basterebbe a garantire $\Delta U = 0$, poiché dal primo principio resterebbe $\Delta U = Q$.
 
-Secondo, nell'esperimento la temperatura finale coincide con quella iniziale, mentre pressione e volume differiscono tra i due stati. L'esperimento di Joule descritto sopra confronta soltanto uno stato iniziale e uno stato finale in cui il volume raddoppia; il risultato si generalizza però a un rapporto qualsiasi tra volume iniziale e finale, ripetendo l'esperimento con recipienti di forma e frazioni di volume diverse: in ogni caso la temperatura finale coincide con quella iniziale. Questa generalizzazione, assunta qui come fatto sperimentale per il modello di gas ideale, troverà una giustificazione microscopica nella sezione sulla [Teoria cinetica ed equipartizione](ref:chapter/13#p5), dove si mostra che, nel modello di molecole rigide privo di struttura interna, l'energia interna del gas ideale coincide con la sola energia cinetica delle molecole, funzione della sola temperatura e indipendente dal volume occupato. Se le molecole possiedono anche gradi di libertà vibrazionali, come illustrato in quella stessa sezione, all'energia cinetica si aggiunge un'energia potenziale intramolecolare associata alle vibrazioni; tuttavia, per il principio di equipartizione, anche questo contributo dipende soltanto dalla temperatura e non dal volume occupato dal gas, cosicché l'energia interna del gas ideale resta comunque funzione della sola $T$. Per concludere che, nel gas ideale, $U$ dipende soltanto dalla temperatura occorre dunque estendere l'invarianza dell'energia interna osservata sperimentalmente alle espansioni libere tra volumi iniziali e finali arbitrari. Nei gas reali, nei liquidi e nei solidi si osservano invece variazioni di temperatura nell'espansione libera, segno di una dipendenza residua dell'energia interna dal volume.
+Secondo, nell'esperimento la temperatura finale coincide con quella iniziale, mentre pressione e volume differiscono tra i due stati. L'esperimento di Joule descritto sopra confronta soltanto uno stato iniziale e uno stato finale in cui il volume raddoppia; il risultato si generalizza però a un rapporto qualsiasi tra volume iniziale e finale, ripetendo l'esperimento con recipienti di forma e frazioni di volume diverse: in ogni caso la temperatura finale coincide con quella iniziale. Questa generalizzazione, assunta qui come fatto sperimentale per il modello di gas ideale, troverà una giustificazione microscopica nella sezione sulla [Teoria cinetica ed equipartizione](ref:chapter/13#p5), dove si mostra che, nel modello di molecole rigide privo di struttura interna, l'energia interna del gas ideale coincide con la sola energia cinetica delle molecole, funzione della sola temperatura e indipendente dal volume occupato. Se le molecole possiedono anche gradi di libertà vibrazionali, come illustrato in quella stessa sezione, all'energia cinetica si aggiunge un'energia potenziale intramolecolare associata alle vibrazioni; tuttavia, per il principio di equipartizione, anche questo contributo dipende soltanto dalla temperatura e non dal volume occupato dal gas, cosicché l'energia interna del gas ideale resta comunque funzione della sola $T$. Per concludere che, nel gas ideale, $U$ dipende soltanto dalla temperatura occorre dunque estendere l'invarianza dell'energia interna osservata sperimentalmente alle espansioni libere tra volumi iniziali e finali arbitrari. Nei gas reali si possono invece osservare variazioni di temperatura nell'espansione libera, segno di una dipendenza residua dell'energia interna dal volume.
 
 Per ottenere l'espressione esplicita di $\Delta U$ in funzione di $T$ si considerano due stati di equilibrio generici $A$ e $B$ di $n$ moli di gas ideale, collegati tramite due trasformazioni di comodo: prima una isocora $A \to C$ (volume costante), poi una isoterma $C \to B$ (temperatura costante). Poiché $U$ dipende solo da $T$, lungo l'isoterma $C \to B$ l'energia interna non varia, cioè $U_B = U_C$; quindi $\Delta U_{A\to B} = U_B - U_A = U_C - U_A$, che è proprio la variazione di energia interna nella sola trasformazione isocora $A \to C$.
 
@@ -164,6 +167,9 @@ $$T_A = \frac{p_A V_A}{nR}.$$
 Sostituendo i valori numerici con le relative unità:
 $$T_A = \frac{(1\cdot10^5\ \mathrm{N/m^2})(10^{-2}\ \mathrm{m^3})}{(1\ \mathrm{mol})\left(8{,}314\ \mathrm{J/(mol\,K)}\right)} = \frac{10^3\ \mathrm{N\,m}}{8{,}314\ \mathrm{J/K}} = 120{,}3\ \mathrm{K}.$$
 
+:::image{src="assets/861fbdaf-isoterma-esempio-gas-ideale.svg" alt="Curva p in funzione di V per T costante, con il punto A alle coordinate dell'esempio" caption="Fig. 13.2 — Isoterma a T = 120,3 K nel piano di Clapeyron: il punto A corrisponde ai dati dell'esempio, V_A = 10 L e p_A = 1 bar"}
+:::
+
 Il controllo dimensionale è immediato: $\mathrm{N\,m} = \mathrm{J}$, quindi il numeratore ha unità $\mathrm{J}$ e il denominatore unità $\mathrm{J/K}$. Il rapporto ha dunque unità $\mathrm{J}/(\mathrm{J/K}) = \mathrm{K}$. L'ordine di grandezza, poco più di cento kelvin, è compatibile con un gas a bassa pressione racchiuso in un piccolo volume.
 
 ### Errore tipico
@@ -179,6 +185,9 @@ usando $p_A$ in bar e $V_A$ in litri senza conversione. L'errore produce due dif
 ## p4 | Trasformazioni dei gas ideali
 
 Le quattro trasformazioni quasi-statiche fondamentali — isocora, isobara, isoterma, adiabatica — sono già state definite nella sezione su [Sistemi termodinamici ed equilibrio](ref:chapter/12#p2); qui le applichiamo al gas ideale per calcolare esplicitamente $Q$, $W$ e $\Delta U$. Nel piano di Clapeyron $(V,p)$ una trasformazione isoterma è un ramo di iperbole, un'isobara un segmento orizzontale e un'isocora un segmento verticale; una trasformazione che attraversa stati di equilibrio è rappresentata da una curva continua, mentre una trasformazione che passa per stati di non equilibrio si disegna con una linea tratteggiata. In ogni caso vale il primo principio $\Delta U = Q - W$ con la convenzione di segno già fissata, e per il gas ideale l'energia interna dipende solo dalla temperatura, qualunque sia la trasformazione. In generale, se $c_V$ varia con $T$, la variazione di energia interna va calcolata con $\Delta U = n\int_{T_A}^{T_B} c_V(T)\,dT$; nelle applicazioni che seguono assumiamo, come è usuale in questo contesto, che $c_V$ (e quindi anche $c_p$ e $\gamma = c_p/c_V$) siano costanti nell'intervallo di temperatura considerato, cosicché si possa scrivere semplicemente $\Delta U = n c_V \Delta T$; questa stessa ipotesi è necessaria per integrare l'equazione delle adiabatiche reversibili e ottenere $T V^{\gamma-1} = \text{costante}$.
+
+:::image{src="assets/282f2feb-clapeyron-isocora-isobara-isoterma.svg" alt="Tre curve nel piano V-p passanti per lo stesso punto A: un'iperbole per l'isoterma, una retta orizzontale per l'isobara, una retta verticale per l'isocora" caption="Fig. 13.3 — Nel piano di Clapeyron, a partire dallo stesso stato A: l'isoterma è un ramo di iperbole (p proporzionale a 1/V), l'isobara una retta orizzontale e l'isocora una retta verticale"}
+:::
 
 ### Isocore, isobare, isoterme
 
@@ -266,7 +275,7 @@ $$p\,V^{\gamma} = \text{costante}, \qquad T\,p^{\frac{1-\gamma}{\gamma}} = \text
 
 Nel piano $(V,p)$ una curva adiabatica reversibile è più inclinata di un'isoterma passante per lo stesso punto, perché $\gamma>1$: a parità di espansione, la pressione cala più rapidamente lungo l'adiabatica.
 
-:::image{src="assets/282f2feb-isoterma-vs-adiabatica.svg" alt="Confronto fra una curva isoterma e una curva adiabatica reversibile nel piano V-p, uscenti dallo stesso punto" caption="Fig. 13.1 — Isoterma (p proporzionale a 1/V) e adiabatica reversibile (p proporzionale a 1/V^gamma) a partire dallo stesso stato iniziale: l'adiabatica è più inclinata perché gamma > 1"}
+:::image{src="assets/282f2feb-isoterma-vs-adiabatica.svg" alt="Confronto fra una curva isoterma e una curva adiabatica reversibile nel piano V-p, uscenti dallo stesso punto" caption="Fig. 13.4 — Isoterma (p proporzionale a 1/V) e adiabatica reversibile (p proporzionale a 1/V^gamma) a partire dallo stesso stato iniziale: l'adiabatica è più inclinata perché gamma > 1"}
 :::
 
 Il lavoro in un'adiabatica reversibile si ottiene direttamente da $W=-\Delta U$:
@@ -300,6 +309,9 @@ $$W = p_{\text{amb}}(V_B - V_A)$$
 :::
 
 Questo è il caso tipico di un pistone libero caricato da un peso o dalla pressione atmosferica, per cui, in assenza di attrito, $p_{\text{amb}} = p_B$, cioè la pressione esterna coincide con la pressione del gas nello stato finale di equilibrio. Si confrontino ora due trasformazioni che collegano gli stessi stati estremi di equilibrio $A$ e $B$: un'isoterma reversibile e un processo irreversibile contro pressione esterna costante pari a $p_B$. A parità di $V_A$ e $V_B$ e di questi stati estremi, il lavoro $nRT\ln(V_B/V_A)$ dell'isoterma reversibile è in generale diverso (e maggiore in un'espansione) da $p_{\text{amb}}(V_B-V_A) = p_B(V_B-V_A)$. Nel processo reversibile la pressione esterna differisce solo infinitesimamente da quella del gas in ogni istante; con pressione esterna costante, invece, la differenza tra le pressioni durante la trasformazione può causare un'accelerazione o dissipazioni.
+
+:::image{src="assets/282f2feb-lavoro-isoterma-vs-irreversibile.svg" alt="Confronto nel piano V-p tra una curva isoterma reversibile e un segmento orizzontale a pressione esterna costante, entrambi tra gli stessi punti A e B" caption="Fig. 13.5 — Tra gli stessi stati A e B, il lavoro di un'isoterma reversibile (area sotto l'iperbole) è maggiore di quello di un'espansione irreversibile contro una pressione esterna costante pari a p_B (area sotto il segmento orizzontale)"}
+:::
 
 **Espansione libera (di Joule).** È il caso limite di espansione irreversibile: un gas occupa una parte di un recipiente a pareti rigide e adiabatiche, mentre l'altra parte è vuota; aprendo un rubinetto il gas si espande senza che vi sia alcuna forza esterna che si opponga al suo moto. Non essendoci né ambiente né forza resistente, il gas non scambia lavoro né calore:
 
@@ -384,6 +396,9 @@ Il numero $f$ nella relazione di equipartizione conta i termini quadratici indip
 - Una molecola **biatomica rigida** è costituita da due atomi a distanza fissata. Le posizioni dei due atomi richiederebbero $6$ coordinate cartesiane, ma la condizione di rigidità (distanza costante tra i due atomi) elimina un grado di libertà, lasciandone $f = 6-1 = 5$. Questi cinque gradi di libertà corrispondono a tre traslazioni del centro di massa e due rotazioni attorno agli assi perpendicolari alla congiungente degli atomi (la rotazione attorno all'asse della molecola non contribuisce, per ragioni di simmetria del momento d'inerzia).
 - Lo stesso argomento, applicato a un sistema rigido di $N_{at}$ atomi (o a un corpo rigido continuo), dà in generale $f = 3N_{at} - (\text{numero di vincoli di rigidità})$; per una molecola triatomica rigida non lineare si trovano $9-3=6$ gradi di libertà.
 
+:::image{src="assets/63b35af5-molecola-triatomica-non-lineare.svg" alt="Struttura di Lewis della molecola d'acqua H2O, con i due atomi di idrogeno legati all'ossigeno in geometria angolata e i doppietti solitari sull'ossigeno" caption="Fig. 13.6 — Molecola triatomica rigida non lineare (H2O): la geometria ad angolo, con tre atomi non allineati, fornisce f = 9 − 3 = 6 gradi di libertà, tre traslazionali e tre rotazionali."}
+:::
+
 Moltiplicando l'energia media per molecola per il numero totale di molecole $nN_A$, si ottiene l'energia interna del gas in funzione dei soli gradi di libertà e della temperatura
 
 $$U = nN_A\frac{f}{2}k_BT = n\frac{f}{2}RT. $$
@@ -404,6 +419,9 @@ Per i due casi di interesse pratico si ottengono i valori teorici seguenti.
 
 - Gas **monoatomico** ($f=3$): $c_V = \dfrac{3}{2}R$.
 - Gas **biatomico** ($f=5$): $c_V = \dfrac{5}{2}R$.
+
+:::image{src="assets/63b35af5-calore-specifico-gradi-liberta.svg" alt="Grafico della retta c_V/R = f/2 con tre punti evidenziati in corrispondenza di f=3, f=5 e f=6" caption="Fig. 13.7 — Calore specifico molare a volume costante, in unità di R, in funzione del numero di gradi di libertà f secondo c_V = (f/2)R: i punti segnano i tre casi discussi nel testo, f=3 per il gas monoatomico (c_V = 1,5R), f=5 per il gas biatomico rigido (c_V = 2,5R) e f=6 per la molecola triatomica non lineare (c_V = 3R)."}
+:::
 
 Dalla relazione di Mayer $c_p - c_V = R$ (ricavata nella sezione sulle [trasformazioni dei gas ideali](ref:chapter/13#p4)) si ottengono allora anche i calori specifici a pressione costante e il rapporto $\gamma = c_p/c_V$: $c_p = \tfrac{5}{2}R$ e $\gamma = \tfrac{5}{3}$ per i gas monoatomici, $c_p = \tfrac{7}{2}R$ e $\gamma = \tfrac{7}{5}$ per i gas biatomici. Questi valori sono verificati sperimentalmente con buona approssimazione a temperatura ambiente; a temperature più alte i gradi di libertà vibratori delle molecole biatomiche (non contati qui perché "congelati" a basse temperature) cominciano a contribuire, e il modello va corretto con la meccanica quantistica — argomento che esula dal corso.
 

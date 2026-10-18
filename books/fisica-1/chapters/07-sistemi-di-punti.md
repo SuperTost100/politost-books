@@ -75,6 +75,9 @@ Questo risultato è ciò che renderà possibile, nella sezione sulla [prima equa
 
 $$\vec{M}_{i,j}^{(I)} = \vec{r}_i \times \vec{F}_{i,j} + \vec{r}_j \times \vec{F}_{j,i} = \vec{r}_i \times \vec{F}_{i,j} - \vec{r}_j \times \vec{F}_{i,j} = (\vec{r}_i - \vec{r}_j) \times \vec{F}_{i,j} = -\vec{r}_{i,j} \times \vec{F}_{i,j}.$$
 
+:::image{src="assets/406232d1-centralita-forze-interne.svg" alt="Diagramma vettoriale con un polo O e due punti P_i e P_j: i vettori posizione r_i e r_j partono da O, il vettore r_ij congiunge P_i a P_j ed è la retta d'azione delle forze interne centrali F_ij e F_ji." caption="Fig. 7.1 — Punti P_i e P_j rispetto a un polo O: i vettori posizione r_i e r_j individuano i due punti, mentre r_ij congiunge P_i a P_j. Se la forza interna F_ij è centrale, cioè diretta lungo la stessa retta di r_ij, il prodotto vettoriale r_ij × F_ij è nullo: per questo il momento della coppia interna si annulla."}
+:::
+
 Poiché $\vec{r}_{i,j}$ è parallelo a $\vec{F}_{i,j}$, il prodotto vettoriale è nullo per ogni coppia di punti:
 
 $$\vec{M}_{i,j}^{(I)} = \vec{0}.$$
@@ -193,11 +196,14 @@ $$y_{CM} = \frac{0,6 \text{ kg} \cdot 2 \text{ m} + 0,3 \text{ kg} \cdot 0 \text
 
 Il punto $(1,77; 0,31) \text{ m}$ cade all'interno del triangolo individuato dalle tre masse, come ci si attende dal fatto che il centro di massa è una media pesata delle posizioni. Il controllo dimensionale è immediato: ogni termine ha le dimensioni di $\text{kg} \cdot \text{m}$ al numeratore e $\text{kg}$ al denominatore, da cui $x_{CM}, y_{CM}$ risultano in metri.
 
+:::image{src="assets/f80b27f5-centro-massa-tre-particelle.svg" alt="Punti m1, m2, m3 nel piano xy con il centro di massa calcolato al loro interno" caption="Fig. 7.2 — Posizione delle tre particelle e del centro di massa nell'esempio svolto"}
+:::
+
 ### Esempio svolto: asta omogenea e asta a densità variabile
 
 Un'asta sottile di lunghezza $L = 2 \text{ m}$ e massa $m = 50 \text{ g}$ è appoggiata sull'asse $x$ con l'estremo sinistro nell'origine. Si chiede il centro di massa nel caso omogeneo e nel caso in cui la densità lineare cresca linearmente da $\lambda_1$ (estremo sinistro) a $\lambda_2$ (estremo destro), con $\lambda_1 = 5 \cdot 10^{-4} \text{ kg/m}$.
 
-:::image{src="assets/f80b27f5-densita-lineare-asta.svg" alt="retta crescente che rappresenta lambda(x) da lambda1 a lambda2 su un intervallo da 0 a L" caption="Fig. 7.1 — Densità lineare di massa crescente lungo un'asta, da λ₁ all'estremo sinistro a λ₂ all'estremo destro"}
+:::image{src="assets/f80b27f5-densita-lineare-asta.svg" alt="retta crescente che rappresenta lambda(x) da lambda1 a lambda2 su un intervallo da 0 a L" caption="Fig. 7.3 — Densità lineare di massa crescente lungo un'asta, da λ₁ all'estremo sinistro a λ₂ all'estremo destro"}
 :::
 
 Nel caso omogeneo la densità lineare è costante, $\lambda(x) = m/L$, e il centro di massa si calcola con
@@ -306,6 +312,9 @@ $$V = -\frac{5,0\ \text{kg}}{800\ \text{kg}}\cdot 400\ \text{m/s} = -2,5\ \text{
 
 **Controllo.** Il segno negativo indica che il cannone rincula in verso opposto al proiettile, come atteso fisicamente; dimensionalmente $\lbrack \text{kg}/\text{kg}\rbrack \cdot\lbrack \text{m/s}\rbrack  = \text{m/s}$ è corretto, e l'ordine di grandezza (pochi metri al secondo, contro le centinaia del proiettile) è coerente con il fatto che $m \ll M$.
 
+:::image{src="assets/5ba94a72-quantita-moto-cannone-proiettile.svg" alt="Grafico a gradini della quantità di moto del cannone, del proiettile e della loro somma in funzione del tempo intorno all'istante dello sparo" caption="Fig. 7.4 — Quantità di moto di cannone e proiettile nell'istante dello sparo: saltano in modo uguale e opposto, mentre la somma resta nulla"}
+:::
+
 ### Errori tipici
 
 - Applicare la conservazione della quantità di moto senza prima verificare che la risultante delle forze esterne (o la sua componente lungo la direzione di interesse) sia davvero nulla. Un vincolo esterno, anche se non compie lavoro, può comunque avere una risultante non nulla e impedire la conservazione: per esempio in un disco vincolato a un perno, la reazione del perno è una forza esterna che in generale non è nulla, quindi non si può dare per scontata la conservazione di $\vec{P}$ del disco senza controllare esplicitamente questa condizione.
@@ -402,6 +411,9 @@ Il momento angolare del sistema, calcolato rispetto a un polo fisso nel riferime
 
 *Schema e riferimento*: scegliamo l'asse $z$ perpendicolare al piano del moto e l'asse $x$ lungo la direzione di $v_0$, con il polo $O$ fisso su quella retta.
 
+:::image{src="assets/9ab5bcdb-schema-esempio-due-punti-rotanti.svg" alt="Due punti materiali su una circonferenza di raggio R centrata nel centro di massa CM, con il polo fisso O sulla stessa retta orizzontale percorsa dal centro di massa" caption="Fig. 7.5 — Schema dell'esempio nell'istante considerato: i due punti di massa m ruotano sulla circonferenza di raggio R attorno al centro di massa CM, che percorre la retta fissa passante per il polo O"}
+:::
+
 *Momento angolare interno*. Nel riferimento del centro di massa i due punti percorrono una circonferenza di raggio $R$ con velocità relativa di modulo $v' = R\omega$, in direzioni opposte rispetto al centro: entrambi i contributi $m\vec{r}'_i\times\vec{v}'_i$ hanno lo stesso verso (lungo $\hat{u}_z$), quindi si sommano. Usando [formula (5.4)](ref:formula/5.4) per ciascun punto e moltiplicando per due,
 
 $$L' = 2\, m R^2 \omega = 2\cdot(0,50\ \text{kg})\cdot(0,20\ \text{m})^2\cdot(10\ \text{s}^{-1}) = 0,40\ \text{kg}\cdot\text{m}^2/\text{s},$$
@@ -415,6 +427,9 @@ diretto lungo $\hat{u}_z$.
 $$\vec{L}_O(t) = \vec{0} + \vec{L}' = 0,40\ \text{kg}\cdot\text{m}^2/\text{s}\ \hat{u}_z \quad \text{per ogni } t.$$
 
 *Controllo*. Le unità sono corrette: $\text{kg}\cdot\text{m}^2\cdot\text{s}^{-1}$, coerenti con $\lbrack \vec{L}\rbrack =\lbrack \vec{r}\rbrack \lbrack m\rbrack \lbrack \vec{v}\rbrack $. Il risultato è costante nel tempo pur essendo il sistema soggetto, in generale, a forze esterne (le reazioni vincolari dell'asta e della piattaforma): questo non contraddice la seconda equazione cardinale, perché il moto rettilineo del centro di massa lungo una retta passante per il polo rende nullo, istante per istante, il momento di queste forze rispetto a $O$. Si noti che, se il polo fosse scelto fuori da quella retta, il termine $\vec{r}_{CM}\times m\vec{v}_{CM}$ non sarebbe più nullo e il valore di $\vec{L}_O$ cambierebbe, in accordo con l'osservazione che il momento angolare dipende dal polo.
+
+:::image{src="assets/9ab5bcdb-momento-angolare-funzione-distanza-polo.svg" alt="Retta che mostra come il momento angolare rispetto al polo O cresca linearmente con la distanza d dalla retta del centro di massa, a partire dal valore 0,40 chilogrammo metro quadrato al secondo per d uguale zero" caption="Fig. 7.6 — Momento angolare L_O dell'esempio in funzione della distanza d del polo dalla retta percorsa dal centro di massa: resta pari a L' = 0,40 kg·m²/s solo se d = 0, altrimenti cresce linearmente"}
+:::
 
 ### Errori tipici
 
@@ -623,6 +638,9 @@ Verifica della quantità di moto: $P_{in} = 2,0\cdot 4,0 + 1,0\cdot(-2,0) = 6,0$
 
 In generale, nel caso particolare $m_1 = m_2$, le velocità iniziali e finali risultano scambiate ($v_{1,fin}=v_{2,in}$, $v_{2,fin}=v_{1,in}$); se invece $m_2 \gg m_1$ e $v_{2,in}=0$, si ritrova $v_{1,fin}\approx -v_{1,in}$ (rimbalzo contro una parete fissa) e $v_{2,fin}\approx 0$.
 
+:::image{src="assets/e55426ce-velocita-finali-urto-elastico-vs-rapporto-masse.svg" alt="Grafico di v1 finale su v1 iniziale e v2 finale su v1 iniziale in funzione di m2 su m1" caption="Fig. 7.7 — Velocità finali dell'urto elastico unidimensionale, con v2,in = 0, in funzione del rapporto delle masse m2/m1: per m1 = m2 le velocità si scambiano, per m2 molto maggiore di m1 il corpo 1 rimbalza con velocità opposta a quella iniziale."}
+:::
+
 Quando i due corpi, invece di separarsi completamente dopo l'urto o restare attaccati, si separano parzialmente dissipando solo una frazione dell'energia cinetica, si introduce il **coefficiente di restituzione** $e$, definito nel sistema di riferimento del centro di massa come il rapporto (cambiato di segno) tra quantità di moto (o velocità) finale e iniziale di ciascun punto rispetto al CM:
 
 :::formula{id="7.26" label="Coefficiente di restituzione"}
@@ -642,6 +660,9 @@ $$\frac{\Delta E_k'}{E_k'^{,in}} = e^2 - 1$$
 :::
 
 Per $e=1$ l'energia cinetica si conserva integralmente e si ritrova l'urto elastico; per $e=0$ si ha $v_{1,fin}'=v_{2,fin}'=0$ (nessuna velocità relativa residua rispetto al CM), ossia l'urto completamente anelastico, in cui tutta l'energia cinetica $E_k'$ calcolata nel riferimento del CM viene dissipata. Valori intermedi $0<e<1$ descrivono gli urti anelastici reali, in cui i corpi si separano ma con una velocità relativa inferiore a quella d'impatto.
+
+:::image{src="assets/e55426ce-energia-dissipata-vs-coefficiente-restituzione.svg" alt="Grafico di (E_k' finale meno E_k' iniziale) su E_k' iniziale uguale a e al quadrato meno uno, per e tra 0 e 1" caption="Fig. 7.8 — Variazione relativa di energia cinetica nel riferimento del centro di massa in funzione del coefficiente di restituzione e: per e=1 l'energia si conserva (urto elastico), per e=0 si dissipa tutta E_k' (urto completamente anelastico)."}
+:::
 
 ### Urti obliqui
 
@@ -672,6 +693,9 @@ Numericamente
 $$v_{1,fin} = 6,0\text{ m/s}\cdot\cos 30° \approx 5,2\text{ m/s} \qquad v_{2,fin} = 6,0\text{ m/s}\cdot\sin 30° = 3,0\text{ m/s} \qquad \theta_2 = 60°$$
 
 Verifica della quantità di moto lungo $x$: $v_{1,fin}\cos 30° + v_{2,fin}\cos 60° \approx 4,5+1,5 = 6,0$ m/s, pari a $v_0$. Verifica dell'energia: $v_{1,fin}^2+v_{2,fin}^2 \approx 27+9 = 36\text{ m}^2/\text{s}^2 = v_0^2$. In questo caso particolare di masse uguali, le due velocità finali risultano sempre perpendicolari tra loro ($\theta_1+\theta_2=90°$), una proprietà caratteristica dell'urto elastico tra masse identiche con una inizialmente ferma.
+
+:::image{src="assets/e55426ce-traiettorie-urto-obliquo-elastico.svg" alt="Due semirette dall'origine, una a 30 gradi sopra l'asse x e una a 60 gradi sotto, perpendicolari tra loro" caption="Fig. 7.9 — Direzioni delle due sfere identiche dopo l'urto elastico obliquo dell'esempio: la prima si muove a θ1 = 30° dall'asse x, la seconda a θ2 = 60° dalla parte opposta; le due traiettorie risultano perpendicolari tra loro."}
+:::
 
 **Esempio 7.5.** Due automobili identiche, ciascuna di massa $m = 1,0\cdot 10^3$ kg, si scontrano a un incrocio: la prima viaggia lungo $x$ con velocità $v_{1,in}=15$ m/s, la seconda lungo $y$ con velocità $v_{2,in}=10$ m/s; dopo l'urto, che è completamente anelastico, le due vetture restano incastrate e si muovono insieme. Calcoliamo il modulo e la direzione della velocità finale.
 

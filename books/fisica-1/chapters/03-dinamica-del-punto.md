@@ -219,6 +219,9 @@ Soluzione letterale (primo modo, integrazione diretta). L'elongazione massima si
 
 $$J = \int_0^{t_{max}} F_{el}(t)\,dt = -\int_0^{\pi/(2\omega)} m v_0 \omega \sin(\omega t)\,dt = m v_0 \cos(\omega t)\Big|_0^{\pi/(2\omega)} = m v_0 (0 - 1) = -m v_0.$$
 
+:::image{src="assets/7b42e0ee-impulso-forza-elastica.svg" alt="Grafico della forza elastica in funzione del tempo, da zero a t_max, con area sottesa negativa" caption="Fig. 3.3 — Forza elastica F_el(t) nell'esempio svolto, da t=0 a t_max=π/20 s: l'area sotto la curva, negativa, è l'impulso J = −5 kg·m/s"}
+:::
+
 Soluzione letterale (secondo modo, teorema dell'impulso). In alternativa, applicando {{formula:3.7}},
 
 $$J = p(t_{max}) - p(0) = m v(t_{max}) - m v_0 = 0 - m v_0 = -m v_0,$$
@@ -240,6 +243,9 @@ dove $u_{rel}$ è la velocità orizzontale della sabbia che fuoriesce, relativa 
 $$v(t) = v_0 \quad \text{per ogni } t.$$
 
 La velocità orizzontale del sacco non cambia nel tempo: ogni granello di sabbia, sia quello ancora contenuto nel sacco sia quello già fuoriuscito, conserva la velocità orizzontale $v_0$ che aveva al lancio, perché su nessuno di essi agisce mai una forza orizzontale. La quantità di moto del sacco residuo, $m(t)v_0 = (m_0-ct)v_0$, diminuisce nel tempo non perché il sacco acceleri, ma perché la sua massa diminuisce: la quantità di moto mancante è esattamente quella portata via dalla sabbia già fuoriuscita, che continua a muoversi con la stessa velocità $v_0$. La relazione $m(t)v(t)=m_0v_0$, talvolta proposta per questo problema, è errata perché identifica $m_0v_0$ con la quantità di moto del solo sacco residuo, mentre $m_0v_0$ è la quantità di moto dell'intero sistema chiuso, sacco più sabbia fuoriuscita, che resta costante proprio perché nessuna delle due parti accelera.
+
+:::image{src="assets/7b42e0ee-sacco-forato-velocita-quantita-moto.svg" alt="Grafico qualitativo con una retta orizzontale per la velocità costante e una retta decrescente per la quantità di moto del sacco residuo" caption="Fig. 3.4 — Andamento qualitativo, nel tempo, della velocità orizzontale v(t) del sacco forato, costante, e della sua quantità di moto p(t)=m(t)v0, che diminuisce perché diminuisce la massa"}
+:::
 
 **Errore tipico 3.4**. Un errore frequente consiste nell'applicare $\vec{F} = m\vec{a}$ a sistemi a massa variabile trattando $m$ come costante all'interno della derivata, oppure nel dimenticare che il teorema dell'impulso fornisce la variazione complessiva di $\vec{p}$ su un intervallo e non il valore della forza in un istante particolare. È altrettanto sbagliato confondere la conservazione della quantità di moto con la conservazione dell'energia meccanica durante un urto: la prima vale (per il sistema isolato) anche quando l'urto è anelastico, mentre la seconda in generale non vale. Infine, come per ogni relazione vettoriale, va evitato di scrivere uguaglianze fra una grandezza vettoriale e una scalare, per esempio confondendo il modulo dell'impulso con una delle sue componenti senza dichiarare gli assi; un controllo dimensionale e vettoriale dei passaggi intermedi permette di individuare questi errori prima di arrivare al risultato numerico.
 
@@ -308,6 +314,9 @@ $$|P_\parallel| = |f_s| \le |f_s^{\max}| = \mu_s\, mg\cos\theta$$
 :::
 
 Da qui segue che il corpo resta in quiete per ogni angolo $\theta$ compreso tra $0$ e un angolo limite $\theta_s$, detto angolo di aderenza, tale che $\tan\theta_s = \mu_s$; oltre questo angolo il corpo non può più restare fermo.
+
+:::image{src="assets/f88aee69-angolo-aderenza-piano-inclinato.svg" alt="Grafico di sin(theta) e di 0,40 cos(theta) in funzione dell'angolo theta da 0 a 90 gradi, con intersezione all'angolo di aderenza" caption="Fig. 3.5 — Componente del peso lungo il piano (da bilanciare con l'attrito) e attrito massimo disponibile, in funzione dell'angolo di inclinazione, per μs = 0,40: le due curve si incontrano all'angolo di aderenza θs, dove tan θs = μs"}
+:::
 
 **Esempio 3.3.** Un blocco di massa $m = 2,0$ kg è appoggiato su un piano inclinato di $\theta = 30^\circ$ rispetto all'orizzontale, con coefficiente di attrito statico $\mu_s = 0,40$. Si vuole stabilire se il blocco resta in equilibrio e, in caso affermativo, calcolare la reazione normale e la forza di attrito statico necessarie.
 
@@ -419,6 +428,9 @@ Dalla prima equazione, $T = m_1(g-a) = 2{,}0\ \mathrm{kg} \cdot (9{,}81 - 0{,}70
 
 Il passaggio dall'aderenza allo scorrimento può essere riassunto osservando l'andamento dell'attrito in funzione della forza applicata: finché il corpo è in quiete, l'attrito statico cresce di pari passo con la forza applicata, in modo da equilibrarla esattamente, fino a raggiungere il suo valore massimo $\mu_s N$. Superata questa soglia il corpo comincia a scivolare e l'attrito cambia natura, assestandosi al valore costante dell'attrito dinamico $\mu_d N$, inferiore al massimo valore statico poiché $\mu_d < \mu_s$.
 
+:::image{src="assets/ed85a843-attrito-statico-dinamico-vs-forza.svg" alt="Grafico della forza di attrito in funzione della forza applicata: retta a 45 gradi fino al valore massimo mu_s N, poi salto a un livello costante inferiore mu_d N" caption="Fig. 3.6 — Forza di attrito in funzione della forza applicata: nella fase di aderenza l'attrito statico cresce insieme alla forza applicata fino al valore massimo μsN, poi scivola e si assesta al valore costante dell'attrito dinamico μdN, inferiore al massimo statico."}
+:::
+
 ### Attrito viscoso
 
 **Definizione 3.9** (forza di attrito viscoso). Quando un corpo si muove all'interno di un fluido, oltre alle eventuali forze di attrito radente compare una forza di attrito viscoso $\vec{F}_v$, parallela alla velocità del corpo ma di verso opposto, con intensità proporzionale al modulo della velocità:
@@ -487,7 +499,7 @@ $$
 
 Controllo: le unità (m/s)/(s⁻¹) = m sono corrette, e il risultato, inferiore alla distanza $v_0 \tau \approx 0{,}67$ m che la particella percorrerebbe se mantenesse per sempre la velocità iniziale per un tempo $\tau$, è plausibile poiché il moto è frenato.
 
-:::image{src="assets/ed85a843-velocita-decadimento-viscoso.svg" alt="Grafico della velocità v(t) = v0 exp(-gamma t) che decade esponenzialmente verso zero" caption="Fig. 3.3 — Decadimento esponenziale della velocità per una particella che entra in una regione viscosa, con v0 = 2 m/s e gamma = 3 s^-1."}
+:::image{src="assets/ed85a843-velocita-decadimento-viscoso.svg" alt="Grafico della velocità v(t) = v0 exp(-gamma t) che decade esponenzialmente verso zero" caption="Fig. 3.7 — Decadimento esponenziale della velocità per una particella che entra in una regione viscosa, con v0 = 2 m/s e gamma = 3 s^-1."}
 :::
 
 **Errore tipico 3.8.** Applicare al moto viscoso le formule del moto uniformemente accelerato (ad esempio $v = v_0 - a t$) è sbagliato, perché l'accelerazione $a = -\lambda v$ non è costante ma dipende dalla velocità istantanea: l'equazione del moto va risolta per separazione di variabili, come mostrato sopra, e non con le leggi del moto rettilineo uniformemente accelerato richiamate in [Moto rettilineo](ref:chapter/2#p2).
@@ -538,7 +550,7 @@ $$\omega = \sqrt{\frac{k}{m}}, \qquad T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{
 
 Le costanti $A,\varphi$ (o $C,D$) si fissano come sempre dalle condizioni iniziali $x_0 = x(0)$, $v_0 = \dot{x}(0)$, secondo [formula (2.22)](ref:formula/2.22).
 
-:::image{src="assets/b01ae562-molla-moto-armonico.svg" alt="Grafico sinusoidale di x(t)/A in funzione di t, un periodo completo" caption="Fig. 3.4 — Andamento nel tempo dell'elongazione di una massa attaccata a una molla, a partire da x(0)=0 con velocità iniziale massima"}
+:::image{src="assets/b01ae562-molla-moto-armonico.svg" alt="Grafico sinusoidale di x(t)/A in funzione di t, un periodo completo" caption="Fig. 3.8 — Andamento nel tempo dell'elongazione di una massa attaccata a una molla, a partire da x(0)=0 con velocità iniziale massima"}
 :::
 
 È utile ricordare la relazione di fase tra posizione, velocità e accelerazione nel moto armonico, già vista in generale: nel punto di massimo allungamento (o massima compressione) la velocità è nulla e l'accelerazione, quindi anche la forza elastica, è massima in modulo, perché $|F_{el}|=k|x|$ è massima quando $|x|$ è massima. Viceversa, nel punto di equilibrio ($x=0$) l'accelerazione e la forza elastica sono nulle, mentre la velocità è massima in modulo.
@@ -598,6 +610,9 @@ $$k_{eff} = k_1 + k_2$$
 :::
 
 A differenza del caso in serie, in parallelo è la molla più rigida a dominare il comportamento, poiché $k_{eff} \ge \max(k_1,k_2)$.
+
+:::image{src="assets/b01ae562-molle-serie-parallelo-keff.svg" alt="Due curve di k_eff(k2) con k1=100 N/m fisso: la curva serie k1k2/(k1+k2) cresce da 0 verso l'asintoto orizzontale k_eff=100, la curva parallelo k1+k2 cresce linearmente da 100" caption="Fig. 3.9 — Costante elastica equivalente in funzione di k₂, per k₁ = 100 N/m fissato: in serie k_eff resta sempre minore della più piccola delle due costanti, in parallelo resta sempre maggiore della più grande"}
+:::
 
 **Errore tipico 3.9.** Uno sbaglio frequente è applicare alle molle le stesse regole di composizione delle resistenze elettriche senza verificarle: la formula di somma degli inversi vale per la serie delle molle e non per il parallelo, esattamente l'opposto di quanto succede per resistori (dove la somma diretta vale per la serie). Conviene sempre ridimostrare la relazione a partire dall'equilibrio nei punti di giunzione, come fatto sopra, piuttosto che applicare meccanicamente una formula mnemonica.
 
@@ -705,6 +720,9 @@ $$
 
 La tensione è massima quando il pendolo passa per la posizione di riposo ($\theta = 0$) ed è minima nei punti di inversione ($\theta = \theta_0$), dove vale $T_f = mg\cos\theta_0$. Il filo resta teso solo dove $T_f(\theta) \geq 0$. La tensione non compie lavoro, perché in ogni istante è ortogonale allo spostamento ($\vec{T}\cdot d\vec{r} = 0$); questa proprietà permette di applicare la conservazione dell'energia meccanica al pendolo.
 
+:::image{src="assets/d8b25800-tensione-filo-pendolo-angolo.svg" alt="Grafico della tensione del filo del pendolo T_f/(mg) in funzione dell'angolo θ, parabola rovesciata con massimo a θ=0" caption="Fig. 3.10 — Tensione del filo T_f in funzione dell'angolo θ per un pendolo rilasciato da fermo a θ₀ = 60°: massima al passaggio per la verticale (θ = 0), minima e positiva nei punti di inversione (θ = ±θ₀)"}
+:::
+
 ### Esempio svolto: reazione vincolare in una guida circolare verticale
 
 **Dati**: un punto materiale di massa $m = 200$ kg entra con velocità $v_A = 20$ m/s in una guida circolare verticale liscia di raggio $R = 5$ m. Il punto percorre il lato interno di una guida unilaterale, che può spingerlo verso il centro ma non trattenerlo quando perde il contatto. Il punto $A$ è il più basso della guida, $B$ è al livello del centro (quota $R$) e $C$ è il punto più alto (quota $2R$), con angolo $\theta$ misurato dal centro rispetto all'orizzontale: $\theta_A = -\pi/2$, $\theta_B = 0$, $\theta_C = \pi/2$. Si vuole la reazione normale $N$ nei tre punti.
@@ -728,6 +746,9 @@ $$
 - in $A$: $N_A = m\left(\dfrac{v_A^2}{R} + g\right) = 200\left(\dfrac{400}{5} + 9{,}81\right) \approx 17\,962$ N;
 - in $B$: $N_B = m\dfrac{v_B^2}{R} = 200\cdot\dfrac{(17{,}38)^2}{5} \approx 12\,083$ N;
 - in $C$: $N_C = m\left(\dfrac{v_C^2}{R} - g\right) = 200\left(\dfrac{(14{,}28)^2}{5} - 9{,}81\right) \approx 6\,195$ N.
+
+:::image{src="assets/d8b25800-reazione-normale-guida-circolare-angolo.svg" alt="Grafico della reazione normale N in funzione dell'angolo θ per una guida circolare verticale, con tre punti evidenziati corrispondenti ad A, B e C" caption="Fig. 3.11 — Reazione normale N della guida circolare verticale in funzione dell'angolo θ, con i valori calcolati nei punti A (θ = −π/2), B (θ = 0) e C (θ = π/2): la reazione decresce man mano che il punto sale"}
+:::
 
 **Controllo**: le tre reazioni sono tutte positive e decrescenti man mano che il punto sale, come atteso fisicamente (la guida spinge sempre verso l'interno).
 

@@ -126,9 +126,12 @@ Esistono inoltre due scale di uso anglosassone, utili a riconoscere le conversio
 $$T(^\circ\text{R}) = \frac{9}{5}T(\text{K}), \qquad T(^\circ\text{F}) = \frac{9}{5}T(\text{K}) - 459,67 = \frac{9}{5}t(^\circ\text{C}) + 32$$
 :::
 
+:::image{src="assets/404bc269-scala-fahrenheit-celsius.svg" alt="Retta che mette in corrispondenza la temperatura in Fahrenheit e in Celsius, con intersezione a -40" caption="Fig. 12.1 — Relazione lineare tra temperatura Fahrenheit e Celsius: la pendenza è 9/5, non 1 come tra Kelvin e Celsius, e le due scale coincidono a −40°"}
+:::
+
 La scala Rankine è l'analoga assoluta della Fahrenheit, così come il Kelvin lo è della Celsius: anche in questo caso le due scale differiscono solo per l'origine, non per l'ampiezza del grado (un grado Fahrenheit è $5/9$ di un kelvin).
 
-:::image{src="assets/404bc269-scale-celsius-kelvin.svg" alt="Retta che mette in corrispondenza la temperatura in Celsius e in Kelvin" caption="Fig. 12.1 — Relazione lineare tra temperatura Celsius e temperatura Kelvin: stessa pendenza, origine spostata di 273,15 K"}
+:::image{src="assets/404bc269-scale-celsius-kelvin.svg" alt="Retta che mette in corrispondenza la temperatura in Celsius e in Kelvin" caption="Fig. 12.2 — Relazione lineare tra temperatura Celsius e temperatura Kelvin: stessa pendenza, origine spostata di 273,15 K"}
 :::
 
 **Errore tipico 12.2**. Confondere l'ampiezza del grado con l'origine della scala: scrivere $T(\text{K}) = 273,15 \cdot t(^\circ\text{C})$ (moltiplicazione invece di somma) è dimensionalmente scorretto e numericamente assurdo per $t = 0\ ^\circ\text{C}$. La conversione Celsius-Kelvin è sempre una traslazione additiva, non un riscalamento.
@@ -230,7 +233,7 @@ Nel piano di Clapeyron, con assi $(V,p)$ come convenuto per tutto il libro, il l
 - in una trasformazione isocora ($\Delta V = 0$) è nullo il solo lavoro di espansione $\delta W = p\,dV$, cioè $\int p\,dV = 0$; il lavoro complessivamente scambiato dal sistema può comunque essere diverso da zero se sono presenti altre forme di lavoro, come il lavoro elettrico o quello trasmesso da un agitatore, già incontrate negli esperimenti di Joule;
 - in un ciclo reversibile, il lavoro è dato dall'area racchiusa dal ciclo nel piano $(V,p)$: positivo se il ciclo è percorso in senso orario, negativo se percorso in senso antiorario.
 
-:::image{src="assets/950f301a-lavoro-pdv-isoterma.svg" alt="Area sotto una curva isoterma nel piano V,p" caption="Fig. 12.2 — Il lavoro di una trasformazione reversibile è l'area compresa fra la curva p(V) e l'asse dei volumi"}
+:::image{src="assets/950f301a-lavoro-pdv-isoterma.svg" alt="Area sotto una curva isoterma nel piano V,p" caption="Fig. 12.3 — Il lavoro di una trasformazione reversibile è l'area compresa fra la curva p(V) e l'asse dei volumi"}
 :::
 
 **Esempio svolto 12.1**
@@ -339,6 +342,9 @@ A quel punto l'acqua originaria si trova ancora a una temperatura $T^*>T_0$, cal
 
 $$T_f = \frac{m_{gh}T_0+m_aT^*}{m_{gh}+m_a} \approx 278{,}3\ \text{K} \;(\approx 5{,}2\ ^\circ\text{C}).$$
 
+:::image{src="assets/e164df6b-bilancio-termico-ghiaccio-acqua.svg" alt="Temperatura del ghiaccio e dell'acqua in funzione del calore scambiato, con le due curve che si incontrano alla temperatura di equilibrio" caption="Fig. 12.4 — Bilancio termico dell'esempio con cambiamento di fase: il ghiaccio (curva crescente) si scalda da −15 °C a 0 °C, fonde a temperatura costante, poi si scalda come acqua, mentre l'acqua iniziale a 60 °C si raffredda cedendo calore (curva decrescente); le due curve si incontrano alla temperatura di equilibrio T_f ≈ 5,2 °C."}
+:::
+
 Questo esempio mostra il metodo generale per i bilanci con cambiamento di fase: si verifica prima se la transizione si completa (confrontando il calore richiesto con quello disponibile), e solo poi si scrive il bilancio termico finale usando per ciascuna sostanza il calore specifico della fase in cui effettivamente si trova.
 
 **Errore tipico 12.6**
@@ -384,6 +390,9 @@ $$\alpha = \frac{1}{V}\frac{\Delta V}{\Delta T}, \qquad \Delta V = V\alpha \Delt
 Per un corpo isotropo si ha $\alpha = 3\lambda$, indipendentemente dalla forma dell'oggetto; analogamente, per una lastra piana isotropa il coefficiente di dilatazione superficiale vale $2\lambda$.
 
 Poiché la massa del corpo non cambia con la temperatura, all'aumentare del volume la densità diminuisce. Un'eccezione notevole è l'acqua tra $0\ \mathrm{^\circ C}$ e $4\ \mathrm{^\circ C}$, dove il coefficiente di dilatazione cubica è negativo: il volume diminuisce all'aumentare di $T$, cioè la densità aumenta, raggiungendo il massimo a $4\ \mathrm{^\circ C}$.
+
+:::image{src="assets/31f210d5-dilatazione-anomala-acqua.svg" alt="Grafico della densità dell'acqua in funzione della temperatura, con un massimo a 4 gradi Celsius" caption="Fig. 12.5 — Densità dell'acqua in funzione della temperatura tra 0 °C e 10 °C: il massimo si ha a 4 °C, dove il coefficiente di dilatazione cubica cambia segno."}
+:::
 
 ### Dilatazione nei gas: legge isobara
 
@@ -447,7 +456,7 @@ $$T(x) = T_1 - \frac{1}{kA}\frac{\delta Q}{dt}\,x$$
 
 valido per una parete piana omogenea in condizioni stazionarie, con $k$ costante.
 
-:::image{src="assets/0dc82005-profilo-temperatura-parete.svg" alt="Temperatura decrescente linearmente attraverso una parete piana" caption="Fig. 12.3 — Profilo stazionario di temperatura T(x) in una parete piana soggetta a conduzione, con pendenza costante proporzionale al flusso di calore"}
+:::image{src="assets/0dc82005-profilo-temperatura-parete.svg" alt="Temperatura decrescente linearmente attraverso una parete piana" caption="Fig. 12.6 — Profilo stazionario di temperatura T(x) in una parete piana soggetta a conduzione, con pendenza costante proporzionale al flusso di calore"}
 :::
 
 ### Convezione
@@ -474,6 +483,9 @@ $$\epsilon = \sigma e T^4$$
 
 dove $\sigma = 5{,}67\times10^{-8}\ \mathrm{W/(m^2\cdot K^4)}$ è la costante di Stefan-Boltzmann e $0 \le e \le 1$ è l'emissività del corpo, che dipende dalla natura della superficie. La potenza totale irraggiata da un corpo di superficie $S$ si ottiene moltiplicando $\epsilon$ per $S$, cioè $P_{irr} = \sigma e S T^4$. Ad esempio, un corpo con $e = 0{,}90$, $S = 1{,}0\ \mathrm{m^2}$ e $T = 300\ \mathrm{K}$ irraggia $P_{irr} = 5{,}67\times10^{-8}\times0{,}90\times1{,}0\times300^4 \approx 413\ \mathrm{W}$.
 
+:::image{src="assets/0dc82005-potere-emissivo-stefan-boltzmann.svg" alt="Curva del potere emissivo che cresce come la quarta potenza della temperatura assoluta" caption="Fig. 12.7 — Potere emissivo ε = σeT⁴ in funzione della temperatura assoluta T, per e = 0,90: la crescita è fortemente non lineare, alla quarta potenza"}
+:::
+
 Questa espressione dà soltanto la potenza emessa dal corpo, non lo scambio netto con l'ambiente circostante, che a sua volta irraggia verso il corpo. Se il corpo a temperatura $T$ è interamente circondato da un ambiente a temperatura uniforme $T_0$, che si comporta come una superficie molto più estesa del corpo e capace di assorbire e riemettere come un corpo nero, il corpo assorbe dall'ambiente una potenza pari a $\sigma e S T_0^4$. Lo scambio netto di potenza per irraggiamento è allora la differenza fra potenza emessa e potenza assorbita
 
 :::formula{id="12.24" label="Potenza netta scambiata per irraggiamento"}
@@ -483,6 +495,9 @@ $$P_{netta} = \sigma e S \left(T^4 - T_0^4\right)$$
 se $T > T_0$ il corpo cede calore netto all'ambiente, mentre se $T < T_0$ ne assorbe, in accordo con il verso naturale della trasmissione del calore dal corpo più caldo verso quello più freddo.
 
 Poiché la dipendenza dalla temperatura è alla quarta potenza, l'irraggiamento diventa il meccanismo dominante alle alte temperature, mentre a basse temperature resta spesso trascurabile rispetto a conduzione e convezione: è questo il principio su cui si basa il vaso Dewar, un contenitore a doppia parete argentata sotto vuoto, che elimina conduzione e convezione nell'intercapedine lasciando solo una piccola componente di irraggiamento.
+
+:::image{src="assets/0dc82005-vaso-dewar.png" alt="Vaso Dewar a doppia parete in sezione, con intercapedine sotto vuoto e superficie argentata" caption="Fig. 12.8 — Un vaso Dewar a doppia parete argentata sotto vuoto: l'intercapedine priva d'aria elimina conduzione e convezione, lasciando solo una piccola componente di irraggiamento. Immagine: B. Burger 1907 / Wikimedia Commons, Public domain"}
+:::
 
 ### Esempio svolto
 

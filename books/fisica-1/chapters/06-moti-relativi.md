@@ -35,6 +35,9 @@ Si scelgono gli assi con $x$ lungo la corrente e $y$ lungo la direzione di attra
 
 $$\frac{dy}{dt} = v_y = \text{costante}, \qquad \frac{dx}{dt} = v(y) = \lambda y(L-y),$$
 
+:::image{src="assets/77388cff-profilo-velocita-corrente-fiume.svg" alt="Grafico a campana della velocità della corrente in funzione della distanza dalla sponda di partenza" caption="Fig. 6.1 — Velocità di trascinamento della corrente v(y) = λy(L−y) lungo la larghezza del fiume: nulla alle due sponde, massima a metà"}
+:::
+
 ottenute applicando la composizione delle velocità $\vec{v} = \vec{v}\,' + \vec{v}_{\text{corrente}}$: la componente $y$ è interamente dovuta al nuoto (velocità relativa), la componente $x$ è interamente dovuta al trascinamento della corrente. Integrando la prima equazione si ha $y(t)=v_y t$, da cui $dt = dy/v_y$; sostituendo nella seconda e separando le variabili,
 
 $$x_B = \int_0^{L} \frac{\lambda y(L-y)}{v_y}\,dy = \frac{\lambda}{v_y}\left(\frac{L^3}{2}-\frac{L^3}{3}\right) = \frac{\lambda L^3}{6 v_y}.$$
@@ -44,6 +47,9 @@ Numericamente,
 $$x_B = \frac{5{,}0\cdot10^{-3}\ \text{m}^{-1}\text{s}^{-1}\cdot (20\ \text{m})^3}{6\cdot 1{,}0\ \text{m/s}} \approx 6{,}7\ \text{m},$$
 
 mentre $y_B = L = 20\ \text{m}$. Il controllo dimensionale è immediato: $\lbrack \lambda\rbrack \lbrack L^3\rbrack /\lbrack v\rbrack  = (\text{m}^{-1}\text{s}^{-1})(\text{m}^3)/(\text{m/s}) = \text{m}$, coerente con una lunghezza; l'ordine di grandezza (pochi metri su una larghezza di 20 m) è ragionevole per una corrente debole.
+
+:::image{src="assets/77388cff-traiettoria-nuotatore-fiume.svg" alt="Curva della posizione x in funzione di y per il nuotatore che attraversa il fiume" caption="Fig. 6.2 — Traiettoria del nuotatore nel piano xy: la deriva x(y) dovuta alla corrente, da A (y=0) a B (y=L=20 m, x_B ≈ 6,7 m)"}
+:::
 
 **Errore tipico 6.1** è applicare le trasformazioni di Galileo anche quando gli assi mobili ruotano, dimenticando i termini aggiuntivi legati a $\vec{\omega}$ che vengono introdotti nella sottosezione seguente; un altro errore frequente è confondere la velocità di trascinamento (quella dell'origine o del punto del riferimento mobile coincidente con $P$) con la velocità relativa del corpo rispetto al mezzo.
 
@@ -177,6 +183,9 @@ $$N - mg - ma_0 = 0 \quad\Rightarrow\quad N = m(g+a_0),$$
 
 in perfetto accordo con il calcolo precedente. Il valore $N$ misurato dalla bilancia è il "peso apparente": maggiore di $mg$ quando l'ascensore accelera verso l'alto, minore quando accelera verso il basso, nullo nella caduta libera ($a_0 = -g$). Il controllo dimensionale è immediato: $\lbrack m\rbrack \lbrack g+a_0\rbrack  = \text{kg}\cdot\text{m/s}^2 = \text{N}$.
 
+:::image{src="assets/79009b55-peso-apparente-ascensore.svg" alt="Retta N/(mg) = 1 + a0/g con punti evidenziati in a0 = 0 e a0 = -g" caption="Fig. 6.3 — Peso apparente N misurato dalla bilancia, in rapporto a mg, in funzione dell'accelerazione dell'ascensore a0 in rapporto a g: N cresce se l'ascensore accelera verso l'alto e si annulla in caduta libera (a0 = -g)."}
+:::
+
 ### Esempio: pendolo in un vagone accelerato
 
 Un pendolo semplice di lunghezza $l = 0,4\ \text{m}$ è appeso al soffitto di un vagone che avanza con accelerazione orizzontale $A = 5\ \text{m/s}^2$.
@@ -196,6 +205,9 @@ $$T\sin\theta = mA, \qquad T\cos\theta = mg \quad\Rightarrow\quad \tan\theta = \
 .
 
 **Numeri**: $\theta = \arctan(5/9{,}81) = 0{,}47\ \text{rad} \approx 27°$.
+
+:::image{src="assets/79009b55-angolo-pendolo-vagone.svg" alt="Curva crescente θ(A) = arcotangente di A su g, convertita in gradi, con il punto A=5, θ=27" caption="Fig. 6.4 — Angolo di equilibrio θ del pendolo nel vagone accelerato in funzione dell'accelerazione orizzontale A, secondo tanθ = A/g: per A = 5 m/s² si ritrova il valore θ ≈ 27° calcolato nell'esempio."}
+:::
 
 Il pendolo si assesta dunque in una posizione obliqua, come se fosse soggetto a una gravità efficace $\vec{g}_{\text{eff}} = \vec{g} - \vec{A}$, somma vettoriale della gravità reale e della forza apparente per unità di massa, di modulo $g_{\text{eff}} = \sqrt{g^2+A^2}$. Le piccole oscillazioni attorno a questa posizione obliqua sono ancora armoniche, con periodo
 
@@ -251,12 +263,12 @@ $$\vec{g}_{\text{eff}} = \vec{g}_0 - \vec{a}_{O'} = \vec{g}_0 - \vec{\omega}\tim
 
 Il contributo centrifugo è massimo all'equatore ($\phi = 0$, dove vale circa $\omega^2 R_T \approx 0,034\ \text{m/s}^2$, meno dello $0,4\%$ di $g$) e nullo ai poli ($\phi = \pm 90°$), dove l'asse di rotazione passa per il punto di osservazione. Per questo motivo il modulo della gravità efficace è leggermente minore all'equatore che ai poli, e la sua direzione non coincide esattamente con quella verso il centro della Terra, ma è leggermente deviata verso l'equatore. La forza esercitata dal sostegno sul corpo, misurata da una bilancia o da un dinamometro, ha verso opposto a $\vec{g}_{\text{eff}}$; la deviazione della gravità efficace è nulla esattamente ai poli e all'equatore, dove per simmetria il termine centrifugo è parallelo (o nullo rispetto) a $\vec{g}_0$.
 
-:::image{src="assets/d33fbe37-riduzione-peso-latitudine.svg" alt="Riduzione relativa della gravità efficace in funzione della latitudine" caption="Fig. 6.1 — Andamento qualitativo del termine centrifugo relativo in funzione della latitudine"}
+:::image{src="assets/d33fbe37-riduzione-peso-latitudine.svg" alt="Riduzione relativa della gravità efficace in funzione della latitudine" caption="Fig. 6.5 — Andamento qualitativo del termine centrifugo relativo in funzione della latitudine"}
 :::
 
 ### Deviazione dei gravi verso est
 
-Il secondo effetto, più sottile, è dovuto all'accelerazione di Coriolis $\vec{a}_C = 2\vec{\omega}\times\vec{v}'$, che compare quando $\vec{v}'$ ha una componente perpendicolare a $\vec{\omega}$. Si introduce in O' una terna locale destrorsa formata da un asse verticale $\hat{u}_z'$ (radiale uscente, lungo la verticale locale), un asse $\hat{u}_y'$ orientato verso nord (orizzontale, nel piano meridiano) e un asse $\hat{u}_x'$ orientato verso est (orizzontale, tangente al parallelo). In questa terna la velocità angolare terrestre, che è parallela all'asse di rotazione, si proietta come $\vec{\omega} = \omega\cos\phi\,\hat{u}_y' + \omega\sin\phi\,\hat{u}_z'$, priva di componente lungo est. Il simbolo $\vec{g}$ che compare nella formula seguente indica l'accelerazione di gravità efficace $\vec{g}_{\text{eff}}$ già introdotta, che tiene conto della correzione centrifuga valutata in O'. Per un corpo che cade verticalmente (quindi con $\vec{v}\,'$ diretta lungo $-\hat{u}_z'$, inizialmente senza componente verso est) con velocità relativa di modulo $v'$, l'accelerazione misurata sulla Terra si scrive, trascurando l'ulteriore e piccolissima correzione centrifuga dovuta allo spostamento del corpo rispetto a O' durante la caduta,
+Il secondo effetto, più sottile, è dovuto all’accelerazione di Coriolis $\vec{a}_{Co} = 2\vec{\omega}\times\vec{v}'$, che compare quando $\vec{v}'$ ha una componente perpendicolare a $\vec{\omega}$. Si introduce in O' una terna locale destrorsa formata da un asse verticale $\hat{u}_z'$ (approssimato con la direzione radiale uscente), un asse $\hat{u}_y'$ orientato verso nord (orizzontale, nel piano meridiano) e un asse $\hat{u}_x'$ orientato verso est (orizzontale, tangente al parallelo). In questa terna la velocità angolare terrestre, che è parallela all'asse di rotazione, si proietta come $\vec{\omega} = \omega\cos\phi\,\hat{u}_y' + \omega\sin\phi\,\hat{u}_z'$, priva di componente lungo est. Il simbolo $\vec{g}$ che compare nella formula seguente indica l'accelerazione di gravità efficace $\vec{g}_{\text{eff}}$ già introdotta, che tiene conto della correzione centrifuga valutata in O'. Per un corpo che cade verticalmente (quindi con $\vec{v}\,'$ diretta lungo $-\hat{u}_z'$, inizialmente senza componente verso est) con velocità relativa di modulo $v'$, l'accelerazione misurata sulla Terra si scrive, trascurando l'ulteriore e piccolissima correzione centrifuga dovuta allo spostamento del corpo rispetto a O' durante la caduta,
 
 $$\vec{a}' = \vec{g} + 2\omega v'\cos\phi\,\hat{u}_x'$$
 
@@ -279,6 +291,9 @@ $$x'(t^\ast) = \frac{1}{3}\omega\cos\phi\sqrt{\frac{8h^3}{g}}$$
 Per $h = 100\ \text{m}$ e $\phi = 45°$ si ha $t^\ast = \sqrt{2\cdot 100/9,81}\ \text{s} \approx 4,52\ \text{s}$ e
 
 $$x'(t^\ast) \approx \frac{1}{3}\cdot 7,29\cdot 10^{-5}\ \text{s}^{-1}\cdot \cos 45° \cdot \sqrt{\frac{8\cdot (100\ \text{m})^3}{9,81\ \text{m/s}^2}} \approx 1,6\ \text{cm}$$
+
+:::image{src="assets/d33fbe37-deviazione-est-caduta.svg" alt="Grafico della deviazione verso est in funzione del tempo durante una caduta libera di 100 metri a latitudine 45 gradi" caption="Fig. 6.6 — Deviazione verso est x'(t) durante la caduta libera dell'esempio (h = 100 m, φ = 45°): la crescita è cubica nel tempo e raggiunge circa 1,6 cm all'istante di impatto t* ≈ 4,52 s"}
+:::
 
 un effetto piccolissimo ma non nullo, coerente con l'ordine di grandezza di $\omega$: nessun esperimento di laboratorio ordinario lo rivela, ma esso è misurabile con strumenti di precisione ed è la stessa causa fisica della deviazione dei venti e delle correnti oceaniche su scala planetaria (effetto Coriolis). Il controllo dimensionale conferma $\lbrack \omega\rbrack \lbrack g\rbrack \lbrack t^3\rbrack  = \text{s}^{-1}\cdot\text{m/s}^2\cdot\text{s}^3 = \text{m}$, coerente con una lunghezza.
 
