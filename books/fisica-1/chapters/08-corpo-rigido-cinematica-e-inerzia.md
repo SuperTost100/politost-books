@@ -183,6 +183,9 @@ $$I = \frac{1}{2} M (R_1^2 + R_2^2)$$
 
 che per $R_1\to 0$ riproduce il disco pieno e per $R_1\to R_2$ riproduce l'anello sottile.
 
+:::image{src="assets/ac815346-momento-inerzia-cilindro-cavo-limiti.svg" alt="Grafico di I diviso M R2 al quadrato in funzione di R1/R2, crescente da 0,5 a 1" caption="Fig. 8.1 — Momento d'inerzia del cilindro cavo, in unità di M R₂², in funzione del rapporto R₁/R₂: per R₁→0 si ritrova il disco pieno (0,5), per R₁→R₂ l'anello sottile (1)."}
+:::
+
 **Sfera.** Per una sfera piena omogenea di massa $M$ e raggio $R$, scomponiamo il volume in dischi sottili perpendicolari a un diametro, che prendiamo come asse $z$, con $-R\le z\le R$. Il raggio del disco alla quota $z$ è dato dall'equazione della sfera, $r(z) = \sqrt{R^2-z^2}$, e la sua massa è $dm = \rho\, \pi\, r(z)^2\, dz$, con $\rho = \dfrac{M}{\frac{4}{3}\pi R^3}$. Ogni disco ruota attorno al proprio asse centrale, quindi contribuisce con $\frac12 r(z)^2\, dm$ (si veda il risultato del disco omogeneo sopra). Integrando su tutta la sfera:
 
 $$I = \int_{-R}^{R} \frac12 r(z)^2\, dm = \frac12 \rho\pi \int_{-R}^{R} \left(R^2-z^2\right)^2 dz = \frac12 \rho\pi \cdot \frac{16}{15}R^5 = \frac{2}{5} M R^2$$
@@ -318,6 +321,9 @@ Nel caso più generale di rototraslazione (il corpo non ruota attorno a un asse 
 
 **Schema e scelta del riferimento.** Il centro di massa del sistema coincide con il centro dell'asta e si muove solidalmente alla piattaforma con velocità $v_0$; nel riferimento del centro di massa i due punti compiono un moto circolare uniforme di raggio $R$ con velocità angolare $\omega$.
 
+:::image{src="assets/55a26821-konig-piattaforma-schema.svg" alt="Due masse agli estremi di un'asta che ruota attorno al suo centro, il quale trasla con velocità v0" caption="Fig. 8.2 — Configurazione del sistema nel riferimento del centro di massa: le due masse m, agli estremi dell'asta di lunghezza 2R = 0,40 m, ruotano con velocità angolare ω = 10 s⁻¹ attorno al centro; il centro di massa trasla rispetto al laboratorio con velocità v0 = 0,8 m/s."}
+:::
+
 **Equazioni.** Per il secondo teorema di König, [formula (7.19)](ref:formula/7.19),
 
 $$E_k = \frac{1}{2}Mv_{CM}^2 + E_k', \qquad M = 2m.$$
@@ -379,6 +385,9 @@ Questo risultato è notevole: permette di determinare geometricamente il momento
 ### Assi principali d'inerzia
 
 Nel caso generale l'ellissoide ha un diametro massimo e uno minimo, tra loro perpendicolari; questi due assi, insieme a un terzo perpendicolare a entrambi, si chiamano **assi dell'ellissoide**. Se si scelgono come assi $x,y,z$ solidali al corpo proprio questi tre assi, tutti i prodotti d'inerzia si annullano e l'equazione dell'ellissoide si riduce alla forma canonica
+
+:::image{src="assets/ecad1c9b-ellissoide-inerzia-sezione.svg" alt="Ellisse che rappresenta una sezione dell'ellissoide d'inerzia, con l'asse maggiore orizzontale e l'asse minore verticale, entrambi passanti per il centro O." caption="Fig. 8.3 — Sezione dell'ellissoide d'inerzia nel piano dei due assi di diametro estremo: il diametro massimo e quello minimo sono perpendicolari tra loro."}
+:::
 
 :::formula{id="8.18" label="Ellissoide d'inerzia rispetto agli assi principali"}
 $$I_x X^2 + I_y Y^2 + I_z Z^2 = 1 ,$$
@@ -532,6 +541,9 @@ Nei problemi di equilibrio con attrito (travi incastrate, ruote su piani inclina
 
 Una scala omogenea di lunghezza $L = 5$ m e massa $m = 20$ kg è appoggiata, con l'estremo superiore, contro una parete verticale liscia e, con l'estremo inferiore, su un pavimento scabro con coefficiente di attrito statico $\mu_s = 0{,}4$. La scala forma un angolo $\theta = 60°$ con il pavimento. Si vuole verificare se la scala resta in equilibrio in questa configurazione.
 
+:::image{src="assets/84b6e82a-scala-geometria.svg" alt="Diagramma geometrico della scala inclinata di 60 gradi tra il pavimento scabro e la parete liscia" caption="Fig. 8.4 — Geometria della scala appoggiata: il piede, soggetto ad attrito statico sul pavimento scabro, e la sommità, a contatto con la parete verticale liscia, formano un angolo di 60° con il pavimento"}
+:::
+
 Le forze esterne applicate alla scala sono: il peso $m\vec{g}$, applicato nel punto medio della scala; la reazione normale della parete $\vec{N}_p$, orizzontale, applicata all'estremo superiore (la parete è liscia, quindi non vi è componente tangenziale); la reazione normale del pavimento $\vec{N}_s$, verticale, e la forza di attrito statico $\vec{f}_s$, orizzontale, entrambe applicate all'estremo inferiore.
 
 Scegliendo $x$ orizzontale e $y$ verticale verso l'alto, la prima equazione cardinale $\vec{R}^{(E)}=\vec{0}$ fornisce
@@ -572,6 +584,9 @@ ma non impone $|f_s| = \mu_s N$.
 **Esempio 8.5** (mensola serrata per attrito)
 
 Una mensola rigida orizzontale a sbalzo, di peso trascurabile e lunghezza $l = 0{,}5$ m, sporge da una parete e sostiene all'estremo libero $B$ un carico $F = 100$ N diretto verso il basso. La mensola è trattenuta da due pioli posti nella parete, $A$ in alto e $A'$ in basso, distanti $d = 0{,}1$ m. I pioli esercitano sulla mensola forze normali orizzontali uguali e opposte, di modulo $N$; il coefficiente di attrito statico ai contatti è $\mu_s = 0{,}5$. Determiniamo la normale necessaria all'equilibrio e verifichiamo la condizione di aderenza.
+
+:::image{src="assets/84b6e82a-mensola-pioli.svg" alt="Diagramma della mensola orizzontale incastrata tra due pioli A e A' nella parete, con il carico applicato all'estremo libero B" caption="Fig. 8.5 — Schema della mensola a sbalzo: i pioli A e A' nella parete, distanti d = 0,1 m, trattengono la mensola per attrito, mentre il carico F = 100 N è applicato all'estremo libero B a distanza l = 0,5 m dalla parete"}
+:::
 
 Le forze esterne applicate alla mensola sono: il carico $\vec{F} = -F\,\hat{u}_y$ in $B$; la reazione normale orizzontale $\vec{N}_A$ nel piolo superiore $A$ e la reazione normale orizzontale $\vec{N}_{A'} = -\vec{N}_A$ nel piolo inferiore $A'$, entrambe di modulo $N$; le forze di attrito statico verticali $\vec{f}_A$ e $\vec{f}_{A'}$, applicate rispettivamente in $A$ e $A'$.
 

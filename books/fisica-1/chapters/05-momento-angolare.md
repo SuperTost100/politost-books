@@ -73,7 +73,11 @@ Accanto al momento rispetto a un polo, in molte applicazioni (in particolare per
 
 La scorciatoia $|\vec{M}_O| = bF$ fornisce direttamente il modulo del momento assiale solo quando la forza $\vec{F}$ è contenuta in un piano perpendicolare all'asse e il polo $O$ è scelto come intersezione fra l'asse e tale piano: soltanto in questo caso $\vec{M}_O$ risulta parallelo all'asse, il suo modulo coincide con quello del momento assiale e il verso è dato dalla regola della mano destra rispetto all'asse.
 
-Se la forza ha anche una componente parallela all'asse, oppure se il polo $O$ si trova sull'asse ma fuori dal piano perpendicolare a esso, il momento può avere componenti perpendicolari all'asse: la sua componente assiale non coincide in generale con il suo modulo, ma vale sempre $M_z = \vec{M}_O\cdot\hat{u}_z$. Il modulo del momento rispetto a qualunque polo resta invece $|\vec{M}_O|=bF$. Per ottenere correttamente $M_z$ occorre calcolare il momento rispetto a un polo situato sull'asse e proiettare il vettore risultante sulla direzione dell'asse. Se si dispone soltanto del momento $\vec{M}_O$ calcolato rispetto a un polo $O$ esterno all'asse, non è lecito proiettarlo direttamente: bisogna prima applicare la formula di trasporto del momento per riportarlo a un polo appartenente all'asse, e solo a quel punto proiettare il risultato per ricavare $M_z$.
+Se la forza ha anche una componente parallela all'asse, oppure se il polo $O$ si trova sull'asse ma fuori dal piano perpendicolare a esso, il momento può avere componenti perpendicolari all'asse: la sua componente assiale non coincide in generale con il suo modulo, ma vale sempre $M_z = \vec{M}_O\cdot\hat{u}_z$. Il modulo del momento rispetto a qualunque polo resta invece $|\vec{M}_O|=bF$. Per ottenere correttamente $M_z$ occorre calcolare il momento rispetto a un polo situato sull'asse e proiettare il vettore risultante sulla direzione dell'asse. Se si dispone soltanto del momento $\vec{M}_O$ calcolato rispetto a un polo $O$ esterno all'asse, si può trasportarlo a un polo $O'$ appartenente all'asse con la formula
+
+$$\vec{M}_{O'}=\vec{M}_O-(O'-O)\times\vec{F},$$
+
+poi proiettare il risultato su $\hat{u}_z$ per ricavare $M_z$.
 
 ### Esempio svolto
 
@@ -110,6 +114,9 @@ $$
 $$
 |\vec{M}_O| = bF = lF\cos\theta.
 $$
+
+:::image{src="assets/830b368f-braccio-esempio-asta.svg" alt="Diagramma vettoriale con asta orizzontale da O a P, retta d'azione della forza F tratteggiata e segmento del braccio b tracciato dal polo O fino al piede della perpendicolare su tale retta." caption="Fig. 5.1 — Schema dell'esempio: asta orizzontale da O a P, forza F inclinata di 30° rispetto alla verticale per P. La retta d'azione di F (tratteggiata) è distante b = l cosθ ≈ 1,04 m dal polo O: questo è il braccio usato per calcolare il modulo del momento."}
+:::
 
 **Numeri.**
 
@@ -239,6 +246,12 @@ $$m r_1 v_{\theta,1} = m r_2 v_{\theta,2} \quad \Longrightarrow \quad v_{\theta,
 
 **Controllo.** Se il filo viene accorciato ($r_2 < r_1$) la componente trasversa della velocità aumenta ($v_{\theta,2} > v_{\theta,1}$): è coerente con l'esperienza quotidiana del pattinatore che accelera la rotazione ritirando le braccia verso il centro, pur in assenza, in questo esempio semplificato, di momenti applicati. L'equazione è dimensionalmente corretta, poiché entrambi i membri hanno le dimensioni di $\mathrm{kg\,m^2\,s^{-1}}$.
 
+:::image{src="assets/b1eb456c-velocita-trasversa-raggio-momento-angolare.svg" alt="Grafico dell'iperbole v_θ = L/(m r), con due punti evidenziati: r₁ con v_θ,1 più piccola e r₂ minore di r₁ con v_θ,2 maggiore di v_θ,1" caption="Fig. 5.2 — Velocità trasversa v_θ in funzione del raggio r a parità di momento angolare L = m r v_θ: quando il filo viene accorciato da r₁ a r₂ < r₁, la velocità trasversa aumenta da v_θ,1 a v_θ,2 > v_θ,1, mantenendo costante il prodotto r v_θ."}
+:::
+
+:::image{src="assets/b1eb456c-pattinatore-conservazione-momento-angolare.jpg" alt="Pattinatore su ghiaccio in rotazione con le braccia raccolte vicino al corpo" caption="Fig. 5.3 — Il pattinatore che ritira le braccia verso il corpo aumenta la propria velocità di rotazione: un esempio quotidiano di conservazione del momento angolare quando il momento delle forze esterne rispetto all'asse di rotazione è nullo. Foto: deerstop / Wikimedia Commons, CC0"}
+:::
+
 ### Errori tipici
 
 **Errore tipico 5.2** (scrivere il prodotto vettoriale come un prodotto scalare mascherato). Come già segnalato per il momento di una forza, è sbagliato scrivere $\vec{L} = m r v$ come se fosse una definizione vettoriale: l'espressione $mrv$ è soltanto il modulo di $\vec{L}_O$ nel caso particolare del moto circolare con polo nel centro, {{formula:5.4}}; in generale $\vec{L}_O$ è un vettore ortogonale al piano di $\vec{r}$ e $\vec{v}$, e la sua direzione non coincide con quella di nessuno dei due vettori fattori. Lo stesso errore, descritto nella sezione sul [momento di una forza](ref:chapter/5#p2), si ripete qui se si scrive $\vec{L} = \vec{r}\,\vec{v}\,m$ o simili: il prodotto vettoriale non è un semplice prodotto di moduli con una freccia sopra.
@@ -337,6 +350,9 @@ $$E_m = \frac12 m v^2 - \frac{GMm}{r} = -\frac12\,\frac{GMm}{r}$$
 
 cioè, su un'orbita circolare, l'energia cinetica (positiva) è in valore assoluto pari alla metà dell'energia potenziale (negativa), e l'energia meccanica totale è negativa e pari alla metà di $E_p$. Più in generale, limitandoci al problema gravitazionale newtoniano con l'energia potenziale nulla all'infinito, $E_p(\infty)=0$, e alle traiettorie con momento angolare $L>0$, il segno di $E_m$ classifica il tipo di orbita: iperbolica se $E_m>0$, parabolica se $E_m=0$, ellittica se $E_m<0$. Il caso limite $L=0$, pure compatibile con il teorema di conservazione dimostrato sopra, corrisponde invece a un moto puramente radiale, che non descrive un'ordinaria orbita e può terminare in una collisione con il centro della forza; va quindi trattato separatamente e non rientra in questa classificazione.
 
+:::image{src="assets/f00793db-classificazione-orbite-energia.svg" alt="Diagramma con tre livelli di energia meccanica E_m: positivo per l'orbita iperbolica, nullo per la parabolica, negativo per l'ellittica." caption="Fig. 5.4 — Il segno dell'energia meccanica E_m classifica il tipo di orbita in un campo gravitazionale con energia potenziale nulla all'infinito, per momento angolare L>0: iperbolica, parabolica o ellittica."}
+:::
+
 Per un'orbita ellittica, la conservazione del momento angolare collega velocità e distanza dal centro nei due punti estremi dell'orbita, afelio (distanza massima) e perielio (distanza minima), dove $\vec{r}$ e $\vec{v}$ sono ortogonali tra loro:
 
 :::formula{id="5.13" label="Momento angolare all'afelio e al perielio"}
@@ -356,6 +372,9 @@ Questa relazione, combinata con la conservazione dell'energia meccanica tra afel
 $$v_p = \sqrt{\frac{2GM\,r_a}{r_p(r_a+r_p)}}, \qquad v_a = \sqrt{\frac{2GM\,r_p}{r_a(r_a+r_p)}} .$$
 
 *Controllo.* Le dimensioni di $v_p$ e $v_a$ sono quelle di una velocità. Nel limite di orbita circolare, $r_p=r_a=r$, entrambe le espressioni si riducono a $v_p=v_a=\sqrt{GM/r}$, coerente con la velocità orbitale circolare già ricavata in [Gravitazione e leggi di Keplero](ref:chapter/10#p2). Inoltre $v_p>v_a$ poiché $r_a>r_p$, come richiesto dalla costanza della velocità areolare.
+
+:::image{src="assets/f00793db-orbita-ellittica-perielio-afelio.svg" alt="Ellisse con il Sole posto in uno dei due fuochi, con il punto di perielio più vicino e il punto di afelio più lontano evidenziati sull'asse maggiore." caption="Fig. 5.5 — Orbita ellittica con il Sole in un fuoco: il perielio è il punto di distanza minima r_p, l'afelio il punto di distanza massima r_a; in entrambi r e v sono ortogonali."}
+:::
 
 ### Errori tipici
 

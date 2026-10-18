@@ -110,6 +110,9 @@ $$x(t) = x_0 + \frac{v_0}{k}\left(1 - e^{-kt}\right), \qquad v(x) = v_0 - k(x - 
 
 dove la velocità $v(t) = v_0 e^{-kt}$ decresce esponenzialmente e tende a zero solo asintoticamente, per $t \to \infty$, senza mai annullarsi esattamente in un istante finito. Corrispondentemente la posizione tende, per $t \to \infty$, al valore limite $x_0 + v_0/k$, che dipende dalla posizione iniziale $x_0$: se $x_0 = 0$ si ritrova $x \to v_0/k$, ma in generale il punto di arresto asintotico è $x_0 + v_0/k$. Questo tipo di moto, legato a un'equazione differenziale lineare del primo ordine, ricompare nella descrizione delle oscillazioni smorzate; si veda [Moto armonico](ref:chapter/2#p4).
 
+:::image{src="assets/477930f8-moto-smorzato-posizione-asintotica.svg" alt="Grafico di x in funzione di t che cresce e si appiattisce verso un asintoto orizzontale a x = 4" caption="Fig. 2.2 — Posizione x(t) nel moto rettilineo smorzato esponenzialmente, con x0 = 0, v0 = 2 m/s, k = 0,5 1/s: la curva tende asintoticamente al valore x0 + v0/k = 4 m"}
+:::
+
 ### Esempio svolto
 
 Una particella si muove lungo l'asse $x$ con legge della velocità $v(t) = v_0 + at$, dove $v_0 = 2{,}0$ m/s e $a = 9{,}81$ m/s². All'istante $t = 0$ la particella si trova in $x = 2{,}0$ m. Si chiede: (1) la posizione all'istante $t = 1{,}0$ s; (2) l'istante in cui la particella raggiunge $x = 4{,}0$ m.
@@ -149,6 +152,9 @@ $$F_x = mg\sin\theta = 5\cdot 9{,}81\cdot \frac{1}{2}\text{ \lbrack numero puro\
 dove il passaggio intermedio confonde un fattore adimensionale con il risultato finale in newton. Ogni singola uguaglianza di una catena di passaggi deve essere dimensionalmente corretta, non solo il primo e l'ultimo membro: un controllo dimensionale sistematico, come discusso in [Metodo sperimentale e misure](ref:chapter/1#p2), permette di scartare subito formule come $a = (v_2-v_1)/(2\Delta x)$ (dimensionalmente errata) a favore di $a = (v_2^2-v_1^2)/(2\Delta x)$.
 
 Un secondo errore tipico riguarda il moto **vario** (accelerazione non costante nel tempo, ad esempio accelerazione $a_1$ fino a un istante $t_1$ e poi $a_2$): la legge oraria per il secondo tratto va scritta usando come condizioni iniziali la posizione e la velocità raggiunte alla fine del primo tratto, cioè $x(t) = x_1 + v_1(t-t_1) + \tfrac12 a_2(t-t_1)^2$, e **non** $x(t) = x_1 + v_1 t + \tfrac12 a_2 t^2$: quest'ultima scrittura non soddisfa la condizione $x(t_1) = x_1$ e introduce un errore sistematico nella legge oraria.
+
+:::image{src="assets/477930f8-velocita-moto-vario-due-tratti.svg" alt="Grafico di v in funzione di t formato da due segmenti con pendenze diverse che si raccordano senza salti nel punto t1" caption="Fig. 2.3 — Velocità in funzione del tempo per un moto vario con accelerazione a1 fino a t1 = 2 s e poi a2: il secondo tratto parte correttamente dal valore v1 raggiunto a t1, senza discontinuità"}
+:::
 
 ## p3 | Moto verticale
 
@@ -202,9 +208,12 @@ La velocità di impatto al suolo si ottiene sostituendo $t^{*}$ nella legge dell
 $$v^{*} = v(t^{*}) = v_0 - g t^{*} = -\sqrt{v_0^2 + 2 g h_0}$$
 :::
 
+:::image{src="assets/3c11527e-moto-verticale-velocita-tempo.svg" alt="Grafico della velocità in funzione del tempo per il moto verticale del sasso, con lo zero in corrispondenza della quota massima e il valore finale negativo all'impatto" caption="Fig. 2.4 — Velocità v(t) del sasso lanciato verso l'alto da h0 = 2 m con v0 = 10 m/s: si annulla all'istante di quota massima e diventa negativa fino alla velocità di impatto al suolo"}
+:::
+
 Il segno negativo indica che, al momento dell'impatto, il corpo si muove verso il basso, come deve essere. Si osservi inoltre che $|v^{*}| \ge |v_0|$ ogni volta che $h_0 \ge 0$: il corpo tocca il suolo con una velocità in modulo maggiore o uguale a quella di lancio, perché la discesa aggiunge energia cinetica rispetto al punto di partenza.
 
-:::image{src="assets/3c11527e-quota-sasso-lanciato.svg" alt="Legge oraria della quota del sasso lanciato verso l'alto da un'altezza iniziale, con il massimo evidenziato" caption="Fig. 2.2 — Quota z(t) di un grave lanciato verso l'alto da h0 = 2 m con v0 = 10 m/s: la quota massima si raggiunge quando la velocità si annulla"}
+:::image{src="assets/3c11527e-quota-sasso-lanciato.svg" alt="Legge oraria della quota del sasso lanciato verso l'alto da un'altezza iniziale, con il massimo evidenziato" caption="Fig. 2.5 — Quota z(t) di un grave lanciato verso l'alto da h0 = 2 m con v0 = 10 m/s: la quota massima si raggiunge quando la velocità si annulla"}
 :::
 
 **Esempio 2.1** (sasso lanciato verticalmente)
@@ -281,7 +290,10 @@ $$v^2(x) = \omega^2 \left(A^2 - x^2\right)$$
 
 utile per trovare rapidamente la velocità in un punto senza passare per la legge oraria completa.
 
-:::image{src="assets/38f89a24-fasi-moto-armonico.svg" alt="Posizione, velocità e accelerazione nel moto armonico in funzione del tempo" caption="Fig. 2.3 — Andamento di x(t), v(t) e a(t) per un moto armonico con A = 1, omega = 1, phi = 0: si notano gli sfasamenti di pi/2 e di pi"}
+:::image{src="assets/38f89a24-velocita-posizione-moto-armonico.svg" alt="Curva chiusa che lega velocità e posizione nel moto armonico" caption="Fig. 2.6 — Relazione tra velocità e posizione nel moto armonico, con A = 1 e omega = 1: il punto si muove lungo questa curva chiusa nel piano x-v, con velocità massima nel centro e nulla agli estremi"}
+:::
+
+:::image{src="assets/38f89a24-fasi-moto-armonico.svg" alt="Posizione, velocità e accelerazione nel moto armonico in funzione del tempo" caption="Fig. 2.7 — Andamento di x(t), v(t) e a(t) per un moto armonico con A = 1, omega = 1, phi = 0: si notano gli sfasamenti di pi/2 e di pi"}
 :::
 
 ### Equazione differenziale e soluzione generale
@@ -372,7 +384,7 @@ $$v(t) = v_0\, e^{-\gamma t}, \qquad \gamma = \frac{1}{\tau}$$
 
 Fisicamente, questo tipo di legge oraria descrive ad esempio il moto di una massa attaccata a una molla in presenza di attrito, come un carrello su una guida con resistenza dell'aria o una sospensione meccanica: a ogni oscillazione lo scostamento massimo (a destra e a sinistra del centro) si riduce di un fattore costante rispetto all'oscillazione precedente, e il moto tende asintoticamente alla posizione di equilibrio. La trattazione quantitativa completa dell'equazione differenziale dell'oscillatore smorzato, e il confronto con il caso dell'oscillatore forzato, richiede strumenti che esulano da questa sezione introduttiva; qui è sufficiente saper riconoscere qualitativamente i tre regimi e la forma della soluzione.
 
-:::image{src="assets/38f89a24-oscillatore-smorzato.svg" alt="Oscillazione con ampiezza decrescente nel tempo racchiusa tra due esponenziali" caption="Fig. 2.4 — Moto armonico smorzato debolmente: l'ampiezza delle oscillazioni decresce nel tempo racchiusa tra le curve inviluppo esponenziali"}
+:::image{src="assets/38f89a24-oscillatore-smorzato.svg" alt="Oscillazione con ampiezza decrescente nel tempo racchiusa tra due esponenziali" caption="Fig. 2.8 — Moto armonico smorzato debolmente: l'ampiezza delle oscillazioni decresce nel tempo racchiusa tra le curve inviluppo esponenziali"}
 :::
 
 ## p5 | Moto nel piano
@@ -408,6 +420,9 @@ L'ultima relazione vale soltanto quando $r>0$, cioè quando il punto P non coinc
 In questo sistema si introducono due versori mobili, il versore radiale $\hat{u}_r$ (diretto come $\vec{r}$) e il versore trasverso $\hat{u}_\theta$ (perpendicolare a $\hat{u}_r$, nel verso di $\theta$ crescente), definiti in componenti cartesiane da
 
 $$\hat{u}_r(t) = \cos\theta(t)\,\hat{u}_x + \sin\theta(t)\,\hat{u}_y, \qquad \hat{u}_\theta(t) = -\sin\theta(t)\,\hat{u}_x + \cos\theta(t)\,\hat{u}_y .$$
+
+:::image{src="assets/53b217de-versori-polari-punto.svg" alt="Diagramma dei versori radiale e trasverso in coordinate polari con punto O, punto P e segmenti che indicano le direzioni di u_r e u_θ" caption="Fig. 2.9 — Punto P individuato dalle coordinate polari r e θ: il versore radiale u_r è diretto come il segmento OP, il versore trasverso u_θ è perpendicolare a esso, nel verso di θ crescente."}
+:::
 
 Poiché $\theta(t)$ varia nel tempo, questi versori ruotano; derivandoli si trova, in accordo con le formule di Poisson già incontrate per un versore rotante,
 
@@ -473,6 +488,9 @@ Sostituendo questo risultato nella formula generale si ottiene la decomposizione
 
 :::formula{id="2.33" label="Accelerazione tangenziale e normale (centripeta)"}
 $$\vec{a} = \ddot s(t)\,\hat{u}_T(t) + \frac{\dot s^2(t)}{\rho(t)}\,\hat{u}_N(t) = \vec{a}_T + \vec{a}_N$$
+:::
+
+:::image{src="assets/53b217de-versori-tangente-normale-curva.svg" alt="Traiettoria curva con un punto P e due segmenti che indicano le direzioni del versore tangente e del versore normale verso la concavità" caption="Fig. 2.10 — Direzioni dei versori tangente e normale in un punto P di una traiettoria curva: u_T segue la direzione della velocità, u_N punta verso il centro del cerchio osculatore, cioè verso la concavità della curva."}
 :::
 
 La componente tangenziale con segno $a_T = \ddot s$ è parallela a $\hat{u}_T$ ed esprime la variazione dell'ascissa curvilinea. Essa coincide con $dv/dt$, la variazione del modulo della velocità, soltanto quando il punto percorre la curva nel verso di $s$ crescente, cioè quando $\dot s \ge 0$: in questo caso $v=\dot s$ e dunque $a_T = \ddot s = dv/dt$. Se invece il punto percorre la traiettoria nel verso di $s$ decrescente ($\dot s<0$), poiché $v=|\dot s|=-\dot s$ si ha $dv/dt = -\ddot s$, cioè $a_T$ e $dv/dt$ hanno segno opposto (pur avendo lo stesso modulo). Nel seguito, salvo avviso contrario, si considera un moto con $\dot s \ge 0$, cosicché $a_T = \ddot s = dv/dt$ senza ambiguità. La componente normale (o centripeta) $a_N = \dot s^2/\rho = v^2/\rho$ è ortogonale alla velocità, è sempre diretta verso il centro del cerchio osculatore, ed esprime la variazione di direzione della velocità.
@@ -666,6 +684,9 @@ $$|a_T| = \alpha R \approx 1{,}99\ \text{s}^{-2} \cdot 0{,}40\ \text{m} \approx 
 
 $$a = \sqrt{a_T^2 + a_N^2} \approx \sqrt{0{,}80^2 + 2{,}5^2}\ \text{m/s}^2 \approx 2{,}6\ \text{m/s}^2.$$
 
+:::image{src="assets/4c7aba5d-omega-t-frenata-circolare.svg" alt="Grafico della velocità angolare in funzione del tempo per il moto circolare uniformemente decelerato dell'esempio" caption="Fig. 2.11 — Velocità angolare ω(t) durante la frenata dell'esempio: decresce linearmente da ω₀ = 5 s⁻¹ a zero in t_f ≈ 2,51 s; a metà di questo intervallo vale ancora 2,5 s⁻¹"}
+:::
+
 Controllo: le unità sono coerenti ($\text{s}^{-2}\cdot\text{m} = \text{m/s}^2$); l'ordine di grandezza è ragionevole per un punto che percorre una circonferenza di raggio $40\ \text{cm}$ fermandosi in poco più di due secondi. Il risultato conferma che, a metà decelerazione, il punto ha ancora velocità angolare non nulla e dunque accelerazione centripeta significativa, oltre alla componente tangenziale dovuta alla frenata.
 
 ### Errore tipico
@@ -710,7 +731,7 @@ $$y = h + \frac{v_{0y}}{v_{0x}}x - \frac{g}{2v_{0x}^2}x^2,$$
 
 dove $v_{0x} = v_0\cos\theta$ e $v_{0y} = v_0\sin\theta$.
 
-:::image{src="assets/d8b70a99-traiettoria-parabolica.svg" alt="Parabola della traiettoria con quota massima e gittata evidenziate" caption="Fig. 2.5 — Traiettoria parabolica: la quota massima si trova a metà della gittata"}
+:::image{src="assets/d8b70a99-traiettoria-parabolica.svg" alt="Parabola della traiettoria con quota massima e gittata evidenziate" caption="Fig. 2.12 — Traiettoria parabolica: la quota massima si trova a metà della gittata"}
 :::
 
 ### Quota massima e tempo di salita
@@ -765,6 +786,9 @@ $$t^* = \frac{v_{0y} + \sqrt{v_{0y}^2 + 2gh}}{g} = \frac{15\sin(60°)\ \text{m/s
 $$d = x(t^*) = v_{0x}t^* = v_0\cos\theta \cdot t^* = 15\text{ m/s} \cdot \cos(60°) \cdot 3,16\text{ s} \approx 23,7\text{ m}.$$
 
 *Controllo.* Ogni termine ha le dimensioni corrette (una lunghezza $d$, una lunghezza $h_{max}$, un tempo $t^*$), e gli ordini di grandezza sono ragionevoli per un lancio a mano da un primo piano: altezza massima di circa il doppio dell'altezza di partenza, tempo di volo di pochi secondi, distanza orizzontale dell'ordine di $20$–$25\text{ m}$. Si noti che, trovandosi qui il punto di lancio e il punto di caduta ad altezze diverse, non si poteva applicare direttamente la {{formula:2.47}}, valida solo per lanci e cadute alla stessa quota.
+
+:::image{src="assets/d8b70a99-traiettoria-lancio-da-altezza.svg" alt="Grafico della traiettoria parabolica con punto di lancio, vertice e punto di caduta a quota diversa" caption="Fig. 2.13 — Traiettoria del lancio dal balcone (esempio): quota massima 8,6 m sopra il punto di lancio, caduta al suolo a 23,7 m di distanza e 8 m più in basso del lancio"}
+:::
 
 ### Errori tipici
 

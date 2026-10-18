@@ -72,6 +72,9 @@ Se $y_2$ è sulla superficie libera del fluido, dove la pressione vale $p_0$ (ti
 $$p(h) = p_0 + \rho g h.$$
 :::
 
+:::image{src="assets/c1377d84-legge-stevino-ph.svg" alt="Retta crescente della pressione in funzione della profondità, con intercetta p0 e pendenza rho g." caption="Fig. 11.1 — Andamento della pressione p(h) con la profondità h secondo la legge di Stevino: la crescita è lineare, con pendenza ρg, a partire dal valore p0 sulla superficie libera."}
+:::
+
 Le ipotesi essenziali sono: fluido in quiete, densità $\rho$ costante (fluido incomprimibile od omogeneo), e unica forza di volume la gravità. Le superfici a pressione costante (isobariche) sono dunque superfici orizzontali.
 
 ### Conseguenze della legge di Stevino
@@ -137,6 +140,9 @@ $$
 
 Il punto di applicazione effettivo della spinta idrostatica (centro di spinta) si trova quindi a un terzo dell'altezza dal fondo, non a metà altezza come si potrebbe erroneamente credere ragionando solo sulla pressione media.
 
+:::image{src="assets/c1377d84-pressione-netta-parete-centro-spinta.svg" alt="Distribuzione triangolare della pressione netta con la profondità sulla parete, con il centro di spinta segnato a due terzi dell'altezza dalla superficie." caption="Fig. 11.2 — Pressione netta (acqua meno aria) sulla parete verticale dell'esempio, in funzione della profondità z dalla superficie libera: cresce linearmente da zero, e il centro di spinta, dove si può pensare applicata la forza risultante, si trova a z = 2h/3, cioè a h/3 dal fondo."}
+:::
+
 **Errore tipico 11.2.** Calcolare la forza su una superficie verticale come $p_{\text{media}}\cdot S$ senza poi verificare dove tale forza va effettivamente applicata: il punto di applicazione (centro di spinta) non coincide in generale con il centro geometrico della superficie, proprio perché la pressione non è uniforme.
 
 ### Principio di Archimede e galleggiamento
@@ -170,6 +176,9 @@ $$
 $$
 
 Per esempio, un pezzo di ghiaccio ($\rho_c \approx 920\ \text{kg/m}^3$) che galleggia in acqua ($\rho \approx 1000\ \text{kg/m}^3$) ha circa il 92% del proprio volume immerso sotto la superficie libera.
+
+:::image{src="assets/c1377d84-ghiaccio-galleggiante.jpg" alt="Blocco di ghiaccio che galleggia in acqua con la maggior parte del volume sommersa." caption="Fig. 11.3 — Un pezzo di ghiaccio che galleggia in acqua: come previsto dal principio di Archimede, solo una piccola frazione del volume emerge, mentre circa il 92% resta immerso sotto la superficie libera. Foto: AlKalenski / Pixabay"}
+:::
 
 **Esempio svolto 11.2** (densità di un liquido tramite una molla). Una sfera di massa $m = 0{,}80\ \text{kg}$ e raggio $R = 4{,}1\ \text{cm}$ è appesa a una molla di costante elastica $k = 125\ \text{N/m}$. In aria, all'equilibrio, la molla si allunga di $\Delta z_0$ tale che $mg = k\Delta z_0$ (asse verticale, verso il basso positivo). Immergendo la sfera in un liquido, la posizione di equilibrio cambia di $\Delta z = 2{,}0\ \text{cm}$ rispetto al caso in aria; si vuole ricavare la densità del liquido.
 
@@ -236,6 +245,9 @@ avendo diviso per $\Delta t$ e usato $\Delta l_i = v_i \Delta t$.
 
 Dall'equazione di continuità segue la conseguenza qualitativa più usata nelle applicazioni: dove la sezione del tubo diminuisce la velocità aumenta, e dove la sezione aumenta la velocità diminuisce.
 
+:::image{src="assets/c9687187-continuita-velocita-sezione.svg" alt="Curva iperbolica v=Q/S che decresce al crescere di S" caption="Fig. 11.4 — Velocità v in funzione della sezione S a portata Q costante (equazione di continuità): dove la sezione diminuisce la velocità aumenta, e viceversa."}
+:::
+
 ### Teorema di Bernoulli
 
 Vogliamo ora legare la velocità del fluido alla pressione e alla quota. Consideriamo un fluido ideale che scorre in regime stazionario lungo un tubo di sezione variabile e non necessariamente orizzontale. Applichiamo il [teorema dell'energia cinetica](ref:chapter/4#p3) al volume di controllo compreso fra le sezioni $S_1$ (quota $y_1$, velocità $v_1$) e $S_2$ (quota $y_2$, velocità $v_2$). In un intervallo di tempo $\Delta t$, una massa $\Delta m$ entra attraverso $S_1$ e una massa uguale esce attraverso $S_2$; in regime stazionario il volume di controllo non accumula massa.
@@ -266,6 +278,9 @@ ossia la somma di pressione, densità di energia potenziale gravitazionale ($\rh
 
 Se il condotto è orizzontale ($y = \text{costante}$) la relazione si riduce a $p + \tfrac12 \rho v^2 = \text{costante}$, cosicché, confrontando due sezioni, a un aumento di velocità corrisponde necessariamente una diminuzione di pressione. Se invece il fluido è fermo ($v=0$ ovunque) il teorema di Bernoulli si riduce alla legge di Stevino già vista nella sezione sulla [statica dei fluidi](ref:chapter/11#p2): $p + \rho g y = \text{costante}$.
 
+:::image{src="assets/c9687187-bernoulli-pressione-velocita-orizzontale.svg" alt="Retta decrescente di p in funzione di v al quadrato" caption="Fig. 11.5 — Pressione p in funzione della velocità v in un condotto orizzontale secondo il teorema di Bernoulli: a velocità maggiore corrisponde pressione minore."}
+:::
+
 Questa versione orizzontale è alla base del **venturimetro**, uno strumento che misura la velocità di un fluido incomprimibile da un restringimento di sezione: applicando contemporaneamente l'equazione di continuità $A_1 v_1 = A_2 v_2$ e il teorema di Bernoulli $p_1 + \tfrac12\rho v_1^2 = p_2 + \tfrac12\rho v_2^2$ fra una sezione larga ($A_1$) e una stretta ($A_2 < A_1$), e misurando con un manometro il salto di pressione $\Delta p = p_1 - p_2$ (positivo, poiché nella sezione stretta la velocità è maggiore e la pressione minore), si ricava
 
 $$v_1 = \frac{A_2}{\sqrt{A_1^2 - A_2^2}}\sqrt{\frac{2\,\Delta p}{\rho}}$$
@@ -295,6 +310,9 @@ Schema: serbatoio con superficie libera a quota $y_a$, foro a quota $y_b = y_a -
 Per {{formula:11.8}}:
 
 $$v_b = \sqrt{2gh} = \sqrt{2 \cdot 9,81\,\mathrm{m/s^2}\cdot 2,0\,\mathrm{m}} = \sqrt{39,2\,\mathrm{m^2/s^2}} \approx 6,3\,\mathrm{m/s}$$
+
+:::image{src="assets/c9687187-torricelli-velocita-altezza.svg" alt="Curva v_b = radice di 2gh crescente con h, con punto evidenziato a h=2m, v=6,3 m/s" caption="Fig. 11.6 — Velocità di efflusso v_b in funzione dell'altezza h del pelo libero sopra il foro, secondo il teorema di Torricelli; il punto segnato corrisponde all'esempio con h = 2,0 m."}
+:::
 
 La portata volumica attraverso il foro, per {{formula:11.5}}, vale
 
@@ -334,6 +352,9 @@ $$v(r) = \frac{p_1 - p_2}{4\eta l}\left(R^2 - r^2\right)$$
 
 da cui la velocità massima sull'asse, $v_{max} = \dfrac{p_1-p_2}{4\eta l}R^2$, e la velocità nulla alle pareti ($r=R$). Se il condotto non è orizzontale, al posto di $p_1-p_2$ va usata la differenza di pressione corretta per la quota, cioè $(p_1-p_2) - \rho g (z_2-z_1)$ con $z_1,z_2$ le quote delle due sezioni, in modo da tenere conto anche del contributo idrostatico del peso del fluido.
 
+:::image{src="assets/0033b32f-profilo-velocita-laminare.svg" alt="Grafico a campana della velocità in funzione della distanza dall'asse del condotto, nulla ai bordi e massima al centro" caption="Fig. 11.7 — Profilo di velocità v(r) nel moto laminare in un condotto cilindrico: è massimo sull'asse (r=0) e si annulla alle pareti (r=R)."}
+:::
+
 Integrando il profilo su tutta la sezione si ottiene la portata, data dalla legge di Hagen-Poiseuille
 
 :::formula{id="11.11" label="Legge di Hagen-Poiseuille"}
@@ -365,6 +386,9 @@ $$F_{res} = 6\pi\eta R v$$
 :::
 
 che è, in quel regime, la forma esplicita della forza di attrito viscoso.
+
+:::image{src="assets/0033b32f-resistenza-lineare-quadratica.svg" alt="Due curve della forza resistente in funzione della velocità, una retta e una parabola che cresce più rapidamente" caption="Fig. 11.8 — Confronto qualitativo tra la resistenza del mezzo lineare nella velocità, legge di Stokes nel regime di moto viscoso lento, e quella quadratica nella velocità, valida a numero di Reynolds non basso."}
+:::
 
 ### Esempio: portata in un condotto e verifica del regime
 

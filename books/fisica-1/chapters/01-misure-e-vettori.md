@@ -189,6 +189,9 @@ Numeri: $|\vec{a}| = \sqrt{(3,0\ \text{m})^2 + (4,0\ \text{m})^2} = \sqrt{9,0 + 
 
 Controllo dimensionale: $a_x, a_y$ e $|\vec{a}|$ sono tutte lunghezze in metri, coerentemente con {{formula:1.5}}; l'angolo è adimensionale, come deve essere l'argomento dell'arcotangente.
 
+:::image{src="assets/48612b66-esempio-vettore-componenti.svg" alt="Vettore a nel piano xy con componenti 3,0 m e 4,0 m, modulo 5,0 m e angolo di 53° rispetto all'asse x" caption="Fig. 1.1 — Il vettore dell'esempio, con componenti a_x = 3,0 m e a_y = 4,0 m: il modulo è 5,0 m e l'angolo con l'asse x è circa 53°."}
+:::
+
 ### Prodotto scalare e prodotto vettoriale
 
 **Definizione 1.3** (prodotto scalare). Dati due vettori $\vec{A}$ e $\vec{B}$ che formano un angolo $\theta$, il loro prodotto scalare è lo scalare
@@ -212,6 +215,9 @@ $$|\vec{A} \times \vec{B}| = |\vec{A}|\,|\vec{B}| \sin\theta$$
 :::
 
 Geometricamente, $|\vec{A} \times \vec{B}|$ è l'area del parallelogramma costruito su $\vec{A}$ e $\vec{B}$. Il prodotto vettoriale non è commutativo: $\vec{A} \times \vec{B} = -\vec{B} \times \vec{A}$; se $\vec{A} \times \vec{B} = \vec{0}$ allora $\vec{A}$ e $\vec{B}$ sono paralleli (o uno è il vettore nullo).
+
+:::image{src="assets/48612b66-area-parallelogramma-prodotto-vettoriale.svg" alt="Parallelogramma costruito sui vettori A e B, con A e B applicati nell'origine e due lati paralleli a completare la figura" caption="Fig. 1.2 — Il modulo del prodotto vettoriale A×B è l'area del parallelogramma costruito sui vettori A e B."}
+:::
 
 Il calcolo in componenti si effettua con il determinante simbolico
 
@@ -241,7 +247,7 @@ $$\hat{\lambda}(t) = \cos\theta(t)\,\hat{u}_x + \sin\theta(t)\,\hat{u}_y, \qquad
 
 dove $\hat{\mu}$ è il versore ottenuto ruotando $\hat{\lambda}$ di $90°$ in senso antiorario.
 
-:::image{src="assets/48612b66-versore-rotante.svg" alt="Versore che ruota su una circonferenza unitaria, con le componenti lungo gli assi x e y" caption="Fig. 1.1 — Il versore lambda(t) percorre la circonferenza unitaria; le sue componenti cartesiane sono coseno e seno dell'angolo theta(t)."}
+:::image{src="assets/48612b66-versore-rotante.svg" alt="Versore che ruota su una circonferenza unitaria, con le componenti lungo gli assi x e y" caption="Fig. 1.3 — Il versore lambda(t) percorre la circonferenza unitaria; le sue componenti cartesiane sono coseno e seno dell'angolo theta(t)."}
 :::
 
 Derivando rispetto al tempo con la regola di derivazione delle funzioni composte, e indicando con il punto la derivata temporale ($\dot\theta = d\theta/dt$), si trova

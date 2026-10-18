@@ -67,6 +67,9 @@ Il **ciclo di Carnot** è il ciclo termico reversibile per eccellenza, costituit
 - $C \to D$: compressione isoterma reversibile a temperatura $T_1<T_2$ (sorgente fredda);
 - $D \to A$: compressione adiabatica reversibile.
 
+:::image{src="assets/2ca43188-ciclo-carnot-piano-vp.svg" alt="Quattro curve nel piano V-p che formano un ciclo chiuso: due isoterme e due adiabatiche" caption="Fig. 14.2 — Ciclo di Carnot nel piano (V,p): le due isoterme reversibili a T₂ e T₁ sono collegate da due adiabatiche reversibili; il ciclo A→B→C→D→A è percorso in senso orario."}
+:::
+
 Consideriamo il caso in cui il fluido operativo sia un gas ideale, in modo da poter calcolare esplicitamente i calori e i lavori scambiati nelle singole trasformazioni; il risultato sul rendimento che ne seguirà vale invece in generale, indipendentemente dal fluido impiegato, come garantito dal teorema di Carnot. Lungo le due isoterme si ha $Q_{AB}=W_{AB}=nRT_2\ln\frac{V_B}{V_A}>0$ e $Q_{CD}=W_{CD}=nRT_1\ln\frac{V_D}{V_C}<0$, mentre nelle due adiabatiche $\Delta U_{BC}=-\Delta U_{DA}$ e $W_{BC}=-W_{DA}$, poiché le adiabatiche collegano le stesse due isoterme e sono percorse in modo simmetrico. Sommando tutti i contributi il lavoro totale del ciclo risulta
 
 $$W = Q_A+Q_C = nR\left(T_2\ln\frac{V_B}{V_A}+T_1\ln\frac{V_D}{V_C}\right).$$
@@ -100,6 +103,9 @@ Il **ciclo Otto** (motore ad accensione comandata, a benzina) è costituito da u
 $$\eta_{\text{Otto}} = 1 - \frac{1}{r^{\gamma-1}}.$$
 
 Il rendimento di Otto cresce quindi con il rapporto di compressione $r$, ma non dipende dalle temperature estreme del ciclo (a differenza del ciclo di Carnot).
+
+:::image{src="assets/2ca43188-rendimento-otto-vs-r.svg" alt="Curva crescente e concava del rendimento in funzione del rapporto di compressione" caption="Fig. 14.3 — Rendimento del ciclo Otto in funzione del rapporto di compressione r, per γ = 1,4: cresce con r ma, a differenza di Carnot, non dipende dalle temperature estreme del ciclo."}
+:::
 
 Il **ciclo Diesel** (motore ad accensione spontanea) differisce dall'Otto per il fatto che l'immissione di calore avviene a pressione costante (isobara) invece che a volume costante; introducendo il rapporto di combustione $r_c = V_3/V_2$ (rapporto tra i volumi all'inizio e alla fine della fase di combustione isobara), il rendimento assume la forma
 
@@ -239,6 +245,9 @@ $$|Q_{ced,I}| = Q_{ass,I}(1-\eta_I) = 3{,}33\ \text{kJ} \cdot (1-0{,}3) \approx 
 
 *Controllo.* Si verifica immediatamente che $\eta_I = 0{,}3 < \eta_R = 0{,}50 = \eta_{max}$: la macchina irreversibile, come impone il teorema di Carnot, resta sempre sotto il limite fissato dalla macchina reversibile che opera tra le stesse sorgenti. Il controllo dimensionale è immediato: tutte le grandezze sono espresse in kJ o in rapporti adimensionali.
 
+:::image{src="assets/4c723236-rendimento-carnot-vs-t2.svg" alt="Grafico del rendimento massimo di Carnot in funzione di T2, con T1 = 300 K, e confronto con il rendimento di una macchina irreversibile" caption="Fig. 14.4 — Rendimento massimo di Carnot η_max = 1 − T1/T2 in funzione della temperatura della sorgente calda T2, con T1 = 300 K fissato come nell'esempio: al punto T2 = 600 K si legge η_R = η_max = 0,50, ben al di sopra del rendimento η_I = 0,30 della macchina irreversibile dell'esempio, che resta sempre sotto il limite di Carnot."}
+:::
+
 ### Errore tipico
 
 Un errore frequente è credere che il rendimento massimo $\eta_{max}=1-T_1/T_2$ si applichi a *qualunque* macchina che lavori tra le temperature estreme di un ciclo, anche quando il ciclo scambia calore con più di due sorgenti: il teorema di Carnot vale esattamente per macchine che scambiano calore con **esattamente due** sorgenti a temperatura fissata; il caso generale a più sorgenti richiede la disuguaglianza di Clausius, trattata nella sezione successiva. Un secondo errore tipico è dimenticare l'aggettivo *unico* negli enunciati di Kelvin-Planck e di Clausius, concludendo erroneamente che un frigorifero reale (che pure trasferisce calore dal freddo al caldo) violi il secondo principio: la presenza del lavoro assorbito dall'ambiente rende il processo compatibile con l'enunciato di Clausius, proprio perché il trasferimento di calore non è l'unico effetto del processo. Infine, va evitata la confusione tra l'enunciato di equivalenza (dimostrato per assurdo, mostrando che la violazione di uno implica la violazione dell'altro) e una pretesa identità diretta dei due processi fisici: Kelvin-Planck e Clausius descrivono fenomeni sperimentali diversi, ma sono logicamente inseparabili.
@@ -325,6 +334,9 @@ $$dS \ge \frac{\delta Q}{T}$$
 
 con l'uguaglianza nei tratti in cui la trasformazione è localmente reversibile, e la disuguaglianza stretta in quelli localmente irreversibili.
 
+:::image{src="assets/caf70116-inequality-ds-vs-deltaq-t.svg" alt="Due curve crescenti da A a B: S(x) sopra, integrale del calore ridotto irreversibile sotto" caption="Fig. 14.5 — Confronto qualitativo, lungo una trasformazione reale A→B, tra la variazione di entropia S(x) (curva continua) e il calore ridotto cumulato ∫(δQ/T)_irrev (curva tratteggiata): la seconda resta sempre al di sotto della prima, illustrando dS ≥ δQ/T, con uguaglianza solo nei tratti localmente reversibili."}
+:::
+
 Se il sistema è termicamente isolato, non scambia calore con l'esterno lungo la trasformazione reale, quindi $\delta Q=0$ nel termine di destra, e si ottiene
 
 $$S_B - S_A \ge 0 \quad\Longrightarrow\quad S_B \ge S_A$$
@@ -364,6 +376,9 @@ $$\Delta S_2 = \int \frac{-\delta Q}{T_2} = -\frac{Q}{T_2} < 0$$
 La variazione di entropia dell'universo (sistema isolato costituito dalle due sorgenti) è la somma delle due, per l'additività dell'entropia:
 
 $$\Delta S_U = \Delta S_1 + \Delta S_2 = Q\left(\frac{1}{T_1} - \frac{1}{T_2}\right) = Q\,\frac{T_2 - T_1}{T_1 T_2}$$
+
+:::image{src="assets/caf70116-entropia-scambio-due-sorgenti.svg" alt="Diagramma di entropia con due colonne, sorgente fredda e sorgente calda, e freccie che mostrano l'aumento e la diminuzione di entropia" caption="Fig. 14.6 — Variazione di entropia delle due sorgenti nello scambio di calore Q da T₂ (calda) a T₁ (fredda), con T₂ > T₁: la sorgente fredda guadagna ΔS₁ = Q/T₁, maggiore in valore assoluto della perdita ΔS₂ = −Q/T₂ della sorgente calda, cosicché ΔS_U = ΔS₁ + ΔS₂ > 0."}
+:::
 
 Poiché $T_2 > T_1 > 0$, il numeratore $T_2-T_1$ e il denominatore $T_1T_2$ sono entrambi positivi, dunque $\Delta S_U > 0$, in accordo con il principio di aumento dell'entropia applicato a un processo irreversibile. Si osservi che il processo inverso (calore che fluisce spontaneamente dal corpo freddo al corpo caldo) darebbe $\Delta S_U < 0$: per questo motivo è vietato dal secondo principio, coerentemente con l'enunciato di Clausius già visto nella sezione [Secondo principio](ref:chapter/14#p3).
 
@@ -511,7 +526,7 @@ $$Q_{rev} = \int_A^B T\,dS$$
 
 e in un ciclo reversibile l'area racchiusa è la somma algebrica dei calori scambiati, positiva se il ciclo è percorso in senso orario; essendo un ciclo ($\Delta U=0$), quella stessa area rappresenta anche il lavoro compiuto, in perfetta analogia con il ruolo dell'area nel piano $(V,p)$. In questo diagramma un'isoterma reversibile è un segmento orizzontale e un'adiabatica reversibile è un segmento verticale (coerentemente con $\Delta S = 0$), mentre una trasformazione isocora o isobara reversibile è rappresentata da una curva crescente con la temperatura, come illustrato nella figura seguente.
 
-:::image{src="assets/b7b57303-diagramma-s-t-isoterma-isocora.svg" alt="Diagramma entropia-temperatura con una retta orizzontale (isoterma) e una curva crescente (isocora) che partono dallo stesso punto" caption="Fig. 14.2 — Andamento qualitativo di un'isoterma reversibile e di una trasformazione isocora reversibile nel piano (S, T), a partire dallo stesso stato iniziale."}
+:::image{src="assets/b7b57303-diagramma-s-t-isoterma-isocora.svg" alt="Diagramma entropia-temperatura con una retta orizzontale (isoterma) e una curva crescente (isocora) che partono dallo stesso punto" caption="Fig. 14.7 — Andamento qualitativo di un'isoterma reversibile e di una trasformazione isocora reversibile nel piano (S, T), a partire dallo stesso stato iniziale."}
 :::
 
 **Errore tipico 14.5.** Un errore frequente è applicare direttamente la formula $\Delta S = n c_V \ln(T_B/T_A) + nR\ln(V_B/V_A)$ (o le analoghe per sorgenti e corpi) a una trasformazione irreversibile usando il calore effettivamente scambiato lungo quella trasformazione, invece di ragionare sempre in termini degli stati iniziale e finale e di una trasformazione reversibile fittizia che li collega: nell'espansione libera, per esempio, il calore scambiato è nullo ma $\Delta S \ne 0$, perché il calore nullo si riferisce alla trasformazione reale (irreversibile), non a quella reversibile usata per calcolare $\Delta S$. Un secondo errore tipico è scrivere $\Delta Q$ o $\Delta W$ come se fossero variazioni di una funzione di stato: calore e lavoro non sono funzioni di stato (vedi [Primo principio ed energia interna](ref:chapter/13#p2)), mentre l'entropia lo è, e solo per essa ha senso scrivere $\Delta S = S(B)-S(A)$. Un terzo errore è confondere $\Delta S_{\text{sist}}$ con $\Delta S_U$: in un ciclo il sistema torna allo stato di partenza e quindi $\Delta S_{\text{sist}} = 0$ sempre, ma questo non implica affatto che il ciclo sia reversibile, poiché l'irreversibilità si manifesta nell'aumento di entropia dell'ambiente, $\Delta S_{\text{amb}} > 0$.
