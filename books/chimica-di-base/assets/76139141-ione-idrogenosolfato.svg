@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193 153" width="193" height="153" role="img" aria-label="Structure of [O-]S(=O)(=O)O" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+<title>Structure of [O-]S(=O)(=O)O</title>
+<rect width="193" height="153" fill="#FFFFFF"/>
+<g transform="translate(40.04 75.57)">
+<g stroke="#111827" stroke-width="1.6" stroke-linecap="round" fill="none"><line x1="8.95" y1="0" x2="31.05" y2="0"/><line x1="37.5" y1="-9.12" x2="37.5" y2="-30.88"/><line x1="42.5" y1="-9.12" x2="42.5" y2="-30.88"/><line x1="42.5" y1="9.12" x2="42.5" y2="30.88"/><line x1="37.5" y1="9.12" x2="37.5" y2="30.88"/><line x1="48.95" y1="0" x2="71.05" y2="0"/><line x1="88.95" y1="0" x2="111.05" y2="0"/></g>
+<g fill="#111827" font-size="17"><text x="0" y="6.12" text-anchor="middle">O</text><text x="-6.95" y="-5.1" font-size="12.5" text-anchor="end">−</text><text x="40" y="6.12" text-anchor="middle">S</text><text x="40" y="-33.88" text-anchor="middle">O</text><text x="40" y="46.12" text-anchor="middle">O</text><text x="80" y="6.12" text-anchor="middle">O</text><text x="120" y="6.12" text-anchor="middle">H</text></g>
+<g fill="#111827"><circle cx="-11.14" cy="10.98" r="1.9"/><circle cx="-14.13" cy="6.72" r="1.9"/><circle cx="2.42" cy="-14.24" r="1.9"/><circle cx="7.3" cy="-12.46" r="1.9"/><circle cx="7.3" cy="12.46" r="1.9"/><circle cx="2.42" cy="14.24" r="1.9"/><circle cx="25.85" cy="-45.17" r="1.9"/><circle cx="28.45" cy="-49.67" r="1.9"/><circle cx="51.55" cy="-49.67" r="1.9"/><circle cx="54.15" cy="-45.17" r="1.9"/><circle cx="28.86" cy="50.98" r="1.9"/><circle cx="25.87" cy="46.72" r="1.9"/><circle cx="54.13" cy="43.72" r="1.9"/><circle cx="51.93" cy="48.43" r="1.9"/><circle cx="77.4" cy="-13.62" r="1.9"/><circle cx="82.6" cy="-13.62" r="1.9"/><circle cx="82.6" cy="13.62" r="1.9"/><circle cx="77.4" cy="13.62" r="1.9"/></g>
+</g>
+</svg>
