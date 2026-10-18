@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 140" width="160" height="140" role="img" aria-label="Structure of B(F)(F)F" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+<title>Structure of B(F)(F)F</title>
+<rect width="160" height="140" fill="#FFFFFF"/>
+<g transform="translate(45.36 69.52)">
+<g stroke="#111827" stroke-width="1.6" stroke-linecap="round" fill="none"><line x1="43.59" y1="15.17" x2="60.33" y2="24.83"/><line x1="34.64" y1="0.88" x2="34.64" y2="-20.88"/><line x1="25.69" y1="15.17" x2="8.95" y2="24.83"/></g>
+<g fill="#111827" font-size="17"><text x="34.64" y="16.12" text-anchor="middle">B</text><text x="69.28" y="36.12" text-anchor="middle">F</text><text x="34.64" y="-23.88" text-anchor="middle">F</text><text x="0" y="36.12" text-anchor="middle">F</text></g>
+<g fill="#111827"><circle cx="83.43" cy="35.17" r="1.9"/><circle cx="80.83" cy="39.67" r="1.9"/><circle cx="74.55" cy="15.68" r="1.9"/><circle cx="79.05" cy="18.28" r="1.9"/><circle cx="64.02" cy="44.32" r="1.9"/><circle cx="59.51" cy="41.72" r="1.9"/><circle cx="32.04" cy="-43.62" r="1.9"/><circle cx="37.24" cy="-43.62" r="1.9"/><circle cx="48.09" cy="-32.6" r="1.9"/><circle cx="48.09" cy="-27.4" r="1.9"/><circle cx="21.19" cy="-27.4" r="1.9"/><circle cx="21.19" cy="-32.6" r="1.9"/><circle cx="-11.55" cy="39.67" r="1.9"/><circle cx="-14.15" cy="35.17" r="1.9"/><circle cx="9.77" cy="41.72" r="1.9"/><circle cx="5.26" cy="44.32" r="1.9"/><circle cx="-9.77" cy="18.28" r="1.9"/><circle cx="-5.26" cy="15.68" r="1.9"/></g>
+</g>
+</svg>

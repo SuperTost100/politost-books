@@ -1,0 +1,162 @@
+{
+  "id": "chimica-di-base",
+  "title": "Chimica di base",
+  "subject": "Chimica",
+  "access": "public",
+  "authors": [
+    "Tost"
+  ],
+  "version": "1.0.0",
+  "specVersion": "1.1",
+  "sections": {
+    "smartbook": {
+      "enabled": true,
+      "label": "Capitoli"
+    },
+    "formulario": {
+      "enabled": true,
+      "label": "Formulario"
+    },
+    "esercizi": {
+      "enabled": true,
+      "label": "Esercizi"
+    },
+    "esami": {
+      "enabled": true,
+      "label": "Prove d'esame"
+    },
+    "ide": {
+      "enabled": false,
+      "label": "Laboratorio"
+    },
+    "grafici": {
+      "enabled": true,
+      "label": "Grafici & Calcoli"
+    },
+    "risposte": {
+      "enabled": false,
+      "label": "Soluzioni"
+    }
+  },
+  "chapters": [
+    {
+      "id": "materia-misure-e-metodo-scientifico",
+      "number": 1,
+      "title": "Materia, misure e metodo scientifico",
+      "file": "01-materia-misure-e-metodo-scientifico.md",
+      "printable": true
+    },
+    {
+      "id": "atomi-elementi-e-mole",
+      "number": 2,
+      "title": "Atomi, elementi e mole",
+      "file": "02-atomi-elementi-e-mole.md",
+      "printable": true
+    },
+    {
+      "id": "formule-e-nomenclatura-inorganica",
+      "number": 3,
+      "title": "Formule e nomenclatura inorganica",
+      "file": "03-formule-e-nomenclatura-inorganica.md",
+      "printable": true
+    },
+    {
+      "id": "stechiometria",
+      "number": 4,
+      "title": "Stechiometria",
+      "file": "04-stechiometria.md",
+      "printable": true
+    },
+    {
+      "id": "classi-di-reazioni-chimiche",
+      "number": 5,
+      "title": "Classi di reazioni chimiche",
+      "file": "05-classi-di-reazioni-chimiche.md",
+      "printable": true
+    },
+    {
+      "id": "lo-stato-gassoso",
+      "number": 6,
+      "title": "Lo stato gassoso",
+      "file": "06-lo-stato-gassoso.md",
+      "printable": true
+    },
+    {
+      "id": "termochimica",
+      "number": 7,
+      "title": "Termochimica",
+      "file": "07-termochimica.md",
+      "printable": true
+    },
+    {
+      "id": "struttura-elettronica-e-periodicita",
+      "number": 8,
+      "title": "Struttura elettronica e periodicità",
+      "file": "08-struttura-elettronica-e-periodicita.md",
+      "printable": true
+    },
+    {
+      "id": "il-legame-chimico",
+      "number": 9,
+      "title": "Il legame chimico",
+      "file": "09-il-legame-chimico.md",
+      "printable": true
+    },
+    {
+      "id": "forze-intermolecolari-liquidi-e-solidi",
+      "number": 10,
+      "title": "Forze intermolecolari, liquidi e solidi",
+      "file": "10-forze-intermolecolari-liquidi-e-solidi.md",
+      "printable": true
+    },
+    {
+      "id": "le-soluzioni",
+      "number": 11,
+      "title": "Le soluzioni",
+      "file": "11-le-soluzioni.md",
+      "printable": true
+    },
+    {
+      "id": "equilibrio-chimico",
+      "number": 12,
+      "title": "Equilibrio chimico",
+      "file": "12-equilibrio-chimico.md",
+      "printable": true
+    },
+    {
+      "id": "equilibri-ionici-in-soluzione-acquosa",
+      "number": 13,
+      "title": "Equilibri ionici in soluzione acquosa",
+      "file": "13-equilibri-ionici-in-soluzione-acquosa.md",
+      "printable": true
+    },
+    {
+      "id": "entropia-ed-energia-libera",
+      "number": 14,
+      "title": "Entropia ed energia libera",
+      "file": "14-entropia-ed-energia-libera.md",
+      "printable": true
+    },
+    {
+      "id": "cinetica-chimica",
+      "number": 15,
+      "title": "Cinetica chimica",
+      "file": "15-cinetica-chimica.md",
+      "printable": true
+    },
+    {
+      "id": "elettrochimica",
+      "number": 16,
+      "title": "Elettrochimica",
+      "file": "16-elettrochimica.md",
+      "printable": true
+    },
+    {
+      "id": "chimica-organica",
+      "number": 17,
+      "title": "Chimica organica",
+      "file": "17-chimica-organica.md",
+      "printable": true
+    }
+  ]
+}
