@@ -13,7 +13,7 @@ Al termine saprai impostare e risolvere problemi di rotazione attorno a un asse 
 
 ## p2 | Rotazione attorno a un asse fisso
 
-Quando un corpo rigido ruota attorno a un asse fisso $z$, tutti i suoi punti descrivono archi di circonferenza su piani perpendicolari all'asse, con la stessa velocità angolare $\omega$ istante per istante, mentre la velocità lineare $v_i = \omega R_i$ dipende dalla distanza $R_i$ del punto dall'asse. Questa osservazione, già usata per definire cinematicamente la rotazione nella sezione su [Corpo rigido e suoi moti](ref:chapter/8#p2), permette ora di scrivere l'equazione dinamica che governa il moto, sfruttando la seconda equazione cardinale ([(7.14)](ref:formula/7.14)) già stabilita per i sistemi di punti materiali.
+Quando un corpo rigido ruota attorno a un asse fisso $z$, tutti i suoi punti descrivono archi di circonferenza su piani perpendicolari all'asse, con la stessa velocità angolare $\omega$ istante per istante, mentre la velocità lineare $v_i = \omega R_i$ dipende dalla distanza $R_i$ del punto dall'asse. Questa osservazione, già usata per definire cinematicamente la rotazione nella sezione su [Corpo rigido e suoi moti](ref:chapter/8#p2), permette ora di scrivere l'equazione dinamica che governa il moto, sfruttando la seconda equazione cardinale [(7.14)](ref:formula/7.14) già stabilita per i sistemi di punti materiali.
 
 ### Equazione del moto di rotazione
 
@@ -49,7 +49,7 @@ Questa è l'analogo rotazionale di $\vec{R} = m\vec{a}$: il momento assiale risu
 
 **Teorema 9.2.** Sia dato un corpo rigido che ruota con velocità angolare $\omega$ attorno a un asse fisso $z$, di versore $\hat{k}$, e sia $O$ un polo fisso sull'asse. Allora la componente lungo $z$ del momento risultante delle forze esterne rispetto a $O$ vale $M_z = I_z\alpha$, con $I_z = \sum_i m_i R_i^2$ e $\alpha = d\omega/dt$.
 
-*Dimostrazione.* Per un polo fisso la seconda equazione cardinale ([(7.14)](ref:formula/7.14)) afferma che $d\vec{L}/dt = \vec{M}$, dove $\vec{M}$ è il momento risultante delle sole forze esterne, perché il momento delle forze interne è nullo. Poiché $\hat{k}$ è costante nel tempo, proiettando l'equazione su $z$ si ottiene
+*Dimostrazione.* Per un polo fisso la seconda equazione cardinale [(7.14)](ref:formula/7.14) afferma che $d\vec{L}/dt = \vec{M}$, dove $\vec{M}$ è il momento risultante delle sole forze esterne, perché il momento delle forze interne è nullo. Poiché $\hat{k}$ è costante nel tempo, proiettando l'equazione su $z$ si ottiene
 
 $$\frac{dL_z}{dt} = M_z , \qquad L_z = \vec{L}\cdot\hat{k} .$$
 
@@ -97,7 +97,7 @@ La soluzione generale è $\theta(t) = A\sin(\Omega t + \varphi)$, dove $A$ è l'
 $$T = 2\pi\sqrt{\frac{I_z}{mgh}}$$
 :::
 
-Definendo la **lunghezza ridotta** del pendolo composto come $l = I_z/(mh)$, il periodo assume la stessa forma del pendolo semplice già vista in [Dinamica del moto curvilineo](ref:chapter/3#p8) ([(3.28)](ref:formula/3.28)):
+Definendo la **lunghezza ridotta** del pendolo composto come $l = I_z/(mh)$, il periodo assume la stessa forma del pendolo semplice già vista in [Dinamica del moto curvilineo](ref:chapter/3#p8) [(3.28)](ref:formula/3.28):
 
 $$T = 2\pi\sqrt{\frac{l}{g}} .$$
 

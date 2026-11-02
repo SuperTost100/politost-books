@@ -673,7 +673,7 @@ Le grandezze angolari sono in realtà associate a vettori. La **velocità angola
 
 $$\vec{v} = \vec{\omega} \times \vec{r},$$
 
-dove $\vec{r}$ è il vettore posizione rispetto a un punto qualunque dell'asse di rotazione; se $\vec{\omega}$ è applicata nel centro O della circonferenza, $|\vec{r}| = R$, ma la relazione resta valida applicando $\vec{\omega}$ in un punto qualsiasi dell'asse. Questo risultato richiama le formule di Poisson per la derivata di un versore rotante già incontrate in [Vettori e versori](ref:chapter/1#p3) ([(1.13)](ref:formula/1.13)): $\vec{v} = \vec{\omega}\times\vec{r}$ ne è l'applicazione diretta al moto circolare.
+dove $\vec{r}$ è il vettore posizione rispetto a un punto qualunque dell'asse di rotazione; se $\vec{\omega}$ è applicata nel centro O della circonferenza, $|\vec{r}| = R$, ma la relazione resta valida applicando $\vec{\omega}$ in un punto qualsiasi dell'asse. Questo risultato richiama le formule di Poisson per la derivata di un versore rotante già incontrate in [Vettori e versori](ref:chapter/1#p3) [(1.13)](ref:formula/1.13): $\vec{v} = \vec{\omega}\times\vec{r}$ ne è l'applicazione diretta al moto circolare.
 
 :::formula{id="2.46" label="Velocità nel moto circolare come prodotto vettoriale"}
 $$\vec{v} = \vec{\omega} \times \vec{r}$$

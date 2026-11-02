@@ -253,7 +253,7 @@ Sommando questa relazione su tutti i punti del sistema,
 
 $$\sum_{i=1}^{N} \vec{F}_i^{(I)} + \sum_{i=1}^{N} \vec{F}_i^{(E)} = \sum_{i=1}^{N} m_i \vec{a}_i ,$$
 
-e ricordando che la risultante delle forze interne è nulla ({{formula:7.1}}), il primo addendo scompare: le forze interne si annullano sempre a due a due per il terzo principio della dinamica.
+e ricordando che la risultante delle forze interne è nulla {{formula:7.1}}, il primo addendo scompare: le forze interne si annullano sempre a due a due per il terzo principio della dinamica.
 
 Nella sezione sul [centro di massa](ref:chapter/7#p3) abbiamo definito $\vec{r}_{CM} = \dfrac{\sum_i m_i \vec{r}_i}{M}$ con $M = \sum_i m_i$, e derivando due volte rispetto al tempo si ottiene l'accelerazione del centro di massa
 
@@ -281,7 +281,7 @@ che è una riscrittura equivalente del teorema precedente: la risultante delle f
 $$\vec{R}^{(E)} = \frac{d\vec{p}_{tot}}{dt}$$
 :::
 
-Questa forma è l'analogo, per un sistema di punti, della forma generale della seconda legge della dinamica già incontrata per il punto materiale ([(3.2)](ref:formula/3.2)): la risultante delle forze esterne gioca lo stesso ruolo che la forza totale gioca per un singolo punto, a patto di usare la quantità di moto *totale* del sistema.
+Questa forma è l'analogo, per un sistema di punti, della forma generale della seconda legge della dinamica già incontrata per il punto materiale [(3.2)](ref:formula/3.2): la risultante delle forze esterne gioca lo stesso ruolo che la forza totale gioca per un singolo punto, a patto di usare la quantità di moto *totale* del sistema.
 
 ### Conservazione della quantità di moto di un sistema
 
@@ -783,8 +783,8 @@ Dalle tracce emergono tre tipi ricorrenti.
 
 1. Dividi il problema in tre fasi: prima dell'urto, urto, dopo l'urto. Ogni fase ha il suo principio.
 2. Prima e dopo l'urto lavora con l'energia: lavoro dell'attrito dinamico e teorema dell'energia meccanica ([(4.11)](ref:formula/4.11), [(4.12)](ref:formula/4.12)), vedi [Energia cinetica e teorema lavoro-energia](ref:chapter/4#p3) e [Forze conservative ed energia potenziale](ref:chapter/4#p4). Se c'è attrito, l'energia meccanica non si conserva.
-3. Durante l'urto non usare l'energia meccanica, a meno che l'urto sia dichiarato elastico. Scrivi la conservazione della quantità di moto del sistema dei due corpi ({{formula:7.20}}), proiettata sugli assi. Giustificala verificando che l'impulso esterno sia trascurabile nella direzione considerata. Se un filo si tende, controlla quali componenti della quantità di moto possono conservarsi. Vedi [Urti](ref:chapter/7#p7).
-4. Se i corpi restano attaccati, usa $v_{fin}=v_{CM}$ ({{formula:7.22}}). Se il testo dà una velocità finale (per esempio un proiettile che esce con metà della velocità iniziale), questa è il dato che chiude l'equazione.
+3. Durante l'urto non usare l'energia meccanica, a meno che l'urto sia dichiarato elastico. Scrivi la conservazione della quantità di moto del sistema dei due corpi {{formula:7.20}}, proiettata sugli assi. Giustificala verificando che l'impulso esterno sia trascurabile nella direzione considerata. Se un filo si tende, controlla quali componenti della quantità di moto possono conservarsi. Vedi [Urti](ref:chapter/7#p7).
+4. Se i corpi restano attaccati, usa $v_{fin}=v_{CM}$ {{formula:7.22}}. Se il testo dà una velocità finale (per esempio un proiettile che esce con metà della velocità iniziale), questa è il dato che chiude l'equazione.
 5. Se il corpo è appeso a un filo, la fase successiva è un moto circolare: usa l'energia per la velocità e la seconda legge in direzione radiale per la tensione ([Dinamica del moto curvilineo](ref:chapter/3#p8)).
 6. Controlla i segni: nell'urto deve risultare $\Delta E_k\le 0$, cioè l'energia dissipata $E_{diss}=-\Delta E_k$ è positiva o nulla.
 

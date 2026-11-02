@@ -302,7 +302,7 @@ Il capitolo di elettrochimica è comparso in 3 delle 4 sessioni d'esame esaminat
 1. Traduci i nomi in formule (vedi [Simboli, formule e ioni](ref:chapter/3#p2) e [Sali](ref:chapter/3#p7)) e scrivi lo schema con reagenti e prodotti.
 2. Assegna i numeri di ossidazione ([Numero di ossidazione](ref:chapter/3#p3)) e individua tutte le specie che si ossidano e quelle che si riducono.
 3. Scrivi una semireazione per ciascun processo di ossidazione e di riduzione in forma ionica. Bilancia prima gli atomi diversi da O e H, poi O con $\mathrm{H_2O}$ e H con $\mathrm{H^+}$, infine le cariche con gli elettroni.
-4. Moltiplica le semireazioni perché la somma degli elettroni ceduti in tutti i processi di ossidazione sia uguale a quella degli elettroni acquistati nei processi di riduzione, mantenendo per ciascun processo i rapporti stechiometrici della reazione ([(5.8)](ref:formula/5.8)), quindi sommale.
+4. Moltiplica le semireazioni perché la somma degli elettroni ceduti in tutti i processi di ossidazione sia uguale a quella degli elettroni acquistati nei processi di riduzione, mantenendo per ciascun processo i rapporti stechiometrici della reazione [(5.8)](ref:formula/5.8), quindi sommale.
 5. Riporta i coefficienti nell'equazione molecolare. Aggiungi gli ioni spettatori (per esempio i solfati) e controlla atomi e cariche.
 
 Per i dettagli sull'ambiente acido o basico e sulla disproporzione vedi [Reazioni di ossidoriduzione](ref:chapter/5#p5) e [Equazioni chimiche e bilanciamento](ref:chapter/4#p3). Il comportamento dei metalli con $\mathrm{HNO_3}$ e $\mathrm{H_2SO_4}$ è trattato in [Reattività dei metalli con acidi ossidanti e non ossidanti](ref:chapter/16#p4).
@@ -327,8 +327,8 @@ Per i dettagli sull'ambiente acido o basico e sulla disproporzione vedi [Reazion
 
 1. Disegna la cella elettrolitica e stabilisci le specie che si scaricano. Se la soluzione è acquosa, considera anche l'acqua nella competizione tra specie ([Elettrolisi e leggi di Faraday](ref:chapter/16#p5)). L'anodo è la sede dell'ossidazione e il catodo della riduzione.
 2. Scrivi le semireazioni di scarica e individua le moli di elettroni $z$ per mole di prodotto di interesse.
-3. Se il prodotto è un gas, ricava le moli con $n = PV/(RT)$ ([(6.5)](ref:formula/6.5)), con $T$ in kelvin e $P$ in atm. Se il gas è «secco», non devi sottrarre la tensione di vapore dell'acqua ([Pressione e leggi dei gas ideali](ref:chapter/6#p2)).
-4. Calcola la carica $q = z\,n\,F$, con $F = 96\,485$ C/mol, e poi la corrente $I = q/\Delta t$ ({{formula:16.4}}) con $\Delta t$ in secondi. Se serve una massa, usa {{formula:16.5}}.
+3. Se il prodotto è un gas, ricava le moli con $n = PV/(RT)$ [(6.5)](ref:formula/6.5), con $T$ in kelvin e $P$ in atm. Se il gas è «secco», non devi sottrarre la tensione di vapore dell'acqua ([Pressione e leggi dei gas ideali](ref:chapter/6#p2)).
+4. Calcola la carica $q = z\,n\,F$, con $F = 96\,485$ C/mol, e poi la corrente $I = q/\Delta t$ {{formula:16.4}} con $\Delta t$ in secondi. Se serve una massa, usa {{formula:16.5}}.
 5. Verifica l'ordine di grandezza e le unità, indicando il valore di $R$ usato.
 
 **Esempio svolto in breve (con rendimento unitario).** Per l'esercizio del tema 3, descritto sotto, si ha $n_{\mathrm{O_2}} = \dfrac{(745/760)\cdot 8{,}00}{0{,}08206\cdot 293{,}15} = 0{,}326$ mol, con $R = 0{,}08206$ L·atm/(mol·K). All'anodo $4\,\mathrm{OH^-}\to\mathrm{O_2}+2\,\mathrm{H_2O}+4\,e^-$, quindi $z = 4$ e $q = 4\cdot 0{,}326\cdot 96\,485 \approx 1{,}26\times10^5$ C. Con $\Delta t = 40\cdot 60 = 2\,400$ s si ottiene $I \approx 52$ A.

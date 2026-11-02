@@ -589,7 +589,7 @@ perché ciascuna parentesi è nulla.
 2. Scegli la forma di $y_p$ con {{formula:11.12}}. Se $0$ è radice di $p$, moltiplica la forma polinomiale per $x$ se $0$ è radice semplice e per $x^2$ se è radice doppia.
 3. Sostituisci $y_p$ nell'equazione e uguaglia i coefficienti delle potenze di $x$.
 4. Scrivi $y(x)=y_{om}(x)+y_p(x)$.
-5. Se il termine noto è somma di più termini, tratta ciascuno separatamente e somma i risultati ({{formula:11.14}}).
+5. Se il termine noto è somma di più termini, tratta ciascuno separatamente e somma i risultati {{formula:11.14}}.
 
 **Errori tipici.** Cercare $y_p=ax$ quando serve anche il termine noto $b$, cioè provare con un polinomio di grado troppo basso. Dimenticare la risonanza quando l'equazione non contiene $y$. Calcolare i coefficienti di $y_p$ ma non sommare $y_{om}$.
 
@@ -602,7 +602,7 @@ perché ciascuna parentesi è nulla.
 **Cosa chiede l'esame.** Dopo la definizione di soluzione di un problema di Cauchy, si chiede di risolverlo esplicitamente. La soluzione si vuole in forma esplicita e, quando serve, con il suo intervallo di definizione.
 
 **Metodo.**
-1. Riconosci la forma $y'=f(y)g(t)$ e cerca gli zeri di $f$: sono le soluzioni costanti ({{formula:11.7}}). Controlla se il dato iniziale ne coincide con una.
+1. Riconosci la forma $y'=f(y)g(t)$ e cerca gli zeri di $f$: sono le soluzioni costanti {{formula:11.7}}. Controlla se il dato iniziale ne coincide con una.
 2. Se $y_0$ non è uno zero di $f$, separa le variabili e integra entrambi i membri con {{formula:11.8}} ([Equazioni a variabili separabili](ref:chapter/11#p4)).
 3. Imponi la condizione iniziale per fissare la costante $c$.
 4. Esplicita $y$, scegliendo il segno della radice o il ramo coerente con il dato iniziale.

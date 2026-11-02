@@ -1361,7 +1361,7 @@ Quindi $f$ è infinitesima di ordine $4$ rispetto a $\varphi(x)=x$, con parte pr
 
 $$f(x)\sim \frac{x^4}{2} \quad (x\to 0).$$
 
-(b) L'unico punto critico per l'integrale è $x=0$, poiché $f$ è continua e limitata su $(0,1\rbrack $ e $x^\alpha$ è continua e non nulla su $(0,1\rbrack $; in $x=1$ non c'è alcuna singolarità per nessun $\alpha$. Vicino a $0$, per il principio di eliminazione dei termini trascurabili ({{formula:6.12}}),
+(b) L'unico punto critico per l'integrale è $x=0$, poiché $f$ è continua e limitata su $(0,1\rbrack $ e $x^\alpha$ è continua e non nulla su $(0,1\rbrack $; in $x=1$ non c'è alcuna singolarità per nessun $\alpha$. Vicino a $0$, per il principio di eliminazione dei termini trascurabili {{formula:6.12}},
 
 $$\frac{f(x)}{x^\alpha}\sim \frac{1}{2}\,x^{4-\alpha} \quad (x\to 0^+).$$
 
@@ -1392,7 +1392,7 @@ Per il denominatore, posto $t=\sqrt{x}\to+\infty$, si ha $e^{\sqrt{x}}=e^{t}$, e
 
 $$\lim_{x\to+\infty}\frac{x^k}{e^{\sqrt{x}}}=\lim_{t\to+\infty}\frac{t^{2k}}{e^{t}}=0.$$
 
-Applicando questo con $k=2$ e usando il principio di eliminazione dei termini trascurabili ({{formula:6.12}}) sul numeratore,
+Applicando questo con $k=2$ e usando il principio di eliminazione dei termini trascurabili {{formula:6.12}} sul numeratore,
 
 $$\lim_{x\to +\infty}\frac{x^2+3x\ln x}{e^{\sqrt{x}}}=\lim_{x\to+\infty}\frac{x^2}{e^{\sqrt{x}}}=0.$$
 :::
@@ -1440,7 +1440,7 @@ Scrivi $f$ e $g$ usando la definizione di parte principale, {{formula:6.10}} e {
 :::
 
 :::solution
-(a) Per definizione di parte principale ({{formula:6.10}}), per $x\to x_0$ si ha
+(a) Per definizione di parte principale {{formula:6.10}}, per $x\to x_0$ si ha
 
 $$f(x)=a\,\varphi(x)^n+o(\varphi(x)^n), \qquad g(x)=b\,\varphi(x)^n+o(\varphi(x)^n),$$
 

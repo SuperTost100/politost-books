@@ -444,9 +444,9 @@ Gli esempi qui sotto vengono tutti dalla prova scritta, di cui abbiamo i testi.
 **Metodo.**
 
 1. Per la definizione, scrivi prima il limite, ad esempio $\lim_{M\to+\infty}\int_a^M g(x)\,dx$, e poi le tre alternative: il limite esiste finito, esiste infinito, non esiste.
-2. Per la dimostrazione "se $f\ge0$ l'integrale non è indeterminato", usa la funzione integrale $F(M)=\int_a^M f(x)\,dx$. È crescente perché $f\ge 0$, e una funzione monotona ha limite ({{formula:10.7}}). Lo stesso schema vale per la seconda specie.
-3. Per lo studio concreto, controlla il segno. Se la funzione è positiva usa il confronto o il confronto asintotico ({{formula:10.9}}).
-4. Se la funzione cambia segno, studia $|f|$ con una maggiorazione e applica il criterio di convergenza assoluta ({{formula:10.11}}). Se $|f|$ non è integrabile, ragiona sul comportamento di $f$ stessa.
+2. Per la dimostrazione "se $f\ge0$ l'integrale non è indeterminato", usa la funzione integrale $F(M)=\int_a^M f(x)\,dx$. È crescente perché $f\ge 0$, e una funzione monotona ha limite {{formula:10.7}}. Lo stesso schema vale per la seconda specie.
+3. Per lo studio concreto, controlla il segno. Se la funzione è positiva usa il confronto o il confronto asintotico {{formula:10.9}}.
+4. Se la funzione cambia segno, studia $|f|$ con una maggiorazione e applica il criterio di convergenza assoluta {{formula:10.11}}. Se $|f|$ non è integrabile, ragiona sul comportamento di $f$ stessa.
 5. Se l'integranda è asintotica a una costante non nulla, l'integrale su una semiretta diverge.
 
 **Errori tipici.**
@@ -469,7 +469,7 @@ Gli esempi qui sotto vengono tutti dalla prova scritta, di cui abbiamo i testi.
 **Metodo.**
 
 1. Trova una primitiva con le tecniche di [Integrali indefiniti e tecniche di integrazione](ref:chapter/9#p2): sostituzione, divisione di polinomi, fratti semplici.
-2. Scrivi l'integrale come limite, $\lim_{M\to+\infty}\int_a^M f(x)\,dx$, e applica la formula di Torricelli-Barrow ([(9.15)](ref:formula/9.15)) con estremo $M$.
+2. Scrivi l'integrale come limite, $\lim_{M\to+\infty}\int_a^M f(x)\,dx$, e applica la formula di Torricelli-Barrow [(9.15)](ref:formula/9.15) con estremo $M$.
 3. Calcola il limite della primitiva in $M$. Se il parametro compare nella primitiva, guarda quando il limite è finito: spesso i termini divergenti si elidono solo per un valore o per un intervallo di valori.
 4. Per una funzione integrale $F(x)=\int_0^x f(t)\,dt$ con $f>0$, il segno della derivata è il segno di $f$ (teorema fondamentale, [Teorema fondamentale del calcolo integrale](ref:chapter/9#p4)). Il suo estremo superiore è il valore dell'integrale improprio.
 

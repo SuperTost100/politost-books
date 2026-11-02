@@ -356,7 +356,7 @@ Il capitolo sulle soluzioni è comparso in 3 delle 4 sessioni d'esame esaminate.
 **Metodo passo per passo.**
 
 1. Bilancia la reazione. Se è una redox, scrivi le semireazioni e fai uguagliare gli elettroni scambiati (vedi [Reazioni di ossidoriduzione](ref:chapter/5#p5)).
-2. Porta ogni reagente a moli. Per un solido usa $n = m/M$ ([(2.4)](ref:formula/2.4)). Per un reagente dato come soluzione percentuale converti il volume in massa con la densità e applica la percentuale in massa del soluto ({{formula:11.6}}).
+2. Porta ogni reagente a moli. Per un solido usa $n = m/M$ [(2.4)](ref:formula/2.4). Per un reagente dato come soluzione percentuale converti il volume in massa con la densità e applica la percentuale in massa del soluto {{formula:11.6}}.
 3. Confronta le moli con i coefficienti stechiometrici e individua il reagente limitante ([Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4)).
 4. Calcola le moli del prodotto richiesto dal reagente limitante e convertile in grammi con la massa molare.
 5. Verifica che le unità si semplifichino e che le cifre significative rispettino i dati ([Grandezze, unità e cifre significative](ref:chapter/1#p2)).
@@ -370,7 +370,7 @@ Il capitolo sulle soluzioni è comparso in 3 delle 4 sessioni d'esame esaminate.
 **Esempi.**
 
 - *Tema d_esame 16 + soluzione (Savorani), esercizio 1.* Chiede di bilanciare la redox tra dicromato di potassio, cloruro di stagno(II) e acido cloridrico, poi la massa di cloruro di cromo(III) ottenuta da 565,0 g di cloruro di stagno(II) e 2,0 L di acido cloridrico al 37,0 %. Si risolve con i passi 1-4: i grammi di SnCl₂ diventano moli con la massa molare, l'acido dato come volume e percentuale diventa moli passando da volume a massa e da massa di soluzione a massa di soluto, e il confronto con i coefficienti indica il reagente limitante.
-- *Tema d_esame 15 + soluzione, esercizio 1.* Parte dalla reazione tra nitrato di piombo(II), rame e acido solforico, da bilanciare. Poi 780 mg del solfato rameico prodotto vengono sciolti in acqua fino a 980 cm³ di soluzione, e si prelevano 100 mL. La concentrazione si ottiene da $n/V$ con il volume finale della soluzione, non con il volume di solvente aggiunto ({{formula:11.3}}).
+- *Tema d_esame 15 + soluzione, esercizio 1.* Parte dalla reazione tra nitrato di piombo(II), rame e acido solforico, da bilanciare. Poi 780 mg del solfato rameico prodotto vengono sciolti in acqua fino a 980 cm³ di soluzione, e si prelevano 100 mL. La concentrazione si ottiene da $n/V$ con il volume finale della soluzione, non con il volume di solvente aggiunto {{formula:11.3}}.
 
 ### Porzione prelevata e diluizione
 

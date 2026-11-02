@@ -372,7 +372,7 @@ Il lavoro compiuto dalla forza gravitazionale su $m_2$ per uno spostamento gener
 $$W_{AB} = -\Delta E_p = -m_2\,\Delta V_1 = m_2\left(V_{1,A} - V_{1,B}\right)$$
 :::
 
-Tra campo gravitazionale e potenziale sussiste la relazione differenziale, analoga a quella già vista tra forza ed energia potenziale ([(4.13)](ref:formula/4.13)):
+Tra campo gravitazionale e potenziale sussiste la relazione differenziale, analoga a quella già vista tra forza ed energia potenziale [(4.13)](ref:formula/4.13):
 
 :::formula{id="10.13" label="Campo come gradiente del potenziale"}
 $$\vec{G} = -\vec{\nabla} V$$
@@ -404,9 +404,9 @@ L'ipotesi essenziale alla base del teorema è che il campo dipenda dall'inverso 
 
 $$d\Phi = \vec{G}\cdot\hat{u}_n\,dS = -GM\,\frac{\hat{u}_r\cdot\hat{u}_n\,dS}{r^2} = -GM\, d\Omega_{\mathrm{or}},$$
 
-dove $d\Omega_{\mathrm{or}} = (\hat{u}_r\cdot\hat{u}_n)\,dS/r^2$ è l'angolo solido orientato sotteso da $dS$ visto dal punto dove si trova $M$. A differenza dell'angolo solido infinitesimo definito con valore assoluto nella sezione sull'[angolo solido](ref:chapter/10#p4) ({{formula:10.10}}), qui il segno di $d\Omega_{\mathrm{or}}$ dipende dall'orientazione relativa di $\hat{u}_r$ e $\hat{u}_n$: per una superficie non convessa alcuni contributi risultano negativi, ed è proprio integrando questa versione orientata, e non il suo valore assoluto, che la dimostrazione dà come risultato $4\pi$ anche in presenza di concavità.
+dove $d\Omega_{\mathrm{or}} = (\hat{u}_r\cdot\hat{u}_n)\,dS/r^2$ è l'angolo solido orientato sotteso da $dS$ visto dal punto dove si trova $M$. A differenza dell'angolo solido infinitesimo definito con valore assoluto nella sezione sull'[angolo solido](ref:chapter/10#p4) {{formula:10.10}}, qui il segno di $d\Omega_{\mathrm{or}}$ dipende dall'orientazione relativa di $\hat{u}_r$ e $\hat{u}_n$: per una superficie non convessa alcuni contributi risultano negativi, ed è proprio integrando questa versione orientata, e non il suo valore assoluto, che la dimostrazione dà come risultato $4\pi$ anche in presenza di concavità.
 
-Integrando l'angolo solido orientato su tutta la superficie chiusa, il suo valore totale è $4\pi$ sr ({{formula:10.9}}), da cui $\Phi = -4\pi GM$. Se la massa $M$ è invece esterna a $S$, la superficie chiusa sottende, vista da $M$, un angolo solido orientato netto nullo, quindi il suo contributo al flusso totale è nullo. Sommando su tutte le masse presenti, interne ed esterne, e applicando la sovrapposizione dei campi, si ottiene {{formula:10.15}}: il campo che compare nell'integrale è quello totale generato da tutte le masse, ma il flusso attraverso l'intera superficie chiusa dipende soltanto dalle masse interne. $\blacksquare$
+Integrando l'angolo solido orientato su tutta la superficie chiusa, il suo valore totale è $4\pi$ sr {{formula:10.9}}, da cui $\Phi = -4\pi GM$. Se la massa $M$ è invece esterna a $S$, la superficie chiusa sottende, vista da $M$, un angolo solido orientato netto nullo, quindi il suo contributo al flusso totale è nullo. Sommando su tutte le masse presenti, interne ed esterne, e applicando la sovrapposizione dei campi, si ottiene {{formula:10.15}}: il campo che compare nell'integrale è quello totale generato da tutte le masse, ma il flusso attraverso l'intera superficie chiusa dipende soltanto dalle masse interne. $\blacksquare$
 
 La superficie chiusa usata per applicare il teorema (detta superficie gaussiana) è in generale una superficie geometrica immaginaria, scelta per comodità di calcolo, e non deve coincidere con il contorno fisico di un oggetto.
 
@@ -463,4 +463,4 @@ $$G\!\left(\frac{R_T}{2}\right) = G(R_T)\cdot\frac{1}{2} \approx 9,82 \cdot 0,5\
 
 Controllo: il risultato è positivo, ha le dimensioni di un'accelerazione, e dimezza correttamente il valore superficiale, coerentemente con l'andamento lineare previsto da {{formula:10.18}}; nella realtà la densità terrestre non è uniforme (il nucleo è molto più denso del mantello), quindi questo è solo un modello approssimato.
 
-**Errore tipico 10.5.** Un errore frequente è assumere che il campo all'interno di una qualunque distribuzione sferica sia nullo, confondendo il caso del guscio cavo ({{formula:10.17}}) con quello della sfera piena, dove invece il campo cresce linearmente con $r$ ({{formula:10.18}}). Un secondo errore tipico è applicare il teorema di Gauss a forze che non seguono la legge dell'inverso del quadrato, oppure dimenticare che, sebbene il campo nell'integrale di flusso sia generato da tutte le masse presenti, solo quelle interne alla superficie gaussiana contribuiscono al flusso totale.
+**Errore tipico 10.5.** Un errore frequente è assumere che il campo all'interno di una qualunque distribuzione sferica sia nullo, confondendo il caso del guscio cavo {{formula:10.17}} con quello della sfera piena, dove invece il campo cresce linearmente con $r$ {{formula:10.18}}. Un secondo errore tipico è applicare il teorema di Gauss a forze che non seguono la legge dell'inverso del quadrato, oppure dimenticare che, sebbene il campo nell'integrale di flusso sia generato da tutte le masse presenti, solo quelle interne alla superficie gaussiana contribuiscono al flusso totale.

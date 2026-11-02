@@ -212,7 +212,7 @@ La stechiometria è lo studio degli aspetti quantitativi delle formule e delle r
 Un problema stechiometrico generico, in cui si conosce la quantità di una sostanza (reagente o prodotto) e si vuole calcolare la quantità di un'altra sostanza della stessa reazione, si risolve sempre con la stessa sequenza di passaggi.
 
 1. Si scrive e si bilancia l'equazione chimica, se non è già data.
-2. Si convertono i dati noti (massa, volume, numero di particelle) in moli, usando $n = m/M$ ([(2.4)](ref:formula/2.4)) oppure la relazione con il numero di Avogadro ([(2.5)](ref:formula/2.5)).
+2. Si convertono i dati noti (massa, volume, numero di particelle) in moli, usando $n = m/M$ [(2.4)](ref:formula/2.4) oppure la relazione con il numero di Avogadro [(2.5)](ref:formula/2.5).
 3. Si usano i coefficienti stechiometrici dell'equazione bilanciata per convertire le moli della sostanza nota nelle moli della sostanza incognita.
 4. Si converte infine la quantità di moli trovata nell'unità richiesta dal problema (massa, volume, numero di particelle).
 
@@ -316,7 +316,7 @@ $$\eta = \frac{\text{resa reale}}{\text{resa teorica}} \times 100$$
 
 Resa reale e resa teorica devono essere espresse nella stessa grandezza (entrambe in moli, oppure entrambe in grammi dello stesso prodotto), altrimenti il rapporto non ha significato. La resa percentuale è sempre un numero compreso tra 0 e 100: un valore di $\eta$ pari a 100 corrisponde al caso ideale, mai verificato nella realtà, in cui tutto il reagente limitante si trasforma in prodotto isolabile senza perdite.
 
-Per calcolare la resa teorica si procede esattamente come nei calcoli stechiometrici con reagente limitante trattati nella sezione su [calcoli stechiometrici e reagente limitante](ref:chapter/4#p4): si individua il reagente limitante, si calcolano le sue moli, si usa il rapporto stechiometrico per ottenere le moli teoriche di prodotto e infine, se richiesto, si convertono in massa tramite la massa molare ([(2.4)](ref:formula/2.4)).
+Per calcolare la resa teorica si procede esattamente come nei calcoli stechiometrici con reagente limitante trattati nella sezione su [calcoli stechiometrici e reagente limitante](ref:chapter/4#p4): si individua il reagente limitante, si calcolano le sue moli, si usa il rapporto stechiometrico per ottenere le moli teoriche di prodotto e infine, se richiesto, si convertono in massa tramite la massa molare [(2.4)](ref:formula/2.4).
 
 **Esempio svolto 4.8** (resa di una reazione di sintesi)
 
@@ -444,7 +444,7 @@ Errori tipici: usare i °C nell'equazione di stato; applicare il volume e la tem
 
 Esempi.
 
-- Tema d_esame 3 + soluzione, n. 1: miscela di 100,0 mL di N₂ e 400,0 mL di H₂ a 0 °C e 1 atm, poi pressione in 0,700 L a 225 °C. A temperatura e pressione uguali i volumi sono proporzionali alle moli ([(6.4)](ref:formula/6.4)), dunque $\mathrm{N_2} + 3\,\mathrm{H_2} \to 2\,\mathrm{NH_3}$ si legge direttamente in mL. Il limitante è N₂ (100 contro 400/3). Restano 100 mL di H₂ e si formano 200 mL di NH₃, in totale 300 mL, pari a $n = 0{,}3000/22{,}414 = 0{,}01338$ mol. Alla fine $P = nRT/V \approx 0{,}78$ atm. L'esercizio contiene anche la domanda teorica D1 sulla definizione di acido e base secondo Brønsted-Lowry, che si studia in [Teorie acido-base e forza degli acidi](ref:chapter/13#p2).
+- Tema d_esame 3 + soluzione, n. 1: miscela di 100,0 mL di N₂ e 400,0 mL di H₂ a 0 °C e 1 atm, poi pressione in 0,700 L a 225 °C. A temperatura e pressione uguali i volumi sono proporzionali alle moli [(6.4)](ref:formula/6.4), dunque $\mathrm{N_2} + 3\,\mathrm{H_2} \to 2\,\mathrm{NH_3}$ si legge direttamente in mL. Il limitante è N₂ (100 contro 400/3). Restano 100 mL di H₂ e si formano 200 mL di NH₃, in totale 300 mL, pari a $n = 0{,}3000/22{,}414 = 0{,}01338$ mol. Alla fine $P = nRT/V \approx 0{,}78$ atm. L'esercizio contiene anche la domanda teorica D1 sulla definizione di acido e base secondo Brønsted-Lowry, che si studia in [Teorie acido-base e forza degli acidi](ref:chapter/13#p2).
 - Tema d_esame 16 + soluzione (Savorani), n. 2: 40 g di ZnS e un volume di O₂ misurato a 10 °C e 3 atm, in un recipiente da 1 m³ portato a 900 °C. Le moli di O₂ si calcolano con le condizioni di 10 °C e 3 atm, e quelle di ZnS dalla massa. La reazione bilanciata $2\,\mathrm{ZnS} + 3\,\mathrm{O_2} \to 2\,\mathrm{ZnO} + 2\,\mathrm{SO_2}$ dice poi chi è limitante e quante moli di SO₂ si formano. Per gli eventuali valori a 900 °C si passa all'equazione di stato con la nuova temperatura.
 - Tema d_esame 15 + soluzione, n. 2: una miscela di O₂ e N₂ in 2500 cm³ a 25 °C, con massa 0,012 kg e il 20 % in massa di ossigeno. Prima si ricavano le moli dalle masse, quindi le frazioni molari e le pressioni parziali. Poi si studia la reazione stechiometrica verso N₂O, per la quale servono anche dati termochimici (tratti in [Entalpia ed equazioni termochimiche](ref:chapter/7#p3)).
 

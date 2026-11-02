@@ -97,7 +97,7 @@ Notiamo che per $\sin x$ e $\cos x$ compaiono solo le potenze dispari e pari di 
 
 ### Calcolo di limiti e ordini di infinitesimo con Taylor
 
-Lo strumento chiave per usare gli sviluppi nel calcolo dei limiti è il **principio di eliminazione dei termini trascurabili** (già incontrato in [Infiniti e infinitesimi](ref:chapter/6#p3)): se $f = o(g)$ per $x \to x_0$ ([(6.9)](ref:formula/6.9)), allora nelle somme i termini $o(\cdot)$ possono essere trascurati rispetto al termine dominante, purché si confrontino numeratore e denominatore in modo omogeneo.
+Lo strumento chiave per usare gli sviluppi nel calcolo dei limiti è il **principio di eliminazione dei termini trascurabili** (già incontrato in [Infiniti e infinitesimi](ref:chapter/6#p3)): se $f = o(g)$ per $x \to x_0$ [(6.9)](ref:formula/6.9), allora nelle somme i termini $o(\cdot)$ possono essere trascurati rispetto al termine dominante, purché si confrontino numeratore e denominatore in modo omogeneo.
 
 **Esempio 8.1.** Calcoliamo
 
@@ -121,7 +121,7 @@ perché $\dfrac{o(x^3)}{x^3} \to 0$ per definizione di $o$-piccolo. In questo mo
 
 $$\lim_{x \to +\infty} \frac{e^x + x}{e^{2x} + \log x}.$$
 
-Per $x \to +\infty$ confrontiamo i termini con la gerarchia degli infiniti ([(6.11)](ref:formula/6.11)): $x = o(e^x)$ e $\log x = o(e^{2x})$. Allora
+Per $x \to +\infty$ confrontiamo i termini con la gerarchia degli infiniti [(6.11)](ref:formula/6.11): $x = o(e^x)$ e $\log x = o(e^{2x})$. Allora
 
 $$\lim_{x \to +\infty} \frac{e^x + o(e^x)}{e^{2x} + o(e^{2x})} = \lim_{x \to +\infty} \frac{e^x}{e^{2x}} = \lim_{x \to +\infty} \frac{1}{e^x} = 0.$$
 
@@ -276,7 +276,7 @@ Osserviamo che qui il criterio del segno della derivata prima sarebbe stato meno
 
 ## p4 | Studio di funzione completo
 
-Lo **studio di funzione completo** è l'esercizio che riassume quasi tutti gli strumenti del calcolo differenziale sviluppati nei capitoli precedenti: dominio e simmetrie (cfr. [Funzioni: dominio, immagine, iniettività](ref:chapter/3#p2) e [Simmetrie, periodicità e funzioni particolari](ref:chapter/3#p4)), limiti agli estremi del dominio ([Definizione di limite](ref:chapter/4#p3)), continuità ([Funzioni continue](ref:chapter/5#p2)), segno della derivata prima per la monotonia ([(7.13)](ref:formula/7.13)) e segno della derivata seconda per la convessità, oltre alla caratterizzazione dei punti critici tramite le derivate successive studiata nella sezione precedente. Lo schema procedurale standard è il seguente.
+Lo **studio di funzione completo** è l'esercizio che riassume quasi tutti gli strumenti del calcolo differenziale sviluppati nei capitoli precedenti: dominio e simmetrie (cfr. [Funzioni: dominio, immagine, iniettività](ref:chapter/3#p2) e [Simmetrie, periodicità e funzioni particolari](ref:chapter/3#p4)), limiti agli estremi del dominio ([Definizione di limite](ref:chapter/4#p3)), continuità ([Funzioni continue](ref:chapter/5#p2)), segno della derivata prima per la monotonia [(7.13)](ref:formula/7.13) e segno della derivata seconda per la convessità, oltre alla caratterizzazione dei punti critici tramite le derivate successive studiata nella sezione precedente. Lo schema procedurale standard è il seguente.
 
 1. Determinare il dominio $\operatorname{dom} f$ e, se possibile, eventuali simmetrie (parità, disparità, periodicità) per restringere lo studio a una metà del dominio.
 2. Calcolare i limiti di $f$ agli estremi del dominio e nei punti di discontinuità eliminabili dal dominio stesso, classificando gli asintoti.
@@ -330,7 +330,7 @@ A questo punto si costruisce una tabella dei segni di $f'$ e $f''$ sull'intero d
 
 $$f(x)=\frac{x^3}{x^2-1}.$$
 
-*Dominio e simmetrie.* Il denominatore si annulla per $x = \pm 1$, quindi $\operatorname{dom} f = \mathbb{R} \setminus \{-1, 1\}$, insieme simmetrico rispetto all'origine. Si ha $f(-x) = \dfrac{(-x)^3}{(-x)^2-1} = \dfrac{-x^3}{x^2-1} = -f(x)$, quindi $f$ è dispari ([(3.8)](ref:formula/3.8)): il grafico è simmetrico rispetto all'origine, e basta studiare $f$ per $x \geq 0$.
+*Dominio e simmetrie.* Il denominatore si annulla per $x = \pm 1$, quindi $\operatorname{dom} f = \mathbb{R} \setminus \{-1, 1\}$, insieme simmetrico rispetto all'origine. Si ha $f(-x) = \dfrac{(-x)^3}{(-x)^2-1} = \dfrac{-x^3}{x^2-1} = -f(x)$, quindi $f$ è dispari [(3.8)](ref:formula/3.8): il grafico è simmetrico rispetto all'origine, e basta studiare $f$ per $x \geq 0$.
 
 *Limiti e asintoti.* Per $x\to\pm1$ il numeratore tende a un valore non nullo mentre il denominatore tende a $0$. In particolare,
 
@@ -444,7 +444,7 @@ Metodo ([Teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4)):
 1. Enuncia il teorema con tutte le ipotesi: continuità su $\lbrack a,b\rbrack $, derivabilità su $\rbrack a,b\lbrack $, e per Rolle $f(a)=f(b)$ ([(7.11)](ref:formula/7.11), [(7.12)](ref:formula/7.12)).
 2. Verifica le ipotesi sul caso concreto, punto per punto, prima di concludere.
 3. Per una domanda del tipo «è possibile che…» traduci i dati in pendenze: il teorema di Lagrange confronta la pendenza media con i valori di $f'$, e il segno di $f''$ dà la monotonia di $f'$.
-4. Per estremi su un intervallo chiuso usa il teorema di Weierstrass ([(5.6)](ref:formula/5.6)) e confronta valori in estremi, punti stazionari e punti di non derivabilità.
+4. Per estremi su un intervallo chiuso usa il teorema di Weierstrass [(5.6)](ref:formula/5.6) e confronta valori in estremi, punti stazionari e punti di non derivabilità.
 
 Errori tipici: dire che un punto di estremo è stazionario senza controllare che $f$ sia derivabile ([(7.10)](ref:formula/7.10) lo richiede); concludere che Rolle non vale perché non ci sono punti stazionari, quando semplicemente non è soddisfatta un'ipotesi; dimenticare i punti di bordo.
 

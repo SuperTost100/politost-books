@@ -615,11 +615,11 @@ Il secondo principio non compare quasi mai da solo: nei testi è sempre intrecci
 
 **Metodo.**
 
-1. Scrivere i dati e ricavare gli stati con l'equazione di stato ([(13.3)](ref:formula/13.3)), usando i rapporti di volume e di temperatura dati. Per i gas ideali si veda [Trasformazioni dei gas ideali](ref:chapter/13#p4).
-2. Per ogni tratto applicare il primo principio $\Delta U = Q - W$ ([(13.1)](ref:formula/13.1)), con $\Delta U = n\,c_V\,\Delta T$. Il lavoro si calcola secondo il tipo di trasformazione (isoterma, isocora, adiabatica reversibile), come in [Primo principio ed energia interna](ref:chapter/13#p2).
-3. Per $\Delta S$ del gas scegliere una trasformazione reversibile fittizia tra gli stessi stati e usare la formula generale ({{formula:14.15}}), oppure i casi particolari isoterma e isocora. Ad esempio, per un'isoterma $\Delta S = nR\ln(V_f/V_i)$. Anche nel tratto irreversibile $\Delta S$ del gas dipende solo dagli stati iniziale e finale. Il metodo è in [Calcolo delle variazioni di entropia](ref:chapter/14#p6).
+1. Scrivere i dati e ricavare gli stati con l'equazione di stato [(13.3)](ref:formula/13.3), usando i rapporti di volume e di temperatura dati. Per i gas ideali si veda [Trasformazioni dei gas ideali](ref:chapter/13#p4).
+2. Per ogni tratto applicare il primo principio $\Delta U = Q - W$ [(13.1)](ref:formula/13.1), con $\Delta U = n\,c_V\,\Delta T$. Il lavoro si calcola secondo il tipo di trasformazione (isoterma, isocora, adiabatica reversibile), come in [Primo principio ed energia interna](ref:chapter/13#p2).
+3. Per $\Delta S$ del gas scegliere una trasformazione reversibile fittizia tra gli stessi stati e usare la formula generale {{formula:14.15}}, oppure i casi particolari isoterma e isocora. Ad esempio, per un'isoterma $\Delta S = nR\ln(V_f/V_i)$. Anche nel tratto irreversibile $\Delta S$ del gas dipende solo dagli stati iniziale e finale. Il metodo è in [Calcolo delle variazioni di entropia](ref:chapter/14#p6).
 4. Per ogni sorgente, che resta a temperatura $T_s$ costante, calcolare $\Delta S_s = Q_s/T_s$ con $Q_s = -Q_{gas}$.
-5. Sommare: $\Delta S_U = \Delta S_{sist} + \Delta S_{amb}$. Il segno dice se il processo è reversibile ($=0$) o irreversibile ($>0$) ({{formula:14.23}}). Un risultato negativo indica un errore.
+5. Sommare: $\Delta S_U = \Delta S_{sist} + \Delta S_{amb}$. Il segno dice se il processo è reversibile ($=0$) o irreversibile ($>0$) {{formula:14.23}}. Un risultato negativo indica un errore.
 6. Controllare unità (J/K) e ordine di grandezza.
 
 **Errori tipici.**
@@ -643,9 +643,9 @@ Il secondo principio non compare quasi mai da solo: nei testi è sempre intrecci
 **Metodo.**
 
 1. Elencare per ogni tratto le grandezze note e quelle incognite, tracciando il ciclo nel piano $(V,p)$ ([Macchine termiche e frigoriferi](ref:chapter/14#p2)).
-2. Sui tratti reversibili calcolare calore e lavoro con le formule dell'isoterma ([(13.8)](ref:formula/13.8)) e dell'adiabatica ([(13.11)](ref:formula/13.11)). Le adiabatiche reversibili legano temperature e volumi tramite [(13.9)](ref:formula/13.9).
+2. Sui tratti reversibili calcolare calore e lavoro con le formule dell'isoterma [(13.8)](ref:formula/13.8) e dell'adiabatica [(13.11)](ref:formula/13.11). Le adiabatiche reversibili legano temperature e volumi tramite [(13.9)](ref:formula/13.9).
 3. Sul tratto irreversibile usare il calore dato. Essendo il ciclo chiuso, $\Delta U_{ciclo} = 0$ e quindi $W_{ciclo} = Q_{ciclo}$: il lavoro totale si ricava dalla somma dei calori.
-4. Calcolare $\eta = W/Q_{ass}$ ({{formula:14.1}}), contando in $Q_{ass}$ solo i calori positivi, e confrontarlo con $\eta_C = 1 - T_1/T_2$ ({{formula:14.3}}). Il teorema di Carnot ([Secondo principio](ref:chapter/14#p3)) impone $\eta \le \eta_C$: se il risultato lo supera, c'è un errore.
+4. Calcolare $\eta = W/Q_{ass}$ {{formula:14.1}}, contando in $Q_{ass}$ solo i calori positivi, e confrontarlo con $\eta_C = 1 - T_1/T_2$ {{formula:14.3}}. Il teorema di Carnot ([Secondo principio](ref:chapter/14#p3)) impone $\eta \le \eta_C$: se il risultato lo supera, c'è un errore.
 5. Per l'entropia dell'universo, $\Delta S_{gas} = 0$ sul ciclo chiuso (funzione di stato). Resta la somma delle variazioni delle sorgenti, $\Delta S_U = -\sum Q_i/T_i$ con $Q_i$ calore scambiato dal gas con la sorgente $i$, che per il teorema di Clausius ([Teorema di Clausius ed entropia](ref:chapter/14#p5)) deve risultare $\ge 0$.
 
 **Errori tipici.**

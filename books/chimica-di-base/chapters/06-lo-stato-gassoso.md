@@ -162,7 +162,7 @@ Questa è una delle procedure sperimentali più comuni per determinare la massa 
 Un campione gassoso occupa un volume di 2,00 L a 1,50 atm e 27 °C; la sua massa è 4,20 g. Si vuole determinare la massa molare del gas.
 
 1. Dati: $V = 2,00\ \text{L}$, $P = 1,50\ \text{atm}$, $t = 27\ \text{°C}$, $m = 4,20\ \text{g}$.
-2. Strategia: si calcola prima la densità $\rho = m/V$, poi si applica la formula {{formula:6.7}} usando $R = 0,08206\ \text{L·atm/(mol·K)}$ e convertendo la temperatura in kelvin ([(1.1)](ref:formula/1.1)): $T = 27 + 273,15 = 300,15\ \text{K}$.
+2. Strategia: si calcola prima la densità $\rho = m/V$, poi si applica la formula {{formula:6.7}} usando $R = 0,08206\ \text{L·atm/(mol·K)}$ e convertendo la temperatura in kelvin [(1.1)](ref:formula/1.1): $T = 27 + 273,15 = 300,15\ \text{K}$.
 3. Calcolo:
 
 $$\rho = \frac{4,20\ \text{g}}{2,00\ \text{L}} = 2,10\ \text{g/L}$$
@@ -487,7 +487,7 @@ Metodo:
 
 1. Trasforma le percentuali in peso in masse, e le masse in moli con la massa molare di ciascun componente. Qui 20 % di 12 g sono 2,4 g di O₂ (0,075 mol) e 9,6 g di N₂ (circa 0,343 mol).
 2. Calcola le frazioni molari con {{formula:6.9}}: si ottengono circa 0,18 per O₂ e 0,82 per N₂.
-3. Ricava la pressione totale con {{formula:6.5}} usando le moli totali ($T = 298$ K, $V = 2{,}5$ L), poi le pressioni parziali con {{formula:6.10}}. Verifica che la somma delle $p_i$ dia la pressione totale ({{formula:6.8}}).
+3. Ricava la pressione totale con {{formula:6.5}} usando le moli totali ($T = 298$ K, $V = 2{,}5$ L), poi le pressioni parziali con {{formula:6.10}}. Verifica che la somma delle $p_i$ dia la pressione totale {{formula:6.8}}.
 
 L'errore tipico è scambiare la frazione in massa con la frazione molare: 20 % in peso di ossigeno non significa $x_{\mathrm{O_2}} = 0{,}20$. Teoria in [densità, massa molare e miscele gassose](ref:chapter/6#p3).
 
@@ -497,7 +497,7 @@ Compare in due sessioni, sempre con una reazione tutta in fase gassosa o con un 
 
 Metodo:
 
-1. Scrivi la reazione bilanciata e l'espressione di $K_p$ ([(12.2)](ref:formula/12.2)), lasciando fuori i solidi.
+1. Scrivi la reazione bilanciata e l'espressione di $K_p$ [(12.2)](ref:formula/12.2), lasciando fuori i solidi.
 2. Imposta la tabella "iniziale / variazione / equilibrio" in moli, con l'incognita $x$ ([quoziente di reazione e calcoli di equilibrio](ref:chapter/12#p3)).
 3. Esprimi le pressioni parziali in uno dei due modi, a seconda dei dati: $p_i = n_i RT/V$ se è noto il volume (caso dell'antimonio), oppure $p_i = x_i P$ se è nota la pressione totale (caso dello zinco), con $x_i$ calcolata sulle sole moli gassose.
 4. Sostituisci in $K_p$, risolvi per $x$ e scarta la radice non fisica (negativa o maggiore delle moli disponibili).

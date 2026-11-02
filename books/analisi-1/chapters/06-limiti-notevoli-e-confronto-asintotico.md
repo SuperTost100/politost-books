@@ -398,7 +398,7 @@ Riassumiamo le situazioni in cui il principio di sostituzione degli asintotici f
 
 $$\frac{\log(1+\sin x)}{\log(1+x)} = \frac{\log(1+\sin x)}{\sin x}\cdot\frac{\sin x}{x}\cdot\frac{x}{\log(1+x)}.$$
 
-Per $x \to 0$ il primo fattore tende a $1$ per il limite notevole del logaritmo ({{formula:6.3}}), poiché $\sin x \to 0$; il secondo fattore tende a $1$ per il limite notevole del seno ({{formula:6.6}}); il terzo fattore tende a $1$ perché è il reciproco dello stesso limite notevole del logaritmo. Il prodotto tende quindi a $1$, il che dimostra l'equivalenza asintotica cercata usando esplicitamente le proprietà della funzione esterna $\log(1+t)$ vicino a $t=0$, e non un generico argomento di composizione (si veda anche [Teoremi sui limiti](ref:chapter/4#p4)).
+Per $x \to 0$ il primo fattore tende a $1$ per il limite notevole del logaritmo {{formula:6.3}}, poiché $\sin x \to 0$; il secondo fattore tende a $1$ per il limite notevole del seno {{formula:6.6}}; il terzo fattore tende a $1$ perché è il reciproco dello stesso limite notevole del logaritmo. Il prodotto tende quindi a $1$, il che dimostra l'equivalenza asintotica cercata usando esplicitamente le proprietà della funzione esterna $\log(1+t)$ vicino a $t=0$, e non un generico argomento di composizione (si veda anche [Teoremi sui limiti](ref:chapter/4#p4)).
 
 In sintesi, il principio di eliminazione dei termini trascurabili è uno strumento potente per semplificare rapporti di infiniti o infinitesimi, ma la sua applicazione meccanica a somme e differenze, senza verificare la condizione quantitativa $f - f_1 = o(f_1 + g)$, è la causa più frequente di errori nel calcolo dei limiti con gli asintotici. La strategia sicura, quando compaiono differenze di termini dello stesso ordine, è sempre quella di passare a uno sviluppo esplicito più dettagliato (Taylor) prima di sostituire.
 
@@ -415,7 +415,7 @@ Metodo:
 1. Scrivere il dominio e individuare ogni punto in cui si deve calcolare un limite: gli estremi finiti esclusi dal dominio, gli estremi infiniti, i punti in cui compaiono valori assoluti o logaritmi.
 2. Sostituire il punto nell'espressione e riconoscere la forma. Se non è indeterminata, il limite si legge con l'[algebra dei limiti](ref:chapter/4#p6).
 3. Se la forma è indeterminata, cercare un cambio di variabile che riporti a un limite notevole (vedi [Limiti notevoli](ref:chapter/6#p2)). Per esempio si pone $t = \frac{1}{x}$ oppure $t = e^x - 1$ e si usano le {{formula:6.3}} e {{formula:6.4}}.
-4. Nelle somme tra infiniti, individuare il termine dominante con la gerarchia degli infiniti ({{formula:6.11}}) e applicare il [principio di eliminazione dei termini trascurabili](ref:chapter/6#p4).
+4. Nelle somme tra infiniti, individuare il termine dominante con la gerarchia degli infiniti {{formula:6.11}} e applicare il [principio di eliminazione dei termini trascurabili](ref:chapter/6#p4).
 5. Per un asintoto obliquo per $x\to\pm\infty$, calcolare $m=\lim_{x\to\pm\infty}\frac{f(x)}{x}$ e poi $q=\lim_{x\to\pm\infty}\big(f(x)-mx\big)$. Per $q$ serve spesso la parte principale: vedi [(8.7)](ref:formula/8.7).
 6. Se il punto escluso dal dominio dà un limite finito, la funzione si prolunga per continuità. Se compare un parametro $k$, si impone $k=\lim f$.
 
@@ -516,7 +516,7 @@ Metodo:
 
 1. Individuare i punti in cui l'integranda non è limitata o l'intervallo è illimitato.
 2. Per ciascun punto, cercare un confronto con un'integranda semplice, per esempio $\frac{1}{x^\alpha}$, usando limiti notevoli, sviluppi o disuguaglianze.
-3. Applicare il criterio del confronto asintotico ([(10.9)](ref:formula/10.9)) oppure il confronto diretto, verificando le ipotesi e la convergenza dell'integrale di riferimento, come spiegato in [Criteri di convergenza](ref:chapter/10#p4).
+3. Applicare il criterio del confronto asintotico [(10.9)](ref:formula/10.9) oppure il confronto diretto, verificando le ipotesi e la convergenza dell'integrale di riferimento, come spiegato in [Criteri di convergenza](ref:chapter/10#p4).
 
 Errori tipici: confrontare con $\frac{1}{x^\alpha}$ nel punto sbagliato (a $0$ e a $+\infty$ l'esponente critico dà esiti opposti) e applicare il criterio a funzioni di segno non costante.
 

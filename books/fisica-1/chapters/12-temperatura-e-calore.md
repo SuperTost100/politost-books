@@ -463,7 +463,7 @@ Il problema numero 3 della prova scritta, di due ore, è quello che ha ospitato 
 3. Per ogni tratto quasi statico con solo lavoro di espansione calcola $W$ come $\int p\,dV$ ([Calore e lavoro](ref:chapter/12#p4)); per gli altri tratti usa la pressione esterna o il modello di lavoro pertinente. Per l'isoterma reversibile usa [(13.8)](ref:formula/13.8).
 4. Ricava $\Delta U$ da $n\,c_V\,\Delta T$ e $Q$ dal primo principio, $\Delta U = Q - W$ ([Primo principio ed energia interna](ref:chapter/13#p2)).
 5. Se la sorgente è una miscela acqua-ghiaccio, il calore ceduto o assorbito dal gas fa fondere o solidificare una massa di ghiaccio. Calcolala con $|Q| = \lambda m$, come in [Calorimetria](ref:chapter/12#p5).
-6. Per l'entropia usa le formule del gas ideale per ciascun tratto ([(14.16)](ref:formula/14.16)) e quella della sorgente a temperatura costante. Somma poi gas e sorgente per ottenere l'universo ([Calcolo delle variazioni di entropia](ref:chapter/14#p6)).
+6. Per l'entropia usa le formule del gas ideale per ciascun tratto [(14.16)](ref:formula/14.16) e quella della sorgente a temperatura costante. Somma poi gas e sorgente per ottenere l'universo ([Calcolo delle variazioni di entropia](ref:chapter/14#p6)).
 7. Controlla i segni: nella compressione isoterma reversibile descritta qui, $Q = W < 0$ e il gas cede calore, quindi il ghiaccio fonde. Controlla anche le unità e l'ordine di grandezza.
 
 **Errori tipici.**

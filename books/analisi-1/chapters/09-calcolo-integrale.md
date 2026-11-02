@@ -448,7 +448,7 @@ Nel test a risposta multipla le stesse nozioni compaiono in forma teorica. Nello
 2. Studiare il segno di $F'$ per la monotonia: se $f\ge 0$, $F$ è crescente. Con l'estremo composto, il segno di $g'$ entra nel prodotto.
 3. Per gli asintoti orizzontali, controllare i limiti a entrambi gli infiniti che appartengono al dominio; usare il limite a $+\infty$ per l'estremo superiore quando $F$ è crescente su un dominio illimitato superiormente.
 4. Se serve il valore del limite, calcolare l'integrale improprio come limite, scrivendo prima $\lim_{b\to+\infty}\int_{x_0}^b f(t)\,dt$ e solo dopo dichiarando convergenza o divergenza (si veda [Integrali impropri di prima specie](ref:chapter/10#p2)). Per la convergenza senza calcolo si usano i criteri del confronto (si veda [Criteri di convergenza](ref:chapter/10#p4)).
-5. Per limitare un integrale con una costante, maggiorare l'integrando con una funzione di cui si conosce l'integrale e usare la monotonia dell'integrale ({{formula:9.11}}).
+5. Per limitare un integrale con una costante, maggiorare l'integrando con una funzione di cui si conosce l'integrale e usare la monotonia dell'integrale {{formula:9.11}}.
 
 **Errori tipici.**
 - Derivare $F(g(x))$ dimenticando il fattore $g'(x)$.
@@ -488,7 +488,7 @@ Nel test a risposta multipla le stesse nozioni compaiono in forma teorica. Nello
 - la definizione di integrale improprio convergente su $\lbrack 2,+\infty\lbrack $ (25 gennaio 2022, Io turno).
 
 **Metodo.**
-1. Scrivere **tutte** le ipotesi. Per il teorema della media integrale: $f$ continua su $\lbrack a,b\rbrack $ (si veda {{formula:9.12}}). Per il teorema fondamentale: $f$ continua su un intervallo e $F$ funzione integrale ({{formula:9.14}}).
+1. Scrivere **tutte** le ipotesi. Per il teorema della media integrale: $f$ continua su $\lbrack a,b\rbrack $ (si veda {{formula:9.12}}). Per il teorema fondamentale: $f$ continua su un intervallo e $F$ funzione integrale {{formula:9.14}}.
 2. Scrivere la tesi con le stesse notazioni, ad esempio $F'(x)=f(x)$ per ogni punto interno dell'intervallo; agli estremi inclusi, la derivata è quella unilatera corrispondente.
 3. Per le definizioni, usare la forma "se e solo se" ed esplicitare il limite, ad esempio $\lim_{b\to+\infty}\int_2^b f(x)\,dx$ esistente e finito.
 4. Se il punto successivo chiede di applicare l'enunciato, controllare esplicitamente che le ipotesi siano soddisfatte nel caso dato. Questo è il vero scopo della domanda.
@@ -509,7 +509,7 @@ Nel test a risposta multipla le stesse nozioni compaiono in forma teorica. Nello
 
 **Metodo.**
 1. Controllare la continuità nel punto di raccordo, verificando che i due limiti unilateri coincidano con il valore della funzione nel punto. Nell'esame del 13 febbraio 2015, esercizio 2, entrambi i rami e la funzione valgono $0$ in $x=3$.
-2. Spezzare l'integrale nel punto di raccordo con l'additività ({{formula:9.11}}) e calcolare ciascun pezzo con una primitiva, con la {{formula:9.15}}. Se un ramo ha un prodotto di funzioni diverse, come $x\log 3-x\log x$, serve l'integrazione per parti (si veda [Integrali indefiniti](ref:chapter/9#p2)).
+2. Spezzare l'integrale nel punto di raccordo con l'additività {{formula:9.11}} e calcolare ciascun pezzo con una primitiva, con la {{formula:9.15}}. Se un ramo ha un prodotto di funzioni diverse, come $x\log 3-x\log x$, serve l'integrazione per parti (si veda [Integrali indefiniti](ref:chapter/9#p2)).
 3. Per un'**area**, studiare il segno di $f$ e integrare $|f|$, cioè cambiare segno ai pezzi negativi. L'integrale con segno e l'area coincidono solo dove $f\ge 0$ (si veda [Teorema fondamentale](ref:chapter/9#p4)).
 4. Per la media integrale $\frac{1}{b-a}\int_a^b f(x)\,dx$, dividere per la lunghezza dell'intervallo. Per chiedersi se è un valore assunto da $f$ si usa il teorema della media (se $f$ è continua) oppure, se non lo è, si controlla direttamente l'immagine di $f$. La continuità si controlla con la sezione [Funzioni continue](ref:chapter/5#p2).
 

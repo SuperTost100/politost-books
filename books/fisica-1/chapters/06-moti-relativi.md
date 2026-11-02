@@ -167,7 +167,7 @@ Richiamando la scomposizione dell'accelerazione di trascinamento
 
 $$\vec{a}_T = \vec{a}_{O'} + \vec{\omega}\times(\vec{\omega}\times\vec{r}') + \frac{d\vec{\omega}}{dt}\times\vec{r}'$$
 
-({{formula:6.5}}) e di quella di Coriolis $\vec{a}_{Co} = 2\vec{\omega}\times\vec{v}'$ ({{formula:6.6}}), la forza apparente si scompone in tre contributi distinti:
+{{formula:6.5}} e di quella di Coriolis $\vec{a}_{Co} = 2\vec{\omega}\times\vec{v}'$ {{formula:6.6}}, la forza apparente si scompone in tre contributi distinti:
 
 :::formula{id="6.7" label="Forza di trascinamento"}
 $$\vec{F}_T = -m\vec{a}_{O'} - m\frac{d\vec{\omega}}{dt}\times\vec{r}'$$
