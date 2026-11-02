@@ -184,7 +184,7 @@ dove $I_z$ è il momento d'inerzia del corpo rispetto all'asse $z$, già definit
 $$E_k = \frac{1}{2}I_z\omega^2$$
 :::
 
-Nel caso in cui il momento angolare sia parallelo alla velocità angolare (asse di simmetria o asse principale d'inerzia, come discusso nella sezione sull'ellissoide d'inerzia), vale $L_z = I_z\omega$, da cui si ottiene una forma alternativa utile quando si conosce il momento angolare invece della velocità angolare.
+Nel caso in cui il momento angolare sia parallelo alla velocità angolare, come accade per un asse principale d'inerzia, vale $L_z = I_z\omega$, da cui si ottiene una forma alternativa utile quando si conosce il momento angolare invece della velocità angolare.
 
 :::formula{id="9.6" label="Energia cinetica in funzione del momento angolare assiale"}
 $$E_k = \frac{L_z^2}{2I_z}$$
@@ -313,7 +313,7 @@ Entrambe le scelte sono legittime e portano allo stesso risultato per $\alpha$; 
 
 $$F_{att} = \mu_d N = \mu_d mg\cos\theta \quad \text{SBAGLIATO}, \qquad F_{att} = \mu_s N = \mu_s mg\cos\theta \quad \text{SBAGLIATO} :$$
 
-il primo perché l'attrito non è dinamico (non c'è strisciamento), il secondo perché $\mu_s N$ è solo il valore massimo che l'attrito statico può raggiungere, non il suo valore effettivo, che vale $0 \le |F_{att}| \le \mu_s N$. Il valore corretto di $F_{att}$ deve essere ricavato come incognita, risolvendo insieme l'equazione di traslazione del CM (prima equazione cardinale) e l'equazione della rotazione attorno al CM (seconda equazione cardinale, data anche da [questa sezione](ref:chapter/9#p2)] come $M_z = I_z\alpha$), insieme alla condizione di puro rotolamento {{formula:9.8}}.
+il primo perché l'attrito non è dinamico (non c'è strisciamento), il secondo perché $\mu_s N$ è solo il valore massimo che l'attrito statico può raggiungere, non il suo valore effettivo, che vale $0 \le |F_{att}| \le \mu_s N$. Il valore corretto di $F_{att}$ deve essere ricavato come incognita, risolvendo insieme l'equazione di traslazione del CM (prima equazione cardinale) e l'equazione della rotazione attorno al CM (seconda equazione cardinale, data anche da [questa sezione](ref:chapter/9#p2)) come $M_z = I_z\alpha$), insieme alla condizione di puro rotolamento {{formula:9.8}}.
 
 Una volta determinato $F_{att}$, bisogna sempre verificare che il moto di puro rotolamento sia effettivamente possibile, cioè che
 
@@ -549,8 +549,6 @@ Gli esercizi sono problemi strutturati a più domande. Un problema spesso mette 
 ### Tipo 1: rotolamento di cilindri e dischi
 
 **Che cosa chiede l'esame.** Un cilindro o un disco rotola senza strisciare su un piano inclinato, su una superficie curva o su un piano orizzontale. È collegato a un altro corpo, a una molla o a una carrucola con massa. Si chiedono accelerazioni, forze di attrito, la verifica dell'aderenza, tempi e velocità.
-
-**Metodo.**
 
 **Metodo.**
 

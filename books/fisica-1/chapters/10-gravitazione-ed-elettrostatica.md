@@ -1,15 +1,15 @@
 ---
 chapter: 10
-title: Gravitazione ed elettrostatica
+title: Gravitazione
 ---
 
 ## p1 | Introduzione
 
-La gravitazione e l’elettrostatica descrivono due interazioni fondamentali e offrono un terreno comune per capire come le forze a distanza dipendano dalle sorgenti e dalla geometria. Studiare questi modelli aiuta a passare dal calcolo della forza alla descrizione tramite campo e potenziale, strumenti utili per affrontare problemi che vanno dai satelliti alle distribuzioni di carica.
+La gravitazione descrive una delle interazioni fondamentali e mostra come una forza a distanza dipenda dalle sorgenti e dalla geometria. Studiare questo modello aiuta a passare dal calcolo della forza alla descrizione tramite campo e potenziale, strumenti utili per affrontare problemi che vanno dal moto dei pianeti a quello dei satelliti.
 
 Per seguire il capitolo servono le idee di momento angolare e di lavoro ed energia. La prima permette di interpretare il moto orbitale e le leggi di Keplero; la seconda consente di ricavare velocità orbitali e di fuga e di collegare il lavoro del campo alla variazione di energia potenziale.
 
-Al termine saprai applicare la legge di gravitazione universale e le leggi di Keplero, distinguendo massa inerziale e massa gravitazionale. Saprai calcolare e sommare vettorialmente i campi generati da masse e cariche, usare il potenziale per descrivere il lavoro e ricavare il campo dalla sua variazione spaziale. Imparerai inoltre a interpretare l’angolo solido e ad applicare il teorema di Gauss nei casi di simmetria, confrontando il campo all’interno e all’esterno di gusci e sfere.
+Al termine saprai applicare la legge di gravitazione universale e le leggi di Keplero, distinguendo massa inerziale e massa gravitazionale. Saprai calcolare e sommare vettorialmente i campi generati da più masse, usare il potenziale per descrivere il lavoro e ricavare il campo dalla sua variazione spaziale. Imparerai inoltre a interpretare l’angolo solido e ad applicare il teorema di Gauss nei casi di simmetria, confrontando il campo all’interno e all’esterno di gusci e sfere.
 
 ## p2 | Gravitazione e leggi di Keplero
 
@@ -164,7 +164,7 @@ Controllo: dimensionalmente $\lbrack GM/r\rbrack  = \mathrm{m^3\,s^{-2}/m} = \ma
 
 ### Il concetto di campo
 
-La forza di gravitazione universale, come la forza di Coulomb che vedremo più avanti, agisce a distanza e in apparenza senza che nulla si propaghi nello spazio tra le due masse. Per evitare l'idea di un'azione istantanea e a distanza si introduce il concetto di campo: ogni massa modifica le proprietà dello spazio circostante, e questa modifica agisce poi su una seconda massa posta in quel punto. Simbolicamente, Massa 1 $\leftrightarrow$ campo $\leftrightarrow$ Massa 2. Un campo è una grandezza fisica, scalare o vettoriale, alla quale è possibile associare un valore definito in ogni punto di una regione di spazio.
+La forza di gravitazione universale agisce a distanza e in apparenza senza che nulla si propaghi nello spazio tra le due masse. Per evitare l'idea di un'azione istantanea e a distanza si introduce il concetto di campo: ogni massa modifica le proprietà dello spazio circostante, e questa modifica agisce poi su una seconda massa posta in quel punto. Simbolicamente, Massa 1 $\leftrightarrow$ campo $\leftrightarrow$ Massa 2. Un campo è una grandezza fisica, scalare o vettoriale, alla quale è possibile associare un valore definito in ogni punto di una regione di spazio.
 
 Questa nozione era già stata anticipata quando si è parlato dell'accelerazione $\vec{g}$ prossima alla superficie terrestre, nella sezione su [Gravitazione e leggi di Keplero](ref:chapter/10#p2): $\vec{g}$ è precisamente il campo gravitazionale generato dalla Terra, valutato in prossimità della sua superficie.
 
@@ -288,7 +288,7 @@ Se si conserva il verso scelto per la normale, il prodotto senza valore assoluto
 
 Il valore assoluto del prodotto scalare seleziona l'area proiettata perpendicolarmente alla direzione di osservazione: solo la proiezione "frontale" della superficie, vista da $O$, contribuisce all'angolo solido non orientato. Se la superficie è perpendicolare a $\hat{u}_r$, si ha $|\hat{u}_r \cdot \hat{u}_n| = 1$ e quindi $d\Omega = dS/r^2$, coerente con la definizione data sopra. Senza valore assoluto, il prodotto scalare conserva il segno determinato dal verso della normale e rappresenta l'angolo solido orientato.
 
-Per gli integrali di flusso si usa l'angolo solido orientato, così il segno del prodotto scalare tiene conto del verso della normale. Questa distinzione è essenziale nella dimostrazione del teorema di Gauss applicato al campo gravitazionale (e, per analogia, al campo elettrostatico): consente di trasformare l'integrale di flusso di un campo che decresce come $1/r^2$ in un integrale sull'angolo solido orientato, indipendente dalla forma della superficie.
+Per gli integrali di flusso si usa l'angolo solido orientato, così il segno del prodotto scalare tiene conto del verso della normale. Questa distinzione è essenziale nella dimostrazione del teorema di Gauss applicato al campo gravitazionale: consente di trasformare l'integrale di flusso di un campo che decresce come $1/r^2$ in un integrale sull'angolo solido orientato, indipendente dalla forma della superficie.
 
 ### Esempio svolto
 
@@ -354,7 +354,7 @@ $$\vec{G} = -\vec{\nabla} V$$
 
 Si chiama **superficie equipotenziale** una superficie su cui $V$ è costante: per qualunque spostamento tra due suoi punti il lavoro della forza gravitazionale è nullo, poiché dipende solo dalla differenza di potenziale tra gli estremi.
 
-Questo linguaggio in termini di potenziale non modifica i risultati già ottenuti nella sezione sulle [forze centrali](ref:chapter/5#p4): la classificazione delle orbite in iperboliche ($E_m>0$), paraboliche ($E_m=0$) ed ellittiche ($E_m<0$) resta quella stabilita tramite [formula (5.11)](ref:formula/5.11), e la velocità di fuga {{formula:10.4}} si ricava imponendo che l'energia meccanica all'infinito, dove $V=0$, sia nulla o positiva.
+Questo linguaggio in termini di potenziale non modifica i risultati già ottenuti nella sezione sulle [forze centrali](ref:chapter/5#p4): la classificazione delle orbite in iperboliche ($E_m>0$), paraboliche ($E_m=0$) ed ellittiche ($E_m<0$) resta quella stabilita nella sezione sulle [forze centrali](ref:chapter/5#p4), e la velocità di fuga {{formula:10.4}} si ricava imponendo che l’energia meccanica all’infinito, dove $V=0$, sia nulla o positiva.
 
 ### Teorema di Gauss per il campo gravitazionale
 

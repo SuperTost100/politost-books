@@ -9,7 +9,7 @@ Capire lo stato gassoso permette di collegare misure osservabili, come pressione
 
 Per affrontare il capitolo serve saper svolgere calcoli stechiometrici, convertire le unità di misura e riconoscere il reagente limitante. Sarà inoltre utile prestare attenzione alla temperatura assoluta: nei calcoli con i gas si esprime in kelvin.
 
-Al termine saprai applicare l’equazione di stato per ricavare una variabile incognita e usare i volumi gassosi nei problemi stechiometrici. Potrai determinare la massa molare da una misura di densità, calcolare pressioni parziali e frazioni molari nelle miscele, e interpretare effusione e diffusione con la legge di Graham. Saprai infine collegare la velocità delle particelle alla temperatura, valutare le deviazioni dall’idealità tramite il fattore di comprimibilità e stimare il comportamento di un gas reale con l’equazione di van der Waals.
+Al termine saprai applicare l’equazione di stato per ricavare una variabile incognita e usare i volumi gassosi nei problemi stechiometrici. Potrai determinare la massa molare da una misura di densità, calcolare pressioni parziali e frazioni molari nelle miscele. Saprai infine collegare la velocità delle particelle alla temperatura, valutare le deviazioni dall’idealità tramite il fattore di comprimibilità e stimare il comportamento di un gas reale con l’equazione di van der Waals.
 
 ## p2 | Pressione e leggi dei gas ideali
 
@@ -229,7 +229,7 @@ $$p_{\text{N}_2} = \frac{n_{\text{N}_2} \cdot R \cdot T}{V} = \frac{0,260 \cdot 
 
 Uno sbaglio comune è confondere la frazione molare con la frazione in massa: $x_i = n_i/n_{tot}$ richiede sempre di lavorare con le moli, non con le masse dei singoli componenti; un secondo errore è applicare la legge di Dalton a miscele in cui i gas reagiscono tra loro (per esempio in presenza di dissociazione gassosa), dove il numero di moli totale non è costante e l'equazione di stato va applicata con cautela istante per istante.
 
-## p4 | Teoria cinetica, effusione e diffusione
+## p4 | Teoria cinetica dei gas
 
 La termodinamica dei gas descritta nelle sezioni precedenti tratta pressione, volume e temperatura come grandezze macroscopiche, misurabili con un manometro o un termometro, senza chiedersi cosa accada alle singole particelle. La teoria cinetica dei gas è la parte della meccanica statistica che collega queste grandezze macroscopiche al comportamento dinamico delle particelle, interpretando a livello molecolare due fenomeni fondamentali: la pressione esercitata da una massa gassosa e la sua temperatura. Il punto di partenza è che, pur valendo in linea di principio le leggi della meccanica classica per ciascuna particella, è del tutto impraticabile risolvere individualmente le equazioni del moto per ciascuna delle $6{,}022\times10^{23}$ particelle presenti anche in una piccola quantità di gas; si ragiona invece sui valori medi delle grandezze dinamiche (velocità, energia cinetica) dell'insieme delle particelle.
 
@@ -287,7 +287,7 @@ $$\bar{u} = \sqrt{\frac{3\times 8{,}314\ \text{J/(mol·K)}\times 293{,}15\ \text
 
 ### Perché serve una distribuzione
 
-La teoria cinetica attribuisce a ogni molecola un moto caotico, e gli urti ne cambiano continuamente la velocità. Le molecole di un gas non hanno quindi tutte la stessa velocità né la stessa energia. Ciascuna ha un'energia diversa dalle altre, e l'uguaglianza vale solo in senso statistico. La velocità quadratica media $\bar u$ e l'energia cinetica media $\frac{3}{2}k_BT$ (vedi [Teoria cinetica, effusione e diffusione](ref:chapter/6#p4)) sono valori medi. Non dicono quante molecole sono molto più lente o molto più veloci della media.
+La teoria cinetica attribuisce a ogni molecola un moto caotico, e gli urti ne cambiano continuamente la velocità. Le molecole di un gas non hanno quindi tutte la stessa velocità né la stessa energia. Ciascuna ha un'energia diversa dalle altre, e l'uguaglianza vale solo in senso statistico. La velocità quadratica media $\bar u$ e l'energia cinetica media $\frac{3}{2}k_BT$ (vedi [Teoria cinetica dei gas](ref:chapter/6#p4)) sono valori medi. Non dicono quante molecole sono molto più lente o molto più veloci della media.
 
 La **distribuzione di Maxwell-Boltzmann**, elaborata nell'Ottocento da Maxwell e Boltzmann, descrive questa dispersione. Rappresenta il numero di molecole che hanno una data energia (o velocità), a una data temperatura, in funzione dell'energia (o della velocità) stessa.
 
@@ -303,15 +303,13 @@ Gli effetti da ricordare sono due.
 - **Temperatura.** Al crescere di $T$ la curva si appiattisce e si allarga, e il picco si sposta verso velocità maggiori. Aumenta il numero di molecole veloci e diminuisce quello delle lente. Aumentano la velocità più probabile, quella media e quella quadratica.
 - **Massa molare.** A $T$ costante tutti i gas hanno la stessa energia cinetica media. Con $E_k=\frac{1}{2}mv^2$ uguale, la molecola più pesante deve quindi muoversi più lentamente. I gas leggeri hanno perciò una distribuzione spostata verso velocità molto maggiori. Per questo l'ossigeno deve essere riscaldato molto per avere la distribuzione di velocità dell'elio a 273 K.
 
-Questa è la ragione molecolare della legge di Graham: il gas con massa molare minore effonde più velocemente perché la velocità più probabile delle sue molecole è più alta.
-
-### Frazione di molecole con energia sopra una soglia
+### Fattore di Boltzmann e soglia di energia
 
 Molte reazioni avvengono solo se le molecole hanno velocità (quindi energia) superiori a un certo valore. Questa soglia è l'**energia di attivazione** $E_a$: soltanto gli urti con energia sufficiente a superarla possono portare alla reazione. La frequenza degli urti non basta a spiegare la velocità di reazione. In fase gassosa le molecole si urtano miliardi di volte al secondo, ma nella grande maggioranza degli urti rimbalzano senza reagire.
 
 Il fattore di Boltzmann associato alla soglia energetica è, con $E_a$ in J/mol:
 
-:::formula{id="6.14" label="Frazione di urti con energia superiore alla soglia"}
+:::formula{id="6.14" label="Fattore di Boltzmann associato alla soglia"}
 $$f = e^{-E_a/(RT)}$$
 :::
 
@@ -335,7 +333,7 @@ $\displaystyle \frac{f_2}{f_1}=e^{0{,}646}\approx 1{,}91$
 
 ## p6 | Gas reali
 
-Le leggi dei gas ideali studiate nelle sezioni precedenti descrivono bene il comportamento dei gas reali solo in determinate condizioni. L'equazione $PV = nRT$ e la teoria cinetica da cui discende (vedi [Pressione e leggi dei gas ideali](ref:chapter/6#p2) e [Teoria cinetica, effusione e diffusione](ref:chapter/6#p4)) si basano su due ipotesi semplificative: le molecole sono masse puntiformi prive di volume proprio e non esercitano alcuna forza le une sulle altre tranne negli urti, che sono perfettamente elastici.
+Le leggi dei gas ideali studiate nelle sezioni precedenti descrivono bene il comportamento dei gas reali solo in determinate condizioni. L'equazione $PV = nRT$ e la teoria cinetica da cui discende (vedi [Pressione e leggi dei gas ideali](ref:chapter/6#p2) e [Teoria cinetica dei gas](ref:chapter/6#p4)) si basano su due ipotesi semplificative: le molecole sono masse puntiformi prive di volume proprio e non esercitano alcuna forza le une sulle altre tranne negli urti, che sono perfettamente elastici.
 
 Nella realtà nessuna delle due ipotesi è esatta: le molecole hanno un volume finito, determinato dalle dimensioni degli atomi e dalle lunghezze di legame, e al loro interno sono presenti particelle cariche che danno origine a forze intermolecolari sia attrattive che repulsive. Sono quindi attese deviazioni dal comportamento ideale, tanto più marcate quanto più le condizioni si allontanano da quelle in cui l'approssimazione ideale funziona bene.
 

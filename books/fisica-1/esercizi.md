@@ -1013,7 +1013,7 @@ $$\dot A=\frac{L}{2m}=\frac{24\ \text{kg}\,\text{m}^2\,\text{s}^{-1}}{4{,}0\ \te
 :::
 :::
 
-:::exercise{id="E5.2" chapter="5" difficulty="difficile"}
+:::exercise{id="E5.2" chapter="5" difficulty="medio"}
 ## Domanda
 Una scala uniforme di lunghezza $5{,}0\ \text{m}$ e massa $20\ \text{kg}$ è appoggiata a un pavimento orizzontale scabro e a una parete verticale liscia. La scala forma un angolo di $53^\circ$ con il pavimento. Una persona di massa $60\ \text{kg}$ si trova sulla scala a $3{,}0\ \text{m}$ dal piede, misurati lungo la scala. Assumendo $g=9{,}8\ \text{m}\,\text{s}^{-2}$, determinare la reazione della parete, la reazione normale del pavimento e la forza di attrito al piede. Verificare se l’equilibrio è possibile quando il coefficiente di attrito statico è $\mu_s=0{,}50$.
 
@@ -2347,19 +2347,6 @@ Per simmetria, l'integrale sul rettangolo è quattro volte quello sul quadrante 
 
 :::exercise{id="E10.12" chapter="10" difficulty="difficile"}
 ## Domanda
-Una carica puntiforme $q=2{,}0\,\mu\mathrm{C}$ si sposta da $A$ a $B$ in un campo elettrostatico. Il potenziale passa da $V_A=120\,\mathrm{V}$ a $V_B=40\,\mathrm{V}$. Calcola la variazione della sua energia potenziale e il lavoro compiuto dal campo.
-
-:::hint
-L'energia potenziale varia di $q(V_B-V_A)$. Il lavoro del campo è l'opposto della variazione di energia potenziale.
-:::
-
-:::solution
-La variazione di energia potenziale è $\Delta U=q(V_B-V_A)=(2{,}0\times10^{-6})(40-120)\,\mathrm{J}=-1{,}6\times10^{-4}\,\mathrm{J}$. Il lavoro del campo è $W=-\Delta U=1{,}6\times10^{-4}\,\mathrm{J}$. Il segno positivo indica che il campo compie lavoro durante lo spostamento.
-:::
-:::
-
-:::exercise{id="E10.13" chapter="10" difficulty="difficile"}
-## Domanda
 Una sfera omogenea di massa $M=6{,}0\times10^{24}\,\mathrm{kg}$ e raggio $R=6{,}0\times10^6\,\mathrm{m}$ genera un campo gravitazionale. Calcola il modulo del campo a distanza dal centro $r=3{,}0\times10^6\,\mathrm{m}$, all'interno della sfera. Usa $G=6{,}67\times10^{-11}\,\mathrm{N\,m^2/kg^2}$.
 
 :::hint
@@ -2371,7 +2358,7 @@ La densità è uniforme, quindi la massa entro $r$ è $M_r=M(r/R)^3$. Il campo i
 :::
 :::
 
-:::exercise{id="E10.14" chapter="10" difficulty="facile"}
+:::exercise{id="E10.13" chapter="10" difficulty="facile"}
 ## Domanda
 Un satellite descrive un'orbita circolare di raggio $r=7{,}0\times10^6\,\mathrm{m}$ attorno a un pianeta di massa $M=5{,}97\times10^{24}\,\mathrm{kg}$. Calcola la velocità orbitale. Usa $G=6{,}67\times10^{-11}\,\mathrm{N\,m^2/kg^2}$.
 
@@ -2381,19 +2368,6 @@ Imponi che la forza gravitazionale fornisca la forza centripeta, oppure applica 
 
 :::solution
 Per un'orbita circolare, $v=\sqrt{GM/r}$. Sostituendo i dati, $v=\sqrt{(6{,}67\times10^{-11})(5{,}97\times10^{24})/(7{,}0\times10^6)}\,\mathrm{m/s}=7{,}54\times10^3\,\mathrm{m/s}$.
-:::
-:::
-
-:::exercise{id="E10.15" chapter="10" difficulty="facile"}
-## Domanda
-Due cariche puntiformi $q_1=2{,}0\,\mu\mathrm{C}$ e $q_2=-3{,}0\,\mu\mathrm{C}$ distano $r=0{,}50\,\mathrm{m}$. Calcola il modulo della forza elettrostatica tra loro e indica se è attrattiva o repulsiva. Usa $k=8{,}99\times10^9\,\mathrm{N\,m^2/C^2}$.
-
-:::hint
-Usa la legge di Coulomb per il modulo della forza. Il segno del prodotto delle cariche determina se la forza è attrattiva o repulsiva.
-:::
-
-:::solution
-Il modulo della forza è $F=k|q_1q_2|/r^2$. Sostituendo $q_1=2{,}0\times10^{-6}\,\mathrm{C}$ e $q_2=-3{,}0\times10^{-6}\,\mathrm{C}$, si trova $F=(8{,}99\times10^9)(6{,}0\times10^{-12})/(0{,}50)^2\,\mathrm{N}=0{,}216\,\mathrm{N}$. Le cariche hanno segno opposto, quindi la forza è attrattiva.
 :::
 :::
 

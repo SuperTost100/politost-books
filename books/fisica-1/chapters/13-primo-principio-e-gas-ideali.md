@@ -434,10 +434,10 @@ Questo risultato dà alla temperatura assoluta un'interpretazione microscopica p
 
 **Dimostrazione richiesta all'esame.**
 
-Si considerano $N$ molecole puntiformi di massa $m$ in un cubo di lato $L$ e volume $V=L^3$, con urti elastici contro le pareti, nessuna interazione tra le molecole e moto disordinato. Si studia la parete $x=L$.
+Si considerano $N$ molecole puntiformi di massa $m$ in un cubo di lato $L$ e volume $V=L^3$, con urti elastici tra molecole e pareti e moto disordinato. Per questa derivazione si trascurano gli urti intermolecolari tra due urti consecutivi contro la stessa parete. Si studia la parete $x=L$.
 
 1. Una molecola con componente della velocità $v_x$ urta la parete. L'urto è elastico, quindi $v_x\to -v_x$ mentre $v_y$ e $v_z$ non cambiano. La molecola subisce la variazione di quantità di moto $-2mv_x$ e la parete riceve l'impulso $2mv_x$.
-2. Dopo l'urto la molecola raggiunge la parete opposta e torna sulla stessa parete dopo il tempo $\Delta t = 2L/v_x$. Gli urti tra molecole non modificano la media, perché nel modello sono trascurabili. La forza media esercitata da quella molecola è
+2. Trascurando gli urti intermolecolari durante il tragitto tra due urti contro la stessa parete, la molecola raggiunge la parete opposta e torna sulla stessa parete dopo il tempo $\Delta t = 2L/v_x$. La forza media esercitata da quella molecola è
 
 $$F_i = \frac{2mv_{x,i}}{2L/v_{x,i}} = \frac{m\,v_{x,i}^2}{L}.$$
 

@@ -20,65 +20,7 @@ Il dominio è quindi $\operatorname{dom} f = \lbrack -1,1)\cup(1,+\infty)$.
 :::
 :::
 
-:::exercise{id="E1.2" chapter="1" difficulty="facile"}
-## Domanda
-Dimostrare per induzione che per ogni $n\ge1$ vale
-
-$$
-\sum_{k=1}^n (2k-1) = n^2.
-$$
-
-:::hint
-Verifica il passo base $n=1$, poi nel passo induttivo somma il termine $2(n+1)-1$ a entrambi i membri dell'ipotesi induttiva.
-:::
-
-:::solution
-**Passo base** ($n=1$): $\sum_{k=1}^1(2k-1)=2\cdot1-1=1=1^2$. L'uguaglianza è verificata.
-
-**Passo induttivo**: supponiamo vera l'ipotesi $\sum_{k=1}^n(2k-1)=n^2$ per un certo $n\ge1$ e dimostriamo che vale anche per $n+1$. Si ha
-
-$$
-\sum_{k=1}^{n+1}(2k-1)=\sum_{k=1}^{n}(2k-1)+\big(2(n+1)-1\big)=n^2+(2n+1)=(n+1)^2,
-$$
-
-dove nell'ultimo passaggio si è usata l'ipotesi induttiva e il fatto che $n^2+2n+1=(n+1)^2$.
-
-Per il principio di induzione, l'uguaglianza vale per ogni $n\ge1$.
-:::
-:::
-
-:::exercise{id="E1.3" chapter="1" difficulty="medio"}
-## Domanda
-Dimostrare per induzione che $2^n > n^2$ per ogni intero $n\ge5$.
-
-:::hint
-Nel passo induttivo mostra prima che, per $n\ge5$, vale $2n^2\ge(n+1)^2$, e usa questo fatto insieme all'ipotesi induttiva.
-:::
-
-:::solution
-**Passo base** ($n=5$): $2^5=32$ e $5^2=25$, e $32>25$, quindi l'affermazione è vera per $n=5$.
-
-**Passo induttivo**: supponiamo $2^n>n^2$ per un certo $n\ge5$. Osserviamo che
-
-$$
-2n^2-(n+1)^2=2n^2-n^2-2n-1=n^2-2n-1=n(n-2)-1.
-$$
-
-Per $n\ge5$ si ha $n(n-2)\ge5\cdot3=15$, quindi $n(n-2)-1\ge14>0$, cioè $2n^2>(n+1)^2$.
-
-Allora, usando l'ipotesi induttiva,
-
-$$
-2^{n+1}=2\cdot2^n>2n^2>(n+1)^2.
-$$
-
-Quindi l'affermazione vale anche per $n+1$.
-
-Per il principio di induzione, $2^n>n^2$ per ogni $n\ge5$.
-:::
-:::
-
-:::exercise{id="E1.4" chapter="1" difficulty="medio"}
+:::exercise{id="E1.2" chapter="1" difficulty="medio"}
 ## Domanda
 Risolvere la disequazione $|x-1|+|x+3|\le6$.
 
@@ -97,7 +39,7 @@ Unendo i tre casi: $\lbrack -4,-3)\cup\lbrack -3,1)\cup[1,2]=\lbrack -4,2\rbrack
 :::
 :::
 
-:::exercise{id="E1.5" chapter="1" difficulty="difficile"}
+:::exercise{id="E1.3" chapter="1" difficulty="difficile"}
 ## Domanda
 Utilizzando il principio dell'estremo superiore, dimostrare l'esistenza di un numero reale $L>0$ tale che $L^2=2$. Si consideri l'insieme $A=\{x\in\mathbb{R} : x\ge0,\ x^2\le2\}$.
 
@@ -128,7 +70,7 @@ Quindi $L^2=2$, cioè $L=\sqrt2$.
 :::
 :::
 
-:::exercise{id="E1.6" chapter="1" difficulty="difficile"}
+:::exercise{id="E1.4" chapter="1" difficulty="difficile"}
 ## Domanda
 Sia $f(x)=\dfrac1x-x$ per $x\in(0,1\rbrack $ e sia $A=f\big((0,1\rbrack \big)$ l'insieme dei valori assunti da $f$. Determinare $\inf A$, $\sup A$, $\min A$, $\max A$.
 
@@ -155,7 +97,7 @@ In conclusione $A=\lbrack 0,+\infty)$.
 :::
 :::
 
-:::exercise{id="E1.7" chapter="1" difficulty="facile"}
+:::exercise{id="E1.5" chapter="1" difficulty="facile"}
 ## Domanda
 Determinare l'insieme $A = \left\{x \in \mathbb{R} : \dfrac{2x-1}{x+3} \ge 0\right\}$, esprimendolo come unione di intervalli.
 
@@ -174,7 +116,7 @@ Unendo i due casi, $A=(-\infty,-3)\cup\left\lbrack \frac12,+\infty\right)$.
 :::
 :::
 
-:::exercise{id="E1.8" chapter="1" difficulty="facile"}
+:::exercise{id="E1.6" chapter="1" difficulty="facile"}
 ## Domanda
 Sia $A$ un sottoinsieme non vuoto di $\mathbb{R}$, limitato superiormente, e sia $L\in\mathbb{R}$. Enunciare la caratterizzazione dell'estremo superiore {{formula:1.5}} e usarla per verificare che $\sup A=2$ per $A=\lbrack 0,2)$.
 
@@ -195,7 +137,7 @@ Entrambe le condizioni sono verificate, dunque $\sup A=2$.
 :::
 :::
 
-:::exercise{id="E1.9" chapter="1" difficulty="facile"}
+:::exercise{id="E1.7" chapter="1" difficulty="facile"}
 ## Domanda
 Sia $A=\left\{\dfrac{n-1}{n+1} : n\in\mathbb{N}\right\}$, con $\mathbb{N}=\{0,1,2,\dots\}$. Determinare, motivando la risposta, $\inf A$, $\sup A$, $\min A$, $\max A$.
 
@@ -212,7 +154,7 @@ Al crescere di $n$, $\dfrac{2}{n+1}\to0^+$ ma non si annulla mai, quindi $a_n<1$
 :::
 :::
 
-:::exercise{id="E1.10" chapter="1" difficulty="facile"}
+:::exercise{id="E1.8" chapter="1" difficulty="facile"}
 ## Domanda
 Risolvere l'equazione $|3x+2|=7$.
 
@@ -231,7 +173,7 @@ Le soluzioni sono $x=\dfrac53$ e $x=-3$.
 :::
 :::
 
-:::exercise{id="E1.11" chapter="1" difficulty="difficile"}
+:::exercise{id="E1.9" chapter="1" difficulty="difficile"}
 ## Domanda
 Dimostrare che per ogni $x,y\in\mathbb{R}$ vale
 
@@ -280,7 +222,7 @@ Quindi $\big||x|-3\big|<0.1$.
 :::
 :::
 
-:::exercise{id="E1.12" chapter="1" difficulty="difficile"}
+:::exercise{id="E1.10" chapter="1" difficulty="difficile"}
 ## Domanda
 Determinare l'insieme delle soluzioni reali del sistema $$\begin{cases} \dfrac{x-2}{x+1}\le 1 \\ |x|<4\end{cases}$$ esprimendolo come intervallo.
 
@@ -303,7 +245,7 @@ L'intersezione delle due condizioni $x>-1$ e $-4<x<4$ è $-1<x<4$.
 :::
 :::
 
-:::exercise{id="E1.13" chapter="1" difficulty="medio"}
+:::exercise{id="E1.11" chapter="1" difficulty="medio"}
 ## Domanda
 Sia $A=\left\{(-1)^n+\dfrac1n : n\in\mathbb{N},\ n\ge1\right\}$. Determinare, motivando la risposta, $\inf A$, $\sup A$, $\min A$, $\max A$.
 
@@ -320,7 +262,7 @@ Confrontando le due famiglie: il valore massimo assoluto di $A$ è $a_2=\frac32$
 :::
 :::
 
-:::exercise{id="E1.14" chapter="1" difficulty="medio"}
+:::exercise{id="E1.12" chapter="1" difficulty="medio"}
 ## Domanda
 Sia $A=\{x\in\mathbb{Q} : x^2<3\}$. Dimostrare, usando il principio dell'estremo superiore {{formula:1.7}}, che $\sup A=\sqrt3$, e spiegare perché $A$ non ha massimo.
 

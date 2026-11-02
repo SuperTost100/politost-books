@@ -5,11 +5,11 @@ title: Elettrochimica
 
 ## p1 | Introduzione
 
-L’elettrochimica mostra come una reazione chimica possa produrre corrente elettrica e come la corrente possa, a sua volta, guidare una trasformazione chimica. Questi processi sono alla base di pile, accumulatori, celle a combustibile e tecniche industriali come la raffinazione del rame. Capirli aiuta a interpretare il funzionamento dei dispositivi che usiamo e a prevedere se una reazione può avvenire spontaneamente o richiede energia dall’esterno.
+L’elettrochimica mostra come una reazione chimica possa produrre corrente elettrica e come la corrente possa, a sua volta, guidare una trasformazione chimica. Questi processi sono alla base delle pile e di tecniche industriali come la raffinazione del rame. Capirli aiuta a interpretare il funzionamento dei dispositivi che usiamo e a prevedere se una reazione può avvenire spontaneamente o richiede energia dall’esterno.
 
 Per affrontare il capitolo, è utile saper riconoscere le principali classi di reazioni chimiche, soprattutto ossidazioni e riduzioni, e avere familiarità con entropia ed energia libera. Queste idee permettono di seguire il trasferimento di elettroni e di collegare le trasformazioni chimiche all’energia disponibile. Si partirà dalle celle voltaiche, distinguendo il percorso degli elettroni da quello degli ioni, per poi passare ai potenziali standard e alle condizioni reali descritte dall’equazione di Nernst.
 
-Al termine saprai analizzare celle voltaiche ed elettrolitiche, individuare anodo e catodo e calcolare il potenziale di cella in condizioni standard e non standard. Saprai inoltre usare le leggi di Faraday per ricavare la quantità di prodotto ottenuta da una corrente e confrontare batterie primarie, accumulatori e celle a combustibile in base al modo in cui operano.
+Al termine saprai analizzare celle voltaiche ed elettrolitiche, individuare anodo e catodo e calcolare il potenziale di cella in condizioni standard e non standard. Saprai inoltre usare le leggi di Faraday per ricavare la quantità di prodotto ottenuta da una corrente.
 
 ## p2 | Celle voltaiche
 
@@ -347,7 +347,7 @@ Per i dettagli sull'ambiente acido o basico e sulla disproporzione vedi [Reazion
 
 ### Due temi: celle voltaiche e potenziali
 
-Le pile, la notazione di cella e i potenziali di cella compaiono come argomento esplicito nei temi 14 e 15: nel tema 15, dentro un esercizio che parte dalla redox di rame e piombo; nel tema 14, con una domanda sull’anodo, il catodo e il potenziale standard di cella. Per questo tipo di domande vale il metodo delle sezioni [Celle voltaiche](ref:chapter/16#p2) e [Potenziali standard ed equazione di Nernst](ref:chapter/16#p3): $E^\circ_{\mathrm{cella}} = E^\circ_{\mathrm{catodo}} - E^\circ_{\mathrm{anodo}}$, e Nernst quando le concentrazioni non sono 1 M. Le batterie e le celle a combustibile compaiono solo come argomento associato al tema 3 e al tema 14. Il loro funzionamento è in Batterie e celle a combustibile.
+Le pile, la notazione di cella e i potenziali di cella compaiono come argomento esplicito nei temi 14 e 15: nel tema 15, dentro un esercizio che parte dalla redox di rame e piombo; nel tema 14, con una domanda sull’anodo, il catodo e il potenziale standard di cella. Per questo tipo di domande vale il metodo delle sezioni [Celle voltaiche](ref:chapter/16#p2) e [Potenziali standard ed equazione di Nernst](ref:chapter/16#p3): $E^\circ_{\mathrm{cella}} = E^\circ_{\mathrm{catodo}} - E^\circ_{\mathrm{anodo}}$, e Nernst quando le concentrazioni non sono 1 M.
 
 ### Prima di consegnare
 

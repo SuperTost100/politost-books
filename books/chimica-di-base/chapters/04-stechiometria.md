@@ -11,7 +11,7 @@ Al termine saprai ricavare formule empiriche e molecolari da percentuali in mass
 
 ## p2 | Composizione percentuale e formule empiriche
 
-La formula di un composto non dice soltanto quali elementi lo costituiscono, ma fissa anche un rapporto in massa costante tra di essi: è la legge delle proporzioni definite di Proust, già introdotta in Leggi fondamentali e teoria atomica di Dalton. Questa sezione mostra come usare quel rapporto in due direzioni opposte: dalla formula alla composizione percentuale, e dalla composizione percentuale (ottenuta sperimentalmente, anche per combustione) alla formula minima e alla formula molecolare.
+La formula di un composto non dice soltanto quali elementi lo costituiscono, ma fissa anche un rapporto in massa costante tra di essi: è la legge delle proporzioni definite di Proust. Questa sezione mostra come usare quel rapporto in due direzioni opposte: dalla formula alla composizione percentuale, e dalla composizione percentuale (ottenuta sperimentalmente, anche per combustione) alla formula minima e alla formula molecolare.
 
 ### Composizione percentuale in massa
 
@@ -139,7 +139,7 @@ Uno sbaglio frequente nella fase di traduzione è modificare una formula chimica
 
 **Definizione 4.4** (coefficiente stechiometrico). Un coefficiente stechiometrico è il numero intero che si antepone alla formula di un reagente o di un prodotto in un'equazione chimica; esso moltiplica tutti gli atomi presenti in quella formula e indica il rapporto in cui le entità (o le moli di entità) partecipano alla reazione. Per esempio, il coefficiente 2 davanti a $Ca(NO_3)_2$ significa 2 atomi di Ca, 4 di N e 12 di O, perché il coefficiente moltiplica tutti gli atomi della formula, inclusi quelli racchiusi tra parentesi.
 
-**Teorema 4.1** (legge di Lavoisier, o di conservazione della massa). In un sistema chiuso la somma delle masse delle sostanze prima della reazione è uguale alla somma delle masse delle sostanze dopo la reazione; la massa non può essere creata né distrutta, perché il numero e la natura degli atomi restano inalterati nel corso della trasformazione. Questa legge, già incontrata in Leggi fondamentali e teoria atomica di Dalton, è la ragione per cui un'equazione chimica deve essere **bilanciata**: nei due membri deve comparire lo stesso numero di atomi di ciascun elemento.
+**Teorema 4.1** (legge di Lavoisier, o di conservazione della massa). In un sistema chiuso la somma delle masse delle sostanze prima della reazione è uguale alla somma delle masse delle sostanze dopo la reazione; la massa non può essere creata né distrutta, perché il numero e la natura degli atomi restano inalterati nel corso della trasformazione. Questa legge è la ragione per cui un'equazione chimica deve essere **bilanciata**: nei due membri deve comparire lo stesso numero di atomi di ciascun elemento.
 
 Il metodo più diretto per bilanciare un'equazione, adatto alla grande maggioranza delle reazioni non redox, è il **bilanciamento per ispezione**, che procede per tentativi secondo questi passi:
 
@@ -450,6 +450,6 @@ Esempi.
 
 ### Altri tipi, visti in una sola sessione
 
-Tre richieste compaiono in una sola sessione e non meritano un metodo a sé. Tema d_esame 14 + soluzione, n. 1, punto b, chiede un'elettrolisi di NaCl con resa faradica unitaria, che si affronta con le leggi di Faraday ([Elettrolisi e leggi di Faraday](ref:chapter/16#p5)) usando i coefficienti per le moli di gas sviluppate agli elettrodi. Tema d_esame 14 + soluzione, n. 2, parte da un eccesso di ZnO con 2 mol di H₂ e porta all'equilibrio, con $K_p = 1{,}12$ a 3,20 atm; la stechiometria dà solo la tabella "iniziale / variazione / equilibrio" ed è l'equilibrio a chiudere il calcolo ([Quoziente di reazione e calcoli di equilibrio](ref:chapter/12#p3)). La domanda teorica D1 del Tema 3 è già stata citata più sopra.
+Tre richieste compaiono in una sola sessione e non meritano un metodo a sé. Tema d'esame 14 + soluzione, n. 1, punto b, chiede un'elettrolisi di NaCl con resa faradica unitaria, che si affronta con le leggi di Faraday ([Elettrolisi e leggi di Faraday](ref:chapter/16#p5)) usando i coefficienti per le moli di gas sviluppate agli elettrodi. Tema d'esame 14 + soluzione, n. 2, parte da un eccesso di ZnO con 2 mol di H₂ e porta all'equilibrio, con $K_p = 1{,}12\,\mathrm{atm}$ a 3,20 atm; la stechiometria dà solo la tabella "iniziale / variazione / equilibrio" ed è l'equilibrio a chiudere il calcolo ([Quoziente di reazione e calcoli di equilibrio](ref:chapter/12#p3)). La domanda teorica D1 del Tema 3 è già stata citata più sopra.
 
 In tutti questi casi il primo passo resta lo stesso: una reazione bilanciata e le moli di ogni specie.

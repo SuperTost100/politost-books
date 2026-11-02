@@ -5,15 +5,15 @@ title: Atomi, elementi e mole
 
 ## p1 | Introduzione
 
-Per capire come la materia si trasforma, bisogna prima sapere di quali particelle è fatta e come si misurano. Le leggi di Lavoisier, Proust e Dalton mostrano che le sostanze reagiscono secondo regolarità precise: la teoria atomica offre una spiegazione di queste regolarità e aiuta anche a riconoscerne i limiti. Conoscere la struttura dell’atomo e gli isotopi chiarisce perché gli atomi dello stesso elemento condividano proprietà chimiche pur avendo masse diverse. La tavola periodica, poi, permette di orientarsi tra gli elementi e di prevedere alcune proprietà e cariche ioniche.
+Per capire come la materia si trasforma, bisogna prima sapere di quali particelle è fatta e come si misurano. Conoscere la struttura dell’atomo e gli isotopi chiarisce perché gli atomi dello stesso elemento condividano proprietà chimiche pur avendo masse diverse. La tavola periodica, poi, permette di orientarsi tra gli elementi e di prevedere alcune proprietà e cariche ioniche.
 
 Per affrontare il capitolo, è utile saper distinguere massa, volume e quantità di sostanza e usare rapporti e proporzioni semplici, come introdotto in [Grandezze, unità e cifre significative](ref:chapter/1#p2).
 
-Al termine saprai applicare le leggi ponderali e collegarle al modello di Dalton, ricavare protoni, neutroni ed elettroni dalla notazione di atomi e ioni, interpretare le informazioni essenziali della tavola periodica e riconoscere i principali tipi di elementi. Saprai inoltre passare dalla massa alle moli e al numero di particelle, e viceversa, usando le masse atomiche e molari e la costante di Avogadro.
+Al termine saprai ricavare protoni, neutroni ed elettroni dalla notazione di atomi e ioni, interpretare le informazioni essenziali della tavola periodica e riconoscere i principali tipi di elementi. Saprai inoltre passare dalla massa alle moli e al numero di particelle, e viceversa, usando le masse atomiche e molari e la costante di Avogadro.
 
 ## p2 | Struttura dell'atomo e isotopi
 
-Il modello di Dalton, presentato nella sezione precedente, considerava l'atomo come una sfera piena e indivisibile. Tra la fine del XIX secolo e i primi decenni del XX, una serie di esperimenti condotti con tubi a raggi catodici, gocce d'olio cariche e fasci di particelle $\alpha$ smentì questa immagine e portò al modello atomico che usiamo ancora oggi: un nucleo centrale, piccolo e denso, circondato da elettroni che occupano un volume molto più grande. Questa sezione ricostruisce quegli esperimenti e fissa le relazioni quantitative tra numero atomico, numero di massa e carica, che permettono di contare protoni, neutroni ed elettroni in un atomo o in uno ione, e di riconoscere gli isotopi di uno stesso elemento.
+Il modello atomico di Dalton considerava l'atomo come una sfera piena e indivisibile. Tra la fine del XIX secolo e i primi decenni del XX, una serie di esperimenti condotti con tubi a raggi catodici, gocce d'olio cariche e fasci di particelle $\alpha$ smentì questa immagine e portò al modello atomico che usiamo ancora oggi: un nucleo centrale, piccolo e denso, circondato da elettroni che occupano un volume molto più grande. Questa sezione ricostruisce quegli esperimenti e fissa le relazioni quantitative tra numero atomico, numero di massa e carica, che permettono di contare protoni, neutroni ed elettroni in un atomo o in uno ione, e di riconoscere gli isotopi di uno stesso elemento.
 
 ### Gli esperimenti che hanno rivelato la struttura dell'atomo
 
@@ -191,14 +191,14 @@ Per i composti ionici non esiste una molecola isolabile da pesare, perché tali 
 
 Per contare entità tanto piccole quanto gli atomi conviene definire un'unità di quantità di sostanza che raggruppi un numero enorme ma fisso di particelle elementari.
 
-**Definizione 2.4** (mole, convenzione storica). La mole, simbolo $\mathrm{mol}$, è la quantità di sostanza che contiene un numero di particelle elementari (atomi, ioni, molecole o altre entità specificate) uguale al numero di atomi contenuti in esattamente $12\ \mathrm{g}$ di $^{12}\mathrm{C}$.
+**Definizione 2.4** (mole, convenzione storica). Storicamente, la mole era definita come la quantità di sostanza che contiene un numero di particelle elementari (atomi, ioni, molecole o altre entità specificate) uguale al numero di atomi contenuti in esattamente $12\ \mathrm{g}$ di $^{12}\mathrm{C}$.
 
-Questo numero, detto numero di Avogadro, vale circa $N_A = 6{,}022 \times 10^{23}$. Dal 2019 il Sistema Internazionale ha scelto di ridefinire la mole senza fare riferimento alla massa di un campione di carbonio-12: la mole è la quantità di sostanza che contiene esattamente $6{,}02214076\times 10^{23}$ entità elementari, valore fissato per definizione. Negli esercizi di questo corso si usa il valore arrotondato $N_A = 6{,}022\times 10^{23}\ \mathrm{mol^{-1}}$. La ridefinizione è stata possibile perché oggi si sa misurare il valore numerico della costante di Avogadro con un'incertezza accettabile.
+Il numero di entità per mole è la costante di Avogadro, $N_A = 6{,}022 \times 10^{23}\ \mathrm{mol^{-1}}$; il suo valore numerico, senza unità, si chiama numero di Avogadro. Dal 2019 il Sistema Internazionale ha scelto di ridefinire la mole senza fare riferimento alla massa di un campione di carbonio-12: la mole è la quantità di sostanza che contiene esattamente $6{,}02214076\times 10^{23}$ entità elementari, valore fissato per definizione. Negli esercizi di questo corso si usa il valore arrotondato $N_A = 6{,}022\times 10^{23}\ \mathrm{mol^{-1}}$. La ridefinizione è stata possibile perché oggi si sa misurare il valore numerico della costante di Avogadro con un'incertezza accettabile.
 
 È importante distinguere due grandezze che nell'uso corrente vengono spesso confuse:
 
-- la costante di Avogadro, $N_A$, è il numero di particelle contenute in una mole e ha le dimensioni dell'inverso di una quantità di sostanza, cioè $\mathrm{mol^{-1}}$;
-- il numero di Avogadro ha lo stesso valore numerico della costante di Avogadro, ma è una grandezza adimensionale, definita come il numero di atomi di $^{12}\mathrm{C}$ presenti in $12\ \mathrm{g}$ di tale sostanza.
+- la costante di Avogadro, $N_A$, è il numero di particelle contenute in una mole e ha unità $\mathrm{mol^{-1}}$;
+- il numero di Avogadro è il valore numerico adimensionale della costante di Avogadro, cioè $6{,}02214076\times 10^{23}$.
 
 **Errore tipico 2.5.** Trattare la costante di Avogadro come un numero puro, senza l'unità $\mathrm{mol^{-1}}$, porta a errori di analisi dimensionale nei calcoli che la usano come fattore di conversione.
 

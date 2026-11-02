@@ -7,9 +7,9 @@ title: Numeri reali
 
 I numeri reali costituiscono il terreno su cui si edifica tutta l'analisi matematica: limiti, continuità, derivate e integrali trovano senso solo grazie alla struttura particolare di $\mathbb{R}$, che va ben oltre quella di $\mathbb{Q}$. Questo capitolo costruisce gli strumenti concettuali e tecnici indispensabili per affrontare con rigore ogni argomento successivo del corso.
 
-Non sono richieste conoscenze pregresse specifiche: il capitolo parte dagli insiemi numerici di base, assumendo soltanto familiarità con le operazioni aritmetiche elementari e con la logica delle proposizioni, utile per comprendere il principio di induzione e le dimostrazioni per casi legate al valore assoluto.
+Non sono richieste conoscenze pregresse specifiche: il capitolo parte dagli insiemi numerici di base, assumendo soltanto familiarità con le operazioni aritmetiche elementari e con la logica delle proposizioni, utile per comprendere le dimostrazioni per casi legate al valore assoluto.
 
-Al termine del percorso lo studente saprà collocare correttamente $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$ e $\mathbb{C}$ nella loro gerarchia, manipolare intervalli e disuguaglianze con il valore assoluto, e dimostrare proprietà per induzione, anche utilizzando il coefficiente binomiale e il binomio di Newton. Soprattutto, acquisirà la capacità di determinare maggioranti, minoranti, estremo superiore e inferiore di un sottoinsieme di $\mathbb{R}$, distinguendoli con precisione da massimo e minimo.
+Al termine del percorso lo studente saprà collocare correttamente $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$ e $\mathbb{C}$ nella loro gerarchia, manipolare intervalli e disuguaglianze con il valore assoluto. Soprattutto, acquisirà la capacità di determinare maggioranti, minoranti, estremo superiore e inferiore di un sottoinsieme di $\mathbb{R}$, distinguendoli con precisione da massimo e minimo.
 
 Il punto culminante è il principio dell'estremo superiore, conseguenza dell'assioma di completezza: una proprietà che distingue profondamente $\mathbb{R}$ da $\mathbb{Q}$ e che sarà il fondamento invocato più avanti per dimostrare teoremi centrali come l'esistenza degli zeri, il teorema di Weierstrass e la convergenza delle successioni monotone limitate.
 

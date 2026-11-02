@@ -166,7 +166,7 @@ Sono considerati **insolubili** (salvo eccezioni indicate):
 :::image{src="assets/0c3d550b-gruppi-1a-2a-solubilita.svg" alt="Tavola periodica con i gruppi 1A e 2A evidenziati" caption="Fig. 5.5 — I cationi del gruppo 1A (sempre solubili) e del gruppo 2A (che compaiono come eccezioni in più regole di solubilità) ricorrono spesso nelle regole empiriche di solubilità."}
 :::
 
-Un trattamento quantitativo della solubilità, basato sul confronto tra il prodotto ionico $Q_{ps}$ e la costante di prodotto di solubilità $K_{ps}$ ($Q_{ps}>K_{ps}$ precipitazione, $Q_{ps}=K_{ps}$ equilibrio, $Q_{ps}<K_{ps}$ soluzione insatura), è rimandato alla sezione sugli equilibri di solubilità; in questa sede è sufficiente la previsione qualitativa basata sulle regole precedenti.
+In questa sede è sufficiente la previsione qualitativa basata sulle regole precedenti.
 
 **Esempio svolto 5.2**
 

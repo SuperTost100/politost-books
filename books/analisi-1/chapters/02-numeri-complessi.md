@@ -289,7 +289,7 @@ In altre parole, per elevare a potenza un numero complesso basta elevare a poten
 
 $$(1+i)^8 = \left(\sqrt{2}\right)^8 e^{i\cdot 8 \cdot \frac{\pi}{4}} = 2^4 e^{i2\pi} = 16 \cdot 1 = 16,$$
 
-dove si è usato $e^{i2\pi} = \cos(2\pi) + i\sin(2\pi) = 1$. Il calcolo diretto tramite il binomio di Newton (si veda Principio di induzione e coefficiente binomiale) richiederebbe molti più passaggi.
+dove si è usato $e^{i2\pi} = \cos(2\pi) + i\sin(2\pi) = 1$. Il calcolo diretto tramite il binomio di Newton richiederebbe molti più passaggi.
 
 **Errore tipico 2.4.** Un errore frequente è applicare De Moivre elevando il modulo ma **non** moltiplicando l'argomento per $n$ (o viceversa): entrambe le operazioni, sul modulo e sull'argomento, vanno eseguite insieme. Un secondo errore comune è dimenticare che l'angolo risultante $n\theta$ può uscire dall'intervallo $\rbrack -\pi,\pi\rbrack $: ciò non è un problema, perché coseno e seno sono periodici, ma se si vuole l'argomento principale occorre ridurre $n\theta$ modulo $2\pi$.
 

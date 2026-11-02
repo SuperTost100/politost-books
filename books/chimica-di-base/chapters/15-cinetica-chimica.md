@@ -5,9 +5,9 @@ title: Cinetica chimica
 
 ## p1 | Introduzione
 
-La cinetica chimica spiega quanto rapidamente avvengono le reazioni e quali fattori ne modificano la velocità. È utile per interpretare processi quotidiani e industriali, controllare la produzione di sostanze e comprendere fenomeni naturali come il decadimento radioattivo. Per affrontare il capitolo servono le basi della stechiometria, per collegare reagenti e prodotti, e dell’equilibrio chimico, per distinguere la velocità di una reazione dalla posizione dell’equilibrio.
+La cinetica chimica spiega quanto rapidamente avvengono le reazioni e quali fattori ne modificano la velocità. È utile per interpretare processi quotidiani e industriali e controllare la produzione di sostanze. Per affrontare il capitolo servono le basi della stechiometria, per collegare reagenti e prodotti, e dell’equilibrio chimico, per distinguere la velocità di una reazione dalla posizione dell’equilibrio.
 
-Al termine saprai definire e calcolare velocità medie, istantanee e iniziali, ricavare una legge cinetica dai dati sperimentali e riconoscerne gli ordini. Saprai usare le leggi integrate per descrivere reazioni di ordine zero, primo e secondo, determinare tempi di dimezzamento e confrontare i metodi che identificano l’ordine di reazione. Imparerai a valutare come temperatura ed energia di attivazione influenzano la velocità e a spiegare il ruolo delle collisioni efficaci, dello stato di transizione e dei catalizzatori. Potrai inoltre interpretare i meccanismi a stadi e applicare la cinetica del primo ordine ai processi radioattivi, calcolando attività residua ed età di un reperto.
+Al termine saprai definire e calcolare velocità medie, istantanee e iniziali, ricavare una legge cinetica dai dati sperimentali e riconoscerne gli ordini. Saprai usare le leggi integrate per descrivere reazioni di ordine zero, primo e secondo, determinare tempi di dimezzamento e confrontare i metodi che identificano l’ordine di reazione. Imparerai a valutare come temperatura ed energia di attivazione influenzano la velocità e a spiegare il ruolo delle collisioni efficaci, dello stato di transizione e dei catalizzatori. Potrai inoltre interpretare i meccanismi a stadi.
 
 ## p2 | Velocità di reazione e leggi cinetiche
 

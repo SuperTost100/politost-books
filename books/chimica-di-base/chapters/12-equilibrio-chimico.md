@@ -374,8 +374,6 @@ Il capitolo sull'equilibrio chimico è comparso in 2 delle 4 sessioni d'esame an
 
 **Errori tipici.**
 
-**Errori tipici.**
-
 - Inserire nell'espressione di $K_p$ il solido, oppure una concentrazione al posto della pressione parziale.
 - Mescolare pressioni e moli nella stessa tabella ICE.
 - Usare i gradi Celsius in $pV = nRT$. Il testo può dare $t$ in °C, ma nei calcoli serve $T = t + 273{,}15$.

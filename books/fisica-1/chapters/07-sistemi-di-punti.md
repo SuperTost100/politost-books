@@ -455,7 +455,7 @@ Si ottiene così il **primo teorema di König**:
 $$\vec{L} = \vec{r}_{CM}\times m\vec{v}_{CM} + \vec{L}', \qquad \vec{L}' = \sum_i m_i\, \vec{r}'_i\times \vec{v}'_i$$
 :::
 
-Il momento angolare del sistema, calcolato rispetto a un polo fisso nel riferimento inerziale, è dunque la somma del momento angolare dovuto al moto del centro di massa e del momento angolare dovuto al moto interno rispetto al centro di massa. Questa scomposizione è lo strumento fondamentale per trattare il corpo rigido: nel caso particolare in cui tutto il moto interno sia una rotazione rigida attorno al centro di massa, in generale $\vec{L}'$ non è parallelo a $\vec{\omega}$, perché il legame tra le due grandezze è mediato dal tensore d'inerzia rispetto al centro di massa, $\vec{L}' = I_{CM}\vec{\omega}$ in senso tensoriale. Solo se il moto è piano (asse di rotazione fisso e perpendicolare al piano del moto) oppure se $\vec{\omega}$ è diretto lungo un asse principale d'inerzia passante per il centro di massa, la relazione si riduce alla forma scalare $\vec{L}' = I_{CM}\vec{\omega}$, come vedremo nel capitolo dedicato (ved. [Teoremi di Huygens-Steiner e di König](ref:chapter/8#p4) e Ellissoide d'inerzia).
+Il momento angolare del sistema, calcolato rispetto a un polo fisso nel riferimento inerziale, è dunque la somma del momento angolare dovuto al moto del centro di massa e del momento angolare dovuto al moto interno rispetto al centro di massa. Questa scomposizione è lo strumento fondamentale per trattare il corpo rigido: nel caso particolare in cui tutto il moto interno sia una rotazione rigida attorno al centro di massa, in generale $\vec{L}'$ non è parallelo a $\vec{\omega}$, perché il legame tra le due grandezze è mediato dal tensore d'inerzia rispetto al centro di massa, $\vec{L}' = I_{CM}\vec{\omega}$ in senso tensoriale. Solo se il moto è piano (asse di rotazione fisso e perpendicolare al piano del moto) oppure se $\vec{\omega}$ è diretto lungo un asse principale d'inerzia passante per il centro di massa, la relazione si riduce alla forma scalare $\vec{L}' = I_{CM}\vec{\omega}$, come vedremo nel capitolo dedicato (ved. [Teoremi di Huygens-Steiner e di König](ref:chapter/8#p4)).
 
 ### Esempio svolto
 
@@ -805,8 +805,6 @@ Strutture analoghe compaiono nell'*Esame TEMA 2 - 2024, esercizio 1A* (pendolo s
 ### Tipo 2: urto contro un corpo vincolato e momento angolare
 
 **Cosa chiede l'esame.** Un punto materiale colpisce un'asta o un disco che può ruotare, oppure il sistema è formato da un disco e da corpi puntiformi. Si chiede la velocità angolare subito dopo l'urto, la velocità del punto dopo l'urto, l'energia dissipata.
-
-**Metodo.**
 
 **Metodo.**
 

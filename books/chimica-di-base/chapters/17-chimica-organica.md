@@ -7,7 +7,7 @@ title: Chimica organica
 
 La chimica organica studia le sostanze che costituiscono gli organismi viventi e molti materiali di uso quotidiano. Capire come il carbonio costruisce catene e anelli, e come i gruppi funzionali modificano le proprietà delle molecole, permette di interpretare sia le trasformazioni chimiche sia la formazione di materiali come le plastiche. Per affrontare il capitolo è utile conoscere già il legame chimico: in particolare, come gli atomi condividono elettroni e come si rappresentano i legami nelle formule di struttura.
 
-Al termine saprai riconoscere le principali famiglie di composti organici e assegnare loro un nome seguendo le regole essenziali. Saprai distinguere gli isomeri costituzionali dagli stereoisomeri, individuare un centro chirale e descrivere l’isomeria geometrica e ottica. Imparerai a collegare i gruppi funzionali alla polarità, ai legami a idrogeno e alle proprietà fisiche, oltre a riconoscere le trasformazioni più comuni di alcune classi di composti. Infine, saprai distinguere la polimerizzazione per addizione da quella per condensazione e interpretare uno schema che mostra l’unità ripetitiva di un polimero.
+Al termine saprai riconoscere le principali famiglie di composti organici e assegnare loro un nome seguendo le regole essenziali. Saprai distinguere gli isomeri costituzionali. Imparerai a collegare i gruppi funzionali alla polarità, ai legami a idrogeno e alle proprietà fisiche, oltre a riconoscere le trasformazioni più comuni di alcune classi di composti.
 
 ## p2 | Il carbonio e le molecole organiche
 
@@ -168,9 +168,9 @@ Il gruppo carbossilico può reagire con un alcol formando un estere e acqua. Est
 
 ## p6 | Come viene chiesto all'esame
 
-Nell'archivio delle prove passate, 1 sessione su 4 conteneva domande sugli argomenti di questo capitolo. L'unica domanda trovata è un esercizio misto: un calcolo di proprietà colligative a cui si aggancia una domanda breve di chimica organica sul riconoscimento del gruppo funzionale e sull'ibridazione.
+Nell'archivio delle prove passate compaiono domande sugli argomenti di questo capitolo. Tra queste c'è un esercizio misto: un calcolo di proprietà colligative a cui si affianca una domanda breve di chimica organica sul riconoscimento del gruppo funzionale e sull'ibridazione.
 
-Con una sola domanda non si può parlare di tipi ricorrenti, e questa sezione non li inventa. Descrive quello che la domanda mostra e indica come affrontarlo.
+Le domande disponibili non bastano per individuare tipi ricorrenti. Questa sezione descrive quelle documentate e indica come affrontarle.
 
 Per il test informatizzato e per le altre sessioni questa sezione non dice nulla, perché le domande a disposizione non le coprono.
 
@@ -190,4 +190,4 @@ Gli errori tipici che questa domanda invita a evitare sono i seguenti:
 - **Errore tipico 17.6**: attribuire ibridazione $sp^2$ ai carboni legati all'ossigeno. L'ibridazione dipende dal numero di legami $\pi$ e di coppie di legame, non dalla presenza di un eteroatomo: qui non ci sono doppi legami.
 - **Errore tipico 17.7**: classificare il glicerolo come un acido carbossilico, o come un etere, per confusione con l'atomo di ossigeno. Un $-\mathrm{OH}$ legato a un carbonio saturo è sempre un alcol.
 
-Per prepararti, tieni presente che la struttura dell'esame è questa: il test informatizzato iniziale e la prova scritta con esercizi e domande teoriche, senza materiale didattico. Una domanda come la sottodomanda D2 si risolve a memoria, perché richiede solo di saper scrivere la semistruttura, contare i legami e riconoscere il gruppo funzionale. Prima di una prova, allenati a passare dal nome alla formula e viceversa per i dieci gruppi del capitolo, e a ricavare l'ibridazione di ogni carbonio. Se vuoi ripassare anche l'isomeria o i polimeri, trovi i criteri in [Isomeria](ref:chapter/17#p4) e in Polimeri, anche se le domande a disposizione non li hanno finora richiesti.
+Per prepararti, tieni presente che la struttura dell'esame è questa: il test informatizzato iniziale e la prova scritta con esercizi e domande teoriche, senza materiale didattico. Una domanda come la sottodomanda D2 si risolve a memoria, perché richiede solo di saper scrivere la semistruttura, contare i legami e riconoscere il gruppo funzionale. Prima di una prova, allenati a passare dal nome alla formula e viceversa per i gruppi funzionali del capitolo, e a ricavare l'ibridazione di ogni carbonio. Puoi ripassare l'isomeria costituzionale in [Isomeria](ref:chapter/17#p4).

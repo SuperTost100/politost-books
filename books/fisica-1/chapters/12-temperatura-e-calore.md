@@ -498,4 +498,4 @@ Il problema numero 3 della prova scritta, di due ore, è quello che ha ospitato 
 
 ### Altri temi del capitolo
 
-Dilatazione termica e trasmissione del calore (conduzione, irraggiamento) non compaiono tra i temi di queste tre sessioni. Non puoi dedurre che non verranno chiesti, ma la loro presenza in test o domande aperte non è documentata qui.
+La trasmissione del calore (conduzione, irraggiamento) non compare tra i temi di queste tre sessioni. Non puoi dedurre che non verrà chiesta, ma la sua presenza in test o domande aperte non è documentata qui.

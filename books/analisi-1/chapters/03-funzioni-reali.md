@@ -662,7 +662,7 @@ Metodo:
 
 1. Determina il dominio con le condizioni di esistenza, come nel tipo 1.
 2. Per l'immagine, leggi dal grafico (o ricostruisci dallo studio di monotonia e dai limiti agli estremi) gli intervalli percorsi da $f$ su ogni tratto monotono. L'immagine è l'unione di questi intervalli. Attenzione agli estremi: un valore raggiunto va incluso, un valore solo approssimato (limite) va escluso. Si veda [Funzioni: dominio, immagine, iniettività](ref:chapter/3#p2).
-3. Per l'iniettività, puoi mostrare che $f$ è strettamente monotona sull'intero dominio, oppure verificare che i valori assunti su tratti distinti non coincidano; in alternativa, trova due punti distinti con lo stesso valore. Se $f$ è derivabile su un intervallo, $f'(x)>0$ per ogni $x$ oppure $f'(x)<0$ per ogni $x$ implica che è strettamente monotona su quell'intervallo.
+3. Per dimostrare l'iniettività, puoi mostrare che $f$ è strettamente monotona sull'intero dominio, oppure verificare che i valori assunti su tratti distinti non coincidano. Per dimostrare che non è iniettiva, trova due punti distinti con lo stesso valore. Se $f$ è derivabile su un intervallo, $f'(x)>0$ per ogni $x$ oppure $f'(x)<0$ per ogni $x$ implica che è strettamente monotona su quell'intervallo.
 4. Per invertire, restringi $f$ a un intervallo su cui è strettamente monotona. Dominio e immagine dell'inversa si scambiano con quelli della restrizione. Vedi [Grafico, composizione e funzione inversa](ref:chapter/3#p3).
 
 Errori tipici:

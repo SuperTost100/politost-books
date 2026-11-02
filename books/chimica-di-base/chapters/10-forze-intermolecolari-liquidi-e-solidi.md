@@ -9,7 +9,7 @@ Le forze tra le particelle determinano molte proprietà dei materiali: spiegano 
 
 Per affrontare il capitolo, è necessario conoscere il legame chimico e saper distinguere atomi, ioni e molecole, oltre a riconoscere la polarità delle molecole. Sono utili anche le idee di quantità di sostanza, energia e temperatura, che permettono di seguire i cambiamenti di fase e i calcoli associati.
 
-Al termine saprai distinguere le forze intermolecolari e usarle per confrontare le temperature di ebollizione; interpretare tensione di vapore, transizioni di fase e diagrammi di stato; calcolare il calore scambiato durante un cambiamento di fase o una curva di riscaldamento. Saprai inoltre classificare i solidi in base alla struttura e al tipo di legame, descrivere le principali celle cristalline e confrontare impaccamenti, durezza, allotropi e leghe, collegando la struttura microscopica alle proprietà osservabili.
+Al termine saprai distinguere le forze intermolecolari e usarle per confrontare le temperature di ebollizione; interpretare tensione di vapore, transizioni di fase e diagrammi di stato; calcolare il calore scambiato durante un cambiamento di fase o una curva di riscaldamento. Saprai inoltre classificare i solidi in base alla struttura e al tipo di legame, descrivere le principali celle cristalline e confrontare impaccamenti e durezza, collegando la struttura microscopica alle proprietà osservabili.
 
 ## p2 | Forze intermolecolari
 

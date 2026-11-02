@@ -130,7 +130,7 @@ $$
 $$\Delta H = q_p$$
 :::
 
-Questo risultato è centrale: in un sistema chiuso in cui l'unico lavoro scambiato è quello di espansione o compressione, la variazione di entalpia coincide con il calore scambiato a pressione costante, $\lbrack ?\rbrack $ mentre a volume costante, nelle stesse ipotesi sul lavoro, la variazione di energia interna coincide con il calore scambiato. È per questo motivo che $\lbrack ?\rbrack $ si misura $\lbrack ?\rbrack $ tramite $q_p$ con un calorimetro a pressione costante e $\lbrack ?\rbrack $ tramite $q_v$ con un calorimetro a volume costante (il procedimento sperimentale è trattato in [Calorimetria](ref:chapter/7#p4)). L'entalpia di un sistema in uno stato assoluto non è misurabile, perché mancherebbe un riferimento a entalpia zero; ciò che si misura è sempre una variazione $\lbrack ?\rbrack $.
+Questo risultato è centrale: in un sistema chiuso in cui l'unico lavoro scambiato è quello di espansione o compressione, la variazione di entalpia coincide con il calore scambiato a pressione costante, $q_p$, mentre a volume costante, nelle stesse ipotesi sul lavoro, la variazione di energia interna coincide con il calore scambiato, $q_v$. È per questo motivo che $\Delta H$ si misura tramite $q_p$ con un calorimetro a pressione costante e $\Delta U$ tramite $q_v$ con un calorimetro a volume costante (il procedimento sperimentale è trattato in [Calorimetria](ref:chapter/7#p4)). L'entalpia di un sistema in uno stato assoluto non è misurabile, perché mancherebbe un riferimento a entalpia zero; ciò che si misura è sempre una variazione $\Delta H$.
 
 Essendo $H$ una funzione di stato:
 

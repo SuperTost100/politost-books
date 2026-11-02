@@ -551,7 +551,7 @@ Il metodo, passo per passo:
 1. Individuare il sistema (punto più corpo rigido) e scegliere un **polo** fisso, dichiarandolo. Con un'asta incernierata il polo naturale è il vincolo, perché la reazione vincolare ha momento nullo rispetto a esso.
 2. Verificare quali grandezze si conservano durante l'urto, che è istantaneo. Il momento angolare rispetto al polo si conserva se i momenti esterni sono nulli o trascurabili, come spiegato in [Urti con corpi rigidi](ref:chapter/9#p5). La quantità di moto invece non si conserva se c'è un vincolo fisso, perché la reazione del vincolo è impulsiva.
 3. Calcolare il momento d'inerzia del corpo rispetto all'asse di rotazione, usando i valori noti ([Momento d'inerzia](ref:chapter/8#p3)) e, se l'asse non passa per il centro di massa, il trasporto di Huygens-Steiner ([Teoremi di Huygens-Steiner e di König](ref:chapter/8#p4)).
-4. Scrivere il momento angolare prima e dopo l'urto: $L = r\,m\,v$ per il punto (con il braccio rispetto al polo). Per un rigido vincolato a ruotare attorno a un asse fisso si usa $L = I\omega$; per un rigido libero il momento angolare rispetto al polo comprende anche il contributo orbitale del centro di massa, $\vec r_{CM}\times m\vec v_{CM}$, secondo il primo teorema di König. Se dopo l'urto il punto resta attaccato, il suo contributo diventa $m r^2 \omega$ e va sommato a $I$. Si risolve in $\omega$.
+4. Scrivere il momento angolare prima e dopo l'urto: $L = r\,m\,v$ per il punto (con il braccio rispetto al polo). Per un rigido vincolato a ruotare attorno a un asse fisso si usa la componente assiale $L_z = I_z\omega$; la forma vettoriale $\vec L = I\vec\omega$ vale solo per un asse principale o di simmetria. Per un rigido libero il momento angolare rispetto al polo comprende anche il contributo orbitale del centro di massa, $\vec r_{CM}\times m\vec v_{CM}$, secondo il primo teorema di König. Se dopo l'urto il punto resta attaccato, il suo contributo diventa $m r^2 \omega$ e va sommato a $I$. Si risolve in $\omega$.
 5. Per l'energia dissipata, confrontare l'energia cinetica prima e dopo, usando {{formula:8.15}} se il corpo si muove anche di traslazione.
 6. Controllare il segno del verso di rotazione (con la regola della mano destra) e le dimensioni.
 
@@ -620,4 +620,4 @@ Esempi:
 
 ### Quello che non è ancora uscito
 
-Nelle sessioni qui esaminate non compaiono esercizi di sola statica (scale, travi, mensole) né calcoli espliciti con l'ellissoide d'inerzia. Gli argomenti di [Statica del corpo rigido](ref:chapter/8#p5) e di Ellissoide d'inerzia restano comunque utili come base di teoria, perché lo scritto prevede anche domande aperte e l'orale può approfondirli.
+Nelle sessioni qui esaminate non compaiono esercizi di sola statica (scale, travi, mensole). Gli argomenti di [Statica del corpo rigido](ref:chapter/8#p5) restano comunque utili come base di teoria, perché lo scritto prevede anche domande aperte e l'orale può approfondirli.

@@ -192,7 +192,7 @@ Le forze di contatto sono quelle che i problemi di dinamica usano più spesso. C
 
 Anche la **forza centripeta** non è una forza di tipo particolare. È il nome della componente della risultante ortogonale alla traiettoria, ed è diversa da zero nei punti in cui la velocità e la curvatura della traiettoria sono entrambe diverse da zero.
 
-Come forze a distanza, nei problemi di questo corso compaiono soprattutto il peso e, in generale, la gravitazione. L'elettrostatica ha una sezione dedicata in Cenni di elettrostatica.
+Come forze a distanza, nei problemi di questo corso compaiono soprattutto il peso e, in generale, la gravitazione.
 
 ### Errori tipici
 
@@ -872,8 +872,6 @@ Nella prova scritta di 2 ore ci sono due problemi strutturati a domande aperte, 
 ### Tipo 2: urto seguito da dinamica del moto
 
 **Cosa chiede l'esame.** Un corpo viene lanciato, o cade da un pendolo, e urta un altro corpo. Prima o dopo l'urto serve una condizione sulle forze, per esempio una tensione, una forza di equilibrio o una distanza percorsa con attrito. L'esercizio combina quindi la [Quantità di moto e impulso](ref:chapter/3#p4) con le [Forze di attrito](ref:chapter/3#p6) o con il moto circolare. Il tipo compare in cinque sessioni su sei.
-
-**Metodo.**
 
 **Metodo.**
 

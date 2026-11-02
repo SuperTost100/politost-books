@@ -264,7 +264,7 @@ $$m r_1 v_{\theta,1} = m r_2 v_{\theta,2} \quad \Longrightarrow \quad v_{\theta,
 
 ### Definizione e proprietà di base
 
-Una classe di forze particolarmente importante in fisica, sia a livello microscopico (forza elettrostatica) che macroscopico (forza gravitazionale), è quella delle forze centrali.
+Una classe di forze particolarmente importante in fisica, sia a livello microscopico sia macroscopico, è quella delle forze centrali.
 
 **Definizione 5.4** (forza centrale). Si definisce forza centrale una forza agente in una certa regione dello spazio con le seguenti proprietà: in qualsiasi punto la sua direzione passa sempre per un punto fisso, detto centro della forza, e il suo modulo è funzione soltanto della distanza dal centro stesso. Scegliendo come polo $O$ il centro della forza e indicando con $\hat{u}_r$ il versore radiale uscente da $O$, una forza centrale si scrive
 
@@ -272,7 +272,7 @@ Una classe di forze particolarmente importante in fisica, sia a livello microsco
 $$\vec{F} = F(r)\,\hat{u}_r$$
 :::
 
-dove $F(r) > 0$ corrisponde a una forza repulsiva e $F(r) < 0$ a una forza attrattiva. Esempi tipici sono la forza gravitazionale $\vec{F} = -\dfrac{G m_1 m_2}{r^2}\hat{u}_r$ e la forza elettrostatica, già incontrate nella sezione [Forze conservative ed energia potenziale](ref:chapter/4#p4), ma la trattazione che segue vale per qualunque $F(r)$.
+dove $F(r) > 0$ corrisponde a una forza repulsiva e $F(r) < 0$ a una forza attrattiva. Un esempio tipico è la forza gravitazionale $\vec{F} = -\dfrac{G m_1 m_2}{r^2}\hat{u}_r$, ma la trattazione che segue vale per qualunque $F(r)$.
 
 Il punto cruciale è che, scegliendo come polo $O$ proprio il centro della forza, il momento della forza (già definito in [Momento di una forza](ref:chapter/5#p2) come {{formula:5.1}}) è sempre nullo, perché $\vec{r}$ e $\vec{F}$ sono paralleli:
 
@@ -324,11 +324,11 @@ Il prodotto scalare $\hat{u}_r\cdot d\vec{s} = ds\cos\theta$, dove $\theta$ è l
 $$W_{AB} = \int_{r_A}^{r_B} F(r)\,dr = E_p(r_A) - E_p(r_B)$$
 :::
 
-essendo il risultato una funzione soltanto delle distanze $r_A$ ed $r_B$ dal centro, e non del cammino seguito: questa è precisamente la condizione che definisce una forza conservativa, enunciata in [Forze conservative ed energia potenziale](ref:chapter/4#p4). Ne segue che a ogni forza centrale è associata un'energia potenziale $E_p(r)$ con $\vec{F}=-\vec{\nabla}E_p$, come già visto per il caso gravitazionale ed elettrostatico.
+essendo il risultato una funzione soltanto delle distanze $r_A$ ed $r_B$ dal centro, e non del cammino seguito: questa è precisamente la condizione che definisce una forza conservativa, enunciata in [Forze conservative ed energia potenziale](ref:chapter/4#p4). Ne segue che a ogni forza centrale è associata un'energia potenziale $E_p(r)$ con $\vec{F}=-\vec{\nabla}E_p$, come già visto per il caso gravitazionale.
 
 ### Energia meccanica e momento angolare nei problemi di orbita
 
-Nei problemi di orbita (satelliti, pianeti, cariche in campo centrale) la strategia generale è combinare le due leggi di conservazione appena stabilite: momento angolare $L=mrv_\theta$ costante ed energia meccanica $E_m = E_k+E_p$ costante.
+Nei problemi di orbita (satelliti e pianeti) la strategia generale è combinare le due leggi di conservazione appena stabilite: momento angolare $L=mrv_\theta$ costante ed energia meccanica $E_m = E_k+E_p$ costante.
 
 Per un'orbita circolare di raggio $r$ attorno a una massa $M$, la velocità si ottiene imponendo che la forza gravitazionale fornisca l'accelerazione centripeta, $v^2 = GM/r$, e l'energia meccanica diventa
 

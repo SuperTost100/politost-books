@@ -3122,20 +3122,7 @@ Per un alcano aciclico con $n=6$, il numero di atomi di idrogeno è $2\cdot 6+2=
 :::
 :::
 
-:::exercise{id="E17.2" chapter="17" difficulty="difficile"}
-## Domanda
-Una massa di $5{,}60$ g di etene polimerizza completamente per addizione formando polietilene, senza sottoprodotti. Calcola la massa di polimero ottenuta e il numero medio di unità ripetitive per catena se il campione contiene $2{,}00\times10^{-3}$ mol di catene polimeriche. Usa $M(\mathrm{C_2H_4})=28{,}0\,\mathrm{g\,mol^{-1}}$ e trascura gli effetti dei gruppi terminali.
-
-:::hint
-Conserva la massa nell'addizione e calcola prima le moli di monomero. Dividi poi le moli di unità ripetitive per le moli di catene.
-:::
-
-:::solution
-Le moli di etene iniziali sono $5{,}60/28{,}0=0{,}200$ mol. La polimerizzazione per addizione non elimina sottoprodotti, quindi tutta la massa dell'etene passa nel polimero: si ottengono $5{,}60$ g di polietilene. Le $0{,}200$ mol di etene forniscono $0{,}200$ mol di unità ripetitive. Il numero medio di unità per catena è $0{,}200/(2{,}00\times10^{-3})=100$.
-:::
-:::
-
-:::exercise{id="E17.3" chapter="17" difficulty="medio"}
+:::exercise{id="E17.2" chapter="17" difficulty="medio"}
 ## Domanda
 Un composto ha formula molecolare $\mathrm{C_3H_6O_2}$ e struttura $\mathrm{CH_3CH_2COOH}$. Nominalo e scrivi l'equazione della sua reazione con etanolo, $\mathrm{CH_3CH_2OH}$, che produce un estere e acqua.
 
@@ -3148,7 +3135,7 @@ La struttura $\mathrm{CH_3CH_2COOH}$ è l'acido propanoico. Nella reazione con e
 :::
 :::
 
-:::exercise{id="E17.4" chapter="17" difficulty="difficile"}
+:::exercise{id="E17.3" chapter="17" difficulty="difficile"}
 ## Domanda
 Una molecola di 2-butanolo, $4\mathrm{CH_3CH(OH)CH_2CH_3}4$, ha un carbonio tetraedrico legato a quattro gruppi diversi. Determina il numero di stereoisomeri configurazionali e spiega quale relazione hanno tra loro.
 
@@ -3161,7 +3148,7 @@ Il carbonio 2 è legato a $4\mathrm{H}4$, $4\mathrm{OH}4$, un gruppo metile e un
 :::
 :::
 
-:::exercise{id="E17.5" chapter="17" difficulty="facile"}
+:::exercise{id="E17.4" chapter="17" difficulty="facile"}
 ## Domanda
 Scrivi le formule condensate di due isomeri di struttura con formula molecolare $4\mathrm{C_4H_{10}}4$ e dai il nome di ciascuno.
 
@@ -3174,7 +3161,7 @@ Una prima struttura è la catena lineare $4\mathrm{CH_3CH_2CH_2CH_3}4$, che si c
 :::
 :::
 
-:::exercise{id="E17.6" chapter="17" difficulty="difficile"}
+:::exercise{id="E17.5" chapter="17" difficulty="difficile"}
 ## Domanda
 Un composto organico neutro contiene carbonio, idrogeno e ossigeno. La combustione completa di $0{,}10$ mol produce $0{,}20$ mol di $4\mathrm{CO_2}4$ e $0{,}20$ mol di $4\mathrm{H_2O}4$. La sua massa molare è $88{,}0\,\mathrm{g\,mol^{-1}}$. Determina la formula molecolare e, sapendo che il composto contiene un solo gruppo carbossilico e nessun altro gruppo funzionale, scrivine una struttura possibile e il nome.
 
@@ -3187,20 +3174,7 @@ Per mole di composto si producono $0{,}20/0{,}10=2$ mol di $4\mathrm{CO_2}4$, qu
 :::
 :::
 
-:::exercise{id="E17.7" chapter="17" difficulty="facile"}
-## Domanda
-Indica il monomero da cui si ottiene il polietilene per polimerizzazione per addizione e scrivi l'unità ripetitiva del polimero.
-
-:::hint
-La polimerizzazione apre il doppio legame dell'alchene e forma legami singoli tra le unità derivate dai monomeri.
-:::
-
-:::solution
-Il polietilene si ottiene dall'etene, $4\mathrm{CH_2=CH_2}4$. Durante la polimerizzazione si apre il doppio legame e si formano legami singoli tra le unità monomeriche. L'unità ripetitiva è $4\mathrm{-CH_2-CH_2-}4$, rappresentata nella catena come $4\mathrm{\lbrack -CH_2-CH_2-\rbrack _n}4$.
-:::
-:::
-
-:::exercise{id="E17.8" chapter="17" difficulty="difficile"}
+:::exercise{id="E17.6" chapter="17" difficulty="difficile"}
 ## Domanda
 Un composto organico contiene solo carbonio, idrogeno e ossigeno. La combustione completa di $0{,}10$ mol del composto produce $0{,}30$ mol di $4\mathrm{CO_2}4$ e $0{,}30$ mol di $4\mathrm{H_2O}4$. La massa molare del composto è $60{,}0\,\mathrm{g\,mol^{-1}}$. Determina la formula molecolare e il numero di insaturazioni, assumendo che ogni insaturazione corrisponda a un anello o a un legame multiplo.
 
@@ -3213,7 +3187,7 @@ Per ogni mole di composto si formano $0{,}30/0{,}10=3$ mol di $4\mathrm{CO_2}4$,
 :::
 :::
 
-:::exercise{id="E17.9" chapter="17" difficulty="facile"}
+:::exercise{id="E17.7" chapter="17" difficulty="facile"}
 ## Domanda
 Individua il gruppo funzionale di ciascun composto e classificalo: $4\mathrm{CH_3CH_2OH}4$, $4\mathrm{CH_3CHO}4$ e $4\mathrm{CH_3COOH}4$.
 
@@ -3226,7 +3200,7 @@ $4\mathrm{CH_3CH_2OH}4$ contiene il gruppo ossidrile legato a un carbonio saturo
 :::
 :::
 
-:::exercise{id="E17.10" chapter="17" difficulty="facile"}
+:::exercise{id="E17.8" chapter="17" difficulty="facile"}
 ## Domanda
 Considera la molecola di etene, $4\mathrm{C_2H_4}4$. Indica l'ibridazione dei due atomi di carbonio, la geometria locale attorno a ciascun carbonio e il numero totale di legami $4\sigma4$ e $4\pi4$.
 
@@ -3239,7 +3213,7 @@ Ogni carbonio dell'etene forma tre legami: due con gli atomi di idrogeno e uno c
 :::
 :::
 
-:::exercise{id="E17.11" chapter="17" difficulty="medio"}
+:::exercise{id="E17.9" chapter="17" difficulty="medio"}
 ## Domanda
 La combustione completa di un campione di propano, $\mathrm{C_3H_8}$, produce $\mathrm{CO_2}$ e $\mathrm{H_2O}$. Bilancia la reazione e determina le moli di ossigeno necessarie per bruciare completamente $0{,}504$ mol di propano.
 
@@ -3252,7 +3226,7 @@ La combustione si scrive $\mathrm{C_3H_8 + O_2 \rightarrow CO_2 + H_2O}$. Bilanc
 :::
 :::
 
-:::exercise{id="E17.12" chapter="17" difficulty="medio"}
+:::exercise{id="E17.10" chapter="17" difficulty="medio"}
 ## Domanda
 Nomina secondo la nomenclatura IUPAC la molecola $4\mathrm{CH_3-CH(CH_3)-CH=CH_2}4$. Indica anche quale numero si assegna al doppio legame nella catena principale.
 
@@ -3265,20 +3239,7 @@ La catena più lunga che contiene il doppio legame ha quattro atomi di carbonio.
 :::
 :::
 
-:::exercise{id="E17.13" chapter="17" difficulty="medio"}
-## Domanda
-Un campione di polietilene ha massa molare media $28\,000\,\mathrm{g\,mol^{-1}}$. Assumendo che ogni unità ripetitiva derivi da una molecola di etene e che gli effetti dei gruppi terminali siano trascurabili, stima il grado di polimerizzazione medio. La massa molare dell'etene è $28{,}0\,\mathrm{g\,mol^{-1}}$.
-
-:::hint
-Dividi la massa molare media del polimero per la massa molare di una unità ripetitiva.
-:::
-
-:::solution
-Ogni unità ripetitiva del polietilene ha la stessa composizione dell'etene e massa molare $28{,}0\,\mathrm{g\,mol^{-1}}$. Trascurando gli effetti dei gruppi terminali, il numero medio di unità è $28\,000/28{,}0=1000$.
-:::
-:::
-
-:::exercise{id="E17.14" chapter="17" difficulty="difficile"}
+:::exercise{id="E17.11" chapter="17" difficulty="difficile"}
 ## Domanda
 Un idrocarburo ha formula $4\mathrm{C_8H_{10}}4$. Calcola il suo grado di insaturazione e stabilisci se può essere un idrocarburo aromatico con un anello benzenico. Motiva la risposta con una struttura compatibile con la formula.
 
@@ -3291,7 +3252,7 @@ Il grado di insaturazione è $(2\cdot8+2-10)/2=4$. Un anello benzenico contiene 
 :::
 :::
 
-:::exercise{id="E17.15" chapter="17" difficulty="medio"}
+:::exercise{id="E17.12" chapter="17" difficulty="medio"}
 ## Domanda
 Per ciascuno dei composti 1,2-dicloroetene e 1,1-dicloroetene, stabilisci se sono possibili isomeri geometrici attorno al doppio legame. Se sono possibili, indica il numero di isomeri geometrici distinti.
 
