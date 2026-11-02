@@ -133,7 +133,7 @@ $$\eta = 1-\frac{|Q_{AB}|+|Q_{DA}|}{Q_{BC}} = 1-\frac{|-1{,}61\ \text{kJ}|+|-0{,
 
 **Errore tipico 14.2** (dimenticare il segno del lavoro dato dal verso di percorrenza). Calcolare l'area racchiusa da un ciclo senza controllare se è percorso in senso orario o antiorario porta a sbagliare il segno di $W$ e quindi a confondere una macchina termica con una macchina frigorifera.
 
-**Errore tipico 14.3** (applicare $\eta=1-T_1/T_2$ a cicli che non sono di Carnot). La formula {{formula:14.3}} vale solo per il ciclo di Carnot (e per il ciclo di Stirling con rigeneratore perfetto, che ha lo stesso rendimento); per qualunque altro ciclo, incluso Otto e Diesel, il rendimento va calcolato dalla definizione generale {{formula:14.1}} a partire dai calori scambiati in ciascuna trasformazione.
+**Errore tipico 14.3** (applicare $\eta=1-T_1/T_2$ a cicli che non sono di Carnot). La {{formula:14.3}} vale solo per il ciclo di Carnot (e per il ciclo di Stirling con rigeneratore perfetto, che ha lo stesso rendimento); per qualunque altro ciclo, incluso Otto e Diesel, il rendimento va calcolato dalla definizione generale {{formula:14.1}} a partire dai calori scambiati in ciascuna trasformazione.
 
 ## p3 | Secondo principio
 
@@ -270,11 +270,11 @@ $$T = 273{,}16\,\frac{|Q|}{|Q_{pt}|}\ \mathrm{K}$$
 
 dove $Q$ e $Q_{pt}$ sono i calori scambiati in un ciclo da una macchina reversibile che opera tra la sorgente e il punto triplo.
 
-La definizione ha la stessa struttura della formula [formula (12.1)](ref:formula/12.1), con il rapporto dei calori al posto del rapporto $X/X_{pt}$. La differenza è che qui il risultato non dipende dalla sostanza. Per due sorgenti qualsiasi, mettendo in serie le macchine reversibili, si ottiene
+La definizione ha la stessa struttura della [formula (12.1)](ref:formula/12.1), con il rapporto dei calori al posto del rapporto $X/X_{pt}$. La differenza è che qui il risultato non dipende dalla sostanza. Per due sorgenti qualsiasi, mettendo in serie le macchine reversibili, si ottiene
 
 $$\frac{|Q_1|}{Q_2}=\frac{T_1}{T_2},$$
 
-cioè la relazione {{formula:14.7}} con l'uguale. Il rendimento reversibile è dunque $\eta = 1 - T_1/T_2$, come nella formula {{formula:14.6}}.
+cioè la relazione {{formula:14.7}} con l'uguale. Il rendimento reversibile è dunque $\eta = 1 - T_1/T_2$, come nella {{formula:14.6}}.
 
 ### Equivalenza con la temperatura del gas ideale
 
@@ -286,11 +286,11 @@ Resta da mostrare che questa scala coincide con quella del termometro a gas idea
 
 Per il teorema di Carnot basta calcolare il rapporto dei calori per una sola macchina reversibile tra le due sorgenti, perché tutte le altre danno lo stesso valore. Scegliamo un ciclo di Carnot con $n$ moli di gas ideale. Le trasformazioni sono: isoterma $A\to B$ a $T_{g,2}$, adiabatica $B\to C$, isoterma $C\to D$ a $T_{g,1}$, adiabatica $D\to A$, con $T_{g,1}<T_{g,2}$.
 
-Sulle isoterme reversibili la formula [formula (13.8)](ref:formula/13.8) dà il calore scambiato:
+Sulle isoterme reversibili la [formula (13.8)](ref:formula/13.8) dà il calore scambiato:
 
 $$Q_2 = nRT_{g,2}\ln\frac{V_B}{V_A}, \qquad Q_1 = nRT_{g,1}\ln\frac{V_D}{V_C}.$$
 
-Per questo ciclo scegliamo un gas ideale con calori specifici costanti, per il quale la formula [formula (13.9)](ref:formula/13.9) dà $TV^{\gamma-1}=\text{costante}$. Quindi
+Per questo ciclo scegliamo un gas ideale con calori specifici costanti, per il quale la [formula (13.9)](ref:formula/13.9) dà $TV^{\gamma-1}=\text{costante}$. Quindi
 
 $$T_{g,2}V_B^{\gamma-1}=T_{g,1}V_C^{\gamma-1}, \qquad T_{g,2}V_A^{\gamma-1}=T_{g,1}V_D^{\gamma-1}.$$
 

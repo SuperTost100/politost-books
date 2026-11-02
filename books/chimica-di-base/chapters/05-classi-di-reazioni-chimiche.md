@@ -231,7 +231,7 @@ La forma generale di una reazione di neutralizzazione tra un acido monoprotico $
 
 $$HX_{(aq)} + MOH_{(aq)} \rightarrow MX_{(aq)} + H_2O_{(l)}$$
 
-dove $MX$ è il sale risultante. In termini più generali, la classe di reazione si scrive come richiamato con la formula [formula (3.8)](ref:formula/3.8), già introdotta a proposito dei sali.
+dove $MX$ è il sale risultante. In termini più generali, la classe di reazione si scrive come richiamato con la [formula (3.8)](ref:formula/3.8), già introdotta a proposito dei sali.
 
 Esempi tipici con acidi e basi forti sono
 

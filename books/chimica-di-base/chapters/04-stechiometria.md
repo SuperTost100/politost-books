@@ -415,7 +415,7 @@ Dopo il bilanciamento l'esame fornisce le quantità dei reagenti in forme divers
 
 Metodo, con riferimento a [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4) e a [Masse atomiche, mole e massa molare](ref:chapter/2#p4):
 
-1. Porta ogni dato in moli, con $n = m/M$ per i solidi (formula [formula (2.4)](ref:formula/2.4)), con la molarità per le soluzioni (formula [formula (11.3)](ref:formula/11.3)) e con l'equazione di stato per i gas.
+1. Porta ogni dato in moli, con $n = m/M$ per i solidi ([formula (2.4)](ref:formula/2.4)), con la molarità per le soluzioni ([formula (11.3)](ref:formula/11.3)) e con l'equazione di stato per i gas.
 2. Per una soluzione data in percentuale in massa, passa dal volume alla massa con la densità e poi alla massa di soluto con la percentuale (vedi [Espressioni della concentrazione](ref:chapter/11#p3)).
 3. Per ogni reagente calcola $n_i/\nu_i$. Il più piccolo è il reagente limitante, secondo il criterio {{formula:4.3}}.
 4. Con il rapporto molare {{formula:4.2}} passa dalle moli del limitante a quelle del prodotto richiesto, poi converti in grammi.
@@ -438,7 +438,7 @@ Metodo, con riferimento a [Pressione e leggi dei gas ideali](ref:chapter/6#p2), 
 2. Bilancia la reazione e individua il limitante con il rapporto $n_i/\nu_i$.
 3. Costruisci il bilancio "iniziale / variazione / finale" in moli, per ogni specie gassosa, solidi esclusi dal conteggio della pressione.
 4. Somma le moli gassose finali e applica di nuovo $PV = nRT$, questa volta con il volume del recipiente e con la temperatura finale.
-5. Per le pressioni parziali usa la frazione molare, formula [formula (6.10)](ref:formula/6.10), e verifica che la somma restituisca la pressione totale (legge di Dalton, [formula (6.8)](ref:formula/6.8)).
+5. Per le pressioni parziali usa la frazione molare, [formula (6.10)](ref:formula/6.10), e verifica che la somma restituisca la pressione totale (legge di Dalton, [formula (6.8)](ref:formula/6.8)).
 
 Errori tipici: usare i °C nell'equazione di stato; applicare il volume e la temperatura iniziali al calcolo finale; contare un solido (o l'acqua liquida) tra le moli gassose; usare 22,414 L/mol fuori dalle condizioni STP.
 

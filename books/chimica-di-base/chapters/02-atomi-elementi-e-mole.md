@@ -165,7 +165,7 @@ Questa nozione collega direttamente la definizione di isotopo già introdotta: a
 
 Dati: $m_1 = 106{,}90509\ u$, $x_1 = 0{,}5184$; $m_2 = 108{,}90476\ u$, $x_2 = 0{,}4816$.
 
-Strategia: applicare la media pesata della formula {{formula:2.3}}, verificando che $x_1+x_2=1$.
+Strategia: applicare la media pesata della {{formula:2.3}}, verificando che $x_1+x_2=1$.
 
 Calcolo:
 $$\mathrm{MA}(\mathrm{Ag}) = 106{,}90509 \times 0{,}5184 + 108{,}90476 \times 0{,}4816 = 55{,}42\ u + 52{,}45\ u = 107{,}87\ u.$$
@@ -232,7 +232,7 @@ dove $n$ è la quantità di sostanza in moli e $a$ indica quante volte l'entità
 
 Dati: $n_{\mathrm{Ag}} = 0{,}0342\ \mathrm{mol}$; $M_{\mathrm{Ag}} = 107{,}87\ \mathrm{g/mol}$ (valore ricavato nell'esempio precedente).
 
-Strategia: isolare $m$ dalla formula {{formula:2.4}}, ottenendo $m = n \cdot M$.
+Strategia: isolare $m$ dalla {{formula:2.4}}, ottenendo $m = n \cdot M$.
 
 Calcolo:
 $$m_{\mathrm{Ag}} = n_{\mathrm{Ag}} \cdot M_{\mathrm{Ag}} = 0{,}0342\ \mathrm{mol} \times 107{,}87\ \mathrm{g/mol} = 3{,}69\ \mathrm{g}.$$
@@ -243,7 +243,7 @@ Verifica: l'ordine di grandezza è ragionevole, perché $0{,}0342\ \mathrm{mol}$
 
 Dati: $n_{\mathrm{H_2O}} = 2{,}33\ \mathrm{mol}$; in ogni molecola di $\mathrm{H_2O}$ sono presenti $a=2$ atomi di H.
 
-Strategia: applicare la formula {{formula:2.5}} con $a=2$.
+Strategia: applicare la {{formula:2.5}} con $a=2$.
 
 Calcolo:
 $$n^{\circ}_{\text{atomi di H}} = a \cdot n_{\mathrm{H_2O}} \cdot N_A = 2 \times 2{,}33 \times 6{,}022\times 10^{23} = 2{,}81 \times 10^{24}.$$

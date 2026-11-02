@@ -303,7 +303,7 @@ Un esempio eterogeneo chiarisce il ruolo delle fasi condensate: per la reazione 
 
 Quando un equilibrio coinvolge specie gassose, una riduzione del volume del recipiente fa aumentare immediatamente la pressione (e le concentrazioni) di tutte le specie gassose presenti. Come risposta, il sistema reagisce riducendo il numero totale di molecole gassose, spostandosi verso il membro della reazione che possiede il minor numero di moli gassose; un aumento di volume (o una diminuzione di pressione) produce l'effetto opposto, spostando l'equilibrio verso il membro con il maggior numero di moli gassose.
 
-Se reagenti e prodotti contengono lo stesso numero complessivo di molecole gassose (cioè $\Delta n = 0$ nella formula {{formula:12.3}}), una variazione di pressione o di volume non ha alcun effetto sulla posizione dell'equilibrio.
+Se reagenti e prodotti contengono lo stesso numero complessivo di molecole gassose (cioè $\Delta n = 0$ nella {{formula:12.3}}), una variazione di pressione o di volume non ha alcun effetto sulla posizione dell'equilibrio.
 
 L'aggiunta di un gas inerte, che non partecipa alla reazione, va trattata con attenzione perché il suo effetto dipende dalla condizione sperimentale.
 

@@ -97,7 +97,7 @@ $$
 g = 6{,}67\cdot10^{-11}\ \mathrm{N\cdot m^2/kg^2}\cdot\frac{5{,}97\cdot10^{24}\ \mathrm{kg}}{(6{,}37\cdot10^{6}\ \mathrm{m})^2} \simeq 9{,}8\ \mathrm{m/s^2}.
 $$
 
-Il controllo dimensionale dà $\mathrm{N\cdot m^2/kg^2}\cdot\mathrm{kg/m^2} = \mathrm{N/kg} = \mathrm{m/s^2}$, come richiesto per un'accelerazione. A $h = 1$ km lo sviluppo al primo ordine dà una variazione relativa $2h/R_T \simeq 3\cdot10^{-4}$, e l'approssimazione di $g$ costante è dunque ottima.
+Il controllo dimensionale dà $\mathrm{N\cdot m^2/kg^2}\cdot\mathrm{kg/m^2} = \mathrm{N/kg} = \mathrm{m/s^2}$, come richiesto per un'accelerazione. A $h = 1$ km lo sviluppo al primo ordine dà una diminuzione relativa $2h/R_T \simeq 3\cdot10^{-4}$, e l'approssimazione di $g$ costante è dunque ottima.
 
 ### Terza legge di Keplero per orbite circolari
 
@@ -184,7 +184,7 @@ $$v_F = \sqrt{\frac{2GM_T}{R_T}} = \sqrt{\frac{2\cdot 3{,}99\cdot 10^{14}}{6{,}3
 
 Controllo: dimensionalmente $\lbrack GM/r\rbrack  = \mathrm{m^3\,s^{-2}/m} = \mathrm{m^2/s^2}$, coerente con una velocità al quadrato. Numericamente $v < v_F$ come deve essere: il satellite è legato, mentre $v_F$ rappresenta la soglia per sfuggire del tutto al campo gravitazionale; l'ordine di grandezza (pochi $\mathrm{km/s}$) è quello tipico dei satelliti in orbita bassa.
 
-**Errore tipico 10.1.** Un errore frequente è usare il raggio della Terra $R_T$ al posto del raggio dell'orbita $r = R_T + h$ nelle formule di velocità orbitale e periodo: le formule {{formula:10.3}} e {{formula:10.4}} vanno sempre applicate con la distanza dal centro del corpo attrattore, non con la quota sopra la sua superficie. Un secondo errore è confondere massa inerziale e massa gravitazionale trattandole come concettualmente identiche per definizione, invece di riconoscere che la loro uguaglianza è un risultato sperimentale (il principio di equivalenza) e non un'ovvietà logica.
+**Errore tipico 10.1.** Un errore frequente è usare il raggio della Terra $R_T$ al posto del raggio dell'orbita $r = R_T + h$ nelle formule di velocità orbitale e periodo: {{formula:10.3}} e {{formula:10.4}} vanno sempre applicate con la distanza dal centro del corpo attrattore, non con la quota sopra la sua superficie. Un secondo errore è confondere massa inerziale e massa gravitazionale trattandole come concettualmente identiche per definizione, invece di riconoscere che la loro uguaglianza è un risultato sperimentale (il principio di equivalenza) e non un'ovvietà logica.
 
 ## p3 | Campo gravitazionale
 

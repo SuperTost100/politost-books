@@ -817,7 +817,7 @@ Nella prova scritta di 2 ore ci sono due problemi strutturati a domande aperte, 
 
 1. Dividi il percorso in tratti: ogni tratto ha una propria forza risultante, quindi una propria equazione. Disegna il diagramma di corpo libero di ciascun tratto, come in [Principi della dinamica](ref:chapter/3#p2).
 2. Scegli gli assi parallelo e perpendicolare alla superficie e proietta il peso: $mg\sin\theta$ lungo il piano e $mg\cos\theta$ in direzione normale ([Reazioni vincolari ed equilibrio](ref:chapter/3#p5)).
-3. Ricava $N$ dall'equazione perpendicolare alla superficie e poi scrivi l'attrito dinamico $f_d=\mu_d N$, con la formula {{formula:3.17}}. Il verso di $\vec f_d$ è sempre opposto alla velocità ([Forze di attrito](ref:chapter/3#p6)).
+3. Ricava $N$ dall'equazione perpendicolare alla superficie e poi scrivi l'attrito dinamico $f_d=\mu_d N$, con la {{formula:3.17}}. Il verso di $\vec f_d$ è sempre opposto alla velocità ([Forze di attrito](ref:chapter/3#p6)).
 4. Se servono solo velocità e posizioni, usa il bilancio energetico invece del tempo. Per il lavoro dell'attrito vale [formula (4.11)](ref:formula/4.11), e il teorema da applicare è [formula (4.12)](ref:formula/4.12) ([Energia cinetica e teorema lavoro-energia](ref:chapter/4#p3), [Forze conservative ed energia potenziale](ref:chapter/4#p4)).
 5. Se l'esercizio chiede tempi o accelerazioni, risolvi invece l'equazione del moto di ogni tratto e integra come in {{formula:3.4}}.
 6. Fai il controllo dimensionale e verifica che i segni abbiano senso. Per esempio, l'energia dissipata deve essere positiva e la velocità non può aumentare in un tratto scabro orizzontale.
@@ -841,7 +841,7 @@ Nella prova scritta di 2 ore ci sono due problemi strutturati a domande aperte, 
 **Metodo.**
 
 1. Dividi l'esercizio in prima dell'urto, urto e dopo l'urto. Ogni fase ha una legge diversa.
-2. Prima e dopo l'urto usa le equazioni della dinamica o dell'energia. Per un pendolo che scende usa la conservazione dell'energia meccanica e, quando serve la tensione, la formula [formula (4.15)](ref:formula/4.15) ([Forze conservative ed energia potenziale](ref:chapter/4#p4)).
+2. Prima e dopo l'urto usa le equazioni della dinamica o dell'energia. Per un pendolo che scende usa la conservazione dell'energia meccanica e, quando serve la tensione, la [formula (4.15)](ref:formula/4.15) ([Forze conservative ed energia potenziale](ref:chapter/4#p4)).
 3. Durante l'urto le forze esterne non impulsive sono trascurabili, perché il tempo di interazione è brevissimo. Impone la conservazione della quantità di moto del sistema, [formula (7.20)](ref:formula/7.20), proiettata sugli assi ([Urti](ref:chapter/7#p7)).
 4. Per il tipo di urto: completamente anelastico (i corpi restano attaccati) vale solo la quantità di moto; elastico si conserva anche l'energia cinetica. Se un vincolo esterno è impulsivo, come il perno di un'asta, la quantità di moto non si conserva; si conserva invece il momento angolare rispetto al perno, purché gli altri momenti impulsivi esterni rispetto a quel polo siano trascurabili ([Momento angolare di un sistema](ref:chapter/7#p5)).
 5. Riporta le velocità subito dopo l'urto come condizioni iniziali della fase successiva.

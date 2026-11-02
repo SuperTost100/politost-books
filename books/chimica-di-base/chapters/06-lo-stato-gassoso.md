@@ -162,7 +162,7 @@ Questa è una delle procedure sperimentali più comuni per determinare la massa 
 Un campione gassoso occupa un volume di 2,00 L a 1,50 atm e 27 °C; la sua massa è 4,20 g. Si vuole determinare la massa molare del gas.
 
 1. Dati: $V = 2,00\ \text{L}$, $P = 1,50\ \text{atm}$, $t = 27\ \text{°C}$, $m = 4,20\ \text{g}$.
-2. Strategia: si calcola prima la densità $\rho = m/V$, poi si applica la formula {{formula:6.7}} usando $R = 0,08206\ \text{L·atm/(mol·K)}$ e convertendo la temperatura in kelvin ([formula (1.1)](ref:formula/1.1)): $T = 27 + 273,15 = 300,15\ \text{K}$.
+2. Strategia: si calcola prima la densità $\rho = m/V$, poi si applica la {{formula:6.7}} usando $R = 0,08206\ \text{L·atm/(mol·K)}$ e convertendo la temperatura in kelvin ([formula (1.1)](ref:formula/1.1)): $T = 27 + 273,15 = 300,15\ \text{K}$.
 3. Calcolo:
 
 $$\rho = \frac{4,20\ \text{g}}{2,00\ \text{L}} = 2,10\ \text{g/L}$$

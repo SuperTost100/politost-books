@@ -458,7 +458,7 @@ Esempi:
 
 Metodo ([Polinomio e formula di Taylor](ref:chapter/8#p2)):
 
-1. Scrivi la formula {{formula:8.2}} e ricorda l'ipotesi: $f$ derivabile $n$ volte in $x_0$.
+1. Scrivi la {{formula:8.2}} e ricorda l'ipotesi: $f$ derivabile $n$ volte in $x_0$.
 2. Riconosci le funzioni elementari e scrivi gli sviluppi noti, fermandoti all'ordine necessario.
 3. Per le composte sostituisci lo sviluppo interno in quello esterno, tenendo solo i termini fino all'ordine richiesto e raccogliendo i resti in un unico $o(\cdot)$.
 4. Per concludere (limite, ordine, tipo di punto critico) leggi il primo termine non nullo dello sviluppo con {{formula:8.5}}.

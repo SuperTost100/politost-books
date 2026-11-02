@@ -512,7 +512,7 @@ Metodo, passo per passo:
 1. Riscrivi ogni condizione con $z=x+iy$, usando $z+\bar z = 2x$ e $z-\bar z = 2iy$ (vedi [Forma algebrica e operazioni](ref:chapter/2#p2)). Esempio: $\bar z+z\ge 0$ equivale a $\operatorname{Re} z\ge 0$. Invece $i(z-\bar z)=i\cdot 2iy=-2y$, perciò $i(z-\bar z)\ge 0$ equivale a $\operatorname{Im} z\le 0$.
 2. Traduci ogni condizione in una regione geometrica. $1\le |z|\le 2$ è una corona circolare. Le disuguaglianze tra $\operatorname{Im} z$ e $\operatorname{Re} z$, come $0\le \operatorname{Im} z\le \operatorname{Re} z$, individuano un settore; le semirette uscenti dall'origine ne delimitano i bordi. Il settore corrisponde a un intervallo di argomenti.
 3. Intersecare le regioni dà $A$: una corona circolare tagliata in un settore, descritta da $\rho\in[1,2]$ e $\theta\in[\theta_1,\theta_2]$.
-4. Per $B$ passa alla forma trigonometrica o esponenziale (vedi [Forma trigonometrica ed esponenziale](ref:chapter/2#p3)). Per la formula {{formula:2.14}}, elevare a $n$ manda $\rho\mapsto\rho^n$ e $\theta\mapsto n\theta$. Il settore $\lbrack \theta_1,\theta_2\rbrack $ diventa $\lbrack n\theta_1,n\theta_2\rbrack $ e, se $n\in\mathbb{N}^+$, il raggio $\lbrack 1,2\rbrack $ diventa $\lbrack 1,2^n\rbrack $.
+4. Per $B$ passa alla forma trigonometrica o esponenziale (vedi [Forma trigonometrica ed esponenziale](ref:chapter/2#p3)). Per la {{formula:2.14}}, elevare a $n$ manda $\rho\mapsto\rho^n$ e $\theta\mapsto n\theta$. Il settore $\lbrack \theta_1,\theta_2\rbrack $ diventa $\lbrack n\theta_1,n\theta_2\rbrack $ e, se $n\in\mathbb{N}^+$, il raggio $\lbrack 1,2\rbrack $ diventa $\lbrack 1,2^n\rbrack $.
 5. Disegna $B$. Se $n\theta_2-n\theta_1\ge 2\pi$, l'immagine è tutta la corona; se è minore, resta un settore. Per il disegno riduci gli angoli modulo $2\pi$: se l'ampiezza supera $2\pi$, l'immagine resta la corona completa.
 
 Errori tipici:
@@ -564,7 +564,7 @@ Metodo, passo per passo:
 
 1. Porta l'equazione alla forma $\zeta^n=w$, dove $\zeta$ è l'espressione elevata a potenza. Per esempio $(z-i)^3=-27$ ha $\zeta=z-i$, e $\left(2z+\tfrac12\right)^3=-1$ ha $\zeta=2z+\tfrac12$.
 2. Scrivi $w=\rho e^{i\theta}$: calcola $\rho=|w|$ e l'argomento principale $\theta\in\,\rbrack -\pi,\pi\rbrack $ (vedi [Forma trigonometrica ed esponenziale](ref:chapter/2#p3)).
-3. Applica la formula {{formula:2.15}}: le $n$ radici hanno modulo $\sqrt[n]{\rho}$ e argomenti $\dfrac{\theta+2k\pi}{n}$ con $k=0,\dots,n-1$ (vedi [Radici n-esime](ref:chapter/2#p4)).
+3. Applica la {{formula:2.15}}: le $n$ radici hanno modulo $\sqrt[n]{\rho}$ e argomenti $\dfrac{\theta+2k\pi}{n}$ con $k=0,\dots,n-1$ (vedi [Radici n-esime](ref:chapter/2#p4)).
 4. Rappresentale: stanno sui vertici di un poligono regolare di $n$ lati inscritto nella circonferenza di raggio $\sqrt[n]{\rho}$.
 5. Torna all'incognita $z$ invertendo la sostituzione del passo 1. Per esempio da $2z+\tfrac12=\zeta_k$ segue $z_k=\dfrac{\zeta_k-\frac12}{2}$.
 
@@ -591,7 +591,7 @@ Metodo, passo per passo:
 
 1. Scrivi la definizione richiesta con tutti i simboli. Il coniugato di $z=a+ib$ con $a,b\in\mathbb{R}$ è $\bar z=a-ib$. La forma algebrica è $z=a+ib$, la forma trigonometrica è $z=\rho(\cos\theta+i\sin\theta)$ con $\rho=|z|$ e $\theta=\arg z$ (vedi [Forma algebrica e operazioni](ref:chapter/2#p2)).
 2. Per dimostrare un'identità come $\overline{zw}=\bar z\,\bar w$ o $\overline{z^2}=\bar z^{\,2}$, scrivi $z=a+ib$ e $w=c+id$ con $a,b,c,d\in\mathbb{R}$. Poi calcola separatamente i due membri e confronta parte reale e parte immaginaria. Per il quadrato basta porre $w=z$ nel prodotto.
-3. Per una domanda sul calcolo di modulo e argomento delle radici, rispondi con la formula {{formula:2.15}}. Le radici seste di $\omega=\rho e^{i\vartheta}$ hanno modulo $\sqrt[6]{\rho}$ e argomenti $\dfrac{\vartheta+2k\pi}{6}$ con $k=0,\dots,5$.
+3. Per una domanda sul calcolo di modulo e argomento delle radici, rispondi con la {{formula:2.15}}. Le radici seste di $\omega=\rho e^{i\vartheta}$ hanno modulo $\sqrt[6]{\rho}$ e argomenti $\dfrac{\vartheta+2k\pi}{6}$ con $k=0,\dots,5$.
 
 Errori tipici:
 

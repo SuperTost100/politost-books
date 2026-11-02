@@ -50,7 +50,7 @@ valida per un sistema chiuso, cioè che non scambia materia con l'ambiente.
 
 ### Convenzione dei segni
 
-I segni di $q$ e $w$ nella formula {{formula:7.1}} sono definiti dal punto di vista del sistema, con la convenzione comune a tutto il libro: è positivo tutto ciò che entra nel sistema, negativo tutto ciò che ne esce.
+I segni di $q$ e $w$ nella {{formula:7.1}} sono definiti dal punto di vista del sistema, con la convenzione comune a tutto il libro: è positivo tutto ciò che entra nel sistema, negativo tutto ciò che ne esce.
 
 - $q > 0$: il sistema assorbe calore dall'ambiente; $q < 0$: il sistema cede calore all'ambiente.
 - $w > 0$: l'ambiente compie lavoro sul sistema (per esempio comprimendolo); $w < 0$: il sistema compie lavoro sull'ambiente (per esempio espandendosi).
@@ -405,7 +405,7 @@ $$
 
 Le entalpie standard di formazione, nell'ordine $\mathrm{NH_3}$, $\mathrm{O_2}$, $\mathrm{NO}$, $\mathrm{H_2O_{(g)}}$, sono $-45{,}9$; $0$; $+90{,}3$; $-241{,}8 \ \text{kJ/mol}$. Si vuole calcolare $\Delta H^\circ_r$.
 
-*Strategia.* Si applica la formula {{formula:7.10}}, moltiplicando ogni $\Delta H^\circ_f$ per il proprio coefficiente stechiometrico e notando che $\Delta H^\circ_f(\mathrm{O_2}) = 0$ perché è un elemento nel suo stato standard.
+*Strategia.* Si applica la {{formula:7.10}}, moltiplicando ogni $\Delta H^\circ_f$ per il proprio coefficiente stechiometrico e notando che $\Delta H^\circ_f(\mathrm{O_2}) = 0$ perché è un elemento nel suo stato standard.
 
 *Calcolo.*
 $$\begin{aligned}

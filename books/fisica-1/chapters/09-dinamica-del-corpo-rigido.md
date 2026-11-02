@@ -55,7 +55,7 @@ $$\frac{dL_z}{dt} = M_z , \qquad L_z = \vec{L}\cdot\hat{k} .$$
 
 Calcoliamo $L_z$. Il punto $P_i$ di massa $m_i$ percorre una circonferenza di raggio $R_i$ attorno all'asse, con velocità di modulo $v_i = |\omega|R_i$ tangente alla circonferenza. La componente tangenziale con segno è $v_{i,\theta} = \omega R_i$. La componente lungo $z$ di $\vec{r}_i \times m_i\vec{v}_i$ dipende solo dalle componenti di $\vec{r}_i$ e $\vec{v}_i$ nel piano perpendicolare all'asse, cioè da $x_i v_{i,y} - y_i v_{i,x}$. In tale piano il vettore posizione ha modulo $R_i$ ed è ortogonale alla velocità tangenziale, quindi
 
-$$L_{i,z} = m_i R_i v_i = m_i R_i^2\,\omega .$$
+$$L_{i,z} = m_i R_i v_{i,\theta} = m_i R_i^2\,\omega .$$
 
 Sommando su tutti i punti, e ricordando che $\omega$ è la stessa per tutti,
 

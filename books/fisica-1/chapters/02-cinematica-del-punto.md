@@ -844,7 +844,7 @@ $$d = x(t^*) = v_{0x}t^* = v_0\cos\theta \cdot t^* = 15\text{ m/s} \cdot \cos(60
 Un errore frequente è dimenticare il segno meno davanti a $g$ nella legge oraria verticale, scrivendo $y(t) = y_0 + v_{0y}t + \frac{1}{2}gt^2$ invece di $y(t) = y_0 + v_{0y}t - \frac{1}{2}gt^2$: con gli assi orientati verso l'alto, l'accelerazione di gravità è negativa.
 
 **Errore tipico 2.9** (uso della gittata fuori dalle sue ipotesi).
-La formula {{formula:2.51}} vale solo quando punto di lancio e punto di caduta sono alla stessa quota. Se le quote sono diverse (lancio da un balcone, da una scogliera, eccetera) occorre ripartire dalle leggi orarie complete e risolvere $y(t^*) = 0$ rispetto alla quota del punto di arrivo, come nell'esempio precedente.
+La {{formula:2.51}} vale solo quando punto di lancio e punto di caduta sono alla stessa quota. Se le quote sono diverse (lancio da un balcone, da una scogliera, eccetera) occorre ripartire dalle leggi orarie complete e risolvere $y(t^*) = 0$ rispetto alla quota del punto di arrivo, come nell'esempio precedente.
 
 **Errore tipico 2.10** (caduta libera applicata a un corpo con velocità iniziale non nulla).
 La formula del tempo di caduta libera $t_{cl} = \sqrt{2h/g}$ vale solo se la velocità verticale iniziale è nulla; non si può applicarla al tempo totale di volo di un proiettile lanciato con componente verticale della velocità iniziale $v_{0y} \ne 0$, perché in quel caso all'istante del lancio la componente verticale della velocità non è nulla. Se invece il proiettile è lanciato con velocità iniziale interamente orizzontale, cioè $v_{0y} = 0$, il tempo di caduta da un'altezza $h$ coincide proprio con $\sqrt{2h/g}$.

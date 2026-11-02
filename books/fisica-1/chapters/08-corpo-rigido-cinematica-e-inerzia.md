@@ -313,7 +313,7 @@ $$E_k = \frac{1}{2}I_z\omega^2 = \frac{1}{2}(I_{CM}+ma^2)\omega^2 = \frac{1}{2}I
 
 Poiché il centro di massa descrive un moto circolare di raggio $a$ attorno a $z$, vale $v_{CM} = a\omega$, da cui $\frac{1}{2}ma^2\omega^2 = \frac{1}{2}mv_{CM}^2$, e si ritrova esattamente {{formula:8.15}}. Questo mostra che il teorema di Huygens-Steiner e il secondo teorema di König, nel caso particolare della rotazione rigida attorno a un asse fisso, sono due modi equivalenti di scrivere la stessa decomposizione dell'energia cinetica.
 
-Nel caso più generale di rototraslazione (il corpo non ruota attorno a un asse fisso nello spazio, ma trasla e ruota insieme), la formula {{formula:8.15}} resta valida, a patto di interpretare $v_{CM}$ come la velocità effettiva del centro di massa e $\omega$ come la velocità angolare istantanea di rotazione attorno al centro di massa; è questa la forma usata, per esempio, nel disco che rotola.
+Nel caso più generale di rototraslazione (il corpo non ruota attorno a un asse fisso nello spazio, ma trasla e ruota insieme), la {{formula:8.15}} resta valida, a patto di interpretare $v_{CM}$ come la velocità effettiva del centro di massa e $\omega$ come la velocità angolare istantanea di rotazione attorno al centro di massa; è questa la forma usata, per esempio, nel disco che rotola.
 
 ### Esempio svolto: energia cinetica e momento angolare di un sistema su piattaforma mobile
 
