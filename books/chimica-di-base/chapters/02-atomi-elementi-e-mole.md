@@ -5,86 +5,15 @@ title: Atomi, elementi e mole
 
 ## p1 | Introduzione
 
-Per capire come la materia si trasforma, bisogna prima sapere di quali particelle è fatta e come si misurano. Le leggi di Lavoisier, Proust e Dalton mostrano che le sostanze reagiscono secondo regolarità precise: la teoria atomica offre una spiegazione di queste regolarità e aiuta anche a riconoscerne i limiti. Conoscere la struttura dell’atomo e gli isotopi chiarisce perché gli atomi dello stesso elemento condividano proprietà chimiche pur avendo masse diverse. La tavola periodica, poi, permette di orientarsi tra gli elementi e di prevedere alcune proprietà e cariche ioniche.
+Per capire come la materia si trasforma, bisogna prima sapere di quali particelle è fatta e come si misurano. Conoscere la struttura dell’atomo e gli isotopi chiarisce perché gli atomi dello stesso elemento condividano proprietà chimiche pur avendo masse diverse. La tavola periodica, poi, permette di orientarsi tra gli elementi e di prevedere alcune proprietà e cariche ioniche.
 
-Per affrontare il capitolo, è utile saper distinguere massa, volume e quantità di sostanza e usare rapporti e proporzioni semplici, come introdotto in [Grandezze, unità e cifre significative](ref:chapter/1#p3).
+Per affrontare il capitolo, è utile saper distinguere massa, volume e quantità di sostanza e usare rapporti e proporzioni semplici, come introdotto in [Grandezze, unità e cifre significative](ref:chapter/1#p2).
 
-Al termine saprai applicare le leggi ponderali e collegarle al modello di Dalton, ricavare protoni, neutroni ed elettroni dalla notazione di atomi e ioni, interpretare le informazioni essenziali della tavola periodica e riconoscere i principali tipi di elementi. Saprai inoltre passare dalla massa alle moli e al numero di particelle, e viceversa, usando le masse atomiche e molari e la costante di Avogadro.
+Al termine saprai ricavare protoni, neutroni ed elettroni dalla notazione di atomi e ioni, interpretare le informazioni essenziali della tavola periodica e riconoscere i principali tipi di elementi. Saprai inoltre passare dalla massa alle moli e al numero di particelle, e viceversa, usando le masse atomiche e molari e la costante di Avogadro.
 
-## p2 | Leggi fondamentali e teoria atomica di Dalton
+## p2 | Struttura dell'atomo e isotopi
 
-La chimica moderna nasce, alla fine del Settecento, da un insieme di osservazioni quantitative sulle reazioni chimiche. Prima di poter parlare di atomi occorre fissare con precisione cosa si osserva sperimentalmente quando le sostanze reagiscono: quanto pesano i reagenti e i prodotti, e in quali proporzioni gli elementi si combinano tra loro. Queste osservazioni, oggi chiamate leggi ponderali, precedono storicamente la teoria atomica e ne costituiscono la motivazione sperimentale.
-
-### Le leggi ponderali: Lavoisier, Proust e Dalton
-
-**Legge di Lavoisier** (o della conservazione della massa). In una reazione chimica la somma delle masse delle sostanze reagenti è uguale alla somma delle masse delle sostanze che si formano; la materia non può essere creata né distrutta, ma solo trasformata. Ad esempio, $23\ \text{g}$ di sodio reagiscono con $35{,}4\ \text{g}$ di cloro per dare esattamente $58{,}4\ \text{g}$ di cloruro di sodio: nessuna massa va perduta nel passaggio da reagenti a prodotto. Lo stesso vale per la combustione dell'idrogeno: $4\ \text{g}$ di idrogeno reagiscono con $32\ \text{g}$ di ossigeno per dare $36\ \text{g}$ di acqua, e la massa totale del sistema resta invariata.
-
-**Legge di Proust** (o della composizione definita e costante, o delle proporzioni definite). In un composto chimico puro gli elementi sono sempre combinati in rapporti di massa costanti e definiti, indipendentemente da come il composto è stato preparato. Per un elemento $E$ presente in un composto, si definisce la percentuale in massa come il rapporto tra la massa di $E$ e la massa totale del composto, moltiplicato per $100$. Nell'acqua, ad esempio, l'idrogeno costituisce sempre l'$11{,}19\%$ in massa e l'ossigeno l'$88{,}81\%$, qualunque sia il campione analizzato.
-
-**Legge di Dalton** (o delle proporzioni multiple). Quando due elementi A e B si combinano, in condizioni diverse, per formare più di un composto, le diverse masse di B che si combinano con una massa fissa di A stanno tra loro in rapporti esprimibili con numeri interi piccoli. Questa legge, a differenza di quella di Proust, riguarda il confronto tra composti diversi formati dagli stessi due elementi.
-
-**Esempio svolto 2.1** (verifica della legge di Proust: la pechblenda).
-
-La pechblenda è il principale minerale industriale dell'uranio. Un'analisi mostra che $84{,}2\ \text{g}$ di pechblenda contengono $71{,}4\ \text{g}$ di uranio, il resto essendo ossigeno. Si vuole calcolare la massa di uranio ottenibile da $102\ \text{kg}$ di pechblenda.
-
-1. Dati: in $84{,}2\ \text{g}$ di campione analizzato, la massa di uranio è $71{,}4\ \text{g}$; si assume che il campione da $102\ \text{kg}$ abbia la stessa percentuale di uranio.
-2. Strategia: si calcola la percentuale in massa dell'uranio e la si applica alla massa totale del campione, convertita in grammi.
-3. Calcolo:
-
-$$\displaystyle \%\text{U} = \frac{71{,}4\ \text{g}}{84{,}2\ \text{g}} \times 100 = 84{,}80\%$$
-
-$$\displaystyle m_{\text{U}} = 84{,}80\% \times 102\,000\ \text{g} = 8{,}65 \times 10^{4}\ \text{g}$$
-
-4. Verifica: il risultato conserva le cifre significative dei dati (tre) ed è coerente con l'ordine di grandezza del campione originale.
-
-**Esempio svolto 2.2** (la legge di Dalton: monossido e diossido di carbonio).
-
-Carbonio e ossigeno formano due composti distinti. Nel monossido di carbonio, $1\ \text{g}$ di carbonio si combina con $1{,}33\ \text{g}$ di ossigeno per dare $2{,}33\ \text{g}$ di CO; nel diossido di carbonio, $1\ \text{g}$ di carbonio si combina con $2{,}66\ \text{g}$ di ossigeno per dare $3{,}66\ \text{g}$ di CO$_2$. Il rapporto tra le masse di ossigeno che si combinano con la stessa massa di carbonio è
-
-:::image{src="assets/ecb384de-struttura-diossido-carbonio.svg" alt="Struttura di Lewis della molecola CO2" caption="Fig. 2.1 — Struttura del diossido di carbonio: un atomo di carbonio legato a due atomi di ossigeno, il doppio dell'ossigeno presente nel monossido di carbonio a parità di carbonio"}
-:::
-
-$$\frac{2{,}66\ \text{g}}{1{,}33\ \text{g}} = 2{,}00$$
-
-un rapporto di numeri interi piccoli, esattamente come prevede la legge delle proporzioni multiple. A parità di carbonio, il diossido di carbonio contiene il doppio della massa di ossigeno del monossido di carbonio.
-
-### La teoria atomica di Dalton
-
-Nel 1808 John Dalton formulò, nell'opera *A New System of Chemical Philosophy*, una teoria capace di spiegare in modo unitario le tre leggi ponderali appena viste. La teoria si basa su quattro postulati.
-
-**Teoria** (atomica di Dalton, 1808).
-
-1. Tutta la materia è costituita da particelle piccolissime, indivisibili e indistruttibili, chiamate atomi.
-2. Gli atomi di un elemento non possono essere convertiti in atomi di un altro elemento; tutti gli atomi di uno stesso elemento sono identici nella massa e nelle altre proprietà, mentre sono diversi dagli atomi di ogni altro elemento.
-3. I composti chimici si formano dalla combinazione chimica tra atomi di elementi differenti, secondo numeri interi.
-4. Le reazioni chimiche consistono soltanto nella riorganizzazione degli atomi, cioè nel modo in cui essi si legano tra loro; gli atomi non vengono creati né distrutti né convertiti in atomi di altri elementi, ma si trasferiscono interi da un composto a un altro.
-
-Questi postulati spiegano in modo diretto le tre leggi ponderali.
-
-- La conservazione della massa (legge di Lavoisier) segue dal fatto che gli atomi non si creano né si distruggono (postulato 1) e non si convertono in altri tipi di atomo (postulato 2): poiché ogni atomo ha una massa fissa (postulato 2), la massa totale non può variare quando gli atomi si riorganizzano in una reazione.
-- Le proporzioni definite (legge di Proust) seguono dal fatto che gli atomi si combinano in rapporti numerici specifici e ogni atomo ha una massa specifica: ogni elemento costituisce quindi sempre la stessa frazione della massa totale del composto.
-- Le proporzioni multiple (legge di Dalton) seguono dal fatto che, poiché gli atomi di uno stesso elemento hanno tutti la stessa massa e sono indivisibili, quando si combinano numeri diversi di atomi in composti diversi il rapporto tra le masse corrispondenti deve necessariamente essere un rapporto di numeri interi piccoli.
-
-### Limiti della teoria di Dalton
-
-La teoria di Dalton, pur avendo un enorme potere esplicativo, presentava limiti importanti, alcuni riconosciuti già nell'Ottocento, altri solo con la fisica atomica del XX secolo.
-
-- Dalton non prevedeva l'esistenza di molecole di elementi: immaginava idrogeno e ossigeno come atomi singoli isolati, non come molecole biatomiche $\text{H}_2$ e $\text{O}_2$. Per questo attribuì all'acqua la formula errata HO invece di H$_2$O, e di conseguenza stimò in modo scorretto le masse atomiche relative.
-- Dalton non disponeva del concetto di isotopo: non poteva sapere che atomi dello stesso elemento (stesso numero atomico $Z$) possono avere numero di massa $A$ diverso.
-- Alla luce della fisica moderna, l'atomo non è indivisibile: è costituito da particelle subatomiche più piccole (protoni, neutroni, elettroni), anche se resta la particella più piccola che conserva l'identità chimica di un elemento nelle reazioni ordinarie.
-- La conversione di un elemento in un altro è in realtà possibile, ma solo per mezzo di reazioni nucleari, non di reazioni chimiche ordinarie.
-- Non tutti gli atomi di un elemento sono identici in massa: esistono isotopi diversi, e per questo un campione macroscopico di un elemento viene trattato come se i suoi atomi avessero una massa media (concetto che verrà formalizzato nella sezione dedicata alla [massa atomica media](ref:chapter/2#p5)).
-- In alcuni solidi la composizione media può variare; ciò non implica che le singole unità contengano frazioni di atomo: ciascuna contiene numeri interi di atomi.
-
-Nonostante questi limiti, la teoria di Dalton permise ai chimici dell'epoca di spiegare un'enorme quantità di dati sperimentali e fu rapidamente accettata; le sue assunzioni errate furono progressivamente corrette dai lavori di Gay-Lussac, Cannizzaro e Avogadro nel corso del XIX secolo. La struttura interna dell'atomo, con le sue particelle cariche, sarà discussa nella sezione sulla [struttura dell'atomo e gli isotopi](ref:chapter/2#p3).
-
-### Errore tipico
-
-Uno degli errori più frequenti consiste nel confondere i rapporti in massa con rapporti "ingenui" in grammi uguali, ignorando le masse atomiche. Non è vero, ad esempio, che $2\ \text{g}$ di magnesio reagiscono con $1\ \text{g}$ di ossigeno per dare $2\ \text{g}$ di ossido di magnesio: la relazione corretta tra le masse dei reagenti è fissata dal rapporto tra le masse molari delle specie coinvolte, non da un'uguaglianza arbitraria delle masse. Allo stesso modo, per fare reagire completamente $1\ \text{g}$ di ferro con zolfo in rapporto $1{:}1$ tra atomi e formare FeS, non basta $1\ \text{g}$ di zolfo: il peso di zolfo necessario deve rispettare il rapporto costante tra le masse atomiche dei due elementi, perché la combinazione chimica avviene atomo per atomo, non grammo per grammo. Sostanze diverse possono avere masse molto diverse pur contenendo lo stesso numero di particelle: questo è il motivo per cui, come si vedrà nella sezione su [masse atomiche, mole e massa molare](ref:chapter/2#p5), i chimici preferiscono ragionare in moli piuttosto che in grammi quando confrontano quantità di sostanze diverse.
-
-## p3 | Struttura dell'atomo e isotopi
-
-Il modello di Dalton, presentato nella sezione precedente, considerava l'atomo come una sfera piena e indivisibile. Tra la fine del XIX secolo e i primi decenni del XX, una serie di esperimenti condotti con tubi a raggi catodici, gocce d'olio cariche e fasci di particelle $\alpha$ smentì questa immagine e portò al modello atomico che usiamo ancora oggi: un nucleo centrale, piccolo e denso, circondato da elettroni che occupano un volume molto più grande. Questa sezione ricostruisce quegli esperimenti e fissa le relazioni quantitative tra numero atomico, numero di massa e carica, che permettono di contare protoni, neutroni ed elettroni in un atomo o in uno ione, e di riconoscere gli isotopi di uno stesso elemento.
+Il modello atomico di Dalton considerava l'atomo come una sfera piena e indivisibile. Tra la fine del XIX secolo e i primi decenni del XX, una serie di esperimenti condotti con tubi a raggi catodici, gocce d'olio cariche e fasci di particelle $\alpha$ smentì questa immagine e portò al modello atomico che usiamo ancora oggi: un nucleo centrale, piccolo e denso, circondato da elettroni che occupano un volume molto più grande. Questa sezione ricostruisce quegli esperimenti e fissa le relazioni quantitative tra numero atomico, numero di massa e carica, che permettono di contare protoni, neutroni ed elettroni in un atomo o in uno ione, e di riconoscere gli isotopi di uno stesso elemento.
 
 ### Gli esperimenti che hanno rivelato la struttura dell'atomo
 
@@ -96,12 +25,12 @@ Poiché l'atomo nel suo insieme è elettricamente neutro, doveva esistere anche 
 
 Questo modello fu smentito nel 1910 da Ernest Rutherford. Il suo esperimento consistette nel bombardare una sottile lamina d'oro con un fascio di particelle $\alpha$ positive, provenienti da un campione di radon radioattivo. Uno schermo rivelatore disposto attorno alla lamina permetteva di osservare le particelle passanti, deviate e retrodiffuse.
 
-:::image{src="assets/9963aedd-schema-esperimento-rutherford.svg" alt="Schema dell'esperimento di Rutherford: dalla sorgente le particelle alfa raggiungono la lamina d'oro; alcune passano dritte, altre deviano e una torna indietro verso il rivelatore" caption="Fig. 2.2 — Schema dell'apparato e delle traiettorie delle particelle alfa nell'esperimento di Rutherford"}
+:::image{src="assets/9963aedd-schema-esperimento-rutherford.svg" alt="Schema dell'esperimento di Rutherford: dalla sorgente le particelle alfa raggiungono la lamina d'oro; alcune passano dritte, altre deviano e una torna indietro verso il rivelatore" caption="Fig. 2.1 — Schema dell'apparato e delle traiettorie delle particelle alfa nell'esperimento di Rutherford"}
 :::
 
 Se il modello di Thomson fosse stato corretto, tutte le particelle $\alpha$ avrebbero attraversato la lamina con deviazioni minime; invece, mentre la maggior parte passò quasi indisturbata, circa una particella su 20 000 fu deviata di oltre $90^\circ$ o addirittura rimbalzò indietro. Questo risultato era compatibile solo con un modello in cui quasi tutta la massa e tutta la carica positiva dell'atomo fossero concentrate in un nucleo puntiforme e denso, circondato da un volume enorme di spazio quasi vuoto in cui si muovono gli elettroni. Le particelle di carica positiva del nucleo furono chiamate protoni.
 
-:::image{src="assets/9963aedd-tubo-raggi-catodici.jpg" alt="Tubo a raggi catodici in funzione, con fascio luminoso tra catodo e anodo" caption="Fig. 2.3 — Un tubo a raggi catodici: il fascio di elettroni emesso dal catodo è ciò che Thomson caratterizzò misurando il rapporto e/m_e. Foto: 2427999 / Pixabay"}
+:::image{src="assets/9963aedd-tubo-raggi-catodici.jpg" alt="Tubo a raggi catodici in funzione, con fascio luminoso tra catodo e anodo" caption="Fig. 2.2 — Un tubo a raggi catodici: il fascio di elettroni emesso dal catodo è ciò che Thomson caratterizzò misurando il rapporto e/m_e. Foto: 2427999 / Pixabay"}
 :::
 
 Il modello nucleare di Rutherford, benché corretto nelle sue linee generali, lasciava senza spiegazione la differenza tra numero atomico e massa atomica di molti elementi. Il problema fu risolto da James Chadwick, che bombardando una lamina di berillio con particelle $\alpha$ osservò l'emissione di particelle fortemente penetranti e prive di carica elettrica, poiché non venivano deviate da campi elettrici. Per distinguerle da una possibile radiazione elettromagnetica, Chadwick le fece colpire paraffina, materiale ricco di idrogeno: gli urti espellevano protoni, indicando che la radiazione era costituita da particelle dotate di massa. Queste particelle, chiamate neutroni, costituiscono insieme ai protoni il nucleo atomico.
@@ -122,7 +51,7 @@ $$e^- = Z \quad \text{(atomo neutro)}, \qquad e^- = Z - q \quad \text{(ione di c
 
 Un atomo o uno ione viene indicato con il simbolo $^{A}_{Z}X$, dove $X$ è il simbolo chimico dell'elemento, $A$ compare in alto a sinistra e $Z$ in basso a sinistra.
 
-**Esempio svolto 2.3.** Determinare numero di protoni, neutroni ed elettroni dell'isotopo $^{29}_{14}\text{Si}$ e numero di protoni ed elettroni dello ione $\text{Al}^{3+}$ ($Z_{\text{Al}} = 13$).
+**Esempio svolto 2.1.** Determinare numero di protoni, neutroni ed elettroni dell'isotopo $^{29}_{14}\text{Si}$ e numero di protoni ed elettroni dello ione $\text{Al}^{3+}$ ($Z_{\text{Al}} = 13$).
 
 1. Dati: per il silicio, $Z = 14$, $A = 29$; per lo ione alluminio, $Z = 13$, $q = +3$.
 2. Strategia: si usano le relazioni {{formula:2.1}} per i neutroni e {{formula:2.2}} per gli elettroni, ricordando che l'atomo di silicio è neutro mentre l'alluminio è uno ione.
@@ -130,7 +59,7 @@ Un atomo o uno ione viene indicato con il simbolo $^{A}_{Z}X$, dove $X$ è il si
 4. Calcolo per lo ione: $p^+ = Z = 13$ (il numero di protoni non cambia quando si forma lo ione); $e^- = Z - q = 13 - 3 = 10$.
 5. Verifica: per il silicio, $p^+ + n^0 = 14 + 15 = 29 = A$, coerente con il dato di partenza; per l'alluminio, la carica netta risulta $+13 -10 = +3$, come richiesto. Il risultato per il silicio ($14; 15; 14$ protoni, neutroni ed elettroni) coincide con quello riportato nelle fonti didattiche.
 
-**Errore tipico 2.1.** Il numero di massa $A$ è un numero intero adimensionale pari alla somma di protoni e neutroni; anche la massa atomica relativa è adimensionale, perché è il rapporto tra la massa atomica media e l'unità di massa atomica. La massa atomica media si esprime in u o Da; le due grandezze hanno lo stesso valore numerico, ma unità diverse. Il calcolo della media pesata delle masse isotopiche e il suo uso nei bilanci di massa sono trattati nella sezione dedicata a [masse atomiche, mole e massa molare](ref:chapter/2#p5).
+**Errore tipico 2.1.** Il numero di massa $A$ è un numero intero adimensionale pari alla somma di protoni e neutroni; anche la massa atomica relativa è adimensionale, perché è il rapporto tra la massa atomica media e l'unità di massa atomica. La massa atomica media si esprime in u o Da; le due grandezze hanno lo stesso valore numerico, ma unità diverse. Il calcolo della media pesata delle masse isotopiche e il suo uso nei bilanci di massa sono trattati nella sezione dedicata a [masse atomiche, mole e massa molare](ref:chapter/2#p4).
 
 ### Isotopi
 
@@ -140,9 +69,9 @@ Poiché gli isotopi di un elemento hanno lo stesso numero di protoni e di elettr
 
 L'esempio classico è l'idrogeno, che esiste in tre isotopi naturali: il prozio $^{1}_{1}\text{H}$ (un protone, nessun neutrone), il deuterio $^{2}_{1}\text{H}$ o D (un protone e un neutrone) e il trizio radioattivo $^{3}_{1}\text{H}$ o T (un protone e due neutroni). Un altro esempio è il neon, i cui atomi naturali hanno masse circa 20, 21 o 22 volte quella dell'atomo di idrogeno, corrispondenti agli isotopi $^{20}_{10}\text{Ne}$, $^{21}_{10}\text{Ne}$ e $^{22}_{10}\text{Ne}$.
 
-L'esistenza degli isotopi costringe a precisare uno dei postulati di Dalton: non tutti gli atomi di un elemento sono identici in massa, ma soltanto tutti gli atomi di uno stesso isotopo lo sono; un campione naturale dell'elemento viene allora trattato come se i suoi atomi avessero una massa media, pesata sulle abbondanze relative degli isotopi che lo compongono. Questo calcolo, insieme alla definizione dell'unità di massa atomica, è l'oggetto della sezione su [masse atomiche, mole e massa molare](ref:chapter/2#p5); la classificazione degli elementi in base a $Z$ nella tavola periodica è invece discussa nella sezione successiva su [la tavola periodica](ref:chapter/2#p4).
+L'esistenza degli isotopi costringe a precisare uno dei postulati di Dalton: non tutti gli atomi di un elemento sono identici in massa, ma soltanto tutti gli atomi di uno stesso isotopo lo sono; un campione naturale dell'elemento viene allora trattato come se i suoi atomi avessero una massa media, pesata sulle abbondanze relative degli isotopi che lo compongono. Questo calcolo, insieme alla definizione dell'unità di massa atomica, è l'oggetto della sezione su [masse atomiche, mole e massa molare](ref:chapter/2#p4); la classificazione degli elementi in base a $Z$ nella tavola periodica è invece discussa nella sezione successiva su [la tavola periodica](ref:chapter/2#p3).
 
-## p4 | La tavola periodica
+## p3 | La tavola periodica
 
 La tavola periodica raccoglie e organizza le informazioni sugli elementi chimici, mettendo in evidenza le regolarità delle loro proprietà. Fu Mendeleev, nel 1871, a proporre per primo uno schema in cui gli elementi venivano ordinati secondo la massa atomica crescente e disposti in modo che elementi con proprietà chimiche simili occupassero la stessa colonna. La tavola moderna conserva questa struttura, ma gli elementi sono ordinati secondo il numero atomico $Z$ crescente, che si è rivelato il criterio fisicamente corretto: come si discuterà in modo più approfondito in [Proprietà periodiche e reattività](ref:chapter/8#p6), fu Moseley a dimostrare che le proprietà degli elementi sono funzione periodica di $Z$ e non della massa atomica, risolvendo così le anomalie legate alla presenza degli isotopi.
 
@@ -150,14 +79,14 @@ La tavola periodica raccoglie e organizza le informazioni sugli elementi chimici
 
 La tavola periodica è un reticolato di **periodi**, le righe orizzontali, e **gruppi**, le colonne verticali. Le caselle sono disposte in ordine di numero atomico crescente da sinistra verso destra; ogni periodo è numerato da 1 a 7, mentre i gruppi vanno da 1 a 18 secondo la nomenclatura IUPAC.
 
-:::image{src="assets/5dad437f-tavola-periodica-categorie.svg" alt="Tavola periodica con periodi e gruppi numerati e metalli, non metalli e semimetalli distinti per colore." caption="Fig. 2.4 — Tavola periodica con periodi e gruppi numerati e metalli, non metalli e semimetalli distinti per colore."}
+:::image{src="assets/5dad437f-tavola-periodica-categorie.svg" alt="Tavola periodica con periodi e gruppi numerati e metalli, non metalli e semimetalli distinti per colore." caption="Fig. 2.3 — Tavola periodica con periodi e gruppi numerati e metalli, non metalli e semimetalli distinti per colore."}
 :::
 
 Il numero del periodo e il numero del gruppo hanno un significato preciso in termini di configurazione elettronica, che verrà definita in dettaglio in [Configurazione elettronica di atomi e ioni](ref:chapter/8#p5):
 
 - il numero del periodo indica il livello energetico principale $n$ più alto occupato dagli elettroni esterni di quell'elemento;
 - per gli elementi dei gruppi principali 1 e 2, il numero del gruppo coincide con il numero di elettroni esterni (di valenza) dell'elemento; per quelli dei gruppi 13-18 il numero di elettroni esterni si ottiene invece sottraendo 10 al numero del gruppo (fa eccezione l'elio, che ha due elettroni esterni pur appartenendo al gruppo 18);
-- elementi dello stesso gruppo hanno configurazioni elettroniche esterne simili, e per questo mostrano proprietà chimiche e fisiche simili; elementi dello stesso periodo hanno invece proprietà chimiche diverse, perché il numero di elettroni esterni cambia da una casella all'altra.
+- elementi dello stesso gruppo hanno configurazioni elettroniche esterne simili, e per questo mostrano proprietà chimiche e fisiche simili; tra gli elementi dei gruppi principali, il numero di elettroni esterni cambia lungo un periodo e contribuisce alle differenze di proprietà chimiche. Negli elementi di transizione si riempiono progressivamente gli orbitali $d$, perciò il numero di elettroni nel livello più esterno non varia necessariamente da una casella alla successiva.
 
 La tavola si divide in tre grandi blocchi. I **gruppi 1, 2 e 13–18** contengono gli elementi dei **gruppi principali**; i **gruppi 3–12** contengono gli **elementi di transizione**; al di sotto del corpo principale della tavola si collocano due serie di **elementi di transizione interna** (i lantanidi e gli attinidi), che si inseriscono, nell'ordine di numero atomico, tra gli elementi del gruppo 3 e quelli del gruppo 4.
 
@@ -175,7 +104,7 @@ Alcuni gruppi hanno un nome tradizionale, legato a proprietà chimiche comuni a 
 - **Gruppo 18, gas nobili**: hanno scarsissima reattività, dovuta alla loro configurazione elettronica particolarmente stabile.
 - In fondo alla tavola, le serie dei **lantanidi** e degli **attinidi**.
 
-:::image{src="assets/5dad437f-tavola-gruppi-nome.svg" alt="Tavola periodica con i gruppi 1, 2, 17 e 18 evidenziati in colori diversi, con l'idrogeno escluso dal gruppo 1" caption="Fig. 2.5 — I principali gruppi con nome tradizionale: metalli alcalini (gruppo 1, escluso l'idrogeno), metalli alcalino-terrosi (gruppo 2), alogeni (gruppo 17) e gas nobili (gruppo 18)."}
+:::image{src="assets/5dad437f-tavola-gruppi-nome.svg" alt="Tavola periodica con i gruppi 1, 2, 17 e 18 evidenziati in colori diversi, con l'idrogeno escluso dal gruppo 1" caption="Fig. 2.4 — I principali gruppi con nome tradizionale: metalli alcalini (gruppo 1, escluso l'idrogeno), metalli alcalino-terrosi (gruppo 2), alogeni (gruppo 17) e gas nobili (gruppo 18)."}
 :::
 
 I rimanenti gruppi, non elencati sopra, prendono comunemente il nome dell'elemento con numero atomico più basso che contengono.
@@ -196,7 +125,7 @@ In generale il comportamento metallico diminuisce lungo un periodo (andando da s
 - lo iodio è un non metallo, ma si presenta come un solido lucente;
 - gallio e cesio sono metalli che fondono già a basse temperature, e il mercurio è addirittura liquido a temperatura ambiente.
 
-**Esempio svolto 2.4.** Classificare gli elementi cloro ($Cl$, $Z=17$), silicio ($Si$, $Z=14$) e bario ($Ba$, $Z=56$), indicando gruppo, periodo e categoria.
+**Esempio svolto 2.2.** Classificare gli elementi cloro ($Cl$, $Z=17$), silicio ($Si$, $Z=14$) e bario ($Ba$, $Z=56$), indicando gruppo, periodo e categoria.
 
 1. **Dati**: posizioni nella tavola periodica di $Cl$, $Si$, $Ba$.
 2. **Strategia**: individuare periodo e gruppo dalla posizione nella tavola, poi classificare in base alla posizione rispetto alla linea a scalinata metalli/non metalli/semimetalli.
@@ -208,7 +137,7 @@ In generale il comportamento metallico diminuisce lungo un periodo (andando da s
 
 La carica tipica degli ioni monoatomici che un elemento forma è legata alla sua posizione nella tavola: gli elementi del gruppo 1 cedono un elettrone, quelli del gruppo 2 ne cedono due. Per i non metalli dei gruppi principali 15-17, applicando la regola dell'ottetto agli ioni monoatomici, la carica dell'anione è pari al numero del gruppo meno 18: per esempio gli elementi del gruppo 17 acquistano un elettrone, formando ioni con carica $-1$. Questa regola riguarda solo questi gruppi principali e non si estende ai gas nobili né ai gruppi di transizione. Questi aspetti saranno ripresi e motivati con la configurazione elettronica in [Proprietà periodiche e reattività](ref:chapter/8#p6) e in [Legame ionico ed energia reticolare](ref:chapter/9#p2).
 
-## p5 | Masse atomiche, mole e massa molare
+## p4 | Masse atomiche, mole e massa molare
 
 Per confrontare quantitativamente le sostanze a livello macroscopico occorre uno strumento che collega il mondo degli atomi, troppo piccoli per essere contati o pesati singolarmente, al mondo del laboratorio, dove si opera con grammi e litri. Questo strumento è la mole, costruita a partire dalle masse atomiche. Questa sezione fissa le definizioni di massa atomica, massa atomica media, mole e massa molare, e mostra come convertire tra massa, quantità di sostanza (moli) e numero di particelle, le tre grandezze che compaiono più spesso nei calcoli stechiometrici del corso.
 
@@ -230,9 +159,9 @@ $$\mathrm{MA} = \sum_i \big(\text{massa isotopica}_i \times \text{abbondanza rel
 
 dove la somma è estesa a tutti gli isotopi naturali dell'elemento e le abbondanze relative, espresse come frazioni (percentuale divisa per 100), sommano a 1. Le abbondanze isotopiche e le masse isotopiche vengono determinate sperimentalmente con lo spettrometro di massa, uno strumento che ionizza il campione con un fascio di elettroni a energia nota e separa gli ioni ottenuti in base al rapporto massa/carica, tipicamente mediante un campo magnetico.
 
-Questa nozione collega direttamente la definizione di isotopo già introdotta: atomi dello stesso elemento (stesso numero atomico $Z$, quindi stesso comportamento chimico) ma con diverso numero di massa $A$ e quindi diversa massa, come discusso in [Struttura dell'atomo e isotopi](ref:chapter/2#p3).
+Questa nozione collega direttamente la definizione di isotopo già introdotta: atomi dello stesso elemento (stesso numero atomico $Z$, quindi stesso comportamento chimico) ma con diverso numero di massa $A$ e quindi diversa massa, come discusso in [Struttura dell'atomo e isotopi](ref:chapter/2#p2).
 
-**Esempio svolto 2.5.** L'argento naturale è costituito da due isotopi, $^{107}\mathrm{Ag}$ e $^{109}\mathrm{Ag}$, con massa isotopica rispettivamente $106{,}90509\ u$ e $108{,}90476\ u$, e abbondanza relativa del $51{,}84\%$ e del $48{,}16\%$. Si vuole calcolare la massa atomica media dell'argento con cinque cifre significative.
+**Esempio svolto 2.3.** L'argento naturale è costituito da due isotopi, $^{107}\mathrm{Ag}$ e $^{109}\mathrm{Ag}$, con massa isotopica rispettivamente $106{,}90509\ u$ e $108{,}90476\ u$, e abbondanza relativa del $51{,}84\%$ e del $48{,}16\%$. Si vuole calcolare la massa atomica media dell'argento con cinque cifre significative.
 
 Dati: $m_1 = 106{,}90509\ u$, $x_1 = 0{,}5184$; $m_2 = 108{,}90476\ u$, $x_2 = 0{,}4816$.
 
@@ -243,7 +172,7 @@ $$\mathrm{MA}(\mathrm{Ag}) = 106{,}90509 \times 0{,}5184 + 108{,}90476 \times 0{
 
 Verifica: il risultato è compreso tra le due masse isotopiche, come deve essere per qualunque media pesata, ed è più vicino a $106{,}91\ u$ perché quell'isotopo ha abbondanza leggermente maggiore. Il valore $107{,}87\ u$ coincide con quello tabulato per l'argento.
 
-:::image{src="assets/c25feb95-spettro-massa-argento.svg" alt="Grafico a punti con due picchi: massa 106,90509 u con abbondanza 51,84% e massa 108,90476 u con abbondanza 48,16%" caption="Fig. 2.6 — Spettro di massa semplificato dell'argento naturale: ciascun picco corrisponde a un isotopo, con la sua massa isotopica e la sua abbondanza relativa percentuale."}
+:::image{src="assets/c25feb95-spettro-massa-argento.svg" alt="Grafico a punti con due picchi: massa 106,90509 u con abbondanza 51,84% e massa 108,90476 u con abbondanza 48,16%" caption="Fig. 2.5 — Spettro di massa semplificato dell'argento naturale: ciascun picco corrisponde a un isotopo, con la sua massa isotopica e la sua abbondanza relativa percentuale."}
 :::
 
 **Errore tipico 2.3.** Un errore frequente è mediare le masse isotopiche con peso uguale (semplice media aritmetica) invece che pesarle con le abbondanze relative; questo dà un risultato sbagliato ogni volta che le abbondanze non sono uguali tra loro, come nell'esempio precedente, dove la media aritmetica $\frac{106{,}90509+108{,}90476}{2}=107{,}905\ u$ differisce in modo apprezzabile dal valore corretto $107{,}87\ u$.
@@ -262,14 +191,14 @@ Per i composti ionici non esiste una molecola isolabile da pesare, perché tali 
 
 Per contare entità tanto piccole quanto gli atomi conviene definire un'unità di quantità di sostanza che raggruppi un numero enorme ma fisso di particelle elementari.
 
-**Definizione 2.4** (mole, convenzione storica). La mole, simbolo $\mathrm{mol}$, è la quantità di sostanza che contiene un numero di particelle elementari (atomi, ioni, molecole o altre entità specificate) uguale al numero di atomi contenuti in esattamente $12\ \mathrm{g}$ di $^{12}\mathrm{C}$.
+**Definizione 2.4** (mole, convenzione storica). Storicamente, la mole era definita come la quantità di sostanza che contiene un numero di particelle elementari (atomi, ioni, molecole o altre entità specificate) uguale al numero di atomi contenuti in esattamente $12\ \mathrm{g}$ di $^{12}\mathrm{C}$.
 
-Questo numero, detto numero di Avogadro, vale circa $N_A = 6{,}022 \times 10^{23}$. Dal 2019 il Sistema Internazionale ha scelto di ridefinire la mole senza fare riferimento a una massa campione: la mole è la quantità di sostanza che contiene esattamente $6{,}02214076\times 10^{23}$ entità elementari, valore fissato per definizione. Negli esercizi di questo corso si usa il valore arrotondato $N_A = 6{,}022\times 10^{23}\ \mathrm{mol^{-1}}$. Questa scelta rende le unità di misura fondamentali indipendenti tra loro, dato che prima la definizione di mole era legata a quella di massa, ed è stata possibile perché oggi si sa misurare il valore numerico della costante di Avogadro con un'incertezza accettabile.
+Il numero di entità per mole è la costante di Avogadro, $N_A = 6{,}022 \times 10^{23}\ \mathrm{mol^{-1}}$; il suo valore numerico, senza unità, si chiama numero di Avogadro. Dal 2019 il Sistema Internazionale ha scelto di ridefinire la mole senza fare riferimento alla massa di un campione di carbonio-12: la mole è la quantità di sostanza che contiene esattamente $6{,}02214076\times 10^{23}$ entità elementari, valore fissato per definizione. Negli esercizi di questo corso si usa il valore arrotondato $N_A = 6{,}022\times 10^{23}\ \mathrm{mol^{-1}}$. La ridefinizione è stata possibile perché oggi si sa misurare il valore numerico della costante di Avogadro con un'incertezza accettabile.
 
 È importante distinguere due grandezze che nell'uso corrente vengono spesso confuse:
 
-- la costante di Avogadro, $N_A$, è il numero di particelle contenute in una mole e ha le dimensioni dell'inverso di una quantità di sostanza, cioè $\mathrm{mol^{-1}}$;
-- il numero di Avogadro ha lo stesso valore numerico della costante di Avogadro, ma è una grandezza adimensionale, definita come il numero di atomi di $^{12}\mathrm{C}$ presenti in $12\ \mathrm{g}$ di tale sostanza.
+- la costante di Avogadro, $N_A$, è il numero di particelle contenute in una mole e ha unità $\mathrm{mol^{-1}}$;
+- il numero di Avogadro è il valore numerico adimensionale della costante di Avogadro, cioè $6{,}02214076\times 10^{23}$.
 
 **Errore tipico 2.5.** Trattare la costante di Avogadro come un numero puro, senza l'unità $\mathrm{mol^{-1}}$, porta a errori di analisi dimensionale nei calcoli che la usano come fattore di conversione.
 
@@ -299,7 +228,7 @@ $$n^{\circ}_{\text{entità}} = a \cdot n \cdot N_A$$
 
 dove $n$ è la quantità di sostanza in moli e $a$ indica quante volte l'entità in esame compare nella formula della sostanza considerata (ad esempio $a=2$ per gli atomi di H in una mole di $\mathrm{H_2O}$, oppure $a=1$ se si contano direttamente le molecole o le unità formula).
 
-**Esempio svolto 2.6.** Si vuole calcolare la massa di argento contenuta in $0{,}0342\ \mathrm{mol}$ di questo elemento.
+**Esempio svolto 2.4.** Si vuole calcolare la massa di argento contenuta in $0{,}0342\ \mathrm{mol}$ di questo elemento.
 
 Dati: $n_{\mathrm{Ag}} = 0{,}0342\ \mathrm{mol}$; $M_{\mathrm{Ag}} = 107{,}87\ \mathrm{g/mol}$ (valore ricavato nell'esempio precedente).
 
@@ -310,7 +239,7 @@ $$m_{\mathrm{Ag}} = n_{\mathrm{Ag}} \cdot M_{\mathrm{Ag}} = 0{,}0342\ \mathrm{mo
 
 Verifica: l'ordine di grandezza è ragionevole, perché $0{,}0342\ \mathrm{mol}$ è una piccola frazione di mole, e $3{,}69\ \mathrm{g}$ è una massa piccola ma misurabile con una bilancia da laboratorio.
 
-**Esempio svolto 2.7.** Si vuole calcolare il numero di atomi di idrogeno presenti in $2{,}33\ \mathrm{mol}$ di acqua.
+**Esempio svolto 2.5.** Si vuole calcolare il numero di atomi di idrogeno presenti in $2{,}33\ \mathrm{mol}$ di acqua.
 
 Dati: $n_{\mathrm{H_2O}} = 2{,}33\ \mathrm{mol}$; in ogni molecola di $\mathrm{H_2O}$ sono presenti $a=2$ atomi di H.
 
@@ -325,7 +254,7 @@ Combinando le due relazioni si può passare direttamente dalla massa di un campi
 
 **Errore tipico 2.6.** Confondere la mole, che è una misura di numerosità di particelle, con la massa molare, che è una misura di peso: la mole indica "quante" entità sono presenti, la massa molare indica quanto pesa una mole di quella sostanza. Un errore collegato, tipico nei bilanciamenti affrontati senza passare per le moli, è pensare che le masse dei reagenti si combinino negli stessi rapporti numerici dei coefficienti stechiometrici: ad esempio $2\ \mathrm{g}$ di $\mathrm{Mg}$ più $1\ \mathrm{g}$ di $\mathrm{O_2}$ non danno $2\ \mathrm{g}$ di $\mathrm{MgO}$, perché i coefficienti di un'equazione bilanciata si riferiscono al numero di atomi o di moli che reagiscono, non direttamente alle masse in grammi; la relazione in massa si ottiene solo passando attraverso le masse molari. Questo aspetto sarà ripreso nella sezione sul [bilanciamento delle equazioni chimiche](ref:chapter/4#p3).
 
-## p6 | Come viene chiesto all'esame
+## p5 | Come viene chiesto all'esame
 
 In 2 delle 4 sessioni d'esame passate compaiono domande che toccano gli argomenti di questo capitolo. Il tipo di esercizio più frequente è il calcolo stechiometrico: massa di un prodotto che si ottiene da quantità date di reagenti, in cui la conversione tra massa, moli e massa molare è un passaggio obbligato.
 
@@ -338,11 +267,11 @@ Le domande a disposizione sono esercizi della prova scritta, e in entrambe le se
 **Metodo.**
 
 1. Dai nomi ricava le formule e scrivi la reazione, poi bilanciala; se è una redox, usa le semireazioni ([Reazioni di ossidoriduzione](ref:chapter/5#p5) e [Equazioni chimiche e bilanciamento](ref:chapter/4#p3)).
-2. Calcola la massa molare $M$ di ogni specie coinvolta sommando le masse atomiche medie, tenendo conto degli indici ([Masse atomiche, mole e massa molare](ref:chapter/2#p5)).
-3. Converti ogni quantità di reagente in moli con {{formula:2.4}}.
+2. Calcola la massa molare $M$ di ogni specie coinvolta sommando le masse atomiche medie, tenendo conto degli indici ([Masse atomiche, mole e massa molare](ref:chapter/2#p4)).
+3. Converti ogni quantità di reagente in moli con {{formula:2.4}}. Se un reagente è dato come volume di soluzione e percentuale in massa, ricava prima la massa della soluzione dalla densità e poi la massa del soluto, secondo il metodo della sezione successiva.
 4. Dividi le moli di ciascun reagente per il suo coefficiente stechiometrico: il valore più piccolo indica il reagente limitante ([formula (4.3)](ref:formula/4.3)).
 5. Con il rapporto molare dell'equazione bilanciata ([formula (4.2)](ref:formula/4.2)) ricava le moli di prodotto a partire dal solo reagente limitante.
-6. Riconverti in grammi moltiplicando per la massa molare del prodotto e arrotonda solo alla fine, rispettando le cifre significative ([Grandezze, unità e cifre significative](ref:chapter/1#p3)).
+6. Riconverti in grammi moltiplicando per la massa molare del prodotto e arrotonda solo alla fine, rispettando le cifre significative ([Grandezze, unità e cifre significative](ref:chapter/1#p2)).
 
 Per illustrare il passo 3: $565{,}0\ \mathrm{g}$ di $\mathrm{SnCl_2}$, con $M \approx 189{,}6\ \mathrm{g/mol}$, corrispondono a circa $2{,}98\ \mathrm{mol}$. Per il calcolo completo serve il resto dei dati del tema.
 

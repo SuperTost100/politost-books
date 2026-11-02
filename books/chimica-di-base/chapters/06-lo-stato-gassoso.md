@@ -9,7 +9,7 @@ Capire lo stato gassoso permette di collegare misure osservabili, come pressione
 
 Per affrontare il capitolo serve saper svolgere calcoli stechiometrici, convertire le unità di misura e riconoscere il reagente limitante. Sarà inoltre utile prestare attenzione alla temperatura assoluta: nei calcoli con i gas si esprime in kelvin.
 
-Al termine saprai applicare l’equazione di stato per ricavare una variabile incognita e usare i volumi gassosi nei problemi stechiometrici. Potrai determinare la massa molare da una misura di densità, calcolare pressioni parziali e frazioni molari nelle miscele, e interpretare effusione e diffusione con la legge di Graham. Saprai infine collegare la velocità delle particelle alla temperatura, valutare le deviazioni dall’idealità tramite il fattore di comprimibilità e stimare il comportamento di un gas reale con l’equazione di van der Waals.
+Al termine saprai applicare l’equazione di stato per ricavare una variabile incognita e usare i volumi gassosi nei problemi stechiometrici. Potrai determinare la massa molare da una misura di densità, calcolare pressioni parziali e frazioni molari nelle miscele. Saprai infine collegare la velocità delle particelle alla temperatura, valutare le deviazioni dall’idealità tramite il fattore di comprimibilità e stimare il comportamento di un gas reale con l’equazione di van der Waals.
 
 ## p2 | Pressione e leggi dei gas ideali
 
@@ -134,7 +134,7 @@ $$m(\text{KCl}) = n(\text{KCl}) \times M(\text{KCl}) = 0{,}4150 \times 74{,}55 =
 
 L'equazione di stato dei gas ideali, già introdotta in [Pressione e leggi dei gas ideali](ref:chapter/6#p2), permette di collegare la densità di un gas alla sua massa molare. Poiché una mole di qualunque gas occupa lo stesso volume alle stesse condizioni di temperatura e pressione, le differenze di densità tra gas diversi dipendono esclusivamente dalle loro masse molari diverse.
 
-Partendo da $PV = nRT$ e sostituendo $n = \frac{m}{M}$ (con $m$ massa del campione e $M$ massa molare, notazione fissata in [Masse atomiche, mole e massa molare](ref:chapter/2#p5)), si ottiene
+Partendo da $PV = nRT$ e sostituendo $n = \frac{m}{M}$ (con $m$ massa del campione e $M$ massa molare, notazione fissata in [Masse atomiche, mole e massa molare](ref:chapter/2#p4)), si ottiene
 
 $$P V = \frac{m}{M} R T \quad \Longrightarrow \quad \frac{m}{V} = \frac{P \cdot M}{R T}.$$
 
@@ -229,7 +229,7 @@ $$p_{\text{N}_2} = \frac{n_{\text{N}_2} \cdot R \cdot T}{V} = \frac{0,260 \cdot 
 
 Uno sbaglio comune è confondere la frazione molare con la frazione in massa: $x_i = n_i/n_{tot}$ richiede sempre di lavorare con le moli, non con le masse dei singoli componenti; un secondo errore è applicare la legge di Dalton a miscele in cui i gas reagiscono tra loro (per esempio in presenza di dissociazione gassosa), dove il numero di moli totale non è costante e l'equazione di stato va applicata con cautela istante per istante.
 
-## p4 | Teoria cinetica, effusione e diffusione
+## p4 | Teoria cinetica dei gas
 
 La termodinamica dei gas descritta nelle sezioni precedenti tratta pressione, volume e temperatura come grandezze macroscopiche, misurabili con un manometro o un termometro, senza chiedersi cosa accada alle singole particelle. La teoria cinetica dei gas è la parte della meccanica statistica che collega queste grandezze macroscopiche al comportamento dinamico delle particelle, interpretando a livello molecolare due fenomeni fondamentali: la pressione esercitata da una massa gassosa e la sua temperatura. Il punto di partenza è che, pur valendo in linea di principio le leggi della meccanica classica per ciascuna particella, è del tutto impraticabile risolvere individualmente le equazioni del moto per ciascuna delle $6{,}022\times10^{23}$ particelle presenti anche in una piccola quantità di gas; si ragiona invece sui valori medi delle grandezze dinamiche (velocità, energia cinetica) dell'insieme delle particelle.
 
@@ -283,43 +283,11 @@ $$\bar{u} = \sqrt{\frac{3\times 8{,}314\ \text{J/(mol·K)}\times 293{,}15\ \text
 
 *Verifica.* Il valore è coerente con quello riportato per $\text{N}_2$ a $20\ \text{°C}$ e $1\ \text{atm}$, dove la velocità media è circa $470\ \text{m/s}$ e $\bar{u}$ circa $510\ \text{m/s}$: le due velocità (media semplice e quadratica media) sono vicine ma non identiche, perché mediano in modo diverso la distribuzione delle velocità. Dividendo la velocità media per il cammino libero medio (circa $6{,}6\times10^{-8}\ \text{m}$ per $\text{N}_2$ in queste condizioni) si ottiene la frequenza degli urti, dell'ordine di $7{,}1\times10^{9}$ urti al secondo per ciascuna molecola.
 
-### Effusione, diffusione e legge di Graham
-
-La teoria cinetica permette di interpretare due fenomeni di trasporto dei gas.
-
-**Definizione 6.4** (effusione). L'effusione è il passaggio di un gas, sotto pressione, attraverso un'apertura molto piccola verso un recipiente a pressione molto più bassa (anche il vuoto).
-
-**Definizione 6.5** (diffusione). La diffusione gassosa è il processo con cui un gas si mescola con un altro gas, fino a raggiungere una pressione parziale uniforme in ogni punto del recipiente. La velocità di diffusione effettiva è molto più bassa della velocità quadratica media delle singole molecole, perché il percorso di ciascuna particella è continuamente deviato dagli urti con le altre molecole (moto a zig-zag).
-
-Studiando l'effusione, Thomas Graham osservò che la velocità di effusione (numero di moli che effondono nell'unità di tempo) è inversamente proporzionale alla radice quadrata della densità del gas; poiché a parità di $P$ e $T$ la densità di un gas è proporzionale alla sua massa molare, questo equivale a dire che la velocità di effusione è inversamente proporzionale alla radice quadrata della massa molare.
-
-**Teorema 6.2** (legge di Graham dell'effusione).
-A parità di condizioni sperimentali, confrontando l'effusione di due gas 1 e 2, vale
-
-:::formula{id="6.14" label="Legge di Graham dell'effusione"}
-$$\frac{v_1}{v_2} = \sqrt{\frac{M_2}{M_1}}$$
-:::
-
-dove $v_i$ è la velocità di effusione del gas $i$ e $M_i$ la sua massa molare. Il gas con massa molare minore effonde più velocemente, perché a parità di temperatura (quindi di energia cinetica media) le sue molecole hanno velocità più alta. La relazione si ricava imponendo l'uguaglianza dell'energia cinetica media dei due gas alla stessa temperatura, $\tfrac{1}{2}M_1\bar{u}_1^2 = \tfrac{1}{2}M_2\bar{u}_2^2$. Per la diffusione, in cui la velocità effettiva dipende anche dagli urti con le molecole del mezzo attraversato, lo stesso rapporto fornisce solo una stima, valida quando le condizioni sperimentali dei due gas (geometria del recipiente, mezzo in cui diffondono) sono confrontabili.
-
-La legge di Graham permette di determinare la massa molare incognita di un gas confrontando la sua velocità di effusione con quella di un gas di massa molare nota. Per confrontare i fronti di diffusione, il rapporto ricavato dalla legge può fornire una stima quando i due gas diffondono nello stesso mezzo e in condizioni sperimentali confrontabili; si possono misurare, per esempio, i tempi impiegati e le distanze percorse dai fronti.
-
-**Esempio svolto 6.6.** In un tubo si introducono $\text{HCl}$ ($M = 36{,}5\ \text{g/mol}$) da un'estremità e $\text{NH}_3$ ($M = 17{,}0\ \text{g/mol}$) dall'altra; i due gas diffondono l'uno verso l'altro e, dove si incontrano, reagiscono formando un anello bianco di $\text{NH}_4\text{Cl}$. Stimare il rapporto tra le velocità di diffusione dei due gas e prevedere in quale punto del tubo si forma l'anello.
-
-*Strategia.* Si applica {{formula:6.14}} con 1 = $\text{NH}_3$ e 2 = $\text{HCl}$.
-
-*Calcolo.*
-$$\frac{v_{\text{NH}_3}}{v_{\text{HCl}}} = \sqrt{\frac{M_{\text{HCl}}}{M_{\text{NH}_3}}} = \sqrt{\frac{36{,}5}{17{,}0}} = \sqrt{2{,}147} \approx 1{,}47$$
-
-*Verifica e interpretazione.* L'ammoniaca diffonde circa 1,5 volte più velocemente dell'acido cloridrico, perché è più leggera; l'anello di $\text{NH}_4\text{Cl}$ si forma quindi più vicino all'estremità da cui è entrato l'$\text{HCl}$, come effettivamente osservato nell'esperimento.
-
-**Errore tipico 6.5.** Nella legge di Graham lo studente spesso scrive il rapporto delle masse molari invertito rispetto a quello delle velocità, concludendo erroneamente che il gas più pesante effonde più velocemente. Nella {{formula:6.14}} la massa molare del gas che compare al numeratore della velocità ($v_1$) va messa al denominatore della radice ($M_2$, cioè la massa dell'altro gas); conviene sempre verificare il risultato con il buon senso fisico, visto che a parità di temperatura il gas più leggero deve risultare quello più veloce. Un altro errore frequente è confondere la velocità quadratica media delle molecole, dell'ordine di centinaia di metri al secondo, con la velocità con cui si osserva macroscopicamente la diffusione, molto più lenta a causa degli urti continui tra le molecole.
-
 ## p5 | Distribuzione delle velocità e delle energie molecolari (Maxwell-Boltzmann)
 
 ### Perché serve una distribuzione
 
-La teoria cinetica attribuisce a ogni molecola un moto caotico, e gli urti ne cambiano continuamente la velocità. Le molecole di un gas non hanno quindi tutte la stessa velocità né la stessa energia. Ciascuna ha un'energia diversa dalle altre, e l'uguaglianza vale solo in senso statistico. La velocità quadratica media $\bar u$ e l'energia cinetica media $\frac{3}{2}k_BT$ (vedi [Teoria cinetica, effusione e diffusione](ref:chapter/6#p4)) sono valori medi. Non dicono quante molecole sono molto più lente o molto più veloci della media.
+La teoria cinetica attribuisce a ogni molecola un moto caotico, e gli urti ne cambiano continuamente la velocità. Le molecole di un gas non hanno quindi tutte la stessa velocità né la stessa energia. Ciascuna ha un'energia diversa dalle altre, e l'uguaglianza vale solo in senso statistico. La velocità quadratica media $\bar u$ e l'energia cinetica media $\frac{3}{2}k_BT$ (vedi [Teoria cinetica dei gas](ref:chapter/6#p4)) sono valori medi. Non dicono quante molecole sono molto più lente o molto più veloci della media.
 
 La **distribuzione di Maxwell-Boltzmann**, elaborata nell'Ottocento da Maxwell e Boltzmann, descrive questa dispersione. Rappresenta il numero di molecole che hanno una data energia (o velocità), a una data temperatura, in funzione dell'energia (o della velocità) stessa.
 
@@ -335,39 +303,37 @@ Gli effetti da ricordare sono due.
 - **Temperatura.** Al crescere di $T$ la curva si appiattisce e si allarga, e il picco si sposta verso velocità maggiori. Aumenta il numero di molecole veloci e diminuisce quello delle lente. Aumentano la velocità più probabile, quella media e quella quadratica.
 - **Massa molare.** A $T$ costante tutti i gas hanno la stessa energia cinetica media. Con $E_k=\frac{1}{2}mv^2$ uguale, la molecola più pesante deve quindi muoversi più lentamente. I gas leggeri hanno perciò una distribuzione spostata verso velocità molto maggiori. Per questo l'ossigeno deve essere riscaldato molto per avere la distribuzione di velocità dell'elio a 273 K.
 
-Questa è la ragione molecolare della legge di Graham: il gas con massa molare minore effonde più velocemente perché la velocità più probabile delle sue molecole è più alta.
-
-### Frazione di molecole con energia sopra una soglia
+### Fattore di Boltzmann e soglia di energia
 
 Molte reazioni avvengono solo se le molecole hanno velocità (quindi energia) superiori a un certo valore. Questa soglia è l'**energia di attivazione** $E_a$: soltanto gli urti con energia sufficiente a superarla possono portare alla reazione. La frequenza degli urti non basta a spiegare la velocità di reazione. In fase gassosa le molecole si urtano miliardi di volte al secondo, ma nella grande maggioranza degli urti rimbalzano senza reagire.
 
-A una data temperatura la frazione di urti con energia superiore a $E_a$ è, con $E_a$ in J/mol:
+Il fattore di Boltzmann associato alla soglia energetica è, con $E_a$ in J/mol:
 
-:::formula{id="6.15" label="Frazione di urti con energia superiore alla soglia"}
+:::formula{id="6.14" label="Fattore di Boltzmann associato alla soglia"}
 $$f = e^{-E_a/(RT)}$$
 :::
 
-Questa frazione corrisponde all'area della coda della curva a destra della soglia. Compare nell'equazione di Arrhenius [formula (15.6)](ref:formula/15.6), $k=A\,e^{-E_a/(RT)}$, dove $A$ tiene conto della frequenza degli urti e dell'orientazione. La velocità di reazione è proporzionale al numero di molecole con energia sufficiente per superare la barriera. Una temperatura più alta sposta la coda verso destra e aumenta quel numero. A $T_1<T_2$ a una temperatura minore poche molecole hanno energia sufficiente, a una maggiore sono molte di più. Si vedano [Temperatura ed energia di attivazione](ref:chapter/15#p4) per l'uso quantitativo.
+Questo fattore compare nell'equazione di Arrhenius [formula (15.6)](ref:formula/15.6), $k=A\,e^{-E_a/(RT)}$, dove $A$ tiene conto della frequenza degli urti e dell'orientazione. Non coincide in generale con la frazione esatta di molecole o di urti sopra la soglia, che si calcola integrando la distribuzione di energia appropriata. Una temperatura più alta aumenta il fattore di Boltzmann associato alla soglia. Si vedano [Temperatura ed energia di attivazione](ref:chapter/15#p4) per l'uso quantitativo.
 
-**Esempio svolto 6.7.** Una reazione ha $E_a = 50{,}0$ kJ/mol. Di quanto cambia la frazione di urti efficaci passando da 300 K a 310 K? Si usa $R = 8{,}314$ J/(mol·K).
+**Esempio svolto 6.6.** Una reazione ha $E_a = 50{,}0$ kJ/mol. Di quanto cambia il fattore di Boltzmann associato alla soglia passando da 300 K a 310 K? Si usa $R = 8{,}314$ J/(mol·K).
 
 1. Dati: $E_a=50\,000$ J/mol, $T_1=300$ K, $T_2=310$ K.
-2. Strategia: si calcola $f$ alle due temperature e si fa il rapporto.
+2. Strategia: si calcola il fattore di Boltzmann $f$ alle due temperature e si fa il rapporto.
 3. Calcolo:
 $\displaystyle \frac{E_a}{RT_1}=\frac{50\,000}{8{,}314\cdot 300}=20{,}046\ \Rightarrow\ f_1=e^{-20{,}046}=1{,}97\times10^{-9}$
 $\displaystyle \frac{E_a}{RT_2}=\frac{50\,000}{8{,}314\cdot 310}=19{,}400\ \Rightarrow\ f_2=e^{-19{,}400}=3{,}76\times10^{-9}$
 $\displaystyle \frac{f_2}{f_1}=e^{0{,}646}\approx 1{,}91$
-4. Verifica: un aumento di soli 10 K fa quasi raddoppiare la frazione di urti efficaci, mentre la velocità media cresce di meno del 2%. È la coda della distribuzione a decidere la reattività.
+4. Verifica: il fattore di Boltzmann associato alla soglia quasi raddoppia.
 
-**Errore tipico 6.6.** Pensare che, riscaldando, tutte le molecole diventino più veloci della stessa quantità, oppure che la reattività cresca perché aumenta la velocità media. L'energia cinetica media aumenta in proporzione a $T$, ma ciò che conta è la frazione di molecole nella coda, che cresce molto più rapidamente.
+**Errore tipico 6.5.** Pensare che, riscaldando, tutte le molecole diventino più veloci della stessa quantità, oppure che la reattività cresca perché aumenta la velocità media. L'energia cinetica media aumenta in proporzione a $T$, ma ciò che conta è la frazione di molecole nella coda, che cresce molto più rapidamente.
 
-**Errore tipico 6.7.** Dedurre dalla curva che a $T$ maggiore ci siano più molecole in totale. L'area sottesa resta uguale: il picco si abbassa e la curva si allarga.
+**Errore tipico 6.6.** Dedurre dalla curva che a $T$ maggiore ci siano più molecole in totale. L'area sottesa resta uguale: il picco si abbassa e la curva si allarga.
 
-**Errore tipico 6.8.** Confondere velocità più probabile, media e quadratica media. Sono tre valori diversi: sulla curva la più probabile è la più bassa, poi viene la media e infine la quadratica media. Tutte e tre aumentano con $T$.
+**Errore tipico 6.7.** Confondere velocità più probabile, media e quadratica media. Sono tre valori diversi: sulla curva la più probabile è la più bassa, poi viene la media e infine la quadratica media. Tutte e tre aumentano con $T$.
 
 ## p6 | Gas reali
 
-Le leggi dei gas ideali studiate nelle sezioni precedenti descrivono bene il comportamento dei gas reali solo in determinate condizioni. L'equazione $PV = nRT$ e la teoria cinetica da cui discende (vedi [Pressione e leggi dei gas ideali](ref:chapter/6#p2) e [Teoria cinetica, effusione e diffusione](ref:chapter/6#p4)) si basano su due ipotesi semplificative: le molecole sono masse puntiformi prive di volume proprio e non esercitano alcuna forza le une sulle altre tranne negli urti, che sono perfettamente elastici.
+Le leggi dei gas ideali studiate nelle sezioni precedenti descrivono bene il comportamento dei gas reali solo in determinate condizioni. L'equazione $PV = nRT$ e la teoria cinetica da cui discende (vedi [Pressione e leggi dei gas ideali](ref:chapter/6#p2) e [Teoria cinetica dei gas](ref:chapter/6#p4)) si basano su due ipotesi semplificative: le molecole sono masse puntiformi prive di volume proprio e non esercitano alcuna forza le une sulle altre tranne negli urti, che sono perfettamente elastici.
 
 Nella realtà nessuna delle due ipotesi è esatta: le molecole hanno un volume finito, determinato dalle dimensioni degli atomi e dalle lunghezze di legame, e al loro interno sono presenti particelle cariche che danno origine a forze intermolecolari sia attrattive che repulsive. Sono quindi attese deviazioni dal comportamento ideale, tanto più marcate quanto più le condizioni si allontanano da quelle in cui l'approssimazione ideale funziona bene.
 
@@ -377,7 +343,7 @@ Un gas reale si comporta in modo quasi ideale a temperature prossime a quella am
 
 Per quantificare la deviazione dall'idealità si definisce il fattore di comprimibilità
 
-:::formula{id="6.16" label="Fattore di comprimibilità"}
+:::formula{id="6.15" label="Fattore di comprimibilità"}
 $$Z = \frac{PV}{RT}$$
 :::
 
@@ -399,7 +365,7 @@ Nel 1873 Johannes van der Waals propose di correggere l'equazione di stato dei g
 
 **Equazione di van der Waals.** Per $n$ moli di gas reale in un volume $V$ a temperatura $T$,
 
-:::formula{id="6.17" label="Equazione di van der Waals"}
+:::formula{id="6.16" label="Equazione di van der Waals"}
 $$\left(P + \frac{n^2 a}{V^2}\right)\left(V - nb\right) = nRT$$
 :::
 
@@ -414,10 +380,10 @@ Per un gas ideale $a = b = 0$, perché le particelle non si attraggono e occupan
 
 L'importanza relativa dei due termini correttivi dipende dalla pressione. A pressioni basse il covolume $b$ è trascurabile rispetto a $V$ e le molecole sono così distanziate che anche il termine $a/V^2$ è praticamente nullo: l'equazione si riduce a quella dei gas ideali. A pressioni medie (dell'ordine di 50-150 atm) il volume diminuisce abbastanza da far sentire il peso del termine $a/V^2$. A pressioni molto alte (oltre 150 atm) il covolume $b$ non è più trascurabile rispetto a $V$, e $V - nb$ diventa significativamente minore di $V$. L'equazione di van der Waals, proprio per questo, permette di descrivere anche il processo di liquefazione dei gas: ogni gas possiede una temperatura critica, la massima temperatura alla quale può ancora esistere in fase liquida (per il $\text{CO}_2$, ad esempio, $T_c = 31\ ^\circ\text{C}$).
 
-**Esempio svolto 6.8.** Si vogliono confrontare la pressione prevista dal modello ideale e quella prevista dal modello di van der Waals per $1,00\ \text{mol}$ di $\text{CO}_2$ racchiusa in un volume di $1,00\ \text{L}$ a $T = 273,15\ \text{K}$, note le costanti $a = 3,59\ \text{L}^2\cdot\text{atm/mol}^2$ e $b = 0,0427\ \text{L/mol}$.
+**Esempio svolto 6.7.** Si vogliono confrontare la pressione prevista dal modello ideale e quella prevista dal modello di van der Waals per $1,00\ \text{mol}$ di $\text{CO}_2$ racchiusa in un volume di $1,00\ \text{L}$ a $T = 273,15\ \text{K}$, note le costanti $a = 3,59\ \text{L}^2\cdot\text{atm/mol}^2$ e $b = 0,0427\ \text{L/mol}$.
 
 1. Dati: $n = 1,00\ \text{mol}$, $V = 1,00\ \text{L}$, $T = 273,15\ \text{K}$, $R = 0,08206\ \text{L}\cdot\text{atm/(mol}\cdot\text{K)}$.
-2. Strategia: si calcola $P$ con $PV = nRT$ e, separatamente, con {{formula:6.17}} risolta per $P$.
+2. Strategia: si calcola $P$ con $PV = nRT$ e, separatamente, con {{formula:6.16}} risolta per $P$.
 3. Calcolo del modello ideale:
 
 $\displaystyle P_{\text{ideale}} = \frac{nRT}{V} = \frac{(1,00)(0,08206)(273,15)}{1,00} = 22,41\ \text{atm}$
@@ -426,7 +392,7 @@ $\displaystyle P_{\text{ideale}} = \frac{nRT}{V} = \frac{(1,00)(0,08206)(273,15)
 $\displaystyle P_{\text{reale}} = \frac{nRT}{V - nb} - \frac{n^2 a}{V^2} = \frac{22,41}{1,00 - 0,0427} - \frac{3,59}{(1,00)^2} = 23,41 - 3,59 = 19,8\ \text{atm}$
 5. Verifica: il valore reale è circa il $12\%$ inferiore a quello ideale, in accordo con il fatto che, a questa densità elevata ($1\ \text{mol}$ in $1\ \text{L}$), le attrazioni intermolecolari del $\text{CO}_2$ pesano più del covolume e fanno sì che $Z < 1$, come previsto dal grafico del fattore di comprimibilità.
 
-**Errore tipico 6.9.** Uno sbaglio frequente è dimenticare che le costanti $a$ e $b$ dipendono dal gas considerato: non esiste un'unica coppia di valori valida per tutte le sostanze, e vanno sempre ricavate dalle tabelle o fornite nei dati dell'esercizio. Un secondo errore comune è confondere il segno delle correzioni, scrivendo $P - a n^2/V^2$ al posto di $P + a n^2/V^2$ dentro la parentesi, oppure $V + nb$ al posto di $V - nb$: conviene ricordare che il termine attrattivo abbassa la pressione reale, mentre il volume escluso la aumenta; il volume disponibile al moto è sempre minore del volume del recipiente. Infine, l'equazione di van der Waals corregge l'idealità dovuta a volume finito e interazioni molecolari, e non va confusa con la correzione dell'equazione di stato mediante il coefficiente di van't Hoff, che si applica invece quando una sostanza gassosa si dissocia parzialmente per effetto del riscaldamento e il numero di moli presenti cambia nel tempo.
+**Errore tipico 6.8.** Uno sbaglio frequente è dimenticare che le costanti $a$ e $b$ dipendono dal gas considerato: non esiste un'unica coppia di valori valida per tutte le sostanze, e vanno sempre ricavate dalle tabelle o fornite nei dati dell'esercizio. Un secondo errore comune è confondere il segno delle correzioni, scrivendo $P - a n^2/V^2$ al posto di $P + a n^2/V^2$ dentro la parentesi, oppure $V + nb$ al posto di $V - nb$: conviene ricordare che il termine attrattivo abbassa la pressione reale, mentre il volume escluso la aumenta; il volume disponibile al moto è sempre minore del volume del recipiente. Infine, l'equazione di van der Waals corregge l'idealità dovuta a volume finito e interazioni molecolari, e non va confusa con la correzione dell'equazione di stato mediante il coefficiente di van't Hoff, che si applica invece quando una sostanza gassosa si dissocia parzialmente per effetto del riscaldamento e il numero di moli presenti cambia nel tempo.
 
 ## p7 | Liquefazione dei gas e punto critico
 
@@ -434,7 +400,7 @@ Comprimendo un gas ideale a temperatura costante, la pressione cresce sempre sec
 
 ### Le isoterme di Andrews
 
-Le **isoterme di Andrews** sono le curve $P$ in funzione di $V$ di una sostanza reale, misurate a temperatura costante per diversi valori di $T$. L'equazione di van der Waals, già introdotta con {{formula:6.17}}, permette di comprendere il processo di liquefazione.
+Le **isoterme di Andrews** sono le curve $P$ in funzione di $V$ di una sostanza reale, misurate a temperatura costante per diversi valori di $T$. L'equazione di van der Waals, già introdotta con {{formula:6.16}}, permette di comprendere il processo di liquefazione.
 
 Si segue una compressione isoterma, a partire da un vapore a volume grande, a una $T$ minore di quella critica.
 
@@ -452,7 +418,7 @@ L'equazione di van der Waals, a $T$ bassa, prevede una curva con un'oscillazione
 
 Aumentando la temperatura il tratto orizzontale si accorcia, finché si riduce a un solo punto. Quel punto è il **punto critico**. La campana di Andrews è tangente alla isoterma corrispondente.
 
-**Definizione 6.6.** La **temperatura critica** $T_c$ è la massima temperatura alla quale la sostanza può esistere in fase liquida. La **pressione critica** $P_c$ è la pressione corrispondente al punto critico, cioè la pressione di vapore alla temperatura $T_c$.
+**Definizione 6.4.** La **temperatura critica** $T_c$ è la massima temperatura alla quale la sostanza può esistere in fase liquida. La **pressione critica** $P_c$ è la pressione corrispondente al punto critico, cioè la pressione di vapore alla temperatura $T_c$.
 
 Avvicinandosi al punto critico la densità del liquido diminuisce e quella del vapore aumenta. Alla $T_c$ le due densità coincidono, la tensione superficiale va a zero, il menisco scompare e non c'è più separazione di fase. Oltre il punto critico la sostanza è un **fluido supercritico**: ha densità simile a quella di un liquido e viscosità simile a quella di un gas.
 
@@ -466,7 +432,7 @@ Il gas può essere liquefatto solo se $T<T_c$, applicando una pressione opportun
 
 Il raffreddamento agisce sull'altro fattore: a $T$ bassa le attrazioni intermolecolari prevalgono sull'energia cinetica e il gas condensa.
 
-**Esempio svolto 6.9.** Si vuole liquefare CO$_2$ a $25\ °\text{C}$ e poi a $40\ °\text{C}$, con $T_c=31\ °\text{C}$ e $P_c=73\ \text{atm}$.
+**Esempio svolto 6.8.** Si vuole liquefare CO$_2$ a $25\ °\text{C}$ e poi a $40\ °\text{C}$, con $T_c=31\ °\text{C}$ e $P_c=73\ \text{atm}$.
 
 1. Dati: $t_1=25\ °\text{C}$, $t_2=40\ °\text{C}$, $t_c=31\ °\text{C}$.
 2. Strategia: si confronta ciascuna temperatura con $T_c$, usando la stessa scala. Qui i confronti sono tra temperature in °C, quindi non serve convertire in kelvin. La conversione serve invece per le formule.
@@ -476,11 +442,11 @@ Il raffreddamento agisce sull'altro fattore: a $T$ bassa le attrazioni intermole
 
 ### Errori tipici
 
-**Errore tipico 6.10.** Credere che qualsiasi gas si possa liquefare comprimendolo abbastanza, a qualsiasi temperatura. Sopra $T_c$ nessuna pressione basta.
+**Errore tipico 6.9.** Credere che qualsiasi gas si possa liquefare comprimendolo abbastanza, a qualsiasi temperatura. Sopra $T_c$ nessuna pressione basta.
 
-**Errore tipico 6.11.** Pensare che $P_c$ sia la pressione minima per liquefare. La pressione necessaria dipende da $T$ (ed è minore di $P_c$ sotto $T_c$): $P_c$ è la pressione di vapore alla temperatura critica.
+**Errore tipico 6.10.** Pensare che $P_c$ sia la pressione minima per liquefare. La pressione necessaria dipende da $T$ (ed è minore di $P_c$ sotto $T_c$): $P_c$ è la pressione di vapore alla temperatura critica.
 
-**Errore tipico 6.12.** Usare $PV=nRT$ vicino alla liquefazione. In quella zona il gas è reale ($Z\neq1$) e serve l'equazione di van der Waals.
+**Errore tipico 6.11.** Usare $PV=nRT$ vicino alla liquefazione. In quella zona il gas è reale ($Z\neq1$) e serve l'equazione di van der Waals.
 
 ## p8 | Come viene chiesto all'esame
 

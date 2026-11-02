@@ -65,6 +65,18 @@ $$\vec{v} = \vec{v}_{O'} + \vec{v}\,' + \vec{\omega}\times \vec{r}\,'$$
 
 dove $\vec{v}$ è la velocità assoluta, $\vec{v}_{O'}$ la velocità dell'origine mobile, $\vec{v}\,'$ la velocità relativa e $\vec{\omega}\times\vec{r}\,'$ il termine correttivo legato alla rotazione degli assi mobili. Si noti che $d\vec{r}\,'/dt \neq \vec{v}\,'$ in generale: la derivata completa della posizione relativa include anche la rotazione dei versori, mentre $\vec{v}\,'$ per definizione tiene conto solo della variazione delle componenti $x',y',z'$.
 
+**Dimostrazione richiesta all'esame.**
+
+*Dimostrazione.* Si deriva rispetto al tempo la relazione $\vec{r}=\vec{OO'}+x'\hat{u}_{x'}+y'\hat{u}_{y'}+z'\hat{u}_{z'}$, applicando la regola del prodotto a ciascun termine in cui compaiono componenti e versori:
+
+$$\vec{v}=\frac{d\vec{OO'}}{dt}+\left(\frac{dx'}{dt}\hat{u}_{x'}+\frac{dy'}{dt}\hat{u}_{y'}+\frac{dz'}{dt}\hat{u}_{z'}\right)+x'\frac{d\hat{u}_{x'}}{dt}+y'\frac{d\hat{u}_{y'}}{dt}+z'\frac{d\hat{u}_{z'}}{dt}.$$
+
+Il primo termine è $\vec{v}_{O'}$ e il secondo gruppo è $\vec{v}\,'$ per definizione. Per le formule di Poisson $d\hat{u}_{x'}/dt=\vec{\omega}\times\hat{u}_{x'}$ e analoghe, con lo stesso $\vec{\omega}$ per i tre versori, perché il sistema mobile ruota come un tutto. Quindi gli ultimi tre termini valgono
+
+$$x'(\vec{\omega}\times\hat{u}_{x'})+y'(\vec{\omega}\times\hat{u}_{y'})+z'(\vec{\omega}\times\hat{u}_{z'})=\vec{\omega}\times(x'\hat{u}_{x'}+y'\hat{u}_{y'}+z'\hat{u}_{z'})=\vec{\omega}\times\vec{r}\,',$$
+
+e si ottiene $\vec{v}=\vec{v}_{O'}+\vec{v}\,'+\vec{\omega}\times\vec{r}\,'$. Dalla stessa derivazione segue anche $d\vec{r}\,'/dt=\vec{v}\,'+\vec{\omega}\times\vec{r}\,'$. $\square$
+
 Si definisce **velocità di trascinamento** la velocità che il punto $P$ avrebbe se fosse fermo rispetto al riferimento mobile, cioè la differenza tra velocità assoluta e velocità relativa:
 
 :::formula{id="6.3" label="Velocità di trascinamento"}
@@ -96,6 +108,24 @@ e l'**accelerazione di Coriolis** (o complementare) dipende invece dal moto di $
 :::formula{id="6.6" label="Accelerazione di Coriolis"}
 $$\vec{a}_{Co} = 2\vec{\omega}\times \vec{v}\,'$$
 :::
+
+**Dimostrazione richiesta all'esame.**
+
+*Dimostrazione del teorema delle accelerazioni relative.* Si parte dal teorema delle velocità relative $\vec{v}=\vec{v}_{O'}+\vec{v}\,'+\vec{\omega}\times\vec{r}\,'$ e lo si deriva termine a termine. Il primo termine dà $d\vec{v}_{O'}/dt=\vec{a}_{O'}$.
+
+Per il secondo, $\vec{v}\,'=\dot{x}'\hat{u}_{x'}+\dot{y}'\hat{u}_{y'}+\dot{z}'\hat{u}_{z'}$, quindi
+
+$$\frac{d\vec{v}\,'}{dt}=\ddot{x}'\hat{u}_{x'}+\ddot{y}'\hat{u}_{y'}+\ddot{z}'\hat{u}_{z'}+\dot{x}'\frac{d\hat{u}_{x'}}{dt}+\dot{y}'\frac{d\hat{u}_{y'}}{dt}+\dot{z}'\frac{d\hat{u}_{z'}}{dt}=\vec{a}\,'+\vec{\omega}\times\vec{v}\,',$$
+
+usando le formule di Poisson. Per il terzo, con la regola del prodotto e il risultato $d\vec{r}\,'/dt=\vec{v}\,'+\vec{\omega}\times\vec{r}\,'$,
+
+$$\frac{d}{dt}(\vec{\omega}\times\vec{r}\,')=\frac{d\vec{\omega}}{dt}\times\vec{r}\,'+\vec{\omega}\times\frac{d\vec{r}\,'}{dt}=\frac{d\vec{\omega}}{dt}\times\vec{r}\,'+\vec{\omega}\times\vec{v}\,'+\vec{\omega}\times(\vec{\omega}\times\vec{r}\,').$$
+
+Sommando i tre contributi i due termini $\vec{\omega}\times\vec{v}\,'$ si uniscono in $2\vec{\omega}\times\vec{v}\,'$ e si ottiene
+
+$$\vec{a}=\vec{a}\,'+\vec{a}_{O'}+\vec{\omega}\times(\vec{\omega}\times\vec{r}\,')+\frac{d\vec{\omega}}{dt}\times\vec{r}\,'+2\vec{\omega}\times\vec{v}\,',$$
+
+cioè $\vec{a}=\vec{a}\,'+\vec{a}_T+\vec{a}_{Co}$. $\square$
 
 Nell'accelerazione di trascinamento il termine $\vec{a}_{O'}$ è traslatorio puro, mentre il termine $\vec{\omega}\times(\vec{\omega}\times\vec{r}\,')$ è detto **termine centripeto**, perché punta verso l'asse di rotazione con modulo $\omega^2 r'_\perp$, dove $r'_\perp$ è la distanza di $P$ dall'asse di rotazione, cioè la componente di $\vec r\,'$ ortogonale a $\vec\omega$. La corrispondente **accelerazione (o forza) centrifuga**, che compare come termine apparente nell'equazione del moto scritta nel riferimento rotante, ha segno opposto, $-\vec{\omega}\times(\vec{\omega}\times\vec{r}\,')$, e punta verso l'esterno; si veda la sezione sulle [forze apparenti](ref:chapter/6#p3). Il termine $\dfrac{d\vec{\omega}}{dt}\times\vec{r}\,'$ compare solo se la velocità angolare non è costante (in modulo o direzione). Come nel caso delle velocità, nei casi limite si semplifica: se il riferimento mobile non ruota durante l'intervallo di tempo considerato, cioè $\vec{\omega}=\vec{0}$ e $d\vec{\omega}/dt=\vec{0}$, resta solo $\vec{a}=\vec{a}\,'+\vec{a}_{O'}$ (se invece $\vec{\omega}$ si annulla soltanto nell'istante considerato ma $d\vec{\omega}/dt\neq\vec{0}$, nell'accelerazione resta comunque il termine $(d\vec{\omega}/dt)\times\vec{r}\,'$); se $\vec{v}_{O'}=\vec{0}$ e $\vec{\omega}=\text{costante}$ (pura rotazione uniforme attorno a un punto fisso) resta $\vec{a}=\vec{a}\,'+\vec{\omega}\times(\vec{\omega}\times\vec{r}\,')+2\vec{\omega}\times\vec{v}\,'$.
 

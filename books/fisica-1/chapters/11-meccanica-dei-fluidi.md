@@ -132,7 +132,7 @@ $$
 M_x^{\text{tot}} = \int_0^h (h-z)\,\rho g z\, l\, dz = l\rho g \frac{h^3}{6}.
 $$
 
-Per l'equilibrio secondo le [equazioni cardinali della statica del corpo rigido](ref:chapter/8#p6), occorre applicare una forza esterna $\vec{F}_{\text{ext}} = -\vec{F}_{\text{tot}}$ e un momento $M_x^{\text{ext}} = -M_x^{\text{tot}}$; equivalentemente, basta applicare $-F_{\text{tot}}$ a una distanza $d$ dal fondo tale che $M_x^{\text{tot}} = F_{\text{tot}}\,d$, da cui
+Per l'equilibrio secondo le [equazioni cardinali della statica del corpo rigido](ref:chapter/8#p5), occorre applicare una forza esterna $\vec{F}_{\text{ext}} = -\vec{F}_{\text{tot}}$ e un momento $M_x^{\text{ext}} = -M_x^{\text{tot}}$; equivalentemente, basta applicare $-F_{\text{tot}}$ a una distanza $d$ dal fondo tale che $M_x^{\text{tot}} = F_{\text{tot}}\,d$, da cui
 
 $$
 d = \frac{l\rho g h^3/6}{\rho g l h^2/2} = \frac{h}{3}.
@@ -250,11 +250,7 @@ Dall'equazione di continuità segue la conseguenza qualitativa più usata nelle 
 
 ### Teorema di Bernoulli
 
-Vogliamo ora legare la velocità del fluido alla pressione e alla quota. Il risultato si ottiene applicando il [teorema dell'energia cinetica](ref:chapter/4#p3) a una porzione di fluido ideale che scorre in regime stazionario lungo un tubo di sezione variabile e non necessariamente orizzontale; la dimostrazione è riportata dopo l'enunciato.
-
-$$\frac12 \Delta m\, v_2^2 - \frac12 \Delta m\, v_1^2 = (p_1-p_2)\,\Delta V - \Delta m\, g\,(y_2-y_1)$$
-
-Sostituendo $\Delta m = \rho\, \Delta V$ e dividendo per $\Delta V$ si ottiene $p_1 + \rho g y_1 + \tfrac12 \rho v_1^2 = p_2 + \rho g y_2 + \tfrac12 \rho v_2^2$, cioè l'enunciato seguente.
+Vogliamo ora legare la velocità del fluido alla pressione e alla quota. Il risultato si ottiene applicando il [teorema dell'energia cinetica](ref:chapter/4#p3) a una porzione di fluido ideale che scorre in regime stazionario lungo un tubo di sezione variabile e non necessariamente orizzontale.
 
 **Teorema 11.4** (di Bernoulli). Sia un fluido ideale (incompressibile, non viscoso, $\eta = 0$) in moto in regime stazionario lungo un tubo di flusso, sottoposto alla sola forza peso (assunta uniforme) e privo di pompe, turbine o altri dispositivi che aggiungano o sottraggano energia al flusso. Allora lungo ogni tubo di flusso vale
 

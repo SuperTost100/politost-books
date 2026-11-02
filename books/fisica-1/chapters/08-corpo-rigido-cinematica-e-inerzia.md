@@ -344,88 +344,7 @@ Per il momento angolare relativo al centro di massa, essendo il centro di massa 
 
 **Errore tipico 8.3.** Un errore frequente è dimenticare il contributo $\frac{1}{2}Mv_{CM}^2$ quando il centro di massa è in moto (per esempio su una piattaforma mobile), limitandosi a calcolare solo l'energia cinetica di rotazione relativa: i due teoremi di König vanno applicati insieme, non sostituendo l'uno all'altro. Un secondo errore è usare $I_{CM}$ al posto di $I_z$ (o viceversa) senza prima verificare, tramite {{formula:8.13}}, a quale asse ci si riferisce: il momento d'inerzia non è una proprietà intrinseca del corpo, ma dipende sempre dalla posizione dell'asse scelto.
 
-## p5 | Ellissoide d'inerzia
-
-*Questa sezione va oltre il programma del corso: all'esame non viene chiesta.*
-
-### Il momento d'inerzia rispetto a un asse qualsiasi
-
-Nelle sezioni precedenti abbiamo calcolato il momento d'inerzia di un corpo rigido rispetto ad assi particolari, scelti per la loro simmetria. Vogliamo ora affrontare il problema generale: dato un corpo rigido e un punto $O$ solidale al corpo, come varia il momento d'inerzia al variare dell'asse di rotazione passante per $O$?
-
-Fissiamo in $O$ una terna di assi $x, y, z$ solidale al corpo. Un asse di rotazione passante per $O$ è individuato dal suo versore
-
-$$\hat{u} = \alpha \hat{u}_x + \beta \hat{u}_y + \gamma \hat{u}_z ,$$
-
-dove $\alpha, \beta, \gamma$ sono i coseni direttori dell'asse, cioè le componenti di $\hat{u}$ rispetto alla terna scelta. Per ogni punto $P_i$ del corpo, di vettore posizione $\vec{r}_i = x_i \hat{u}_x + y_i \hat{u}_y + z_i \hat{u}_z$, la distanza dall'asse di rotazione è $R_i = |\hat{u}\times\vec{r}_i|$, da cui il contributo al momento d'inerzia $m_i R_i^2 = m_i(\hat{u}\times\vec{r}_i)^2$.
-
-Sviluppando il prodotto vettoriale in componenti e sommando su tutti i punti del corpo, si ottiene la formula generale
-
-:::formula{id="8.16" label="Momento d'inerzia rispetto a un asse qualsiasi"}
-$$I = I_{xx}\alpha^2 + I_{yy}\beta^2 + I_{zz}\gamma^2 - 2I_{xy}\alpha\beta - 2I_{yz}\beta\gamma - 2I_{zx}\gamma\alpha ,$$
-:::
-
-valida per qualunque asse passante per $O$, dove $I_{xx}, I_{yy}, I_{zz}$ sono i momenti d'inerzia rispetto agli assi coordinati,
-
-$$I_{xx} = \sum_i m_i(y_i^2+z_i^2), \qquad I_{yy} = \sum_i m_i(x_i^2+z_i^2), \qquad I_{zz} = \sum_i m_i(x_i^2+y_i^2),$$
-
-e $I_{xy} = \sum_i m_i x_i y_i$, $I_{yz} = \sum_i m_i y_i z_i$, $I_{zx} = \sum_i m_i z_i x_i$ sono detti prodotti d'inerzia.
-
-### Il teorema di Poinsot e l'ellissoide d'inerzia
-
-Fissiamo una lunghezza di riferimento $\ell_0$ e un momento d'inerzia di riferimento $I_0$, espresso nella stessa unità usata per $I$, in modo che il rapporto $I_0/I$ sia adimensionale. Prendiamo, su ciascun asse passante per $O$, il punto $P$ tale che $OP = \ell_0\sqrt{I_0/I}$, dove $I$ è il momento d'inerzia relativo a quell'asse: questa distanza ha correttamente le dimensioni di una lunghezza, a differenza di $1/\sqrt{I}$. Indichiamo con $X,Y,Z$ le coordinate geometriche di $P$ nel sistema solidale al corpo, distinte dalle coordinate fisiche $x,y,z$ usate per definire momenti e prodotti d'inerzia. Poiché $P$ giace sull'asse di coseni direttori $\alpha,\beta,\gamma$ a distanza $OP$ da $O$, si ha $X = OP\,\alpha = \ell_0\sqrt{I_0/I}\,\alpha$, e analogamente $Y = \ell_0\sqrt{I_0/I}\,\beta$, $Z = \ell_0\sqrt{I_0/I}\,\gamma$. Sostituendo queste espressioni nella formula generale del momento d'inerzia e semplificando il fattore comune $I$, si ottiene l'equazione
-
-:::formula{id="8.17" label="Equazione dell'ellissoide d'inerzia"}
-$$I_{xx}X^2 + I_{yy}Y^2 + I_{zz}Z^2 - 2I_{xy}XY - 2I_{yz}YZ - 2I_{zx}ZX = I_0\ell_0^2 .$$
-:::
-
-Il luogo dei punti $P$ che soddisfano questa relazione, al variare dell'asse, è una superficie quadratica. Se il momento d'inerzia è positivo per ogni asse passante per $O$, la superficie è chiusa e prende il nome di **ellissoide d'inerzia del corpo relativo al punto $O$**.
-
-**Teorema 8.2** (di Poinsot). Se il momento d'inerzia è positivo per qualunque asse passante per $O$, l'ellissoide d'inerzia relativo a $O$ è una superficie chiusa, fissa rispetto al corpo e indipendente dalla scelta degli assi usati per calcolarlo: dipende solo dal punto $O$ e dalle costanti di riferimento $\ell_0, I_0$ scelte per costruirlo. La distanza tra $O$ e il punto $P$ in cui un asse passante per $O$ interseca l'ellissoide è $\ell_0\sqrt{I_0/I}$, dove $I$ è il momento d'inerzia del corpo rispetto a quell'asse: nota questa distanza, e fissati $\ell_0, I_0$, si ricava immediatamente $I$. Se invece esiste un asse per cui $I=0$, come può accadere per una distribuzione di massa collineare, la superficie non è chiusa e la costruzione dà una superficie degenere, non un ellissoide.
-
-Questo risultato è notevole: permette di determinare geometricamente il momento d'inerzia rispetto a qualsiasi asse per $O$ una volta nota la superficie dell'ellissoide, senza dover ripetere il calcolo per integrazione per ogni nuova direzione.
-
-### Assi principali d'inerzia
-
-Nel caso generale l'ellissoide ha un diametro massimo e uno minimo, tra loro perpendicolari; questi due assi, insieme a un terzo perpendicolare a entrambi, si chiamano **assi dell'ellissoide**. Se si scelgono come assi $x,y,z$ solidali al corpo proprio questi tre assi, tutti i prodotti d'inerzia si annullano e l'equazione dell'ellissoide si riduce alla forma canonica
-
-:::image{src="assets/ecad1c9b-ellissoide-inerzia-sezione.svg" alt="Ellisse che rappresenta una sezione dell'ellissoide d'inerzia, con l'asse maggiore orizzontale e l'asse minore verticale, entrambi passanti per il centro O." caption="Fig. 8.3 — Sezione dell'ellissoide d'inerzia nel piano dei due assi di diametro estremo: il diametro massimo e quello minimo sono perpendicolari tra loro."}
-:::
-
-:::formula{id="8.18" label="Ellissoide d'inerzia rispetto agli assi principali"}
-$$I_x X^2 + I_y Y^2 + I_z Z^2 = 1 ,$$
-:::
-
-dove $I_x, I_y, I_z$ sono detti **momenti principali d'inerzia** e i corrispondenti assi **assi principali d'inerzia** relativi a $O$.
-
-**Definizione 8.2.** Se il punto $O$ coincide con il centro di massa del corpo, si parla di **ellissoide centrale d'inerzia** e di **assi centrali d'inerzia**.
-
-Gli assi centrali d'inerzia sono sempre almeno tre e ortogonali tra loro; possono essercene di più se il corpo possiede particolari simmetrie. Se l'ellissoide è una sfera, cioè i momenti principali sono tutti uguali, ogni asse passante per $O$ è un asse principale d'inerzia.
-
-Nella pratica, gli assi principali coincidono con gli assi di simmetria del corpo quando questi esistono: per un cilindro o una sfera omogenea, ad esempio, l'asse geometrico di simmetria è sempre un asse principale.
-
-### Parallelismo tra $\vec{L}$ e $\vec{\omega}$
-
-Il motivo per cui gli assi principali sono importanti è il legame con il momento angolare.
-
-**Teorema 8.3.** Dato un corpo rigido e fissato un punto $O$ solidale al corpo, fisso in un riferimento inerziale (oppure, più in generale, considerando il momento angolare $\vec{L}_O$ calcolato con le velocità dei punti del corpo relative a $O$), esistono almeno tre assi passanti per $O$ e ortogonali tra loro tali che, quando il corpo ruota attorno a uno di essi, il momento angolare $\vec{L}_O$ è parallelo alla velocità angolare $\vec{\omega}$. Questi assi sono gli assi principali d'inerzia relativi a $O$. Se $O$ non è fisso nel riferimento inerziale e non coincide con il centro di massa, il momento angolare calcolato con le velocità assolute contiene in generale anche il termine $m\,\vec{r}_{CM/O}\times\vec{v}_O$, che può rendere il momento angolare non parallelo a $\vec{\omega}$ anche lungo un asse principale: in tal caso conviene sempre riferirsi al momento angolare relativo a $O$.
-
-In tal caso si può scrivere semplicemente
-
-:::formula{id="8.19" label="Parallelismo tra momento angolare e velocità angolare"}
-$$\vec{L} = I \vec{\omega}, \qquad L = L_z, \qquad L_{\perp} = 0 ,$$
-:::
-
-dove $I$ è il momento principale d'inerzia relativo a quell'asse. Il parallelismo vale anche, in particolare, quando l'asse di rotazione è un asse di simmetria del corpo: in questo caso, per ogni punto del corpo esiste un punto simmetrico dalla parte opposta dell'asse la cui componente ortogonale di momento angolare ha lo stesso modulo e verso opposto, cosicché la somma delle componenti ortogonali si annulla e resta solo $\vec{L} = \vec{L}_z = I_z\vec{\omega}$.
-
-Se invece l'asse di rotazione non è né un asse di simmetria né un asse principale d'inerzia, il momento angolare ha, in generale, anche una componente ortogonale all'asse, $\vec{L}_\perp \neq \vec{0}$. Se il corpo è vincolato a ruotare attorno a quell'asse, fisso nel riferimento inerziale, con velocità angolare $\vec{\omega}$ costante come vettore (stessa direzione e stesso modulo nel tempo), la componente $\vec{L}_\perp$ ruota insieme al corpo, cosicché $\vec{L}$ varia nel tempo descrivendo un moto di precessione attorno all'asse: questo richiede un momento di forze esterne non nullo, tipicamente fornito dai vincoli, anche a $\omega$ costante. Questa conclusione vale per una rotazione imposta attorno a un asse fisso non principale; un corpo rigido libero, in assenza di momento esterno, può invece ruotare istantaneamente attorno a una direzione non principale senza che tale direzione resti fissa nel corpo: in questo caso è la direzione dell'asse di rotazione (e quindi di $\vec{\omega}$) a variare nel tempo, mentre il momento angolare $\vec{L}$ resta costante nel riferimento inerziale.
-
-**Errore tipico 8.4**
-
-Un errore frequente consiste nell'assumere sempre $\vec{L} = I\vec{\omega}$ per un corpo rotante, indipendentemente dall'asse scelto. Questa relazione, con $I$ scalare e $\vec{L}$ parallelo a $\vec{\omega}$, vale solo se l'asse di rotazione è un asse principale d'inerzia (in particolare un asse di simmetria) relativo al polo usato; in caso contrario occorre tenere conto della componente $\vec{L}_\perp$, che in generale non è nulla anche se il corpo ruota attorno a un asse fisso con $\omega$ costante.
-
-Questa distinzione sarà utile nella sezione sulla [statica del corpo rigido](ref:chapter/8#p6) e in generale ogni volta che si debba scrivere il momento angolare di un corpo rigido in rotazione: conviene sempre verificare, prima di usare $L = I\omega$, che l'asse scelto sia effettivamente principale o di simmetria.
-
-## p6 | Statica del corpo rigido
+## p5 | Statica del corpo rigido
 
 ### Condizioni di equilibrio del corpo rigido
 
@@ -433,7 +352,7 @@ Per il punto materiale l'equilibrio statico si riduce all'annullamento della ris
 
 Le condizioni di equilibrio statico di un corpo rigido, note come equazioni cardinali della statica, richiedono quindi che si annullino simultaneamente la risultante e il momento risultante di tutte le forze esterne rispetto a un polo $O$ scelto a piacere.
 
-:::formula{id="8.20" label="Equazioni cardinali della statica del corpo rigido"}
+:::formula{id="8.16" label="Equazioni cardinali della statica del corpo rigido"}
 $$
 \begin{cases}
 \vec{R}^{(E)} = \sum_i \vec{F}_i^{(E)} = \vec{0} \\[4pt]
@@ -448,7 +367,7 @@ Questa osservazione completa quanto visto per la [prima equazione cardinale e qu
 
 Un fatto fondamentale, dimostrato in generale nella sezione sul [momento di una forza](ref:chapter/5#p2), è che se le due equazioni cardinali sono verificate per una certa scelta del polo $O$, allora sono verificate anche per qualsiasi altra scelta $O'$. L'equilibrio statico è dunque una proprietà del sistema, non del polo utilizzato per calcolare i momenti.
 
-**Errore tipico 8.5**
+**Errore tipico 8.4**
 
 Un errore frequente consiste nel pensare che, una volta verificato $\vec{R}=\vec{0}$, l'equilibrio sia garantito anche dal punto di vista rotazionale. Non è così: occorre sempre imporre separatamente anche l'annullamento del momento risultante. Un altro errore tipico è ritenere le reazioni vincolari, le tensioni e le forze d'attrito statico dei dati del problema: sono invece incognite che vanno determinate proprio imponendo le equazioni cardinali.
 
@@ -543,7 +462,7 @@ Nei problemi di equilibrio con attrito (travi incastrate, ruote su piani inclina
 
 Una scala omogenea di lunghezza $L = 5$ m e massa $m = 20$ kg è appoggiata, con l'estremo superiore, contro una parete verticale liscia e, con l'estremo inferiore, su un pavimento scabro con coefficiente di attrito statico $\mu_s = 0{,}4$. La scala forma un angolo $\theta = 60°$ con il pavimento. Si vuole verificare se la scala resta in equilibrio in questa configurazione.
 
-:::image{src="assets/84b6e82a-scala-geometria.svg" alt="Diagramma geometrico della scala inclinata di 60 gradi tra il pavimento scabro e la parete liscia" caption="Fig. 8.4 — Geometria della scala appoggiata: il piede, soggetto ad attrito statico sul pavimento scabro, e la sommità, a contatto con la parete verticale liscia, formano un angolo di 60° con il pavimento"}
+:::image{src="assets/84b6e82a-scala-geometria.svg" alt="Diagramma geometrico della scala inclinata di 60 gradi tra il pavimento scabro e la parete liscia" caption="Fig. 8.3 — Geometria della scala appoggiata: il piede, soggetto ad attrito statico sul pavimento scabro, e la sommità, a contatto con la parete verticale liscia, formano un angolo di 60° con il pavimento"}
 :::
 
 Le forze esterne applicate alla scala sono: il peso $m\vec{g}$, applicato nel punto medio della scala; la reazione normale della parete $\vec{N}_p$, orizzontale, applicata all'estremo superiore (la parete è liscia, quindi non vi è componente tangenziale); la reazione normale del pavimento $\vec{N}_s$, verticale, e la forza di attrito statico $\vec{f}_s$, orizzontale, entrambe applicate all'estremo inferiore.
@@ -587,7 +506,7 @@ ma non impone $|f_s| = \mu_s N$.
 
 Una mensola rigida orizzontale a sbalzo, di peso trascurabile e lunghezza $l = 0{,}5$ m, sporge da una parete e sostiene all'estremo libero $B$ un carico $F = 100$ N diretto verso il basso. La mensola è trattenuta da due pioli posti nella parete, $A$ in alto e $A'$ in basso, distanti $d = 0{,}1$ m. I pioli esercitano sulla mensola forze normali orizzontali uguali e opposte, di modulo $N$; il coefficiente di attrito statico ai contatti è $\mu_s = 0{,}5$. Determiniamo la normale necessaria all'equilibrio e verifichiamo la condizione di aderenza.
 
-:::image{src="assets/84b6e82a-mensola-pioli.svg" alt="Diagramma della mensola orizzontale incastrata tra due pioli A e A' nella parete, con il carico applicato all'estremo libero B" caption="Fig. 8.5 — Schema della mensola a sbalzo: i pioli A e A' nella parete, distanti d = 0,1 m, trattengono la mensola per attrito, mentre il carico F = 100 N è applicato all'estremo libero B a distanza l = 0,5 m dalla parete"}
+:::image{src="assets/84b6e82a-mensola-pioli.svg" alt="Diagramma della mensola orizzontale incastrata tra due pioli A e A' nella parete, con il carico applicato all'estremo libero B" caption="Fig. 8.4 — Schema della mensola a sbalzo: i pioli A e A' nella parete, distanti d = 0,1 m, trattengono la mensola per attrito, mentre il carico F = 100 N è applicato all'estremo libero B a distanza l = 0,5 m dalla parete"}
 :::
 
 Le forze esterne applicate alla mensola sono: il carico $\vec{F} = -F\,\hat{u}_y$ in $B$; la reazione normale orizzontale $\vec{N}_A$ nel piolo superiore $A$ e la reazione normale orizzontale $\vec{N}_{A'} = -\vec{N}_A$ nel piolo inferiore $A'$, entrambe di modulo $N$; le forze di attrito statico verticali $\vec{f}_A$ e $\vec{f}_{A'}$, applicate rispettivamente in $A$ e $A'$.
@@ -613,13 +532,13 @@ Sostituendo i dati numerici, $N = \dfrac{100\ \text{N}\cdot 0{,}5\ \text{m}}{0{,
 
 La forza d'attrito complessiva richiesta è $f_A+f_{A'}=F=100$ N. Per controllare l'aderenza ai due contatti, occorre verificare che esista una ripartizione delle forze d'attrito che soddisfi $|f_A|\leq\mu_s N$ e $|f_{A'}|\leq\mu_s N$. Una ripartizione simmetrica, $f_A=f_{A'}=50$ N, è possibile perché ciascun contatto può esercitare al massimo $\mu_sN=0{,}5\cdot500\ \text{N}=250$ N. La mensola resta quindi in equilibrio senza slittare.
 
-**Errore tipico 8.6**
+**Errore tipico 8.5**
 
 È un errore frequente scrivere direttamente $f_s = \mu_s N\cos\theta$ (o $f_s=\mu_s mg\cos\theta$) come se l'attrito statico assumesse sempre il suo valore massimo: questo vale soltanto al limite di distacco, non in condizioni generali di equilibrio. In generale il valore vero di $f_s$ dipende dalle altre forze in gioco (tensioni, pesi, angoli) e deve essere ricavato risolvendo il sistema completo delle equazioni cardinali, come già segnalato nella sezione sulle [forze di attrito](ref:chapter/3#p6).
 
 Va infine ricordato, come richiamato nella sezione sul [metodo sperimentale e misure](ref:chapter/1#p2) a proposito dell'analisi dimensionale, che nelle equazioni cardinali ogni uguaglianza deve avere membri omogenei: non ha senso eguagliare un vettore a uno scalare, errore che si commette facilmente quando si scrivono momenti e forze senza tenere traccia della loro natura vettoriale.
 
-## p7 | Come viene chiesto all'esame
+## p6 | Come viene chiesto all'esame
 
 Il capitolo sul corpo rigido è comparso in 4 delle 6 sessioni d'esame passate. Il tipo di esercizio più frequente è l'urto tra un punto materiale e un corpo rigido, seguito dalla dinamica del rotolamento con carrucole e piani inclinati. Nello scritto da due ore questi argomenti stanno nei problemi strutturati a domande aperte, dove le richieste successive dipendono dai risultati delle precedenti. Un errore iniziale si propaga quindi su tutto il problema. Le dimostrazioni, per esempio quella della relazione sulle velocità nel corpo rigido o del teorema di Huygens-Steiner, possono invece uscire nella domanda di teoria o all'orale.
 
@@ -632,7 +551,7 @@ Il metodo, passo per passo:
 1. Individuare il sistema (punto più corpo rigido) e scegliere un **polo** fisso, dichiarandolo. Con un'asta incernierata il polo naturale è il vincolo, perché la reazione vincolare ha momento nullo rispetto a esso.
 2. Verificare quali grandezze si conservano durante l'urto, che è istantaneo. Il momento angolare rispetto al polo si conserva se i momenti esterni sono nulli o trascurabili, come spiegato in [Urti con corpi rigidi](ref:chapter/9#p5). La quantità di moto invece non si conserva se c'è un vincolo fisso, perché la reazione del vincolo è impulsiva.
 3. Calcolare il momento d'inerzia del corpo rispetto all'asse di rotazione, usando i valori noti ([Momento d'inerzia](ref:chapter/8#p3)) e, se l'asse non passa per il centro di massa, il trasporto di Huygens-Steiner ([Teoremi di Huygens-Steiner e di König](ref:chapter/8#p4)).
-4. Scrivere il momento angolare prima e dopo l'urto: $L = r\,m\,v$ per il punto (con il braccio rispetto al polo) e $L = I\omega$ per il rigido. Se dopo l'urto il punto resta attaccato, il suo contributo diventa $m r^2 \omega$ e va sommato a $I$. Si risolve in $\omega$.
+4. Scrivere il momento angolare prima e dopo l'urto: $L = r\,m\,v$ per il punto (con il braccio rispetto al polo). Per un rigido vincolato a ruotare attorno a un asse fisso si usa la componente assiale $L_z = I_z\omega$; la forma vettoriale $\vec L = I\vec\omega$ vale solo per un asse principale o di simmetria. Per un rigido libero il momento angolare rispetto al polo comprende anche il contributo orbitale del centro di massa, $\vec r_{CM}\times m\vec v_{CM}$, secondo il primo teorema di König. Se dopo l'urto il punto resta attaccato, il suo contributo diventa $m r^2 \omega$ e va sommato a $I$. Si risolve in $\omega$.
 5. Per l'energia dissipata, confrontare l'energia cinetica prima e dopo, usando {{formula:8.15}} se il corpo si muove anche di traslazione.
 6. Controllare il segno del verso di rotazione (con la regola della mano destra) e le dimensioni.
 
@@ -701,4 +620,4 @@ Esempi:
 
 ### Quello che non è ancora uscito
 
-Nelle sessioni qui esaminate non compaiono esercizi di sola statica (scale, travi, mensole) né calcoli espliciti con l'ellissoide d'inerzia. Gli argomenti di [Statica del corpo rigido](ref:chapter/8#p6) e di [Ellissoide d'inerzia](ref:chapter/8#p5) restano comunque utili come base di teoria, perché lo scritto prevede anche domande aperte e l'orale può approfondirli.
+Nelle sessioni qui esaminate non compaiono esercizi di sola statica (scale, travi, mensole). Gli argomenti di [Statica del corpo rigido](ref:chapter/8#p5) restano comunque utili come base di teoria, perché lo scritto prevede anche domande aperte e l'orale può approfondirli.

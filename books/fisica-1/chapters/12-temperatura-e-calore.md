@@ -40,7 +40,7 @@ Un sistema termodinamico è descritto da un numero ristretto di grandezze dette 
 
 **Definizione 12.5** (Equilibrio termodinamico). Lo stato di un sistema è detto di equilibrio quando le variabili termodinamiche che lo descrivono sono costanti nel tempo; in tal caso le variabili vengono anche dette variabili di stato. Occorre tuttavia distinguere l'equilibrio termodinamico dal semplice stato stazionario: in quest'ultimo le variabili sono costanti nel tempo, ma possono persistere flussi macroscopici attraverso il sistema, come accade in una parete attraversata da un flusso di calore costante. Nell'equilibrio termodinamico, invece, non deve sussistere alcun flusso macroscopico né alcun processo spontaneo in atto. L'equilibrio termodinamico richiede il soddisfacimento simultaneo di tre condizioni:
 
-1. equilibrio meccanico, cioè annullamento della risultante e del momento risultante delle forze (si veda la condizione [formula (8.20)](ref:formula/8.20) già discussa per il corpo rigido, nella sezione [Statica del corpo rigido](ref:chapter/8#p6));
+1. equilibrio meccanico, cioè annullamento della risultante e del momento risultante delle forze (si veda la condizione [formula (8.16)](ref:formula/8.16) già discussa per il corpo rigido, nella sezione [Statica del corpo rigido](ref:chapter/8#p5));
 2. equilibrio chimico, cioè assenza di evoluzione netta della composizione del sistema: possono in linea di principio svolgersi reazioni dirette e inverse, purché il loro effetto complessivo sulla composizione sia nullo;
 3. equilibrio termico, cioè uniformità della temperatura in ogni punto del sistema.
 
@@ -351,82 +351,7 @@ Questo esempio mostra il metodo generale per i bilanci con cambiamento di fase: 
 
 Un errore frequente è scrivere direttamente $Q_1=c_1m_1(T_{eq}-T_1)$ senza prima verificare se durante lo scambio di calore avviene un cambiamento di fase: se la temperatura di equilibrio ipotizzata supera (o è inferiore a) la temperatura di transizione di una delle sostanze, bisogna scomporre il calcolo in più fasi (riscaldamento/raffreddamento più eventuale calore latente), come nel secondo esempio. Un secondo errore, segnalato anche a proposito del primo principio, è trattare $Q$ e $W$ come funzioni di stato scrivendo $\Delta Q_{A\to B}$ o $\Delta W_{A\to B}$: questa notazione presuppone che calore e lavoro siano definiti punto per punto nello spazio degli stati termodinamici, cosa falsa, poiché solo l'energia interna è una funzione di stato. Occorre quindi scrivere $Q_{A\to B}$ o semplicemente $Q$ per indicare il calore scambiato durante la trasformazione, mai una sua "variazione".
 
-## p6 | Dilatazione termica
-
-La dilatazione termica è il fenomeno per cui le dimensioni di un corpo variano al variare della temperatura, a pressione costante. Nei solidi e nei liquidi si osserva che il volume aumenta al crescere di $T$; questo stesso principio è alla base del funzionamento dei termometri a liquido, già incontrati nella sezione su [Temperatura e termometria](ref:chapter/12#p3).
-
-### Dilatazione lineare
-
-**Definizione 12.9** (dilatazione lineare). Se la variazione di temperatura $\Delta T$ è sufficientemente piccola e le dimensioni del corpo variano poco rispetto al valore iniziale, la variazione $\Delta L$ di una lunghezza $L$ del corpo è proporzionale a $\Delta T$, a pressione costante.
-
-:::formula{id="12.16" label="Dilatazione lineare"}
-$$\Delta L = \lambda L \Delta T$$
-:::
-
-Il coefficiente $\lambda$ si chiama coefficiente di dilatazione lineare, è caratteristico del materiale ed esprime la variazione relativa di lunghezza per variazione unitaria di temperatura.
-
-:::formula{id="12.17" label="Coefficiente di dilatazione lineare"}
-$$\lambda = \frac{1}{L}\frac{\Delta L}{\Delta T}$$
-:::
-
-La lunghezza finale dopo la dilatazione risulta quindi $L_{\mathrm{fin}} = L + \Delta L = L(1 + \lambda \Delta T)$.
-
-### Dilatazione volumica
-
-Per calcolare la variazione di volume occorre distinguere due casi: i corpi isotropi, in cui $\lambda$ ha lo stesso valore in tutte le direzioni e la forma del corpo si conserva nella dilatazione, e i corpi anisotropi (tipicamente i solidi cristallini), in cui $\lambda$ dipende dalla direzione considerata.
-
-Per un corpo isotropo a forma di parallelepipedo di lati $l_1, l_2, l_3$ e volume $V = l_1 l_2 l_3$, alla temperatura $T + \Delta T$ ciascun lato si dilata dello stesso fattore $(1+\lambda \Delta T)$, quindi
-
-$$V + \Delta V = l_1(1+\lambda \Delta T)\, l_2(1+\lambda \Delta T)\, l_3(1+\lambda \Delta T) = V(1+\lambda \Delta T)^3 \approx V(1 + 3\lambda \Delta T),$$
-
-dove si è trascurato il contributo dei termini in $(\lambda \Delta T)^2$ e $(\lambda \Delta T)^3$, legittimo perché $\lambda \Delta T \ll 1$.
-
-Si definisce allora il coefficiente di dilatazione cubica (o volumica) $\alpha$ come la variazione relativa di volume per variazione unitaria di temperatura.
-
-:::formula{id="12.18" label="Dilatazione volumica"}
-$$\alpha = \frac{1}{V}\frac{\Delta V}{\Delta T}, \qquad \Delta V = V\alpha \Delta T$$
-:::
-
-Per un corpo isotropo si ha $\alpha = 3\lambda$, indipendentemente dalla forma dell'oggetto; analogamente, per una lastra piana isotropa il coefficiente di dilatazione superficiale vale $2\lambda$.
-
-Poiché la massa del corpo non cambia con la temperatura, all'aumentare del volume la densità diminuisce. Un'eccezione notevole è l'acqua tra $0\ \mathrm{^\circ C}$ e $4\ \mathrm{^\circ C}$, dove il coefficiente di dilatazione cubica è negativo: il volume diminuisce all'aumentare di $T$, cioè la densità aumenta, raggiungendo il massimo a $4\ \mathrm{^\circ C}$.
-
-:::image{src="assets/31f210d5-dilatazione-anomala-acqua.svg" alt="Grafico della densità dell'acqua in funzione della temperatura, con un massimo a 4 gradi Celsius" caption="Fig. 12.5 — Densità dell'acqua in funzione della temperatura tra 0 °C e 10 °C: il massimo si ha a 4 °C, dove il coefficiente di dilatazione cubica cambia segno."}
-:::
-
-### Dilatazione nei gas: legge isobara
-
-Anche per un gas a pressione costante si osserva sperimentalmente che il volume varia linearmente con la temperatura (legge isobara di Volta-Gay Lussac), con $\alpha$ coefficiente dipendente dal tipo di gas e praticamente costante lungo la trasformazione.
-
-:::formula{id="12.19" label="Legge isobara di Volta-Gay Lussac"}
-$$V = V_0\left(1 + \alpha\, t(^{\circ}\mathrm{C})\right)$$
-:::
-
-Questa legge empirica, con $t$ espressa in gradi Celsius e $V_0$ il volume a $t=0\ \mathrm{^\circ C}$, sarà ripresa e formalizzata nella trattazione dell'equazione di stato dei gas ideali, in [Gas ideali](ref:chapter/13#p3).
-
-### Esempio svolto
-
-Una sbarra di alluminio ($\lambda = 2,4\cdot 10^{-5}\ \mathrm{K^{-1}}$) ha lunghezza $L_0 = 2,000\ \mathrm{m}$ a $t_0 = 20\ \mathrm{^\circ C}$. Si vuole calcolare la sua lunghezza e il suo allungamento quando viene riscaldata a $t_1 = 120\ \mathrm{^\circ C}$, e la variazione percentuale del suo volume (supponendo la sbarra isotropa).
-
-Dati: $L_0 = 2,000\ \mathrm{m}$, $\lambda = 2,4\cdot 10^{-5}\ \mathrm{K^{-1}}$, $\Delta T = t_1 - t_0 = 100\ \mathrm{K}$ (una variazione di temperatura in gradi Celsius coincide numericamente con quella in kelvin, come visto in [Temperatura e termometria](ref:chapter/12#p3)).
-
-Applicando {{formula:12.16}}:
-
-$$\Delta L = \lambda L_0 \Delta T = 2,4\cdot 10^{-5}\ \mathrm{K^{-1}} \cdot 2,000\ \mathrm{m} \cdot 100\ \mathrm{K} = 4,8\cdot 10^{-3}\ \mathrm{m}.$$
-
-Quindi $L_{\mathrm{fin}} = L_0 + \Delta L = 2,0048\ \mathrm{m}$.
-
-Per la variazione relativa di volume, essendo la sbarra isotropa, $\alpha = 3\lambda = 7,2\cdot 10^{-5}\ \mathrm{K^{-1}}$, e tramite {{formula:12.18}}:
-
-$$\frac{\Delta V}{V} = \alpha \Delta T = 7,2\cdot 10^{-5}\ \mathrm{K^{-1}} \cdot 100\ \mathrm{K} = 7,2\cdot 10^{-3} = 0,72\%.$$
-
-Controllo: le unità si cancellano correttamente ($\mathrm{K^{-1}}\cdot \mathrm{K} = $ numero puro), e l'ordine di grandezza (allungamento di pochi millimetri su due metri, variazione di volume inferiore all'1 %) è coerente con l'ipotesi $\lambda \Delta T \ll 1$ che ha permesso di trascurare i termini quadratici nella derivazione di $\alpha$.
-
-**Errore tipico 12.7**
-
-Un errore frequente consiste nell'applicare {{formula:12.18}} usando $\lambda$ al posto di $\alpha = 3\lambda$, oppure nell'omettere la conversione tra $\Delta T$ in kelvin e in gradi Celsius quando compaiono anche altre grandezze termodinamiche nello stesso esercizio (ad esempio pressione e volume di un gas, da convertire in unità SI prima di sostituire nei calcoli). Come già osservato in generale, un risultato privo delle corrette unità di misura nei passaggi intermedi, o calcolato senza convertire preventivamente i dati, è una scrittura priva di significato, un errore più grave di un semplice errore numerico.
-
-## p7 | Trasmissione del calore
+## p6 | Trasmissione del calore
 
 Il secondo principio della termodinamica stabilisce che il calore fluisce spontaneamente da un sistema a temperatura più alta verso uno a temperatura più bassa; quando due sistemi in grado di scambiare calore raggiungono la stessa temperatura, si trovano in equilibrio termico, come stabilito dal principio zero visto in [Sistemi termodinamici ed equilibrio](ref:chapter/12#p2). Il processo con cui l'energia fluisce da una regione più calda a una più fredda si chiama trasmissione del calore, e avviene secondo tre meccanismi distinti: conduzione, convezione e irraggiamento.
 
@@ -436,7 +361,7 @@ Si ha **conduzione** quando, in un corpo esteso con temperatura non uniforme, c'
 
 Si consideri una parete di superficie $A$ e spessore infinitesimo $dx$, con un gradiente di temperatura al suo interno. La quantità di calore scambiata attraverso la parete nel tempo $dt$ è indicata con $\delta Q$ ed è data dalla **legge di Fourier**
 
-:::formula{id="12.20" label="Legge di Fourier per la conduzione"}
+:::formula{id="12.16" label="Legge di Fourier per la conduzione"}
 $$\delta Q = -k(T)\,\frac{dT}{dx}\,A\,dt$$
 :::
 
@@ -450,13 +375,13 @@ $$\frac{\delta Q}{dt} = -kA\,\frac{dT}{dx} \quad\Rightarrow\quad dT = -\frac{1}{
 
 Se $k$ non dipende dalla temperatura e il regime è stazionario (cioè $\delta Q/dt$ è costante nel tempo e nello spazio lungo la parete), integrando questa equazione fra $x=0$ (dove la temperatura è $T_1$) e la generica coordinata $x$ si ottiene il profilo lineare
 
-:::formula{id="12.21" label="Profilo di temperatura in regime stazionario"}
+:::formula{id="12.17" label="Profilo di temperatura in regime stazionario"}
 $$T(x) = T_1 - \frac{1}{kA}\frac{\delta Q}{dt}\,x$$
 :::
 
 valido per una parete piana omogenea in condizioni stazionarie, con $k$ costante.
 
-:::image{src="assets/0dc82005-profilo-temperatura-parete.svg" alt="Temperatura decrescente linearmente attraverso una parete piana" caption="Fig. 12.6 — Profilo stazionario di temperatura T(x) in una parete piana soggetta a conduzione, con pendenza costante proporzionale al flusso di calore"}
+:::image{src="assets/0dc82005-profilo-temperatura-parete.svg" alt="Temperatura decrescente linearmente attraverso una parete piana" caption="Fig. 12.5 — Profilo stazionario di temperatura T(x) in una parete piana soggetta a conduzione, con pendenza costante proporzionale al flusso di calore"}
 :::
 
 ### Convezione
@@ -465,7 +390,7 @@ All'interno di un fluido il calore si propaga soprattutto per **convezione**: il
 
 Il passaggio di calore tra un solido a temperatura $T$ e il fluido circostante a temperatura $T_0 < T$ coinvolge in generale conduzione, convezione e irraggiamento insieme, ed è quindi complesso da descrivere esattamente. Tuttavia, se $\Delta T = T - T_0$ non è troppo grande, è possibile descriverlo in prima approssimazione con la legge di Newton del raffreddamento
 
-:::formula{id="12.22" label="Legge di Newton per lo scambio convettivo"}
+:::formula{id="12.18" label="Legge di Newton per lo scambio convettivo"}
 $$Q = h\,(T-T_0)\,S\,t$$
 :::
 
@@ -477,18 +402,18 @@ A differenza di conduzione e convezione, l'**irraggiamento** non richiede un mez
 
 La potenza irraggiata per unità di superficie (potere emissivo) da un corpo con emissività $e$ alla temperatura assoluta $T$ (in kelvin) è data dalla **legge di Stefan-Boltzmann**
 
-:::formula{id="12.23" label="Legge di Stefan-Boltzmann"}
+:::formula{id="12.19" label="Legge di Stefan-Boltzmann"}
 $$\epsilon = \sigma e T^4$$
 :::
 
 dove $\sigma = 5{,}67\times10^{-8}\ \mathrm{W/(m^2\cdot K^4)}$ è la costante di Stefan-Boltzmann e $0 \le e \le 1$ è l'emissività del corpo, che dipende dalla natura della superficie. La potenza totale irraggiata da un corpo di superficie $S$ si ottiene moltiplicando $\epsilon$ per $S$, cioè $P_{irr} = \sigma e S T^4$. Ad esempio, un corpo con $e = 0{,}90$, $S = 1{,}0\ \mathrm{m^2}$ e $T = 300\ \mathrm{K}$ irraggia $P_{irr} = 5{,}67\times10^{-8}\times0{,}90\times1{,}0\times300^4 \approx 413\ \mathrm{W}$.
 
-:::image{src="assets/0dc82005-potere-emissivo-stefan-boltzmann.svg" alt="Curva del potere emissivo che cresce come la quarta potenza della temperatura assoluta" caption="Fig. 12.7 — Potere emissivo ε = σeT⁴ in funzione della temperatura assoluta T, per e = 0,90: la crescita è fortemente non lineare, alla quarta potenza"}
+:::image{src="assets/0dc82005-potere-emissivo-stefan-boltzmann.svg" alt="Curva del potere emissivo che cresce come la quarta potenza della temperatura assoluta" caption="Fig. 12.6 — Potere emissivo ε = σeT⁴ in funzione della temperatura assoluta T, per e = 0,90: la crescita è fortemente non lineare, alla quarta potenza"}
 :::
 
 Questa espressione dà soltanto la potenza emessa dal corpo, non lo scambio netto con l'ambiente circostante, che a sua volta irraggia verso il corpo. Se il corpo a temperatura $T$ è interamente circondato da un ambiente a temperatura uniforme $T_0$, che si comporta come una superficie molto più estesa del corpo e capace di assorbire e riemettere come un corpo nero, il corpo assorbe dall'ambiente una potenza pari a $\sigma e S T_0^4$. Lo scambio netto di potenza per irraggiamento è allora la differenza fra potenza emessa e potenza assorbita
 
-:::formula{id="12.24" label="Potenza netta scambiata per irraggiamento"}
+:::formula{id="12.20" label="Potenza netta scambiata per irraggiamento"}
 $$P_{netta} = \sigma e S \left(T^4 - T_0^4\right)$$
 :::
 
@@ -496,7 +421,7 @@ se $T > T_0$ il corpo cede calore netto all'ambiente, mentre se $T < T_0$ ne ass
 
 Poiché la dipendenza dalla temperatura è alla quarta potenza, l'irraggiamento diventa il meccanismo dominante alle alte temperature, mentre a basse temperature resta spesso trascurabile rispetto a conduzione e convezione: è questo il principio su cui si basa il vaso Dewar, un contenitore a doppia parete argentata sotto vuoto, che elimina conduzione e convezione nell'intercapedine lasciando solo una piccola componente di irraggiamento.
 
-:::image{src="assets/0dc82005-vaso-dewar.png" alt="Vaso Dewar a doppia parete in sezione, con intercapedine sotto vuoto e superficie argentata" caption="Fig. 12.8 — Un vaso Dewar a doppia parete argentata sotto vuoto: l'intercapedine priva d'aria elimina conduzione e convezione, lasciando solo una piccola componente di irraggiamento. Immagine: B. Burger 1907 / Wikimedia Commons, Public domain"}
+:::image{src="assets/0dc82005-vaso-dewar.png" alt="Vaso Dewar a doppia parete in sezione, con intercapedine sotto vuoto e superficie argentata" caption="Fig. 12.7 — Un vaso Dewar a doppia parete argentata sotto vuoto: l'intercapedine priva d'aria elimina conduzione e convezione, lasciando solo una piccola componente di irraggiamento. Immagine: B. Burger 1907 / Wikimedia Commons, Public domain"}
 :::
 
 ### Esempio svolto
@@ -515,13 +440,13 @@ Il risultato è positivo perché il calore fluisce nel verso delle temperature d
 
 ### Errori tipici
 
-**Errore tipico 12.8**
+**Errore tipico 12.7**
 
 Uno sbaglio frequente consiste nell'usare le grandezze $Q$ e $W$ come se fossero funzioni di stato, scrivendo ad esempio $\Delta Q$ per indicare il calore scambiato in una trasformazione: il primo principio della termodinamica stabilisce invece che né il calore né il lavoro sono funzioni dello stato termodinamico, mentre l'energia interna lo è. Lo stesso principio vale per la potenza termica scambiata per conduzione, convezione o irraggiamento, che è sempre una grandezza di scambio (dipendente dal processo), non una variazione di una funzione di stato.
 
 Un secondo errore comune è non convertire o uniformare le unità di misura prima di sostituire nelle formule, ad esempio mescolando centimetri e metri, oppure gradi Celsius e kelvin nella legge di Stefan-Boltzmann, che richiede la temperatura assoluta: un errore di questo tipo può produrre risultati sbagliati anche di diversi ordini di grandezza.
 
-## p8 | Come viene chiesto all'esame
+## p7 | Come viene chiesto all'esame
 
 Il capitolo «Temperatura e calore» è comparso in 3 sessioni d'esame su 6. In nessuna delle tre è stato chiesto da solo. Compare sempre dentro un problema strutturato di termodinamica, di solito come sorgente termica fatta di acqua e ghiaccio oppure come bilancio di calore con un cambiamento di fase. Il tipo più frequente è il problema sul gas ideale che scambia calore con una miscela acqua-ghiaccio.
 
@@ -535,11 +460,11 @@ Il problema numero 3 della prova scritta, di due ore, è quello che ha ospitato 
 
 1. Elenca i dati con le unità SI. Riconosci che la miscela acqua-ghiaccio fissa la temperatura della sorgente a circa $273$ K, cioè $0\ ^\circ\text{C}$, come spiega [Temperatura e termometria](ref:chapter/12#p3). Se ti servono i kelvin, converti con {{formula:12.2}}.
 2. Identifica ogni trasformazione (isoterma, isobara, isocora, adiabatica, reversibile o no) con le definizioni di [Sistemi termodinamici ed equilibrio](ref:chapter/12#p2). Ricava gli stati mancanti con l'equazione di stato dei gas ideali ([formula (13.3)](ref:formula/13.3), vedi [Gas ideali](ref:chapter/13#p3)).
-3. Per ogni tratto calcola $W$ come $\int p\,dV$ ([Calore e lavoro](ref:chapter/12#p4)). Per l'isoterma reversibile usa [formula (13.8)](ref:formula/13.8).
+3. Per ogni tratto quasi statico con solo lavoro di espansione calcola $W$ come $\int p\,dV$ ([Calore e lavoro](ref:chapter/12#p4)); per gli altri tratti usa la pressione esterna o il modello di lavoro pertinente. Per l'isoterma reversibile usa [formula (13.8)](ref:formula/13.8).
 4. Ricava $\Delta U$ da $n\,c_V\,\Delta T$ e $Q$ dal primo principio, $\Delta U = Q - W$ ([Primo principio ed energia interna](ref:chapter/13#p2)).
 5. Se la sorgente è una miscela acqua-ghiaccio, il calore ceduto o assorbito dal gas fa fondere o solidificare una massa di ghiaccio. Calcolala con $|Q| = \lambda m$, come in [Calorimetria](ref:chapter/12#p5).
 6. Per l'entropia usa le formule del gas ideale per ciascun tratto ([formula (14.16)](ref:formula/14.16)) e quella della sorgente a temperatura costante. Somma poi gas e sorgente per ottenere l'universo ([Calcolo delle variazioni di entropia](ref:chapter/14#p6)).
-7. Controlla i segni: in una compressione $W < 0$ e il gas cede calore, quindi il ghiaccio fonde. Controlla anche le unità e l'ordine di grandezza.
+7. Controlla i segni: nella compressione isoterma reversibile descritta qui, $Q = W < 0$ e il gas cede calore, quindi il ghiaccio fonde. Controlla anche le unità e l'ordine di grandezza.
 
 **Errori tipici.**
 
@@ -559,7 +484,7 @@ Il problema numero 3 della prova scritta, di due ore, è quello che ha ospitato 
 1. Converti le temperature in kelvin con {{formula:12.2}}. Nei rendimenti e nelle entropie servono sempre temperature assolute.
 2. Osserva che il serbatoio caldo non ha temperatura costante. A ogni istante il rendimento è quello di Carnot, [formula (14.3)](ref:formula/14.3), ma $T_{\text{acqua}}$ diminuisce ([Macchine termiche e frigoriferi](ref:chapter/14#p2)).
 3. Stabilisci la condizione di arresto. La macchina smette di produrre lavoro quando la temperatura dell'acqua raggiunge quella del ghiaccio. Finché resta ghiaccio, il serbatoio freddo rimane a $0\ ^\circ\text{C}$ perché fonde a temperatura costante. Verifica che la massa iniziale di ghiaccio basti a questo scopo, cioè che non fonda tutta prima dell'arresto. Se invece fonde tutta, l'acqua ottenuta si scalda e l'arresto avviene a una temperatura comune superiore a $0\ ^\circ\text{C}$.
-4. Calcola il calore scambiato dall'acqua con $Q = C\,\Delta T$, con $C = cm$ (la capacità termica di [Calorimetria](ref:chapter/12#p5)). Calcola quello ricevuto dal ghiaccio con $\lambda m$. Il lavoro è la differenza tra i due, per il primo principio applicato al ciclo.
+4. Calcola il calore scambiato dall'acqua con $Q = C\,\Delta T$, con $C = cm$ (la capacità termica di [Calorimetria](ref:chapter/12#p5)). Calcola quello ricevuto dal ghiaccio con $\lambda m$ e, se il ghiaccio fonde tutto, aggiungi il calore $c\,m\,(T_f - 0\ ^\circ\text{C})$ che scalda l'acqua di fusione fino alla temperatura finale $T_f$. Il lavoro è la differenza tra i due, per il primo principio applicato al ciclo.
 5. Per una macchina reversibile, imponi che l'entropia dell'universo non vari. Per l'acqua usa [formula (14.20)](ref:formula/14.20); per il ghiaccio che fonde usa [formula (14.22)](ref:formula/14.22), imponendo che le due variazioni abbiano lo stesso modulo. Se rimane ghiaccio fino all'arresto, si pone $T_f = 273{,}15\ \text{K}$ e il bilancio entropico dà la massa fusa. Solo nel caso di fusione completa si risolve per una temperatura finale comune, senza integrare il rendimento istante per istante ([Secondo principio](ref:chapter/14#p3)).
 
 **Errori tipici.**
@@ -573,4 +498,4 @@ Il problema numero 3 della prova scritta, di due ore, è quello che ha ospitato 
 
 ### Altri temi del capitolo
 
-Dilatazione termica e trasmissione del calore (conduzione, irraggiamento) non compaiono tra i temi di queste tre sessioni. Non puoi dedurre che non verranno chiesti, ma la loro presenza in test o domande aperte non è documentata qui.
+La trasmissione del calore (conduzione, irraggiamento) non compare tra i temi di queste tre sessioni. Non puoi dedurre che non verrà chiesta, ma la sua presenza in test o domande aperte non è documentata qui.

@@ -9,7 +9,7 @@ Le forze tra le particelle determinano molte proprietà dei materiali: spiegano 
 
 Per affrontare il capitolo, è necessario conoscere il legame chimico e saper distinguere atomi, ioni e molecole, oltre a riconoscere la polarità delle molecole. Sono utili anche le idee di quantità di sostanza, energia e temperatura, che permettono di seguire i cambiamenti di fase e i calcoli associati.
 
-Al termine saprai distinguere le forze intermolecolari e usarle per confrontare le temperature di ebollizione; interpretare tensione di vapore, transizioni di fase e diagrammi di stato; calcolare il calore scambiato durante un cambiamento di fase o una curva di riscaldamento. Saprai inoltre classificare i solidi in base alla struttura e al tipo di legame, descrivere le principali celle cristalline e confrontare impaccamenti, durezza, allotropi e leghe, collegando la struttura microscopica alle proprietà osservabili.
+Al termine saprai distinguere le forze intermolecolari e usarle per confrontare le temperature di ebollizione; interpretare tensione di vapore, transizioni di fase e diagrammi di stato; calcolare il calore scambiato durante un cambiamento di fase o una curva di riscaldamento. Saprai inoltre classificare i solidi in base alla struttura e al tipo di legame, descrivere le principali celle cristalline e confrontare impaccamenti e durezza, collegando la struttura microscopica alle proprietà osservabili.
 
 ## p2 | Forze intermolecolari
 
@@ -17,7 +17,7 @@ Le sostanze covalenti, a differenza dei composti ionici, sono costituite da mole
 
 **Definizione 10.1** (forze intramolecolari e intermolecolari). Le forze intramolecolari sono le forze di legame che si esercitano all'interno di ciascuna molecola (o ione poliatomico) e che influenzano le proprietà chimiche della sostanza; le forze intermolecolari si esercitano invece tra le molecole (o gli ioni poliatomici) e influenzano le proprietà fisiche della sostanza, come punto di fusione, punto di ebollizione, tensione di vapore e viscosità.
 
-Tutte le molecole esercitano tra loro interazioni reciproche di tipo attrattivo, la cui intensità determina lo stato di aggregazione della sostanza: forte nei solidi, media o debole nei liquidi, debole o trascurabile nei gas. Nel complesso le forze intermolecolari sono molto più debole dei legami ionici o covalenti, la cui energia supera i 100 kJ/mol; tra le forze intermolecolari, però, l'intensità varia molto secondo il tipo di interazione: le forze di dispersione e le interazioni dipolo-dipolo hanno tipicamente energie dell'ordine di $10^{-1}$-$10^{0}$ kJ/mol, mentre il legame a idrogeno, descritto più avanti, è nettamente più intenso, con energie che possono raggiungere qualche decina di kJ/mol. Per questo una sostanza covalente può esistere allo stato liquido o solido pur mantenendo intatte le proprie molecole: sono le forze intermolecolari, non i legami interni, a dover essere vinte durante una fusione o un'ebollizione.
+Tutte le molecole esercitano tra loro interazioni reciproche di tipo attrattivo, la cui intensità determina lo stato di aggregazione della sostanza: forte nei solidi, media o debole nei liquidi, debole o trascurabile nei gas. Nel complesso le forze intermolecolari sono molto più deboli dei legami ionici o covalenti, la cui energia supera i 100 kJ/mol; tra le forze intermolecolari, però, l'intensità varia molto secondo il tipo di interazione e le particelle considerate. Per questo una sostanza covalente può esistere allo stato liquido o solido pur mantenendo intatte le proprie molecole: sono le forze intermolecolari, non i legami interni, a dover essere vinte durante una fusione o un'ebollizione.
 
 ### Tipi di forze intermolecolari
 
@@ -64,27 +64,13 @@ Da questa definizione segue il criterio generale per confrontare i punti di ebol
 
 ## p3 | Liquidi, tensione di vapore e diagrammi di fase
 
-### Proprietà del liquido: tensione superficiale e viscosità
-
-Nello stato liquido le particelle restano vicine come nel solido, ma senza un ordine spaziale fisso: si muovono le une sulle altre mantenendo un volume proprio, pur adattandosi alla forma del recipiente. Questa mobilità, già introdotta parlando degli stati di aggregazione in [Stati di aggregazione](ref:chapter/1#p5), è governata dalle stesse forze intermolecolari classificate nella sezione precedente ([Forze intermolecolari](ref:chapter/10#p2)): più intense sono queste forze, più marcate sono le proprietà che seguono.
-
-**Definizione 10.2** (tensione superficiale). La tensione superficiale $\gamma$ è l'energia (il lavoro) richiesta per aumentare di una quantità unitaria l'area della superficie di un liquido; equivalentemente, è la forza che agisce su ogni unità di lunghezza della superficie, opponendosi al suo aumento.
-
-L'origine microscopica è semplice: una molecola all'interno del liquido è attratta in tutte le direzioni dalle molecole vicine, mentre una molecola in superficie è attratta verso il basso e lateralmente ma non verso l'alto, dove non ci sono altre molecole. Per questo le molecole superficiali tendono a minimizzare l'area esposta, ed è per questo motivo che una goccia libera nel vuoto assume forma sferica. In generale, più intense sono le forze interparticellari, maggiore è $\gamma$: l'acqua ha tensione superficiale elevata perché le sue molecole formano legami a idrogeno multipli anche in superficie, al punto da poter sostenere il peso di una moneta metallica. I tensioattivi (saponi, detergenti) si aggregano sulla superficie rompendo i legami a idrogeno e riducendo $\gamma$, favorendo la bagnabilità delle superfici e la miscibilità tra liquidi diversi.
-
-Quando un liquido è a contatto con un solido, la forma della superficie dipende dal confronto tra due forze: la coesione $F_c$ (le molecole del liquido che si attraggono tra loro) e l'adesione $F_a$ (l'attrazione tra liquido e solido). L'angolo di contatto $\theta$ tra il profilo del liquido e la superficie solida misura questo equilibrio: per $\theta < 90°$ prevale l'adesione e si parla di bagnabilità, per $\theta > 90°$ prevale la coesione e il liquido non bagna la superficie; i casi limite $\theta = 0°$ e $\theta = 180°$ corrispondono a bagnabilità completa e a sua assenza totale. Lo stesso confronto spiega la forma del menisco in un tubo: concavo (più basso al centro) quando l'adesione supera la coesione, come per l'acqua su vetro, convesso quando la coesione prevale, come per il mercurio. La capillarità, cioè la risalita o la discesa di un liquido in un tubo stretto, dipende dalla componente verticale della forza di tensione superficiale al menisco: l'altezza di equilibrio si raggiunge quando questa componente bilancia il peso della colonna liquida.
-
-**Definizione 10.3** (viscosità). La viscosità $\eta$ di un liquido è la sua resistenza allo scorrimento, dovuta alle forze di attrito interne, cioè alle attrazioni intermolecolari che si oppongono allo spostamento reciproco delle molecole.
-
-La viscosità diminuisce con la temperatura, perché l'aumento di energia cinetica media permette alle molecole di vincere più facilmente le forze intermolecolari che le trattengono (è l'esperienza comune dell'olio che diventa più fluido scaldandosi in padella), e aumenta con la lunghezza e la complessità geometrica delle molecole, poiché catene lunghe hanno più punti di contatto reciproco rispetto a molecole compatte e sferiche.
-
 ### Tensione di vapore e punto di ebollizione
 
-**Definizione 10.4** (tensione di vapore). La tensione (o pressione) di vapore $P_{vap}$ è la pressione esercitata dal vapore in equilibrio dinamico con il proprio liquido a una data temperatura; misura la tendenza delle molecole del liquido a passare in fase gassosa. A parità di temperatura, più alta è $P_{vap}$, più volatile è la sostanza.
+**Definizione 10.2** (tensione di vapore). La tensione (o pressione) di vapore $P_{vap}$ è la pressione esercitata dal vapore in equilibrio dinamico con il proprio liquido a una data temperatura; misura la tendenza delle molecole del liquido a passare in fase gassosa. A parità di temperatura, più alta è $P_{vap}$, più volatile è la sostanza.
 
 In un recipiente chiuso, inizialmente sotto vuoto, l'evaporazione fa crescere la concentrazione del vapore, aumentando di conseguenza la velocità di condensazione; quando quest'ultima eguaglia la velocità di evaporazione (costante a parità di temperatura) si raggiunge un equilibrio dinamico in cui il numero di molecole che evaporano è uguale al numero di quelle che condensano. In questa condizione il vapore è detto vapore saturo e la pressione che esso esercita è la tensione di vapore saturo.
 
-**Definizione 10.5** (punto di ebollizione). Il punto di ebollizione di un liquido è la temperatura alla quale la tensione di vapore uguaglia la pressione esterna; a quella temperatura si formano bolle di vapore all'interno del liquido, che quindi bolle. Se la pressione esterna è 1 atm, questa temperatura è il punto normale di ebollizione.
+**Definizione 10.3** (punto di ebollizione). Il punto di ebollizione di un liquido è la temperatura alla quale la tensione di vapore uguaglia la pressione esterna; a quella temperatura si formano bolle di vapore all'interno del liquido, che quindi bolle. Se la pressione esterna è 1 atm, questa temperatura è il punto normale di ebollizione.
 
 Poiché la pressione esterna tipica (quella atmosferica) diminuisce con l'altitudine, il punto di ebollizione si abbassa in quota: è il motivo per cui in montagna l'acqua bolle a meno di 100 °C.
 
@@ -126,7 +112,7 @@ T_2 &= 352,2 \text{ K} = 79,1\ °\text{C}
 
 ### Diagrammi di stato di H2O e CO2
 
-**Definizione 10.6** (diagramma di fase). Il diagramma di fase (o diagramma di stato) di una sostanza pura è il grafico pressione-temperatura che individua, per ogni coppia $(P,T)$, quale fase (o quali fasi in equilibrio) è stabile; combina le curve di equilibrio liquido/gas, solido/liquido e solido/gas.
+**Definizione 10.4** (diagramma di fase). Il diagramma di fase (o diagramma di stato) di una sostanza pura è il grafico pressione-temperatura che individua, per ogni coppia $(P,T)$, quale fase (o quali fasi in equilibrio) è stabile; combina le curve di equilibrio liquido/gas, solido/liquido e solido/gas.
 
 Ogni regione del diagramma corrisponde a una fase: in generale il solido è stabile a bassa temperatura e alta pressione, il gas ad alta temperatura e bassa pressione, il liquido nelle condizioni intermedie. Ogni punto lungo una curva di confine rappresenta una condizione di coesistenza tra due fasi in equilibrio. Due punti del diagramma hanno significato particolare:
 
@@ -183,15 +169,15 @@ q_{tot} &= q_1+q_2+q_3+q_4+q_5 \approx 55\,700 \text{ J} = 55,7 \text{ kJ}
 
 ## p4 | Solidi cristallini, amorfi e materiali
 
-Nei solidi le particelle costituenti — atomi, ioni o molecole — occupano posizioni fisse nello spazio e possono solo vibrare attorno a un punto di equilibrio, con un'ampiezza che cresce con la temperatura. Le forze che le tengono unite sono le stesse forze intra- e intermolecolari già classificate in [Forze intermolecolari](ref:chapter/10#p2) (legame ionico, covalente, metallico, forze di van der Waals, legame a idrogeno), ma qui agiscono per tenere insieme un intero reticolo tridimensionale piuttosto che una singola coppia di particelle. Questa sezione classifica i solidi in base all'ordine delle particelle e al tipo di legame, descrive la geometria dei reticoli cristallini e introduce i concetti di allotropia e lega, con un occhio ai materiali di interesse ingegneristico.
+Nei solidi le particelle costituenti — atomi, ioni o molecole — occupano posizioni fisse nello spazio e possono solo vibrare attorno a un punto di equilibrio, con un'ampiezza che cresce con la temperatura. Le forze che le tengono unite sono le stesse forze intra- e intermolecolari già classificate in [Forze intermolecolari](ref:chapter/10#p2) (legame ionico, covalente, metallico, forze di van der Waals, legame a idrogeno), ma qui agiscono per tenere insieme un intero reticolo tridimensionale piuttosto che una singola coppia di particelle. Questa sezione classifica i solidi in base all'ordine delle particelle e al tipo di legame e descrive la geometria dei reticoli cristallini.
 
 ### Solidi cristallini e solidi amorfi
 
 I solidi si classificano in base a due criteri indipendenti: il grado di ordine della struttura e il tipo di legame che unisce le particelle elementari.
 
-**Definizione 10.7** (solido cristallino). Un solido cristallino è un solido in cui le particelle sono disposte in un ordine preciso e ripetitivo, detto reticolo cristallino; questo ordine si ripete nello spazio e determina la struttura interna del cristallo, riflettendosi anche nelle facce piane e negli angoli regolari osservabili a livello macroscopico. Esempio: il quarzo, SiO2.
+**Definizione 10.5** (solido cristallino). Un solido cristallino è un solido in cui le particelle sono disposte in un ordine preciso e ripetitivo, detto reticolo cristallino; questo ordine si ripete nello spazio e determina la struttura interna del cristallo, riflettendosi anche nelle facce piane e negli angoli regolari osservabili a livello macroscopico. Esempio: il quarzo, SiO2.
 
-**Definizione 10.8** (solido amorfo). Un solido amorfo non è cristallino: presenta regioni prive di ordine reticolare, con una disposizione disordinata delle particelle simile a quella di un liquido ma congelata in uno stato solido. Esempio: il vetro, che si ottiene fondendo il quarzo e raffreddando rapidamente il liquido, impedendo alle catene di Si e O di riorganizzarsi in un reticolo ordinato; per questo motivo molti solidi amorfi sono descritti come liquidi sottoraffreddati.
+**Definizione 10.6** (solido amorfo). Un solido amorfo non è cristallino: presenta regioni prive di ordine reticolare, con una disposizione disordinata delle particelle simile a quella di un liquido ma congelata in uno stato solido. Esempio: il vetro, che si ottiene fondendo il quarzo e raffreddando rapidamente il liquido, impedendo alle catene di Si e O di riorganizzarsi in un reticolo ordinato; per questo motivo molti solidi amorfi sono descritti come liquidi sottoraffreddati.
 
 :::image{src="assets/b2a18549-cristallo-di-quarzo.jpg" alt="Cristallo di quarzo con facce piane" caption="Fig. 10.7 — Le facce piane e gli angoli regolari di un cristallo macroscopico sono la manifestazione visibile dell'ordine microscopico del reticolo cristallino. Foto: stux / Pixabay"}
 :::
@@ -209,9 +195,9 @@ In base al tipo di legame che unisce le particelle nel reticolo si distinguono q
 
 ### Reticolo cristallino e cella elementare
 
-**Definizione 10.9** (reticolo). Un reticolo è un insieme infinito di punti nello spazio tali che ogni punto presenta lo stesso intorno, cioè la stessa disposizione di particelle circostanti; un reticolo tridimensionale si genera traslando un'unità strutturale di base (atomo, ione, molecola o un loro gruppo) lungo tre direzioni definite dai parametri reticolari $a$, $b$, $c$ e dagli angoli $\alpha$ (tra $b$ e $c$), $\beta$ (tra $a$ e $c$) e $\gamma$ (tra $a$ e $b$). Un reticolo con queste caratteristiche di ripetizione geometrica si chiama reticolo di Bravais.
+**Definizione 10.7** (reticolo). Un reticolo è un insieme infinito di punti nello spazio tali che ogni punto presenta lo stesso intorno, cioè la stessa disposizione di particelle circostanti; un reticolo tridimensionale si genera traslando un'unità strutturale di base (atomo, ione, molecola o un loro gruppo) lungo tre direzioni definite dai parametri reticolari $a$, $b$, $c$ e dagli angoli $\alpha$ (tra $b$ e $c$), $\beta$ (tra $a$ e $c$) e $\gamma$ (tra $a$ e $b$). Un reticolo con queste caratteristiche di ripetizione geometrica si chiama reticolo di Bravais.
 
-**Definizione 10.10** (cella elementare). La cella elementare è l'unità del reticolo che, ripetuta per traslazione nelle tre direzioni, genera l'intero cristallo. La cella primitiva contiene un solo punto reticolare; la cella convenzionale è scelta per rendere evidenti le simmetrie del reticolo. La scelta della cella non è unica, ma si preferisce convenzionalmente quella che ha volume minimo, angoli il più vicino possibile a 90° e simmetrie coerenti con la simmetria macroscopica del cristallo. La cella parallelepipeda è quella definita dai tre vettori di traslazione del reticolo.
+**Definizione 10.8** (cella elementare). La cella elementare è l'unità del reticolo che, ripetuta per traslazione nelle tre direzioni, genera l'intero cristallo. La cella primitiva contiene un solo punto reticolare e ha volume minimo; la cella convenzionale è scelta per rendere evidenti le simmetrie del reticolo. La scelta della cella non è unica: si preferisce una cella primitiva per il volume minimo oppure una cella convenzionale, con parametri angolari coerenti con il sistema cristallino (per esempio 120° nel sistema esagonale). La cella parallelepipeda è quella definita dai tre vettori di traslazione del reticolo.
 
 Nel 1848 Auguste Bravais dimostrò che, combinando i sette sistemi cristallografici (cubico, tetragonale, trigonale, esagonale, rombico, monoclino, triclino) con i modi in cui i punti reticolari possono essere disposti all'interno della cella — primitivo (P, solo ai vertici), a facce centrate (F, un punto al centro di ogni faccia), a corpo centrato (I, un punto al centro del parallelepipedo), a base centrata (A, B o C, un punto al centro di una sola coppia di facce opposte) — esistono solo 14 reticoli di Bravais possibili, anche se non ogni tipo di centratura è compatibile con ogni sistema cristallografico. La maggior parte dei metalli e dei composti ionici e covalenti cristallizza però nel sistema cubico.
 
@@ -260,25 +246,4 @@ $$V_{\text{corr}} = f \cdot V_{\text{molare}} = 0,68 \times 7,09\ \text{cm}^3/\t
 
 La struttura cristallina influenza anche le proprietà meccaniche dei metalli: le strutture a impaccamento compatto cubico (FCC), come Cu, Ag, Au e Al, possiedono molti piani densamente popolati lungo i quali gli strati possono scorrere facilmente, e sono quindi molto duttili e malleabili; le strutture esagonali compatte (HCP), come Mg, hanno un numero di piani di scorrimento facilmente attivabili più limitato, il che può ridurne la duttilità a temperatura ambiente senza che questo implichi una maggiore durezza (il magnesio, per esempio, è un metallo relativamente tenero); le strutture a corpo centrato (BCC), come Mo e W, hanno pochi piani densamente popolati e sono in genere dure e poco duttili.
 
-### Allotropia, leghe e materiali di interesse ingegneristico
-
-**Definizione 10.11** (allotropia). L'allotropia è la proprietà di un elemento di esistere in forme strutturali diverse, dette allotropi, che possono differire per il modo in cui i suoi atomi sono legati o organizzati; quando le forme differiscono per la struttura cristallina, si parla di polimorfismo. Gli allotropi possono avere proprietà fisiche e reattività chimica diverse.
-
-Il carbonio elementare presenta tre allotropi principali:
-
-- il **diamante**, in cui ogni atomo di carbonio è legato ad altri quattro atomi con ibridazione $sp^3$ in una struttura tetraedrica rigida e tridimensionale; questa rete covalente estesa spiega l'elevatissima durezza, il punto di fusione molto alto e la cattiva conducibilità elettrica;
-- la **grafite**, in cui ogni atomo di carbonio è legato a tre atomi vicini con ibridazione $sp^2$, formando lamine esagonali (piani di grafene) debolmente legate tra loro da forze di van der Waals; lo scorrimento reciproco delle lamine la rende tenera, mentre gli elettroni $π$ delocalizzati sui piani le conferiscono una buona conducibilità elettrica;
-- il **fullerene**, in cui atomi di carbonio disposti in esagoni e pentagoni formano gabbie molecolari chiuse di forma sferica (buckyball, come il C60), presente nella fuliggine.
-
-Reticolo tetraedrico, lamine esagonali piane e gabbie chiuse sono quindi tre modi strutturalmente molto diversi di legare gli stessi atomi di carbonio.
-
-I **nanotubi di carbonio**, costituiti da lamine di grafene arrotolate su loro stesse in cilindri, sono strutture correlate ma distinte dai fullereni propriamente detti, con proprietà meccaniche ed elettriche proprie di grande interesse per le nanotecnologie.
-
-:::image{src="assets/allotropi-carbonio.png" alt="Cinque modelli a sfere e bastoncini: a) rete tridimensionale del diamante, b) rete disordinata del carbonio amorfo, c) gabbia sferica del C60, d) cilindro di un nanotubo, e) strati esagonali sovrapposti della grafite" caption="Fig. 10.10 — Allotropi del carbonio: a) diamante, b) carbonio amorfo, c) fullerene C60, d) nanotubo, e) grafite. Immagine: Jozef Sivek / Wikimedia Commons, CC BY-SA 4.0"}
-:::
-
-La durezza relativa di questi e altri materiali si confronta con la scala di Mohs, una scala empirica basata su dieci minerali di riferimento (da talco a diamante) in cui ogni minerale scalfisce i precedenti ed è scalfito dai successivi: la grafite si colloca intorno a 1,5 e il diamante, il materiale naturale più duro, vale 10.
-
-Altri esempi di polimorfismo sono il carbonato di calcio, che forma calcite e aragonite, e lo zolfo. Composti diversi che formano cristalli strutturalmente simili si dicono isomorfi.
-
-L'allotropia è particolarmente rilevante dal punto di vista ingegneristico nel caso dei metalli, perché i diversi allotropi dello stesso metallo possono avere proprietà meccaniche ed elettriche molto diverse. Il ferro presenta forme allotropiche distinte secondo la temperatura: il ferro $\gamma$, stabile ad alta temperatura, può sciogliere il carbonio formando una soluzione solida detta austenite, mentre il ferro $\alpha$, stabile a temperatura ambiente, non forma facilmente austenite. Sottoponendo un acciaio a tempra (riscaldamento ad alta temperatura seguito da raffreddamento brusco), l'austenite non ha il tempo di trasformarsi nelle fasi stabili a temperatura ambiente e si trasforma invece in martensite, una fase metastabile sovrassatura di carbonio responsabile dell'elevata durezza dell'acciaio temprato; una parte dell'austenite può talvolta rimanere non trasformata come austenite residua, ma è la martensite, non l'austenite, la struttura dura ottenuta dalla tempra. Un acciaio è, dal punto di vista chimico, una lega: una soluzione solida (o una miscela di fasi solide) in cui atomi di carbonio e di altri elementi sono inseriti nel reticolo metallico del ferro, modificandone le proprietà meccaniche rispetto al metallo puro. Questo meccanismo — allotropia del ferro e dissoluzione di elementi nel suo reticolo — è alla base di molti trattamenti degli acciai. Le leghe di alluminio e titanio sono anch'esse importanti in ingegneria, ma possono essere rinforzate attraverso meccanismi diversi.
+Esempi di polimorfismo sono il carbonato di calcio, che forma calcite e aragonite, e lo zolfo. Composti diversi che formano cristalli strutturalmente simili si dicono isomorfi.

@@ -421,7 +421,7 @@ Le nozioni di parità, disparità e periodicità saranno riprese nello [studio d
 
 ### Funzioni limitate
 
-Una prima proprietà globale che si può chiedere a una funzione reale è la limitatezza della sua immagine, concetto già introdotto per i sottoinsiemi di $\mathbb{R}$ nella sezione su [maggioranti, minoranti ed estremi](ref:chapter/1#p6).
+Una prima proprietà globale che si può chiedere a una funzione reale è la limitatezza della sua immagine, concetto già introdotto per i sottoinsiemi di $\mathbb{R}$ nella sezione su [maggioranti, minoranti ed estremi](ref:chapter/1#p5).
 
 Sia $f : A \to \mathbb{R}$, con $A \subseteq \mathbb{R}$.
 
@@ -556,7 +556,7 @@ Quasi tutti gli esercizi di Analisi 1 si costruiscono componendo poche funzioni 
 ### Potenze, esponenziali e logaritmi
 
 **Potenze con esponente intero.** La funzione $x\mapsto x^n$, con $n\in\mathbb{N}^+$, ha dominio $\mathbb{R}$.
-- Se $n$ è pari, la funzione è pari, con immagine $\lbrack 0,+\infty\lbrack $. Non è iniettiva su $\mathbb{R}$ (ad esempio $f(2)=f(-2)=4$), ma lo è su $\lbrack 0,+\infty\lbrack $, dove è strettamente crescente.
+- Se $n$ è pari, la funzione è pari, con immagine $\lbrack 0,+\infty\lbrack $. Non è iniettiva su $\mathbb{R}$ (ad esempio $f(2)=f(-2)=2^n$), ma lo è su $\lbrack 0,+\infty\lbrack $, dove è strettamente crescente.
 - Se $n$ è dispari, la funzione è dispari, strettamente crescente e biettiva su $\mathbb{R}$.
 
 L'inversa della restrizione a $\lbrack 0,+\infty\lbrack $ è la radice $\sqrt[n]{x}$, definita su $\lbrack 0,+\infty\lbrack $ e strettamente crescente. Per $n$ dispari la radice è definita su tutto $\mathbb{R}$.
@@ -662,7 +662,7 @@ Metodo:
 
 1. Determina il dominio con le condizioni di esistenza, come nel tipo 1.
 2. Per l'immagine, leggi dal grafico (o ricostruisci dallo studio di monotonia e dai limiti agli estremi) gli intervalli percorsi da $f$ su ogni tratto monotono. L'immagine è l'unione di questi intervalli. Attenzione agli estremi: un valore raggiunto va incluso, un valore solo approssimato (limite) va escluso. Si veda [Funzioni: dominio, immagine, iniettività](ref:chapter/3#p2).
-3. Per l'iniettività, mostra che $f$ è strettamente monotona su un intervallo (derivata di segno costante), oppure trova due punti distinti con lo stesso valore.
+3. Per dimostrare l'iniettività, puoi mostrare che $f$ è strettamente monotona sull'intero dominio, oppure verificare che i valori assunti su tratti distinti non coincidano. Per dimostrare che non è iniettiva, trova due punti distinti con lo stesso valore. Se $f$ è derivabile su un intervallo, $f'(x)>0$ per ogni $x$ oppure $f'(x)<0$ per ogni $x$ implica che è strettamente monotona su quell'intervallo.
 4. Per invertire, restringi $f$ a un intervallo su cui è strettamente monotona. Dominio e immagine dell'inversa si scambiano con quelli della restrizione. Vedi [Grafico, composizione e funzione inversa](ref:chapter/3#p3).
 
 Errori tipici:
@@ -723,4 +723,4 @@ Esempio:
 
 ### Altri tipi, in breve
 
-Una sola sessione (29 gennaio 2020, esercizio 2, versioni A e C) propone estremi di un insieme come $A=\{\frac4n-2: n\in\mathbb{Z}\setminus\{0\}\}\cup\{10\}$ e poi estremi dell'immagine $g(A)$: si veda [Maggioranti, minoranti ed estremi](ref:chapter/1#p6). Nella sessione dell'11 febbraio 2020 (esercizio 2D) compaiono definizione e condizione sufficiente di invertibilità, e lo sviluppo $f^{-1}(x)=m(x-x_0)+o(x-x_0)$ per $f(x)=e^{3x}+x^5$: è la derivata dell'inversa, anticipata dalla sezione [Grafico, composizione e funzione inversa](ref:chapter/3#p3).
+Una sola sessione (29 gennaio 2020, esercizio 2, versioni A e C) propone estremi di un insieme come $A=\{\frac4n-2: n\in\mathbb{Z}\setminus\{0\}\}\cup\{10\}$ e poi estremi dell'immagine $g(A)$: si veda [Maggioranti, minoranti ed estremi](ref:chapter/1#p5). Nella sessione dell'11 febbraio 2020 (esercizio 2D) compaiono definizione e condizione sufficiente di invertibilità, e lo sviluppo $f^{-1}(x)=m(x-x_0)+o(x-x_0)$ per $f(x)=e^{3x}+x^5$: è la derivata dell'inversa, anticipata dalla sezione [Grafico, composizione e funzione inversa](ref:chapter/3#p3).

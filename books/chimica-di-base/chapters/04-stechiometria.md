@@ -11,7 +11,7 @@ Al termine saprai ricavare formule empiriche e molecolari da percentuali in mass
 
 ## p2 | Composizione percentuale e formule empiriche
 
-La formula di un composto non dice soltanto quali elementi lo costituiscono, ma fissa anche un rapporto in massa costante tra di essi: è la legge delle proporzioni definite di Proust, già introdotta in [Leggi fondamentali e teoria atomica di Dalton](ref:chapter/2#p2). Questa sezione mostra come usare quel rapporto in due direzioni opposte: dalla formula alla composizione percentuale, e dalla composizione percentuale (ottenuta sperimentalmente, anche per combustione) alla formula minima e alla formula molecolare.
+La formula di un composto non dice soltanto quali elementi lo costituiscono, ma fissa anche un rapporto in massa costante tra di essi: è la legge delle proporzioni definite di Proust. Questa sezione mostra come usare quel rapporto in due direzioni opposte: dalla formula alla composizione percentuale, e dalla composizione percentuale (ottenuta sperimentalmente, anche per combustione) alla formula minima e alla formula molecolare.
 
 ### Composizione percentuale in massa
 
@@ -139,7 +139,7 @@ Uno sbaglio frequente nella fase di traduzione è modificare una formula chimica
 
 **Definizione 4.4** (coefficiente stechiometrico). Un coefficiente stechiometrico è il numero intero che si antepone alla formula di un reagente o di un prodotto in un'equazione chimica; esso moltiplica tutti gli atomi presenti in quella formula e indica il rapporto in cui le entità (o le moli di entità) partecipano alla reazione. Per esempio, il coefficiente 2 davanti a $Ca(NO_3)_2$ significa 2 atomi di Ca, 4 di N e 12 di O, perché il coefficiente moltiplica tutti gli atomi della formula, inclusi quelli racchiusi tra parentesi.
 
-**Teorema 4.1** (legge di Lavoisier, o di conservazione della massa). In un sistema chiuso la somma delle masse delle sostanze prima della reazione è uguale alla somma delle masse delle sostanze dopo la reazione; la massa non può essere creata né distrutta, perché il numero e la natura degli atomi restano inalterati nel corso della trasformazione. Questa legge, già incontrata in [Leggi fondamentali e teoria atomica di Dalton](ref:chapter/2#p2), è la ragione per cui un'equazione chimica deve essere **bilanciata**: nei due membri deve comparire lo stesso numero di atomi di ciascun elemento.
+**Teorema 4.1** (legge di Lavoisier, o di conservazione della massa). In un sistema chiuso la somma delle masse delle sostanze prima della reazione è uguale alla somma delle masse delle sostanze dopo la reazione; la massa non può essere creata né distrutta, perché il numero e la natura degli atomi restano inalterati nel corso della trasformazione. Questa legge è la ragione per cui un'equazione chimica deve essere **bilanciata**: nei due membri deve comparire lo stesso numero di atomi di ciascun elemento.
 
 Il metodo più diretto per bilanciare un'equazione, adatto alla grande maggioranza delle reazioni non redox, è il **bilanciamento per ispezione**, che procede per tentativi secondo questi passi:
 
@@ -183,7 +183,7 @@ $$2\,C_8H_{18} + 25\,O_2 \rightarrow 16\,CO_2 + 18\,H_2O$$
 
 ### Verifica quantitativa della massa e della carica
 
-Una volta bilanciata l'equazione, la legge di Lavoisier non è solo un vincolo formale sugli atomi, ma si può verificare numericamente passando dal numero di molecole al numero di moli (tramite la costante di Avogadro, vedi [Masse atomiche, mole e massa molare](ref:chapter/2#p5)) e quindi alla massa, tramite la massa molare. Per la sintesi dell'acqua,
+Una volta bilanciata l'equazione, la legge di Lavoisier non è solo un vincolo formale sugli atomi, ma si può verificare numericamente passando dal numero di molecole al numero di moli (tramite la costante di Avogadro, vedi [Masse atomiche, mole e massa molare](ref:chapter/2#p4)) e quindi alla massa, tramite la massa molare. Per la sintesi dell'acqua,
 $$2\,H_2 + O_2 \rightarrow 2\,H_2O,$$
 considerando le quantità in moli corrispondenti ai coefficienti si trova che 4 g di idrogeno reagiscono con 32 g di ossigeno per dare 36 g di acqua: la massa totale del sistema, 36 g, è la stessa prima e dopo la reazione. Analogamente, nella formazione del cloruro di sodio da sodio e cloro, 23 g di Na più 35,4 g di Cl danno 58,4 g di NaCl, in accordo con la conservazione della massa.
 
@@ -244,7 +244,7 @@ $$m_{\mathrm{O_2}} = 15{,}0 \cdot 32{,}00 = 480\ \mathrm{g}$$
 
 *Verifica.* Il rapporto tra i coefficienti $3/2$ corrisponde esattamente al rapporto tra le moli calcolate ($15{,}0/9{,}99 \approx 1{,}50$), e le cifre significative del risultato finale (tre) sono coerenti con quelle del dato di partenza.
 
-Lo stesso schema si applica quando reagenti e prodotti sono più di due. Un esempio frequente alle prove d'esame è la riduzione di un minerale: l'ossido ferrico (ematite) reagisce con monossido di carbonio per dare ferro metallico e diossido di carbonio. Bilanciando si ottiene $\mathrm{Fe_2O_3(s)} + 3\,\mathrm{CO(g)} \to 2\,\mathrm{Fe(s)} + 3\,\mathrm{CO_2(g)}$; da $10{,}0\ \mathrm{kg}$ di ematite ($M = 159{,}70\ \mathrm{g/mol}$) si ricavano $n_{\mathrm{Fe_2O_3}} = 10\,000/159{,}70 = 62{,}6\ \mathrm{mol}$, e poiché una mole di ematite produce due moli di ferro, $n_{\mathrm{Fe}} = 2 \cdot 62{,}6 = 125\ \mathrm{mol}$, pari a $m_{\mathrm{Fe}} = 125 \cdot 55{,}85 \approx 6{,}99 \times 10^3\ \mathrm{g}$.
+Lo stesso schema si applica quando reagenti e prodotti sono più di due. Un esempio frequente alle prove d'esame è la riduzione di un minerale: l'ossido ferrico (ematite) reagisce con monossido di carbonio per dare ferro metallico e diossido di carbonio. Bilanciando si ottiene $\mathrm{Fe_2O_3(s)} + 3\,\mathrm{CO(g)} \to 2\,\mathrm{Fe(s)} + 3\,\mathrm{CO_2(g)}$; da $10{,}0\ \mathrm{kg}$ di ematite ($M = 159{,}70\ \mathrm{g/mol}$) si ricavano $n_{\mathrm{Fe_2O_3}} = 10\,000/159{,}70 \approx 62{,}617\ \mathrm{mol}$, e poiché una mole di ematite produce due moli di ferro, $n_{\mathrm{Fe}} = 2 \cdot 62{,}617 \approx 125{,}23\ \mathrm{mol}$, pari a $m_{\mathrm{Fe}} = 125{,}23 \cdot 55{,}85 \approx 6{,}99 \times 10^3\ \mathrm{g}$.
 
 **Errore tipico 4.5**
 
@@ -413,14 +413,14 @@ La stessa logica compare in Tema d_esame 15 + soluzione, n. 1 (nitrato di piombo
 
 Dopo il bilanciamento l'esame fornisce le quantità dei reagenti in forme diverse: grammi di un solido, litri di una soluzione concentrata data in percentuale, volumi di gas. Si chiede la massa (o le moli) di un prodotto, e a volte anche quanto resta del reagente in eccesso.
 
-Metodo, con riferimento a [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4) e a [Masse atomiche, mole e massa molare](ref:chapter/2#p5):
+Metodo, con riferimento a [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4) e a [Masse atomiche, mole e massa molare](ref:chapter/2#p4):
 
 1. Porta ogni dato in moli, con $n = m/M$ per i solidi (formula [formula (2.4)](ref:formula/2.4)), con la molarità per le soluzioni (formula [formula (11.3)](ref:formula/11.3)) e con l'equazione di stato per i gas.
 2. Per una soluzione data in percentuale in massa, passa dal volume alla massa con la densità e poi alla massa di soluto con la percentuale (vedi [Espressioni della concentrazione](ref:chapter/11#p3)).
 3. Per ogni reagente calcola $n_i/\nu_i$. Il più piccolo è il reagente limitante, secondo il criterio {{formula:4.3}}.
 4. Con il rapporto molare {{formula:4.2}} passa dalle moli del limitante a quelle del prodotto richiesto, poi converti in grammi.
 5. Se serve l'eccesso residuo, sottrai alle moli iniziali dell'altro reagente quelle consumate.
-6. Controlla l'ordine di grandezza e le cifre significative (vedi [Grandezze, unità e cifre significative](ref:chapter/1#p3)).
+6. Controlla l'ordine di grandezza e le cifre significative (vedi [Grandezze, unità e cifre significative](ref:chapter/1#p2)).
 
 Errori tipici: scegliere il limitante confrontando direttamente le moli o le masse, senza dividere per i coefficienti; usare i litri di una soluzione concentrata come se fossero i litri del soluto; mescolare mL e L, g e mg, cm³ e m³; arrotondare i risultati intermedi.
 
@@ -450,6 +450,6 @@ Esempi.
 
 ### Altri tipi, visti in una sola sessione
 
-Tre richieste compaiono in una sola sessione e non meritano un metodo a sé. Tema d_esame 14 + soluzione, n. 1, punto b, chiede un'elettrolisi di NaCl con resa faradica unitaria, che si affronta con le leggi di Faraday ([Elettrolisi e leggi di Faraday](ref:chapter/16#p5)) usando i coefficienti per le moli di gas sviluppate agli elettrodi. Tema d_esame 14 + soluzione, n. 2, parte da un eccesso di ZnO con 2 mol di H₂ e porta all'equilibrio, con $K_p = 1{,}12$ atm a 3,20 atm; la stechiometria dà solo la tabella "iniziale / variazione / equilibrio" ed è l'equilibrio a chiudere il calcolo ([Quoziente di reazione e calcoli di equilibrio](ref:chapter/12#p3)). La domanda teorica D1 del Tema 3 è già stata citata più sopra.
+Tre richieste compaiono in una sola sessione e non meritano un metodo a sé. Tema d'esame 14 + soluzione, n. 1, punto b, chiede un'elettrolisi di NaCl con resa faradica unitaria, che si affronta con le leggi di Faraday ([Elettrolisi e leggi di Faraday](ref:chapter/16#p5)) usando i coefficienti per le moli di gas sviluppate agli elettrodi. Tema d'esame 14 + soluzione, n. 2, parte da un eccesso di ZnO con 2 mol di H₂ e porta all'equilibrio, con $K_p = 1{,}12\,\mathrm{atm}$ a 3,20 atm; la stechiometria dà solo la tabella "iniziale / variazione / equilibrio" ed è l'equilibrio a chiudere il calcolo ([Quoziente di reazione e calcoli di equilibrio](ref:chapter/12#p3)). La domanda teorica D1 del Tema 3 è già stata citata più sopra.
 
 In tutti questi casi il primo passo resta lo stesso: una reazione bilanciata e le moli di ogni specie.

@@ -323,14 +323,11 @@ poiché $\hat{u}_r\cdot d\vec{s} = ds\cos\theta = dr$ è la variazione del modul
 
 $$E_p(r) = -\frac{Gm_1 m_2}{r} ,$$
 
-dove il segno negativo riflette la natura attrattiva della forza. Con lo stesso procedimento, per la forza elettrostatica tra due cariche $q$ e $q_0$ si trova
+Per la forza gravitazionale tra due masse, $\vec{F}(r) = -\dfrac{Gm_1 m_2}{r^2}\,\hat{u}_r$, integrando si ottiene l'energia potenziale gravitazionale
 
-$$E_p(r) = \frac{q\,q_0}{4\pi\varepsilon_0\, r} ,$$
+$$E_p(r) = -\frac{Gm_1 m_2}{r} ,$$
 
-espressione analoga a [formula (10.21)](ref:formula/10.21), dove $\varepsilon_0$ è la costante dielettrica del vuoto già introdotta nella sezione sui [cenni di elettrostatica](ref:chapter/10#p6). Questa energia potenziale ha lo stesso andamento in $1/r$ del caso gravitazionale, ma segno opposto per cariche dello stesso segno: mentre la forza gravitazionale è sempre attrattiva, la forza elettrostatica tra due cariche omonime è repulsiva, e l'energia potenziale corrispondente è positiva e decresce allontanando le cariche, coerentemente con questa natura repulsiva.
-
-:::image{src="assets/cfcb3087-energia-potenziale-gravitazionale-elettrostatica.svg" alt="Due curve E_p(r): una negativa che cresce verso zero, una positiva che decresce verso zero" caption="Fig. 4.1 — Energia potenziale in funzione della distanza r: gravitazionale (sempre negativa, forza attrattiva) ed elettrostatica tra cariche omonime (sempre positiva, forza repulsiva), entrambe nulle per r che tende a infinito"}
-:::
+dove il segno negativo riflette la natura attrattiva della forza.
 
 La forza d'attrito radente, invece, non è conservativa: in generale il suo lavoro si calcola solo tramite l'integrale $W = \int_{A,\gamma}^{B} \vec{F}_{ad}\cdot d\vec{s}$, che dipende dal cammino effettivamente seguito e non solo dai punti $A$ e $B$, come già visto nella sezione sulle [forze di attrito](ref:chapter/3#p6) nei casi in cui $\mu_d$ o la reazione normale $N$ variano lungo il percorso, oppure la superficie di contatto è essa stessa in moto. Soltanto quando $\mu_d$ e $N$ sono costanti e la superficie è ferma nel riferimento scelto il lavoro si riduce a {{formula:4.11}}, proporzionale alla sola lunghezza del cammino percorso. In ogni caso, poiché tale lavoro non è esprimibile come differenza dei valori di una funzione delle sole coordinate di $A$ e $B$, non si può definire un'energia potenziale per l'attrito, e nel bilancio energetico esso va sempre trattato attraverso la definizione diretta di lavoro, come già fatto nella sezione sul [teorema lavoro-energia](ref:chapter/4#p3).
 
@@ -347,6 +344,22 @@ Uguagliando si ottiene $\Delta E_k + \Delta E_p = 0$, cioè la somma dell'energi
 :::formula{id="4.14" label="Conservazione dell'energia meccanica"}
 $$E_m = E_k + E_p = \text{costante}$$
 :::
+
+**Dimostrazione richiesta all'esame.**
+
+Siano $A$ e $B$ due punti qualsiasi della traiettoria $\gamma$ del punto materiale, percorsa sotto l'azione delle sole forze conservative. Il teorema dell'energia cinetica dà il lavoro totale compiuto da $A$ a $B$:
+
+$$W_{A\to B,\gamma} = E_k(B) - E_k(A) .$$
+
+Poiché la forza è conservativa, esiste l'energia potenziale $E_p$ con $\vec{F} = -\vec{\nabla}E_p$, e dunque $d\mathcal{L} = \vec{F}\cdot d\vec{r} = -dE_p$. Integrando lungo $\gamma$ si ottiene lo stesso lavoro espresso tramite l'energia potenziale:
+
+$$W_{A\to B,\gamma} = -\int_{A,\gamma}^{B} dE_p = E_p(A) - E_p(B) .$$
+
+Uguagliando le due espressioni:
+
+$$E_k(B) - E_k(A) = E_p(A) - E_p(B) \quad\Longrightarrow\quad E_k(A) + E_p(A) = E_k(B) + E_p(B) .$$
+
+I punti $A$ e $B$ sono arbitrari, quindi $E_m = E_k + E_p$ ha lo stesso valore in ogni punto della traiettoria, cioè è costante durante il moto. $\square$
 
 Questo risultato è preso dalle fonti. Il lavoro ottenuto a spese di una diminuzione di energia potenziale si traduce in un corrispondente aumento di energia cinetica, e viceversa, proprio perché la loro somma resta costante. Quando, come avviene in generale, agiscono sia forze conservative sia forze non conservative (per esempio l'attrito), il lavoro totale si scompone in $W = W_c + W_{nc}$, e ripetendo il calcolo precedente si trova che la variazione di energia meccanica è uguale al lavoro delle sole forze non conservative,
 
@@ -382,10 +395,10 @@ Controllo: le unità sono coerenti, poiché $\text{N}\cdot\text{s}^2/\text{kg} =
 
 Lo studio della funzione $E_p(x)$ permette anche di individuare le posizioni di equilibrio e il tipo di moto nelle loro vicinanze, senza risolvere l'equazione del moto. Poiché $F(x) = -dE_p/dx$, un punto $x_0$ è di equilibrio se e solo se $dE_p/dx$ si annulla in $x_0$, cioè se $E_p$ ha in quel punto un punto stazionario. Se in un intorno di $x_0$ risulta $dE_p/dx<0$ per $x<x_0$ e $dE_p/dx>0$ per $x>x_0$, la forza è sempre diretta verso $x_0$ non appena il punto materiale se ne allontana di poco, e l'equilibrio è stabile: per piccoli spostamenti il moto è oscillatorio attorno a $x_0$, come già visto per la forza elastica, il cui potenziale $\tfrac{1}{2}kx^2$ ha minimo isolato in $x=0$ e verifica ovunque questa condizione sul segno della derivata. Il solo fatto che $x_0$ sia un minimo locale stretto di $E_p$ non basta, in generale, a garantire questo comportamento della forza in tutto un intorno, perché il potenziale potrebbe presentare piccole oscillazioni con altri punti stazionari arbitrariamente vicini a $x_0$; la condizione che garantisce con certezza il richiamo verso $x_0$ è quella sul segno della derivata appena enunciata. Analogamente, se in un intorno di $x_0$ risulta $dE_p/dx>0$ per $x<x_0$ e $dE_p/dx<0$ per $x>x_0$, la forza si allontana da $x_0$ appena il punto materiale viene spostato, e l'equilibrio è instabile; anche in questo caso il solo essere $x_0$ un massimo locale stretto non basta da solo a garantire tale comportamento in ogni punto dell'intorno. Diverso è il caso in cui $E_p$ resta costante su un intero tratto, non un minimo isolato ma un tratto piatto del grafico: in tal caso ogni punto del tratto è una posizione di equilibrio, perché la derivata di $E_p$ vi è ovunque nulla, ma non esiste alcuna forza di richiamo né alcun moto oscillatorio attorno a una posizione precisa, dato che il punto materiale resta semplicemente fermo dove si trova, senza essere né respinto né riportato verso un punto particolare.
 
-:::image{src="assets/cfcb3087-equilibrio-stabile-instabile-indifferente.svg" alt="Curva con una buca, una gobba e un tratto orizzontale" caption="Fig. 4.2 — Energia potenziale E_p(x) qualitativa con tre tipi di equilibrio: minimo isolato (stabile), massimo isolato (instabile) e tratto piatto (indifferente, nessuna forza di richiamo)"}
+:::image{src="assets/cfcb3087-equilibrio-stabile-instabile-indifferente.svg" alt="Curva con una buca, una gobba e un tratto orizzontale" caption="Fig. 4.1 — Energia potenziale E_p(x) qualitativa con tre tipi di equilibrio: minimo isolato (stabile), massimo isolato (instabile) e tratto piatto (indifferente, nessuna forza di richiamo)"}
 :::
 
-:::image{src="assets/cfcb3087-energia-potenziale-pozzo.svg" alt="Energia potenziale a forma di parabola con minimo nell'origine" caption="Fig. 4.3 — Energia potenziale elastica E_p(x) = (1/2) k x^2: il minimo in x = 0 è una posizione di equilibrio stabile"}
+:::image{src="assets/cfcb3087-energia-potenziale-pozzo.svg" alt="Energia potenziale a forma di parabola con minimo nell'origine" caption="Fig. 4.2 — Energia potenziale elastica E_p(x) = (1/2) k x^2: il minimo in x = 0 è una posizione di equilibrio stabile"}
 :::
 
 Un tipico errore è dimenticare che la condizione di equilibrio riguarda la derivata prima di $E_p$, non il suo valore: un punto in cui $E_p$ è grande ma costante (un tratto piatto del grafico) è comunque un punto di equilibrio, mentre un punto in cui $E_p$ è piccolo ma con pendenza diversa da zero non lo è. Un secondo errore, già segnalato a proposito del lavoro, è scrivere uguaglianze dimensionalmente incoerenti nei passaggi intermedi, per esempio confondendo un numero puro con una grandezza dotata di unità; ogni singola uguaglianza di una catena di passaggi deve avere senso dimensionale, non solo il primo e l'ultimo membro.

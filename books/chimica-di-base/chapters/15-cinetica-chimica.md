@@ -5,9 +5,9 @@ title: Cinetica chimica
 
 ## p1 | Introduzione
 
-La cinetica chimica spiega quanto rapidamente avvengono le reazioni e quali fattori ne modificano la velocità. È utile per interpretare processi quotidiani e industriali, controllare la produzione di sostanze e comprendere fenomeni naturali come il decadimento radioattivo. Per affrontare il capitolo servono le basi della stechiometria, per collegare reagenti e prodotti, e dell’equilibrio chimico, per distinguere la velocità di una reazione dalla posizione dell’equilibrio.
+La cinetica chimica spiega quanto rapidamente avvengono le reazioni e quali fattori ne modificano la velocità. È utile per interpretare processi quotidiani e industriali e controllare la produzione di sostanze. Per affrontare il capitolo servono le basi della stechiometria, per collegare reagenti e prodotti, e dell’equilibrio chimico, per distinguere la velocità di una reazione dalla posizione dell’equilibrio.
 
-Al termine saprai definire e calcolare velocità medie, istantanee e iniziali, ricavare una legge cinetica dai dati sperimentali e riconoscerne gli ordini. Saprai usare le leggi integrate per descrivere reazioni di ordine zero, primo e secondo, determinare tempi di dimezzamento e confrontare i metodi che identificano l’ordine di reazione. Imparerai a valutare come temperatura ed energia di attivazione influenzano la velocità e a spiegare il ruolo delle collisioni efficaci, dello stato di transizione e dei catalizzatori. Potrai inoltre interpretare i meccanismi a stadi e applicare la cinetica del primo ordine ai processi radioattivi, calcolando attività residua ed età di un reperto.
+Al termine saprai definire e calcolare velocità medie, istantanee e iniziali, ricavare una legge cinetica dai dati sperimentali e riconoscerne gli ordini. Saprai usare le leggi integrate per descrivere reazioni di ordine zero, primo e secondo, determinare tempi di dimezzamento e confrontare i metodi che identificano l’ordine di reazione. Imparerai a valutare come temperatura ed energia di attivazione influenzano la velocità e a spiegare il ruolo delle collisioni efficaci, dello stato di transizione e dei catalizzatori. Potrai inoltre interpretare i meccanismi a stadi.
 
 ## p2 | Velocità di reazione e leggi cinetiche
 
@@ -137,7 +137,7 @@ In questa equazione compaiono due grandezze caratteristiche della reazione:
 
 **Definizione 15.5** (energia di attivazione). $E_a$ è la barriera energetica minima che un urto tra molecole reagenti deve superare per poter dare luogo alla trasformazione chimica: tanto più alto è il suo valore, tanto minore è la velocità di reazione, a parità di temperatura.
 
-Dall'equazione di Arrhenius segue che, poiché $T$ compare al denominatore dell'esponente negativo, un aumento di temperatura aumenta sempre $k$, qualunque sia la reazione.
+Dall'equazione di Arrhenius segue che, per una reazione con energia di attivazione $E_a$ positiva (il caso tipico qui trattato), poiché $T$ compare al denominatore dell'esponente negativo, un aumento di temperatura aumenta sempre $k$.
 
 ### Linearizzazione e determinazione sperimentale di $E_a$
 
@@ -222,7 +222,7 @@ Un’equazione chimica bilanciata descrive il bilancio complessivo, ma non neces
 
 La **molecolarità** di uno stadio elementare è il numero di particelle reagenti coinvolte in quell’evento: uno stadio può essere unimolecolare o bimolecolare; eventi che richiedono l’urto simultaneo di tre particelle sono rari. Solo per uno stadio effettivamente elementare gli esponenti della sua legge cinetica si leggono dai coefficienti dei reagenti. Per la reazione complessiva, invece, gli ordini si determinano sperimentalmente, come nella sezione [Velocità di reazione e leggi cinetiche](ref:chapter/15#p2).
 
-Se uno stadio è molto più lento degli altri, è detto **stadio determinante la velocità**: limita il flusso attraverso il meccanismo. Quando i suoi reagenti sono specie presenti nella miscela iniziale e gli stadi successivi sono rapidi, la legge cinetica globale segue, in prima approssimazione, quella dello stadio lento. Se nello stadio lento compare un intermedio formato prima, occorre esprimerne la concentrazione mediante le specie misurabili. Per esempio, nel meccanismo $\mathrm{A} + \mathrm{B} \rightleftharpoons \mathrm{I}$ (equilibrio rapido), seguito da $\mathrm{I} + \mathrm{C} \to \mathrm{P}$ (stadio lento), la velocità è $v \simeq k_2\lbrack \mathrm{I}\rbrack \lbrack \mathrm{C}\rbrack $. Se il primo stadio è all’equilibrio, la sua costante è $K_1 = \lbrack \mathrm{I}\rbrack /(\lbrack \mathrm{A}\rbrack \lbrack \mathrm{B}\rbrack )$, quindi $\lbrack \mathrm{I}\rbrack  = K_1\lbrack \mathrm{A}\rbrack \lbrack \mathrm{B}\rbrack $ e $v \simeq k_2K_1\lbrack \mathrm{A}\rbrack \lbrack \mathrm{B}\rbrack \lbrack \mathrm{C}\rbrack $. La legge così ottenuta va confrontata con quella misurata sperimentalmente. Un meccanismo proposto deve inoltre sommare alla reazione globale, contenere stadi molecolarmente plausibili ed essere compatibile con la legge cinetica misurata.
+Se uno stadio è molto più lento degli altri, è detto **stadio determinante la velocità**: limita il flusso attraverso il meccanismo. Quando i suoi reagenti sono specie presenti nella miscela iniziale e gli stadi successivi sono rapidi, la legge cinetica globale segue, in prima approssimazione, quella dello stadio lento. Se nello stadio lento compare un intermedio formato prima, occorre esprimerne la concentrazione mediante le specie misurabili. Per esempio, nel meccanismo $\mathrm{A} + \mathrm{B} \rightleftharpoons \mathrm{I}$ (equilibrio rapido), seguito da $\mathrm{I} + \mathrm{C} \to \mathrm{P}$ (stadio lento), la velocità è $v \simeq k_2\lbrack \mathrm{I}\rbrack \lbrack \mathrm{C}\rbrack $. Se il primo stadio è all’equilibrio, la sua costante è $K_1 = \lbrack \mathrm{I}\rbrack /(\lbrack \mathrm{A}\rbrack \lbrack \mathrm{B}\rbrack )$, quindi $\lbrack \mathrm{I}\rbrack  = K_1\lbrack \mathrm{A}\rbrack \lbrack \mathrm{B}\rbrack $ e $v \simeq k_2K_1\lbrack \mathrm{A}\rbrack \lbrack \mathrm{B}\rbrack \lbrack \mathrm{C}\rbrack $. La legge così ottenuta va confrontata con quella misurata sperimentalmente. Un meccanismo proposto deve inoltre dare, sommando gli stadi, la reazione globale, contenere stadi molecolarmente plausibili ed essere compatibile con la legge cinetica misurata.
 
 **Esempio svolto 15.4** (legge cinetica da uno stadio lento). Si consideri il meccanismo proposto per l’ossidazione del monossido di azoto, con il primo stadio molto più lento del secondo. Per un esercizio numerico si assumano $\lbrack \mathrm{NO}\rbrack =0{,}0200\ \mathrm{mol/L}$, $\lbrack \mathrm{O_2}\rbrack =0{,}0300\ \mathrm{mol/L}$ e $k_1=0{,}500\ \mathrm{L/(mol\cdot s)}$.
 
@@ -259,43 +259,3 @@ La sintesi industriale dell’ammoniaca combina azoto e idrogeno su un catalizza
 La reazione è esotermica, con $\Delta H_r^\circ\simeq-91{,}8\ \mathrm{kJ/mol}$ per l’equazione scritta. Una temperatura più bassa favorisce l’ammoniaca all’equilibrio, ma rallenta la cinetica; una pressione più alta favorisce il lato con meno moli gassose, cioè i prodotti. Sono effetti di equilibrio e di velocità distinti, descritti anche nel [Principio di Le Châtelier](ref:chapter/12#p4).
 
 Un assetto riportato nel materiale del corso usa circa $450\ ^\circ\mathrm{C}$ e $230\ \mathrm{atm}$, con un letto catalitico fisso a base di ferro. All’uscita si raffredda la miscela per condensare l’ammoniaca e si ricircolano i gas rimasti: la separazione del prodotto e il riciclo contribuiscono alla produzione complessiva. Il catalizzatore rende praticabile una velocità adeguata alla temperatura scelta, ma non sposta da sé l’equilibrio.
-
-## p6 | Radioattività e processi nucleari
-
-*Questa sezione va oltre il programma del corso: all'esame non viene chiesta.*
-
-### Nuclidi ed equazioni nucleari
-
-**Definizione 15.7**. Un nuclide è una specie nucleare identificata dal numero atomico $Z$, dal numero di massa $A$ e dallo stato energetico. Un radionuclide è un nuclide instabile che decade spontaneamente emettendo radiazioni. La notazione ${}^{A}_{Z}X$ e le relazioni tra protoni e neutroni sono introdotte in [Struttura dell’atomo e isotopi](ref:chapter/2#p3).
-
-Per **bilanciare un’equazione nucleare** si uguagliano separatamente, nei due membri, le somme dei numeri di massa $A$ e dei numeri atomici $Z$. Questi ultimi includono il valore $-1$ dell’elettrone e il valore $+1$ del positrone. Le trasformazioni più comuni si riconoscono dalle particelle emesse.
-
-- Nel decadimento $\alpha$ si emette un nucleo ${}^{4}_{2}\mathrm{He}$: $A$ diminuisce di $4$ e $Z$ di $2$. Per esempio, ${}^{238}_{92}\mathrm{U}\to{}^{234}_{90}\mathrm{Th}+{}^{4}_{2}\mathrm{He}$.
-- Nel decadimento $\beta^-$ un neutrone si trasforma in un protone: $A$ resta costante e $Z$ aumenta di $1$. Per esempio, ${}^{14}_{6}\mathrm{C}\to{}^{14}_{7}\mathrm{N}+{}^{0}_{-1}\beta^-+\bar{\nu}$, dove $\bar{\nu}$ è un antineutrino.
-- Nel decadimento $\beta^+$ un protone si trasforma in un neutrone: $A$ resta costante e $Z$ diminuisce di $1$. In generale, ${}^{A}_{Z}X\to{}^{A}_{Z-1}Y+{}^{0}_{+1}\beta^++\nu$.
-- Nell’emissione $\gamma$ un nucleo eccitato perde energia senza cambiare $A$ o $Z$: ${}^{A}_{Z}X^{*}\to{}^{A}_{Z}X+\gamma$.
-
-**Esempio svolto 15.5**. Completare ${}^{57}_{27}\mathrm{Co}+{}^{0}_{-1}e^-\to{}^{A}_{Z}Y$, una cattura elettronica. **Dati:** a sinistra le somme sono $57+0=57$ per il numero di massa e $27-1=26$ per il numero atomico. **Strategia:** imporre le stesse somme a destra. **Calcolo:** $A=57$ e $Z=26$ identificano il ferro; quindi ${}^{57}_{27}\mathrm{Co}+{}^{0}_{-1}e^-\to{}^{57}_{26}\mathrm{Fe}$. **Verifica:** entrambi i membri hanno numero di massa $57$ e numero atomico totale $26$.
-
-Nella **fissione** un nucleo pesante si scinde in nuclei più leggeri, spesso liberando neutroni; nella **fusione** nuclei leggeri si uniscono. Anche queste equazioni si bilanciano con le somme di $A$ e $Z$.
-
-### Decadimento, attività e datazione
-
-Il decadimento di un singolo nucleo è imprevedibile; per molti nuclei identici si può descrivere la diminuzione del loro numero $N$. Se ogni nucleo ha la stessa probabilità di decadere per unità di tempo e la costante di decadimento $\varepsilon$ resta costante, vale $-\mathrm{d}N/\mathrm{d}t=\varepsilon N$. Qui $N$ indica i nuclei radioattivi ancora presenti.
-
-:::formula{id="15.10" label="Nuclei radioattivi residui"}
-$$N(t)=N_0e^{-\varepsilon t},\qquad t_{1/2}=\frac{\ln 2}{\varepsilon}$$
-:::
-
-L’**attività** $\mathcal{A}=-\mathrm{d}N/\mathrm{d}t=\varepsilon N$ è il numero di decadimenti per unità di tempo; la sua unità è il becquerel, $1\ \mathrm{Bq}=1\ \mathrm{s}^{-1}$. Per lo stesso campione, con $\varepsilon$ costante, attività e nuclei residui hanno quindi la medesima frazione rispetto al valore iniziale. Nelle note del corso la costante è $\varepsilon$; è comune anche il simbolo $\lambda$.
-
-:::formula{id="15.11" label="Attività radioattiva residua"}
-$$\frac{\mathcal{A}(t)}{\mathcal{A}_0}=e^{-\varepsilon t}=2^{-t/t_{1/2}},\qquad t=\frac{t_{1/2}}{\ln 2}\ln\left(\frac{\mathcal{A}_0}{\mathcal{A}(t)}\right)$$
-:::
-
-:::image{src="assets/9967d3f5-attivita-emivite.svg" alt="L'attività relativa scende da 1 a 0,5, 0,25 e 0,125 dopo una, due e tre emivite" caption="Fig. 15.5 — Attività residua in funzione del numero di emivite trascorse."}
-:::
-
-**Esempio svolto 15.6**. Un reperto organico presenta un’attività del ${}^{14}_{6}\mathrm{C}$ pari al $25\%$ di quella iniziale. Assumendo $t_{1/2}\approx 5\ 700\ \mathrm{anni}$, stimarne l’età. **Dati:** $\mathcal{A}(t)/\mathcal{A}_0=0{,}25$. **Strategia:** ricavare il tempo dalla formula dell’attività. **Calcolo:** $t=(5\ 700\ \mathrm{anni}/\ln 2)\ln(1/0{,}25)=2(5\ 700\ \mathrm{anni})\approx 11\ 400\ \mathrm{anni}$. **Verifica:** dopo due emivite resta $(1/2)^2=1/4$ dell’attività iniziale. La stima presuppone che il reperto abbia smesso di scambiare carbonio con l’ambiente e che l’attività iniziale sia nota dal rapporto isotopico di riferimento.
-
-**Errore tipico 15.7**. Dimezzare l’attività sottraendo ogni volta una quantità fissa: dopo due emivite resta un quarto, non zero. Nel bilanciamento nucleare, inoltre, la particella $\beta^-$ ha numero di massa $0$ e numero atomico $-1$: trascurare quest’ultimo porta a identificare l’elemento prodotto in modo errato.

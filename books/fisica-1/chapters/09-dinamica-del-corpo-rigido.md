@@ -45,6 +45,28 @@ $$M_z = I_z\,\alpha$$
 
 Questa è l'analogo rotazionale di $\vec{R} = m\vec{a}$: il momento assiale risultante delle forze esterne produce un'accelerazione angolare proporzionale al momento d'inerzia rispetto all'asse. Dalla conoscenza delle forze esterne, del loro punto di applicazione e di $I_z$ si ricava $\alpha(t)$ e, per integrazione, $\omega(t)$ e $\theta(t)$, con le stesse tecniche già viste nel [moto circolare](ref:chapter/2#p6): se $M_z = 0$ il corpo ruota di moto circolare uniforme (o resta in quiete), se $M_z$ è costante il moto è uniformemente accelerato, se $M_z$ varia nel tempo il moto è vario.
 
+**Dimostrazione richiesta all'esame.**
+
+**Teorema 9.2.** Sia dato un corpo rigido che ruota con velocità angolare $\omega$ attorno a un asse fisso $z$, di versore $\hat{k}$, e sia $O$ un polo fisso sull'asse. Allora la componente lungo $z$ del momento risultante delle forze esterne rispetto a $O$ vale $M_z = I_z\alpha$, con $I_z = \sum_i m_i R_i^2$ e $\alpha = d\omega/dt$.
+
+*Dimostrazione.* Per un polo fisso la seconda equazione cardinale ([formula (7.14)](ref:formula/7.14)) afferma che $d\vec{L}/dt = \vec{M}$, dove $\vec{M}$ è il momento risultante delle sole forze esterne, perché il momento delle forze interne è nullo. Poiché $\hat{k}$ è costante nel tempo, proiettando l'equazione su $z$ si ottiene
+
+$$\frac{dL_z}{dt} = M_z , \qquad L_z = \vec{L}\cdot\hat{k} .$$
+
+Calcoliamo $L_z$. Il punto $P_i$ di massa $m_i$ percorre una circonferenza di raggio $R_i$ attorno all'asse, con velocità $v_i = \omega R_i$ tangente alla circonferenza. La componente lungo $z$ di $\vec{r}_i \times m_i\vec{v}_i$ dipende solo dalle componenti di $\vec{r}_i$ e $\vec{v}_i$ nel piano perpendicolare all'asse, cioè da $x_i v_{i,y} - y_i v_{i,x}$. In tale piano il vettore posizione ha modulo $R_i$ ed è ortogonale a $\vec{v}_i$, quindi
+
+$$L_{i,z} = m_i R_i v_i = m_i R_i^2\,\omega .$$
+
+Sommando su tutti i punti, e ricordando che $\omega$ è la stessa per tutti,
+
+$$L_z = \sum_i m_i R_i^2\,\omega = I_z\,\omega .$$
+
+Per un corpo rigido le distanze $R_i$ dall'asse fisso non cambiano nel tempo, quindi $I_z$ è costante. Derivando si ottiene
+
+$$M_z = \frac{dL_z}{dt} = I_z\,\frac{d\omega}{dt} = I_z\,\alpha . \qquad\blacksquare$$
+
+La dimostrazione non richiede che $\vec{L}$ sia parallelo a $\vec{\omega}$: se lo è, per esempio quando l'asse è di simmetria, la stessa relazione vale anche in forma vettoriale, $\vec{M} = I_z\vec{\alpha}$.
+
 **Errore tipico 9.1.** Scrivere $M_z = I\alpha$ usando il momento d'inerzia rispetto a un asse diverso da quello di rotazione (per esempio rispetto al centro di massa anziché all'asse del perno), oppure trascurare che $I_z$ va calcolato sommando i contributi di tutti i corpi rigidi coinvolti rispetto allo stesso asse comune, come già segnalato nella sezione sul [momento d'inerzia](ref:chapter/8#p3).
 
 ### Pendolo composto
@@ -162,7 +184,7 @@ dove $I_z$ è il momento d'inerzia del corpo rispetto all'asse $z$, già definit
 $$E_k = \frac{1}{2}I_z\omega^2$$
 :::
 
-Nel caso in cui il momento angolare sia parallelo alla velocità angolare (asse di simmetria o asse principale d'inerzia, come discusso nella sezione sull'[ellissoide d'inerzia](ref:chapter/8#p5)), vale $L_z = I_z\omega$, da cui si ottiene una forma alternativa utile quando si conosce il momento angolare invece della velocità angolare.
+Per ogni rotazione attorno a un asse fisso $z$ vale $L_z = I_z\omega$, anche quando $\vec{L}$ ha componenti trasverse all'asse, da cui si ottiene una forma alternativa utile quando si conosce il momento angolare invece della velocità angolare.
 
 :::formula{id="9.6" label="Energia cinetica in funzione del momento angolare assiale"}
 $$E_k = \frac{L_z^2}{2I_z}$$
@@ -291,7 +313,7 @@ Entrambe le scelte sono legittime e portano allo stesso risultato per $\alpha$; 
 
 $$F_{att} = \mu_d N = \mu_d mg\cos\theta \quad \text{SBAGLIATO}, \qquad F_{att} = \mu_s N = \mu_s mg\cos\theta \quad \text{SBAGLIATO} :$$
 
-il primo perché l'attrito non è dinamico (non c'è strisciamento), il secondo perché $\mu_s N$ è solo il valore massimo che l'attrito statico può raggiungere, non il suo valore effettivo, che vale $0 \le |F_{att}| \le \mu_s N$. Il valore corretto di $F_{att}$ deve essere ricavato come incognita, risolvendo insieme l'equazione di traslazione del CM (prima equazione cardinale) e l'equazione della rotazione attorno al CM (seconda equazione cardinale, data anche da [[6fe3911d-8c54-4e0a-ad45-5312fa18e7be|questa sezione](ref:chapter/9#p2)] come $M_z = I_z\alpha$), insieme alla condizione di puro rotolamento {{formula:9.8}}.
+il primo perché l'attrito non è dinamico (non c'è strisciamento), il secondo perché $\mu_s N$ è solo il valore massimo che l'attrito statico può raggiungere, non il suo valore effettivo, che vale $0 \le |F_{att}| \le \mu_s N$. Il valore corretto di $F_{att}$ deve essere ricavato come incognita, risolvendo insieme l'equazione di traslazione del CM (prima equazione cardinale) e l'equazione della rotazione attorno al CM (seconda equazione cardinale, data anche da [questa sezione](ref:chapter/9#p2)) come $M_z = I_z\alpha$), insieme alla condizione di puro rotolamento {{formula:9.8}}.
 
 Una volta determinato $F_{att}$, bisogna sempre verificare che il moto di puro rotolamento sia effettivamente possibile, cioè che
 
@@ -532,7 +554,7 @@ Gli esercizi sono problemi strutturati a più domande. Un problema spesso mette 
 
 1. Disegna le forze su ciascun corpo e dichiara le incognite. Nel puro rotolamento l'attrito statico $f_s$ è un'incognita, non vale $\mu_s N$.
 2. Scrivi la traslazione del centro di massa lungo e perpendicolarmente al piano. Scrivi poi la rotazione $M_{CM} = I_{CM}\,\alpha$ rispetto al CM (vedi [Rotazione attorno a un asse fisso](ref:chapter/9#p2)), scegliendo con cura i segni dei momenti.
-3. Aggiungi la condizione di rotolamento {{formula:9.8}}, cioè $a_{CM} = \alpha R$. Se c'è un filo su una carrucola con massa, aggiungi anche la sua condizione di inestensibilità, con tensioni diverse sui due lati.
+3. Aggiungi la condizione di rotolamento {{formula:9.8}}, cioè $a_{CM,t} = \alpha R$; per una traiettoria curva, includi separatamente l'accelerazione normale $v_{CM}^2/\rho$. Se c'è un filo su una carrucola con massa, aggiungi anche la sua condizione di inestensibilità, con tensioni diverse sui due lati.
 4. Risolvi in forma letterale per $a_{CM}$, per le tensioni e per $f_s$.
 5. Verifica a posteriori l'aderenza, $|f_s| \le \mu_s N$, come in {{formula:9.9}}. Se la condizione cade, il rotolamento puro non è possibile e si passa allo strisciamento con $f_d = \mu_d N$.
 6. Se la domanda riguarda velocità dopo uno spostamento, puoi usare l'energia: nel puro rotolamento l'attrito non compie lavoro (vedi [Energia nel moto del corpo rigido](ref:chapter/9#p3) e [Rotolamento](ref:chapter/9#p4)).
@@ -560,7 +582,7 @@ Gli esercizi sono problemi strutturati a più domande. Un problema spesso mette 
 1. Individua il vincolo: perno, cerniera, asse fisso. Questo decide che cosa si conserva, come spiegato in [Urti con corpi rigidi](ref:chapter/9#p5).
 2. Scegli come polo il punto del vincolo. La reazione vincolare ha momento nullo rispetto a quel polo, quindi vale {{formula:9.11}}. Se il vincolo blocca solo un asse, si conserva la sola componente assiale $L_z$.
 3. Scrivi $L_z$ prima dell'urto come $m\,v\,b$ (con $b$ il braccio del punto rispetto al polo) e dopo come $I_z\,\omega$ più il contributo del punto. Calcola $I_z$ con Huygens-Steiner, se il perno non passa per il CM.
-4. Se l'urto è completamente anelastico e il punto resta attaccato al corpo, includi la sua massa nel momento d'inerzia dopo l'urto e usa $v=\omega d$, dove $d$ è la distanza dal perno. Un urto anelastico parziale non implica che il punto resti attaccato: in quel caso i corpi si separano e la relazione $v=\omega d$ non vale. Se l'urto è elastico, aggiungi la conservazione dell'energia cinetica. Se il testo dà la velocità del punto dopo l'urto, il solo momento angolare basta.
+4. Se l'urto è completamente anelastico e il punto resta attaccato al corpo, includi la sua massa nel momento d'inerzia dopo l'urto e usa $v=\omega d$, dove $d$ è la distanza dal perno. Negli altri urti anelastici, la velocità finale del punto resta distinta da quella del corpo. Se l'urto è elastico, aggiungi la conservazione dell'energia cinetica. Se il testo dà la velocità del punto dopo l'urto, il solo momento angolare basta.
 5. Per le domande successive all'urto, passa all'energia o alla dinamica rotazionale con $\omega$ come condizione iniziale.
 
 **Errori tipici.**

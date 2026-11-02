@@ -264,7 +264,7 @@ $$m r_1 v_{\theta,1} = m r_2 v_{\theta,2} \quad \Longrightarrow \quad v_{\theta,
 
 ### Definizione e proprietà di base
 
-Una classe di forze particolarmente importante in fisica, sia a livello microscopico (forza elettrostatica) che macroscopico (forza gravitazionale), è quella delle forze centrali.
+Una classe di forze particolarmente importante in fisica, sia a livello microscopico sia macroscopico, è quella delle forze centrali.
 
 **Definizione 5.4** (forza centrale). Si definisce forza centrale una forza agente in una certa regione dello spazio con le seguenti proprietà: in qualsiasi punto la sua direzione passa sempre per un punto fisso, detto centro della forza, e il suo modulo è funzione soltanto della distanza dal centro stesso. Scegliendo come polo $O$ il centro della forza e indicando con $\hat{u}_r$ il versore radiale uscente da $O$, una forza centrale si scrive
 
@@ -272,7 +272,7 @@ Una classe di forze particolarmente importante in fisica, sia a livello microsco
 $$\vec{F} = F(r)\,\hat{u}_r$$
 :::
 
-dove $F(r) > 0$ corrisponde a una forza repulsiva e $F(r) < 0$ a una forza attrattiva. Esempi tipici sono la forza gravitazionale $\vec{F} = -\dfrac{G m_1 m_2}{r^2}\hat{u}_r$ e la forza elettrostatica, già incontrate nella sezione [Forze conservative ed energia potenziale](ref:chapter/4#p4), ma la trattazione che segue vale per qualunque $F(r)$.
+dove $F(r) > 0$ corrisponde a una forza repulsiva e $F(r) < 0$ a una forza attrattiva. Un esempio tipico è la forza gravitazionale $\vec{F} = -\dfrac{G m_1 m_2}{r^2}\hat{u}_r$, ma la trattazione che segue vale per qualunque $F(r)$.
 
 Il punto cruciale è che, scegliendo come polo $O$ proprio il centro della forza, il momento della forza (già definito in [Momento di una forza](ref:chapter/5#p2) come {{formula:5.1}}) è sempre nullo, perché $\vec{r}$ e $\vec{F}$ sono paralleli:
 
@@ -298,7 +298,7 @@ Conviene allora descrivere il moto nel piano con coordinate polari $(r,\theta)$ 
 
 $$\vec{L}_O = \vec{r}\times m\vec{v} = \vec{r}\times m(\vec{v}_r+\vec{v}_\theta) = \vec{r}\times m\vec{v}_\theta ,$$
 
-che in modulo dà $L = m r v_\theta = m r^2 |\dot\theta|$, essendo $L$ il modulo del momento angolare, sempre non negativo, mentre $\dot\theta$ può essere negativo se il moto procede nel verso opposto a quello scelto come positivo. Conviene allora orientare l'asse ortogonale al piano del moto in modo che risulti $\dot\theta\ge 0$: con questa convenzione, che adottiamo nel seguito, si ha semplicemente $L = m r^2\dot\theta$. Nell'intervallo infinitesimo $dt$ il raggio vettore spazza un'area approssimabile a un triangolo di base $r\,d\theta$ e altezza $r$, quindi $dA = \frac12 r^2 d\theta$. In modo equivalente, il triangolo ha per lati $\vec{r}$ e lo spostamento $\vec{v}\,dt$, per cui $dA = \frac12|\vec{r}\times\vec{v}|\,dt$, cioè $\dfrac{dA}{dt} = \dfrac{|\vec{r}\times\vec{v}|}{2} = \dfrac{L}{2m}$. Ne segue la velocità areolare
+che in modulo dà $L = m r |v_\theta| = m r^2 |\dot\theta|$, essendo $L$ il modulo del momento angolare, sempre non negativo. Dopo aver orientato l'asse nel verso del moto, si ha $L = m r v_\theta = m r^2\dot\theta$. Nell'intervallo infinitesimo $dt$ il raggio vettore spazza un'area approssimabile a un triangolo di base $r\,d\theta$ e altezza $r$, quindi $dA = \frac12 r^2 d\theta$. In modo equivalente, il triangolo ha per lati $\vec{r}$ e lo spostamento $\vec{v}\,dt$, per cui $dA = \frac12|\vec{r}\times\vec{v}|\,dt$, cioè $\dfrac{dA}{dt} = \dfrac{|\vec{r}\times\vec{v}|}{2} = \dfrac{L}{2m}$. Ne segue la velocità areolare
 
 :::formula{id="5.9" label="Velocità areolare e sua costanza"}
 $$\frac{dA}{dt} = \frac12 r^2\frac{d\theta}{dt} = \frac{L}{2m} = \text{costante}$$
@@ -324,29 +324,15 @@ Il prodotto scalare $\hat{u}_r\cdot d\vec{s} = ds\cos\theta$, dove $\theta$ è l
 $$W_{AB} = \int_{r_A}^{r_B} F(r)\,dr = E_p(r_A) - E_p(r_B)$$
 :::
 
-essendo il risultato una funzione soltanto delle distanze $r_A$ ed $r_B$ dal centro, e non del cammino seguito: questa è precisamente la condizione che definisce una forza conservativa, enunciata in [Forze conservative ed energia potenziale](ref:chapter/4#p4). Ne segue che a ogni forza centrale è associata un'energia potenziale $E_p(r)$ con $\vec{F}=-\vec{\nabla}E_p$, come già visto per il caso gravitazionale ed elettrostatico.
-
-### Equazione del moto radiale: formula di Binet
-
-La conservazione del momento angolare permette di eliminare il tempo dall'equazione del moto e di ottenere un'equazione puramente geometrica per la traiettoria, nel caso $L\neq 0$: se infatti $L=0$ il moto è radiale, con $\theta$ costante, e la formula che segue non è applicabile. Dalla costanza di $r^2\dot\theta = L/m$ (con l'orientazione scelta in modo che $\dot\theta\ge 0$) segue che la componente trasversa dell'accelerazione è nulla,
-
-$$a_\theta = \frac{1}{r}\frac{d}{dt}\!\left(r^2\frac{d\theta}{dt}\right) = 0 ,$$
-
-e quindi tutta l'accelerazione è radiale. Esprimendo $\dfrac{dr}{dt}$ e $\dfrac{d^2r}{dt^2}$ in funzione di $\theta$ tramite $r^2\dot\theta = L/m$ (lecito perché $L\neq 0$ e, per l'orientazione scelta, $\dot\theta\ge0$), si arriva alla
-
-:::formula{id="5.11" label="Formula di Binet"}
-$$\vec{a} = -\frac{L^2}{m^2 r^2}\left[\frac{d^2}{d\theta^2}\!\left(\frac{1}{r}\right) + \frac{1}{r}\right]\hat{u}_r$$
-:::
-
-che lega la forma della traiettoria $r(\theta)$ al modulo della forza centrale tramite $\vec{F} = m\vec{a}$, ossia, in componente radiale con segno, $F(r) = m a_r$, dove $a_r$ è la componente radiale (con segno) dell'accelerazione ricavata dalla formula di Binet. Questa relazione è lo strumento con cui si dimostra che, nel caso gravitazionale $F(r)\propto 1/r^2$, le orbite sono coniche (prima legge di Keplero); l'approfondimento è lasciato a [Gravitazione e leggi di Keplero](ref:chapter/10#p2).
+essendo il risultato una funzione soltanto delle distanze $r_A$ ed $r_B$ dal centro, e non del cammino seguito: questa è precisamente la condizione che definisce una forza conservativa, enunciata in [Forze conservative ed energia potenziale](ref:chapter/4#p4). Ne segue che a ogni forza centrale è associata un'energia potenziale $E_p(r)$ con $\vec{F}=-\vec{\nabla}E_p$, come già visto per il caso gravitazionale.
 
 ### Energia meccanica e momento angolare nei problemi di orbita
 
-Nei problemi di orbita (satelliti, pianeti, cariche in campo centrale) la strategia generale è combinare le due leggi di conservazione appena stabilite: momento angolare $L=mrv_\theta$ costante ed energia meccanica $E_m = E_k+E_p$ costante.
+Nei problemi di orbita (satelliti e pianeti) la strategia generale è combinare le due leggi di conservazione appena stabilite: momento angolare $L=mrv_\theta$ costante ed energia meccanica $E_m = E_k+E_p$ costante.
 
 Per un'orbita circolare di raggio $r$ attorno a una massa $M$, la velocità si ottiene imponendo che la forza gravitazionale fornisca l'accelerazione centripeta, $v^2 = GM/r$, e l'energia meccanica diventa
 
-:::formula{id="5.12" label="Energia meccanica su un'orbita circolare"}
+:::formula{id="5.11" label="Energia meccanica su un'orbita circolare"}
 $$E_m = \frac12 m v^2 - \frac{GMm}{r} = -\frac12\,\frac{GMm}{r}$$
 :::
 
@@ -357,7 +343,7 @@ cioè, su un'orbita circolare, l'energia cinetica (positiva) è in valore assolu
 
 Per un'orbita ellittica, la conservazione del momento angolare collega velocità e distanza dal centro nei due punti estremi dell'orbita, afelio (distanza massima) e perielio (distanza minima), dove $\vec{r}$ e $\vec{v}$ sono ortogonali tra loro:
 
-:::formula{id="5.13" label="Momento angolare all'afelio e al perielio"}
+:::formula{id="5.12" label="Momento angolare all'afelio e al perielio"}
 $$L_z^a = m\,r_a v_a = m\,r_p v_p = L_z^p$$
 :::
 
@@ -367,7 +353,7 @@ Questa relazione, combinata con la conservazione dell'energia meccanica tra afel
 
 *Schema e riferimento.* Polo $O$ nel Sole, assunto fisso in quanto $M\gg m$; la forza gravitazionale esercitata dal Sole sul pianeta è centrale rispetto a $O$, quindi si conservano sia il momento angolare $\vec{L}_O$ sia l'energia meccanica $E_m$ del pianeta.
 
-*Equazioni.* Al perielio e all'afelio $\vec{r}$ e $\vec{v}$ sono ortogonali, quindi $L_z^p = m r_p v_p$ e $L_z^a = m r_a v_a$; dalla conservazione del momento angolare {{formula:5.13}} segue $r_p v_p = r_a v_a$. La conservazione dell'energia meccanica dà $\frac12 v_p^2 - \dfrac{GM}{r_p} = \frac12 v_a^2 - \dfrac{GM}{r_a}$.
+*Equazioni.* Al perielio e all'afelio $\vec{r}$ e $\vec{v}$ sono ortogonali, quindi $L_z^p = m r_p v_p$ e $L_z^a = m r_a v_a$; dalla conservazione del momento angolare {{formula:5.12}} segue $r_p v_p = r_a v_a$. La conservazione dell'energia meccanica dà $\frac12 v_p^2 - \dfrac{GM}{r_p} = \frac12 v_a^2 - \dfrac{GM}{r_a}$.
 
 *Soluzione letterale.* Sostituendo $v_a = v_p\,r_p/r_a$, ricavato dalla conservazione del momento angolare, nella conservazione dell'energia meccanica si ottiene $\frac12 v_p^2\left[1-\left(\dfrac{r_p}{r_a}\right)^2\right] = GM\left(\dfrac{1}{r_p}-\dfrac{1}{r_a}\right)$, da cui
 

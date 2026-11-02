@@ -72,7 +72,7 @@ Valgono inoltre, per ogni $z, z' \in \mathbb{C}$, le proprietà seguenti, che us
 
 - $|z| \ge 0$ e $|z| = 0 \iff z = 0$;
 - $|z \cdot z'| = |z| \cdot |z'|$;
-- $|z + z'| \le |z| + |z'|$ (disuguaglianza triangolare, analoga a [formula (1.5)](ref:formula/1.5));
+- $|z + z'| \le |z| + |z'|$ (disuguaglianza triangolare, analoga a [formula (1.3)](ref:formula/1.3));
 - $|z| = |\bar z|$;
 - $|z| \ge |\operatorname{Re}(z)|$ e $|z| \ge |\operatorname{Im}(z)|$;
 - $\overline{z + z'} = \bar z + \bar z'$ e $\overline{z \cdot z'} = \bar z \cdot \bar z'$;
@@ -289,7 +289,7 @@ In altre parole, per elevare a potenza un numero complesso basta elevare a poten
 
 $$(1+i)^8 = \left(\sqrt{2}\right)^8 e^{i\cdot 8 \cdot \frac{\pi}{4}} = 2^4 e^{i2\pi} = 16 \cdot 1 = 16,$$
 
-dove si è usato $e^{i2\pi} = \cos(2\pi) + i\sin(2\pi) = 1$. Il calcolo diretto tramite il binomio di Newton (si veda [Principio di induzione e coefficiente binomiale](ref:chapter/1#p4)) richiederebbe molti più passaggi.
+dove si è usato $e^{i2\pi} = \cos(2\pi) + i\sin(2\pi) = 1$. Il calcolo diretto tramite il binomio di Newton richiederebbe molti più passaggi.
 
 **Errore tipico 2.4.** Un errore frequente è applicare De Moivre elevando il modulo ma **non** moltiplicando l'argomento per $n$ (o viceversa): entrambe le operazioni, sul modulo e sull'argomento, vanno eseguite insieme. Un secondo errore comune è dimenticare che l'angolo risultante $n\theta$ può uscire dall'intervallo $\rbrack -\pi,\pi\rbrack $: ciò non è un problema, perché coseno e seno sono periodici, ma se si vuole l'argomento principale occorre ridurre $n\theta$ modulo $2\pi$.
 
@@ -510,7 +510,7 @@ Si dà un insieme $A$ descritto da disuguaglianze, per esempio $1\le |z|\le 2$ i
 Metodo, passo per passo:
 
 1. Riscrivi ogni condizione con $z=x+iy$, usando $z+\bar z = 2x$ e $z-\bar z = 2iy$ (vedi [Forma algebrica e operazioni](ref:chapter/2#p2)). Esempio: $\bar z+z\ge 0$ equivale a $\operatorname{Re} z\ge 0$. Invece $i(z-\bar z)=i\cdot 2iy=-2y$, perciò $i(z-\bar z)\ge 0$ equivale a $\operatorname{Im} z\le 0$.
-2. Traduci ogni condizione in una regione geometrica. $1\le |z|\le 2$ è una corona circolare. Le disuguaglianze tra $\operatorname{Im} z$ e $\operatorname{Re} z$, come $0\le \operatorname{Im} z\le \operatorname{Re} z$, sono semirette uscenti dall'origine. Individuano quindi un settore, cioè un intervallo di argomenti.
+2. Traduci ogni condizione in una regione geometrica. $1\le |z|\le 2$ è una corona circolare. Le disuguaglianze tra $\operatorname{Im} z$ e $\operatorname{Re} z$, come $0\le \operatorname{Im} z\le \operatorname{Re} z$, individuano un settore; le semirette uscenti dall'origine ne delimitano i bordi. Il settore corrisponde a un intervallo di argomenti.
 3. Intersecare le regioni dà $A$: una corona circolare tagliata in un settore, descritta da $\rho\in[1,2]$ e $\theta\in[\theta_1,\theta_2]$.
 4. Per $B$ passa alla forma trigonometrica o esponenziale (vedi [Forma trigonometrica ed esponenziale](ref:chapter/2#p3)). Per la formula {{formula:2.14}}, elevare a $n$ manda $\rho\mapsto\rho^n$ e $\theta\mapsto n\theta$. Il settore $\lbrack \theta_1,\theta_2\rbrack $ diventa $\lbrack n\theta_1,n\theta_2\rbrack $ e, se $n\in\mathbb{N}^+$, il raggio $\lbrack 1,2\rbrack $ diventa $\lbrack 1,2^n\rbrack $.
 5. Disegna $B$. Se $n\theta_2-n\theta_1\ge 2\pi$, l'immagine è tutta la corona; se è minore, resta un settore. Per il disegno riduci gli angoli modulo $2\pi$: se l'ampiezza supera $2\pi$, l'immagine resta la corona completa.
@@ -554,7 +554,7 @@ Esempi:
 
 - Esame del 10 febbraio 2016 - IIo turno, esercizio 2, punto b: l'equazione $|\bar z-i|(z\bar z)=|\bar z-i|^3$ si risolve con il passo 1. Il caso $\bar z=i$ dà $z=-i$. Altrimenti si semplifica e rimane $|z|^2=|\bar z-i|^2$, cioè $y^2=(y+1)^2$, quindi la retta $\operatorname{Im} z=-\tfrac12$. L'insieme delle soluzioni è la retta più il punto $-i$.
 - Esame del 15 giugno 2021, esercizio 2, punto a: il prodotto $(z^3-8i)(iz-2\bar z-2-3i)=0$ si spezza in due equazioni. Il secondo fattore, con $z=x+iy$, dà $-2x-y-2=0$ e $x+2y-3=0$, quindi $z=-\tfrac73+\tfrac83 i$. Il primo fattore appartiene al tipo successivo.
-- Esame del 23 giugno 2020, esercizio 2, punti a e b: con $z=2+3i$ e $w=x+iy$ si ha $\operatorname{Im}(z\bar w)=3x-2y$, quindi il luogo è la retta $3x=2y$ per l'origine e per $z$. Con $z=a+ib$ la condizione è $bx-ay=0$, ancora la retta per $0$ e $z$. Per $a=0$ si ottiene l'asse immaginario, per $b=0$ l'asse reale, e per $a,b\neq 0$ una retta obliqua.
+- Esame del 23 giugno 2020, esercizio 2, punti a e b: con $z=2+3i$ e $w=x+iy$ si ha $\operatorname{Im}(z\bar w)=3x-2y$, quindi il luogo è la retta $3x=2y$ per l'origine e per $z$. Con $z=a+ib$ la condizione è $bx-ay=0$, ancora la retta per $0$ e $z$, se $z\neq 0$. Se $z=0$, la condizione è verificata per ogni $w$, quindi il luogo è tutto il piano. Se $a=0$ e $b\neq 0$ si ottiene l'asse immaginario; se $b=0$ e $a\neq 0$ si ottiene l'asse reale; se $a,b\neq 0$ si ottiene una retta obliqua.
 
 ### Radici n-esime ed equazioni del tipo $z^n=w$
 
@@ -568,7 +568,7 @@ Metodo, passo per passo:
 4. Rappresentale: stanno sui vertici di un poligono regolare di $n$ lati inscritto nella circonferenza di raggio $\sqrt[n]{\rho}$.
 5. Torna all'incognita $z$ invertendo la sostituzione del passo 1. Per esempio da $2z+\tfrac12=\zeta_k$ segue $z_k=\dfrac{\zeta_k-\frac12}{2}$.
 
-Il teorema fondamentale dell'algebra, visto in [Polinomi ed equazioni in $\mathbb{C}$](ref:chapter/2#p5), serve da controllo: ci devono essere esattamente $n$ soluzioni distinte.
+Se $w=0$, l'equazione $\zeta^n=0$ ha una sola soluzione distinta, $\zeta=0$. Se $w\neq 0$, la formula delle radici fornisce $n$ soluzioni distinte. Il teorema fondamentale dell'algebra, visto in [Polinomi ed equazioni in $\mathbb{C}$](ref:chapter/2#p5), conferma che l'equazione ha $n$ radici contando le molteplicità.
 
 Errori tipici:
 

@@ -95,6 +95,42 @@ $$Q_{\mathrm{II}} = 300\ \mathrm{J} + 50\ \mathrm{J} = 350\ \mathrm{J}.$$
 
 *Controllo.* $\Delta U$ è la stessa nei due casi (300 J), come deve essere trattandosi di una funzione di stato, mentre $Q$ e $W$ sono diversi nei due percorsi (500 J e 200 J contro 350 J e 50 J): questo è proprio il contenuto fisico del primo principio enunciato sopra. Il segno positivo di $Q_{\mathrm{II}}$ indica calore assorbito dal sistema, coerente con la convenzione adottata.
 
+**Esempio 13.2** (ciclo). Un sistema compie il ciclo $A\to B\to C\to A$. Nel tratto $A\to B$ assorbe $Q_{AB}=600\ \mathrm{J}$ e compie $W_{AB}=250\ \mathrm{J}$. Nel tratto $B\to C$, a volume costante, cede $400\ \mathrm{J}$ di calore. Nel tratto $C\to A$ l'ambiente compie sul sistema un lavoro di $150\ \mathrm{J}$. Si chiedono $Q_{CA}$ e le variazioni di energia interna di ciascun tratto.
+
+*Schema.* Nel tratto isocoro $W_{BC}=0$ e $Q_{BC}=-400\ \mathrm{J}$ (calore ceduto); il lavoro subìto nel tratto $CA$ vale $W_{CA}=-150\ \mathrm{J}$. Su tutto il ciclo $\Delta U=0$, quindi $Q_{\text{tot}}=W_{\text{tot}}$.
+
+*Numeri.* Il lavoro netto è
+
+$$W_{\text{tot}} = 250\ \mathrm{J} + 0 - 150\ \mathrm{J} = 100\ \mathrm{J}.$$
+
+Da $Q_{AB}+Q_{BC}+Q_{CA}=W_{\text{tot}}$ si ricava
+
+$$Q_{CA} = 100\ \mathrm{J} - 600\ \mathrm{J} + 400\ \mathrm{J} = -100\ \mathrm{J},$$
+
+cioè calore ceduto. Per i singoli tratti, con {{formula:13.1}}:
+
+$$\Delta U_{AB} = 600 - 250 = 350\ \mathrm{J}, \quad \Delta U_{BC} = -400 - 0 = -400\ \mathrm{J}, \quad \Delta U_{CA} = -100 - (-150) = 50\ \mathrm{J}.$$
+
+*Controllo.* La somma $350-400+50=0$ conferma che $U$ è funzione di stato; il lavoro netto positivo (100 J) è pari al calore netto assorbito, quindi il ciclo si comporta come una macchina termica.
+
+**Esempio 13.3** (trasformazione in più passaggi). Una mole di gas ideale monoatomico ($c_V=\tfrac32 R$) si trova nello stato $A$ con $p_A=2{,}0\times10^{5}\ \mathrm{Pa}$ e $V_A=10\ \mathrm{L}$. Il gas si espande a pressione costante fino a $V_B=25\ \mathrm{L}$ (tratto $A\to B$); poi viene raffreddato a volume costante fino a tornare alla temperatura $T_A$ (tratto $B\to C$). Si calcolano $Q$, $W$ e $\Delta U$ per i due tratti e per il complesso.
+
+*Tratto $A\to B$ (isobara).* Il lavoro è
+
+$$W_{AB} = p_A (V_B - V_A) = 2{,}0\times10^{5}\ \mathrm{Pa}\cdot 15\times10^{-3}\ \mathrm{m^3} = 3000\ \mathrm{J}.$$
+
+Con $pV=nRT$ si ha $n R\,\Delta T = p\,\Delta V$, quindi
+
+$$\Delta U_{AB} = n c_V \Delta T = \tfrac32\, p_A\,\Delta V = 4500\ \mathrm{J}, \qquad Q_{AB} = \Delta U_{AB} + W_{AB} = 7500\ \mathrm{J}.$$
+
+*Tratto $B\to C$ (isocora).* Il volume è costante, dunque $W_{BC}=0$. Poiché $T_C=T_A$ e $U$ del gas ideale dipende solo dalla temperatura, $\Delta U_{BC}=-\Delta U_{AB}=-4500\ \mathrm{J}$, e $Q_{BC}=\Delta U_{BC}=-4500\ \mathrm{J}$ (calore ceduto).
+
+*Complesso $A\to C$.* Si ha
+
+$$Q_{AC}=7500-4500=3000\ \mathrm{J}, \quad W_{AC}=3000+0=3000\ \mathrm{J}, \quad \Delta U_{AC}=0.$$
+
+*Controllo.* Essendo $T_C=T_A$, $\Delta U_{AC}=0$ e quindi $Q_{AC}=W_{AC}$, come richiede il primo principio per una trasformazione che non cambia la temperatura di un gas ideale.
+
 ### Errore tipico
 
 **Errore tipico 13.1.** Uno degli errori concettuali più gravi, e più frequenti, consiste nello scrivere $\Delta Q_{A\to B}$ o $\Delta W_{A\to B}$ al posto di $Q_{A\to B}$ e $W_{A\to B}$. Il simbolo $\Delta f$ ha senso solo se $f$ è una funzione di stato, cioè una funzione definita in ogni punto dello spazio delle coordinate termodinamiche, di cui si possa calcolare la differenza $\Delta f \doteq f(B) - f(A)$ tra due stati. Scrivere $\Delta W_{A\to B}$ significherebbe trattare il lavoro come una funzione di stato di cui si calcola la variazione $W(B)-W(A)$, e analogamente per $\Delta Q_{A\to B}$; ma il primo principio stabilisce esattamente il contrario, cioè che né $Q$ né $W$ sono funzioni di stato, mentre lo è soltanto $U$. Chi scrive $\Delta Q_{A\to B}$ o $\Delta W_{A\to B}$, anche se esegue correttamente i calcoli numerici, dimostra di non avere compreso il contenuto del primo principio. La notazione corretta è dunque sempre
@@ -152,7 +188,7 @@ $$U(T,V_1) = U(T,V_2).$$
 
 Poiché $V_1$ e $V_2$ sono arbitrari, a $T$ fissata $U$ non varia al variare di $V$. Dall'equazione di stato, a $T$ fissata $p$ è determinata da $V$, quindi $U$ non dipende nemmeno da $p$. Ne segue $U = U(T)$.
 
-Il risultato vale solo per il gas ideale, nelle ipotesi indicate: per i gas reali l'espansione libera può variare la temperatura e $U$ dipende anche da $V$. Lo stesso risultato segue dalla teoria cinetica, per cui $U = n c_V T$ è funzione della sola $T$.
+Il risultato vale solo per il gas ideale, nelle ipotesi indicate: per i gas reali l'espansione libera può variare la temperatura e $U$ dipende anche da $V$. La teoria cinetica mostra che $U$ è funzione della sola temperatura. Nel modello con $c_V$ costante e scegliendo lo zero dell'energia interna a $T=0$, si può scrivere $U = n c_V T$.
 
 Per ottenere l'espressione esplicita di $\Delta U$ in funzione di $T$ si considerano due stati di equilibrio generici $A$ e $B$ di $n$ moli di gas ideale, collegati tramite due trasformazioni di comodo: prima una isocora $A \to C$ (volume costante), poi una isoterma $C \to B$ (temperatura costante). Poiché $U$ dipende solo da $T$, lungo l'isoterma $C \to B$ l'energia interna non varia, cioè $U_B = U_C$; quindi $\Delta U_{A\to B} = U_B - U_A = U_C - U_A$, che è proprio la variazione di energia interna nella sola trasformazione isocora $A \to C$.
 
@@ -168,7 +204,7 @@ Questa relazione è il cuore del risultato: a differenza di quanto accade per so
 
 ### Esempio svolto
 
-**Esempio 13.2.** Una mole di gas ideale biatomico occupa un volume $V_A = 10\ \mathrm{L}$ ed è tenuta alla pressione $p_A = 1$ bar. Calcolare la temperatura del gas.
+**Esempio 13.4.** Una mole di gas ideale biatomico occupa un volume $V_A = 10\ \mathrm{L}$ ed è tenuta alla pressione $p_A = 1$ bar. Calcolare la temperatura del gas.
 
 Dati: $n = 1$ mol, $V_A = 10\ \mathrm{L}$, $p_A = 1$ bar.
 
@@ -225,6 +261,8 @@ coincidendo, come deve, con $W_{AB} = p(V_B - V_A) = nR(T_B - T_A)$ ottenuto dir
 $$Q = n c_p \Delta T, \qquad W = p\Delta V = nR\Delta T$$
 :::
 
+**Dimostrazione richiesta all'esame.**
+
 **Relazione di Mayer.** Confrontando le due trasformazioni precedenti fra gli stessi estremi di temperatura si ricava il legame fra $c_p$ e $c_V$. Si considerino due trasformazioni con la stessa $\Delta T$: una isocora da $A$ a $B$ e una isobara da $A$ a $C$. Per l'isocora
 
 $$Q_V = n c_V \Delta T = \Delta U, \qquad W=0$$
@@ -263,6 +301,8 @@ $$\Delta U = -W$$
 
 ossia tutto il lavoro compiuto dal gas (o sul gas) proviene esclusivamente dalla variazione della sua energia interna.
 
+**Dimostrazione richiesta all'esame.**
+
 Se l'adiabatica è anche reversibile, si può ricavare l'equazione della curva nel piano di Clapeyron partendo dal primo principio in forma infinitesima:
 
 $$\delta Q = dU + \delta W = n c_V\,dT + p\,dV = 0$$
@@ -281,7 +321,7 @@ che, integrata tra lo stato iniziale $A$ e lo stato finale $B$ assumendo $\gamma
 $$T\,V^{\gamma-1} = \text{costante}$$
 :::
 
-Con un procedimento analogo, eliminando $T$ tramite $pV=nRT$, si ottengono le due forme equivalenti
+Per dimostrarlo basta riscrivere $TV^{\gamma-1}=\text{costante}$ con l'equazione di stato. Sostituendo $T = pV/(nR)$ si ha $\frac{pV}{nR}\,V^{\gamma-1} = \frac{pV^{\gamma}}{nR} = \text{costante}$, e poiché $nR$ è costante segue $pV^\gamma=\text{costante}$. Sostituendo invece $V = nRT/p$ si ha $T\left(\frac{nRT}{p}\right)^{\gamma-1} = (nR)^{\gamma-1}\,T^{\gamma}p^{1-\gamma} = \text{costante}$; elevando alla potenza $1/\gamma$ si ottiene $T\,p^{\frac{1-\gamma}{\gamma}}=\text{costante}$. Si hanno così le due forme equivalenti
 
 :::formula{id="13.10" label="Equazione delle adiabatiche reversibili in p e V"}
 $$p\,V^{\gamma} = \text{costante}, \qquad T\,p^{\frac{1-\gamma}{\gamma}} = \text{costante}$$
@@ -300,7 +340,7 @@ $$W_{AB} = -\Delta U_{AB} = n c_V (T_A - T_B) = \frac{p_A V_A - p_B V_B}{\gamma 
 
 espressione equivalente ricavata usando $c_V = R/(\gamma-1)$ e l'equazione di stato nei due stati.
 
-**Esempio 13.3.** Due moli di un gas ideale monoatomico ($\gamma = 5/3$, $c_V = \tfrac{3}{2}R$) occupano inizialmente $V_A = 10{,}0\ \text{L}$ a $T_A = 400\ \text{K}$. Il gas si espande adiabaticamente e reversibilmente fino a $V_B = 20{,}0\ \text{L}$. Si vogliono $T_B$, $\Delta U$, $Q$ e $W$.
+**Esempio 13.5.** Due moli di un gas ideale monoatomico ($\gamma = 5/3$, $c_V = \tfrac{3}{2}R$) occupano inizialmente $V_A = 10{,}0\ \text{L}$ a $T_A = 400\ \text{K}$. Il gas si espande adiabaticamente e reversibilmente fino a $V_B = 20{,}0\ \text{L}$. Si vogliono $T_B$, $\Delta U$, $Q$ e $W$.
 
 Dalla {{formula:13.9}}:
 
@@ -392,6 +432,27 @@ $$\bar{K} = \frac{3}{2}k_BT$$
 
 Questo risultato dà alla temperatura assoluta un'interpretazione microscopica precisa: $T$ è la misura dell'energia cinetica media del moto di agitazione termica delle molecole, indipendentemente dalla loro massa o dalla natura chimica del gas. In particolare $T=0\ \text{K}$ corrisponde, in questo modello classico, all'arresto completo del moto molecolare disordinato.
 
+**Dimostrazione richiesta all'esame.**
+
+Si considerano $N$ molecole puntiformi di massa $m$ in un cubo di lato $L$ e volume $V=L^3$, con urti elastici tra molecole e pareti e moto disordinato. Per questa derivazione si trascurano gli urti intermolecolari tra due urti consecutivi contro la stessa parete. Si studia la parete $x=L$.
+
+1. Una molecola con componente della velocità $v_x$ urta la parete. L'urto è elastico, quindi $v_x\to -v_x$ mentre $v_y$ e $v_z$ non cambiano. La molecola subisce la variazione di quantità di moto $-2mv_x$ e la parete riceve l'impulso $2mv_x$.
+2. Trascurando gli urti intermolecolari durante il tragitto tra due urti contro la stessa parete, la molecola raggiunge la parete opposta e torna sulla stessa parete dopo il tempo $\Delta t = 2L/v_x$. La forza media esercitata da quella molecola è
+
+$$F_i = \frac{2mv_{x,i}}{2L/v_{x,i}} = \frac{m\,v_{x,i}^2}{L}.$$
+
+3. Sommando su tutte le molecole e dividendo per l'area $L^2$ della parete si ottiene
+
+$$p = \frac{F}{L^2} = \frac{m}{L^3}\sum_{i=1}^{N}v_{x,i}^2 = \frac{m}{V}\sum_{i=1}^{N}v_{x,i}^2 = \frac{Nm}{V}\,\overline{v_x^2}.$$
+
+4. L'isotropia vale per la distribuzione delle velocità, non per ogni singola molecola: nessuna direzione è privilegiata, quindi $\overline{v_x^2}=\overline{v_y^2}=\overline{v_z^2}$. Poiché $\overline{v^2}=\overline{v_x^2}+\overline{v_y^2}+\overline{v_z^2}$, risulta $\overline{v_x^2}=\overline{v^2}/3$ e quindi
+
+$$pV = \frac{1}{3}Nm\,\overline{v^2} = \frac{2}{3}N\,\overline{\tfrac{1}{2}mv^2} = \frac{2}{3}N\bar{K}.$$
+
+5. Confrontando con $pV = nRT = Nk_BT$ si ricava
+
+$$\bar{K} = \frac{3}{2}k_BT.$$
+
 ### Equipartizione dell'energia
 
 Il fattore $3$ in {{formula:13.15}} deriva dal fatto che la posizione di una molecola puntiforme (gas monoatomico) richiede tre coordinate indipendenti, cioè tre **gradi di libertà**. Il principio di equipartizione generalizza questa osservazione.
@@ -471,9 +532,9 @@ Un secondo errore tipico, già incontrato nella sezione sui [Gas ideali](ref:cha
 
 Il capitolo è comparso in 4 sessioni d'esame su 6. Il tipo di esercizio più frequente è la sequenza di trasformazioni di un gas ideale (isoterma reversibile, isocora, spesso una terza trasformazione), di cui si chiedono calore, lavoro e variazione di energia interna. In tutti i casi la traccia è l'**Esercizio 3**, il terzo esercizio dello scritto, e i temi dell'elenco associano al primo principio anche macchine termiche, calorimetria o entropia.
 
-### Sequenza di trasformazioni reversibili con bilancio energetico
+### Sequenza di trasformazioni con bilancio energetico
 
-**Cosa chiede l'esame.** Un gas ideale con $n$ moli parte da uno stato $A$ con $T_A$ nota. Compie un'isoterma reversibile fino a un volume dato, poi un'isocora a contatto con una sorgente a temperatura diversa. Seguono altri tratti, che nelle tracce riportate sono troncati. Si chiedono $Q$, $W$ e $\Delta U$ dei singoli tratti e del percorso complessivo.
+**Cosa chiede l'esame.** Un gas ideale con $n$ moli parte da uno stato $A$ con $T_A$ nota. Compie un'isoterma reversibile fino a un volume dato, poi un'isocora a contatto con una sorgente a temperatura diversa. Quest'isocora è irreversibile; per renderla reversibile occorrerebbe variare la temperatura della sorgente per passi infinitesimi. Seguono altri tratti, che nelle tracce riportate sono troncati. Si chiedono $Q$, $W$ e $\Delta U$ dei singoli tratti e del percorso complessivo.
 
 **Metodo.**
 
@@ -512,7 +573,7 @@ Il capitolo è comparso in 4 sessioni d'esame su 6. Il tipo di esercizio più fr
 
 **Errori tipici.**
 
-- Convertire male i volumi (litri in m³) oppure usare la temperatura in °C nel logaritmo e nell'equazione di stato.
+- Convertire male i volumi (litri in m³) oppure usare la temperatura in °C nel fattore $nRT$ o nell'equazione di stato.
 - Confondere il calore ceduto dal gas con quello assorbito dal bagno: sono uguali in modulo e opposti in segno.
 
 **Esempi.**

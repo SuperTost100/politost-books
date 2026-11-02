@@ -7,7 +7,7 @@ title: Struttura elettronica e periodicità
 
 Per capire perché gli elementi assorbono o emettono luce a frequenze caratteristiche e perché reagiscono in modo diverso, occorre collegare la struttura dell’atomo alle sue proprietà osservabili. In questo capitolo la descrizione passa dai quanti di luce e dagli spettri atomici agli orbitali e alla disposizione degli elettroni; da qui si comprende come la configurazione elettronica influenzi dimensioni atomiche, tendenza a perdere o acquistare elettroni e reattività. Queste idee forniscono anche le basi per affrontare il legame ionico.
 
-Per iniziare, è utile conoscere la struttura dell'atomo e distinguere elementi e isotopi, come discusso in [Struttura dell'atomo e isotopi](ref:chapter/2#p3), e avere familiarità con la tavola periodica, come discusso in [La tavola periodica](ref:chapter/2#p4). Servono inoltre le operazioni algebriche di base e la capacità di leggere simboli e unità di misura.
+Per iniziare, è utile conoscere la struttura dell'atomo e distinguere elementi e isotopi, come discusso in [Struttura dell'atomo e isotopi](ref:chapter/2#p2), e avere familiarità con la tavola periodica, come discusso in [La tavola periodica](ref:chapter/2#p3). Servono inoltre le operazioni algebriche di base e la capacità di leggere simboli e unità di misura.
 
 Al termine saprai descrivere la natura quantistica della luce e della materia, interpretare gli spettri e riconoscere che cosa spiega il modello di Bohr e dove non basta. Saprai individuare i numeri quantici e gli orbitali, scrivere configurazioni elettroniche per atomi e ioni applicando le regole di riempimento, e prevedere se una specie è paramagnetica o diamagnetica. Infine, userai la carica nucleare efficace per spiegare e confrontare i raggi atomici e ionici, le energie di ionizzazione e le affinità elettroniche, collegando queste tendenze alla reattività degli elementi.
 
@@ -99,7 +99,7 @@ $$E_{\text{mole}} = E_{\text{fotone}} \cdot N_A = (4,968 \times 10^{-19}\ \text{
 
 4. *Verifica.* L'ordine di grandezza è quello tipico dei fotoni di luce visibile ($10^{-19}\ \text{J}$ per fotone, poche centinaia di kJ/mol su scala molare), confrontabile con le energie di legame chimico: non a caso la luce visibile e ultravioletta può indurre reazioni fotochimiche, mentre le onde radio, molto meno energetiche, non lo possono.
 
-**Errore tipico 8.2.** Dimenticare di convertire $\lambda$ in metri prima di applicare $\nu = c/\lambda$ (un valore in nanometri lasciato tale nel calcolo produce un errore di nove ordini di grandezza), oppure confondere l'energia di un singolo fotone con l'energia riferita a una mole di fotoni, che va moltiplicata per $N_A$ secondo quanto fissato nella sezione su [massa, mole e massa molare](ref:chapter/2#p5).
+**Errore tipico 8.2.** Dimenticare di convertire $\lambda$ in metri prima di applicare $\nu = c/\lambda$ (un valore in nanometri lasciato tale nel calcolo produce un errore di nove ordini di grandezza), oppure confondere l'energia di un singolo fotone con l'energia riferita a una mole di fotoni, che va moltiplicata per $N_A$ secondo quanto fissato nella sezione su [massa, mole e massa molare](ref:chapter/2#p4).
 
 La quantizzazione dell'energia, introdotta qui per la radiazione del corpo nero e per l'effetto fotoelettrico, sarà il filo conduttore della sezione successiva, dove si applicherà agli spettri a righe degli atomi e al modello di Bohr dell'atomo di idrogeno.
 
@@ -187,9 +187,9 @@ Si vuole trovare la lunghezza d'onda del fotone emesso quando l'elettrone dell'a
 
 $\displaystyle \Delta E = R_h\left(\frac{1}{2^2}-\frac{1}{3^2}\right) = 2,18 \times 10^{-18}\ \text{J} \times 0,13889 = 3,028 \times 10^{-19}\ \text{J}$
 
-$\displaystyle \nu = \frac{\Delta E}{h} = \frac{3,028 \times 10^{-19}}{6,626 \times 10^{-34}} = 4,569 \times 10^{14}\ \text{Hz}$
+$\displaystyle \nu = \frac{\Delta E}{h} = \frac{3,028 \times 10^{-19}}{6,626 \times 10^{-34}} = 4,570 \times 10^{14}\ \text{Hz}$
 
-$\displaystyle \lambda = \frac{c}{\nu} = \frac{2,998 \times 10^{8}}{4,569 \times 10^{14}} = 6,561 \times 10^{-7}\ \text{m} = 656\ \text{nm}$
+$\displaystyle \lambda = \frac{c}{\nu} = \frac{2,998 \times 10^{8}}{4,570 \times 10^{14}} = 6,560 \times 10^{-7}\ \text{m} = 656,0\ \text{nm}$
 
 4. Verifica: 656 nm è nel rosso, in accordo con l'osservazione sperimentale che la transizione $n=3 \to n=2$ produce la riga rossa della serie di Balmer (656 nm), mentre un salto più ampio come $n=5 \to n=2$ produce un fotone di energia maggiore e lunghezza d'onda minore (luce blu-violetto, $\lambda = 434\ \text{nm}$).
 
@@ -318,7 +318,7 @@ Gli orbitali f ($l=3$), con sette possibili orientamenti e forme multilobate pi�
 
 ## p5 | Configurazione elettronica di atomi e ioni
 
-La configurazione elettronica è la rappresentazione completa dei sottolivelli occupati da tutti gli elettroni di un atomo o di uno ione, e descrive come gli elettroni sono distribuiti tra i vari orbitali atomici. Conoscerla permette di prevedere il comportamento chimico di un elemento, il suo posto nella tavola periodica (già discussa in [La tavola periodica](ref:chapter/2#p4)) e, come si vedrà in chiusura di sezione, la sua risposta a un campo magnetico esterno.
+La configurazione elettronica è la rappresentazione completa dei sottolivelli occupati da tutti gli elettroni di un atomo o di uno ione, e descrive come gli elettroni sono distribuiti tra i vari orbitali atomici. Conoscerla permette di prevedere il comportamento chimico di un elemento, il suo posto nella tavola periodica (già discussa in [La tavola periodica](ref:chapter/2#p3)) e, come si vedrà in chiusura di sezione, la sua risposta a un campo magnetico esterno.
 
 ### Le tre regole di costruzione: Aufbau, Pauli, Hund
 
@@ -443,7 +443,7 @@ Poiché si deve fornire energia al sistema per vincere l'attrazione tra nucleo e
 
 Lungo un gruppo l'energia di ionizzazione diminuisce dall'alto verso il basso: il raggio atomico crescente allontana l'elettrone più esterno dal nucleo, l'interazione reciproca si attenua e diventa quindi più facile rimuovere l'elettrone.
 
-Lungo un periodo l'energia di ionizzazione aumenta da sinistra a destra: $Z_{eff}$ crescente riduce il raggio atomico e rafforza l'interazione tra nucleo ed elettroni esterni, che diventano più difficili da rimuovere. Fa eccezione il gruppo 13, il cui andamento lungo il gruppo è irregolare: l'energia di ionizzazione diminuisce da B ad Al, aumenta leggermente da Al a Ga, diminuisce di nuovo da Ga a In e torna ad aumentare da In a Tl. Queste irregolarità sono dovute al fatto che, scendendo nel gruppo, si inseriscono via via elettroni $d$ (e, per Tl, anche $f$) interni, che schermano in modo meno efficace del previsto e producono un $Z_{eff}$ maggiore di quello atteso sugli elettroni esterni.
+Lungo un periodo l'energia di ionizzazione aumenta da sinistra a destra: $Z_{eff}$ crescente riduce il raggio atomico e rafforza l'interazione tra nucleo ed elettroni esterni, che diventano più difficili da rimuovere. Lungo un gruppo, invece, l'energia di ionizzazione tende a diminuire dall'alto verso il basso; il gruppo 13 presenta un andamento irregolare: diminuisce da B ad Al, aumenta leggermente da Al a Ga, diminuisce di nuovo da Ga a In e torna ad aumentare da In a Tl. Queste irregolarità sono dovute al fatto che, scendendo nel gruppo, si inseriscono via via elettroni $d$ (e, per Tl, anche $f$) interni, che schermano in modo meno efficace del previsto e producono un $Z_{eff}$ maggiore di quello atteso sugli elettroni esterni.
 
 Per uno stesso elemento si possono definire energie di ionizzazione successive ($I_1$, $I_2$, $I_3$, ...), ciascuna sempre maggiore della precedente perché ogni elettrone viene rimosso da uno ione con carica positiva via via più elevata. L'aumento non è però regolare: si osserva un salto enorme non appena si inizia a rimuovere un elettrone interno, cioè un elettrone appartenente a un livello energetico pieno e più vicino al nucleo, molto più difficile da estrarre. Questo comportamento è una delle conferme sperimentali della struttura a livelli dell'atomo.
 

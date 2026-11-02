@@ -106,7 +106,7 @@ $$f(x) = f(x_0) + f'(x_0)(x-x_0) + o(x-x_0).$$
 
 Poiché $f'(x_0)(x-x_0) \to 0$ e $o(x-x_0) \to 0$ quando $x \to x_0$, si ottiene $\lim_{x\to x_0} f(x) = f(x_0)$, che è esattamente la definizione di continuità di $f$ in $x_0$ data in [continuità tramite il limite](ref:chapter/5#p2). $\square$
 
-**Errore tipico 7.1.** Il teorema precedente non si inverte: continuità **non** implica derivabilità. Non è lecito dedurre che una funzione continua in $x_0$ sia anche derivabile in $x_0$; l'implicazione vale in un solo senso. L'esempio canonico è $f(x) = |x|$, già introdotto in [Valore assoluto](ref:chapter/1#p5): la funzione è continua su tutto $\mathbb{R}$, ma in $x_0 = 0$ il rapporto incrementale vale $+1$ da destra e $-1$ da sinistra, quindi $f$ presenta un punto angoloso e non è derivabile in $0$. Lo studio sistematico di questi casi (punti angolosi, cuspidi, flessi a tangente verticale) è l'oggetto della sezione successiva, [Punti di non derivabilità](ref:chapter/7#p3).
+**Errore tipico 7.1.** Il teorema precedente non si inverte: continuità **non** implica derivabilità. Non è lecito dedurre che una funzione continua in $x_0$ sia anche derivabile in $x_0$; l'implicazione vale in un solo senso. L'esempio canonico è $f(x) = |x|$, già introdotto in [Valore assoluto](ref:chapter/1#p4): la funzione è continua su tutto $\mathbb{R}$, ma in $x_0 = 0$ il rapporto incrementale vale $+1$ da destra e $-1$ da sinistra, quindi $f$ presenta un punto angoloso e non è derivabile in $0$. Lo studio sistematico di questi casi (punti angolosi, cuspidi, flessi a tangente verticale) è l'oggetto della sezione successiva, [Punti di non derivabilità](ref:chapter/7#p3).
 
 :::image{src="assets/4b1d9574-valore-assoluto-angoloso.svg" alt="Grafico di f(x)=|x| con punto angoloso nell'origine" caption="Fig. 7.2 — La funzione |x| è continua in 0 ma non derivabile: le derivate laterali valgono +1 e -1"}
 :::
@@ -539,8 +539,8 @@ Nelle prove scritte questi argomenti compaiono nell'Esercizio 1 (di solito 8 o 9
 
 **Esempi.**
 
-- Esame del 31 gennaio 2024, esercizio 1: funzione del tipo $x^3/\sqrt{|x^4-1|}$ (con varianti). Si riscrive il valore assoluto a tratti, si deriva e si classificano i punti $x=\pm 1$ e $x=0$ con i limiti di $f'$.
-- Esame del 14 febbraio 2017, primo turno, esercizio 1: $f(x)=\sqrt{3x^2-x^3}$ (la radice è di indice 3 nel testo originale). Il punto di non derivabilità si studia con le derivate destra e sinistra, e il comportamento in $x=0$ distingue cuspide e flesso verticale.
+- Esame del 31 gennaio 2024, esercizio 1: funzione del tipo $x^3/\sqrt{|x^4-1|}$ (con varianti). Il dominio è $\mathbb{R}\setminus\{-1,1\}$; $x=0$ è derivabile, mentre $x=\pm1$ non appartengono al dominio e non sono punti di non derivabilità da classificare.
+- Esame del 14 febbraio 2017, primo turno, esercizio 1: $f(x)=\sqrt[3]{3x^2-x^3}$. In $x=0$ le derivate laterali sono infinite e di segno opposto, quindi il punto è una cuspide.
 - Esame del 21 giugno 2024, esercizio 1: funzione definita a tratti con $e^{1/x}$ o $e^{-1/x}$ e valore $0$ sull'altro tratto. La derivabilità nel punto di raccordo si studia con i limiti laterali del rapporto incrementale e si ricollega a continuità e retta tangente.
 - Esame del 12 febbraio 2019, secondo turno, esercizio 1: $f(x)=e^{-1/\log(x^2-4)}$ con prolungamento continuo. Prima si prolunga per continuità, poi si studia la derivabilità della funzione prolungata.
 

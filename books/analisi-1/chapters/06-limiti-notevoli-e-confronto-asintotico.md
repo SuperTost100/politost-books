@@ -413,7 +413,7 @@ Il capitolo è comparso in 38 delle 83 sessioni d'esame passate. Il tipo di eser
 Metodo:
 
 1. Scrivere il dominio e individuare ogni punto in cui si deve calcolare un limite: gli estremi finiti esclusi dal dominio, gli estremi infiniti, i punti in cui compaiono valori assoluti o logaritmi.
-2. Sostituire il punto nell'espressione e riconoscere la forma. Se non è indeterminata, il limite si legge con l'[algebra dei limiti](ref:chapter/4#p5).
+2. Sostituire il punto nell'espressione e riconoscere la forma. Se non è indeterminata, il limite si legge con l'[algebra dei limiti](ref:chapter/4#p6).
 3. Se la forma è indeterminata, cercare un cambio di variabile che riporti a un limite notevole (vedi [Limiti notevoli](ref:chapter/6#p2)). Per esempio si pone $t = \frac{1}{x}$ oppure $t = e^x - 1$ e si usano le {{formula:6.3}} e {{formula:6.4}}.
 4. Nelle somme tra infiniti, individuare il termine dominante con la gerarchia degli infiniti ({{formula:6.11}}) e applicare il [principio di eliminazione dei termini trascurabili](ref:chapter/6#p4).
 5. Per un asintoto obliquo per $x\to\pm\infty$, calcolare $m=\lim_{x\to\pm\infty}\frac{f(x)}{x}$ e poi $q=\lim_{x\to\pm\infty}\big(f(x)-mx\big)$. Per $q$ serve spesso la parte principale: vedi [formula (8.7)](ref:formula/8.7).
@@ -487,7 +487,7 @@ Esempi:
 
 ### Tipo 4: confronto e teoremi sui limiti
 
-In parecchie sessioni il chiedere "calcolare, se esistono, i limiti" si lega alla teoria dei limiti: teorema del confronto, limitatezza per infinitesimo o per infinito. Qui la tecnica asintotica si usa insieme ai teoremi di [Teoremi sui limiti](ref:chapter/4#p4) e di [Successioni e sottosuccessioni](ref:chapter/4#p6).
+In parecchie sessioni il chiedere "calcolare, se esistono, i limiti" si lega alla teoria dei limiti: teorema del confronto, limitatezza per infinitesimo o per infinito. Qui la tecnica asintotica si usa insieme ai teoremi di [Teoremi sui limiti](ref:chapter/4#p4) e di [Successioni e sottosuccessioni](ref:chapter/4#p7).
 
 Metodo:
 
@@ -515,8 +515,8 @@ Compare con minore frequenza, dentro esercizi sugli integrali impropri o sullo s
 Metodo:
 
 1. Individuare i punti in cui l'integranda non è limitata o l'intervallo è illimitato.
-2. Per ciascun punto, trovare un'integranda asintotica semplice, per esempio $\frac{1}{x^\alpha}$, con i limiti notevoli o con gli sviluppi.
-3. Applicare il criterio del confronto asintotico ([formula (10.9)](ref:formula/10.9)) e la convergenza dell'integrale campione, come spiegato in [Criteri di convergenza](ref:chapter/10#p4).
+2. Per ciascun punto, cercare un confronto con un'integranda semplice, per esempio $\frac{1}{x^\alpha}$, usando limiti notevoli, sviluppi o disuguaglianze.
+3. Applicare il criterio del confronto asintotico ([formula (10.9)](ref:formula/10.9)) oppure il confronto diretto, verificando le ipotesi e la convergenza dell'integrale di riferimento, come spiegato in [Criteri di convergenza](ref:chapter/10#p4).
 
 Errori tipici: confrontare con $\frac{1}{x^\alpha}$ nel punto sbagliato (a $0$ e a $+\infty$ l'esponente critico dà esiti opposti) e applicare il criterio a funzioni di segno non costante.
 

@@ -171,7 +171,7 @@ Verifica: usando unità coerenti, la molarità si calcola da $c = \rho\,w/M_{\ma
 
 **Errore tipico 11.3.** Confondere il denominatore della molalità (massa di solvente) con quello della molarità e della percentuale in massa (massa o volume di soluzione intera) porta a errori sistematici quando il soluto è presente in quantità non trascurabile; l'errore si amplifica proprio nei casi, come quello appena svolto, in cui le due quantità differiscono sensibilmente.
 
-**Errore tipico 11.4.** Trattare i volumi di due liquidi miscelati come semplicemente additivi senza verificarlo: a causa delle interazioni soluto-solvente il volume della soluzione può non essere pari alla somma dei volumi dei componenti puri. Il caso più noto è la contrazione volumica di miscele acqua-alcol, dovuta alla differenza tra i volumi molecolari dei due liquidi. L'additività dei volumi si assume solo quando è dichiarata o giustificata dall'approssimazione richiesta; altrimenti si usa il volume finale misurato o la densità appropriata. Per soluzioni molto diluite, si può approssimare il volume finale con quello del solvente di partenza solo se l'errore è trascurabile; negli altri casi si usa il volume finale o, per ricavarlo, la densità della soluzione.
+**Errore tipico 11.4.** Trattare i volumi di due liquidi miscelati come semplicemente additivi senza verificarlo: a causa delle interazioni soluto-solvente il volume della soluzione può non essere pari alla somma dei volumi dei componenti puri. Il caso più noto è la contrazione volumica di miscele acqua-alcol: le molecole possono disporsi in modo da occupare un volume totale minore, anche per effetto delle loro interazioni intermolecolari. L'additività dei volumi si assume solo quando è dichiarata o giustificata dall'approssimazione richiesta; altrimenti si usa il volume finale misurato o la densità appropriata. Per soluzioni molto diluite, si può approssimare il volume finale con quello del solvente di partenza solo se l'errore è trascurabile; negli altri casi si usa il volume finale o, per ricavarlo, la densità della soluzione.
 
 **Errore tipico 11.5.** Dimenticare che la concentrazione espressa in unità di volume (molarità, percentuale in volume, percentuale massa/volume) dipende dalla temperatura, perché il volume di una soluzione si dilata con il riscaldamento: la stessa soluzione, più calda, contiene un po' meno moli di soluto per unità di volume. La molalità e le percentuali in massa, basate solo su masse, non sono invece influenzate dalla temperatura.
 
@@ -195,7 +195,7 @@ Strategia: le moli di $\mathrm{HCl}$ restano costanti durante la diluizione, qui
 
 Calcolo.
 $$V_f = \frac{M_i V_i}{M_f} = \frac{2,00 \times 250\ \mathrm{mL}}{0,100} = 5,00 \times 10^3\ \mathrm{mL} = 5,00\ \mathrm{L}$$
-$$M_f = \frac{M_i V_i}{V_f} = \frac{2,00\ \mathrm{mol/L}\times 0,250\ \mathrm{L}}{5,00\ \mathrm{L}} = 0,100\ \mathrm{mol/L}$$
+$$V_{\mathrm{acqua\ aggiunta}} = V_f - V_i = 5,00\ \mathrm{L} - 0,250\ \mathrm{L} = 4,75\ \mathrm{L}$$
 
 Verifica: il volume finale è 20 volte quello iniziale, quindi la concentrazione finale è un ventesimo di quella iniziale: $2,00\ \mathrm{mol/L}/20 = 0,100\ \mathrm{mol/L}$, in accordo con il calcolo.
 
@@ -359,7 +359,7 @@ Il capitolo sulle soluzioni è comparso in 3 delle 4 sessioni d'esame esaminate.
 2. Porta ogni reagente a moli. Per un solido usa $n = m/M$ ([formula (2.4)](ref:formula/2.4)). Per un reagente dato come soluzione percentuale converti il volume in massa con la densità e applica la percentuale in massa del soluto ({{formula:11.6}}).
 3. Confronta le moli con i coefficienti stechiometrici e individua il reagente limitante ([Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4)).
 4. Calcola le moli del prodotto richiesto dal reagente limitante e convertile in grammi con la massa molare.
-5. Verifica che le unità si semplifichino e che le cifre significative rispettino i dati ([Grandezze, unità e cifre significative](ref:chapter/1#p3)).
+5. Verifica che le unità si semplifichino e che le cifre significative rispettino i dati ([Grandezze, unità e cifre significative](ref:chapter/1#p2)).
 
 **Errori tipici.**
 
