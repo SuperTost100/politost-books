@@ -333,7 +333,7 @@ Le domande a disposizione sono esercizi della prova scritta, e in entrambe le se
 
 ### Dalla massa dei reagenti alla massa del prodotto
 
-**Che cosa chiede l'esame.** Viene descritta una reazione a parole (per esempio dicromato di potassio, cloruro di stagno(II) e acido cloridrico che danno cloruro di cromo(III), cloruro di stagno(IV), cloruro di potassio e acqua). Bisogna scriverla e bilanciarla, poi calcolare quanti grammi di un prodotto si ottengono da quantità note di reagenti. Se i reagenti sono due, si deve individuare il reagente limitante.
+**Che cosa chiede l'esame.** Viene descritta una reazione a parole (per esempio dicromato di potassio, cloruro di stagno(II) e acido cloridrico che danno cloruro di cromo(III), cloruro di stagno(IV), cloruro di potassio e acqua). Bisogna scriverla e bilanciarla, poi calcolare quanti grammi di un prodotto si ottengono da quantità note di reagenti. Se i reagenti sono due, si deve individuare il reagente limitante; nel tema d'esame 16 il dicromato di potassio è specificato in eccesso.
 
 **Metodo.**
 
@@ -356,7 +356,7 @@ Per illustrare il passo 3: $565{,}0\ \mathrm{g}$ di $\mathrm{SnCl_2}$, con $M \a
 
 **Esempi.**
 
-- Tema d'esame 16 (Savorani), esercizio 1: chiede i grammi di cloruro di cromo(III) ottenuti da $565{,}0\ \mathrm{g}$ di cloruro di stagno(II) e $2{,}0\ \mathrm{L}$ di acido cloridrico al $37{,}0\,\%$; il metodo porta le due quantità in moli, individua il limitante e passa dal rapporto molare ai grammi.
+- Tema d'esame 16 (Savorani), esercizio 1: chiede i grammi di cloruro di cromo(III) ottenuti da $565{,}0\ \mathrm{g}$ di cloruro di stagno(II) e $2{,}0\ \mathrm{L}$ di acido cloridrico al $37{,}0\,\%$; il dicromato di potassio è in eccesso. Il metodo porta le quantità di cloruro di stagno(II) e acido cloridrico in moli, individua il limitante e passa dal rapporto molare ai grammi.
 - Tema d'esame 15, esercizio 1: parte dalla reazione tra nitrato di piombo(II), rame e acido solforico, e il metodo si applica in modo analogo dopo il bilanciamento, per la parte che richiede quantità di sostanza.
 
 ### Da massa o percentuale a moli e concentrazione

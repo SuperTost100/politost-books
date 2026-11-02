@@ -252,12 +252,6 @@ Dall'equazione di continuità segue la conseguenza qualitativa più usata nelle 
 
 Vogliamo ora legare la velocità del fluido alla pressione e alla quota. Il risultato si ottiene applicando il [teorema dell'energia cinetica](ref:chapter/4#p3) a una porzione di fluido ideale che scorre in regime stazionario lungo un tubo di sezione variabile e non necessariamente orizzontale; la dimostrazione è riportata dopo l'enunciato.
 
-mentre il lavoro delle forze di pressione, agenti con verso opposto alle due estremità, vale
-
-$$W_p = p_1 S_1 \Delta l_1 - p_2 S_2 \Delta l_2 = (p_1 - p_2)\,\Delta V$$
-
-(la viscosità è nulla per ipotesi, quindi non ci sono altre forze dissipative). Il teorema dell'energia cinetica dà $\Delta E_k = W_p + W_g$, cioè
-
 $$\frac12 \Delta m\, v_2^2 - \frac12 \Delta m\, v_1^2 = (p_1-p_2)\,\Delta V - \Delta m\, g\,(y_2-y_1)$$
 
 Sostituendo $\Delta m = \rho\, \Delta V$ e dividendo per $\Delta V$ si ottiene $p_1 + \rho g y_1 + \tfrac12 \rho v_1^2 = p_2 + \rho g y_2 + \tfrac12 \rho v_2^2$, cioè l'enunciato seguente.

@@ -416,13 +416,13 @@ Gli esempi qui sotto vengono tutti dalla prova scritta, di cui abbiamo i testi.
 
 ### Tipo 1: studio di funzione con integrale improprio
 
-**Cosa chiede l'esame.** È l'Esercizio 1 da 9 punti, con sottopunti su dominio, limiti e asintoti, continuità e derivabilità, monotonia ed estremi, grafico. Gli integrali impropri sono tra gli argomenti dell'esercizio. I testi che abbiamo si interrompono prima dell'ultimo sottopunto, quindi non possiamo riportarne la formulazione. Le funzioni però hanno una struttura ricorrente: radici con $|x^4-1|$ o $x^2(2-|x|)$ sotto radice, che producono un asintoto verticale o un punto singolare. Solo i punti in cui l'integranda è illimitata possono rendere l'integrale improprio di seconda specie; i punti in cui essa si annulla o non è derivabile non bastano. Le funzioni su $\mathbb{R}$ o su una semiretta si prestano invece alla prima specie.
+**Cosa chiede l'esame.** È l'Esercizio 1 da 9 punti, con sottopunti su dominio, limiti e asintoti, continuità e derivabilità, monotonia ed estremi, grafico. Gli integrali impropri sono tra gli argomenti dell'esercizio. Nel testo dell'Esame del 31 gennaio 2024 - turno 1, l'ultimo sottopunto chiede di studiare la convergenza di $\int_{-2}^{0}\frac{1}{f(x)}\,dx$. Le funzioni però hanno una struttura ricorrente: radici con $|x^4-1|$ o $x^2(2-|x|)$ sotto radice, che producono un asintoto verticale o un punto singolare. Solo i punti in cui l'integranda è illimitata possono rendere l'integrale improprio di seconda specie; i punti in cui essa si annulla o non è derivabile non bastano. Le funzioni su $\mathbb{R}$ o su una semiretta si prestano invece alla prima specie.
 
 **Metodo.**
 
 1. Riprendi dai punti (a) e (b) il comportamento di $f$ vicino ai punti dove è illimitata e a $\pm\infty$. Questi limiti sono già calcolati e non vanno rifatti.
 2. Individua tutte le cause di impropria integrabilità: estremi infiniti e punti interni o di bordo dove $f$ non è limitata. Se sono più d'una, spezza l'intervallo come in [Integrali multi-impropri e con parametri](ref:chapter/10#p5), in modo che ogni pezzo abbia una sola causa.
-3. Scrivi $f$ come costante per $\dfrac{1}{x^\alpha}$ vicino al punto singolare, usando gli sviluppi e i limiti notevoli ([Infiniti e infinitesimi](ref:chapter/6#p3)).
+3. Scrivi $f$ come costante per $\dfrac{1}{|x-x_0|^\alpha}$ vicino a un punto singolare finito $x_0$, e come costante per $\dfrac{1}{x^\alpha}$ a $\pm\infty$, usando gli sviluppi e i limiti notevoli ([Infiniti e infinitesimi](ref:chapter/6#p3)).
 4. Applica il confronto asintotico con il campione. Vicino a un punto finito $\alpha<1$ dà convergenza ([Integrali impropri di seconda specie](ref:chapter/10#p3)). All'infinito serve $\alpha>1$ ([Integrali impropri di prima specie](ref:chapter/10#p2)).
 5. Concludi con "converge se e solo se tutti i pezzi convergono". Se un pezzo diverge, l'integrale non converge.
 

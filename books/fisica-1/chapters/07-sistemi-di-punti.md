@@ -781,8 +781,6 @@ Dalle tracce emergono tre tipi ricorrenti.
 
 **Metodo.**
 
-**Metodo.**
-
 1. Dividi il problema in tre fasi: prima dell'urto, urto, dopo l'urto. Ogni fase ha il suo principio.
 2. Prima e dopo l'urto lavora con l'energia: lavoro dell'attrito dinamico e teorema dell'energia meccanica ([formula (4.11)](ref:formula/4.11), [formula (4.12)](ref:formula/4.12)), vedi [Energia cinetica e teorema lavoro-energia](ref:chapter/4#p3) e [Forze conservative ed energia potenziale](ref:chapter/4#p4). Se c'è attrito, l'energia meccanica non si conserva.
 3. Durante l'urto non usare l'energia meccanica, a meno che l'urto sia dichiarato elastico. Scrivi la conservazione della quantità di moto del sistema dei due corpi ({{formula:7.20}}), proiettata sugli assi. Giustificala verificando che l'impulso esterno sia trascurabile nella direzione considerata. Se un filo si tende, controlla quali componenti della quantità di moto possono conservarsi. Vedi [Urti](ref:chapter/7#p7).
@@ -807,8 +805,6 @@ Strutture analoghe compaiono nell'*Esame TEMA 2 - 2024, esercizio 1A* (pendolo s
 ### Tipo 2: urto contro un corpo vincolato e momento angolare
 
 **Cosa chiede l'esame.** Un punto materiale colpisce un'asta o un disco che può ruotare, oppure il sistema è formato da un disco e da corpi puntiformi. Si chiede la velocità angolare subito dopo l'urto, la velocità del punto dopo l'urto, l'energia dissipata.
-
-**Metodo.**
 
 **Metodo.**
 

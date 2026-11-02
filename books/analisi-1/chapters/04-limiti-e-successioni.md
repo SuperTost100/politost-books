@@ -616,7 +616,7 @@ Delle 83 sessioni d'esame passate, 32 contengono almeno una domanda sugli argome
 
 **Metodo.**
 
-1. Se devi provare che non esiste $\lim_{x\to+\infty}M(kx)$, scegli due successioni $x_n\to+\infty$ e $y_n\to+\infty$ su cui $M(kx)$ vale costantemente valori diversi. Per esempio $x_n=n/k$ dà $M(kx_n)=0$, mentre $y_n=(n+\tfrac12)/k$ dà $M(ky_n)=\tfrac12$.
+1. Se devi provare che non esiste $\lim_{x\to+\infty}M(kx)$, con $k>0$, scegli due successioni $x_n\to+\infty$ e $y_n\to+\infty$ su cui $M(kx)$ vale costantemente valori diversi. Per esempio $x_n=n/k$ dà $M(kx_n)=0$, mentre $y_n=(n+\tfrac12)/k$ dà $M(ky_n)=\tfrac12$.
 2. Concludi con la caratterizzazione sequenziale e con l'unicità del limite. Se il limite esistesse, tutte le successioni dovrebbero avere lo stesso limite. Gli strumenti sono in [Successioni e sottosuccessioni](ref:chapter/4#p6) e [Teoremi sui limiti](ref:chapter/4#p4).
 3. Per un limite come $x^6M(2x)+\sqrt[3]{x}$ non cercare l'oscillazione. Poiché $M\ge0$, la somma è maggiore o uguale a $\sqrt[3]{x}\to+\infty$, quindi il limite è $+\infty$.
 4. Per un quoziente come $\dfrac{x(\sin x-2)}{x-2}$ separa il fattore che converge, $\frac{x}{x-2}\to1$, dal fattore oscillante. Se il fattore oscillante non ha limite, nemmeno il prodotto ce l'ha. Lo si dimostra con due successioni lungo le quali $\sin x$ assume valori diversi, per esempio $x_n=\tfrac{\pi}{2}+2n\pi$ e $y_n=-\tfrac{\pi}{2}+2n\pi$ (con segno adeguato per $x\to-\infty$).
@@ -666,7 +666,7 @@ Delle 83 sessioni d'esame passate, 32 contengono almeno una domanda sugli argome
 
 **Metodo.**
 
-1. Decidi per prima cosa se l'affermazione è plausibile. Una successione limitata non è convergente in generale, una funzione monotona ha sempre limite.
+1. Decidi per prima cosa se l'affermazione è plausibile. Una successione limitata non è convergente in generale; per una funzione monotona, il teorema garantisce il limite appropriato a un estremo dell'intervallo oppure il limite della successione per $n\to+\infty$.
 2. Se è vera, scrivi le ipotesi e applica il teorema sul limite di una funzione o successione monotona: il limite esiste e coincide con l'estremo superiore (se crescente) o inferiore (se decrescente), come in [Successioni e sottosuccessioni](ref:chapter/4#p6). Poi confronta con altri valori, per esempio con $f(1)$ o con un valore interno.
 3. Se è falsa, costruisci un controesempio esplicito e verifica tutte le ipotesi. Spesso funziona $(-1)^n$ o una funzione come $1-x$.
 4. Per la monotonia di una composizione, studia come cambiano le disuguaglianze: crescente seguita da decrescente dà decrescente.

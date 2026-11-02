@@ -48,7 +48,7 @@ Si ricordano così: il complementare scambia unione e intersezione.
 - $B\setminus A=\rbrack 1,2\lbrack \,\cup\,\rbrack 2,3\lbrack $;
 - $A^c=\rbrack -\infty,0\lbrack \,\cup\,\rbrack 1,2\lbrack \,\cup\,\rbrack 2,+\infty\lbrack $.
 
-Verifica di De Morgan: $(A\cap B)^c=\mathbb{R}\setminus\{1,2\}$. Anche $A^c\cup B^c=A^c\cup\left(\rbrack -\infty,1\lbrack \,\cup\,\lbrack 3,+\infty\lbrack \right)$ dà $\mathbb{R}\setminus\{1,2\}$: infatti $1\in B^c$ non c'è, ma $1\notin A^c$ e $1\in B$, quindi $1$ manca; lo stesso vale per $2$. □
+Verifica di De Morgan: $(A\cap B)^c=\mathbb{R}\setminus\{1,2\}$. Anche $A^c\cup B^c=A^c\cup\left(\rbrack -\infty,1\lbrack \,\cup\,\lbrack 3,+\infty\lbrack \right)$ dà $\mathbb{R}\setminus\{1,2\}$: infatti $1\in B$ e quindi $1\notin B^c$; inoltre $1\notin A^c$, perciò $1$ non appartiene all’unione. Analogamente, $2\in A$ e $2\in B$, quindi $2\notin A^c$ e $2\notin B^c$; pertanto $2$ non appartiene all’unione. □
 
 ### Quantificatori e connettivi
 

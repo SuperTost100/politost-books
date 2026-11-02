@@ -450,7 +450,7 @@ $$\Delta H_r^\circ = -\Delta H_1^\circ + \Delta H_2^\circ + \Delta H_3^\circ = 8
 
 Nelle 4 sessioni d'esame esaminate, solo 1 conteneva domande su questo capitolo: la termochimica compare quindi di rado come tema a sé. Quando compare, è dentro un esercizio composito, in cui il calcolo termochimico viene dopo una parte sui gas e sulla stechiometria.
 
-Il test informatizzato iniziale ha 15 domande a risposta multipla, mentre la prova scritta dura 70 minuti e ha esercizi e domande teoriche. Qui conta il secondo formato, perché l'unica domanda disponibile è un esercizio da svolgere per intero. Non si possono consultare materiali didattici, quindi i valori delle costanti e delle masse molari vanno sapute o ricavate dai dati forniti.
+Il test informatizzato iniziale ha 15 domande a risposta multipla, mentre la prova scritta dura 70 minuti e ha esercizi e domande teoriche. Qui conta il secondo formato, perché l'unica domanda disponibile è un esercizio da svolgere per intero. Non si possono consultare materiali didattici, quindi i valori delle costanti e delle masse molari vanno saputi o ricavati dai dati forniti.
 
 ### L'unico tipo rilevato: esercizio composito gas, stechiometria ed entalpia
 

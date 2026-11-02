@@ -425,7 +425,7 @@ Metodo:
 
 1. Per ciascun tratto studia la funzione nel suo intervallo aperto, come nel tipo precedente.
 2. Nel punto di raccordo calcola limite sinistro, limite destro e valore, e confrontali ([Punti di discontinuità](ref:chapter/5#p3)).
-3. Se la funzione è continua, calcola $f'_-(x_0)$ e $f'_+(x_0)$ come limiti del rapporto incrementale oppure, con cautela, come limiti di $f'$ ([Derivata e retta tangente](ref:chapter/7#p2)). Se il limite di $f'$ esiste, per [formula (7.14)](ref:formula/7.14) coincide con la derivata unilatera (se $f$ è continua).
+3. Se la funzione è continua, calcola $f'_-(x_0)$ e $f'_+(x_0)$ come limiti del rapporto incrementale oppure, con cautela, come limiti di $f'$ ([Derivata e retta tangente](ref:chapter/7#p2)). Se il limite di $f'$ esiste, per il [formula (7.8)](ref:formula/7.8) coincide con la derivata unilatera (se $f$ è continua).
 4. Per le forme indeterminate con esponenziali e logaritmi sostituisci $t=1/x$ e usa la [formula (6.11)](ref:formula/6.11) ([Infiniti e infinitesimi](ref:chapter/6#p3)).
 
 Errori tipici: dedurre la derivabilità dalla sola continuità; calcolare $f'$ solo dove la formula è «comoda» e non nel punto di raccordo; confondere il limite di $f'$ con la derivata nel punto senza verificare la continuità di $f$.

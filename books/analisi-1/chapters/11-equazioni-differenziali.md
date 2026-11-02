@@ -574,7 +574,7 @@ perché ciascuna parentesi è nulla.
 3. Scrivi il polinomio caratteristico dell'omogenea e applica {{formula:11.10}}. Per $y''+2y=0$ si ha $p(\lambda)=\lambda^2+2$, con radici $\pm i\sqrt2$, quindi $y_{om}(x)=c_1\cos(\sqrt2x)+c_2\sin(\sqrt2x)$. Per $y''-2y=0$ le radici sono $\pm\sqrt2$ e $y_{om}(x)=c_1e^{\sqrt2x}+c_2e^{-\sqrt2x}$.
 4. Usa la funzione verificata come $y_p$ e scrivi $y(x)=y_{om}(x)+y_p(x)$ ([Equazioni lineari del secondo ordine a coefficienti costanti](ref:chapter/11#p5)). Non serve ricalcolare una soluzione particolare con la somiglianza: la verifica del punto (b) la fornisce già.
 
-**Errori tipici.** Sbagliare il segno del discriminante e scambiare esponenziali reali con funzioni trigonometriche. Per le versioni iperboliche, confondere $\cosh 2x=2\cosh^2x-1$ con $\cosh 2x=\cosh^2 x+\sinh^2 x$, e quindi sbagliare il secondo membro. Scrivere solo $y_p$ o solo $y_{om}$ come "soluzione generale".
+**Errori tipici.** Sbagliare il segno del discriminante e scambiare esponenziali reali con funzioni trigonometriche. Le identità iperboliche sono equivalenti: $\cosh 2x=2\cosh^2x-1=\cosh^2x+\sinh^2x$. Scrivere solo $y_p$ o solo $y_{om}$ come "soluzione generale".
 
 **Esempi.**
 - Esame del 31 gennaio 2024 - turno 1 - versione 4, esercizio 2: la funzione è $\cosh^2x$ nell'equazione $y''-2y=2\cosh^2x-2$. Si ha $\varphi''=4\cosh^2x-2$, da cui $\varphi''-2\varphi=2\cosh^2x-2$. Poi $y_{om}$ si scrive con $\pm\sqrt2$.
@@ -606,7 +606,7 @@ perché ciascuna parentesi è nulla.
 2. Se $y_0$ non è uno zero di $f$, separa le variabili e integra entrambi i membri con {{formula:11.8}} ([Equazioni a variabili separabili](ref:chapter/11#p4)).
 3. Imponi la condizione iniziale per fissare la costante $c$.
 4. Esplicita $y$, scegliendo il segno della radice o il ramo coerente con il dato iniziale.
-5. Determina l'intervallo massimale: è il più grande intervallo contenente $t_0$ su cui l'espressione trovata ha senso.
+5. Determina l'intervallo massimale verificando l'equazione sull'intervallo in cui la soluzione è definita; il dominio dell'espressione, da solo, non basta. Se possibile, considera prolungamenti della soluzione.
 
 **Errori tipici.** Dividere per $f(y)$ senza prima aver considerato i suoi zeri e perdere le soluzioni costanti. Fissare la costante $c$ dopo aver già cambiato segno o preso il modulo senza ricontrollare. Dimenticare il dominio dopo aver esplicitato $y$. Quando il testo chiede "tutte le soluzioni", fermarsi alla famiglia con $c$ e non elencare le costanti.
 

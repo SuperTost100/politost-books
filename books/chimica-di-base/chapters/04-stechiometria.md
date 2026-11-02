@@ -404,8 +404,8 @@ Errori tipici: dimenticare che l'acido (HCl, H₂SO₄) fa anche da mezzo e non 
 
 Esempi.
 
-- Tema d_esame 14 + soluzione, n. 1: $\mathrm{Cl_2 + NaOH \to NaCl + NaClO_3 + H_2O}$ è una dismutazione. Il cloro passa da 0 a $-1$ e a $+5$, e gli elettroni pareggiati danno $3\,\mathrm{Cl_2} + 6\,\mathrm{NaOH} \to 5\,\mathrm{NaCl} + \mathrm{NaClO_3} + 3\,\mathrm{H_2O}$.
-- Tema d_esame 16 + soluzione (Savorani), n. 1: dicromato, cloruro di stagno(II) e acido cloridrico. Il cromo scende da $+6$ a $+3$ e lo stagno sale da $+2$ a $+4$, quindi servono 3 Sn per ogni dicromato. L'equazione finale è $\mathrm{K_2Cr_2O_7} + 3\,\mathrm{SnCl_2} + 14\,\mathrm{HCl} \to 2\,\mathrm{CrCl_3} + 3\,\mathrm{SnCl_4} + 2\,\mathrm{KCl} + 7\,\mathrm{H_2O}$. Il conteggio dei Cl (20 a sinistra, 20 a destra) è la verifica finale.
+- Tema d'esame 14 + soluzione, n. 1: $\mathrm{Cl_2 + NaOH \to NaCl + NaClO_3 + H_2O}$ è una dismutazione. Il cloro passa da 0 a $-1$ e a $+5$, e gli elettroni pareggiati danno $3\,\mathrm{Cl_2} + 6\,\mathrm{NaOH} \to 5\,\mathrm{NaCl} + \mathrm{NaClO_3} + 3\,\mathrm{H_2O}$.
+- Tema d'esame 16 + soluzione (Savorani), n. 1: dicromato, cloruro di stagno(II) e acido cloridrico. Il cromo scende da $+6$ a $+3$ e lo stagno sale da $+2$ a $+4$, quindi servono 3 Sn per ogni dicromato. L'equazione finale è $\mathrm{K_2Cr_2O_7} + 3\,\mathrm{SnCl_2} + 14\,\mathrm{HCl} \to 2\,\mathrm{CrCl_3} + 3\,\mathrm{SnCl_4} + 2\,\mathrm{KCl} + 7\,\mathrm{H_2O}$. Il conteggio dei Cl (20 a sinistra, 20 a destra) è la verifica finale.
 
 La stessa logica compare in Tema d_esame 15 + soluzione, n. 1 (nitrato di piombo(II), rame e acido solforico). Lì il rame passa da 0 a $+2$ e l'azoto da $+5$ a $+2$, e si ottiene $3\,\mathrm{Cu} + \mathrm{Pb(NO_3)_2} + 4\,\mathrm{H_2SO_4} \to \mathrm{PbSO_4} + 3\,\mathrm{CuSO_4} + 2\,\mathrm{NO} + 4\,\mathrm{H_2O}$.
 

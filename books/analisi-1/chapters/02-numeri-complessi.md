@@ -512,8 +512,8 @@ Metodo, passo per passo:
 1. Riscrivi ogni condizione con $z=x+iy$, usando $z+\bar z = 2x$ e $z-\bar z = 2iy$ (vedi [Forma algebrica e operazioni](ref:chapter/2#p2)). Esempio: $\bar z+z\ge 0$ equivale a $\operatorname{Re} z\ge 0$. Invece $i(z-\bar z)=i\cdot 2iy=-2y$, perciò $i(z-\bar z)\ge 0$ equivale a $\operatorname{Im} z\le 0$.
 2. Traduci ogni condizione in una regione geometrica. $1\le |z|\le 2$ è una corona circolare. Le disuguaglianze tra $\operatorname{Im} z$ e $\operatorname{Re} z$, come $0\le \operatorname{Im} z\le \operatorname{Re} z$, sono semirette uscenti dall'origine. Individuano quindi un settore, cioè un intervallo di argomenti.
 3. Intersecare le regioni dà $A$: una corona circolare tagliata in un settore, descritta da $\rho\in[1,2]$ e $\theta\in[\theta_1,\theta_2]$.
-4. Per $B$ passa alla forma trigonometrica o esponenziale (vedi [Forma trigonometrica ed esponenziale](ref:chapter/2#p3)). Per la formula {{formula:2.14}}, elevare a $n$ manda $\rho\mapsto\rho^n$ e $\theta\mapsto n\theta$. Il settore $\lbrack \theta_1,\theta_2\rbrack $ diventa $\lbrack n\theta_1,n\theta_2\rbrack $ e il raggio $\lbrack 1,2\rbrack $ diventa $\lbrack 1,2^n\rbrack $.
-5. Disegna $B$. Se $n\theta_2-n\theta_1\ge 2\pi$ ricopri tutta la corona, se è minore resta un settore. Controlla che l'ampiezza non superi un giro completo, e non preoccuparti se gli angoli escono da $\rbrack -\pi,\pi\rbrack $: nel disegno conta solo l'angolo modulo $2\pi$.
+4. Per $B$ passa alla forma trigonometrica o esponenziale (vedi [Forma trigonometrica ed esponenziale](ref:chapter/2#p3)). Per la formula {{formula:2.14}}, elevare a $n$ manda $\rho\mapsto\rho^n$ e $\theta\mapsto n\theta$. Il settore $\lbrack \theta_1,\theta_2\rbrack $ diventa $\lbrack n\theta_1,n\theta_2\rbrack $ e, se $n\in\mathbb{N}^+$, il raggio $\lbrack 1,2\rbrack $ diventa $\lbrack 1,2^n\rbrack $.
+5. Disegna $B$. Se $n\theta_2-n\theta_1\ge 2\pi$, l'immagine è tutta la corona; se è minore, resta un settore. Per il disegno riduci gli angoli modulo $2\pi$: se l'ampiezza supera $2\pi$, l'immagine resta la corona completa.
 
 Errori tipici:
 

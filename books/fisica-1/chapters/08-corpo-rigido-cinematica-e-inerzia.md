@@ -681,7 +681,7 @@ Il metodo:
 1. Disegnare il diagramma delle forze di ogni corpo, compresi la carrucola e il cilindro. Le due tensioni del filo ai lati della carrucola sono in generale diverse, perché la carrucola ha un momento d'inerzia non nullo.
 2. Per il centro di massa di ciascun corpo, scrivere la seconda legge di Newton lungo il piano e perpendicolarmente a esso.
 3. Per ogni corpo che ruota, scrivere l'equazione dei momenti rispetto al centro di massa o a un asse fisso, [formula (9.1)](ref:formula/9.1), con il giusto $I$ (per il cilindro pieno e per il disco della carrucola, $I=\tfrac{1}{2}mr^2$, {{formula:8.8}}).
-4. Collegare accelerazione lineare e angolare con il vincolo di puro rotolamento [formula (9.8)](ref:formula/9.8) e con l'inestensibilità del filo (stessa accelerazione di filo, centro di massa e punto sul bordo della carrucola).
+4. Collegare accelerazione lineare e angolare con il vincolo di puro rotolamento [formula (9.8)](ref:formula/9.8). Per la carrucola ad asse fisso, il centro di massa resta fermo; il vincolo di non slittamento lega invece l'accelerazione del filo all'accelerazione angolare tramite $a_f=\alpha_p R_p$, con i segni determinati dalle convenzioni scelte.
 5. Risolvere il sistema in forma letterale, poi sostituire i numeri con le unità.
 6. Verificare l'aderenza: la forza di attrito statico trovata deve soddisfare $|\vec{f}_s| \le \mu_s N$ ([Rotolamento](ref:chapter/9#p4) e [Rotazione attorno a un asse fisso](ref:chapter/9#p2)).
 7. Se si chiede una velocità dopo un tratto, si può usare l'energia, con {{formula:8.15}}, sommando i termini di traslazione e di rotazione ([Energia nel moto del corpo rigido](ref:chapter/9#p3)).

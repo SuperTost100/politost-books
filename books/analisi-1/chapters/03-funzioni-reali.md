@@ -637,7 +637,7 @@ L'esercizio 1 dello scritto parte quasi sempre con la richiesta "determinare il 
 
 Metodo:
 
-1. Scrivi le condizioni di esistenza di ogni pezzo della formula: radici di indice pari, logaritmi, denominatori, argomenti di $\arctan$ e valori assoluti. Intersecale. Le funzioni elementari da ricordare sono nella sezione [Funzioni elementari e loro inverse](ref:chapter/3#p6).
+1. Scrivi le condizioni di esistenza di ogni pezzo della formula: radici di indice pari, logaritmi, denominatori e argomenti di \(\arcsin\) e \(\arccos\); per \(\arctan\), verifica solo che l'espressione interna sia definita. Considera anche i valori assoluti. Intersecale. Le funzioni elementari da ricordare sono nella sezione [Funzioni elementari e loro inverse](ref:chapter/3#p6).
 2. Controlla che il dominio sia simmetrico rispetto a $0$. Se lo è, calcola $f(-x)$ e confrontalo con $f(x)$ e con $-f(x)$ (vedi [Simmetrie, periodicità e funzioni particolari](ref:chapter/3#p4)). Se $f$ è pari o dispari, studia solo $x\ge 0$ e completa per simmetria.
 3. Calcola i limiti agli estremi del dominio, compresi i punti isolati esclusi. Dai limiti ricava gli asintoti verticali, orizzontali e obliqui.
 4. Per la monotonia studia il segno di $f'$ sugli intervalli del dominio. Poi classifica i punti critici e i punti di non derivabilità, distinguendo punti di massimo o minimo, relativi o assoluti, dai valori corrispondenti (vedi [Funzioni limitate e monotone, massimi e minimi](ref:chapter/3#p5)).
@@ -706,8 +706,8 @@ Domande specifiche su parte intera e mantissa compaiono nell'esercizio 2 del 22 
 
 Metodo:
 
-1. Scrivi la definizione: $g$ è periodica se esiste $T>0$ tale che il dominio sia invariato dalla traslazione di $T$ (se $x\in\operatorname{dom}(g)$ allora $x\pm T\in\operatorname{dom}(g)$) e $g(x+T)=g(x)$ per ogni $x\in\operatorname{dom}(g)$. Ricorda che $M(x)=x-\lbrack x\rbrack $ ha periodo $1$, quindi $M(kx)$ ha periodo $1/k$ (vedi {{formula:3.11}}).
-2. Per dimostrare che il limite non esiste, scegli due successioni $x_n\to+\infty$ con $M(kx_n)$ che tendono a valori diversi. Per esempio $x_n=n/k$ dà $M(kx_n)=0$, mentre $y_n=(n+\tfrac12)/k$ dà $M(ky_n)=\tfrac12$. Basta la caratterizzazione sequenziale ([formula (4.15)](ref:formula/4.15)).
+1. Scrivi la definizione: $g$ è periodica se esiste $T>0$ tale che il dominio sia invariato dalla traslazione di $T$ (se $x\in\operatorname{dom}(g)$ allora $x\pm T\in\operatorname{dom}(g)$) e $g(x+T)=g(x)$ per ogni $x\in\operatorname{dom}(g)$. Ricorda che $M(x)=x-\lbrack x\rbrack $ ha periodo $1$, quindi, per $k>0$, $M(kx)$ ha periodo $1/k$ (vedi {{formula:3.11}}).
+2. Per dimostrare che il limite non esiste, scegli due successioni $x_n\to+\infty$ con $M(kx_n)$ che tendono a valori diversi. Per $k>0$, per esempio $x_n=n/k$ dà $M(kx_n)=0$, mentre $y_n=(n+\tfrac12)/k$ dà $M(ky_n)=\tfrac12$. Basta la caratterizzazione sequenziale ([formula (4.15)](ref:formula/4.15)).
 3. Per i limiti con la mantissa, usa che $0\le M<1$ (funzione limitata) e confronta con i termini che divergono, oppure usa il teorema del confronto (si veda [Teoremi sui limiti](ref:chapter/4#p4)).
 4. Per le funzioni definite a tratti, studia ogni pezzo separatamente e poi i punti di raccordo con limiti unilateri (si veda [Funzioni continue](ref:chapter/5#p2)).
 

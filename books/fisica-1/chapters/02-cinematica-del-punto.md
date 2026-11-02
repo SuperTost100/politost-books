@@ -395,7 +395,7 @@ Se all'oscillatore smorzato si applica anche una forza esterna periodica $F_0\co
 $$\frac{d^2x}{dt^2} + 2\gamma\frac{dx}{dt} + \omega_0^2 x = \frac{F_0}{m}\cos(\Omega t)$$
 :::
 
-La soluzione generale è la somma di due termini: un **transitorio** smorzato, soluzione dell'equazione omogenea, che decade come $e^{-\gamma t}$ e dopo un tempo di qualche $\tau = 1/\gamma$ è trascurabile, e una **soluzione di regime**, che persiste e oscilla alla pulsazione della forzante:
+La soluzione generale è la somma di due termini: nel caso sottosmorzato, con $\gamma < \omega_0$, il **transitorio** è una soluzione dell'equazione omogenea racchiusa nell'inviluppo $e^{-\gamma t}$ e dopo un tempo di qualche $\tau = 1/\gamma$ è trascurabile; il secondo termine è la **soluzione di regime**, che persiste e oscilla alla pulsazione della forzante:
 
 $$x_{reg}(t) = A(\Omega)\cos(\Omega t - \varphi)$$
 

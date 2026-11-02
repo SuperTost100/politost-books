@@ -369,7 +369,7 @@ Il capitolo sull'equilibrio chimico è comparso in 2 delle 4 sessioni d'esame an
 1. Scrivere e bilanciare l'equazione, con gli stati fisici. Scrivere poi l'espressione di $K_p$ usando la regola di [Equilibrio dinamico e costante di equilibrio](ref:chapter/12#p2): solidi e liquidi puri non compaiono, e compaiono solo le pressioni parziali dei gas, secondo {{formula:12.2}}.
 2. Decidere in quali unità lavorare. Se il volume è fisso, convertire le moli iniziali in pressione parziale con [formula (6.5)](ref:formula/6.5), cioè $p = nRT/V$, dichiarando il valore di $R$ usato (ad esempio $0{,}08206$ L·atm/(mol·K)) e usando $T$ in kelvin. Se è fissata la pressione totale, conviene lavorare in moli e passare alle pressioni con le frazioni molari, come in [formula (6.10)](ref:formula/6.10).
 3. Costruire la tabella "iniziale / variazione / equilibrio" con un'unica incognita $x$, proporzionale ai coefficienti stechiometrici. La $x$ può essere in atm o in mol, ma bisogna restare coerenti in tutta la tabella.
-4. Sostituire le espressioni di equilibrio in $K_p$ e risolvere. Se l'equazione è di secondo grado, scartare la radice priva di significato fisico: negativa, oppure maggiore della quantità disponibile di reagente.
+4. Sostituire le espressioni di equilibrio in $K_p$ e risolvere. Se l'equazione è di secondo grado, scartare la radice priva di significato fisico: negativa oppure tale da rendere negativa la quantità di un reagente. Se $x$ è in mol, confrontare la radice con le moli disponibili del reagente; se è in atm, confrontarla con la pressione parziale disponibile, tenendo conto del coefficiente stechiometrico.
 5. Tornare alla grandezza richiesta. Se $x$ è una pressione, ricavare le moli da $n = pV/(RT)$. Verificare infine che $K_p$ ricalcolata con i valori trovati coincida con quella data.
 
 **Errori tipici.**
@@ -379,7 +379,7 @@ Il capitolo sull'equilibrio chimico è comparso in 2 delle 4 sessioni d'esame an
 - Usare i gradi Celsius in $pV = nRT$. Il testo può dare $t$ in °C, ma nei calcoli serve $T = t + 273{,}15$.
 - Dimenticare che le moli totali cambiano durante la reazione, e quindi anche i denominatori delle frazioni molari.
 - Tenere la radice negativa dell'equazione di secondo grado.
-- Dare $K_p$ senza unità quando $\lbrack ?m\Delta n \neq 0$. Con $\Delta n \neq 0$ il valore dipende dalle unità di pressione, come ricorda {{formula:12.3}}.
+- Dare $K_p$ senza unità quando $\Delta n \neq 0$. Con $\Delta n \neq 0$ il valore dipende dalle unità di pressione, come ricorda {{formula:12.3}}.
 
 **Esempi dalle prove.**
 

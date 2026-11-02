@@ -523,7 +523,7 @@ Errori tipici: confrontare con $\frac{1}{x^\alpha}$ nel punto sbagliato (a $0$ e
 Esempi:
 
 - Esame del 10 febbraio 2023, esercizio 2: si studia $\int_2^{+\infty}e^{-4x^3}\,dx$, dove l'esponenziale decade più in fretta di ogni potenza.
-- Esame del 10 febbraio 2016 (primo turno), esercizio 2: si studia $\int_1^{+\infty}\frac{\sin x}{x^2}\,dx$ confrontando con $\frac{1}{x^2}$.
+- Esame del 10 febbraio 2016 (primo turno), esercizio 2: si studia $\int_1^{+\infty}\frac{\sin x}{x^2}\,dx$. Poiché $\left\lvert\frac{\sin x}{x^2}\right\rvert\leq\frac{1}{x^2}$ e $\int_1^{+\infty}\frac{1}{x^2}\,dx$ converge, l'integrale converge assolutamente.
 
 ### Tipi che compaiono una volta sola
 

@@ -560,7 +560,7 @@ Gli esercizi sono problemi strutturati a più domande. Un problema spesso mette 
 1. Individua il vincolo: perno, cerniera, asse fisso. Questo decide che cosa si conserva, come spiegato in [Urti con corpi rigidi](ref:chapter/9#p5).
 2. Scegli come polo il punto del vincolo. La reazione vincolare ha momento nullo rispetto a quel polo, quindi vale {{formula:9.11}}. Se il vincolo blocca solo un asse, si conserva la sola componente assiale $L_z$.
 3. Scrivi $L_z$ prima dell'urto come $m\,v\,b$ (con $b$ il braccio del punto rispetto al polo) e dopo come $I_z\,\omega$ più il contributo del punto. Calcola $I_z$ con Huygens-Steiner, se il perno non passa per il CM.
-4. Se l'urto è anelastico, il punto resta attaccato e la sua velocità è $\omega\,d$ ($d$ è la distanza dal perno). Se è elastico, aggiungi la conservazione dell'energia cinetica. Se il testo dà la velocità del punto dopo l'urto, il solo momento angolare basta.
+4. Se l'urto è completamente anelastico e il punto resta attaccato al corpo, includi la sua massa nel momento d'inerzia dopo l'urto e usa $v=\omega d$, dove $d$ è la distanza dal perno. Un urto anelastico parziale non implica che il punto resti attaccato: in quel caso i corpi si separano e la relazione $v=\omega d$ non vale. Se l'urto è elastico, aggiungi la conservazione dell'energia cinetica. Se il testo dà la velocità del punto dopo l'urto, il solo momento angolare basta.
 5. Per le domande successive all'urto, passa all'energia o alla dinamica rotazionale con $\omega$ come condizione iniziale.
 
 **Errori tipici.**

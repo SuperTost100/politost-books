@@ -190,7 +190,7 @@ Le forze di contatto sono quelle che i problemi di dinamica usano più spesso. C
 - **Attrito viscoso**: si oppone al moto ed è proporzionale alla velocità; si annulla se $v=0$.
 - **Forza elastica** di una molla: $F=-kx$, con $x$ allungamento rispetto alla lunghezza a riposo. Vedi [Forza elastica](ref:chapter/3#p7).
 
-Anche la **forza centripeta** non è una forza di tipo particolare. È il nome della componente della risultante ortogonale alla traiettoria, ed è sempre diversa da zero in un moto curvilineo.
+Anche la **forza centripeta** non è una forza di tipo particolare. È il nome della componente della risultante ortogonale alla traiettoria, ed è diversa da zero quando la curvatura della traiettoria è diversa da zero.
 
 Come forze a distanza, nei problemi di questo corso compaiono soprattutto il peso e, in generale, la gravitazione. L'elettrostatica ha una sezione dedicata in [Cenni di elettrostatica](ref:chapter/10#p6).
 

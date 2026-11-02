@@ -122,7 +122,7 @@ In particolare, $E_{\mathrm{cella}}^\circ>0$ implica $\Delta G_r^\circ<0$. Usand
 
 ### Il problema: quale acido attacca quale metallo
 
-Un metallo immerso in una soluzione acida può essere "attaccato", cioè ossidato a catione, solo se esiste una riduzione che accompagna spontaneamente l'ossidazione. Nei [metalli e acidi](ref:chapter/16#p3) il criterio è $E^\circ_{\text{cella}}>0$. Qui lo applichiamo a due situazioni. Nella prima è lo ione $\mathrm{H^+}$ a ridursi, e l'acido è detto **non ossidante**. Nella seconda si riduce l'anione dell'acido (nitrato, solfato), e l'acido è detto **ossidante**. Bisogna sempre chiedersi chi è la specie che si riduce.
+Un metallo immerso in una soluzione acida può essere "attaccato", cioè ossidato a catione, solo se esiste una riduzione che accompagna spontaneamente l'ossidazione. In condizioni standard, il criterio è $E^\circ_{\text{cella}}>0$. Fuori da queste condizioni il segno di $E^\circ_{\text{cella}}$ da solo non determina la spontaneità: occorre calcolare $E$ con l'equazione di Nernst. Qui applichiamo il criterio standard a due situazioni. Nella prima è lo ione $\mathrm{H^+}$ a ridursi, e l'acido è detto **non ossidante**. Nella seconda si riduce l'anione dell'acido (nitrato, solfato), e l'acido è detto **ossidante**. Bisogna sempre chiedersi quale specie si riduce.
 
 ### Acidi non ossidanti: sviluppo di idrogeno
 
@@ -349,9 +349,9 @@ Il capitolo di elettrochimica è comparso in 3 delle 4 sessioni d'esame esaminat
 **Metodo.**
 
 1. Traduci i nomi in formule (vedi [Simboli, formule e ioni](ref:chapter/3#p2) e [Sali](ref:chapter/3#p7)) e scrivi lo schema con reagenti e prodotti.
-2. Assegna i numeri di ossidazione ([Numero di ossidazione](ref:chapter/3#p3)) e individua la specie che si ossida e quella che si riduce.
-3. Scrivi le due semireazioni in forma ionica. Bilancia prima gli atomi diversi da O e H, poi O con $\mathrm{H_2O}$ e H con $\mathrm{H^+}$, infine le cariche con gli elettroni.
-4. Moltiplica le semireazioni perché gli elettroni scambiati siano uguali ([formula (5.8)](ref:formula/5.8)) e sommale.
+2. Assegna i numeri di ossidazione ([Numero di ossidazione](ref:chapter/3#p3)) e individua tutte le specie che si ossidano e quelle che si riducono.
+3. Scrivi una semireazione per ciascun processo di ossidazione e di riduzione in forma ionica. Bilancia prima gli atomi diversi da O e H, poi O con $\mathrm{H_2O}$ e H con $\mathrm{H^+}$, infine le cariche con gli elettroni.
+4. Moltiplica le semireazioni perché la somma degli elettroni ceduti in tutti i processi di ossidazione sia uguale a quella degli elettroni acquistati nei processi di riduzione, mantenendo per ciascun processo i rapporti stechiometrici della reazione ([formula (5.8)](ref:formula/5.8)), quindi sommale.
 5. Riporta i coefficienti nell'equazione molecolare. Aggiungi gli ioni spettatori (per esempio i solfati) e controlla atomi e cariche.
 
 Per i dettagli sull'ambiente acido o basico e sulla disproporzione vedi [Reazioni di ossidoriduzione](ref:chapter/5#p5) e [Equazioni chimiche e bilanciamento](ref:chapter/4#p3). Il comportamento dei metalli con $\mathrm{HNO_3}$ e $\mathrm{H_2SO_4}$ è trattato in [Reattività dei metalli con acidi ossidanti e non ossidanti](ref:chapter/16#p4).
@@ -394,9 +394,9 @@ Per i dettagli sull'ambiente acido o basico e sulla disproporzione vedi [Reazion
 - *Tema d_esame 3, n. 4.* Una soluzione acquosa di KOH viene elettrolizzata per 40 minuti a 25 °C e si raccolgono 8,00 L di ossigeno secco a 20,0 °C e 745 mmHg. Si chiedono lo schema della cella, le reazioni agli elettrodi e l'intensità della corrente, che si ricava seguendo i cinque passi sopra.
 - *Tema d_esame 14, n. 1, punto b.* Il cloruro di sodio viene elettrolizzato in soluzione acquosa con resa faradica unitaria e agli elettrodi si sviluppano gas. Il metodo è lo stesso: si scrivono le scariche, si passa dai volumi di gas alle moli e dalle moli alla carica.
 
-### Una sola sessione: celle voltaiche e potenziali
+### Due temi: celle voltaiche e potenziali
 
-Le pile, la notazione di cella e i potenziali di cella compaiono come argomento esplicito solo nel tema 15, dentro un esercizio che parte dalla redox di rame e piombo. Per questo tipo di domande vale il metodo delle sezioni [Celle voltaiche](ref:chapter/16#p2) e [Potenziali standard ed equazione di Nernst](ref:chapter/16#p3): $E^\circ_{\mathrm{cella}} = E^\circ_{\mathrm{catodo}} - E^\circ_{\mathrm{anodo}}$, e Nernst quando le concentrazioni non sono 1 M. Le batterie e le celle a combustibile compaiono solo come argomento associato al tema 3 e al tema 14. Il loro funzionamento è in [Batterie e celle a combustibile](ref:chapter/16#p6).
+Le pile, la notazione di cella e i potenziali di cella compaiono come argomento esplicito nei temi 14 e 15: nel tema 15, dentro un esercizio che parte dalla redox di rame e piombo; nel tema 14, con una domanda sull’anodo, il catodo e il potenziale standard di cella. Per questo tipo di domande vale il metodo delle sezioni [Celle voltaiche](ref:chapter/16#p2) e [Potenziali standard ed equazione di Nernst](ref:chapter/16#p3): $E^\circ_{\mathrm{cella}} = E^\circ_{\mathrm{catodo}} - E^\circ_{\mathrm{anodo}}$, e Nernst quando le concentrazioni non sono 1 M. Le batterie e le celle a combustibile compaiono solo come argomento associato al tema 3 e al tema 14. Il loro funzionamento è in [Batterie e celle a combustibile](ref:chapter/16#p6).
 
 ### Prima di consegnare
 
