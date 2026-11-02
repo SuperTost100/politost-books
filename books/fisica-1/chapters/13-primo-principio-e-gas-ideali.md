@@ -342,7 +342,7 @@ espressione equivalente ricavata usando $c_V = R/(\gamma-1)$ e l'equazione di st
 
 **Esempio 13.5.** Due moli di un gas ideale monoatomico ($\gamma = 5/3$, $c_V = \tfrac{3}{2}R$) occupano inizialmente $V_A = 10{,}0\ \text{L}$ a $T_A = 400\ \text{K}$. Il gas si espande adiabaticamente e reversibilmente fino a $V_B = 20{,}0\ \text{L}$. Si vogliono $T_B$, $\Delta U$, $Q$ e $W$.
 
-Dalla {{formula:13.9}}:
+Dalla formula {{formula:13.9}}:
 
 $$T_B = T_A \left(\frac{V_A}{V_B}\right)^{\gamma - 1} = 400\ \text{K} \cdot (0{,}500)^{2/3} = 400\ \text{K} \cdot 0{,}630 = 252\ \text{K}$$
 
@@ -350,7 +350,7 @@ L'energia interna varia secondo {{formula:13.4}}, con $c_V = \tfrac{3}{2}(8{,}31
 
 $$\Delta U = n c_V (T_B - T_A) = 2\ \text{mol} \cdot 12{,}47\ \frac{\text{J}}{\text{mol·K}} \cdot (252 - 400)\ \text{K} \approx -3{,}69\cdot 10^3\ \text{J}$$
 
-Essendo adiabatica, $Q=0$, e dal primo principio $W = Q - \Delta U = 3{,}69\cdot 10^3\ \text{J}$. Il controllo con la {{formula:13.11}} usando $p_A V_A = nRT_A = 6{,}65\cdot 10^3\ \text{J}$ e $p_B V_B = nRT_B = 4{,}19\cdot 10^3\ \text{J}$ dà $W = (6{,}65 - 4{,}19)\cdot 10^3/(2/3) \approx 3{,}69\cdot 10^3\ \text{J}$, in accordo. Il segno positivo di $W$ è coerente con un'espansione: il gas compie lavoro sull'ambiente a spese della propria energia interna, che infatti diminuisce e la temperatura scende.
+Essendo adiabatica, $Q=0$, e dal primo principio $W = Q - \Delta U = 3{,}69\cdot 10^3\ \text{J}$. Il controllo con la formula {{formula:13.11}} usando $p_A V_A = nRT_A = 6{,}65\cdot 10^3\ \text{J}$ e $p_B V_B = nRT_B = 4{,}19\cdot 10^3\ \text{J}$ dà $W = (6{,}65 - 4{,}19)\cdot 10^3/(2/3) \approx 3{,}69\cdot 10^3\ \text{J}$, in accordo. Il segno positivo di $W$ è coerente con un'espansione: il gas compie lavoro sull'ambiente a spese della propria energia interna, che infatti diminuisce e la temperatura scende.
 
 ### Trasformazioni irreversibili
 

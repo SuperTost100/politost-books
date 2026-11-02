@@ -468,8 +468,6 @@ Una funzione si dice **monotona** se è crescente o decrescente (su tutto il dom
 
 **Osservazione 3.3.** La stretta monotonia implica l'iniettività: se $f$ è strettamente crescente (o decrescente) su $I$, allora $x_1 \ne x_2$ in $I$ implica $f(x_1) \ne f(x_2)$. Questo fatto, già anticipato nella sezione su [dominio, immagine, iniettività](ref:chapter/3#p2), è il metodo più comune per dimostrare l'iniettività di una funzione e per costruirne l'inversa su un intervallo.
 
-Quando la funzione è derivabile (nozione che sarà introdotta nel capitolo sul [calcolo differenziale](ref:chapter/7#p2)), la monotonia si caratterizza tramite il segno della derivata prima: su un intervallo $I$, $f$ è crescente se e solo se $f'(x) \ge 0$ per ogni $x \in I$, mentre $f'(x) > 0$ su $I$ è condizione sufficiente (ma non necessaria) per la stretta monotonia crescente; analogamente $f'(x) \le 0$ su $I$ caratterizza la decrescenza, $f'(x) < 0$ implica stretta decrescenza, e $f'(x) = 0$ su $I$ implica che $f$ è costante su $I$. Questo criterio, che richiede gli strumenti del calcolo differenziale, sarà dimostrato come conseguenza del [teorema di Lagrange](ref:chapter/7#p4) e sarà lo strumento principale per lo [studio di funzione completo](ref:chapter/8#p4); a questo stadio è comunque utile saperne l'enunciato, perché negli esercizi sulla monotonia pura (senza derivate) si procede invece per confronto diretto fra $f(x_1)$ e $f(x_2)$.
-
 ### Massimi, minimi e punti di massimo/minimo
 
 È essenziale distinguere con precisione due nozioni che gli studenti tendono a confondere: il **punto** in cui una funzione assume il valore estremo (un elemento del dominio) e il **valore** massimo o minimo stesso (un elemento dell'immagine).
@@ -517,13 +515,9 @@ Ogni punto di massimo (o minimo) assoluto è anche un punto di massimo (o minimo
 
 Non tutte le funzioni hanno massimo e minimo assoluti: $f(x) = 1/x$ su $\rbrack 0,1\rbrack $ è illimitata superiormente e non ha massimo. Per una funzione continua su un intervallo chiuso e limitato la loro esistenza è garantita dal [teorema di Weierstrass](ref:chapter/5#p5), che si vedrà dopo aver introdotto la continuità.
 
-Per determinare i candidati punti di massimo o minimo assoluto di una funzione continua su $\lbrack a,b\rbrack $, una volta garantita l'esistenza dal teorema di Weierstrass, occorre confrontare i valori di $f$ in tre tipi di punti: i punti interni in cui $f$ è derivabile e $f'(x) = 0$, i punti interni in cui $f$ non è derivabile, e i punti agli estremi $a$ e $b$ dell'intervallo. Il motivo per cui i punti con $f'(x) = 0$ sono candidati naturali sarà chiarito dal teorema di Fermat, che verrà enunciato e dimostrato nel capitolo sul calcolo differenziale: se $x_0$ è interno al dominio, è un punto di massimo o di minimo relativo, ed $f$ è derivabile in $x_0$, allora necessariamente $f'(x_0) = 0$. Questo risultato sarà il punto di partenza per i [teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4) e per la [caratterizzazione dei punti critici](ref:chapter/8#p3) tramite le derivate successive.
-
 ### Errori tipici
 
-Un primo errore frequente è confondere il **punto di massimo** $x_0$ con il **valore massimo** $f(x_0)$: quando si risponde a una domanda d'esame del tipo "determinare massimi e minimi di $f$" occorre sempre specificare entrambi, scrivendo per esempio "$x_0 = 1$ è punto di massimo relativo, con valore massimo $f(1) = 3$", e non limitarsi a uno dei due dati.
-
-Un secondo errore riguarda il teorema di Fermat: la condizione $f'(x_0) = 0$ è **necessaria ma non sufficiente** per avere un punto di estremo relativo, e vale solo per punti **interni** al dominio in cui $f$ è derivabile. Non bisogna quindi cercare i massimi e minimi assoluti di una funzione su $\lbrack a,b\rbrack $ soltanto risolvendo $f'(x) = 0$: occorre anche controllare gli estremi $a, b$ dell'intervallo e gli eventuali punti interni di non derivabilità, dove la derivata non si annulla (o non esiste) ma la funzione può comunque avere un estremo, come $f(x) = |x|$, che ha un minimo assoluto in $x = 0$ pur avendo in quel punto un punto angoloso e quindi non essendo derivabile. Simmetricamente, l'annullarsi della derivata non implica che il punto sia un estremo: $f(x) = x^3$ ha $f'(0) = 0$ ma $x = 0$ non è né punto di massimo né di minimo, essendo un punto di flesso a tangente orizzontale.
+Un errore frequente è confondere il **punto di massimo** $x_0$ con il **valore massimo** $f(x_0)$: quando si risponde a una domanda d'esame del tipo "determinare massimi e minimi di $f$" occorre sempre specificare entrambi, scrivendo per esempio "$x_0 = 1$ è punto di massimo relativo, con valore massimo $f(1) = 3$", e non limitarsi a uno dei due dati.
 
 ## p6 | Funzioni elementari e loro inverse
 
@@ -618,7 +612,7 @@ Metodo:
 1. Scrivi le condizioni di esistenza di ogni pezzo della formula: radici di indice pari, logaritmi, denominatori e argomenti di \(\arcsin\) e \(\arccos\); per \(\arctan\), verifica solo che l'espressione interna sia definita. Considera anche i valori assoluti. Intersecale. Le funzioni elementari da ricordare sono nella sezione [Funzioni elementari e loro inverse](ref:chapter/3#p6).
 2. Controlla che il dominio sia simmetrico rispetto a $0$. Se lo è, calcola $f(-x)$ e confrontalo con $f(x)$ e con $-f(x)$ (vedi [Simmetrie, periodicità e funzioni particolari](ref:chapter/3#p4)). Se $f$ è pari o dispari, studia solo $x\ge 0$ e completa per simmetria.
 3. Calcola i limiti agli estremi del dominio, compresi i punti isolati esclusi. Dai limiti ricava gli asintoti verticali, orizzontali e obliqui.
-4. Per la monotonia studia il segno di $f'$ sugli intervalli del dominio. Poi classifica i punti critici e i punti di non derivabilità, distinguendo punti di massimo o minimo, relativi o assoluti, dai valori corrispondenti (vedi [Funzioni limitate e monotone, massimi e minimi](ref:chapter/3#p5)).
+4. Per la monotonia studia il segno di $f'$ sugli intervalli del dominio, con il test di monotonia [(7.13)](ref:formula/7.13) ([Teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4)). Poi classifica i punti critici e i punti di non derivabilità, distinguendo punti di massimo o minimo, relativi o assoluti, dai valori corrispondenti (vedi [Funzioni limitate e monotone, massimi e minimi](ref:chapter/3#p5)).
 
 Errori tipici:
 

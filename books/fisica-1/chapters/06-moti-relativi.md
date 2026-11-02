@@ -55,7 +55,7 @@ mentre $y_B = L = 20\ \text{m}$. Il controllo dimensionale è immediato: $\lbrac
 
 ### Riferimenti in rotazione
 
-Se il riferimento mobile ruota, con velocità angolare $\vec{\omega}$, rispetto al riferimento fisso, i versori $\hat{u}_{x'},\hat{u}_{y'},\hat{u}_{z'}$ non sono più costanti: la loro derivata è data dalle [(1.13)](ref:formula/1.13), già introdotte in [Vettori e versori](ref:chapter/1#p3), che qui si scrivono riferite al sistema mobile come $d\hat{u}_{x'}/dt=\vec{\omega}\times\hat{u}_{x'}$ e analoghe per $\hat{u}_{y'},\hat{u}_{z'}$. Derivando $\vec{r}=\vec{OO'}+\vec{r}\,'$ e tenendo conto di questi termini si ottiene il risultato fondamentale di questa sezione.
+Se il riferimento mobile ruota, con velocità angolare $\vec{\omega}$, rispetto al riferimento fisso, i versori $\hat{u}_{x'},\hat{u}_{y'},\hat{u}_{z'}$ non sono più costanti: la loro derivata è data dalle formule di Poisson [(1.13)](ref:formula/1.13), già introdotte in [Vettori e versori](ref:chapter/1#p3), che qui si scrivono riferite al sistema mobile come $d\hat{u}_{x'}/dt=\vec{\omega}\times\hat{u}_{x'}$ e analoghe per $\hat{u}_{y'},\hat{u}_{z'}$. Derivando $\vec{r}=\vec{OO'}+\vec{r}\,'$ e tenendo conto di questi termini si ottiene il risultato fondamentale di questa sezione.
 
 **Teorema 6.1** (delle velocità relative). Siano $Oxyz$ un riferimento fisso e $O'x'y'z'$ un riferimento mobile che ruota con velocità angolare $\vec{\omega}(t)$ rispetto al primo. Per un punto materiale $P$ vale
 

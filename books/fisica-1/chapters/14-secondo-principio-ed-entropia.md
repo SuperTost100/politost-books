@@ -388,7 +388,7 @@ L'entropia è inoltre una grandezza **additiva** ed **estensiva**: dati due sist
 
 Una conseguenza pratica fondamentale è la seguente regola di calcolo, valida anche quando la trasformazione realmente seguita è irreversibile.
 
-**Definizione operativa.** Per calcolare la variazione di entropia $\Delta S$ di un sistema tra uno stato $A$ e uno stato $B$ collegati da una trasformazione irreversibile, è sufficiente scegliere una qualunque trasformazione reversibile che collega gli stessi stati $A$ e $B$ e applicare a questa la {{formula:14.11}}: poiché $S$ è funzione di stato, il risultato ottenuto è valido indipendentemente dalla trasformazione reale percorsa.
+**Definizione operativa.** Per calcolare la variazione di entropia $\Delta S$ di un sistema tra uno stato $A$ e uno stato $B$ collegati da una trasformazione irreversibile, è sufficiente scegliere una qualunque trasformazione reversibile che collega gli stessi stati $A$ e $B$ e applicare a questa la formula {{formula:14.11}}: poiché $S$ è funzione di stato, il risultato ottenuto è valido indipendentemente dalla trasformazione reale percorsa.
 
 ### Principio di aumento dell'entropia
 
@@ -437,7 +437,7 @@ Poiché ogni processo naturale reale comporta qualche grado di irreversibilità 
 
 **Esempio 14.4** (scambio di calore fra due sorgenti). Due sorgenti ideali, a temperature costanti $T_1$ e $T_2$ con $T_2 > T_1$, sono poste in contatto termico: la sorgente calda cede il calore $Q>0$ e la sorgente fredda lo assorbe. Si vuole calcolare la variazione di entropia dell'universo in questo processo, chiaramente irreversibile poiché avviene con una differenza finita di temperatura.
 
-Il processo è isotermo per ciascuna sorgente, quindi per calcolare la variazione di entropia di ognuna si può applicare direttamente la {{formula:14.11}} con $T$ costante, immaginando una trasformazione reversibile fra gli stessi stati iniziale e finale di ciascuna sorgente. La sorgente fredda (a $T_1$) assorbe $Q$:
+Il processo è isotermo per ciascuna sorgente, quindi per calcolare la variazione di entropia di ognuna si può applicare direttamente la formula {{formula:14.11}} con $T$ costante, immaginando una trasformazione reversibile fra gli stessi stati iniziale e finale di ciascuna sorgente. La sorgente fredda (a $T_1$) assorbe $Q$:
 
 $$\Delta S_1 = \int \frac{\delta Q}{T_1} = \frac{1}{T_1}\int \delta Q = \frac{Q}{T_1} > 0$$
 

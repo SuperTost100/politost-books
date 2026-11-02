@@ -259,7 +259,7 @@ $$
 \frac{f^{(4)}(5)}{4!}=2\implies f^{(4)}(5)=2\cdot4!=48>0.
 $$
 
-Siamo quindi nel caso $n=4$ (pari) con $f^{(4)}(5)>0$: per la {{formula:8.5}}, $x_0=5$ è un punto di minimo relativo, con valore $f(5)=-7$.
+Siamo quindi nel caso $n=4$ (pari) con $f^{(4)}(5)>0$: per la formula {{formula:8.5}}, $x_0=5$ è un punto di minimo relativo, con valore $f(5)=-7$.
 
 :::image{src="assets/ad961d84-minimo-quartico.svg" alt="grafico di una quartica con minimo in x=5" caption="Fig. 8.3 — f(x) = -7 + 2(x-5)^4 vicino a x=5: tutte le derivate nulle fino all'ordine 3, quarta derivata positiva, quindi minimo relativo"}
 :::
@@ -425,8 +425,8 @@ Metodo:
 
 1. Per ciascun tratto studia la funzione nel suo intervallo aperto, come nel tipo precedente.
 2. Nel punto di raccordo calcola limite sinistro, limite destro e valore, e confrontali ([Punti di discontinuità](ref:chapter/5#p3)).
-3. Se la funzione è continua, calcola $f'_-(x_0)$ e $f'_+(x_0)$ come limiti del rapporto incrementale oppure, con cautela, come limiti di $f'$ ([Derivata e retta tangente](ref:chapter/7#p2)). Se il limite di $f'$ esiste, per il [(7.8)](ref:formula/7.8) coincide con la derivata unilatera (se $f$ è continua).
-4. Per le forme indeterminate con esponenziali e logaritmi scegli una variabile che tenda all'infinito nel caso concreto e usa la [(6.11)](ref:formula/6.11) ([Infiniti e infinitesimi](ref:chapter/6#p3)): per l'esempio in $x=0$ poni $t=1/x$, mentre per quello in $x=1$ poni $t=1/(x-1)^2$.
+3. Se la funzione è continua, calcola $f'_-(x_0)$ e $f'_+(x_0)$ come limiti del rapporto incrementale oppure, con cautela, come limiti di $f'$ ([Derivata e retta tangente](ref:chapter/7#p2)). Se il limite di $f'$ esiste, per il teorema tappabuchi [(7.8)](ref:formula/7.8) coincide con la derivata unilatera (se $f$ è continua).
+4. Per le forme indeterminate con esponenziali e logaritmi scegli una variabile che tenda all'infinito nel caso concreto e usa la formula [(6.11)](ref:formula/6.11) ([Infiniti e infinitesimi](ref:chapter/6#p3)): per l'esempio in $x=0$ poni $t=1/x$, mentre per quello in $x=1$ poni $t=1/(x-1)^2$.
 
 Errori tipici: dedurre la derivabilità dalla sola continuità; calcolare $f'$ solo dove la formula è «comoda» e non nel punto di raccordo; confondere il limite di $f'$ con la derivata nel punto senza verificare la continuità di $f$.
 

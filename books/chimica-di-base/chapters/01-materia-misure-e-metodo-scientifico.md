@@ -224,7 +224,7 @@ Lo strumento con cui si misura sperimentalmente il calore scambiato in una trasf
 
 Dati: $m = 125 \text{ g}$, $c = 0,387 \text{ J}\,\text{g}^{-1}\,\text{K}^{-1}$, $\Delta T = 300 - 25,0 = 275,0$ (in °C, ma la differenza ha lo stesso valore numerico in kelvin).
 
-Strategia: applicare la {{formula:1.8}}.
+Strategia: applicare la formula {{formula:1.8}}.
 
 Calcolo:
 $$q = 125 \cdot 0,387 \cdot 275,0 = 1,33 \times 10^4 \text{ J}$$

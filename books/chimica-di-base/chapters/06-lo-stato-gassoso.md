@@ -86,7 +86,7 @@ I problemi sui gas si presentano in due forme tipiche. Nel primo caso una variab
 
 *Dati*: $P_1 = 1{,}12\ \text{atm}$, $V_1 = 24{,}8\ \text{cm}^3$, $P_2 = 2{,}64\ \text{atm}$; $T$ e $n$ costanti.
 
-*Strategia*: due variabili ($P$, $V$) cambiano mantenendo $T$ e $n$ costanti, quindi si applica la {{formula:6.1}}.
+*Strategia*: due variabili ($P$, $V$) cambiano mantenendo $T$ e $n$ costanti, quindi si applica la formula {{formula:6.1}}.
 
 *Calcolo*:
 
@@ -106,7 +106,7 @@ $$n = \frac{885}{32{,}00} = 27{,}65625\ \text{mol}, \qquad P = \frac{n R T}{V} =
 
 ### Gas e stechiometria
 
-Quando un gas compare come reagente o prodotto in una reazione chimica, l'equazione di stato permette di convertire il suo volume in moli (e viceversa) esattamente come si farebbe con la massa, inserendosi nella procedura in quattro passi già introdotta per i [calcoli stechiometrici](ref:chapter/4#p4): bilanciare la reazione, convertire in moli la quantità nota (usando $n = PV/(RT)$ se il dato è in volume, pressione e temperatura), applicare il [(4.2)](ref:formula/4.2), riconvertire nell'unità richiesta.
+Quando un gas compare come reagente o prodotto in una reazione chimica, l'equazione di stato permette di convertire il suo volume in moli (e viceversa) esattamente come si farebbe con la massa, inserendosi nella procedura in quattro passi già introdotta per i [calcoli stechiometrici](ref:chapter/4#p4): bilanciare la reazione, convertire in moli la quantità nota (usando $n = PV/(RT)$ se il dato è in volume, pressione e temperatura), applicare il rapporto molare [(4.2)](ref:formula/4.2), riconvertire nell'unità richiesta.
 
 **Esempio svolto 6.2**. Il potassio reagisce con il cloro secondo $2\ \text{K}_{(s)} + \text{Cl}_{2(g)} \rightarrow 2\ \text{KCl}_{(s)}$. Calcolare la massa di KCl prodotta quando $5{,}25\ \text{L}$ di cloro, mantenuti a $293\ \text{K}$ e $0{,}950\ \text{atm}$, reagiscono con $17{,}0\ \text{g}$ di potassio.
 
@@ -126,7 +126,7 @@ $$m(\text{KCl}) = n(\text{KCl}) \times M(\text{KCl}) = 0{,}4150 \times 74{,}55 =
 
 *Verifica*: il risultato coincide con il valore riportato dalla fonte, $30{,}9\ \text{g}$.
 
-**Errore tipico 6.2**. In questi problemi un errore ricorrente è usare direttamente il volume del gas come se fosse proporzionale alle moli senza prima verificare che temperatura e pressione siano effettivamente quelle note: il volume di un gas da solo non determina le moli, serve sempre l'equazione di stato completa (a meno che non ci si trovi esattamente in condizioni normali, dove si può usare il {{formula:6.5}} con il volume molare di $22{,}4\ \text{L/mol}$). Un secondo errore tipico, quando compaiono due reagenti gassosi o un reagente gassoso e uno solido, è dimenticare di verificare il reagente limitante prima di calcolare il prodotto, procedimento già discusso nella sezione sui [calcoli stechiometrici](ref:chapter/4#p4).
+**Errore tipico 6.2**. In questi problemi un errore ricorrente è usare direttamente il volume del gas come se fosse proporzionale alle moli senza prima verificare che temperatura e pressione siano effettivamente quelle note: il volume di un gas da solo non determina le moli, serve sempre l'equazione di stato completa (a meno che non ci si trovi esattamente in condizioni normali, dove si può usare l'equazione di stato dei gas ideali {{formula:6.5}} con il volume molare di $22{,}4\ \text{L/mol}$). Un secondo errore tipico, quando compaiono due reagenti gassosi o un reagente gassoso e uno solido, è dimenticare di verificare il reagente limitante prima di calcolare il prodotto, procedimento già discusso nella sezione sui [calcoli stechiometrici](ref:chapter/4#p4).
 
 ## p3 | Densità, massa molare e miscele gassose
 
