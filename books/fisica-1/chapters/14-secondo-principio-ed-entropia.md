@@ -133,7 +133,7 @@ $$\eta = 1-\frac{|Q_{AB}|+|Q_{DA}|}{Q_{BC}} = 1-\frac{|-1{,}61\ \text{kJ}|+|-0{,
 
 **Errore tipico 14.2** (dimenticare il segno del lavoro dato dal verso di percorrenza). Calcolare l'area racchiusa da un ciclo senza controllare se è percorso in senso orario o antiorario porta a sbagliare il segno di $W$ e quindi a confondere una macchina termica con una macchina frigorifera.
 
-**Errore tipico 14.3** (applicare $\eta=1-T_1/T_2$ a cicli che non sono di Carnot). La {{formula:14.3}} vale solo per il ciclo di Carnot (e per il ciclo di Stirling con rigeneratore perfetto, che ha lo stesso rendimento); per qualunque altro ciclo, incluso Otto e Diesel, il rendimento va calcolato dalla definizione generale {{formula:14.1}} a partire dai calori scambiati in ciascuna trasformazione.
+**Errore tipico 14.3** (applicare $\eta=1-T_1/T_2$ a cicli che non sono di Carnot). La formula {{formula:14.3}} vale solo per il ciclo di Carnot (e per il ciclo di Stirling con rigeneratore perfetto, che ha lo stesso rendimento); per qualunque altro ciclo, incluso Otto e Diesel, il rendimento va calcolato dalla definizione generale {{formula:14.1}} a partire dai calori scambiati in ciascuna trasformazione.
 
 ## p3 | Secondo principio
 
@@ -270,15 +270,15 @@ $$T = 273{,}16\,\frac{|Q|}{|Q_{pt}|}\ \mathrm{K}$$
 
 dove $Q$ e $Q_{pt}$ sono i calori scambiati in un ciclo da una macchina reversibile che opera tra la sorgente e il punto triplo.
 
-La definizione ha la stessa struttura della [formula (12.1)](ref:formula/12.1), con il rapporto dei calori al posto del rapporto $X/X_{pt}$. La differenza è che qui il risultato non dipende dalla sostanza. Per due sorgenti qualsiasi, mettendo in serie le macchine reversibili, si ottiene
+La definizione ha la stessa struttura della formula [(12.1)](ref:formula/12.1), con il rapporto dei calori al posto del rapporto $X/X_{pt}$. La differenza è che qui il risultato non dipende dalla sostanza. Per due sorgenti qualsiasi, mettendo in serie le macchine reversibili, si ottiene
 
 $$\frac{|Q_1|}{Q_2}=\frac{T_1}{T_2},$$
 
-cioè la relazione {{formula:14.7}} con l'uguale. Il rendimento reversibile è dunque $\eta = 1 - T_1/T_2$, come nella {{formula:14.6}}.
+cioè la relazione {{formula:14.7}} con l'uguale. Il rendimento reversibile è dunque $\eta = 1 - T_1/T_2$, come nella formula {{formula:14.6}}.
 
 ### Equivalenza con la temperatura del gas ideale
 
-Resta da mostrare che questa scala coincide con quella del termometro a gas ideale, di cui finora abbiamo usato $T$ nell'equazione [formula (13.3)](ref:formula/13.3).
+Resta da mostrare che questa scala coincide con quella del termometro a gas ideale, di cui finora abbiamo usato $T$ nell'equazione [(13.3)](ref:formula/13.3).
 
 **Teorema 14.3.** Sia $T_g$ la temperatura del gas ideale e sia $T$ la temperatura termodinamica. Allora, per ogni coppia di sorgenti, il rapporto dei calori scambiati da una macchina reversibile è uguale al rapporto delle temperature del gas: $|Q_1|/Q_2=T_{g,1}/T_{g,2}$. Perciò le due scale coincidono, una volta fissato in entrambe il valore $273{,}16\ \mathrm{K}$ al punto triplo.
 
@@ -286,11 +286,11 @@ Resta da mostrare che questa scala coincide con quella del termometro a gas idea
 
 Per il teorema di Carnot basta calcolare il rapporto dei calori per una sola macchina reversibile tra le due sorgenti, perché tutte le altre danno lo stesso valore. Scegliamo un ciclo di Carnot con $n$ moli di gas ideale. Le trasformazioni sono: isoterma $A\to B$ a $T_{g,2}$, adiabatica $B\to C$, isoterma $C\to D$ a $T_{g,1}$, adiabatica $D\to A$, con $T_{g,1}<T_{g,2}$.
 
-Sulle isoterme reversibili la [formula (13.8)](ref:formula/13.8) dà il calore scambiato:
+Sulle isoterme reversibili la formula [(13.8)](ref:formula/13.8) dà il calore scambiato:
 
 $$Q_2 = nRT_{g,2}\ln\frac{V_B}{V_A}, \qquad Q_1 = nRT_{g,1}\ln\frac{V_D}{V_C}.$$
 
-Per questo ciclo scegliamo un gas ideale con calori specifici costanti, per il quale la [formula (13.9)](ref:formula/13.9) dà $TV^{\gamma-1}=\text{costante}$. Quindi
+Per questo ciclo scegliamo un gas ideale con calori specifici costanti, per il quale la formula [(13.9)](ref:formula/13.9) dà $TV^{\gamma-1}=\text{costante}$. Quindi
 
 $$T_{g,2}V_B^{\gamma-1}=T_{g,1}V_C^{\gamma-1}, \qquad T_{g,2}V_A^{\gamma-1}=T_{g,1}V_D^{\gamma-1}.$$
 
@@ -320,7 +320,7 @@ Lo zero assoluto è un limite della scala termodinamica e non è mai stato raggi
 
 **Errore tipico 14.4.** Calcolare la temperatura dall'equazione di stato senza convertire le unità: con $p=1\cdot 10^5\ \mathrm{Pa}$, $V=10\ \mathrm{L}$ non convertiti in $\mathrm{m}^3$ si ottengono temperature sbagliate di ordini di grandezza.
 
-**Errore tipico 14.5.** Usare le temperature in °C nei rapporti $T_1/T_2$ o $Q_1/T_1$. La scala termodinamica è assoluta, quindi nei rendimenti e nei rapporti dei calori si usano sempre i kelvin (vedi [formula (12.2)](ref:formula/12.2)).
+**Errore tipico 14.5.** Usare le temperature in °C nei rapporti $T_1/T_2$ o $Q_1/T_1$. La scala termodinamica è assoluta, quindi nei rendimenti e nei rapporti dei calori si usano sempre i kelvin (vedi [(12.2)](ref:formula/12.2)).
 
 **Errore tipico 14.6.** Pensare che $\eta=1-T_1/T_2$ valga per qualsiasi macchina a due sorgenti. È il valore massimo ed è raggiunto solo dalle macchine reversibili. Le macchine irreversibili hanno rendimento minore.
 
@@ -480,7 +480,7 @@ Per $n$ moli di gas ideale che passano dallo stato $A(p_A,V_A,T_A)$ allo stato $
 $$\Delta S = S(B)-S(A) = n c_V \ln\left(\frac{T_B}{T_A}\right) + nR \ln\left(\frac{V_B}{V_A}\right)$$
 :::
 
-equivalente, tramite l'equazione di stato [formula (13.3)](ref:formula/13.3) e la relazione di Mayer [formula (13.6)](ref:formula/13.6), alle forme
+equivalente, tramite l'equazione di stato [(13.3)](ref:formula/13.3) e la relazione di Mayer [(13.6)](ref:formula/13.6), alle forme
 
 $$\Delta S = n c_V \ln\left(\frac{p_B}{p_A}\right) + n c_p \ln\left(\frac{V_B}{V_A}\right) = n c_p \ln\left(\frac{T_B}{T_A}\right) - nR \ln\left(\frac{p_B}{p_A}\right)$$
 
@@ -504,7 +504,7 @@ Nella trasformazione adiabatica reversibile il calore scambiato è nullo in ogni
 
 **Esempio 14.5.** Cinque moli di gas ideale biatomico ($c_V = \frac{5}{2}R$, $\gamma = 7/5$) si trovano alla temperatura $T_1 = 250\ ^\circ\mathrm{C} = 523{,}15\ \mathrm{K}$ in un cilindro di volume $V_1$, collegato tramite un rubinetto chiuso a un secondo cilindro vuoto di volume $V_2$. Il gas compie prima un'espansione adiabatica reversibile fino al volume $V_1' = 4V_1$; poi si apre il rubinetto e il gas fluisce liberamente nel secondo cilindro, di volume $V_2 = V_1'$, con l'intero sistema termicamente isolato e a pareti rigide.
 
-Nella prima fase la trasformazione è adiabatica reversibile, quindi $\Delta S_1 = 0$ per quanto appena visto. La temperatura al termine di questa fase si ricava dall'equazione delle adiabatiche [formula (13.9)](ref:formula/13.9):
+Nella prima fase la trasformazione è adiabatica reversibile, quindi $\Delta S_1 = 0$ per quanto appena visto. La temperatura al termine di questa fase si ricava dall'equazione delle adiabatiche [(13.9)](ref:formula/13.9):
 
 $$T_1' = T_1 \left(\frac{V_1}{V_1'}\right)^{\gamma-1} = T_1 \left(\frac{1}{4}\right)^{2/5} = 523{,}15\ \mathrm{K} \times 0{,}574 \approx 300{,}5\ \mathrm{K}$$
 
@@ -544,7 +544,7 @@ $$\Delta S_{\text{amb}} = \frac{Q_{\text{amb}}}{T_2} = \frac{mc(T_1-T_2)}{T_2}$$
 
 e la somma $\Delta S_U = \Delta S_{\text{corpo}} + \Delta S_{\text{amb}} = mc\ln(T_2/T_1) + mc(T_1-T_2)/T_2$ risulta sempre positiva, confermando l'irreversibilità del processo.
 
-Nel caso di due corpi a capacità termica finita (masse $m_1,m_2$, calori specifici $c_1,c_2$, temperature iniziali $T_1 < T_2$) messi a contatto in un recipiente adiabatico, la temperatura di equilibrio è quella già ricavata nella calorimetria (richiamando [formula (12.15)](ref:formula/12.15)):
+Nel caso di due corpi a capacità termica finita (masse $m_1,m_2$, calori specifici $c_1,c_2$, temperature iniziali $T_1 < T_2$) messi a contatto in un recipiente adiabatico, la temperatura di equilibrio è quella già ricavata nella calorimetria (richiamando [(12.15)](ref:formula/12.15)):
 
 $$T_C = \frac{m_1 c_1 T_1 + m_2 c_2 T_2}{m_1 c_1 + m_2 c_2}$$
 
@@ -570,7 +570,7 @@ Per applicare il principio di aumento dell'entropia, consideriamo la miscelazion
 
 **Esempio 14.6.** Un corpo di massa $m_1 = 1\,\mathrm{kg}$ di acqua (calore specifico $c=4186\,\mathrm{J/(kg\cdot K)}$) a temperatura $T_1=283\,\mathrm{K}$ viene mescolato, in un recipiente adiabatico, con un corpo di massa $m_2=2\,\mathrm{kg}$ di acqua alla temperatura $T_2=353\,\mathrm{K}$.
 
-La temperatura di equilibrio, data da [formula (12.15)](ref:formula/12.15), vale
+La temperatura di equilibrio, data da [(12.15)](ref:formula/12.15), vale
 
 $$T_C = \frac{m_1 c T_1 + m_2 c T_2}{(m_1+m_2)\,c} = \frac{1\times 283 + 2\times 353}{3}\,\mathrm{K} \approx 329{,}7\,\mathrm{K}$$
 
@@ -615,8 +615,8 @@ Il secondo principio non compare quasi mai da solo: nei testi è sempre intrecci
 
 **Metodo.**
 
-1. Scrivere i dati e ricavare gli stati con l'equazione di stato ([formula (13.3)](ref:formula/13.3)), usando i rapporti di volume e di temperatura dati. Per i gas ideali si veda [Trasformazioni dei gas ideali](ref:chapter/13#p4).
-2. Per ogni tratto applicare il primo principio $\Delta U = Q - W$ ([formula (13.1)](ref:formula/13.1)), con $\Delta U = n\,c_V\,\Delta T$. Il lavoro si calcola secondo il tipo di trasformazione (isoterma, isocora, adiabatica reversibile), come in [Primo principio ed energia interna](ref:chapter/13#p2).
+1. Scrivere i dati e ricavare gli stati con l'equazione di stato ([(13.3)](ref:formula/13.3)), usando i rapporti di volume e di temperatura dati. Per i gas ideali si veda [Trasformazioni dei gas ideali](ref:chapter/13#p4).
+2. Per ogni tratto applicare il primo principio $\Delta U = Q - W$ ([(13.1)](ref:formula/13.1)), con $\Delta U = n\,c_V\,\Delta T$. Il lavoro si calcola secondo il tipo di trasformazione (isoterma, isocora, adiabatica reversibile), come in [Primo principio ed energia interna](ref:chapter/13#p2).
 3. Per $\Delta S$ del gas scegliere una trasformazione reversibile fittizia tra gli stessi stati e usare la formula generale ({{formula:14.15}}), oppure i casi particolari isoterma e isocora. Ad esempio, per un'isoterma $\Delta S = nR\ln(V_f/V_i)$. Anche nel tratto irreversibile $\Delta S$ del gas dipende solo dagli stati iniziale e finale. Il metodo è in [Calcolo delle variazioni di entropia](ref:chapter/14#p6).
 4. Per ogni sorgente, che resta a temperatura $T_s$ costante, calcolare $\Delta S_s = Q_s/T_s$ con $Q_s = -Q_{gas}$.
 5. Sommare: $\Delta S_U = \Delta S_{sist} + \Delta S_{amb}$. Il segno dice se il processo è reversibile ($=0$) o irreversibile ($>0$) ({{formula:14.23}}). Un risultato negativo indica un errore.
@@ -643,7 +643,7 @@ Il secondo principio non compare quasi mai da solo: nei testi è sempre intrecci
 **Metodo.**
 
 1. Elencare per ogni tratto le grandezze note e quelle incognite, tracciando il ciclo nel piano $(V,p)$ ([Macchine termiche e frigoriferi](ref:chapter/14#p2)).
-2. Sui tratti reversibili calcolare calore e lavoro con le formule dell'isoterma ([formula (13.8)](ref:formula/13.8)) e dell'adiabatica ([formula (13.11)](ref:formula/13.11)). Le adiabatiche reversibili legano temperature e volumi tramite [formula (13.9)](ref:formula/13.9).
+2. Sui tratti reversibili calcolare calore e lavoro con le formule dell'isoterma ([(13.8)](ref:formula/13.8)) e dell'adiabatica ([(13.11)](ref:formula/13.11)). Le adiabatiche reversibili legano temperature e volumi tramite [(13.9)](ref:formula/13.9).
 3. Sul tratto irreversibile usare il calore dato. Essendo il ciclo chiuso, $\Delta U_{ciclo} = 0$ e quindi $W_{ciclo} = Q_{ciclo}$: il lavoro totale si ricava dalla somma dei calori.
 4. Calcolare $\eta = W/Q_{ass}$ ({{formula:14.1}}), contando in $Q_{ass}$ solo i calori positivi, e confrontarlo con $\eta_C = 1 - T_1/T_2$ ({{formula:14.3}}). Il teorema di Carnot ([Secondo principio](ref:chapter/14#p3)) impone $\eta \le \eta_C$: se il risultato lo supera, c'è un errore.
 5. Per l'entropia dell'universo, $\Delta S_{gas} = 0$ sul ciclo chiuso (funzione di stato). Resta la somma delle variazioni delle sorgenti, $\Delta S_U = -\sum Q_i/T_i$ con $Q_i$ calore scambiato dal gas con la sorgente $i$, che per il teorema di Clausius ([Teorema di Clausius ed entropia](ref:chapter/14#p5)) deve risultare $\ge 0$.

@@ -126,7 +126,7 @@ Controllo: le dimensioni di $c/m$ sono $\lbrack \text{N/s}\rbrack /\lbrack \text
 :::image{src="assets/3d6e6a1a-legge-velocita-forza-lineare.svg" alt="Parabola v(t) = -3 + 0,8 t^2 con punto evidenziato a t* dove v = 8 m/s" caption="Fig. 3.1 — Legge della velocità v(t) ricavata da una forza F(t) = c t: la curva è una parabola, e l'istante t* in cui v raggiunge il valore v* si legge come intersezione con la retta orizzontale v = v*."}
 :::
 
-Il procedimento a due passi illustrato sopra vale quando la forza dipende solo dal tempo, $f_x(t)$: in tal caso l'equazione $m\,d^2x/dt^2=f_x(t)$ si integra direttamente due volte, come negli esempi precedenti. Quando la forza dipende invece dalla posizione o dalla velocità, $f_x(x,v,t)$, la situazione è diversa: per esempio nel caso della forza elastica, trattata in [Forza elastica](ref:chapter/3#p7), l'equazione $-kx=m\,d^2x/dt^2$ conduce all'equazione differenziale del moto armonico già studiata in [Moto armonico](ref:chapter/2#p4) (vedi [formula (2.20)](ref:formula/2.20)), mentre nel moto con resistenza viscosa, trattato in [Forze di attrito](ref:chapter/3#p6), l'equazione del moto ha una struttura ancora diversa. In generale queste equazioni differenziali non si riducono a una semplice separazione delle variabili, e vanno risolte con la tecnica appropriata al caso specifico.
+Il procedimento a due passi illustrato sopra vale quando la forza dipende solo dal tempo, $f_x(t)$: in tal caso l'equazione $m\,d^2x/dt^2=f_x(t)$ si integra direttamente due volte, come negli esempi precedenti. Quando la forza dipende invece dalla posizione o dalla velocità, $f_x(x,v,t)$, la situazione è diversa: per esempio nel caso della forza elastica, trattata in [Forza elastica](ref:chapter/3#p7), l'equazione $-kx=m\,d^2x/dt^2$ conduce all'equazione differenziale del moto armonico già studiata in [Moto armonico](ref:chapter/2#p4) (vedi [(2.20)](ref:formula/2.20)), mentre nel moto con resistenza viscosa, trattato in [Forze di attrito](ref:chapter/3#p6), l'equazione del moto ha una struttura ancora diversa. In generale queste equazioni differenziali non si riducono a una semplice separazione delle variabili, e vanno risolte con la tecnica appropriata al caso specifico.
 
 **Errore tipico 3.3.** Scrivere un passaggio intermedio in cui un membro dell'uguaglianza ha unità di misura e l'altro è un numero puro, per esempio omettendo di dividere per $m$ o di riportare le unità durante l'integrazione. Un'uguaglianza dimensionalmente inconsistente in un passaggio intermedio è priva di significato anche se il risultato finale appare numericamente plausibile; ogni riga di calcolo, non solo la prima e l'ultima, deve essere dimensionalmente corretta.
 
@@ -600,11 +600,11 @@ Ponendo
 
 $$\omega = \sqrt{\frac{k}{m}},$$
 
-l'equazione diventa $\ddot{x} + \omega^2 x = 0$, che è esattamente l'equazione differenziale del moto armonico [formula (2.20)](ref:formula/2.20) già studiata nella sezione sul [moto armonico](ref:chapter/2#p4). La soluzione generale è dunque la legge oraria [formula (2.14)](ref:formula/2.14), $x(t) = A\sin(\omega t + \varphi)$, equivalente alla forma [formula (2.21)](ref:formula/2.21), $x(t) = C\cos(\omega t) + D\sin(\omega t)$. Il periodo e la pulsazione sono determinati esclusivamente dal rapporto tra la costante elastica e la massa:
+l'equazione diventa $\ddot{x} + \omega^2 x = 0$, che è esattamente l'equazione differenziale del moto armonico [(2.20)](ref:formula/2.20) già studiata nella sezione sul [moto armonico](ref:chapter/2#p4). La soluzione generale è dunque la legge oraria [(2.14)](ref:formula/2.14), $x(t) = A\sin(\omega t + \varphi)$, equivalente alla forma [(2.21)](ref:formula/2.21), $x(t) = C\cos(\omega t) + D\sin(\omega t)$. Il periodo e la pulsazione sono determinati esclusivamente dal rapporto tra la costante elastica e la massa:
 
 $$\omega = \sqrt{\frac{k}{m}}, \qquad T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{m}{k}} \,$$
 
-Le costanti $A,\varphi$ (o $C,D$) si fissano come sempre dalle condizioni iniziali $x_0 = x(0)$, $v_0 = \dot{x}(0)$, secondo [formula (2.22)](ref:formula/2.22).
+Le costanti $A,\varphi$ (o $C,D$) si fissano come sempre dalle condizioni iniziali $x_0 = x(0)$, $v_0 = \dot{x}(0)$, secondo [(2.22)](ref:formula/2.22).
 
 :::image{src="assets/b01ae562-molla-moto-armonico.svg" alt="Grafico sinusoidale di x(t)/A in funzione di t, un periodo completo" caption="Fig. 3.8 — Andamento nel tempo dell'elongazione di una massa attaccata a una molla, a partire da x(0)=0 con velocità iniziale massima"}
 :::
@@ -621,7 +621,7 @@ Riferimento: asse $x$ con origine nella posizione di equilibrio della molla, ver
 
 Equazione del moto: $\ddot{x} + \omega^2 x = 0$ con $\omega = \sqrt{k/m}$.
 
-Soluzione letterale: imponendo $x(0)=0=C$, la soluzione generale [formula (2.21)](ref:formula/2.21) si riduce a $x(t) = D\sin(\omega t)$, e da $\dot{x}(0) = D\omega = v_0$ si ottiene $D = v_0/\omega$, cioè
+Soluzione letterale: imponendo $x(0)=0=C$, la soluzione generale [(2.21)](ref:formula/2.21) si riduce a $x(t) = D\sin(\omega t)$, e da $\dot{x}(0) = D\omega = v_0$ si ottiene $D = v_0/\omega$, cioè
 
 $$x(t) = \frac{v_0}{\omega}\sin(\omega t).$$
 
@@ -756,7 +756,7 @@ $$
 \frac{d^2\theta}{dt^2} + \omega^2\theta = 0, \qquad \omega^2 = \frac{g}{L},
 $$
 
-con soluzione $\theta(t) = \theta_0\sin(\omega t + \varphi)$, analoga a [formula (2.14)](ref:formula/2.14). Il periodo delle piccole oscillazioni è allora
+con soluzione $\theta(t) = \theta_0\sin(\omega t + \varphi)$, analoga a [(2.14)](ref:formula/2.14). Il periodo delle piccole oscillazioni è allora
 
 :::formula{id="3.28" label="Periodo del pendolo semplice (piccole oscillazioni)"}
 $$
@@ -817,8 +817,8 @@ Nella prova scritta di 2 ore ci sono due problemi strutturati a domande aperte, 
 
 1. Dividi il percorso in tratti: ogni tratto ha una propria forza risultante, quindi una propria equazione. Disegna il diagramma di corpo libero di ciascun tratto, come in [Principi della dinamica](ref:chapter/3#p2).
 2. Scegli gli assi parallelo e perpendicolare alla superficie e proietta il peso: $mg\sin\theta$ lungo il piano e $mg\cos\theta$ in direzione normale ([Reazioni vincolari ed equilibrio](ref:chapter/3#p5)).
-3. Ricava $N$ dall'equazione perpendicolare alla superficie e poi scrivi l'attrito dinamico $f_d=\mu_d N$, con la {{formula:3.17}}. Il verso di $\vec f_d$ è sempre opposto alla velocità ([Forze di attrito](ref:chapter/3#p6)).
-4. Se servono solo velocità e posizioni, usa il bilancio energetico invece del tempo. Per il lavoro dell'attrito vale [formula (4.11)](ref:formula/4.11), e il teorema da applicare è [formula (4.12)](ref:formula/4.12) ([Energia cinetica e teorema lavoro-energia](ref:chapter/4#p3), [Forze conservative ed energia potenziale](ref:chapter/4#p4)).
+3. Ricava $N$ dall'equazione perpendicolare alla superficie e poi scrivi l'attrito dinamico $f_d=\mu_d N$, con la formula {{formula:3.17}}. Il verso di $\vec f_d$ è sempre opposto alla velocità ([Forze di attrito](ref:chapter/3#p6)).
+4. Se servono solo velocità e posizioni, usa il bilancio energetico invece del tempo. Per il lavoro dell'attrito vale [(4.11)](ref:formula/4.11), e il teorema da applicare è [(4.12)](ref:formula/4.12) ([Energia cinetica e teorema lavoro-energia](ref:chapter/4#p3), [Forze conservative ed energia potenziale](ref:chapter/4#p4)).
 5. Se l'esercizio chiede tempi o accelerazioni, risolvi invece l'equazione del moto di ogni tratto e integra come in {{formula:3.4}}.
 6. Fai il controllo dimensionale e verifica che i segni abbiano senso. Per esempio, l'energia dissipata deve essere positiva e la velocità non può aumentare in un tratto scabro orizzontale.
 
@@ -841,8 +841,8 @@ Nella prova scritta di 2 ore ci sono due problemi strutturati a domande aperte, 
 **Metodo.**
 
 1. Dividi l'esercizio in prima dell'urto, urto e dopo l'urto. Ogni fase ha una legge diversa.
-2. Prima e dopo l'urto usa le equazioni della dinamica o dell'energia. Per un pendolo che scende usa la conservazione dell'energia meccanica e, quando serve la tensione, la [formula (4.15)](ref:formula/4.15) ([Forze conservative ed energia potenziale](ref:chapter/4#p4)).
-3. Durante l'urto le forze esterne non impulsive sono trascurabili, perché il tempo di interazione è brevissimo. Impone la conservazione della quantità di moto del sistema, [formula (7.20)](ref:formula/7.20), proiettata sugli assi ([Urti](ref:chapter/7#p7)).
+2. Prima e dopo l'urto usa le equazioni della dinamica o dell'energia. Per un pendolo che scende usa la conservazione dell'energia meccanica e, quando serve la tensione, la formula [(4.15)](ref:formula/4.15) ([Forze conservative ed energia potenziale](ref:chapter/4#p4)).
+3. Durante l'urto le forze esterne non impulsive sono trascurabili, perché il tempo di interazione è brevissimo. Impone la conservazione della quantità di moto del sistema, [(7.20)](ref:formula/7.20), proiettata sugli assi ([Urti](ref:chapter/7#p7)).
 4. Per il tipo di urto: completamente anelastico (i corpi restano attaccati) vale solo la quantità di moto; elastico si conserva anche l'energia cinetica. Se un vincolo esterno è impulsivo, come il perno di un'asta, la quantità di moto non si conserva; si conserva invece il momento angolare rispetto al perno, purché gli altri momenti impulsivi esterni rispetto a quel polo siano trascurabili ([Momento angolare di un sistema](ref:chapter/7#p5)).
 5. Riporta le velocità subito dopo l'urto come condizioni iniziali della fase successiva.
 
@@ -868,7 +868,7 @@ Nella prova scritta di 2 ore ci sono due problemi strutturati a domande aperte, 
 
 1. Scrivi la prima equazione cardinale per il centro di massa, che segue dai principi come in [Principi della dinamica](ref:chapter/3#p2), con le forze del diagramma: peso, normale, attrito, tensione, forza elastica.
 2. Scrivi la seconda equazione per la rotazione intorno all'asse del centro di massa, con il momento d'inerzia del corpo ([Rotazione attorno a un asse fisso](ref:chapter/9#p2)).
-3. Aggiungi la condizione di puro rotolamento, [formula (9.8)](ref:formula/9.8), che lega $a_{CM}$ e $\alpha$ ([Rotolamento](ref:chapter/9#p4)).
+3. Aggiungi la condizione di puro rotolamento, [(9.8)](ref:formula/9.8), che lega $a_{CM}$ e $\alpha$ ([Rotolamento](ref:chapter/9#p4)).
 4. Risolvi per $f_s$: nel puro rotolamento l'attrito statico non ha valore fissato, ma è quello necessario, quindi può risultare con segno qualunque.
 5. Verifica a posteriori la condizione di aderenza {{formula:3.16}}, $|f_s|\le\mu_s N$, con $N$ ricavata dalle forze perpendicolari. Se non è soddisfatta, il corpo striscia e il modello cambia: valgono $f_d=\mu_d N$ e non c'è più il vincolo di rotolamento.
 6. Se il testo chiede una velocità e non un'accelerazione, usa l'energia: nel puro rotolamento l'attrito statico non compie lavoro.

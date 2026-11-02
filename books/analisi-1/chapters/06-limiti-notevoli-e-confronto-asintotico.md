@@ -416,7 +416,7 @@ Metodo:
 2. Sostituire il punto nell'espressione e riconoscere la forma. Se non è indeterminata, il limite si legge con l'[algebra dei limiti](ref:chapter/4#p6).
 3. Se la forma è indeterminata, cercare un cambio di variabile che riporti a un limite notevole (vedi [Limiti notevoli](ref:chapter/6#p2)). Per esempio si pone $t = \frac{1}{x}$ oppure $t = e^x - 1$ e si usano le {{formula:6.3}} e {{formula:6.4}}.
 4. Nelle somme tra infiniti, individuare il termine dominante con la gerarchia degli infiniti ({{formula:6.11}}) e applicare il [principio di eliminazione dei termini trascurabili](ref:chapter/6#p4).
-5. Per un asintoto obliquo per $x\to\pm\infty$, calcolare $m=\lim_{x\to\pm\infty}\frac{f(x)}{x}$ e poi $q=\lim_{x\to\pm\infty}\big(f(x)-mx\big)$. Per $q$ serve spesso la parte principale: vedi [formula (8.7)](ref:formula/8.7).
+5. Per un asintoto obliquo per $x\to\pm\infty$, calcolare $m=\lim_{x\to\pm\infty}\frac{f(x)}{x}$ e poi $q=\lim_{x\to\pm\infty}\big(f(x)-mx\big)$. Per $q$ serve spesso la parte principale: vedi [(8.7)](ref:formula/8.7).
 6. Se il punto escluso dal dominio dà un limite finito, la funzione si prolunga per continuità. Se compare un parametro $k$, si impone $k=\lim f$.
 
 Errori tipici:
@@ -468,7 +468,7 @@ Compare in sessioni diverse, sia come punto di un esercizio di teoria sia dentro
 Metodo:
 
 1. Fissare il punto e il campione ($x$ per $x\to0$, oppure $x$ come infinito campione per $x\to\pm\infty$).
-2. Sviluppare le funzioni elementari con la [formula di Taylor](ref:chapter/8#p2) e con la [formula (8.2)](ref:formula/8.2), fino all'ordine in cui si ottiene il primo termine non nullo.
+2. Sviluppare le funzioni elementari con la [formula di Taylor](ref:chapter/8#p2) e con la [(8.2)](ref:formula/8.2), fino all'ordine in cui si ottiene il primo termine non nullo.
 3. Se compaiono cancellazioni, aumentare l'ordine dello sviluppo di un grado alla volta, finché il primo termine non nullo sopravvive.
 4. Scrivere il risultato nella forma $f(x)\sim c\,\varphi(x)^{\alpha}$, con $c\neq0$. La parte principale è $c\,\varphi^\alpha$, l'ordine è $\alpha$.
 5. Controllare con $\lim\frac{f}{c\varphi^\alpha}=1$.
@@ -516,7 +516,7 @@ Metodo:
 
 1. Individuare i punti in cui l'integranda non è limitata o l'intervallo è illimitato.
 2. Per ciascun punto, cercare un confronto con un'integranda semplice, per esempio $\frac{1}{x^\alpha}$, usando limiti notevoli, sviluppi o disuguaglianze.
-3. Applicare il criterio del confronto asintotico ([formula (10.9)](ref:formula/10.9)) oppure il confronto diretto, verificando le ipotesi e la convergenza dell'integrale di riferimento, come spiegato in [Criteri di convergenza](ref:chapter/10#p4).
+3. Applicare il criterio del confronto asintotico ([(10.9)](ref:formula/10.9)) oppure il confronto diretto, verificando le ipotesi e la convergenza dell'integrale di riferimento, come spiegato in [Criteri di convergenza](ref:chapter/10#p4).
 
 Errori tipici: confrontare con $\frac{1}{x^\alpha}$ nel punto sbagliato (a $0$ e a $+\infty$ l'esponente critico dà esiti opposti) e applicare il criterio a funzioni di segno non costante.
 

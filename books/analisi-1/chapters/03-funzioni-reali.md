@@ -653,7 +653,7 @@ Esempi:
 
 - **Esame del 23 giugno 2020, esercizio 1**: $f(x)=\frac{|x|+1}{|x|-1}$ con il grafico in figura. Dominio $\mathbb{R}\setminus\{-1,1\}$. L'immagine si ricava dai limiti agli estremi e dai tratti monotoni su $\lbrack 0,1\lbrack $, $\rbrack 1,+\infty\lbrack $ e per simmetria.
 - **Esame dell'11 febbraio 2020 - Io turno, esercizio 2A**: si deve mostrare che $e^x+x^3$ si annulla in un solo punto. La funzione è somma di due funzioni strettamente crescenti, quindi iniettiva. Il teorema di esistenza degli zeri dà l'esistenza e la stretta monotonia l'unicità. Poi si studia $g=\log f$ sull'intervallo dove $f>0$, cioè a destra di questo zero.
-- **Esame del 25 gennaio 2023 - turno 1, esercizio 2** (versioni A e B): una funzione continua su $\lbrack 1,3\rbrack $ con $f(1)=-3$, $f(3)=-4$, $f(2)=-2$ non è iniettiva. Si sceglie un valore intermedio tra $-2$ e $-3$ (per esempio $-2{,}5$) e lo si raggiunge sia in $\rbrack 1,2\lbrack $ sia in $\rbrack 2,3\lbrack $ per il teorema dei valori intermedi ([formula (5.7)](ref:formula/5.7)). Due punti distinti con la stessa immagine contraddicono l'iniettività.
+- **Esame del 25 gennaio 2023 - turno 1, esercizio 2** (versioni A e B): una funzione continua su $\lbrack 1,3\rbrack $ con $f(1)=-3$, $f(3)=-4$, $f(2)=-2$ non è iniettiva. Si sceglie un valore intermedio tra $-2$ e $-3$ (per esempio $-2{,}5$) e lo si raggiunge sia in $\rbrack 1,2\lbrack $ sia in $\rbrack 2,3\lbrack $ per il teorema dei valori intermedi ([(5.7)](ref:formula/5.7)). Due punti distinti con la stessa immagine contraddicono l'iniettività.
 
 ### Tipo 3: definizioni e teoremi su estremi, monotonia e funzioni composte
 
@@ -662,7 +662,7 @@ L'esercizio 2 dello scritto (6 punti) è molto spesso diviso in tre parti: una d
 Metodo:
 
 1. Scrivi la definizione con i quantificatori, senza parole vaghe. Per un punto di massimo assoluto $x_0\in\operatorname{dom}(f)$ occorre $f(x)\le f(x_0)$ per ogni $x\in\operatorname{dom}(f)$. Per il massimo relativo la disuguaglianza vale solo per $x$ in un intorno $I_r(x_0)$ intersecato con il dominio. Si veda {{formula:3.15}} e {{formula:3.17}}.
-2. Enuncia i teoremi con tutte le ipotesi (intervallo chiuso e limitato, continuità, ecc.), come in [formula (5.6)](ref:formula/5.6) e [formula (5.3)](ref:formula/5.3).
+2. Enuncia i teoremi con tutte le ipotesi (intervallo chiuso e limitato, continuità, ecc.), come in [(5.6)](ref:formula/5.6) e [(5.3)](ref:formula/5.3).
 3. Nell'applicazione, verifica una per una le ipotesi del teorema prima di usarlo, e usa la monotonia dove serve (per esempio per l'unicità).
 4. Per i problemi su estremi senza derivata, riscrivi la funzione con valori assoluti come composizione di funzioni note e usa il grafico: gli zeri di un valore assoluto sono minimi assoluti, e gli estremi dell'intervallo possono essere punti di estremo.
 
@@ -685,7 +685,7 @@ Domande specifiche su parte intera e mantissa compaiono nell'esercizio 2 del 22 
 Metodo:
 
 1. Scrivi la definizione: $g$ è periodica se esiste $T>0$ tale che il dominio sia invariato dalla traslazione di $T$ (se $x\in\operatorname{dom}(g)$ allora $x\pm T\in\operatorname{dom}(g)$) e $g(x+T)=g(x)$ per ogni $x\in\operatorname{dom}(g)$. Ricorda che $M(x)=x-\lbrack x\rbrack $ ha periodo $1$, quindi, per $k>0$, $M(kx)$ ha periodo $1/k$ (vedi {{formula:3.11}}).
-2. Per dimostrare che il limite non esiste, scegli due successioni $x_n\to+\infty$ con $M(kx_n)$ che tendono a valori diversi. Per $k>0$, per esempio $x_n=n/k$ dà $M(kx_n)=0$, mentre $y_n=(n+\tfrac12)/k$ dà $M(ky_n)=\tfrac12$. Basta la caratterizzazione sequenziale ([formula (4.15)](ref:formula/4.15)).
+2. Per dimostrare che il limite non esiste, scegli due successioni $x_n\to+\infty$ con $M(kx_n)$ che tendono a valori diversi. Per $k>0$, per esempio $x_n=n/k$ dà $M(kx_n)=0$, mentre $y_n=(n+\tfrac12)/k$ dà $M(ky_n)=\tfrac12$. Basta la caratterizzazione sequenziale ([(4.15)](ref:formula/4.15)).
 3. Per i limiti con la mantissa, usa che $0\le M<1$ (funzione limitata) e confronta con i termini che divergono, oppure usa il teorema del confronto (si veda [Teoremi sui limiti](ref:chapter/4#p4)).
 4. Per le funzioni definite a tratti, studia ogni pezzo separatamente e poi i punti di raccordo con limiti unilateri (si veda [Funzioni continue](ref:chapter/5#p2)).
 

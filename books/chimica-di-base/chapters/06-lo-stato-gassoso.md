@@ -33,7 +33,7 @@ Nei calcoli sui gas la temperatura va sempre espressa in kelvin, secondo la rela
 
 $$T(\text{K}) = t(^\circ\text{C}) + 273{,}15$$
 
-già introdotta come [formula (1.1)](ref:formula/1.1): lo zero assoluto, $0\ \text{K}$, corrisponde a $-273{,}15\ ^\circ\text{C}$ ed è la temperatura a cui, idealmente, il volume di un gas si annullerebbe.
+già introdotta come [(1.1)](ref:formula/1.1): lo zero assoluto, $0\ \text{K}$, corrisponde a $-273{,}15\ ^\circ\text{C}$ ed è la temperatura a cui, idealmente, il volume di un gas si annullerebbe.
 
 **Errore tipico 6.1**. Dimenticare la conversione in kelvin è l'errore più frequente nei problemi sui gas: tutte le leggi che seguono usano la temperatura assoluta, non quella in gradi Celsius, perché solo $T$ in kelvin è direttamente proporzionale all'energia cinetica media delle particelle.
 
@@ -106,7 +106,7 @@ $$n = \frac{885}{32{,}00} = 27{,}65625\ \text{mol}, \qquad P = \frac{n R T}{V} =
 
 ### Gas e stechiometria
 
-Quando un gas compare come reagente o prodotto in una reazione chimica, l'equazione di stato permette di convertire il suo volume in moli (e viceversa) esattamente come si farebbe con la massa, inserendosi nella procedura in quattro passi già introdotta per i [calcoli stechiometrici](ref:chapter/4#p4): bilanciare la reazione, convertire in moli la quantità nota (usando $n = PV/(RT)$ se il dato è in volume, pressione e temperatura), applicare il [formula (4.2)](ref:formula/4.2), riconvertire nell'unità richiesta.
+Quando un gas compare come reagente o prodotto in una reazione chimica, l'equazione di stato permette di convertire il suo volume in moli (e viceversa) esattamente come si farebbe con la massa, inserendosi nella procedura in quattro passi già introdotta per i [calcoli stechiometrici](ref:chapter/4#p4): bilanciare la reazione, convertire in moli la quantità nota (usando $n = PV/(RT)$ se il dato è in volume, pressione e temperatura), applicare il [(4.2)](ref:formula/4.2), riconvertire nell'unità richiesta.
 
 **Esempio svolto 6.2**. Il potassio reagisce con il cloro secondo $2\ \text{K}_{(s)} + \text{Cl}_{2(g)} \rightarrow 2\ \text{KCl}_{(s)}$. Calcolare la massa di KCl prodotta quando $5{,}25\ \text{L}$ di cloro, mantenuti a $293\ \text{K}$ e $0{,}950\ \text{atm}$, reagiscono con $17{,}0\ \text{g}$ di potassio.
 
@@ -162,7 +162,7 @@ Questa è una delle procedure sperimentali più comuni per determinare la massa 
 Un campione gassoso occupa un volume di 2,00 L a 1,50 atm e 27 °C; la sua massa è 4,20 g. Si vuole determinare la massa molare del gas.
 
 1. Dati: $V = 2,00\ \text{L}$, $P = 1,50\ \text{atm}$, $t = 27\ \text{°C}$, $m = 4,20\ \text{g}$.
-2. Strategia: si calcola prima la densità $\rho = m/V$, poi si applica la {{formula:6.7}} usando $R = 0,08206\ \text{L·atm/(mol·K)}$ e convertendo la temperatura in kelvin ([formula (1.1)](ref:formula/1.1)): $T = 27 + 273,15 = 300,15\ \text{K}$.
+2. Strategia: si calcola prima la densità $\rho = m/V$, poi si applica la formula {{formula:6.7}} usando $R = 0,08206\ \text{L·atm/(mol·K)}$ e convertendo la temperatura in kelvin ([(1.1)](ref:formula/1.1)): $T = 27 + 273,15 = 300,15\ \text{K}$.
 3. Calcolo:
 
 $$\rho = \frac{4,20\ \text{g}}{2,00\ \text{L}} = 2,10\ \text{g/L}$$
@@ -215,7 +215,7 @@ Una miscela gassosa in un recipiente da 5,0 L, mantenuto a 45 °C, contiene 11,7
 
 1. Dati: $m_{\text{N}_2} = 7,28\ \text{g}$, $V = 5,0\ \text{L}$, $t = 45\ \text{°C}$.
 2. Strategia: conviene calcolare direttamente le moli di azoto e applicare $p_i = n_i R T / V$, poiché non è richiesta la pressione totale della miscela. In alternativa si potrebbero calcolare le moli di tutti i componenti, la pressione totale con {{formula:6.8}} e poi usare {{formula:6.10}}: i due metodi sono equivalenti.
-3. Calcolo: le moli di azoto si ottengono con [formula (2.4)](ref:formula/2.4),
+3. Calcolo: le moli di azoto si ottengono con [(2.4)](ref:formula/2.4),
 
 $$n_{\text{N}_2} = \frac{7,28\ \text{g}}{28,00\ \text{g/mol}} = 0,260\ \text{mol}$$
 
@@ -313,7 +313,7 @@ Il fattore di Boltzmann associato alla soglia energetica è, con $E_a$ in J/mol:
 $$f = e^{-E_a/(RT)}$$
 :::
 
-Questo fattore compare nell'equazione di Arrhenius [formula (15.6)](ref:formula/15.6), $k=A\,e^{-E_a/(RT)}$, dove $A$ tiene conto della frequenza degli urti e dell'orientazione. Non coincide in generale con la frazione esatta di molecole o di urti sopra la soglia, che si calcola integrando la distribuzione di energia appropriata. Una temperatura più alta aumenta il fattore di Boltzmann associato alla soglia. Si vedano [Temperatura ed energia di attivazione](ref:chapter/15#p4) per l'uso quantitativo.
+Questo fattore compare nell'equazione di Arrhenius [(15.6)](ref:formula/15.6), $k=A\,e^{-E_a/(RT)}$, dove $A$ tiene conto della frequenza degli urti e dell'orientazione. Non coincide in generale con la frazione esatta di molecole o di urti sopra la soglia, che si calcola integrando la distribuzione di energia appropriata. Una temperatura più alta aumenta il fattore di Boltzmann associato alla soglia. Si vedano [Temperatura ed energia di attivazione](ref:chapter/15#p4) per l'uso quantitativo.
 
 **Esempio svolto 6.6.** Una reazione ha $E_a = 50{,}0$ kJ/mol. Di quanto cambia il fattore di Boltzmann associato alla soglia passando da 300 K a 310 K? Si usa $R = 8{,}314$ J/(mol·K).
 
@@ -461,7 +461,7 @@ Una precisazione utile: quasi mai il gas è l'unico argomento dell'esercizio. Ne
 Metodo:
 
 1. Scrivi e bilancia l'equazione, indicando gli stati fisici ([equazioni chimiche e bilanciamento](ref:chapter/4#p3)).
-2. Converti ogni dato in unità coerenti con $R = 0{,}08206$ L·atm/(mol·K): volumi in L, pressioni in atm, temperature in kelvin con [formula (1.1)](ref:formula/1.1).
+2. Converti ogni dato in unità coerenti con $R = 0{,}08206$ L·atm/(mol·K): volumi in L, pressioni in atm, temperature in kelvin con [(1.1)](ref:formula/1.1).
 3. Ricava le moli di ogni gas con $n = PV/(RT)$, usando la temperatura e la pressione in cui il gas è stato misurato. Le moli dei solidi si ottengono dalla massa e dalla massa molare.
 4. Dividi le moli per i coefficienti stechiometrici e individua il reagente limitante ([calcoli stechiometrici e reagente limitante](ref:chapter/4#p4)).
 5. Costruisci il bilancio "iniziale / variazione / finale" e somma le moli di tutti i gas presenti alla fine, compreso l'eccesso del reagente non limitante.
@@ -497,11 +497,11 @@ Compare in due sessioni, sempre con una reazione tutta in fase gassosa o con un 
 
 Metodo:
 
-1. Scrivi la reazione bilanciata e l'espressione di $K_p$ ([formula (12.2)](ref:formula/12.2)), lasciando fuori i solidi.
+1. Scrivi la reazione bilanciata e l'espressione di $K_p$ ([(12.2)](ref:formula/12.2)), lasciando fuori i solidi.
 2. Imposta la tabella "iniziale / variazione / equilibrio" in moli, con l'incognita $x$ ([quoziente di reazione e calcoli di equilibrio](ref:chapter/12#p3)).
 3. Esprimi le pressioni parziali in uno dei due modi, a seconda dei dati: $p_i = n_i RT/V$ se è noto il volume (caso dell'antimonio), oppure $p_i = x_i P$ se è nota la pressione totale (caso dello zinco), con $x_i$ calcolata sulle sole moli gassose.
 4. Sostituisci in $K_p$, risolvi per $x$ e scarta la radice non fisica (negativa o maggiore delle moli disponibili).
-5. Se i dati sono in concentrazione, puoi passare da $K_p$ a $K_c$ con [formula (12.3)](ref:formula/12.3), ricordando che $\Delta n$ conta solo i gas.
+5. Se i dati sono in concentrazione, puoi passare da $K_p$ a $K_c$ con [(12.3)](ref:formula/12.3), ricordando che $\Delta n$ conta solo i gas.
 
 Errori tipici: inserire nella frazione molare le moli del solido; usare T in °C; dimenticare che le unità di $K_p$ dipendono da $\Delta n$ (atm quando $\Delta n = 1$, adimensionale quando $\Delta n = 0$). Nella reazione ZnO + H₂ le moli totali di gas cambiano con $x$, quindi il denominatore di $x_i$ non è costante.
 
@@ -514,7 +514,7 @@ Metodo:
 1. Scrivi le semireazioni agli elettrodi, con gli elettroni scambiati per ciascun gas (per l'ossigeno in ambiente basico: 4 e⁻ per mole di O₂); in questo modo fissi il rapporto tra moli di gas e moli di elettroni ([elettrolisi e leggi di Faraday](ref:chapter/16#p5)).
 2. Converti la pressione da mmHg ad atm (divisione per 760) e la temperatura in kelvin: la temperatura è quella del gas misurato, non quella della cella.
 3. Calcola le moli di gas con $PV = nRT$. Se il gas è "secco" la pressione indicata è già quella del solo gas.
-4. Ricava le moli di elettroni dal rapporto del punto 1, poi la carica con [formula (16.4)](ref:formula/16.4) (usa $F = 96\,485$ C/mol) e, con il tempo in secondi, la corrente $I = Q/t$. Tieni conto della resa se diversa da 1.
+4. Ricava le moli di elettroni dal rapporto del punto 1, poi la carica con [(16.4)](ref:formula/16.4) (usa $F = 96\,485$ C/mol) e, con il tempo in secondi, la corrente $I = Q/t$. Tieni conto della resa se diversa da 1.
 
 Errori tipici: lasciare il tempo in minuti; dimenticare il fattore di elettroni per mole di gas; usare il volume a 25 °C invece che a 20,0 °C.
 

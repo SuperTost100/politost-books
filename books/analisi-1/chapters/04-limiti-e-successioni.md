@@ -268,7 +268,7 @@ $$
 :::image{src="assets/f3b5ae8c-teorema-carabinieri-esempio.svg" alt="Grafico di x^2 sin(1/x) compreso tra le parabole -x^2 e x^2 vicino a x=0" caption="Fig. 4.3 — La funzione g(x) = x^2 sin(1/x) è schiacciata tra f(x) = -x^2 e h(x) = x^2 in un intorno di x = 0"}
 :::
 
-Questa tecnica è esattamente quella alla base della dimostrazione del [formula (6.6)](ref:formula/6.6), ripresa nella sezione sui [Limiti notevoli](ref:chapter/6#p2).
+Questa tecnica è esattamente quella alla base della dimostrazione del [(6.6)](ref:formula/6.6), ripresa nella sezione sui [Limiti notevoli](ref:chapter/6#p2).
 
 **Errore tipico 4.4.** Nell'applicare il teorema dei carabinieri si deve controllare che la disuguaglianza $f(x) \leq g(x) \leq h(x)$ valga davvero in un intorno di $x_0$ (eventualmente escluso $x_0$), non su tutto il dominio: basta che valga localmente. È inoltre indispensabile che i due limiti estremi coincidano; se $f$ e $h$ tendono a valori diversi, il teorema non si applica e non si può concludere nulla sul limite di $g$.
 

@@ -153,7 +153,7 @@ $$h'(x) = f'(g(x)) \cdot g'(x) = \frac{1}{1+x^2} \cdot 2x = \frac{2x}{1+x^2}.$$
 
 ### Errori tipici
 
-- Scrivere la retta tangente usando il valore della derivata calcolato in un punto diverso da $x_0$, o confondere il punto di tangenza $(x_0, f(x_0))$ con un altro punto del grafico. La {{formula:7.2}} richiede sempre $f(x_0)$ e $f'(x_0)$ calcolati nello **stesso** $x_0$.
+- Scrivere la retta tangente usando il valore della derivata calcolato in un punto diverso da $x_0$, o confondere il punto di tangenza $(x_0, f(x_0))$ con un altro punto del grafico. La formula {{formula:7.2}} richiede sempre $f(x_0)$ e $f'(x_0)$ calcolati nello **stesso** $x_0$.
 - Dedurre la derivabilità da sola continuità: come visto, l'implicazione vale solo in un senso.
 - Applicare la formula $f(x)=x^\alpha \implies f'(x)=\alpha x^{\alpha-1}$ anche nei punti in cui essa non vale, in particolare in $x=0$ quando $0<\alpha<1$ (per esempio $\sqrt{x}$ non è derivabile in $0$) o quando $\alpha<0$ (allora $x^\alpha$ non è nemmeno definita in $0$), oppure usare $\log_a x$ senza richiedere $a>0$ e $a \neq 1$.
 - Applicare la regola della derivata della funzione inversa senza verificare $f'(x_0) \neq 0$, oppure la regola della catena dimenticando di moltiplicare per la derivata della funzione interna.
@@ -474,7 +474,7 @@ $$\lim_{x\to 0} \frac{1 - \cos x}{3x^2}$$
 
 $$\lim_{x\to 0} \frac{\sin x}{6x} = \frac{1}{6} \lim_{x\to 0} \frac{\sin x}{x} = \frac{1}{6},$$
 
-usando [formula (6.6)](ref:formula/6.6). Poiché l'ultimo limite esiste (finito), per il teorema applicato a ritroso anche i due limiti precedenti valgono $\frac{1}{6}$, dunque
+usando [(6.6)](ref:formula/6.6). Poiché l'ultimo limite esiste (finito), per il teorema applicato a ritroso anche i due limiti precedenti valgono $\frac{1}{6}$, dunque
 
 $$\lim_{x\to 0} \frac{x - \sin x}{x^3} = \frac{1}{6}.$$
 

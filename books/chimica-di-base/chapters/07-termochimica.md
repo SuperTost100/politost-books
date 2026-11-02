@@ -50,7 +50,7 @@ valida per un sistema chiuso, cioè che non scambia materia con l'ambiente.
 
 ### Convenzione dei segni
 
-I segni di $q$ e $w$ nella {{formula:7.1}} sono definiti dal punto di vista del sistema, con la convenzione comune a tutto il libro: è positivo tutto ciò che entra nel sistema, negativo tutto ciò che ne esce.
+I segni di $q$ e $w$ nella formula {{formula:7.1}} sono definiti dal punto di vista del sistema, con la convenzione comune a tutto il libro: è positivo tutto ciò che entra nel sistema, negativo tutto ciò che ne esce.
 
 - $q > 0$: il sistema assorbe calore dall'ambiente; $q < 0$: il sistema cede calore all'ambiente.
 - $w > 0$: l'ambiente compie lavoro sul sistema (per esempio comprimendolo); $w < 0$: il sistema compie lavoro sull'ambiente (per esempio espandendosi).
@@ -151,7 +151,7 @@ Quanto si discosta $\Delta H$ da $\Delta U$ dipende dalla presenza e dalla varia
 - Se partecipano gas ma le moli totali di gas non cambiano tra reagenti e prodotti (per esempio $N_{2(g)} + O_{2(g)} \to 2\,NO_{(g)}$), allora $\Delta V \approx 0$ e di nuovo $\Delta U \approx \Delta H$.
 - Se le moli totali di gas variano, la semplificazione non è possibile; tuttavia nella maggior parte dei casi il termine $p\cdot \Delta V$ è molto più piccolo di $\Delta H$ in valore assoluto.
 
-Per un sistema gassoso a temperatura $T$ e pressione $p$ costanti, il termine $p\cdot \Delta V$ si può riscrivere con l'equazione di stato dei gas ideali ([formula (6.5)](ref:formula/6.5)) in funzione della variazione del numero di moli gassose $\Delta n_{\text{gas}}$ (prodotti meno reagenti):
+Per un sistema gassoso a temperatura $T$ e pressione $p$ costanti, il termine $p\cdot \Delta V$ si può riscrivere con l'equazione di stato dei gas ideali ([(6.5)](ref:formula/6.5)) in funzione della variazione del numero di moli gassose $\Delta n_{\text{gas}}$ (prodotti meno reagenti):
 
 :::formula{id="7.4" label="Relazione tra ΔH e ΔU per un sistema gassoso"}
 $$\Delta H = \Delta U + \Delta n_{\text{gas}} \cdot R \cdot T \qquad (T, p \text{ costanti})$$
@@ -266,7 +266,7 @@ La capacità termica è una grandezza estensiva, perché dipende dalla quantità
 
 $$c = \frac{q}{\Delta T \cdot m}, \qquad \lbrack c\rbrack  = \frac{J}{g \cdot K}$$
 
-Il calore specifico è una grandezza intensiva, caratteristica della sostanza: non dipende dalla quantità di campione, a differenza della capacità termica. Riarrangiando la definizione si ottiene la relazione usata nella pratica per calcolare il calore scambiato da una massa $m$ di sostanza quando la sua temperatura varia di $\Delta T$, già introdotta a proposito dell'energia, calore e lavoro: [formula (1.8)](ref:formula/1.8).
+Il calore specifico è una grandezza intensiva, caratteristica della sostanza: non dipende dalla quantità di campione, a differenza della capacità termica. Riarrangiando la definizione si ottiene la relazione usata nella pratica per calcolare il calore scambiato da una massa $m$ di sostanza quando la sua temperatura varia di $\Delta T$, già introdotta a proposito dell'energia, calore e lavoro: [(1.8)](ref:formula/1.8).
 
 Riferendo invece la capacità termica all'unità di sostanza (1 mol) si ottiene il **calore specifico molare** $C_m$, cioè la quantità di calore necessaria per variare di 1 K la temperatura di 1 mol di sostanza:
 
@@ -281,7 +281,7 @@ I metalli hanno in genere un calore specifico basso; la conducibilità termica, 
 Si vuole calcolare il calore necessario per scaldare una lamina di rame di massa $m = 125$ g da $25,0$ °C a $300$ °C, sapendo che il calore specifico del rame è $c = 0,387$ J/(g·K).
 
 1. Dati: $m = 125$ g, $T_1 = 25,0$ °C, $T_2 = 300$ °C, $c = 0,387$ J/(g·K).
-2. Strategia: si usa [formula (1.8)](ref:formula/1.8) nella forma $q = \Delta T \cdot m \cdot c$. Poiché la formula coinvolge una differenza di temperatura e non una temperatura assoluta, non è necessario convertire i gradi Celsius in kelvin: la scala Celsius e quella Kelvin hanno la stessa ampiezza di grado, quindi $\Delta T$ ha lo stesso valore numerico in entrambe.
+2. Strategia: si usa [(1.8)](ref:formula/1.8) nella forma $q = \Delta T \cdot m \cdot c$. Poiché la formula coinvolge una differenza di temperatura e non una temperatura assoluta, non è necessario convertire i gradi Celsius in kelvin: la scala Celsius e quella Kelvin hanno la stessa ampiezza di grado, quindi $\Delta T$ ha lo stesso valore numerico in entrambe.
 3. Calcolo:
 
 $$q = (300 - 25,0) \cdot 125 \cdot 0,387 \ \text{J} = 1,33 \times 10^4 \ \text{J}$$
@@ -405,7 +405,7 @@ $$
 
 Le entalpie standard di formazione, nell'ordine $\mathrm{NH_3}$, $\mathrm{O_2}$, $\mathrm{NO}$, $\mathrm{H_2O_{(g)}}$, sono $-45{,}9$; $0$; $+90{,}3$; $-241{,}8 \ \text{kJ/mol}$. Si vuole calcolare $\Delta H^\circ_r$.
 
-*Strategia.* Si applica la {{formula:7.10}}, moltiplicando ogni $\Delta H^\circ_f$ per il proprio coefficiente stechiometrico e notando che $\Delta H^\circ_f(\mathrm{O_2}) = 0$ perché è un elemento nel suo stato standard.
+*Strategia.* Si applica la formula {{formula:7.10}}, moltiplicando ogni $\Delta H^\circ_f$ per il proprio coefficiente stechiometrico e notando che $\Delta H^\circ_f(\mathrm{O_2}) = 0$ perché è un elemento nel suo stato standard.
 
 *Calcolo.*
 $$\begin{aligned}
@@ -457,9 +457,9 @@ Il test informatizzato iniziale ha 15 domande a risposta multipla, mentre la pro
 Il quesito è **Tema d_esame 15 + soluzione, esercizio 2**. Un recipiente chiuso da 2500 cm³ contiene ossigeno e azoto a 25 °C. La prima parte dà la massa della miscela (0,012 kg) e la percentuale in peso dell'ossigeno (20%), e chiede frazioni molari e pressioni parziali. La seconda parte immagina che i due gas reagiscano in modo stechiometrico per formare ossido di diazoto. Gli argomenti indicati per il quesito comprendono "Entalpia e reazioni termochimiche", ma il testo che ho a disposizione si interrompe prima della richiesta finale. Non posso quindi dire con certezza quale grandezza termochimica si debba calcolare. Il metodo seguente copre ciò che il testo mostra.
 
 1. Converti i dati nelle unità giuste: 2500 cm³ = 2,500 L, 0,012 kg = 12 g, $T = 25 + 273{,}15 = 298{,}15$ K. Dichiara quale valore di R usi, per esempio 0,08206 L·atm/(mol·K).
-2. Dalla percentuale in peso ricava la massa di ciascun gas, poi le moli con la relazione tra moli, massa e massa molare ([formula (2.4)](ref:formula/2.4)). Per questa parte vedi [Masse atomiche, mole e massa molare](ref:chapter/2#p4).
-3. Calcola le frazioni molari ([formula (6.9)](ref:formula/6.9)) e la pressione totale con l'equazione di stato dei gas ideali ([formula (6.5)](ref:formula/6.5)). Le pressioni parziali seguono da [formula (6.10)](ref:formula/6.10). Il riferimento è [Densità, massa molare e miscele gassose](ref:chapter/6#p3).
-4. Scrivi l'equazione bilanciata della formazione di N₂O, con gli stati fisici. Con i rapporti molari ([formula (4.2)](ref:formula/4.2)) verifica se le moli iniziali sono davvero in rapporto stechiometrico. Altrimenti individua il reagente limitante, come spiegato in [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4).
+2. Dalla percentuale in peso ricava la massa di ciascun gas, poi le moli con la relazione tra moli, massa e massa molare ([(2.4)](ref:formula/2.4)). Per questa parte vedi [Masse atomiche, mole e massa molare](ref:chapter/2#p4).
+3. Calcola le frazioni molari ([(6.9)](ref:formula/6.9)) e la pressione totale con l'equazione di stato dei gas ideali ([(6.5)](ref:formula/6.5)). Le pressioni parziali seguono da [(6.10)](ref:formula/6.10). Il riferimento è [Densità, massa molare e miscele gassose](ref:chapter/6#p3).
+4. Scrivi l'equazione bilanciata della formazione di N₂O, con gli stati fisici. Con i rapporti molari ([(4.2)](ref:formula/4.2)) verifica se le moli iniziali sono davvero in rapporto stechiometrico. Altrimenti individua il reagente limitante, come spiegato in [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4).
 5. Se serve un calore o una variazione di entalpia, usa l'equazione termochimica: $\Delta H_r$ si riferisce ai coefficienti scritti. Per la sostanza di riferimento il calore scambiato è la quantità di sostanza che reagisce, divisa per il suo coefficiente, per $\Delta H_r$. Vedi [Entalpia ed equazioni termochimiche](ref:chapter/7#p3). Se l'esercizio chiedesse di ottenere $\Delta H_r$ dai dati di formazione, si applicherebbe {{formula:7.10}}, spiegata in [Legge di Hess ed entalpie standard di formazione](ref:chapter/7#p5).
 6. Se compare la differenza tra $\Delta H$ e $\Delta U$ in un sistema gassoso, usa {{formula:7.4}} con $\Delta n_{\text{gas}}$ calcolato sui coefficienti dell'equazione bilanciata.
 

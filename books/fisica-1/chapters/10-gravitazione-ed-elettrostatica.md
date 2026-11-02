@@ -184,7 +184,7 @@ $$v_F = \sqrt{\frac{2GM_T}{R_T}} = \sqrt{\frac{2\cdot 3{,}99\cdot 10^{14}}{6{,}3
 
 Controllo: dimensionalmente $\lbrack GM/r\rbrack  = \mathrm{m^3\,s^{-2}/m} = \mathrm{m^2/s^2}$, coerente con una velocità al quadrato. Numericamente $v < v_F$ come deve essere: il satellite è legato, mentre $v_F$ rappresenta la soglia per sfuggire del tutto al campo gravitazionale; l'ordine di grandezza (pochi $\mathrm{km/s}$) è quello tipico dei satelliti in orbita bassa.
 
-**Errore tipico 10.1.** Un errore frequente è usare il raggio della Terra $R_T$ al posto del raggio dell'orbita $r = R_T + h$ nelle formule di velocità orbitale e periodo: {{formula:10.3}} e {{formula:10.4}} vanno sempre applicate con la distanza dal centro del corpo attrattore, non con la quota sopra la sua superficie. Un secondo errore è confondere massa inerziale e massa gravitazionale trattandole come concettualmente identiche per definizione, invece di riconoscere che la loro uguaglianza è un risultato sperimentale (il principio di equivalenza) e non un'ovvietà logica.
+**Errore tipico 10.1.** Un errore frequente è usare il raggio della Terra $R_T$ al posto del raggio dell'orbita $r = R_T + h$ nelle formule di velocità orbitale e periodo: le formule {{formula:10.3}} e {{formula:10.4}} vanno sempre applicate con la distanza dal centro del corpo attrattore, non con la quota sopra la sua superficie. Un secondo errore è confondere massa inerziale e massa gravitazionale trattandole come concettualmente identiche per definizione, invece di riconoscere che la loro uguaglianza è un risultato sperimentale (il principio di equivalenza) e non un'ovvietà logica.
 
 ## p3 | Campo gravitazionale
 
@@ -372,7 +372,7 @@ Il lavoro compiuto dalla forza gravitazionale su $m_2$ per uno spostamento gener
 $$W_{AB} = -\Delta E_p = -m_2\,\Delta V_1 = m_2\left(V_{1,A} - V_{1,B}\right)$$
 :::
 
-Tra campo gravitazionale e potenziale sussiste la relazione differenziale, analoga a quella già vista tra forza ed energia potenziale ([formula (4.13)](ref:formula/4.13)):
+Tra campo gravitazionale e potenziale sussiste la relazione differenziale, analoga a quella già vista tra forza ed energia potenziale ([(4.13)](ref:formula/4.13)):
 
 :::formula{id="10.13" label="Campo come gradiente del potenziale"}
 $$\vec{G} = -\vec{\nabla} V$$

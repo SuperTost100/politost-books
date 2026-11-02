@@ -176,7 +176,7 @@ Per il test informatizzato e per le altre sessioni questa sezione non dice nulla
 
 Nell'esame di tipo "Tema d_esame 3 + soluzione", esercizio 2, il testo chiede prima la quantità di glicerolo (propan-1,2,3-triolo) che innalza di 0,150 °C la temperatura di ebollizione di 285 mL di acqua. Poi, nella sottodomanda D2, chiede di scrivere la formula di semistruttura, di indicare l'ibridazione di ciascun atomo di carbonio e di dire a quale classe di composti organici appartiene la molecola.
 
-La parte numerica si risolve con [formula (11.9)](ref:formula/11.9) e con le concentrazioni, che trovi in [Proprietà colligative](ref:chapter/11#p4) e in [Espressioni della concentrazione](ref:chapter/11#p3). Il glicerolo non è un elettrolita, quindi $i = 1$. Dalla variazione di temperatura si ottiene la molalità, $m = 0{,}150/0{,}512 \approx 0{,}293$ mol/kg. Con la massa di solvente $285 \times 0{,}996 \approx 283{,}9$ g si ricavano circa $0{,}0832$ mol e, con $M \approx 92{,}09$ g/mol, circa $7{,}66$ g di glicerolo.
+La parte numerica si risolve con [(11.9)](ref:formula/11.9) e con le concentrazioni, che trovi in [Proprietà colligative](ref:chapter/11#p4) e in [Espressioni della concentrazione](ref:chapter/11#p3). Il glicerolo non è un elettrolita, quindi $i = 1$. Dalla variazione di temperatura si ottiene la molalità, $m = 0{,}150/0{,}512 \approx 0{,}293$ mol/kg. Con la massa di solvente $285 \times 0{,}996 \approx 283{,}9$ g si ricavano circa $0{,}0832$ mol e, con $M \approx 92{,}09$ g/mol, circa $7{,}66$ g di glicerolo.
 
 Per la sottodomanda D2 il metodo ha questi passi:
 

@@ -469,7 +469,7 @@ Gli esempi qui sotto vengono tutti dalla prova scritta, di cui abbiamo i testi.
 **Metodo.**
 
 1. Trova una primitiva con le tecniche di [Integrali indefiniti e tecniche di integrazione](ref:chapter/9#p2): sostituzione, divisione di polinomi, fratti semplici.
-2. Scrivi l'integrale come limite, $\lim_{M\to+\infty}\int_a^M f(x)\,dx$, e applica la formula di Torricelli-Barrow ([formula (9.15)](ref:formula/9.15)) con estremo $M$.
+2. Scrivi l'integrale come limite, $\lim_{M\to+\infty}\int_a^M f(x)\,dx$, e applica la formula di Torricelli-Barrow ([(9.15)](ref:formula/9.15)) con estremo $M$.
 3. Calcola il limite della primitiva in $M$. Se il parametro compare nella primitiva, guarda quando il limite è finito: spesso i termini divergenti si elidono solo per un valore o per un intervallo di valori.
 4. Per una funzione integrale $F(x)=\int_0^x f(t)\,dt$ con $f>0$, il segno della derivata è il segno di $f$ (teorema fondamentale, [Teorema fondamentale del calcolo integrale](ref:chapter/9#p4)). Il suo estremo superiore è il valore dell'integrale improprio.
 

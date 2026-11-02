@@ -313,7 +313,7 @@ Per la forza elastica $\vec{F}_{el} = -kx\,\hat{u}_x$, lo stesso procedimento d�
 
 $$\int_{A,\gamma}^{B} \delta W = \int_{x_A,\gamma}^{x} (-kx)\,dx = -\frac{1}{2}kx^2 + \frac{1}{2}kx_A^2 ,$$
 
-che fornisce, già fissata nella sezione sulla [forza elastica](ref:chapter/3#p7), l'energia potenziale elastica [formula (3.23)](ref:formula/3.23). Un errore tipico è scrivere $E_p = -\tfrac{1}{2}kx^2$ trasportando il segno meno della forza anche nell'energia potenziale; il segno meno compare solo nella relazione $F = -dE_p/dx$, non nell'espressione di $E_p$ stessa. Con la scelta usuale di porre $E_p=0$ quando la deformazione è nulla, cioè $x=0$, si ottiene $E_p = \tfrac{1}{2}kx^2 \geq 0$; questa non negatività non è una proprietà generale dell'energia potenziale, che essendo definita a meno di una costante additiva arbitraria può in linea di principio assumere anche valori negativi, ma è una conseguenza di quella specifica scelta dello zero dell'energia.
+che fornisce, già fissata nella sezione sulla [forza elastica](ref:chapter/3#p7), l'energia potenziale elastica [(3.23)](ref:formula/3.23). Un errore tipico è scrivere $E_p = -\tfrac{1}{2}kx^2$ trasportando il segno meno della forza anche nell'energia potenziale; il segno meno compare solo nella relazione $F = -dE_p/dx$, non nell'espressione di $E_p$ stessa. Con la scelta usuale di porre $E_p=0$ quando la deformazione è nulla, cioè $x=0$, si ottiene $E_p = \tfrac{1}{2}kx^2 \geq 0$; questa non negatività non è una proprietà generale dell'energia potenziale, che essendo definita a meno di una costante additiva arbitraria può in linea di principio assumere anche valori negativi, ma è una conseguenza di quella specifica scelta dello zero dell'energia.
 
 Per le forze centrali, cioè le forze il cui modulo dipende solo dalla distanza $r$ da un centro fisso e la cui direzione è sempre quella del versore radiale $\hat{u}_r$ (studiate in dettaglio nella sezione sulle [forze centrali](ref:chapter/5#p4)), il lavoro infinitesimo si riduce a una funzione della sola variazione di $r$:
 
@@ -424,7 +424,7 @@ La tensione è massima al passaggio per la verticale ($\theta = 0$), dove vale $
 
 Il punto percorre il lato interno di una guida unilaterale e resta a contatto fino in cima solo se $v_C^2 \geq gR$. Combinando questa condizione con $\frac{1}{2}mv_A^2 = \frac{1}{2}mv_C^2 + 2mgR$ si ottiene la velocità minima di ingresso, $v_{A,\min} = \sqrt{5gR} \approx 15{,}7$ m/s.
 
-**Errore tipico 4.6** (usare solo la conservazione dell'energia per la velocità minima nel giro della morte). Imporre $v_C = 0$ nella sola conservazione dell'energia dà $v_{A,\min} = \sqrt{4gR}$, un valore inferiore ma fisicamente impossibile per il punto sul lato interno di una guida unilaterale: sostituendo $v_C = 0$ nell'espressione della reazione [formula (3.29)](ref:formula/3.29) si ottiene $N_C = -mg < 0$, cioè una reazione diretta verso l'esterno, che la guida non può esercitare. La reazione vincolare non compie lavoro e perciò non compare nella conservazione dell'energia, ma resta la condizione che determina se il moto può restare circolare; il valore corretto è $v_{A,\min} = \sqrt{5gR}$, maggiore di $\sqrt{4gR}$.
+**Errore tipico 4.6** (usare solo la conservazione dell'energia per la velocità minima nel giro della morte). Imporre $v_C = 0$ nella sola conservazione dell'energia dà $v_{A,\min} = \sqrt{4gR}$, un valore inferiore ma fisicamente impossibile per il punto sul lato interno di una guida unilaterale: sostituendo $v_C = 0$ nell'espressione della reazione [(3.29)](ref:formula/3.29) si ottiene $N_C = -mg < 0$, cioè una reazione diretta verso l'esterno, che la guida non può esercitare. La reazione vincolare non compie lavoro e perciò non compare nella conservazione dell'energia, ma resta la condizione che determina se il moto può restare circolare; il valore corretto è $v_{A,\min} = \sqrt{5gR}$, maggiore di $\sqrt{4gR}$.
 
 ## p5 | Come viene chiesto all'esame
 
@@ -465,7 +465,7 @@ La teoria di riferimento è nelle sezioni [Energia cinetica e teorema lavoro-ene
 **Metodo.**
 
 1. Verificare che nel tratto considerato nessuna forza non conservativa compia lavoro (nessun attrito, nessun urto). Altrimenti tornare al tipo 1.
-2. Scegliere lo zero dell'energia potenziale gravitazionale e scrivere $E_p = mgz$. Per la molla usare [formula (3.23)](ref:formula/3.23) con l'allungamento misurato dalla lunghezza a riposo.
+2. Scegliere lo zero dell'energia potenziale gravitazionale e scrivere $E_p = mgz$. Per la molla usare [(3.23)](ref:formula/3.23) con l'allungamento misurato dalla lunghezza a riposo.
 3. Imporre $E_m$ nello stato iniziale uguale a $E_m$ nello stato finale, come in {{formula:4.14}}, e risolvere per l'incognita.
 4. Se il testo chiede una forza (tensione, reazione) in un punto del percorso circolare, usare il risultato in velocità nell'equazione della dinamica radiale. Si veda [Dinamica del moto curvilineo](ref:chapter/3#p8).
 
@@ -490,8 +490,8 @@ I risultati sono nella sezione [Forze conservative ed energia potenziale](ref:ch
 
 1. Dividere il problema in tre fasi: prima dell'urto, urto, dopo l'urto.
 2. Prima e dopo l'urto usare l'energia (tipo 1 o 2) per passare dalla quota o dalla molla alla velocità, o viceversa.
-3. Nell'urto usare solo la quantità di moto, [formula (7.20)](ref:formula/7.20), perché le forze impulsive sono interne e l'energia in generale non si conserva. Scegliere la direzione in cui il sistema non riceve impulsi esterni (con un filo o un perno vincolante bisogna ragionare con attenzione).
-4. Calcolare l'energia persa nell'urto con la differenza delle energie cinetiche, come in [formula (7.21)](ref:formula/7.21), se il testo la chiede.
+3. Nell'urto usare solo la quantità di moto, [(7.20)](ref:formula/7.20), perché le forze impulsive sono interne e l'energia in generale non si conserva. Scegliere la direzione in cui il sistema non riceve impulsi esterni (con un filo o un perno vincolante bisogna ragionare con attenzione).
+4. Calcolare l'energia persa nell'urto con la differenza delle energie cinetiche, come in [(7.21)](ref:formula/7.21), se il testo la chiede.
 5. Usare la velocità subito dopo l'urto come condizione iniziale per la fase successiva.
 
 Si veda [Urti](ref:chapter/7#p7) e [Quantità di moto e impulso](ref:chapter/3#p4).
