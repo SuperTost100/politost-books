@@ -377,7 +377,7 @@ Per i dettagli sull'ambiente acido o basico e sulla disproporzione vedi [Reazion
 1. Disegna la cella elettrolitica e stabilisci le specie che si scaricano. Se la soluzione è acquosa, considera anche l'acqua nella competizione tra specie ([Elettrolisi e leggi di Faraday](ref:chapter/16#p5)). L'anodo è la sede dell'ossidazione e il catodo della riduzione.
 2. Scrivi le semireazioni di scarica e individua le moli di elettroni $z$ per mole di prodotto di interesse.
 3. Se il prodotto è un gas, ricava le moli con $n = PV/(RT)$ ([formula (6.5)](ref:formula/6.5)), con $T$ in kelvin e $P$ in atm. Se il gas è «secco», non devi sottrarre la tensione di vapore dell'acqua ([Pressione e leggi dei gas ideali](ref:chapter/6#p2)).
-4. Calcola la carica $q = z\,n\,F$ ({{formula:16.4}}), con $F = 96\,485$ C/mol, e poi la corrente $I = q/\Delta t$ con $\Delta t$ in secondi. Se serve una massa, usa {{formula:16.5}}.
+4. Calcola la carica $q = z\,n\,F$, con $F = 96\,485$ C/mol, e poi la corrente $I = q/\Delta t$ ({{formula:16.4}}) con $\Delta t$ in secondi. Se serve una massa, usa {{formula:16.5}}.
 5. Verifica l'ordine di grandezza e le unità, indicando il valore di $R$ usato.
 
 **Esempio svolto in breve (con rendimento unitario).** Per l'esercizio del tema 3, descritto sotto, si ha $n_{\mathrm{O_2}} = \dfrac{(745/760)\cdot 8{,}00}{0{,}08206\cdot 293{,}15} = 0{,}326$ mol, con $R = 0{,}08206$ L·atm/(mol·K). All'anodo $4\,\mathrm{OH^-}\to\mathrm{O_2}+2\,\mathrm{H_2O}+4\,e^-$, quindi $z = 4$ e $q = 4\cdot 0{,}326\cdot 96\,485 \approx 1{,}26\times10^5$ C. Con $\Delta t = 40\cdot 60 = 2\,400$ s si ottiene $I \approx 52$ A.

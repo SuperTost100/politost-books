@@ -621,7 +621,7 @@ perché ciascuna parentesi è nulla.
 
 **Metodo.**
 1. Scrivi la definizione richiesta usando i coefficienti continui sull'intervallo $I$ ([Equazioni lineari del primo ordine](ref:chapter/11#p3)).
-2. Per un punto critico usa l'equazione stessa: da $y'=-a(x)y+b(x)$ calcolata in $x_0$ con $y(x_0)=y_0$ si ha $\varphi'(x_0)=-a(x_0)y_0+b(x_0)$. Imponendo $\varphi'(x_0)=0$ si trova $y_0=\dfrac{b(x_0)}{a(x_0)}$, ed è qui che serve $a(x_0)\ne0$.
+2. Per un punto critico usa la forma $y'=a(x)y+b(x)$: calcolata in $x_0$ con $y(x_0)=y_0$, dà $\varphi'(x_0)=a(x_0)y_0+b(x_0)$. Se $a(x_0)\ne0$, imponendo $\varphi'(x_0)=0$ si trova $y_0=-\dfrac{b(x_0)}{a(x_0)}$. Se $a(x_0)=0$, ogni $y_0$ è critico quando $b(x_0)=0$; se $b(x_0)\ne0$, nessun $y_0$ è critico.
 3. Per la retta tangente non risolvere l'equazione: ricava $y'(x_0)$ dall'equazione e dal dato iniziale, poi scrivi $y=y(x_0)+y'(x_0)(x-x_0)$ ([Derivata e retta tangente](ref:chapter/7#p2)).
 4. Per l'integrale generale applica {{formula:11.5}}.
 

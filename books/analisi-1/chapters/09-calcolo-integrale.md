@@ -511,7 +511,7 @@ Nel test a risposta multipla le stesse nozioni compaiono in forma teorica. Nello
 1. Controllare la continuità nel punto di raccordo, verificando che i due limiti unilateri coincidano con il valore della funzione nel punto. Nell'esame del 13 febbraio 2015, esercizio 2, entrambi i rami e la funzione valgono $0$ in $x=3$.
 2. Spezzare l'integrale nel punto di raccordo con l'additività ({{formula:9.11}}) e calcolare ciascun pezzo con una primitiva, con la {{formula:9.15}}. Se un ramo ha un prodotto di funzioni diverse, come $x\log 3-x\log x$, serve l'integrazione per parti (si veda [Integrali indefiniti](ref:chapter/9#p2)).
 3. Per un'**area**, studiare il segno di $f$ e integrare $|f|$, cioè cambiare segno ai pezzi negativi. L'integrale con segno e l'area coincidono solo dove $f\ge 0$ (si veda [Teorema fondamentale](ref:chapter/9#p4)).
-4. Per la media integrale $\frac{1}{b-a}\int_a^b f(x)\,dx$, dividere per la lunghezza dell'intervallo. Per chiedersi se è un valore assunto da $f$ si usa il teorema della media (se $f$ è continua) oppure, se non lo è, si controlla direttamente l'immagine di $f$. La continuità si controlla con la sezione [Funzioni continue](ref:chapter/5#p2)).
+4. Per la media integrale $\frac{1}{b-a}\int_a^b f(x)\,dx$, dividere per la lunghezza dell'intervallo. Per chiedersi se è un valore assunto da $f$ si usa il teorema della media (se $f$ è continua) oppure, se non lo è, si controlla direttamente l'immagine di $f$. La continuità si controlla con la sezione [Funzioni continue](ref:chapter/5#p2).
 
 **Errori tipici.**
 - Calcolare l'area come $\int h$ quando $h$ cambia segno.
