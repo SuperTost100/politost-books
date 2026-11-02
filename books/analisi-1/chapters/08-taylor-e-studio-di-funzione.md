@@ -385,3 +385,86 @@ In $x=-\sqrt{3k}$ si trova un massimo relativo di valore $-3\sqrt{3k}/2$; in $x=
 Se si richiede che il minimo relativo valga $3$, si impone $3\sqrt{3k}/2=3$. Ne segue $\sqrt{3k}=2$, dunque $k=4/3$.
 
 **Errore tipico 8.5.** Nello studio di funzioni con parametro, un errore comune è sostituire subito un valore numerico al parametro (per "semplificare"), perdendo così la possibilità di rispondere alla domanda che chiede proprio di determinarlo; un secondo errore è dimenticare che il segno di espressioni contenenti il parametro (per esempio $x^2 - 3k$) dipende dal segno di $k$ stesso, per cui la discussione dei casi $k > 0$, $k = 0$, $k < 0$ va fatta esplicitamente quando il testo non specifica il segno di $k$. Infine, come ricordato più volte nel capitolo sul calcolo differenziale, la causa più frequente di errore nello studio di funzione resta un calcolo sbagliato della derivata prima o seconda: conviene sempre ricontrollare le derivate prima di dedurne monotonia e convessità.
+
+## p5 | Come viene chiesto all'esame
+
+Questo capitolo è comparso in 74 delle 83 sessioni d'esame passate. Il tipo di esercizio che ricorre di gran lunga più spesso è lo **studio di funzione** completo, quasi sempre l'Esercizio 1 della prova scritta, da 8 o 9 punti su 15. Al suo fianco compaiono domande più brevi di teoria applicata: estremi e punti stazionari, teoremi di Rolle e Lagrange, polinomio di Taylor.
+
+### Studio di funzione con valore assoluto, radici o parametro
+
+Lo schema è quasi sempre lo stesso, con sottopunti ordinati: (a) dominio, simmetrie, limiti e asintoti; (b) continuità e derivabilità, con classificazione dei punti di non derivabilità e calcolo di $f'$; (c) intervalli di monotonia ed estremi, precisando se relativi o assoluti; (d) grafico qualitativo; talvolta (e) un'ulteriore domanda, per esempio il numero di soluzioni di $f(x)=k$ o l'immagine di $f$.
+
+Esempi, con funzioni molto diverse ma metodo identico:
+- Esame del 31 gennaio 2024 - turno 1, esercizio 1: $f(x)=x^3/\sqrt{|x^4-1|}$. Il valore assoluto obbliga a spezzare il calcolo di $f'$ nei due casi, e i punti $x=\pm1$ sono esclusi dal dominio con asintoti verticali.
+- Esame dell'11 febbraio 2020 - IIo turno, esercizio 1: $f(x)=\sqrt{|4x^2-1|}$. I punti dove l'argomento si annulla sono punti di cuspide o angolosi, perché lì la derivata ha limiti non nulli o infiniti.
+- Esame del 30 gennaio 2019 - IIo turno, esercizio 1: funzione con un parametro $k$ in $x=0$. Si fissa $k$ imponendo la continuità e poi si prosegue con quel valore.
+
+Metodo, passo per passo (si veda [Studio di funzione completo](ref:chapter/8#p4)):
+
+1. Scrivi le condizioni di esistenza di ogni pezzo (radici, logaritmi, denominatori, argomenti di arcotangente) e ricava il dominio. Cerca le simmetrie ([Simmetrie, periodicità e funzioni particolari](ref:chapter/3#p4)): una parità dimezza il lavoro.
+2. Calcola i limiti agli estremi del dominio e nei punti esclusi. Per l'asintoto obliquo usa {{formula:8.7}}, separatamente per $+\infty$ e $-\infty$ ([Limiti notevoli](ref:chapter/6#p2)).
+3. Riscrivi $f$ senza valore assoluto, spezzando sui casi, e calcola $f'$ in ciascun caso. Nei punti di raccordo e nei punti dove la derivata non esiste calcola i limiti di $f'$ e le derivate unilatere ([Punti di non derivabilità](ref:chapter/7#p3)).
+4. Studia il segno di $f'$ con [formula (7.13)](ref:formula/7.13) e classifica i punti critici con {{formula:8.4}} ([Caratterizzazione dei punti critici](ref:chapter/8#p3)). Distingui massimi e minimi relativi da quelli assoluti confrontando i valori con i limiti agli estremi.
+5. Se richiesto, studia $f''$ per convessità e flessi con {{formula:8.6}}; poi disegna il grafico coerente con tutti i dati.
+
+Errori tipici:
+- Dimenticare di escludere dal dominio un punto che annulla il denominatore, o di controllare che un punto di non derivabilità appartenga davvero al dominio.
+- Dichiarare «punto angoloso» o «cuspide» senza calcolare i limiti di $f'$: serve la distinzione di [formula (7.5)](ref:formula/7.5) e [formula (7.6)](ref:formula/7.6).
+- Considerare massimo assoluto un massimo relativo senza confrontarlo con il comportamento della funzione agli estremi del dominio.
+- Derivare ignorando il valore assoluto: $f'$ va scritta caso per caso.
+
+### Funzioni definite a tratti e prolungamento per continuità
+
+Una variante frequente assegna $f$ con due espressioni, oppure chiede di prolungare per continuità una funzione non definita in un punto.
+
+Esempi:
+- Esame del 21 giugno 2024 - turno U - versione 1, esercizio 1: $f(x)=x\,e^{-1/x}$ per $x>0$ e $f(x)=0$ per $x\le 0$. Il nodo è il punto $x=0$, dove si calcolano limite destro e derivata destra.
+- Esame del 18 settembre 2018, esercizio 1: $f(x)=\frac{1}{(x-1)^2}e^{-1/(x-1)^2}$. Il limite in $x=1$ vale $0$, dunque esiste un prolungamento continuo da studiare poi come funzione su $\mathbb{R}$.
+
+Metodo:
+
+1. Per ciascun tratto studia la funzione nel suo intervallo aperto, come nel tipo precedente.
+2. Nel punto di raccordo calcola limite sinistro, limite destro e valore, e confrontali ([Punti di discontinuità](ref:chapter/5#p3)).
+3. Se la funzione è continua, calcola $f'_-(x_0)$ e $f'_+(x_0)$ come limiti del rapporto incrementale oppure, con cautela, come limiti di $f'$ ([Derivata e retta tangente](ref:chapter/7#p2)). Se il limite di $f'$ esiste, per [formula (7.14)](ref:formula/7.14) coincide con la derivata unilatera (se $f$ è continua).
+4. Per le forme indeterminate con esponenziali e logaritmi sostituisci $t=1/x$ e usa la [formula (6.11)](ref:formula/6.11) ([Infiniti e infinitesimi](ref:chapter/6#p3)).
+
+Errori tipici: dedurre la derivabilità dalla sola continuità; calcolare $f'$ solo dove la formula è «comoda» e non nel punto di raccordo; confondere il limite di $f'$ con la derivata nel punto senza verificare la continuità di $f$.
+
+### Estremi, punti stazionari e teoremi di Fermat, Rolle, Lagrange
+
+Domande brevi, spesso nell'Esercizio 2, con parte di teoria («enunciare», «dare la definizione») seguita da una verifica concreta.
+
+Esempi:
+- Esame del 16 febbraio 2024, esercizio 2: enunciare il teorema di Rolle, cercare i punti stazionari di $g(x)=\sqrt{\cosh x-1}$ su $\lbrack -2,2\rbrack $ e verificare le ipotesi. La derivata non esiste in $x=0$, punto di minimo non stazionario: le ipotesi non sono soddisfatte in tutto l'intervallo.
+- Esame del 25 gennaio 2023 - turno 2, esercizio 2: dire se una $f\in C^2(\mathbb{R})$ con $f(0)=5$, $f(2)=9$, $f'(0)=1$, $f''<0$ per $x\ge0$ può esistere. Si usa il teorema di Lagrange: $f''<0$ rende $f'$ strettamente decrescente, quindi $f'<1$ su $\rbrack 0,2\rbrack $ e l'incremento $f(2)-f(0)$ sarebbe minore di $2$, non $4$.
+- Esame del 13 settembre 2024 - turno U - versione 2, esercizio 2: massimi e minimi di $|x^2+2x|$ su un intervallo chiuso senza usare la derivata prima, ragionando sul grafico di una parabola ribaltata, poi un'affermazione su una funzione $C^\infty$ da discutere con Taylor.
+
+Metodo ([Teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4)):
+
+1. Enuncia il teorema con tutte le ipotesi: continuità su $\lbrack a,b\rbrack $, derivabilità su $\rbrack a,b\lbrack $, e per Rolle $f(a)=f(b)$ ([formula (7.11)](ref:formula/7.11), [formula (7.12)](ref:formula/7.12)).
+2. Verifica le ipotesi sul caso concreto, punto per punto, prima di concludere.
+3. Per una domanda del tipo «è possibile che…» traduci i dati in pendenze: il teorema di Lagrange confronta la pendenza media con i valori di $f'$, e il segno di $f''$ dà la monotonia di $f'$.
+4. Per estremi su un intervallo chiuso usa il teorema di Weierstrass ([formula (3.18)](ref:formula/3.18)) e confronta valori in estremi, punti stazionari e punti di non derivabilità.
+
+Errori tipici: dire che un punto di estremo è stazionario senza controllare che $f$ sia derivabile ([formula (7.10)](ref:formula/7.10) lo richiede); concludere che Rolle non vale perché non ci sono punti stazionari, quando semplicemente non è soddisfatta un'ipotesi; dimenticare i punti di bordo.
+
+### Formula di Taylor, limiti e ordini di infinitesimo
+
+Il tema compare meno spesso, ma con regolarità, sia come teoria sia come calcolo.
+
+Esempi:
+- Esame del 12 febbraio 2019 - IIo turno, esercizio 2: scrivere la formula di Taylor con resto di Peano con le relative ipotesi; dato $Q_2(x)=1-x+2x^2$ per $f$, ricavare il polinomio di Maclaurin di secondo grado di $g(x)=x+\log f(x)$ sostituendo lo sviluppo di $f$ in quello del logaritmo.
+- Esame del 7 febbraio 2025 - turno 1 - versione 1, esercizio 1: uno studio di funzione in cui compare $\frac14\log(1+x^4)$ e un'arcotangente, dove lo sviluppo di Maclaurin serve per determinare il comportamento vicino a $0$.
+
+Metodo ([Polinomio e formula di Taylor](ref:chapter/8#p2)):
+
+1. Scrivi la formula {{formula:8.2}} e ricorda l'ipotesi: $f$ derivabile $n$ volte in $x_0$.
+2. Riconosci le funzioni elementari e scrivi gli sviluppi noti, fermandoti all'ordine necessario.
+3. Per le composte sostituisci lo sviluppo interno in quello esterno, tenendo solo i termini fino all'ordine richiesto e raccogliendo i resti in un unico $o(\cdot)$.
+4. Per concludere (limite, ordine, tipo di punto critico) leggi il primo termine non nullo dello sviluppo con {{formula:8.5}}.
+
+Errori tipici: fermarsi a un ordine troppo basso, ottenendo un'indeterminazione che compare di nuovo; sommare resti di ordini diversi senza tenere il più grande; confondere il polinomio di Maclaurin di $f$ con quello di $g$ quando si compone.
+
+### Come usare questa sezione
+
+Nelle sessioni più recenti lo studio di funzione si presenta in quattro versioni quasi identiche, che cambiano segni e costanti (per esempio $x\sqrt[3]{\log^2|x|}$ nel giugno 2025): conviene quindi allenarsi sul metodo, non sulla singola funzione. Il formulario è disponibile, ma non sostituisce i passi del metodo.

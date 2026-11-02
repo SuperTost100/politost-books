@@ -520,3 +520,57 @@ Il risultato è positivo perché il calore fluisce nel verso delle temperature d
 Uno sbaglio frequente consiste nell'usare le grandezze $Q$ e $W$ come se fossero funzioni di stato, scrivendo ad esempio $\Delta Q$ per indicare il calore scambiato in una trasformazione: il primo principio della termodinamica stabilisce invece che né il calore né il lavoro sono funzioni dello stato termodinamico, mentre l'energia interna lo è. Lo stesso principio vale per la potenza termica scambiata per conduzione, convezione o irraggiamento, che è sempre una grandezza di scambio (dipendente dal processo), non una variazione di una funzione di stato.
 
 Un secondo errore comune è non convertire o uniformare le unità di misura prima di sostituire nelle formule, ad esempio mescolando centimetri e metri, oppure gradi Celsius e kelvin nella legge di Stefan-Boltzmann, che richiede la temperatura assoluta: un errore di questo tipo può produrre risultati sbagliati anche di diversi ordini di grandezza.
+
+## p8 | Come viene chiesto all'esame
+
+Il capitolo «Temperatura e calore» è comparso in 3 sessioni d'esame su 6. In nessuna delle tre è stato chiesto da solo. Compare sempre dentro un problema strutturato di termodinamica, di solito come sorgente termica fatta di acqua e ghiaccio oppure come bilancio di calore con un cambiamento di fase. Il tipo più frequente è il problema sul gas ideale che scambia calore con una miscela acqua-ghiaccio.
+
+Il problema numero 3 della prova scritta, di due ore, è quello che ha ospitato questi temi. La prova scritta si somma al test informatizzato (15 domande in 30 minuti, soglia 8/15) e dà il voto con almeno 18/30. Tra 16/30 e 18/30 è obbligatorio un orale integrativo. Le domande aperte di teoria possono includere le dimostrazioni viste a lezione.
+
+### Gas ideale a contatto con una miscela acqua-ghiaccio
+
+**Cosa chiede l'esame.** Due sessioni su tre (Prova scritta - TEMA ESAME 2025 - 1, n. 3 e Prova scritta - TEMA ESAME 2 - 2024, n. 3A) partono dallo stesso stato iniziale. Sono $n = 2$ moli di gas ideale monoatomico con $c_V = \frac{3}{2}R$, $V_A = 5\cdot10^{-3}\ \text{m}^3$ e $T_A = 273{,}2\ \text{K}$. Il gas viene portato a $V_B = 2\cdot10^{-3}\ \text{m}^3$ con una trasformazione reversibile a contatto con acqua e ghiaccio. Poi il gas prosegue con altre trasformazioni, che i testi disponibili non riportano per intero. I temi collegati nell'elenco sono primo principio, calore e lavoro termodinamico, calorimetria e variazioni di entropia, con le macchine termiche nel solo tema 2025.
+
+**Metodo.**
+
+1. Elenca i dati con le unità SI. Riconosci che la miscela acqua-ghiaccio fissa la temperatura della sorgente a circa $273$ K, cioè $0\ ^\circ\text{C}$, come spiega [Temperatura e termometria](ref:chapter/12#p3). Se ti servono i kelvin, converti con {{formula:12.2}}.
+2. Identifica ogni trasformazione (isoterma, isobara, isocora, adiabatica, reversibile o no) con le definizioni di [Sistemi termodinamici ed equilibrio](ref:chapter/12#p2). Ricava gli stati mancanti con l'equazione di stato dei gas ideali ([formula (13.3)](ref:formula/13.3), vedi [Gas ideali](ref:chapter/13#p3)).
+3. Per ogni tratto calcola $W$ come $\int p\,dV$ ([Calore e lavoro](ref:chapter/12#p4)). Per l'isoterma reversibile usa [formula (13.8)](ref:formula/13.8).
+4. Ricava $\Delta U$ da $n\,c_V\,\Delta T$ e $Q$ dal primo principio, $\Delta U = Q - W$ ([Primo principio ed energia interna](ref:chapter/13#p2)).
+5. Se la sorgente è una miscela acqua-ghiaccio, il calore ceduto o assorbito dal gas fa fondere o solidificare una massa di ghiaccio. Calcolala con $|Q| = \lambda m$, come in [Calorimetria](ref:chapter/12#p5).
+6. Per l'entropia usa le formule del gas ideale per ciascun tratto ([formula (14.16)](ref:formula/14.16)) e quella della sorgente a temperatura costante. Somma poi gas e sorgente per ottenere l'universo ([Calcolo delle variazioni di entropia](ref:chapter/14#p6)).
+7. Controlla i segni: in una compressione $W < 0$ e il gas cede calore, quindi il ghiaccio fonde. Controlla anche le unità e l'ordine di grandezza.
+
+**Errori tipici.**
+
+- Usare i litri o i $\text{cm}^3$ al posto dei $\text{m}^3$ nell'equazione di stato.
+- Scambiare il segno di $W$ in compressione, o scrivere $Q$ e $W$ come se fossero funzioni di stato.
+- Applicare $Q = \lambda m$ con il $Q$ del gas senza il modulo, ottenendo una massa negativa.
+- Dimenticare che la variazione di entropia dell'universo si ottiene sommando gas e sorgente. Per una trasformazione reversibile deve risultare nulla.
+
+**Esempi.** Nella Prova scritta - TEMA ESAME 2025 - 1, n. 3 il gas compie un'isoterma reversibile da $V_A$ a $V_B$ a contatto con acqua e ghiaccio. Il metodo parte da $W = nRT\ln(V_B/V_A)$ e da $Q = W$, perché in un'isoterma di gas ideale $\Delta U = 0$. Prosegue poi, tratto per tratto, con le variazioni di entropia. Nella Prova scritta - TEMA ESAME 2 - 2024, n. 3A la stessa compressione reversibile è seguita dal contatto con un'altra sorgente. La parte di calorimetria e quella di entropia si risolvono con i passi 5 e 6, distinguendo la sorgente a temperatura costante dai corpi con capacità termica finita.
+
+### Macchina reversibile tra serbatoi di capacità finita
+
+**Cosa chiede l'esame.** Nella Prova scritta - TEMA ESAME 1 - 2024, n. 3A una macchina termica reversibile lavora tra una massa d'acqua, inizialmente a $40\ ^\circ\text{C}$, e una massa di ghiaccio a $0\ ^\circ\text{C}$. L'acqua si raffredda a volume costante senza ghiacciare, finché la macchina non può più produrre lavoro. I temi indicati sono macchine termiche, secondo principio ed entropia, calorimetria. Il testo disponibile è troncato, quindi le richieste finali non sono qui descritte.
+
+**Metodo.**
+
+1. Converti le temperature in kelvin con {{formula:12.2}}. Nei rendimenti e nelle entropie servono sempre temperature assolute.
+2. Osserva che il serbatoio caldo non ha temperatura costante. A ogni istante il rendimento è quello di Carnot, [formula (14.3)](ref:formula/14.3), ma $T_{\text{acqua}}$ diminuisce ([Macchine termiche e frigoriferi](ref:chapter/14#p2)).
+3. Stabilisci la condizione di arresto. La macchina smette di produrre lavoro quando la temperatura dell'acqua raggiunge quella del ghiaccio. Finché resta ghiaccio, il serbatoio freddo rimane a $0\ ^\circ\text{C}$ perché fonde a temperatura costante. Verifica che la massa iniziale di ghiaccio basti a questo scopo, cioè che non fonda tutta prima dell'arresto. Se invece fonde tutta, l'acqua ottenuta si scalda e l'arresto avviene a una temperatura comune superiore a $0\ ^\circ\text{C}$.
+4. Calcola il calore scambiato dall'acqua con $Q = C\,\Delta T$, con $C = cm$ (la capacità termica di [Calorimetria](ref:chapter/12#p5)). Calcola quello ricevuto dal ghiaccio con $\lambda m$. Il lavoro è la differenza tra i due, per il primo principio applicato al ciclo.
+5. Per una macchina reversibile, imponi che l'entropia dell'universo non vari. Con [formula (14.20)](ref:formula/14.20) l'entropia ceduta dall'acqua uguaglia quella ricevuta dal ghiaccio. Se rimane ghiaccio fino all'arresto, si pone $T_f = 273{,}15\ \text{K}$ e il bilancio entropico dà la massa fusa. Solo nel caso di fusione completa si risolve per una temperatura finale comune, senza integrare il rendimento istante per istante ([Secondo principio](ref:chapter/14#p3)).
+
+**Errori tipici.**
+
+- Usare $\eta = 1 - T_f/T_c$ con le temperature in gradi Celsius.
+- Trattare l'acqua come una sorgente a $40\ ^\circ\text{C}$ costante, quando la sua temperatura scende.
+- Usare il calore specifico dell'acqua per il ghiaccio che fonde, invece del calore latente.
+- Ricavare $T_{\text{eq}}$ con un bilancio calorimetrico semplice, che vale solo se non c'è lavoro estratto.
+
+**Esempio 12.4.** Nella Prova scritta - TEMA ESAME 1 - 2024, n. 3A la richiesta centrale è la condizione di arresto della macchina. Si risolve con il punto 5: poiché la macchina è reversibile, l'entropia totale resta costante, e questo lega la temperatura finale dell'acqua alle masse e ai calori scambiati.
+
+### Altri temi del capitolo
+
+Dilatazione termica e trasmissione del calore (conduzione, irraggiamento) non compaiono tra i temi di queste tre sessioni. Non puoi dedurre che non verranno chiesti, ma la loro presenza in test o domande aperte non è documentata qui.

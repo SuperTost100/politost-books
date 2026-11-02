@@ -137,7 +137,7 @@ $$I_{\text{tot}} = \sum_k I_k \qquad \text{(tutti gli } I_k \text{ rispetto allo
 
 **Asta sottile omogenea.** Sia $M$ la massa e $L$ la lunghezza, con densità lineare $\lambda = M/L$ costante. Ponendo l'origine nel centro dell'asta e l'asse $z$ perpendicolare all'asta nel suo punto medio, un elemento di massa $dm = \lambda\, dx$ a distanza $x$ dall'asse contribuisce con $x^2\, dm$. Integrando tra $-L/2$ e $L/2$:
 
-$$I_{CM} = \int_{-L/2}^{L/2} \lambda x^2\, dx = \lambda \left\lbrack \frac{x^3}{3}\right\rbrack _{-L/2}^{L/2} = \lambda \frac{L^3}{12} = \frac{1}{12} M L^2$$
+$$I_{CM} = \int_{-L/2}^{L/2} \lambda x^2\, dx = \lambda \left[\frac{x^3}{3}\right]_{-L/2}^{L/2} = \lambda \frac{L^3}{12} = \frac{1}{12} M L^2$$
 
 :::formula{id="8.5" label="Momento d'inerzia dell'asta rispetto al centro"}
 $$I_{CM} = \frac{1}{12} M L^2$$
@@ -336,7 +336,7 @@ $$E_k = \frac{1}{2}(2m)v_0^2 + m\omega^2 R^2 = m\left(v_0^2 + \omega^2 R^2\right
 
 Sostituendo $m=0,5\text{ kg}$, $v_0=0,8\text{ m/s}$, $\omega=10\text{ s}^{-1}$, $R=0,20\text{ m}$:
 
-$$E_k = 0,5\text{ kg}\left\lbrack (0,8\text{ m/s})^2 + (10\text{ s}^{-1})^2(0,20\text{ m})^2\right\rbrack  = 0,5\text{ kg}\,(0,64 + 4,00)\text{ m}^2/\text{s}^2 = 2,32\text{ J}.$$
+$$E_k = 0,5\text{ kg}\left[(0,8\text{ m/s})^2 + (10\text{ s}^{-1})^2(0,20\text{ m})^2\right] = 0,5\text{ kg}\,(0,64 + 4,00)\text{ m}^2/\text{s}^2 = 2,32\text{ J}.$$
 
 Per il momento angolare relativo al centro di massa, essendo il centro di massa sull'asse di rotazione, $\vec{L}' = I\vec{\omega} = 2mR^2\,\vec{\omega}$; numericamente $|\vec{L}'| = 2(0,5\text{ kg})(0,20\text{ m})^2(10\text{ s}^{-1}) = 0,40\text{ kg}\cdot\text{m}^2/\text{s}$.
 
@@ -345,6 +345,8 @@ Per il momento angolare relativo al centro di massa, essendo il centro di massa 
 **Errore tipico 8.3.** Un errore frequente è dimenticare il contributo $\frac{1}{2}Mv_{CM}^2$ quando il centro di massa è in moto (per esempio su una piattaforma mobile), limitandosi a calcolare solo l'energia cinetica di rotazione relativa: i due teoremi di König vanno applicati insieme, non sostituendo l'uno all'altro. Un secondo errore è usare $I_{CM}$ al posto di $I_z$ (o viceversa) senza prima verificare, tramite {{formula:8.13}}, a quale asse ci si riferisce: il momento d'inerzia non è una proprietà intrinseca del corpo, ma dipende sempre dalla posizione dell'asse scelto.
 
 ## p5 | Ellissoide d'inerzia
+
+*Questa sezione va oltre il programma del corso: all'esame non viene chiesta.*
 
 ### Il momento d'inerzia rispetto a un asse qualsiasi
 
@@ -427,7 +429,7 @@ Questa distinzione sarà utile nella sezione sulla [statica del corpo rigido](re
 
 ### Condizioni di equilibrio del corpo rigido
 
-Per il punto materiale l'equilibrio statico si riduce all'annullamento della risultante delle forze applicate, come stabilito nella sezione sulle [reazioni vincolari ed equilibrio](ref:chapter/3#p4): $\vec{R} = \vec{0}$ [formula (3.9)](ref:formula/3.9). Per un corpo rigido questa condizione resta necessaria, ma non è più sufficiente: anche se la risultante delle forze esterne è nulla, il corpo può ruotare attorno al proprio centro di massa, perché per un corpo estesa conta anche il punto di applicazione di ciascuna forza, cioè il suo momento.
+Per il punto materiale l'equilibrio statico si riduce all'annullamento della risultante delle forze applicate, come stabilito nella sezione sulle [reazioni vincolari ed equilibrio](ref:chapter/3#p5): $\vec{R} = \vec{0}$ [formula (3.11)](ref:formula/3.11). Per un corpo rigido questa condizione resta necessaria, ma non è più sufficiente: anche se la risultante delle forze esterne è nulla, il corpo può ruotare attorno al proprio centro di massa, perché per un corpo estesa conta anche il punto di applicazione di ciascuna forza, cioè il suo momento.
 
 Le condizioni di equilibrio statico di un corpo rigido, note come equazioni cardinali della statica, richiedono quindi che si annullino simultaneamente la risultante e il momento risultante di tutte le forze esterne rispetto a un polo $O$ scelto a piacere.
 
@@ -613,6 +615,90 @@ La forza d'attrito complessiva richiesta è $f_A+f_{A'}=F=100$ N. Per controllar
 
 **Errore tipico 8.6**
 
-È un errore frequente scrivere direttamente $f_s = \mu_s N\cos\theta$ (o $f_s=\mu_s mg\cos\theta$) come se l'attrito statico assumesse sempre il suo valore massimo: questo vale soltanto al limite di distacco, non in condizioni generali di equilibrio. In generale il valore vero di $f_s$ dipende dalle altre forze in gioco (tensioni, pesi, angoli) e deve essere ricavato risolvendo il sistema completo delle equazioni cardinali, come già segnalato nella sezione sulle [forze di attrito](ref:chapter/3#p5).
+È un errore frequente scrivere direttamente $f_s = \mu_s N\cos\theta$ (o $f_s=\mu_s mg\cos\theta$) come se l'attrito statico assumesse sempre il suo valore massimo: questo vale soltanto al limite di distacco, non in condizioni generali di equilibrio. In generale il valore vero di $f_s$ dipende dalle altre forze in gioco (tensioni, pesi, angoli) e deve essere ricavato risolvendo il sistema completo delle equazioni cardinali, come già segnalato nella sezione sulle [forze di attrito](ref:chapter/3#p6).
 
 Va infine ricordato, come richiamato nella sezione sul [metodo sperimentale e misure](ref:chapter/1#p2) a proposito dell'analisi dimensionale, che nelle equazioni cardinali ogni uguaglianza deve avere membri omogenei: non ha senso eguagliare un vettore a uno scalare, errore che si commette facilmente quando si scrivono momenti e forze senza tenere traccia della loro natura vettoriale.
+
+## p7 | Come viene chiesto all'esame
+
+Il capitolo sul corpo rigido è comparso in 4 delle 6 sessioni d'esame passate. Il tipo di esercizio più frequente è l'urto tra un punto materiale e un corpo rigido, seguito dalla dinamica del rotolamento con carrucole e piani inclinati. Nello scritto da due ore questi argomenti stanno nei problemi strutturati a domande aperte, dove le richieste successive dipendono dai risultati delle precedenti. Un errore iniziale si propaga quindi su tutto il problema. Le dimostrazioni, per esempio quella della relazione sulle velocità nel corpo rigido o del teorema di Huygens-Steiner, possono invece uscire nella domanda di teoria o all'orale.
+
+### Urto tra un punto materiale e un corpo rigido
+
+È il tipo più ricorrente, con quattro esercizi in tre sessioni. Un punto materiale colpisce un corpo rigido: un'asta vincolata nel centro, un'asta a cui il punto resta attaccato, un disco libero su un piano liscio. Si chiedono le velocità o la velocità angolare subito dopo l'urto, e spesso l'energia dissipata.
+
+Il metodo, passo per passo:
+
+1. Individuare il sistema (punto più corpo rigido) e scegliere un **polo** fisso, dichiarandolo. Con un'asta incernierata il polo naturale è il vincolo, perché la reazione vincolare ha momento nullo rispetto a esso.
+2. Verificare quali grandezze si conservano durante l'urto, che è istantaneo. Il momento angolare rispetto al polo si conserva se i momenti esterni sono nulli o trascurabili, come spiegato in [Urti con corpi rigidi](ref:chapter/9#p5). La quantità di moto invece non si conserva se c'è un vincolo fisso, perché la reazione del vincolo è impulsiva.
+3. Calcolare il momento d'inerzia del corpo rispetto all'asse di rotazione, usando i valori noti ([Momento d'inerzia](ref:chapter/8#p3)) e, se l'asse non passa per il centro di massa, il trasporto di Huygens-Steiner ([Teoremi di Huygens-Steiner e di König](ref:chapter/8#p4)).
+4. Scrivere il momento angolare prima e dopo l'urto: $L = r\,m\,v$ per il punto (con il braccio rispetto al polo) e $L = I\omega$ per il rigido. Se dopo l'urto il punto resta attaccato, il suo contributo diventa $m r^2 \omega$ e va sommato a $I$. Si risolve in $\omega$.
+5. Per l'energia dissipata, confrontare l'energia cinetica prima e dopo, usando {{formula:8.15}} se il corpo si muove anche di traslazione.
+6. Controllare il segno del verso di rotazione (con la regola della mano destra) e le dimensioni.
+
+Gli errori tipici sono questi:
+
+- Imporre la conservazione della quantità di moto anche in presenza di un perno fisso.
+- Dimenticare di sommare il momento d'inerzia del punto che resta conficcato nell'asta.
+- Usare l'asse per il centro di massa quando l'asta ruota attorno a un estremo.
+- Trascurare il segno della velocità dopo il rimbalzo.
+- Pretendere che l'urto sia elastico senza che il testo lo dica.
+
+Esempi:
+
+- **Prova scritta TEMA ESAME 2 - 2024, esercizio 2A.** Un'asta di lunghezza $L = 1$ m e massa $M = 12$ kg, vincolata nel centro, viene urtata a un estremo da un punto che poi rimbalza. Si imposta la conservazione del momento angolare rispetto al centro dell'asta, con $I$ dato da {{formula:8.5}}, e si ricava $\omega$ dopo l'urto.
+- **Prova scritta del 11 luglio 2022, esercizio 2A.** Un disco libero di massa $m = 10$ kg, fermo su un piano liscio, viene colpito da due corpi puntiformi in moto. Poiché il disco non ha vincoli, si usa il momento angolare totale rispetto a un polo fisso insieme a $I_{CM} = \tfrac{1}{2}mR^2$, e si descrive il moto dopo l'urto con {{formula:8.14}}.
+
+### Esercizi a fasi: attrito ed energia, poi urto
+
+In due sessioni l'urto con il corpo rigido è preceduto da una fase di moto di un punto su una guida scabra. Il collegamento tra le fasi è la velocità del punto subito prima dell'urto.
+
+Il metodo:
+
+1. Trattare ogni fase come un problema a sé, e scrivere in apertura quale grandezza passa da una fase alla successiva (di solito la velocità del punto).
+2. Nella fase sulla guida scabra, applicare il teorema dell'energia meccanica con il lavoro dell'attrito dinamico, $W = -\mu_d N s$ con $N$ che dipende dall'inclinazione ([Forze di attrito](ref:chapter/3#p6) e [Energia cinetica e teorema lavoro-energia](ref:chapter/4#p3)).
+3. Sul tratto inclinato e su quello orizzontale la reazione normale è diversa, quindi bisogna scrivere $N$ separatamente. Dove la guida è liscia, il lavoro dell'attrito è nullo.
+4. Applicare poi il metodo dell'urto del tipo precedente, partendo dalla velocità appena trovata.
+5. Se compare un'ulteriore fase dopo l'urto (per esempio la salita dell'asta), usare la conservazione dell'energia meccanica con la variazione di quota del centro di massa.
+
+Gli errori tipici:
+
+- Usare la stessa $N$ sul piano inclinato e su quello orizzontale.
+- Usare l'angolo sbagliato nel calcolo della quota.
+- Perdere unità di misura nel passaggio tra le fasi, per esempio centimetri e metri.
+
+Esempi:
+
+- **Prova scritta TEMA ESAME 2025 - 1, esercizio 1.** Un punto di massa $m = 0{,}5$ kg scende da una quota $h = 50$ cm su un piano inclinato scabro, procede su un tratto orizzontale liscio e si conficca nell'estremo inferiore di un'asta. Il bilancio energetico con attrito dà la velocità d'impatto, e poi la conservazione del momento angolare dà la velocità angolare del sistema punto più asta.
+- **Prova scritta del 11 luglio 2022, esercizio 2A1.** Un punto materiale si muove lungo una guida scabra, composta da un tratto inclinato di $60^\circ$ e da uno orizzontale, con $\mu_d = 0{,}6$. Si ricava la velocità con il teorema dell'energia meccanica sui due tratti, e il risultato alimenta la parte successiva del problema, che coinvolge momento angolare e momento d'inerzia.
+
+### Rotolamento e dinamica rotazionale con carrucole
+
+Il problema compare nelle due tracce dello scritto del 25 giugno 2026 (2A e 2B) e, in forma diversa, nel TEMA ESAME 2025 - 1. Un corpo rigido, come un cilindro, rotola senza strisciare. Nelle tracce del 2026 è collegato da un filo a una carrucola con massa non trascurabile, e tra gli argomenti compare anche la forza elastica. Si chiedono accelerazioni, tensioni, forza di attrito, oppure velocità dopo un certo percorso.
+
+Il metodo:
+
+1. Disegnare il diagramma delle forze di ogni corpo, compresi la carrucola e il cilindro. Le due tensioni del filo ai lati della carrucola sono in generale diverse, perché la carrucola ha un momento d'inerzia non nullo.
+2. Per il centro di massa di ciascun corpo, scrivere la seconda legge di Newton lungo il piano e perpendicolarmente a esso.
+3. Per ogni corpo che ruota, scrivere l'equazione dei momenti rispetto al centro di massa o a un asse fisso, [formula (9.1)](ref:formula/9.1), con il giusto $I$ (per il cilindro pieno e per il disco della carrucola, $I=\tfrac{1}{2}mr^2$, {{formula:8.8}}).
+4. Collegare accelerazione lineare e angolare con il vincolo di puro rotolamento [formula (9.8)](ref:formula/9.8) e con l'inestensibilità del filo (stessa accelerazione di filo, centro di massa e punto sul bordo della carrucola).
+5. Risolvere il sistema in forma letterale, poi sostituire i numeri con le unità.
+6. Verificare l'aderenza: la forza di attrito statico trovata deve soddisfare $|\vec{f}_s| \le \mu_s N$ ([Rotolamento](ref:chapter/9#p4) e [Rotazione attorno a un asse fisso](ref:chapter/9#p2)).
+7. Se si chiede una velocità dopo un tratto, si può usare l'energia, con {{formula:8.15}}, sommando i termini di traslazione e di rotazione ([Energia nel moto del corpo rigido](ref:chapter/9#p3)).
+
+Gli errori tipici:
+
+- Scrivere la stessa tensione su entrambi i lati della carrucola.
+- Usare $f_s = \mu_s N$ come uguaglianza, mentre nel puro rotolamento è solo un limite superiore.
+- Calcolare il lavoro dell'attrito statico: nel puro rotolamento il punto di contatto è fermo, quindi l'attrito statico non dissipa energia.
+- Scegliere $I$ rispetto all'asse sbagliato, o dimenticare che il cilindro ha anche energia di traslazione.
+- Dimenticare il contributo della forza elastica, quando c'è una molla.
+
+Esempi:
+
+- **Prova scritta del 25 giugno 2026, esercizio 2A.** Due corpi rigidi su piani inclinati simmetrici di $25^\circ$ sono collegati da un filo che passa su una carrucola a disco di massa $M_p = 2{,}2$ kg, e a sinistra c'è un cilindro pieno di massa $m_1 = 5{,}0$ kg. Si scrivono le equazioni di Newton per i corpi, quelle dei momenti per cilindro e carrucola, e il vincolo di rotolamento. L'esercizio 2B del medesimo appello ha la stessa struttura, con altri dati ($\theta = 30^\circ$).
+- **Prova scritta TEMA ESAME 2025 - 1, esercizio 2.** Un cilindro di raggio $r = 10$ cm parte dalla sommità di una superficie cilindrica fissa e rotola senza strisciare, con $\mu_s = 0{,}6$. Si usano la conservazione dell'energia con i due termini di König per la velocità in funzione della posizione, e la verifica dell'aderenza sul limite di attrito statico.
+
+### Quello che non è ancora uscito
+
+Nelle sessioni qui esaminate non compaiono esercizi di sola statica (scale, travi, mensole) né calcoli espliciti con l'ellissoide d'inerzia. Gli argomenti di [Statica del corpo rigido](ref:chapter/8#p6) e di [Ellissoide d'inerzia](ref:chapter/8#p5) restano comunque utili come base di teoria, perché lo scritto prevede anche domande aperte e l'orale può approfondirli.

@@ -324,3 +324,65 @@ Verifica: il risultato è circa il doppio di $n_{\mathrm{H_2O}} \cdot N_A \appro
 Combinando le due relazioni si può passare direttamente dalla massa di un campione al numero di particelle che contiene, e viceversa: dalla massa si ricavano le moli con {{formula:2.4}}, e dalle moli si ricava il numero di entità con {{formula:2.5}} (o il percorso inverso). Questo doppio passaggio, massa $\to$ moli $\to$ particelle, è lo schema di conversione più usato nei calcoli stechiometrici che verranno trattati in [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4).
 
 **Errore tipico 2.6.** Confondere la mole, che è una misura di numerosità di particelle, con la massa molare, che è una misura di peso: la mole indica "quante" entità sono presenti, la massa molare indica quanto pesa una mole di quella sostanza. Un errore collegato, tipico nei bilanciamenti affrontati senza passare per le moli, è pensare che le masse dei reagenti si combinino negli stessi rapporti numerici dei coefficienti stechiometrici: ad esempio $2\ \mathrm{g}$ di $\mathrm{Mg}$ più $1\ \mathrm{g}$ di $\mathrm{O_2}$ non danno $2\ \mathrm{g}$ di $\mathrm{MgO}$, perché i coefficienti di un'equazione bilanciata si riferiscono al numero di atomi o di moli che reagiscono, non direttamente alle masse in grammi; la relazione in massa si ottiene solo passando attraverso le masse molari. Questo aspetto sarà ripreso nella sezione sul [bilanciamento delle equazioni chimiche](ref:chapter/4#p3).
+
+## p6 | Come viene chiesto all'esame
+
+In 2 delle 4 sessioni d'esame passate compaiono domande che toccano gli argomenti di questo capitolo. Il tipo di esercizio più frequente è il calcolo stechiometrico: massa di un prodotto che si ottiene da quantità date di reagenti, in cui la conversione tra massa, moli e massa molare è un passaggio obbligato.
+
+Le domande a disposizione sono esercizi della prova scritta, e in entrambe le sessioni sono il primo esercizio del tema. Non sono esercizi sul capitolo "puro": la massa molare e la mole compaiono dentro problemi più ampi, che richiedono anche il bilanciamento di una reazione redox e il calcolo di una concentrazione. Le domande consultate non contengono quesiti isolati su leggi di Lavoisier, Proust e Dalton, su isotopi o sulla tavola periodica. Questi argomenti restano però la base del programma, e non si può escludere che compaiano nel test a risposta multipla o nell'eventuale orale. Qui descriviamo solo ciò che le domande mostrano.
+
+### Dalla massa dei reagenti alla massa del prodotto
+
+**Che cosa chiede l'esame.** Viene descritta una reazione a parole (per esempio dicromato di potassio, cloruro di stagno(II) e acido cloridrico che danno cloruro di cromo(III), cloruro di stagno(IV), cloruro di potassio e acqua). Bisogna scriverla e bilanciarla, poi calcolare quanti grammi di un prodotto si ottengono da quantità note di reagenti. Se i reagenti sono due, si deve individuare il reagente limitante.
+
+**Metodo.**
+
+1. Dai nomi ricava le formule e scrivi la reazione, poi bilanciala; se è una redox, usa le semireazioni ([Reazioni di ossidoriduzione](ref:chapter/5#p5) e [Equazioni chimiche e bilanciamento](ref:chapter/4#p3)).
+2. Calcola la massa molare $M$ di ogni specie coinvolta sommando le masse atomiche medie, tenendo conto degli indici ([Masse atomiche, mole e massa molare](ref:chapter/2#p5)).
+3. Converti ogni quantità di reagente in moli con {{formula:2.4}}.
+4. Dividi le moli di ciascun reagente per il suo coefficiente stechiometrico: il valore più piccolo indica il reagente limitante ([formula (4.3)](ref:formula/4.3)).
+5. Con il rapporto molare dell'equazione bilanciata ([formula (4.2)](ref:formula/4.2)) ricava le moli di prodotto a partire dal solo reagente limitante.
+6. Riconverti in grammi moltiplicando per la massa molare del prodotto e arrotonda solo alla fine, rispettando le cifre significative ([Grandezze, unità e cifre significative](ref:chapter/1#p3)).
+
+Per illustrare il passo 3: $565{,}0\ \mathrm{g}$ di $\mathrm{SnCl_2}$, con $M \approx 189{,}6\ \mathrm{g/mol}$, corrispondono a circa $2{,}98\ \mathrm{mol}$. Per il calcolo completo serve il resto dei dati del tema.
+
+**Errori tipici.**
+
+- Usare le moli o i grammi del reagente in eccesso per calcolare il prodotto.
+- Confrontare direttamente le moli dei reagenti senza dividerle per i coefficienti.
+- Calcolare $M$ senza moltiplicare per gli indici (per esempio in $\mathrm{CrCl_3}$ il cloro conta tre volte).
+- Applicare il rapporto molare di una reazione non bilanciata: un coefficiente sbagliato falsa tutto il risultato.
+- Arrotondare le masse molari troppo presto.
+
+**Esempi.**
+
+- Tema d'esame 16 (Savorani), esercizio 1: chiede i grammi di cloruro di cromo(III) ottenuti da $565{,}0\ \mathrm{g}$ di cloruro di stagno(II) e $2{,}0\ \mathrm{L}$ di acido cloridrico al $37{,}0\,\%$; il metodo porta le due quantità in moli, individua il limitante e passa dal rapporto molare ai grammi.
+- Tema d'esame 15, esercizio 1: parte dalla reazione tra nitrato di piombo(II), rame e acido solforico, e il metodo si applica in modo analogo dopo il bilanciamento, per la parte che richiede quantità di sostanza.
+
+### Da massa o percentuale a moli e concentrazione
+
+**Che cosa chiede l'esame.** Una sostanza è fornita come massa sciolta in un certo volume, oppure come soluzione concentrata data in percentuale. Bisogna trasformare il dato in moli o in molarità, e talvolta considerare solo una parte della soluzione.
+
+**Metodo.**
+
+1. Individua se il dato è una massa di soluto (per esempio in mg), un volume di soluzione o una percentuale in massa ([Espressioni della concentrazione](ref:chapter/11#p3)).
+2. Porta tutte le unità a quelle coerenti: mg in g, cm$^3$ e mL in L (con $1\ \mathrm{cm^3} = 1\ \mathrm{mL}$).
+3. Per una massa di soluto, calcola le moli con {{formula:2.4}} e poi la molarità con [formula (11.3)](ref:formula/11.3).
+4. Per una percentuale in massa ([formula (11.6)](ref:formula/11.6)) la massa di soluto si ricava dalla massa della soluzione; per passare da un volume a una massa serve la densità.
+5. Se si preleva solo una parte della soluzione, la concentrazione resta uguale e cambiano le moli, che sono proporzionali al volume prelevato.
+
+**Errori tipici.**
+
+- Dimenticare di convertire mg in g o cm$^3$ in L, sbagliando di un fattore $10^3$.
+- Usare il volume di solvente al posto del volume finale della soluzione.
+- Trattare la percentuale in massa come se fosse una molarità, o moltiplicare il volume per la percentuale senza passare dalla densità.
+- Credere che la concentrazione cambi quando si preleva un'aliquota.
+
+**Esempi.**
+
+- Tema d'esame 15, esercizio 1: $780\ \mathrm{mg}$ di solfato rameico sciolti in una soluzione di volume finale $980\ \mathrm{cm^3}$, di cui si prelevano $100\ \mathrm{mL}$; si convertono i milligrammi in moli, si ottiene la molarità e si scala all'aliquota prelevata.
+- Tema d'esame 16 (Savorani), esercizio 1: il volume di acido cloridrico al $37{,}0\,\%$ va tradotto in moli di HCl prima di confrontarlo con le moli dell'altro reagente.
+
+### Altri tipi presenti
+
+Il bilanciamento di reazioni redox e il calcolo del potenziale di una cella, che compaiono negli stessi due esercizi, appartengono ad altri capitoli. Per la prova scritta il consiglio che ne deriva è questo: nei problemi di stechiometria la parte di questo capitolo (massa molare, moli, numero di particelle con {{formula:2.5}}) è il ponte tra i dati in grammi e le equazioni, quindi va svolta con precisione. Per rivedere il metodo completo sui reagenti, vedi [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4).

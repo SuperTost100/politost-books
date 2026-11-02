@@ -31,7 +31,7 @@ Alle forze interne si applica sempre il terzo principio della dinamica (azione e
 
 $$\vec{F}_{i,j} = -\vec{F}_{j,i}.$$
 
-Le due forze di una coppia interna hanno dunque stesso modulo e versi opposti, come garantito dall'uguaglianza vettoriale precedente; possono essere attrattive o repulsive a seconda della natura dell'interazione. L'uguaglianza $\vec{F}_{i,j} = -\vec{F}_{j,i}$ non implica invece, da sola, che le due forze condividano anche la stessa retta d'azione: questa proprietà ulteriore, detta centralità delle forze interne rispetto alla coppia di punti, sarà introdotta come ipotesi aggiuntiva più avanti, quando servirà per dimostrare l'annullarsi del momento delle forze interne.
+Le due forze di una coppia interna hanno dunque stesso modulo e versi opposti; possono essere attrattive o repulsive a seconda della natura dell'interazione. Nella sua formulazione completa, il terzo principio afferma inoltre che le due forze hanno la stessa retta d'azione, che è la retta congiungente i due punti $P_i$ e $P_j$: le forze interne si presentano quindi a coppie $\vec{F}_{i,j} = -\vec{F}_{j,i}$ con la stessa retta d'azione, e questa proprietà serve per dimostrare l'annullarsi del momento delle forze interne.
 
 **Errore tipico 7.1.** Il principio di azione e reazione si applica a qualunque interazione, quindi anche alle forze esterne: la reazione a una forza esterna è applicata al resto dell'universo e non ha alcun effetto sul sistema studiato. Non va quindi cercata, all'interno del sistema, una "reazione" a una forza esterna.
 
@@ -39,7 +39,9 @@ Le due forze di una coppia interna hanno dunque stesso modulo e versi opposti, c
 
 **Teorema 7.1.** La risultante di tutte le forze interne a un sistema di punti materiali è nulla.
 
-*Ipotesi:* sistema di riferimento inerziale; per ogni coppia di punti vale il terzo principio della dinamica, $\vec{F}_{i,j} = -\vec{F}_{j,i}$.
+*Ipotesi:* sistema di riferimento inerziale; per ogni coppia di punti vale il terzo principio della dinamica, $\vec{F}_{i,j} = -\vec{F}_{j,i}$, con le due forze aventi la stessa retta d'azione.
+
+**Dimostrazione richiesta all'esame.**
 
 *Dimostrazione.* Sommando su tutti i punti la risultante delle forze interne agenti su ciascuno,
 
@@ -49,7 +51,11 @@ la risultante totale delle forze interne al sistema vale
 
 $$\vec{R}^{(I)} = \sum_i \vec{F}_i^{(I)} = \sum_{i,j} \vec{F}_{i,j}.$$
 
-Nella doppia somma, le forze interne compaiono sempre in coppie opposte $\vec{F}_{i,j}$ e $\vec{F}_{j,i} = -\vec{F}_{i,j}$, che si cancellano esattamente a due a due. Il risultato è dunque $\vec{R}^{(I)} = \vec{0}$.
+La doppia somma è estesa a tutte le coppie ordinate $(i,j)$ con $i\neq j$. La si separa nei termini con $i<j$ e in quelli con $i>j$; in questi ultimi si scambiano i nomi degli indici, ottenendo
+
+$$\sum_{i\neq j}\vec{F}_{i,j}=\sum_{i<j}\vec{F}_{i,j}+\sum_{i>j}\vec{F}_{i,j}=\sum_{i<j}\vec{F}_{i,j}+\sum_{i<j}\vec{F}_{j,i}=\sum_{i<j}\left(\vec{F}_{i,j}+\vec{F}_{j,i}\right).$$
+
+Per il terzo principio $\vec{F}_{j,i}=-\vec{F}_{i,j}$, quindi ogni addendo tra parentesi è nullo. Ne segue $\vec{R}^{(I)} = \vec{0}$.
 
 :::formula{id="7.1" label="Risultante delle forze interne"}
 $$\vec{R}^{(I)} = \sum_i \vec{F}_i^{(I)} = \sum_{i,j} \vec{F}_{i,j} = \vec{0}$$
@@ -63,13 +69,15 @@ Sommando risultante interna ed esterna, la risultante totale delle forze che agi
 $$\vec{R} = \vec{R}^{(I)} + \vec{R}^{(E)} = \vec{R}^{(E)} = \sum_i \vec{F}_i^{(E)}$$
 :::
 
-Questo risultato è ciò che renderà possibile, nella sezione sulla [prima equazione cardinale](ref:chapter/7#p4), descrivere il moto del centro di massa del sistema usando soltanto le forze esterne, esattamente come già accadeva per la conservazione della quantità di moto vista nella sezione [Quantità di moto e impulso](ref:chapter/3#p3).
+Questo risultato è ciò che renderà possibile, nella sezione sulla [prima equazione cardinale](ref:chapter/7#p4), descrivere il moto del centro di massa del sistema usando soltanto le forze esterne, esattamente come già accadeva per la conservazione della quantità di moto vista nella sezione [Quantità di moto e impulso](ref:chapter/3#p4).
 
 ### Momento delle forze interne
 
 **Teorema 7.2.** Il momento risultante, rispetto a un polo qualsiasi, di tutte le forze interne a un sistema di punti materiali è nullo.
 
-*Ipotesi:* oltre al terzo principio della dinamica, si assume che le forze interne siano *centrali rispetto alla coppia di punti che le scambiano*, cioè dirette lungo la retta congiungente $P_i$ e $P_j$: il vettore posizione relativa $\vec{r}_{i,j} = \vec{r}_j - \vec{r}_i$ è parallelo a $\vec{F}_{i,j}$. Questa è un'ipotesi aggiuntiva rispetto al solo terzo principio, verificata ad esempio da un'interazione gravitazionale o elettrostatica fra due punti materiali, oppure da una molla ideale che collega direttamente due punti del sistema. Non si tratta invece di una proprietà generale di ogni forza elastica né di ogni reazione vincolare ideale: una forza elastica di flessione o la reazione trasversale di un vincolo possono non essere dirette lungo la congiungente dei due punti, e in quei casi l'ipotesi di centralità va verificata caso per caso.
+*Ipotesi:* sistema di riferimento inerziale; per ogni coppia di punti vale il terzo principio della dinamica: le due forze sono uguali e opposte, $\vec{F}_{i,j} = -\vec{F}_{j,i}$, e hanno la stessa retta d'azione, cioè la retta congiungente $P_i$ e $P_j$. Il vettore posizione relativa $\vec{r}_{i,j} = \vec{r}_j - \vec{r}_i$ è quindi parallelo a $\vec{F}_{i,j}$. Questa condizione è verificata ad esempio da un'interazione gravitazionale o elettrostatica fra due punti materiali, oppure da una molla ideale che collega direttamente due punti del sistema.
+
+**Dimostrazione richiesta all'esame.**
 
 *Dimostrazione.* Si calcoli, rispetto a un polo $O$ arbitrario, la somma dei momenti della coppia di forze interne scambiate tra $P_i$ e $P_j$:
 
@@ -82,7 +90,11 @@ Poiché $\vec{r}_{i,j}$ è parallelo a $\vec{F}_{i,j}$, il prodotto vettoriale �
 
 $$\vec{M}_{i,j}^{(I)} = \vec{0}.$$
 
-Sommando su tutte le coppie distinte $\{i,j\}$, con $i<j$, si ottiene il momento totale delle forze interne, che è anch'esso nullo, poiché ciascun addendo lo è singolarmente.
+Il momento totale delle forze interne rispetto a $O$ è $\vec{M}^{(I)}=\sum_i \vec{r}_i\times\vec{F}_i^{(I)}=\sum_{i\neq j}\vec{r}_i\times\vec{F}_{i,j}$. Come per la risultante, si separano i termini con $i<j$ da quelli con $i>j$ e in questi ultimi si scambiano i nomi degli indici:
+
+$$\vec{M}^{(I)}=\sum_{i<j}\vec{r}_i\times\vec{F}_{i,j}+\sum_{i<j}\vec{r}_j\times\vec{F}_{j,i}=\sum_{i<j}\left(\vec{r}_i\times\vec{F}_{i,j}+\vec{r}_j\times\vec{F}_{j,i}\right)=\sum_{i<j}\vec{M}_{i,j}^{(I)}.$$
+
+Il momento totale è dunque la somma, sulle coppie distinte, dei momenti già calcolati. Poiché ciascun addendo è nullo, anche il momento totale è nullo, qualunque sia il polo $O$.
 
 :::formula{id="7.3" label="Momento delle forze interne"}
 $$\vec{M}^{(I)} = -\sum_{i<j} \vec{r}_{i,j} \times \vec{F}_{i,j} = \vec{0}$$
@@ -259,7 +271,7 @@ Questo è il risultato che giustifica, ad esempio, perché un proiettile che esp
 
 ### Forma in termini della quantità di moto
 
-Nella sezione su [quantità di moto e impulso](ref:chapter/3#p3) abbiamo mostrato che la quantità di moto totale del sistema coincide con quella del centro di massa, $\vec{p}_{tot} = M \vec{v}_{CM}$. Derivando quest'ultima relazione rispetto al tempo,
+Nella sezione su [quantità di moto e impulso](ref:chapter/3#p4) abbiamo mostrato che la quantità di moto totale del sistema coincide con quella del centro di massa, $\vec{p}_{tot} = M \vec{v}_{CM}$. Derivando quest'ultima relazione rispetto al tempo,
 
 $$\frac{d\vec{p}_{tot}}{dt} = \frac{d}{dt}\big(M\vec{v}_{CM}\big) = M\vec{a}_{CM} = \vec{R}^{(E)},$$
 
@@ -288,6 +300,28 @@ Un caso tipico è quello di un sistema cannone più proiettile, inizialmente fer
 
 **Conservazione parziale.** Non sempre tutte le componenti della quantità di moto si conservano. Se la risultante delle forze esterne ha una componente nulla lungo una certa direzione $\hat{u}$ (anche se non è nulla globalmente), allora si conserva solo la componente $p_{tot,u} = \vec{p}_{tot}\cdot\hat{u}$ lungo quella direzione. È il caso, per esempio, di un'esplosione in volo di un proiettile: la forza peso ha componente orizzontale nulla, quindi la componente orizzontale della quantità di moto totale dei frammenti si conserva, mentre quella verticale no, perché la gravità (forza esterna) continua ad agire.
 
+**Dimostrazione richiesta all'esame.**
+
+**Teorema 7.3** (del moto del centro di massa e conservazione della quantità di moto). Si consideri un sistema di $N$ punti materiali di masse costanti $m_i$, con $M=\sum_i m_i$, osservato da un riferimento inerziale, in cui le forze interne soddisfano il terzo principio: la forza $\vec{f}_{ij}$ esercitata dal punto $j$ sul punto $i$ verifica $\vec{f}_{ij}=-\vec{f}_{ji}$. Allora $M\vec{a}_{CM}=\vec{R}^{(E)}$, cioè $\vec{R}^{(E)}=d\vec{p}_{tot}/dt$; se inoltre $\vec{R}^{(E)}=\vec{0}$, la quantità di moto totale $\vec{p}_{tot}$ è costante.
+
+*Dimostrazione.* Dalla definizione $M\vec{r}_{CM}=\sum_i m_i\vec{r}_i$, derivando rispetto al tempo (le masse sono costanti) si ottiene
+
+$$M\vec{v}_{CM}=\sum_{i=1}^N m_i\vec{v}_i=\vec{p}_{tot},\qquad M\vec{a}_{CM}=\sum_{i=1}^N m_i\vec{a}_i .$$
+
+Per il secondo principio applicato a ciascun punto, $m_i\vec{a}_i=\vec{F}_i^{(E)}+\vec{F}_i^{(I)}$, con $\vec{F}_i^{(I)}=\sum_{j\neq i}\vec{f}_{ij}$. Sommando su $i$,
+
+$$M\vec{a}_{CM}=\sum_{i=1}^N\vec{F}_i^{(E)}+\sum_{i=1}^N\vec{F}_i^{(I)} .$$
+
+La somma delle forze interne si raggruppa a coppie:
+
+$$\sum_{i=1}^N\vec{F}_i^{(I)}=\sum_{i<j}\big(\vec{f}_{ij}+\vec{f}_{ji}\big)=\vec{0},$$
+
+perché ogni coppia dà contributo nullo per il terzo principio. Rimane quindi $M\vec{a}_{CM}=\sum_i\vec{F}_i^{(E)}=\vec{R}^{(E)}$. Inoltre, poiché $M$ è costante,
+
+$$\vec{R}^{(E)}=M\vec{a}_{CM}=\frac{d}{dt}\big(M\vec{v}_{CM}\big)=\frac{d\vec{p}_{tot}}{dt}.$$
+
+Se $\vec{R}^{(E)}=\vec{0}$, allora $d\vec{p}_{tot}/dt=\vec{0}$: ogni componente cartesiana di $\vec{p}_{tot}$ ha derivata nulla in ogni istante, quindi è costante, e $\vec{p}_{tot}$ è costante. Ne segue $\vec{v}_{CM}=\vec{p}_{tot}/M$ costante: il centro di massa è in moto rettilineo uniforme o in quiete. Se è nulla solo la componente di $\vec{R}^{(E)}$ lungo una direzione fissa $\hat{u}$, lo stesso ragionamento, ottenuto moltiplicando scalarmente per $\hat{u}$, dà $d(\vec{p}_{tot}\cdot\hat{u})/dt=0$. $\square$
+
 ### Esempio svolto: rinculo di un cannone
 
 **Dati.** Un cannone di massa $M = 800\ \text{kg}$, inizialmente fermo su un terreno orizzontale privo di attrito, spara orizzontalmente un proiettile di massa $m = 5,0\ \text{kg}$ con velocità, rispetto al terreno, $v = 400\ \text{m/s}$. Si vuole calcolare la velocità di rinculo $V$ del cannone subito dopo lo sparo.
@@ -310,7 +344,7 @@ $$V = -\frac{m}{M}v.$$
 
 $$V = -\frac{5,0\ \text{kg}}{800\ \text{kg}}\cdot 400\ \text{m/s} = -2,5\ \text{m/s}.$$
 
-**Controllo.** Il segno negativo indica che il cannone rincula in verso opposto al proiettile, come atteso fisicamente; dimensionalmente $\lbrack \text{kg}/\text{kg}\rbrack \cdot\lbrack \text{m/s}\rbrack  = \text{m/s}$ è corretto, e l'ordine di grandezza (pochi metri al secondo, contro le centinaia del proiettile) è coerente con il fatto che $m \ll M$.
+**Controllo.** Il segno negativo indica che il cannone rincula in verso opposto al proiettile, come atteso fisicamente; dimensionalmente $\lbrack \text{kg}/\text{kg}\rbrack \cdot[\text{m/s}] = \text{m/s}$ è corretto, e l'ordine di grandezza (pochi metri al secondo, contro le centinaia del proiettile) è coerente con il fatto che $m \ll M$.
 
 :::image{src="assets/5ba94a72-quantita-moto-cannone-proiettile.svg" alt="Grafico a gradini della quantità di moto del cannone, del proiettile e della loro somma in funzione del tempo intorno all'istante dello sparo" caption="Fig. 7.4 — Quantità di moto di cannone e proiettile nell'istante dello sparo: saltano in modo uguale e opposto, mentre la somma resta nulla"}
 :::
@@ -369,7 +403,27 @@ Il termine $-\vec{v}_O\times m\vec{v}_{CM}$ è nullo in almeno quattro casi: il 
 $$\frac{d\vec{L}_O}{dt} = \vec{M}^{(E)}$$
 :::
 
-**Teorema 7.3** (del momento angolare per un sistema di punti). Supponendo, come stabilito sopra, che le forze interne siano dirette lungo la congiungente delle coppie di punti (così che il loro momento risultante $\vec{M}^{(I)}$ sia nullo), se il polo $O$ è fisso nel riferimento inerziale oppure coincide con il centro di massa del sistema, l'evoluzione nel tempo del momento angolare del sistema è determinata unicamente dal momento risultante delle forze esterne rispetto a $O$; le forze interne non danno alcun contributo. Se le forze interne non fossero centrali, il solo terzo principio non basterebbe a garantire $\vec{M}^{(I)}=\vec{0}$, e l'enunciato andrebbe formulato richiedendo direttamente questa condizione sul momento delle forze interne.
+**Teorema 7.4** (del momento angolare per un sistema di punti). Supponendo, come stabilito sopra, che le forze interne siano dirette lungo la congiungente delle coppie di punti (così che il loro momento risultante $\vec{M}^{(I)}$ sia nullo), se il polo $O$ è fisso nel riferimento inerziale oppure coincide con il centro di massa del sistema, l'evoluzione nel tempo del momento angolare del sistema è determinata unicamente dal momento risultante delle forze esterne rispetto a $O$; le forze interne non danno alcun contributo. Se le forze interne non fossero centrali, il solo terzo principio non basterebbe a garantire $\vec{M}^{(I)}=\vec{0}$, e l'enunciato andrebbe formulato richiedendo direttamente questa condizione sul momento delle forze interne.
+
+**Dimostrazione richiesta all'esame.**
+
+*Dimostrazione.* Poiché $\vec{r}_i=\overrightarrow{OP_i}$ e sia $P_i$ sia $O$ si muovono, la derivata del raggio vettore è $\dfrac{d\vec{r}_i}{dt}=\vec{v}_i-\vec{v}_O$. Derivando $\vec{L}_O=\sum_i \vec{r}_i\times m_i\vec{v}_i$ si ha
+
+$$\frac{d\vec{L}_O}{dt}=\sum_i(\vec{v}_i-\vec{v}_O)\times m_i\vec{v}_i+\sum_i\vec{r}_i\times m_i\vec{a}_i.$$
+
+Nel primo termine $\vec{v}_i\times m_i\vec{v}_i=\vec{0}$, quindi resta $-\vec{v}_O\times\sum_i m_i\vec{v}_i=-\vec{v}_O\times m\vec{v}_{CM}$, dove $m\vec{v}_{CM}=\sum_i m_i\vec{v}_i$ per definizione di centro di massa. Nel secondo termine, per la seconda legge di Newton, $m_i\vec{a}_i=\vec{F}_i^{(E)}+\vec{F}_i^{(I)}$, da cui
+
+$$\sum_i\vec{r}_i\times m_i\vec{a}_i=\sum_i\vec{r}_i\times\vec{F}_i^{(E)}+\sum_i\vec{r}_i\times\vec{F}_i^{(I)}=\vec{M}^{(E)}+\vec{M}^{(I)}.$$
+
+Il momento delle forze interne si ottiene sommando sulle coppie $(i,j)$: per il terzo principio $\vec{F}_{j,i}=-\vec{F}_{i,j}$, quindi
+
+$$\vec{r}_i\times\vec{F}_{i,j}+\vec{r}_j\times\vec{F}_{j,i}=(\vec{r}_i-\vec{r}_j)\times\vec{F}_{i,j}=-\vec{r}_{i,j}\times\vec{F}_{i,j}=\vec{0},$$
+
+dato che $\vec{r}_{i,j}=\overrightarrow{P_iP_j}$ è parallelo a $\vec{F}_{i,j}$. Perciò $\vec{M}^{(I)}=\vec{0}$ e
+
+$$\frac{d\vec{L}_O}{dt}=\vec{M}^{(E)}-\vec{v}_O\times m\vec{v}_{CM}.$$
+
+Se il polo è fisso, $\vec{v}_O=\vec{0}$; se coincide con il centro di massa, $\vec{v}_O=\vec{v}_{CM}$ e $\vec{v}_{CM}\times\vec{v}_{CM}=\vec{0}$. In entrambi i casi il secondo termine si annulla e $\dfrac{d\vec{L}_O}{dt}=\vec{M}^{(E)}$, cioè la seconda equazione cardinale. $\square$
 
 Nel caso del polo nel centro di massa vale un'osservazione ulteriore: anche se il sistema di riferimento del CM è in generale non inerziale (perché traslante con accelerazione $\vec{a}_{CM}$), il momento risultante rispetto al centro di massa è dato dal solo momento delle forze esterne reali, senza contributi delle forze apparenti di trascinamento. Di conseguenza il momento angolare calcolato rispetto al centro di massa assume lo stesso valore sia nel riferimento inerziale sia nel riferimento del centro di massa. Questo è il motivo per cui, nella pratica, il polo nel centro di massa è quasi sempre la scelta più comoda quando il corpo trasla e ruota insieme (un esempio tipico è il corpo rigido in rotolamento, ripreso in [Corpo rigido e suoi moti](ref:chapter/8#p2)).
 
@@ -377,7 +431,7 @@ Quando invece il polo è fisso ma non coincide con il centro di massa e il siste
 
 ### Conservazione del momento angolare di un sistema
 
-**Teorema 7.4** (conservazione del momento angolare). Se, con un polo scelto come sopra (fisso o nel CM), il momento delle forze esterne è nullo, allora il momento angolare del sistema resta costante nel tempo:
+**Teorema 7.5** (conservazione del momento angolare). Se, con un polo scelto come sopra (fisso o nel CM), il momento delle forze esterne è nullo, allora il momento angolare del sistema resta costante nel tempo:
 
 :::formula{id="7.15" label="Conservazione del momento angolare di un sistema"}
 $$\vec{M}^{(E)} = \vec{0} \ \Longrightarrow\ \vec{L}_O = \text{costante}$$
@@ -467,7 +521,7 @@ $$W_i = W_i^{(E)} + W_i^{(I)} = \frac{1}{2}m_i v_{i,B}^2 - \frac{1}{2}m_i v_{i,A
 
 Sommando su tutti i punti del sistema si ottiene il risultato cercato.
 
-**Teorema 7.5** (dell'energia cinetica per un sistema di punti materiali). Per un sistema di $N$ punti materiali, il lavoro totale compiuto dalle forze esterne e interne tra due configurazioni $A$ e $B$ è pari alla variazione dell'energia cinetica totale del sistema
+**Teorema 7.6** (dell'energia cinetica per un sistema di punti materiali). Per un sistema di $N$ punti materiali, il lavoro totale compiuto dalle forze esterne e interne tra due configurazioni $A$ e $B$ è pari alla variazione dell'energia cinetica totale del sistema
 
 :::formula{id="7.18" label="Teorema dell'energia cinetica per un sistema"}
 $$W^{(E)} + W^{(I)} = \sum_{i=1}^N \frac{1}{2}m_i v_{i,B}^2 - \sum_{i=1}^N \frac{1}{2}m_i v_{i,A}^2 = E_{k,B} - E_{k,A} = \Delta E_k$$
@@ -479,7 +533,7 @@ A differenza del teorema dell'energia cinetica del punto materiale, qui il contr
 
 Il teorema dell'energia cinetica non distingue, nella sua forma precedente, quale parte dell'energia sia dovuta al moto d'insieme del sistema e quale al moto interno dei punti attorno al centro di massa. Questa distinzione è fornita dal teorema di König, l'analogo per l'energia cinetica di quello già visto per il momento angolare nella sezione [Momento angolare di un sistema](ref:chapter/7#p5).
 
-**Teorema 7.6** (di König per l'energia cinetica). Sia $O$ un riferimento inerziale e $O'$ il riferimento del centro di massa, con origine in $\vec{r}_{CM}$ e assi che mantengono orientazione fissa rispetto a $O$ (non rotante). Per ogni punto $P_i$ del sistema vale la scomposizione
+**Teorema 7.7** (di König per l'energia cinetica). Sia $O$ un riferimento inerziale e $O'$ il riferimento del centro di massa, con origine in $\vec{r}_{CM}$ e assi che mantengono orientazione fissa rispetto a $O$ (non rotante). Per ogni punto $P_i$ del sistema vale la scomposizione
 
 $$\vec{r}_i = \vec{r}_{CM} + \vec{r}_i', \qquad \vec{v}_i = \vec{v}_{CM} + \vec{v}_i'$$
 
@@ -602,7 +656,7 @@ $$E_{k,fin} = \frac{1}{2}(3,0\text{ kg})(2,0\text{ m/s})^2 = 6,0\text{ J}$$
 
 Quindi la variazione di energia cinetica è $\Delta E_k = E_{k,fin}-E_{k,in} = -3,0$ J, e l'energia dissipata, pari all'opposto di questa variazione, è $E_{diss} = E_{k,in}-E_{k,fin} = 3,0$ J: un terzo dell'energia cinetica iniziale si è convertita in deformazione e calore. Il controllo dimensionale è immediato (joule) e l'ordine di grandezza è ragionevole, essendo la velocità finale compresa tra $0$ e $v_1$, come richiesto dalla media pesata delle masse.
 
-Lo stesso schema si applica, in buona approssimazione, quando prima dell'urto uno dei due corpi è collegato a una forza esterna conservativa (per esempio una molla): se l'urto avviene nella posizione in cui tale forza è nulla all'istante del contatto (ad esempio nella posizione di riposo della molla), ciò non garantisce da solo l'isolamento del sistema durante l'urto, perché la posizione del corpo può variare leggermente nel corso dell'interazione e la forza esterna, nulla all'istante iniziale, può diventare non nulla durante l'urto; in un intervallo di durata finita essa potrebbe quindi impartire un impulso esterno non trascurabile. Se però, come si assume nella definizione di urto, la durata dell'interazione è sufficientemente breve rispetto ai tempi caratteristici del moto nelle fasi precedente e successiva, lo spostamento del corpo durante l'urto resta trascurabile e con esso l'impulso trasmesso dalla forza esterna, che risulta allora trascurabile rispetto alla variazione di quantità di moto prodotta dalle forze impulsive interne. In questa approssimazione il sistema si può considerare istantaneamente isolato durante l'urto e si può applicare la conservazione della quantità di moto esattamente come sopra, esattamente come nell'esempio discusso in apertura del capitolo sulla [quantità di moto e impulso](ref:chapter/3#p3). Nelle fasi precedente e successiva all'urto, invece, il sistema non è isolato e vale la conservazione dell'energia meccanica, non quella della quantità di moto.
+Lo stesso schema si applica, in buona approssimazione, quando prima dell'urto uno dei due corpi è collegato a una forza esterna conservativa (per esempio una molla): se l'urto avviene nella posizione in cui tale forza è nulla all'istante del contatto (ad esempio nella posizione di riposo della molla), ciò non garantisce da solo l'isolamento del sistema durante l'urto, perché la posizione del corpo può variare leggermente nel corso dell'interazione e la forza esterna, nulla all'istante iniziale, può diventare non nulla durante l'urto; in un intervallo di durata finita essa potrebbe quindi impartire un impulso esterno non trascurabile. Se però, come si assume nella definizione di urto, la durata dell'interazione è sufficientemente breve rispetto ai tempi caratteristici del moto nelle fasi precedente e successiva, lo spostamento del corpo durante l'urto resta trascurabile e con esso l'impulso trasmesso dalla forza esterna, che risulta allora trascurabile rispetto alla variazione di quantità di moto prodotta dalle forze impulsive interne. In questa approssimazione il sistema si può considerare istantaneamente isolato durante l'urto e si può applicare la conservazione della quantità di moto esattamente come sopra, esattamente come nell'esempio discusso in apertura del capitolo sulla [quantità di moto e impulso](ref:chapter/3#p4). Nelle fasi precedente e successiva all'urto, invece, il sistema non è isolato e vale la conservazione dell'energia meccanica, non quella della quantità di moto.
 
 ### Urti elastici
 
@@ -714,3 +768,93 @@ $$v' = \sqrt{v_x'^2+v_y'^2} = \sqrt{(7,5)^2+(5,0)^2}\text{ m/s} \approx 9,0\text
 e la direzione, misurata rispetto all'asse $x$, è $\varphi = \arctan(v_y'/v_x') = \arctan(5,0/7,5) \approx 34°$. Il controllo di coerenza: il modulo di $\vec{v}'$ è compreso tra $0$ e $\sqrt{15^2+10^2}\text{ m/s}\approx 18$ m/s, come deve essere per una media pesata vettoriale delle velocità iniziali.
 
 **Errore tipico 7.7.** Nel risolvere un urto obliquo è scorretto sommare i moduli delle quantità di moto iniziali per ottenere il modulo della quantità di moto finale: la conservazione vale componente per componente (o, equivalentemente, come somma vettoriale), e solo dopo aver sommato le componenti si calcola il modulo del vettore risultante. È altrettanto scorretto, in un urto obliquo non completamente anelastico, imporre la sola conservazione dell'energia cinetica trascurando che le due componenti della quantità di moto forniscono due equazioni scalari distinte, necessarie entrambe per determinare il moto.
+
+## p8 | Come viene chiesto all'esame
+
+Il capitolo sui sistemi di punti è comparso in 5 sessioni d'esame su 6. L'esercizio più frequente è l'**urto**: compare in tutte le tracce che hai a disposizione, quasi sempre inserito in una sequenza di fasi (discesa, urto, risalita o rotazione) e non come problema isolato.
+
+Dalle tracce emergono tre tipi ricorrenti.
+
+### Tipo 1: catena «moto prima dell'urto, urto, moto dopo l'urto» con un punto materiale
+
+**Cosa chiede l'esame.** Un corpo puntiforme si muove sotto l'azione di forza peso, attrito o filo e poi urta un altro punto. Si chiede una velocità o un'altezza raggiunta, oppure l'energia dissipata. Il testo spezza il problema in domande a), b), c), una per fase.
+
+**Metodo.**
+
+**Metodo.**
+
+1. Dividi il problema in tre fasi: prima dell'urto, urto, dopo l'urto. Ogni fase ha il suo principio.
+2. Prima e dopo l'urto lavora con l'energia: lavoro dell'attrito dinamico e teorema dell'energia meccanica ([formula (4.11)](ref:formula/4.11), [formula (4.12)](ref:formula/4.12)), vedi [Energia cinetica e teorema lavoro-energia](ref:chapter/4#p3) e [Forze conservative ed energia potenziale](ref:chapter/4#p4). Se c'è attrito, l'energia meccanica non si conserva.
+3. Durante l'urto non usare l'energia meccanica, a meno che l'urto sia dichiarato elastico. Scrivi la conservazione della quantità di moto del sistema dei due corpi ({{formula:7.20}}), proiettata sugli assi. Giustificala verificando che l'impulso esterno sia trascurabile nella direzione considerata. Se un filo si tende, controlla quali componenti della quantità di moto possono conservarsi. Vedi [Urti](ref:chapter/7#p7).
+4. Se i corpi restano attaccati, usa $v'=v_{CM}$ ({{formula:7.22}}). Se il testo dà una velocità finale (per esempio un proiettile che esce con metà della velocità iniziale), questa è il dato che chiude l'equazione.
+5. Se il corpo è appeso a un filo, la fase successiva è un moto circolare: usa l'energia per la velocità e la seconda legge in direzione radiale per la tensione ([Dinamica del moto curvilineo](ref:chapter/3#p8)).
+6. Controlla i segni: l'energia dissipata nell'urto deve risultare $\Delta E_k\le 0$.
+
+**Errori tipici.**
+
+- Imporre la conservazione dell'energia meccanica attraverso l'urto, anche quando l'urto non è elastico.
+- Dimenticare la perdita per attrito nella fase di discesa o di risalita.
+- Applicare la conservazione della quantità di moto lungo una direzione in cui agisce una forza esterna non trascurabile, per esempio un filo che si tende.
+- Mescolare nello stesso passaggio velocità di prima e di dopo l'urto: dai a ogni grandezza un pedice chiaro.
+
+**Esempi.**
+
+- *Esame dell'11 luglio 2022, esercizio 1A*: un proiettile colpisce un corpo appeso a un filo e ne esce con velocità $v_0/2$. Si ricava la velocità del corpo dopo l'urto dalla quantità di moto e poi si passa alla fase circolare con l'energia.
+- *Esame del 23 giugno 2022, esercizio 1A*: due punti scendono con attrito diverso su un piano inclinato e si urtano restando attaccati. Si calcola la velocità di ciascuno al momento dell'urto con il lavoro dell'attrito. Poi si usa l'urto completamente anelastico per la velocità comune.
+
+Strutture analoghe compaiono nell'*Esame TEMA 2 - 2024, esercizio 1A* (pendolo semplice in equilibrio sotto una forza orizzontale, poi lasciato libero e urtante un secondo punto materiale quando raggiunge la verticale) e nell'*Esame dell'11 luglio 2022, esercizio 2A1* (punto su una guida scabra inclinata e poi orizzontale).
+
+### Tipo 2: urto contro un corpo vincolato e momento angolare
+
+**Cosa chiede l'esame.** Un punto materiale colpisce un'asta o un disco che può ruotare, oppure il sistema è formato da un disco e da corpi puntiformi. Si chiede la velocità angolare subito dopo l'urto, la velocità del punto dopo l'urto, l'energia dissipata.
+
+**Metodo.**
+
+**Metodo.**
+
+1. Scegli il polo. Con un asse fisso, il polo giusto è un punto dell'asse: lì la reazione del vincolo ha momento nullo.
+2. Scrivi la conservazione del momento angolare rispetto a quel polo ([Momento angolare di un sistema](ref:chapter/7#p5), [formula (9.11)](ref:formula/9.11)). La quantità di moto totale **non** si conserva: il vincolo esercita una forza impulsiva.
+3. Scrivi $L$ prima come $\vec{r}\times m\vec{v}$ per il punto, e dopo come somma del contributo del punto e di $I\omega$ per il corpo rigido. Il momento d'inerzia si ricava dalle formule note e dal teorema di Huygens-Steiner ([Momento d'inerzia](ref:chapter/8#p3), [Teoremi di Huygens-Steiner e di König](ref:chapter/8#p4)). Se il punto resta conficcato nell'asta, aggiungi $m d^2$ al momento d'inerzia totale.
+4. Per un urto con rimbalzo, il testo fornisce la velocità del punto dopo l'urto, con il suo segno: mantieni il segno nel prodotto vettoriale.
+5. Calcola l'energia cinetica prima e dopo l'urto e ricava l'energia dissipata. Nel caso di rimbalzo, includi nell'energia finale sia $\tfrac12 m v_{fin}^2$ sia $\tfrac12 I\omega^2$; nel caso di adesione usa $\tfrac12 I_{tot}\omega^2$. Vedi [Urti con corpi rigidi](ref:chapter/9#p5).
+6. Se dopo l'urto il corpo continua a ruotare, usa la dinamica rotazionale o l'energia per l'angolo raggiunto ([Rotazione attorno a un asse fisso](ref:chapter/9#p2)).
+
+**Errori tipici.**
+
+- Conservare la quantità di moto con un perno o un vincolo impulsivo.
+- Usare per il momento d'inerzia dell'asta la formula rispetto al centro quando l'asse passa per un estremo, o viceversa.
+- Perdere il segno del momento angolare del punto: dipende dal verso della velocità rispetto al polo.
+- Trascurare il momento d'inerzia del punto conficcato nell'asta.
+
+**Esempi.**
+
+- *Esame TEMA 2 - 2024, esercizio 2A*: un'asta vincolata nel centro, ferma in un piano orizzontale, è colpita a un estremo da un punto materiale che rimbalza. Il momento angolare rispetto al centro dell'asta dà la velocità angolare finale, e il confronto delle energie cinetiche dà l'energia dissipata.
+- *Esame TEMA 2025 - 1, esercizio 1*: un punto, dopo una discesa su un piano inclinato scabro e un tratto liscio, si conficca nell'estremo inferiore di un'asta. Combina il Tipo 1 per la velocità di arrivo con il momento angolare per il moto dell'asta dopo l'urto.
+
+Nell'*Esame dell'11 luglio 2022, esercizio 2A* compaiono invece un disco fermo su un piano orizzontale liscio e due corpi puntiformi in moto nello stesso piano. Qui il disco non ha asse fisso: bisogna scrivere la quantità di moto e il momento angolare del sistema e usare il momento d'inerzia $I_{CM}$ dato.
+
+### Tipo 3: sistema con forze interne e quantità di moto
+
+**Cosa chiede l'esame.** Una parte del sistema è lanciata rispetto a un'altra, e si chiede il moto di ciascuna parte o del loro insieme, anche in presenza di attrito con il suolo.
+
+**Metodo.**
+
+1. Dichiara il sistema (per esempio slitta più proiettile): le forze di sparo sono interne.
+2. Individua le forze esterne e la direzione del moto. Se sul piano orizzontale l'unica forza esterna orizzontale è un attrito, nel breve istante dello sparo essa è trascurabile e la quantità di moto orizzontale si conserva ([Prima equazione cardinale e quantità di moto](ref:chapter/7#p4)).
+3. Presta attenzione al riferimento: se una velocità è data rispetto al laboratorio, non sommarla alla velocità del mezzo che rincula.
+4. Dopo lo sparo, ogni parte soggetta ad attrito dinamico si muove con decelerazione costante $\mu_d g$ ([Forze di attrito](ref:chapter/3#p6)). Distanza percorsa e tempi si ricavano da qui oppure dal teorema dell'energia cinetica.
+5. Verifica che le lunghezze rispettino i dati geometrici del testo (per esempio la lunghezza della slitta).
+
+**Errori tipici.**
+
+- Dimenticare che la velocità di rinculo ha verso opposto a quella del proiettile.
+- Usare come velocità del proiettile quella relativa alla slitta quando il testo la dà rispetto al laboratorio, o viceversa.
+- Applicare la conservazione della quantità di moto per un tempo lungo, durante il quale l'attrito agisce.
+
+**Esempio 7.6.** *Esame TEMA 1 - 2024, esercizio 1A*: una slitta ferma su una superficie scabra spara un proiettile orizzontale con velocità data rispetto al laboratorio. La conservazione della quantità di moto fissa la velocità iniziale della slitta, e poi l'attrito dinamico ne determina la corsa.
+
+### Che cosa portare con sé
+
+Il filo comune è la scelta del principio per ogni fase: energia dove lavorano attrito e peso, quantità di moto (o momento angolare) nell'istante dell'urto. Prima di scrivere equazioni, chiediti sempre quali forze esterne agiscono *durante l'urto* e se un vincolo esercita una forza o un momento impulsivo.
+
+All'orale, o nelle domande aperte di teoria dello scritto, possono essere richieste le dimostrazioni viste nel capitolo. Le più frequenti sono quelle da cui dipende tutto il resto: risultante e momento delle forze interne nulli ({{formula:7.1}}, {{formula:7.3}}, vedi [Forze interne ed esterne](ref:chapter/7#p2)) e il teorema di König per l'energia cinetica ({{formula:7.19}}, vedi [Energia cinetica di un sistema](ref:chapter/7#p6)).

@@ -39,10 +39,10 @@ $$aA + bB \rightleftharpoons cC + dD$$
 si definisce la costante di equilibrio $K_c$ come
 
 :::formula{id="12.1" label="Legge di azione di massa (costante di equilibrio K_c)"}
-$$K_c = \frac{[C]^c[D]^d}{[A]^a[B]^b}$$
+$$K_c = \frac{\lbrack C\rbrack ^c\lbrack D\rbrack ^d}{\lbrack A\rbrack ^a\lbrack B\rbrack ^b}$$
 :::
 
-dove ogni concentrazione è quella misurata all'equilibrio, i prodotti compaiono al numeratore e i reagenti al denominatore, e ciascuna concentrazione è elevata a una potenza pari al coefficiente stechiometrico della specie nell'equazione bilanciata. Nell'espressione compaiono le specie gassose e i soluti in soluzione pertinenti, anche se appartengono a fasi diverse tra loro; si omettono invece i solidi e i liquidi puri, come si vedrà a proposito degli equilibri eterogenei. La dimensione (unità) di $K_c$ dipende dalla reazione, in quanto dipende dal numero di termini a numeratore e a denominatore.
+dove ogni concentrazione è quella misurata all'equilibrio, i prodotti compaiono al numeratore e i reagenti al denominatore, e ciascuna concentrazione è elevata a una potenza pari al coefficiente stechiometrico della specie nell'equazione bilanciata. Nell'espressione compaiono le specie gassose e i soluti in soluzione pertinenti, anche se appartengono a fasi diverse tra loro; si omettono invece i solidi e i liquidi puri, come si vedrà a proposito degli equilibri eterogenei. L'unità di $K_c$ dipende dalla reazione ed è pari a $\mathrm{M}^{\Delta n}$, dove $\Delta n$ è la somma degli esponenti stechiometrici dei prodotti meno quella dei reagenti.
 
 Ad esempio, per la sintesi dell'ammoniaca $N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)$ si ha
 
@@ -213,7 +213,7 @@ Lo schema ICE, con tutti i coefficienti stechiometrici pari a 1, è:
 
 Sostituendo nell'espressione di $K_c$:
 
-$$K_c = \frac{\lbrack CO_2\rbrack \cdot\lbrack H_2\rbrack }{\lbrack CO\rbrack \cdot\lbrack H_2O\rbrack } \;\Rightarrow\; 1{,}56 = \frac{x \cdot x}{(2{,}00-x)\cdot(2{,}00-x)}$$
+$$K_c = \frac{\lbrack CO_2\rbrack \cdot[H_2]}{\lbrack CO\rbrack \cdot[H_2O]} \;\Rightarrow\; 1{,}56 = \frac{x \cdot x}{(2{,}00-x)\cdot(2{,}00-x)}$$
 
 che si riduce all'equazione di secondo grado
 
@@ -259,7 +259,7 @@ $$\lbrack HI\rbrack _0 = \frac{0{,}200\ \text{mol}}{2{,}00\ \text{L}} = 0{,}100\
 
 Dallo schema ICE, $\lbrack HI\rbrack _{eq} = \lbrack HI\rbrack _0 - 2x = 0{,}078\ \text{M}$, da cui $2x = 0{,}100 - 0{,}078 = 0{,}022\ \text{M}$ e quindi $x = 0{,}011\ \text{M}$. Allora $\lbrack H_2\rbrack _{eq} = \lbrack I_2\rbrack _{eq} = x = 0{,}011\ \text{M}$, e
 
-$$K_c = \frac{\lbrack H_2\rbrack \cdot\lbrack I_2\rbrack }{\lbrack HI\rbrack ^2} = \frac{(0{,}011)(0{,}011)}{(0{,}078)^2} = 0{,}020$$
+$$K_c = \frac{\lbrack H_2\rbrack \cdot[I_2]}{\lbrack HI\rbrack ^2} = \frac{(0{,}011)(0{,}011)}{(0{,}078)^2} = 0{,}020$$
 
 4. *Verifica*: il risultato coincide con il valore riportato come riferimento per questo tipo di esercizio, ed è adimensionale per coerenza con il fatto che il numero di moli gassose di prodotti e reagenti è lo stesso (2 su entrambi i lati).
 
@@ -355,3 +355,43 @@ Poiché $Q_c = 123{,}3\ \mathrm{M^{-1}} < K_c = 246{,}5\ \mathrm{M^{-1}}$, il si
 Impostando lo schema IVE a partire da $\lbrack \mathrm{NO_2}\rbrack _0 = 0{,}40\ \mathrm{M}$ e $\lbrack \mathrm{N_2O_4}\rbrack _0 = 19{,}72\ \mathrm{M}$ con variazione $-2x$ e $+x$ rispettivamente, e risolvendo $K_c = (19{,}72+x)/(0{,}40-2x)^2 = 246{,}5$, si trova all'equilibrio $\lbrack \mathrm{NO_2}\rbrack  \approx 0{,}283\ \mathrm{M}$ e $\lbrack \mathrm{N_2O_4}\rbrack  \approx 19{,}78\ \mathrm{M}$: il numero totale di moli (cioè $10{,}03\ \mathrm{mol}$ dopo la compressione, in $0{,}500\ \mathrm{L}$) è effettivamente diminuito rispetto alle $10{,}06\ \mathrm{mol}$ di partenza, confermando lo spostamento verso i prodotti previsto da Le Châtelier.
 
 Una applicazione industriale importante di questi principi è la sintesi dell'ammoniaca, $\mathrm{N_2(g) + 3\,H_2(g) \rightleftharpoons 2\,NH_3(g)}$, discussa nella sezione [Equilibrio dinamico e costante di equilibrio](ref:chapter/12#p2): poiché la reazione passa da quattro a due moli di gas, lavorare ad alte pressioni favorisce la formazione di $\mathrm{NH_3}$; la resa viene inoltre aumentata utilizzando un eccesso di reagenti economici (in particolare $\mathrm{N_2}$) e sottraendo continuamente il prodotto, liquefatto e allontanato dalla miscela di reazione, in modo da mantenere basso $Q_c$ rispetto a $K_c$ e favorire ulteriore produzione.
+
+## p5 | Come viene chiesto all'esame
+
+Il capitolo sull'equilibrio chimico è comparso in 2 delle 4 sessioni d'esame analizzate. In entrambe il compito era lo stesso: calcolare quante moli di una specie ci sono all'equilibrio, partendo da una costante $K_p$ e da una quantità iniziale di reagente in un reattore chiuso. Queste domande stanno nella prova scritta di 70 minuti, dove si ragiona con carta e penna e senza materiale didattico. Per questo conviene avere il metodo a memoria.
+
+### Moli all'equilibrio da $K_p$ e dati iniziali
+
+**Che cosa chiede l'esame.** Viene data una reazione in fase gassosa, o un equilibrio eterogeneo con una specie gassosa in più, insieme al valore di $K_p$. Si conosce la quantità iniziale di reagente e si fissano temperatura e volume, oppure temperatura e pressione totale. Si chiede la quantità di un prodotto all'equilibrio. Il calcolo richiede lo schema ICE ([Quoziente di reazione e calcoli di equilibrio](ref:chapter/12#p3)) insieme alle leggi dei gas ([Pressione e leggi dei gas ideali](ref:chapter/6#p2)).
+
+**Metodo passo per passo.**
+
+1. Scrivere e bilanciare l'equazione, con gli stati fisici. Scrivere poi l'espressione di $K_p$ usando la regola di [Equilibrio dinamico e costante di equilibrio](ref:chapter/12#p2): solidi e liquidi puri non compaiono, e compaiono solo le pressioni parziali dei gas, secondo {{formula:12.2}}.
+2. Decidere in quali unità lavorare. Se il volume è fisso, convertire le moli iniziali in pressione parziale con [formula (6.5)](ref:formula/6.5), cioè $p = nRT/V$, dichiarando il valore di $R$ usato (ad esempio $0{,}08206$ L·atm/(mol·K)) e usando $T$ in kelvin. Se è fissata la pressione totale, conviene lavorare in moli e passare alle pressioni con le frazioni molari, come in [formula (6.10)](ref:formula/6.10).
+3. Costruire la tabella "iniziale / variazione / equilibrio" con un'unica incognita $x$, proporzionale ai coefficienti stechiometrici. La $x$ può essere in atm o in mol, ma bisogna restare coerenti in tutta la tabella.
+4. Sostituire le espressioni di equilibrio in $K_p$ e risolvere. Se l'equazione è di secondo grado, scartare la radice priva di significato fisico: negativa, oppure maggiore della quantità disponibile di reagente.
+5. Tornare alla grandezza richiesta. Se $x$ è una pressione, ricavare le moli da $n = pV/(RT)$. Verificare infine che $K_p$ ricalcolata con i valori trovati coincida con quella data.
+
+**Errori tipici.**
+
+- Inserire nell'espressione di $K_p$ il solido, oppure una concentrazione al posto della pressione parziale.
+- Mescolare pressioni e moli nella stessa tabella ICE.
+- Usare i gradi Celsius in $pV = nRT$. Il testo può dare $t$ in °C, ma nei calcoli serve $T = t + 273{,}15$.
+- Dimenticare che le moli totali cambiano durante la reazione, e quindi anche i denominatori delle frazioni molari.
+- Tenere la radice negativa dell'equazione di secondo grado.
+- Dare $K_p$ senza unità quando $\lbrack ?m\Delta n \neq 0$. Con $\Delta n \neq 0$ il valore dipende dalle unità di pressione, come ricorda {{formula:12.3}}.
+
+**Esempi dalle prove.**
+
+- *Tema d_esame 3, esercizio 3.* Riguarda la decomposizione di $\mathrm{SbCl_5(g)}$ in $\mathrm{SbCl_3(g)}$ e $\mathrm{Cl_2(g)}$ a $485\,\mathrm{K}$, in un reattore da $1{,}00\,\mathrm{L}$. Il metodo parte dalla pressione iniziale ricavata da $p = nRT/V$. Si imposta poi una ICE in pressione con $K_p = x^2/(p_0 - x)$ e si risolve l'equazione di secondo grado, scartando la radice negativa. Le moli si ricavano infine da $n = pV/(RT)$.
+- *Tema d_esame 14, esercizio 2*, punto b. Chiede le moli di zinco prodotte a partire da $2$ mol di $\mathrm{H_2}$ con ZnO solido in eccesso, a $1180\,^\circ\mathrm{C}$ e $3{,}20\,\mathrm{atm}$ totali. Dall'equazione $\mathrm{ZnO(s) + H_2(g) \rightleftharpoons Zn(g) + H_2O(g)}$ si scrive $K_p = p_{\mathrm{Zn}}\,p_{\mathrm{H_2O}}/p_{\mathrm{H_2}}$, senza il solido. All'equilibrio le moli di gas sono $(2 - x) + x + x = 2 + x$, quindi
+$\displaystyle K_p = \frac{3{,}20\,x^2}{(2+x)(2-x)} = 1{,}12$
+Da qui $4{,}32\,x^2 = 4{,}48$ e $x \approx 1{,}02$ mol di zinco. Il risultato è compatibile con le $2$ mol disponibili di idrogeno, e questo è il controllo finale da fare.
+
+### Dall'enunciato a parole all'equazione e all'espressione di $K_p$
+
+Nell'esame *Tema d_esame 14, esercizio 2* il testo non dà la reazione: la descrive a parole ("ossido di zinco solido con idrogeno, si formano zinco gassoso e acqua gassosa"). Il punto a chiede di scriverla e bilanciarla ([Equazioni chimiche e bilanciamento](ref:chapter/4#p3)). È un tipo di richiesta che si può anche trovare da solo. Il metodo è identificare i reagenti e i prodotti con i loro stati fisici, scrivere le formule corrette ([Simboli, formule e ioni](ref:chapter/3#p2)) e bilanciare con i coefficienti minimi, usando $\rightleftharpoons$ perché si parla di equilibrio. L'errore tipico è dimenticare lo stato fisico, perché da questo dipende quali specie entrano in $K_p$.
+
+### Gli altri argomenti del capitolo
+
+Le due prove riportano tra gli argomenti anche il principio di Le Châtelier, oltre a gas ideali, calcoli stechiometrici e bilanciamento. Gli enunciati a disposizione mostrano però soprattutto i calcoli con $K_p$. Per questo motivo non ci sono qui sottosezioni dedicate alle perturbazioni dell'equilibrio. Per prepararsi su quel tema, usare [Principio di Le Châtelier](ref:chapter/12#p4): conviene saper prevedere il verso dello spostamento e verificarlo con $Q$ contro $K$, perché il passaggio dalla teoria al numero è lo stesso schema dei calcoli visti sopra. Nelle sessioni analizzate non compaiono invece quesiti dedicati al solo confronto $Q$–$K$ ([criterio di direzione](ref:chapter/12#p3)) né alla determinazione di $K$ da dati sperimentali.

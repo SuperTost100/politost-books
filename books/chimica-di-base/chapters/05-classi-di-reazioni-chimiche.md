@@ -400,3 +400,89 @@ $$4\,\text{FeCr}_2\text{O}_4 + 8\,\text{Na}_2\text{CO}_3 + 8\,\text{CaO} + 7\,\t
 . La regola generale, utile anche per riconoscere subito una redox, resta quella già incontrata in [Classificazione delle reazioni](ref:chapter/5#p2): quando un elemento è presente allo stato elementare (come $\text{O}_2$ sopra) tra reagenti o prodotti, il N.O. passa necessariamente da zero a un valore diverso da zero, e la reazione è quasi sempre una redox.
 
 Una volta bilanciata l'equazione, i coefficienti si interpretano come rapporti molari esattamente come per qualunque altra reazione, secondo [formula (4.2)](ref:formula/4.2), e si applicano i quattro passi (bilanciare, convertire in moli, usare i coefficienti, riconvertire in massa) e il criterio del reagente limitante [formula (4.3)](ref:formula/4.3) già illustrati in [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4): nelle redox l'unica differenza è che il rapporto tra i coefficienti dei reagenti che si ossidano e si riducono deve rispettare, a monte, l'uguaglianza degli elettroni scambiati appena descritta, e non va ricalcolato ogni volta a parte durante il calcolo stechiometrico.
+
+## p6 | Come viene chiesto all'esame
+
+Il capitolo è comparso in tutte e 4 le sessioni d'esame esaminate. L'esercizio che ritorna più spesso è il bilanciamento di una reazione redox data a parole, seguito da un calcolo stechiometrico sui suoi coefficienti. Compare in 3 sessioni su 4. Le altre domande ricorrenti sono l'elettrolisi con volumi di gas e le domande teoriche brevi. L'esame ha una prova scritta di 70 minuti senza materiale didattico, quindi servono un metodo ordinato e le formule a memoria.
+
+### Tipo 1: scrivere e bilanciare la reazione a partire dai nomi
+
+Il testo non fornisce la reazione scritta, ma elenca reagenti e prodotti per nome, come "dicromato di potassio, cloruro di stagno(II) e acido cloridrico, con produzione di cloruro di cromo(III)...". Talvolta fornisce lo schema, ma senza coefficienti. Il bilanciamento è quasi sempre la prima richiesta e serve per tutto il resto dell'esercizio. Un errore qui si ripercuote su ogni risultato successivo.
+
+Metodo:
+
+1. Traduci ogni nome in formula, controllando le cariche, con le regole di [nomenclatura dei sali](ref:chapter/3#p7) e di [Simboli, formule e ioni](ref:chapter/3#p2). Scrivi lo schema $\text{reagenti} \to \text{prodotti}$.
+2. Assegna i numeri di ossidazione e individua gli elementi che cambiano, come spiegato in [Numero di ossidazione](ref:chapter/3#p3). Una sostanza elementare tra reagenti o prodotti, come $\mathrm{Cl_2}$, $\mathrm{Cu}$ o $\mathrm{NO}$ con azoto che scende da $+5$ a $+2$, segnala una redox ([Classificazione delle reazioni](ref:chapter/5#p2)).
+3. Scrivi le semireazioni di ossidazione e di riduzione, con gli elettroni scambiati. Rendi uguali gli elettroni scambiati usando {{formula:5.8}}. Il metodo è in [Reazioni di ossidoriduzione](ref:chapter/5#p5).
+4. Riporta i coefficienti trovati nell'equazione molecolare. Completa poi con il metodo per tentativi gli ioni spettatori (per esempio $\mathrm{K^+}$ e $\mathrm{Cl^-}$), l'acido che fa da mezzo e infine $\mathrm{H_2O}$.
+5. Verifica che il numero di atomi di ogni elemento, ossigeno e idrogeno compresi, sia uguale a sinistra e a destra. Verifica anche le cariche, secondo [Equazioni chimiche e bilanciamento](ref:chapter/4#p3).
+
+Errori tipici:
+
+- Dimenticare che l'acido (HCl, $\mathrm{H_2SO_4}$) non è solo ambiente, ma anche fonte di anioni nei prodotti. I coefficienti di HCl o di $\mathrm{H_2SO_4}$ si ricavano dopo, contando gli atomi.
+- Scrivere $\mathrm{Cr_2O_7^{2-}}$ con un solo atomo di cromo. I due atomi di Cr scambiano $2 \times 3 = 6$ elettroni.
+- Ridurre i coefficienti in modo sbagliato: devono restare interi e minimi.
+- Dimenticare che nella dismutazione la stessa specie è sia ossidante sia riducente.
+
+Esempi:
+
+- Tema d'esame 14, n. 1: Cl₂ reagisce con NaOH dando NaCl, NaClO₃ e acqua. È una dismutazione, perché il cloro passa da $0$ a $-1$ in NaCl e da $0$ a $+5$ in NaClO₃. Le semireazioni danno $\mathrm{3\,Cl_2 + 6\,NaOH \to 5\,NaCl + NaClO_3 + 3\,H_2O}$.
+- Tema d'esame 16, n. 1: dicromato di potassio, cloruro di stagno(II) e HCl danno cloruro di cromo(III), cloruro di stagno(IV), cloruro di potassio e acqua. Il metodo dà $\mathrm{K_2Cr_2O_7 + 3\,SnCl_2 + 14\,HCl \to 2\,CrCl_3 + 3\,SnCl_4 + 2\,KCl + 7\,H_2O}$.
+
+### Tipo 2: dalla reazione bilanciata a grammi, moli e concentrazioni
+
+Dopo il bilanciamento, gli esercizi del tipo 1 proseguono con un calcolo quantitativo, in cui uno dei reagenti è in difetto. Spesso i dati sono dati con unità diverse (grammi di un solido, litri di una soluzione concentrata al $37{,}0\%$, milligrammi di un prodotto sciolti in un certo volume).
+
+Metodo:
+
+1. Converti ogni dato in moli: da massa con [formula (2.4)](ref:formula/2.4), da soluzione con [formula (11.3)](ref:formula/11.3) (se la soluzione è data in percentuale in massa e densità, usa [Espressioni della concentrazione](ref:chapter/11#p3) e [formula (11.6)](ref:formula/11.6)).
+2. Dividi le moli di ciascun reagente per il suo coefficiente. Il più piccolo quoziente indica il reagente limitante, secondo [formula (4.3)](ref:formula/4.3) e [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4).
+3. Usa i rapporti di [formula (4.2)](ref:formula/4.2) per ottenere le moli di prodotto, e da queste la massa richiesta.
+4. Se la domanda chiede le moli contenute in un'aliquota prelevata, la concentrazione resta quella della soluzione e le moli si ottengono con $n = cV$ usando il volume prelevato. Se quell'aliquota viene poi diluita, usa [formula (11.7)](ref:formula/11.7): le moli della stessa aliquota non cambiano, cambia solo il volume.
+5. Controlla le cifre significative e dai la risposta con unità e arrotondamento finale ([Grandezze, unità e cifre significative](ref:chapter/1#p3)).
+
+Errori tipici:
+
+- Calcolare il prodotto dal reagente in eccesso invece che dal limitante.
+- Usare i grammi della soluzione di HCl come se fossero grammi di HCl puro, dimenticando la percentuale.
+- Confondere mg e g, oppure cm³ e L ($980\ \mathrm{cm^3} = 0{,}980\ \mathrm{L}$).
+- Dimenticare che il prelievo di $100\ \mathrm{mL}$ da una soluzione conserva la concentrazione, ma non il numero di moli.
+
+Esempi:
+
+- Tema d'esame 16, n. 1: calcolare i grammi di CrCl₃ ottenibili da $565{,}0\ \mathrm{g}$ di SnCl₂ e $2{,}0\ \mathrm{L}$ di HCl al $37{,}0\%$. Si converte tutto in moli, si divide per i coefficienti $3$ e $14$ per trovare il limitante, e si passa a CrCl₃ con il rapporto $2:3$ rispetto a SnCl₂.
+- Tema d'esame 15, n. 1: dopo aver bilanciato la reazione tra nitrato di piombo(II), rame, acido solforico, che dà solfato di piombo(II), solfato rameico, NO e acqua, si sciolgono $780\ \mathrm{mg}$ del solfato rameico in $980\ \mathrm{cm^3}$ e se ne preleva una parte da $100\ \mathrm{mL}$. La parte quantitativa si risolve con moli, molarità e diluizione. L'equazione bilanciata è $\mathrm{3\,Cu + Pb(NO_3)_2 + 4\,H_2SO_4 \to PbSO_4 + 3\,CuSO_4 + 2\,NO + 4\,H_2O}$.
+
+### Tipo 3: elettrolisi con volumi di gas
+
+In due sessioni su quattro la redox si collega all'elettrolisi di una soluzione acquosa, con un gas che si sviluppa a un elettrodo. Si chiede di disegnare la cella, scrivere le reazioni agli elettrodi e calcolare una grandezza elettrica (intensità di corrente, tempo) o il volume di gas prodotto.
+
+Metodo:
+
+1. Disegna la cella con un unico recipiente, due elettrodi e il generatore. L'ossidazione avviene all'anodo, la riduzione al catodo ([Elettrolisi e leggi di Faraday](ref:chapter/16#p5)).
+2. Scrivi le semireazioni. Per KOH in acqua, per esempio, all'anodo si ha $\mathrm{4\,OH^- \to O_2 + 2\,H_2O + 4\,e^-}$ e al catodo $\mathrm{2\,H_2O + 2\,e^- \to H_2 + 2\,OH^-}$.
+3. Calcola le moli di gas con [formula (6.5)](ref:formula/6.5), con $T$ in kelvin e pressione e volume nelle unità di $R$. Dichiara quale $R$ usi, per esempio $R = 0{,}08206\ \mathrm{L\cdot atm/(mol\cdot K)}$, e converti i $\mathrm{mmHg}$ in atm ([Pressione e leggi dei gas ideali](ref:chapter/6#p2)). Se il gas è secco, non si sottrae la tensione di vapore dell'acqua.
+4. Moltiplica le moli di gas per gli elettroni scambiati nella semireazione (4 per $\mathrm{O_2}$, 2 per $\mathrm{H_2}$) per ottenere le moli di elettroni.
+5. Ottieni la carica con [formula (16.4)](ref:formula/16.4), $Q = n_{e^-}F$ con $F = 96\,485\ \mathrm{C/mol}$. Poi calcola $I = Q/t$ con $t$ in secondi, ricordando il rendimento dichiarato.
+
+Errori tipici:
+
+- Usare i $^\circ\mathrm{C}$ nell'equazione di stato oppure la temperatura della cella ($25\ ^\circ\mathrm{C}$) invece di quella a cui è misurato il gas ($20{,}0\ ^\circ\mathrm{C}$).
+- Dimenticare di convertire i minuti in secondi ($40\ \mathrm{min} = 2\,400\ \mathrm{s}$).
+- Usare un numero di elettroni diverso da quello della semireazione scritta.
+- Confondere anodo e catodo, o scrivere la reazione che avverrebbe in una cella galvanica.
+
+Esempi:
+
+- Tema d'esame 3, n. 4: elettrolisi per $40$ minuti di una soluzione di KOH, con $8{,}00\ \mathrm{L}$ di ossigeno secco a $20{,}0\ ^\circ\mathrm{C}$ e $745\ \mathrm{mmHg}$. Si chiede lo schema della cella, le reazioni di scarica e l'intensità, che si ricava da $n_{\mathrm{O_2}}$, $4$ elettroni per mole e $I = Q/t$.
+- Tema d'esame 14, n. 1, punto b: elettrolisi di NaCl in soluzione acquosa con resa faradica unitaria. Agli elettrodi si sviluppano idrogeno e un secondo gas. Il metodo è lo stesso, con la resa unitaria che consente di usare direttamente $Q = n_{e^-}F$.
+
+### Domande che compaiono una volta sola
+
+Nel Tema d'esame 3, n. 1 la stechiometria compare insieme alle leggi dei gas. Si parte da $100{,}0\ \mathrm{mL}$ di azoto e $400{,}0\ \mathrm{mL}$ di idrogeno a $0\ ^\circ\mathrm{C}$ e $1\ \mathrm{atm}$ e si chiede la pressione dopo la formazione di ammoniaca, in un recipiente da $0{,}700\ \mathrm{L}$ a $225\ ^\circ\mathrm{C}$. A pressione e temperatura uguali i volumi sono proporzionali alle moli. L'azoto è il limitante, perché $\mathrm{N_2 + 3\,H_2 \to 2\,NH_3}$ richiede $300\ \mathrm{mL}$ di $\mathrm{H_2}$. Restano $200\ \mathrm{mL}$ di $\mathrm{NH_3}$ e $100\ \mathrm{mL}$ di $\mathrm{H_2}$, cioè $0{,}300\ \mathrm{L}$ a STP, pari a $0{,}0134\ \mathrm{mol}$. La pressione, con $R = 0{,}08206\ \mathrm{L\cdot atm/(mol\cdot K)}$ e $T = 498\ \mathrm{K}$, vale circa $0{,}78\ \mathrm{atm}$.
+
+La stessa traccia contiene una domanda teorica breve (D1): la definizione di acido e base secondo Brønsted-Lowry. La risposta si trova in [Teorie acido-base e forza degli acidi](ref:chapter/13#p2): un acido cede un protone, una base lo accetta. Non basta dire "acido = dà $\mathrm{H^+}$": serve specificare che si tratta di un trasferimento di protone tra due specie, con le coppie coniugate. Per la neutralizzazione quantitativa ([Reazioni acido-base e neutralizzazione](ref:chapter/5#p4)) si ricorre alla condizione di equivalenza {{formula:5.6}}.
+
+### Come prepararsi
+
+Nelle tracce analizzate le richieste sono quasi sempre in sequenza: prima il bilanciamento, poi la stechiometria, poi eventualmente il gas o l'elettrolisi. Allenati quindi a considerare gli esercizi come catene di passaggi, in cui il coefficiente stechiometrico è il collegamento tra una domanda e la successiva. Il test iniziale di 25 minuti con 15 domande a risposta multipla verifica le stesse competenze in forma ridotta: riconoscere un tipo di reazione, individuare ossidante e riducente, prevedere un precipitato.

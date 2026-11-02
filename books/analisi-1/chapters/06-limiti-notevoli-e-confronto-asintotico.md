@@ -76,11 +76,11 @@ $$\lim_{x\to 0} (1+x)^{\frac{1}{x}} = e$$
 
 Da questo limite fondamentale discendono, tramite semplici manipolazioni algebriche e cambi di variabile, tutti gli altri limiti notevoli che coinvolgono esponenziali e logaritmi. Scrivendo $(1+x)^{1/x} = e^{\frac{1}{x}\log(1+x)}$ e usando la continuità del logaritmo (che permette di scambiare limite e logaritmo),
 
-$$\lim_{x\to 0^+} \frac{1}{x}\log(1+x) = \lim_{x\to 0^+} \log\!\left((1+x)^{\frac{1}{x}}\right) = \log\!\left\lbrack \lim_{x\to 0^+} (1+x)^{\frac{1}{x}}\right\rbrack  = \log(e) = 1.$$
+$$\lim_{x\to 0^+} \frac{1}{x}\log(1+x) = \lim_{x\to 0^+} \log\!\left((1+x)^{\frac{1}{x}}\right) = \log\!\left[\lim_{x\to 0^+} (1+x)^{\frac{1}{x}}\right] = \log(e) = 1.$$
 
 In modo identico, per $x\to 0^-$,
 
-$$\lim_{x\to 0^-} \frac{1}{x}\log(1+x) = \lim_{x\to 0^-} \log\!\left((1+x)^{\frac{1}{x}}\right) = \log\!\left\lbrack \lim_{x\to 0^-} (1+x)^{\frac{1}{x}}\right\rbrack  = \log(e) = 1,$$
+$$\lim_{x\to 0^-} \frac{1}{x}\log(1+x) = \lim_{x\to 0^-} \log\!\left((1+x)^{\frac{1}{x}}\right) = \log\!\left[\lim_{x\to 0^-} (1+x)^{\frac{1}{x}}\right] = \log(e) = 1,$$
 
 dove si è usato che il limite {{formula:6.2}} vale anche per $x\to 0^-$. Unendo i due risultati si ottiene il limite bilatero, dunque
 
@@ -159,7 +159,7 @@ $$\lim_{x\to+\infty} \left(\frac{x+2}{x}\right)^{3x} = \lim_{x\to+\infty} \left(
 
 Poniamo $t = \frac{x}{2}$, cosicché $x = 2t$ e $t\to+\infty$ quando $x\to+\infty$:
 
-$$\left(1+\frac{1}{t}\right)^{6t} = \left\lbrack \left(1+\frac{1}{t}\right)^{t}\right\rbrack ^{6} \longrightarrow e^{6}$$
+$$\left(1+\frac{1}{t}\right)^{6t} = \left[\left(1+\frac{1}{t}\right)^{t}\right]^{6} \longrightarrow e^{6}$$
 
 per {{formula:6.1}} e la continuità della funzione potenza. Il limite richiesto vale dunque $e^6$.
 
@@ -401,3 +401,134 @@ $$\frac{\log(1+\sin x)}{\log(1+x)} = \frac{\log(1+\sin x)}{\sin x}\cdot\frac{\si
 Per $x \to 0$ il primo fattore tende a $1$ per il limite notevole del logaritmo ({{formula:6.3}}), poiché $\sin x \to 0$; il secondo fattore tende a $1$ per il limite notevole del seno ({{formula:6.6}}); il terzo fattore tende a $1$ perché è il reciproco dello stesso limite notevole del logaritmo. Il prodotto tende quindi a $1$, il che dimostra l'equivalenza asintotica cercata usando esplicitamente le proprietà della funzione esterna $\log(1+t)$ vicino a $t=0$, e non un generico argomento di composizione (si veda anche [Teoremi sui limiti](ref:chapter/4#p4)).
 
 In sintesi, il principio di eliminazione dei termini trascurabili è uno strumento potente per semplificare rapporti di infiniti o infinitesimi, ma la sua applicazione meccanica a somme e differenze, senza verificare la condizione quantitativa $f - f_1 = o(f_1 + g)$, è la causa più frequente di errori nel calcolo dei limiti con gli asintotici. La strategia sicura, quando compaiono differenze di termini dello stesso ordine, è sempre quella di passare a uno sviluppo esplicito più dettagliato (Taylor) prima di sostituire.
+
+## p5 | Come viene chiesto all'esame
+
+Il capitolo è comparso in 38 delle 83 sessioni d'esame passate. Il tipo di esercizio più frequente è il calcolo dei limiti agli estremi del dominio e degli asintoti all'interno dello studio di funzione, che è sempre l'esercizio 1 dello scritto. Gli altri esercizi sono domande di teoria su $o$ piccolo, ordine e parte principale, e verifiche vero/falso con controesempio. In alcune sessioni compaiono anche confronti asintotici negli integrali impropri.
+
+### Tipo 1: limiti, asintoti e prolungamenti nello studio di funzione
+
+È il tipo più frequente. Il punto (a) dell'esercizio 1 chiede quasi sempre dominio, limiti agli estremi del dominio ed eventuali asintoti. In alcune sessioni chiede anche le simmetrie. I limiti agli estremi sono il pezzo in cui entra questo capitolo.
+
+Metodo:
+
+1. Scrivere il dominio e individuare ogni punto in cui si deve calcolare un limite: gli estremi finiti esclusi dal dominio, gli estremi infiniti, i punti in cui compaiono valori assoluti o logaritmi.
+2. Sostituire il punto nell'espressione e riconoscere la forma. Se non è indeterminata, il limite si legge con l'[algebra dei limiti](ref:chapter/4#p5).
+3. Se la forma è indeterminata, cercare un cambio di variabile che riporti a un limite notevole (vedi [Limiti notevoli](ref:chapter/6#p2)). Per esempio si pone $t = \frac{1}{x}$ oppure $t = e^x - 1$ e si usano le {{formula:6.3}} e {{formula:6.4}}.
+4. Nelle somme tra infiniti, individuare il termine dominante con la gerarchia degli infiniti ({{formula:6.11}}) e applicare il [principio di eliminazione dei termini trascurabili](ref:chapter/6#p4).
+5. Per un asintoto obliquo per $x\to\pm\infty$, calcolare $m=\lim_{x\to\pm\infty}\frac{f(x)}{x}$ e poi $q=\lim_{x\to\pm\infty}\big(f(x)-mx\big)$. Per $q$ serve spesso la parte principale: vedi [formula (8.7)](ref:formula/8.7).
+6. Se il punto escluso dal dominio dà un limite finito, la funzione si prolunga per continuità. Se compare un parametro $k$, si impone $k=\lim f$.
+
+Errori tipici:
+
+- Sostituire un asintotico dentro una somma o una differenza. Si ottiene $0$ al posto del limite vero, perché i termini principali si cancellano: sono necessari gli sviluppi successivi.
+- Dimenticare che $|x|$, $\sqrt[3]{\cdot}$ e $|x|^{|x|}$ vanno trattati separatamente per $x\to+\infty$ e $x\to-\infty$, oppure a destra e a sinistra del punto.
+- Scrivere $0^0$, $\infty^0$ o $1^\infty$ come se fossero un valore. Vanno riscritte come $e^{g\log f}$ e si studia l'esponente.
+- Calcolare solo il limite per $x\to+\infty$ e dimenticare quello per $x\to-\infty$, e quindi un secondo asintoto.
+
+Esempi:
+
+- Esame del 25 gennaio 2024 (turno 2), esercizio 1: la funzione è $|x+2|^{|x+2|}$, con valore $1$ in $x=-2$. Nel punto $-2$ la forma è $0^0$: si scrive $e^{|x+2|\log|x+2|}$ e si usa il limite notevole $y\log y\to 0$ per $y\to 0^+$.
+- Esame del 9 settembre 2021, esercizio 1: la funzione contiene un fattore $\sqrt[3]{1-e^{-x}}$. I limiti agli estremi si ottengono con la gerarchia esponenziale e con $1-e^{-x}\sim x$ per $x\to 0$.
+- Esame del 13 giugno 2025 (turno U, versioni 1-4), esercizio 1: la funzione è $\pm x\sqrt[3]{(\log|2x|)^2}$, o la stessa con $|x|$. Servono le simmetrie e il confronto tra $x$ e una potenza di $\log$, per cui si usa la gerarchia degli infiniti. I limiti in $0$ e a $\pm\infty$ vanno distinti.
+- Esame del 7 febbraio 2025 (turno 1, versioni 1-4), esercizio 1: la funzione contiene $\arctan\frac{1}{x|x|}$ e $\frac14\log(1+x^4)$ con segni diversi nelle varie versioni. I limiti a $0^\pm$ e a $\pm\infty$ si ottengono con la continuità dell'arcotangente e con $\log(1+x^4)\sim 4\log|x|$.
+- Esame del 10 febbraio 2016 (primo turno), esercizio 1, ed Esame del 9 settembre 2015, esercizio 1: chiedono di dimostrare che $f$ si prolunga per continuità in un punto, rispettivamente $x=0$ e $x=3$. Si calcola il limite nel punto con un cambio di variabile e si controlla che sia finito.
+- Esame del 30 gennaio 2019 (secondo turno), esercizio 1: il valore di $k$ che rende $f$ continua si trova imponendo che sia uguale al limite per $x\to 0$.
+
+Per le fasi successive dello studio di funzione (continuità, derivabilità, monotonia) rimandiamo a [Studio di funzione completo](ref:chapter/8#p4) e a [Punti di non derivabilità](ref:chapter/7#p3).
+
+### Tipo 2: definizioni e teoria su ordine, parte principale, $\sim$ e $o$
+
+Questo tipo compare in quasi ogni anno, spesso come esercizio 2 e a volte in più versioni. Si chiede di enunciare una definizione e poi di decidere una frase vera o falsa. La risposta va sempre motivata, con una dimostrazione o con un controesempio.
+
+Metodo:
+
+1. Scrivere la definizione completa, con il punto $x_0$ (finito o infinito) e il campione indicati. Per le definizioni si veda [Infiniti e infinitesimi](ref:chapter/6#p3), in particolare {{formula:6.9}} e {{formula:6.10}}.
+2. Tradurre ogni ipotesi in un limite. Per esempio $f=o(g)$ significa $\lim\frac{f}{g}=0$ e $f\sim g$ significa $\lim\frac{f}{g}=1$.
+3. Decidere. Se la frase è vera, partire da quei limiti e usare l'algebra dei limiti. Se è falsa, cercare un caso in cui un termine principale si cancella, per esempio $f=g$.
+4. Dopo aver deciso, concludere in modo esplicito: "vera, perché…" oppure "falsa: controesempio…".
+
+Errori tipici:
+
+- Dimenticare che la differenza di due infinitesimi dello stesso ordine può avere ordine maggiore, o addirittura essere nulla. La somma e la differenza non conservano in generale l'ordine.
+- Confondere $f=o(g)$ con $f\sim g$, oppure trattare $o(\cdot)$ come una funzione precisa che si può semplificare.
+- Dare per vera una proprietà di $o$ senza specificare il punto: $o(x^2)$ per $x\to0$ e per $x\to+\infty$ sono oggetti diversi.
+
+Esempi:
+
+- Esame del 21 giugno 2024 (turno U, versioni 1-4), esercizio 2: si chiede la definizione di infinitesimo di ordine $\alpha$ rispetto al campione e poi di decidere se la somma o la differenza di due infinitesimi di ordine fissato ha lo stesso ordine. Il campione cambia tra le versioni ($x-x_0$, oppure $\frac1x$ per $x\to\pm\infty$). Si risponde con la definizione, e il controesempio si ottiene scegliendo $f$ e $g$ che si elidono.
+- Esame del 9 settembre 2021, esercizio 2: dati $f=o(x^2)$ e $g=o(x^5)$, si chiede se due limiti di quozienti con $x^3+2x^2$ si calcolano con le sole informazioni date, a $0$ e a $+\infty$. Il punto è ridurre numeratore e denominatore al termine dominante nel punto considerato: a $0$ il denominatore è $\sim 2x^2$ e il limite si determina, a $+\infty$ no.
+- Esame del 1 febbraio 2017 (primo turno), esercizio 2: chiede la definizione di $f(x)=o(2x^2-1)$ per $x\to+\infty$, con un esempio, e poi se ne segua $e^{f(x)}=o\big(e^{2x^2-1}\big)$. Si riscrive il rapporto come $e^{f-(2x^2-1)}$ e si studia l'esponente.
+- Esame del 15 settembre 2020, esercizio 2 (punto a): chiede le definizioni di $f\sim h$ e di $g=o(h)$ per $x\to x_0$ finito o infinito.
+
+### Tipo 3: ordine e parte principale di una funzione assegnata
+
+Compare in sessioni diverse, sia come punto di un esercizio di teoria sia dentro lo studio di funzione. Si chiede la parte principale e l'ordine di una funzione data, rispetto a un campione indicato.
+
+Metodo:
+
+1. Fissare il punto e il campione ($x$ per $x\to0$, oppure $x$ come infinito campione per $x\to\pm\infty$).
+2. Sviluppare le funzioni elementari con la [formula di Taylor](ref:chapter/8#p2) e con la [formula (8.2)](ref:formula/8.2), fino all'ordine in cui si ottiene il primo termine non nullo.
+3. Se compaiono cancellazioni, aumentare l'ordine dello sviluppo di un grado alla volta, finché il primo termine non nullo sopravvive.
+4. Scrivere il risultato nella forma $f(x)\sim c\,\varphi(x)^{\alpha}$, con $c\neq0$. La parte principale è $c\,\varphi^\alpha$, l'ordine è $\alpha$.
+5. Controllare con $\lim\frac{f}{c\varphi^\alpha}=1$.
+
+Errori tipici:
+
+- Fermarsi troppo presto con lo sviluppo: se i termini si elidono, l'ordine è più alto di quello apparente.
+- Scrivere la parte principale senza il coefficiente $c$, oppure con il resto $o(\cdot)$ incluso.
+- Per $x\to\pm\infty$, calcolare la parte principale per un solo segno quando la funzione ha radici o valori assoluti.
+
+Esempi:
+
+- Esame del 9 settembre 2022, esercizio 2: la funzione è $(e^x+\cos x)^2-4-4x+x^3$ per $x\to0$ rispetto a $x$. Si sviluppano esponenziale e coseno, e i termini di grado basso si elidono, come previsto dal testo.
+- Esame del 15 settembre 2020, esercizio 2 (punti b e c): la funzione è $e^{\sqrt{1+x}}-e$ per $x\to0$, rispetto all'infinitesimo campione $x$. Si sviluppa la radice e poi l'esponenziale per ottenere il primo termine non nullo.
+- Esame del 12 febbraio 2019 (primo turno), esercizio 2, ed Esame del 3 luglio 2018, esercizio 1: chiedono la parte principale e l'ordine rispetto a un infinito campione, per $x\to+\infty$ (e nel secondo caso anche per $x\to-\infty$). Si raccoglie il termine dominante e si sviluppa il resto. Nella sessione del 2019 compare anche la definizione di asintoto obliquo, e si chiede di dimostrare o confutare che un infinito di ordine $\frac12$ rispetto a $x^2+1$ abbia un asintoto obliquo.
+
+### Tipo 4: confronto e teoremi sui limiti
+
+In parecchie sessioni il chiedere "calcolare, se esistono, i limiti" si lega alla teoria dei limiti: teorema del confronto, limitatezza per infinitesimo o per infinito. Qui la tecnica asintotica si usa insieme ai teoremi di [Teoremi sui limiti](ref:chapter/4#p4) e di [Successioni e sottosuccessioni](ref:chapter/4#p6).
+
+Metodo:
+
+1. Enunciare per intero il teorema richiesto, con tutte le ipotesi.
+2. Per un limite con una funzione limitata (mantissa, seno, coseno), isolare il fattore limitato e quello con limite noto.
+3. Applicare il confronto: scrivere una doppia disuguaglianza con due funzioni che hanno lo stesso limite.
+4. Per i limiti con funzioni di tipo $4^{-x}$ o $2^x$, distinguere $x\to+\infty$ e $x\to-\infty$ e studiare i due casi.
+
+Errori tipici:
+
+- Dire che "limitata per infinitesima" dà sempre limite $0$ senza citare il teorema.
+- Usare il confronto dimenticando di verificare che la disuguaglianza valga definitivamente.
+- Fare un'unica ipotesi per i due limiti a $\pm\infty$.
+
+Esempi:
+
+- Esame del 31 gennaio 2018 (primo turno), esercizio 2, versioni A e B: si enuncia un teorema del confronto, si mostra che $f(x)M(x)\to0$ (oppure $f(x)+M(x)\to+\infty$) con $M$ la mantissa, e poi si calcolano due limiti con $4^{-x}$ (oppure $2^x$) a $\pm\infty$.
+- Esame del 9 febbraio 2021, esercizio 2: chiede cosa si può dire sui limiti di somma, prodotto e quoziente quando $f$ è limitata e $g\to+\infty$.
+- Esame del 23 giugno 2016 (primo turno), esercizio 2: chiede il teorema dei due carabinieri per le successioni e limiti con $a_n=n\log n$.
+
+### Tipo 5: confronto asintotico negli integrali impropri
+
+Compare con minore frequenza, dentro esercizi sugli integrali impropri o sullo studio di funzione. Il confronto asintotico si usa per decidere la convergenza, quindi serve conoscere le parti principali di questo capitolo.
+
+Metodo:
+
+1. Individuare i punti in cui l'integranda non è limitata o l'intervallo è illimitato.
+2. Per ciascun punto, trovare un'integranda asintotica semplice, per esempio $\frac{1}{x^\alpha}$, con i limiti notevoli o con gli sviluppi.
+3. Applicare il criterio del confronto asintotico ([formula (10.9)](ref:formula/10.9)) e la convergenza dell'integrale campione, come spiegato in [Criteri di convergenza](ref:chapter/10#p4).
+
+Errori tipici: confrontare con $\frac{1}{x^\alpha}$ nel punto sbagliato (a $0$ e a $+\infty$ l'esponente critico dà esiti opposti) e applicare il criterio a funzioni di segno non costante.
+
+Esempi:
+
+- Esame del 10 febbraio 2023, esercizio 2: si studia $\int_2^{+\infty}e^{-4x^3}\,dx$, dove l'esponenziale decade più in fretta di ogni potenza.
+- Esame del 10 febbraio 2016 (primo turno), esercizio 2: si studia $\int_1^{+\infty}\frac{\sin x}{x^2}\,dx$ confrontando con $\frac{1}{x^2}$.
+
+### Tipi che compaiono una volta sola
+
+Alcune domande compaiono in una sola sessione e non meritano un metodo a parte. L'Esame del 12 febbraio 2019 (secondo turno), esercizio 2, unisce Taylor di secondo grado di $g(x)=x+\log f(x)$ e continuità. L'Esame del 25 gennaio 2023 (turno 2), esercizio 1, riguarda $\exp\frac{1}{\sin x}$ con limiti unilateri agli estremi. L'Esame del 28 gennaio 2016 (secondo turno), esercizio 2, chiede di dimostrare che una successione definita con radici e logaritmi è $o\big(\frac1n\big)$.
+
+### Come prepararsi
+
+Nel punto (a) dello studio di funzione scrivi i limiti uno per uno, con la forma indeterminata e il metodo scelto. Nelle domande di teoria scrivi per prima la definizione, poi traduci ogni ipotesi in un limite. Se un'affermazione sembra vera, prova a cercare un caso in cui due termini principali si elidono prima di dimostrarla.

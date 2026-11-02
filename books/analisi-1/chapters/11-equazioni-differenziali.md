@@ -186,7 +186,7 @@ $$\begin{cases} y' = a(t)\,y + b(t) \\ y(t_0) = y_0 \end{cases}$$
 
 *Dimostrazione.* Dalla formula risolutiva, ogni soluzione è della forma $y(t) = e^{A(t)}\lbrack G(t) + k\rbrack $, dove $A(t)$ è una primitiva fissata di $a(t)$ e $G(t)$ è una primitiva fissata di $e^{-A(t)}b(t)$, al variare della costante $k \in \mathbb{R}$. Imponendo la condizione iniziale,
 
-$$y(t_0) = e^{A(t_0)}\big\lbrack G(t_0) + k\big\rbrack  = y_0.$$
+$$y(t_0) = e^{A(t_0)}\big[G(t_0) + k\big] = y_0.$$
 
 Moltiplicando per $e^{-A(t_0)}$ si ottiene
 
@@ -230,7 +230,7 @@ $$\int e^{-A(t)}b(t)\,dt = \int \frac{1}{t}\cdot t \, dt = \int 1\,dt = t + c.$$
 
 Per la formula risolutiva,
 
-$$y(t) = e^{A(t)}\big\lbrack t + c\big\rbrack  = t\,(t + c) = t^2 + c\,t, \qquad c \in \mathbb{R}.$$
+$$y(t) = e^{A(t)}\big[t + c\big] = t\,(t + c) = t^2 + c\,t, \qquad c \in \mathbb{R}.$$
 
 Questo è l'integrale generale, definito su tutto $\rbrack 0,+\infty\lbrack $ per ogni valore di $c$.
 
@@ -538,3 +538,99 @@ Come sempre accade con un problema di Cauchy, le due condizioni iniziali selezio
 - Imporre che $\tilde P$ e $\tilde Q$ abbiano entrambi grado pari al massimo tra i gradi di $P$ e $Q$: il grado richiesto è solo un limite superiore e uno dei polinomi cercati può essere nullo.
 - Applicare le condizioni iniziali sull'integrale generale dell'**omogenea** $y_{om}$ invece che su quello della **completa** $y = y_{om} + y_p$: le costanti $c_1, c_2$ vanno determinate solo dopo aver aggiunto $y_p$.
 - Non derivare correttamente $y_p$ prima di sostituirla nell'equazione: un errore di segno o di derivazione in questo passo compromette il calcolo di $k$ o dei coefficienti del polinomio $Q$.
+
+## p6 | Come viene chiesto all'esame
+
+Il capitolo sulle equazioni differenziali è comparso in 18 sessioni d'esame su 83. Quasi sempre è l'esercizio 2 della prova scritta, e il tipo più frequente è l'equazione lineare del secondo ordine a coefficienti costanti, con una parte di teoria seguita da una verifica o dal calcolo dell'integrale generale. Seguono il problema di Cauchy a variabili separabili e le domande su equazioni lineari del primo ordine.
+
+Quasi tutti questi esercizi hanno la stessa struttura: un punto (a) di definizione, un punto (b) di dimostrazione o verifica, un punto (c) di calcolo. Conviene quindi studiare le definizioni con la stessa cura dei metodi di calcolo, perché valgono punti a sé.
+
+### Tipo 1: definizioni e piccole dimostrazioni sulle soluzioni
+
+**Cosa chiede l'esame.** Una definizione da scrivere (soluzione su un intervallo, soluzione di un problema di Cauchy, equazione a variabili separabili, integrale particolare) e subito dopo una dimostrazione breve. Nella dimostrazione si mostra che una combinazione di soluzioni è ancora soluzione, oppure che una traslata di una soluzione è soluzione.
+
+**Metodo.**
+1. Scrivi la definizione completa: la funzione è derivabile quanto serve su un intervallo $I$ e sostituita nell'equazione la rende un'identità per ogni $x\in I$. Per il problema di Cauchy aggiungi le condizioni iniziali, tante quanto l'ordine ([Generalità e problema di Cauchy](ref:chapter/11#p2)).
+2. Per la combinazione lineare, sostituisci nell'equazione e usa la linearità della derivata. Per $y''+5y=0$ si ha
+$\displaystyle (2f_1-3f_2)''+5(2f_1-3f_2)=2\,(f_1''+5f_1)-3\,(f_2''+5f_2)=0,$
+perché ciascuna parentesi è nulla.
+3. Per la traslata, calcola $y_k'(x)=y'(x+k)$ e osserva che, se il secondo membro dipende solo da $y$, l'equazione calcolata nel punto $x+k$ è proprio quella richiesta.
+4. Concludi esplicitando su quale intervallo vale l'identità.
+
+**Errori tipici.** Scrivere "soluzione" senza nominare l'intervallo. Dimenticare nel problema di Cauchy una delle due condizioni iniziali del secondo ordine. Applicare la linearità a un'equazione che non è lineare. Nella traslata, usare l'argomento $x$ al posto di $x+k$.
+
+**Esempi.**
+- Esame del 11 aprile 2024, esercizio 2: chiede cosa significa essere soluzione di $y''+5y=0$ e di dimostrare che $2f_1-3f_2$ è soluzione. Si risolve con il calcolo del punto 2.
+- Esame del 3 luglio 2018, esercizio 2: stessa equazione, con combinazione $5f_1-2f_2$. Il metodo è identico.
+- Esame del 25 gennaio 2024 - turno 2, esercizio 2: parte dal classificare $y'=y(2-y)$ e chiede di dimostrare che la traslata $y(x+k)$ è soluzione. L'equazione è a variabili separabili e autonoma, perché non dipende esplicitamente da $x$, e per questo la traslazione funziona.
+
+### Tipo 2: verificare una soluzione e scrivere l'integrale generale (secondo ordine)
+
+**Cosa chiede l'esame.** Questo è il tipo più ripetuto. Nelle cinque versioni del turno 1 del 31 gennaio 2024 si danno una funzione come $\varphi(x)=\sin^2 x$ e un'equazione come $y''+2y=2-2\sin^2 x$. Si chiede di verificare che $\varphi$ è soluzione e poi di scrivere la soluzione generale. Tra le versioni cambiano la funzione ($\sin^2$, $\cos^2$, $\sinh^2$, $\cosh^2$) e il segno del coefficiente.
+
+**Metodo.**
+1. Calcola $\varphi'$ e $\varphi''$, usando le formule di duplicazione per semplificare. Per $\varphi=\sin^2 x$ si ottiene $\varphi'=\sin 2x$ e $\varphi''=2\cos 2x=2-4\sin^2 x$.
+2. Sostituisci nel primo membro e confronta con il secondo: $\varphi''+2\varphi=2-4\sin^2x+2\sin^2x=2-2\sin^2 x$.
+3. Scrivi il polinomio caratteristico dell'omogenea e applica {{formula:11.10}}. Per $y''+2y=0$ si ha $p(\lambda)=\lambda^2+2$, con radici $\pm i\sqrt2$, quindi $y_{om}(x)=c_1\cos(\sqrt2x)+c_2\sin(\sqrt2x)$. Per $y''-2y=0$ le radici sono $\pm\sqrt2$ e $y_{om}(x)=c_1e^{\sqrt2x}+c_2e^{-\sqrt2x}$.
+4. Usa la funzione verificata come $y_p$ e scrivi $y(x)=y_{om}(x)+y_p(x)$ ([Equazioni lineari del secondo ordine a coefficienti costanti](ref:chapter/11#p5)). Non serve ricalcolare una soluzione particolare con la somiglianza: la verifica del punto (b) la fornisce già.
+
+**Errori tipici.** Sbagliare il segno del discriminante e scambiare esponenziali reali con funzioni trigonometriche. Per le versioni iperboliche, confondere $\cosh 2x=2\cosh^2x-1$ con $\cosh 2x=\cosh^2 x+\sinh^2 x$, e quindi sbagliare il secondo membro. Scrivere solo $y_p$ o solo $y_{om}$ come "soluzione generale".
+
+**Esempi.**
+- Esame del 31 gennaio 2024 - turno 1 - versione 4, esercizio 2: la funzione è $\cosh^2x$ nell'equazione $y''-2y=2\cosh^2x-2$. Si ha $\varphi''=4\cosh^2x-2$, da cui $\varphi''-2\varphi=2\cosh^2x-2$. Poi $y_{om}$ si scrive con $\pm\sqrt2$.
+- Esame del 31 gennaio 2024 - turno 1 - versione 2, esercizio 2: la funzione è $\cos^2x$ in $y''+2y=2-2\cos^2x$. Il metodo è lo stesso, con la verifica e $y_{om}$ trigonometrico.
+
+### Tipo 3: integrale generale con il metodo di somiglianza
+
+**Cosa chiede l'esame.** Un'equazione del secondo ordine con termine noto polinomiale, di cui si chiede l'integrale generale. A volte si aggiunge una domanda qualitativa sull'omogenea associata, per esempio se esistono soluzioni limitate su $\mathbb{R}$.
+
+**Metodo.**
+1. Risolvi l'omogenea con il polinomio caratteristico $p(\lambda)$.
+2. Scegli la forma di $y_p$ con {{formula:11.12}}. Se $0$ è radice di $p$, moltiplica la forma polinomiale per $x$ se $0$ è radice semplice e per $x^2$ se è radice doppia.
+3. Sostituisci $y_p$ nell'equazione e uguaglia i coefficienti delle potenze di $x$.
+4. Scrivi $y(x)=y_{om}(x)+y_p(x)$.
+5. Se il termine noto è somma di più termini, tratta ciascuno separatamente e somma i risultati ({{formula:11.14}}).
+
+**Errori tipici.** Cercare $y_p=ax$ quando serve anche il termine noto $b$, cioè provare con un polinomio di grado troppo basso. Dimenticare la risonanza quando l'equazione non contiene $y$. Calcolare i coefficienti di $y_p$ ma non sommare $y_{om}$.
+
+**Esempi.**
+- Esame del 14 febbraio 2017 - Io turno, esercizio 2, punto a): $y''+4y=2x$. Le radici sono $\pm2i$ e $y_p=ax+b$ dà $a=\tfrac12$, $b=0$. Quindi $y(x)=c_1\cos2x+c_2\sin2x+\tfrac{x}{2}$.
+- Esame del 23 giugno 2016 - IIo turno, esercizio 2: $y''+3y'=3x$. Le radici sono $0$ e $-3$, quindi $y_{om}(x)=c_1+c_2e^{-3x}$. La costante è una soluzione limitata dell'omogenea. Poiché $0$ è radice semplice, $y_p=x(ax+b)$ e si trova $y_p=\tfrac{x^2}{2}-\tfrac{x}{3}$.
+
+### Tipo 4: problema di Cauchy a variabili separabili
+
+**Cosa chiede l'esame.** Dopo la definizione di soluzione di un problema di Cauchy, si chiede di risolverlo esplicitamente. La soluzione si vuole in forma esplicita e, quando serve, con il suo intervallo di definizione.
+
+**Metodo.**
+1. Riconosci la forma $y'=f(y)g(t)$ e cerca gli zeri di $f$: sono le soluzioni costanti ({{formula:11.7}}). Controlla se il dato iniziale ne coincide con una.
+2. Se $y_0$ non è uno zero di $f$, separa le variabili e integra entrambi i membri con {{formula:11.8}} ([Equazioni a variabili separabili](ref:chapter/11#p4)).
+3. Imponi la condizione iniziale per fissare la costante $c$.
+4. Esplicita $y$, scegliendo il segno della radice o il ramo coerente con il dato iniziale.
+5. Determina l'intervallo massimale: è il più grande intervallo contenente $t_0$ su cui l'espressione trovata ha senso.
+
+**Errori tipici.** Dividere per $f(y)$ senza prima aver considerato i suoi zeri e perdere le soluzioni costanti. Fissare la costante $c$ dopo aver già cambiato segno o preso il modulo senza ricontrollare. Dimenticare il dominio dopo aver esplicitato $y$. Quando il testo chiede "tutte le soluzioni", fermarsi alla famiglia con $c$ e non elencare le costanti.
+
+**Esempi.**
+- Esame del 10 febbraio 2016 - IIIo turno, esercizio 2: $y'=te^{-t^2}(y+1)^3$ con $y(0)=-\tfrac12$. Si separa in $(y+1)^{-3}\,dy=te^{-t^2}\,dt$ e il dato iniziale dà $c=-\tfrac32$. Quindi $\dfrac{1}{(y+1)^2}=e^{-t^2}+3$ e, poiché $y(0)+1>0$, $y=-1+\dfrac{1}{\sqrt{e^{-t^2}+3}}$ su tutto $\mathbb{R}$.
+- Esame del 17 giugno 2015, esercizio 2: nella lettura $y'=\frac1t\,(3e^y)\log t$ con $y(1)=0$ si ha $e^{-y}\,dy=\dfrac{3\log t}{t}\,dt$. Si ottiene $y=-\log\!\left(1-\tfrac32\log^2t\right)$, da definire solo dove l'argomento del logaritmo è positivo. Qui il dominio dell'espressione fissa l'intervallo massimale.
+- Esame del 17 giugno 2022, esercizio 2: dopo la definizione di equazione a variabili separabili, si chiedono tutte le soluzioni di $y'=(y^2-1)(x+1)$. Vanno scritte sia le costanti $y=\pm1$ sia la famiglia ottenuta separando le variabili.
+
+### Tipo 5: equazioni lineari del primo ordine, senza risolvere fino in fondo
+
+**Cosa chiede l'esame.** Domande che sfruttano la struttura dell'equazione e non richiedono sempre la soluzione esplicita: la definizione di integrale particolare, il valore del dato iniziale che rende $x_0$ un punto critico, oppure la retta tangente alla soluzione di un problema di Cauchy.
+
+**Metodo.**
+1. Scrivi la definizione richiesta usando i coefficienti continui sull'intervallo $I$ ([Equazioni lineari del primo ordine](ref:chapter/11#p3)).
+2. Per un punto critico usa l'equazione stessa: da $y'=-a(x)y+b(x)$ calcolata in $x_0$ con $y(x_0)=y_0$ si ha $\varphi'(x_0)=-a(x_0)y_0+b(x_0)$. Imponendo $\varphi'(x_0)=0$ si trova $y_0=\dfrac{b(x_0)}{a(x_0)}$, ed è qui che serve $a(x_0)\ne0$.
+3. Per la retta tangente non risolvere l'equazione: ricava $y'(x_0)$ dall'equazione e dal dato iniziale, poi scrivi $y=y(x_0)+y'(x_0)(x-x_0)$ ([Derivata e retta tangente](ref:chapter/7#p2)).
+4. Per l'integrale generale applica {{formula:11.5}}.
+
+**Errori tipici.** Risolvere l'equazione completa quando bastava la derivata nel punto. Dimenticare di cambiare segno al coefficiente passando da $y'+a(x)y=b(x)$ a $y'=-a(x)y+b(x)$. Applicare un metodo da variabili separabili a un'equazione lineare non omogenea.
+
+**Esempi.**
+- Esame del 29 gennaio 2020 - IIo turno, esercizio 2: definizione di integrale particolare di $y'+a(x)y=b(x)$ e ricerca dei valori $y_0$ che rendono $x_0$ un punto critico. Si risolve con il passo 2.
+- Esame del 14 febbraio 2017 - Io turno, esercizio 2, punto b): da $y'=3e^{x}y$ con $y(1)=2$ segue $y'(1)=6e$. La tangente nel punto $(1,2)$ è quindi $y=2+6e\,(x-1)$.
+
+### Presenza in esercizi di altro tipo
+
+Quattro sessioni, il 9 febbraio 2021, il 27 gennaio 2021 - Io turno, il 10 settembre 2019 e il 30 gennaio 2019 - Io turno, associano il capitolo a un esercizio 1 che inizia con uno studio di funzione. Nei testi disponibili si leggono soltanto le richieste sullo studio di funzione, quindi la parte di equazioni differenziali di queste sessioni non si può descrivere qui. Per prepararti, rivedi l'esercizio come esercizio di studio di funzione.

@@ -19,7 +19,7 @@ $$
 
 1. Calcolare $\displaystyle\int_0^6 g(x)\,dx$.
 
-2. Dire se esiste $c\in\lbrack 0,6\rbrack $ tale che $g(c)$ è uguale alla media integrale di $g$ su $\lbrack 0,6\rbrack $. Giustificarne la risposta.
+2. Dire se esiste $c\in[0,6]$ tale che $g(c)$ è uguale alla media integrale di $g$ su $\lbrack 0,6\rbrack $. Giustificarne la risposta.
 
 :::solution
 **Esercizio 2.** Consideriamo la funzione
@@ -61,7 +61,7 @@ $$
 g(3)=\lim_{x\to 3^-}g(x)=0=\lim_{x\to 3^+}g(x).
 $$
 
-Quindi $g$ è continua anche in $x=3$. In particolare $g$ è continua in $\lbrack 0,6\rbrack $. Per il Teorema della media integrale esiste $c\in\lbrack 0,6\rbrack $ tale che $g(c)$ è uguale alla media integrale di $g$ su $\lbrack 0,6\rbrack $.
+Quindi $g$ è continua anche in $x=3$. In particolare $g$ è continua in $\lbrack 0,6\rbrack $. Per il Teorema della media integrale esiste $c\in[0,6]$ tale che $g(c)$ è uguale alla media integrale di $g$ su $\lbrack 0,6\rbrack $.
 :::
 :::
 
@@ -520,7 +520,7 @@ Calcolare la media integrale della funzione sugli intervalli $\lbrack -1,1\rbrac
 
 a) **Teorema (della media integrale per le funzioni continue)**
 
-Siano $a,b\in\mathbb{R}$ con $a<b$ e sia $f:\lbrack a,b\rbrack \to\mathbb{R}$ una funzione continua. Allora esiste $x_0\in\lbrack a,b\rbrack $ tale che $f(x_0)=m(f;a,b)$, dove $m(f;a,b)$ è la media integrale di $f$ sull’intervallo $\lbrack a,b\rbrack $ definita da
+Siano $a,b\in\mathbb{R}$ con $a<b$ e sia $f:\lbrack a,b\rbrack \to\mathbb{R}$ una funzione continua. Allora esiste $x_0\in[a,b]$ tale che $f(x_0)=m(f;a,b)$, dove $m(f;a,b)$ è la media integrale di $f$ sull’intervallo $\lbrack a,b\rbrack $ definita da
 
 $$
 m(f;a,b)=\frac{1}{b-a}\int_a^b f(x)\,dx.
@@ -534,9 +534,9 @@ m(f;-1,1)=\frac{1}{2}\int_{-1}^{1}f(x)\,dx
 =\frac{1}{2}\left(1+\frac{1}{2}\right)=\frac{3}{4}.
 $$
 
-Poiché $f\left(\frac{3}{4}\right)=\frac{3}{4}$ e $x=\frac{3}{4}\in\lbrack -1,1\rbrack $, possiamo concludere che la media integrale di $f$ su $\lbrack -1,1\rbrack $ è uno dei valori che la funzione assume su questo intervallo.
+Poiché $f\left(\frac{3}{4}\right)=\frac{3}{4}$ e $x=\frac{3}{4}\in[-1,1]$, possiamo concludere che la media integrale di $f$ su $\lbrack -1,1\rbrack $ è uno dei valori che la funzione assume su questo intervallo.
 
-La media integrale della funzione nell’intervallo $\left\lbrack -1,\frac{1}{2}\right\rbrack $ è
+La media integrale della funzione nell’intervallo $\left[-1,\frac{1}{2}\right]$ è
 
 $$
 m\left(f;-1,\frac{1}{2}\right)=\frac{1}{\frac{3}{2}}\int_{-1}^{\frac{1}{2}}f(x)\,dx
@@ -544,7 +544,7 @@ m\left(f;-1,\frac{1}{2}\right)=\frac{1}{\frac{3}{2}}\int_{-1}^{\frac{1}{2}}f(x)\
 =\frac{2}{3}\left(1+\frac{1}{8}\right)=\frac{3}{4}.
 $$
 
-Poiché $f(x)=1$ per ogni $x\in\lbrack -1,0)$ e $0\leq f(x)\leq\frac{1}{2}$ per ogni $x\in\left\lbrack 0,\frac{1}{2}\right\rbrack $, possiamo concludere che non esiste alcun punto $x\in\left\lbrack -1,\frac{1}{2}\right\rbrack $ in cui $f$ assume il valore della sua media integrale su questo intervallo.
+Poiché $f(x)=1$ per ogni $x\in\lbrack -1,0)$ e $0\leq f(x)\leq\frac{1}{2}$ per ogni $x\in\left[0,\frac{1}{2}\right]$, possiamo concludere che non esiste alcun punto $x\in\left[-1,\frac{1}{2}\right]$ in cui $f$ assume il valore della sua media integrale su questo intervallo.
 :::
 :::
 
@@ -598,7 +598,7 @@ $$
 h(x)=
 \begin{cases}
 -1 & \text{se }x\in(-\infty,0)\cap\mathbb{Q}\\
-1 & \text{se }x\in[0,+\infty)\cap\mathbb{Q}\\
+1 & \text{se }x\in\lbrack 0,+\infty)\cap\mathbb{Q}\\
 0 & \text{se }x\in\mathbb{R}\setminus\mathbb{Q}.
 \end{cases}
 $$
@@ -809,7 +809,7 @@ $$
 i\leq\frac{1}{b-a}\int_a^b f(x)\,dx\leq s.
 $$
 
-2. Sia $f$ una funzione continua su un intervallo chiuso $\lbrack a,b\rbrack $, con $a<b$. Allora esiste $c\in\lbrack a,b\rbrack $ tale che
+2. Sia $f$ una funzione continua su un intervallo chiuso $\lbrack a,b\rbrack $, con $a<b$. Allora esiste $c\in[a,b]$ tale che
 
 $$
 f(c)=\frac{1}{b-a}\int_a^b f(x)\,dx.
@@ -880,7 +880,7 @@ $$
 
 Allora la funzione $F$ è derivabile su $I$ e $F'(x)=f(x)$, per ogni $x\in I$.
 
-b) Poiché $f(x)=e^{x^2}$ è crescente su $\lbrack 0,a\rbrack $, $f(x)\leq f(a)=e^{a^2}$ per ogni $x\in\lbrack 0,a\rbrack $. Dunque, per la monotonia dell’integrale:
+b) Poiché $f(x)=e^{x^2}$ è crescente su $\lbrack 0,a\rbrack $, $f(x)\leq f(a)=e^{a^2}$ per ogni $x\in[0,a]$. Dunque, per la monotonia dell’integrale:
 
 $$
 \int_0^a e^{x^2}\,dx\leq\int_0^a e^{a^2}\,dx=ae^{a^2}.
@@ -1049,13 +1049,13 @@ Ne segue che $A$ ha massimo (uguale ad $\arctan 3$, oppure ad $\arctan\left(\fra
 
 (a) Enunciare la proprietà di additività dell’integrale rispetto al dominio di integrazione.
 
-(b) Detta $f\colon\lbrack -3,3\rbrack \to\mathbb{R}$ una funzione continua e pari, usare la proprietà di additività dell’integrale rispetto al dominio di integrazione per dimostrare che
+(b) Detta $f\colon[-3,3]\to\mathbb{R}$ una funzione continua e pari, usare la proprietà di additività dell’integrale rispetto al dominio di integrazione per dimostrare che
 
 $$
 \int_{-3}^{3} f(x)\sin x\,dx=0.
 $$
 
-(c) Sia $g\colon\lbrack -3,3\rbrack \to\mathbb{R}$ continua e tale che $g(x)\ge 0$ per ogni $x\in\lbrack -3,3\rbrack $ e $g(0)>0$.
+(c) Sia $g\colon[-3,3]\to\mathbb{R}$ continua e tale che $g(x)\ge 0$ per ogni $x\in[-3,3]$ e $g(0)>0$.
 
 Dimostrare che
 
@@ -1082,7 +1082,7 @@ Poniamo $t=-x$; abbiamo che
 
 $$
 \begin{aligned}
-I_1&=\int_{-3}^{0}g(x)\,dx=\int_{3}^{0}[-g(-t)]\,dt=\int_{3}^{0}g(t)\,dt\\
+I_1&=\int_{-3}^{0}g(x)\,dx=\int_{3}^{0}\lbrack -g(-t)\rbrack \,dt=\int_{3}^{0}g(t)\,dt\\
 &=-\int_{0}^{3}g(t)\,dt=-I_2.
 \end{aligned}
 $$
@@ -1093,7 +1093,7 @@ $$
 \int_{-3}^{3}f(x)\sin x\,dx=\int_{-3}^{3}g(x)\,dx=-I_2+I_2=0.
 $$
 
-**c)** Per ipotesi, $g$ è continua e non negativa su $\lbrack -3,3\rbrack $. Inoltre $g(0)>0$. Per continuità in $0$, esiste $\delta\in(0,3)$ tale che $g(x)>\frac{g(0)}{2}$ per ogni $x\in(-\delta,\delta)$. Per continuità, la disuguaglianza vale anche agli estremi: $g(-\delta)\ge\frac{g(0)}{2}$ e $g(\delta)\ge\frac{g(0)}{2}$. Pertanto $g(x)\ge\frac{g(0)}{2}$ per ogni $x\in\lbrack -\delta,\delta\rbrack $.
+**c)** Per ipotesi, $g$ è continua e non negativa su $\lbrack -3,3\rbrack $. Inoltre $g(0)>0$. Per continuità in $0$, esiste $\delta\in(0,3)$ tale che $g(x)>\frac{g(0)}{2}$ per ogni $x\in(-\delta,\delta)$. Per continuità, la disuguaglianza vale anche agli estremi: $g(-\delta)\ge\frac{g(0)}{2}$ e $g(\delta)\ge\frac{g(0)}{2}$. Pertanto $g(x)\ge\frac{g(0)}{2}$ per ogni $x\in[-\delta,\delta]$.
 
 Le proprietà degli integrali ci garantiscono che:
 
@@ -1322,7 +1322,7 @@ Ne segue che $F(x^5)$ è crescente su $\lbrack 0,+\infty)$.
 c) Applicando il teorema sui limiti di funzioni monotone alla funzione strettamente crescente $F(x^5)$ otteniamo che
 
 $$
-\sup_{x\in[0,+\infty)}F(x^5)=\lim_{x\to+\infty}F(x^5)=\lim_{z\to+\infty}F(z)=\int_0^{+\infty}f(t)\,dt=e^{-3}\log 4.
+\sup_{x\in\lbrack 0,+\infty)}F(x^5)=\lim_{x\to+\infty}F(x^5)=\lim_{z\to+\infty}F(z)=\int_0^{+\infty}f(t)\,dt=e^{-3}\log 4.
 $$
 :::
 :::
@@ -1841,7 +1841,7 @@ f'(x)&=e^x+\sin x+\arctan x+x\cdot\frac{1}{1+x^2}-\frac{1}{2}\cdot\frac{2x}{1+x^
 \end{aligned}
 $$
 
-Senza tentare di risolvere l’equazione $f'(x)=0$, osserviamo che $f'$ è continua in $\left\lbrack -\frac{\pi}{2},0\right\rbrack $, e che
+Senza tentare di risolvere l’equazione $f'(x)=0$, osserviamo che $f'$ è continua in $\left[-\frac{\pi}{2},0\right]$, e che
 
 $$
 f'\left(-\frac{\pi}{2}\right)=e^{-\pi/2}-1+\arctan\left(-\frac{\pi}{2}\right)=e^{-\pi/2}-1-\arctan\left(\frac{\pi}{2}\right)<0,
@@ -2141,7 +2141,7 @@ $$
 
 (b) Omettere l’ipotesi di continuità dal Teorema dei valori intermedi ed esibire un controesempio alla validità del teorema.
 
-(c) Sia $f:\lbrack a,b\rbrack \cup\lbrack c,d\rbrack \to\mathbb{R}$ una funzione definita su un’unione disgiunta di intervalli (ovvero $\lbrack a,b\rbrack \cap\lbrack c,d\rbrack =\varnothing$). Vale ancora il Teorema dei valori intermedi? Se sì, esibire una dimostrazione; se no, trovare un controesempio.
+(c) Sia $f:\lbrack a,b\rbrack \cup[c,d]\to\mathbb{R}$ una funzione definita su un’unione disgiunta di intervalli (ovvero $\lbrack a,b\rbrack \cap[c,d]=\varnothing$). Vale ancora il Teorema dei valori intermedi? Se sì, esibire una dimostrazione; se no, trovare un controesempio.
 
 :::solution
 **(a) Teorema dei valori intermedi**
@@ -2167,7 +2167,7 @@ non è continua in $x=2$. L’immagine dell’intervallo $\lbrack 0,4\rbrack $ �
 
 Il teorema dei valori intermedi vale su ciascuno dei due intervalli $\lbrack a,b\rbrack $ e $\lbrack c,d\rbrack $, poiché $f$ è continua su ciascuno di essi. In generale, però, non si estende a due punti appartenenti a componenti diverse: l’immagine dell’unione di due intervalli disgiunti non è necessariamente un intervallo, anche quando la funzione è continua.
 
-Come controesempio, consideriamo la funzione proposta al punto precedente, ristretta all’insieme $A=\lbrack 0,1\rbrack \cup\lbrack 3,4\rbrack $. La funzione è continua su ciascuna componente, e $f(A)=\{-1,1\}$. Prendendo un punto in $\lbrack 0,1\rbrack $ e uno in $\lbrack 3,4\rbrack $, i valori corrispondenti sono $-1$ e $1$, ma $f(A)$ non contiene l’intervallo $\lbrack -1,1\rbrack $.
+Come controesempio, consideriamo la funzione proposta al punto precedente, ristretta all’insieme $A=\lbrack 0,1\rbrack \cup[3,4]$. La funzione è continua su ciascuna componente, e $f(A)=\{-1,1\}$. Prendendo un punto in $\lbrack 0,1\rbrack $ e uno in $\lbrack 3,4\rbrack $, i valori corrispondenti sono $-1$ e $1$, ma $f(A)$ non contiene l’intervallo $\lbrack -1,1\rbrack $.
 :::
 :::
 
@@ -2181,7 +2181,7 @@ Come controesempio, consideriamo la funzione proposta al punto precedente, ristr
 
 (b) Omettere l'ipotesi di continuità dal Teorema degli zeri ed esibire un controesempio alla validità del teorema.
 
-(c) Sia ora $f:\lbrack a,b\rbrack \cup\lbrack c,d\rbrack \to\mathbb{R}$ una funzione definita su un'unione disgiunta di intervalli (ovvero $\lbrack a,b\rbrack \cap\lbrack c,d\rbrack =\emptyset$), con $a<b<c<d$, tale che $f(a)\cdot f(d)<0$ (ossia i segni di $f$ sono opposti agli estremi dell'intera unione $\lbrack a,b\rbrack \cup\lbrack c,d\rbrack $). Vale ancora il Teorema degli zeri? Se sì, esibire una dimostrazione; se no, trovare un controesempio.
+(c) Sia ora $f:\lbrack a,b\rbrack \cup[c,d]\to\mathbb{R}$ una funzione definita su un'unione disgiunta di intervalli (ovvero $\lbrack a,b\rbrack \cap[c,d]=\emptyset$), con $a<b<c<d$, tale che $f(a)\cdot f(d)<0$ (ossia i segni di $f$ sono opposti agli estremi dell'intera unione $\lbrack a,b\rbrack \cup[c,d]$). Vale ancora il Teorema degli zeri? Se sì, esibire una dimostrazione; se no, trovare un controesempio.
 
 :::solution
 **Esercizio 2, Versione B.**
@@ -2190,7 +2190,7 @@ Come controesempio, consideriamo la funzione proposta al punto precedente, ristr
 
 **Teorema degli zeri**
 
-Sia $f$ una funzione continua su un intervallo chiuso e limitato $\lbrack a,b\rbrack $, tale che $f(a)\cdot f(b)<0$. Allora esiste $c\in\lbrack a,b\rbrack $ tale che $f(c)=0$.
+Sia $f$ una funzione continua su un intervallo chiuso e limitato $\lbrack a,b\rbrack $, tale che $f(a)\cdot f(b)<0$. Allora esiste $c\in[a,b]$ tale che $f(c)=0$.
 
 (b) Omettere l'ipotesi di continuità dal Teorema degli zeri ed esibire un controesempio alla validità del teorema.
 
@@ -2200,11 +2200,11 @@ $$f(x)=\begin{cases}-1 & x\le 2,\\ 1 & x>2\end{cases}$$
 
 non è continua in $x=2$. Se consideriamo l'intervallo $\lbrack 0,4\rbrack $, vediamo che $f$ è continua fuori dal punto $2$, e che $f(0)\cdot f(4)=-1<0$. La funzione però non ha zeri.
 
-(c) Sia ora $f:\lbrack a,b\rbrack \cup\lbrack c,d\rbrack \to\mathbb{R}$ una funzione definita su un'unione disgiunta di intervalli (ovvero $\lbrack a,b\rbrack \cap\lbrack c,d\rbrack =\emptyset$), con $a<b<c<d$, tale che $f(a)\cdot f(d)<0$ (ossia i segni di $f$ sono opposti agli estremi dell'intera unione $\lbrack a,b\rbrack \cup\lbrack c,d\rbrack $). Vale ancora il Teorema degli zeri? Se sì, esibire una dimostrazione; se no, trovare un controesempio.
+(c) Sia ora $f:\lbrack a,b\rbrack \cup[c,d]\to\mathbb{R}$ una funzione definita su un'unione disgiunta di intervalli (ovvero $\lbrack a,b\rbrack \cap[c,d]=\emptyset$), con $a<b<c<d$, tale che $f(a)\cdot f(d)<0$ (ossia i segni di $f$ sono opposti agli estremi dell'intera unione $\lbrack a,b\rbrack \cup[c,d]$). Vale ancora il Teorema degli zeri? Se sì, esibire una dimostrazione; se no, trovare un controesempio.
 
 Il Teorema non vale, anche quando $f$ è continua.
 
-Come controesempio possiamo considerare la funzione proposta al punto precedente, ristretta all'insieme $A=\lbrack 0,1\rbrack \cup\lbrack 3,4\rbrack $, con $a=0$, $b=1$, $c=3$, $d=4$. Su $A$ la funzione $f$ è continua, poiché il punto di discontinuità $x=2$ non appartiene ad $A$. Inoltre $f(a)\cdot f(d)=f(0)\cdot f(4)=-1<0$, quindi l'ipotesi richiesta è soddisfatta. Tuttavia $f$ non si annulla in nessun punto di $A$, poiché $f$ vale costantemente $-1$ su $\lbrack 0,1\rbrack $ e costantemente $1$ su $\lbrack 3,4\rbrack $.
+Come controesempio possiamo considerare la funzione proposta al punto precedente, ristretta all'insieme $A=\lbrack 0,1\rbrack \cup[3,4]$, con $a=0$, $b=1$, $c=3$, $d=4$. Su $A$ la funzione $f$ è continua, poiché il punto di discontinuità $x=2$ non appartiene ad $A$. Inoltre $f(a)\cdot f(d)=f(0)\cdot f(4)=-1<0$, quindi l'ipotesi richiesta è soddisfatta. Tuttavia $f$ non si annulla in nessun punto di $A$, poiché $f$ vale costantemente $-1$ su $\lbrack 0,1\rbrack $ e costantemente $1$ su $\lbrack 3,4\rbrack $.
 :::
 :::
 
@@ -2423,7 +2423,7 @@ Si dice che $f$ è un infinitesimo di ordine $\alpha>0$ rispetto all'infinitesim
 
 $$\lim_{x\to x_0}f(x)=0 \quad\text{e}\quad \lim_{x\to x_0}\frac{f(x)}{\lbrack \varphi(x)\rbrack ^\alpha}=\ell\in\mathbb{R}\setminus\{0\}.$$
 
-Si dice parte principale di $f$ rispetto a $\varphi$, per $x\to x_0$, la funzione $\ell\lbrack \varphi(x)\rbrack ^\alpha$.
+Si dice parte principale di $f$ rispetto a $\varphi$, per $x\to x_0$, la funzione $\ell[\varphi(x)]^\alpha$.
 
 (b) Calcoliamo la parte principale e l'ordine di infinitesimo della funzione $f(x)=(e^x+\cos x)^2-4-4x+x^3$, per $x\to 0$, rispetto al campione $\varphi(x)=x$.
 
@@ -2481,7 +2481,7 @@ $$
 Le condizioni di esistenza richiedono che l’argomento della radice sia non negativo, quindi il dominio della funzione è
 
 $$
-\operatorname{dom} f=\{x\in\mathbb{R}\mid x^2+3x=x(x+3)\geq 0\}=(-\infty,-3]\cup[0,\infty).
+\operatorname{dom} f=\{x\in\mathbb{R}\mid x^2+3x=x(x+3)\geq 0\}=(-\infty,-3\rbrack \cup\lbrack 0,\infty).
 $$
 
 La funzione non può essere né pari né dispari perché il suo dominio non è un insieme simmetrico rispetto a $0$.
@@ -2718,7 +2718,7 @@ Poiché $e^t>0$ per ogni $t\in\mathbb{R}$ e $\sin^2 x>0$ per ogni $x\in(-\pi,\pi
 - $f$ è strettamente decrescente sugli intervalli $\lbrack -\pi/2,0\rbrack $ e $(0,\pi/2\rbrack $;
 - $x=-\pi/2$ è un punto di massimo locale di valore $f(-\pi/2)=e^{-1}$, non globale perché $f$ è illimitata superiormente;
 - $x=\pi/2$ è un punto di minimo locale di valore $f(\pi/2)=e$, non globale perché $f(\pi/2)=e>f(0)=0$;
-- $x=0$, $x=-\pi$ e $x=\pi$ sono punti di minimo globale, perché $f(0)=f(-\pi)=f(\pi)=0<f(x)$, per ogni $x\in\lbrack -\pi,\pi\rbrack \setminus\{\pm\pi,0\}$.
+- $x=0$, $x=-\pi$ e $x=\pi$ sono punti di minimo globale, perché $f(0)=f(-\pi)=f(\pi)=0<f(x)$, per ogni $x\in[-\pi,\pi]\setminus\{\pm\pi,0\}$.
 
 **(d) Grafico qualitativo**
 
@@ -2743,7 +2743,7 @@ $$
 \int_0^{\pi/2} f(x)\,dx \quad\text{e}\quad \int_{\pi/2}^{\pi} f(x)\,dx.
 $$
 
-Poiché $\sin(\pi-x)=\sin x$ per ogni $x\in\lbrack 0,\pi\rbrack $, si ha $f(\pi-x)=f(x)$, per ogni $x\in\lbrack 0,\pi\rbrack $. Con la sostituzione $t=\pi-x$ si ottiene allora
+Poiché $\sin(\pi-x)=\sin x$ per ogni $x\in[0,\pi]$, si ha $f(\pi-x)=f(x)$, per ogni $x\in[0,\pi]$. Con la sostituzione $t=\pi-x$ si ottiene allora
 
 $$
 \int_{\pi/2}^{\pi} f(x)\,dx=\int_0^{\pi/2} f(\pi-t)\,dt=\int_0^{\pi/2} f(t)\,dt,
@@ -2966,8 +2966,8 @@ Per $x<-2$ si ha $f'(x)=-f(x)\bigl(1+\log(-(x+2))\bigr)$, che si annulla in $x=-
 Quindi $f$ è:
 
 - strettamente decrescente in $\left(-\infty,-2-\frac1e\right\rbrack $;
-- strettamente crescente in $\left\lbrack -2-\frac1e,-2\right\rbrack $;
-- strettamente decrescente in $\left\lbrack -2,-2+\frac1e\right\rbrack $;
+- strettamente crescente in $\left[-2-\frac1e,-2\right]$;
+- strettamente decrescente in $\left[-2,-2+\frac1e\right]$;
 - strettamente crescente in $\left\lbrack -2+\frac1e,+\infty\right)$.
 
 Di conseguenza $x=-2$ è punto di massimo locale (con cuspide), con $f(-2)=1$, mentre $x=-2\pm\frac1e$ sono punti di minimo locale, con
@@ -4015,8 +4015,8 @@ Pertanto
 
 $$
 \begin{aligned}
-&f\text{ è strettamente decrescente sugli intervalli }(-2,-4/3],\ (0,4/3],\\
-&f\text{ è strettamente crescente sugli intervalli }[-4/3,0),\ [4/3,2).
+&f\text{ è strettamente decrescente sugli intervalli }(-2,-4/3\rbrack ,\ (0,4/3\rbrack ,\\
+&f\text{ è strettamente crescente sugli intervalli }\lbrack -4/3,0),\ \lbrack 4/3,2).
 \end{aligned}
 $$
 
@@ -4164,8 +4164,8 @@ Pertanto
 
 $$
 \begin{aligned}
-f &\text{ è strettamente crescente sugli intervalli }(-2,-4/3],\ (0,4/3],\\
-f &\text{ è strettamente decrescente sugli intervalli }[-4/3,0),\ [4/3,2).
+f &\text{ è strettamente crescente sugli intervalli }(-2,-4/3\rbrack ,\ (0,4/3\rbrack ,\\
+f &\text{ è strettamente decrescente sugli intervalli }\lbrack -4/3,0),\ \lbrack 4/3,2).
 \end{aligned}
 $$
 
@@ -4352,7 +4352,7 @@ $$
 (c) Calcolare, se esistono, i limiti seguenti:
 
 $$
-\lim_{x\to +\infty}\left[x^6 M(2x)+\sqrt[3]{x}\right],
+\lim_{x\to +\infty}\left\lbrack x^6 M(2x)+\sqrt[3]{x}\right\rbrack ,
 $$
 
 $$
@@ -4373,7 +4373,7 @@ Se invece prendiamo $b_n=n+\frac14$ per ogni $n\in\mathbb{N}$, si ha ancora $\li
 (c) Per il primo limite, osserviamo che $x^6M(2x)+\sqrt[3]{x}\ge\sqrt[3]{x}$ per ogni $x\ge0$, dato che la mantissa è una funzione nonnegativa. Siccome $\lim_{x\to +\infty}\sqrt[3]{x}=+\infty$, per il teorema del confronto deduciamo che anche
 
 $$
-\lim_{x\to +\infty}\left[x^6M(2x)+\sqrt[3]{x}\right]=+\infty.
+\lim_{x\to +\infty}\left\lbrack x^6M(2x)+\sqrt[3]{x}\right\rbrack =+\infty.
 $$
 
 Per il secondo limite, mostriamo come in (b) che il limite non esiste, trovando due successioni $(a_n)_n$ e $(b_n)_n$ divergenti negativamente tali che le sostituzioni $x=a_n$ e $x=b_n$ producano limiti diversi. Prendendo $a_n=-2\pi n$ e $b_n=-2\pi n+\frac{\pi}{2}$, si ha $\lim_{n\to +\infty}a_n=-\infty=\lim_{n\to +\infty}b_n$. Inoltre, $\sin(a_n)-2=-2$ e $\sin(b_n)-2=-1$ per ogni $n$. Pertanto

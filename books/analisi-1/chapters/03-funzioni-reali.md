@@ -192,7 +192,7 @@ $$
 **Esempio 3.4.** Siano $f(x) = \log x$, con $\operatorname{dom} f = \,\rbrack 0,+\infty\lbrack $, e $g(x) = \sqrt{x-1}$, con $\operatorname{dom} g = \lbrack 1,+\infty\lbrack $. Calcoliamo $\operatorname{dom}(g \circ f)$:
 
 $$
-\operatorname{dom}(g \circ f) = \{x \in \,]0,+\infty[ \, : \log x \ge 1\} = \{x > 0 : x \ge e\} = [e, +\infty[.
+\operatorname{dom}(g \circ f) = \{x \in \,\rbrack 0,+\infty\lbrack  \, : \log x \ge 1\} = \{x > 0 : x \ge e\} = \lbrack e, +\infty\lbrack .
 $$
 
 Sull'insieme trovato si ha $(g \circ f)(x) = \sqrt{\log x - 1}$.
@@ -350,12 +350,12 @@ Due funzioni particolari, costruite a partire dalla struttura d'ordine di $\math
 **Definizione 3.7 (parte intera).** La **funzione parte intera** di $x \in \mathbb{R}$, indicata con $\lbrack x\rbrack $, è il più grande numero intero minore o uguale a $x$:
 
 $$
-[x] = \max\{n \in \mathbb{Z} : n \le x\}.
+\lbrack x\rbrack  = \max\{n \in \mathbb{Z} : n \le x\}.
 $$
 
 :::formula{id="3.10" label="Funzione parte intera"}
 $$
-[x] = \max\{n \in \mathbb{Z} : n \le x\}
+\lbrack x\rbrack  = \max\{n \in \mathbb{Z} : n \le x\}
 $$
 :::
 
@@ -364,14 +364,14 @@ Ad esempio $\lbrack 3.7\rbrack  = 3$, $\lbrack 5\rbrack  = 5$ e, attenzione, $\l
 **Definizione 3.8 (mantissa).** La **funzione mantissa** (o parte frazionaria) di $x \in \mathbb{R}$, indicata con $M(x)$ oppure $\{x\}$, è definita come
 
 $$
-M(x) = x - [x].
+M(x) = x - \lbrack x\rbrack .
 $$
 
 Il valore di $M(x)$ è sempre un numero reale non negativo minore di $1$, cioè $M(x) \in \lbrack 0, 1\lbrack $ per ogni $x \in \mathbb{R}$.
 
 :::formula{id="3.11" label="Funzione mantissa"}
 $$
-M(x) = x - [x], \qquad M(x) \in [0,1[ \ \ \forall x \in \mathbb{R}
+M(x) = x - \lbrack x\rbrack , \qquad M(x) \in \lbrack 0,1\lbrack  \ \ \forall x \in \mathbb{R}
 $$
 :::
 
@@ -421,7 +421,7 @@ Le nozioni di parità, disparità e periodicità saranno riprese nello [studio d
 
 ### Funzioni limitate
 
-Una prima proprietà globale che si può chiedere a una funzione reale è la limitatezza della sua immagine, concetto già introdotto per i sottoinsiemi di $\mathbb{R}$ nella sezione su [maggioranti, minoranti ed estremi](ref:chapter/1#p5).
+Una prima proprietà globale che si può chiedere a una funzione reale è la limitatezza della sua immagine, concetto già introdotto per i sottoinsiemi di $\mathbb{R}$ nella sezione su [maggioranti, minoranti ed estremi](ref:chapter/1#p6).
 
 Sia $f : A \to \mathbb{R}$, con $A \subseteq \mathbb{R}$.
 
@@ -526,13 +526,13 @@ Un risultato fondamentale garantisce l'esistenza di massimo e minimo assoluti so
 **Teorema 3.2** (di Weierstrass). *Sia $f : \lbrack a,b\rbrack  \to \mathbb{R}$ una funzione continua, con $a, b \in \mathbb{R}$ e $a < b$. Allora esistono $x_m, x_M \in \lbrack a,b\rbrack $ tali che*
 
 $$
-\forall x \in [a,b] \qquad f(x_m) \le f(x) \le f(x_M),
+\forall x \in \lbrack a,b\rbrack  \qquad f(x_m) \le f(x) \le f(x_M),
 $$
 
 *cioè $f$ ammette almeno un punto di minimo assoluto $x_m$ e almeno un punto di massimo assoluto $x_M$ su $\lbrack a,b\rbrack $.*
 
 :::formula{id="3.18" label="Teorema di Weierstrass"}
-$$f \in C([a,b]) \implies \exists x_m, x_M \in [a,b]: \ \forall x \in [a,b], \ f(x_m) \le f(x) \le f(x_M)$$
+$$f \in C(\lbrack a,b\rbrack ) \implies \exists x_m, x_M \in \lbrack a,b\rbrack : \ \forall x \in \lbrack a,b\rbrack , \ f(x_m) \le f(x) \le f(x_M)$$
 :::
 
 In particolare, poiché $m = f(x_m)$ e $M = f(x_M)$ sono entrambi valori reali, $f$ è limitata su $\lbrack a,b\rbrack $. Le ipotesi di chiusura e limitatezza dell'intervallo e di continuità della funzione garantiscono l'esistenza di massimo e minimo assoluti; togliendo una di queste ipotesi, la conclusione non è più garantita, anche se può ancora valere per una funzione specifica. Per esempio, la funzione costante su $\mathbb{R}$ possiede massimo e minimo assoluti. Invece, $f(x) = 1/x$ su $\rbrack 0,1\rbrack $ è illimitata superiormente e non ha massimo; una funzione discontinua su un intervallo chiuso e limitato può a sua volta non assumere un valore estremo.
@@ -546,3 +546,181 @@ Un primo errore frequente è confondere il **punto di massimo** $x_0$ con il **v
 Un secondo errore è applicare il teorema di Weierstrass senza controllare le ipotesi: il teorema richiede che il dominio sia un intervallo **chiuso e limitato** $\lbrack a,b\rbrack $ e che $f$ sia **continua su tutto l'intervallo**. Se il dominio è aperto, semiaperto o illimitato, oppure se $f$ presenta anche un solo punto di discontinuità, l'esistenza di massimo e minimo assoluti non è più garantita e deve essere verificata caso per caso.
 
 Un terzo errore riguarda il teorema di Fermat: la condizione $f'(x_0) = 0$ è **necessaria ma non sufficiente** per avere un punto di estremo relativo, e vale solo per punti **interni** al dominio in cui $f$ è derivabile. Non bisogna quindi cercare i massimi e minimi assoluti di una funzione su $\lbrack a,b\rbrack $ soltanto risolvendo $f'(x) = 0$: occorre anche controllare gli estremi $a, b$ dell'intervallo e gli eventuali punti interni di non derivabilità, dove la derivata non si annulla (o non esiste) ma la funzione può comunque avere un estremo, come $f(x) = |x|$, che ha un minimo assoluto in $x = 0$ pur avendo in quel punto un punto angoloso e quindi non essendo derivabile. Simmetricamente, l'annullarsi della derivata non implica che il punto sia un estremo: $f(x) = x^3$ ha $f'(0) = 0$ ma $x = 0$ non è né punto di massimo né di minimo, essendo un punto di flesso a tangente orizzontale.
+
+## p6 | Funzioni elementari e loro inverse
+
+### Perché servono le funzioni elementari
+
+Quasi tutti gli esercizi di Analisi 1 si costruiscono componendo poche funzioni di base: potenze, esponenziali, logaritmi, seno, coseno, tangente e le loro inverse. Per questo bisogna conoscere di ciascuna dominio, immagine, monotonia e grafico. Dalla stretta monotonia si ricava l'iniettività; la funzione inversa è definita sull'immagine della funzione (si vedano [Funzioni: dominio, immagine, iniettività](ref:chapter/3#p2) e [Grafico, composizione e funzione inversa](ref:chapter/3#p3)). In questa sezione fissiamo queste proprietà e le usiamo per risolvere equazioni e disequazioni.
+
+### Potenze, esponenziali e logaritmi
+
+**Potenze con esponente intero.** La funzione $x\mapsto x^n$, con $n\in\mathbb{N}^+$, ha dominio $\mathbb{R}$.
+- Se $n$ è pari, la funzione è pari, con immagine $\lbrack 0,+\infty\lbrack $. Non è iniettiva su $\mathbb{R}$ (ad esempio $f(2)=f(-2)=4$), ma lo è su $\lbrack 0,+\infty\lbrack $, dove è strettamente crescente.
+- Se $n$ è dispari, la funzione è dispari, strettamente crescente e biettiva su $\mathbb{R}$.
+
+L'inversa della restrizione a $\lbrack 0,+\infty\lbrack $ è la radice $\sqrt[n]{x}$, definita su $\lbrack 0,+\infty\lbrack $ e strettamente crescente. Per $n$ dispari la radice è definita su tutto $\mathbb{R}$.
+
+**Potenze con esponente reale.** Per $x>0$ e $\alpha\in\mathbb{R}$ si pone $x^\alpha=e^{\alpha\log x}$. La funzione $x^\alpha$ ha dominio $\rbrack 0,+\infty\lbrack $ e immagine $\rbrack 0,+\infty\lbrack $ per $\alpha\neq0$. È strettamente crescente se $\alpha>0$ e strettamente decrescente se $\alpha<0$.
+
+**Esponenziale.** Sia $a>0$, $a\neq1$. La funzione $x\mapsto a^x$ ha dominio $\mathbb{R}$ e immagine $\rbrack 0,+\infty\lbrack $. È strettamente crescente se $a>1$ e strettamente decrescente se $0<a<1$. In particolare è iniettiva su $\mathbb{R}$.
+
+**Logaritmo.** L'inversa di $a^x$ è $\log_a x$, con dominio $\rbrack 0,+\infty\lbrack $ e immagine $\mathbb{R}$. Ha la stessa monotonia della base: crescente se $a>1$, decrescente se $0<a<1$. Il suo grafico è il simmetrico di quello di $a^x$ rispetto alla retta $y=x$. Valgono, per $x,y>0$,
+
+$$\log_a(xy)=\log_a x+\log_a y,\qquad \log_a(x^\alpha)=\alpha\log_a x,\qquad a^{\log_a x}=x,\qquad \log_a(a^x)=x\ \ \forall x\in\mathbb{R}.$$
+
+### Funzioni trigonometriche
+
+Le funzioni $\sin x$ e $\cos x$ hanno dominio $\mathbb{R}$, immagine $\lbrack -1,1\rbrack $ e periodo $2\pi$. Il seno è dispari e il coseno è pari. Quindi non sono iniettive su $\mathbb{R}$: ad esempio $\sin 0=\sin\pi$.
+
+La tangente $\tan x=\frac{\sin x}{\cos x}$ ha dominio $\mathbb{R}\setminus\left\{\frac{\pi}{2}+k\pi : k\in\mathbb{Z}\right\}$, immagine $\mathbb{R}$, periodo $\pi$, ed è dispari. È strettamente crescente su ogni intervallo $\left\rbrack -\frac{\pi}{2}+k\pi,\frac{\pi}{2}+k\pi\right\lbrack $, ma non su tutto il suo dominio.
+
+Le identità di base sono $\sin^2x+\cos^2x=1$, $\sin\left(\frac{\pi}{2}-x\right)=\cos x$ e le formule di addizione e duplicazione.
+
+### Le funzioni inverse arcoseno, arcocoseno, arcotangente
+
+Seno, coseno e tangente non sono iniettive, quindi non sono invertibili sul loro dominio naturale. Si **restringe** il dominio a un intervallo su cui la funzione è strettamente monotona e assume tutti i suoi valori. Su questo intervallo la funzione è biettiva verso la sua immagine e la funzione inversa è ben definita.
+
+:::formula{id="3.19" label="Funzioni trigonometriche inverse"}
+$$\begin{aligned}
+&\sin:\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]\to[-1,1]\ \text{biettiva},\ \ \arcsin:\lbrack -1,1\rbrack \to\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]\\
+&\cos:\lbrack 0,\pi\rbrack \to[-1,1]\ \text{biettiva},\ \ \arccos:\lbrack -1,1\rbrack \to[0,\pi]\\
+&\tan:\left\rbrack -\tfrac{\pi}{2},\tfrac{\pi}{2}\right[\to\mathbb{R}\ \text{biettiva},\ \ \arctan:\mathbb{R}\to\left]-\tfrac{\pi}{2},\tfrac{\pi}{2}\right\lbrack
+\end{aligned}$$
+:::
+
+Dunque $\arcsin y$ è l'**unico** $x\in\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$ tale che $\sin x=y$, e analogamente per le altre. Arcoseno e arcotangente sono strettamente crescenti e dispari. L'arcocoseno è strettamente decrescente. L'arcotangente ha due asintoti orizzontali, $y=\pm\frac{\pi}{2}$.
+
+:::image{src="assets/a01b4cb1-arcsin-arccos.svg" alt="Grafici di arcsin e arccos su [-1,1]" caption="Fig. 3.8 — arcsin cresce da -π/2 a π/2, arccos decresce da π a 0; i due grafici sono simmetrici rispetto alla retta y = π/4."}
+:::
+
+:::image{src="assets/a01b4cb1-arctan.svg" alt="Grafico di arctan con asintoti orizzontali" caption="Fig. 3.9 — arctan è crescente su tutto R e tende a ±π/2 per x che tende a ±∞."}
+:::
+
+Valgono le relazioni, con le condizioni di validità indicate:
+
+:::formula{id="3.20" label="Composizione con le inverse trigonometriche"}
+$$\sin(\arcsin y)=y\ \ \forall y\in[-1,1],\qquad \arcsin(\sin x)=x\ \Longleftrightarrow\ x\in\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right],\qquad \arcsin y+\arccos y=\tfrac{\pi}{2}\ \ \forall y\in[-1,1]$$
+:::
+
+La prima relazione segue da $f\circ f^{-1}=\mathrm{id}$, la seconda da $f^{-1}\circ f=\mathrm{id}$ solo sul dominio ristretto. La terza segue da $\sin\left(\frac{\pi}{2}-x\right)=\cos x$. Valgono relazioni analoghe per $\arctan$.
+
+**Esempio 3.13.** Calcoliamo $\arcsin\left(\sin\frac{5\pi}{6}\right)$. Poiché $\frac{5\pi}{6}\notin\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$, non si può semplificare. Si ha $\sin\frac{5\pi}{6}=\frac12$, e l'unico angolo di $\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$ con seno $\frac12$ è $\frac{\pi}{6}$. Quindi $\arcsin\left(\sin\frac{5\pi}{6}\right)=\frac{\pi}{6}$.
+
+**Errore tipico 3.8.** Scrivere $\arcsin(\sin x)=x$ per ogni $x$. L'uguaglianza vale solo per $x\in\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$. Il risultato dell'arcoseno sta sempre in $\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$, mentre quello dell'arcocoseno sta in $\lbrack 0,\pi\rbrack $. Un altro errore è confondere $\arcsin x$ con $\frac{1}{\sin x}$, perché la notazione $f^{-1}$ indica l'inversa e mai il reciproco.
+
+### Equazioni e disequazioni con le funzioni elementari
+
+Il principio guida è la monotonia. Se $f$ è strettamente crescente su un intervallo, allora per $x,y$ nell'intervallo si ha $f(x)<f(y)\Leftrightarrow x<y$ e $f(x)=f(y)\Leftrightarrow x=y$. Se $f$ è strettamente decrescente, il verso della disuguaglianza si inverte. Prima di applicare la funzione inversa bisogna **sempre** controllare il dominio.
+
+**Esempio 3.14 (esponenziale).** Risolviamo $e^{2x}-3e^x+2=0$. Posto $t=e^x>0$, si ottiene $t^2-3t+2=0$, cioè $t=1$ oppure $t=2$. Entrambe le soluzioni sono positive, quindi accettabili, e danno $x=\log1=0$ oppure $x=\log2$.
+
+**Esempio 3.15 (logaritmo).** Risolviamo $\log(x-1)<2$. Il dominio richiede $x>1$. Poiché $\log$ è strettamente crescente, la disequazione equivale a $x-1<e^2$. Quindi $1<x<1+e^2$, cioè $x\in\,\rbrack 1,1+e^2\lbrack $.
+
+**Esempio 3.16 (base minore di 1).** Risolviamo $\log_{1/2}x>1$. Il dominio è $x>0$. Il logaritmo in base $\frac12$ è decrescente, quindi la disuguaglianza si inverte: $x<\left(\frac12\right)^1$. Quindi $x\in\left\rbrack 0,\frac12\right\lbrack $.
+
+**Esempio 3.17 (trigonometrica).** Le soluzioni di $\sin x\ge\frac12$ si leggono sulla circonferenza goniometrica, o sul grafico del seno su un periodo. Risulta $\frac{\pi}{6}+2k\pi\le x\le\frac{5\pi}{6}+2k\pi$, con $k\in\mathbb{Z}$. Anche l'equazione $\cos x=\frac12$ ha infinite soluzioni: $x=\pm\frac{\pi}{3}+2k\pi$, mentre $\arccos\frac12=\frac{\pi}{3}$ è soltanto una di esse. Per la tangente, $\tan x=1$ dà $x=\frac{\pi}{4}+k\pi$, con $k\in\mathbb{Z}$.
+
+**Errore tipico 3.9.** Risolvere $\sin x=a$ scrivendo solo $x=\arcsin a$. L'arcoseno fornisce una sola soluzione. Le altre si ottengono dalla periodicità e dalla simmetria del seno: $x=\arcsin a+2k\pi$ e $x=\pi-\arcsin a+2k\pi$.
+
+**Errore tipico 3.10.** Dimenticare di invertire la disuguaglianza con una base $0<a<1$, oppure moltiplicare una disequazione per una quantità di cui non si conosce il segno. Un altro errore è dimenticare le condizioni di esistenza, come l'argomento del logaritmo positivo e $\cos x\neq0$ per la tangente.
+
+## p7 | Come viene chiesto all'esame
+
+Nel capitolo sulle funzioni reali l'esame ha proposto domande in 61 delle 83 sessioni passate. Il tipo più frequente è di gran lunga lo studio di funzione, quasi sempre l'esercizio 1 dello scritto, dove i temi di questo capitolo (dominio, simmetrie, immagine, monotonia, estremi) sono i primi passi di un'analisi più lunga. Seguono le domande brevi di teoria, tipiche dell'esercizio 2.
+
+Le domande si raggruppano in quattro tipi ricorrenti.
+
+### Tipo 1: dominio, simmetrie e studio di funzione
+
+L'esercizio 1 dello scritto parte quasi sempre con la richiesta "determinare il dominio $\operatorname{dom}(f)$, eventuali proprietà di simmetria, i limiti agli estremi e gli eventuali asintoti". Poi chiede continuità e derivabilità, intervalli di monotonia, punti di massimo e minimo, e spesso un grafico qualitativo. In questa sezione ci interessano i primi passi e l'uso della monotonia per classificare gli estremi. Gli altri punti sono trattati nel capitolo sul calcolo differenziale (si veda [Studio di funzione completo](ref:chapter/8#p4)).
+
+Metodo:
+
+1. Scrivi le condizioni di esistenza di ogni pezzo della formula: radici di indice pari, logaritmi, denominatori, argomenti di $\arctan$ e valori assoluti. Intersecale. Le funzioni elementari da ricordare sono nella sezione [Funzioni elementari e loro inverse](ref:chapter/3#p6).
+2. Controlla che il dominio sia simmetrico rispetto a $0$. Se lo è, calcola $f(-x)$ e confrontalo con $f(x)$ e con $-f(x)$ (vedi [Simmetrie, periodicità e funzioni particolari](ref:chapter/3#p4)). Se $f$ è pari o dispari, studia solo $x\ge 0$ e completa per simmetria.
+3. Calcola i limiti agli estremi del dominio, compresi i punti isolati esclusi. Dai limiti ricava gli asintoti verticali, orizzontali e obliqui.
+4. Per la monotonia studia il segno di $f'$ sugli intervalli del dominio. Poi classifica i punti critici e i punti di non derivabilità, distinguendo punti di massimo o minimo, relativi o assoluti, dai valori corrispondenti (vedi [Funzioni limitate e monotone, massimi e minimi](ref:chapter/3#p5)).
+
+Errori tipici:
+
+- Dichiarare pari o dispari una funzione senza aver verificato che il dominio sia simmetrico.
+- Dimenticare che $\log(|x|)$ richiede solo $x\neq 0$, mentre $\log(x)$ richiede $x>0$. Con i valori assoluti nel dominio le due condizioni sono diverse.
+- Confondere punto di massimo (l'ascissa) e valore massimo (l'ordinata), o dichiarare "assoluto" un massimo che è solo relativo.
+- Usare il segno di $f'$ su un insieme che non è un intervallo, per esempio a cavallo di un punto escluso dal dominio.
+
+Esempi:
+
+- **Esame del 13 giugno 2025 - turno U - versione 1, esercizio 1**: la funzione è $f(x)=x\sqrt[3]{(\log(|x|))^2}$. Il dominio è $\mathbb{R}\setminus\{0\}$, simmetrico. Poiché $f(-x)=-f(x)$, la funzione è dispari, e basta studiare $x>0$. Le altre versioni cambiano segno o inseriscono $|2x|$ al posto di $|x|$, ma il metodo non cambia.
+- **Esame dell'11 aprile 2024, esercizio 1**: la funzione è $f(x)=\arctan\left(\frac{|x|+1}{|x|-1}\right)$. Il dominio è $\mathbb{R}\setminus\{-1,1\}$. $f$ dipende solo da $|x|$, quindi è pari, e si studia $x\ge 0$ con $x\neq 1$. I limiti in $1^\pm$ vanno calcolati a parte, perché il segno del denominatore cambia.
+
+### Tipo 2: dominio, immagine, iniettività e invertibilità
+
+Qui la domanda è quasi letterale: "indicare dominio e immagine, motivando in modo dettagliato" oppure "studiare l'invertibilità e determinare il più grande intervallo in cui la funzione è invertibile". Compare negli esami del 2020 (con grafico fornito) e in domande sull'iniettività legate al teorema dei valori intermedi.
+
+Metodo:
+
+1. Determina il dominio con le condizioni di esistenza, come nel tipo 1.
+2. Per l'immagine, leggi dal grafico (o ricostruisci dallo studio di monotonia e dai limiti agli estremi) gli intervalli percorsi da $f$ su ogni tratto monotono. L'immagine è l'unione di questi intervalli. Attenzione agli estremi: un valore raggiunto va incluso, un valore solo approssimato (limite) va escluso. Si veda [Funzioni: dominio, immagine, iniettività](ref:chapter/3#p2).
+3. Per l'iniettività, mostra che $f$ è strettamente monotona su un intervallo (derivata di segno costante), oppure trova due punti distinti con lo stesso valore.
+4. Per invertire, restringi $f$ a un intervallo su cui è strettamente monotona. Dominio e immagine dell'inversa si scambiano con quelli della restrizione. Vedi [Grafico, composizione e funzione inversa](ref:chapter/3#p3).
+
+Errori tipici:
+
+- Confondere codominio e immagine, e scrivere "suriettiva" solo perché il codominio dichiarato è $\mathbb{R}$.
+- Chiamare la funzione "invertibile" senza specificare l'intervallo: il testo chiede spesso il più grande intervallo, e la risposta è un intervallo preciso.
+- Dimenticare che per $g=\log f$ occorre $f>0$: il dominio di $g$ si restringe prima di discutere la monotonia.
+
+Esempi:
+
+- **Esame del 23 giugno 2020, esercizio 1**: $f(x)=\frac{|x|+1}{|x|-1}$ con il grafico in figura. Dominio $\mathbb{R}\setminus\{-1,1\}$. L'immagine si ricava dai limiti agli estremi e dai tratti monotoni su $\lbrack 0,1\lbrack $, $\rbrack 1,+\infty\lbrack $ e per simmetria.
+- **Esame dell'11 febbraio 2020 - Io turno, esercizio 2A**: si deve mostrare che $e^x+x^3$ si annulla in un solo punto. La funzione è somma di due funzioni strettamente crescenti, quindi iniettiva. Il teorema di esistenza degli zeri dà l'esistenza e la stretta monotonia l'unicità. Poi si studia $g=\log f$ sull'intervallo dove $f>0$, cioè a destra di questo zero.
+- **Esame del 25 gennaio 2023 - turno 1, esercizio 2** (versioni A e B): una funzione continua su $\lbrack 1,3\rbrack $ con $f(1)=-3$, $f(3)=-4$, $f(2)=-2$ non è iniettiva. Si sceglie un valore intermedio tra $-2$ e $-3$ (per esempio $-2{,}5$) e lo si raggiunge sia in $\rbrack 1,2\lbrack $ sia in $\rbrack 2,3\lbrack $ per il teorema dei valori intermedi ([formula (5.6)](ref:formula/5.6)). Due punti distinti con la stessa immagine contraddicono l'iniettività.
+
+### Tipo 3: definizioni e teoremi su estremi, monotonia e funzioni composte
+
+L'esercizio 2 dello scritto (6 punti) è molto spesso diviso in tre parti: una definizione, l'enunciato di un teorema e un'applicazione. Le definizioni richieste in questo capitolo sono punto di massimo (o minimo) assoluto e relativo, funzione crescente, funzione periodica, funzione inversa. I teoremi richiesti sono Weierstrass, zeri, valori intermedi, Lagrange.
+
+Metodo:
+
+1. Scrivi la definizione con i quantificatori, senza parole vaghe. Per un punto di massimo assoluto $x_0\in\operatorname{dom}(f)$ occorre $f(x)\le f(x_0)$ per ogni $x\in\operatorname{dom}(f)$. Per il massimo relativo la disuguaglianza vale solo per $x$ in un intorno $I_r(x_0)$ intersecato con il dominio. Si veda {{formula:3.15}} e {{formula:3.17}}.
+2. Enuncia i teoremi con tutte le ipotesi (intervallo chiuso e limitato, continuità, ecc.), come in {{formula:3.18}} e [formula (5.3)](ref:formula/5.3).
+3. Nell'applicazione, verifica una per una le ipotesi del teorema prima di usarlo, e usa la monotonia dove serve (per esempio per l'unicità).
+4. Per i problemi su estremi senza derivata, riscrivi la funzione con valori assoluti come composizione di funzioni note e usa il grafico: gli zeri di un valore assoluto sono minimi assoluti, e gli estremi dell'intervallo possono essere punti di estremo.
+
+Errori tipici:
+
+- Dimenticare un'ipotesi del teorema (per Weierstrass, la chiusura dell'intervallo o la continuità).
+- Dire "$f'(x_0)=0$ quindi $x_0$ è un massimo": il teorema di Fermat dà solo una condizione necessaria.
+- Non riconoscere che un estremo dell'intervallo $\lbrack a,b\rbrack $ può essere un punto di massimo relativo per la funzione ristretta.
+
+Esempi:
+
+- **Esame del 13 settembre 2024 - turno U - versione 2, esercizio 2**: si chiedono le definizioni di massimo assoluto e relativo e poi i punti di massimo e minimo di $f(x)=|x^2+2x|$ in $\lbrack -5,1\rbrack $ senza usare la derivata. Si scrive $x^2+2x=(x+1)^2-1$ e si disegna il grafico del valore assoluto: gli zeri $x=-2$ e $x=0$ sono minimi assoluti, $x=-5$ è il massimo assoluto (valore $15$), $x=-1$ è un massimo relativo (valore $1$) e anche l'estremo $x=1$ è un massimo relativo (valore $3$).
+- **Esame del 13 febbraio 2018, esercizio 2**: si chiede la definizione di funzione crescente su $A$ e poi la monotonia di $g\circ f$ con $f$ crescente su $A$ e $g$ decrescente su $\mathbb{R}$. Applicando la definizione si trova che $g\circ f$ è decrescente su $A$: se $x_1<x_2$ allora $f(x_1)\le f(x_2)$ e quindi $g(f(x_1))\ge g(f(x_2))$.
+- **Esame del 25 gennaio 2023 - turno 2, esercizio 2**: si chiede la definizione di funzione crescente, l'enunciato del teorema di Lagrange e se una funzione $C^2$ con certi dati ($f(0)=5$, $f(2)=9$, $f'(0)=1$, $f''<0$ per $x\ge 0$) possa esistere. Il metodo è confrontare il valor medio $\frac{f(2)-f(0)}{2}=2$ con la monotonia di $f'$ (decrescente perché $f''<0$ per $x\ge 0$) e con $f'(0)=1$.
+
+### Tipo 4: periodicità, mantissa e funzioni definite a tratti
+
+Domande specifiche su parte intera e mantissa compaiono nell'esercizio 2 del 22 gennaio 2025 (turno 2). Si chiede la definizione di funzione periodica, la dimostrazione che $\lim_{x\to+\infty}M(kx)$ non esiste, e il calcolo di limiti con prodotti e somme in cui compare la mantissa. Le funzioni definite a tratti sono presenti anche nell'esercizio 1 di quella sessione e nelle sessioni del 21 giugno 2024.
+
+Metodo:
+
+1. Scrivi la definizione: $g$ è periodica se esiste $T>0$ tale che il dominio sia invariato dalla traslazione di $T$ (se $x\in\operatorname{dom}(g)$ allora $x\pm T\in\operatorname{dom}(g)$) e $g(x+T)=g(x)$ per ogni $x\in\operatorname{dom}(g)$. Ricorda che $M(x)=x-\lbrack x\rbrack $ ha periodo $1$, quindi $M(kx)$ ha periodo $1/k$ (vedi {{formula:3.11}}).
+2. Per dimostrare che il limite non esiste, scegli due successioni $x_n\to+\infty$ con $M(kx_n)$ che tendono a valori diversi. Per esempio $x_n=n/k$ dà $M(kx_n)=0$, mentre $y_n=(n+\tfrac12)/k$ dà $M(ky_n)=\tfrac12$. Basta la caratterizzazione sequenziale ([formula (4.15)](ref:formula/4.15)).
+3. Per i limiti con la mantissa, usa che $0\le M<1$ (funzione limitata) e confronta con i termini che divergono, oppure usa il teorema del confronto (si veda [Teoremi sui limiti](ref:chapter/4#p4)).
+4. Per le funzioni definite a tratti, studia ogni pezzo separatamente e poi i punti di raccordo con limiti unilateri (si veda [Funzioni continue](ref:chapter/5#p2)).
+
+Errori tipici:
+
+- Calcolare la mantissa di un numero negativo troncando invece di sottrarre la parte intera (per esempio $M(-0{,}3)=0{,}7$ e non $0{,}3$).
+- Concludere che il limite esiste "perché $M$ è limitata": la limitatezza non basta, e le oscillazioni lo impediscono.
+- Trascurare il fatto che $M(5x)$ può essere piccola: in $x^2M(5x)+9\sqrt{x}$ bisogna esaminare con attenzione quale parte domina.
+
+Esempio:
+
+- **Esame del 22 gennaio 2025 - turno 2 - versione 1, esercizio 2**: si dimostra che $\lim_{x\to+\infty}M(2x)$ non esiste con le due successioni $x_n=n/2$ e $y_n=(n+\tfrac12)/2$. Poi si calcolano due limiti, uno con $x^6M(2x)+\sqrt[3]{x}$ e uno con un rapporto in cui compare $\sin x$ limitato.
+
+### Altri tipi, in breve
+
+Una sola sessione (29 gennaio 2020, esercizio 2, versioni A e C) propone estremi di un insieme come $A=\{\frac4n-2: n\in\mathbb{Z}\setminus\{0\}\}\cup\{10\}$ e poi estremi dell'immagine $g(A)$: si veda [Maggioranti, minoranti ed estremi](ref:chapter/1#p6). Nella sessione dell'11 febbraio 2020 (esercizio 2D) compaiono definizione e condizione sufficiente di invertibilità, e lo sviluppo $f^{-1}(x)=m(x-x_0)+o(x-x_0)$ per $f(x)=e^{3x}+x^5$: è la derivata dell'inversa, anticipata dalla sezione [Grafico, composizione e funzione inversa](ref:chapter/3#p3).

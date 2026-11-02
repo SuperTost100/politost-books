@@ -78,7 +78,7 @@ $$y = 1 + 2(x-1) = 2x - 1.$$
 
 Dalla definizione di derivata segue, usando il linguaggio degli o-piccoli,
 
-$$\lim_{x\to x_0}\left\lbrack \frac{f(x)-f(x_0)}{x-x_0} - f'(x_0)\right\rbrack  = 0 \implies \lim_{x\to x_0}\frac{f(x)-f(x_0)-f'(x_0)(x-x_0)}{x-x_0} = 0,$$
+$$\lim_{x\to x_0}\left[\frac{f(x)-f(x_0)}{x-x_0} - f'(x_0)\right] = 0 \implies \lim_{x\to x_0}\frac{f(x)-f(x_0)-f'(x_0)(x-x_0)}{x-x_0} = 0,$$
 
 da cui $f(x) - f(x_0) - f'(x_0)(x-x_0) = o(x-x_0)$. Mettendo in evidenza $f(x)$ si ottiene la **prima formula dell'incremento finito**:
 
@@ -106,7 +106,7 @@ $$f(x) = f(x_0) + f'(x_0)(x-x_0) + o(x-x_0).$$
 
 Poiché $f'(x_0)(x-x_0) \to 0$ e $o(x-x_0) \to 0$ quando $x \to x_0$, si ottiene $\lim_{x\to x_0} f(x) = f(x_0)$, che è esattamente la definizione di continuità di $f$ in $x_0$ data in [continuità tramite il limite](ref:chapter/5#p2). $\square$
 
-**Errore tipico 7.1.** Il teorema precedente non si inverte: continuità **non** implica derivabilità. Non è lecito dedurre che una funzione continua in $x_0$ sia anche derivabile in $x_0$; l'implicazione vale in un solo senso. L'esempio canonico è $f(x) = |x|$, già introdotto in [Valore assoluto](ref:chapter/1#p4): la funzione è continua su tutto $\mathbb{R}$, ma in $x_0 = 0$ il rapporto incrementale vale $+1$ da destra e $-1$ da sinistra, quindi $f$ presenta un punto angoloso e non è derivabile in $0$. Lo studio sistematico di questi casi (punti angolosi, cuspidi, flessi a tangente verticale) è l'oggetto della sezione successiva, [Punti di non derivabilità](ref:chapter/7#p3).
+**Errore tipico 7.1.** Il teorema precedente non si inverte: continuità **non** implica derivabilità. Non è lecito dedurre che una funzione continua in $x_0$ sia anche derivabile in $x_0$; l'implicazione vale in un solo senso. L'esempio canonico è $f(x) = |x|$, già introdotto in [Valore assoluto](ref:chapter/1#p5): la funzione è continua su tutto $\mathbb{R}$, ma in $x_0 = 0$ il rapporto incrementale vale $+1$ da destra e $-1$ da sinistra, quindi $f$ presenta un punto angoloso e non è derivabile in $0$. Lo studio sistematico di questi casi (punti angolosi, cuspidi, flessi a tangente verticale) è l'oggetto della sezione successiva, [Punti di non derivabilità](ref:chapter/7#p3).
 
 :::image{src="assets/4b1d9574-valore-assoluto-angoloso.svg" alt="Grafico di f(x)=|x| con punto angoloso nell'origine" caption="Fig. 7.2 — La funzione |x| è continua in 0 ma non derivabile: le derivate laterali valgono +1 e -1"}
 :::
@@ -348,7 +348,7 @@ Il teorema di Rolle è un caso particolare del teorema di Lagrange, in cui gli e
 **Teorema 7.5 (di Rolle).** Siano $a,b \in \mathbb{R}$ con $a<b$ e sia $f: \lbrack a,b\rbrack  \to \mathbb{R}$ continua su $\lbrack a,b\rbrack $ e derivabile (almeno) sull'intervallo aperto $\rbrack a,b\lbrack $. Se $f(a) = f(b)$, allora esiste $c \in \,\rbrack a,b\lbrack \,$ tale che $f'(c) = 0$.
 
 :::formula{id="7.11" label="Teorema di Rolle"}
-$$a<b, \quad f \in C([a,b]), \ f \text{ derivabile in } ]a,b[, \ f(a)=f(b) \implies \exists c \in \,]a,b[\, : f'(c) = 0$$
+$$a<b, \quad f \in C(\lbrack a,b\rbrack ), \ f \text{ derivabile in } \rbrack a,b\lbrack , \ f(a)=f(b) \implies \exists c \in \,\rbrack a,b\lbrack \, : f'(c) = 0$$
 :::
 
 **Dimostrazione.** Per il teorema di Weierstrass, essendo $f$ continua su $\lbrack a,b\rbrack $ chiuso e limitato, esistono $x_m, x_M \in \lbrack a,b\rbrack $ punti di minimo e massimo assoluti.
@@ -372,7 +372,7 @@ Quando $f(a) \ne f(b)$, il teorema di Rolle non si applica direttamente, ma la s
 $$f'(x_0) = \frac{f(b)-f(a)}{b-a}.$$
 
 :::formula{id="7.12" label="Teorema di Lagrange (del valor medio)"}
-$$a<b, \quad f \in C([a,b]), \ f \text{ derivabile in } ]a,b[ \implies \exists x_0 \in \,]a,b[\, : f'(x_0) = \frac{f(b)-f(a)}{b-a}$$
+$$a<b, \quad f \in C(\lbrack a,b\rbrack ), \ f \text{ derivabile in } \rbrack a,b\lbrack  \implies \exists x_0 \in \,\rbrack a,b\lbrack \, : f'(x_0) = \frac{f(b)-f(a)}{b-a}$$
 :::
 
 Il rapporto $\frac{f(b)-f(a)}{b-a}$ è la pendenza (il coefficiente angolare) della retta secante al grafico di $f$ passante per $(a,f(a))$ e $(b,f(b))$; il teorema afferma che esiste almeno un punto $x_0$, detto punto di Lagrange, in cui la retta tangente al grafico è parallela a tale secante.
@@ -510,3 +510,102 @@ usando il teorema dei carabinieri. Questo è l'errore tipico più insidioso: con
 **Il teorema non conviene.** Anche quando le ipotesi sono verificate, derivare può complicare l'espressione (ad esempio in presenza di prodotti o radici che, derivati, generano espressioni più complesse del limite di partenza) invece di semplificarla; in questi casi è preferibile usare i limiti notevoli o il principio di sostituzione con gli infinitesimi/infiniti (si vedano le sezioni [Limiti notevoli](ref:chapter/6#p2) e [Principio di sostituzione e calcolo dei limiti](ref:chapter/6#p4)).
 
 **Errore tipico 7.4.** Un errore molto diffuso e penalizzante negli scritti è sbagliare il calcolo di $f'$ o $g'$: un segno o un fattore errato porta a un risultato finale completamente scorretto, compromettendo anche l'eventuale studio di monotonia o di punti critici costruito sopra quel limite. Conviene sempre ricontrollare le derivate prima di concludere l'esercizio.
+
+## p6 | Come viene chiesto all'esame
+
+Il calcolo differenziale è comparso in 61 delle 83 sessioni d'esame passate. Il tipo di esercizio più frequente è lo studio di funzione, quasi sempre con un valore assoluto, una radice o un parametro. In quel caso la derivabilità e la classificazione dei punti di non derivabilità occupano il punto (b). Seguono gli esercizi di teoria breve, con enunciato o dimostrazione su Rolle, Lagrange o la definizione di derivata, e le domande su derivabilità in un punto specifico.
+
+Nelle prove scritte questi argomenti compaiono nell'Esercizio 1 (di solito 8 o 9 punti) e, in forma teorica, nell'Esercizio 2. Il test a risposta multipla può inoltre contenere domande teoriche sugli stessi enunciati.
+
+### Studio di funzione con derivabilità e punti critici
+
+**Che cosa chiede l'esame.** La struttura si ripete quasi identica per anni: (a) dominio, limiti e asintoti; (b) continuità e derivabilità, con classificazione dei punti di non derivabilità e calcolo di $f'$; (c) intervalli di monotonia e punti di massimo e minimo, relativi o assoluti; poi grafico qualitativo e a volte un'ultima domanda sul numero di soluzioni di un'equazione. Le funzioni contengono tipicamente $|x|$, radici o radici cubiche, logaritmi di valori assoluti, oppure sono definite a tratti.
+
+**Metodo.**
+
+1. Determinare il dominio e riscrivere ogni valore assoluto a tratti, separando i casi in cui l'argomento è positivo o negativo.
+2. Calcolare $f'$ con le regole di derivazione (vedi [Derivata e retta tangente](ref:chapter/7#p2)) separatamente su ciascun tratto, dove la funzione è derivabile.
+3. Nei punti di raccordo e nei punti in cui compaiono radici o potenze frazionarie, studiare i limiti di $f'(x)$ da destra e da sinistra, oppure i limiti laterali del rapporto incrementale. Se $f$ è continua nel punto, il {{formula:7.8}} permette di dedurre le derivate laterali dal limite di $f'$. Classificare il punto come angoloso, cuspide o flesso a tangente verticale ([Punti di non derivabilità](ref:chapter/7#p3)).
+4. Studiare il segno di $f'$ e dedurre la monotonia con il {{formula:7.13}} ([Teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4)).
+5. Elencare i candidati estremi: punti stazionari, punti di non derivabilità interni ed estremi del dominio. Classificarli con il segno di $f'$ ([Caratterizzazione dei punti critici](ref:chapter/8#p3)).
+6. Distinguere massimi e minimi relativi da quelli assoluti confrontando con i limiti agli estremi del dominio, poi tracciare il grafico ([Studio di funzione completo](ref:chapter/8#p4)).
+
+**Errori tipici.**
+
+- Derivare un valore assoluto come se fosse una funzione liscia, dimenticando che nei punti di annullamento dell'argomento la derivata può non esistere.
+- Dichiarare derivabile un punto solo perché $f'$ esiste a destra e a sinistra: servono derivate laterali uguali e, per il teorema tappabuchi, la continuità di $f$ nel punto.
+- Trascurare i punti di non derivabilità tra i candidati estremi: in molti testi il minimo assoluto sta proprio in una cuspide o in un punto angoloso.
+- Confondere estremo relativo e assoluto, senza confrontare con i limiti agli estremi del dominio.
+
+**Esempi.**
+
+- Esame del 31 gennaio 2024, esercizio 1: funzione del tipo $x^3/\sqrt{|x^4-1|}$ (con varianti). Si riscrive il valore assoluto a tratti, si deriva e si classificano i punti $x=\pm 1$ e $x=0$ con i limiti di $f'$.
+- Esame del 14 febbraio 2017, primo turno, esercizio 1: $f(x)=\sqrt{3x^2-x^3}$ (la radice è di indice 3 nel testo originale). Il punto di non derivabilità si studia con le derivate destra e sinistra, e il comportamento in $x=0$ distingue cuspide e flesso verticale.
+- Esame del 21 giugno 2024, esercizio 1: funzione definita a tratti con $e^{1/x}$ o $e^{-1/x}$ e valore $0$ sull'altro tratto. La derivabilità nel punto di raccordo si studia con i limiti laterali del rapporto incrementale e si ricollega a continuità e retta tangente.
+- Esame del 12 febbraio 2019, secondo turno, esercizio 1: $f(x)=e^{-1/\log(x^2-4)}$ con prolungamento continuo. Prima si prolunga per continuità, poi si studia la derivabilità della funzione prolungata.
+
+### Derivabilità in un punto con valore assoluto
+
+**Che cosa chiede l'esame.** Una funzione del tipo $f(x)=g(x)\,|x-x_0|$, con $g$ liscia, e la domanda se $f$ sia derivabile in $x_0$ e se $x_0$ sia un punto di estremo locale.
+
+**Metodo.**
+
+1. Scrivere la definizione di derivabilità tramite il limite del rapporto incrementale, in $x_0$ ([Derivata e retta tangente](ref:chapter/7#p2)).
+2. Calcolare $f(x_0)=0$ e il rapporto incrementale: $\frac{f(x)-f(x_0)}{x-x_0}=g(x)\frac{|x-x_0|}{x-x_0}$.
+3. Calcolare i limiti da destra e da sinistra: valgono $\pm g(x_0)$. La funzione è derivabile se e solo se $g(x_0)=0$; altrimenti $x_0$ è un punto angoloso ([Punti di non derivabilità](ref:chapter/7#p3)).
+4. Se $g(x_0)\neq 0$, il punto angoloso è di minimo locale quando $g(x_0)>0$ (infatti $f\ge 0=f(x_0)$ vicino a $x_0$) e di massimo locale quando $g(x_0)<0$.
+5. Se $g(x_0)=0$, la funzione è derivabile con $f'(x_0)=0$ e bisogna studiare il segno di $f$ attorno al punto.
+
+**Errori tipici.**
+
+- Usare la regola del prodotto sul valore assoluto, che non è derivabile in $x_0$.
+- Concludere che non c'è estremo perché la funzione non è derivabile: Fermat è solo una condizione necessaria nei punti derivabili.
+- Dimenticare che $g$ può cambiare segno intorno al punto.
+
+**Esempi.**
+
+- Esame del 7 febbraio 2025, turno 1, versione 1, esercizio 2: $f(x)=(e^x\tan x)\,|x-\pi|$. Qui $g(\pi)=e^\pi\tan\pi=0$, quindi il prodotto è derivabile in $\pi$.
+- Esame del 7 febbraio 2025, turno 1, versione 4, esercizio 2: $f(x)=(e^x\cot x)\,|x-\pi/2|$, dove $\cot(\pi/2)=0$ dà ancora derivabilità. Le versioni 2 e 3 variano la funzione $g$ e il punto.
+
+### Rolle, Lagrange e Fermat: enunciati e applicazioni
+
+**Che cosa chiede l'esame.** Enunciare il teorema (di Rolle o di Lagrange) con tutte le ipotesi, verificare se una funzione concreta le soddisfa, cercare punti stazionari, oppure dimostrare una conseguenza di Lagrange.
+
+**Metodo.**
+
+1. Enunciare il teorema con le tre ipotesi: continuità su $\lbrack a,b\rbrack $, derivabilità su $\rbrack a,b\lbrack $ e, per Rolle, $f(a)=f(b)$ ({{formula:7.11}}, {{formula:7.12}}).
+2. Verificare le ipotesi una alla volta, calcolando la derivata e determinando dove si annulla o non esiste ([Teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4)).
+3. Per una disuguaglianza sulla derivata, usare Lagrange su $\lbrack a,x\rbrack $: $f(x)-f(a)=f'(c)(x-a)$ e maggiorare $f'(c)$.
+4. Per un'affermazione vera o falsa su una funzione di cui si danno alcuni valori e segni delle derivate, usare Lagrange e il segno di $f''$ per ricavare una contraddizione oppure costruire un esempio.
+
+**Errori tipici.**
+
+- Dimenticare una ipotesi, soprattutto la derivabilità in tutti i punti interni.
+- Cercare i punti stazionari senza controllare che la derivata esista agli estremi o in punti interni problematici.
+- Dedurre che Rolle non vale perché c'è un punto non derivabile: significa solo che le ipotesi non sono soddisfatte, non che non esistano punti stazionari.
+
+**Esempi.**
+
+- Esame del 16 febbraio 2024, turno 1, versione 1, esercizio 2: $g(x)=\sqrt{\cosh x-1}$ su $\lbrack -2,2\rbrack $. Si osserva che $g'$ si annulla solo se $\sinh x=0$, ma in $x=0$ la funzione è come $|x|/\sqrt{2}$ e non è derivabile, quindi non ci sono punti stazionari e Rolle non si applica. Le versioni 2, 3 e 4 cambiano funzione e intervallo.
+- Esame del 1 febbraio 2017, secondo turno, esercizio 2: enunciare Lagrange, dare un esempio di funzione che non ne soddisfa la tesi, e dimostrare che $f'(x)<-3$ implica $\lim_{x\to+\infty}f(x)=-\infty$ usando $f(x)-f(0)=f'(c)\,x<-3x$.
+- Esame del 25 gennaio 2023, secondo turno, esercizio 2: dato $f\in C^2(\mathbb{R})$ con $f(0)=5$, $f(2)=9$, $f'(0)=1$ e $f''<0$ per $x\ge0$. Lagrange fornisce un punto con $f'=2$, ma $f'$ è decrescente e parte da $1$: contraddizione.
+
+### Teoria breve con derivata e limiti
+
+**Che cosa chiede l'esame.** Dimostrare che una maggiorazione del tipo $|g(x)|\le (x-x_0)^2$ implica la derivabilità in $x_0$.
+
+**Metodo.**
+
+1. Dedurre $g(x_0)=0$ dalla maggiorazione in $x=x_0$.
+2. Scrivere il rapporto incrementale $\frac{g(x)-g(x_0)}{x-x_0}=\frac{g(x)}{x-x_0}$ e maggiorarlo in valore assoluto con $|x-x_0|$.
+3. Usare il teorema dei due carabinieri per ottenere che il limite è $0$, quindi $g'(x_0)=0$ ([Derivata e retta tangente](ref:chapter/7#p2)).
+
+**Errore tipico 7.5.** Scrivere il limite senza giustificare $g(x_0)=0$, o tentare di derivare la maggiorazione invece di usare la definizione.
+
+**Esempio 7.11.** Esame del 22 gennaio 2025, turno 1, versioni 1-4, esercizio 2: enunciare i carabinieri, dimostrare la continuità da $|g(x)|\le |x-x_0|$ e la derivabilità da $|g(x)|\le (x-x_0)^2$.
+
+### De l'Hôpital e altri casi isolati
+
+Il teorema di de l'Hôpital compare in genere come strumento dentro lo studio di funzione, per calcolare un limite agli estremi del dominio o un limite di prolungamento, per esempio nell'Esame del 23 giugno 2016, primo turno, esercizio 1, e nell'Esame del 10 febbraio 2016, terzo turno, esercizio 1. Prima di applicarlo bisogna verificare che il limite sia una forma $0/0$ o $\infty/\infty$ ([Teorema di de l'Hôpital](ref:chapter/7#p5)). Spesso gli sviluppi o i limiti notevoli sono più rapidi.
+
+Un caso a sé, presente in una sola sessione, è la funzione inversa: nell'Esame del 11 febbraio 2020, primo turno, esercizio 2 (versione D), si chiede lo sviluppo di $f^{-1}$ al primo ordine, che si ottiene dalla derivata dell'inversa, $(f^{-1})'(y_0)=1/f'(x_0)$.

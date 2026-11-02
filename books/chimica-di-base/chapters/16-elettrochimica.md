@@ -118,7 +118,108 @@ In particolare, $E_{\mathrm{cella}}^\circ>0$ implica $\Delta G_r^\circ<0$. Usand
 
 **Errore tipico 16.4.** Il segno di $E_{\mathrm{cella}}^\circ$ descrive la reazione nelle condizioni standard; per stabilire il verso spontaneo alla composizione effettiva serve $E_{\mathrm{cella}}$ calcolato con Nernst. Occorre inoltre costruire $Q$ dalla reazione bilanciata: invertire la reazione inverte $Q$ e cambia il segno del potenziale.
 
-## p4 | Elettrolisi e leggi di Faraday
+## p4 | Reattività dei metalli con acidi ossidanti e non ossidanti
+
+### Il problema: quale acido attacca quale metallo
+
+Un metallo immerso in una soluzione acida può essere "attaccato", cioè ossidato a catione, solo se esiste una riduzione che accompagna spontaneamente l'ossidazione. Nei [metalli e acidi](ref:chapter/16#p3) il criterio è $E^\circ_{\text{cella}}>0$. Qui lo applichiamo a due situazioni. Nella prima è lo ione $\mathrm{H^+}$ a ridursi, e l'acido è detto **non ossidante**. Nella seconda si riduce l'anione dell'acido (nitrato, solfato), e l'acido è detto **ossidante**. Bisogna sempre chiedersi chi è la specie che si riduce.
+
+### Acidi non ossidanti: sviluppo di idrogeno
+
+Con un acido non ossidante, come $\mathrm{HCl}$ o $\mathrm{H_2SO_4}$ diluito, l'unica specie riducibile è lo ione idronio. La semireazione è $2\,\mathrm{H^+}+2e^-\to \mathrm{H_2}$, con $E^\circ=0{,}00$ V per definizione (elettrodo standard a idrogeno).
+
+**Criterio.** Un metallo M, con semireazione di riduzione $\mathrm{M^{n+}}+ne^-\to \mathrm{M}$, sposta l'idrogeno da un acido non ossidante in condizioni standard se $E^\circ(\mathrm{M^{n+}/M})<0$. In questo caso l'idrogeno fa da catodo e il metallo da anodo, quindi
+
+$$E^\circ_{\text{cella}}=E^\circ_{\text{catodo}}-E^\circ_{\text{anodo}}=0-E^\circ(\mathrm{M^{n+}/M})>0 .$$
+
+Se invece $E^\circ(\mathrm{M^{n+}/M})>0$ il metallo non reagisce: per esempio una barretta di argento in una soluzione di ioni idronio non dà alcuna reazione spontanea.
+
+La **serie di attività** dei metalli riassume questo ordinamento. I più reattivi sono i metalli dei gruppi 1 e 2, seguiti da Al e Zn. Metalli meno reattivi (Ni, Sn) non reagiscono con l'acqua ma reagiscono con gli acidi, per esempio $\mathrm{Ni_{(s)}+2\,H^+_{(aq)}\to Ni^{2+}_{(aq)}+H_{2(g)}}$. Ag e Au non spostano $\mathrm{H_2}$ da nessuna fonte.
+
+**Esempio svolto 16.3** (ferro in acido cloridrico). Se si immergono chiodi di ferro in $\mathrm{HCl}$ si osserva effervescenza: il gas è $\mathrm{H_2}$ e, evaporando l'acqua, rimangono cristalli di $\mathrm{FeCl_2}$.
+
+1. *Dati*: $\mathrm{Fe+HCl}$. I numeri di ossidazione cambiano per Fe (da 0 a $+2$) e per H (da $+1$ a 0), mentre Cl resta $-1$.
+2. *Strategia*: scriviamo le semireazioni (vedi [Reazioni di ossidoriduzione](ref:chapter/5#p5)).
+3. *Calcolo*:
+
+$$\begin{aligned}\mathrm{Fe}&\to \mathrm{Fe^{2+}}+2e^- &&\text{(ossidazione, Fe è il riducente)}\\ 2\,\mathrm{H^+}+2e^-&\to \mathrm{H_2} &&\text{(riduzione, } \mathrm{H^+} \text{ è l'ossidante)}\end{aligned}$$
+
+La somma dà $\mathrm{Fe+2\,H^+\to Fe^{2+}+H_2}$, cioè in forma molecolare $\mathrm{Fe+2\,HCl\to FeCl_2+H_2}$.
+
+4. *Verifica*: $E^\circ(\mathrm{Fe^{2+}/Fe})$ è negativo, quindi $E^\circ_{\text{cella}}>0$ e la reazione è spontanea, coerente con l'osservazione.
+
+**Esempio svolto 16.4** (barrette in $\mathrm{HCl}$). Una soluzione di acido cloridrico viene a contatto con tre barrette di Zn, Ag e Li. Zn e Li hanno $E^\circ<0$ e si sciolgono sviluppando $\mathrm{H_2}$. L'argento ha $E^\circ>0$ e resta intonso.
+
+### Acidi ossidanti: metalli con $E^\circ>0$
+
+Rame, argento e oro hanno $E^\circ>0$ e non spostano idrogeno, quindi non si sciolgono in $\mathrm{HCl}$. Possono però essere attaccati da acidi in cui è l'anione a ridursi. Il rame, per esempio, viene attaccato da $\mathrm{HNO_3}$ proprio perché in questo caso $\Delta E>0$ e la reazione è spontanea.
+
+I prodotti di riduzione più comuni sono i seguenti. Questi dati sono standard e non vengono dalle note.
+
+- Nell'acido nitrico diluito, $\mathrm{NO_3^-}+4\,\mathrm{H^+}+3e^-\to \mathrm{NO}+2\,\mathrm{H_2O}$.
+- Nell'acido nitrico concentrato, $\mathrm{NO_3^-}+2\,\mathrm{H^+}+e^-\to \mathrm{NO_2}+\mathrm{H_2O}$.
+- Nell'acido solforico concentrato e caldo, $\mathrm{SO_4^{2-}}+4\,\mathrm{H^+}+2e^-\to \mathrm{SO_2}+2\,\mathrm{H_2O}$.
+
+In tutti questi casi non si sviluppa idrogeno: il gas che si forma contiene azoto o zolfo.
+
+**Procedura per bilanciare** (metodo delle semireazioni in ambiente acido):
+
+1. Scrivere la semireazione di ossidazione del metallo e quella di riduzione dell'anione.
+2. Moltiplicare per i coefficienti che rendono uguale il numero di elettroni ceduti e acquistati.
+3. Sommare e semplificare, ottenendo l'equazione ionica.
+4. Aggiungere agli ioni $\mathrm{H^+}$ gli anioni necessari per passare alla forma molecolare, in modo che i sali risultino neutri.
+
+**Esempio svolto 16.5** ($\mathrm{Cu}$ con $\mathrm{HNO_3}$ diluito).
+
+1. *Semireazioni*: $\mathrm{Cu}\to \mathrm{Cu^{2+}}+2e^-$ e $\mathrm{NO_3^-}+4\,\mathrm{H^+}+3e^-\to \mathrm{NO}+2\,\mathrm{H_2O}$.
+2. *Elettroni*: il minimo comune multiplo di 2 e 3 è 6, quindi si moltiplica la prima per 3 e la seconda per 2.
+3. *Somma*:
+
+$$3\,\mathrm{Cu}+2\,\mathrm{NO_3^-}+8\,\mathrm{H^+}\to 3\,\mathrm{Cu^{2+}}+2\,\mathrm{NO}+4\,\mathrm{H_2O}$$
+
+4. *Forma molecolare*: servono $6$ ioni nitrato come controioni dei $3\,\mathrm{Cu^{2+}}$. Si aggiungono $6\,\mathrm{NO_3^-}$ a entrambi i membri, e gli $8\,\mathrm{H^+}$ con gli $8\,\mathrm{NO_3^-}$ danno $8\,\mathrm{HNO_3}$:
+
+$$3\,\mathrm{Cu}+8\,\mathrm{HNO_3}\to 3\,\mathrm{Cu(NO_3)_2}+2\,\mathrm{NO}+4\,\mathrm{H_2O}$$
+
+5. *Verifica*: a sinistra e a destra ci sono 3 Cu, 8 H, 8 N, 24 O, e la carica è nulla.
+
+Con acido nitrico concentrato la riduzione porta a $\mathrm{NO_2}$. Poiché la semireazione di riduzione scambia un solo elettrone, si moltiplica per 2 e si ottiene $\mathrm{Cu+4\,HNO_3\to Cu(NO_3)_2+2\,NO_2+2\,H_2O}$. Analogamente, per l'argento: $\mathrm{Ag+2\,HNO_3\to AgNO_3+NO_2+H_2O}$.
+
+Con acido solforico concentrato e caldo: $\mathrm{Cu}\to \mathrm{Cu^{2+}}+2e^-$ si somma a $\mathrm{SO_4^{2-}}+4\,\mathrm{H^+}+2e^-\to \mathrm{SO_2}+2\,\mathrm{H_2O}$, e dopo l'aggiunta di $\mathrm{SO_4^{2-}}$ come controione si ha
+
+$$\mathrm{Cu}+2\,\mathrm{H_2SO_4}\to \mathrm{CuSO_4}+\mathrm{SO_2}+2\,\mathrm{H_2O}$$
+
+Il passaggio dalla forma ionica a quella molecolare segue lo stesso metodo mostrato in [Reazioni di ossidoriduzione](ref:chapter/5#p5). Un esempio da esercitazione è il bilanciamento di ioduro ferroso più acido nitrico, che dà monossido di azoto, nitrato ferrico, acido iodico e acqua, con coefficienti $3/22/13/3/6/8$.
+
+### Acqua regia
+
+L'oro è un metallo nobile e non è attaccato dal solo $\mathrm{HNO_3}$. Si scioglie nell'**acqua regia**, una miscela di $\mathrm{HCl}$ e $\mathrm{HNO_3}$ in rapporto 3:1, così chiamata perché scioglie i metalli nobili. Il nitrato ossida il metallo, e gli ioni cloruro lo stabilizzano come complesso. Questo ruolo dei cloruri è nozione standard, non tratta dalle note. La reazione per l'oro è
+
+$$\mathrm{Au}+\mathrm{HNO_3}+4\,\mathrm{HCl}\to \mathrm{HAuCl_4}+\mathrm{NO}+2\,\mathrm{H_2O}$$
+
+Si verifica con le semireazioni $\mathrm{Au}+4\,\mathrm{Cl^-}\to \mathrm{AuCl_4^-}+3e^-$ e $\mathrm{NO_3^-}+4\,\mathrm{H^+}+3e^-\to \mathrm{NO}+2\,\mathrm{H_2O}$, che scambiano lo stesso numero di elettroni.
+
+### Passivazione
+
+Il segno di $E^\circ$ dice se una reazione è termodinamicamente possibile, ma non quanto velocemente avviene. Si parla di **passivazione** quando un metallo (Zn, Cu, Al) reagisce con l'aria umida e forma ossidi e carbonati molto sottili, aderenti, compatti e protettivi. Questo strato isola il metallo dall'ambiente e ne blocca l'ulteriore attacco.
+
+Si distingue dalla corrosione del ferro. Arrugginire significa ossidare il ferro con formazione di un ossido incoerente e non protettivo, la ruggine (miscela di ossidi idratati, $\mathrm{Fe_2O_3}\cdot x\,\mathrm{H_2O}$ con $0<x<3$). Il processo è elettrochimico, richiede umidità e avviene più rapidamente a pH basso. Nella corrosione l'ossidazione del metallo $\mathrm{Me\to Me^{n+}}+ne^-$ al sito anodico è accompagnata dalla riduzione $\mathrm{O_2}+2\,\mathrm{H_2O}+4e^-\to 4\,\mathrm{OH^-}$ al sito catodico.
+
+Sul piano pratico, il fenomeno spiega perché un metallo con $E^\circ$ molto negativo come l'alluminio possa resistere bene all'aria e a certi acidi. Lo stesso strato di ossido spiega anche, per l'alluminio e il ferro in $\mathrm{HNO_3}$ concentrato, l'assenza di attacco. Quest'ultima osservazione è standard e non proviene dalle note.
+
+### Errori tipici
+
+**Errore tipico 16.5.** Aspettarsi $\mathrm{H_2}$ da qualsiasi acido. Rame e argento con $\mathrm{HNO_3}$ non producono idrogeno, ma $\mathrm{NO}$ o $\mathrm{NO_2}$ (o $\mathrm{SO_2}$ con $\mathrm{H_2SO_4}$ concentrato).
+
+**Errore tipico 16.6.** Concludere che il rame si scioglie in $\mathrm{HCl}$ perché "è un acido forte". La forza dell'acido non conta: $\mathrm{Cu}$ ha $E^\circ>0$ e non sposta $\mathrm{H^+}$.
+
+**Errore tipico 16.7.** Dimenticare di aggiungere i nitrati (o i solfati) come controioni nel passaggio alla forma molecolare, ottenendo coefficienti sbagliati per $\mathrm{HNO_3}$ ($8$ e non $2$ nel caso del rame in acido diluito).
+
+**Errore tipico 16.8.** Confondere passivazione e corrosione: lo strato passivante è sottile, compatto e protettivo, mentre la ruggine è incoerente e lascia procedere l'attacco.
+
+**Errore tipico 16.9.** Prevedere un attacco solo dal valore di $E^\circ$ e ignorare la passivazione: un metallo con $E^\circ$ negativo può comunque resistere perché protetto da uno strato di ossido.
+
+## p5 | Elettrolisi e leggi di Faraday
 
 ### Prodotti dell'elettrolisi
 
@@ -126,7 +227,7 @@ In particolare, $E_{\mathrm{cella}}^\circ>0$ implica $\Delta G_r^\circ<0$. Usand
 
 Per prevedere i prodotti occorre prima distinguere un **sale fuso** da una **soluzione acquosa**. Nel sale fuso puro sono presenti gli ioni del sale: il catione può ridursi al catodo e l'anione può ossidarsi all'anodo. Nell'acqua sono possibili anche semireazioni del solvente, che competono con quelle degli ioni disciolti.
 
-**Esempio svolto 16.3** (cloruro di sodio fuso). Il sale fuso contiene $\mathrm{Na^+}$ e $\mathrm{Cl^-}$. Al catodo si ha $\mathrm{Na^+}+e^-\to\mathrm{Na}_{(l)}$; all'anodo $2\mathrm{Cl^-}\to\mathrm{Cl_2}_{(g)}+2e^-$. Moltiplicando la prima semireazione per $2$ e sommando, si ottiene $2\mathrm{NaCl}_{(l)}\to2\mathrm{Na}_{(l)}+\mathrm{Cl_2}_{(g)}$. Il sodio è liquido alla temperatura necessaria a mantenere fuso il cloruro di sodio. La verifica consiste nel contare due atomi di sodio e due di cloro su ciascun lato, con carica complessiva nulla.
+**Esempio svolto 16.6** (cloruro di sodio fuso). Il sale fuso contiene $\mathrm{Na^+}$ e $\mathrm{Cl^-}$. Al catodo si ha $\mathrm{Na^+}+e^-\to\mathrm{Na}_{(l)}$; all'anodo $2\mathrm{Cl^-}\to\mathrm{Cl_2}_{(g)}+2e^-$. Moltiplicando la prima semireazione per $2$ e sommando, si ottiene $2\mathrm{NaCl}_{(l)}\to2\mathrm{Na}_{(l)}+\mathrm{Cl_2}_{(g)}$. Il sodio è liquido alla temperatura necessaria a mantenere fuso il cloruro di sodio. La verifica consiste nel contare due atomi di sodio e due di cloro su ciascun lato, con carica complessiva nulla.
 
 :::image{src="assets/c726c717-cella-elettrolitica-nacl-fuso.svg" alt="Cella elettrolitica con NaCl fuso: al catodo si forma sodio liquido, all'anodo cloro gassoso" caption="Fig. 16.3 — Elettrolisi del cloruro di sodio fuso con elettrodi inerti"}
 :::
@@ -137,7 +238,7 @@ In una **miscela di sali fusi**, più cationi competono per la riduzione e più 
 
 Per orientarsi nei problemi introduttivi, i cationi di metalli molto reattivi, come quelli dei gruppi $1$ e $2$, restano generalmente in soluzione mentre si riduce l'acqua a idrogeno. I cationi di metalli meno reattivi, come $\mathrm{Ag^+}$ e $\mathrm{Cu^{2+}}$, possono invece depositarsi. Fra gli anioni, gli alogenuri diversi da $\mathrm{F^-}$ possono ossidarsi; solfato e nitrato sono normalmente spettatori e lasciano ossidare l'acqua. Sono regole orientative, da verificare quando il problema fornisce condizioni o potenziali specifici.
 
-**Esempio svolto 16.4** (ioduro di potassio in acqua, elettrodi inerti).
+**Esempio svolto 16.7** (ioduro di potassio in acqua, elettrodi inerti).
 
 1. **Dati.** Nell'elettrolita sono presenti $\mathrm{K^+}$, $\mathrm{I^-}$ e acqua. I due candidati principali al catodo sono $\mathrm{K^+}$ e l'acqua; all'anodo sono $\mathrm{I^-}$ e l'acqua.
 2. **Strategia.** Si confrontano separatamente le riduzioni al catodo e le ossidazioni all'anodo, tenendo conto che l'acqua può reagire a entrambi gli elettrodi.
@@ -149,7 +250,7 @@ Per orientarsi nei problemi introduttivi, i cationi di metalli molto reattivi, c
 
 Quando gli ioni disciolti servono soprattutto a condurre corrente, l'acqua può reagire a entrambi gli elettrodi. Con un elettrolita come $\mathrm{Na_2SO_4}$ e prodotti gassosi separati, al catodo si forma $\mathrm{H_2}$ e all'anodo $\mathrm{O_2}$. La reazione complessiva bilanciata è $2\mathrm{H_2O}_{(l)}\to2\mathrm{H_2}_{(g)}+\mathrm{O_2}_{(g)}$: a uguali temperatura e pressione, il volume di idrogeno raccolto è doppio di quello dell'ossigeno.
 
-**Errore tipico 16.5.** Dalla formula $\mathrm{NaCl}$ non segue che una sua soluzione acquosa produca sodio metallico: quella conclusione vale per il sale fuso. In acqua bisogna confrontare la riduzione di $\mathrm{Na^+}$ con quella dell'acqua. Anche la formazione di cloro all'anodo di una soluzione di cloruro dipende dalle condizioni, in particolare concentrazione e sovratensione dell'ossigeno.
+**Errore tipico 16.10.** Dalla formula $\mathrm{NaCl}$ non segue che una sua soluzione acquosa produca sodio metallico: quella conclusione vale per il sale fuso. In acqua bisogna confrontare la riduzione di $\mathrm{Na^+}$ con quella dell'acqua. Anche la formazione di cloro all'anodo di una soluzione di cloruro dipende dalle condizioni, in particolare concentrazione e sovratensione dell'ossigeno.
 
 **Raffinazione elettrolitica.** Nel caso del rame, una lastra di rame impuro costituisce l'anodo, una superficie su cui raccogliere rame puro costituisce il catodo e la soluzione contiene $\mathrm{Cu^{2+}}$. All'anodo avviene $\mathrm{Cu}_{(s)}\to\mathrm{Cu^{2+}}_{(aq)}+2e^-$; al catodo $\mathrm{Cu^{2+}}_{(aq)}+2e^-\to\mathrm{Cu}_{(s)}$. Il rame passa così dall'anodo al catodo attraverso la soluzione. Le impurità vengono separate perché non seguono tutte questo trasferimento: secondo la loro natura possono restare come residuo anodico oppure passare in soluzione. La stessa riduzione catodica permette di rivestire di rame un oggetto posto al catodo, processo chiamato **elettroplaccatura**.
 
@@ -161,7 +262,7 @@ La carica che attraversa la cella è legata alla corrente che la percorre. Si in
 $$q=I\,\Delta t$$
 :::
 
-**Prima legge di Faraday.** La quantità di sostanza prodotta o consumata a un elettrodo è proporzionale alla carica $q$ che attraversa la cella. **Seconda legge di Faraday.** A parità di carica, la quantità di prodotto è proporzionale al rapporto $M/z$, dove $M$ è la massa molare e $z$ il numero di moli di elettroni richieste per ottenere una mole di prodotto. Una mole di elettroni trasporta la carica $F=96\,485\ \mathrm{C/mol}$: pertanto le moli di elettroni trasferite sono $n_{e^-}=q/F$. Se per ottenere una mole di prodotto occorrono $z$ moli di elettroni e la corrente produce soltanto quel prodotto, le moli ottenute sono $n=q/(zF)$.
+**Prima legge di Faraday.** La quantità di sostanza prodotta o consumata a un elettrodo è proporzionale alla carica $q$ che attraversa la cella. **Seconda legge di Faraday.** A parità di carica, la massa del prodotto è proporzionale al rapporto $M/z$, dove $M$ è la massa molare e $z$ il numero di moli di elettroni richieste per ottenere una mole di prodotto. Una mole di elettroni trasporta la carica $F=96\,485\ \mathrm{C/mol}$: pertanto le moli di elettroni trasferite sono $n_{e^-}=q/F$. Se per ottenere una mole di prodotto occorrono $z$ moli di elettroni e la corrente produce soltanto quel prodotto, le moli ottenute sono $n=q/(zF)$.
 
 :::formula{id="16.5" label="Massa teorica depositata per elettrolisi"}
 $$m=\frac{M I\,\Delta t}{zF}$$
@@ -171,16 +272,16 @@ Nella formula, $M$ è la massa molare del prodotto in $\mathrm{g/mol}$ e $m$ ris
 
 Se è nota l'efficienza di corrente $\eta$, definita come frazione della carica che produce il deposito desiderato, la massa effettiva è $m_{\mathrm{eff}}=\eta M I\Delta t/(zF)$. Per risalire al tempo richiesto per una massa effettiva assegnata si usa $\Delta t=m_{\mathrm{eff}}zF/(\eta M I)$. Occorre conoscere $\eta$ oppure assumere esplicitamente $\eta=1$; una resa inferiore all'unità aumenta carica e tempo necessari.
 
-**Esempio svolto 16.5** (tempo per ramare una scultura). Si vogliono depositare $1{,}50\ \mathrm{g}$ di rame da una soluzione contenente $\mathrm{Cu^{2+}}$, con corrente costante di $4{,}75\ \mathrm{A}$. Si assuma efficienza di corrente unitaria e $M_{\mathrm{Cu}}=63{,}55\ \mathrm{g/mol}$.
+**Esempio svolto 16.8** (tempo per ramare una scultura). Si vogliono depositare $1{,}50\ \mathrm{g}$ di rame da una soluzione contenente $\mathrm{Cu^{2+}}$, con corrente costante di $4{,}75\ \mathrm{A}$. Si assuma efficienza di corrente unitaria e $M_{\mathrm{Cu}}=63{,}55\ \mathrm{g/mol}$.
 
 1. **Dati.** $m=1{,}50\ \mathrm{g}$, $I=4{,}75\ \mathrm{A}$, $F=96\,485\ \mathrm{C/mol}$. La semireazione $\mathrm{Cu^{2+}}+2e^-\to\mathrm{Cu}$ fissa $z=2$.
 2. **Strategia.** Si converte la massa in moli di rame, poi in moli di elettroni e in carica; infine si divide per la corrente.
 3. **Calcolo.** $n_{\mathrm{Cu}}=m/M_{\mathrm{Cu}}=1{,}50/63{,}55=0{,}02360\ \mathrm{mol}$. Servono $n_{e^-}=2n_{\mathrm{Cu}}=0{,}04721\ \mathrm{mol}$ e $q=n_{e^-}F=4{,}555\times10^3\ \mathrm{C}$. Da {{formula:16.4}} segue $\Delta t=q/I=959\ \mathrm{s}=16{,}0\ \mathrm{min}$.
 4. **Verifica.** $4{,}75\ \mathrm{C/s}$ per $959\ \mathrm{s}$ forniscono circa $4{,}55\times10^3\ \mathrm{C}$; dividendoli per $F$ e poi per $2$ si ritrovano le moli di rame richieste. Il tempo è coerente con il risultato dell'esercizio del corso.
 
-**Esempio svolto 16.6** (corrente richiesta). Per depositare $0{,}86\ \mathrm{g}$ di cromo in $12{,}5\ \mathrm{min}$ da una soluzione contenente $\mathrm{Cr^{3+}}$, si assuma che tutta la corrente alimenti $\mathrm{Cr^{3+}}+3e^-\to\mathrm{Cr}$ e si usi $M_{\mathrm{Cr}}=52{,}00\ \mathrm{g/mol}$. Le moli di cromo sono $0{,}86/52{,}00=0{,}0165\ \mathrm{mol}$; le moli di elettroni sono $3\times0{,}0165=0{,}0496\ \mathrm{mol}$. La carica richiesta è $q=0{,}0496\times96\,485=4{,}79\times10^3\ \mathrm{C}$. Poiché $12{,}5\ \mathrm{min}=750\ \mathrm{s}$, la corrente è $I=q/\Delta t=6{,}4\ \mathrm{A}$. La verifica consiste nel sostituire questa corrente in {{formula:16.5}} e ritrovare $0{,}86\ \mathrm{g}$, entro l'arrotondamento.
+**Esempio svolto 16.9** (corrente richiesta). Per depositare $0{,}86\ \mathrm{g}$ di cromo in $12{,}5\ \mathrm{min}$ da una soluzione contenente $\mathrm{Cr^{3+}}$, si assuma che tutta la corrente alimenti $\mathrm{Cr^{3+}}+3e^-\to\mathrm{Cr}$ e si usi $M_{\mathrm{Cr}}=52{,}00\ \mathrm{g/mol}$. Le moli di cromo sono $0{,}86/52{,}00=0{,}0165\ \mathrm{mol}$; le moli di elettroni sono $3\times0{,}0165=0{,}0496\ \mathrm{mol}$. La carica richiesta è $q=0{,}0496\times96\,485=4{,}79\times10^3\ \mathrm{C}$. Poiché $12{,}5\ \mathrm{min}=750\ \mathrm{s}$, la corrente è $I=q/\Delta t=6{,}4\ \mathrm{A}$. La verifica consiste nel sostituire questa corrente in {{formula:16.5}} e ritrovare $0{,}86\ \mathrm{g}$, entro l'arrotondamento.
 
-**Errore tipico 16.6.** Il coefficiente $z$ non è la carica totale della cella né il numero di ioni presenti nel sale: è il rapporto fra moli di elettroni e moli del prodotto considerato nella semireazione bilanciata. Inoltre la corrente è espressa in $\mathrm{C/s}$: inserire i minuti direttamente in {{formula:16.4}} produce un errore di un fattore $60$. Nei calcoli si mantengono cifre aggiuntive nei passaggi intermedi e si arrotonda soltanto il risultato finale.
+**Errore tipico 16.11.** Il coefficiente $z$ non è la carica totale della cella né il numero di ioni presenti nel sale: è il rapporto fra moli di elettroni e moli del prodotto considerato nella semireazione bilanciata. Inoltre la corrente è espressa in $\mathrm{C/s}$: inserire i minuti direttamente in {{formula:16.4}} produce un errore di un fattore $60$. Nei calcoli si mantengono cifre aggiuntive nei passaggi intermedi e si arrotonda soltanto il risultato finale.
 
 **Esercizi.**
 
@@ -188,7 +289,7 @@ Se è nota l'efficienza di corrente $\eta$, definita come frazione della carica 
 - ★★ Una corrente di $2{,}00\ \mathrm{A}$ attraversa per $30{,}0\ \mathrm{min}$ una cella in cui avviene soltanto $\mathrm{Cu^{2+}}+2e^-\to\mathrm{Cu}$. Calcolare la carica e la massa depositata usando $M_{\mathrm{Cu}}=63{,}55\ \mathrm{g/mol}$.
 - ★★★ Per ottenere $1{,}50\ \mathrm{g}$ di rame con $I=4{,}75\ \mathrm{A}$ e $\eta=0{,}80$, calcolare la carica totale e il tempo richiesti. Confrontare il tempo con quello dell'esempio svolto.
 
-## p5 | Batterie e celle a combustibile
+## p6 | Batterie e celle a combustibile
 
 ### Batterie: principio di funzionamento
 
@@ -209,14 +310,14 @@ La pila alcalina usa invece una pasta acquosa di $\mathrm{KOH}$ come elettrolita
 
 ### Batterie secondarie o accumulatori
 
-**Definizione 16.9** (batteria secondaria). È ricaricabile: una sorgente elettrica esterna forza la reazione inversa a quella di scarica e rigenera i reagenti. In scarica funziona come cella voltaica; durante la ricarica il processo è elettrolitico. La definizione di anodo resta legata all’**ossidazione** e quella di catodo alla **riduzione**: quando si inverte la reazione, si inverte anche il ruolo dei due elettrodi. Il funzionamento delle celle elettrolitiche è trattato nella sezione su [elettrolisi e leggi di Faraday](ref:chapter/16#p4).
+**Definizione 16.9** (batteria secondaria). È ricaricabile: una sorgente elettrica esterna forza la reazione inversa a quella di scarica e rigenera i reagenti. In scarica funziona come cella voltaica; durante la ricarica il processo è elettrolitico. La definizione di anodo resta legata all’**ossidazione** e quella di catodo alla **riduzione**: quando si inverte la reazione, si inverte anche il ruolo dei due elettrodi. Il funzionamento delle celle elettrolitiche è trattato nella sezione su [elettrolisi e leggi di Faraday](ref:chapter/16#p5).
 
 Nell’accumulatore al piombo, durante la scarica, l’anodo contiene piombo spugnoso e il catodo contiene $\mathrm{PbO_2}$; entrambi sono immersi in una soluzione di acido solforico. Il piombo che reagisce ai due elettrodi finisce in $\mathrm{PbSO_4}$. Una batteria automobilistica indicata come $12\ \mathrm{V}$ comprende sei celle in serie, ciascuna capace di fornire circa $2,1\ \mathrm{V}$ nelle condizioni riportate dal corso.
 
 :::image{src="assets/34b4b170-accumulatore-piombo.svg" alt="Schema di una cella dell'accumulatore al piombo con elettrodi di Pb e PbO2 immersi in acido solforico" caption="Fig. 16.6 — Accumulatore al piombo in scarica: anodo di piombo spugnoso, catodo di PbO2, entrambi in acido solforico; in entrambi gli elettrodi si forma PbSO4"}
 :::
 
-**Esempio svolto 16.7** (scarica dell’accumulatore al piombo).
+**Esempio svolto 16.10** (scarica dell’accumulatore al piombo).
 
 1. **Dati.** L’anodo contiene $\mathrm{Pb}$, il catodo $\mathrm{PbO_2}$ e l’elettrolita fornisce ioni idrogenosolfato. Entrambi gli elettrodi producono $\mathrm{PbSO_4}$ durante la scarica.
 2. **Strategia.** Si scrivono le semireazioni in ambiente acido, si pareggiano gli elettroni e poi si sommano, verificando atomi e cariche.
@@ -225,7 +326,7 @@ Nell’accumulatore al piombo, durante la scarica, l’anodo contiene piombo spu
 
 Un altro accumulatore è quello agli ioni litio. Durante la scarica, gli atomi di litio inseriti nella grafite dell’anodo cedono elettroni al circuito esterno; gli ioni $\mathrm{Li^+}$ attraversano l’elettrolita verso il catodo, costituito da un ossido metallico capace di ospitarli. Durante la carica i flussi si invertono. L’elettrolita tipico contiene un sale di litio in un solvente organico; per limitare sovratensioni e surriscaldamento si impiegano circuiti di protezione.
 
-**Errore tipico 16.7.** Identificare «litio» e «ioni litio» come la stessa batteria porta ad attribuire litio metallico all’anodo dell’accumulatore descritto qui. Nella pila primaria citata l’anodo è una lamina di litio; nell’accumulatore agli ioni litio il litio è inserito fra i piani della grafite.
+**Errore tipico 16.12.** Identificare «litio» e «ioni litio» come la stessa batteria porta ad attribuire litio metallico all’anodo dell’accumulatore descritto qui. Nella pila primaria citata l’anodo è una lamina di litio; nell’accumulatore agli ioni litio il litio è inserito fra i piani della grafite.
 
 ### Celle a combustibile
 
@@ -235,4 +336,70 @@ Nella cella a idrogeno con membrana a scambio protonico, un catalizzatore elettr
 
 La cella produce acqua nel punto d’uso. Per valutarne l’impatto ambientale occorre però considerare anche come è stato prodotto l’idrogeno: se proviene dall’elettrolisi dell’acqua, conta la fonte dell’elettricità impiegata.
 
-**Errore tipico 16.8.** Una cella a combustibile non si «ricarica» invertendo la propria reazione come un accumulatore: per proseguire il funzionamento riceve nuovo combustibile e nuovo ossidante. In qualunque dei tre dispositivi, durante l’erogazione di corrente l’ossidazione resta all’anodo e la riduzione al catodo.
+**Errore tipico 16.13.** Una cella a combustibile non si «ricarica» invertendo la propria reazione come un accumulatore: per proseguire il funzionamento riceve nuovo combustibile e nuovo ossidante. In qualunque dei tre dispositivi, durante l’erogazione di corrente l’ossidazione resta all’anodo e la riduzione al catodo.
+
+## p7 | Come viene chiesto all'esame
+
+Il capitolo di elettrochimica è comparso in 3 delle 4 sessioni d'esame esaminate. Gli esercizi che lo riguardano sono quasi sempre problemi misti, in cui l'elettrochimica si combina con il bilanciamento delle redox, con i gas o con le concentrazioni. Il tipo più frequente è il bilanciamento di una redox con un ossidante forte, presente in tutte e tre le sessioni. Segue l'elettrolisi con le leggi di Faraday, presente in due sessioni. Nella prova scritta (70 minuti, senza materiale didattico) conviene perciò avere pronti due metodi: le semireazioni e il conto della carica.
+
+### Bilanciare una redox con un ossidante forte
+
+**Cosa chiede l'esame.** Il testo descrive la reazione a parole, con i nomi dei reagenti e dei prodotti, e chiede di scriverla e bilanciarla. L'equazione va quindi ricostruita dai nomi prima di bilanciarla. Il bilanciamento è quasi sempre il primo punto di un esercizio più lungo, quindi un errore qui si propaga ai calcoli successivi.
+
+**Metodo.**
+
+1. Traduci i nomi in formule (vedi [Simboli, formule e ioni](ref:chapter/3#p2) e [Sali](ref:chapter/3#p7)) e scrivi lo schema con reagenti e prodotti.
+2. Assegna i numeri di ossidazione ([Numero di ossidazione](ref:chapter/3#p3)) e individua la specie che si ossida e quella che si riduce.
+3. Scrivi le due semireazioni in forma ionica. Bilancia prima gli atomi diversi da O e H, poi O con $\mathrm{H_2O}$ e H con $\mathrm{H^+}$, infine le cariche con gli elettroni.
+4. Moltiplica le semireazioni perché gli elettroni scambiati siano uguali ([formula (5.8)](ref:formula/5.8)) e sommale.
+5. Riporta i coefficienti nell'equazione molecolare. Aggiungi gli ioni spettatori (per esempio i solfati) e controlla atomi e cariche.
+
+Per i dettagli sull'ambiente acido o basico e sulla disproporzione vedi [Reazioni di ossidoriduzione](ref:chapter/5#p5) e [Equazioni chimiche e bilanciamento](ref:chapter/4#p3). Il comportamento dei metalli con $\mathrm{HNO_3}$ e $\mathrm{H_2SO_4}$ è trattato in [Reattività dei metalli con acidi ossidanti e non ossidanti](ref:chapter/16#p4).
+
+**Errori tipici.**
+
+- Non tradurre correttamente i nomi. Per esempio, «solfato rameico» è il solfato di rame(II), $\mathrm{CuSO_4}$.
+- Scegliere il prodotto di riduzione dell'ossidante a memoria. Il prodotto va letto dal testo: qui il nitrato si riduce a $\mathrm{NO}$, non a $\mathrm{NO_2}$.
+- Bilanciare solo gli atomi e non gli elettroni.
+- Riportare nell'equazione finale coefficienti non minimi.
+
+**Esempi.**
+
+- *Tema d_esame 15, n. 1.* Il nitrato di piombo(II) reagisce con rame e acido solforico e forma solfato di piombo(II), solfato di rame(II), $\mathrm{NO}$ e acqua. Si scrivono le semireazioni $\mathrm{Cu}\to\mathrm{Cu^{2+}}$ e $\mathrm{NO_3^-}\to\mathrm{NO}$, si eguagliano gli elettroni e si riportano i coefficienti. Il testo prosegue con una massa di $\mathrm{CuSO_4}$ sciolta in un volume noto di soluzione, e quindi con un calcolo di concentrazione ([Espressioni della concentrazione](ref:chapter/11#p3)). Il tema è classificato anche tra le celle voltaiche, e il punto di partenza è comunque l'equazione bilanciata.
+- *Tema d_esame 14, n. 1, punto a.* Cloro e idrossido di sodio danno cloruro di sodio, clorato di sodio e acqua. Lo stesso elemento, il cloro, si riduce a $\mathrm{Cl^-}$ e si ossida a $\mathrm{ClO_3^-}$ (disproporzione). Si scrivono quindi le due semireazioni con lo stesso reagente e si sommano.
+
+### Elettrolisi: dalla carica alla quantità di prodotto
+
+**Cosa chiede l'esame.** Una soluzione acquosa viene elettrolizzata per un tempo dato. Il testo fornisce un volume di gas sviluppato, con temperatura e pressione, e chiede la corrente. In più si chiedono lo schema della cella e le reazioni agli elettrodi. In questo tipo di esercizio la stechiometria dei gas e quella di Faraday si combinano.
+
+**Metodo.**
+
+1. Disegna la cella elettrolitica e stabilisci le specie che si scaricano. Se la soluzione è acquosa, considera anche l'acqua nella competizione tra specie ([Elettrolisi e leggi di Faraday](ref:chapter/16#p5)). L'anodo è la sede dell'ossidazione e il catodo della riduzione.
+2. Scrivi le semireazioni di scarica e individua le moli di elettroni $z$ per mole di prodotto di interesse.
+3. Se il prodotto è un gas, ricava le moli con $n = PV/(RT)$ ([formula (6.5)](ref:formula/6.5)), con $T$ in kelvin e $P$ in atm. Se il gas è «secco», non devi sottrarre la tensione di vapore dell'acqua ([Pressione e leggi dei gas ideali](ref:chapter/6#p2)).
+4. Calcola la carica $q = z\,n\,F$ ({{formula:16.4}}), con $F = 96\,485$ C/mol, e poi la corrente $I = q/\Delta t$ con $\Delta t$ in secondi. Se serve una massa, usa {{formula:16.5}}.
+5. Verifica l'ordine di grandezza e le unità, indicando il valore di $R$ usato.
+
+**Esempio svolto in breve (con rendimento unitario).** Per l'esercizio del tema 3, descritto sotto, si ha $n_{\mathrm{O_2}} = \dfrac{(745/760)\cdot 8{,}00}{0{,}08206\cdot 293{,}15} = 0{,}326$ mol, con $R = 0{,}08206$ L·atm/(mol·K). All'anodo $4\,\mathrm{OH^-}\to\mathrm{O_2}+2\,\mathrm{H_2O}+4\,e^-$, quindi $z = 4$ e $q = 4\cdot 0{,}326\cdot 96\,485 \approx 1{,}26\times10^5$ C. Con $\Delta t = 40\cdot 60 = 2\,400$ s si ottiene $I \approx 52$ A.
+
+**Errori tipici.**
+
+- Inserire $T$ in °C nell'equazione dei gas, o la pressione in mmHg con $R$ in L·atm/(mol·K).
+- Usare il tempo in minuti invece che in secondi.
+- Sbagliare $z$: per $\mathrm{O_2}$ sono 4 elettroni, per $\mathrm{H_2}$ sono 2.
+- Scambiare anodo e catodo: l'ossidazione avviene sempre all'anodo, anche se nell'elettrolisi l'anodo è il polo positivo.
+
+**Esempi.**
+
+- *Tema d_esame 3, n. 4.* Una soluzione acquosa di KOH viene elettrolizzata per 40 minuti a 25 °C e si raccolgono 8,00 L di ossigeno secco a 20,0 °C e 745 mmHg. Si chiedono lo schema della cella, le reazioni agli elettrodi e l'intensità della corrente, che si ricava seguendo i cinque passi sopra.
+- *Tema d_esame 14, n. 1, punto b.* Il cloruro di sodio viene elettrolizzato in soluzione acquosa con resa faradica unitaria e agli elettrodi si sviluppano gas. Il metodo è lo stesso: si scrivono le scariche, si passa dai volumi di gas alle moli e dalle moli alla carica.
+
+### Una sola sessione: celle voltaiche e potenziali
+
+Le pile, la notazione di cella e i potenziali di cella compaiono come argomento esplicito solo nel tema 15, dentro un esercizio che parte dalla redox di rame e piombo. Per questo tipo di domande vale il metodo delle sezioni [Celle voltaiche](ref:chapter/16#p2) e [Potenziali standard ed equazione di Nernst](ref:chapter/16#p3): $E^\circ_{\mathrm{cella}} = E^\circ_{\mathrm{catodo}} - E^\circ_{\mathrm{anodo}}$, e Nernst quando le concentrazioni non sono 1 M. Le batterie e le celle a combustibile compaiono solo come argomento associato al tema 3 e al tema 14. Il loro funzionamento è in [Batterie e celle a combustibile](ref:chapter/16#p6).
+
+### Prima di consegnare
+
+- Controlla che i coefficienti siano interi e minimi e che gli elettroni scambiati si bilancino.
+- Controlla che ogni calcolo con i gas usi $T$ in kelvin e che l'unità di $P$ sia coerente con il valore di $R$.
+- Esprimi il risultato con le cifre significative dei dati ([Grandezze, unità e cifre significative](ref:chapter/1#p3)).

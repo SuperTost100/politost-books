@@ -252,15 +252,87 @@ $$|Q_{ced,I}| = Q_{ass,I}(1-\eta_I) = 3{,}33\ \text{kJ} \cdot (1-0{,}3) \approx 
 
 Un errore frequente è credere che il rendimento massimo $\eta_{max}=1-T_1/T_2$ si applichi a *qualunque* macchina che lavori tra le temperature estreme di un ciclo, anche quando il ciclo scambia calore con più di due sorgenti: il teorema di Carnot vale esattamente per macchine che scambiano calore con **esattamente due** sorgenti a temperatura fissata; il caso generale a più sorgenti richiede la disuguaglianza di Clausius, trattata nella sezione successiva. Un secondo errore tipico è dimenticare l'aggettivo *unico* negli enunciati di Kelvin-Planck e di Clausius, concludendo erroneamente che un frigorifero reale (che pure trasferisce calore dal freddo al caldo) violi il secondo principio: la presenza del lavoro assorbito dall'ambiente rende il processo compatibile con l'enunciato di Clausius, proprio perché il trasferimento di calore non è l'unico effetto del processo. Infine, va evitata la confusione tra l'enunciato di equivalenza (dimostrato per assurdo, mostrando che la violazione di uno implica la violazione dell'altro) e una pretesa identità diretta dei due processi fisici: Kelvin-Planck e Clausius descrivono fenomeni sperimentali diversi, ma sono logicamente inseparabili.
 
-## p4 | Teorema di Clausius ed entropia
+## p4 | Temperatura termodinamica
+
+### Perché serve una scala termodinamica
+
+La temperatura empirica dipende dal termometro: termometri diversi, calibrati sul punto triplo dell'acqua, danno valori diversi lontano da quel punto, come visto in [Temperatura e termometria](ref:chapter/12#p3). Il teorema di Carnot permette di costruire una scala che non dipende da alcuna sostanza. Il teorema, dimostrato in [Secondo principio](ref:chapter/14#p3), afferma che tutte le macchine reversibili che lavorano tra le stesse due sorgenti hanno lo stesso rendimento. Questo rendimento è indipendente dal sistema che compie il ciclo.
+
+### Definizione della scala termodinamica
+
+Per una macchina reversibile a due sorgenti il rendimento dipende solo dalle sorgenti. Il rapporto $|Q_1|/Q_2$ tra il calore ceduto e quello assorbito dipende quindi solo dalle sorgenti, e non dal fluido di lavoro. Possiamo allora usare questo rapporto per misurare le temperature. Si fissa una sorgente di riferimento, il punto triplo dell'acqua, a $T_{pt}=273{,}16\ \mathrm{K}$. Una sorgente a temperatura $T$ si confronta con questa mediante una macchina reversibile che scambia il calore $Q$ con la sorgente e $Q_{pt}$ con il punto triplo.
+
+**Definizione 14.1** (temperatura termodinamica). La temperatura di una sorgente è
+
+:::formula{id="14.8" label="Temperatura termodinamica"}
+$$T = 273{,}16\,\frac{|Q|}{|Q_{pt}|}\ \mathrm{K}$$
+:::
+
+dove $Q$ e $Q_{pt}$ sono i calori scambiati in un ciclo da una macchina reversibile che opera tra la sorgente e il punto triplo.
+
+La definizione ha la stessa struttura della formula [formula (12.1)](ref:formula/12.1), con il rapporto dei calori al posto del rapporto $X/X_{pt}$. La differenza è che qui il risultato non dipende dalla sostanza. Per due sorgenti qualsiasi, mettendo in serie le macchine reversibili, si ottiene
+
+$$\frac{|Q_1|}{Q_2}=\frac{T_1}{T_2},$$
+
+cioè la relazione {{formula:14.7}} con l'uguale. Il rendimento reversibile è dunque $\eta = 1 - T_1/T_2$, come nella formula {{formula:14.6}}.
+
+### Equivalenza con la temperatura del gas ideale
+
+Resta da mostrare che questa scala coincide con quella del termometro a gas ideale, di cui finora abbiamo usato $T$ nell'equazione [formula (13.3)](ref:formula/13.3).
+
+**Teorema 14.3.** Sia $T_g$ la temperatura del gas ideale e sia $T$ la temperatura termodinamica. Allora, per ogni coppia di sorgenti, il rapporto dei calori scambiati da una macchina reversibile è uguale al rapporto delle temperature del gas: $|Q_1|/Q_2=T_{g,1}/T_{g,2}$. Perciò le due scale coincidono, una volta fissato in entrambe il valore $273{,}16\ \mathrm{K}$ al punto triplo.
+
+**Dimostrazione richiesta all'esame.**
+
+Per il teorema di Carnot basta calcolare il rapporto dei calori per una sola macchina reversibile tra le due sorgenti, perché tutte le altre danno lo stesso valore. Scegliamo un ciclo di Carnot con $n$ moli di gas ideale. Le trasformazioni sono: isoterma $A\to B$ a $T_{g,2}$, adiabatica $B\to C$, isoterma $C\to D$ a $T_{g,1}$, adiabatica $D\to A$, con $T_{g,1}<T_{g,2}$.
+
+Sulle isoterme reversibili la formula [formula (13.8)](ref:formula/13.8) dà il calore scambiato:
+
+$$Q_2 = nRT_{g,2}\ln\frac{V_B}{V_A}, \qquad Q_1 = nRT_{g,1}\ln\frac{V_D}{V_C}.$$
+
+Sulle due adiabatiche reversibili vale la relazione [formula (13.9)](ref:formula/13.9), cioè $TV^{\gamma-1}=\text{costante}$. Quindi
+
+$$T_{g,2}V_B^{\gamma-1}=T_{g,1}V_C^{\gamma-1}, \qquad T_{g,2}V_A^{\gamma-1}=T_{g,1}V_D^{\gamma-1}.$$
+
+Dividendo membro a membro le due relazioni si ottiene $V_B/V_A=V_C/V_D$, cioè $\ln(V_D/V_C)=-\ln(V_B/V_A)$. Il rapporto dei calori diventa
+
+$$\frac{Q_1}{Q_2}=\frac{T_{g,1}\ln(V_D/V_C)}{T_{g,2}\ln(V_B/V_A)}=-\frac{T_{g,1}}{T_{g,2}}.$$
+
+Ne segue $|Q_1|/Q_2=T_{g,1}/T_{g,2}$. Confrontando con $|Q_1|/Q_2=T_1/T_2$, si ha $T_1/T_2=T_{g,1}/T_{g,2}$ per ogni coppia di sorgenti. Poiché le due scale assegnano lo stesso valore al punto triplo, risulta $T=T_g$. $\square$
+
+Il rendimento $\eta=1-T_1/T_2$ ricavato col gas ideale non dipende dal fluido. Questa è la conferma che il gas ideale realizza la scala termodinamica.
+
+**Esempio 14.3.** Una macchina reversibile lavora tra $T_2=600\ \mathrm{K}$ e $T_1=300\ \mathrm{K}$ e assorbe $Q_{ass}=2\ \mathrm{kJ}$. Si vuole il calore ceduto.
+
+Il rendimento reversibile dipende solo dalle temperature, quindi $\eta=1-\dfrac{300\ \mathrm{K}}{600\ \mathrm{K}}=0{,}5$. Dal rapporto dei calori si ricava
+
+$$|Q_{ced}|=Q_{ass}\,\frac{T_1}{T_2}=2\ \mathrm{kJ}\cdot\frac{300\ \mathrm{K}}{600\ \mathrm{K}}=1\ \mathrm{kJ}$$
+
+. Il lavoro è $W=Q_{ass}-|Q_{ced}|=1\ \mathrm{kJ}$. Controllo: $W/Q_{ass}=0{,}5=\eta$. Il rapporto dei calori è adimensionale, come il rapporto delle temperature.
+
+### Lo zero assoluto
+
+Dalla definizione {{formula:14.8}} si vede che $T\to 0$ corrisponde a $Q\to 0$. Lo **zero assoluto** è la temperatura a cui un'isoterma reversibile avviene senza scambio di calore e coincide quindi con un'adiabatica reversibile. Poiché $|Q|\ge 0$, la scala ha un limite inferiore: non esistono temperature termodinamiche negative.
+
+Lo zero assoluto è un limite della scala termodinamica e non è mai stato raggiunto. La sua irraggiungibilità è legata al terzo principio della termodinamica; non si deduce dal rendimento di Carnot, che descrive macchine reversibili operanti tra due sorgenti a temperature positive.
+
+### Errori tipici
+
+**Errore tipico 14.4.** Calcolare la temperatura dall'equazione di stato senza convertire le unità: con $p=1\cdot 10^5\ \mathrm{Pa}$, $V=10\ \mathrm{L}$ non convertiti in $\mathrm{m}^3$ si ottengono temperature sbagliate di ordini di grandezza.
+
+**Errore tipico 14.5.** Usare le temperature in °C nei rapporti $T_1/T_2$ o $Q_1/T_1$. La scala termodinamica è assoluta, quindi nei rendimenti e nei rapporti dei calori si usano sempre i kelvin (vedi [formula (12.2)](ref:formula/12.2)).
+
+**Errore tipico 14.6.** Pensare che $\eta=1-T_1/T_2$ valga per qualsiasi macchina a due sorgenti. È il valore massimo ed è raggiunto solo dalle macchine reversibili. Le macchine irreversibili hanno rendimento minore.
+
+## p5 | Teorema di Clausius ed entropia
 
 Il teorema di Carnot, dimostrato nella sezione precedente, confronta i rendimenti di macchine che scambiano calore con **due** sorgenti. Il teorema di Clausius estende questo risultato a un numero arbitrario di sorgenti (anche infinito), e costituisce il passo decisivo che permette di definire una nuova funzione di stato: l'entropia. Da questa definizione segue poi il principio di aumento dell'entropia, la formulazione più operativa del secondo principio della termodinamica, già enunciato nella forma di Kelvin-Planck e Clausius nella sezione [Secondo principio](ref:chapter/14#p3).
 
 ### Disuguaglianza di Clausius
 
-**Teorema 14.3** (di Clausius). Sia M una macchina termica (reversibile o irreversibile) che compie un ciclo scambiando calore $Q_i$ con $n$ sorgenti a temperature $T_i$ ($i=1,\dots,n$, tutte con $T_i>0$). Allora
+**Teorema 14.4** (di Clausius). Sia M una macchina termica (reversibile o irreversibile) che compie un ciclo scambiando calore $Q_i$ con $n$ sorgenti a temperature $T_i$ ($i=1,\dots,n$, tutte con $T_i>0$). Allora
 
-:::formula{id="14.8" label="Disuguaglianza di Clausius (sorgenti discrete)"}
+:::formula{id="14.9" label="Disuguaglianza di Clausius (sorgenti discrete)"}
 $$\sum_{i=1}^{n} \frac{Q_i}{T_i} \le 0$$
 :::
 
@@ -282,7 +354,7 @@ poiché $T_0>0$. Se M è reversibile, si può invertire il verso di percorrenza 
 
 Quando la macchina scambia calore con un continuo di sorgenti (ad esempio restando a contatto termico istante per istante con l'ambiente a temperatura variabile), la somma discreta diventa un integrale di linea chiuso lungo il ciclo: indicando con $\delta Q$ il calore infinitesimo scambiato quando la sorgente è a temperatura $T$,
 
-:::formula{id="14.9" label="Disuguaglianza di Clausius (forma integrale)"}
+:::formula{id="14.10" label="Disuguaglianza di Clausius (forma integrale)"}
 $$\oint \frac{\delta Q}{T} \le 0$$
 :::
 
@@ -296,15 +368,15 @@ $$\oint \frac{\delta Q}{T} = \int_A^B\!\left(\frac{\delta Q}{T}\right)_{\!1} + \
 
 da cui $\int_A^B(\delta Q/T)_1 = \int_A^B(\delta Q/T)_2$: l'integrale non dipende dalla particolare trasformazione reversibile scelta tra $A$ e $B$, ma solo dagli stati estremi. Questo risultato giustifica la
 
-**Definizione 14.1** (entropia). Si definisce entropia la funzione di stato $S$ tale che, per ogni trasformazione reversibile che collega $A$ a $B$,
+**Definizione 14.2** (entropia). Si definisce entropia la funzione di stato $S$ tale che, per ogni trasformazione reversibile che collega $A$ a $B$,
 
-:::formula{id="14.10" label="Variazione di entropia"}
+:::formula{id="14.11" label="Variazione di entropia"}
 $$\int_A^B \left(\frac{\delta Q}{T}\right)_{rev} = S(B) - S(A) = \Delta S$$
 :::
 
 o, in forma infinitesima,
 
-:::formula{id="14.11" label="Entropia in forma differenziale"}
+:::formula{id="14.12" label="Entropia in forma differenziale"}
 $$dS = \left(\frac{\delta Q}{T}\right)_{rev}$$
 :::
 
@@ -316,7 +388,7 @@ L'entropia è inoltre una grandezza **additiva** ed **estensiva**: dati due sist
 
 Una conseguenza pratica fondamentale è la seguente regola di calcolo, valida anche quando la trasformazione realmente seguita è irreversibile.
 
-**Definizione operativa.** Per calcolare la variazione di entropia $\Delta S$ di un sistema tra uno stato $A$ e uno stato $B$ collegati da una trasformazione irreversibile, è sufficiente scegliere una qualunque trasformazione reversibile che collega gli stessi stati $A$ e $B$ e applicare a questa la {{formula:14.10}}: poiché $S$ è funzione di stato, il risultato ottenuto è valido indipendentemente dalla trasformazione reale percorsa.
+**Definizione operativa.** Per calcolare la variazione di entropia $\Delta S$ di un sistema tra uno stato $A$ e uno stato $B$ collegati da una trasformazione irreversibile, è sufficiente scegliere una qualunque trasformazione reversibile che collega gli stessi stati $A$ e $B$ e applicare a questa la {{formula:14.11}}: poiché $S$ è funzione di stato, il risultato ottenuto è valido indipendentemente dalla trasformazione reale percorsa.
 
 ### Principio di aumento dell'entropia
 
@@ -343,15 +415,15 @@ $$S_B - S_A \ge 0 \quad\Longrightarrow\quad S_B \ge S_A$$
 
 da cui il
 
-**Teorema 14.4** (principio di aumento dell'entropia). L'entropia di un sistema chiuso, privo di scambio di materia con l'esterno e termicamente isolato, non può mai diminuire: aumenta se la trasformazione è irreversibile, resta costante se e solo se la trasformazione è reversibile. In forma infinitesima, formulazione matematica del secondo principio della termodinamica:
+**Teorema 14.5** (principio di aumento dell'entropia). L'entropia di un sistema chiuso, privo di scambio di materia con l'esterno e termicamente isolato, non può mai diminuire: aumenta se la trasformazione è irreversibile, resta costante se e solo se la trasformazione è reversibile. In forma infinitesima, formulazione matematica del secondo principio della termodinamica:
 
-:::formula{id="14.12" label="Principio di aumento dell'entropia"}
+:::formula{id="14.13" label="Principio di aumento dell'entropia"}
 $$dS \ge 0$$
 :::
 
 Questo enunciato richiede non solo l'isolamento termico, ma anche che il sistema sia **chiuso**, cioè privo di scambio di materia con l'esterno: se il sistema scambia materia, può diminuire la propria entropia anche restando termicamente isolato ($\delta Q=0$), poiché la materia in uscita (o in entrata) porta con sé una propria entropia. Poiché l'**universo termodinamico** (sistema più ambiente) è per definizione un sistema isolato, chiuso e termicamente, il principio si applica sempre a esso:
 
-:::formula{id="14.13" label="Variazione di entropia dell'universo"}
+:::formula{id="14.14" label="Variazione di entropia dell'universo"}
 $$\Delta S_U = \Delta S_{sist} + \Delta S_{amb} \ge 0$$
 :::
 
@@ -363,9 +435,9 @@ Da questa relazione discendono tre casi notevoli:
 
 Poiché ogni processo naturale reale comporta qualche grado di irreversibilità (attrito, scambi termici a differenza finita di temperatura, espansioni libere, eccetera), si conclude che ogni processo naturale si svolge necessariamente nel verso che fa aumentare l'entropia complessiva del sistema e del suo ambiente. È bene sottolineare che il principio non vieta affatto che l'entropia di un sottosistema diminuisca (ad esempio un corpo che si raffredda), purché l'aumento di entropia dell'ambiente compensi e superi tale diminuzione.
 
-**Esempio 14.3** (scambio di calore fra due sorgenti). Due sorgenti ideali, a temperature costanti $T_1$ e $T_2$ con $T_2 > T_1$, sono poste in contatto termico: la sorgente calda cede il calore $Q>0$ e la sorgente fredda lo assorbe. Si vuole calcolare la variazione di entropia dell'universo in questo processo, chiaramente irreversibile poiché avviene con una differenza finita di temperatura.
+**Esempio 14.4** (scambio di calore fra due sorgenti). Due sorgenti ideali, a temperature costanti $T_1$ e $T_2$ con $T_2 > T_1$, sono poste in contatto termico: la sorgente calda cede il calore $Q>0$ e la sorgente fredda lo assorbe. Si vuole calcolare la variazione di entropia dell'universo in questo processo, chiaramente irreversibile poiché avviene con una differenza finita di temperatura.
 
-Il processo è isotermo per ciascuna sorgente, quindi per calcolare la variazione di entropia di ognuna si può applicare direttamente la {{formula:14.10}} con $T$ costante, immaginando una trasformazione reversibile fra gli stessi stati iniziale e finale di ciascuna sorgente. La sorgente fredda (a $T_1$) assorbe $Q$:
+Il processo è isotermo per ciascuna sorgente, quindi per calcolare la variazione di entropia di ognuna si può applicare direttamente la {{formula:14.11}} con $T$ costante, immaginando una trasformazione reversibile fra gli stessi stati iniziale e finale di ciascuna sorgente. La sorgente fredda (a $T_1$) assorbe $Q$:
 
 $$\Delta S_1 = \int \frac{\delta Q}{T_1} = \frac{1}{T_1}\int \delta Q = \frac{Q}{T_1} > 0$$
 
@@ -382,17 +454,17 @@ $$\Delta S_U = \Delta S_1 + \Delta S_2 = Q\left(\frac{1}{T_1} - \frac{1}{T_2}\ri
 
 Poiché $T_2 > T_1 > 0$, il numeratore $T_2-T_1$ e il denominatore $T_1T_2$ sono entrambi positivi, dunque $\Delta S_U > 0$, in accordo con il principio di aumento dell'entropia applicato a un processo irreversibile. Si osservi che il processo inverso (calore che fluisce spontaneamente dal corpo freddo al corpo caldo) darebbe $\Delta S_U < 0$: per questo motivo è vietato dal secondo principio, coerentemente con l'enunciato di Clausius già visto nella sezione [Secondo principio](ref:chapter/14#p3).
 
-**Errore tipico 14.4.** Un errore frequente è calcolare la variazione di entropia integrando $\delta Q/T$ lungo la trasformazione realmente seguita, quando questa è irreversibile: se il sistema scambia calore con una sorgente a temperatura $T$ diversa dalla propria temperatura istantanea, l'integrale $\int(\delta Q/T)_{irrev}$ non coincide con $\Delta S$, ma è strettamente minore (per i sistemi che scambiano calore con l'esterno questo integrale può anche risultare negativo pur essendo $\Delta S>0$). Per i sistemi isolati, invece, $\delta Q=0$ lungo tutta la trasformazione reale, per cui l'integrale $\int(\delta Q/T)_{irrev}$ è sempre nullo, anche quando $\Delta S>0$. Occorre sempre costruire una trasformazione reversibile fittizia fra gli stessi stati estremi e integrare lungo quella.
+**Errore tipico 14.7.** Un errore frequente è calcolare la variazione di entropia integrando $\delta Q/T$ lungo la trasformazione realmente seguita, quando questa è irreversibile: se il sistema scambia calore con una sorgente a temperatura $T$ diversa dalla propria temperatura istantanea, l'integrale $\int(\delta Q/T)_{irrev}$ non coincide con $\Delta S$, ma è strettamente minore (per i sistemi che scambiano calore con l'esterno questo integrale può anche risultare negativo pur essendo $\Delta S>0$). Per i sistemi isolati, invece, $\delta Q=0$ lungo tutta la trasformazione reale, per cui l'integrale $\int(\delta Q/T)_{irrev}$ è sempre nullo, anche quando $\Delta S>0$. Occorre sempre costruire una trasformazione reversibile fittizia fra gli stessi stati estremi e integrare lungo quella.
 
 Un secondo errore tipico è applicare $dS\ge0$ al sistema isolato quando in realtà il sistema scambia calore con l'ambiente: in tal caso il principio vale per l'insieme sistema $+$ ambiente (l'universo termodinamico), non per il sistema da solo, che può benissimo vedere diminuire la propria entropia.
 
-Infine, va evitato di confondere la disuguaglianza di Clausius $\oint \delta Q/T \le 0$, relativa a un **ciclo** (qualunque trasformazione periodica, reversibile o no), con la definizione di entropia $dS=(\delta Q/T)_{rev}$, che vale lungo una trasformazione **non ciclica** reversibile: sono due enunciati distinti, il secondo ottenuto dal primo applicato a un ciclo costruito appositamente con due cammini fra gli stessi estremi. Il calcolo esplicito di $\Delta S$ per gas ideali, cambiamenti di fase e scambi termici tra corpi di capacità termica finita, con numerosi esempi completi, è svolto nella sezione [Calcolo delle variazioni di entropia](ref:chapter/14#p5).
+Infine, va evitato di confondere la disuguaglianza di Clausius $\oint \delta Q/T \le 0$, relativa a un **ciclo** (qualunque trasformazione periodica, reversibile o no), con la definizione di entropia $dS=(\delta Q/T)_{rev}$, che vale lungo una trasformazione **non ciclica** reversibile: sono due enunciati distinti, il secondo ottenuto dal primo applicato a un ciclo costruito appositamente con due cammini fra gli stessi estremi. Il calcolo esplicito di $\Delta S$ per gas ideali, cambiamenti di fase e scambi termici tra corpi di capacità termica finita, con numerosi esempi completi, è svolto nella sezione [Calcolo delle variazioni di entropia](ref:chapter/14#p6).
 
-## p5 | Calcolo delle variazioni di entropia
+## p6 | Calcolo delle variazioni di entropia
 
 La definizione di entropia introdotta nella sezione precedente, $dS = (\delta Q/T)_{rev}$, permette di calcolare $\Delta S$ per qualunque trasformazione, anche irreversibile, purché si scelga, tra gli stati iniziale e finale, una qualunque trasformazione reversibile che li collega: l'entropia è infatti una funzione di stato, e il suo valore dipende solo dalle coordinate termodinamiche degli estremi, non dal cammino seguito.
 
-**Definizione 14.2** (metodo generale di calcolo di $\Delta S$). Dati due stati $A$ e $B$ di un sistema, collegati da una trasformazione qualsiasi (reversibile o irreversibile), si ha
+**Definizione 14.3** (metodo generale di calcolo di $\Delta S$). Dati due stati $A$ e $B$ di un sistema, collegati da una trasformazione qualsiasi (reversibile o irreversibile), si ha
 
 $$S(B) - S(A) = \int_{A}^{B} \left(\frac{\delta Q}{T}\right)_{rev}$$
 
@@ -404,7 +476,7 @@ L'entropia è inoltre una grandezza additiva ed estensiva: l'entropia di un sist
 
 Per $n$ moli di gas ideale che passano dallo stato $A(p_A,V_A,T_A)$ allo stato $B(p_B,V_B,T_B)$, lungo una qualunque trasformazione (anche irreversibile), si assume che il calore specifico molare a volume costante $c_V$ sia costante nell'intervallo di temperatura compreso tra $T_A$ e $T_B$ (ipotesi ragionevole per un gas ideale su un intervallo non troppo ampio); se invece $c_V$ dipende da $T$, il primo termine del risultato seguente va sostituito con $n\int_{T_A}^{T_B} c_V(T)\,dT/T$. Per ottenere l'espressione si scelgono una isocora seguita da una isoterma reversibili (o una qualsiasi altra coppia di trasformazioni reversibili equivalenti) per calcolare l'integrale della definizione. Il risultato è
 
-:::formula{id="14.14" label="Variazione di entropia di un gas ideale"}
+:::formula{id="14.15" label="Variazione di entropia di un gas ideale"}
 $$\Delta S = S(B)-S(A) = n c_V \ln\left(\frac{T_B}{T_A}\right) + nR \ln\left(\frac{V_B}{V_A}\right)$$
 :::
 
@@ -416,27 +488,27 @@ utili quando i dati del problema sono espressi in termini di pressione piuttosto
 
 Per le trasformazioni elementari si ottengono i casi particolari:
 
-:::formula{id="14.15" label="Variazione di entropia in una isoterma"}
+:::formula{id="14.16" label="Variazione di entropia in una isoterma"}
 $$\Delta S = nR \ln\left(\frac{V_B}{V_A}\right)$$
 :::
 
-:::formula{id="14.16" label="Variazione di entropia in una isocora"}
+:::formula{id="14.17" label="Variazione di entropia in una isocora"}
 $$\Delta S = n c_V \ln\left(\frac{T_B}{T_A}\right)$$
 :::
 
-:::formula{id="14.17" label="Variazione di entropia in una isobara"}
+:::formula{id="14.18" label="Variazione di entropia in una isobara"}
 $$\Delta S = n c_p \ln\left(\frac{T_B}{T_A}\right)$$
 :::
 
 Nella trasformazione adiabatica reversibile il calore scambiato è nullo in ogni istante, quindi $\Delta S = 0$: una tale trasformazione è detta anche isoentropica. Questo risultato vale solo se l'adiabatica è reversibile; un'adiabatica irreversibile (per esempio un'espansione libera) ha in generale $\Delta S \ne 0$, come mostra l'esempio seguente.
 
-**Esempio 14.4.** Cinque moli di gas ideale biatomico ($c_V = \frac{5}{2}R$, $\gamma = 7/5$) si trovano alla temperatura $T_1 = 250\ ^\circ\mathrm{C} = 523{,}15\ \mathrm{K}$ in un cilindro di volume $V_1$, collegato tramite un rubinetto chiuso a un secondo cilindro vuoto di volume $V_2$. Il gas compie prima un'espansione adiabatica reversibile fino al volume $V_1' = 4V_1$; poi si apre il rubinetto e il gas fluisce liberamente nel secondo cilindro, di volume $V_2 = V_1'$, con l'intero sistema termicamente isolato e a pareti rigide.
+**Esempio 14.5.** Cinque moli di gas ideale biatomico ($c_V = \frac{5}{2}R$, $\gamma = 7/5$) si trovano alla temperatura $T_1 = 250\ ^\circ\mathrm{C} = 523{,}15\ \mathrm{K}$ in un cilindro di volume $V_1$, collegato tramite un rubinetto chiuso a un secondo cilindro vuoto di volume $V_2$. Il gas compie prima un'espansione adiabatica reversibile fino al volume $V_1' = 4V_1$; poi si apre il rubinetto e il gas fluisce liberamente nel secondo cilindro, di volume $V_2 = V_1'$, con l'intero sistema termicamente isolato e a pareti rigide.
 
 Nella prima fase la trasformazione è adiabatica reversibile, quindi $\Delta S_1 = 0$ per quanto appena visto. La temperatura al termine di questa fase si ricava dall'equazione delle adiabatiche [formula (13.9)](ref:formula/13.9):
 
 $$T_1' = T_1 \left(\frac{V_1}{V_1'}\right)^{\gamma-1} = T_1 \left(\frac{1}{4}\right)^{2/5} = 523{,}15\ \mathrm{K} \times 0{,}574 \approx 300{,}5\ \mathrm{K}$$
 
-Nella seconda fase il gas subisce un'espansione libera: non c'è scambio di calore con l'esterno ($Q=0$, i cilindri sono isolati) e il gas non compie lavoro contro nulla (il secondo cilindro è vuoto), quindi $W=0$. Dal primo principio $\Delta U = Q - W = 0$, e poiché l'energia interna del gas ideale dipende solo dalla temperatura, $T_f = T_1'$. La trasformazione è però irreversibile (non quasi-statica): per calcolare $\Delta S_2$ si usa una trasformazione reversibile fittizia tra gli stessi stati, applicando {{formula:14.14}} con $T_f = T_1'$:
+Nella seconda fase il gas subisce un'espansione libera: non c'è scambio di calore con l'esterno ($Q=0$, i cilindri sono isolati) e il gas non compie lavoro contro nulla (il secondo cilindro è vuoto), quindi $W=0$. Dal primo principio $\Delta U = Q - W = 0$, e poiché l'energia interna del gas ideale dipende solo dalla temperatura, $T_f = T_1'$. La trasformazione è però irreversibile (non quasi-statica): per calcolare $\Delta S_2$ si usa una trasformazione reversibile fittizia tra gli stessi stati, applicando {{formula:14.15}} con $T_f = T_1'$:
 
 $$\Delta S_2 = n c_V \ln\left(\frac{T_f}{T_1'}\right) + nR \ln\left(\frac{V_f}{V_1'}\right) = 0 + nR\ln(2)$$
 
@@ -454,15 +526,15 @@ $$\Delta S = \frac{Q}{T}$$
 
 perché la temperatura è costante e può essere portata fuori dall'integrale.
 
-Lo scambio tra due sorgenti a temperature diverse è già stato analizzato nella sezione precedente: il trasferimento di calore dalla sorgente calda a quella fredda aumenta l'entropia dell'universo, come espresso da {{formula:14.18}}. Ci concentriamo qui sui corpi a capacità termica finita, la cui temperatura varia durante lo scambio.
+Lo scambio tra due sorgenti a temperature diverse è già stato analizzato nella sezione precedente: il trasferimento di calore dalla sorgente calda a quella fredda aumenta l'entropia dell'universo, come espresso da {{formula:14.19}}. Ci concentriamo qui sui corpi a capacità termica finita, la cui temperatura varia durante lo scambio.
 
-:::formula{id="14.18" label="Variazione di entropia nello scambio tra due sorgenti"}
+:::formula{id="14.19" label="Variazione di entropia nello scambio tra due sorgenti"}
 $$\Delta S_U = \Delta S_1 + \Delta S_2 = Q\left(\frac{1}{T_1} - \frac{1}{T_2}\right) = Q\,\frac{T_2-T_1}{T_1 T_2} > 0$$
 :::
 
 Se invece una delle due parti è un **corpo a capacità termica finita** (massa $m$, calore specifico $c$), la sua temperatura varia durante lo scambio e non si può portarla fuori dall'integrale: bisogna immaginare di metterlo in contatto successivo con infinite sorgenti a temperature $T_1, T_1+dT, \dots, T_2$, in modo che ogni scambio infinitesimo $dQ = mc\,dT$ sia reversibile. Nel seguito si assume che il calore specifico $c$ sia costante nell'intervallo tra $T_1$ e $T_2$ e che in tale intervallo non avvenga alcun cambiamento di fase; la stessa ipotesi vale per le formule successive relative alla sorgente a temperatura fissa, alla temperatura di equilibrio e ai due corpi a contatto. Se $c$ dipendesse dalla temperatura, basterebbe sostituire $mc$ con $mc(T)$ sotto il segno di integrale. Integrando,
 
-:::formula{id="14.19" label="Variazione di entropia di un corpo a capacità termica finita"}
+:::formula{id="14.20" label="Variazione di entropia di un corpo a capacità termica finita"}
 $$\Delta S_{\text{corpo}} = \int_{T_1}^{T_2} \frac{mc\,dT}{T} = mc\ln\left(\frac{T_2}{T_1}\right)$$
 :::
 
@@ -478,15 +550,15 @@ $$T_C = \frac{m_1 c_1 T_1 + m_2 c_2 T_2}{m_1 c_1 + m_2 c_2}$$
 
 e le variazioni di entropia dei due corpi, calcolate ciascuna lungo una successione reversibile di sorgenti come sopra, sono
 
-:::formula{id="14.20" label="Variazione di entropia nello scambio tra due corpi"}
+:::formula{id="14.21" label="Variazione di entropia nello scambio tra due corpi"}
 $$\Delta S_1 = m_1 c_1 \ln\left(\frac{T_C}{T_1}\right) > 0, \qquad \Delta S_2 = m_2 c_2 \ln\left(\frac{T_C}{T_2}\right) < 0$$
 :::
 
 Il corpo più freddo guadagna entropia, quello più caldo ne perde, ma la somma $\Delta S_1 + \Delta S_2$ è sempre positiva poiché lo scambio di calore tra corpi a temperatura diversa è irreversibile.
 
-Infine, un cambiamento di fase reversibile è un processo isotermo: se un corpo di massa $m$ cambia fase alla temperatura $T$ con calore latente $\lambda$ (vedi [Calorimetria](ref:chapter/12#p5)), la sua variazione di entropia è data da {{formula:14.21}}, con il segno positivo per la fusione o la vaporizzazione, durante le quali il corpo assorbe calore, e negativo per i processi inversi, la solidificazione o la condensazione, durante i quali il corpo cede calore.
+Infine, un cambiamento di fase reversibile è un processo isotermo: se un corpo di massa $m$ cambia fase alla temperatura $T$ con calore latente $\lambda$ (vedi [Calorimetria](ref:chapter/12#p5)), la sua variazione di entropia è data da {{formula:14.22}}, con il segno positivo per la fusione o la vaporizzazione, durante le quali il corpo assorbe calore, e negativo per i processi inversi, la solidificazione o la condensazione, durante i quali il corpo cede calore.
 
-:::formula{id="14.21" label="Variazione di entropia in un cambiamento di fase reversibile"}
+:::formula{id="14.22" label="Variazione di entropia in un cambiamento di fase reversibile"}
 $$\Delta S = \frac{m\lambda}{T} \quad \text{(fusione o vaporizzazione)}, \qquad \Delta S = -\frac{m\lambda}{T} \quad \text{(solidificazione o condensazione)}$$
 :::
 
@@ -496,13 +568,13 @@ dove $\lambda>0$ è il consueto calore latente della sostanza, e dove entrambe l
 
 Per applicare il principio di aumento dell'entropia, consideriamo la miscelazione irreversibile di due corpi in un recipiente adiabatico. La variazione complessiva si ottiene sommando le variazioni di entropia dei due corpi.
 
-**Esempio 14.5.** Un corpo di massa $m_1 = 1\,\mathrm{kg}$ di acqua (calore specifico $c=4186\,\mathrm{J/(kg\cdot K)}$) a temperatura $T_1=283\,\mathrm{K}$ viene mescolato, in un recipiente adiabatico, con un corpo di massa $m_2=2\,\mathrm{kg}$ di acqua alla temperatura $T_2=353\,\mathrm{K}$.
+**Esempio 14.6.** Un corpo di massa $m_1 = 1\,\mathrm{kg}$ di acqua (calore specifico $c=4186\,\mathrm{J/(kg\cdot K)}$) a temperatura $T_1=283\,\mathrm{K}$ viene mescolato, in un recipiente adiabatico, con un corpo di massa $m_2=2\,\mathrm{kg}$ di acqua alla temperatura $T_2=353\,\mathrm{K}$.
 
 La temperatura di equilibrio, data da [formula (12.15)](ref:formula/12.15), vale
 
 $$T_C = \frac{m_1 c T_1 + m_2 c T_2}{(m_1+m_2)\,c} = \frac{1\times 283 + 2\times 353}{3}\,\mathrm{K} \approx 329{,}7\,\mathrm{K}$$
 
-Applicando {{formula:14.20}}, le variazioni di entropia sono
+Applicando {{formula:14.21}}, le variazioni di entropia sono
 
 $$\Delta S_1 = 1\,\mathrm{kg} \times 4186\,\mathrm{J/(kg\cdot K)} \times \ln\left(\frac{329{,}667}{283}\right) \approx 639\,\mathrm{J/K}$$
 
@@ -516,7 +588,7 @@ Il segno positivo conferma che la miscelazione è irreversibile.
 
 La temperatura finale comune è compresa tra quelle iniziali. Il corpo freddo aumenta la propria entropia, mentre quello caldo la diminuisce; per stabilire il verso spontaneo del processo, si sommano le due variazioni:
 
-:::formula{id="14.22" label="Classificazione dei processi tramite l'entropia dell'universo"}
+:::formula{id="14.23" label="Classificazione dei processi tramite l'entropia dell'universo"}
 $$\begin{aligned} \text{reversibile:}\quad & \Delta S_U = 0 \\ \text{irreversibile:}\quad & \Delta S_U > 0 \\ \text{ciclica (sistema):}\quad & \Delta S_{\text{sist}} = 0,\ \Delta S_{\text{amb}} \ge 0 \end{aligned}$$
 :::
 
@@ -529,4 +601,71 @@ e in un ciclo reversibile l'area racchiusa è la somma algebrica dei calori scam
 :::image{src="assets/b7b57303-diagramma-s-t-isoterma-isocora.svg" alt="Diagramma entropia-temperatura con una retta orizzontale (isoterma) e una curva crescente (isocora) che partono dallo stesso punto" caption="Fig. 14.7 — Andamento qualitativo di un'isoterma reversibile e di una trasformazione isocora reversibile nel piano (S, T), a partire dallo stesso stato iniziale."}
 :::
 
-**Errore tipico 14.5.** Un errore frequente è applicare direttamente la formula $\Delta S = n c_V \ln(T_B/T_A) + nR\ln(V_B/V_A)$ (o le analoghe per sorgenti e corpi) a una trasformazione irreversibile usando il calore effettivamente scambiato lungo quella trasformazione, invece di ragionare sempre in termini degli stati iniziale e finale e di una trasformazione reversibile fittizia che li collega: nell'espansione libera, per esempio, il calore scambiato è nullo ma $\Delta S \ne 0$, perché il calore nullo si riferisce alla trasformazione reale (irreversibile), non a quella reversibile usata per calcolare $\Delta S$. Un secondo errore tipico è scrivere $\Delta Q$ o $\Delta W$ come se fossero variazioni di una funzione di stato: calore e lavoro non sono funzioni di stato (vedi [Primo principio ed energia interna](ref:chapter/13#p2)), mentre l'entropia lo è, e solo per essa ha senso scrivere $\Delta S = S(B)-S(A)$. Un terzo errore è confondere $\Delta S_{\text{sist}}$ con $\Delta S_U$: in un ciclo il sistema torna allo stato di partenza e quindi $\Delta S_{\text{sist}} = 0$ sempre, ma questo non implica affatto che il ciclo sia reversibile, poiché l'irreversibilità si manifesta nell'aumento di entropia dell'ambiente, $\Delta S_{\text{amb}} > 0$.
+**Errore tipico 14.8.** Un errore frequente è applicare direttamente la formula $\Delta S = n c_V \ln(T_B/T_A) + nR\ln(V_B/V_A)$ (o le analoghe per sorgenti e corpi) a una trasformazione irreversibile usando il calore effettivamente scambiato lungo quella trasformazione, invece di ragionare sempre in termini degli stati iniziale e finale e di una trasformazione reversibile fittizia che li collega: nell'espansione libera, per esempio, il calore scambiato è nullo ma $\Delta S \ne 0$, perché il calore nullo si riferisce alla trasformazione reale (irreversibile), non a quella reversibile usata per calcolare $\Delta S$. Un secondo errore tipico è scrivere $\Delta Q$ o $\Delta W$ come se fossero variazioni di una funzione di stato: calore e lavoro non sono funzioni di stato (vedi [Primo principio ed energia interna](ref:chapter/13#p2)), mentre l'entropia lo è, e solo per essa ha senso scrivere $\Delta S = S(B)-S(A)$. Un terzo errore è confondere $\Delta S_{\text{sist}}$ con $\Delta S_U$: in un ciclo il sistema torna allo stato di partenza e quindi $\Delta S_{\text{sist}} = 0$ sempre, ma questo non implica affatto che il ciclo sia reversibile, poiché l'irreversibilità si manifesta nell'aumento di entropia dell'ambiente, $\Delta S_{\text{amb}} > 0$.
+
+## p7 | Come viene chiesto all'esame
+
+Il capitolo è comparso in 5 delle 6 sessioni d'esame passate. Il tipo più frequente è il **gas ideale che passa per più stati a contatto con sorgenti, con calcolo di calori, lavori e variazioni di entropia**. Compare quasi sempre come esercizio 3 dello scritto.
+
+Il secondo principio non compare quasi mai da solo: nei testi è sempre intrecciato con i gas ideali, il primo principio e talvolta la calorimetria. Prima di ogni domanda sull'entropia servono quindi gli stati del gas e il bilancio energetico di ogni trasformazione.
+
+### Tipo 1: gas ideale tra sorgenti, con $\Delta S$ del gas, delle sorgenti e dell'universo
+
+**Cosa chiede l'esame.** Il gas (monoatomico o biatomico, 2 o 6 moli) parte da uno stato A a temperatura nota e subisce una sequenza di trasformazioni. Una è un'isoterma reversibile a contatto con una sorgente. Un'altra è un riscaldamento a volume costante messo a contatto con una sorgente a temperatura diversa, che è quindi irreversibile. Si chiedono temperature e volumi degli stati, calore e lavoro scambiati, $\Delta S$ del gas e delle sorgenti, e $\Delta S$ dell'universo.
+
+**Metodo.**
+
+1. Scrivere i dati e ricavare gli stati con l'equazione di stato ([formula (13.3)](ref:formula/13.3)), usando i rapporti di volume e di temperatura dati. Per i gas ideali si veda [Trasformazioni dei gas ideali](ref:chapter/13#p4).
+2. Per ogni tratto applicare il primo principio $\Delta U = Q - W$ ([formula (13.1)](ref:formula/13.1)), con $\Delta U = n\,c_V\,\Delta T$. Il lavoro si calcola secondo il tipo di trasformazione (isoterma, isocora, adiabatica reversibile), come in [Primo principio ed energia interna](ref:chapter/13#p2).
+3. Per $\Delta S$ del gas scegliere una trasformazione reversibile fittizia tra gli stessi stati e usare la formula generale ({{formula:14.15}}), oppure i casi particolari isoterma e isocora. Ad esempio, per un'isoterma $\Delta S = nR\ln(V_f/V_i)$. Anche nel tratto irreversibile $\Delta S$ del gas dipende solo dagli stati iniziale e finale. Il metodo è in [Calcolo delle variazioni di entropia](ref:chapter/14#p6).
+4. Per ogni sorgente, che resta a temperatura $T_s$ costante, calcolare $\Delta S_s = Q_s/T_s$ con $Q_s = -Q_{gas}$.
+5. Sommare: $\Delta S_U = \Delta S_{sist} + \Delta S_{amb}$. Il segno dice se il processo è reversibile ($=0$) o irreversibile ($>0$) ({{formula:14.23}}). Un risultato negativo indica un errore.
+6. Controllare unità (J/K) e ordine di grandezza.
+
+**Errori tipici.**
+
+- Usare per $\Delta S$ di una sorgente la temperatura del gas invece della propria.
+- Dimenticare il segno: il calore della sorgente è l'opposto di quello del gas.
+- Calcolare $\Delta S$ del gas nel tratto irreversibile con $Q/T_s$. Quella è l'entropia della sorgente, non del gas.
+- Usare $c_p$ al posto di $c_V$ in un'isocora, o dimenticare se il gas è monoatomico ($c_V = 3R/2$) o biatomico ($c_V = 5R/2$).
+- Lasciare la temperatura in gradi Celsius.
+
+**Esempi.**
+
+- Esame del 25 giugno 2026, esercizio 3A: due moli di gas monoatomico passano da A a B con una compressione isoterma reversibile, poi a C con un riscaldamento a volume costante contro una sorgente a $T_C = 400$ K, e il testo prosegue con altre trasformazioni. Si risolve costruendo gli stati uno per uno e sommando le variazioni di entropia di gas e sorgenti.
+- Esame del 25 giugno 2026, esercizio 3B: stessa struttura con sei moli di gas biatomico e un'espansione isoterma ($V_B = 1{,}5\,V_A$). Cambiano $c_V$ e il segno del lavoro nel primo tratto, non il metodo.
+- Prova scritta - TEMA ESAME 2025 - 1, esercizio 3, e Prova scritta - TEMA ESAME 2 - 2024, esercizio 3A: gas monoatomico a $T_A = 273{,}2$ K che passa dal volume $5\cdot10^{-3}$ m³ a $2\cdot10^{-3}$ m³ a contatto con una miscela di acqua e ghiaccio, poi viene messo a contatto con un'altra sorgente. Qui la miscela fa da sorgente a temperatura costante; per il suo scambio di calore serve la [Calorimetria](ref:chapter/12#p5).
+
+### Tipo 2: ciclo con tratto irreversibile, rendimento e confronto con Carnot
+
+**Cosa chiede l'esame.** Una mole di gas descrive un ciclo in cui alcuni tratti sono isoterme e adiabatiche reversibili e uno è irreversibile, di cui è noto solo il calore ceduto a una sorgente. Si chiedono lavoro e calore del ciclo, il rendimento e la variazione di entropia dell'universo; di solito si confronta il rendimento con quello di Carnot tra le temperature estreme.
+
+**Metodo.**
+
+1. Elencare per ogni tratto le grandezze note e quelle incognite, tracciando il ciclo nel piano $(V,p)$ ([Macchine termiche e frigoriferi](ref:chapter/14#p2)).
+2. Sui tratti reversibili calcolare calore e lavoro con le formule dell'isoterma ([formula (13.8)](ref:formula/13.8)) e dell'adiabatica ([formula (13.11)](ref:formula/13.11)). Le adiabatiche reversibili legano temperature e volumi tramite [formula (13.9)](ref:formula/13.9).
+3. Sul tratto irreversibile usare il calore dato. Essendo il ciclo chiuso, $\Delta U_{ciclo} = 0$ e quindi $W_{ciclo} = Q_{ciclo}$: il lavoro totale si ricava dalla somma dei calori.
+4. Calcolare $\eta = W/Q_{ass}$ ({{formula:14.1}}), contando in $Q_{ass}$ solo i calori positivi, e confrontarlo con $\eta_C = 1 - T_1/T_2$ ({{formula:14.3}}). Il teorema di Carnot ([Secondo principio](ref:chapter/14#p3)) impone $\eta \le \eta_C$: se il risultato lo supera, c'è un errore.
+5. Per l'entropia dell'universo, $\Delta S_{gas} = 0$ sul ciclo chiuso (funzione di stato). Resta la somma delle variazioni delle sorgenti, $\Delta S_U = -\sum Q_i/T_i$ con $Q_i$ calore scambiato dal gas con la sorgente $i$, che per il teorema di Clausius ([Teorema di Clausius ed entropia](ref:chapter/14#p5)) deve risultare $\ge 0$.
+
+**Errori tipici.**
+
+- Includere nel denominatore del rendimento anche i calori ceduti.
+- Credere che la formula di Carnot dia il rendimento di qualunque ciclo: è un limite superiore, non il rendimento del ciclo.
+- Calcolare $\Delta S$ del gas sul ciclo come somma dei $Q/T$ del gas, invece di ricordare che il ciclo chiuso dà $\Delta S_{gas} = 0$.
+- Usare la temperatura del gas, e non quella della sorgente, per il tratto irreversibile.
+
+**Esempio 14.7.** Esame dell'11 luglio 2022, esercizio 3A: una mole di gas biatomico percorre un ciclo con espansione isoterma a $T_1 = 500$ K, un'espansione irreversibile BC in cui cede $Q_{BC} = -750$ J a una sorgente a $T_3 = 500$ K, una compressione isoterma a $T_2 = 200$ K e una compressione adiabatica reversibile. Il metodo si applica scrivendo i calori di ogni tratto, ricavando il lavoro dal bilancio del ciclo e valutando la variazione di entropia dell'universo con le sorgenti.
+
+### Altri tipi, in breve
+
+Due altri tipi compaiono in una sola sessione.
+
+- **Trasformazione politropica.** Nell'esame dell'11 luglio 2022, esercizio 3A1, due moli di gas monoatomico compiono una trasformazione reversibile con $pV^2$ costante, con un rapporto di temperature assegnato. Si usa lo stesso schema del primo tipo: stati dall'equazione di stato, poi lavoro, calore e $\Delta S$ tramite la formula generale per il gas ideale.
+- **Macchina reversibile tra due corpi finiti.** Nella Prova scritta - TEMA ESAME 1 - 2024, esercizio 3A, una macchina reversibile preleva calore da una massa d'acqua a 40 °C e lo cede a ghiaccio a 0 °C, finché non può più produrre lavoro. Qui la temperatura dell'acqua cambia durante il funzionamento. Il punto da ricordare è che per una macchina reversibile $\Delta S_U = 0$, quindi la somma delle variazioni di entropia dei due corpi è nulla ([Temperatura termodinamica](ref:chapter/14#p4) e [Calcolo delle variazioni di entropia](ref:chapter/14#p6)). Da questa condizione si ricava la temperatura finale, con le temperature in kelvin; il lavoro è poi la differenza tra il calore ceduto dall'acqua e quello assorbito dal ghiaccio.
+
+### Domande di teoria
+
+Oltre ai problemi, lo scritto contiene domande aperte di teoria che possono richiedere le dimostrazioni svolte nel corso. Per questo capitolo sono quelle dell'equivalenza tra gli enunciati di Kelvin-Planck e di Clausius e del teorema di Carnot ([Secondo principio](ref:chapter/14#p3)), oltre al teorema di Clausius e alla definizione di entropia ([Teorema di Clausius ed entropia](ref:chapter/14#p5)). Gli esercizi passati riportati qui non includono domande di teoria, quindi questa indicazione viene dal formato dell'esame, non da questi testi.
+
+Il test informatizzato iniziale, a risposta chiusa, richiede invece di riconoscere rapidamente enunciati e segni, ad esempio il segno di $\Delta S_U$ nei processi reversibili e irreversibili.

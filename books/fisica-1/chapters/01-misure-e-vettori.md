@@ -93,7 +93,7 @@ Quando gli errori casuali sono molti e indipendenti e gli errori sistematici son
 
 **Teorema 1.1** (del limite centrale). Se una misura è soggetta a molte sorgenti di errori casuali indipendenti tra loro e a errori sistematici trascurabili, la distribuzione dei valori misurati è approssimata, al crescere del numero di misure, da una curva a campana simmetrica e centrata sul valore medio, detta distribuzione normale o di Gauss
 
-$$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp\left\lbrack -\frac{(x-x_0)^2}{2\sigma^2}\right\rbrack $$
+$$f(x) = \frac{1}{\sigma\sqrt{2\pi}}\exp\left[-\frac{(x-x_0)^2}{2\sigma^2}\right]$$
 
 dove $\sigma$ rappresenta la deviazione standard: distribuzioni più strette corrispondono a esperimenti più precisi.
 

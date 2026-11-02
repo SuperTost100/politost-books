@@ -15,7 +15,7 @@ Al termine saprai definire e calcolare velocità medie, istantanee e iniziali, r
 
 La **cinetica chimica** studia come cambiano nel tempo le concentrazioni di reagenti e prodotti. Una reazione può essere favorita dal punto di vista termodinamico e procedere comunque lentamente: per descrivere quanto rapidamente avviene occorre misurarne la velocità. In questa sezione $\lbrack A\rbrack (t)$ indica la concentrazione molare della specie $A$ all’istante $t$.
 
-**Definizione 15.1** (velocità media). Per $A\rightarrow B$, in un intervallo $\Delta t=t_2-t_1>0$, la velocità media è $v_{\mathrm{media}}=-\Delta\lbrack A\rbrack /\Delta t=\Delta\lbrack B\rbrack /\Delta t$, dove $\Delta\lbrack A\rbrack =\lbrack A\rbrack (t_2)-\lbrack A\rbrack (t_1)$ e analogamente per $B$. Il segno meno rende positiva la velocità quando $A$ si consuma. Se la concentrazione è espressa in $\mathrm{mol/L}$ e il tempo in $\mathrm{s}$, l’unità della velocità è $\mathrm{mol/(L\cdot s)}$. Sul grafico di $\lbrack A\rbrack $ rispetto al tempo, $\Delta\lbrack A\rbrack /\Delta t$ è la pendenza della secante; la velocità di consumo ne è l’opposto.
+**Definizione 15.1** (velocità media). Per $A\rightarrow B$, in un intervallo $\Delta t=t_2-t_1>0$, la velocità media è $v_{\mathrm{media}}=-\Delta[A]/\Delta t=\Delta[B]/\Delta t$, dove $\Delta[A]=\lbrack A\rbrack (t_2)-\lbrack A\rbrack (t_1)$ e analogamente per $B$. Il segno meno rende positiva la velocità quando $A$ si consuma. Se la concentrazione è espressa in $\mathrm{mol/L}$ e il tempo in $\mathrm{s}$, l’unità della velocità è $\mathrm{mol/(L\cdot s)}$. Sul grafico di $\lbrack A\rbrack $ rispetto al tempo, $\Delta[A]/\Delta t$ è la pendenza della secante; la velocità di consumo ne è l’opposto.
 
 **Definizione 15.2** (velocità istantanea e iniziale). Riducendo l’intervallo di misura attorno a un istante si ottiene $v(t)=-\mathrm{d}\lbrack A\rbrack /\mathrm{d}t$: sul grafico è l’opposto della pendenza della tangente. La **velocità iniziale**, $v_0$, è quella all’istante $t=0$. Nelle prove condotte partendo dai reagenti, la concentrazione iniziale dei prodotti è trascurabile; ciò permette di studiare la reazione diretta limitando il contributo di quella inversa.
 
@@ -28,14 +28,14 @@ Per una reazione bilanciata $aA+bB\rightarrow cC+dD$, le specie non cambiano con
 $$v=-\frac{1}{a}\frac{\Delta[A]}{\Delta t}=-\frac{1}{b}\frac{\Delta[B]}{\Delta t}=\frac{1}{c}\frac{\Delta[C]}{\Delta t}=\frac{1}{d}\frac{\Delta[D]}{\Delta t}$$
 :::
 
-Per esempio, in $\mathrm{H_2+I_2\rightarrow 2HI}$ la formazione di $\mathrm{HI}$ è due volte più rapida del consumo di $\mathrm{H_2}$, mentre le due espressioni normalizzate di $v$ coincidono. La forma con le derivate si ottiene dalla stessa relazione sostituendo $\Delta\lbrack X\rbrack /\Delta t$ con $\mathrm{d}\lbrack X\rbrack /\mathrm{d}t$.
+Per esempio, in $\mathrm{H_2+I_2\rightarrow 2HI}$ la formazione di $\mathrm{HI}$ è due volte più rapida del consumo di $\mathrm{H_2}$, mentre le due espressioni normalizzate di $v$ coincidono. La forma con le derivate si ottiene dalla stessa relazione sostituendo $\Delta[X]/\Delta t$ con $\mathrm{d}\lbrack X\rbrack /\mathrm{d}t$.
 
 ### Legge cinetica e ordine di reazione
 
 **Definizione 15.3** (legge cinetica). Nelle condizioni in cui si studia la reazione diretta e i prodotti non compaiono nella dipendenza osservata, per due reagenti si può trovare una legge della forma seguente. Le concentrazioni sono quelle all’istante a cui si riferisce la velocità; $k$ è la **costante di velocità**, caratteristica della reazione nelle condizioni fissate e, in particolare, della temperatura.
 
 :::formula{id="15.2" label="Legge cinetica per due reagenti"}
-$$v=k[A]^x[B]^y$$
+$$v=k\lbrack A\rbrack ^x\lbrack B\rbrack ^y$$
 :::
 
 Gli esponenti $x$ e $y$ sono gli **ordini parziali** rispetto ad $A$ e $B$; $x+y$ è l’**ordine complessivo**. Si determinano sperimentalmente e non si ricavano, in generale, dai coefficienti dell’equazione bilanciata. Possono anche essere frazionari o negativi. Se l’ordine rispetto ad $A$ è zero, variarne la concentrazione non modifica la velocità nelle condizioni della legge; se è uno, raddoppiare $\lbrack A\rbrack $ raddoppia $v$ mantenendo invariati gli altri fattori; se è due, la quadruplica.
@@ -72,7 +72,7 @@ Indichiamo con $\lbrack A\rbrack _0$ la concentrazione a $t=0$ e con $\lbrack A\
 **Ordine zero.** Se $v=k\lbrack A\rbrack ^0=k$, la concentrazione diminuisce della stessa quantità in intervalli di tempo uguali. Integrando $-\mathrm{d}\lbrack A\rbrack /\mathrm{d}t=k$ si ottiene la legge seguente.
 
 :::formula{id="15.3" label="Legge cinetica integrata di ordine zero"}
-$$[A]_t=[A]_0-kt$$
+$$\lbrack A\rbrack _t=\lbrack A\rbrack _0-kt$$
 :::
 
 La legge {{formula:15.3}} vale finché $\lbrack A\rbrack _t\geq 0$ e permane il regime cinetico ipotizzato. Il grafico di $\lbrack A\rbrack _t$ in funzione di $t$ è una retta con pendenza $-k$ e intercetta $\lbrack A\rbrack _0$. Se la concentrazione è in $\mathrm{mol/L}$ e il tempo in $\mathrm{s}$, $k$ si esprime in $\mathrm{mol/(L\cdot s)}$. Per esempio, con $\lbrack A\rbrack _0=0,100\ \mathrm{mol/L}$ e $k=0,0100\ \mathrm{mol/(L\cdot s)}$, dopo $4,00\ \mathrm{s}$ si ha $\lbrack A\rbrack _t=0,100-0,0100\cdot4,00=0,0600\ \mathrm{mol/L}$.
@@ -80,7 +80,7 @@ La legge {{formula:15.3}} vale finché $\lbrack A\rbrack _t\geq 0$ e permane il 
 **Primo ordine.** Se $v=k\lbrack A\rbrack $, separando le variabili e integrando fra $0$ e $t$ si trova $\int_{\lbrack A\rbrack _0}^{\lbrack A\rbrack _t}\frac{\mathrm{d}\lbrack A\rbrack }{\lbrack A\rbrack }=-k\int_0^t\mathrm{d}t$. Il risultato può essere scritto in forma logaritmica o esponenziale. Il rapporto dentro il logaritmo è adimensionale.
 
 :::formula{id="15.4" label="Legge cinetica integrata del primo ordine"}
-$$\ln\left(\frac{[A]_0}{[A]_t}\right)=kt\qquad\Longleftrightarrow\qquad[A]_t=[A]_0e^{-kt}$$
+$$\ln\left(\frac{\lbrack A\rbrack _0}{\lbrack A\rbrack _t}\right)=kt\qquad\Longleftrightarrow\qquad[A]_t=\lbrack A\rbrack _0e^{-kt}$$
 :::
 
 La legge {{formula:15.4}} descrive una diminuzione esponenziale: in intervalli di tempo uguali reagisce la stessa **frazione** della quantità presente all'inizio di ciascun intervallo. Il grafico di $\ln\left(\lbrack A\rbrack _t/\lbrack A\rbrack _0\right)$ contro $t$ è una retta di pendenza $-k$. L'unità di $k$ è l'inverso dell'unità di tempo, per esempio $\mathrm{s^{-1}}$.
@@ -88,7 +88,7 @@ La legge {{formula:15.4}} descrive una diminuzione esponenziale: in intervalli d
 **Secondo ordine rispetto ad $A$.** Se $v=k\lbrack A\rbrack ^2$, l'integrazione di $-\mathrm{d}\lbrack A\rbrack /\mathrm{d}t=k\lbrack A\rbrack ^2$ porta alla legge seguente. Non va applicata automaticamente a ogni reazione di secondo ordine complessivo: una legge $v=k\lbrack A\rbrack \lbrack B\rbrack $ coinvolge anche l'andamento di $\lbrack B\rbrack $.
 
 :::formula{id="15.5" label="Legge cinetica integrata del secondo ordine in un reagente"}
-$$\frac{1}{[A]_t}-\frac{1}{[A]_0}=kt$$
+$$\frac{1}{\lbrack A\rbrack _t}-\frac{1}{\lbrack A\rbrack _0}=kt$$
 :::
 
 Riordinando {{formula:15.5}} si ottiene $1/\lbrack A\rbrack _t=kt+1/\lbrack A\rbrack _0$. È quindi $1/\lbrack A\rbrack _t$, e non $\lbrack A\rbrack _t$, a essere lineare rispetto al tempo; la pendenza è $k$. Con concentrazioni in $\mathrm{mol/L}$ e tempi in $\mathrm{s}$, l'unità di $k$ è $\mathrm{L/(mol\cdot s)}$. Misurando $\lbrack A\rbrack $ a più istanti, si può confrontare la linearità di $\lbrack A\rbrack _t$, $\ln\left(\lbrack A\rbrack _t/\lbrack A\rbrack _0\right)$ e $1/\lbrack A\rbrack _t$ per riconoscere, rispettivamente, ordine zero, primo o secondo ordine nel modello considerato.
@@ -261,6 +261,8 @@ La reazione è esotermica, con $\Delta H_r^\circ\simeq-91{,}8\ \mathrm{kJ/mol}$ 
 Un assetto riportato nel materiale del corso usa circa $450\ ^\circ\mathrm{C}$ e $230\ \mathrm{atm}$, con un letto catalitico fisso a base di ferro. All’uscita si raffredda la miscela per condensare l’ammoniaca e si ricircolano i gas rimasti: la separazione del prodotto e il riciclo contribuiscono alla produzione complessiva. Il catalizzatore rende praticabile una velocità adeguata alla temperatura scelta, ma non sposta da sé l’equilibrio.
 
 ## p6 | Radioattività e processi nucleari
+
+*Questa sezione va oltre il programma del corso: all'esame non viene chiesta.*
 
 ### Nuclidi ed equazioni nucleari
 

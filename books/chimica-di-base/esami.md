@@ -183,7 +183,7 @@ $$V(\mathrm{Cl_2})=\frac{nRT}{P}=\frac{0.067\ \mathrm{mol}\cdot0.0821\ \mathrm{L
 
 Le tre strutture limite, che differiscono per la posizione dell’ossigeno con legame semplice, sono:
 
-$$\left\lbrack \mathrm{O_1=Cl(:)(=O_2)-O_3^-}\right\rbrack  \leftrightarrow \left\lbrack \mathrm{O_1=Cl(:)(-O_2^-)=O_3}\right\rbrack  \leftrightarrow \left\lbrack \mathrm{O_1^--Cl(:)(=O_2)=O_3}\right\rbrack $$
+$$\left[\mathrm{O_1=Cl(:)(=O_2)-O_3^-}\right] \leftrightarrow \left[\mathrm{O_1=Cl(:)(-O_2^-)=O_3}\right] \leftrightarrow \left[\mathrm{O_1^--Cl(:)(=O_2)=O_3}\right]$$
 
 In questa notazione, $\mathrm{Cl(:)}$ indica il doppietto non condiviso sul cloro; ciascun ossigeno con legame doppio ha due doppietti non condivisi e ciascun $\mathrm{O^-}$ con legame semplice ne ha tre. Lo ione è un ibrido di risonanza delle tre strutture limite.
 
@@ -274,7 +274,7 @@ La massa molare del solfato rameico è $159{,}60\ \mathrm{g\ mol^{-1}}$. Le moli
 
 $$\begin{aligned}
 n(\mathrm{CuSO_4}) &= \frac{0{,}780\ \mathrm{g}}{159{,}60\ \mathrm{g\ mol^{-1}}} = 4{,}89\cdot 10^{-3}\ \mathrm{mol}\\
-[\mathrm{Cu^{2+}}] &= \frac{4{,}89\cdot 10^{-3}\ \mathrm{mol}}{0{,}980\ \mathrm{L}} = 4{,}99\cdot 10^{-3}\ \mathrm{mol\ L^{-1}}
+\lbrack \mathrm{Cu^{2+}}\rbrack  &= \frac{4{,}89\cdot 10^{-3}\ \mathrm{mol}}{0{,}980\ \mathrm{L}} = 4{,}99\cdot 10^{-3}\ \mathrm{mol\ L^{-1}}
 \end{aligned}$$
 
 Il prelievo di $100\ \mathrm{mL}$ non modifica la concentrazione. In base all’approssimazione di soluzione ideale e dissociazione completa, si usa tale concentrazione per l’attività di $\mathrm{Cu^{2+}}$ nell’equazione di Nernst. A $25\ ^\circ\mathrm{C}$:
@@ -363,7 +363,7 @@ La massa di $\mathrm{N_2O}$ è $0.15\,\text{mol}\cdot 44\,\text{g/mol} = \mathbf
 
 L’entalpia standard di reazione è:
 
-$$\Delta H^\circ_{\text{reazione}} = 2\Delta H^\circ_f(\mathrm{N_2O}) - \left\lbrack 2\Delta H^\circ_f(\mathrm{N_2}) + \Delta H^\circ_f(\mathrm{O_2})\right\rbrack $$
+$$\Delta H^\circ_{\text{reazione}} = 2\Delta H^\circ_f(\mathrm{N_2O}) - \left[2\Delta H^\circ_f(\mathrm{N_2}) + \Delta H^\circ_f(\mathrm{O_2})\right]$$
 
 Dalle tavole si ricava che $\Delta H^\circ_f$ di $\mathrm{N_2O}$ vale $+82.05\,\text{kJ/mol}$, mentre $\Delta H^\circ_f$ di $\mathrm{N_2}$ e $\mathrm{O_2}$ è convenzionalmente pari a zero. Quindi:
 

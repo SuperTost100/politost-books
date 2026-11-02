@@ -1484,7 +1484,7 @@ Arrotondando a tre cifre significative, l'energia media è $8{,}28\times10^{-21}
 Una mole di anidride carbonica occupa $1{,}00\,\text{L}$ a $300\,\text{K}$. Calcola la pressione prevista dall'equazione di van der Waals, usando $a=3{,}592\,\text{L}^2\text{atm mol}^{-2}$, $b=0{,}04267\,\text{L mol}^{-1}$ e $R=0{,}082057\,\text{L atm mol}^{-1}\text{K}^{-1}$.
 
 :::hint
-Inserisci i dati nell'equazione di van der Waals e sottrai il termine di attrazione al termine di pressione corretto per il volume escluso. {{formula:6.16}}
+Inserisci i dati nell'equazione di van der Waals e sottrai il termine di attrazione al termine di pressione corretto per il volume escluso. {{formula:6.17}}
 :::
 
 :::solution
@@ -1505,7 +1505,7 @@ La pressione prevista è $22{,}1\,\text{atm}$ a tre cifre significative.
 Per $1{,}00\,\text{mol}$ di gas, a $300\,\text{K}$, si misurano $P=10{,}0\,\text{atm}$ e $V=2{,}00\,\text{L}$. Calcola il fattore di comprimibilità usando $R=0{,}082057\,\text{L atm mol}^{-1}\text{K}^{-1}$ e indica se il gas si discosta dal comportamento ideale.
 
 :::hint
-Calcola $Z$ dal rapporto tra il prodotto sperimentale $PV$ e il valore $nRT$. {{formula:6.15}}
+Calcola $Z$ dal rapporto tra il prodotto sperimentale $PV$ e il valore $nRT$. {{formula:6.16}}
 :::
 
 :::solution
@@ -1725,7 +1725,7 @@ Somma le entalpie di formazione dei prodotti, moltiplicate per i rispettivi coef
 :::solution
 Per l’ossigeno elementare nello stato standard, $\Delta H_f^\circ=0$. Si applica {{formula:7.10}}:
 
-$$\Delta H_{\mathrm{reaz}}^\circ=\left\lbrack -393{,}5+2(-285{,}8)\right\rbrack -\left\lbrack -74{,}8+2(0)\right\rbrack $$
+$$\Delta H_{\mathrm{reaz}}^\circ=\left[-393{,}5+2(-285{,}8)\right]-\left[-74{,}8+2(0)\right]$$
 
 La somma per i prodotti è $-965{,}1\,\mathrm{kJ\,mol^{-1}}$ e quella per i reagenti è $-74{,}8\,\mathrm{kJ\,mol^{-1}}$. Quindi $\Delta H_{\mathrm{reaz}}^\circ=-965{,}1-(-74{,}8)=-890{,}3\,\mathrm{kJ\,mol^{-1}}$.
 :::
@@ -1780,7 +1780,7 @@ Scrivi l’espressione della legge di Hess per la combustione e isola l’entalp
 :::solution
 Dalla relazione tra entalpia di reazione ed entalpie standard di formazione:
 
-$$-1559{,}8=\left\lbrack 2(-393{,}5)+3(-285{,}8)\right\rbrack -\left\lbrack \Delta H_f^\circ(\mathrm{C_2H_6})+\frac{7}{2}(0)\right\rbrack $$
+$$-1559{,}8=\left[2(-393{,}5)+3(-285{,}8)\right]-\left[\Delta H_f^\circ(\mathrm{C_2H_6})+\frac{7}{2}(0)\right]$$
 
 La somma delle entalpie di formazione dei prodotti è $-1644{,}4\,\mathrm{kJ\,mol^{-1}}$. Pertanto:
 
@@ -2802,7 +2802,7 @@ Per $\mathrm{AgCl}$, l’inizio della precipitazione richiede $\lbrack \mathrm{A
 
 :::exercise{id="E13.12" chapter="13" difficulty="medio"}
 ## Domanda
-Calcola il pH di una soluzione $0{,}010\ \mathrm{mol\,L^{-1}}$ di acido acetico, per il quale $K_a=1{,}8\times10^{-5}$. Risolvi l’equilibrio senza usare l’approssimazione $\lbrack \mathrm{CH_3COOH}\rbrack _{eq}\approx\lbrack \mathrm{CH_3COOH}\rbrack _0$ e trascura l’autoionizzazione dell’acqua.
+Calcola il pH di una soluzione $0{,}010\ \mathrm{mol\,L^{-1}}$ di acido acetico, per il quale $K_a=1{,}8\times10^{-5}$. Risolvi l’equilibrio senza usare l’approssimazione $\lbrack \mathrm{CH_3COOH}\rbrack _{eq}\approx[\mathrm{CH_3COOH}]_0$ e trascura l’autoionizzazione dell’acqua.
 
 :::hint
 Poni $x=\lbrack \mathrm{H_3O^+}\rbrack $ prodotto. Scrivi $K_a=x^2/(C-x)$ e risolvi l’equazione di secondo grado scegliendo la radice fisicamente accettabile.
@@ -2894,15 +2894,15 @@ Calcola ciascuna variazione come somma dei contributi dei prodotti meno somma de
 Per l'entropia standard di reazione si ottiene
 
 $$\begin{aligned}
-\Delta S^\circ&=2S^\circ(\mathrm{SO_3})-[2S^\circ(\mathrm{SO_2})+S^\circ(\mathrm{O_2})]\\
-&=2(256{,}8)-[2(248{,}2)+205{,}0]\\
+\Delta S^\circ&=2S^\circ(\mathrm{SO_3})-\lbrack 2S^\circ(\mathrm{SO_2})+S^\circ(\mathrm{O_2})\rbrack \\
+&=2(256{,}8)-\lbrack 2(248{,}2)+205{,}0\rbrack \\
 &=-187{,}8\,\mathrm{J\,mol^{-1}\,K^{-1}}.
 \end{aligned}$$
 
 Dalle entalpie standard di formazione, con $\Delta H_f^\circ(\mathrm{O_2})=0$, segue
 
 $$\begin{aligned}
-\Delta H^\circ&=2(-395{,}7)-[2(-296{,}8)+0]\\
+\Delta H^\circ&=2(-395{,}7)-\lbrack 2(-296{,}8)+0\rbrack \\
 &=-197{,}8\,\mathrm{kJ\,mol^{-1}}.
 \end{aligned}$$
 

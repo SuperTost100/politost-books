@@ -119,7 +119,7 @@ Una particella si muove lungo l'asse $x$ con legge della velocità $v(t) = v_0 +
 
 Si applica la {{formula:2.3}} integrando tra $t=0$ s e $t=1{,}0$ s:
 
-$$x(1\text{ s}) = x(0) + \int_{0}^{1\text{ s}} (v_0 + at)\,dt = 2{,}0\text{ m} + \left\lbrack v_0 t + \frac{a}{2}t^2\right\rbrack _{0}^{1\text{ s}}.$$
+$$x(1\text{ s}) = x(0) + \int_{0}^{1\text{ s}} (v_0 + at)\,dt = 2{,}0\text{ m} + \left[v_0 t + \frac{a}{2}t^2\right]_{0}^{1\text{ s}}.$$
 
 Sostituendo i valori numerici con le unità:
 
@@ -242,7 +242,7 @@ Un secondo errore tipico, non specifico del moto verticale ma particolarmente in
 
 ## p4 | Moto armonico
 
-Il moto armonico è uno dei moti periodici più importanti della meccanica, perché descrive il comportamento di un punto materiale soggetto a una forza di richiamo proporzionale allo spostamento (come la [forza elastica](ref:chapter/3#p6)), e compare come limite di piccole oscillazioni in moltissimi sistemi fisici. Si dice che un moto è periodico quando, a intervalli di tempo regolari, il punto torna a passare nella stessa posizione con la stessa velocità. Il moto armonico è il caso particolare, unidimensionale, in cui questo avvenga con legge oraria sinusoidale.
+Il moto armonico è uno dei moti periodici più importanti della meccanica, perché descrive il comportamento di un punto materiale soggetto a una forza di richiamo proporzionale allo spostamento (come la [forza elastica](ref:chapter/3#p7)), e compare come limite di piccole oscillazioni in moltissimi sistemi fisici. Si dice che un moto è periodico quando, a intervalli di tempo regolari, il punto torna a passare nella stessa posizione con la stessa velocità. Il moto armonico è il caso particolare, unidimensionale, in cui questo avvenga con legge oraria sinusoidale.
 
 ### Legge oraria, periodo e frequenza
 
@@ -316,7 +316,7 @@ con $C$ e $D$ costanti reali da determinare. Le due scritture sono equivalenti: 
 
 **Errore tipico 2.3.** Non ogni moto oscillante è armonico: per concludere che un moto è armonico occorre verificare che la sua legge oraria soddisfi l'equazione $\ddot{x} + \omega^2 x = 0$ per **tutti** gli istanti $t$, non solo in alcuni punti particolari. Ad esempio una legge oraria come $x(t) = u\,t\,(1 - 2\sin\omega t)$ oscilla ma, calcolando $\ddot{x} + \omega^2 x$, si trova un'espressione che non si annulla identicamente: quel moto non è armonico, anche se contiene un termine sinusoidale.
 
-L'esempio più importante di questa equazione è il sistema massa-molla: applicando la seconda legge della dinamica a una massa $m$ attaccata a una molla di costante elastica $k$, con $x$ pari all'allungamento rispetto alla posizione di riposo, si ha $-kx = m\ddot{x}$, cioè $\ddot{x} = -\frac{k}{m}x$, che è l'equazione del moto armonico con pulsazione $\omega = \sqrt{k/m}$ e periodo $T = 2\pi\sqrt{m/k}$ (si veda la sezione sulla [forza elastica](ref:chapter/3#p6) per la derivazione completa della forza di richiamo).
+L'esempio più importante di questa equazione è il sistema massa-molla: applicando la seconda legge della dinamica a una massa $m$ attaccata a una molla di costante elastica $k$, con $x$ pari all'allungamento rispetto alla posizione di riposo, si ha $-kx = m\ddot{x}$, cioè $\ddot{x} = -\frac{k}{m}x$, che è l'equazione del moto armonico con pulsazione $\omega = \sqrt{k/m}$ e periodo $T = 2\pi\sqrt{m/k}$ (si veda la sezione sulla [forza elastica](ref:chapter/3#p7) per la derivazione completa della forza di richiamo).
 
 ### Ampiezza e fase dalle condizioni iniziali
 
@@ -387,6 +387,40 @@ Fisicamente, questo tipo di legge oraria descrive ad esempio il moto di una mass
 :::image{src="assets/38f89a24-oscillatore-smorzato.svg" alt="Oscillazione con ampiezza decrescente nel tempo racchiusa tra due esponenziali" caption="Fig. 2.8 — Moto armonico smorzato debolmente: l'ampiezza delle oscillazioni decresce nel tempo racchiusa tra le curve inviluppo esponenziali"}
 :::
 
+### Oscillazioni forzate e risonanza
+
+Se all'oscillatore smorzato si applica anche una forza esterna periodica $F_0\cos(\Omega t)$, con pulsazione $\Omega$ in generale diversa da quella propria, il sistema è detto **forzato**. Indicando con $\omega_0 = \sqrt{k/m}$ la pulsazione propria e con $\gamma$ il coefficiente di smorzamento già introdotto (l'attrito viscoso produce il fattore $e^{-\gamma t}$), l'equazione del moto è
+
+:::formula{id="2.25" label="Equazione dell'oscillatore forzato"}
+$$\frac{d^2x}{dt^2} + 2\gamma\frac{dx}{dt} + \omega_0^2 x = \frac{F_0}{m}\cos(\Omega t)$$
+:::
+
+La soluzione generale è la somma di due termini: un **transitorio** smorzato, soluzione dell'equazione omogenea, che decade come $e^{-\gamma t}$ e dopo un tempo di qualche $\tau = 1/\gamma$ è trascurabile, e una **soluzione di regime**, che persiste e oscilla alla pulsazione della forzante:
+
+$$x_{reg}(t) = A(\Omega)\cos(\Omega t - \varphi)$$
+
+con ampiezza e sfasamento (ritardo rispetto alla forzante) dati da
+
+:::formula{id="2.26" label="Ampiezza di regime dell'oscillatore forzato"}
+$$A(\Omega) = \frac{F_0/m}{\sqrt{\left(\omega_0^2 - \Omega^2\right)^2 + 4\gamma^2\Omega^2}}$$
+:::
+
+:::formula{id="2.27" label="Sfasamento dell'oscillatore forzato"}
+$$\tan\varphi = \frac{2\gamma\Omega}{\omega_0^2 - \Omega^2}$$
+:::
+
+Lo sfasamento $\varphi$ varia con continuità da $0$ (per $\Omega \ll \omega_0$) a $\pi$ (per $\Omega \gg \omega_0$), passando per $\varphi = \pi/2$ quando $\Omega = \omega_0$. Poiché $\sin\varphi > 0$ sempre, per $\Omega > \omega_0$ il denominatore di $\tan\varphi$ è negativo e $\varphi$ cade nel secondo quadrante: non si deve usare direttamente $\operatorname{arctg}$, che restituisce valori in $\left\rbrack -\frac{\pi}{2}, \frac{\pi}{2}\right\lbrack $, ma $\varphi = \pi + \operatorname{arctg}\left(\frac{2\gamma\Omega}{\omega_0^2 - \Omega^2}\right)$.
+
+L'ampiezza $A(\Omega)$ è massima quando è minimo il radicando; derivando rispetto a $\Omega^2$ si trova la **risonanza in ampiezza**, che esiste solo per smorzamento sufficientemente debole, $\gamma < \omega_0/\sqrt{2}$, alla pulsazione
+
+:::formula{id="2.28" label="Pulsazione di risonanza in ampiezza"}
+$$\Omega_r = \sqrt{\omega_0^2 - 2\gamma^2}$$
+:::
+
+Per $\gamma \ge \omega_0/\sqrt{2}$ l'ampiezza decresce monotonicamente con $\Omega$ e non c'è picco. Nel limite $\gamma \to 0$ si ha $\Omega_r \to \omega_0$ e, per $\Omega \to \omega_0$, il denominatore tende a zero: l'ampiezza diverge, come accade per un oscillatore privo di attrito forzato alla sua frequenza propria.
+
+**Esempio 2.2.** Una massa $m = 1 \text{ kg}$ su una molla con $k = 100 \text{ N/m}$ ha $\omega_0 = 10 \text{ s}^{-1}$. Con $\gamma = 1 \text{ s}^{-1}$ e $F_0 = 2 \text{ N}$ la risonanza cade a $\Omega_r = \sqrt{100 - 2} \approx 9{,}90 \text{ s}^{-1}$, dove $A \approx 2/19{,}9 \approx 0{,}10 \text{ m}$ (per $\Omega = \omega_0$ si ha $A = (F_0/m)/(2\gamma\omega_0) = 0{,}10 \text{ m}$ e $\varphi = \pi/2$), contro una deformazione statica $F_0/k = 0{,}02 \text{ m}$. Per $\Omega = 20 \text{ s}^{-1}$ si ottiene invece $A \approx 2/302{,}7 \approx 0{,}0066 \text{ m}$ e, poiché $\omega_0^2 - \Omega^2 = -300 \text{ s}^{-2} < 0$, $\varphi = \pi + \operatorname{arctg}(-0{,}133) \approx 3{,}01 \text{ rad}$, cioè quasi in opposizione di fase con la forzante.
+
 ## p5 | Moto nel piano
 
 Quando la traiettoria di un punto materiale non è una retta, non basta più una sola coordinata per descriverne il moto: occorre un vettore posizione, oppure una coppia di coordinate scalari, e bisogna specificare esplicitamente direzione e verso di velocità e accelerazione. Si parla allora di moto nel piano (o nello spazio, con l'aggiunta di una terza coordinata). Le relazioni vettoriali che legano posizione, velocità e accelerazione non dipendono dal sistema di riferimento scelto per descriverle: cartesiano, polare o intrinseco sono soltanto modi diversi di scrivere lo stesso vettore, e il loro impiego va scelto in base a quale rende più semplice il problema.
@@ -399,19 +433,19 @@ $$\vec{r}(t) = \overrightarrow{OP} = x(t)\hat{u}_x + y(t)\hat{u}_y .$$
 
 Derivando rispetto al tempo, e ricordando che i versori cartesiani sono costanti, si ottengono velocità e accelerazione per componenti.
 
-:::formula{id="2.25" label="Velocità in coordinate cartesiane nel piano"}
+:::formula{id="2.29" label="Velocità in coordinate cartesiane nel piano"}
 $$\vec{v} = \frac{d\vec{r}}{dt} = \frac{dx}{dt}\hat{u}_x + \frac{dy}{dt}\hat{u}_y = v_x\hat{u}_x + v_y\hat{u}_y, \qquad v = |\vec{v}| = \sqrt{v_x^2+v_y^2}$$
 :::
 
 Questa scrittura è diretta conseguenza della derivata di un vettore in componenti, già introdotta per i versori degli assi; qui si applica semplicemente al vettore posizione.
 
-:::formula{id="2.26" label="Accelerazione in coordinate cartesiane nel piano"}
+:::formula{id="2.30" label="Accelerazione in coordinate cartesiane nel piano"}
 $$\vec{a} = \frac{d\vec{v}}{dt} = \frac{dv_x}{dt}\hat{u}_x + \frac{dv_y}{dt}\hat{u}_y = a_x\hat{u}_x + a_y\hat{u}_y$$
 :::
 
 Alternativamente si può individuare P con le coordinate polari $r(t)$ (distanza dall'origine) e $\theta(t)$ (angolo rispetto all'asse x), legate a quelle cartesiane da
 
-:::formula{id="2.27" label="Relazione tra coordinate cartesiane e polari"}
+:::formula{id="2.31" label="Relazione tra coordinate cartesiane e polari"}
 $$x = r\cos\theta, \qquad y = r\sin\theta, \qquad r = \sqrt{x^2+y^2}, \qquad \theta = \operatorname{atan2}(y,x) \pmod{2\pi} \ \ (r>0)$$
 :::
 
@@ -426,7 +460,7 @@ $$\hat{u}_r(t) = \cos\theta(t)\,\hat{u}_x + \sin\theta(t)\,\hat{u}_y, \qquad \ha
 
 Poiché $\theta(t)$ varia nel tempo, questi versori ruotano; derivandoli si trova, in accordo con le formule di Poisson già incontrate per un versore rotante,
 
-:::formula{id="2.28" label="Derivate dei versori polari"}
+:::formula{id="2.32" label="Derivate dei versori polari"}
 $$\dot{\hat{u}}_r = \dot\theta\,\hat{u}_\theta, \qquad \dot{\hat{u}}_\theta = -\dot\theta\,\hat{u}_r$$
 :::
 
@@ -434,7 +468,7 @@ $$\dot{\hat{u}}_r = \dot\theta\,\hat{u}_\theta, \qquad \dot{\hat{u}}_\theta = -\
 
 Derivando $\vec{r} = r\hat{u}_r$ e usando queste relazioni si ottiene la velocità in coordinate polari.
 
-:::formula{id="2.29" label="Velocità in coordinate polari"}
+:::formula{id="2.33" label="Velocità in coordinate polari"}
 $$\vec{v} = \dot r\,\hat{u}_r + r\dot\theta\,\hat{u}_\theta = \vec{v}_r + \vec{v}_\theta$$
 :::
 
@@ -442,7 +476,7 @@ Il termine $\vec{v}_r = \dot r\,\hat{u}_r$ è la velocità radiale, legata alla 
 
 Derivando ancora una volta si ottiene l'accelerazione.
 
-:::formula{id="2.30" label="Accelerazione in coordinate polari"}
+:::formula{id="2.34" label="Accelerazione in coordinate polari"}
 $$\vec{a} = \left(\ddot r - r\dot\theta^2\right)\hat{u}_r + \left(2\dot r\dot\theta + r\ddot\theta\right)\hat{u}_\theta = \vec{a}_r + \vec{a}_\theta$$
 :::
 
@@ -458,7 +492,7 @@ Quando la traiettoria è nota a priori, conviene descrivere il moto con le coord
 
 La velocità è sempre tangente alla traiettoria, perché lo spostamento infinitesimo $d\vec{s}$ avviene lungo la curva stessa.
 
-:::formula{id="2.31" label="Velocità in coordinate intrinseche"}
+:::formula{id="2.35" label="Velocità in coordinate intrinseche"}
 $$\vec{v} = \dot s(t)\,\hat{u}_T(t)$$
 :::
 
@@ -466,7 +500,7 @@ Il modulo della velocità è quindi $v = |\dot s|$. Se $\dot s > 0$ il punto si 
 
 Per l'accelerazione si deriva ulteriormente, tenendo conto che ora anche il versore $\hat{u}_T$ dipende dal tempo.
 
-:::formula{id="2.32" label="Accelerazione in coordinate intrinseche (forma generale)"}
+:::formula{id="2.36" label="Accelerazione in coordinate intrinseche (forma generale)"}
 $$\vec{a} = \ddot s(t)\,\hat{u}_T(t) + \dot s(t)\,\dot{\hat{u}}_T(t)$$
 :::
 
@@ -486,7 +520,7 @@ ed è il prodotto successivo di questa derivata per $\dot s$, cioè il termine $
 
 Sostituendo questo risultato nella formula generale si ottiene la decomposizione fondamentale dell'accelerazione nel moto piano.
 
-:::formula{id="2.33" label="Accelerazione tangenziale e normale (centripeta)"}
+:::formula{id="2.37" label="Accelerazione tangenziale e normale (centripeta)"}
 $$\vec{a} = \ddot s(t)\,\hat{u}_T(t) + \frac{\dot s^2(t)}{\rho(t)}\,\hat{u}_N(t) = \vec{a}_T + \vec{a}_N$$
 :::
 
@@ -503,11 +537,11 @@ Valgono le seguenti conseguenze, utili per classificare rapidamente un moto:
 
 Il modulo dell'accelerazione, essendo $\hat{u}_T \perp \hat{u}_N$, si ottiene per somma pitagorica delle due componenti.
 
-:::formula{id="2.34" label="Modulo dell'accelerazione nel moto piano"}
+:::formula{id="2.38" label="Modulo dell'accelerazione nel moto piano"}
 $$a = \sqrt{a_T^2 + a_N^2} = \sqrt{\left(\frac{dv}{dt}\right)^2 + \frac{v^4}{\rho^2}}$$
 :::
 
-**Esempio 2.2.** Un punto materiale si muove con velocità istantanea di componenti cartesiane $v_x = 18,6$ m/s e $v_y = -19,8$ m/s, mentre è soggetto alla sola accelerazione di gravità $\vec{a} = -g\,\hat{u}_y$, con $g = 9,81$ m/s². Si vogliono trovare le componenti tangenziale e normale dell'accelerazione in quell'istante.
+**Esempio 2.3.** Un punto materiale si muove con velocità istantanea di componenti cartesiane $v_x = 18,6$ m/s e $v_y = -19,8$ m/s, mentre è soggetto alla sola accelerazione di gravità $\vec{a} = -g\,\hat{u}_y$, con $g = 9,81$ m/s². Si vogliono trovare le componenti tangenziale e normale dell'accelerazione in quell'istante.
 
 *Schema.* La direzione tangente alla traiettoria coincide, istante per istante, con la direzione di $\vec{v}$; l'accelerazione $\vec{a}$, essendo costante e verticale, va proiettata su $\hat{u}_T$ (parallelo a $\vec{v}$) e sulla direzione ortogonale $\hat{u}_N$.
 
@@ -557,11 +591,11 @@ $$a_N = \frac{v^2}{R} = \omega^2 R,$$
 
 e non è mai nulla, essendo sempre diversa da zero finché il punto percorre la circonferenza.
 
-:::formula{id="2.35" label="Velocità angolare e sua relazione con v"}
+:::formula{id="2.39" label="Velocità angolare e sua relazione con v"}
 $$\omega = \frac{d\theta}{dt} = \frac{1}{R}\frac{ds}{dt}, \qquad v = |\omega|\,R$$
 :::
 
-:::formula{id="2.36" label="Accelerazione angolare e componente centripeta"}
+:::formula{id="2.40" label="Accelerazione angolare e componente centripeta"}
 $$\alpha = \frac{d^2\theta}{dt^2} = \frac{d\omega}{dt}, \qquad |a_T| = |\alpha|\,R, \qquad a_N = \omega^2 R = \frac{v^2}{R}$$
 :::
 
@@ -573,7 +607,7 @@ e, se è nota invece $\alpha(\theta)$ in funzione dell'angolo, si separano le va
 
 $$\alpha\,d\theta = \omega\,d\omega \quad\Longrightarrow\quad \int_{\theta_0}^{\theta}\alpha(\theta)\,d\theta = \frac{1}{2}\omega^2 - \frac{1}{2}\omega_0^2.$$
 
-:::formula{id="2.37" label="Relazione tra accelerazione angolare e angolo"}
+:::formula{id="2.41" label="Relazione tra accelerazione angolare e angolo"}
 $$\int_{\theta_0}^{\theta}\alpha(\theta)\,d\theta = \frac{1}{2}\omega^2 - \frac{1}{2}\omega_0^2$$
 :::
 
@@ -583,7 +617,7 @@ Il moto circolare si dice **uniforme** se in tempi uguali viene percorso lo stes
 
 $$s(t) = s_0 + vt, \qquad \theta(t) = \theta_0 + \omega t.$$
 
-:::formula{id="2.38" label="Leggi orarie del moto circolare uniforme"}
+:::formula{id="2.42" label="Leggi orarie del moto circolare uniforme"}
 $$\theta(t) = \theta_0 + \omega t, \qquad s(t) = s_0 + vt$$
 :::
 
@@ -591,7 +625,7 @@ Il tempo necessario a percorrere un giro completo ($2\pi R$) è il **periodo di 
 
 $$T = \frac{2\pi R}{v} = \frac{2\pi}{|\omega|}.$$
 
-:::formula{id="2.39" label="Periodo del moto circolare uniforme"}
+:::formula{id="2.43" label="Periodo del moto circolare uniforme"}
 $$T = \frac{2\pi R}{v} = \frac{2\pi}{|\omega|}$$
 :::
 
@@ -605,7 +639,7 @@ Se invece il modulo della velocità varia, il moto è **non uniforme**: $a_T \ne
 
 $$\omega(t) = \omega_0 + \alpha(t - t_0), \qquad \theta(t) = \theta_0 + \omega_0(t - t_0) + \frac{1}{2}\alpha(t - t_0)^2.$$
 
-:::formula{id="2.40" label="Leggi orarie del moto circolare uniformemente accelerato"}
+:::formula{id="2.44" label="Leggi orarie del moto circolare uniformemente accelerato"}
 $$\omega(t) = \omega_0 + \alpha t, \qquad \theta(t) = \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2$$
 :::
 
@@ -615,7 +649,7 @@ $$\Delta\theta = \theta_f - \theta_i = \frac{\omega_f^2 - \omega_i^2}{2\alpha},$
 
 con $\alpha$ accelerazione angolare costante e diversa da zero: l'analogia con il moto rettilineo è completa, con lo spazio sostituito dall'angolo e la velocità dalla velocità angolare. Se invece $\alpha = 0$ il moto è circolare uniforme e questa formula perde significato, perché si avrebbe una divisione per zero: in tal caso si usa semplicemente $\Delta\theta = \omega\,\Delta t$, coerente con le leggi orarie del moto circolare uniforme già viste.
 
-:::formula{id="2.41" label="Relazione tra velocità angolari e angolo percorso (per $\alpha \neq 0$)"}
+:::formula{id="2.45" label="Relazione tra velocità angolari e angolo percorso (per $\alpha \neq 0$)"}
 $$\Delta\theta = \frac{\omega_f^2 - \omega_i^2}{2\alpha}, \qquad \alpha \neq 0$$
 :::
 
@@ -627,7 +661,7 @@ $$\vec{v} = \vec{\omega} \times \vec{r},$$
 
 dove $\vec{r}$ è il vettore posizione rispetto a un punto qualunque dell'asse di rotazione; se $\vec{\omega}$ è applicata nel centro O della circonferenza, $|\vec{r}| = R$, ma la relazione resta valida applicando $\vec{\omega}$ in un punto qualsiasi dell'asse. Questo risultato richiama le formule di Poisson per la derivata di un versore rotante già incontrate in [Vettori e versori](ref:chapter/1#p3) ([formula (1.13)](ref:formula/1.13)): $\vec{v} = \vec{\omega}\times\vec{r}$ ne è l'applicazione diretta al moto circolare.
 
-:::formula{id="2.42" label="Velocità nel moto circolare come prodotto vettoriale"}
+:::formula{id="2.46" label="Velocità nel moto circolare come prodotto vettoriale"}
 $$\vec{v} = \vec{\omega} \times \vec{r}$$
 :::
 
@@ -639,7 +673,7 @@ Il primo termine $\vec{\alpha}\times\vec{r}$ è la componente tangenziale dell'a
 
 $$|a_T| = |\alpha|\,R, \qquad a_N = \omega^2 R = \frac{v^2}{R}, \qquad |\alpha| = \frac{|a_T|}{R}.$$
 
-:::formula{id="2.43" label="Accelerazione nel moto circolare in forma vettoriale"}
+:::formula{id="2.47" label="Accelerazione nel moto circolare in forma vettoriale"}
 $$\vec{a} = \vec{\alpha}\times\vec{r} + \vec{\omega}\times\vec{v}$$
 :::
 
@@ -651,7 +685,7 @@ equivalente, per il moto circolare, alla notazione in coordinate intrinseche $\v
 
 ### Esempio svolto
 
-**Esempio 2.3** (moto circolare uniformemente decelerato). Un punto materiale si muove con moto circolare uniforme lungo una circonferenza di raggio $R = 40\ \text{cm}$. A un certo istante, quando $\theta = 0$ e $\omega = \omega_0 = 5\ \text{s}^{-1}$, il punto inizia a frenare con decelerazione angolare costante e si ferma dopo aver percorso esattamente un giro. Si chiede il tempo $t_f$ impiegato a fermarsi, la posizione angolare e il modulo dell'accelerazione all'istante $t_f/2$.
+**Esempio 2.4** (moto circolare uniformemente decelerato). Un punto materiale si muove con moto circolare uniforme lungo una circonferenza di raggio $R = 40\ \text{cm}$. A un certo istante, quando $\theta = 0$ e $\omega = \omega_0 = 5\ \text{s}^{-1}$, il punto inizia a frenare con decelerazione angolare costante e si ferma dopo aver percorso esattamente un giro. Si chiede il tempo $t_f$ impiegato a fermarsi, la posizione angolare e il modulo dell'accelerazione all'istante $t_f/2$.
 
 Dati: $R = 0{,}40\ \text{m}$, $\omega_0 = 5\ \text{s}^{-1}$, $\theta_0 = 0$, decelerazione angolare costante $-\alpha$ (con $\alpha > 0$ incognita), $\theta(t_f) = 2\pi$, $\omega(t_f) = 0$.
 
@@ -705,7 +739,7 @@ Questa indipendenza è una conseguenza diretta della scomposizione vettoriale: l
 
 Indicando con $v_0 = |\vec{v}_0|$ il modulo della velocità di lancio e con $\theta_0$ l'angolo di lancio, le componenti della velocità iniziale sono $v_{0,x} = v_0\cos\theta_0$ e $v_{0,y} = v_0\sin\theta_0$. Applicando a ciascuna componente le leggi del {{formula:2.5}} e del {{formula:2.7}}, con origine dei tempi nell'istante di lancio e posizione iniziale $(x_0, y_0)$, si ottengono le leggi orarie del moto parabolico:
 
-:::formula{id="2.44" label="Leggi orarie del moto parabolico"}
+:::formula{id="2.48" label="Leggi orarie del moto parabolico"}
 $$\begin{aligned} x(t) &= x_0 + v_0 \cos\theta_0 \, t \\ y(t) &= y_0 + v_0 \sin\theta_0 \, t - \frac{1}{2}gt^2 \end{aligned}$$
 :::
 
@@ -721,7 +755,7 @@ $$t = \frac{x - x_0}{v_0 \cos\theta_0},$$
 
 e sostituendo questa espressione nella legge oraria verticale si arriva, posto per semplicità $x_0 = y_0 = 0$ (origine nel punto di lancio), all'equazione cartesiana della traiettoria:
 
-:::formula{id="2.45" label="Equazione della traiettoria nel moto parabolico"}
+:::formula{id="2.49" label="Equazione della traiettoria nel moto parabolico"}
 $$y(x) = x\tan\theta_0 - \frac{g}{2v_0^2\cos^2\theta_0}x^2$$
 :::
 
@@ -742,7 +776,7 @@ $$t_M = \frac{v_0\sin\theta_0}{g},$$
 
 che, sostituito nelle leggi orarie, fornisce le coordinate del vertice della parabola:
 
-:::formula{id="2.46" label="Quota massima e sua ascissa nel moto parabolico"}
+:::formula{id="2.50" label="Quota massima e sua ascissa nel moto parabolico"}
 $$x_M = x_0 + \frac{v_0^2\sin 2\theta_0}{2g}, \qquad y_M = y_0 + \frac{v_0^2\sin^2\theta_0}{2g}$$
 :::
 
@@ -756,7 +790,7 @@ $$x_2 - x_0 = \frac{2v_0^2\cos\theta_0\sin\theta_0}{g} = \frac{v_0^2\sin 2\theta
 
 ossia la gittata:
 
-:::formula{id="2.47" label="Gittata del moto parabolico"}
+:::formula{id="2.51" label="Gittata del moto parabolico"}
 $$d = \frac{v_0^2\sin 2\theta_0}{g}$$
 :::
 
@@ -766,7 +800,7 @@ Notiamo infine che, quando punto di lancio e punto di arrivo si trovano alla ste
 
 ### Esempio svolto
 
-**Esempio 2.4** (lancio da un'altezza $h$).
+**Esempio 2.5** (lancio da un'altezza $h$).
 Un oggetto viene lanciato dal balcone di una finestra con velocità iniziale di modulo $v_0 = 15\text{ m/s}$, ad un angolo $\theta = 60°$ rispetto all'orizzontale. La finestra si trova a un'altezza $h = 8\text{ m}$ dal suolo. Si vogliono determinare l'altezza massima raggiunta, il tempo di caduta al suolo e la distanza orizzontale di caduta.
 
 *Schema e riferimento.* Si scelga l'origine $(0,0)$ nel punto di lancio, con $\hat{u}_x$ orizzontale e $\hat{u}_y$ verticale verso l'alto, e l'istante del lancio come $t=0$. Il suolo si trova a quota $y = -h$.
@@ -785,7 +819,7 @@ $$t^* = \frac{v_{0y} + \sqrt{v_{0y}^2 + 2gh}}{g} = \frac{15\sin(60°)\ \text{m/s
 
 $$d = x(t^*) = v_{0x}t^* = v_0\cos\theta \cdot t^* = 15\text{ m/s} \cdot \cos(60°) \cdot 3,16\text{ s} \approx 23,7\text{ m}.$$
 
-*Controllo.* Ogni termine ha le dimensioni corrette (una lunghezza $d$, una lunghezza $h_{max}$, un tempo $t^*$), e gli ordini di grandezza sono ragionevoli per un lancio a mano da un primo piano: altezza massima di circa il doppio dell'altezza di partenza, tempo di volo di pochi secondi, distanza orizzontale dell'ordine di $20$–$25\text{ m}$. Si noti che, trovandosi qui il punto di lancio e il punto di caduta ad altezze diverse, non si poteva applicare direttamente la {{formula:2.47}}, valida solo per lanci e cadute alla stessa quota.
+*Controllo.* Ogni termine ha le dimensioni corrette (una lunghezza $d$, una lunghezza $h_{max}$, un tempo $t^*$), e gli ordini di grandezza sono ragionevoli per un lancio a mano da un primo piano: altezza massima di circa il doppio dell'altezza di partenza, tempo di volo di pochi secondi, distanza orizzontale dell'ordine di $20$–$25\text{ m}$. Si noti che, trovandosi qui il punto di lancio e il punto di caduta ad altezze diverse, non si poteva applicare direttamente la {{formula:2.51}}, valida solo per lanci e cadute alla stessa quota.
 
 :::image{src="assets/d8b70a99-traiettoria-lancio-da-altezza.svg" alt="Grafico della traiettoria parabolica con punto di lancio, vertice e punto di caduta a quota diversa" caption="Fig. 2.13 — Traiettoria del lancio dal balcone (esempio): quota massima 8,6 m sopra il punto di lancio, caduta al suolo a 23,7 m di distanza e 8 m più in basso del lancio"}
 :::
@@ -796,10 +830,52 @@ $$d = x(t^*) = v_{0x}t^* = v_0\cos\theta \cdot t^* = 15\text{ m/s} \cdot \cos(60
 Un errore frequente è dimenticare il segno meno davanti a $g$ nella legge oraria verticale, scrivendo $y(t) = y_0 + v_{0y}t + \frac{1}{2}gt^2$ invece di $y(t) = y_0 + v_{0y}t - \frac{1}{2}gt^2$: con gli assi orientati verso l'alto, l'accelerazione di gravità è negativa.
 
 **Errore tipico 2.9** (uso della gittata fuori dalle sue ipotesi).
-La formula {{formula:2.47}} vale solo quando punto di lancio e punto di caduta sono alla stessa quota. Se le quote sono diverse (lancio da un balcone, da una scogliera, eccetera) occorre ripartire dalle leggi orarie complete e risolvere $y(t^*) = 0$ rispetto alla quota del punto di arrivo, come nell'esempio precedente.
+La formula {{formula:2.51}} vale solo quando punto di lancio e punto di caduta sono alla stessa quota. Se le quote sono diverse (lancio da un balcone, da una scogliera, eccetera) occorre ripartire dalle leggi orarie complete e risolvere $y(t^*) = 0$ rispetto alla quota del punto di arrivo, come nell'esempio precedente.
 
 **Errore tipico 2.10** (caduta libera applicata a un corpo con velocità iniziale non nulla).
 La formula del tempo di caduta libera $t_{cl} = \sqrt{2h/g}$ vale solo se la velocità verticale iniziale è nulla; non si può applicarla al tempo totale di volo di un proiettile lanciato con componente verticale della velocità iniziale $v_{0y} \ne 0$, perché in quel caso all'istante del lancio la componente verticale della velocità non è nulla. Se invece il proiettile è lanciato con velocità iniziale interamente orizzontale, cioè $v_{0y} = 0$, il tempo di caduta da un'altezza $h$ coincide proprio con $\sqrt{2h/g}$.
 
 **Errore tipico 2.11** (energia cinetica scritta come somma dei moduli).
 Quando si calcola l'energia cinetica $E_k = \frac{1}{2}m|\vec{v}|^2$ di un proiettile, occorre usare $|\vec{v}|^2 = v_x^2(t) + v_y^2(t)$, somma dei quadrati delle componenti; è un errore grave sommare i moduli delle due componenti invece dei loro quadrati.
+
+## p8 | Come viene chiesto all'esame
+
+Questo capitolo è comparso in 3 delle 6 sessioni d'esame passate. Il tipo che si incontra più spesso è il problema strutturato in cui un corpo si muove su una traiettoria circolare (il pendolo, dopo un urto o a partire dall'equilibrio). Una volta, invece, ha richiesto il moto armonico.
+
+Le domande disponibili sono troncate. Qui descrivo soltanto ciò che mostrano. La cinematica del punto non compare mai come esercizio a sé: è un passaggio dentro un problema più lungo, in cui si mescolano urti, energia e dinamica. Il test informatizzato e la prova scritta con due problemi a domande aperte sono quindi il luogo naturale di questi quesiti. Alla prova scritta si aggiungono domande aperte di teoria, che possono includere le dimostrazioni viste a lezione.
+
+### Pendolo e moto circolare dentro un problema con urto
+
+**Cosa chiede l'esame.** Un corpo appeso a un filo ideale viene colpito, oppure è lasciato oscillare e poi urta un altro corpo. Si chiedono velocità e grandezze legate alla traiettoria circolare subito prima o subito dopo l'urto. La parte cinematica è breve, ma senza di essa non si risponde alle domande successive.
+
+**Metodo passo per passo.**
+
+1. Scrivi i dati con le unità SI. Scegli il riferimento e l'origine: di solito il perno, con il filo di lunghezza $l$ che fissa il raggio della traiettoria.
+2. Se il corpo è in equilibrio sotto una forza orizzontale, imposta l'equilibrio delle forze (peso, tensione, forza applicata) con le componenti lungo gli assi. Per i richiami vedi [Reazioni vincolari ed equilibrio](ref:chapter/3#p5) e [Principi della dinamica](ref:chapter/3#p2).
+3. Per la discesa fino alla verticale usa la conservazione dell'energia meccanica, scrivendo l'energia potenziale rispetto a una quota di riferimento dichiarata. Vedi [Forze conservative ed energia potenziale](ref:chapter/4#p4).
+4. Per l'urto usa la conservazione della quantità di moto del sistema, con il segno corretto per ogni velocità. Vedi [Urti](ref:chapter/7#p7).
+5. Subito prima e subito dopo l'urto il corpo è su una circonferenza. Ricava la velocità angolare con $\omega = v/l$ e l'accelerazione centripeta con $a_N = v^2/l$, come nel [moto circolare](ref:chapter/2#p6). Sulla traiettoria circolare vale sempre la scomposizione in componente tangenziale e normale, $a_T = dv/dt$ e $a_N = v^2/\rho$, come in [Moto nel piano](ref:chapter/2#p5).
+6. Per la tensione del filo scrivi la seconda legge di Newton lungo la direzione radiale, includendo il termine centripeto. Vedi [Dinamica del moto curvilineo](ref:chapter/3#p8).
+7. Svolgi il calcolo in forma letterale e solo alla fine inserisci i numeri. Controlla le unità e l'ordine di grandezza.
+
+**Errori tipici.**
+
+- Dimenticare l'accelerazione centripeta nell'equazione radiale e scrivere che la tensione è uguale al peso. Sulla verticale, con il corpo in movimento, la tensione è maggiore del peso.
+- Applicare la conservazione dell'energia meccanica attraverso l'urto senza sapere che l'urto è elastico. L'energia totale si conserva sempre, ma l'energia meccanica si conserva solo se l'urto è elastico; in generale nell'urto si conserva la quantità di moto (con i vincoli del caso), mentre l'energia meccanica si usa prima e dopo l'urto, non attraverso di esso.
+- Confondere la velocità del corpo con una sua componente. Subito dopo l'urto la velocità è tangente alla circonferenza.
+- Usare gradi e radianti in modo incoerente, ad esempio inserendo $60^\circ$ in una formula che richiede radianti.
+
+**Esempi dall'esame.**
+
+- Prova scritta del 11 luglio 2022, esercizio 1A. Un proiettile attraversa un corpo puntiforme appeso a un filo di lunghezza $l = 1\ \text{m}$ ed esce con velocità $\vec{v}_0/2$. Il metodo parte dalla conservazione della quantità di moto nell'urto, per ricavare la velocità del corpo subito dopo. Questo valore dà poi il moto circolare con raggio $l$ che segue.
+- Prova scritta - TEMA ESAME 2 - 2024, esercizio 1A. Un pendolo semplice è tenuto a $60^\circ$ dalla verticale da una forza orizzontale, della quale si chiede il modulo. Il metodo usa prima l'equilibrio delle forze. Poi, rimossa la forza, la conservazione dell'energia dà la velocità alla verticale, dove il pendolo urta centralmente un secondo corpo.
+
+### Moto armonico in un sistema con molla
+
+Un solo esercizio, in una sola sessione, riguarda il moto armonico. È la Prova scritta - TEMA ESAME 1 - 2024, esercizio 2A: una molla orizzontale è fissata a una parete e collegata all'asse di un disco che poggia su una superficie scabra. Qui il moto armonico compare insieme a rotolamento, attrito statico e dinamica rotazionale. Il legame con questo capitolo è l'equazione differenziale $\ddot{x} + \omega^2 x = 0$ e la determinazione di ampiezza e fase dalle condizioni iniziali, come in [Moto armonico](ref:chapter/2#p4). Poiché è un caso isolato, non ne ricavo uno schema generale. Resta valida la regola di fondo: prima si scrive l'equazione del moto del sistema, poi si identifica la pulsazione, infine si usano le condizioni iniziali.
+
+### Che cosa portare a casa
+
+- Prepara bene le basi cinematiche: nell'esame compaiono nascoste dentro problemi di dinamica, energia e urti.
+- Esercitati a passare da una grandezza lineare a una angolare ($v = \omega r$, $a_N = v^2/r$) e a scomporre l'accelerazione in tangenziale e centripeta.
+- Per le domande di teoria ripassa le dimostrazioni di questo capitolo, in particolare quelle sulle leggi orarie e sull'accelerazione in coordinate intrinseche.

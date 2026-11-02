@@ -250,13 +250,7 @@ Dall'equazione di continuità segue la conseguenza qualitativa più usata nelle 
 
 ### Teorema di Bernoulli
 
-Vogliamo ora legare la velocità del fluido alla pressione e alla quota. Consideriamo un fluido ideale che scorre in regime stazionario lungo un tubo di sezione variabile e non necessariamente orizzontale. Applichiamo il [teorema dell'energia cinetica](ref:chapter/4#p3) al volume di controllo compreso fra le sezioni $S_1$ (quota $y_1$, velocità $v_1$) e $S_2$ (quota $y_2$, velocità $v_2$). In un intervallo di tempo $\Delta t$, una massa $\Delta m$ entra attraverso $S_1$ e una massa uguale esce attraverso $S_2$; in regime stazionario il volume di controllo non accumula massa.
-
-Per l'incomprimibilità, il volume entrante e quello uscente sono uguali: $\Delta V = S_1 \Delta l_1 = S_2 \Delta l_2$, dove $\Delta l_i = v_i \Delta t$. La massa che attraversa ciascuna sezione durante $\Delta t$ è quindi $\Delta m = \rho\,\Delta V$.
-
-Le forze che compiono lavoro sul fluido mentre attraversa il volume di controllo sono il peso della massa entrante e uscente e le forze di pressione esercitate dal resto del fluido sulle due sezioni. Il lavoro netto della forza peso è
-
-$$W_g = -\Delta m\, g\,(y_2 - y_1)$$
+Vogliamo ora legare la velocità del fluido alla pressione e alla quota. Il risultato si ottiene applicando il [teorema dell'energia cinetica](ref:chapter/4#p3) a una porzione di fluido ideale che scorre in regime stazionario lungo un tubo di sezione variabile e non necessariamente orizzontale; la dimostrazione è riportata dopo l'enunciato.
 
 mentre il lavoro delle forze di pressione, agenti con verso opposto alle due estremità, vale
 
@@ -275,6 +269,30 @@ $$p + \rho g y + \frac12 \rho v^2 = \text{costante}$$
 :::
 
 ossia la somma di pressione, densità di energia potenziale gravitazionale ($\rho g y$) e densità di energia cinetica ($\tfrac12 \rho v^2$) è costante lungo il condotto.
+
+**Dimostrazione richiesta all'esame.**
+
+*Dimostrazione.* Si considerino due sezioni qualunque $S_1$ e $S_2$ del tubo di flusso, a quote $y_1$ e $y_2$, e la massa di fluido compresa fra di esse al tempo $t$. Dopo un intervallo $\Delta t$ breve questa massa occupa la regione compresa fra $S_1'$ e $S_2'$, dove $S_1'$ dista $\Delta l_1 = v_1\Delta t$ da $S_1$ e $S_2'$ dista $\Delta l_2 = v_2\Delta t$ da $S_2$. Il fluido compreso fra $S_1'$ e $S_2$ è comune alle due configurazioni e, essendo il regime stazionario, ha in ogni suo punto la stessa velocità e la stessa quota: la sua energia non cambia. La variazione di energia cinetica dell'intera massa è quindi quella che si avrebbe se la massa $\Delta m_1$ contenuta fra $S_1$ e $S_1'$, con velocità $v_1$ e quota $y_1$, venisse sostituita dalla massa $\Delta m_2$ contenuta fra $S_2$ e $S_2'$, con velocità $v_2$ e quota $y_2$. Per l'incomprimibilità i due volumi sono uguali, $\Delta V = S_1\Delta l_1 = S_2\Delta l_2$ (equazione di continuità), e quindi $\Delta m_1 = \Delta m_2 = \Delta m = \rho\,\Delta V$. Si ha
+
+$$\Delta E_k = \frac12 \Delta m\, v_2^2 - \frac12 \Delta m\, v_1^2$$
+
+Le forze che compiono lavoro sono due. La forza peso, uniforme, compie il lavoro $W_g = -\Delta m\, g\,(y_2 - y_1)$, perché il suo effetto netto è sollevare la massa $\Delta m$ dalla quota $y_1$ alla quota $y_2$. Le forze di pressione esercitate dal fluido circostante sulle due sezioni sono $p_1 S_1$, concorde con lo spostamento $\Delta l_1$, e $p_2 S_2$, opposta allo spostamento $\Delta l_2$; le forze di pressione sulla superficie laterale sono ortogonali allo spostamento e non compiono lavoro, e non ci sono forze di attrito perché $\eta = 0$. Dunque
+
+$$W_p = p_1 S_1 \Delta l_1 - p_2 S_2 \Delta l_2 = (p_1 - p_2)\,\Delta V$$
+
+Il teorema dell'energia cinetica, $\Delta E_k = W_p + W_g$, dà
+
+$$\frac12 \Delta m\, v_2^2 - \frac12 \Delta m\, v_1^2 = (p_1-p_2)\,\Delta V - \Delta m\, g\,(y_2-y_1)$$
+
+Sostituendo $\Delta m = \rho\,\Delta V$ e dividendo per $\Delta V$:
+
+$$\frac12 \rho\,(v_2^2 - v_1^2) = p_1 - p_2 - \rho g\,(y_2 - y_1)$$
+
+cioè, portando i termini con indice 1 a sinistra e quelli con indice 2 a destra,
+
+$$p_1 + \rho g y_1 + \frac12 \rho v_1^2 = p_2 + \rho g y_2 + \frac12 \rho v_2^2$$
+
+Poiché le sezioni $S_1$ e $S_2$ sono arbitrarie, la grandezza $p + \rho g y + \tfrac12 \rho v^2$ assume lo stesso valore in ogni sezione del tubo di flusso, che è l'enunciato. $\blacksquare$
 
 Se il condotto è orizzontale ($y = \text{costante}$) la relazione si riduce a $p + \tfrac12 \rho v^2 = \text{costante}$, cosicché, confrontando due sezioni, a un aumento di velocità corrisponde necessariamente una diminuzione di pressione. Se invece il fluido è fermo ($v=0$ ovunque) il teorema di Bernoulli si riduce alla legge di Stevino già vista nella sezione sulla [statica dei fluidi](ref:chapter/11#p2): $p + \rho g y = \text{costante}$.
 
@@ -340,7 +358,7 @@ dove il coefficiente $\eta$ è detto viscosità (o coefficiente di viscosità) d
 
 Si definisce fluido ideale un fluido con $\eta = 0$ e densità costante, cioè non viscoso e incompressibile; un fluido reale ha sempre $\eta \neq 0$, e il fluido ideale va inteso come caso limite utile per i modelli semplificati (Bernoulli, Torricelli) già discussi in [Fluidodinamica](ref:chapter/11#p3).
 
-Quando un corpo si muove immerso in un fluido (non lungo un condotto) in regime di moto viscoso lento, cioè a numero di Reynolds basso, subisce una forza di attrito viscoso proporzionale alla velocità, [formula (3.17)](ref:formula/3.17), con il coefficiente geometrico $\gamma$ che dipende dalla forma del corpo e $\eta$ la viscosità del fluido. Questa legge lineare, già incontrata in [Forze di attrito](ref:chapter/3#p5), è all'origine dei moti smorzati esponenzialmente ([formula (3.18)](ref:formula/3.18), [formula (3.19)](ref:formula/3.19)) e del fatto che in presenza di sola forza viscosa non esiste equilibrio statico, poiché per $v=0$ la forza si annulla; a numero di Reynolds non basso, come si vedrà più avanti in questa sezione, la resistenza del mezzo non è più lineare nella velocità.
+Quando un corpo si muove immerso in un fluido (non lungo un condotto) in regime di moto viscoso lento, cioè a numero di Reynolds basso, subisce una forza di attrito viscoso proporzionale alla velocità, [formula (3.19)](ref:formula/3.19), con il coefficiente geometrico $\gamma$ che dipende dalla forma del corpo e $\eta$ la viscosità del fluido. Questa legge lineare, già incontrata in [Forze di attrito](ref:chapter/3#p6), è all'origine dei moti smorzati esponenzialmente ([formula (3.20)](ref:formula/3.20), [formula (3.21)](ref:formula/3.21)) e del fatto che in presenza di sola forza viscosa non esiste equilibrio statico, poiché per $v=0$ la forza si annulla; a numero di Reynolds non basso, come si vedrà più avanti in questa sezione, la resistenza del mezzo non è più lineare nella velocità.
 
 ### Moto laminare e legge di Hagen-Poiseuille
 
@@ -410,4 +428,4 @@ Poiché $Re \approx 3900 > 1200$, il moto non è laminare: l'ipotesi alla base d
 
 **Errore tipico 11.5**
 
-Uno sbaglio frequente è applicare la legge di Hagen-Poiseuille a un condotto senza verificare il numero di Reynolds: la formula per $q$ resta valida solo se il moto è effettivamente laminare, condizione che va sempre controllata tramite il numero di Reynolds, anche per raggi molto piccoli, poiché una differenza di pressione sufficientemente grande può portare il moto in regime turbolento pure in un condotto stretto. Un secondo errore è dimenticare che, in presenza di attrito viscoso, il lavoro delle forze dissipative va introdotto con il segno negativo nel teorema dell'energia meccanica (non nel principio di conservazione, che non si applica), come già segnalato in [Forza elastica](ref:chapter/3#p6) e in [Forze di attrito](ref:chapter/3#p5): trascurare questo segno porta a concludere erroneamente che l'energia meccanica si conservi.
+Uno sbaglio frequente è applicare la legge di Hagen-Poiseuille a un condotto senza verificare il numero di Reynolds: la formula per $q$ resta valida solo se il moto è effettivamente laminare, condizione che va sempre controllata tramite il numero di Reynolds, anche per raggi molto piccoli, poiché una differenza di pressione sufficientemente grande può portare il moto in regime turbolento pure in un condotto stretto. Un secondo errore è dimenticare che, in presenza di attrito viscoso, il lavoro delle forze dissipative va introdotto con il segno negativo nel teorema dell'energia meccanica (non nel principio di conservazione, che non si applica), come già segnalato in [Forza elastica](ref:chapter/3#p7) e in [Forze di attrito](ref:chapter/3#p6): trascurare questo segno porta a concludere erroneamente che l'energia meccanica si conservi.

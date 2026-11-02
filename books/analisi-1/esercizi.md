@@ -93,7 +93,7 @@ Suddividi $\mathbb{R}$ nei tre intervalli determinati dai punti $x=-3$ e $x=1$, 
 
 **Caso $x\ge1$**: $x-1\ge0$ e $x+3>0$, quindi $|x-1|+|x+3|=(x-1)+(x+3)=2x+2$. La disequazione diventa $2x+2\le6$, cioè $x\le2$. Intersecando con $x\ge1$: $1\le x\le2$.
 
-Unendo i tre casi: $\lbrack -4,-3)\cup\lbrack -3,1)\cup\lbrack 1,2\rbrack =\lbrack -4,2\rbrack $.
+Unendo i tre casi: $\lbrack -4,-3)\cup\lbrack -3,1)\cup[1,2]=\lbrack -4,2\rbrack $.
 :::
 :::
 
@@ -102,7 +102,7 @@ Unendo i tre casi: $\lbrack -4,-3)\cup\lbrack -3,1)\cup\lbrack 1,2\rbrack =\lbra
 Utilizzando il principio dell'estremo superiore, dimostrare l'esistenza di un numero reale $L>0$ tale che $L^2=2$. Si consideri l'insieme $A=\{x\in\mathbb{R} : x\ge0,\ x^2\le2\}$.
 
 :::hint
-Mostra che $A$ è non vuoto e limitato superiormente, poni $L=\sup A$ (che esiste per {{formula:1.7}}), ed escludi per assurdo sia $L^2<2$ sia $L^2>2$.
+Mostra che $A$ è non vuoto e limitato superiormente, poni $L=\sup A$ (che esiste per {{formula:1.9}}), ed escludi per assurdo sia $L^2<2$ sia $L^2>2$.
 :::
 
 :::solution
@@ -176,7 +176,7 @@ Unendo i due casi, $A=(-\infty,-3)\cup\left\lbrack \frac12,+\infty\right)$.
 
 :::exercise{id="E1.8" chapter="1" difficulty="facile"}
 ## Domanda
-Sia $A$ un sottoinsieme non vuoto di $\mathbb{R}$, limitato superiormente, e sia $L\in\mathbb{R}$. Enunciare la caratterizzazione dell'estremo superiore {{formula:1.5}} e usarla per verificare che $\sup A=2$ per $A=\lbrack 0,2)$.
+Sia $A$ un sottoinsieme non vuoto di $\mathbb{R}$, limitato superiormente, e sia $L\in\mathbb{R}$. Enunciare la caratterizzazione dell'estremo superiore {{formula:1.7}} e usarla per verificare che $\sup A=2$ per $A=\lbrack 0,2)$.
 
 :::hint
 Devi verificare due condizioni: che $2$ sia un maggiorante di $A$ e che per ogni $\varepsilon>0$ esista un elemento di $A$ maggiore di $2-\varepsilon$.
@@ -242,11 +242,11 @@ $$
 e utilizzare questo risultato per stabilire che, se $|x-3|<0.1$, allora $\big||x|-3\big|<0.1$.
 
 :::hint
-Applica due volte {{formula:1.3}}, scrivendo $x=(x-y)+y$ e $y=(y-x)+x$, per ottenere le due disuguaglianze $|x|-|y|\le|x-y|$ e $|y|-|x|\le|x-y|$.
+Applica due volte {{formula:1.5}}, scrivendo $x=(x-y)+y$ e $y=(y-x)+x$, per ottenere le due disuguaglianze $|x|-|y|\le|x-y|$ e $|y|-|x|\le|x-y|$.
 :::
 
 :::solution
-Scriviamo $x=(x-y)+y$. Per {{formula:1.3}},
+Scriviamo $x=(x-y)+y$. Per {{formula:1.5}},
 
 $$
 |x|=|(x-y)+y|\le|x-y|+|y|,
@@ -268,7 +268,7 @@ $$
 \big||x|-|y|\big|\le|x-y|,
 $$
 
-che è esattamente {{formula:1.4}}.
+che è esattamente {{formula:1.6}}.
 
 Applichiamo ora questo risultato con $y=3$: poiché $|3|=3$, otteniamo
 
@@ -314,7 +314,7 @@ $$
 utilizzando l'identità di Pascal $\binom{n}{k-1}+\binom{n}{k}=\binom{n+1}{k}$.
 
 :::hint
-Nel passo induttivo scrivi la somma per $n+1$ isolando i termini estremi e raggruppa i rimanenti tramite l'identità di Pascal, oppure applica {{formula:1.2}} con $x=y=1$.
+Nel passo induttivo scrivi la somma per $n+1$ isolando i termini estremi e raggruppa i rimanenti tramite l'identità di Pascal, oppure applica {{formula:1.4}} con $x=y=1$.
 :::
 
 :::solution
@@ -340,7 +340,7 @@ $$
 \sum_{k=0}^{n+1}\binom{n+1}{k}=1+(2^{n+1}-2)+1=2^{n+1}.
 $$
 
-Per il principio di induzione la formula vale per ogni $n\in\mathbb{N}$. In alternativa, basta applicare {{formula:1.2}} con $x=y=1$: $(1+1)^n=\sum_{k=0}^n\binom{n}{k}1^{n-k}1^k=\sum_{k=0}^n\binom{n}{k}=2^n$.
+Per il principio di induzione la formula vale per ogni $n\in\mathbb{N}$. In alternativa, basta applicare {{formula:1.4}} con $x=y=1$: $(1+1)^n=\sum_{k=0}^n\binom{n}{k}1^{n-k}1^k=\sum_{k=0}^n\binom{n}{k}=2^n$.
 :::
 :::
 
@@ -363,7 +363,7 @@ Confrontando le due famiglie: il valore massimo assoluto di $A$ è $a_2=\frac32$
 
 :::exercise{id="E1.15" chapter="1" difficulty="medio"}
 ## Domanda
-Sia $A=\{x\in\mathbb{Q} : x^2<3\}$. Dimostrare, usando il principio dell'estremo superiore {{formula:1.7}}, che $\sup A=\sqrt3$, e spiegare perché $A$ non ha massimo.
+Sia $A=\{x\in\mathbb{Q} : x^2<3\}$. Dimostrare, usando il principio dell'estremo superiore {{formula:1.9}}, che $\sup A=\sqrt3$, e spiegare perché $A$ non ha massimo.
 
 :::hint
 Mostra che $A$ è non vuoto e limitato superiormente in $\mathbb{R}$, così il principio garantisce l'esistenza di $L=\sup A\in\mathbb{R}$; poi escludi per assurdo sia $L<\sqrt3$ sia $L>\sqrt3$. Per concludere che $A$ non ha massimo, ricorda che $\sqrt3$ è irrazionale: dimostralo per assurdo supponendo $\sqrt3=p/q$ con $p,q$ interi coprimi e deducendo che $3$ divide sia $p$ sia $q$.
@@ -625,7 +625,7 @@ $$f'(x) = e^{-x^2} + x\cdot(-2x)e^{-x^2} = e^{-x^2}(1-2x^2).$$
 
 Poiché $e^{-x^2}>0$ sempre, il segno di $f'$ coincide con quello di $1-2x^2$, positivo per $x\in\left(-\frac{1}{\sqrt2},\frac{1}{\sqrt2}\right)$ e negativo altrove. Dunque:
 - $f$ è strettamente decrescente su $\left(-\infty,-\frac{1}{\sqrt2}\right\rbrack $;
-- $f$ è strettamente crescente su $\left\lbrack -\frac{1}{\sqrt2},\frac{1}{\sqrt2}\right\rbrack $;
+- $f$ è strettamente crescente su $\left[-\frac{1}{\sqrt2},\frac{1}{\sqrt2}\right]$;
 - $f$ è strettamente decrescente su $\left\lbrack \frac{1}{\sqrt2},+\infty\right)$.
 
 Per {{formula:8.4}}, $x=-\frac{1}{\sqrt2}$ è punto di minimo locale e $x=\frac{1}{\sqrt2}$ è punto di massimo locale, con
@@ -751,7 +751,7 @@ $$
 (b) $(f\circ g)(x) = f(g(x)) = \sqrt{g(x)-1} = \sqrt{x^2+2x-1}$, definita quando $g(x)\ge 1$, cioè $x^2+2x-1\ge 0$. Le radici sono $x = -1\pm\sqrt{2}$, quindi la disequazione è soddisfatta per $x\le -1-\sqrt2$ oppure $x\ge -1+\sqrt2$. Dunque
 
 $$
-(f\circ g)(x) = \sqrt{x^2+2x-1}, \qquad x\in\left(-\infty,-1-\sqrt2\,\right]\cup\left[-1+\sqrt2,+\infty\right).
+(f\circ g)(x) = \sqrt{x^2+2x-1}, \qquad x\in\left(-\infty,-1-\sqrt2\,\right\rbrack \cup\left\lbrack -1+\sqrt2,+\infty\right).
 $$
 :::
 :::
@@ -775,7 +775,7 @@ $$f(x) = x^2-4x+3 = (x-2)^2 - 1.$$
 Il vertice della parabola è in $x=2$, dove $f$ assume il valore minimo $-1$. Essendo la concavità rivolta verso l'alto, l'immagine è
 
 $$
-\operatorname{Im}(f) = [-1,+\infty).
+\operatorname{Im}(f) = \lbrack -1,+\infty).
 $$
 
 Il grafico è simmetrico rispetto alla retta $x=2$: ad esempio $f(0)=3=f(4)$, quindi $f$ non è iniettiva su $\mathbb{R}$. Inoltre $f$ non è suriettiva su $\mathbb{R}$ perché non assume valori minori di $-1$, cioè l'immagine è un sottoinsieme proprio del codominio.
@@ -931,7 +931,7 @@ $$
 \frac{a_{n+1}}{a_n} \to \frac{2}{e} \approx 0{,}7358 < 1.
 $$
 
-Per il {{formula:4.14}}, poiché il limite del rapporto è strettamente minore di $1$, la successione $a_n$ tende a $0$.
+Per il {{formula:4.16}}, poiché il limite del rapporto è strettamente minore di $1$, la successione $a_n$ tende a $0$.
 :::
 :::
 
@@ -950,7 +950,7 @@ $$
 \sqrt[n]{a_n} = \frac{n+1}{2n+3}.
 $$
 
-Si ha $\displaystyle\lim_{n\to\infty}\frac{n+1}{2n+3} = \frac{1}{2} < 1$. Per il {{formula:4.15}}, poiché il limite della radice $n$-esima è strettamente minore di $1$, la successione $a_n$ tende a $0$.
+Si ha $\displaystyle\lim_{n\to\infty}\frac{n+1}{2n+3} = \frac{1}{2} < 1$. Per il {{formula:4.17}}, poiché il limite della radice $n$-esima è strettamente minore di $1$, la successione $a_n$ tende a $0$.
 :::
 :::
 
@@ -1011,7 +1011,7 @@ Si calcolano i valori di $a_n$ a seconda del resto di $n$ modulo $4$:
 
 Quindi $a_n \in \{-1,0,1\}$ per ogni $n$, e in particolare $|a_n|\le 1$: la successione è limitata.
 
-Le sottosuccessioni (secondo la {{formula:4.12}}) con $n = 4k+1$ sono costanti uguali a $1$, con $n=4k+3$ costanti uguali a $-1$, e con $n=4k$ o $n=4k+2$ costanti uguali a $0$: esse convergono quindi rispettivamente a $1$, $-1$ e $0$.
+Le sottosuccessioni (secondo la {{formula:4.14}}) con $n = 4k+1$ sono costanti uguali a $1$, con $n=4k+3$ costanti uguali a $-1$, e con $n=4k$ o $n=4k+2$ costanti uguali a $0$: esse convergono quindi rispettivamente a $1$, $-1$ e $0$.
 
 Poiché esistono sottosuccessioni con limiti diversi, per il teorema di unicità del limite la successione $(a_n)$ non converge. Inoltre, poiché $a_n$ assume solo i valori $-1,0,1$ per ogni $n$, non esistono altri possibili limiti sottosequenziali.
 :::
@@ -1080,7 +1080,7 @@ Per gli indici pari: $a_{2n} = \dfrac{2n}{2n+1} \to 1$ per $n\to\infty$.
 
 Per gli indici dispari: $a_{2n+1} = -\dfrac{2n+1}{2n+2} \to -1$ per $n\to\infty$.
 
-Le due sottosuccessioni, definite tramite la {{formula:4.12}}, convergono a limiti diversi ($1$ e $-1$). Se $(a_n)$ convergesse a un limite $L$, ogni sua sottosuccessione dovrebbe convergere a $L$; ciò contraddice il fatto che le due sottosuccessioni hanno limiti diversi. Quindi $(a_n)$ non converge.
+Le due sottosuccessioni, definite tramite la {{formula:4.14}}, convergono a limiti diversi ($1$ e $-1$). Se $(a_n)$ convergesse a un limite $L$, ogni sua sottosuccessione dovrebbe convergere a $L$; ciò contraddice il fatto che le due sottosuccessioni hanno limiti diversi. Quindi $(a_n)$ non converge.
 :::
 :::
 
@@ -1096,7 +1096,7 @@ Calcolare il rapporto $a_{n+1}/a_n$ e studiarne il limite per $n\to\infty$.
 Calcoliamo il rapporto tra termini consecutivi:
 $$\frac{a_{n+1}}{a_n} = \frac{3^{n+1}}{(n+1)!}\cdot\frac{n!}{3^n} = \frac{3}{n+1}.$$
 
-Si ha $\displaystyle\lim_{n\to\infty}\frac{3}{n+1} = 0 < 1$. Per il {{formula:4.14}}, poiché il limite del rapporto è strettamente minore di $1$, la successione $a_n$ tende a $0$.
+Si ha $\displaystyle\lim_{n\to\infty}\frac{3}{n+1} = 0 < 1$. Per il {{formula:4.16}}, poiché il limite del rapporto è strettamente minore di $1$, la successione $a_n$ tende a $0$.
 :::
 :::
 
@@ -1152,7 +1152,7 @@ Porre $t_n = 1/n$ e riconoscere nel rapporto $a_n$ il limite notevole del seno p
 :::solution
 Si osserva che $a_n = n\sin\!\left(\frac{1}{n}\right) = \dfrac{\sin(1/n)}{1/n}$. Poniamo $t_n = 1/n$; chiaramente $t_n \to 0^+$ per $n\to\infty$.
 
-Per il {{formula:6.6}} si ha $\lim_{t\to 0}\dfrac{\sin t}{t} = 1$. Per la {{formula:4.13}}, poiché $t_n \to 0$, si ha anche
+Per il {{formula:6.6}} si ha $\lim_{t\to 0}\dfrac{\sin t}{t} = 1$. Per la {{formula:4.15}}, poiché $t_n \to 0$, si ha anche
 
 $$
 \lim_{n\to\infty} \frac{\sin(t_n)}{t_n} = 1.
@@ -1314,14 +1314,14 @@ Per il {{formula:7.13}}, $f$ è strettamente crescente su tutto $\mathbb{R}$, qu
 
 :::exercise{id="E5.5" chapter="5" difficulty="difficile"}
 ## Domanda
-Sia $f:\lbrack 0,2\rbrack \to\mathbb{R}$ una funzione continua tale che $f(0)=f(2)$. Dimostrare che esiste $c\in\lbrack 0,1\rbrack $ tale che $f(c)=f(c+1)$.
+Sia $f:\lbrack 0,2\rbrack \to\mathbb{R}$ una funzione continua tale che $f(0)=f(2)$. Dimostrare che esiste $c\in[0,1]$ tale che $f(c)=f(c+1)$.
 
 :::hint
 Introdurre la funzione ausiliaria $g(x)=f(x+1)-f(x)$ su $\lbrack 0,1\rbrack $, osservare che $g(1)=-g(0)$, e applicare il {{formula:5.3}}.
 :::
 
 :::solution
-Si definisca $g(x)=f(x+1)-f(x)$ per $x\in\lbrack 0,1\rbrack $. La funzione $g$ è continua su $\lbrack 0,1\rbrack $, perché somma e composizione di funzioni continue (traslazione di $f$). Si ha
+Si definisca $g(x)=f(x+1)-f(x)$ per $x\in[0,1]$. La funzione $g$ è continua su $\lbrack 0,1\rbrack $, perché somma e composizione di funzioni continue (traslazione di $f$). Si ha
 
 $$
 g(0)=f(1)-f(0),\qquad g(1)=f(2)-f(1).
@@ -1333,7 +1333,7 @@ $$
 g(1)=f(0)-f(1)=-\big(f(1)-f(0)\big)=-g(0).
 $$
 
-Se $g(0)=0$, basta scegliere $c=0$: infatti $f(1)=f(0)$, cioè $f(c+1)=f(c)$. Se invece $g(0)\neq 0$, allora $g(0)$ e $g(1)=-g(0)$ hanno segno opposto, quindi per il {{formula:5.3}} (si veda anche il {{formula:5.4}}) esiste $c\in(0,1)$ tale che $g(c)=0$, ossia $f(c+1)=f(c)$. In entrambi i casi esiste $c\in\lbrack 0,1\rbrack $ con $f(c)=f(c+1)$.
+Se $g(0)=0$, basta scegliere $c=0$: infatti $f(1)=f(0)$, cioè $f(c+1)=f(c)$. Se invece $g(0)\neq 0$, allora $g(0)$ e $g(1)=-g(0)$ hanno segno opposto, quindi per il {{formula:5.3}} (si veda anche il {{formula:5.4}}) esiste $c\in(0,1)$ tale che $g(c)=0$, ossia $f(c+1)=f(c)$. In entrambi i casi esiste $c\in[0,1]$ con $f(c)=f(c+1)$.
 :::
 :::
 
@@ -2133,24 +2133,24 @@ a) Verificare che $f$ è continua su $\lbrack 0,2\rbrack $.
 
 b) Calcolare $\displaystyle\int_0^2 f(x)\,dx$.
 
-c) Stabilire se esiste $c\in\lbrack 0,2\rbrack $ tale che $f(c)$ coincide con la media integrale di $f$ su $\lbrack 0,2\rbrack $, e in caso affermativo determinarne tutti i valori.
+c) Stabilire se esiste $c\in[0,2]$ tale che $f(c)$ coincide con la media integrale di $f$ su $\lbrack 0,2\rbrack $, e in caso affermativo determinarne tutti i valori.
 
 :::hint
 Per la continuità in $x=1$ confronta i due limiti laterali con il valore della funzione; per il punto c) usa il {{formula:9.12}}. Risolvi l’equazione $f(c)=\frac{5}{12}$ in entrambi i rami e verifica che le soluzioni appartengano ai rispettivi intervalli.
 :::
 
 :::solution
-a) Per $x\in\lbrack 0,1\rbrack $, $\lim_{x\to 1^-} f(x) = 1^2 = 1$ e $f(1)=1$. Per $x\in(1,2\rbrack $, $\lim_{x\to 1^+} f(x) = 2-1 = 1$. I due limiti laterali coincidono con $f(1)=1$, quindi $f$ è continua in $x=1$; sui due rami è un polinomio, quindi continua. Dunque $f$ è continua su tutto $\lbrack 0,2\rbrack $.
+a) Per $x\in[0,1]$, $\lim_{x\to 1^-} f(x) = 1^2 = 1$ e $f(1)=1$. Per $x\in(1,2\rbrack $, $\lim_{x\to 1^+} f(x) = 2-1 = 1$. I due limiti laterali coincidono con $f(1)=1$, quindi $f$ è continua in $x=1$; sui due rami è un polinomio, quindi continua. Dunque $f$ è continua su tutto $\lbrack 0,2\rbrack $.
 
 b) Calcoliamo separatamente i due pezzi:
 
-$$\int_0^1 x^2\,dx = \left\lbrack \frac{x^3}{3}\right\rbrack _0^1 = \frac{1}{3},$$
+$$\int_0^1 x^2\,dx = \left[\frac{x^3}{3}\right]_0^1 = \frac{1}{3},$$
 
-$$\int_1^2 (2-x)\,dx = \left\lbrack 2x-\frac{x^2}{2}\right\rbrack _1^2 = (4-2)-\left(2-\frac12\right) = 2 - \frac32 = \frac12.$$
+$$\int_1^2 (2-x)\,dx = \left[2x-\frac{x^2}{2}\right]_1^2 = (4-2)-\left(2-\frac12\right) = 2 - \frac32 = \frac12.$$
 
 Quindi $\displaystyle\int_0^2 f(x)\,dx = \frac13+\frac12 = \frac56$.
 
-c) La media integrale è $\frac{1}{2-0}\int_0^2 f(x)\,dx = \frac{1}{2}\cdot\frac56 = \frac{5}{12}$. Poiché $f$ è continua su $\lbrack 0,2\rbrack $, per il teorema della media integrale esiste $c\in\lbrack 0,2\rbrack $ con $f(c)=\frac{5}{12}$. Nel primo ramo, $c^2=\frac{5}{12}$ con $c\in\lbrack 0,1\rbrack $ dà $c=\sqrt{\frac{5}{12}}$, che appartiene a $\lbrack 0,1\rbrack $. Nel secondo ramo, $2-c=\frac{5}{12}$ con $c\in(1,2\rbrack $ dà $c=\frac{19}{12}$, che appartiene a $(1,2\rbrack $. I valori cercati sono quindi $c=\sqrt{\frac{5}{12}}$ e $c=\frac{19}{12}$. La soluzione è coerente con la continuità, l’integrale e la media integrale calcolati sopra.
+c) La media integrale è $\frac{1}{2-0}\int_0^2 f(x)\,dx = \frac{1}{2}\cdot\frac56 = \frac{5}{12}$. Poiché $f$ è continua su $\lbrack 0,2\rbrack $, per il teorema della media integrale esiste $c\in[0,2]$ con $f(c)=\frac{5}{12}$. Nel primo ramo, $c^2=\frac{5}{12}$ con $c\in[0,1]$ dà $c=\sqrt{\frac{5}{12}}$, che appartiene a $\lbrack 0,1\rbrack $. Nel secondo ramo, $2-c=\frac{5}{12}$ con $c\in(1,2\rbrack $ dà $c=\frac{19}{12}$, che appartiene a $(1,2\rbrack $. I valori cercati sono quindi $c=\sqrt{\frac{5}{12}}$ e $c=\frac{19}{12}$. La soluzione è coerente con la continuità, l’integrale e la media integrale calcolati sopra.
 :::
 :::
 
@@ -2171,7 +2171,7 @@ Poiché $1+x^2>0$ per ogni $x$, il segno di $F'(x)$ coincide con il segno di $x$
 
 Per l'espressione esplicita, con la sostituzione $u=1+t^2$, $du=2t\,dt$,
 
-$$F(x) = \int_0^x \frac{t}{1+t^2}\,dt = \left\lbrack \frac12\ln(1+t^2)\right\rbrack _0^x = \frac12\ln(1+x^2).$$
+$$F(x) = \int_0^x \frac{t}{1+t^2}\,dt = \left[\frac12\ln(1+t^2)\right]_0^x = \frac12\ln(1+x^2).$$
 
 Questa formula confirma il comportamento trovato: $\frac12\ln(1+x^2)\ge 0$ con uguaglianza solo in $x=0$.
 :::
@@ -2207,15 +2207,15 @@ La funzione $g(x)=x^3-x=x(x-1)(x+1)$ si annulla in $x=-1,0,1$. Studiando il segn
 
 Quindi
 
-$$|x^3-x| = \begin{cases} x-x^3 & x\in\lbrack -2,-1\rbrack \cup\lbrack 0,1\rbrack ,\\ x^3-x & x\in\lbrack -1,0\rbrack \cup\lbrack 1,2\rbrack . \end{cases}$$
+$$|x^3-x| = \begin{cases} x-x^3 & x\in[-2,-1]\cup[0,1],\\ x^3-x & x\in[-1,0]\cup[1,2]. \end{cases}$$
 
 Notiamo inoltre che $g$ è dispari, dunque $|g|$ è pari, e quindi $\int_{-2}^2 |g(x)|\,dx = 2\int_0^2 |g(x)|\,dx$.
 
 Calcoliamo su $\lbrack 0,2\rbrack $:
 
-$$\int_0^1 (x-x^3)\,dx = \left\lbrack \frac{x^2}{2}-\frac{x^4}{4}\right\rbrack _0^1 = \frac12-\frac14 = \frac14,$$
+$$\int_0^1 (x-x^3)\,dx = \left[\frac{x^2}{2}-\frac{x^4}{4}\right]_0^1 = \frac12-\frac14 = \frac14,$$
 
-$$\int_1^2 (x^3-x)\,dx = \left\lbrack \frac{x^4}{4}-\frac{x^2}{2}\right\rbrack _1^2 = \left(4-2\right)-\left(\frac14-\frac12\right) = 2-\left(-\frac14\right) = \frac94.$$
+$$\int_1^2 (x^3-x)\,dx = \left[\frac{x^4}{4}-\frac{x^2}{2}\right]_1^2 = \left(4-2\right)-\left(\frac14-\frac12\right) = 2-\left(-\frac14\right) = \frac94.$$
 
 Quindi $\int_0^2 |g(x)|\,dx = \frac14+\frac94 = \frac{10}{4} = \frac52$.
 
