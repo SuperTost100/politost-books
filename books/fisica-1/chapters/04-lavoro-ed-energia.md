@@ -323,8 +323,6 @@ poiché $\hat{u}_r\cdot d\vec{s} = ds\cos\theta = dr$ è la variazione del modul
 
 $$E_p(r) = -\frac{Gm_1 m_2}{r} ,$$
 
-$$E_p(r) = -\frac{Gm_1 m_2}{r} ,$$
-
 dove il segno negativo riflette la natura attrattiva della forza.
 
 La forza d'attrito radente, invece, non è conservativa: in generale il suo lavoro si calcola solo tramite l'integrale $W = \int_{A,\gamma}^{B} \vec{F}_{ad}\cdot d\vec{s}$, che dipende dal cammino effettivamente seguito e non solo dai punti $A$ e $B$, come già visto nella sezione sulle [forze di attrito](ref:chapter/3#p6) nei casi in cui $\mu_d$ o la reazione normale $N$ variano lungo il percorso, oppure la superficie di contatto è essa stessa in moto. Soltanto quando $\mu_d$ e $N$ sono costanti e la superficie è ferma nel riferimento scelto il lavoro si riduce a {{formula:4.11}}, proporzionale alla sola lunghezza del cammino percorso. In ogni caso, poiché tale lavoro non è esprimibile come differenza dei valori di una funzione delle sole coordinate di $A$ e $B$, non si può definire un'energia potenziale per l'attrito, e nel bilancio energetico esso va sempre trattato attraverso la definizione diretta di lavoro, come già fatto nella sezione sul [teorema lavoro-energia](ref:chapter/4#p3).

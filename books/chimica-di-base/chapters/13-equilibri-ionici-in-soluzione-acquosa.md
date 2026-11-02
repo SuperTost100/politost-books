@@ -71,10 +71,6 @@ $$
 A + :B \rightleftharpoons A\!-\!B.
 $$
 
-$$
-A + :B \rightleftharpoons A\!-\!B.
-$$
-
 Un esempio tipico è la reazione tra un protone e l'ammoniaca,
 
 $$
@@ -103,10 +99,6 @@ $$
 :::
 
 **Ossiacidi (HEO).** Per un ossiacido generico HEO, la forza aumenta con l'elettronegatività dell'atomo centrale E a parità di numero di atomi di ossigeno: E più elettronegativo attrae densità elettronica allontanandola dal legame H–O, rendendolo più polare e favorendo il rilascio del protone (HClO è più forte di HBrO, perché Cl è più elettronegativo di Br). La forza aumenta anche al crescere del numero di atomi di O legati a E, perché gli atomi di ossigeno, molto elettronegativi, sottraggono densità elettronica a E rendendo più polare il legame H–O residuo; per gli ossiacidi del cloro vale la tendenza
-
-$$
-HClO < HClO_2 < HClO_3 \ll HClO_4.
-$$
 
 $$
 HClO < HClO_2 < HClO_3 \ll HClO_4.
