@@ -539,8 +539,8 @@ Nelle prove scritte questi argomenti compaiono nell'Esercizio 1 (di solito 8 o 9
 
 **Esempi.**
 
-- Esame del 31 gennaio 2024, esercizio 1: funzione del tipo $x^3/\sqrt{|x^4-1|}$ (con varianti). Si riscrive il valore assoluto a tratti, si deriva e si classificano i punti $x=\pm 1$ e $x=0$ con i limiti di $f'$.
-- Esame del 14 febbraio 2017, primo turno, esercizio 1: $f(x)=\sqrt{3x^2-x^3}$ (la radice è di indice 3 nel testo originale). Il punto di non derivabilità si studia con le derivate destra e sinistra, e il comportamento in $x=0$ distingue cuspide e flesso verticale.
+- Esame del 31 gennaio 2024, esercizio 1: funzione del tipo $x^3/\sqrt{|x^4-1|}$ (con varianti). Il dominio è $\mathbb{R}\setminus\{-1,1\}$; $x=0$ è derivabile, mentre $x=\pm1$ non appartengono al dominio e non sono punti di non derivabilità da classificare.
+- Esame del 14 febbraio 2017, primo turno, esercizio 1: $f(x)=\sqrt[3]{3x^2-x^3}$. In $x=0$ le derivate laterali sono infinite e di segno opposto, quindi il punto è una cuspide.
 - Esame del 21 giugno 2024, esercizio 1: funzione definita a tratti con $e^{1/x}$ o $e^{-1/x}$ e valore $0$ sull'altro tratto. La derivabilità nel punto di raccordo si studia con i limiti laterali del rapporto incrementale e si ricollega a continuità e retta tangente.
 - Esame del 12 febbraio 2019, secondo turno, esercizio 1: $f(x)=e^{-1/\log(x^2-4)}$ con prolungamento continuo. Prima si prolunga per continuità, poi si studia la derivabilità della funzione prolungata.
 

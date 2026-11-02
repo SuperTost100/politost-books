@@ -530,9 +530,11 @@ Gli esercizi sono problemi strutturati a più domande. Un problema spesso mette 
 
 **Metodo.**
 
+**Metodo.**
+
 1. Disegna le forze su ciascun corpo e dichiara le incognite. Nel puro rotolamento l'attrito statico $f_s$ è un'incognita, non vale $\mu_s N$.
 2. Scrivi la traslazione del centro di massa lungo e perpendicolarmente al piano. Scrivi poi la rotazione $M_{CM} = I_{CM}\,\alpha$ rispetto al CM (vedi [Rotazione attorno a un asse fisso](ref:chapter/9#p2)), scegliendo con cura i segni dei momenti.
-3. Aggiungi la condizione di rotolamento {{formula:9.8}}, cioè $a_{CM} = \alpha R$. Se c'è un filo su una carrucola con massa, aggiungi anche la sua condizione di inestensibilità, con tensioni diverse sui due lati.
+3. Aggiungi la condizione di rotolamento {{formula:9.8}}, cioè $a_{CM,t} = \alpha R$; per una traiettoria curva, includi separatamente l'accelerazione normale $v_{CM}^2/\rho$. Se c'è un filo su una carrucola con massa, aggiungi anche la sua condizione di inestensibilità, con tensioni diverse sui due lati.
 4. Risolvi in forma letterale per $a_{CM}$, per le tensioni e per $f_s$.
 5. Verifica a posteriori l'aderenza, $|f_s| \le \mu_s N$, come in {{formula:9.9}}. Se la condizione cade, il rotolamento puro non è possibile e si passa allo strisciamento con $f_d = \mu_d N$.
 6. Se la domanda riguarda velocità dopo uno spostamento, puoi usare l'energia: nel puro rotolamento l'attrito non compie lavoro (vedi [Energia nel moto del corpo rigido](ref:chapter/9#p3) e [Rotolamento](ref:chapter/9#p4)).
@@ -560,7 +562,7 @@ Gli esercizi sono problemi strutturati a più domande. Un problema spesso mette 
 1. Individua il vincolo: perno, cerniera, asse fisso. Questo decide che cosa si conserva, come spiegato in [Urti con corpi rigidi](ref:chapter/9#p5).
 2. Scegli come polo il punto del vincolo. La reazione vincolare ha momento nullo rispetto a quel polo, quindi vale {{formula:9.11}}. Se il vincolo blocca solo un asse, si conserva la sola componente assiale $L_z$.
 3. Scrivi $L_z$ prima dell'urto come $m\,v\,b$ (con $b$ il braccio del punto rispetto al polo) e dopo come $I_z\,\omega$ più il contributo del punto. Calcola $I_z$ con Huygens-Steiner, se il perno non passa per il CM.
-4. Se l'urto è completamente anelastico e il punto resta attaccato al corpo, includi la sua massa nel momento d'inerzia dopo l'urto e usa $v=\omega d$, dove $d$ è la distanza dal perno. Un urto anelastico parziale non implica che il punto resti attaccato: in quel caso i corpi si separano e la relazione $v=\omega d$ non vale. Se l'urto è elastico, aggiungi la conservazione dell'energia cinetica. Se il testo dà la velocità del punto dopo l'urto, il solo momento angolare basta.
+4. Se l'urto è completamente anelastico e il punto resta attaccato al corpo, includi la sua massa nel momento d'inerzia dopo l'urto e usa $v=\omega d$, dove $d$ è la distanza dal perno. Negli altri urti anelastici, la velocità finale del punto resta distinta da quella del corpo. Se l'urto è elastico, aggiungi la conservazione dell'energia cinetica. Se il testo dà la velocità del punto dopo l'urto, il solo momento angolare basta.
 5. Per le domande successive all'urto, passa all'energia o alla dinamica rotazionale con $\omega$ come condizione iniziale.
 
 **Errori tipici.**

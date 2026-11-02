@@ -187,9 +187,9 @@ Si vuole trovare la lunghezza d'onda del fotone emesso quando l'elettrone dell'a
 
 $\displaystyle \Delta E = R_h\left(\frac{1}{2^2}-\frac{1}{3^2}\right) = 2,18 \times 10^{-18}\ \text{J} \times 0,13889 = 3,028 \times 10^{-19}\ \text{J}$
 
-$\displaystyle \nu = \frac{\Delta E}{h} = \frac{3,028 \times 10^{-19}}{6,626 \times 10^{-34}} = 4,569 \times 10^{14}\ \text{Hz}$
+$\displaystyle \nu = \frac{\Delta E}{h} = \frac{3,028 \times 10^{-19}}{6,626 \times 10^{-34}} = 4,570 \times 10^{14}\ \text{Hz}$
 
-$\displaystyle \lambda = \frac{c}{\nu} = \frac{2,998 \times 10^{8}}{4,569 \times 10^{14}} = 6,561 \times 10^{-7}\ \text{m} = 656\ \text{nm}$
+$\displaystyle \lambda = \frac{c}{\nu} = \frac{2,998 \times 10^{8}}{4,570 \times 10^{14}} = 6,560 \times 10^{-7}\ \text{m} = 656,0\ \text{nm}$
 
 4. Verifica: 656 nm è nel rosso, in accordo con l'osservazione sperimentale che la transizione $n=3 \to n=2$ produce la riga rossa della serie di Balmer (656 nm), mentre un salto più ampio come $n=5 \to n=2$ produce un fotone di energia maggiore e lunghezza d'onda minore (luce blu-violetto, $\lambda = 434\ \text{nm}$).
 
@@ -443,7 +443,7 @@ Poiché si deve fornire energia al sistema per vincere l'attrazione tra nucleo e
 
 Lungo un gruppo l'energia di ionizzazione diminuisce dall'alto verso il basso: il raggio atomico crescente allontana l'elettrone più esterno dal nucleo, l'interazione reciproca si attenua e diventa quindi più facile rimuovere l'elettrone.
 
-Lungo un periodo l'energia di ionizzazione aumenta da sinistra a destra: $Z_{eff}$ crescente riduce il raggio atomico e rafforza l'interazione tra nucleo ed elettroni esterni, che diventano più difficili da rimuovere. Fa eccezione il gruppo 13, il cui andamento lungo il gruppo è irregolare: l'energia di ionizzazione diminuisce da B ad Al, aumenta leggermente da Al a Ga, diminuisce di nuovo da Ga a In e torna ad aumentare da In a Tl. Queste irregolarità sono dovute al fatto che, scendendo nel gruppo, si inseriscono via via elettroni $d$ (e, per Tl, anche $f$) interni, che schermano in modo meno efficace del previsto e producono un $Z_{eff}$ maggiore di quello atteso sugli elettroni esterni.
+Lungo un periodo l'energia di ionizzazione aumenta da sinistra a destra: $Z_{eff}$ crescente riduce il raggio atomico e rafforza l'interazione tra nucleo ed elettroni esterni, che diventano più difficili da rimuovere. Lungo un gruppo, invece, l'energia di ionizzazione tende a diminuire dall'alto verso il basso; il gruppo 13 presenta un andamento irregolare: diminuisce da B ad Al, aumenta leggermente da Al a Ga, diminuisce di nuovo da Ga a In e torna ad aumentare da In a Tl. Queste irregolarità sono dovute al fatto che, scendendo nel gruppo, si inseriscono via via elettroni $d$ (e, per Tl, anche $f$) interni, che schermano in modo meno efficace del previsto e producono un $Z_{eff}$ maggiore di quello atteso sugli elettroni esterni.
 
 Per uno stesso elemento si possono definire energie di ionizzazione successive ($I_1$, $I_2$, $I_3$, ...), ciascuna sempre maggiore della precedente perché ogni elettrone viene rimosso da uno ione con carica positiva via via più elevata. L'aumento non è però regolare: si osserva un salto enorme non appena si inizia a rimuovere un elettrone interno, cioè un elettrone appartenente a un livello energetico pieno e più vicino al nucleo, molto più difficile da estrarre. Questo comportamento è una delle conferme sperimentali della struttura a livelli dell'atomo.
 

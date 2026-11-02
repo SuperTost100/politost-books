@@ -201,11 +201,11 @@ Si verifica con le semireazioni $\mathrm{Au}+4\,\mathrm{Cl^-}\to \mathrm{AuCl_4^
 
 ### Passivazione
 
-Il segno di $E^\circ$ dice se una reazione è termodinamicamente possibile, ma non quanto velocemente avviene. Si parla di **passivazione** quando un metallo (Zn, Cu, Al) reagisce con l'aria umida e forma ossidi e carbonati molto sottili, aderenti, compatti e protettivi. Questo strato isola il metallo dall'ambiente e ne blocca l'ulteriore attacco.
+Il segno di $E^\circ$ dice se una reazione è termodinamicamente possibile, ma non quanto velocemente avviene. L'alluminio si passiva all'aria formando un sottile strato aderente e protettivo di ossido. Sul rame e sullo zinco possono invece formarsi patine superficiali di composizione diversa, dovute alla reazione con i componenti dell'aria umida; non si tratta dello stesso rivestimento che protegge l'alluminio.
 
 Si distingue dalla corrosione del ferro. Arrugginire significa ossidare il ferro con formazione di un ossido incoerente e non protettivo, la ruggine (miscela di ossidi idratati, $\mathrm{Fe_2O_3}\cdot x\,\mathrm{H_2O}$ con $0<x<3$). Il processo è elettrochimico, richiede umidità e avviene più rapidamente a pH basso. Nella corrosione l'ossidazione del metallo $\mathrm{Me\to Me^{n+}}+ne^-$ al sito anodico è accompagnata dalla riduzione $\mathrm{O_2}+2\,\mathrm{H_2O}+4e^-\to 4\,\mathrm{OH^-}$ al sito catodico.
 
-Sul piano pratico, il fenomeno spiega perché un metallo con $E^\circ$ molto negativo come l'alluminio possa resistere bene all'aria e a certi acidi. Lo stesso strato di ossido spiega anche, per l'alluminio e il ferro in $\mathrm{HNO_3}$ concentrato, l'assenza di attacco. Quest'ultima osservazione è standard e non proviene dalle note.
+Sul piano pratico, il fenomeno spiega perché un metallo con $E^\circ$ molto negativo come l'alluminio possa resistere bene all'aria e a certi acidi. In acido nitrico concentrato, ferro e alluminio si passivano: un sottile strato protettivo ne impedisce l'ulteriore attacco.
 
 ### Errori tipici
 

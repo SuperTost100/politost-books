@@ -515,8 +515,8 @@ Compare con minore frequenza, dentro esercizi sugli integrali impropri o sullo s
 Metodo:
 
 1. Individuare i punti in cui l'integranda non è limitata o l'intervallo è illimitato.
-2. Per ciascun punto, trovare un'integranda asintotica semplice, per esempio $\frac{1}{x^\alpha}$, con i limiti notevoli o con gli sviluppi.
-3. Applicare il criterio del confronto asintotico ([formula (10.9)](ref:formula/10.9)) e la convergenza dell'integrale campione, come spiegato in [Criteri di convergenza](ref:chapter/10#p4).
+2. Per ciascun punto, cercare un confronto con un'integranda semplice, per esempio $\frac{1}{x^\alpha}$, usando limiti notevoli, sviluppi o disuguaglianze.
+3. Applicare il criterio del confronto asintotico ([formula (10.9)](ref:formula/10.9)) oppure il confronto diretto, verificando le ipotesi e la convergenza dell'integrale di riferimento, come spiegato in [Criteri di convergenza](ref:chapter/10#p4).
 
 Errori tipici: confrontare con $\frac{1}{x^\alpha}$ nel punto sbagliato (a $0$ e a $+\infty$ l'esponente critico dà esiti opposti) e applicare il criterio a funzioni di segno non costante.
 

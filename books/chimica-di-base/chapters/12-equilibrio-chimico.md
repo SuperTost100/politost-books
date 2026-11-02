@@ -83,7 +83,7 @@ Per equilibri che coinvolgono solo specie gassose, è spesso più comodo misurar
 $$K_p = \frac{(p_C)^c (p_D)^d}{(p_A)^a (p_B)^b}$$
 :::
 
-dove ogni $p_i$ è la pressione parziale della specie all'equilibrio e l'esponente è il relativo coefficiente stechiometrico; $K_p$ è definita, come $K_c$, a una specifica temperatura. Per un equilibrio eterogeneo che coinvolga anche specie gassose, in $K_p$ compaiono soltanto le pressioni parziali dei gas: ad esempio, per $CaCO_{3(s)} \rightleftharpoons CaO_{(s)} + CO_{2(g)}$ si ha $K_p = p_{CO_2}$, e nel calcolo di $\Delta n$ si contano soltanto i coefficienti stechiometrici delle specie gassose.
+dove ogni $p_i$ è la pressione parziale della specie all'equilibrio e l'esponente è il relativo coefficiente stechiometrico; $K_p$ è definita, come $K_c$, a una specifica temperatura. Negli equilibri eterogenei con gas e solidi o liquidi puri, in $K_p$ compaiono soltanto le pressioni parziali dei gas: ad esempio, per $CaCO_{3(s)} \rightleftharpoons CaO_{(s)} + CO_{2(g)}$ si ha $K_p = p_{CO_2}$, e nel calcolo di $\Delta n$ si contano soltanto i coefficienti stechiometrici delle specie gassose. Se partecipano anche soluti, le loro attività o concentrazioni restano nell'espressione della costante.
 
 In generale $K_p$ e $K_c$ non sono numericamente uguali, ma si può ricavare una relazione tra le due sfruttando $p_i = \lbrack i\rbrack \,RT$:
 
@@ -223,7 +223,7 @@ le cui radici sono $x_1 = 10{,}0$ e $x_2 = 1{,}1107$.
 
 4. *Verifica*. La radice $x_1 = 10{,}0$ va scartata perché priva di significato fisico: sottraendola dalla concentrazione iniziale di $2{,}00\ \text{M}$ si otterrebbe una concentrazione negativa di CO e $H_2O$, il che è impossibile. Si accetta quindi $x_2 = 1{,}1107$, da cui
 
-$$\lbrack CO\rbrack  = \lbrack H_2O\rbrack  = 2{,}00 - 1{,}1107 = 0{,}889\ \text{M}, \qquad \lbrack CO_2\rbrack  = \lbrack H_2\rbrack  = 1{,}1107\ \text{M}$$
+$$\lbrack CO\rbrack  = \lbrack H_2O\rbrack  = 2{,}00 - 1{,}1107 = 0{,}889\ \text{M}, \qquad \lbrack CO_2\rbrack  = \lbrack H_2\rbrack  = 1{,}11\ \text{M}$$
 
 :::image{src="assets/346cdc25-ice-co-h2o-concentrazioni.svg" alt="Grafico a punti che confronta le concentrazioni iniziali e di equilibrio di CO, H2O, CO2 e H2 nell'esempio dello schema ICE" caption="Fig. 12.2 — Concentrazioni iniziali e di equilibrio per la reazione CO(g) + H2O(g) ⇌ CO2(g) + H2(g), ricavate dallo schema ICE: CO e H2O passano da 2,00 M a 0,889 M, mentre CO2 e H2 passano da 0 M a 1,1107 M."}
 :::
@@ -343,16 +343,16 @@ Per determinare in modo preciso la nuova composizione di equilibrio dopo la pert
 :::image{src="assets/f977c3df-struttura-n2o4.svg" alt="Struttura di Lewis di N2O4 con legame N-N centrale, due azoti ciascuno con una carica formale positiva e due ossigeni, uno con doppio legame e uno con carica formale negativa" caption="Fig. 12.4 — Struttura di N2O4, il dimero formato dall'equilibrio 2 NO2 ⇌ N2O4 discusso nell'esempio svolto."}
 :::
 
-1. *Dati.* $V_i = 1{,}00\ \mathrm{L}$, $V_f = 0{,}500\ \mathrm{L}$, $T = 298\ \mathrm{K}$ costante, $K_c = 246{,}5\ \mathrm{M^{-1}}$, $n(\mathrm{NO_2}) = 0{,}20\ \mathrm{mol}$, $n(\mathrm{N_2O_4}) = 9{,}86\ \mathrm{mol}$.
+1. *Dati.* $V_i = 1{,}00\ \mathrm{L}$, $V_f = 0{,}500\ \mathrm{L}$, $T = 298\ \mathrm{K}$ costante, $K_c = 246{,}5\ \mathrm{M^{-1}}$, $n(\mathrm{NO_2}) = 0{,}20\ \mathrm{mol}$, $n(\mathrm{N_2O_4}) = 9{,}86\ \mathrm{mol}$. Si tratta di un esempio ipotetico di gas ideale.
 2. *Strategia.* Poiché il volume viene dimezzato a temperatura costante, per la legge di Boyle la pressione totale raddoppia e con essa, essendo $c = n/V$, raddoppiano anche tutte le concentrazioni. Si calcolano le nuove concentrazioni dopo la compressione e si confronta il quoziente $Q_c$ risultante con $K_c$ per prevedere il verso della reazione.
-3. *Calcolo.* Dopo la compressione: $\lbrack \mathrm{NO_2}\rbrack  = 0{,}20\ \mathrm{mol}/0{,}500\ \mathrm{L} = 0{,}40\ \mathrm{M}$ e $\lbrack \mathrm{N_2O_4}\rbrack  = 9{,}86\ \mathrm{mol}/0{,}500\ \mathrm{L} = 19{,}72\ \mathrm{M}$. Il quoziente di reazione immediatamente dopo la compressione vale
+3. *Calcolo.* Dopo la compressione: $c_{\mathrm{NO_2}}(t_+) = 0{,}20\ \mathrm{mol}/0{,}500\ \mathrm{L} = 0{,}40\ \mathrm{M}$ e $c_{\mathrm{N_2O_4}}(t_+) = 9{,}86\ \mathrm{mol}/0{,}500\ \mathrm{L} = 19{,}72\ \mathrm{M}$. Il quoziente di reazione immediatamente dopo la compressione vale
 
-$$Q_c = \frac{\lbrack \mathrm{N_2O_4}\rbrack }{\lbrack \mathrm{NO_2}\rbrack ^2} = \frac{19{,}72}{0{,}40^2} = 123{,}3\ \mathrm{M^{-1}}.$$
+$$Q_c(t_+) = \frac{c_{\mathrm{N_2O_4}}(t_+)}{c_{\mathrm{NO_2}}(t_+)^2} = \frac{19{,}72}{0{,}40^2} = 123{,}3\ \mathrm{M^{-1}}.$$
 
-Poiché $Q_c = 123{,}3\ \mathrm{M^{-1}} < K_c = 246{,}5\ \mathrm{M^{-1}}$, il sistema non è più all'equilibrio e, per quanto visto nella verifica quantitativa dello spostamento, la reazione deve procedere verso destra, formando ulteriore $\mathrm{N_2O_4}$.
+Poiché $Q_c(t_+) = 123{,}3\ \mathrm{M^{-1}} < K_c = 246{,}5\ \mathrm{M^{-1}}$, il sistema non è più all'equilibrio e, per quanto visto nella verifica quantitativa dello spostamento, la reazione deve procedere verso destra, formando ulteriore $\mathrm{N_2O_4}$.
 4. *Verifica qualitativa con Le Châtelier.* La reazione passa da due moli di gas (reagenti) a una mole di gas (prodotto), cioè $\Delta n = 1 - 2 = -1 < 0$. Una diminuzione di volume (aumento di pressione) deve spostare l'equilibrio verso il membro con il minor numero di moli gassose, cioè verso $\mathrm{N_2O_4}$: la previsione qualitativa di Le Châtelier è quindi coerente con il calcolo quantitativo di $Q_c$ rispetto a $K_c$.
 
-Impostando lo schema IVE a partire da $\lbrack \mathrm{NO_2}\rbrack _0 = 0{,}40\ \mathrm{M}$ e $\lbrack \mathrm{N_2O_4}\rbrack _0 = 19{,}72\ \mathrm{M}$ con variazione $-2x$ e $+x$ rispettivamente, e risolvendo $K_c = (19{,}72+x)/(0{,}40-2x)^2 = 246{,}5$, si trova all'equilibrio $\lbrack \mathrm{NO_2}\rbrack  \approx 0{,}283\ \mathrm{M}$ e $\lbrack \mathrm{N_2O_4}\rbrack  \approx 19{,}78\ \mathrm{M}$: il numero totale di moli (cioè $10{,}03\ \mathrm{mol}$ dopo la compressione, in $0{,}500\ \mathrm{L}$) è effettivamente diminuito rispetto alle $10{,}06\ \mathrm{mol}$ di partenza, confermando lo spostamento verso i prodotti previsto da Le Châtelier.
+Impostando lo schema IVE a partire da $c_{\mathrm{NO_2}}(t_+) = 0{,}40\ \mathrm{M}$ e $c_{\mathrm{N_2O_4}}(t_+) = 19{,}72\ \mathrm{M}$, con variazione $-2x$ e $+x$ rispettivamente, e risolvendo $K_c = (19{,}72+x)/(0{,}40-2x)^2 = 246{,}5$, si trova all'equilibrio $\lbrack \mathrm{NO_2}\rbrack  \approx 0{,}283\ \mathrm{M}$ e $\lbrack \mathrm{N_2O_4}\rbrack  \approx 19{,}78\ \mathrm{M}$: il numero totale di moli (cioè $10{,}03\ \mathrm{mol}$ dopo la compressione, in $0{,}500\ \mathrm{L}$) è effettivamente diminuito rispetto alle $10{,}06\ \mathrm{mol}$ di partenza, confermando lo spostamento verso i prodotti previsto da Le Châtelier.
 
 Una applicazione industriale importante di questi principi è la sintesi dell'ammoniaca, $\mathrm{N_2(g) + 3\,H_2(g) \rightleftharpoons 2\,NH_3(g)}$, discussa nella sezione [Equilibrio dinamico e costante di equilibrio](ref:chapter/12#p2): poiché la reazione passa da quattro a due moli di gas, lavorare ad alte pressioni favorisce la formazione di $\mathrm{NH_3}$; la resa viene inoltre aumentata utilizzando un eccesso di reagenti economici (in particolare $\mathrm{N_2}$) e sottraendo continuamente il prodotto, liquefatto e allontanato dalla miscela di reazione, in modo da mantenere basso $Q_c$ rispetto a $K_c$ e favorire ulteriore produzione.
 
@@ -371,6 +371,8 @@ Il capitolo sull'equilibrio chimico è comparso in 2 delle 4 sessioni d'esame an
 3. Costruire la tabella "iniziale / variazione / equilibrio" con un'unica incognita $x$, proporzionale ai coefficienti stechiometrici. La $x$ può essere in atm o in mol, ma bisogna restare coerenti in tutta la tabella.
 4. Sostituire le espressioni di equilibrio in $K_p$ e risolvere. Se l'equazione è di secondo grado, scartare la radice priva di significato fisico: negativa oppure tale da rendere negativa la quantità di un reagente. Se $x$ è in mol, per ciascun reagente confrontare la radice con le moli iniziali divise per il valore assoluto del suo coefficiente stechiometrico; se $x$ è in atm, fare lo stesso confronto con le pressioni parziali iniziali. Per una specie gassosa, la pressione parziale iniziale è quella calcolata nello stato iniziale.
 5. Tornare alla grandezza richiesta. Se $x$ è in mol, la variazione della quantità della specie richiesta è $|\nu_i|x$, dove $\nu_i$ è il suo coefficiente stechiometrico con segno; per le moli all'equilibrio, aggiungere o sottrarre questa variazione alle moli iniziali secondo che la specie sia un prodotto o un reagente. Se $x$ è una pressione, ricavare la pressione parziale della specie dalla tabella e poi le moli da $n = pV/(RT)$. Verificare infine che $K_p$ ricalcolata con i valori trovati coincida con quella data.
+
+**Errori tipici.**
 
 **Errori tipici.**
 

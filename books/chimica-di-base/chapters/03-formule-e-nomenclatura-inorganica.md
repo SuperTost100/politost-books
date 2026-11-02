@@ -48,17 +48,17 @@ $$f = \frac{M_{\text{sperimentale}}}{M_{\text{formula minima}}}$$
 
 **Esempio svolto 3.1** (dalla formula minima alla formula molecolare)
 
-Un composto puro contiene, in massa, il 5,9 % di H e il 94,0 % di O; la sua massa molecolare sperimentale è $34{,}10$ u. Si determini la formula molecolare.
+Un composto puro contiene, in massa, il 5,9 % di H e il 94,0 % di O; la sua massa molare sperimentale è $34{,}10\ \mathrm{g/mol}$. Si determini la formula molecolare.
 
-1. *Dati*: in 100 g di composto ci sono 5,9 g di H e 94,0 g di O; $M_{\text{sperimentale}} = 34{,}10$ u.
-2. *Strategia*: si convertono le masse in moli, si trova il rapporto minimo tra gli atomi (formula minima), quindi si confronta la massa della formula minima con quella sperimentale per ottenere il fattore moltiplicativo.
-3. *Calcolo*: le moli di H sono $5{,}9\ \mathrm{g} / 1{,}008\ \mathrm{g/mol} \approx 5{,}9$ mol; le moli di O sono $94{,}0\ \mathrm{g} / 16{,}00\ \mathrm{g/mol} \approx 5{,}87$ mol. Dividendo entrambe per il valore più piccolo si ottiene un rapporto $\mathrm{H{:}O} \approx 1{:}1$, da cui la formula minima $\mathrm{HO}$, con massa $M_{\text{formula minima}} \approx 17{,}01$ u. Il fattore è
+1. *Dati*: in 100 g di composto ci sono 5,9 g di H e 94,0 g di O; $M_{\text{sperimentale}} = 34{,}10\ \mathrm{g/mol}$.
+2. *Strategia*: si convertono le masse in moli, si trova il rapporto minimo tra gli atomi (formula minima), quindi si confronta la massa molare della formula minima con quella sperimentale per ottenere il fattore moltiplicativo.
+3. *Calcolo*: le moli di H sono $5{,}9\ \mathrm{g} / 1{,}008\ \mathrm{g/mol} \approx 5{,}9$ mol; le moli di O sono $94{,}0\ \mathrm{g} / 16{,}00\ \mathrm{g/mol} \approx 5{,}87$ mol. Dividendo entrambe per il valore più piccolo si ottiene un rapporto $\mathrm{H{:}O} \approx 1{:}1$, da cui la formula minima $\mathrm{HO}$, con massa molare $M_{\text{formula minima}} \approx 17{,}01\ \mathrm{g/mol}$. Il fattore è
 
 $$
 f = \frac{34{,}10}{17{,}01} \approx 2
 $$
 
-4. *Verifica*: moltiplicando per 2 gli indici della formula minima si ottiene la formula molecolare $\mathrm{H_2O_2}$, coerente con la massa molecolare data.
+4. *Verifica*: moltiplicando per 2 gli indici della formula minima si ottiene la formula molecolare $\mathrm{H_2O_2}$, coerente con la massa molare data.
 
 **Errore tipico 3.1**
 
@@ -165,7 +165,7 @@ Questa regola si usa in pratica applicando prima i valori fissi delle regole pre
 
 **Esempio svolto 3.4.** Si assegnino i numeri di ossidazione in $\text{CsNO}_2$ e in $\text{HPO}_4^{2-}$.
 
-Per $\text{CsNO}_2$ (nitrito di cesio): il cesio è un metallo alcalino, quindi $\text{N.O.(Cs)} = +1$; l'ossigeno ha il suo valore tipico $\text{N.O.(O)} = -2$ per ciascuno dei due atomi. La molecola è neutra, quindi la somma deve essere zero.
+Per $\text{CsNO}_2$ (nitrito di cesio): il cesio è un metallo alcalino, quindi $\text{N.O.(Cs)} = +1$; l'ossigeno ha il suo valore tipico $\text{N.O.(O)} = -2$ per ciascuno dei due atomi. Il composto è elettricamente neutro, quindi la somma deve essere zero.
 
 $$
 (+1) + \text{N.O.(N)} + 2(-2) = 0 \quad \Rightarrow \quad \text{N.O.(N)} = +3.
@@ -187,8 +187,8 @@ I numeri di ossidazione variano con periodicità lungo la tavola periodica, perc
 - Gruppo 2 (metalli alcalino-terrosi): N.O. $+2$.
 - Gruppo 13 (B, Al, Ga, In, Tl): N.O. $+3$ frequente; Tl forma comunemente anche composti con N.O. $+1$, e In può avere N.O. $+1$.
 - Gruppo 14 (C, Si, Ge, Sn, Pb): N.O. principale $+4$; il carbonio può assumere anche $+2$ e $-4$, mentre Sn e Pb assumono anche $+2$.
-- Gruppo 15 (N, P, As, Sb, Bi): l'azoto può assumere $+1, +2, +3, +4, +5$ e, nei composti senza ossigeno (idracidi), $-3$; gli altri elementi del gruppo assumono soprattutto $+3$ e $+5$.
-- Gruppo 16 (S, Se, Te): N.O. principale $+6$, ma anche $+4$ e $-2$; nei composti con l'idrogeno (idracidi) il non metallo del gruppo 16 ha N.O. $-2$.
+- Gruppo 15 (N, P, As, Sb, Bi): l'azoto può assumere $+1, +2, +3, +4, +5$ e, nei composti in cui è più elettronegativo degli elementi legati, $-3$; gli altri elementi del gruppo assumono soprattutto $+3$ e $+5$.
+- Gruppo 16 (S, Se, Te): N.O. principale $+6$, ma anche $+4$ e $-2$; nei composti con l'idrogeno il non metallo del gruppo 16 ha N.O. $-2$.
 - Gruppo 17 (alogeni): N.O. $-1$ nei composti con l'idrogeno o con metalli; con l'ossigeno o con alogeni superiori nel gruppo assumono $+1, +3, +5, +7$ (il cloro in particolare può assumere anche $+3$); il fluoro resta sempre $-1$.
 - Gruppo 18 (gas nobili): reagiscono poco e in genere non formano composti; lo xeno è un'eccezione e nei fluoruri $\text{XeF}_2$ e $\text{XeF}_4$ ha rispettivamente N.O. $+2$ e $+4$.
 - Metalli di transizione: possono assumere diversi numeri di ossidazione nello stesso elemento, ad esempio il cromo $+2, +3, +6$, il manganese $+2, +3, +4, +6, +7$ e il rame $+1$ oppure $+2$.
@@ -213,7 +213,7 @@ Una regola grafica comune a molte formule prevede di scrivere prima il simbolo d
 
 ### Le dieci classi di composti inorganici
 
-La chimica generale introduce dieci classi comuni di composti inorganici, distinte in base al numero e al tipo di elementi che compongono la formula. I sali acidi, in cui la sostituzione degli atomi di idrogeno di un ossiacido è parziale, sono una categoria di sali ternari e possono contenere più di tre elementi.
+La chimica generale introduce dieci classi comuni di composti inorganici, distinte in base al numero e al tipo di elementi che compongono la formula. I sali acidi sono una sottocategoria dei sali: si formano quando la sostituzione degli atomi di idrogeno di un ossiacido è parziale e possono contenere quattro elementi.
 
 Sono **composti binari** (due soli elementi):
 
@@ -426,7 +426,7 @@ Analogamente $H_4As_2O_5$, che contiene due molecole di acqua in più rispetto a
 Questo comportamento compare a più livelli nella chimica inorganica.
 
 - Alcuni metalli e molti metalloidi formano ossidi anfoteri, capaci di agire da acidi o da basi in acqua; l'alluminio ne è l'esempio tipico, con un ossido che reagisce sia in ambiente acido che in ambiente basico.
-- Cromo e manganese presentano un comportamento anfotero legato al numero di ossidazione: ai N.O. bassi ($Cr^{2+}$, $Mn^{2+}$) formano ossidi basici (ossido cromoso $CrO$, idrossido $Cr(OH)_2$), mentre ai N.O. alti ($Cr^{6+}$, $Mn^{7+}$) formano ossidi acidi che danno ossiacidi (anidride cromica $CrO_3$, acido cromico $H_2CrO_4$; acido permanganico $HMnO_4$). Questo è il motivo per cui questi due elementi, già incontrati nella sezione sulle [classi di composti e regole di nomenclatura](ref:chapter/3#p4), richiedono di verificare il N.O. prima di scegliere se trattarli come ossidi basici o come anidridi.
+- Per cromo e manganese, il carattere acido o basico degli ossidi varia con il numero di ossidazione: ai N.O. bassi ($Cr^{2+}$, $Mn^{2+}$) formano ossidi basici (ossido cromoso $CrO$, idrossido $Cr(OH)_2$), mentre ai N.O. alti ($Cr^{6+}$, $Mn^{7+}$) formano ossidi acidi che danno ossiacidi (anidride cromica $CrO_3$, acido cromico $H_2CrO_4$; acido permanganico $HMnO_4$). Occorre quindi verificare il N.O. prima di scegliere se trattarli come ossidi basici o come anidridi, secondo le regole viste nella sezione sulle [classi di composti e regole di nomenclatura](ref:chapter/3#p4).
 - L'acqua stessa è una specie anfiprotica: nella reazione $HCl_{(aq)} + H_2O_{(l)} \to Cl^-_{(aq)} + H_3O^+_{(aq)}$ l'acqua accetta un protone e si comporta da base, mentre nella reazione $NH_{3(aq)} + H_2O_{(l)} \rightleftharpoons NH_4^+{}_{(aq)} + OH^-_{(aq)}$ l'acqua cede un protone e si comporta da acido. Questa doppia natura dell'acqua sarà ripresa e formalizzata nella sezione sulle [teorie acido-base e la forza degli acidi](ref:chapter/13#p2).
 
 **Esempio svolto 3.11.** Nominare le specie di cromo e manganese ai diversi numeri di ossidazione indicati: $Cr(OH)_2$, $Cr(OH)_3$, $H_2CrO_4$ (Cr); $Mn(OH)_2$, $H_2MnO_4$, $HMnO_4$ (Mn).
@@ -529,4 +529,4 @@ Esempi: $NaHCO_3$, idrogenocarbonato di sodio (IUPAC), bicarbonato di sodio o ca
 
 Un errore frequente è usare il prefisso «bi-» per qualunque sale acido: questo prefisso tradizionale è riservato ai sali acidi derivati da $H_2CO_3$, $H_2SO_3$ e $H_2SO_4$ (bicarbonato, bisolfito, bisolfato); per tutti gli altri ossiacidi poliprotici si usa invece «n-acido» (per esempio ortofosfato biacido) oppure, in IUPAC, il prefisso «n-idrogeno». Un secondo errore tipico, già segnalato per i composti ionici in generale, è pensare a un sale come a una molecola isolata: la formula scritta è sempre un'unità formula, cioè il rapporto minimo tra gli ioni nel reticolo cristallino.
 
-Per riconoscere rapidamente la classe di un composto inorganico dalla sola formula, conviene contare gli elementi presenti e verificare la presenza di ossigeno e di idrogeno: se sono due e uno è idrogeno (non all'inizio della formula) si tratta di un idruro; se la formula comincia con H e finisce con un non metallo si tratta di un idracido; se sono due senza idrogeno ma con ossigeno si tratta di un ossido o, se gli atomi di ossigeno sono legati tra loro, di un perossido (per esempio $CaO$ oppure $CaO_2$); se sono due senza idrogeno né ossigeno è un sale binario; se sono tre e la formula comincia con H e finisce con O è un ossiacido; se contengono il gruppo $OH$ è un idrossido; se sono tre senza queste caratteristiche, con l'ossigeno alla fine, è un sale ternario; se sono quattro elementi il composto può essere un sale acido, ma solo se nell'anione resta effettivamente un idrogeno ancora ionizzabile proveniente da un acido poliprotico, e non semplicemente perché la formula contiene quattro elementi: per esempio $(NH_4)_2SO_4$ contiene N, H, S e O ma non è un sale acido, perché l'idrogeno appartiene allo ione ammonio e non all'anione solfato.
+Per riconoscere rapidamente la classe di un composto inorganico dalla sola formula, conviene contare gli elementi presenti e verificare la presenza di ossigeno e di idrogeno: se sono due e uno è idrogeno (non all'inizio della formula) si tratta di un idruro; se la formula comincia con H e il non metallo è un alogeno, zolfo o selenio, si tratta di un idracido; HCN è un'eccezione. Se sono due senza idrogeno ma con ossigeno si tratta di un ossido o, se gli atomi di ossigeno sono legati tra loro, di un perossido (per esempio $CaO$ oppure $CaO_2$); se sono due senza idrogeno né ossigeno, è un sale binario solo quando il composto è formato da un catione e da un anione; se sono tre e la formula comincia con H e finisce con O è un ossiacido; se contengono il gruppo $OH$ è un idrossido; se sono tre senza queste caratteristiche, con l'ossigeno alla fine, è un sale ternario; se sono quattro elementi il composto può essere un sale acido, ma solo se nell'anione resta effettivamente un idrogeno ancora ionizzabile proveniente da un acido poliprotico, e non semplicemente perché la formula contiene quattro elementi: per esempio $(NH_4)_2SO_4$ contiene N, H, S e O ma non è un sale acido, perché l'idrogeno appartiene allo ione ammonio e non all'anione solfato.

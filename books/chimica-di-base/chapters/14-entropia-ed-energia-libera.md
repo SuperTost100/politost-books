@@ -67,9 +67,6 @@ $$\Delta S_r^\circ=\sum_{i\in\mathrm{prodotti}}\nu_iS_i^\circ-\sum_{j\in\mathrm{
 3. **Calcolo.** $\Delta S_r^\circ=2(240{,}1)-1(304{,}3)=175{,}9\ \mathrm{J/(mol\cdot K)}$.
 4. **Verifica.** Il risultato è positivo, coerentemente con il passaggio da $1$ a $2$ moli di gas per ogni avanzamento della reazione come scritta. È l’entropia del **sistema**: da sola non prova che la dissociazione sia spontanea nelle condizioni effettive.
 
-:::image{src="assets/16c1ad2c-entropia-reazione-n2o4-no2.svg" alt="Diagramma a livelli con l'entropia di N2O4 gassoso, l'entropia di 2 NO2 gassoso e una freccia che indica la variazione di entropia standard di reazione pari a 175,9 J per mole kelvin" caption="Fig. 14.2 — Entropie molari standard di N2O4(g) e di 2 NO2(g) e variazione di entropia standard della reazione N2O4(g) -> 2 NO2(g)"}
-:::
-
 **Errore tipico 14.1.** Dimenticare il coefficiente $2$ davanti a $S^\circ(\mathrm{NO_2}_{(g)})$ altera il risultato. Un altro errore è attribuire spontaneità a una reazione soltanto perché $\Delta S_r^\circ>0$: il secondo principio richiede di considerare anche l’ambiente. Nella sezione sull’[energia libera di Gibbs](ref:chapter/14#p3) questo controllo verrà espresso tramite grandezze del sistema.
 
 ## p3 | Energia libera di Gibbs
@@ -129,7 +126,7 @@ $$T_{\mathrm{soglia}}=\frac{\Delta H_r^\circ}{\Delta S_r^\circ}$$
 3. **Calcolo:** $\Delta G_r^\circ=-198,4-(1\,173,15)(-0,1879)=+22,0\ \mathrm{kJ/mol}$, arrotondato alla precisione dei dati. La soglia stimata è $T_{\mathrm{soglia}}=(-198,4)/(-0,1879)=1\,056\ \mathrm{K}$; $1\,173,15\ \mathrm{K}$ è sopra tale soglia.
 4. **Verifica:** il segno positivo indica che il verso diretto non è favorito **nelle condizioni standard** a questa temperatura. Per stabilire il verso in una miscela concreta servono anche le sue pressioni parziali.
 
-:::image{src="assets/5a685a00-gibbs-ossidazione-so2.svg" alt="Retta crescente della variazione di energia libera standard in funzione della temperatura, con attraversamento dello zero vicino a 1056 kelvin e valore positivo a 1173 kelvin" caption="Fig. 14.3 — Stima per l’ossidazione dell’anidride solforosa: con entalpia ed entropia considerate costanti, la variazione di energia libera standard cresce e cambia segno."}
+:::image{src="assets/5a685a00-gibbs-ossidazione-so2.svg" alt="Retta crescente della variazione di energia libera standard in funzione della temperatura, con attraversamento dello zero vicino a 1056 kelvin e valore positivo a 1173 kelvin" caption="Fig. 14.2 — Stima per l’ossidazione dell’anidride solforosa: con entalpia ed entropia considerate costanti, la variazione di energia libera standard cresce e cambia segno."}
 :::
 
 **Errore tipico 14.2.** Usare $900$ al posto di $1\,173,15\ \mathrm{K}$, oppure sottrarre direttamente un termine in joule a un’entalpia in kilojoule, altera il risultato. Anche con unità corrette, il segno di $\Delta G_r^\circ$ non basta a stabilire il verso di reazione per una composizione qualunque.
@@ -162,7 +159,7 @@ Poiché $R$ e $T$ sono positivi, $\Delta G_r^\circ<0$ implica $K>1$, $\Delta G_r
 
 Combinando le due relazioni si ricava $\Delta G_r=RT\ln(Q/K)$. Se $Q<K$, il logaritmo è negativo e la reazione procede spontaneamente nel verso scritto; se $Q>K$, procede nel verso inverso; se $Q=K$, è all'equilibrio. È lo stesso criterio già usato in [Quoziente di reazione e calcoli di equilibrio](ref:chapter/12#p3), ora espresso come variazione di energia libera. Nel calcolo **fuori dall'equilibrio** il termine logaritmico di {{formula:14.7}} contiene $Q$, non $K$.
 
-:::image{src="assets/d150ec17-energia-libera-contro-q.svg" alt="Curva crescente di energia libera in funzione di Q, con zero all'equilibrio" caption="Fig. 14.4 — A temperatura fissata, la variazione di energia libera cresce con Q e si annulla quando Q raggiunge K."}
+:::image{src="assets/d150ec17-energia-libera-contro-q.svg" alt="Curva crescente di energia libera in funzione di Q, con zero all'equilibrio" caption="Fig. 14.3 — A temperatura fissata, la variazione di energia libera cresce con Q e si annulla quando Q raggiunge K."}
 :::
 
 ### Calcolare la costante dai dati termodinamici

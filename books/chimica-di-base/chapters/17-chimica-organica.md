@@ -236,7 +236,7 @@ Nell'archivio delle prove passate, 1 sessione su 4 conteneva domande sugli argom
 
 Con una sola domanda non si può parlare di tipi ricorrenti, e questa sezione non li inventa. Descrive quello che la domanda mostra e indica come affrontarlo.
 
-La domanda trovata nell'archivio è una domanda teorica breve, accanto a un esercizio numerico di un altro capitolo. In questa domanda non compaiono problemi estesi di nomenclatura o di meccanismi. Per il test informatizzato e per le altre sessioni questa sezione non dice nulla, perché le domande a disposizione non le coprono.
+Per il test informatizzato e per le altre sessioni questa sezione non dice nulla, perché le domande a disposizione non le coprono.
 
 Nell'esame di tipo "Tema d_esame 3 + soluzione", esercizio 2, il testo chiede prima la quantità di glicerolo (propan-1,2,3-triolo) che innalza di 0,150 °C la temperatura di ebollizione di 285 mL di acqua. Poi, nella sottodomanda D2, chiede di scrivere la formula di semistruttura, di indicare l'ibridazione di ciascun atomo di carbonio e di dire a quale classe di composti organici appartiene la molecola.
 

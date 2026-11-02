@@ -341,23 +341,23 @@ Questa è la ragione molecolare della legge di Graham: il gas con massa molare m
 
 Molte reazioni avvengono solo se le molecole hanno velocità (quindi energia) superiori a un certo valore. Questa soglia è l'**energia di attivazione** $E_a$: soltanto gli urti con energia sufficiente a superarla possono portare alla reazione. La frequenza degli urti non basta a spiegare la velocità di reazione. In fase gassosa le molecole si urtano miliardi di volte al secondo, ma nella grande maggioranza degli urti rimbalzano senza reagire.
 
-A una data temperatura la frazione di urti con energia superiore a $E_a$ è, con $E_a$ in J/mol:
+Il fattore di Boltzmann associato alla soglia energetica è, con $E_a$ in J/mol:
 
 :::formula{id="6.15" label="Frazione di urti con energia superiore alla soglia"}
 $$f = e^{-E_a/(RT)}$$
 :::
 
-Questa frazione corrisponde all'area della coda della curva a destra della soglia. Compare nell'equazione di Arrhenius [formula (15.6)](ref:formula/15.6), $k=A\,e^{-E_a/(RT)}$, dove $A$ tiene conto della frequenza degli urti e dell'orientazione. La velocità di reazione è proporzionale al numero di molecole con energia sufficiente per superare la barriera. Una temperatura più alta sposta la coda verso destra e aumenta quel numero. A $T_1<T_2$ a una temperatura minore poche molecole hanno energia sufficiente, a una maggiore sono molte di più. Si vedano [Temperatura ed energia di attivazione](ref:chapter/15#p4) per l'uso quantitativo.
+Questo fattore compare nell'equazione di Arrhenius [formula (15.6)](ref:formula/15.6), $k=A\,e^{-E_a/(RT)}$, dove $A$ tiene conto della frequenza degli urti e dell'orientazione. Non coincide in generale con la frazione esatta di molecole o di urti sopra la soglia, che si calcola integrando la distribuzione di energia appropriata. Una temperatura più alta aumenta il fattore di Boltzmann associato alla soglia. Si vedano [Temperatura ed energia di attivazione](ref:chapter/15#p4) per l'uso quantitativo.
 
-**Esempio svolto 6.7.** Una reazione ha $E_a = 50{,}0$ kJ/mol. Di quanto cambia la frazione di urti efficaci passando da 300 K a 310 K? Si usa $R = 8{,}314$ J/(mol·K).
+**Esempio svolto 6.7.** Una reazione ha $E_a = 50{,}0$ kJ/mol. Di quanto cambia il fattore di Boltzmann associato alla soglia passando da 300 K a 310 K? Si usa $R = 8{,}314$ J/(mol·K).
 
 1. Dati: $E_a=50\,000$ J/mol, $T_1=300$ K, $T_2=310$ K.
-2. Strategia: si calcola $f$ alle due temperature e si fa il rapporto.
+2. Strategia: si calcola il fattore di Boltzmann $f$ alle due temperature e si fa il rapporto.
 3. Calcolo:
 $\displaystyle \frac{E_a}{RT_1}=\frac{50\,000}{8{,}314\cdot 300}=20{,}046\ \Rightarrow\ f_1=e^{-20{,}046}=1{,}97\times10^{-9}$
 $\displaystyle \frac{E_a}{RT_2}=\frac{50\,000}{8{,}314\cdot 310}=19{,}400\ \Rightarrow\ f_2=e^{-19{,}400}=3{,}76\times10^{-9}$
 $\displaystyle \frac{f_2}{f_1}=e^{0{,}646}\approx 1{,}91$
-4. Verifica: un aumento di soli 10 K fa quasi raddoppiare la frazione di urti efficaci, mentre la velocità media cresce di meno del 2%. È la coda della distribuzione a decidere la reattività.
+4. Verifica: il fattore di Boltzmann associato alla soglia quasi raddoppia.
 
 **Errore tipico 6.6.** Pensare che, riscaldando, tutte le molecole diventino più veloci della stessa quantità, oppure che la reattività cresca perché aumenta la velocità media. L'energia cinetica media aumenta in proporzione a $T$, ma ciò che conta è la frazione di molecole nella coda, che cresce molto più rapidamente.
 

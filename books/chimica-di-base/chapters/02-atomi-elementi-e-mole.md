@@ -157,7 +157,7 @@ Il numero del periodo e il numero del gruppo hanno un significato preciso in ter
 
 - il numero del periodo indica il livello energetico principale $n$ più alto occupato dagli elettroni esterni di quell'elemento;
 - per gli elementi dei gruppi principali 1 e 2, il numero del gruppo coincide con il numero di elettroni esterni (di valenza) dell'elemento; per quelli dei gruppi 13-18 il numero di elettroni esterni si ottiene invece sottraendo 10 al numero del gruppo (fa eccezione l'elio, che ha due elettroni esterni pur appartenendo al gruppo 18);
-- elementi dello stesso gruppo hanno configurazioni elettroniche esterne simili, e per questo mostrano proprietà chimiche e fisiche simili; elementi dello stesso periodo hanno invece proprietà chimiche diverse, perché il numero di elettroni esterni cambia da una casella all'altra.
+- elementi dello stesso gruppo hanno configurazioni elettroniche esterne simili, e per questo mostrano proprietà chimiche e fisiche simili; tra gli elementi dei gruppi principali, il numero di elettroni esterni cambia lungo un periodo e contribuisce alle differenze di proprietà chimiche. Negli elementi di transizione si riempiono progressivamente gli orbitali $d$, perciò il numero di elettroni nel livello più esterno non varia necessariamente da una casella alla successiva.
 
 La tavola si divide in tre grandi blocchi. I **gruppi 1, 2 e 13–18** contengono gli elementi dei **gruppi principali**; i **gruppi 3–12** contengono gli **elementi di transizione**; al di sotto del corpo principale della tavola si collocano due serie di **elementi di transizione interna** (i lantanidi e gli attinidi), che si inseriscono, nell'ordine di numero atomico, tra gli elementi del gruppo 3 e quelli del gruppo 4.
 
@@ -264,7 +264,7 @@ Per contare entità tanto piccole quanto gli atomi conviene definire un'unità d
 
 **Definizione 2.4** (mole, convenzione storica). La mole, simbolo $\mathrm{mol}$, è la quantità di sostanza che contiene un numero di particelle elementari (atomi, ioni, molecole o altre entità specificate) uguale al numero di atomi contenuti in esattamente $12\ \mathrm{g}$ di $^{12}\mathrm{C}$.
 
-Questo numero, detto numero di Avogadro, vale circa $N_A = 6{,}022 \times 10^{23}$. Dal 2019 il Sistema Internazionale ha scelto di ridefinire la mole senza fare riferimento a una massa campione: la mole è la quantità di sostanza che contiene esattamente $6{,}02214076\times 10^{23}$ entità elementari, valore fissato per definizione. Negli esercizi di questo corso si usa il valore arrotondato $N_A = 6{,}022\times 10^{23}\ \mathrm{mol^{-1}}$. Questa scelta rende le unità di misura fondamentali indipendenti tra loro, dato che prima la definizione di mole era legata a quella di massa, ed è stata possibile perché oggi si sa misurare il valore numerico della costante di Avogadro con un'incertezza accettabile.
+Questo numero, detto numero di Avogadro, vale circa $N_A = 6{,}022 \times 10^{23}$. Dal 2019 il Sistema Internazionale ha scelto di ridefinire la mole senza fare riferimento alla massa di un campione di carbonio-12: la mole è la quantità di sostanza che contiene esattamente $6{,}02214076\times 10^{23}$ entità elementari, valore fissato per definizione. Negli esercizi di questo corso si usa il valore arrotondato $N_A = 6{,}022\times 10^{23}\ \mathrm{mol^{-1}}$. La ridefinizione è stata possibile perché oggi si sa misurare il valore numerico della costante di Avogadro con un'incertezza accettabile.
 
 È importante distinguere due grandezze che nell'uso corrente vengono spesso confuse:
 
@@ -339,7 +339,7 @@ Le domande a disposizione sono esercizi della prova scritta, e in entrambe le se
 
 1. Dai nomi ricava le formule e scrivi la reazione, poi bilanciala; se è una redox, usa le semireazioni ([Reazioni di ossidoriduzione](ref:chapter/5#p5) e [Equazioni chimiche e bilanciamento](ref:chapter/4#p3)).
 2. Calcola la massa molare $M$ di ogni specie coinvolta sommando le masse atomiche medie, tenendo conto degli indici ([Masse atomiche, mole e massa molare](ref:chapter/2#p5)).
-3. Converti ogni quantità di reagente in moli con {{formula:2.4}}.
+3. Converti ogni quantità di reagente in moli con {{formula:2.4}}. Se un reagente è dato come volume di soluzione e percentuale in massa, ricava prima la massa della soluzione dalla densità e poi la massa del soluto, secondo il metodo della sezione successiva.
 4. Dividi le moli di ciascun reagente per il suo coefficiente stechiometrico: il valore più piccolo indica il reagente limitante ([formula (4.3)](ref:formula/4.3)).
 5. Con il rapporto molare dell'equazione bilanciata ([formula (4.2)](ref:formula/4.2)) ricava le moli di prodotto a partire dal solo reagente limitante.
 6. Riconverti in grammi moltiplicando per la massa molare del prodotto e arrotonda solo alla fine, rispettando le cifre significative ([Grandezze, unità e cifre significative](ref:chapter/1#p3)).

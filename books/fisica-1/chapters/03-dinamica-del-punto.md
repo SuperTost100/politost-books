@@ -184,13 +184,13 @@ Con i valori $M_T = 5{,}97\cdot10^{24}$ kg e $R_T = 6{,}37\cdot10^{6}$ m si ha $
 
 Le forze di contatto sono quelle che i problemi di dinamica usano più spesso. Ciascuna ha una sezione dedicata.
 
-- **Reazione vincolare (normale)** $\vec{N}$: è perpendicolare al piano di appoggio e vale zero se il contatto scompare. Se un corpo sollecitato da una forza resta fermo, l'ambiente reagisce con una forza uguale e contraria. Non è determinabile a priori con una formula, ma va calcolata caso per caso dalle condizioni fisiche. Vedi [Reazioni vincolari ed equilibrio](ref:chapter/3#p5).
-- **Tensione** $\vec{T}$ di un filo ideale (inestensibile e di massa trascurabile): è diretta lungo il filo ed ha lo stesso modulo alle due estremità, con $\vec{T}_1 = -\vec{T}_2$.
-- **Attrito radente**: si oppone allo scorrimento relativo delle superfici o alla sua tendenza. L'attrito statico ha modulo tra zero e $\mu_s N$, quindi può anche essere nullo. Quello dinamico si oppone al moto relativo, con $\mu_d<\mu_s$. Vedi [Forze di attrito](ref:chapter/3#p6).
+- **Reazione vincolare (normale)** $\vec{N}$: è perpendicolare al piano di appoggio e vale zero se il contatto scompare. Se un corpo resta fermo, in equilibrio la risultante di tutte le forze è nulla; la normale è solo una delle forze di contatto e non è determinabile a priori con una formula, ma va calcolata caso per caso dalle condizioni fisiche. Vedi [Reazioni vincolari ed equilibrio](ref:chapter/3#p5).
+- **Tensione** $\vec{T}$ di un filo ideale (inestensibile e di massa trascurabile): è diretta lungo il filo e, nelle condizioni ideali, ha lo stesso modulo alle due estremità. Se il filo è rettilineo, $\vec{T}_1 = -\vec{T}_2$.
+- **Attrito radente**: si oppone allo scorrimento relativo delle superfici o alla sua tendenza. L'attrito statico ha modulo tra zero e $\mu_s N$, quindi può anche essere nullo. Quello dinamico si oppone al moto relativo; nel modello qui adottato si assume tipicamente $\mu_d<\mu_s$. Vedi [Forze di attrito](ref:chapter/3#p6).
 - **Attrito viscoso**: si oppone al moto ed è proporzionale alla velocità; si annulla se $v=0$.
 - **Forza elastica** di una molla: $F=-kx$, con $x$ allungamento rispetto alla lunghezza a riposo. Vedi [Forza elastica](ref:chapter/3#p7).
 
-Anche la **forza centripeta** non è una forza di tipo particolare. È il nome della componente della risultante ortogonale alla traiettoria, ed è diversa da zero quando la curvatura della traiettoria è diversa da zero.
+Anche la **forza centripeta** non è una forza di tipo particolare. È il nome della componente della risultante ortogonale alla traiettoria, ed è diversa da zero nei punti in cui la velocità e la curvatura della traiettoria sono entrambe diverse da zero.
 
 Come forze a distanza, nei problemi di questo corso compaiono soprattutto il peso e, in generale, la gravitazione. L'elettrostatica ha una sezione dedicata in [Cenni di elettrostatica](ref:chapter/10#p6).
 
@@ -834,7 +834,7 @@ $$
 
 ## p9 | Come viene chiesto all'esame
 
-Il capitolo è comparso in tutte e 6 le sessioni d'esame passate che ho a disposizione, cioè 6 su 6. La dinamica del punto raramente compare da sola. Quasi sempre è il primo passo di un esercizio più lungo: un'**attrito** su un piano inclinato, una **molla**, un **urto**, un **rotolamento**. Il tipo più frequente è l'esercizio con forze di attrito, presente in tutte le sessioni.
+Il capitolo è comparso in tutte e 6 le sessioni d'esame passate che ho a disposizione, cioè 6 su 6. La dinamica del punto raramente compare da sola. Quasi sempre è il primo passo di un esercizio più lungo: una **forza di attrito** su un piano inclinato, una **molla**, un **urto**, un **rotolamento**. Il tipo più frequente è l'esercizio con forze di attrito, presente in tutte le sessioni.
 
 Nella prova scritta di 2 ore ci sono due problemi strutturati a domande aperte, quindi conviene saper separare le fasi di un esercizio e dichiarare ogni volta quale legge si usa. Il test informatizzato e la teoria possono invece chiedere i principi, il teorema dell'impulso e le dimostrazioni viste a lezione.
 
@@ -869,10 +869,12 @@ Nella prova scritta di 2 ore ci sono due problemi strutturati a domande aperte, 
 
 **Metodo.**
 
+**Metodo.**
+
 1. Dividi l'esercizio in prima dell'urto, urto e dopo l'urto. Ogni fase ha una legge diversa.
 2. Prima e dopo l'urto usa le equazioni della dinamica o dell'energia. Per un pendolo che scende usa la conservazione dell'energia meccanica e, quando serve la tensione, la formula {{formula:3.30}} ([Dinamica del moto curvilineo](ref:chapter/3#p8)).
 3. Durante l'urto le forze esterne non impulsive sono trascurabili, perché il tempo di interazione è brevissimo. Impone la conservazione della quantità di moto del sistema, [formula (7.20)](ref:formula/7.20), proiettata sugli assi ([Urti](ref:chapter/7#p7)).
-4. Per il tipo di urto: completamente anelastico (i corpi restano attaccati) vale solo la quantità di moto; elastico si conserva anche l'energia cinetica. Se i vincoli esterni sono impulsivi, come il perno di un'asta, la quantità di moto non si conserva e serve il momento angolare ([Momento angolare di un sistema](ref:chapter/7#p5)).
+4. Per il tipo di urto: completamente anelastico (i corpi restano attaccati) vale solo la quantità di moto; elastico si conserva anche l'energia cinetica. Se un vincolo esterno è impulsivo, come il perno di un'asta, la quantità di moto non si conserva; si conserva invece il momento angolare rispetto al perno, purché gli altri momenti impulsivi esterni rispetto a quel polo siano trascurabili ([Momento angolare di un sistema](ref:chapter/7#p5)).
 5. Riporta le velocità subito dopo l'urto come condizioni iniziali della fase successiva.
 
 **Errori tipici.**

@@ -396,7 +396,7 @@ Lo schema è quasi sempre lo stesso, con sottopunti ordinati: (a) dominio, simme
 
 Esempi, con funzioni molto diverse ma metodo identico:
 - Esame del 31 gennaio 2024 - turno 1, esercizio 1: $f(x)=x^3/\sqrt{|x^4-1|}$. Il valore assoluto obbliga a spezzare il calcolo di $f'$ nei due casi, e i punti $x=\pm1$ sono esclusi dal dominio con asintoti verticali.
-- Esame dell'11 febbraio 2020 - IIo turno, esercizio 1: $f(x)=\sqrt{|4x^2-1|}$. I punti dove l'argomento si annulla sono punti di cuspide o angolosi, perché lì la derivata ha limiti non nulli o infiniti.
+- Esame dell'11 febbraio 2020 - IIo turno, esercizio 1: $f(x)=\sqrt{|4x^2-1|}$. I punti $x=\pm1/2$, dove l'argomento si annulla, sono cuspidi: le derivate laterali divergono con segni opposti. Per distinguere una cuspide da un punto angoloso si confrontano i due limiti laterali di $f'$.
 - Esame del 30 gennaio 2019 - IIo turno, esercizio 1: funzione con un parametro $k$ in $x=0$. Si fissa $k$ imponendo la continuità e poi si prosegue con quel valore.
 
 Metodo, passo per passo (si veda [Studio di funzione completo](ref:chapter/8#p4)):
@@ -426,7 +426,7 @@ Metodo:
 1. Per ciascun tratto studia la funzione nel suo intervallo aperto, come nel tipo precedente.
 2. Nel punto di raccordo calcola limite sinistro, limite destro e valore, e confrontali ([Punti di discontinuità](ref:chapter/5#p3)).
 3. Se la funzione è continua, calcola $f'_-(x_0)$ e $f'_+(x_0)$ come limiti del rapporto incrementale oppure, con cautela, come limiti di $f'$ ([Derivata e retta tangente](ref:chapter/7#p2)). Se il limite di $f'$ esiste, per il [formula (7.8)](ref:formula/7.8) coincide con la derivata unilatera (se $f$ è continua).
-4. Per le forme indeterminate con esponenziali e logaritmi sostituisci $t=1/x$ e usa la [formula (6.11)](ref:formula/6.11) ([Infiniti e infinitesimi](ref:chapter/6#p3)).
+4. Per le forme indeterminate con esponenziali e logaritmi scegli una variabile che tenda all'infinito nel caso concreto e usa la [formula (6.11)](ref:formula/6.11) ([Infiniti e infinitesimi](ref:chapter/6#p3)): per l'esempio in $x=0$ poni $t=1/x$, mentre per quello in $x=1$ poni $t=1/(x-1)^2$.
 
 Errori tipici: dedurre la derivabilità dalla sola continuità; calcolare $f'$ solo dove la formula è «comoda» e non nel punto di raccordo; confondere il limite di $f'$ con la derivata nel punto senza verificare la continuità di $f$.
 

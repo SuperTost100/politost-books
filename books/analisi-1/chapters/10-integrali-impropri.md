@@ -435,7 +435,7 @@ Gli esempi qui sotto vengono tutti dalla prova scritta, di cui abbiamo i testi.
 **Esempi.**
 
 - Esame del 31 gennaio 2024 - turno 1, esercizio 1: la funzione $\dfrac{x^3}{\sqrt{|x^4-1|}}$ ha singolarità in $\pm 1$, dove il denominatore si annulla. Il comportamento del denominatore ti dice con quale potenza va confrontata, e quindi se l'integrale vicino a quei punti converge. Le quattro versioni della stessa sessione cambiano segni e costante (ad esempio $|x^4-16|$ al posto di $|x^4-1|$).
-- Esame del 22 gennaio 2025 - turno 2 - versione 1, esercizio 1: la funzione $\sqrt[4]{x^2(2-|x|)}$ è definita su $\rbrack -2,2\lbrack $ con un valore particolare in $0$. Vicino a $\pm2$ si studia l'ordine con cui la funzione si annulla.
+- Esame del 22 gennaio 2025 - turno 2 - versione 1, esercizio 1: la funzione $\sqrt[4]{x^2(2-|x|)}$ è definita su $\lbrack -2,2\rbrack $ con un valore particolare in $0$. Vicino a $\pm2$ si studia l'ordine con cui la funzione si annulla.
 
 ### Tipo 2: definizione, teoria e studio con i criteri
 

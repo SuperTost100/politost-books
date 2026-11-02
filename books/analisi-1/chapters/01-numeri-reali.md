@@ -498,7 +498,7 @@ Qui i temi di questo capitolo compaiono quasi solo nella prova scritta, in eserc
 **Metodo.**
 
 1. Scrivi i primi elementi e studia il comportamento di $a_n$ per $n\to\pm\infty$ e per i valori di $n$ vicini ai punti critici. Se l'insieme è un'unione, studia ogni pezzo separatamente.
-2. Se l'insieme è definito da una successione, stabilisci la monotonia: l'estremo è il primo termine oppure il limite. Per le successioni si veda [Successioni e sottosuccessioni](ref:chapter/4#p6).
+2. Se l'insieme è definito da una successione, stabilisci prima se è monotona: solo in tal caso l'estremo si individua tra il primo termine e il limite. Se non è monotona, studia anche i termini interni. Per le successioni si veda [Successioni e sottosuccessioni](ref:chapter/4#p6).
 3. Individua un candidato per $\sup A$ e uno per $\inf A$. Dimostra che sono maggiorante e minorante, poi che sono il più piccolo e il più grande. Usa la caratterizzazione con $\varepsilon$ di [Maggioranti, minoranti ed estremi](ref:chapter/1#p6).
 4. Verifica se il candidato appartiene ad $A$. Se sì, è anche massimo o minimo. Se no, il massimo o il minimo non esiste.
 5. Se $A$ non è limitato superiormente, scrivi $\sup A=+\infty$. Se non è limitato inferiormente, scrivi $\inf A=-\infty$.
@@ -549,7 +549,7 @@ Una variante è la ricerca dell'estremo superiore di una funzione. Nell'*Esame d
 1. Individua gli zeri dell'argomento del modulo e riscrivi la funzione a tratti con la definizione, come in [Valore assoluto](ref:chapter/1#p5).
 2. Determina il dominio e studia i limiti ai bordi su ciascun tratto. Controlla le simmetrie con la parità di $|x|$.
 3. Controlla la continuità nei punti di raccordo. Poi calcola le derivate unilatere $f'_+$ e $f'_-$ e confrontale. Se sono diverse e finite, il punto è angoloso. Vedi [Punti di non derivabilità](ref:chapter/7#p3).
-4. Per classificare il punto, studia il segno di $f$ o di $f'$ a sinistra e a destra. Vedi [Caratterizzazione dei punti critici](ref:chapter/8#p3).
+4. Per classificare il punto, confronta $f(x)$ con $f(x_0)$ ai due lati, oppure studia il segno di $f'$ dove esiste. Vedi [Caratterizzazione dei punti critici](ref:chapter/8#p3).
 5. Per la monotonia, ragiona su ogni tratto e poi unisci i risultati.
 
 **Errori tipici.**

@@ -152,7 +152,7 @@ $$U(T,V_1) = U(T,V_2).$$
 
 Poiché $V_1$ e $V_2$ sono arbitrari, a $T$ fissata $U$ non varia al variare di $V$. Dall'equazione di stato, a $T$ fissata $p$ è determinata da $V$, quindi $U$ non dipende nemmeno da $p$. Ne segue $U = U(T)$.
 
-Il risultato vale solo per il gas ideale, nelle ipotesi indicate: per i gas reali l'espansione libera può variare la temperatura e $U$ dipende anche da $V$. Lo stesso risultato segue dalla teoria cinetica, per cui $U = n c_V T$ è funzione della sola $T$.
+Il risultato vale solo per il gas ideale, nelle ipotesi indicate: per i gas reali l'espansione libera può variare la temperatura e $U$ dipende anche da $V$. La teoria cinetica mostra che $U$ è funzione della sola temperatura. Nel modello con $c_V$ costante e scegliendo lo zero dell'energia interna a $T=0$, si può scrivere $U = n c_V T$.
 
 Per ottenere l'espressione esplicita di $\Delta U$ in funzione di $T$ si considerano due stati di equilibrio generici $A$ e $B$ di $n$ moli di gas ideale, collegati tramite due trasformazioni di comodo: prima una isocora $A \to C$ (volume costante), poi una isoterma $C \to B$ (temperatura costante). Poiché $U$ dipende solo da $T$, lungo l'isoterma $C \to B$ l'energia interna non varia, cioè $U_B = U_C$; quindi $\Delta U_{A\to B} = U_B - U_A = U_C - U_A$, che è proprio la variazione di energia interna nella sola trasformazione isocora $A \to C$.
 
@@ -471,9 +471,9 @@ Un secondo errore tipico, già incontrato nella sezione sui [Gas ideali](ref:cha
 
 Il capitolo è comparso in 4 sessioni d'esame su 6. Il tipo di esercizio più frequente è la sequenza di trasformazioni di un gas ideale (isoterma reversibile, isocora, spesso una terza trasformazione), di cui si chiedono calore, lavoro e variazione di energia interna. In tutti i casi la traccia è l'**Esercizio 3**, il terzo esercizio dello scritto, e i temi dell'elenco associano al primo principio anche macchine termiche, calorimetria o entropia.
 
-### Sequenza di trasformazioni reversibili con bilancio energetico
+### Sequenza di trasformazioni con bilancio energetico
 
-**Cosa chiede l'esame.** Un gas ideale con $n$ moli parte da uno stato $A$ con $T_A$ nota. Compie un'isoterma reversibile fino a un volume dato, poi un'isocora a contatto con una sorgente a temperatura diversa. Seguono altri tratti, che nelle tracce riportate sono troncati. Si chiedono $Q$, $W$ e $\Delta U$ dei singoli tratti e del percorso complessivo.
+**Cosa chiede l'esame.** Un gas ideale con $n$ moli parte da uno stato $A$ con $T_A$ nota. Compie un'isoterma reversibile fino a un volume dato, poi un'isocora a contatto con una sorgente a temperatura diversa. Quest'isocora è irreversibile; per renderla reversibile occorrerebbe variare la temperatura della sorgente per passi infinitesimi. Seguono altri tratti, che nelle tracce riportate sono troncati. Si chiedono $Q$, $W$ e $\Delta U$ dei singoli tratti e del percorso complessivo.
 
 **Metodo.**
 
@@ -512,7 +512,7 @@ Il capitolo è comparso in 4 sessioni d'esame su 6. Il tipo di esercizio più fr
 
 **Errori tipici.**
 
-- Convertire male i volumi (litri in m³) oppure usare la temperatura in °C nel logaritmo e nell'equazione di stato.
+- Convertire male i volumi (litri in m³) oppure usare la temperatura in °C nel fattore $nRT$ o nell'equazione di stato.
 - Confondere il calore ceduto dal gas con quello assorbito dal bagno: sono uguali in modulo e opposti in segno.
 
 **Esempi.**

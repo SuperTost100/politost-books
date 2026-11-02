@@ -625,7 +625,7 @@ Delle 83 sessioni d'esame passate, 32 contengono almeno una domanda sugli argome
 
 - Dire che un limite "non esiste perché oscilla" senza esibire le due successioni.
 - Applicare l'algebra dei limiti a un fattore privo di limite.
-- Scegliere due successioni con lo stesso limite: non provano nulla.
+- Scegliere due successioni per cui i valori della funzione hanno lo stesso limite non prova la non esistenza del limite.
 - Dimenticare che $-1\le\sin x\le1$ non basta se l'altro fattore non tende a $0$.
 
 **Esempi.**
@@ -644,14 +644,14 @@ Delle 83 sessioni d'esame passate, 32 contengono almeno una domanda sugli argome
 3. Calcola ogni limite con l'algebra dei limiti e riconosci le forme indeterminate ([Algebra dei limiti e forme indeterminate](ref:chapter/4#p5)). Se compaiono radici con differenza, razionalizza.
 4. Quando serve confrontare esponenziali, potenze e logaritmi, usa la gerarchia degli infiniti e gli strumenti di [Criteri del rapporto e della radice](ref:chapter/4#p7).
 5. Nei punti in cui il comportamento a destra e a sinistra differisce (valori assoluti, $e^{1/x}$, denominatori che si annullano) calcola i due limiti unilateri separatamente ([Definizione di limite](ref:chapter/4#p3)).
-6. Da ogni limite finito a $\pm\infty$ ricava un asintoto orizzontale, da ogni limite infinito in un punto finito un asintoto verticale.
+6. Per individuare tutti gli asintoti orizzontali, studia separatamente i limiti per $x\to-\infty$ e per $x\to+\infty$. Ogni limite finito in uno di questi versi dà un asintoto orizzontale da quel lato; ogni limite infinito in un punto finito dà un asintoto verticale.
 
 **Errori tipici.**
 
 - Scambiare $\sqrt{x^2}$ con $x$ invece di $|x|$, specie per $x\to-\infty$.
 - Lasciare una forma $+\infty-\infty$ senza razionalizzare.
 - Calcolare solo il limite bilatero in un punto dove i limiti unilateri differiscono.
-- Dichiarare un asintoto orizzontale a $-\infty$ senza controllare il limite anche a $+\infty$.
+- Considerare un asintoto orizzontale a $-\infty$ sufficiente per individuare tutti gli asintoti orizzontali senza studiare il limite a $+\infty$.
 
 **Esempi.**
 
@@ -667,7 +667,7 @@ Delle 83 sessioni d'esame passate, 32 contengono almeno una domanda sugli argome
 **Metodo.**
 
 1. Decidi per prima cosa se l'affermazione è plausibile. Una successione limitata non è convergente in generale; per una funzione monotona, il teorema garantisce il limite appropriato a un estremo dell'intervallo oppure il limite della successione per $n\to+\infty$.
-2. Se è vera, scrivi le ipotesi e applica il teorema sul limite di una funzione o successione monotona: il limite esiste e coincide con l'estremo superiore (se crescente) o inferiore (se decrescente), come in [Successioni e sottosuccessioni](ref:chapter/4#p6). Poi confronta con altri valori, per esempio con $f(1)$ o con un valore interno.
+2. Se è vera, scrivi le ipotesi e applica il teorema sul limite di una funzione o successione monotona. Per una successione monotona definita su tutti gli indici naturali, il limite per $n\to+\infty$ coincide con il suo estremo superiore se è crescente e con il suo estremo inferiore se è decrescente. Per una funzione monotona su un intervallo, il limite è l'estremo superiore o inferiore dei valori assunti secondo il verso di avvicinamento: una funzione crescente su $\rbrack a,b\lbrack $ ha limite destro in $a$ pari all'estremo inferiore e limite sinistro in $b$ pari all'estremo superiore; per una funzione decrescente vale il contrario. Si veda [Successioni e sottosuccessioni](ref:chapter/4#p6). Poi confronta con altri valori, per esempio con $f(1)$ o con un valore interno.
 3. Se è falsa, costruisci un controesempio esplicito e verifica tutte le ipotesi. Spesso funziona $(-1)^n$ o una funzione come $1-x$.
 4. Per la monotonia di una composizione, studia come cambiano le disuguaglianze: crescente seguita da decrescente dà decrescente.
 5. Per una successione concreta, studia monotonia e limite, poi determina massimo, minimo o estremi dell'insieme dei valori.
@@ -681,14 +681,14 @@ Delle 83 sessioni d'esame passate, 32 contengono almeno una domanda sugli argome
 
 **Esempi.**
 
-- Esame del 28 gennaio 2016 - IIIo turno, esercizio 2: per ogni $f$ crescente su $\rbrack 0,1\rbrack $ si prova $\lim_{x\to1^-}f(x)\le f(1)$ usando il teorema di monotonia. Per il controesempio al punto (a) basta $f(x)=1-x$, il cui limite in $1^-$ è $0$.
+- Esame del 28 gennaio 2016 - IIIo turno, esercizio 2: per ogni $f$ crescente su $\rbrack 0,1\rbrack $ si prova $\lim_{x\to1^-}f(x)\le f(1)$ usando il teorema di monotonia.
 - Esame del 13 febbraio 2018, esercizio 2: per mostrare che $\lim_{x\to3^+}f(x)\ne+\infty$ con $f$ crescente su $\rbrack 3,5\lbrack $, osserva che il limite è l'estremo inferiore di $f$ su $\rbrack 3,5\lbrack $, che è minore o uguale a $f(4)$. Questo esclude che il limite sia $+\infty$, ma non ne prova la finitezza.
 - Esame del 30 gennaio 2019 - Io turno, esercizio 2A: nella successione $a_n=\arctan\frac{2n+3}{n+1}$, l'argomento $2+\frac1{n+1}$ è decrescente, quindi la successione è decrescente. Il primo termine è il massimo, mentre l'estremo inferiore è il limite $\arctan2$, non raggiunto.
 - Esame del 28 gennaio 2016 - IIo turno, esercizio 2: per smentire "una successione compresa fra $1$ e $3$ ha limite" basta $a_n=2+(-1)^n$ e le due sottosuccessioni di indice pari e dispari.
 
 ### Altri argomenti, in breve
 
-Compaiono in una sola sessione ciascuno, quindi senza un metodo dedicato.
+Gli argomenti elencati compaiono con frequenza diversa: alcuni in una sola sessione, altri in più sessioni. Non richiedono un metodo dedicato.
 
 - La definizione di o-piccolo e di ordine di infinito o infinitesimo rispetto a un campione ([Infiniti e infinitesimi](ref:chapter/6#p3)) appare in tre esercizi: Esame del 1 febbraio 2017 - Io turno, esercizio 2, Esame del 12 febbraio 2019 - Io turno, esercizio 2 (con anche la definizione di asintoto obliquo) ed Esame del 28 gennaio 2016 - IIo turno, esercizio 2.
 - La limitatezza di una funzione moltiplicata per una che tende a $+\infty$ compare in Esame del 9 febbraio 2021, esercizio 2 (punto (a)).

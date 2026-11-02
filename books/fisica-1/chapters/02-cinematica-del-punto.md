@@ -395,7 +395,7 @@ Se all'oscillatore smorzato si applica anche una forza esterna periodica $F_0\co
 $$\frac{d^2x}{dt^2} + 2\gamma\frac{dx}{dt} + \omega_0^2 x = \frac{F_0}{m}\cos(\Omega t)$$
 :::
 
-La soluzione generale è la somma di due termini: nel caso sottosmorzato, con $\gamma < \omega_0$, il **transitorio** è una soluzione dell'equazione omogenea racchiusa nell'inviluppo $e^{-\gamma t}$ e dopo un tempo di qualche $\tau = 1/\gamma$ è trascurabile; il secondo termine è la **soluzione di regime**, che persiste e oscilla alla pulsazione della forzante:
+La soluzione generale è la somma di due termini: nel caso sottosmorzato, con $\gamma < \omega_0$, il **transitorio** è una soluzione dell'equazione omogenea racchiusa nell'inviluppo $e^{-\gamma t}$ e dopo un tempo di qualche $\tau = 1/\gamma$ è trascurabile. Nei regimi critico e sovracritico il transitorio ha forme e tempi di decadimento diversi; il secondo termine è la **soluzione di regime**, che persiste e oscilla alla pulsazione della forzante:
 
 $$x_{reg}(t) = A(\Omega)\cos(\Omega t - \varphi)$$
 
@@ -419,7 +419,7 @@ $$\Omega_r = \sqrt{\omega_0^2 - 2\gamma^2}$$
 
 Per $\gamma \ge \omega_0/\sqrt{2}$ l'ampiezza decresce monotonicamente con $\Omega$ e non c'è picco. Nel limite $\gamma \to 0$ si ha $\Omega_r \to \omega_0$ e, per $\Omega \to \omega_0$, il denominatore tende a zero: l'ampiezza diverge, come accade per un oscillatore privo di attrito forzato alla sua frequenza propria.
 
-**Esempio 2.2.** Una massa $m = 1 \text{ kg}$ su una molla con $k = 100 \text{ N/m}$ ha $\omega_0 = 10 \text{ s}^{-1}$. Con $\gamma = 1 \text{ s}^{-1}$ e $F_0 = 2 \text{ N}$ la risonanza cade a $\Omega_r = \sqrt{100 - 2} \approx 9{,}90 \text{ s}^{-1}$, dove $A \approx 2/19{,}9 \approx 0{,}10 \text{ m}$ (per $\Omega = \omega_0$ si ha $A = (F_0/m)/(2\gamma\omega_0) = 0{,}10 \text{ m}$ e $\varphi = \pi/2$), contro una deformazione statica $F_0/k = 0{,}02 \text{ m}$. Per $\Omega = 20 \text{ s}^{-1}$ si ottiene invece $A \approx 2/302{,}7 \approx 0{,}0066 \text{ m}$ e, poiché $\omega_0^2 - \Omega^2 = -300 \text{ s}^{-2} < 0$, $\varphi = \pi + \operatorname{arctg}(-0{,}133) \approx 3{,}01 \text{ rad}$, cioè quasi in opposizione di fase con la forzante.
+**Esempio 2.2.** Una massa $m = 1\,\mathrm{kg}$ su una molla con $k = 100\,\mathrm{N/m}$ ha $\omega_0 = 10\,\mathrm{s}^{-1}$. Con $\gamma = 1\,\mathrm{s}^{-1}$ e $F_0 = 2\,\mathrm{N}$ la risonanza cade a $\Omega_r = \sqrt{100\,\mathrm{s}^{-2} - 2\,\mathrm{s}^{-2}} \approx 9{,}90\,\mathrm{s}^{-1}$, dove $A \approx (2\,\mathrm{m/s^2})/(19{,}9\,\mathrm{s}^{-2}) \approx 0{,}10\,\mathrm{m}$ (per $\Omega = \omega_0$ si ha $A = (F_0/m)/(2\gamma\omega_0) = (2\,\mathrm{m/s^2})/(2\cdot1\,\mathrm{s}^{-1}\cdot10\,\mathrm{s}^{-1}) = 0{,}10\,\mathrm{m}$ e $\varphi = \pi/2$), contro una deformazione statica $F_0/k = (2\,\mathrm{N})/(100\,\mathrm{N/m}) = 0{,}02\,\mathrm{m}$. Per $\Omega = 20\,\mathrm{s}^{-1}$ si ottiene invece $A \approx (2\,\mathrm{m/s^2})/(302{,}7\,\mathrm{s}^{-2}) \approx 0{,}0066\,\mathrm{m}$ e, poiché $\omega_0^2 - \Omega^2 = -300\,\mathrm{s}^{-2} < 0$, $\varphi = \pi + \operatorname{arctg}(-0{,}133) \approx 3{,}01\,\mathrm{rad}$, cioè quasi in opposizione di fase con la forzante.
 
 ## p5 | Moto nel piano
 
@@ -853,7 +853,7 @@ Le domande disponibili sono troncate. Qui descrivo soltanto ciò che mostrano. L
 1. Scrivi i dati con le unità SI. Scegli il riferimento e l'origine: di solito il perno, con il filo di lunghezza $l$ che fissa il raggio della traiettoria.
 2. Se il corpo è in equilibrio sotto una forza orizzontale, imposta l'equilibrio delle forze (peso, tensione, forza applicata) con le componenti lungo gli assi. Per i richiami vedi [Reazioni vincolari ed equilibrio](ref:chapter/3#p5) e [Principi della dinamica](ref:chapter/3#p2).
 3. Per la discesa fino alla verticale usa la conservazione dell'energia meccanica, scrivendo l'energia potenziale rispetto a una quota di riferimento dichiarata. Vedi [Forze conservative ed energia potenziale](ref:chapter/4#p4).
-4. Per l'urto usa la conservazione della quantità di moto del sistema, con il segno corretto per ogni velocità. Vedi [Urti](ref:chapter/7#p7).
+4. Nell'urto alla verticale considera la quantità di moto lungo la direzione tangenziale, con il segno corretto per ogni velocità. Questa componente si conserva se l'impulso esterno lungo tale direzione è trascurabile durante l'urto; verifica che il vincolo del perno non eserciti un impulso tangenziale significativo. Vedi [Urti](ref:chapter/7#p7).
 5. Subito prima e subito dopo l'urto il corpo è su una circonferenza. Ricava la velocità angolare con $\omega = v/l$ e l'accelerazione centripeta con $a_N = v^2/l$, come nel [moto circolare](ref:chapter/2#p6). Sulla traiettoria circolare vale sempre la scomposizione in componente tangenziale e normale, $a_T = dv/dt$ e $a_N = v^2/\rho$, come in [Moto nel piano](ref:chapter/2#p5).
 6. Per la tensione del filo scrivi la seconda legge di Newton lungo la direzione radiale, includendo il termine centripeto. Vedi [Dinamica del moto curvilineo](ref:chapter/3#p8).
 7. Svolgi il calcolo in forma letterale e solo alla fine inserisci i numeri. Controlla le unità e l'ordine di grandezza.

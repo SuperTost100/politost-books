@@ -556,7 +556,7 @@ Quasi tutti gli esercizi di Analisi 1 si costruiscono componendo poche funzioni 
 ### Potenze, esponenziali e logaritmi
 
 **Potenze con esponente intero.** La funzione $x\mapsto x^n$, con $n\in\mathbb{N}^+$, ha dominio $\mathbb{R}$.
-- Se $n$ è pari, la funzione è pari, con immagine $\lbrack 0,+\infty\lbrack $. Non è iniettiva su $\mathbb{R}$ (ad esempio $f(2)=f(-2)=4$), ma lo è su $\lbrack 0,+\infty\lbrack $, dove è strettamente crescente.
+- Se $n$ è pari, la funzione è pari, con immagine $\lbrack 0,+\infty\lbrack $. Non è iniettiva su $\mathbb{R}$ (ad esempio $f(2)=f(-2)=2^n$), ma lo è su $\lbrack 0,+\infty\lbrack $, dove è strettamente crescente.
 - Se $n$ è dispari, la funzione è dispari, strettamente crescente e biettiva su $\mathbb{R}$.
 
 L'inversa della restrizione a $\lbrack 0,+\infty\lbrack $ è la radice $\sqrt[n]{x}$, definita su $\lbrack 0,+\infty\lbrack $ e strettamente crescente. Per $n$ dispari la radice è definita su tutto $\mathbb{R}$.
@@ -662,7 +662,7 @@ Metodo:
 
 1. Determina il dominio con le condizioni di esistenza, come nel tipo 1.
 2. Per l'immagine, leggi dal grafico (o ricostruisci dallo studio di monotonia e dai limiti agli estremi) gli intervalli percorsi da $f$ su ogni tratto monotono. L'immagine è l'unione di questi intervalli. Attenzione agli estremi: un valore raggiunto va incluso, un valore solo approssimato (limite) va escluso. Si veda [Funzioni: dominio, immagine, iniettività](ref:chapter/3#p2).
-3. Per l'iniettività, mostra che $f$ è strettamente monotona su un intervallo (derivata di segno costante), oppure trova due punti distinti con lo stesso valore.
+3. Per l'iniettività, puoi mostrare che $f$ è strettamente monotona sull'intero dominio, oppure verificare che i valori assunti su tratti distinti non coincidano; in alternativa, trova due punti distinti con lo stesso valore. Se $f$ è derivabile su un intervallo, $f'(x)>0$ per ogni $x$ oppure $f'(x)<0$ per ogni $x$ implica che è strettamente monotona su quell'intervallo.
 4. Per invertire, restringi $f$ a un intervallo su cui è strettamente monotona. Dominio e immagine dell'inversa si scambiano con quelli della restrizione. Vedi [Grafico, composizione e funzione inversa](ref:chapter/3#p3).
 
 Errori tipici:

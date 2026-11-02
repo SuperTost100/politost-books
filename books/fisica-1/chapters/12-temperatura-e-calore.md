@@ -535,11 +535,11 @@ Il problema numero 3 della prova scritta, di due ore, è quello che ha ospitato 
 
 1. Elenca i dati con le unità SI. Riconosci che la miscela acqua-ghiaccio fissa la temperatura della sorgente a circa $273$ K, cioè $0\ ^\circ\text{C}$, come spiega [Temperatura e termometria](ref:chapter/12#p3). Se ti servono i kelvin, converti con {{formula:12.2}}.
 2. Identifica ogni trasformazione (isoterma, isobara, isocora, adiabatica, reversibile o no) con le definizioni di [Sistemi termodinamici ed equilibrio](ref:chapter/12#p2). Ricava gli stati mancanti con l'equazione di stato dei gas ideali ([formula (13.3)](ref:formula/13.3), vedi [Gas ideali](ref:chapter/13#p3)).
-3. Per ogni tratto calcola $W$ come $\int p\,dV$ ([Calore e lavoro](ref:chapter/12#p4)). Per l'isoterma reversibile usa [formula (13.8)](ref:formula/13.8).
+3. Per ogni tratto quasi statico con solo lavoro di espansione calcola $W$ come $\int p\,dV$ ([Calore e lavoro](ref:chapter/12#p4)); per gli altri tratti usa la pressione esterna o il modello di lavoro pertinente. Per l'isoterma reversibile usa [formula (13.8)](ref:formula/13.8).
 4. Ricava $\Delta U$ da $n\,c_V\,\Delta T$ e $Q$ dal primo principio, $\Delta U = Q - W$ ([Primo principio ed energia interna](ref:chapter/13#p2)).
 5. Se la sorgente è una miscela acqua-ghiaccio, il calore ceduto o assorbito dal gas fa fondere o solidificare una massa di ghiaccio. Calcolala con $|Q| = \lambda m$, come in [Calorimetria](ref:chapter/12#p5).
 6. Per l'entropia usa le formule del gas ideale per ciascun tratto ([formula (14.16)](ref:formula/14.16)) e quella della sorgente a temperatura costante. Somma poi gas e sorgente per ottenere l'universo ([Calcolo delle variazioni di entropia](ref:chapter/14#p6)).
-7. Controlla i segni: in una compressione $W < 0$ e il gas cede calore, quindi il ghiaccio fonde. Controlla anche le unità e l'ordine di grandezza.
+7. Controlla i segni: nella compressione isoterma reversibile descritta qui, $Q = W < 0$ e il gas cede calore, quindi il ghiaccio fonde. Controlla anche le unità e l'ordine di grandezza.
 
 **Errori tipici.**
 
@@ -559,7 +559,7 @@ Il problema numero 3 della prova scritta, di due ore, è quello che ha ospitato 
 1. Converti le temperature in kelvin con {{formula:12.2}}. Nei rendimenti e nelle entropie servono sempre temperature assolute.
 2. Osserva che il serbatoio caldo non ha temperatura costante. A ogni istante il rendimento è quello di Carnot, [formula (14.3)](ref:formula/14.3), ma $T_{\text{acqua}}$ diminuisce ([Macchine termiche e frigoriferi](ref:chapter/14#p2)).
 3. Stabilisci la condizione di arresto. La macchina smette di produrre lavoro quando la temperatura dell'acqua raggiunge quella del ghiaccio. Finché resta ghiaccio, il serbatoio freddo rimane a $0\ ^\circ\text{C}$ perché fonde a temperatura costante. Verifica che la massa iniziale di ghiaccio basti a questo scopo, cioè che non fonda tutta prima dell'arresto. Se invece fonde tutta, l'acqua ottenuta si scalda e l'arresto avviene a una temperatura comune superiore a $0\ ^\circ\text{C}$.
-4. Calcola il calore scambiato dall'acqua con $Q = C\,\Delta T$, con $C = cm$ (la capacità termica di [Calorimetria](ref:chapter/12#p5)). Calcola quello ricevuto dal ghiaccio con $\lambda m$. Il lavoro è la differenza tra i due, per il primo principio applicato al ciclo.
+4. Calcola il calore scambiato dall'acqua con $Q = C\,\Delta T$, con $C = cm$ (la capacità termica di [Calorimetria](ref:chapter/12#p5)). Calcola quello ricevuto dal ghiaccio con $\lambda m$ e, se il ghiaccio fonde tutto, aggiungi il calore $c\,m\,(T_f - 0\ ^\circ\text{C})$ che scalda l'acqua di fusione fino alla temperatura finale $T_f$. Il lavoro è la differenza tra i due, per il primo principio applicato al ciclo.
 5. Per una macchina reversibile, imponi che l'entropia dell'universo non vari. Per l'acqua usa [formula (14.20)](ref:formula/14.20); per il ghiaccio che fonde usa [formula (14.22)](ref:formula/14.22), imponendo che le due variazioni abbiano lo stesso modulo. Se rimane ghiaccio fino all'arresto, si pone $T_f = 273{,}15\ \text{K}$ e il bilancio entropico dà la massa fusa. Solo nel caso di fusione completa si risolve per una temperatura finale comune, senza integrare il rendimento istante per istante ([Secondo principio](ref:chapter/14#p3)).
 
 **Errori tipici.**

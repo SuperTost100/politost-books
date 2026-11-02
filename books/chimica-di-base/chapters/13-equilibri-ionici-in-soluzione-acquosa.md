@@ -31,7 +31,7 @@ Questa definizione svincola il comportamento acido-base dalla presenza obbligato
 
 Un punto concettuale da tenere a mente è che il protone $H^+$ non può esistere isolato in soluzione: è estremamente instabile e reattivo, e passa sempre direttamente da un acido a una base durante la reazione; per questo un acido può manifestarsi come tale solo in presenza di una base che accetti il protone, e viceversa.
 
-Quando un acido si sciogliere in acqua, è l'acqua stessa a comportarsi da base accettando il protone:
+Quando un acido si scioglie in acqua, è l'acqua stessa a comportarsi da base accettando il protone:
 $$HCl_{(aq)} + H_2O_{(l)} \to Cl^-{}_{(aq)} + H_3O^+{}_{(aq)}$$
 quando invece è una base a sciogliersi in acqua, è l'acqua a comportarsi da acido donando il protone:
 $$NH_{3(aq)} + H_2O_{(l)} \rightleftharpoons NH_4^+{}_{(aq)} + OH^-{}_{(aq)}$$
@@ -408,12 +408,9 @@ Prima che il sistema raggiunga l’equilibrio, il **prodotto ionico** $Q_{\mathr
 
 **Effetto dello ione comune.** Se si aggiunge $\mathrm{Na_2CrO_4}$ a una soluzione satura a contatto con $\mathrm{PbCrO_4}_{(s)}$, aumenta $\lbrack \mathrm{CrO_4}^{2-}\rbrack $. Nell’immediato $Q_{\mathrm{ps}}$ supera $K_{\mathrm{ps}}$; parte del $\mathrm{PbCrO_4}$ precipita e la concentrazione di $\mathrm{Pb}^{2+}$ diminuisce. Alla stessa temperatura $K_{\mathrm{ps}}$ resta costante, mentre diminuisce la quantità di sale che può rimanere disciolta. È un’applicazione del [principio di Le Châtelier](ref:chapter/12#p4).
 
-:::image{src="assets/a3d62df9-ione-cromato.svg" alt="Struttura di Lewis dello ione cromato CrO4^2-" caption="Fig. 13.6 — Struttura dello ione cromato CrO4^2-, l'anione aggiunto con Na2CrO4 che innalza [CrO4^2-] e fa precipitare PbCrO4 per effetto dello ione comune."}
-:::
-
 **Effetto del pH.** Se l’anione del sale può legare $\mathrm{H_3O}^{+}$, acidificare ne riduce la concentrazione libera e favorisce altra dissoluzione. È il caso di $\mathrm{CaCO_3}$: il carbonato viene protonato e la solubilità aumenta. Per un sale come $\mathrm{AgCl}$, il cui anione proviene da un acido forte, questa via di protonazione non produce un effetto apprezzabile nel modello considerato. Il comportamento acido-base degli anioni è trattato in [Autoionizzazione dell’acqua e pH](ref:chapter/13#p3).
 
-:::image{src="assets/a3d62df9-ione-carbonato.svg" alt="Struttura di Lewis dello ione carbonato CO3^2-" caption="Fig. 13.7 — Struttura dello ione carbonato CO3^2-: la sua protonazione in ambiente acido riduce [CO3^2-] libero e aumenta la solubilità di CaCO3."}
+:::image{src="assets/a3d62df9-ione-carbonato.svg" alt="Struttura di Lewis dello ione carbonato CO3^2-" caption="Fig. 13.6 — Struttura dello ione carbonato CO3^2-: la sua protonazione in ambiente acido riduce [CO3^2-] libero e aumenta la solubilità di CaCO3."}
 :::
 
 **Definizione 13.9** (precipitazione frazionata). Aggiungendo gradualmente uno stesso ione precipitante a una miscela, si può separare un primo sale prima che inizi a precipitare il secondo. Il primo a raggiungere la saturazione è quello che richiede la *minore concentrazione soglia* dello ione aggiunto. La soglia dipende da $K_{\mathrm{ps}}$, dalla stechiometria e dalle concentrazioni iniziali: il sale con $K_{\mathrm{ps}}$ minore non è necessariamente il primo in ogni miscela. Una separazione utile richiede che, alla soglia del secondo sale, del primo ne resti poco in soluzione. Per due sali $MX$ con uguale stechiometria, la soglia iniziale è $\lbrack X^-\rbrack =K_{\mathrm{ps}}/\lbrack M^+\rbrack _{\mathrm{iniziale}}$. Lo stesso criterio permette di separare cationi come idrossidi regolando il pH.

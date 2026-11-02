@@ -250,11 +250,7 @@ Dall'equazione di continuità segue la conseguenza qualitativa più usata nelle 
 
 ### Teorema di Bernoulli
 
-Vogliamo ora legare la velocità del fluido alla pressione e alla quota. Il risultato si ottiene applicando il [teorema dell'energia cinetica](ref:chapter/4#p3) a una porzione di fluido ideale che scorre in regime stazionario lungo un tubo di sezione variabile e non necessariamente orizzontale; la dimostrazione è riportata dopo l'enunciato.
-
-$$\frac12 \Delta m\, v_2^2 - \frac12 \Delta m\, v_1^2 = (p_1-p_2)\,\Delta V - \Delta m\, g\,(y_2-y_1)$$
-
-Sostituendo $\Delta m = \rho\, \Delta V$ e dividendo per $\Delta V$ si ottiene $p_1 + \rho g y_1 + \tfrac12 \rho v_1^2 = p_2 + \rho g y_2 + \tfrac12 \rho v_2^2$, cioè l'enunciato seguente.
+Vogliamo ora legare la velocità del fluido alla pressione e alla quota. Il risultato si ottiene applicando il [teorema dell'energia cinetica](ref:chapter/4#p3) a una porzione di fluido ideale che scorre in regime stazionario lungo un tubo di sezione variabile e non necessariamente orizzontale.
 
 **Teorema 11.4** (di Bernoulli). Sia un fluido ideale (incompressibile, non viscoso, $\eta = 0$) in moto in regime stazionario lungo un tubo di flusso, sottoposto alla sola forza peso (assunta uniforme) e privo di pompe, turbine o altri dispositivi che aggiungano o sottraggano energia al flusso. Allora lungo ogni tubo di flusso vale
 

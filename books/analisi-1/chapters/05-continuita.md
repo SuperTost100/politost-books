@@ -449,7 +449,7 @@ Dello stesso tipo sono l'esercizio del 23 giugno 2016 - Io turno (dimostrare che
 Metodo:
 
 1. Enuncia il teorema con **tutte** le ipotesi: $f$ continua, intervallo $\lbrack a,b\rbrack $ chiuso e limitato, e il segno o il valore intermedio. Vedi [Teorema di esistenza degli zeri](ref:chapter/5#p4) e [Teorema di Weierstrass](ref:chapter/5#p5).
-2. Se si chiede un controesempio, togli **una sola** ipotesi alla volta e costruisci la funzione più semplice possibile. Per la continuità, una funzione con un salto. Per l'intervallo, un dominio che è unione di due intervalli disgiunti.
+2. Se si chiede un controesempio, togli **una sola** ipotesi alla volta e costruisci la funzione più semplice possibile. Per la continuità, una funzione con un salto. Per il teorema dei valori intermedi e quello degli zeri, puoi usare un dominio che è unione di due intervalli disgiunti. Per Weierstrass, usa un dominio non chiuso o non limitato, come nei controesempi del capitolo.
 3. Per applicare il teorema, verifica la continuità sull'intervallo e i valori agli estremi. Concludi con l'esistenza.
 4. Per mostrare che una funzione **non è iniettiva**, cerca un valore assunto due volte. Se $f(1)=-3$, $f(2)=-2$ e $f(3)=-4$, il teorema dei valori intermedi applicato su $\lbrack 2,3\rbrack $ dà un punto in cui $f$ vale $-3$, già assunto in $1$.
 5. Per contare le soluzioni, usa l'esistenza (zeri) e poi l'unicità tramite la monotonia, come nell'esempio svolto nella sezione sugli zeri.
@@ -476,7 +476,7 @@ Sono richieste al punto di teoria e si risolvono con la definizione. Compaiono l
 
 Metodo:
 
-1. Scrivi la definizione richiesta: $f$ è continua in $x_0$ se e solo se $\lim_{x\to x_0}f(x)=f(x_0)$ (vedi {{formula:5.1}}).
+1. Per la definizione generale, $f$ è continua in $x_0$ se per ogni $\varepsilon>0$ esiste $\delta>0$ tale che, per ogni $x$ del dominio con $|x-x_0|<\delta$, si abbia $|f(x)-f(x_0)|<\varepsilon$. Se $x_0$ è un punto di accumulazione del dominio, questa condizione equivale a $\lim_{x\to x_0}f(x)=f(x_0)$ (vedi {{formula:5.1}}).
 2. Per le maggiorazioni del tipo $|g(x)|\le|x-x_0|$ ricava prima $g(x_0)=0$ ponendo $x=x_0$, poi applica i due carabinieri a $-|x-x_0|\le g(x)\le|x-x_0|$.
 3. Per concludere che la derivata in $x_0$ è nulla, è sufficiente verificare che $|g(x)-g(x_0)|=o(|x-x_0|)$. Una stima quadratica è un esempio sufficiente: se $|g(x)-g(x_0)|\le|x-x_0|^2$, allora $\left|\frac{g(x)-g(x_0)}{x-x_0}\right|\le|x-x_0|\to0$. Le stime quadratiche non sono necessarie.
 

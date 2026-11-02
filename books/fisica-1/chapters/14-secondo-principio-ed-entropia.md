@@ -290,7 +290,7 @@ Sulle isoterme reversibili la formula [formula (13.8)](ref:formula/13.8) dà il 
 
 $$Q_2 = nRT_{g,2}\ln\frac{V_B}{V_A}, \qquad Q_1 = nRT_{g,1}\ln\frac{V_D}{V_C}.$$
 
-Sulle due adiabatiche reversibili vale la relazione [formula (13.9)](ref:formula/13.9), cioè $TV^{\gamma-1}=\text{costante}$. Quindi
+Per questo ciclo scegliamo un gas ideale con calori specifici costanti, per il quale la formula [formula (13.9)](ref:formula/13.9) dà $TV^{\gamma-1}=\text{costante}$. Quindi
 
 $$T_{g,2}V_B^{\gamma-1}=T_{g,1}V_C^{\gamma-1}, \qquad T_{g,2}V_A^{\gamma-1}=T_{g,1}V_D^{\gamma-1}.$$
 
@@ -662,7 +662,7 @@ Il secondo principio non compare quasi mai da solo: nei testi è sempre intrecci
 Due altri tipi compaiono in una sola sessione.
 
 - **Trasformazione politropica.** Nell'esame dell'11 luglio 2022, esercizio 3A1, due moli di gas monoatomico compiono una trasformazione reversibile con $pV^2$ costante, con un rapporto di temperature assegnato. Si usa lo stesso schema del primo tipo: stati dall'equazione di stato, poi lavoro, calore e $\Delta S$ tramite la formula generale per il gas ideale.
-- **Macchina reversibile tra due corpi finiti.** Nella Prova scritta - TEMA ESAME 1 - 2024, esercizio 3A, una macchina reversibile preleva calore da una massa d'acqua a 40 °C e lo cede a ghiaccio a 0 °C, finché non può più produrre lavoro. Qui la temperatura dell'acqua cambia durante il funzionamento. Il punto da ricordare è che per una macchina reversibile $\Delta S_U = 0$, quindi la somma delle variazioni di entropia dei due corpi è nulla ([Temperatura termodinamica](ref:chapter/14#p4) e [Calcolo delle variazioni di entropia](ref:chapter/14#p6)). Da questa condizione si ricava la temperatura finale, con le temperature in kelvin; il lavoro è poi la differenza tra il calore ceduto dall'acqua e quello assorbito dal ghiaccio.
+- **Macchina reversibile tra due corpi finiti.** Nella Prova scritta - TEMA ESAME 1 - 2024, esercizio 3A, una macchina reversibile preleva calore da una massa d'acqua a 40 °C e lo cede a ghiaccio a 0 °C, finché non può più produrre lavoro. Qui la temperatura dell'acqua cambia durante il funzionamento. Il punto da ricordare è che per una macchina reversibile $\Delta S_U = 0$, quindi la somma delle variazioni di entropia dei due corpi è nulla ([Temperatura termodinamica](ref:chapter/14#p4) e [Calcolo delle variazioni di entropia](ref:chapter/14#p6)). Se resta ghiaccio, la temperatura finale è $0\ ^\circ\mathrm{C}$ e la condizione $\Delta S_U = 0$ determina la massa fusa; se il ghiaccio fonde interamente, si ricava invece la temperatura finale includendo nel bilancio il calore di fusione e quello necessario a riscaldare l'acqua ottenuta. Il lavoro è la differenza tra il calore ceduto dall'acqua e quello assorbito dal ghiaccio.
 
 ### Domande di teoria
 
