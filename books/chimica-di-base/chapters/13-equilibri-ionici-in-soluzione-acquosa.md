@@ -313,7 +313,7 @@ Dalla definizione di $K_a$ si ottiene $\lbrack H_3O^+\rbrack =K_a\lbrack HA\rbra
 $$pH=pK_a+\log\left(\frac{\lbrack A^-\rbrack }{\lbrack HA\rbrack }\right)$$
 :::
 
-Le concentrazioni nella {{formula:13.8}} sono quelle all'equilibrio. Nei consueti calcoli di tampone si usano le concentrazioni ottenute dal bilancio stechiometrico quando la dissociazione ulteriore di $HA$ e l'autoionizzazione dell'acqua sono trascurabili. Poiché le due specie occupano lo stesso volume, il loro rapporto si può calcolare anche dalle moli. Se si aggiunge acido o base forte, occorre prima aggiornare le moli di entrambe le componenti con la reazione di neutralizzazione.
+Le concentrazioni nella formula {{formula:13.8}} sono quelle all'equilibrio. Nei consueti calcoli di tampone si usano le concentrazioni ottenute dal bilancio stechiometrico quando la dissociazione ulteriore di $HA$ e l'autoionizzazione dell'acqua sono trascurabili. Poiché le due specie occupano lo stesso volume, il loro rapporto si può calcolare anche dalle moli. Se si aggiunge acido o base forte, occorre prima aggiornare le moli di entrambe le componenti con la reazione di neutralizzazione.
 
 Il tamponamento è più efficace quando $\lbrack A^-\rbrack $ e $\lbrack HA\rbrack $ sono simili: se sono uguali, $pH=pK_a$. Come intervallo pratico si usa $pK_a\pm1$. A parità di rapporto, concentrazioni assolute maggiori permettono di assorbire una quantità maggiore di acido o base prima che il $pH$ cambi sensibilmente.
 

@@ -525,8 +525,8 @@ Nelle prove scritte questi argomenti compaiono nell'Esercizio 1 (di solito 8 o 9
 
 1. Determinare il dominio e riscrivere ogni valore assoluto a tratti, separando i casi in cui l'argomento è positivo o negativo.
 2. Calcolare $f'$ con le regole di derivazione (vedi [Derivata e retta tangente](ref:chapter/7#p2)) separatamente su ciascun tratto, dove la funzione è derivabile.
-3. Nei punti di raccordo e nei punti in cui compaiono radici o potenze frazionarie, studiare i limiti di $f'(x)$ da destra e da sinistra, oppure i limiti laterali del rapporto incrementale. Se $f$ è continua nel punto, il {{formula:7.8}} permette di dedurre le derivate laterali dal limite di $f'$. Classificare il punto come angoloso, cuspide o flesso a tangente verticale ([Punti di non derivabilità](ref:chapter/7#p3)).
-4. Studiare il segno di $f'$ e dedurre la monotonia con il {{formula:7.13}} ([Teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4)).
+3. Nei punti di raccordo e nei punti in cui compaiono radici o potenze frazionarie, studiare i limiti di $f'(x)$ da destra e da sinistra, oppure i limiti laterali del rapporto incrementale. Se $f$ è continua nel punto, il teorema tappabuchi {{formula:7.8}} permette di dedurre le derivate laterali dal limite di $f'$. Classificare il punto come angoloso, cuspide o flesso a tangente verticale ([Punti di non derivabilità](ref:chapter/7#p3)).
+4. Studiare il segno di $f'$ e dedurre la monotonia con il test di monotonia {{formula:7.13}} ([Teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4)).
 5. Elencare i candidati estremi: punti stazionari, punti di non derivabilità interni ed estremi del dominio. Classificarli con il segno di $f'$ ([Caratterizzazione dei punti critici](ref:chapter/8#p3)).
 6. Distinguere massimi e minimi relativi da quelli assoluti confrontando con i limiti agli estremi del dominio, poi tracciare il grafico ([Studio di funzione completo](ref:chapter/8#p4)).
 

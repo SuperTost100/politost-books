@@ -138,7 +138,7 @@ Si vuole calcolare la lunghezza d'onda della riga emessa dalla transizione $n_2 
 
 1. Dati: $n_1 = 2$, $n_2 = 4$, $R_{\mathrm H} = 1,097 \times 10^{7}\ \text{m}^{-1}$ (costante di Rydberg espressa come numero d'onda).
 
-2. Strategia: si applica la {{formula:8.4}} nella forma per $1/\lambda$.
+2. Strategia: si applica la formula {{formula:8.4}} nella forma per $1/\lambda$.
 
 3. Calcolo:
 
@@ -181,7 +181,7 @@ Si vuole trovare la lunghezza d'onda del fotone emesso quando l'elettrone dell'a
 
 1. Dati: $R_h = 2,18 \times 10^{-18}\ \text{J}$; $h = 6,626 \times 10^{-34}\ \text{J·s}$; $c = 2,998 \times 10^{8}\ \text{m/s}$.
 
-2. Strategia: si calcola $\Delta E$ con la {{formula:8.6}}, poi si ricavano $\nu$ e $\lambda$ dalle relazioni fra energia, frequenza e lunghezza d'onda introdotte in [radiazione elettromagnetica e quanti](ref:chapter/8#p2).
+2. Strategia: si calcola $\Delta E$ con la formula {{formula:8.6}}, poi si ricavano $\nu$ e $\lambda$ dalle relazioni fra energia, frequenza e lunghezza d'onda introdotte in [radiazione elettromagnetica e quanti](ref:chapter/8#p2).
 
 3. Calcolo:
 

@@ -392,7 +392,7 @@ La cancellazione tra il termine sostituito e un altro addendo della somma è dun
 Riassumiamo le situazioni in cui il principio di sostituzione degli asintotici funziona senza pericoli, e quelle in cui richiede cautela.
 
 - **Prodotti e quozienti.** Se $f \sim f_1$ e $g \sim g_1$ per $x \to x_0$, allora $f \cdot g \sim f_1 \cdot g_1$ e, se $g, g_1 \neq 0$ in un intorno di $x_0$, $\dfrac{f}{g} \sim \dfrac{f_1}{g_1}$. In un prodotto o in un quoziente ogni fattore può quindi essere sostituito dalla propria parte principale senza rischi, perché non vi è alcuna cancellazione tra fattori distinti.
-- **Somme in cui un termine domina.** Se $f(x) = f_1(x) + o(f_1(x))$ e $f_1$ non si cancella con nessun altro addendo del limite, la sostituzione $f \rightsquigarrow f_1$ è corretta: è esattamente il contenuto del {{formula:6.12}} applicato a numeratore e denominatore di un rapporto.
+- **Somme in cui un termine domina.** Se $f(x) = f_1(x) + o(f_1(x))$ e $f_1$ non si cancella con nessun altro addendo del limite, la sostituzione $f \rightsquigarrow f_1$ è corretta: è esattamente il contenuto del principio di eliminazione dei termini trascurabili {{formula:6.12}} applicato a numeratore e denominatore di un rapporto.
 - **Somme o differenze di termini dello stesso ordine.** Quando due o più addendi hanno la stessa parte principale e vengono sommati con segno opposto (come $\sin x - x$, oppure $e^x - 1 - x$), la sostituzione con il solo termine principale produce una cancellazione fittizia e un risultato errato o un'indeterminazione mascherata da $0$, salvo verificare esplicitamente la condizione quantitativa $f - f_1 = o(f_1 + g)$ vista sopra. In questi casi occorre usare uno sviluppo più fine, tipicamente uno sviluppo di Taylor con resto di Peano, per conoscere il termine successivo che sopravvive alla cancellazione.
 - **Funzioni composte.** La sostituzione di un asintotico dentro l'argomento di un'altra funzione non è garantita dal solo teorema sul limite di funzione composta, che assicura l'esistenza del limite della composta ma non l'equivalenza asintotica di due composte diverse; occorre invece verificarla esplicitamente tramite il rapporto delle composte, sfruttando le proprietà note della funzione esterna. Per esempio, per mostrare che $\log(1 + \sin x) \sim \log(1+x)$ per $x \to 0$ scriviamo
 
@@ -414,7 +414,7 @@ Metodo:
 
 1. Scrivere il dominio e individuare ogni punto in cui si deve calcolare un limite: gli estremi finiti esclusi dal dominio, gli estremi infiniti, i punti in cui compaiono valori assoluti o logaritmi.
 2. Sostituire il punto nell'espressione e riconoscere la forma. Se non è indeterminata, il limite si legge con l'[algebra dei limiti](ref:chapter/4#p6).
-3. Se la forma è indeterminata, cercare un cambio di variabile che riporti a un limite notevole (vedi [Limiti notevoli](ref:chapter/6#p2)). Per esempio si pone $t = \frac{1}{x}$ oppure $t = e^x - 1$ e si usano le {{formula:6.3}} e {{formula:6.4}}.
+3. Se la forma è indeterminata, cercare un cambio di variabile che riporti a un limite notevole (vedi [Limiti notevoli](ref:chapter/6#p2)). Per esempio si pone $t = \frac{1}{x}$ oppure $t = e^x - 1$ e si usano i limiti notevoli {{formula:6.3}} e {{formula:6.4}}.
 4. Nelle somme tra infiniti, individuare il termine dominante con la gerarchia degli infiniti {{formula:6.11}} e applicare il [principio di eliminazione dei termini trascurabili](ref:chapter/6#p4).
 5. Per un asintoto obliquo per $x\to\pm\infty$, calcolare $m=\lim_{x\to\pm\infty}\frac{f(x)}{x}$ e poi $q=\lim_{x\to\pm\infty}\big(f(x)-mx\big)$. Per $q$ serve spesso la parte principale: vedi [(8.7)](ref:formula/8.7).
 6. Se il punto escluso dal dominio dà un limite finito, la funzione si prolunga per continuità. Se compare un parametro $k$, si impone $k=\lim f$.
@@ -468,7 +468,7 @@ Compare in sessioni diverse, sia come punto di un esercizio di teoria sia dentro
 Metodo:
 
 1. Fissare il punto e il campione ($x$ per $x\to0$, oppure $x$ come infinito campione per $x\to\pm\infty$).
-2. Sviluppare le funzioni elementari con la [formula di Taylor](ref:chapter/8#p2) e con la [(8.2)](ref:formula/8.2), fino all'ordine in cui si ottiene il primo termine non nullo.
+2. Sviluppare le funzioni elementari con la [formula di Taylor](ref:chapter/8#p2) e con la formula [(8.2)](ref:formula/8.2), fino all'ordine in cui si ottiene il primo termine non nullo.
 3. Se compaiono cancellazioni, aumentare l'ordine dello sviluppo di un grado alla volta, finché il primo termine non nullo sopravvive.
 4. Scrivere il risultato nella forma $f(x)\sim c\,\varphi(x)^{\alpha}$, con $c\neq0$. La parte principale è $c\,\varphi^\alpha$, l'ordine è $\alpha$.
 5. Controllare con $\lim\frac{f}{c\varphi^\alpha}=1$.

@@ -59,7 +59,7 @@ $$v(t) = v_0 + \int_{t_0}^{t} a(t')\,dt'$$
 
 Due casi particolari, molto frequenti negli esercizi, meritano le formule esplicite.
 
-**Moto rettilineo uniforme** ($v = \text{costante}$): integrando la {{formula:2.3}} con $v$ costante si ha
+**Moto rettilineo uniforme** ($v = \text{costante}$): integrando la formula {{formula:2.3}} con $v$ costante si ha
 
 :::formula{id="2.5" label="Legge oraria del moto rettilineo uniforme"}
 $$x(t) = x_0 + v(t - t_0)$$
@@ -117,7 +117,7 @@ dove la velocità $v(t) = v_0 e^{-kt}$ decresce esponenzialmente e tende a zero 
 
 Una particella si muove lungo l'asse $x$ con legge della velocità $v(t) = v_0 + at$, dove $v_0 = 2{,}0$ m/s e $a = 9{,}81$ m/s². All'istante $t = 0$ la particella si trova in $x = 2{,}0$ m. Si chiede: (1) la posizione all'istante $t = 1{,}0$ s; (2) l'istante in cui la particella raggiunge $x = 4{,}0$ m.
 
-Si applica la {{formula:2.3}} integrando tra $t=0$ s e $t=1{,}0$ s:
+Si applica la formula {{formula:2.3}} integrando tra $t=0$ s e $t=1{,}0$ s:
 
 $$x(1\text{ s}) = x(0) + \int_{0}^{1\text{ s}} (v_0 + at)\,dt = 2{,}0\text{ m} + \left[v_0 t + \frac{a}{2}t^2\right]_{0}^{1\text{ s}}.$$
 
@@ -141,7 +141,7 @@ Un secondo esempio classico (problema di Mazzoldi) chiede di determinare l'accel
 
 $$a = \frac{v_2^2 - v_1^2}{2\,\Delta x},$$
 
-che è un riarrangiamento della {{formula:2.8}}; da qui, sostituendo $v_1 = 1{,}9$ m/s, $v_2 = 8{,}2$ m/s, $\Delta x = 10$ m, si trova $a = 3{,}18$ m/s² e, dalla relazione $v_2 = v_1 + a t^*$, $t^* = 1{,}98$ s.
+che è un riarrangiamento della formula {{formula:2.8}}; da qui, sostituendo $v_1 = 1{,}9$ m/s, $v_2 = 8{,}2$ m/s, $\Delta x = 10$ m, si trova $a = 3{,}18$ m/s² e, dalla relazione $v_2 = v_1 + a t^*$, $t^* = 1{,}98$ s.
 
 **Errore tipico 2.1**
 
@@ -751,7 +751,7 @@ Scegliendo gli assi cartesiani con $\hat{u}_x$ orizzontale e $\hat{u}_y$ vertica
 
 Questa indipendenza è una conseguenza diretta della scomposizione vettoriale: l'accelerazione $\vec{a} = \vec{g}$ ha componente nulla lungo $x$ e componente costante $-g$ lungo $y$, per cui le due equazioni del moto si integrano separatamente, esattamente come nel caso cartesiano generale discusso nel [moto nel piano](ref:chapter/2#p5).
 
-Indicando con $v_0 = |\vec{v}_0|$ il modulo della velocità di lancio e con $\theta_0$ l'angolo di lancio, le componenti della velocità iniziale sono $v_{0,x} = v_0\cos\theta_0$ e $v_{0,y} = v_0\sin\theta_0$. Applicando a ciascuna componente le leggi del {{formula:2.5}} e del {{formula:2.7}}, con origine dei tempi nell'istante di lancio e posizione iniziale $(x_0, y_0)$, si ottengono le leggi orarie del moto parabolico:
+Indicando con $v_0 = |\vec{v}_0|$ il modulo della velocità di lancio e con $\theta_0$ l'angolo di lancio, le componenti della velocità iniziale sono $v_{0,x} = v_0\cos\theta_0$ e $v_{0,y} = v_0\sin\theta_0$. Applicando a ciascuna componente le leggi del moto rettilineo uniforme {{formula:2.5}} e del moto uniformemente accelerato {{formula:2.7}}, con origine dei tempi nell'istante di lancio e posizione iniziale $(x_0, y_0)$, si ottengono le leggi orarie del moto parabolico:
 
 :::formula{id="2.48" label="Leggi orarie del moto parabolico"}
 $$\begin{aligned} x(t) &= x_0 + v_0 \cos\theta_0 \, t \\ y(t) &= y_0 + v_0 \sin\theta_0 \, t - \frac{1}{2}gt^2 \end{aligned}$$
@@ -833,7 +833,7 @@ $$t^* = \frac{v_{0y} + \sqrt{v_{0y}^2 + 2gh}}{g} = \frac{15\sin(60°)\ \text{m/s
 
 $$d = x(t^*) = v_{0x}t^* = v_0\cos\theta \cdot t^* = 15\text{ m/s} \cdot \cos(60°) \cdot 3,16\text{ s} \approx 23,7\text{ m}.$$
 
-*Controllo.* Ogni termine ha le dimensioni corrette (una lunghezza $d$, una lunghezza $h_{max}$, un tempo $t^*$), e gli ordini di grandezza sono ragionevoli per un lancio a mano da un primo piano: altezza massima di circa il doppio dell'altezza di partenza, tempo di volo di pochi secondi, distanza orizzontale dell'ordine di $20$–$25\text{ m}$. Si noti che, trovandosi qui il punto di lancio e il punto di caduta ad altezze diverse, non si poteva applicare direttamente la {{formula:2.51}}, valida solo per lanci e cadute alla stessa quota.
+*Controllo.* Ogni termine ha le dimensioni corrette (una lunghezza $d$, una lunghezza $h_{max}$, un tempo $t^*$), e gli ordini di grandezza sono ragionevoli per un lancio a mano da un primo piano: altezza massima di circa il doppio dell'altezza di partenza, tempo di volo di pochi secondi, distanza orizzontale dell'ordine di $20$–$25\text{ m}$. Si noti che, trovandosi qui il punto di lancio e il punto di caduta ad altezze diverse, non si poteva applicare direttamente la formula {{formula:2.51}}, valida solo per lanci e cadute alla stessa quota.
 
 :::image{src="assets/d8b70a99-traiettoria-lancio-da-altezza.svg" alt="Grafico della traiettoria parabolica con punto di lancio, vertice e punto di caduta a quota diversa" caption="Fig. 2.13 — Traiettoria del lancio dal balcone (esempio): quota massima 8,6 m sopra il punto di lancio, caduta al suolo a 23,7 m di distanza e 8 m più in basso del lancio"}
 :::

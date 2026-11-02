@@ -253,7 +253,7 @@ Il modulo del campo generato da ciascuna massa in $P$ è
 
 $$G_i = G\frac{m_i}{r^2}.$$
 
-Il versore che punta da $A$ (o da $B$) verso $P$ ha componente verticale $+2{,}0\ \text{m}/r$ (verso l'alto) e componente orizzontale $\pm 1{,}0\ \text{m}/r$; nella {{formula:10.7}} questo versore compare preceduto dal segno meno, cosicché le componenti orizzontali si cancellano e resta una componente verticale negativa, diretta verso le masse.
+Il versore che punta da $A$ (o da $B$) verso $P$ ha componente verticale $+2{,}0\ \text{m}/r$ (verso l'alto) e componente orizzontale $\pm 1{,}0\ \text{m}/r$; nella formula {{formula:10.7}} questo versore compare preceduto dal segno meno, cosicché le componenti orizzontali si cancellano e resta una componente verticale negativa, diretta verso le masse.
 
 $$G_y(P) = -2\,G\frac{m}{r^2}\cdot\frac{2{,}0\ \text{m}}{r} = -\frac{(4{,}0\ \text{m})\,G\,m}{r^3}.$$
 
@@ -267,7 +267,7 @@ Quindi $\vec{G}(P) \approx -4{,}8\cdot10^{-8}\,\hat{u}_y$ m/s².
 
 ### Errori tipici
 
-**Errore tipico 10.2** (somma scalare invece che vettoriale). Un errore frequente consiste nel sommare i moduli dei singoli campi $G_i$ invece delle loro componenti vettoriali, ottenendo nell'esempio precedente un valore eccessivo rispetto a quello corretto, perché si ignora la cancellazione delle componenti orizzontali imposta dalla simmetria del problema. Il principio di sovrapposizione richiede sempre di decomporre ciascun $\vec{G}_i$ nelle sue componenti cartesiane e di sommare componente per componente, come indicato dalla {{formula:10.7}}.
+**Errore tipico 10.2** (somma scalare invece che vettoriale). Un errore frequente consiste nel sommare i moduli dei singoli campi $G_i$ invece delle loro componenti vettoriali, ottenendo nell'esempio precedente un valore eccessivo rispetto a quello corretto, perché si ignora la cancellazione delle componenti orizzontali imposta dalla simmetria del problema. Il principio di sovrapposizione richiede sempre di decomporre ciascun $\vec{G}_i$ nelle sue componenti cartesiane e di sommare componente per componente, come indicato dalla formula {{formula:10.7}}.
 
 **Errore tipico 10.3** (dipendenza errata dalla distanza). Un secondo errore tipico è confondere la dipendenza del campo dalla distanza, scrivendo $G \propto 1/r$ invece di $G \propto 1/r^2$. Il controllo dimensionale smaschera immediatamente l'errore: con $\lbrack G_{\text{cost}}\rbrack  = \text{m}^3/(\text{kg}\cdot\text{s}^2)$, la formula $a = G_{\text{cost}}\,M/r^2$ dà $\lbrack a\rbrack =\text{m/s}^2$ (corretta), mentre $a = G_{\text{cost}}\,M/r$ darebbe $\lbrack a\rbrack  = \text{m}^2/\text{s}^2$, privo di senso per un'accelerazione. Più in generale, un risultato numericamente sbagliato resta comunque un risultato, mentre una scrittura dimensionalmente inconsistente è priva di significato fisico e costituisce un errore ben più grave; per questo ogni passaggio intermedio del calcolo di un campo va sempre accompagnato dalle unità di misura.
 

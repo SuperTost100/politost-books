@@ -835,7 +835,7 @@ $$
 0<\sqrt{x+1}-\sqrt{x} < \frac{1}{2\sqrt{x}}.
 $$
 
-La condizione $\dfrac{1}{2\sqrt{x}}<\varepsilon$ equivale a $\sqrt{x}>\dfrac{1}{2\varepsilon}$, cioè $x > \dfrac{1}{4\varepsilon^2}$. Scegliendo $M(\varepsilon) = \dfrac{1}{4\varepsilon^2}$, per ogni $x>M(\varepsilon)$ si ha $0<\sqrt{x+1}-\sqrt{x}<\varepsilon$, dunque $\left|\sqrt{x+1}-\sqrt{x}\right|<\varepsilon$, come richiesto dalla {{formula:4.4}}.
+La condizione $\dfrac{1}{2\sqrt{x}}<\varepsilon$ equivale a $\sqrt{x}>\dfrac{1}{2\varepsilon}$, cioè $x > \dfrac{1}{4\varepsilon^2}$. Scegliendo $M(\varepsilon) = \dfrac{1}{4\varepsilon^2}$, per ogni $x>M(\varepsilon)$ si ha $0<\sqrt{x+1}-\sqrt{x}<\varepsilon$, dunque $\left|\sqrt{x+1}-\sqrt{x}\right|<\varepsilon$, come richiesto dalla formula {{formula:4.4}}.
 :::
 :::
 
@@ -848,7 +848,7 @@ Stimare $|(3x-1)-5|$ in funzione di $|x-2|$ e risolvere la disuguaglianza $|(3x-
 :::
 
 :::solution
-Si calcola $|(3x-1)-5| = |3x-6| = 3|x-2|$. La condizione $3|x-2|<\varepsilon$ equivale a $|x-2|<\varepsilon/3$. Basta dunque scegliere $\delta = \varepsilon/3$: per ogni $x$ con $0<|x-2|<\delta$ si ha $|(3x-1)-5|<\varepsilon$, come richiesto dalla {{formula:4.2}}.
+Si calcola $|(3x-1)-5| = |3x-6| = 3|x-2|$. La condizione $3|x-2|<\varepsilon$ equivale a $|x-2|<\varepsilon/3$. Basta dunque scegliere $\delta = \varepsilon/3$: per ogni $x$ con $0<|x-2|<\delta$ si ha $|(3x-1)-5|<\varepsilon$, come richiesto dalla formula {{formula:4.2}}.
 
 Per $\varepsilon = 0{,}03$ si ottiene $\delta = 0{,}01$.
 :::
@@ -871,7 +871,7 @@ Si calcolano i valori di $a_n$ a seconda del resto di $n$ modulo $4$:
 
 Quindi $a_n \in \{-1,0,1\}$ per ogni $n$, e in particolare $|a_n|\le 1$: la successione è limitata.
 
-Le sottosuccessioni (secondo la {{formula:4.14}}) con $n = 4k+1$ sono costanti uguali a $1$, con $n=4k+3$ costanti uguali a $-1$, e con $n=4k$ o $n=4k+2$ costanti uguali a $0$: esse convergono quindi rispettivamente a $1$, $-1$ e $0$.
+Le sottosuccessioni (secondo la formula {{formula:4.14}}) con $n = 4k+1$ sono costanti uguali a $1$, con $n=4k+3$ costanti uguali a $-1$, e con $n=4k$ o $n=4k+2$ costanti uguali a $0$: esse convergono quindi rispettivamente a $1$, $-1$ e $0$.
 
 Poiché esistono sottosuccessioni con limiti diversi, per il teorema di unicità del limite la successione $(a_n)$ non converge. Inoltre, poiché $a_n$ assume solo i valori $-1,0,1$ per ogni $n$, non esistono altri possibili limiti sottosequenziali.
 :::
@@ -940,7 +940,7 @@ Per gli indici pari: $a_{2n} = \dfrac{2n}{2n+1} \to 1$ per $n\to\infty$.
 
 Per gli indici dispari: $a_{2n+1} = -\dfrac{2n+1}{2n+2} \to -1$ per $n\to\infty$.
 
-Le due sottosuccessioni, definite tramite la {{formula:4.14}}, convergono a limiti diversi ($1$ e $-1$). Se $(a_n)$ convergesse a un limite $L$, ogni sua sottosuccessione dovrebbe convergere a $L$; ciò contraddice il fatto che le due sottosuccessioni hanno limiti diversi. Quindi $(a_n)$ non converge.
+Le due sottosuccessioni, definite tramite la formula {{formula:4.14}}, convergono a limiti diversi ($1$ e $-1$). Se $(a_n)$ convergesse a un limite $L$, ogni sua sottosuccessione dovrebbe convergere a $L$; ciò contraddice il fatto che le due sottosuccessioni hanno limiti diversi. Quindi $(a_n)$ non converge.
 :::
 :::
 
@@ -996,7 +996,7 @@ Porre $t_n = 1/n$ e riconoscere nel rapporto $a_n$ il limite notevole del seno p
 :::solution
 Si osserva che $a_n = n\sin\!\left(\frac{1}{n}\right) = \dfrac{\sin(1/n)}{1/n}$. Poniamo $t_n = 1/n$; chiaramente $t_n \to 0^+$ per $n\to\infty$.
 
-Per il {{formula:6.6}} si ha $\lim_{t\to 0}\dfrac{\sin t}{t} = 1$. Per la {{formula:4.15}}, poiché $t_n \to 0$, si ha anche
+Per il limite notevole del seno {{formula:6.6}} si ha $\lim_{t\to 0}\dfrac{\sin t}{t} = 1$. Per la formula {{formula:4.15}}, poiché $t_n \to 0$, si ha anche
 
 $$
 \lim_{n\to\infty} \frac{\sin(t_n)}{t_n} = 1.
@@ -1017,7 +1017,7 @@ Scrivere $a_n-2$ come un'unica frazione e stimare il suo valore assoluto in funz
 :::solution
 Si ha $a_n - 2 = \dfrac{2n+1}{n+3}-2 = \dfrac{2n+1-2n-6}{n+3} = \dfrac{-5}{n+3}$, quindi $|a_n-2| = \dfrac{5}{n+3}$.
 
-La condizione $\dfrac{5}{n+3}<\varepsilon$ equivale a $n+3 > \dfrac{5}{\varepsilon}$, cioè $n > \dfrac{5}{\varepsilon}-3$. Si può quindi prendere $N(\varepsilon) = \dfrac{5}{\varepsilon}-3$, coerentemente con la {{formula:4.4}}.
+La condizione $\dfrac{5}{n+3}<\varepsilon$ equivale a $n+3 > \dfrac{5}{\varepsilon}$, cioè $n > \dfrac{5}{\varepsilon}-3$. Si può quindi prendere $N(\varepsilon) = \dfrac{5}{\varepsilon}-3$, coerentemente con la formula {{formula:4.4}}.
 
 Per $\varepsilon = 0{,}01$: $N = 500-3 = 497$, quindi basta prendere $n\ge 498$.
 :::
@@ -1061,7 +1061,7 @@ $$
 Studiare la continuità di $f$ nel punto $x=3$ e classificare l'eventuale discontinuità.
 
 :::hint
-Per $x\neq 3$ semplificare la frazione razionale scomponendo il numeratore, poi calcolare $\lim_{x\to 3} f(x)$ e confrontarlo con $f(3)$, usando la {{formula:5.1}}.
+Per $x\neq 3$ semplificare la frazione razionale scomponendo il numeratore, poi calcolare $\lim_{x\to 3} f(x)$ e confrontarlo con $f(3)$, usando la formula {{formula:5.1}}.
 :::
 
 :::solution
@@ -1077,7 +1077,7 @@ $$
 \lim_{x\to 3} f(x)=\lim_{x\to 3}(x+3)=6.
 $$
 
-Il limite esiste finito, ma $f(3)=5\neq 6$. Per la {{formula:5.1}}, $f$ non è continua in $x=3$: si tratta di una discontinuità eliminabile, poiché basterebbe ridefinire $f(3)=6$ per ottenere una funzione continua.
+Il limite esiste finito, ma $f(3)=5\neq 6$. Per la formula {{formula:5.1}}, $f$ non è continua in $x=3$: si tratta di una discontinuità eliminabile, poiché basterebbe ridefinire $f(3)=6$ per ottenere una funzione continua.
 :::
 :::
 
@@ -1092,23 +1092,23 @@ $$
 sia continua in $x=0$.
 
 :::hint
-Calcolare separatamente il limite da sinistra con il {{formula:6.2}} e il limite da destra con il {{formula:6.3}}.
+Calcolare separatamente il limite da sinistra con il limite notevole esponenziale {{formula:6.2}} e il limite da destra con il limite notevole del logaritmo {{formula:6.3}}.
 :::
 
 :::solution
-Per il {{formula:6.2}} si ha
+Per il limite notevole esponenziale {{formula:6.2}} si ha
 
 $$
 \lim_{x\to 0^-}\frac{e^x-1}{x}=1.
 $$
 
-Per il {{formula:6.3}} si ha
+Per il limite notevole del logaritmo {{formula:6.3}} si ha
 
 $$
 \lim_{x\to 0^+}\frac{\log(1+x)}{x}=1.
 $$
 
-I due limiti unilateri (si veda {{formula:4.6}}) coincidono e valgono $1$, quindi $\lim_{x\to 0} f(x)=1$. Per la {{formula:5.1}} la funzione è continua in $0$ se e solo se $a=1$.
+I due limiti unilateri (si veda {{formula:4.6}}) coincidono e valgono $1$, quindi $\lim_{x\to 0} f(x)=1$. Per la formula {{formula:5.1}} la funzione è continua in $0$ se e solo se $a=1$.
 :::
 :::
 
@@ -1117,7 +1117,7 @@ I due limiti unilateri (si veda {{formula:4.6}}) coincidono e valgono $1$, quind
 Dimostrare che l'equazione $x^3-x-1=0$ ha almeno una soluzione nell'intervallo $(1,2)$.
 
 :::hint
-Applicare il {{formula:5.3}} alla funzione $f(x)=x^3-x-1$ sull'intervallo $\lbrack 1,2\rbrack $, verificando il segno di $f$ agli estremi.
+Applicare il teorema di esistenza degli zeri {{formula:5.3}} alla funzione $f(x)=x^3-x-1$ sull'intervallo $\lbrack 1,2\rbrack $, verificando il segno di $f$ agli estremi.
 :::
 
 :::solution
@@ -1127,7 +1127,7 @@ $$
 f(1)=1-1-1=-1<0,\qquad f(2)=8-2-1=5>0.
 $$
 
-Poiché $f$ è continua su $\lbrack 1,2\rbrack $ e assume valori di segno opposto agli estremi, per il {{formula:5.3}} esiste almeno un punto $c\in(1,2)$ tale che $f(c)=0$.
+Poiché $f$ è continua su $\lbrack 1,2\rbrack $ e assume valori di segno opposto agli estremi, per il teorema di esistenza degli zeri {{formula:5.3}} esiste almeno un punto $c\in(1,2)$ tale che $f(c)=0$.
 :::
 :::
 
@@ -1136,7 +1136,7 @@ Poiché $f$ è continua su $\lbrack 1,2\rbrack $ e assume valori di segno oppost
 Dimostrare che la funzione $f(x)=x^3+x-1$ si annulla in uno ed un solo punto $x_0\in(0,1)$.
 
 :::hint
-Per l'esistenza usare il {{formula:5.3}} sugli estremi dell'intervallo; per l'unicità studiare il segno di $f'$ con il {{formula:7.13}}.
+Per l'esistenza usare il teorema di esistenza degli zeri {{formula:5.3}} sugli estremi dell'intervallo; per l'unicità studiare il segno di $f'$ con il test di monotonia {{formula:7.13}}.
 :::
 
 :::solution
@@ -1146,13 +1146,13 @@ $$
 f(0)=-1<0,\qquad f(1)=1+1-1=1>0.
 $$
 
-Per il {{formula:5.3}} applicato su $\lbrack 0,1\rbrack $, esiste almeno un punto $x_0\in(0,1)$ con $f(x_0)=0$. Per l'unicità, si osserva che
+Per il teorema di esistenza degli zeri {{formula:5.3}} applicato su $\lbrack 0,1\rbrack $, esiste almeno un punto $x_0\in(0,1)$ con $f(x_0)=0$. Per l'unicità, si osserva che
 
 $$
 f'(x)=3x^2+1\geq 1>0 \quad \text{per ogni } x\in\mathbb{R}.
 $$
 
-Per il {{formula:7.13}}, $f$ è strettamente crescente su tutto $\mathbb{R}$, quindi è iniettiva: non può assumere il valore $0$ in più di un punto. Lo zero $x_0\in(0,1)$ trovato è pertanto l'unico zero di $f$ su tutto $\mathbb{R}$.
+Per il test di monotonia {{formula:7.13}}, $f$ è strettamente crescente su tutto $\mathbb{R}$, quindi è iniettiva: non può assumere il valore $0$ in più di un punto. Lo zero $x_0\in(0,1)$ trovato è pertanto l'unico zero di $f$ su tutto $\mathbb{R}$.
 :::
 :::
 
@@ -1161,7 +1161,7 @@ Per il {{formula:7.13}}, $f$ è strettamente crescente su tutto $\mathbb{R}$, qu
 Sia $f:\lbrack 0,2\rbrack \to\mathbb{R}$ una funzione continua tale che $f(0)=f(2)$. Dimostrare che esiste $c\in[0,1]$ tale che $f(c)=f(c+1)$.
 
 :::hint
-Introdurre la funzione ausiliaria $g(x)=f(x+1)-f(x)$ su $\lbrack 0,1\rbrack $, osservare che $g(1)=-g(0)$, e applicare il {{formula:5.3}}.
+Introdurre la funzione ausiliaria $g(x)=f(x+1)-f(x)$ su $\lbrack 0,1\rbrack $, osservare che $g(1)=-g(0)$, e applicare il teorema di esistenza degli zeri {{formula:5.3}}.
 :::
 
 :::solution
@@ -1177,7 +1177,7 @@ $$
 g(1)=f(0)-f(1)=-\big(f(1)-f(0)\big)=-g(0).
 $$
 
-Se $g(0)=0$, basta scegliere $c=0$: infatti $f(1)=f(0)$, cioè $f(c+1)=f(c)$. Se invece $g(0)\neq 0$, allora $g(0)$ e $g(1)=-g(0)$ hanno segno opposto, quindi per il {{formula:5.3}} (si veda anche il {{formula:5.4}}) esiste $c\in(0,1)$ tale che $g(c)=0$, ossia $f(c+1)=f(c)$. In entrambi i casi esiste $c\in[0,1]$ con $f(c)=f(c+1)$.
+Se $g(0)=0$, basta scegliere $c=0$: infatti $f(1)=f(0)$, cioè $f(c+1)=f(c)$. Se invece $g(0)\neq 0$, allora $g(0)$ e $g(1)=-g(0)$ hanno segno opposto, quindi per il teorema di esistenza degli zeri {{formula:5.3}} (si veda anche il corollario {{formula:5.4}}) esiste $c\in(0,1)$ tale che $g(c)=0$, ossia $f(c+1)=f(c)$. In entrambi i casi esiste $c\in[0,1]$ con $f(c)=f(c+1)$.
 :::
 :::
 
@@ -1192,7 +1192,7 @@ $$
 risulti continua in $x=0$.
 
 :::hint
-Riscrivere $\dfrac{\sin(3x)}{x}=3\cdot\dfrac{\sin(3x)}{3x}$ e applicare il {{formula:6.6}}.
+Riscrivere $\dfrac{\sin(3x)}{x}=3\cdot\dfrac{\sin(3x)}{3x}$ e applicare il limite notevole del seno {{formula:6.6}}.
 :::
 
 :::solution
@@ -1202,13 +1202,13 @@ $$
 \frac{\sin(3x)}{x}=3\cdot\frac{\sin(3x)}{3x}.
 $$
 
-Posto $t=3x\to 0$ quando $x\to 0$, per il {{formula:6.6}} si ha $\lim_{t\to 0}\frac{\sin t}{t}=1$, dunque
+Posto $t=3x\to 0$ quando $x\to 0$, per il limite notevole del seno {{formula:6.6}} si ha $\lim_{t\to 0}\frac{\sin t}{t}=1$, dunque
 
 $$
 \lim_{x\to 0} f(x)=3\cdot 1=3.
 $$
 
-Per la {{formula:5.1}} la funzione è continua in $0$ se e solo se $a=\lim_{x\to 0} f(x)=3$.
+Per la formula {{formula:5.1}} la funzione è continua in $0$ se e solo se $a=\lim_{x\to 0} f(x)=3$.
 :::
 :::
 
@@ -1233,7 +1233,7 @@ $$
 f(1)=1+a,\qquad \lim_{x\to 1^+} f(x)=\lim_{x\to 1^+}(3x-1)=2.
 $$
 
-Per la {{formula:4.6}} e la {{formula:5.1}}, $f$ è continua in $x=1$ se e solo se
+Per la formula {{formula:4.6}} e la formula {{formula:5.1}}, $f$ è continua in $x=1$ se e solo se
 
 $$
 1+a=2\ \Longrightarrow\ a=1.
@@ -1283,7 +1283,7 @@ $$
 classificando il tipo di eventuale discontinuità.
 
 :::hint
-Per il limite da sinistra usare il teorema del confronto osservando che $\left|x^2\sin(1/x)\right|\le x^2$; per il limite da destra usare lo sviluppo di Taylor di $e^x$ con il {{formula:8.2}}.
+Per il limite da sinistra usare il teorema del confronto osservando che $\left|x^2\sin(1/x)\right|\le x^2$; per il limite da destra usare lo sviluppo di Taylor di $e^x$ con il resto di Peano {{formula:8.2}}.
 :::
 
 :::solution
@@ -1293,7 +1293,7 @@ $$
 \lim_{x\to 0^-} f(x)=0.
 $$
 
-Per $x>0$, usando la {{formula:8.2}} si ha $e^x=1+x+\dfrac{x^2}{2}+o(x^2)$ per $x\to 0$, dunque
+Per $x>0$, usando la formula {{formula:8.2}} si ha $e^x=1+x+\dfrac{x^2}{2}+o(x^2)$ per $x\to 0$, dunque
 
 $$
 e^x-1-x=\frac{x^2}{2}+o(x^2),
@@ -1594,7 +1594,7 @@ In (b), dal punto $c \in (a,b)$ fornito da {{formula:7.12}} si ricava $\frac{1}{
 :::
 
 :::solution
-(a) La funzione $f(x) = \ln x$ è continua su $\lbrack 1,e\rbrack $ e derivabile su $(1,e)$, con $f'(x) = 1/x$. Per il {{formula:7.12}} esiste $c \in (1,e)$ tale che $f'(c) = \dfrac{f(e)-f(1)}{e-1} = \dfrac{1-0}{e-1} = \dfrac{1}{e-1}$. Poiché $f'(c) = 1/c$, si ottiene $c = e-1$, che è effettivamente in $(1,e)$ dato che $e \approx 2{,}718$. 
+(a) La funzione $f(x) = \ln x$ è continua su $\lbrack 1,e\rbrack $ e derivabile su $(1,e)$, con $f'(x) = 1/x$. Per il teorema di Lagrange {{formula:7.12}} esiste $c \in (1,e)$ tale che $f'(c) = \dfrac{f(e)-f(1)}{e-1} = \dfrac{1-0}{e-1} = \dfrac{1}{e-1}$. Poiché $f'(c) = 1/c$, si ottiene $c = e-1$, che è effettivamente in $(1,e)$ dato che $e \approx 2{,}718$. 
 
 (b) Per $0<a<b$, $f(x)=\ln x$ è continua su $\lbrack a,b\rbrack $ e derivabile su $(a,b)$. Per {{formula:7.12}} esiste $c \in (a,b)$ con $\dfrac{1}{c} = \dfrac{\ln b - \ln a}{b-a} = \dfrac{\ln(b/a)}{b-a}$. Poiché $a < c < b$ e la funzione $t \mapsto 1/t$ è decrescente per $t>0$, si ha $\dfrac{1}{b} < \dfrac{1}{c} < \dfrac{1}{a}$, cioè $\dfrac{1}{b} < \dfrac{\ln(b/a)}{b-a} < \dfrac{1}{a}$. Moltiplicando per $b-a > 0$ si ottiene $\dfrac{b-a}{b} < \ln\dfrac{b}{a} < \dfrac{b-a}{a}$, come richiesto.
 :::
@@ -1661,7 +1661,7 @@ Verificare continuità, derivabilità e che $f(1)=f(3)$, poi risolvere $f'(c)=0$
 :::
 
 :::solution
-La funzione $f$ è un polinomio, dunque continua su $\lbrack 1,3\rbrack $ e derivabile su $(1,3)$. Si ha $f(1) = 1 - 4 + 3 = 0$ e $f(3) = 9 - 12 + 3 = 0$, quindi $f(1) = f(3)$. Sono soddisfatte tutte le ipotesi del {{formula:7.11}}, che garantisce l'esistenza di almeno un punto $c \in (1,3)$ con $f'(c) = 0$. Calcolando $f'(x) = 2x - 4$ e risolvendo $2c - 4 = 0$ si ottiene $c = 2$, che effettivamente appartiene a $(1,3)$.
+La funzione $f$ è un polinomio, dunque continua su $\lbrack 1,3\rbrack $ e derivabile su $(1,3)$. Si ha $f(1) = 1 - 4 + 3 = 0$ e $f(3) = 9 - 12 + 3 = 0$, quindi $f(1) = f(3)$. Sono soddisfatte tutte le ipotesi del teorema di Rolle {{formula:7.11}}, che garantisce l'esistenza di almeno un punto $c \in (1,3)$ con $f'(c) = 0$. Calcolando $f'(x) = 2x - 4$ e risolvendo $2c - 4 = 0$ si ottiene $c = 2$, che effettivamente appartiene a $(1,3)$.
 :::
 :::
 
@@ -1687,7 +1687,7 @@ Un punto stazionario è un punto in cui $f'(x)=0$, si veda {{formula:7.9}}; calc
 :::
 
 :::solution
-Il {{formula:7.10}} afferma che se $f$ è derivabile in un punto di massimo o minimo relativo interno al dominio, allora la derivata in quel punto è nulla. Calcoliamo $f'(x) = 4x^3 - 8x = 4x(x^2 - 2)$. Risolvendo $f'(x) = 0$ si ottiene $x = 0$ oppure $x^2 = 2$, cioè $x = \pm\sqrt{2}$. I punti stazionari sono quindi $x=0$, $x=\sqrt{2}$, $x=-\sqrt{2}$, con $f(0) = 3$ e $f(\pm\sqrt{2}) = 4 - 8 + 3 = -1$.
+Il teorema di Fermat {{formula:7.10}} afferma che se $f$ è derivabile in un punto di massimo o minimo relativo interno al dominio, allora la derivata in quel punto è nulla. Calcoliamo $f'(x) = 4x^3 - 8x = 4x(x^2 - 2)$. Risolvendo $f'(x) = 0$ si ottiene $x = 0$ oppure $x^2 = 2$, cioè $x = \pm\sqrt{2}$. I punti stazionari sono quindi $x=0$, $x=\sqrt{2}$, $x=-\sqrt{2}$, con $f(0) = 3$ e $f(\pm\sqrt{2}) = 4 - 8 + 3 = -1$.
 :::
 :::
 
@@ -1839,7 +1839,7 @@ Il dominio è $\mathbb{R}\setminus\{0\}$. La derivata è $f'(x)=1-\frac1{x^2}=\f
 Sia $G(x) = \displaystyle\int_0^{x^2} e^{-t^2}\,dt$. Calcolare $G'(x)$ per ogni $x\in\mathbb{R}$.
 
 :::hint
-Applica il {{formula:9.14}} alla funzione integrale con estremo superiore $x^2$, usando la regola della derivata di una funzione composta.
+Applica il teorema fondamentale del calcolo integrale {{formula:9.14}} alla funzione integrale con estremo superiore $x^2$, usando la regola della derivata di una funzione composta.
 :::
 
 :::solution
@@ -1860,7 +1860,7 @@ $$\int \left(2x^3 - \frac{1}{\sqrt{x}} + e^{2x}\right) dx,$$
 specificando l'intervallo in cui il risultato è valido.
 
 :::hint
-Applica la {{formula:9.3}} e usa le primitive elementari di $x^n$, $x^{-1/2}$ e $e^{kx}$.
+Applica la formula {{formula:9.3}} e usa le primitive elementari di $x^n$, $x^{-1/2}$ e $e^{kx}$.
 :::
 
 :::solution
@@ -1887,7 +1887,7 @@ Calcolare, per $x>0$, l'integrale indefinito
 $$\int x\ln x\,dx.$$
 
 :::hint
-Applica la {{formula:9.5}} scegliendo $u=\ln x$ e $dv = x\,dx$.
+Applica la formula {{formula:9.5}} scegliendo $u=\ln x$ e $dv = x\,dx$.
 :::
 
 :::solution
@@ -1914,7 +1914,7 @@ $$\int \frac{x^3+1}{x^2-1}\,dx,$$
 indicando il dominio in cui la primitiva trovata è valida.
 
 :::hint
-La frazione è impropria: fattorizza numeratore e denominatore e semplifica prima di integrare, usando la {{formula:9.6}}.
+La frazione è impropria: fattorizza numeratore e denominatore e semplifica prima di integrare, usando la formula {{formula:9.6}}.
 :::
 
 :::solution
@@ -1947,7 +1947,7 @@ Determinare tutte le funzioni $f:\mathbb{R}\to\mathbb{R}$ continue tali che
 $$f(x) = 2 + \int_0^x f(t)\,dt \qquad \text{per ogni } x\in\mathbb{R}.$$
 
 :::hint
-Deriva entrambi i membri usando il {{formula:9.14}} per trasformare l'equazione integrale in un {{formula:11.2}}, poi risolvi l'equazione lineare del primo ordine ottenuta.
+Deriva entrambi i membri usando il teorema fondamentale del calcolo integrale {{formula:9.14}} per trasformare l'equazione integrale in un {{formula:11.2}}, poi risolvi l'equazione lineare del primo ordine ottenuta.
 :::
 
 :::solution
@@ -1980,7 +1980,7 @@ b) Calcolare $\displaystyle\int_0^2 f(x)\,dx$.
 c) Stabilire se esiste $c\in[0,2]$ tale che $f(c)$ coincide con la media integrale di $f$ su $\lbrack 0,2\rbrack $, e in caso affermativo determinarne tutti i valori.
 
 :::hint
-Per la continuità in $x=1$ confronta i due limiti laterali con il valore della funzione; per il punto c) usa il {{formula:9.12}}. Risolvi l’equazione $f(c)=\frac{5}{12}$ in entrambi i rami e verifica che le soluzioni appartengano ai rispettivi intervalli.
+Per la continuità in $x=1$ confronta i due limiti laterali con il valore della funzione; per il punto c) usa il teorema della media integrale {{formula:9.12}}. Risolvi l’equazione $f(c)=\frac{5}{12}$ in entrambi i rami e verifica che le soluzioni appartengano ai rispettivi intervalli.
 :::
 
 :::solution
@@ -2003,7 +2003,7 @@ c) La media integrale è $\frac{1}{2-0}\int_0^2 f(x)\,dx = \frac{1}{2}\cdot\frac
 Sia $F(x) = \displaystyle\int_0^x \frac{t}{1+t^2}\,dt$, definita per $x\in\mathbb{R}$. Determinare gli intervalli di monotonia di $F$, il suo punto di minimo assoluto, e scrivere l'espressione esplicita di $F(x)$.
 
 :::hint
-Usa il {{formula:9.14}} per calcolare $F'(x)$ e applica il {{formula:7.13}}; per l'espressione esplicita integra per sostituzione.
+Usa il teorema fondamentale del calcolo integrale {{formula:9.14}} per calcolare $F'(x)$ e applica il test di monotonia {{formula:7.13}}; per l'espressione esplicita integra per sostituzione.
 :::
 
 :::solution
@@ -2026,7 +2026,7 @@ Questa formula confirma il comportamento trovato: $\frac12\ln(1+x^2)\ge 0$ con u
 Sia $f(x)=x^2+1$. Verificare che $f$ è integrabile su $\lbrack 0,2\rbrack $ e calcolare $\displaystyle\int_0^2 f(x)\,dx$.
 
 :::hint
-Una funzione continua su un intervallo chiuso e limitato è integrabile per il {{formula:9.10}}; per il calcolo usa una primitiva di $f$.
+Una funzione continua su un intervallo chiuso e limitato è integrabile per il criterio di integrabilità {{formula:9.10}}; per il calcolo usa una primitiva di $f$.
 :::
 
 :::solution
@@ -2043,7 +2043,7 @@ $$\int_0^2 f(x)\,dx = F(2)-F(0) = \left(\frac{8}{3}+2\right) - 0 = \frac{8}{3}+\
 Calcolare $\displaystyle\int_{-2}^{2} |x^3-x|\,dx$.
 
 :::hint
-Studia il segno di $x^3-x=x(x-1)(x+1)$ sui sottointervalli determinati dagli zeri, poi usa l'additività dell'integrale sugli intervalli e la {{formula:9.11}}.
+Studia il segno di $x^3-x=x(x-1)(x+1)$ sui sottointervalli determinati dagli zeri, poi usa l'additività dell'integrale sugli intervalli e la formula {{formula:9.11}}.
 :::
 
 :::solution
