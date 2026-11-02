@@ -379,3 +379,77 @@ L'errore più frequente consiste nel confondere resa reale e resa teorica nel ra
 Un secondo errore tipico è calcolare la resa teorica dimenticando di identificare correttamente il reagente limitante quando nel problema sono fornite le quantità di più reagenti; la resa teorica deve sempre basarsi sulle moli del reagente limitante, non su un reagente qualsiasi presente in eccesso, come già osservato nella sezione sul reagente limitante.
 
 Infine, nei calcoli a più passaggi tipici di questi problemi è opportuno conservare una o due cifre significative in più nei risultati intermedi (moli teoriche, moli reali) e arrotondare solo il risultato finale della resa percentuale, per evitare che gli arrotondamenti intermedi si accumulino e alterino il risultato finale.
+
+## p6 | Come viene chiesto all'esame
+
+Nelle quattro sessioni d'esame a disposizione, tutte e quattro contengono almeno un esercizio su questo capitolo. Il tipo che ritorna più spesso è il calcolo stechiometrico: una reazione da bilanciare, poi quantità di reagenti e prodotti, quasi sempre accompagnati da una legge dei gas o da una concentrazione. Gli esercizi di sola stechiometria sono rari. Il capitolo compare soprattutto come passaggio intermedio dentro problemi che toccano altri argomenti.
+
+Gli enunciati sono qui riportati solo in parte, e la parte visibile non contiene richieste isolate di composizione percentuale o di resa. Quelle sezioni restano comunque il lessico del calcolo: la resa e le percentuali in massa possono comparire nei testi completi, per cui conviene conoscerle ([Composizione percentuale e formule empiriche](ref:chapter/4#p2), [Resa di reazione](ref:chapter/4#p5)).
+
+Il test informatizzato e la prova scritta da 70 minuti non permettono di consultare materiale. Il bilanciamento e le masse molari devono quindi diventare automatici, perché gli errori di partenza si propagano su tutti i punti successivi.
+
+### Tipo 1: scrivere e bilanciare la reazione descritta a parole
+
+Quasi ogni esercizio parte da qui. Il testo nomina reagenti e prodotti (a volte con la formula già scritta) e chiede l'equazione bilanciata. Nelle sessioni viste la reazione è spesso una redox, in cui il bilanciamento per ispezione semplice non basta.
+
+Metodo, che si appoggia su [Equazioni chimiche e bilanciamento](ref:chapter/4#p3) e su [Reazioni di ossidoriduzione](ref:chapter/5#p5):
+
+1. Traduci i nomi in formule, controllando le cariche degli ioni e i numeri di ossidazione (nomenclatura Stock, per esempio stagno(II)).
+2. Assegna i numeri di ossidazione e individua chi si ossida e chi si riduce. Se un elemento sale e scende nella stessa reazione, si tratta di una dismutazione.
+3. Scrivi le semireazioni, bilancia gli atomi e le cariche, pareggia gli elettroni scambiati e somma.
+4. Riporta i coefficienti nell'equazione molecolare e bilancia a vista gli ioni spettatori e l'acqua.
+5. Verifica atomo per atomo, in particolare O e H per ultimi, e controlla che i coefficienti siano interi minimi.
+
+Errori tipici: dimenticare che l'acido (HCl, H₂SO₄) fa anche da mezzo e non solo da reagente; bilanciare O e H prima degli altri elementi; non ridurre i coefficienti ai minimi; trascurare un ione spettatore che compare tra i prodotti.
+
+Esempi.
+
+- Tema d'esame 14 + soluzione, n. 1: $\mathrm{Cl_2 + NaOH \to NaCl + NaClO_3 + H_2O}$ è una dismutazione. Il cloro passa da 0 a $-1$ e a $+5$, e gli elettroni pareggiati danno $3\,\mathrm{Cl_2} + 6\,\mathrm{NaOH} \to 5\,\mathrm{NaCl} + \mathrm{NaClO_3} + 3\,\mathrm{H_2O}$.
+- Tema d'esame 16 + soluzione (Savorani), n. 1: dicromato, cloruro di stagno(II) e acido cloridrico. Il cromo scende da $+6$ a $+3$ e lo stagno sale da $+2$ a $+4$, quindi servono 3 Sn per ogni dicromato. L'equazione finale è $\mathrm{K_2Cr_2O_7} + 3\,\mathrm{SnCl_2} + 14\,\mathrm{HCl} \to 2\,\mathrm{CrCl_3} + 3\,\mathrm{SnCl_4} + 2\,\mathrm{KCl} + 7\,\mathrm{H_2O}$. Il conteggio dei Cl (20 a sinistra, 20 a destra) è la verifica finale.
+
+La stessa logica compare in Tema d_esame 15 + soluzione, n. 1 (nitrato di piombo(II), rame e acido solforico). Lì il rame passa da 0 a $+2$ e l'azoto da $+5$ a $+2$, e si ottiene $3\,\mathrm{Cu} + \mathrm{Pb(NO_3)_2} + 4\,\mathrm{H_2SO_4} \to \mathrm{PbSO_4} + 3\,\mathrm{CuSO_4} + 2\,\mathrm{NO} + 4\,\mathrm{H_2O}$.
+
+### Tipo 2: quantità di prodotto e reagente limitante con dati di natura diversa
+
+Dopo il bilanciamento l'esame fornisce le quantità dei reagenti in forme diverse: grammi di un solido, litri di una soluzione concentrata data in percentuale, volumi di gas. Si chiede la massa (o le moli) di un prodotto, e a volte anche quanto resta del reagente in eccesso.
+
+Metodo, con riferimento a [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4) e a [Masse atomiche, mole e massa molare](ref:chapter/2#p5):
+
+1. Porta ogni dato in moli, con $n = m/M$ per i solidi (formula [formula (2.4)](ref:formula/2.4)), con la molarità per le soluzioni (formula [formula (11.3)](ref:formula/11.3)) e con l'equazione di stato per i gas.
+2. Per una soluzione data in percentuale in massa, passa dal volume alla massa con la densità e poi alla massa di soluto con la percentuale (vedi [Espressioni della concentrazione](ref:chapter/11#p3)).
+3. Per ogni reagente calcola $n_i/\nu_i$. Il più piccolo è il reagente limitante, secondo il criterio {{formula:4.3}}.
+4. Con il rapporto molare {{formula:4.2}} passa dalle moli del limitante a quelle del prodotto richiesto, poi converti in grammi.
+5. Se serve l'eccesso residuo, sottrai alle moli iniziali dell'altro reagente quelle consumate.
+6. Controlla l'ordine di grandezza e le cifre significative (vedi [Grandezze, unità e cifre significative](ref:chapter/1#p3)).
+
+Errori tipici: scegliere il limitante confrontando direttamente le moli o le masse, senza dividere per i coefficienti; usare i litri di una soluzione concentrata come se fossero i litri del soluto; mescolare mL e L, g e mg, cm³ e m³; arrotondare i risultati intermedi.
+
+Esempio. Tema d_esame 16 + soluzione (Savorani), n. 1, seconda richiesta: i grammi di CrCl₃ ottenibili da 565,0 g di SnCl₂ e da 2,0 L di HCl al 37,0 %. Si converte lo SnCl₂ in moli con la sua massa molare. Si ricavano le moli di HCl dalla soluzione, dopo averla tradotta in massa di soluto. Con i coefficienti 3 : 14 : 2 si individua il limitante e si calcolano i grammi di CrCl₃.
+
+Un secondo esempio con dati misti è Tema d_esame 15 + soluzione, n. 1: 780 mg di CuSO₄ prodotto sono disciolti in acqua fino a 980 cm³ e se ne prelevano 100 mL. Qui il collegamento con la stechiometria è la molarità, calcolata dalle moli del prodotto, e il prelievo parziale è una semplice proporzione sul volume.
+
+### Tipo 3: stechiometria con gas ideali
+
+È il tipo più frequente nelle quattro sessioni. I gas sono dati con volume, temperatura e pressione, e il testo chiede la pressione finale di una miscela dopo la reazione, oppure le moli o la pressione parziale di un componente. Gli stati iniziale e finale hanno quasi sempre condizioni diverse, per questo l'esercizio non si risolve con un solo passaggio.
+
+Metodo, con riferimento a [Pressione e leggi dei gas ideali](ref:chapter/6#p2), [Densità, massa molare e miscele gassose](ref:chapter/6#p3) e alla sezione sui calcoli stechiometrici:
+
+1. Converti ogni gas in moli con l'equazione di stato [formula (6.5)](ref:formula/6.5), usando le condizioni a cui il dato è stato misurato. Dichiara il valore di $R$ scelto, per esempio $R = 0{,}08206$ L·atm/(mol·K), e usa $T$ in kelvin ($T = t + 273{,}15$).
+2. Bilancia la reazione e individua il limitante con il rapporto $n_i/\nu_i$.
+3. Costruisci il bilancio "iniziale / variazione / finale" in moli, per ogni specie gassosa, solidi esclusi dal conteggio della pressione.
+4. Somma le moli gassose finali e applica di nuovo $PV = nRT$, questa volta con il volume del recipiente e con la temperatura finale.
+5. Per le pressioni parziali usa la frazione molare, formula [formula (6.10)](ref:formula/6.10), e verifica che la somma restituisca la pressione totale (legge di Dalton, [formula (6.8)](ref:formula/6.8)).
+
+Errori tipici: usare i °C nell'equazione di stato; applicare il volume e la temperatura iniziali al calcolo finale; contare un solido (o l'acqua liquida) tra le moli gassose; usare 22,414 L/mol fuori dalle condizioni STP.
+
+Esempi.
+
+- Tema d_esame 3 + soluzione, n. 1: miscela di 100,0 mL di N₂ e 400,0 mL di H₂ a 0 °C e 1 atm, poi pressione in 0,700 L a 225 °C. A temperatura e pressione uguali i volumi sono proporzionali alle moli ([formula (6.4)](ref:formula/6.4)), dunque $\mathrm{N_2} + 3\,\mathrm{H_2} \to 2\,\mathrm{NH_3}$ si legge direttamente in mL. Il limitante è N₂ (100 contro 400/3). Restano 100 mL di H₂ e si formano 200 mL di NH₃, in totale 300 mL, pari a $n = 0{,}3000/22{,}414 = 0{,}01338$ mol. Alla fine $P = nRT/V \approx 0{,}78$ atm. L'esercizio contiene anche la domanda teorica D1 sulla definizione di acido e base secondo Brønsted-Lowry, che si studia in [Teorie acido-base e forza degli acidi](ref:chapter/13#p2).
+- Tema d_esame 16 + soluzione (Savorani), n. 2: 40 g di ZnS e un volume di O₂ misurato a 10 °C e 3 atm, in un recipiente da 1 m³ portato a 900 °C. Le moli di O₂ si calcolano con le condizioni di 10 °C e 3 atm, e quelle di ZnS dalla massa. La reazione bilanciata $2\,\mathrm{ZnS} + 3\,\mathrm{O_2} \to 2\,\mathrm{ZnO} + 2\,\mathrm{SO_2}$ dice poi chi è limitante e quante moli di SO₂ si formano. Per gli eventuali valori a 900 °C si passa all'equazione di stato con la nuova temperatura.
+- Tema d_esame 15 + soluzione, n. 2: una miscela di O₂ e N₂ in 2500 cm³ a 25 °C, con massa 0,012 kg e il 20 % in massa di ossigeno. Prima si ricavano le moli dalle masse, quindi le frazioni molari e le pressioni parziali. Poi si studia la reazione stechiometrica verso N₂O, per la quale servono anche dati termochimici (tratti in [Entalpia ed equazioni termochimiche](ref:chapter/7#p3)).
+
+### Altri tipi, visti in una sola sessione
+
+Tre richieste compaiono in una sola sessione e non meritano un metodo a sé. Tema d_esame 14 + soluzione, n. 1, punto b, chiede un'elettrolisi di NaCl con resa faradica unitaria, che si affronta con le leggi di Faraday ([Elettrolisi e leggi di Faraday](ref:chapter/16#p5)) usando i coefficienti per le moli di gas sviluppate agli elettrodi. Tema d_esame 14 + soluzione, n. 2, parte da un eccesso di ZnO con 2 mol di H₂ e porta all'equilibrio, con $K_p = 1{,}12$ atm a 3,20 atm; la stechiometria dà solo la tabella "iniziale / variazione / equilibrio" ed è l'equilibrio a chiudere il calcolo ([Quoziente di reazione e calcoli di equilibrio](ref:chapter/12#p3)). La domanda teorica D1 del Tema 3 è già stata citata più sopra.
+
+In tutti questi casi il primo passo resta lo stesso: una reazione bilanciata e le moli di ogni specie.

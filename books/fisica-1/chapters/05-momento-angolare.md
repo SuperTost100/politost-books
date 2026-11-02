@@ -27,7 +27,7 @@ Dalle proprietà del prodotto vettoriale, già introdotte nella sezione su [vett
 
 $$
 
-[M] = \mathrm{N}\cdot\mathrm{m} = \mathrm{kg}\cdot\mathrm{m}^2\cdot\mathrm{s}^{-2}.
+\lbrack M\rbrack  = \mathrm{N}\cdot\mathrm{m} = \mathrm{kg}\cdot\mathrm{m}^2\cdot\mathrm{s}^{-2}.
 $$
 
 Si noti che dimensionalmente coincide con quella dell'energia, ma $\vec{M}$ è un vettore e l'energia uno scalare: non vanno mai confusi.
@@ -148,7 +148,7 @@ con entrambi i fattori scritti come vettori e il risultato perpendicolare al pia
 
 ### Definizione di momento angolare
 
-Il teorema dell'impulso, visto nella sezione su [quantità di moto e impulso](ref:chapter/3#p3), lega la variazione della quantità di moto all'azione di una forza nel tempo. Esiste un teorema analogo per le rotazioni, che lega la variazione di una nuova grandezza vettoriale, il momento angolare, al momento delle forze applicate, definito nella sezione precedente su [momento di una forza](ref:chapter/5#p2).
+Il teorema dell'impulso, visto nella sezione su [quantità di moto e impulso](ref:chapter/3#p4), lega la variazione della quantità di moto all'azione di una forza nel tempo. Esiste un teorema analogo per le rotazioni, che lega la variazione di una nuova grandezza vettoriale, il momento angolare, al momento delle forze applicate, definito nella sezione precedente su [momento di una forza](ref:chapter/5#p2).
 
 **Definizione 5.3** (Momento angolare). Dato un punto materiale di massa $m$, posizione $\vec{r}$ rispetto a un polo $O$ scelto in modo arbitrario, e velocità $\vec{v}$, si definisce momento angolare del punto rispetto al polo $O$ la quantità vettoriale
 
@@ -224,7 +224,7 @@ Come nel caso della quantità di moto, per produrre una variazione finita del mo
 
 $$\int_{t_1}^{t_2} \vec{M}_O\, dt = \vec{L}_O(t_2) - \vec{L}_O(t_1) = \Delta \vec{L}_O,$$
 
-relazione detta teorema del momento dell'impulso, perfettamente analoga a [formula (3.7)](ref:formula/3.7) per la quantità di moto.
+relazione detta teorema del momento dell'impulso, perfettamente analoga a [formula (3.9)](ref:formula/3.9) per la quantità di moto.
 
 ### Esempio svolto: punto vincolato a una guida circolare da un filo
 
@@ -284,7 +284,9 @@ Questa osservazione, insieme al teorema del momento angolare già dimostrato in 
 
 **Teorema 5.3.** Sia $P$ un punto materiale di massa $m$ soggetto a una forza centrale di centro $O$, con $O$ scelto come polo fisso in un riferimento inerziale. Allora il momento angolare $\vec{L}_O = \vec{r}\times m\vec{v}$ è costante nel tempo; di conseguenza il moto avviene in un piano fisso passante per $O$ e il raggio vettore $\vec{r}$ spazza aree uguali in tempi uguali (velocità areolare costante).
 
-*Dimostrazione.* Applicando il teorema del momento angolare del punto materiale, $\frac{d\vec{L}_O}{dt} = \vec{M}_O$, e osservando che per una forza centrale $\vec{M}_O = \vec{r}\times\vec{F} = r\hat{u}_r \times F(r)\hat{u}_r = 0$, si ottiene
+**Dimostrazione richiesta all'esame.**
+
+*Dimostrazione.* Si procede in tre passi: conservazione di $\vec{L}_O$, planarità del moto, velocità areolare. Derivando $\vec{L}_O = \vec{r}\times m\vec{v}$ rispetto al tempo, con $O$ fisso, si ha $\frac{d\vec{L}_O}{dt} = \vec{v}\times m\vec{v} + \vec{r}\times m\vec{a}$; il primo termine è nullo perché $\vec{v}$ è parallelo a se stesso e, in un riferimento inerziale, $m\vec{a}=\vec{F}$. Si ottiene così il teorema del momento angolare del punto materiale, $\frac{d\vec{L}_O}{dt} = \vec{M}_O$, e osservando che per una forza centrale $\vec{M}_O = \vec{r}\times\vec{F} = r\hat{u}_r \times F(r)\hat{u}_r = 0$, si ottiene
 
 :::formula{id="5.8" label="Conservazione del momento angolare in un campo di forze centrali"}
 $$\frac{d\vec{L}_O}{dt} = \vec{r}\times\vec{F} = 0 \quad\Longrightarrow\quad \vec{L}_O = \vec{r}\times m\vec{v} = \text{costante}$$
@@ -296,7 +298,7 @@ Conviene allora descrivere il moto nel piano con coordinate polari $(r,\theta)$ 
 
 $$\vec{L}_O = \vec{r}\times m\vec{v} = \vec{r}\times m(\vec{v}_r+\vec{v}_\theta) = \vec{r}\times m\vec{v}_\theta ,$$
 
-che in modulo dà $L = m r v_\theta = m r^2 |\dot\theta|$, essendo $L$ il modulo del momento angolare, sempre non negativo, mentre $\dot\theta$ può essere negativo se il moto procede nel verso opposto a quello scelto come positivo. Conviene allora orientare l'asse ortogonale al piano del moto in modo che risulti $\dot\theta\ge 0$: con questa convenzione, che adottiamo nel seguito, si ha semplicemente $L = m r^2\dot\theta$. Nell'intervallo infinitesimo $dt$ il raggio vettore spazza un'area approssimabile a un triangolo di base $r\,d\theta$ e altezza $r$, quindi $dA = \frac12 r^2 d\theta$, da cui la velocità areolare
+che in modulo dà $L = m r v_\theta = m r^2 |\dot\theta|$, essendo $L$ il modulo del momento angolare, sempre non negativo, mentre $\dot\theta$ può essere negativo se il moto procede nel verso opposto a quello scelto come positivo. Conviene allora orientare l'asse ortogonale al piano del moto in modo che risulti $\dot\theta\ge 0$: con questa convenzione, che adottiamo nel seguito, si ha semplicemente $L = m r^2\dot\theta$. Nell'intervallo infinitesimo $dt$ il raggio vettore spazza un'area approssimabile a un triangolo di base $r\,d\theta$ e altezza $r$, quindi $dA = \frac12 r^2 d\theta$. In modo equivalente, il triangolo ha per lati $\vec{r}$ e lo spostamento $\vec{v}\,dt$, per cui $dA = \frac12|\vec{r}\times\vec{v}|\,dt$, cioè $\dfrac{dA}{dt} = \dfrac{|\vec{r}\times\vec{v}|}{2} = \dfrac{L}{2m}$. Ne segue la velocità areolare
 
 :::formula{id="5.9" label="Velocità areolare e sua costanza"}
 $$\frac{dA}{dt} = \frac12 r^2\frac{d\theta}{dt} = \frac{L}{2m} = \text{costante}$$
@@ -367,7 +369,7 @@ Questa relazione, combinata con la conservazione dell'energia meccanica tra afel
 
 *Equazioni.* Al perielio e all'afelio $\vec{r}$ e $\vec{v}$ sono ortogonali, quindi $L_z^p = m r_p v_p$ e $L_z^a = m r_a v_a$; dalla conservazione del momento angolare {{formula:5.13}} segue $r_p v_p = r_a v_a$. La conservazione dell'energia meccanica dà $\frac12 v_p^2 - \dfrac{GM}{r_p} = \frac12 v_a^2 - \dfrac{GM}{r_a}$.
 
-*Soluzione letterale.* Sostituendo $v_a = v_p\,r_p/r_a$, ricavato dalla conservazione del momento angolare, nella conservazione dell'energia meccanica si ottiene $\frac12 v_p^2\left\lbrack 1-\left(\dfrac{r_p}{r_a}\right)^2\right\rbrack  = GM\left(\dfrac{1}{r_p}-\dfrac{1}{r_a}\right)$, da cui
+*Soluzione letterale.* Sostituendo $v_a = v_p\,r_p/r_a$, ricavato dalla conservazione del momento angolare, nella conservazione dell'energia meccanica si ottiene $\frac12 v_p^2\left[1-\left(\dfrac{r_p}{r_a}\right)^2\right] = GM\left(\dfrac{1}{r_p}-\dfrac{1}{r_a}\right)$, da cui
 
 $$v_p = \sqrt{\frac{2GM\,r_a}{r_p(r_a+r_p)}}, \qquad v_a = \sqrt{\frac{2GM\,r_p}{r_a(r_a+r_p)}} .$$
 
@@ -383,3 +385,39 @@ $$v_p = \sqrt{\frac{2GM\,r_a}{r_p(r_a+r_p)}}, \qquad v_a = \sqrt{\frac{2GM\,r_p}
 **Errore tipico 5.6.** Concludere erroneamente che, poiché $\vec{L}_O$ è costante, anche $r$ e $v_\theta$ separatamente debbano restarlo: la costanza riguarda il prodotto vettoriale nel suo complesso, non le singole componenti del moto, come mostra la relazione $v_\theta(r)=v_{\theta,1} r_1/r$. La sola conservazione del momento angolare determina $v_\theta(r)$, ma non il modulo della velocità totale $v(r)$; nel campo centrale conservativo trattato qui, quest'ultimo si può determinare anche per orbite non circolari usando anche la conservazione dell'energia meccanica.
 
 **Errore tipico 5.7.** Usare la sola conservazione dell'energia meccanica, senza la conservazione del momento angolare, per determinare due incognite (ad esempio velocità all'afelio e al perielio): le due leggi vanno sempre combinate, perché l'energia meccanica da sola non distingue le direzioni di $\vec{v}$ in punti diversi dell'orbita.
+
+## p5 | Come viene chiesto all'esame
+
+Il capitolo sul momento angolare è comparso in 1 sessione d'esame su 6. L'unica domanda disponibile è un esercizio misto, in cui il momento di una forza serve per risolvere un problema di equilibrio e non viene chiesto come argomento a sé.
+
+### Che cosa mostra l'unica domanda
+
+Si tratta della Prova scritta - TEMA ESAME 2 - 2024, esercizio 1A. Le etichette di argomento dell'esercizio sono: momento della forza, energia potenziale e forze conservative, urti, moto circolare. Il momento angolare del punto e le forze centrali non compaiono tra queste etichette. Su queste basi non si può dire che l'esame le richieda in forma di esercizio. Con una sola domanda non si può nemmeno parlare di tipi ricorrenti, quindi qui non distinguo sottotipi.
+
+L'enunciato descrive un pendolo semplice, con $m_1 = 0,2$ kg e $L = 0,5$ m. È tenuto in equilibrio a $\theta = 60^\circ$ dalla verticale da una forza orizzontale $\vec{F}$, di cui si chiede il modulo. Poi $\vec{F}$ viene rimossa e il pendolo oscilla. Quando passa per la verticale urta centralmente un punto materiale di massa $m_2 = 0,1$ kg. Il testo di cui dispongo si interrompe qui, e non descrivo il seguito della domanda.
+
+### Metodo per la parte sull'equilibrio
+
+Il primo quesito, il modulo di $\vec{F}$, è dove entra il momento di una forza. Si procede così:
+
+1. Si dichiara il polo: il punto di sospensione $O$ del filo. Rispetto a $O$ la tensione ha momento nullo, perché la sua retta d'azione passa per il polo ([Momento di una forza](ref:chapter/5#p2)).
+2. Si disegnano le forze sulla massa $m_1$: peso, tensione del filo e $\vec{F}$ orizzontale.
+3. Si impone che il momento risultante rispetto a $O$ sia nullo. Con il metodo del braccio, il braccio del peso è $L\sin\theta$ e il braccio di $\vec{F}$ è $L\cos\theta$. L'equilibrio dà quindi $F\,L\cos\theta = m_1 g\,L\sin\theta$, cioè $F = m_1 g\tan\theta$.
+4. In alternativa si scrivono le due equazioni di equilibrio delle forze, secondo la direzione orizzontale e verticale, e si elimina la tensione ([Reazioni vincolari ed equilibrio](ref:chapter/3#p5)).
+5. Si inseriscono i numeri con le unità e si controlla il risultato. Con i dati dell'enunciato viene $F \approx 3,4$ N. È un valore ragionevole: supera il peso $m_1 g \approx 2,0$ N perché $\tan 60^\circ > 1$.
+
+Gli errori da evitare sono quelli già segnalati nella sezione sul momento di una forza. Il primo è scrivere il momento come prodotto di scalari senza il braccio corretto, usando $L$ al posto di $L\cos\theta$ o di $L\sin\theta$. Il secondo è dimenticare di dichiarare il polo.
+
+### Le parti successive dell'esercizio
+
+Le etichette indicano che il seguito dell'esercizio richiede altri risultati, che i capitoli di riferimento trattano per intero:
+
+- la discesa del pendolo dopo la rimozione di $\vec{F}$ si risolve con la conservazione dell'energia ([Forze conservative ed energia potenziale](ref:chapter/4#p4));
+- l'urto centrale con $m_2$ si risolve con la conservazione della quantità di moto ([Urti](ref:chapter/7#p7));
+- lo studio del moto lungo l'arco di circonferenza è l'argomento di [Moto circolare](ref:chapter/2#p6) e di [Dinamica del moto curvilineo](ref:chapter/3#p8).
+
+### Come usare queste indicazioni
+
+Il formato dell'esame prevede, nello scritto, due problemi strutturati a domande aperte e domande di teoria, che possono includere le dimostrazioni svolte durante il corso. Per questo capitolo è quindi prudente saper ripetere le dimostrazioni del [teorema del momento angolare](ref:chapter/5#p3) e della [costanza della velocità areolare](ref:chapter/5#p4). Questo però è un consiglio basato sul regolamento della prova, e le domande passate non lo confermano.
+
+Un problema strutturato può combinare il momento di una forza con energia e urti, come nell'esercizio 1A. Conviene perciò dichiarare sempre il polo e scrivere i passaggi nell'ordine dato dall'enunciato.

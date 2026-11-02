@@ -515,7 +515,7 @@ L'occupazione degli orbitali molecolari è correlata direttamente con le proprie
 2. Strategia: riempire gli orbitali in ordine di energia crescente (Aufbau), applicando Pauli (massimo 2 elettroni per orbitale, spin opposti) e Hund (massima molteplicità nei $\pi_{2p}^{*}$ degeneri).
 3. Calcolo: la configurazione risultante è $(\sigma_{2s})^2(\sigma_{2s}^{*})^2(\sigma_{2p})^2(\pi_{2p})^4(\pi_{2p}^{*})^2$, con i due elettroni dei $\pi_{2p}^{*}$ spaiati per la regola di Hund, poiché i due orbitali $\pi_{2p}^{*}$ sono degeneri. L'ordine di legame si ottiene come segue.
 
-$$OL = \frac{1}{2}\big\lbrack (2+2+4) - (2+2)\big\rbrack  = \frac{8-4}{2} = 2$$
+$$OL = \frac{1}{2}\big[(2+2+4) - (2+2)\big] = \frac{8-4}{2} = 2$$
 
 Il risultato è coerente con il doppio legame O=O previsto anche dalla struttura di Lewis.
 4. Verifica e conclusione: i 2 elettroni spaiati nei $\pi_{2p}^{*}$ rendono O$_2$ paramagnetico, in accordo con l'osservazione sperimentale e in contrasto con la previsione (errata) di diamagnetismo data dalla struttura di Lewis, che mostra tutti gli elettroni appaiati in due doppietti di legame.
@@ -592,3 +592,38 @@ In sintesi, lo stesso criterio, l'ampiezza del band gap tra banda di valenza e b
 - Isolanti: gap ampio, alcuni eV, conducibilità trascurabile a qualunque temperatura ragionevole.
 
 **Errore tipico 9.11.** Ritenere che nei metalli la conducibilità aumenti con la temperatura, per analogia con i semiconduttori: nei metalli vale il contrario, perché l'aumento delle vibrazioni reticolari ostacola il moto degli elettroni già liberi di muoversi, mentre nei semiconduttori la temperatura serve proprio a fornire agli elettroni l'energia necessaria per superare il band gap.
+
+## p9 | Come viene chiesto all'esame
+
+Nelle sessioni d'esame analizzate, questo capitolo compare in **1 sessione su 4**. L'unico esercizio che lo riguarda chiede di assegnare l'ibridazione agli atomi di una molecola organica, dopo aver scritto la sua formula di struttura.
+
+Con un solo caso a disposizione non si può parlare di tipi ricorrenti, quindi qui non ci sono sottosezioni per tipo di esercizio. Descrivo soltanto ciò che quella domanda mostra.
+
+### Che cosa è stato chiesto
+
+La domanda è il punto D2 dell'esercizio 2 del Tema d'esame 3. L'esercizio ha due parti:
+
+- La prima è un calcolo di proprietà colligative: la quantità di glicerolo che, sciolta in una data massa d'acqua, produce un certo innalzamento ebullioscopico. Appartiene a un altro capitolo, quello su [Proprietà colligative](ref:chapter/11#p4).
+- La seconda, D2, riguarda questo capitolo. Chiede di scrivere la formula di semistruttura del glicerolo (1,2,3-propantriolo), di indicare l'ibridazione degli atomi di C e di dire a quale classe di composti organici appartiene.
+
+La domanda sul legame è quindi breve, qualitativa e senza calcoli. Chi la affronta deve saper collegare la formula del composto alla sua geometria e ai gruppi funzionali. Per questo si presenta come completamento di un esercizio numerico di un altro argomento.
+
+### Metodo per assegnare l'ibridazione
+
+1. Ricava dal nome la catena di atomi di carbonio e la posizione dei sostituenti. In "1,2,3-propantriolo" la radice *propan-* indica tre atomi di C in catena e il suffisso *-triolo* tre gruppi $-\text{OH}$, uno per carbonio. Scrivi la semistruttura: $\text{HOCH}_2\text{–CH(OH)–CH}_2\text{OH}$.
+2. Per ogni atomo di C conta i legami $\sigma$ e le coppie solitarie, cioè il numero sterico, come spiegato in [Geometria molecolare e teoria VSEPR](ref:chapter/9#p5). Qui ogni C ha quattro legami $\sigma$ (con C, H e O) e nessuna coppia solitaria, quindi il numero sterico è 4.
+3. Applica la corrispondenza fra numero sterico e ibridazione, descritta in [Legame di valenza e ibridazione](ref:chapter/9#p6). Il numero sterico 4 corrisponde a $sp^3$, con geometria tetraedrica. Tutti e tre gli atomi di C del glicerolo sono $sp^3$, perché non ci sono legami multipli.
+4. Riconosci il gruppo funzionale per classificare il composto, seguendo [Gruppi funzionali](ref:chapter/17#p5). Il gruppo $-\text{OH}$ legato a un carbonio saturo è tipico degli alcoli. Con tre gruppi $-\text{OH}$, il glicerolo è un poliolo (un trialcol).
+
+### Errori da evitare
+
+- Contare i legami $\pi$ nel numero sterico. Nel glicerolo non ce ne sono, ma lo stesso errore su un doppio o triplo legame porta a una ibridazione sbagliata.
+- Scrivere la semistruttura dimenticando che il carbonio centrale porta un solo $-\text{H}$: i carboni terminali sono $\text{CH}_2$, quello centrale è $\text{CH}$.
+- Fermarsi alla geometria senza rispondere alla parte sulla classe di composti: la domanda ha tre richieste (formula, ibridazione, classe), e ognuna conta.
+- Non scrivere nulla sull'ossigeno solo perché non richiesto. In una verifica personale conviene controllare che anche O sia coerente: due legami $\sigma$ e due coppie solitarie danno numero sterico 4, quindi ibridazione $sp^3$ e geometria angolare, come nell'acqua.
+
+### Dove si colloca nell'esame
+
+L'esame scritto dura 70 minuti e comprende esercizi e domande teoriche, con un massimo di 22 punti. Una domanda come D2 è del secondo tipo: breve, ma si risolve solo con i concetti di questo capitolo, senza materiale didattico. Per prepararsi conviene saper passare con sicurezza dalla formula alla struttura di Lewis ([Legame covalente e strutture di Lewis](ref:chapter/9#p3)), poi al numero sterico e all'ibridazione.
+
+Poiché i dati coprono una sola sessione, non possiamo dire quali altri argomenti del capitolo siano richiesti in altre sessioni. Una buona preparazione resta l'intero capitolo.

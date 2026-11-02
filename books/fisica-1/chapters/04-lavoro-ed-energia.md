@@ -313,7 +313,7 @@ Per la forza elastica $\vec{F}_{el} = -kx\,\hat{u}_x$, lo stesso procedimento d�
 
 $$\int_{A,\gamma}^{B} d\mathcal{L} = \int_{x_A,\gamma}^{x} (-kx)\,dx = -\frac{1}{2}kx^2 + \frac{1}{2}kx_A^2 ,$$
 
-che fornisce, già fissata nella sezione sulla [forza elastica](ref:chapter/3#p6), l'energia potenziale elastica [formula (3.22)](ref:formula/3.22). Un errore tipico è scrivere $E_p = -\tfrac{1}{2}kx^2$ trasportando il segno meno della forza anche nell'energia potenziale; il segno meno compare solo nella relazione $F = -dE_p/dx$, non nell'espressione di $E_p$ stessa. Con la scelta usuale di porre $E_p=0$ quando la deformazione è nulla, cioè $x=0$, si ottiene $E_p = \tfrac{1}{2}kx^2 \geq 0$; questa non negatività non è una proprietà generale dell'energia potenziale, che essendo definita a meno di una costante additiva arbitraria può in linea di principio assumere anche valori negativi, ma è una conseguenza di quella specifica scelta dello zero dell'energia.
+che fornisce, già fissata nella sezione sulla [forza elastica](ref:chapter/3#p7), l'energia potenziale elastica [formula (3.24)](ref:formula/3.24). Un errore tipico è scrivere $E_p = -\tfrac{1}{2}kx^2$ trasportando il segno meno della forza anche nell'energia potenziale; il segno meno compare solo nella relazione $F = -dE_p/dx$, non nell'espressione di $E_p$ stessa. Con la scelta usuale di porre $E_p=0$ quando la deformazione è nulla, cioè $x=0$, si ottiene $E_p = \tfrac{1}{2}kx^2 \geq 0$; questa non negatività non è una proprietà generale dell'energia potenziale, che essendo definita a meno di una costante additiva arbitraria può in linea di principio assumere anche valori negativi, ma è una conseguenza di quella specifica scelta dello zero dell'energia.
 
 Per le forze centrali, cioè le forze il cui modulo dipende solo dalla distanza $r$ da un centro fisso e la cui direzione è sempre quella del versore radiale $\hat{u}_r$ (studiate in dettaglio nella sezione sulle [forze centrali](ref:chapter/5#p4)), il lavoro infinitesimo si riduce a una funzione della sola variazione di $r$:
 
@@ -332,7 +332,7 @@ espressione analoga a [formula (10.21)](ref:formula/10.21), dove $\varepsilon_0$
 :::image{src="assets/cfcb3087-energia-potenziale-gravitazionale-elettrostatica.svg" alt="Due curve E_p(r): una negativa che cresce verso zero, una positiva che decresce verso zero" caption="Fig. 4.1 — Energia potenziale in funzione della distanza r: gravitazionale (sempre negativa, forza attrattiva) ed elettrostatica tra cariche omonime (sempre positiva, forza repulsiva), entrambe nulle per r che tende a infinito"}
 :::
 
-La forza d'attrito radente, invece, non è conservativa: in generale il suo lavoro si calcola solo tramite l'integrale $W = \int_{A,\gamma}^{B} \vec{F}_{ad}\cdot d\vec{s}$, che dipende dal cammino effettivamente seguito e non solo dai punti $A$ e $B$, come già visto nella sezione sulle [forze di attrito](ref:chapter/3#p5) nei casi in cui $\mu_d$ o la reazione normale $N$ variano lungo il percorso, oppure la superficie di contatto è essa stessa in moto. Soltanto quando $\mu_d$ e $N$ sono costanti e la superficie è ferma nel riferimento scelto il lavoro si riduce a {{formula:4.11}}, proporzionale alla sola lunghezza del cammino percorso. In ogni caso, poiché tale lavoro non è esprimibile come differenza dei valori di una funzione delle sole coordinate di $A$ e $B$, non si può definire un'energia potenziale per l'attrito, e nel bilancio energetico esso va sempre trattato attraverso la definizione diretta di lavoro, come già fatto nella sezione sul [teorema lavoro-energia](ref:chapter/4#p3).
+La forza d'attrito radente, invece, non è conservativa: in generale il suo lavoro si calcola solo tramite l'integrale $W = \int_{A,\gamma}^{B} \vec{F}_{ad}\cdot d\vec{s}$, che dipende dal cammino effettivamente seguito e non solo dai punti $A$ e $B$, come già visto nella sezione sulle [forze di attrito](ref:chapter/3#p6) nei casi in cui $\mu_d$ o la reazione normale $N$ variano lungo il percorso, oppure la superficie di contatto è essa stessa in moto. Soltanto quando $\mu_d$ e $N$ sono costanti e la superficie è ferma nel riferimento scelto il lavoro si riduce a {{formula:4.11}}, proporzionale alla sola lunghezza del cammino percorso. In ogni caso, poiché tale lavoro non è esprimibile come differenza dei valori di una funzione delle sole coordinate di $A$ e $B$, non si può definire un'energia potenziale per l'attrito, e nel bilancio energetico esso va sempre trattato attraverso la definizione diretta di lavoro, come già fatto nella sezione sul [teorema lavoro-energia](ref:chapter/4#p3).
 
 ### Conservazione dell'energia meccanica
 
@@ -391,3 +391,101 @@ Lo studio della funzione $E_p(x)$ permette anche di individuare le posizioni di 
 Un tipico errore è dimenticare che la condizione di equilibrio riguarda la derivata prima di $E_p$, non il suo valore: un punto in cui $E_p$ è grande ma costante (un tratto piatto del grafico) è comunque un punto di equilibrio, mentre un punto in cui $E_p$ è piccolo ma con pendenza diversa da zero non lo è. Un secondo errore, già segnalato a proposito del lavoro, è scrivere uguaglianze dimensionalmente incoerenti nei passaggi intermedi, per esempio confondendo un numero puro con una grandezza dotata di unità; ogni singola uguaglianza di una catena di passaggi deve avere senso dimensionale, non solo il primo e l'ultimo membro.
 
 Queste idee di energia potenziale e di equilibrio a partire da $E_p(x)$ saranno riprese nello studio del moto nel campo gravitazionale, nella sezione sulle [forze centrali](ref:chapter/5#p4), e torneranno nel bilancio energetico dei sistemi di punti materiali trattato più avanti nel capitolo sui sistemi.
+
+## p5 | Come viene chiesto all'esame
+
+Il capitolo è comparso in 5 delle 6 sessioni d'esame analizzate. Il tipo di esercizio più frequente è il problema strutturato in cui una massa percorre in successione tratti diversi (pista liscia, piano scabro, molla, filo) e si risolve con un bilancio di energia, spesso preceduto o seguito da un urto.
+
+Il capitolo non compare quasi mai da solo. Nei testi analizzati il lavoro e l'energia sono il mezzo per collegare le parti di un problema più lungo, in cui compaiono anche forze di attrito, forza elastica, urti, moto circolare o corpo rigido. Lo scritto è composto da problemi con più domande aperte, quindi conviene avere un metodo ordinato e ripeterlo identico a ogni passaggio. Alla prova scritta si può aggiungere una domanda di teoria, che può chiedere la dimostrazione del teorema dell'energia cinetica o l'equivalenza fra forza conservativa ed energia potenziale (vedi [Energia cinetica e teorema lavoro-energia](ref:chapter/4#p3) e [Forze conservative ed energia potenziale](ref:chapter/4#p4)).
+
+### Tipo 1: tratti scabri e piano inclinato con attrito
+
+**Che cosa chiede l'esame.** Un corpo parte da fermo da una quota assegnata o scende lungo un piano inclinato scabro. Si chiede la velocità in un punto, lo spazio percorso o l'energia dissipata. È il tipo più diffuso: compare in tre esercizi su tre sessioni.
+
+**Metodo.**
+
+1. Dividere il moto in tratti. Il cambio di tratto è il punto in cui cambiano le forze (liscio/scabro, piano inclinato/orizzontale, contatto con la molla).
+2. Per ogni tratto scegliere gli estremi A e B e scrivere le forze che compiono lavoro. La reazione normale non lavora, perché è perpendicolare allo spostamento.
+3. Calcolare il lavoro dell'attrito dinamico, $W_{att} = -\mu_d N\, s$, con $N$ ricavata dall'equilibrio perpendicolare al piano (per l'inclinato $N = mg\cos\theta$). Si veda {{formula:4.11}}.
+4. Scrivere il teorema dell'energia cinetica, {{formula:4.10}}, oppure, se si vuole trattare il peso come energia potenziale, il bilancio {{formula:4.12}} con $W_{nc} = \Delta E_m$.
+5. Risolvere in forma letterale, poi sostituire i numeri con le unità SI e controllare dimensioni e ordine di grandezza.
+
+La teoria di riferimento è nelle sezioni [Energia cinetica e teorema lavoro-energia](ref:chapter/4#p3) e [Forze di attrito](ref:chapter/3#p6).
+
+**Errori tipici.**
+
+- Dare segno positivo al lavoro dell'attrito. Il lavoro dissipativo è sempre negativo, perché la forza è opposta allo spostamento.
+- Usare $N = mg$ sul piano inclinato invece di $N = mg\cos\theta$.
+- Moltiplicare l'attrito per la quota $h$ invece che per la lunghezza percorsa lungo il piano. Il lavoro è un integrale lungo il cammino, non dipende solo dal dislivello.
+- Dimenticare che l'attrito agisce solo nel tratto scabro. Nel resto del percorso il lavoro dissipativo è nullo.
+
+**Esempi.**
+
+- Esame del 25 giugno 2026, esercizio 1A. Il corpo parte da fermo su una pista circolare liscia, poi attraversa un tratto orizzontale scabro lungo $0,6$ m e infine incontra una molla. Il metodo procede per tratti: sulla pista l'energia meccanica si conserva, nel tratto AB si sottrae il lavoro dell'attrito $\mu_d m g \cdot 0,6$ m, e alla molla si impone l'uguaglianza fra energia residua ed energia elastica.
+- Prova scritta - TEMA ESAME 2025 - 1, esercizio 1. Un punto parte da fermo da una quota $h$ su un piano inclinato scabro e prosegue su un tratto orizzontale liscio. Il teorema dell'energia cinetica sul solo piano inclinato (peso e attrito) dà la velocità alla base, che resta invariata sul tratto liscio e diventa il dato per la parte successiva dell'esercizio.
+
+### Tipo 2: conservazione dell'energia con molla, pista e pendolo
+
+**Che cosa chiede l'esame.** Tutte le forze che lavorano sono conservative (peso, forza elastica, tensione o reazione di una guida liscia che non lavorano). Si chiede una velocità in un punto o la compressione massima della molla. Compare in due sessioni.
+
+**Metodo.**
+
+1. Verificare che nel tratto considerato nessuna forza non conservativa compia lavoro (nessun attrito, nessun urto). Altrimenti tornare al tipo 1.
+2. Scegliere lo zero dell'energia potenziale gravitazionale e scrivere $E_p = mgz$. Per la molla usare [formula (3.24)](ref:formula/3.24) con l'allungamento misurato dalla lunghezza a riposo.
+3. Imporre $E_m$ nello stato iniziale uguale a $E_m$ nello stato finale, come in {{formula:4.14}}, e risolvere per l'incognita.
+4. Se il testo chiede una forza (tensione, reazione) in un punto del percorso circolare, usare il risultato in velocità nell'equazione della dinamica radiale. Si veda [Dinamica del moto curvilineo](ref:chapter/3#p8).
+
+I risultati sono nella sezione [Forze conservative ed energia potenziale](ref:chapter/4#p4), con la forza elastica in [Forza elastica](ref:chapter/3#p7).
+
+**Errori tipici.**
+
+- Conservare l'energia meccanica attraverso un urto o un tratto scabro. Il principio vale solo se $W_{nc} = 0$.
+- Misurare l'energia elastica dalla posizione sbagliata, cioè non dalla lunghezza a riposo.
+- Cambiare lo zero della quota a metà problema.
+
+**Esempi.**
+
+- Esame del 25 giugno 2026, esercizio 1A. La discesa sulla pista circolare liscia è il tratto a energia conservata che fornisce la velocità iniziale per il piano orizzontale.
+- Prova scritta - TEMA ESAME 2 - 2024, esercizio 1A. Il pendolo semplice viene lasciato libero e raggiunge la verticale. La velocità subito prima dell'urto si ricava dalla conservazione dell'energia, con dislivello determinato da $L$ e dall'angolo di partenza.
+
+### Tipo 3: energia combinata con urti
+
+**Che cosa chiede l'esame.** Un urto separa due fasi di moto. Prima o dopo l'urto si usa l'energia, durante l'urto la quantità di moto. Compare in quattro esercizi su quattro sessioni: è il collegamento più tipico di questo capitolo con gli altri.
+
+**Metodo.**
+
+1. Dividere il problema in tre fasi: prima dell'urto, urto, dopo l'urto.
+2. Prima e dopo l'urto usare l'energia (tipo 1 o 2) per passare dalla quota o dalla molla alla velocità, o viceversa.
+3. Nell'urto usare solo la quantità di moto, [formula (7.20)](ref:formula/7.20), perché le forze impulsive sono interne e l'energia in generale non si conserva. Scegliere la direzione in cui il sistema non riceve impulsi esterni (con un filo o un perno vincolante bisogna ragionare con attenzione).
+4. Calcolare l'energia persa nell'urto con la differenza delle energie cinetiche, come in [formula (7.21)](ref:formula/7.21), se il testo la chiede.
+5. Usare la velocità subito dopo l'urto come condizione iniziale per la fase successiva.
+
+Si veda [Urti](ref:chapter/7#p7) e [Quantità di moto e impulso](ref:chapter/3#p4).
+
+**Errori tipici.**
+
+- Applicare la conservazione dell'energia cinetica a un urto anelastico (completamente anelastico o con il proiettile che fuoriesce).
+- Scrivere un unico bilancio energetico dall'inizio alla fine, saltando la fase d'urto.
+- Dimenticare che dopo l'urto completamente anelastico la massa da considerare è la somma delle masse.
+
+**Esempi.**
+
+- Esame del 23 giugno 2022, esercizio 1A. Due punti scendono lungo un piano inclinato con coefficienti di attrito diversi e si urtano restando attaccati. Il metodo calcola con il teorema dell'energia cinetica la velocità di ciascun punto prima dell'urto, applica la conservazione della quantità di moto per la velocità comune e riparte con l'energia per il moto successivo.
+- Esame dell'11 luglio 2022, esercizio 1A. Un proiettile colpisce un corpo appeso a un filo di lunghezza $l = 1$ m e ne fuoriesce con velocità $\vec{v}_0/2$. La quantità di moto dà la velocità del corpo subito dopo l'urto. L'energia dà poi la quota raggiungibile o la velocità lungo il moto circolare successivo.
+- Prova scritta - TEMA ESAME 2 - 2024, esercizio 1A. Il pendolo urta centralmente un secondo punto materiale quando arriva alla verticale. Il tratto di discesa si risolve con l'energia, l'urto con la quantità di moto.
+
+### Altri casi che compaiono una sola volta
+
+Nella sola sessione del 2024 il testo apre con una domanda di statica: il pendolo tenuto fermo a $60^\circ$ da una forza orizzontale chiede il modulo di $\vec{F}$. Non serve energia, basta l'equilibrio delle forze sul punto (peso, tensione, forza orizzontale), come in [Reazioni vincolari ed equilibrio](ref:chapter/3#p5). Conviene quindi non cercare in ogni punto di un problema una soluzione energetica.
+
+Nella sola sessione del 2025 (Prova scritta - TEMA ESAME 2025 - 1, esercizio 2) un cilindro rotola senza strisciare su una superficie cilindrica fissa di raggio $R = 9r$. L'energia cinetica deve allora includere anche la rotazione. Questo caso è sviluppato nei capitoli sul corpo rigido, in particolare in [Energia nel moto del corpo rigido](ref:chapter/9#p3) e [Rotolamento](ref:chapter/9#p4). Il lavoro dell'attrito statico nel rotolamento puro è nullo, e per questo l'energia meccanica si può conservare anche in presenza di una superficie scabra.
+
+### Come usare questi tipi
+
+Prima di scrivere equazioni conviene classificare ogni tratto del moto con tre domande:
+
+1. Ci sono forze non conservative che lavorano? Allora serve il bilancio $W_{nc} = \Delta E_m$.
+2. C'è un urto? Allora, durante l'urto, serve la quantità di moto.
+3. C'è rotazione? Allora l'energia cinetica va completata con il termine rotazionale.
+
+Rispondere a queste domande nell'ordine del testo evita la maggior parte degli errori elencati e permette di assegnare in modo ordinato i passaggi richiesti da ogni sottodomanda.

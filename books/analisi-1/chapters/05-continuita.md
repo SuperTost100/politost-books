@@ -57,7 +57,7 @@ Grazie a questo teorema, per stabilire la continuità di funzioni costruite comp
 
 **Teorema 5.2 (continuità della funzione inversa).** Sia $f : I \to \mathbb{R}$ continua e strettamente monotona su un intervallo $I$. Allora $f$ è invertibile, l'immagine $J = f(I)$ è un intervallo e la funzione inversa $f^{-1} : J \to I$ è anch'essa continua (e monotona nello stesso senso di $f$).
 
-Questo risultato giustifica, ad esempio, la continuità di $\arcsin$, $\arccos$, $\arctan$ e $\log$, viste come inverse rispettivamente di $\sin$ ristretta a $\left\lbrack -\frac{\pi}{2}, \frac{\pi}{2}\right\rbrack $, $\cos$ ristretta a $\lbrack 0,\pi\rbrack $, $\tan$ ristretta a $\left\rbrack -\frac{\pi}{2}, \frac{\pi}{2}\right\lbrack $ ed $\exp$.
+Questo risultato giustifica, ad esempio, la continuità di $\arcsin$, $\arccos$, $\arctan$ e $\log$, viste come inverse rispettivamente di $\sin$ ristretta a $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$, $\cos$ ristretta a $\lbrack 0,\pi\rbrack $, $\tan$ ristretta a $\left\rbrack -\frac{\pi}{2}, \frac{\pi}{2}\right\lbrack $ ed $\exp$.
 
 Vale infine la pena di anticipare una relazione che verrà dimostrata nel capitolo sul calcolo differenziale: se $f$ è derivabile in $x_0$, allora $f$ è continua in $x_0$. Il viceversa è falso, come mostra l'esempio classico di $f(x) = |x|$, continua ma non derivabile in $x=0$ per la presenza di un punto angoloso; torneremo su questo nella sezione sui [punti di non derivabilità](ref:chapter/7#p3).
 
@@ -222,9 +222,9 @@ Supponiamo di voler stabilire se un'equazione del tipo $f(x) = 0$ ha soluzione i
 
 :::formula{id="5.3" label="Teorema di esistenza degli zeri"}
 $$\begin{aligned}
-&\text{Sia } f: [a,b] \to \mathbb{R} \text{ continua in ogni punto di } [a,b],\\
+&\text{Sia } f: \lbrack a,b\rbrack  \to \mathbb{R} \text{ continua in ogni punto di } \lbrack a,b\rbrack ,\\
 &\text{con } f(a) \cdot f(b) < 0.\\
-&\text{Allora } \exists\, c \in \,]a,b[ \text{ tale che } f(c) = 0.
+&\text{Allora } \exists\, c \in \,\rbrack a,b\lbrack  \text{ tale che } f(c) = 0.
 \end{aligned}$$
 :::
 
@@ -257,7 +257,7 @@ $$b_{n+1} - a_{n+1} = \frac{b-a}{2^{n+1}}.$$
 
 La successione $(b_n)$ è decrescente e limitata (inferiormente da $a$), quindi per il teorema sulle successioni monotone converge a un limite $c_2$; analogamente $(a_n)$ è crescente e limitata, quindi converge a un limite $c_1$. Poiché
 
-$$b_n - a_n = \frac{b-a}{2^n} \xrightarrow\lbrack n\to\infty\rbrack {} 0,$$
+$$b_n - a_n = \frac{b-a}{2^n} \xrightarrow[n\to\infty]{} 0,$$
 
 passando al limite si ottiene $c_2 - c_1 = 0$, e per il teorema di unicità del limite (richiamato nella sezione sui [teoremi sui limiti](ref:chapter/4#p4)) segue $c_2 = c_1 =: c$.
 
@@ -285,8 +285,8 @@ Un secondo corollario utile riformula il teorema per equazioni della forma $f(x)
 
 :::formula{id="5.5" label="Esistenza di un'intersezione tra due funzioni continue"}
 $$\begin{aligned}
-&\text{Siano } f, g \text{ continue su } [a,b], \text{ con } f(a) < g(a) \text{ e } f(b) > g(b).\\
-&\text{Allora } \exists\, c \in \,]a,b[ \text{ tale che } f(c) = g(c).
+&\text{Siano } f, g \text{ continue su } \lbrack a,b\rbrack , \text{ con } f(a) < g(a) \text{ e } f(b) > g(b).\\
+&\text{Allora } \exists\, c \in \,\rbrack a,b\lbrack  \text{ tale che } f(c) = g(c).
 \end{aligned}$$
 :::
 
@@ -334,7 +334,7 @@ Questo risultato è già stato indicato con la formula [formula (3.18)](ref:form
 
 Un corollario immediato è che $f$ è limitata su $\lbrack a,b\rbrack $, con $m = f(x_m)$ e $M = f(x_M)$.
 
-**Osservazione 5.3 (idea della dimostrazione).** Per assurdo si mostra prima che $f$ è limitata superiormente su $\lbrack a,b\rbrack $: se non lo fosse, esisterebbe una successione $(x_n) \subseteq \lbrack a,b\rbrack $ con $f(x_n) \to +\infty$; per il teorema di Bolzano-Weierstrass (richiamato nella sezione sulle [successioni e sottosuccessioni](ref:chapter/4#p5)) $(x_n)$ ammette una sottosuccessione $(x_{n_k})$ convergente a un punto $x_0 \in \lbrack a,b\rbrack $ (qui è essenziale che $\lbrack a,b\rbrack $ sia chiuso e limitato), e la continuità di $f$ in $x_0$ costringerebbe $f(x_{n_k})$ a convergere a $f(x_0)$; ma la stessa sottosuccessione, essendo estratta da $(x_n)$, deve tendere anch'essa a $+\infty$, il che è assurdo. Essendo $f$ limitata superiormente, l'insieme $f(\lbrack a,b\rbrack )$ ammette estremo superiore finito $M$; usando ancora una successione che si approssima a $M$ e il medesimo argomento di estrazione, si prova che $M$ è effettivamente raggiunto, cioè è un massimo. Lo stesso argomento, applicato a $-f$, dà l'esistenza del minimo. $\square$
+**Osservazione 5.3 (idea della dimostrazione).** Per assurdo si mostra prima che $f$ è limitata superiormente su $\lbrack a,b\rbrack $: se non lo fosse, esisterebbe una successione $(x_n) \subseteq \lbrack a,b\rbrack $ con $f(x_n) \to +\infty$; per il teorema di Bolzano-Weierstrass (richiamato nella sezione sulle [successioni e sottosuccessioni](ref:chapter/4#p6)) $(x_n)$ ammette una sottosuccessione $(x_{n_k})$ convergente a un punto $x_0 \in \lbrack a,b\rbrack $ (qui è essenziale che $\lbrack a,b\rbrack $ sia chiuso e limitato), e la continuità di $f$ in $x_0$ costringerebbe $f(x_{n_k})$ a convergere a $f(x_0)$; ma la stessa sottosuccessione, essendo estratta da $(x_n)$, deve tendere anch'essa a $+\infty$, il che è assurdo. Essendo $f$ limitata superiormente, l'insieme $f(\lbrack a,b\rbrack )$ ammette estremo superiore finito $M$; usando ancora una successione che si approssima a $M$ e il medesimo argomento di estrazione, si prova che $M$ è effettivamente raggiunto, cioè è un massimo. Lo stesso argomento, applicato a $-f$, dà l'esistenza del minimo. $\square$
 
 ### Il ruolo di ciascuna ipotesi: controesempi
 
@@ -365,7 +365,7 @@ Combinando il teorema di Weierstrass con il [teorema di esistenza degli zeri](re
 **Teorema 5.4 (dei valori intermedi).** Sia $f : \lbrack a,b\rbrack  \to \mathbb{R}$ una funzione continua, con $a, b \in \mathbb{R}$ e $a < b$. Allora $f$ assume tutti i valori compresi tra $f(a)$ e $f(b)$: per ogni $y_0$ compreso tra $f(a)$ e $f(b)$ esiste $\bar{x} \in \lbrack a,b\rbrack $ tale che $f(\bar{x}) = y_0$.
 
 :::formula{id="5.6" label="Teorema dei valori intermedi"}
-$$f \ \text{continua su} \ [a,b], \quad y_0 \ \text{compreso tra} \ f(a) \ \text{e} \ f(b) \ \implies \ \exists\, \bar{x} \in [a,b] : f(\bar{x}) = y_0$$
+$$f \ \text{continua su} \ \lbrack a,b\rbrack , \quad y_0 \ \text{compreso tra} \ f(a) \ \text{e} \ f(b) \ \implies \ \exists\, \bar{x} \in \lbrack a,b\rbrack  : f(\bar{x}) = y_0$$
 :::
 
 **Dimostrazione.** Se $y_0 = f(a)$ oppure $y_0 = f(b)$ la tesi è ovvia. Supponiamo $f(a) < y_0 < f(b)$ (il caso $f(a) > y_0 > f(b)$ è analogo) e definiamo $g(x) = f(x) - y_0$ su $\lbrack a,b\rbrack $. La funzione $g$ è continua, poiché differenza di funzioni continue, e soddisfa $g(a) = f(a) - y_0 < 0$ e $g(b) = f(b) - y_0 > 0$, dunque $g(a) \cdot g(b) < 0$. Per il teorema di esistenza degli zeri esiste $\bar{x} \in \rbrack a,b\lbrack $ tale che $g(\bar{x}) = 0$, cioè $f(\bar{x}) = y_0$. $\square$
@@ -383,3 +383,118 @@ $$f(0) = 1 > 0, \qquad f(1) = 1 - 3 + 1 = -1 < 0, \qquad f(2) = 32 - 6 + 1 = 27 
 Su ciascuno degli intervalli chiusi $\lbrack -2,-1\rbrack $, $\lbrack 0,1\rbrack $, $\lbrack 1,2\rbrack $ la funzione $f$ è continua e assume valori di segno opposto agli estremi; per il teorema di esistenza degli zeri esiste quindi almeno una soluzione in ciascuno di questi tre intervalli, e dunque l'equazione ha almeno tre soluzioni reali distinte: una nell'interno di ciascun intervallo, e questi interni sono disgiunti (gli estremi $-1$ e $1$, dove gli intervalli si toccano, non possono essere zeri perché $f$ vi assume valori non nulli). Si osservi che questo argomento prova l'*esistenza* di (almeno) tre radici, ma non la loro unicità all'interno di ciascun intervallo né il loro valore esatto: per queste informazioni servono strumenti del calcolo differenziale, come lo studio del segno della derivata.
 
 **Errore tipico 5.5.** Non bisogna confondere l'ipotesi del teorema dei valori intermedi (continuità su un intervallo) con la monotonia: la funzione può non essere monotona, e assumere comunque ogni valore intermedio anche più volte. Viceversa, non si può applicare il teorema a un dominio che non sia un intervallo (ad esempio un'unione di intervalli disgiunti), perché in tal caso la funzione potrebbe "saltare" valori intermedi senza violare la continuità su ciascun pezzo del dominio.
+
+## p6 | Come viene chiesto all'esame
+
+Il capitolo sulla continuità compare in 45 delle 83 sessioni d'esame passate. Il tipo di richiesta più frequente è il punto (b) del primo esercizio di studio di funzione, da 8 o 9 punti: «studiare la continuità e la derivabilità, individuando e classificando i punti di discontinuità». Per il resto ci sono domande di teoria (enunciare un teorema, trovare un controesempio, dimostrare una conseguenza) e il calcolo di un parametro o di un prolungamento. L'esame ha anche il test al calcolatore da 15 domande a risposta multipla. I quesiti elencati qui sono tutti della prova scritta, ma gli stessi concetti si possono incontrare anche nel test.
+
+### Tipo 1: continuità e discontinuità nello studio di funzione
+
+È il tipo dominante. Il punto (b) dell'esercizio 1 chiede di studiare continuità e derivabilità e di classificare i punti critici del dominio. La funzione è quasi sempre definita a tratti, oppure contiene un valore assoluto o un punto isolato con valore assegnato.
+
+Metodo:
+
+1. Scrivi il dominio e individua i **punti sospetti**. Sono i punti di raccordo, gli zeri dei denominatori e dei valori assoluti, e i punti in cui il valore è assegnato a parte. Negli altri punti la funzione è continua perché composta da funzioni elementari (vedi [Funzioni continue](ref:chapter/5#p2)).
+2. In ogni punto sospetto $x_0$ calcola i limiti laterali $\lim_{x\to x_0^-}f(x)$ e $\lim_{x\to x_0^+}f(x)$ e confrontali con $f(x_0)$.
+3. Classifica secondo [Punti di discontinuità](ref:chapter/5#p3):
+   - se il limite esiste finito ed è diverso da $f(x_0)$, la discontinuità è **eliminabile**;
+   - se i limiti laterali sono finiti e diversi tra loro, è un **salto**;
+   - se almeno uno è infinito o non esiste, è di **seconda specie**.
+4. Solo dopo passa alla derivabilità. Ricorda che la derivabilità implica la continuità, ma non il contrario: un punto di discontinuità non è mai derivabile (vedi [Punti di non derivabilità](ref:chapter/7#p3)).
+
+Errori tipici:
+
+- Confondere limite e valore. Se il testo assegna $f(0)$ a parte, la funzione può essere discontinua anche con limite finito.
+- Dimenticare uno dei due limiti laterali.
+- Chiamare «di salto» una discontinuità con limite infinito.
+- Cercare discontinuità fuori dal dominio. Un punto in cui $f$ non è definita non è un punto di discontinuità, ma al più un punto in cui si può prolungare per continuità.
+
+Esempi:
+
+- **Esame del 22 gennaio 2025 - turno 2 - versione 1, esercizio 1**. La funzione è $\sqrt[4]{x^2(2-|x|)}$ per $x\neq 0$ e vale $1$ in $x=0$. Il limite per $x\to0$ è $0\neq 1$, quindi $x=0$ è una discontinuità eliminabile. Nelle altre versioni cambia solo il valore assegnato.
+- **Esame del 25 gennaio 2023 - turno 2, esercizio 1**. La funzione è $\exp\!\left(\frac{1}{\sin x}\right)$ sul dominio $\lbrack -\pi,\pi\rbrack $, con valore $0$ in $0$ e in $\pm\pi$. In $0$ il limite sinistro vale $0$ e il destro $+\infty$. Basta il limite infinito per avere una discontinuità di seconda specie.
+- **Esame del 11 aprile 2024, esercizio 1**. La funzione è $\arctan\frac{|x|+1}{|x|-1}$. In $x=\pm1$ i limiti laterali sono finiti e diversi (valgono $\mp\frac{\pi}{2}$), ma la funzione non è definita in quei punti. Nessuna assegnazione di un valore in $x=\pm1$ produce un prolungamento continuo.
+- **Esame del 15 settembre 2020, esercizio 1**. La funzione è $x^2$ per $x\le 0$ e $\left|1-\frac1x\right|$ per $x>0$. Il limite destro in $0$ è $+\infty$, quindi la discontinuità è di seconda specie, mentre il limite sinistro vale $0$.
+
+Altri casi dello stesso tipo sono gli esercizi del 21 giugno 2024 (funzione con $e^{\pm1/x}$ incollata a $0$) e quello del 25 gennaio 2024 - turno 2 ($|x+2|^{|x+2|}$ con valore $1$ in $-2$). Nel secondo il limite $t^t\to1$ per $t\to0^+$ coincide con il valore assegnato, quindi la funzione è continua. L'esercizio del 15 giugno 2021 ha un raccordo in $\pm1$ tra due radici e conviene verificare che i due rami tendano entrambi a $0$.
+
+### Tipo 2: parametri e prolungamenti per continuità
+
+Compare nello studio di funzione quando la funzione non è definita in un punto, oppure contiene un parametro $k$. Si chiede il valore di $k$ che rende $f$ continua, oppure il prolungamento continuo $g$ di $f$ e poi lo studio di $g$.
+
+Metodo:
+
+1. Individua il punto $x_0$ critico (il punto isolato o quello escluso dal dominio).
+2. Calcola il limite (o i due limiti laterali) di $f$ in $x_0$. Per i limiti usa i limiti notevoli e il confronto tra infiniti e infinitesimi (vedi [Limiti notevoli](ref:chapter/6#p2) e [Infiniti e infinitesimi](ref:chapter/6#p3)).
+3. Se il limite è finito, il valore da assegnare è proprio quel limite: $k=\lim_{x\to x_0}f(x)$, oppure $g(x_0)=\lim_{x\to x_0}f(x)$. Se è infinito o non esiste, il prolungamento non è possibile.
+4. Con il parametro fissato, riscrivi la funzione e verifica la derivabilità nel punto, di solito con il limite del rapporto incrementale.
+
+Errori tipici:
+
+- Calcolare il limite solo da un lato.
+- Prolungare in un punto in cui il limite è infinito.
+- Dimenticare di scrivere la funzione prolungata come funzione a tratti, con il valore nel punto.
+
+Esempi:
+
+- **Esame del 30 gennaio 2019 - IIo turno, esercizio 1**. La funzione è $2+e^{x\ln|x|-x}$ per $x\neq0$ e vale $k$ in $0$. Si chiede il $k$ che rende $f$ continua. Dal limite $x\ln|x|\to0$ si ottiene $k=2+e^{0}=3$.
+- **Esame del 18 settembre 2018, esercizio 1**. La funzione è $\frac{1}{(x-1)^2}e^{-1/(x-1)^2}$ e si chiede di mostrare che ha un prolungamento continuo su $\mathbb{R}$. Con $t=\frac{1}{(x-1)^2}\to+\infty$ il limite di $te^{-t}$ è $0$. Il prolungamento si ottiene ponendo $g(1)=0$.
+
+Dello stesso tipo sono l'esercizio del 23 giugno 2016 - Io turno (dimostrare che $f$ è prolungabile in $x=4$) e quello del 12 febbraio 2019 - IIo turno, dove si chiede di stabilire in quali punti è possibile prolungare $f$.
+
+### Tipo 3: enunciati, controesempi e applicazioni dei teoremi sulle funzioni continue
+
+È il secondo tipo per frequenza e di solito occupa l'esercizio 2 (5 o 6 punti). Ha la struttura «(a) enunciare, (b) controesempio o vero/falso, (c) dimostrare o applicare». Gli enunciati richiesti sono il teorema di esistenza degli zeri, il teorema dei valori intermedi e il teorema di Weierstrass. Le definizioni di massimo e minimo assoluto sono richieste insieme ai teoremi.
+
+Metodo:
+
+1. Enuncia il teorema con **tutte** le ipotesi: $f$ continua, intervallo $\lbrack a,b\rbrack $ chiuso e limitato, e il segno o il valore intermedio. Vedi [Teorema di esistenza degli zeri](ref:chapter/5#p4) e [Teorema di Weierstrass](ref:chapter/5#p5).
+2. Se si chiede un controesempio, togli **una sola** ipotesi alla volta e costruisci la funzione più semplice possibile. Per la continuità, una funzione con un salto. Per l'intervallo, un dominio che è unione di due intervalli disgiunti.
+3. Per applicare il teorema, verifica la continuità sull'intervallo e i valori agli estremi. Concludi con l'esistenza.
+4. Per mostrare che una funzione **non è iniettiva**, cerca un valore assunto due volte. Se $f(1)=-3$, $f(2)=-2$ e $f(3)=-4$, il teorema dei valori intermedi applicato su $\lbrack 2,3\rbrack $ dà un punto in cui $f$ vale $-3$, già assunto in $1$.
+5. Per contare le soluzioni, usa l'esistenza (zeri) e poi l'unicità tramite la monotonia, come nell'esempio svolto nella sezione sugli zeri.
+
+Errori tipici:
+
+- Omettere dall'enunciato l'intervallo chiuso e limitato o la continuità.
+- Affermare che il teorema degli zeri dà l'unicità. Garantisce solo l'esistenza.
+- Applicare i teoremi a un dominio che non è un intervallo.
+- Dare per scontata la continuità quando il testo non la dice: l'enunciato può essere falso proprio per quello.
+
+Esempi:
+
+- **Esame del 25 gennaio 2023 - turno 1, esercizio 2**, versioni A e B. Dopo la definizione di massimo (o minimo) assoluto e l'enunciato del teorema dei valori intermedi (o degli zeri), si chiede di dimostrare che una funzione continua con tre valori assegnati non è iniettiva. Si cerca un valore intermedio che viene assunto due volte e lo si trova applicando il teorema su un sottointervallo.
+- **Esame del 27 gennaio 2021 - Io turno, esercizio 2**. L'affermazione da giudicare riguarda una funzione strettamente crescente da $-\infty$ a $+\infty$ che si annulla. Il testo non richiede la continuità, quindi l'affermazione è falsa: basta una funzione crescente con un salto che scavalca lo zero. Con la continuità sarebbe vera per il corollario dei limiti discordi.
+- **Esame del 25 gennaio 2022 - IIo turno, esercizio 2**, versioni A e B. Si chiede di togliere la continuità dal teorema dei valori intermedi (o degli zeri) e di trovare un controesempio, poi di decidere se il teorema vale su un'unione di due intervalli disgiunti. Non vale, perché l'immagine non è più un intervallo.
+- **Esame del 11 febbraio 2020 - Io turno, esercizio 2A**. Si deve provare che $e^x+x^3$ ha un unico zero. L'esistenza viene dal teorema degli zeri e l'unicità dalla stretta crescita (derivata positiva).
+
+Appartengono a questo tipo anche l'esercizio del 19 settembre 2017 (condizioni per cui il valore $0$ appartiene all'immagine di una funzione che cambia segno, con $\operatorname{sgn}((x-1)(x+3))$ come caso da discutere) e quello del 28 gennaio 2016 - Io turno (per $g$ crescente, $g\circ f$ ha massimo e minimo su $\lbrack a,b\rbrack $ perché $f$ li ha per Weierstrass).
+
+### Tipo 4: definizioni e dimostrazioni brevi sulla continuità
+
+Sono richieste al punto di teoria e si risolvono con la definizione. Compaiono la definizione di continuità in un punto e in un intervallo, e la dimostrazione, tramite il teorema dei due carabinieri, che una funzione è continua o derivabile in un punto.
+
+Metodo:
+
+1. Scrivi la definizione richiesta: $f$ è continua in $x_0$ se e solo se $\lim_{x\to x_0}f(x)=f(x_0)$ (vedi {{formula:5.1}}).
+2. Per le maggiorazioni del tipo $|g(x)|\le|x-x_0|$ ricava prima $g(x_0)=0$ ponendo $x=x_0$, poi applica i due carabinieri a $-|x-x_0|\le g(x)\le|x-x_0|$.
+3. Per concludere che la derivata in $x_0$ è nulla, è sufficiente verificare che $|g(x)-g(x_0)|=o(|x-x_0|)$. Una stima quadratica è un esempio sufficiente: se $|g(x)-g(x_0)|\le|x-x_0|^2$, allora $\left|\frac{g(x)-g(x_0)}{x-x_0}\right|\le|x-x_0|\to0$. Le stime quadratiche non sono necessarie.
+
+Errori tipici:
+
+- Applicare i carabinieri senza aver mostrato che il valore $g(x_0)$ è $0$.
+- Usare la derivabilità per dedurre la continuità senza averla dimostrata, quando la domanda è proprio sulla continuità.
+
+Esempi:
+
+- **Esame del 22 gennaio 2025 - turno 1 - versione 1, esercizio 2**. Dopo l'enunciato dei due carabinieri, si dimostra che $|g(x)|\le|x+1|$ implica $g$ continua in $-1$, e che $|g(x)|\le(x+1)^2$ implica $g$ derivabile in $-1$. Le altre versioni cambiano solo il punto.
+- **Esame del 11 febbraio 2020 - IIo turno, esercizio 2**. Dopo la definizione di continuità in $a$, si chiede un esempio di funzione continua con $(x-a)^3f(x)>0$ per $x\ne a$. Funziona $f(x)=(x-a)^3$, perché $(x-a)^3f(x)=(x-a)^6>0$.
+- **Esame del 28 giugno 2019, esercizio 2**, versione B. Chiede la definizione di continuità in un punto e in un intervallo.
+
+### Altri casi isolati
+
+Due sessioni (3 luglio 2017, esercizio 2 e 13 febbraio 2015 - Io turno, esercizio 2) usano la continuità solo come ipotesi del teorema della media integrale. Si chiede se la media integrale è un valore assunto dalla funzione: lo è se la funzione è continua, e può non esserlo se ha un salto, come nel primo esercizio. Uno studio dettagliato spetta al capitolo sull'integrale.
+
+### Come prepararsi
+
+Gli esercizi di studio di funzione ripetono sempre lo stesso schema (punti sospetti, limiti laterali, classificazione), quindi conviene allenarlo su più versioni dello stesso testo. Per la teoria, impara a memoria gli enunciati completi e almeno un controesempio per ogni ipotesi. Per il resto dello studio di funzione vedi [Studio di funzione completo](ref:chapter/8#p4).

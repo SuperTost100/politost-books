@@ -55,11 +55,11 @@ L'integrale **diverge**.
 
 **Esempio 10.2.** Studiamo $\int_0^{+\infty} \frac{1}{1+x^2}\,dx$. Una primitiva di $\frac{1}{1+x^2}$ è $\arctan x$, quindi:
 
-$$\int_0^{+\infty} \frac{1}{1+x^2}\,dx = \lim_{M\to+\infty} \big\lbrack \arctan x\big\rbrack _0^M = \lim_{M\to+\infty} \arctan M - \arctan 0 = \frac{\pi}{2} - 0 = \frac{\pi}{2}.$$
+$$\int_0^{+\infty} \frac{1}{1+x^2}\,dx = \lim_{M\to+\infty} \big[\arctan x\big]_0^M = \lim_{M\to+\infty} \arctan M - \arctan 0 = \frac{\pi}{2} - 0 = \frac{\pi}{2}.$$
 
 L'integrale **converge** al valore $\frac{\pi}{2}$.
 
-**Errore tipico 10.1.** Uno degli errori più frequenti consiste nello scrivere direttamente $\left\lbrack \log x\right\rbrack _1^{+\infty}$ o $\left\lbrack \arctan x\right\rbrack _0^{+\infty}$ sostituendo $+\infty$ come se fosse un numero nella primitiva, senza passare esplicitamente per il limite. Questo procedimento funziona solo come scorciatoia di calcolo quando si è già certi che il limite esista (finito o infinito); in sede di verifica va sempre scritto il limite $\lim_{M\to+\infty}$, perché solo il limite stabilisce rigorosamente se l'integrale converge, diverge o non esiste.
+**Errore tipico 10.1.** Uno degli errori più frequenti consiste nello scrivere direttamente $\left[\log x\right]_1^{+\infty}$ o $\left[\arctan x\right]_0^{+\infty}$ sostituendo $+\infty$ come se fosse un numero nella primitiva, senza passare esplicitamente per il limite. Questo procedimento funziona solo come scorciatoia di calcolo quando si è già certi che il limite esista (finito o infinito); in sede di verifica va sempre scritto il limite $\lim_{M\to+\infty}$, perché solo il limite stabilisce rigorosamente se l'integrale converge, diverge o non esiste.
 
 ### L'integrale campione $\int 1/x^\alpha$ all'infinito
 
@@ -67,7 +67,7 @@ Il comportamento dell'integrale improprio della potenza $x^{-\alpha}$ all'infini
 
 Calcoliamo $\int_1^{+\infty} \frac{1}{x^\alpha}\,dx$ al variare di $\alpha \in \mathbb{R}$. Per $\alpha \ne 1$:
 
-$$\int_1^{+\infty} \frac{1}{x^\alpha}\,dx = \lim_{M\to+\infty} \int_1^M x^{-\alpha}\,dx = \lim_{M\to+\infty} \left\lbrack \frac{x^{1-\alpha}}{1-\alpha}\right\rbrack _1^M = \lim_{M\to+\infty} \left(\frac{M^{1-\alpha}}{1-\alpha} - \frac{1}{1-\alpha}\right).$$
+$$\int_1^{+\infty} \frac{1}{x^\alpha}\,dx = \lim_{M\to+\infty} \int_1^M x^{-\alpha}\,dx = \lim_{M\to+\infty} \left[\frac{x^{1-\alpha}}{1-\alpha}\right]_1^M = \lim_{M\to+\infty} \left(\frac{M^{1-\alpha}}{1-\alpha} - \frac{1}{1-\alpha}\right).$$
 
 Se $\alpha<1$, allora $1-\alpha>0$ e $M^{1-\alpha}\to+\infty$, quindi l'integrale diverge a $+\infty$. Se $\alpha>1$, allora $1-\alpha<0$ e $M^{1-\alpha}\to 0$, quindi il limite vale $-\dfrac{1}{1-\alpha} = \dfrac{1}{\alpha-1}$, un valore finito. Il caso $\alpha=1$ è già stato trattato nell'esempio precedente e diverge.
 
@@ -92,7 +92,7 @@ $$\int_2^{+\infty} \frac{1}{x\,(\log x)^2}\,dx.$$
 
 Usiamo la sostituzione $t=\log x$, $dt = \dfrac{1}{x}\,dx$; quando $x=2$, $t=\log 2$, e quando $x=M$, $t=\log M$. Allora:
 
-$$\int_2^{M} \frac{1}{x(\log x)^2}\,dx = \int_{\log 2}^{\log M} \frac{1}{t^2}\,dt = \left\lbrack -\frac{1}{t}\right\rbrack _{\log 2}^{\log M} = -\frac{1}{\log M} + \frac{1}{\log 2}.$$
+$$\int_2^{M} \frac{1}{x(\log x)^2}\,dx = \int_{\log 2}^{\log M} \frac{1}{t^2}\,dt = \left[-\frac{1}{t}\right]_{\log 2}^{\log M} = -\frac{1}{\log M} + \frac{1}{\log 2}.$$
 
 Passando al limite per $M\to+\infty$ si ha $\log M \to +\infty$, quindi $\dfrac{1}{\log M}\to 0$, e:
 
@@ -146,7 +146,7 @@ $$\int_0^1 \frac{1}{x}\,dx = \lim_{c\to 0^+}\int_c^1 \frac{1}{x}\,dx = \lim_{c\t
 
 Se $\alpha \neq 1$:
 
-$$\int_0^1 \frac{1}{x^\alpha}\,dx = \lim_{c\to 0^+}\left\lbrack \frac{x^{1-\alpha}}{1-\alpha}\right\rbrack _c^1 = \lim_{c\to 0^+}\left(\frac{1}{1-\alpha} - \frac{c^{1-\alpha}}{1-\alpha}\right).$$
+$$\int_0^1 \frac{1}{x^\alpha}\,dx = \lim_{c\to 0^+}\left[\frac{x^{1-\alpha}}{1-\alpha}\right]_c^1 = \lim_{c\to 0^+}\left(\frac{1}{1-\alpha} - \frac{c^{1-\alpha}}{1-\alpha}\right).$$
 
 Se $\alpha < 1$ l'esponente $1-\alpha$ è positivo, quindi $c^{1-\alpha} \to 0$ e il limite è finito; se $\alpha > 1$ l'esponente $1-\alpha$ è negativo, quindi $c^{1-\alpha} \to +\infty$ e l'integrale diverge.
 
@@ -190,7 +190,7 @@ Calcoliamo una primitiva per parti, integrando $1 \cdot \log x$:
 $$\int \log x \, dx = x\log x - \int x \cdot \frac{1}{x}\,dx = x\log x - x + k.$$
 
 Quindi
-$$\int_c^1 \log x \, dx = \big\lbrack x\log x - x\big\rbrack _c^1 = (1\cdot \log 1 - 1) - (c\log c - c) = -1 - c\log c + c.$$
+$$\int_c^1 \log x \, dx = \big[x\log x - x\big]_c^1 = (1\cdot \log 1 - 1) - (c\log c - c) = -1 - c\log c + c.$$
 
 Per $c \to 0^+$ si ha $c \to 0$ e, per il limite notevole della parte principale di $x\log x$ in $0$, $c\log c \to 0$ (infinitesimo campione dominante sul logaritmo). Quindi
 
@@ -221,7 +221,7 @@ Negli integrali impropri delle sezioni precedenti abbiamo sempre potuto calcolar
 Se la funzione integranda non cambia segno, l'integrale improprio non può avere comportamento oscillante.
 
 :::formula{id="10.7" label="Impossibilità dell'indeterminazione per funzioni positive"}
-$$f:[a,+\infty[\ \to [0,+\infty[\ \text{localmente integrabile} \implies \int_a^{+\infty} f(x)\,dx \text{ converge oppure diverge a } +\infty\ (\text{mai indeterminato}).$$
+$$f:\lbrack a,+\infty\lbrack \ \to \lbrack 0,+\infty\lbrack \ \text{localmente integrabile} \implies \int_a^{+\infty} f(x)\,dx \text{ converge oppure diverge a } +\infty\ (\text{mai indeterminato}).$$
 :::
 
 La ragione intuitiva è che la funzione integrale $F(M) = \int_a^M f(x)\,dx$ è crescente (essendo $f \ge 0$), e per una funzione monotona il limite per $M \to +\infty$ esiste sempre in $\mathbb{R}^*$, finito se $F$ è limitata, $+\infty$ altrimenti. Lo stesso vale, con le modifiche ovvie, per gli integrali di seconda specie con $f \ge 0$ vicino al punto singolare.
@@ -232,7 +232,7 @@ Questo fatto è ciò che rende possibili i criteri seguenti, che si applicano **
 
 :::formula{id="10.8" label="Criterio del confronto per integrali impropri"}
 $$\begin{aligned}
-&f,g:[a,+\infty[\ \to [0,+\infty[\ \text{localmente integrabili, con } 0 \le f(x) \le g(x)\ \ \forall x \ge a; \\
+&f,g:\lbrack a,+\infty\lbrack \ \to \lbrack 0,+\infty\lbrack \ \text{localmente integrabili, con } 0 \le f(x) \le g(x)\ \ \forall x \ge a; \\
 &\int_a^{+\infty} g(x)\,dx \text{ convergente} \implies \int_a^{+\infty} f(x)\,dx \text{ convergente}; \\
 &\int_a^{+\infty} f(x)\,dx \text{ divergente} \implies \int_a^{+\infty} g(x)\,dx \text{ divergente}.
 \end{aligned}$$
@@ -254,9 +254,9 @@ Se la funzione integranda è asintoticamente equivalente a una potenza campione 
 
 :::formula{id="10.9" label="Criterio del confronto asintotico"}
 $$\begin{aligned}
-&f:[a,+\infty[\ \to \mathbb{R}\ \text{localmente integrabile, con } f(x) \sim \frac{c}{x^\alpha}\ (x \to +\infty),\ c \ne 0: \\
+&f:\lbrack a,+\infty\lbrack \ \to \mathbb{R}\ \text{localmente integrabile, con } f(x) \sim \frac{c}{x^\alpha}\ (x \to +\infty),\ c \ne 0: \\
 &\quad \int_a^{+\infty} f(x)\,dx \text{ converge se } \alpha > 1,\ \text{diverge se } \alpha \le 1; \\
-&f:[a,b[\ \to \mathbb{R}\ \text{localmente integrabile, con } f(x) \sim \frac{c}{(b-x)^\alpha}\ (x \to b^-),\ c \ne 0: \\
+&f:\lbrack a,b\lbrack \ \to \mathbb{R}\ \text{localmente integrabile, con } f(x) \sim \frac{c}{(b-x)^\alpha}\ (x \to b^-),\ c \ne 0: \\
 &\quad \int_a^{b} f(x)\,dx \text{ converge se } \alpha < 1,\ \text{diverge se } \alpha \ge 1.
 \end{aligned}$$
 :::
@@ -272,13 +272,13 @@ In alternativa, quando $f$ ha ordine di infinitesimo $n$ rispetto al campione $\
 I due criteri precedenti richiedono che la funzione non cambi segno. Quando $f$ assume sia valori positivi sia negativi, non si può applicare direttamente il confronto: bisogna passare al valore assoluto.
 
 :::formula{id="10.10" label="Funzione assolutamente integrabile"}
-$$f:[a,+\infty[\ \to \mathbb{R}\ \text{(localmente integrabile) si dice assolutamente integrabile se } \int_a^{+\infty} |f(x)|\,dx \text{ è convergente.}$$
+$$f:\lbrack a,+\infty\lbrack \ \to \mathbb{R}\ \text{(localmente integrabile) si dice assolutamente integrabile se } \int_a^{+\infty} |f(x)|\,dx \text{ è convergente.}$$
 :::
 
 La stessa definizione si adatta in modo ovvio agli integrali di seconda specie, sostituendo l'estremo infinito con il punto di singolarità.
 
 :::formula{id="10.11" label="Criterio di convergenza assoluta"}
-$$f \text{ assolutamente integrabile su } [a,+\infty[\ \implies\ \int_a^{+\infty} f(x)\,dx \text{ converge, e } \left|\int_a^{+\infty} f(x)\,dx\right| \le \int_a^{+\infty} |f(x)|\,dx.$$
+$$f \text{ assolutamente integrabile su } \lbrack a,+\infty\lbrack \ \implies\ \int_a^{+\infty} f(x)\,dx \text{ converge, e } \left|\int_a^{+\infty} f(x)\,dx\right| \le \int_a^{+\infty} |f(x)|\,dx.$$
 :::
 
 Il punto cruciale è che l'implicazione va in un solo verso: **l'assoluta convergenza implica la convergenza, ma non vale il viceversa** (esiste un classico controesempio con $\sin x / x$ sull'intero asse, in cui l'integrale converge ma non assolutamente, analogo a quanto accade per le serie). Questo criterio è particolarmente utile perché $|f|$ è sempre $\ge 0$, e quindi su $|f|$ si possono applicare liberamente i criteri del confronto e del confronto asintotico visti sopra.
@@ -407,3 +407,85 @@ Un secondo errore tipico consiste nell'applicare la stessa soglia $\alpha>1$/$\a
 Un terzo errore riguarda la conclusione finale quando uno dei pezzi diverge: non basta dire che "l'integrale diverge", bisogna controllare il segno della divergenza di ciascun pezzo, perché se un pezzo diverge a $+\infty$ e un altro a $-\infty$ (fatto possibile solo per funzioni di segno variabile, dato che per funzioni positive questo non può capitare) il risultato complessivo è indeterminato, non divergente.
 
 Infine, quando l'integranda non ha segno costante, lo spezzamento nei punti critici va comunque eseguito, ma la conclusione su ciascun pezzo richiede i criteri visti nella sezione sui [criteri di convergenza](ref:chapter/10#p4), in particolare l'assoluta integrabilità: se $\int |f(x)|\,dx$ converge su un pezzo, allora anche $\int f(x)\,dx$ converge su quel pezzo, ma non vale il viceversa, e se il modulo diverge non si può concludere nulla sul segno dell'integrale originario.
+
+## p6 | Come viene chiesto all'esame
+
+Il capitolo sugli integrali impropri compare in 20 delle 83 sessioni d'esame passate. Il caso più frequente è l'ultimo punto di un esercizio di studio di funzione, che compare in 14 di queste 20 sessioni. Il secondo caso è un esercizio autonomo con definizione, teoria e studio di un integrale improprio.
+
+Gli esempi qui sotto vengono tutti dalla prova scritta, di cui abbiamo i testi.
+
+### Tipo 1: studio di funzione con integrale improprio
+
+**Cosa chiede l'esame.** È l'Esercizio 1 da 9 punti, con sottopunti su dominio, limiti e asintoti, continuità e derivabilità, monotonia ed estremi, grafico. Gli integrali impropri sono tra gli argomenti dell'esercizio. Nel testo dell'Esame del 31 gennaio 2024 - turno 1, l'ultimo sottopunto chiede di studiare la convergenza di $\int_{-2}^{0}\frac{1}{f(x)}\,dx$. Le funzioni però hanno una struttura ricorrente: radici con $|x^4-1|$ o $x^2(2-|x|)$ sotto radice, che producono un asintoto verticale o un punto singolare. Solo i punti in cui l'integranda è illimitata possono rendere l'integrale improprio di seconda specie; i punti in cui essa si annulla o non è derivabile non bastano. Le funzioni su $\mathbb{R}$ o su una semiretta si prestano invece alla prima specie.
+
+**Metodo.**
+
+1. Riprendi dai punti (a) e (b) il comportamento di $f$ vicino ai punti dove è illimitata e a $\pm\infty$. Questi limiti sono già calcolati e non vanno rifatti.
+2. Individua tutte le cause di impropria integrabilità: estremi infiniti e punti interni o di bordo dove $f$ non è limitata. Se sono più d'una, spezza l'intervallo come in [Integrali multi-impropri e con parametri](ref:chapter/10#p5), in modo che ogni pezzo abbia una sola causa.
+3. Scrivi $f$ come costante per $\dfrac{1}{|x-x_0|^\alpha}$ vicino a un punto singolare finito $x_0$, e come costante per $\dfrac{1}{x^\alpha}$ a $\pm\infty$, usando gli sviluppi e i limiti notevoli ([Infiniti e infinitesimi](ref:chapter/6#p3)).
+4. Applica il confronto asintotico con il campione. Vicino a un punto finito $\alpha<1$ dà convergenza ([Integrali impropri di seconda specie](ref:chapter/10#p3)). All'infinito serve $\alpha>1$ ([Integrali impropri di prima specie](ref:chapter/10#p2)).
+5. Concludi con "converge se e solo se tutti i pezzi convergono". Se un pezzo diverge, l'integrale non converge.
+
+**Errori tipici.**
+
+- Applicare la soglia $\alpha>1$ a un punto finito, o $\alpha<1$ all'infinito.
+- Usare il confronto asintotico con una funzione di segno variabile: serve $f$ di segno costante vicino al punto, oppure bisogna passare per $|f|$ ([Criteri di convergenza](ref:chapter/10#p4)).
+- Dimenticare un punto singolare interno, che si vede dal dominio calcolato in (a).
+
+**Esempi.**
+
+- Esame del 31 gennaio 2024 - turno 1, esercizio 1: la funzione $\dfrac{x^3}{\sqrt{|x^4-1|}}$ ha singolarità in $\pm 1$, dove il denominatore si annulla. Il comportamento del denominatore ti dice con quale potenza va confrontata, e quindi se l'integrale vicino a quei punti converge. Le quattro versioni della stessa sessione cambiano segni e costante (ad esempio $|x^4-16|$ al posto di $|x^4-1|$).
+- Esame del 22 gennaio 2025 - turno 2 - versione 1, esercizio 1: la funzione $\sqrt[4]{x^2(2-|x|)}$ è definita su $\rbrack -2,2\lbrack $ con un valore particolare in $0$. Vicino a $\pm2$ si studia l'ordine con cui la funzione si annulla.
+
+### Tipo 2: definizione, teoria e studio con i criteri
+
+**Cosa chiede l'esame.** Questo è il formato dell'Esercizio 2. Si parte quasi sempre dalla definizione di integrale improprio convergente, divergente o indeterminato, oppure di convergenza assoluta. Segue una dimostrazione breve, poi lo studio di un integrale concreto su $\lbrack a,+\infty\lbrack $ o su un intervallo con estremo singolare.
+
+**Metodo.**
+
+1. Per la definizione, scrivi prima il limite, ad esempio $\lim_{M\to+\infty}\int_a^M g(x)\,dx$, e poi le tre alternative: il limite esiste finito, esiste infinito, non esiste.
+2. Per la dimostrazione "se $f\ge0$ l'integrale non è indeterminato", usa la funzione integrale $F(M)=\int_a^M f(x)\,dx$. È crescente perché $f\ge 0$, e una funzione monotona ha limite ({{formula:10.7}}). Lo stesso schema vale per la seconda specie.
+3. Per lo studio concreto, controlla il segno. Se la funzione è positiva usa il confronto o il confronto asintotico ({{formula:10.9}}).
+4. Se la funzione cambia segno, studia $|f|$ con una maggiorazione e applica il criterio di convergenza assoluta ({{formula:10.11}}). Se $|f|$ non è integrabile, ragiona sul comportamento di $f$ stessa.
+5. Se l'integranda è asintotica a una costante non nulla, l'integrale su una semiretta diverge.
+
+**Errori tipici.**
+
+- Dire "converge perché $f\to0$": non basta, serve la rapidità, cioè l'ordine.
+- Concludere dalla divergenza di $\int|f|$ che anche $\int f$ diverge: l'assoluta convergenza è solo sufficiente.
+- Scrivere il limite sbagliato nella definizione, oppure ometterlo.
+
+**Esempi.**
+
+- Esame del 10 febbraio 2016 - Io turno, esercizio 2: chiede le definizioni di convergenza e convergenza assoluta e poi lo studio di $\int_1^{+\infty}\frac{\sin x}{x^2}dx$. Si maggiora $\left|\frac{\sin x}{x^2}\right|\le\frac{1}{x^2}$ e si applica la convergenza assoluta.
+- Esame del 13 febbraio 2015 - IIo turno, esercizio 2.1: dopo la definizione e la dimostrazione sul caso positivo, studia $\int_0^{+\infty}\frac{x^2+\sin x}{x^2+1}dx$. L'integranda tende a $1$ all'infinito, quindi non è infinitesima e l'integrale diverge.
+- Esame del 13 febbraio 2015 - IIo turno, esercizio 2.2: la funzione $\frac{\sin(x-1)}{(x-1)^2}$ su $\lbrack 0,1\lbrack $ è asintotica a $\frac{1}{x-1}$ per $x\to1^-$, di segno negativo. Non è integrabile, e l'integrale diverge a $-\infty$.
+- Esame del 10 febbraio 2023, esercizio 2: dopo la definizione, chiede lo studio di $\int_2^{+\infty}e^{-4x^3}dx$. L'esponenziale decade più in fretta di ogni potenza, quindi si confronta con $\frac{1}{x^2}$ e l'integrale converge.
+
+### Tipo 3: calcolo diretto e parametro
+
+**Cosa chiede l'esame.** Questo tipo non richiede criteri, ma una primitiva. L'esame chiede il valore esatto dell'integrale, oppure per quali valori di un parametro l'integrale converge. Spesso il risultato serve poi a studiare una funzione integrale.
+
+**Metodo.**
+
+1. Trova una primitiva con le tecniche di [Integrali indefiniti e tecniche di integrazione](ref:chapter/9#p2): sostituzione, divisione di polinomi, fratti semplici.
+2. Scrivi l'integrale come limite, $\lim_{M\to+\infty}\int_a^M f(x)\,dx$, e applica la formula di Torricelli-Barrow ([formula (9.15)](ref:formula/9.15)) con estremo $M$.
+3. Calcola il limite della primitiva in $M$. Se il parametro compare nella primitiva, guarda quando il limite è finito: spesso i termini divergenti si elidono solo per un valore o per un intervallo di valori.
+4. Per una funzione integrale $F(x)=\int_0^x f(t)\,dt$ con $f>0$, il segno della derivata è il segno di $f$ (teorema fondamentale, [Teorema fondamentale del calcolo integrale](ref:chapter/9#p4)). Il suo estremo superiore è il valore dell'integrale improprio.
+
+**Errori tipici.**
+
+- Calcolare il limite dei singoli termini divergenti separatamente, ottenendo una forma indeterminata $\infty-\infty$ che nasconde la convergenza.
+- Calcolare la primitiva senza sostituire l'estremo $M$ e passare al limite.
+- Derivare $F(x^5)$ come se fosse $F(x)$: serve la regola della derivata composta.
+
+**Esempi.**
+
+- Esame del 10 settembre 2019, esercizio 2: calcola $\int_0^{+\infty}\frac{3}{3e^3+e^{t+3}}dt$. Si raccoglie $e^3$ e una primitiva è $e^{-3}(t-\log(3+e^t))$. Il valore è $\dfrac{\log 4}{e^3}$. Si mostra poi che $F(x^5)$ è crescente, e il suo estremo superiore coincide con questo valore.
+- Esame del 25 gennaio 2022 - Io turno, esercizio 2: studia, al variare di $k\in\mathbb{R}$, $\int_2^{+\infty}\left(\frac{k}{x}-\frac{2}{x+1}\right)dx$. La primitiva è $k\log x-2\log(x+1)$, che si riscrive come $(k-2)\log x-2\log\left(1+\frac1x\right)$. Il limite per $M\to+\infty$ è finito solo se $k=2$. Il punto (c) della stessa sessione chiede di dimostrare che $G(x)=\int_2^x g(t)\,dt$ con $g$ continua e positiva ha limite, per la monotonia.
+
+### Altri casi
+
+In una sola sessione compaiono altri due casi. Nell'Esame del 15 settembre 2020, esercizio 2, il punto (c) riprende la funzione $f(x)=e^{\sqrt{1+x}}-e$ del punto (b), di cui si calcola la parte principale con campione $x$. L'Esame del 9 settembre 2021, esercizio 1, è uno studio di funzione completo che porta tra i suoi argomenti anche gli integrali impropri.
+
+Per tutti i tipi vale una regola pratica: prima scrivi sempre il limite che definisce l'integrale, poi dichiara convergenza o divergenza.

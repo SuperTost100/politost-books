@@ -874,7 +874,7 @@ Calcola il lavoro della forza integrando da $x_0$ a $2.0\,\text{m}$, poi applica
 :::solution
 Il lavoro compiuto tra la posizione iniziale $x_0$ e $x=2.0\,\text{m}$ è
 
-$$W=\int_{x_0}^{2.0}6x\,dx=\left\lbrack 3x^2\right\rbrack _{x_0}^{2.0}=12-3x_0^2\,\text{J}.$$
+$$W=\int_{x_0}^{2.0}6x\,dx=\left[3x^2\right]_{x_0}^{2.0}=12-3x_0^2\,\text{J}.$$
 
 Poiché il corpo parte da fermo, il teorema dell’energia cinetica dà $\frac12mv^2=W$. Con $m=3.0\,\text{kg}$ si ottiene
 
@@ -967,7 +967,7 @@ Integra la componente della forza lungo lo spostamento tra gli estremi indicati.
 :::solution
 Poiché il moto avviene lungo l’asse $x$, il lavoro è $W=\int_0^3(4x+1)\,dx$.
 
-$$W=\left\lbrack 2x^2+x\right\rbrack _0^3=2(3)^2+3=21\,\text{J}.$$
+$$W=\left[2x^2+x\right]_0^3=2(3)^2+3=21\,\text{J}.$$
 
 Il lavoro compiuto è $21\,\text{J}$.
 :::
@@ -978,7 +978,7 @@ Il lavoro compiuto è $21\,\text{J}$.
 Una molla ideale ha costante elastica $k=200\,\text{N/m}$. Calcolare l’energia potenziale elastica quando la molla è allungata di $0.10\,\text{m}$ rispetto alla lunghezza naturale.
 
 :::hint
-Usa $U_e=\frac12kx^2$ con l’allungamento espresso in metri. {{formula:3.22}}
+Usa $U_e=\frac12kx^2$ con l’allungamento espresso in metri. {{formula:3.24}}
 :::
 
 :::solution
@@ -1049,7 +1049,7 @@ $$N_w(5{,}0\ \text{m})\sin 53^\circ=(20g)(2{,}5\ \text{m})\cos 53^\circ+(60g)(3{
 
 Pertanto
 
-$$N_w=\frac{g\cos 53^\circ}{5{,}0\ \text{m}\sin 53^\circ}\bigl\lbrack (20\ \text{kg})(2{,}5\ \text{m})+(60\ \text{kg})(3{,}0\ \text{m})\bigr\rbrack \simeq339\ \text{N}.$$
+$$N_w=\frac{g\cos 53^\circ}{5{,}0\ \text{m}\sin 53^\circ}\bigl[(20\ \text{kg})(2{,}5\ \text{m})+(60\ \text{kg})(3{,}0\ \text{m})\bigr]\simeq339\ \text{N}.$$
 
 L’equilibrio orizzontale richiede che l’attrito al piede abbia modulo uguale a $N_w$ e sia diretto verso la parete: $f_s\simeq339\ \text{N}$. Dall’equilibrio verticale, la reazione normale del pavimento bilancia il peso totale:
 
@@ -1738,7 +1738,7 @@ Rappresenta l'asta come una distribuzione lineare uniforme e integra $x^2$ lungo
 :::solution
 La densità lineare è $\lambda=M/L=1{,}5\,\mathrm{kg/m}$. Un elemento di lunghezza $dx$ ha massa $dm=\lambda\,dx$ e distanza $|x|$ dall'asse. Quindi
 
-$$I_z=\int_{-L/2}^{L/2}x^2\,dm=\lambda\int_{-1}^{1}x^2\,dx=1{,}5\left\lbrack \frac{x^3}{3}\right\rbrack _{-1}^{1}=1\,\mathrm{kg\,m^2}.$$
+$$I_z=\int_{-L/2}^{L/2}x^2\,dm=\lambda\int_{-1}^{1}x^2\,dx=1{,}5\left[\frac{x^3}{3}\right]_{-1}^{1}=1\,\mathrm{kg\,m^2}.$$
 :::
 :::
 

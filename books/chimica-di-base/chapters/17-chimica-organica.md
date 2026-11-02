@@ -198,6 +198,8 @@ Il gruppo carbossilico può reagire con un alcol formando un estere e acqua. Est
 
 ## p6 | Polimeri
 
+*Questa sezione va oltre il programma del corso: all'esame non viene chiesta.*
+
 ### Monomero e unità ripetitiva
 
 **Definizione 17.11**. Un polimero è una macromolecola formata da molte unità strutturali unite da legami covalenti. Il **monomero** è la molecola reagente da cui il polimero si forma; l’**unità ripetitiva** è il gruppo di atomi che ricorre lungo la catena. Le due cose vanno distinte: durante la reazione la struttura del monomero può cambiare. Un polimero ottenuto da un solo tipo di monomero è un omopolimero; se intervengono monomeri di specie diverse, è un copolimero.
@@ -207,7 +209,7 @@ Il gruppo carbossilico può reagire con un alcol formando un estere e acqua. Est
 Nella **polimerizzazione per addizione**, le molecole di monomero si uniscono senza liberare un prodotto secondario. Nel caso comune degli alcheni, si apre il doppio legame carbonio-carbonio e si formano nuovi legami tra le unità. La crescita può procedere a catena: l’aggiunta di un monomero lascia un sito reattivo per l’aggiunta successiva. L’etene dà così il polietilene.
 
 :::formula{id="17.1" label="Formazione schematica del polietilene"}
-$$n\,\mathrm{CH_2{=}CH_2}\;\longrightarrow\;[\mathrm{-CH_2-CH_2-}]_n$$
+$$n\,\mathrm{CH_2{=}CH_2}\;\longrightarrow\;\lbrack \mathrm{-CH_2-CH_2-}\rbrack _n$$
 :::
 
 Nello schema, $n$ indica il numero di molecole di etene incorporate e le parentesi quadre delimitano l’unità ripetitiva. I trattini ai lati della parentesi rappresentano i legami con le unità vicine; per una catena reale occorre considerare anche i gruppi terminali.
@@ -227,3 +229,29 @@ Nella **polimerizzazione per condensazione**, monomeri con due gruppi funzionali
 4. **Verifica**. Ogni unità contiene ancora due atomi di carbonio e quattro di idrogeno, come una molecola di etene. La formula tra parentesi descrive l’interno della catena, mentre i gruppi terminali sono omessi dallo schema.
 
 **Errore tipico 17.7**. Non si scrive $\mathrm{\lbrack -CH_2{=}CH_2-\rbrack }_n$ per il polietilene: il doppio legame del monomero è stato consumato. Non si aggiunge neppure acqua tra i prodotti dell’addizione. Nella condensazione, invece, bisogna identificare i gruppi funzionali che reagiscono e contare le molecole eliminate tenendo conto delle estremità della catena.
+
+## p7 | Come viene chiesto all'esame
+
+Nell'archivio delle prove passate, 1 sessione su 4 conteneva domande sugli argomenti di questo capitolo. L'unica domanda trovata è un esercizio misto: un calcolo di proprietà colligative a cui si aggancia una domanda breve di chimica organica sul riconoscimento del gruppo funzionale e sull'ibridazione.
+
+Con una sola domanda non si può parlare di tipi ricorrenti, e questa sezione non li inventa. Descrive quello che la domanda mostra e indica come affrontarlo.
+
+La domanda trovata nell'archivio è una domanda teorica breve, accanto a un esercizio numerico di un altro capitolo. In questa domanda non compaiono problemi estesi di nomenclatura o di meccanismi. Per il test informatizzato e per le altre sessioni questa sezione non dice nulla, perché le domande a disposizione non le coprono.
+
+Nell'esame di tipo "Tema d_esame 3 + soluzione", esercizio 2, il testo chiede prima la quantità di glicerolo (propan-1,2,3-triolo) che innalza di 0,150 °C la temperatura di ebollizione di 285 mL di acqua. Poi, nella sottodomanda D2, chiede di scrivere la formula di semistruttura, di indicare l'ibridazione di ciascun atomo di carbonio e di dire a quale classe di composti organici appartiene la molecola.
+
+La parte numerica si risolve con [formula (11.9)](ref:formula/11.9) e con le concentrazioni, che trovi in [Proprietà colligative](ref:chapter/11#p4) e in [Espressioni della concentrazione](ref:chapter/11#p3). Il glicerolo non è un elettrolita, quindi $i = 1$. Dalla variazione di temperatura si ottiene la molalità, $m = 0{,}150/0{,}512 \approx 0{,}293$ mol/kg. Con la massa di solvente $285 \times 0{,}996 \approx 283{,}9$ g si ricavano circa $0{,}0832$ mol e, con $M \approx 92{,}09$ g/mol, circa $7{,}66$ g di glicerolo.
+
+Per la sottodomanda D2 il metodo ha questi passi:
+
+1. Ricava la struttura dal nome. Il suffisso *-triolo* indica tre gruppi $-\mathrm{OH}$ e *propan-* indica tre atomi di carbonio in catena, con gli $-\mathrm{OH}$ sulle posizioni 1, 2 e 3. La semistruttura è $\mathrm{HOCH_2{-}CH(OH){-}CH_2OH}$. I suffissi e la nomenclatura degli alcoli sono in [Gruppi funzionali](ref:chapter/17#p5).
+2. Assegna l'ibridazione contando i legami del carbonio. Ognuno dei tre atomi di C forma quattro legami $\sigma$ e nessun legame $\pi$, quindi è $sp^3$. Il criterio è nella sezione [Legame di valenza e ibridazione](ref:chapter/9#p6), e [Il carbonio e le molecole organiche](ref:chapter/17#p2) lo applica ai legami del carbonio.
+3. Indica la classe di appartenenza. Il glicerolo è un **alcol**, in particolare un polialcol (triolo), perché ogni $-\mathrm{OH}$ è legato a un carbonio saturo.
+
+Gli errori tipici che questa domanda invita a evitare sono i seguenti:
+
+- **Errore tipico 17.8**: scrivere la formula senza i tre $-\mathrm{OH}$, o con due di essi sullo stesso carbonio, perché non si è letta con attenzione la numerazione 1,2,3.
+- **Errore tipico 17.9**: attribuire ibridazione $sp^2$ ai carboni legati all'ossigeno. L'ibridazione dipende dal numero di legami $\pi$ e di coppie di legame, non dalla presenza di un eteroatomo: qui non ci sono doppi legami.
+- **Errore tipico 17.10**: classificare il glicerolo come un acido carbossilico, o come un etere, per confusione con l'atomo di ossigeno. Un $-\mathrm{OH}$ legato a un carbonio saturo è sempre un alcol.
+
+Per prepararti, tieni presente che la struttura dell'esame è questa: il test informatizzato iniziale e la prova scritta con esercizi e domande teoriche, senza materiale didattico. Una domanda come la sottodomanda D2 si risolve a memoria, perché richiede solo di saper scrivere la semistruttura, contare i legami e riconoscere il gruppo funzionale. Prima di una prova, allenati a passare dal nome alla formula e viceversa per i dieci gruppi del capitolo, e a ricavare l'ibridazione di ogni carbonio. Se vuoi ripassare anche l'isomeria o i polimeri, trovi i criteri in [Isomeria](ref:chapter/17#p4) e in [Polimeri](ref:chapter/17#p6), anche se le domande a disposizione non li hanno finora richiesti.

@@ -140,6 +140,20 @@ Da questa osservazione seguono due conseguenze. Primo, il gas non scambia calore
 
 Secondo, nell'esperimento la temperatura finale coincide con quella iniziale, mentre pressione e volume differiscono tra i due stati. L'esperimento di Joule descritto sopra confronta soltanto uno stato iniziale e uno stato finale in cui il volume raddoppia; il risultato si generalizza però a un rapporto qualsiasi tra volume iniziale e finale, ripetendo l'esperimento con recipienti di forma e frazioni di volume diverse: in ogni caso la temperatura finale coincide con quella iniziale. Questa generalizzazione, assunta qui come fatto sperimentale per il modello di gas ideale, troverà una giustificazione microscopica nella sezione sulla [Teoria cinetica ed equipartizione](ref:chapter/13#p5), dove si mostra che, nel modello di molecole rigide privo di struttura interna, l'energia interna del gas ideale coincide con la sola energia cinetica delle molecole, funzione della sola temperatura e indipendente dal volume occupato. Se le molecole possiedono anche gradi di libertà vibrazionali, come illustrato in quella stessa sezione, all'energia cinetica si aggiunge un'energia potenziale intramolecolare associata alle vibrazioni; tuttavia, per il principio di equipartizione, anche questo contributo dipende soltanto dalla temperatura e non dal volume occupato dal gas, cosicché l'energia interna del gas ideale resta comunque funzione della sola $T$. Per concludere che, nel gas ideale, $U$ dipende soltanto dalla temperatura occorre dunque estendere l'invarianza dell'energia interna osservata sperimentalmente alle espansioni libere tra volumi iniziali e finali arbitrari. Nei gas reali si possono invece osservare variazioni di temperatura nell'espansione libera, segno di una dipendenza residua dell'energia interna dal volume.
 
+**Dimostrazione richiesta all'esame.**
+
+Si vuole mostrare che l'energia interna di un gas ideale dipende solo dalla temperatura. Le ipotesi sono: il gas è ideale, cioè obbedisce a $pV=nRT$; la quantità di sostanza $n$ è fissata; il gas è contenuto in un recipiente con pareti adiabatiche e si espande nel vuoto (espansione libera di Joule).
+
+Poiché lo stato di equilibrio è individuato da due variabili indipendenti, si può scrivere $U=U(T,V)$. Nell'espansione libera adiabatica si ha $Q=0$, perché le pareti sono adiabatiche, e $W=0$, perché il gas si espande nel vuoto e non vince alcuna pressione esterna. Dal primo principio $\Delta U = Q - W = 0$, quindi $U_{\text{fin}} = U_{\text{in}}$. La temperatura misurata non cambia: $T_{\text{fin}} = T_{\text{in}} = T$. Il volume invece passa da $V_1$ a $V_2 \neq V_1$, e anche la pressione cambia, da $p_1$ a $p_2$.
+
+Lo stato iniziale $(T,V_1)$ e lo stato finale $(T,V_2)$ hanno dunque la stessa temperatura e la stessa energia interna, pur avendo volume e pressione diversi:
+
+$$U(T,V_1) = U(T,V_2).$$
+
+Poiché $V_1$ e $V_2$ sono arbitrari, a $T$ fissata $U$ non varia al variare di $V$. Dall'equazione di stato, a $T$ fissata $p$ è determinata da $V$, quindi $U$ non dipende nemmeno da $p$. Ne segue $U = U(T)$.
+
+Il risultato vale solo per il gas ideale, nelle ipotesi indicate: per i gas reali l'espansione libera può variare la temperatura e $U$ dipende anche da $V$. Lo stesso risultato segue dalla teoria cinetica, per cui $U = n c_V T$ è funzione della sola $T$.
+
 Per ottenere l'espressione esplicita di $\Delta U$ in funzione di $T$ si considerano due stati di equilibrio generici $A$ e $B$ di $n$ moli di gas ideale, collegati tramite due trasformazioni di comodo: prima una isocora $A \to C$ (volume costante), poi una isoterma $C \to B$ (temperatura costante). Poiché $U$ dipende solo da $T$, lungo l'isoterma $C \to B$ l'energia interna non varia, cioè $U_B = U_C$; quindi $\Delta U_{A\to B} = U_B - U_A = U_C - U_A$, che è proprio la variazione di energia interna nella sola trasformazione isocora $A \to C$.
 
 Applicando il primo principio alla trasformazione isocora, in cui $W=0$ perché il volume non cambia, si ottiene $\Delta U = Q$, dove $Q$ è il calore scambiato a volume costante. Introducendo il calore specifico molare a volume costante $c_V$ (definito da $\delta Q = n c_V\,dT$ nelle trasformazioni isocore), e assumendolo indipendente dalla temperatura in un primo intervallo di validità, si ricava l'espressione generale, valida per qualunque trasformazione del gas ideale perché $U$ dipende solo da $T$.
@@ -340,7 +354,7 @@ Sotto queste ipotesi la pressione che il gas esercita sulle pareti del recipient
 
 ### Pressione dal modello cinetico
 
-Si consideri un gas di $N$ molecole identiche di massa $m$, contenuto in un recipiente cubico di lato $L$ e volume $V=L^3$. Nel calcolo seguente si trascurano gli urti intermolecolari tra due urti consecutivi di una molecola contro la stessa parete: la sua componente della velocità $v_x$ resta quindi costante durante il tragitto. Un urto elastico contro una parete perpendicolare all'asse $x$ inverte tale componente. La variazione della quantità di moto della molecola ha modulo $2m|v_x|$; per il teorema dell'impulso ([formula (3.7)](ref:formula/3.7)), la parete riceve un impulso di uguale modulo. Tra due urti successivi contro la stessa parete la molecola percorre la distanza $2L$, quindi il tempo tra gli urti è $2L/|v_x|$ e la frequenza degli urti è $|v_x|/(2L)$. La forza media esercitata da quella molecola sulla parete è dunque $m v_x^2/L$. Sommando i contributi delle molecole e dividendo per l'area $L^2$, la pressione risulta $p = (m/V)\sum_{i=1}^{N}v_{x,i}^2 = (mN/V)\overline{v_x^2}$. Poiché il moto è isotropo, le tre componenti hanno la stessa media quadratica e $\overline{v^2}=\overline{v_x^2}+\overline{v_y^2}+\overline{v_z^2}=3\overline{v_x^2}$. Pertanto $\overline{v_x^2}=\overline{v^2}/3$ e, posto $v_{qm}=\sqrt{\overline{v^2}}$, si ottiene la pressione in funzione delle grandezze microscopiche
+Si consideri un gas di $N$ molecole identiche di massa $m$, contenuto in un recipiente cubico di lato $L$ e volume $V=L^3$. Nel calcolo seguente si trascurano gli urti intermolecolari tra due urti consecutivi di una molecola contro la stessa parete: la sua componente della velocità $v_x$ resta quindi costante durante il tragitto. Un urto elastico contro una parete perpendicolare all'asse $x$ inverte tale componente. La variazione della quantità di moto della molecola ha modulo $2m|v_x|$; per il teorema dell'impulso ([formula (3.9)](ref:formula/3.9)), la parete riceve un impulso di uguale modulo. Tra due urti successivi contro la stessa parete la molecola percorre la distanza $2L$, quindi il tempo tra gli urti è $2L/|v_x|$ e la frequenza degli urti è $|v_x|/(2L)$. La forza media esercitata da quella molecola sulla parete è dunque $m v_x^2/L$. Sommando i contributi delle molecole e dividendo per l'area $L^2$, la pressione risulta $p = (m/V)\sum_{i=1}^{N}v_{x,i}^2 = (mN/V)\overline{v_x^2}$. Poiché il moto è isotropo, le tre componenti hanno la stessa media quadratica e $\overline{v^2}=\overline{v_x^2}+\overline{v_y^2}+\overline{v_z^2}=3\overline{v_x^2}$. Pertanto $\overline{v_x^2}=\overline{v^2}/3$ e, posto $v_{qm}=\sqrt{\overline{v^2}}$, si ottiene la pressione in funzione delle grandezze microscopiche
 
 $$p = \frac{mN}{V}\frac{v_{qm}^2}{3},$$
 
@@ -439,11 +453,11 @@ $$T_BV_B^{\gamma-1} = T_CV_C^{\gamma-1} \quad\Longrightarrow\quad T_C = T_B\left
 
 Essendo $A \to B$ isoterma, $T_B = T_A$; inoltre $V_B/V_C = 1/3$. Il calore nella trasformazione isocora $C\to A$ vale
 
-$$Q_{C\to A} = \Delta U = nc_V(T_A - T_C) = \frac{5}{2}nR\left\lbrack T_A - T_A\left(\frac{1}{3}\right)^{\gamma-1}\right\rbrack  = \frac{5}{2}nRT_A\left\lbrack 1 - \left(\frac{1}{3}\right)^{\gamma-1}\right\rbrack . $$
+$$Q_{C\to A} = \Delta U = nc_V(T_A - T_C) = \frac{5}{2}nR\left[T_A - T_A\left(\frac{1}{3}\right)^{\gamma-1}\right] = \frac{5}{2}nRT_A\left[1 - \left(\frac{1}{3}\right)^{\gamma-1}\right]. $$
 
 **Numeri.** Con $n=3\ \text{mol}$, $R = 8{,}314\ \text{J/(mol·K)}$, $T_A = 373{,}2\ \text{K}$ e $\gamma - 1 = 2/5$,
 
-$$Q_{C\to A} = \frac{5}{2}\cdot 3\ \text{mol}\cdot 8{,}314\ \frac{\text{J}}{\text{mol·K}}\cdot 373{,}2\ \text{K}\cdot\left\lbrack 1-\left(\frac{1}{3}\right)^{2/5}\right\rbrack  \approx 8275\ \text{J}. $$
+$$Q_{C\to A} = \frac{5}{2}\cdot 3\ \text{mol}\cdot 8{,}314\ \frac{\text{J}}{\text{mol·K}}\cdot 373{,}2\ \text{K}\cdot\left[1-\left(\frac{1}{3}\right)^{2/5}\right] \approx 8275\ \text{J}. $$
 
 **Controllo.** Il risultato è positivo, cioè il gas assorbe calore nella trasformazione isocora, come ci si aspetta: il gas si trova a $T_C < T_A$ (essendosi raffreddato nell'espansione adiabatica $B\to C$) e deve essere riscaldato fino a $T_A$. L'ordine di grandezza (alcuni kJ, per moli di gas e salti di temperatura di decine di kelvin) è coerente con $c_V \sim 20\ \text{J/(mol·K)}$.
 
@@ -452,3 +466,71 @@ $$Q_{C\to A} = \frac{5}{2}\cdot 3\ \text{mol}\cdot 8{,}314\ \frac{\text{J}}{\tex
 Un errore concettuale frequente, anche quando i calcoli numerici sono eseguiti correttamente, consiste nello scrivere $\Delta Q_{A\to B}$ o $\Delta W_{A\to B}$ come se calore e lavoro fossero variazioni di una funzione di stato. Scrivere $\Delta f$ per una grandezza $f$ presuppone che $f$ sia definita punto per punto nello spazio degli stati termodinamici, cosa che non vale per $Q$ e $W$: solo l'energia interna $U$ è funzione di stato, e le sue variazioni si scrivono correttamente $\Delta U_{A\to B} = Q_{A\to B} - W_{A\to B}$, con $Q_{A\to B}$ e $W_{A\to B}$ senza delta davanti. Questo errore era già stato segnalato per il primo principio generale nella sezione [Primo principio ed energia interna](ref:chapter/13#p2) e si ripresenta tipicamente nei bilanci energetici di cicli composti da più trasformazioni, come quello dell'esempio precedente.
 
 Un secondo errore tipico, già incontrato nella sezione sui [Gas ideali](ref:chapter/13#p3), consiste nel sostituire pressione e volume nell'equazione di stato senza convertirli nelle unità del Sistema Internazionale (pascal e metri cubi) prima di dividere per $nR$: il risultato numerico per $T$ risulta allora sbagliato di diversi ordini di grandezza, pur avendo l'unità di misura formalmente corretta (kelvin).
+
+## p6 | Come viene chiesto all'esame
+
+Il capitolo è comparso in 4 sessioni d'esame su 6. Il tipo di esercizio più frequente è la sequenza di trasformazioni di un gas ideale (isoterma reversibile, isocora, spesso una terza trasformazione), di cui si chiedono calore, lavoro e variazione di energia interna. In tutti i casi la traccia è l'**Esercizio 3**, il terzo esercizio dello scritto, e i temi dell'elenco associano al primo principio anche macchine termiche, calorimetria o entropia.
+
+### Sequenza di trasformazioni reversibili con bilancio energetico
+
+**Cosa chiede l'esame.** Un gas ideale con $n$ moli parte da uno stato $A$ con $T_A$ nota. Compie un'isoterma reversibile fino a un volume dato, poi un'isocora a contatto con una sorgente a temperatura diversa. Seguono altri tratti, che nelle tracce riportate sono troncati. Si chiedono $Q$, $W$ e $\Delta U$ dei singoli tratti e del percorso complessivo.
+
+**Metodo.**
+
+1. Scrivi i dati con le unità SI (volumi in m³, temperature in K) e dichiara se il gas è monoatomico ($c_V = \tfrac{3}{2}R$) o biatomico ($c_V = \tfrac{5}{2}R$), come illustrato in [Teoria cinetica ed equipartizione](ref:chapter/13#p5).
+2. Per ogni stato ricava le variabili mancanti con {{formula:13.3}}, dopo aver convertito le unità come spiegato in [Gas ideali](ref:chapter/13#p3).
+3. Tratta ogni tratto separatamente, con le formule di [Trasformazioni dei gas ideali](ref:chapter/13#p4).
+   - Nell'isoterma reversibile $\Delta U = 0$, quindi $Q = W$ si calcola con {{formula:13.8}}.
+   - Nell'isocora $W = 0$ e $Q = \Delta U = n c_V \Delta T$.
+   - Nell'adiabatica reversibile $Q = 0$ e vale {{formula:13.9}}, con $W = -\Delta U$.
+4. Calcola $\Delta U = n c_V \Delta T$ con {{formula:13.4}} per ogni tratto, qualunque sia la trasformazione. Controlla poi con il primo principio, {{formula:13.1}}, che $Q - W = \Delta U$ in ogni tratto.
+5. Somma i contributi dei tratti. Per $\Delta U$ complessivo basta confrontare lo stato iniziale e quello finale, perché $U$ è funzione di stato ([Primo principio ed energia interna](ref:chapter/13#p2)). $Q$ e $W$ invece si sommano tratto per tratto.
+6. Controlla segni, unità e ordine di grandezza. Una compressione ha $W<0$, un gas che si riscalda ha $\Delta U>0$.
+
+**Errori tipici.**
+
+- Usare $pV^\gamma = \text{costante}$ per un'isoterma, o $pV = \text{costante}$ per un'adiabatica.
+- Scrivere $Q = n c_V \Delta T$ anche per l'isoterma o per un tratto non isocoro.
+- Dimenticare che in una compressione il lavoro compiuto dal gas è negativo con la convenzione $\Delta U = Q - W$.
+- Inserire il rapporto $V_B/V_A$ nel logaritmo con il verso sbagliato: in una compressione deve risultare $\ln(V_B/V_A)<0$.
+
+**Esempi.**
+
+- *Esame del 25 giugno 2026, esercizio 3A*: due moli di gas monoatomico, compressione isoterma reversibile da $A$ a $B$ con $V_B = 0{,}75\,V_A$, poi isocora fino a $T_C = 400$ K. Il metodo si applica tratto per tratto: nell'isoterma $Q = W = nRT_A\ln(V_B/V_A)$, nell'isocora $Q = \Delta U = n\tfrac{3}{2}R(T_C - T_B)$.
+- *Esame del 25 giugno 2026, esercizio 3B*: stessa struttura con sei moli di gas biatomico e un'espansione fino a $V_B = 1{,}5\,V_A$. Cambiano il segno del lavoro nell'isoterma e il valore di $c_V$, che passa a $\tfrac{5}{2}R$.
+
+### Isoterma in un bagno di ghiaccio e fusione
+
+**Cosa chiede l'esame.** Il gas compie un'isoterma reversibile a contatto con una miscela di acqua e ghiaccio (con $T_A = 273{,}2$ K) tra due volumi dati, poi viene messo a contatto con una sorgente. Questo schema ricorre in due sessioni, con la stessa coppia di volumi $V_A = 5\cdot10^{-3}$ m³ e $V_B = 2\cdot10^{-3}$ m³ e $n = 2$ mol di gas monoatomico.
+
+**Metodo.**
+
+1. Riconosci che la temperatura del gas coincide con quella della miscela durante tutto il tratto. L'isoterma ha $\Delta U = 0$ e quindi $Q = W$.
+2. Calcola il lavoro con {{formula:13.8}} usando i volumi dati, che sono già in m³, e il valore di $R$ indicato nella traccia (8,31 J/(mol·K) nel tema 2025).
+3. Per i tratti successivi usa lo stato $B$ ricavato con {{formula:13.3}} e prosegui come nel tipo precedente.
+4. Se compare un calore scambiato con acqua o ghiaccio, scrivi il bilancio con le formule di [Calorimetria](ref:chapter/12#p5) e non con quelle del gas. Il tema 2024 lo associa infatti alla calorimetria e all'entropia.
+
+**Errori tipici.**
+
+- Convertire male i volumi (litri in m³) oppure usare la temperatura in °C nel logaritmo e nell'equazione di stato.
+- Confondere il calore ceduto dal gas con quello assorbito dal bagno: sono uguali in modulo e opposti in segno.
+
+**Esempi.**
+
+- *Prova scritta, Tema Esame 2025 - 1, esercizio 3*: isoterma reversibile da $V_A$ a $V_B$ a contatto con una miscela d'acqua e ghiaccio. Si calcola $W = Q$ con il logaritmo del rapporto dei volumi e poi si prosegue sulle trasformazioni successive.
+- *Prova scritta, Tema Esame 2 - 2024, esercizio 3A*: gli stessi dati, con compressione reversibile del gas. La stessa formula dà $W<0$ e un calore ceduto alla miscela.
+
+### Collegamento con macchine termiche ed entropia
+
+Tutti i quattro esercizi sono associati anche a domande di **entropia** e, per quattro dei sei esercizi elencati, di **macchine termiche**. Per questo il bilancio energetico del gas va svolto con ordine e tenuto da parte: serve poi per il calcolo del rendimento ([Macchine termiche e frigoriferi](ref:chapter/14#p2)) e delle $\Delta S$ ([Calcolo delle variazioni di entropia](ref:chapter/14#p6)). Un errore su $Q$ o $W$ si propaga a tutte le domande successive.
+
+### Tipi che compaiono in una sola sessione
+
+Nella sessione dell'11 luglio 2022 compaiono due tipi che le altre non mostrano.
+
+- *Esame dell'11 luglio 2022, esercizio 3A1*: trasformazione reversibile di un gas monoatomico con $pV^2$ costante, di cui è noto il rapporto tra le temperature. È una politropica, diversa dall'adiabatica perché l'esponente non è $\gamma$.
+- *Esame dell'11 luglio 2022, esercizio 3*: ciclo di una mole di gas biatomico con isoterme reversibili, un'espansione irreversibile $BC$ in cui il gas cede $Q_{BC} = -750$ J e una compressione adiabatica reversibile. Qui il calore del tratto irreversibile è un dato e non va ricavato da formule reversibili, come spiegato nella parte sulle trasformazioni irreversibili di [Trasformazioni dei gas ideali](ref:chapter/13#p4).
+
+### Cosa portare all'esame
+
+Lo scritto dura 2 ore e il problema sul gas ideale è uno dei due problemi strutturati: conviene saper svolgere in modo rapido e senza errori la sequenza isoterma, isocora e adiabatica. Le domande di teoria dello scritto e l'eventuale orale possono chiedere le dimostrazioni, quindi vanno preparate la relazione di Mayer ({{formula:13.6}}) e l'equazione delle adiabatiche reversibili ({{formula:13.10}}).

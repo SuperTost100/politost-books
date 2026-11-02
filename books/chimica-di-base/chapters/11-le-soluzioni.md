@@ -107,7 +107,7 @@ La concentrazione di una soluzione esprime la quantità relativa di soluto prese
 **Definizione 11.1** (Molarità). La molarità $M_i$ (o $c_i$) del componente $i$ è il rapporto tra le moli di $i$ e il volume della soluzione, espresso in litri
 
 :::formula{id="11.3" label="Molarità"}
-$$M_i = \frac{n_i}{V_{\text{soluzione}}}, \qquad [M] = \operatorname{mol/L}$$
+$$M_i = \frac{n_i}{V_{\text{soluzione}}}, \qquad \lbrack M\rbrack  = \operatorname{mol/L}$$
 :::
 
 Il denominatore è il volume di soluzione, non il volume di solvente aggiunto: il soluto occupa esso stesso un certo volume, quindi sciogliere 1 mol di soluto in 1 L di solvente non produce in generale una soluzione 1 M. Per preparare una soluzione a molarità nota si introduce in un matraccio volumetrico la massa di soluto calcolata, si aggiunge solvente fino a circa metà del volume finale, si agita per sciogliere completamente il soluto e solo infine si porta a volume aggiungendo altro solvente fino al repère del matraccio.
@@ -115,7 +115,7 @@ Il denominatore è il volume di soluzione, non il volume di solvente aggiunto: i
 **Definizione 11.2** (Molalità). La molalità $m_i$ del componente $i$ è il rapporto tra le moli di $i$ e la massa del solvente, espressa in chilogrammi
 
 :::formula{id="11.4" label="Molalità"}
-$$m_i = \frac{n_i}{m_{\text{solvente}}}, \qquad [m] = \operatorname{mol/kg}$$
+$$m_i = \frac{n_i}{m_{\text{solvente}}}, \qquad \lbrack m\rbrack  = \operatorname{mol/kg}$$
 :::
 
 La molalità è la sola, tra le grandezze qui definite, che ha al denominatore la massa del solvente puro e non quella (o il volume) della soluzione; questa differenza è la ragione per cui la molalità, a differenza della molarità, non dipende dalla temperatura (il volume di una soluzione varia con $T$, la sua massa no).
@@ -171,7 +171,7 @@ Verifica: usando unità coerenti, la molarità si calcola da $c = \rho\,w/M_{\ma
 
 **Errore tipico 11.3.** Confondere il denominatore della molalità (massa di solvente) con quello della molarità e della percentuale in massa (massa o volume di soluzione intera) porta a errori sistematici quando il soluto è presente in quantità non trascurabile; l'errore si amplifica proprio nei casi, come quello appena svolto, in cui le due quantità differiscono sensibilmente.
 
-**Errore tipico 11.4.** Trattare i volumi di due liquidi miscelati come semplicemente additivi senza verificarlo: a causa delle interazioni soluto-solvente il volume della soluzione può non essere pari alla somma dei volumi dei componenti puri. Il caso più noto è la contrazione volumica di miscele acqua-alcol, dovuta alla differenza tra i volumi molecolari dei due liquidi. L'additività dei volumi si assume solo quando è dichiarata o giustificata dall'approssimazione richiesta; altrimenti si usa il volume finale misurato o la densità appropriata. Quando si aggiunge un soluto solido a un solvente liquido, è usuale approssimare che il volume della soluzione coincida con quello del solvente di partenza.
+**Errore tipico 11.4.** Trattare i volumi di due liquidi miscelati come semplicemente additivi senza verificarlo: a causa delle interazioni soluto-solvente il volume della soluzione può non essere pari alla somma dei volumi dei componenti puri. Il caso più noto è la contrazione volumica di miscele acqua-alcol, dovuta alla differenza tra i volumi molecolari dei due liquidi. L'additività dei volumi si assume solo quando è dichiarata o giustificata dall'approssimazione richiesta; altrimenti si usa il volume finale misurato o la densità appropriata. Per soluzioni molto diluite, si può approssimare il volume finale con quello del solvente di partenza solo se l'errore è trascurabile; negli altri casi si usa il volume finale o, per ricavarlo, la densità della soluzione.
 
 **Errore tipico 11.5.** Dimenticare che la concentrazione espressa in unità di volume (molarità, percentuale in volume, percentuale massa/volume) dipende dalla temperatura, perché il volume di una soluzione si dilata con il riscaldamento: la stessa soluzione, più calda, contiene un po' meno moli di soluto per unità di volume. La molalità e le percentuali in massa, basate solo su masse, non sono invece influenzate dalla temperatura.
 
@@ -344,3 +344,49 @@ $\displaystyle n_{\text{CaCl}_2} = 0,896 \cdot 0,500 = 0,448\ \text{mol}, \qquad
 - Verifica: trascurare la dissociazione (usare $i=1$) avrebbe triplicato la massa calcolata rispetto a quella corretta, da cui l'importanza di identificare $\nu$ prima di procedere.
 
 **Errore tipico 11.8.** Lo studente spesso dimentica il fattore $i$ per sali, acidi forti e basi forti, trattandoli come se fossero molecole indissociate, oppure calcola $\nu$ sbagliando il numero di ioni liberati dalla formula (per esempio $\nu=2$ per $\text{CaCl}_2$ invece di $\nu=3$). Un secondo errore frequente è usare la molarità al posto della molalità in $\Delta T_{eb}$ e $\Delta T_{cr}$: queste due leggi richiedono sempre $m'$, perché $K_{eb}$ e $K_{cr}$ sono definite rispetto alla massa di solvente, indipendente dalla temperatura, mentre la molarità varia con la dilatazione termica del volume di soluzione.
+
+## p5 | Come viene chiesto all'esame
+
+Il capitolo sulle soluzioni è comparso in 3 delle 4 sessioni d'esame esaminate. Quasi sempre non è un esercizio a sé: la concentrazione fa da ingranaggio dentro un problema di stechiometria o di ossidoriduzione. L'esercizio dedicato alle proprietà colligative compare invece una volta sola, in una forma diretta.
+
+### Concentrazione dentro un problema di stechiometria o di redox
+
+**Cosa chiede l'esame.** L'esercizio parte da una reazione da scrivere e bilanciare. Poi chiede una quantità di prodotto in grammi, oppure una grandezza da calcolare su una soluzione. Una delle quantità di partenza non è data in moli o in grammi, ma come soluzione: una percentuale in massa insieme a un volume, oppure una massa di soluto sciolta in un volume noto. La parte sulle soluzioni è il ponte tra il dato e le moli.
+
+**Metodo passo per passo.**
+
+1. Bilancia la reazione. Se è una redox, scrivi le semireazioni e fai uguagliare gli elettroni scambiati (vedi [Reazioni di ossidoriduzione](ref:chapter/5#p5)).
+2. Porta ogni reagente a moli. Per un solido usa $n = m/M$ ([formula (2.4)](ref:formula/2.4)). Per un reagente dato come soluzione percentuale converti il volume in massa con la densità e applica la percentuale in massa del soluto ({{formula:11.6}}).
+3. Confronta le moli con i coefficienti stechiometrici e individua il reagente limitante ([Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4)).
+4. Calcola le moli del prodotto richiesto dal reagente limitante e convertile in grammi con la massa molare.
+5. Verifica che le unità si semplifichino e che le cifre significative rispettino i dati ([Grandezze, unità e cifre significative](ref:chapter/1#p3)).
+
+**Errori tipici.**
+
+- Trattare una soluzione al 37,0 % come se i litri di soluzione fossero litri o grammi di soluto. Il volume va prima convertito in massa con la densità, e solo allora si applica la percentuale in massa. Le conversioni sono spiegate in [Espressioni della concentrazione](ref:chapter/11#p3).
+- Individuare il reagente limitante confrontando le moli senza dividere per il coefficiente stechiometrico.
+- Bilanciare male la redox e propagare l'errore a tutti i calcoli successivi.
+
+**Esempi.**
+
+- *Tema d_esame 16 + soluzione (Savorani), esercizio 1.* Chiede di bilanciare la redox tra dicromato di potassio, cloruro di stagno(II) e acido cloridrico, poi la massa di cloruro di cromo(III) ottenuta da 565,0 g di cloruro di stagno(II) e 2,0 L di acido cloridrico al 37,0 %. Si risolve con i passi 1-4: i grammi di SnCl₂ diventano moli con la massa molare, l'acido dato come volume e percentuale diventa moli passando da volume a massa e da massa di soluzione a massa di soluto, e il confronto con i coefficienti indica il reagente limitante.
+- *Tema d_esame 15 + soluzione, esercizio 1.* Parte dalla reazione tra nitrato di piombo(II), rame e acido solforico, da bilanciare. Poi 780 mg del solfato rameico prodotto vengono sciolti in acqua fino a 980 cm³ di soluzione, e si prelevano 100 mL. La concentrazione si ottiene da $n/V$ con il volume finale della soluzione, non con il volume di solvente aggiunto ({{formula:11.3}}).
+
+### Porzione prelevata e diluizione
+
+Nel secondo esempio la concentrazione serve anche in un altro modo: dalla soluzione madre si preleva una parte. Valgono due idee.
+
+- La concentrazione di una porzione prelevata è uguale a quella della soluzione di partenza. Cambiano le moli, non la molarità.
+- Se la porzione viene poi portata a un volume diverso, le moli di soluto si conservano e si applica {{formula:11.7}}, solo per lo stesso soluto.
+
+Le conversioni da mg a g e da cm³ a L sono la fonte più frequente di errori numerici: ricorda che 1 cm³ = 1 mL.
+
+### Proprietà colligative: la quantità di soluto da un $\Delta T$
+
+Questo tipo compare in una sola sessione, quindi lo si descrive brevemente. Il *Tema d_esame 3 + soluzione, esercizio 2* chiede la quantità di glicerolo che, sciolta in 285 mL di acqua (densità 0,996 g/mL), provoca un innalzamento ebullioscopico di 0,150 °C, con $K_{eb} = 0{,}512$ °C·kg/mol. Il metodo è inverso rispetto al solito: dalla formula {{formula:11.9}} si ricava la molalità, $m = \Delta T_{eb}/K_{eb}$, poi si moltiplica per i kg di solvente (massa dell'acqua = volume $\times$ densità) per ottenere le moli, e infine per la massa molare. Il glicerolo non è un elettrolita, quindi $i = 1$. Il risultato è circa 7,66 g.
+
+Gli errori tipici sono usare i litri di acqua al posto dei kg e dimenticare il passaggio dal volume alla massa con la densità. La teoria è in [Proprietà colligative](ref:chapter/11#p4). Lo stesso esercizio contiene una seconda domanda sulla formula di semistruttura e sull'ibridazione del glicerolo, quindi il capitolo può comparire insieme a [Gruppi funzionali](ref:chapter/17#p5) e [Legame di valenza e ibridazione](ref:chapter/9#p6).
+
+### Come prepararsi
+
+Esercitati a partire da dati scomodi: percentuali con volume e densità, masse in mg, volumi in cm³. Controlla sempre quale denominatore usa la grandezza richiesta, solvente o soluzione. In nessuna prova è consentito usare materiale didattico: formule e costanti vanno ricordate, a meno che il testo non le fornisca, come fa per $K_{eb}$ nell'esempio sopra. Per le basi teoriche rivedi [Dissoluzione e solubilità](ref:chapter/11#p2).

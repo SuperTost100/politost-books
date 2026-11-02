@@ -300,7 +300,7 @@ Si vuole calcolare l'angolo solido sotteso, rispetto al vertice $O$, da un cono 
 
 *Calcolo.* L'area della calotta sferica compresa tra l'asse del cono e l'angolo $\alpha$ si ottiene integrando in coordinate polari sferiche, con $\theta$ misurato dall'asse del cono:
 
-$$S = \int_0^{2\pi} \int_0^{\alpha} r^2 \sin\theta \, d\theta \, d\varphi = 2\pi r^2 \big\lbrack -\cos\theta\big\rbrack _0^{\alpha} = 2\pi r^2 (1-\cos\alpha).$$
+$$S = \int_0^{2\pi} \int_0^{\alpha} r^2 \sin\theta \, d\theta \, d\varphi = 2\pi r^2 \big[-\cos\theta\big]_0^{\alpha} = 2\pi r^2 (1-\cos\alpha).$$
 
 Dividendo per $r^2$, come richiesto dalla definizione di $\Omega$, si ottiene
 
@@ -441,6 +441,8 @@ Controllo: il risultato è positivo, ha le dimensioni di un'accelerazione, e dim
 
 ## p6 | Cenni di elettrostatica
 
+*Questa sezione va oltre il programma del corso: all'esame non viene chiesta.*
+
 L'interazione gravitazionale e quella elettrostatica condividono la stessa struttura matematica: entrambe sono descritte da una forza centrale che decresce con l'inverso del quadrato della distanza, e in entrambi i casi conviene introdurre il concetto di campo. Il campo è una grandezza fisica, scalare o vettoriale, definita in ogni punto di una regione di spazio, che media l'interazione tra le sorgenti senza bisogno di invocare un'azione istantanea a distanza: una carica (o una massa) sorgente modifica le proprietà dello spazio circostante, e questa modifica agisce poi su una seconda carica (o massa) posta in quel punto.
 
 ### Legge di Coulomb e campo elettrostatico
@@ -493,7 +495,7 @@ Il campo si annulla quando $Q/a^2 = 3Q/b^2$, cioè per $b = a\sqrt{3}$: la condi
 
 Poiché la forza elettrostatica è conservativa, ad essa è associata un'energia potenziale. Calcolando il lavoro della forza di Coulomb lungo la congiungente radiale tra due punti a distanza $r_A$ e $r_B$ dalla sorgente,
 
-$$W = k\,q\,q_0\int_{r_A}^{r_B}\frac{1}{r^2}\,dr = k\,q\,q_0\left\lbrack -\frac{1}{r_B}+\frac{1}{r_A}\right\rbrack  = -E_p(r_B) + E_p(r_A),$$
+$$W = k\,q\,q_0\int_{r_A}^{r_B}\frac{1}{r^2}\,dr = k\,q\,q_0\left[-\frac{1}{r_B}+\frac{1}{r_A}\right] = -E_p(r_B) + E_p(r_A),$$
 
 si ottiene l'energia potenziale elettrostatica di una coppia di cariche puntiformi
 

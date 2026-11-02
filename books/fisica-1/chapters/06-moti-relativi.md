@@ -213,7 +213,7 @@ Il pendolo si assesta dunque in una posizione obliqua, come se fosse soggetto a 
 
 $$T_{\text{osc}} = 2\pi\sqrt{\frac{l}{\sqrt{g^2+A^2}}}$$
 
-, da confrontare con [formula (3.27)](ref:formula/3.27) del pendolo in quiete, in cui compare semplicemente $g$ al posto di $g_{\text{eff}}$.
+, da confrontare con [formula (3.29)](ref:formula/3.29) del pendolo in quiete, in cui compare semplicemente $g$ al posto di $g_{\text{eff}}$.
 
 Lo stesso schema si applica a un corpo su un piano inclinato solidale con un sistema accelerato (vagone, carrello): ci si mette nel riferimento non inerziale del piano, si sommano alle forze reali (peso, reazione normale, attrito) la forza apparente $-m\vec{A}$, e si impone l'equilibrio relativo per trovare la condizione sull'angolo e sul coefficiente di attrito statico.
 
@@ -268,7 +268,7 @@ Il contributo centrifugo è massimo all'equatore ($\phi = 0$, dove vale circa $\
 
 ### Deviazione dei gravi verso est
 
-Il secondo effetto, più sottile, è dovuto all’accelerazione di Coriolis $\vec{a}_{Co} = 2\vec{\omega}\times\vec{v}'$, che compare quando $\vec{v}'$ ha una componente perpendicolare a $\vec{\omega}$. Si introduce in O' una terna locale destrorsa formata da un asse verticale $\hat{u}_z'$ (approssimato con la direzione radiale uscente), un asse $\hat{u}_y'$ orientato verso nord (orizzontale, nel piano meridiano) e un asse $\hat{u}_x'$ orientato verso est (orizzontale, tangente al parallelo). In questa terna la velocità angolare terrestre, che è parallela all'asse di rotazione, si proietta come $\vec{\omega} = \omega\cos\phi\,\hat{u}_y' + \omega\sin\phi\,\hat{u}_z'$, priva di componente lungo est. Il simbolo $\vec{g}$ che compare nella formula seguente indica l'accelerazione di gravità efficace $\vec{g}_{\text{eff}}$ già introdotta, che tiene conto della correzione centrifuga valutata in O'. Per un corpo che cade verticalmente (quindi con $\vec{v}\,'$ diretta lungo $-\hat{u}_z'$, inizialmente senza componente verso est) con velocità relativa di modulo $v'$, l'accelerazione misurata sulla Terra si scrive, trascurando l'ulteriore e piccolissima correzione centrifuga dovuta allo spostamento del corpo rispetto a O' durante la caduta,
+Il secondo effetto, più sottile, è dovuto all’accelerazione di Coriolis $\vec{a}_{Co} = 2\vec{\omega}\times\vec{v}'$. Nell’equazione del moto nel riferimento terrestre non inerziale compare il contributo apparente $-\vec{a}_{Co}$. Si introduce in O' una terna locale destrorsa formata da un asse verticale $\hat{u}_z'$ (approssimato con la direzione radiale uscente), un asse $\hat{u}_y'$ orientato verso nord (orizzontale, nel piano meridiano) e un asse $\hat{u}_x'$ orientato verso est (orizzontale, tangente al parallelo). In questa terna la velocità angolare terrestre, che è parallela all'asse di rotazione, si proietta come $\vec{\omega} = \omega\cos\phi\,\hat{u}_y' + \omega\sin\phi\,\hat{u}_z'$, priva di componente lungo est. Il simbolo $\vec{g}$ che compare nella formula seguente indica l'accelerazione di gravità efficace $\vec{g}_{\text{eff}}$ già introdotta, che tiene conto della correzione centrifuga valutata in O'. Per un corpo che cade verticalmente (quindi con $\vec{v}\,'$ diretta lungo $-\hat{u}_z'$, inizialmente senza componente verso est) con velocità relativa di modulo $v'$, l'accelerazione misurata sulla Terra si scrive, trascurando l'ulteriore e piccolissima correzione centrifuga dovuta allo spostamento del corpo rispetto a O' durante la caduta,
 
 $$\vec{a}' = \vec{g} + 2\omega v'\cos\phi\,\hat{u}_x'$$
 

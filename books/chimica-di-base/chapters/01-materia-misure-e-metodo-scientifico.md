@@ -119,7 +119,7 @@ $$
 la cui analisi dimensionale è
 
 $$
-[\mathrm{mol}] = \frac{[\mathrm{g}]}{[\mathrm{g/mol}]}
+\lbrack \mathrm{mol}\rbrack  = \frac{\lbrack \mathrm{g}\rbrack }{\lbrack \mathrm{g/mol}\rbrack }
 $$
 
 Lo stesso principio vale per qualunque grandezza derivata: il calore specifico ha dimensioni $\mathrm{J/(g \cdot K)}$, la molarità ha dimensioni $\mathrm{mol/L}$ e la molalità $\mathrm{mol/kg}$, il joule, unità SI dell'energia, ha dimensioni $J = \mathrm{kg \cdot m^2/s^2}$. Il metodo pratico per convertire un'unità in un'altra consiste nel moltiplicare il dato per una catena di fattori di conversione, ciascuno pari a 1 (per esempio $\frac{1\ \mathrm{m}}{100\ \mathrm{cm}}$), scelti in modo che le unità indesiderate si semplifichino passo dopo passo fino a ottenere l'unità cercata.

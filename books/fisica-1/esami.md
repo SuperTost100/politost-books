@@ -40,7 +40,7 @@ da cui si ottiene $v=2.57\ \frac{\mathrm{m}}{\mathrm{s}}$.
 
 2. La variazione di energia cinetica durante l’urto è data da
 
-$$\Delta E_k=E_{k,\mathrm{fin}}-E_{k,\mathrm{in}}=\frac{1}{2}(m_1+m_2)v^2-\frac{1}{2}\left\lbrack m_1(a_1t)^2+m_2(a_2t)^2\right\rbrack $$
+$$\Delta E_k=E_{k,\mathrm{fin}}-E_{k,\mathrm{in}}=\frac{1}{2}(m_1+m_2)v^2-\frac{1}{2}\left[m_1(a_1t)^2+m_2(a_2t)^2\right]$$
 
 Calcolando i due termini con valori non arrotondati si ottiene
 
@@ -158,7 +158,7 @@ $$\frac{1}{2}m_1v_0^2+m_1gx_1\sin\theta-\mu_d m_1g(x_1\cos\theta+x_2)=\frac{1}{2
 
 Quindi
 
-$$v_1=\sqrt{v_0^2+2g\left\lbrack x_1\sin\theta-\mu_d(x_1\cos\theta+x_2)\right\rbrack }=4.06\,\text{m/s}.$$
+$$v_1=\sqrt{v_0^2+2g\left[x_1\sin\theta-\mu_d(x_1\cos\theta+x_2)\right]}=4.06\,\text{m/s}.$$
 
 2. Si sceglie positivo il verso antiorario, cioè il verso del momento angolare finale. Rispetto al centro dell’asta, il momento angolare iniziale dell’asta è $-I_a\omega$; quello della particella è $m_1v_1d/2$. Dopo l’urto, asta e particella ruotano insieme, con momento d’inerzia $I_a+m_1d^2/4$. La conservazione del momento angolare si scrive
 
@@ -1232,7 +1232,7 @@ Dopo l’urto sul sistema agiscono solo forze conservative. È quindi possibile 
 $E_{m,A} = E_{m,B}$, essendo $B$ la posizione corrispondente alla massima quota.
 
 $$
-E_{m,A} = \frac{1}{2}I_d\omega^2 + \frac{1}{2}mv_1^2 + Mg\frac{l}{2} = \frac{1}{2}[I_d + m(l-d)^2]\omega^2 + Mg\frac{l}{2}
+E_{m,A} = \frac{1}{2}I_d\omega^2 + \frac{1}{2}mv_1^2 + Mg\frac{l}{2} = \frac{1}{2}\lbrack I_d + m(l-d)^2\rbrack \omega^2 + Mg\frac{l}{2}
 $$
 
 con
@@ -1248,13 +1248,13 @@ $$
 Quindi:
 
 $$
-1-\cos\phi = \frac{\frac{1}{2}[I_d+m(l-d)^2]\omega^2}{mg(l-d)+Mg(l/2-d)}
+1-\cos\phi = \frac{\frac{1}{2}\lbrack I_d+m(l-d)^2\rbrack \omega^2}{mg(l-d)+Mg(l/2-d)}
 $$
 
 da cui
 
 $$
-h' = (l-d)(1-\cos\phi) = (l-d)\frac{\frac{1}{2}[I_d+m(l-d)^2]\omega^2}{mg(l-d)+Mg(l/2-d)}
+h' = (l-d)(1-\cos\phi) = (l-d)\frac{\frac{1}{2}\lbrack I_d+m(l-d)^2\rbrack \omega^2}{mg(l-d)+Mg(l/2-d)}
 $$
 
 $$
@@ -1278,7 +1278,7 @@ $$
 Quindi la conservazione di energia si scrive:
 
 $$
-\frac{1}{2}[I_d + m(l-d)^2]\omega^2 = (m+M)g\Delta h_{CM} = [M(l/2-d)+m(l-d)]g(1-\cos\phi)
+\frac{1}{2}\lbrack I_d + m(l-d)^2\rbrack \omega^2 = (m+M)g\Delta h_{CM} = \lbrack M(l/2-d)+m(l-d)\rbrack g(1-\cos\phi)
 $$
 
 da cui si ricava lo stesso risultato riportato in precedenza.

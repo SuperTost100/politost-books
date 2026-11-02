@@ -41,7 +41,7 @@ La grandezza $m$ che compare nella legge è la **massa inerziale** del punto: es
 
 Se $\vec{F}=0$ la seconda legge restituisce $\vec{a}=0$ e quindi $\vec{v}=\text{cost}$: il primo principio è dunque contenuto come caso particolare nella seconda legge, che ne costituisce la formulazione quantitativa generale.
 
-Introducendo la quantità di moto $\vec{p}=m\vec{v}$ (già definita nelle unità del libro e ripresa in [Quantità di moto e impulso](ref:chapter/3#p3)), se la massa resta costante nel tempo la derivata di $\vec{p}$ fornisce una forma equivalente e più generale della seconda legge
+Introducendo la quantità di moto $\vec{p}=m\vec{v}$ (già definita nelle unità del libro e ripresa in [Quantità di moto e impulso](ref:chapter/3#p4)), se la massa resta costante nel tempo la derivata di $\vec{p}$ fornisce una forma equivalente e più generale della seconda legge
 
 :::formula{id="3.2" label="Forma generale della seconda legge mediante la quantità di moto"}
 $$\frac{d\vec{p}}{dt} = m\frac{d\vec{v}}{dt} = m\vec{a} = \vec{F}_{TOT}$$
@@ -126,11 +126,83 @@ Controllo: le dimensioni di $c/m$ sono $\lbrack \text{N/s}\rbrack /\lbrack \text
 :::image{src="assets/3d6e6a1a-legge-velocita-forza-lineare.svg" alt="Parabola v(t) = -3 + 0,8 t^2 con punto evidenziato a t* dove v = 8 m/s" caption="Fig. 3.1 — Legge della velocità v(t) ricavata da una forza F(t) = c t: la curva è una parabola, e l'istante t* in cui v raggiunge il valore v* si legge come intersezione con la retta orizzontale v = v*."}
 :::
 
-Il procedimento a due passi illustrato sopra vale quando la forza dipende solo dal tempo, $f_x(t)$: in tal caso l'equazione $m\,d^2x/dt^2=f_x(t)$ si integra direttamente due volte, come negli esempi precedenti. Quando la forza dipende invece dalla posizione o dalla velocità, $f_x(x,v,t)$, la situazione è diversa: per esempio nel caso della forza elastica, trattata in [Forza elastica](ref:chapter/3#p6), l'equazione $-kx=m\,d^2x/dt^2$ conduce all'equazione differenziale del moto armonico già studiata in [Moto armonico](ref:chapter/2#p4) (vedi [formula (2.20)](ref:formula/2.20)), mentre nel moto con resistenza viscosa, trattato in [Forze di attrito](ref:chapter/3#p5), l'equazione del moto ha una struttura ancora diversa. In generale queste equazioni differenziali non si riducono a una semplice separazione delle variabili, e vanno risolte con la tecnica appropriata al caso specifico.
+Il procedimento a due passi illustrato sopra vale quando la forza dipende solo dal tempo, $f_x(t)$: in tal caso l'equazione $m\,d^2x/dt^2=f_x(t)$ si integra direttamente due volte, come negli esempi precedenti. Quando la forza dipende invece dalla posizione o dalla velocità, $f_x(x,v,t)$, la situazione è diversa: per esempio nel caso della forza elastica, trattata in [Forza elastica](ref:chapter/3#p7), l'equazione $-kx=m\,d^2x/dt^2$ conduce all'equazione differenziale del moto armonico già studiata in [Moto armonico](ref:chapter/2#p4) (vedi [formula (2.20)](ref:formula/2.20)), mentre nel moto con resistenza viscosa, trattato in [Forze di attrito](ref:chapter/3#p6), l'equazione del moto ha una struttura ancora diversa. In generale queste equazioni differenziali non si riducono a una semplice separazione delle variabili, e vanno risolte con la tecnica appropriata al caso specifico.
 
 **Errore tipico 3.3.** Scrivere un passaggio intermedio in cui un membro dell'uguaglianza ha unità di misura e l'altro è un numero puro, per esempio omettendo di dividere per $m$ o di riportare le unità durante l'integrazione. Un'uguaglianza dimensionalmente inconsistente in un passaggio intermedio è priva di significato anche se il risultato finale appare numericamente plausibile; ogni riga di calcolo, non solo la prima e l'ultima, deve essere dimensionalmente corretta.
 
-## p3 | Quantità di moto e impulso
+## p3 | Le forze in natura
+
+Il secondo principio {{formula:3.1}} lega l'accelerazione alla forza risultante, ma non dice quali forze esistano. Questa sezione le classifica e mostra come, nei problemi, poche interazioni di base producano le forze che si scrivono nei diagrammi di corpo libero.
+
+### Interazioni fondamentali e forze macroscopiche
+
+La **forza** è la grandezza che esprime e misura l'interazione tra sistemi fisici, e può avvenire a distanza o per contatto. Le forze causano la variazione dello stato di moto di un corpo.
+
+In natura non esiste un solo tipo di forza. Per gli studi ingegneristici bastano poche **interazioni fondamentali**: quella gravitazionale e quella elettromagnetica. Solo a livello nucleare e subnucleare compaiono l'interazione forte e quella debole.
+
+Le forze che si incontrano nei problemi (reazione vincolare, tensione, attrito, forza elastica) sono dette **macroscopiche**. Derivano, a livello microscopico, dalle interazioni fondamentali tra gli atomi dei corpi, soprattutto da quella elettromagnetica. Nei problemi non si parte da questa origine microscopica: si usano le leggi empiriche che le descrivono.
+
+In un riferimento inerziale al primo membro del secondo principio compaiono solo le **forze vere**, quelle dovute alle interazioni fondamentali. Le **forze apparenti** non derivano da interazioni fondamentali ed esistono solo nei riferimenti non inerziali. Se ne parla in [Forze apparenti](ref:chapter/6#p3).
+
+### Forze a distanza: gravità e forza peso
+
+Le forze gravitazionale ed elettrostatica sono **forze a distanza**: una massa o una carica genera una forza su un'altra massa o carica lontana, senza mezzo interposto. Per due masse $m_1$ e $m_2$ di dimensioni trascurabili rispetto alla distanza $r$, la forza è attrattiva, diretta lungo la congiungente, con modulo proporzionale al prodotto delle masse e inversamente proporzionale a $r^2$. La [formula (10.1)](ref:formula/10.1) ne dà il modulo:
+
+$$|\vec{F}_G| = G\frac{m_1 m_2}{r^2}$$
+
+con $G = 6{,}67\cdot 10^{-11}\ \text{N·m}^2/\text{kg}^2$.
+
+Vicino alla superficie terrestre la gravità si riduce alla **forza peso**. Si assume che l'attrazione di tutti i punti della Terra sia equivalente a quella di un punto al centro che contiene l'intera massa $M_T$.
+
+:::formula{id="3.6" label="Accelerazione di gravità alla superficie terrestre"}
+$$g = G\frac{M_T}{R_T^2}$$
+:::
+
+**Dimostrazione richiesta all'esame.** Un punto di massa $m$ a quota $h$ sopra la superficie, con $R_T$ raggio terrestre, risente della forza di modulo
+
+$$F_G = G\frac{m M_T}{(R_T+h)^2} = G\frac{m M_T}{R_T^2\left(1+\frac{h}{R_T}\right)^2}.$$
+
+Per $h \ll R_T$ il rapporto $h/R_T$ è trascurabile rispetto a 1, quindi $\left(1+h/R_T\right)^2 \simeq 1$. La direzione della forza, verso il centro della Terra, si approssima con la verticale. Con $\hat{u}_y$ verticale verso l'alto si ottiene
+
+$$\vec{F}_G = -G\frac{m M_T}{R_T^2}\,\hat{u}_y = -m g\,\hat{u}_y, \qquad g = G\frac{M_T}{R_T^2}.$$
+
+Il fattore $g$ non dipende da $m$. $\square$
+
+Sperimentalmente, in uno stesso luogo tutti i corpi lasciati cadere hanno la stessa accelerazione $g$, diretta verso il suolo, di modulo $9{,}81\ \text{m/s}^2$. Se agisce solo la forza peso, $\vec{P} = m\vec{a} = m\vec{g}$.
+
+:::formula{id="3.7" label="Forza peso"}
+$$\vec{P} = m\vec{g}$$
+:::
+
+Questa relazione si fonda sull'equivalenza tra massa inerziale e massa gravitazionale. Esperimenti hanno mostrato che il loro rapporto vale uno con precisione dell'ordine di $10^{-12}$.
+
+La massa è una proprietà del corpo, mentre il peso cambia con il luogo. Se agiscono anche altre forze, come la resistenza dell'aria, l'accelerazione non è $g$.
+
+Con i valori $M_T = 5{,}97\cdot10^{24}$ kg e $R_T = 6{,}37\cdot10^{6}$ m si ha $g = 6{,}67\cdot10^{-11}\cdot 5{,}97\cdot10^{24}/(6{,}37\cdot10^{6})^2\ \text{m/s}^2 \simeq 9{,}8\ \text{m/s}^2$. A $h = 1$ km lo sviluppo al primo ordine dà una variazione relativa $2h/R_T \simeq 3\cdot10^{-4}$, e l'approssimazione di $g$ costante è dunque ottima.
+
+### Forze di contatto
+
+Le forze di contatto sono quelle che i problemi di dinamica usano più spesso. Ciascuna ha una sezione dedicata.
+
+- **Reazione vincolare (normale)** $\vec{N}$: è perpendicolare al piano di appoggio e vale zero se il contatto scompare. Se un corpo sollecitato da una forza resta fermo, l'ambiente reagisce con una forza uguale e contraria. Non è determinabile a priori con una formula, ma va calcolata caso per caso dalle condizioni fisiche. Vedi [Reazioni vincolari ed equilibrio](ref:chapter/3#p5).
+- **Tensione** $\vec{T}$ di un filo ideale (inestensibile e di massa trascurabile): è diretta lungo il filo ed ha lo stesso modulo alle due estremità, con $\vec{T}_1 = -\vec{T}_2$.
+- **Attrito radente**: si oppone allo scorrimento relativo delle superfici o alla sua tendenza. L'attrito statico ha modulo tra zero e $\mu_s N$, quindi può anche essere nullo. Quello dinamico si oppone al moto relativo, con $\mu_d<\mu_s$. Vedi [Forze di attrito](ref:chapter/3#p6).
+- **Attrito viscoso**: si oppone al moto ed è proporzionale alla velocità; si annulla se $v=0$.
+- **Forza elastica** di una molla: $F=-kx$, con $x$ allungamento rispetto alla lunghezza a riposo. Vedi [Forza elastica](ref:chapter/3#p7).
+
+Anche la **forza centripeta** non è una forza di tipo particolare. È il nome della componente della risultante ortogonale alla traiettoria, ed è diversa da zero quando la curvatura della traiettoria è diversa da zero.
+
+Come forze a distanza, nei problemi di questo corso compaiono soprattutto il peso e, in generale, la gravitazione. L'elettrostatica ha una sezione dedicata in [Cenni di elettrostatica](ref:chapter/10#p6).
+
+### Errori tipici
+
+**Errore tipico 3.4.** Confondere massa e peso. La massa $m$ (in kg) non cambia con il luogo, mentre $P = mg$ (in N) sì.
+
+**Errore tipico 3.5.** Usare $N = mg$ per principio. La normale va ricavata dalle equazioni. Sul piano inclinato liscio, ad esempio, $N = mg\cos\theta$.
+
+**Errore tipico 3.6.** Scrivere $F_x = mg\sin\theta = 5\cdot 9{,}81\cdot\frac12 = 24{,}5\ \text{N}$, cioè uguagliare un numero puro a una forza. Ogni uguaglianza intermedia deve avere le stesse dimensioni nei due membri: $5\ \text{kg}\cdot 9{,}81\ \text{m/s}^2\cdot\frac12 = 24{,}5\ \text{N}$.
+
+## p4 | Quantità di moto e impulso
 
 La seconda legge di Newton, enunciata nella forma $\vec{F} = m\vec{a}$ nella sezione [Principi della dinamica](ref:chapter/3#p2), presuppone implicitamente che la massa del punto materiale resti costante durante il moto. Esistono però situazioni, come un urto fra due corpi o il moto di un sistema a massa variabile, in cui è più naturale ragionare in termini della grandezza che la seconda legge fa effettivamente variare: la quantità di moto. Questa sezione introduce la quantità di moto, l'impulso di una forza e il teorema che li collega, strumenti indispensabili per trattare le forze che agiscono in intervalli di tempo molto brevi ma con intensità elevata.
 
@@ -156,7 +228,7 @@ $$d\vec{J}(t) = \vec{F}(t)\,dt,$$
 
 e, integrando su un intervallo finito $\lbrack t_0, t\rbrack $, l'impulso totale
 
-:::formula{id="3.6" label="Impulso di una forza"}
+:::formula{id="3.8" label="Impulso di una forza"}
 $$\vec{J}(t_0, t) = \int_{t_0}^{t} \vec{F}(t)\,dt.$$
 :::
 
@@ -179,7 +251,7 @@ Queste due proprietà seguono direttamente dalla linearità dell'integrale e per
 
 $$\vec{J}(t_0,t) = \int_{t_0}^{t}\vec{F}(t)\,dt = \int_{t_0}^{t} m\vec{a}\,dt = \int_{t_0}^{t} m\,\frac{d\vec{v}}{dt}\,dt = \int_{\vec{v}_0}^{\vec{v}} m\,d\vec{v} = m\vec{v} - m\vec{v}_0 = \vec{p} - \vec{p}_0 = \Delta\vec{p}.$$
 
-:::formula{id="3.7" label="Teorema dell'impulso"}
+:::formula{id="3.9" label="Teorema dell'impulso"}
 $$\vec{J}(t_0,t) = \Delta\vec{p} = \vec{p} - \vec{p}_0.$$
 :::
 
@@ -197,7 +269,7 @@ Se la risultante delle forze applicate a un punto materiale è nulla in tutto un
 
 **Teorema 3.3** (Conservazione della quantità di moto del punto materiale). In assenza di forza risultante applicata, la quantità di moto di un punto materiale rimane costante nel tempo, ossia si conserva.
 
-:::formula{id="3.8" label="Conservazione della quantità di moto"}
+:::formula{id="3.10" label="Conservazione della quantità di moto"}
 $$\vec{F}_{TOT} = \vec{0} \ \Longrightarrow\ \vec{p}(t) = \text{costante}.$$
 :::
 
@@ -222,7 +294,7 @@ $$J = \int_0^{t_{max}} F_{el}(t)\,dt = -\int_0^{\pi/(2\omega)} m v_0 \omega \sin
 :::image{src="assets/7b42e0ee-impulso-forza-elastica.svg" alt="Grafico della forza elastica in funzione del tempo, da zero a t_max, con area sottesa negativa" caption="Fig. 3.3 — Forza elastica F_el(t) nell'esempio svolto, da t=0 a t_max=π/20 s: l'area sotto la curva, negativa, è l'impulso J = −5 kg·m/s"}
 :::
 
-Soluzione letterale (secondo modo, teorema dell'impulso). In alternativa, applicando {{formula:3.7}},
+Soluzione letterale (secondo modo, teorema dell'impulso). In alternativa, applicando {{formula:3.9}},
 
 $$J = p(t_{max}) - p(0) = m v(t_{max}) - m v_0 = 0 - m v_0 = -m v_0,$$
 
@@ -247,9 +319,9 @@ La velocità orizzontale del sacco non cambia nel tempo: ogni granello di sabbia
 :::image{src="assets/7b42e0ee-sacco-forato-velocita-quantita-moto.svg" alt="Grafico qualitativo con una retta orizzontale per la velocità costante e una retta decrescente per la quantità di moto del sacco residuo" caption="Fig. 3.4 — Andamento qualitativo, nel tempo, della velocità orizzontale v(t) del sacco forato, costante, e della sua quantità di moto p(t)=m(t)v0, che diminuisce perché diminuisce la massa"}
 :::
 
-**Errore tipico 3.4**. Un errore frequente consiste nell'applicare $\vec{F} = m\vec{a}$ a sistemi a massa variabile trattando $m$ come costante all'interno della derivata, oppure nel dimenticare che il teorema dell'impulso fornisce la variazione complessiva di $\vec{p}$ su un intervallo e non il valore della forza in un istante particolare. È altrettanto sbagliato confondere la conservazione della quantità di moto con la conservazione dell'energia meccanica durante un urto: la prima vale (per il sistema isolato) anche quando l'urto è anelastico, mentre la seconda in generale non vale. Infine, come per ogni relazione vettoriale, va evitato di scrivere uguaglianze fra una grandezza vettoriale e una scalare, per esempio confondendo il modulo dell'impulso con una delle sue componenti senza dichiarare gli assi; un controllo dimensionale e vettoriale dei passaggi intermedi permette di individuare questi errori prima di arrivare al risultato numerico.
+**Errore tipico 3.7**. Un errore frequente consiste nell'applicare $\vec{F} = m\vec{a}$ a sistemi a massa variabile trattando $m$ come costante all'interno della derivata, oppure nel dimenticare che il teorema dell'impulso fornisce la variazione complessiva di $\vec{p}$ su un intervallo e non il valore della forza in un istante particolare. È altrettanto sbagliato confondere la conservazione della quantità di moto con la conservazione dell'energia meccanica durante un urto: la prima vale (per il sistema isolato) anche quando l'urto è anelastico, mentre la seconda in generale non vale. Infine, come per ogni relazione vettoriale, va evitato di scrivere uguaglianze fra una grandezza vettoriale e una scalare, per esempio confondendo il modulo dell'impulso con una delle sue componenti senza dichiarare gli assi; un controllo dimensionale e vettoriale dei passaggi intermedi permette di individuare questi errori prima di arrivare al risultato numerico.
 
-## p4 | Reazioni vincolari ed equilibrio
+## p5 | Reazioni vincolari ed equilibrio
 
 ### Condizione di equilibrio statico del punto materiale
 
@@ -259,7 +331,7 @@ Un punto materiale è in **equilibrio statico** se, soggetto a un insieme di for
 
 Poiché un vettore è nullo se e solo se lo sono tutte le sue componenti, la condizione vettoriale equivale a un sistema di equazioni scalari, una per ciascun asse scelto.
 
-:::formula{id="3.9" label="Condizione di equilibrio statico del punto"}
+:::formula{id="3.11" label="Condizione di equilibrio statico del punto"}
 $$\vec{R} = \sum_i \vec{F}_i = \vec{0} \quad \Longleftrightarrow \quad \sum_i F_{i,x} = \sum_i F_{i,y} = \sum_i F_{i,z} = 0$$
 :::
 
@@ -275,7 +347,7 @@ Un vincolo diverso è il filo (o fune) ideale, che si incontra tipicamente quand
 
 **Definizione 3.6** (tensione di un filo ideale). Un filo si dice ideale se è inestensibile (lunghezza costante) e di massa trascurabile. La forza che il filo esercita alle sue estremità è detta tensione $\vec{T}$; essa è diretta lungo il filo stesso e, se il filo collega due punti materiali, è uguale in modulo alle due estremità e di verso opposto.
 
-:::formula{id="3.10" label="Tensione di un filo ideale che collega due masse"}
+:::formula{id="3.12" label="Tensione di un filo ideale che collega due masse"}
 $$T_1 = T_2 \qquad \vec{T}_1 = -\vec{T}_2$$
 :::
 
@@ -283,11 +355,11 @@ Un filo reale, a differenza di quello ideale, ha una tensione massima $T_{max}$ 
 
 Un caso immediato di applicazione è il pendolo semplice nella sua posizione di equilibrio verticale: il punto materiale di massa $m$ è appeso tramite un filo inestensibile e di massa trascurabile, e nella configurazione di quiete la tensione bilancia esattamente il peso.
 
-:::formula{id="3.11" label="Tensione del filo nella posizione di equilibrio verticale"}
+:::formula{id="3.13" label="Tensione del filo nella posizione di equilibrio verticale"}
 $$T_f = mg$$
 :::
 
-Questo risultato è un caso particolare della condizione di equilibrio del punto, e sarà generalizzato per angoli qualunque nella sezione sulla [dinamica del moto curvilineo](ref:chapter/3#p7).
+Questo risultato è un caso particolare della condizione di equilibrio del punto, e sarà generalizzato per angoli qualunque nella sezione sulla [dinamica del moto curvilineo](ref:chapter/3#p8).
 
 ### Equilibrio sul piano inclinato
 
@@ -301,15 +373,15 @@ con $P_\parallel = -mg\sin\theta$ e $P_\perp = -mg\cos\theta$ (il segno meno ind
 
 Se il corpo è appoggiato sul piano e resta fermo (nessun moto, solo contatto con eventuale attrito statico), l'equazione di equilibrio nella direzione ortogonale al piano dà immediatamente la reazione normale, perché il corpo non penetra né si stacca dal piano:
 
-:::formula{id="3.12" label="Reazione normale sul piano inclinato"}
+:::formula{id="3.14" label="Reazione normale sul piano inclinato"}
 $$N = -P_\perp = mg\cos\theta$$
 :::
 
 questo risultato vale sia in condizioni statiche sia nel caso in cui il corpo scivoli lungo il piano, poiché in entrambi i casi l'accelerazione nella direzione ortogonale è nulla.
 
-Nella direzione longitudinale, se è presente attrito statico $f_s$, l'equilibrio richiede che esso bilanci esattamente la componente longitudinale del peso, purché il suo modulo non superi il valore massimo consentito dalla condizione di aderenza (approfondita nella sezione sulle [forze di attrito](ref:chapter/3#p5)):
+Nella direzione longitudinale, se è presente attrito statico $f_s$, l'equilibrio richiede che esso bilanci esattamente la componente longitudinale del peso, purché il suo modulo non superi il valore massimo consentito dalla condizione di aderenza (approfondita nella sezione sulle [forze di attrito](ref:chapter/3#p6)):
 
-:::formula{id="3.13" label="Condizione di equilibrio su piano inclinato scabro"}
+:::formula{id="3.15" label="Condizione di equilibrio su piano inclinato scabro"}
 $$|P_\parallel| = |f_s| \le |f_s^{\max}| = \mu_s\, mg\cos\theta$$
 :::
 
@@ -330,13 +402,13 @@ Sostituendo i numeri: $\tan 30^\circ = 0{,}577$, mentre $\mu_s = 0{,}40$; poich�
 
 Controllo: entrambe le forze hanno le dimensioni corrette di un newton, e gli ordini di grandezza sono coerenti con un peso di circa $19{,}6$ N; il rapporto $f_s/N = \tan\theta$ è adimensionale, come deve essere.
 
-**Errore tipico 3.5.** Un errore molto diffuso è scomporre il peso scrivendo direttamente due vettori $m\vec{g}\sin\theta$ e $m\vec{g}\cos\theta$ come se fossero diretti rispettivamente lungo il piano e perpendicolarmente ad esso. Questa scrittura è priva di senso: il vettore $m\vec{g}\sin\theta$ ha la stessa direzione di $\vec{g}$, cioè punta sempre verticalmente verso il basso, qualunque sia $\theta$, e lo stesso vale per $m\vec{g}\cos\theta$. La scomposizione corretta richiede di introdurre esplicitamente i versori $\hat{u}_\parallel$ e $\hat{u}_\perp$ e scrivere $\vec{P} = P_\parallel \hat{u}_\parallel + P_\perp \hat{u}_\perp$, con $P_\parallel$ e $P_\perp$ scalari (con segno) che moltiplicano i versori corretti.
+**Errore tipico 3.8.** Un errore molto diffuso è scomporre il peso scrivendo direttamente due vettori $m\vec{g}\sin\theta$ e $m\vec{g}\cos\theta$ come se fossero diretti rispettivamente lungo il piano e perpendicolarmente ad esso. Questa scrittura è priva di senso: il vettore $m\vec{g}\sin\theta$ ha la stessa direzione di $\vec{g}$, cioè punta sempre verticalmente verso il basso, qualunque sia $\theta$, e lo stesso vale per $m\vec{g}\cos\theta$. La scomposizione corretta richiede di introdurre esplicitamente i versori $\hat{u}_\parallel$ e $\hat{u}_\perp$ e scrivere $\vec{P} = P_\parallel \hat{u}_\parallel + P_\perp \hat{u}_\perp$, con $P_\parallel$ e $P_\perp$ scalari (con segno) che moltiplicano i versori corretti.
 
 Un secondo errore tipico consiste nel considerare la forza di attrito statico sempre pari al suo valore massimo $\mu_s N$: in realtà $f_s$ è un'incognita del problema, al pari della reazione vincolare e della tensione, e il suo valore è determinato dalla condizione di equilibrio; la relazione $|f_s| \le \mu_s N$ fornisce solo un limite superiore, non il valore effettivo, a meno che il corpo non sia proprio sul punto di scivolare.
 
 Infine, va sempre evitato di scrivere uguaglianze intermedie fra un numero puro e una grandezza dimensionata: ogni passaggio deve riportare le unità di misura corrette, altrimenti il risultato, anche se numericamente corretto, è una scrittura priva di significato fisico.
 
-## p5 | Forze di attrito
+## p6 | Forze di attrito
 
 Le forze di attrito radente nascono dalle forze di coesione microscopica tra due superfici a contatto; il loro coefficiente dipende dallo stato delle superfici e dalla composizione chimica dei materiali in gioco, non dall'estensione della superficie di contatto. Una proprietà fondamentale, valida per tutte le forze di attrito radente, è che il contatto tra le superfici è sempre in grado di esercitare una forza di attrito radente quando serve una forza tangenziale per impedire uno scorrimento relativo (o la tendenza a esso), anche se possono essere ridotte lubrificando o levigando le superfici; il valore effettivo dell'attrito statico può però essere nullo, quando non è richiesta alcuna forza tangenziale per mantenere la quiete relativa. In ogni caso le forze di attrito radente non possono mai generare uno scorrimento relativo tra le superfici a contatto: possono solo opporsi a uno scorrimento relativo esistente, o a una tendenza allo scorrimento relativo, tra le due superfici in contatto. Il corpo nel suo insieme può comunque accelerare rispetto al suolo, come accade a un'automobile che parte grazie all'aderenza degli pneumatici: in quel caso è proprio l'attrito statico, opponendosi allo scivolamento della gomma sull'asfalto, a rendere possibile l'avanzamento del veicolo.
 
@@ -352,7 +424,7 @@ $$
 
 dove $\mu_s$ è il coefficiente di attrito statico, adimensionale, dipendente dalla coppia di materiali a contatto ma non dalla superficie di contatto.
 
-:::formula{id="3.14" label="Valore massimo della forza di attrito statico"}
+:::formula{id="3.16" label="Valore massimo della forza di attrito statico"}
 $$F_{s,\mathrm{MAX}} = \mu_s N$$
 :::
 
@@ -361,17 +433,17 @@ $$
 |\vec{f}_s| \le \mu_s N.
 $$
 
-:::formula{id="3.15" label="Condizione di aderenza"}
+:::formula{id="3.17" label="Condizione di aderenza"}
 $$|\vec{f}_s| \le \mu_s N$$
 :::
 
 Il corpo resta in quiete per ogni valore della forza applicata parallela al piano tale che la componente da equilibrare non superi $\mu_s N$; se questa componente supera la soglia, il corpo si mette in moto e il modello di attrito statico non è più valido.
 
-**Errore tipico 3.6.** Lo sbaglio più comune è scrivere sempre $f_s = \mu_s N$, come se l'attrito statico assumesse automaticamente il valore massimo. Questo è falso: $\mu_s N$ è soltanto il tetto che $|\vec{f}_s|$ non può superare, mentre il valore effettivo di $f_s$ dipende dalle altre forze in gioco (ad esempio dalla tensione di un filo collegato al corpo) ed è in generale minore del massimo. Va determinato imponendo l'equilibrio del corpo, non sostituendo $\mu_s N$ direttamente nelle equazioni.
+**Errore tipico 3.9.** Lo sbaglio più comune è scrivere sempre $f_s = \mu_s N$, come se l'attrito statico assumesse automaticamente il valore massimo. Questo è falso: $\mu_s N$ è soltanto il tetto che $|\vec{f}_s|$ non può superare, mentre il valore effettivo di $f_s$ dipende dalle altre forze in gioco (ad esempio dalla tensione di un filo collegato al corpo) ed è in generale minore del massimo. Va determinato imponendo l'equilibrio del corpo, non sostituendo $\mu_s N$ direttamente nelle equazioni.
 
 **Esempio 3.4** (angolo limite di distacco su un piano inclinato scabro). Un blocco di massa $m$ è appoggiato sulla sommità di un piano inclinato di angolo $\theta$, con coefficiente di attrito statico $\mu_s$. Si vuole determinare l'angolo massimo $\theta_s$ al di sotto del quale il blocco, lasciato da fermo, non scivola; equivalentemente, a parità di inclinazione $\theta$, si cerca il valore minimo di $\mu_s$ necessario perché il blocco resti in quiete.
 
-Schema delle forze: peso $m\vec{g}$, scomposto in componente parallela al piano $mg\sin\theta$ (verso il basso lungo il piano) e componente normale $mg\cos\theta$; reazione normale $\vec{N}$; attrito statico $\vec{f}_s$ diretto verso l'alto lungo il piano, come mostrato nella sezione sulle [reazioni vincolari ed equilibrio](ref:chapter/3#p4). Dall'equilibrio lungo la normale si ha $N = mg\cos\theta$ ({{formula:3.12}}).
+Schema delle forze: peso $m\vec{g}$, scomposto in componente parallela al piano $mg\sin\theta$ (verso il basso lungo il piano) e componente normale $mg\cos\theta$; reazione normale $\vec{N}$; attrito statico $\vec{f}_s$ diretto verso l'alto lungo il piano, come mostrato nella sezione sulle [reazioni vincolari ed equilibrio](ref:chapter/3#p5). Dall'equilibrio lungo la normale si ha $N = mg\cos\theta$ ({{formula:3.14}}).
 
 Il blocco inizia a scivolare quando la componente del peso lungo il piano supera il valore massimo che l'attrito statico può fornire:
 
@@ -391,7 +463,7 @@ $$
 
 dove $\mu_d$ è il coefficiente di attrito dinamico. Nel modello qui adottato si assume tipicamente $\mu_d < \mu_s$, anche se questa disuguaglianza non è universale per ogni coppia di superfici e ogni condizione di moto.
 
-:::formula{id="3.16" label="Forza di attrito dinamico"}
+:::formula{id="3.18" label="Forza di attrito dinamico"}
 $$\vec{f}_d = -\mu_d N\, \frac{\vec{v}_{\mathrm{rel}}}{|\vec{v}_{\mathrm{rel}}|}, \qquad |\vec{f}_d| = \mu_d N$$
 :::
 
@@ -399,7 +471,7 @@ A differenza dell'attrito statico, l'attrito dinamico è un valore noto a priori
 
 Un caso che richiede particolare attenzione è quello di un corpo rigido che rotola senza strisciare: il punto di contatto istantaneo è fermo rispetto al piano, quindi la forza di attrito che agisce su di esso è di tipo statico, non dinamico, ed è un'incognita del problema vincolata solo da $F_{\mathrm{att}} \le \mu_s N$; essa va determinata insieme al moto del centro di massa e alla condizione di puro rotolamento, come si vedrà nel capitolo sul [corpo rigido](ref:chapter/8#p2).
 
-**Errore tipico 3.7.** Scrivere $F_{\mathrm{att}} = \mu_d N$ oppure $F_{\mathrm{att}} = \mu_s N$ per un corpo che rotola senza strisciare è sempre sbagliato: la prima forma confonde statico con dinamico (il punto di contatto non scivola), la seconda confonde il valore massimo possibile con il valore effettivo dell'attrito statico.
+**Errore tipico 3.10.** Scrivere $F_{\mathrm{att}} = \mu_d N$ oppure $F_{\mathrm{att}} = \mu_s N$ per un corpo che rotola senza strisciare è sempre sbagliato: la prima forma confonde statico con dinamico (il punto di contatto non scivola), la seconda confonde il valore massimo possibile con il valore effettivo dell'attrito statico.
 
 **Esempio 3.5** (sistema di due corpi collegati con attrito dinamico). Una massa $m_1 = 2{,}0$ kg pende verticalmente, collegata tramite un filo ideale e una carrucola ideale a una massa $m_2 = 5{,}0$ kg che scivola su un piano orizzontale scabro con $\mu_d = 0{,}30$. Il sistema è già in moto, con $m_1$ che scende e $m_2$ che viene trainata verso la carrucola; si determinino l'accelerazione del sistema e la tensione del filo.
 
@@ -441,7 +513,7 @@ $$
 
 dove $\eta$ è il coefficiente di viscosità del fluido e $\kappa$ un fattore che dipende dalla forma del corpo, legato al coefficiente complessivo dalla relazione $\beta = \kappa\eta$. Nel seguito si userà sempre $\beta$ come unico coefficiente di attrito viscoso nelle equazioni del moto, definendo separatamente la costante di tempo $\lambda = \beta/m$ per descrivere il decadimento esponenziale della velocità.
 
-:::formula{id="3.17" label="Forza di attrito viscoso"}
+:::formula{id="3.19" label="Forza di attrito viscoso"}
 $$\vec{F}_v = -\beta \vec{v}$$
 :::
 
@@ -459,13 +531,13 @@ $$
 v(t) = v_0\, e^{-\lambda t}.
 $$
 
-:::formula{id="3.18" label="Legge della velocità nel moto con attrito viscoso"}
+:::formula{id="3.20" label="Legge della velocità nel moto con attrito viscoso"}
 $$v(t) = v_0\, e^{-\lambda t}$$
 :::
 
 La costante $\tau = 1/\lambda$ è il tempo di smorzamento: dopo un tempo $\tau$ la velocità si è ridotta a $v_0/e$.
 
-:::formula{id="3.19" label="Tempo di smorzamento viscoso"}
+:::formula{id="3.21" label="Tempo di smorzamento viscoso"}
 $$\tau = \frac{1}{\lambda}$$
 :::
 
@@ -475,7 +547,7 @@ $$
 x(t) = \int_0^t v_0 e^{-\lambda t'}\, dt' = \frac{v_0}{\lambda}\left(1 - e^{-\lambda t}\right).
 $$
 
-:::formula{id="3.20" label="Legge oraria della posizione nel moto con attrito viscoso"}
+:::formula{id="3.22" label="Legge oraria della posizione nel moto con attrito viscoso"}
 $$x(t) = \frac{v_0}{\lambda}\left(1 - e^{-\lambda t}\right)$$
 :::
 
@@ -491,7 +563,7 @@ e la legge oraria completa $(x(t), z(t))$ si ottiene risolvendo questo sistema c
 
 **Esempio 3.6** (velocità limite in assenza di forza motrice). Una particella si muove lungo l'asse $x$ con velocità costante $v_0 = 2{,}0$ m/s quando entra in una regione occupata da un liquido viscoso, dove il moto viene smorzato con costante $\lambda = 3{,}0\ \mathrm{s^{-1}}$. Si scelgano origine delle posizioni e dei tempi nel punto e nell'istante di ingresso nella regione viscosa: $x(0) = 0$, $v(0) = v_0$.
 
-La legge della velocità è $v(t) = v_0 e^{-\lambda t}$ ({{formula:3.18}}) e il tempo di smorzamento vale $\tau = 1/\lambda = 1/(3{,}0\ \mathrm{s^{-1}}) \approx 0{,}33$ s. La legge oraria della posizione è $x(t) = (v_0/\lambda)(1-e^{-\lambda t})$ ({{formula:3.20}}). Dopo $t = 1{,}0$ s dall'ingresso,
+La legge della velocità è $v(t) = v_0 e^{-\lambda t}$ ({{formula:3.20}}) e il tempo di smorzamento vale $\tau = 1/\lambda = 1/(3{,}0\ \mathrm{s^{-1}}) \approx 0{,}33$ s. La legge oraria della posizione è $x(t) = (v_0/\lambda)(1-e^{-\lambda t})$ ({{formula:3.22}}). Dopo $t = 1{,}0$ s dall'ingresso,
 
 $$
 x(1{,}0\ \mathrm{s}) = \frac{2{,}0\ \mathrm{m/s}}{3{,}0\ \mathrm{s^{-1}}}\left(1 - e^{-3{,}0}\right) \approx 0{,}667\ \mathrm{m} \times 0{,}950 \approx 0{,}63\ \mathrm{m}.
@@ -502,15 +574,15 @@ Controllo: le unità (m/s)/(s⁻¹) = m sono corrette, e il risultato, inferiore
 :::image{src="assets/ed85a843-velocita-decadimento-viscoso.svg" alt="Grafico della velocità v(t) = v0 exp(-gamma t) che decade esponenzialmente verso zero" caption="Fig. 3.7 — Decadimento esponenziale della velocità per una particella che entra in una regione viscosa, con v0 = 2 m/s e gamma = 3 s^-1."}
 :::
 
-**Errore tipico 3.8.** Applicare al moto viscoso le formule del moto uniformemente accelerato (ad esempio $v = v_0 - a t$) è sbagliato, perché l'accelerazione $a = -\lambda v$ non è costante ma dipende dalla velocità istantanea: l'equazione del moto va risolta per separazione di variabili, come mostrato sopra, e non con le leggi del moto rettilineo uniformemente accelerato richiamate in [Moto rettilineo](ref:chapter/2#p2).
+**Errore tipico 3.11.** Applicare al moto viscoso le formule del moto uniformemente accelerato (ad esempio $v = v_0 - a t$) è sbagliato, perché l'accelerazione $a = -\lambda v$ non è costante ma dipende dalla velocità istantanea: l'equazione del moto va risolta per separazione di variabili, come mostrato sopra, e non con le leggi del moto rettilineo uniformemente accelerato richiamate in [Moto rettilineo](ref:chapter/2#p2).
 
-## p6 | Forza elastica
+## p7 | Forza elastica
 
 ### La legge di Hooke
 
 **Definizione 3.10** (forza elastica). Si definisce forza elastica una forza di direzione costante, con verso sempre rivolto verso un punto fisso $O$, detto centro, e con modulo proporzionale alla distanza da $O$. Se si assume come asse $x$ la direzione della forza e come origine il centro $O$, la forza elastica si scrive
 
-:::formula{id="3.21" label="Legge di Hooke"}
+:::formula{id="3.23" label="Legge di Hooke"}
 $$\vec{F} = -k\,x\,\hat{u}_x$$
 :::
 
@@ -528,7 +600,7 @@ $$W_{A\to B} = \int_A^B (-k x)\,dx = -\frac{1}{2}k x_B^2 + \frac{1}{2}k x_A^2 = 
 
 da cui
 
-:::formula{id="3.22" label="Energia potenziale elastica"}
+:::formula{id="3.24" label="Energia potenziale elastica"}
 $$E_p(x) = \frac{1}{2}k x^2$$
 :::
 
@@ -593,7 +665,7 @@ $$-\frac{k_1 k_2}{k_1+k_2}\Delta l_{tot} = ma,$$
 
 cioè il sistema delle due molle in serie si comporta come un'unica molla di costante efficace
 
-:::formula{id="3.23" label="Costante elastica equivalente di molle in serie"}
+:::formula{id="3.25" label="Costante elastica equivalente di molle in serie"}
 $$k_{eff} = \frac{k_1 k_2}{k_1+k_2} \quad \Longleftrightarrow \quad \frac{1}{k_{eff}} = \frac{1}{k_1} + \frac{1}{k_2}$$
 :::
 
@@ -605,7 +677,7 @@ $$F_{tot} = -k_1 x - k_2 x = -(k_1+k_2)x,$$
 
 e quindi il sistema si comporta come un'unica molla di costante efficace
 
-:::formula{id="3.24" label="Costante elastica equivalente di molle in parallelo"}
+:::formula{id="3.26" label="Costante elastica equivalente di molle in parallelo"}
 $$k_{eff} = k_1 + k_2$$
 :::
 
@@ -614,7 +686,7 @@ A differenza del caso in serie, in parallelo è la molla più rigida a dominare 
 :::image{src="assets/b01ae562-molle-serie-parallelo-keff.svg" alt="Due curve di k_eff(k2) con k1=100 N/m fisso: la curva serie k1k2/(k1+k2) cresce da 0 verso l'asintoto orizzontale k_eff=100, la curva parallelo k1+k2 cresce linearmente da 100" caption="Fig. 3.9 — Costante elastica equivalente in funzione di k₂, per k₁ = 100 N/m fissato: in serie k_eff resta sempre minore della più piccola delle due costanti, in parallelo resta sempre maggiore della più grande"}
 :::
 
-**Errore tipico 3.9.** Uno sbaglio frequente è applicare alle molle le stesse regole di composizione delle resistenze elettriche senza verificarle: la formula di somma degli inversi vale per la serie delle molle e non per il parallelo, esattamente l'opposto di quanto succede per resistori (dove la somma diretta vale per la serie). Conviene sempre ridimostrare la relazione a partire dall'equilibrio nei punti di giunzione, come fatto sopra, piuttosto che applicare meccanicamente una formula mnemonica.
+**Errore tipico 3.12.** Uno sbaglio frequente è applicare alle molle le stesse regole di composizione delle resistenze elettriche senza verificarle: la formula di somma degli inversi vale per la serie delle molle e non per il parallelo, esattamente l'opposto di quanto succede per resistori (dove la somma diretta vale per la serie). Conviene sempre ridimostrare la relazione a partire dall'equilibrio nei punti di giunzione, come fatto sopra, piuttosto che applicare meccanicamente una formula mnemonica.
 
 ### Molle su piani inclinati e in presenza di forze costanti
 
@@ -624,11 +696,11 @@ $$m\frac{d^2z}{dt^2} = -k(z - l_0) + F_0.$$
 
 Introducendo una nuova lunghezza di riposo efficace $l_0' = l_0 + F_0/k$, l'equazione diventa $m\ddot{z} = -k(z - l_0')$, cioè quella di una molla efficace con la medesima costante elastica $k$ ma lunghezza a riposo $l_0'$. Nel caso particolare di una molla verticale sospesa a un sostegno fisso, con un corpo di massa $m$ appeso all'estremo libero, conviene misurare $z$ come lunghezza della molla, crescente verso il basso: il peso agisce proprio nel verso in cui la molla tende ad allungarsi, dunque $F_0 = +mg$, e si ottiene $l_0' = l_0 + mg/k$. Il sistema oscilla ancora di moto armonico con pulsazione $\omega = \sqrt{k/m}$, ma attorno alla nuova posizione di equilibrio $l_0'$, maggiore della lunghezza a riposo della molla scarica per effetto del peso sospeso, come è fisicamente intuitivo. Questo metodo di "assorbire" una forza costante in una nuova posizione di equilibrio evita di portarsi dietro un termine costante nell'equazione differenziale, e sarà utile anche in altri contesti con forze costanti sovrapposte a forze di richiamo.
 
-Quando la molla è disposta lungo un piano inclinato scabro o liscio di angolo $\theta$, si procede scomponendo il peso $\vec{P}$ nelle componenti parallela e perpendicolare al piano come già fatto per il piano inclinato nella sezione su [reazioni vincolari ed equilibrio](ref:chapter/3#p4):
+Quando la molla è disposta lungo un piano inclinato scabro o liscio di angolo $\theta$, si procede scomponendo il peso $\vec{P}$ nelle componenti parallela e perpendicolare al piano come già fatto per il piano inclinato nella sezione su [reazioni vincolari ed equilibrio](ref:chapter/3#p5):
 
 $$P_\parallel = -mg\sin\theta, \qquad P_\perp = -mg\cos\theta,$$
 
-dove la componente perpendicolare è bilanciata esattamente dalla reazione normale del piano e non produce accelerazione in quella direzione. Se il piano è liscio, l'equazione del moto lungo il piano si scrive sommando la componente della forza elastica alla componente del peso $P_\parallel$, esattamente come nel caso della molla verticale: si può definire una lunghezza di riposo efficace che incorpora $mg\sin\theta$, riconducendo il problema a un'oscillazione armonica attorno a una nuova posizione di equilibrio. Se invece il piano è scabro, alla forza elastica e a $P_\parallel$ si aggiunge la forza di attrito esercitata dal piano, che si oppone alla tendenza al moto fino a un valore massimo quando la massa è in quiete (attrito statico) oppure ha verso opposto alla velocità quando la massa è in moto (attrito dinamico), come discusso nella sezione sulle [forze di attrito](ref:chapter/3#p5). In questo caso il moto non è in generale armonico: l'attrito statico può bloccare la massa in una posizione di equilibrio diversa da quella determinata dalla sola forza elastica e dal peso, se la componente $P_\parallel$ più la forza elastica non superano la forza di attrito statico massima; l'attrito dinamico, quando il corpo è in moto, dissipa energia meccanica a ogni oscillazione, per cui l'ampiezza del moto non si mantiene costante nel tempo. Occorre quindi trattare separatamente la condizione di equilibrio (verificando l'aderenza) e, se questa non è soddisfatta, l'equazione del moto con l'attrito dinamico, valida tratto per tratto tra un'inversione del verso del moto e la successiva.
+dove la componente perpendicolare è bilanciata esattamente dalla reazione normale del piano e non produce accelerazione in quella direzione. Se il piano è liscio, l'equazione del moto lungo il piano si scrive sommando la componente della forza elastica alla componente del peso $P_\parallel$, esattamente come nel caso della molla verticale: si può definire una lunghezza di riposo efficace che incorpora $mg\sin\theta$, riconducendo il problema a un'oscillazione armonica attorno a una nuova posizione di equilibrio. Se invece il piano è scabro, alla forza elastica e a $P_\parallel$ si aggiunge la forza di attrito esercitata dal piano, che si oppone alla tendenza al moto fino a un valore massimo quando la massa è in quiete (attrito statico) oppure ha verso opposto alla velocità quando la massa è in moto (attrito dinamico), come discusso nella sezione sulle [forze di attrito](ref:chapter/3#p6). In questo caso il moto non è in generale armonico: l'attrito statico può bloccare la massa in una posizione di equilibrio diversa da quella determinata dalla sola forza elastica e dal peso, se la componente $P_\parallel$ più la forza elastica non superano la forza di attrito statico massima; l'attrito dinamico, quando il corpo è in moto, dissipa energia meccanica a ogni oscillazione, per cui l'ampiezza del moto non si mantiene costante nel tempo. Occorre quindi trattare separatamente la condizione di equilibrio (verificando l'aderenza) e, se questa non è soddisfatta, l'equazione del moto con l'attrito dinamico, valida tratto per tratto tra un'inversione del verso del moto e la successiva.
 
 **Esempio 3.8** (equilibrio con molla e forza esterna su piano scabro). Una massa $m = 3\ \mathrm{kg}$, posta su un piano orizzontale scabro, è collegata a una molla di costante elastica $k = 640\ \mathrm{N/m}$ e massa trascurabile; all'estremo libero della molla agisce, parallelamente al piano, una forza esterna $F_{ext} = 16\ \mathrm{N}$ diretta verso destra, e il sistema è osservato in quiete.
 
@@ -648,11 +720,11 @@ $$\Delta l = \frac{16\ \mathrm{N}}{640\ \mathrm{N/m}} = 0{,}025\ \mathrm{m} \,$$
 
 Controllo: $\lbrack \mathrm{N}\rbrack /\lbrack \mathrm{N/m}\rbrack  = \mathrm{m}$, dimensionalmente corretto; un allungamento di $2{,}5\ \mathrm{cm}$ è un ordine di grandezza plausibile per una molla di rigidezza $640\ \mathrm{N/m}$ soggetta a una forza di $16\ \mathrm{N}$.
 
-Sulla massa $m$, l'equilibrio lungo $x$ richiede che la forza di attrito statico eserciti sul corpo una forza pari e opposta alla forza elastica trasmessa dalla molla ($F_{el}$ sulla massa ha lo stesso modulo di $\Delta l \cdot k$ calcolato sopra, per la terza legge di Newton applicata alla molla ideale), così che $|f_s| = k\Delta l = F_{ext} = 16\ \mathrm{N}$: dalla condizione di aderenza $|f_s|\le \mu_s mg$ (vedi [forze di attrito](ref:chapter/3#p5)) si ottiene un vincolo inferiore su $\mu_s$.
+Sulla massa $m$, l'equilibrio lungo $x$ richiede che la forza di attrito statico eserciti sul corpo una forza pari e opposta alla forza elastica trasmessa dalla molla ($F_{el}$ sulla massa ha lo stesso modulo di $\Delta l \cdot k$ calcolato sopra, per la terza legge di Newton applicata alla molla ideale), così che $|f_s| = k\Delta l = F_{ext} = 16\ \mathrm{N}$: dalla condizione di aderenza $|f_s|\le \mu_s mg$ (vedi [forze di attrito](ref:chapter/3#p6)) si ottiene un vincolo inferiore su $\mu_s$.
 
-**Errore tipico 3.10.** Un errore comune è dimenticare che la molla, essendo ideale e di massa trascurabile, trasmette la stessa forza a entrambi gli estremi: non bisogna introdurre due costanti elastiche diverse, né attribuire una forza elastica diversa ai due estremi della stessa molla, così come per la tensione di un filo ideale {{formula:3.10}}. Un secondo errore frequente è confondere l'allungamento $x = l - l_0$ con la lunghezza $l$ della molla, scrivendo $F = -kl$ invece di $F=-k(l-l_0)$: questo è corretto solo se si sceglie l'origine dell'asse proprio nella posizione di riposo della molla, come conviene sempre fare per semplificare i calcoli.
+**Errore tipico 3.13.** Un errore comune è dimenticare che la molla, essendo ideale e di massa trascurabile, trasmette la stessa forza a entrambi gli estremi: non bisogna introdurre due costanti elastiche diverse, né attribuire una forza elastica diversa ai due estremi della stessa molla, così come per la tensione di un filo ideale {{formula:3.12}}. Un secondo errore frequente è confondere l'allungamento $x = l - l_0$ con la lunghezza $l$ della molla, scrivendo $F = -kl$ invece di $F=-k(l-l_0)$: questo è corretto solo se si sceglie l'origine dell'asse proprio nella posizione di riposo della molla, come conviene sempre fare per semplificare i calcoli.
 
-## p7 | Dinamica del moto curvilineo
+## p8 | Dinamica del moto curvilineo
 
 ### La forza centripeta nel moto curvilineo
 
@@ -664,7 +736,7 @@ $$
 
 La componente ortogonale alla traiettoria della risultante delle forze si chiama **forza centripeta** $F_N$ (o $F_c$), mentre la componente tangenziale si chiama **forza tangenziale** $F_T$. È importante sottolineare che la forza centripeta non è un nuovo tipo di forza: è semplicemente il nome che si dà alla componente, ortogonale alla traiettoria, della risultante delle forze reali che agiscono sul punto (peso, tensione, reazione normale, attrito, ecc.).
 
-:::formula{id="3.25" label="Forza centripeta"}
+:::formula{id="3.27" label="Forza centripeta"}
 $$
 F_c = m a_c = \frac{m v^2}{R}
 $$
@@ -674,11 +746,11 @@ dove $R$ è il raggio di curvatura della traiettoria nel punto considerato e $v$
 
 Una conseguenza notevole, già incontrata nel moto dei gravi, è che nelle applicazioni del moto circolare la massa si elide spesso nelle equazioni: applicando $\vec{F}_{TOT} = m\vec{a}$, se le uniche forze agenti sono proporzionali a $m$ (come il peso $mg$), la cinematica risultante (velocità, periodo) non dipende dalla massa del corpo. Si definisce inoltre **equilibrio dinamico** la condizione in cui, in presenza di forze, il modulo della velocità resta costante: nel moto rettilineo ciò richiede risultante nulla, ma nel moto circolare esiste sempre una forza centripeta, diretta verso il centro, che pur essendo presente (anche costante) non altera il modulo della velocità.
 
-Questa idea si applica a tre situazioni tipiche d'esame: il pendolo, l'auto in curva e il giro della morte. Su una curva piana, la forza centripeta necessaria è fornita dall'attrito statico tra pneumatici e strada (si veda [Forze di attrito](ref:chapter/3#p5)); su una curva sopraelevata è fornita (in parte o del tutto) dalla componente orizzontale della reazione normale. In entrambi i casi non si introduce alcuna forza nuova: si individua semplicemente quale forza reale, o quale sua componente, svolge il ruolo di $F_c$.
+Questa idea si applica a tre situazioni tipiche d'esame: il pendolo, l'auto in curva e il giro della morte. Su una curva piana, la forza centripeta necessaria è fornita dall'attrito statico tra pneumatici e strada (si veda [Forze di attrito](ref:chapter/3#p6)); su una curva sopraelevata è fornita (in parte o del tutto) dalla componente orizzontale della reazione normale. In entrambi i casi non si introduce alcuna forza nuova: si individua semplicemente quale forza reale, o quale sua componente, svolge il ruolo di $F_c$.
 
 ### Il pendolo semplice: equazione del moto e tensione del filo
 
-Il **pendolo semplice** è un punto materiale di massa $m$ appeso tramite un filo ideale, inestensibile e di massa trascurabile, lungo $L$. Nella posizione di equilibrio statico (filo verticale) la tensione vale $T_f = mg$, come già ricavato in [Reazioni vincolari ed equilibrio](ref:chapter/3#p4) ({{formula:3.11}}).
+Il **pendolo semplice** è un punto materiale di massa $m$ appeso tramite un filo ideale, inestensibile e di massa trascurabile, lungo $L$. Nella posizione di equilibrio statico (filo verticale) la tensione vale $T_f = mg$, come già ricavato in [Reazioni vincolari ed equilibrio](ref:chapter/3#p5) ({{formula:3.13}}).
 
 Spostando il punto dalla verticale di un angolo $\theta$, il peso e la tensione contribuiscono alla risultante lungo la tangente alla traiettoria e lungo la normale, diretta verso il centro. La componente tangenziale si annulla al passaggio per la verticale, mentre quella normale si annulla nei punti di inversione solo se il filo resta teso:
 
@@ -688,7 +760,7 @@ $$
 
 Il segno negativo nella componente tangenziale indica che la forza di richiamo è sempre opposta allo spostamento angolare rispetto alla verticale. Poiché il punto si muove su un arco di cerchio di raggio $L$, valgono $a_T = L\, d^2\theta/dt^2$ e $a_N = v^2/L$, da cui
 
-:::formula{id="3.26" label="Equazione differenziale del pendolo semplice"}
+:::formula{id="3.28" label="Equazione differenziale del pendolo semplice"}
 $$
 \frac{d^2\theta}{dt^2} = -\frac{g}{L}\sin\theta
 $$
@@ -702,7 +774,7 @@ $$
 
 con soluzione $\theta(t) = \theta_0\sin(\omega t + \varphi)$, analoga a [formula (2.14)](ref:formula/2.14). Il periodo delle piccole oscillazioni è allora
 
-:::formula{id="3.27" label="Periodo del pendolo semplice (piccole oscillazioni)"}
+:::formula{id="3.29" label="Periodo del pendolo semplice (piccole oscillazioni)"}
 $$
 T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{L}{g}}
 $$
@@ -712,7 +784,7 @@ indipendente dall'ampiezza $\theta_0$: è la proprietà di **isocronismo delle p
 
 Dall'equazione lungo la normale, $m v^2/L = T_f - mg\cos\theta$, si vede che la tensione dipende anche dalla velocità e quindi non è determinata dal solo angolo. Se il pendolo è rilasciato da fermo all'angolo $\theta_0$, la conservazione dell'energia meccanica dà $v^2(\theta)=2gL(\cos\theta-\cos\theta_0)$. Sostituendo, si ottiene la tensione in funzione dell'angolo, finché il filo resta teso:
 
-:::formula{id="3.28" label="Tensione del filo del pendolo rilasciato da fermo"}
+:::formula{id="3.30" label="Tensione del filo del pendolo rilasciato da fermo"}
 $$
 T_f(\theta) = mg\left(3\cos\theta - 2\cos\theta_0\right)
 $$
@@ -735,7 +807,7 @@ $$
 
 **Equazioni del moto**: fino a che il punto resta sulla guida il moto è circolare, quindi la componente radiale dell'accelerazione è centripeta, $a_r = -v^2/R$. Uguagliando $F_r = m a_r$ si ottiene l'equazione radiale e quindi la reazione vincolare in funzione dell'angolo:
 
-:::formula{id="3.29" label="Reazione normale in una guida circolare verticale"}
+:::formula{id="3.31" label="Reazione normale in una guida circolare verticale"}
 $$
 N(\theta) = m\left(\frac{v^2}{R} - g\sin\theta\right)
 $$
@@ -756,6 +828,104 @@ $$
 
 ### Errori tipici
 
-**Errore tipico 3.11** (confondere reazione vincolare e peso in modulo). In $A$ il corpo sta curvando e ha accelerazione centripeta non nulla, $a_r = -v_A^2/R$; quindi la risultante delle forze non è nulla e $N_A$ non è semplicemente $mg$, ma $m(v_A^2/R + g)$.
+**Errore tipico 3.14** (confondere reazione vincolare e peso in modulo). In $A$ il corpo sta curvando e ha accelerazione centripeta non nulla, $a_r = -v_A^2/R$; quindi la risultante delle forze non è nulla e $N_A$ non è semplicemente $mg$, ma $m(v_A^2/R + g)$.
 
-**Errore tipico 3.12** (usare solo la conservazione dell'energia per la velocità minima nel giro della morte). Imporre $v_C = 0$ nella sola conservazione dell'energia dà $v_{A,\min} = \sqrt{4gR}$, un valore inferiore ma fisicamente impossibile per il punto sul lato interno di una guida unilaterale: sostituendo $v_C = 0$ nell'espressione della reazione si ottiene $N_C = -mg < 0$, cioè una reazione diretta verso l'esterno, che la guida non può esercitare. La reazione vincolare non compie lavoro e perciò non compare nella conservazione dell'energia, ma resta la condizione che determina se il moto può restare circolare; il valore corretto è $v_{A,\min} = \sqrt{5gR}$, maggiore di $\sqrt{4gR}$.
+**Errore tipico 3.15** (usare solo la conservazione dell'energia per la velocità minima nel giro della morte). Imporre $v_C = 0$ nella sola conservazione dell'energia dà $v_{A,\min} = \sqrt{4gR}$, un valore inferiore ma fisicamente impossibile per il punto sul lato interno di una guida unilaterale: sostituendo $v_C = 0$ nell'espressione della reazione si ottiene $N_C = -mg < 0$, cioè una reazione diretta verso l'esterno, che la guida non può esercitare. La reazione vincolare non compie lavoro e perciò non compare nella conservazione dell'energia, ma resta la condizione che determina se il moto può restare circolare; il valore corretto è $v_{A,\min} = \sqrt{5gR}$, maggiore di $\sqrt{4gR}$.
+
+## p9 | Come viene chiesto all'esame
+
+Il capitolo è comparso in tutte e 6 le sessioni d'esame passate che ho a disposizione, cioè 6 su 6. La dinamica del punto raramente compare da sola. Quasi sempre è il primo passo di un esercizio più lungo: un'**attrito** su un piano inclinato, una **molla**, un **urto**, un **rotolamento**. Il tipo più frequente è l'esercizio con forze di attrito, presente in tutte le sessioni.
+
+Nella prova scritta di 2 ore ci sono due problemi strutturati a domande aperte, quindi conviene saper separare le fasi di un esercizio e dichiarare ogni volta quale legge si usa. Il test informatizzato e la teoria possono invece chiedere i principi, il teorema dell'impulso e le dimostrazioni viste a lezione.
+
+### Tipo 1: moto con attrito su guide e piani inclinati
+
+**Cosa chiede l'esame.** Un punto o un corpo scende lungo un piano inclinato o una guida con tratti scabri e tratti lisci. Si chiede una velocità, una distanza percorsa, un'energia dissipata oppure la compressione di una molla. Il tipo compare in almeno cinque delle sei sessioni.
+
+**Metodo.**
+
+1. Dividi il percorso in tratti: ogni tratto ha una propria forza risultante, quindi una propria equazione. Disegna il diagramma di corpo libero di ciascun tratto, come in [Principi della dinamica](ref:chapter/3#p2).
+2. Scegli gli assi parallelo e perpendicolare alla superficie e proietta il peso: $mg\sin\theta$ lungo il piano e $mg\cos\theta$ in direzione normale ([Reazioni vincolari ed equilibrio](ref:chapter/3#p5)).
+3. Ricava $N$ dall'equazione perpendicolare alla superficie e poi scrivi l'attrito dinamico $f_d=\mu_d N$, con la formula {{formula:3.18}}. Il verso di $\vec f_d$ è sempre opposto alla velocità ([Forze di attrito](ref:chapter/3#p6)).
+4. Se servono solo velocità e posizioni, usa il bilancio energetico invece del tempo. Per il lavoro dell'attrito vale [formula (4.11)](ref:formula/4.11), e il teorema da applicare è [formula (4.12)](ref:formula/4.12) ([Energia cinetica e teorema lavoro-energia](ref:chapter/4#p3), [Forze conservative ed energia potenziale](ref:chapter/4#p4)).
+5. Se l'esercizio chiede tempi o accelerazioni, risolvi invece l'equazione del moto di ogni tratto e integra come in {{formula:3.4}}.
+6. Fai il controllo dimensionale e verifica che i segni abbiano senso. Per esempio, l'energia dissipata deve essere positiva e la velocità non può aumentare in un tratto scabro orizzontale.
+
+**Errori tipici.**
+
+- Scrivere $N=mg$ anche sul piano inclinato, dove invece $N=mg\cos\theta$.
+- Dimenticare l'attrito nel tratto orizzontale, oppure applicarlo nei tratti dichiarati lisci.
+- Usare $\mu_s$ dove il testo dà $\mu_d$ per un corpo che scivola.
+- Applicare la conservazione dell'energia meccanica in presenza di tratti scabri, senza sottrarre il lavoro dell'attrito.
+
+**Esempi.**
+
+- *Esame del 25 giugno 2026, esercizio 1A.* Un corpo parte da fermo su una pista circolare liscia, attraversa un tratto scabro orizzontale AB e arriva a una molla. Si risolve in tre fasi: conservazione dell'energia sulla pista liscia, perdita $\mu_d mg\,\overline{AB}$ nel tratto scabro e, alla fine, scambio con l'energia elastica $\tfrac12 kx^2$.
+- *Esame dell'11 luglio 2022, esercizio 2A1.* Un punto percorre una guida scabra formata da un tratto inclinato di $60^\circ$ e da un tratto orizzontale. Il metodo calcola prima l'accelerazione nel tratto inclinato con $\mu_d=0{,}6$ e poi usa la velocità raggiunta come dato iniziale per il tratto orizzontale.
+
+### Tipo 2: urto seguito da dinamica del moto
+
+**Cosa chiede l'esame.** Un corpo viene lanciato, o cade da un pendolo, e urta un altro corpo. Prima o dopo l'urto serve una condizione sulle forze, per esempio una tensione, una forza di equilibrio o una distanza percorsa con attrito. L'esercizio combina quindi la [Quantità di moto e impulso](ref:chapter/3#p4) con le [Forze di attrito](ref:chapter/3#p6) o con il moto circolare. Il tipo compare in cinque sessioni su sei.
+
+**Metodo.**
+
+1. Dividi l'esercizio in prima dell'urto, urto e dopo l'urto. Ogni fase ha una legge diversa.
+2. Prima e dopo l'urto usa le equazioni della dinamica o dell'energia. Per un pendolo che scende usa la conservazione dell'energia meccanica e, quando serve la tensione, la formula {{formula:3.30}} ([Dinamica del moto curvilineo](ref:chapter/3#p8)).
+3. Durante l'urto le forze esterne non impulsive sono trascurabili, perché il tempo di interazione è brevissimo. Impone la conservazione della quantità di moto del sistema, [formula (7.20)](ref:formula/7.20), proiettata sugli assi ([Urti](ref:chapter/7#p7)).
+4. Per il tipo di urto: completamente anelastico (i corpi restano attaccati) vale solo la quantità di moto; elastico si conserva anche l'energia cinetica. Se i vincoli esterni sono impulsivi, come il perno di un'asta, la quantità di moto non si conserva e serve il momento angolare ([Momento angolare di un sistema](ref:chapter/7#p5)).
+5. Riporta le velocità subito dopo l'urto come condizioni iniziali della fase successiva.
+
+**Errori tipici.**
+
+- Conservare l'energia meccanica durante un urto anelastico, mentre si conserva solo $\vec p$ (vedi l'errore tipico in [Quantità di moto e impulso](ref:chapter/3#p4)).
+- Applicare la conservazione di $\vec p$ ignorando una forza impulsiva esterna, come il perno.
+- Dimenticare che $\vec p$ è un vettore: se il proiettile esce con una velocità data, il segno della componente conta.
+- Dimenticare di sommare il lavoro dell'attrito nella fase dopo l'urto.
+
+**Esempi.**
+
+- *Esame del 23 giugno 2022, esercizio 1A.* Due punti con coefficienti di attrito diversi scendono da fermi su un piano inclinato e si urtano restando attaccati. Si calcolano le due velocità prima dell'urto con attrito dinamico, poi la velocità comune con la conservazione di $\vec p$ e infine l'energia dissipata come differenza tra le energie cinetiche.
+- *Esame dell'11 luglio 2022, esercizio 1A.* Un proiettile colpisce un corpo appeso a un filo e ne esce con velocità $\vec v_0/2$. Con la conservazione della quantità di moto lungo l'asse orizzontale si ricava la velocità del corpo dopo l'urto in funzione di $v_0$. Poi, con la conservazione dell'energia sul pendolo, si imposta la condizione richiesta sull'altezza raggiunta.
+- *Tema d'esame 2024 - 2, esercizio 1A.* Un pendolo semplice è in equilibrio a $60^\circ$ sotto una forza orizzontale $\vec F$. L'equilibrio del punto si risolve con $T\cos\theta=mg$ e $T\sin\theta=F$, quindi $F=mg\tan\theta$. Poi il pendolo, liberato, scende e urta centralmente $m_2$, e si usa il metodo di questo tipo.
+- *Tema d'esame 1 - 2024, esercizio 1A.* Una slitta su superficie scabra ha un cannoncino che spara un proiettile. Si applica la conservazione della quantità di moto del sistema slitta-proiettile e poi la dinamica con $\mu_d=0{,}5$.
+
+### Tipo 3: rotolamento e dinamica rotazionale con attrito statico
+
+**Cosa chiede l'esame.** Un cilindro o un disco rotola su un piano inclinato, su una superficie curva o sotto l'azione di una molla. Si chiedono l'accelerazione, la forza di attrito, la condizione perché il rotolamento sia puro o la velocità in un punto. È il tipo che più spesso unisce il capitolo di dinamica del punto con quello del corpo rigido. Compare in quattro sessioni.
+
+**Metodo.**
+
+1. Scrivi la prima equazione cardinale per il centro di massa, che segue dai principi come in [Principi della dinamica](ref:chapter/3#p2), con le forze del diagramma: peso, normale, attrito, tensione, forza elastica.
+2. Scrivi la seconda equazione per la rotazione intorno all'asse del centro di massa, con il momento d'inerzia del corpo ([Rotazione attorno a un asse fisso](ref:chapter/9#p2)).
+3. Aggiungi la condizione di puro rotolamento, [formula (9.8)](ref:formula/9.8), che lega $a_{CM}$ e $\alpha$ ([Rotolamento](ref:chapter/9#p4)).
+4. Risolvi per $f_s$: nel puro rotolamento l'attrito statico non ha valore fissato, ma è quello necessario, quindi può risultare con segno qualunque.
+5. Verifica a posteriori la condizione di aderenza {{formula:3.17}}, $|f_s|\le\mu_s N$, con $N$ ricavata dalle forze perpendicolari. Se non è soddisfatta, il corpo striscia e il modello cambia: valgono $f_d=\mu_d N$ e non c'è più il vincolo di rotolamento.
+6. Se il testo chiede una velocità e non un'accelerazione, usa l'energia: nel puro rotolamento l'attrito statico non compie lavoro.
+
+**Errori tipici.**
+
+- Usare $\mu_s N$ come valore dell'attrito durante il rotolamento (vedi l'errore tipico in [Forze di attrito](ref:chapter/3#p6)).
+- Dimenticare il termine rotazionale nell'energia cinetica o usare il momento d'inerzia sbagliato.
+- Trascurare l'inerzia di una carrucola non ideale: le due tensioni del filo sono allora diverse ai due lati.
+- Dimenticare di verificare $|f_s|\le\mu_s N$ a fine esercizio.
+
+**Esempi.**
+
+- *Esame del 23 giugno 2022, esercizio 2A.* Un cubo che scivola con attrito è collegato da una barretta rigida all'asse di un cilindro che rotola senza strisciare su un piano inclinato. Le equazioni dei due corpi si scrivono separatamente, con la barretta che fornisce la forza di collegamento, e si chiudono con la condizione di rotolamento.
+- *Tema d'esame 2025 - 1, esercizio 2.* Un cilindro rotola senza strisciare su una superficie cilindrica fissa con $\mu_s=0{,}6$. Si chiedono grandezze lungo la discesa: con il bilancio energetico si trova la velocità a un dato angolo e con le equazioni dinamiche si ricavano $N$ e $f_s$, per controllare la condizione di aderenza.
+- *Esame del 25 giugno 2026, esercizi 2A e 2B.* Due corpi rigidi su piani simmetrici sono collegati da un filo che passa su una carrucola con massa. Le due varianti hanno dati diversi ma lo stesso metodo: un'equazione per ciascun corpo e una per la carrucola.
+
+### Tipo 4: molla e moto oscillatorio
+
+Il tipo compare in tre sessioni. Di solito la molla non è il solo elemento, ma si combina con attrito o rotolamento. Il metodo è quello della [Forza elastica](ref:chapter/3#p7): misura l'allungamento rispetto alla lunghezza di riposo e non rispetto all'estremo fisso, usa l'energia potenziale {{formula:3.24}} o la legge di Hooke {{formula:3.23}} e, se la massa oscilla, ricorda che $\omega=\sqrt{k/m}$. Se il corpo rotola, l'inerzia da usare nella pulsazione include anche il contributo rotazionale. Gli errori tipici sono confondere l'allungamento con la lunghezza della molla e dimenticare l'attrito (o il rotolamento) nel bilancio energetico.
+
+- *Esame del 25 giugno 2026, esercizio 1A:* la molla chiude il percorso con attrito descritto sopra.
+- *Tema d'esame 1 - 2024, esercizio 2A:* una molla di costante $k=30$ N/m è fissata a una parete e all'asse di un disco che poggia su una superficie scabra con $\mu_s=0{,}27$. La molla è inizialmente compressa. Il disco rotola e, quando la forza elastica è massima, si verifica la condizione di aderenza.
+
+### Tipi che compaiono una sola volta
+
+Nel *Tema d'esame 2025 - 1, esercizio 1* un punto scende su un piano inclinato scabro, percorre un tratto liscio e si conficca nell'estremo di un'asta. Il metodo è quello dei tipi 1 e 2, ma l'urto conserva il momento angolare e non la quantità di moto, per la presenza del perno ([Momento angolare di un sistema](ref:chapter/7#p5)).
+
+### Come prepararsi
+
+Gli esercizi sono lunghi, ma ogni domanda richiede uno solo di pochi strumenti, sempre quelli di questo capitolo: la proiezione della seconda legge, la verifica dell'aderenza, l'equazione dell'energia con le forze non conservative e la conservazione della quantità di moto. Allenati a nominare, a ogni passaggio, la legge che usi e a dire per quale intervallo di tempo è valida. Per la teoria orale, ricorda che possono essere chieste anche le dimostrazioni viste a lezione, come quella del teorema dell'impulso in [Quantità di moto e impulso](ref:chapter/3#p4).

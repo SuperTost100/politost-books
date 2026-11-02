@@ -145,7 +145,7 @@ $$f|_{\rbrack a_{k-1},a_k\lbrack } = c_k, \qquad k = 1, \dots, n.$$
 In altre parole, $f$ è costante a tratti su ciascuno degli intervalli della suddivisione (i valori nei punti $a_0, \dots, a_n$ sono irrilevanti per quanto segue).
 
 :::formula{id="9.7" label="Funzione a scala"}
-$$f|_{]a_{k-1},a_k[} = c_k, \qquad k = 1,\dots,n, \qquad c_k \in \mathbb{R}$$
+$$f|_{\rbrack a_{k-1},a_k\lbrack } = c_k, \qquad k = 1,\dots,n, \qquad c_k \in \mathbb{R}$$
 :::
 
 Per una funzione a scala l'area con segno sotto il grafico si calcola in modo immediato, come somma delle aree (con segno) dei singoli rettangoli.
@@ -181,7 +181,7 @@ $$\sup A = \inf B,$$
 dove $A$ e $B$ sono gli insiemi sopra definiti. In tal caso il valore comune si chiama **integrale definito** di $f$ su $\lbrack a,b\rbrack $ e si indica con $\int_a^b f(x)\, dx$. L'insieme delle funzioni integrabili su $\lbrack a,b\rbrack $ si denota $\mathcal{R}(\lbrack a,b\rbrack )$.
 
 :::formula{id="9.9" label="Integrale di Riemann"}
-$$f \in \mathcal{R}([a,b]) \iff \sup_{f_s^- \in \varphi_f^-} \int_a^b f_s^- = \inf_{f_s^+ \in \varphi_f^+} \int_a^b f_s^+ =: \int_a^b f(x)\,dx$$
+$$f \in \mathcal{R}(\lbrack a,b\rbrack ) \iff \sup_{f_s^- \in \varphi_f^-} \int_a^b f_s^- = \inf_{f_s^+ \in \varphi_f^+} \int_a^b f_s^+ =: \int_a^b f(x)\,dx$$
 :::
 
 Una formulazione equivalente, spesso più maneggevole nelle dimostrazioni, è la seguente.
@@ -237,7 +237,7 @@ $$\int_a^b f(x)\,dx = \int_a^c f(x)\,dx + \int_c^b f(x)\,dx,$$
 e, viceversa, se $f$ è integrabile su $\lbrack a,c\rbrack $ e su $\lbrack c,b\rbrack $ separatamente allora è integrabile su $\lbrack a,b\rbrack $. Inoltre se $f$ è integrabile su $\lbrack a,b\rbrack $, la sua restrizione a ogni sottointervallo $\lbrack c,d\rbrack  \subseteq \lbrack a,b\rbrack $ è integrabile.
 
 :::formula{id="9.11" label="Proprietà dell'integrale definito"}
-$$\begin{aligned} &\int_a^b (\alpha f + \beta g)\,dx = \alpha \int_a^b f\,dx + \beta \int_a^b g\,dx \\ &\left|\int_a^b f\,dx\right| \leq \int_a^b |f|\,dx \\ &\int_a^b f\,dx = \int_a^c f\,dx + \int_c^b f\,dx \quad \forall c \in [a,b] \end{aligned}$$
+$$\begin{aligned} &\int_a^b (\alpha f + \beta g)\,dx = \alpha \int_a^b f\,dx + \beta \int_a^b g\,dx \\ &\left|\int_a^b f\,dx\right| \leq \int_a^b |f|\,dx \\ &\int_a^b f\,dx = \int_a^c f\,dx + \int_c^b f\,dx \quad \forall c \in \lbrack a,b\rbrack  \end{aligned}$$
 :::
 
 Queste proprietà verranno usate sistematicamente nella sezione sul [teorema fondamentale del calcolo integrale](ref:chapter/9#p4) per spezzare il calcolo di integrali su funzioni definite a tratti, ad esempio
@@ -265,7 +265,7 @@ $$f(c) = \frac{1}{b-a} \int_a^b f(x)\,dx,$$
 cioè la funzione assume, in qualche punto dell'intervallo, esattamente il proprio valore medio.
 
 :::formula{id="9.12" label="Teorema della media integrale"}
-$$m \leq \frac{1}{b-a}\int_a^b f(x)\,dx \leq M, \qquad \exists c \in [a,b] : f(c) = \frac{1}{b-a} \int_a^b f(x)\,dx \ \text{(se $f$ continua)}$$
+$$m \leq \frac{1}{b-a}\int_a^b f(x)\,dx \leq M, \qquad \exists c \in \lbrack a,b\rbrack  : f(c) = \frac{1}{b-a} \int_a^b f(x)\,dx \ \text{(se $f$ continua)}$$
 :::
 
 **Dimostrazione.** Per ogni $x \in \lbrack a,b\rbrack $ vale $m \leq f(x) \leq M$ per definizione di estremo inferiore e superiore. Applicando la proprietà di monotonia dell'integrale (punto 3 sopra) alle funzioni costanti $m$ e $M$ e a $f$ si ottiene
@@ -286,7 +286,7 @@ soddisfa $m \leq \mu \leq M$ per quanto appena dimostrato, cioè $\mu$ è compre
 
 **Esempio 9.4.** Calcoliamo l'integrale $\int_0^2 t^2\,dt$ usando le tecniche di primitive già note (anticipando il risultato del teorema fondamentale del calcolo integrale, dimostrato nella sezione successiva):
 
-$$\int_0^2 t^2\,dt = \left\lbrack  \frac{t^3}{3} \right\rbrack _0^2 = \frac{2^3}{3} - \frac{0^3}{3} = \frac{8}{3}.$$
+$$\int_0^2 t^2\,dt = \left[ \frac{t^3}{3} \right]_0^2 = \frac{2^3}{3} - \frac{0^3}{3} = \frac{8}{3}.$$
 
 La media integrale di $f(t) = t^2$ su $\lbrack 0,2\rbrack $ è dunque
 
@@ -372,7 +372,7 @@ Questa formula è lo strumento di calcolo effettivo: tutte le tecniche della sez
 
 **Esempio 9.5.** Calcoliamo $\displaystyle \int_0^2 t^2\,dt$. Una primitiva di $t^2$ è $G(t) = \dfrac{t^3}{3}$. Per la formula di Torricelli-Barrow:
 
-$$\int_0^2 t^2\,dt = \left\lbrack \frac{t^3}{3}\right\rbrack _0^2 = \frac{2^3}{3} - \frac{0^3}{3} = \frac{8}{3}.$$
+$$\int_0^2 t^2\,dt = \left[\frac{t^3}{3}\right]_0^2 = \frac{2^3}{3} - \frac{0^3}{3} = \frac{8}{3}.$$
 
 Se l'estremo di integrazione contiene una funzione composta, conviene applicare prima la sostituzione già studiata per gli integrali indefiniti e ricordarsi di cambiare anche gli estremi, oppure tornare alla variabile originale prima di valutare.
 
@@ -432,3 +432,104 @@ $$\int_{0}^{1} f(x)\,dx = G(1) - G(0) = \left(\frac{1}{4} - \frac{1}{2}\right) -
 L'area totale è dunque $\left|\frac{1}{4}\right| + \left|-\frac{1}{4}\right| = \frac{1}{2}$, mentre l'integrale definito (senza modulo) su $\lbrack -1,1\rbrack $ vale $\frac{1}{4} - \frac{1}{4} = 0$, coerentemente con la disparità di $f$.
 
 Questo esempio chiarisce bene la differenza tra integrale definito (valore algebrico, qui nullo per simmetria) e area geometrica (sempre non negativa, qui pari a $\frac{1}{2}$), distinzione fondamentale negli esercizi d'esame sul calcolo di aree.
+
+## p5 | Come viene chiesto all'esame
+
+Questo capitolo è comparso in 20 delle 83 sessioni d'esame passate. Il tipo di richiesta più frequente è la **funzione integrale dentro un esercizio di studio di funzione o di limiti**, seguita dalle domande di teoria sul teorema fondamentale e sulla media integrale. I calcoli espliciti di integrali e aree sono meno frequenti, ma quando compaiono richiedono di spezzare l'integrale in punti precisi.
+
+Nel test a risposta multipla le stesse nozioni compaiono in forma teorica. Nello scritto compaiono come sottopunti di un esercizio. I tipi qui sotto descrivono solo ciò che i testi mostrano.
+
+### Tipo 1: funzione integrale e sue proprietà qualitative
+
+**Cosa chiede l'esame.** Viene data $F(x)=\int_{x_0}^{x} f(t)\,dt$, spesso con $f$ che non ha primitiva elementare. Si chiede di dedurre proprietà di $F$ senza calcolarla: monotonia, limitatezza, asintoti orizzontali, estremo superiore. In altri casi si chiede di calcolare un integrale improprio e di usarlo come limite di $F$.
+
+**Metodo.**
+1. Verificare che $f$ sia continua sull'intervallo considerato. Per il {{formula:9.14}} si ha allora $F'(x)=f(x)$. Se l'estremo è composto, come in $F(x^5)$, si applica $\frac{d}{dx}F(g(x))=f(g(x))\,g'(x)$ (si veda [Teorema fondamentale del calcolo integrale](ref:chapter/9#p4)).
+2. Studiare il segno di $F'$ per la monotonia: se $f\ge 0$, $F$ è crescente. Con l'estremo composto, il segno di $g'$ entra nel prodotto.
+3. Per gli asintoti orizzontali e per l'estremo superiore, calcolare $\lim_{x\to+\infty}F(x)$. Se $F$ è crescente il limite esiste sempre. Il problema è se sia finito.
+4. Se serve il valore del limite, calcolare l'integrale improprio come limite, scrivendo prima $\lim_{b\to+\infty}\int_{x_0}^b f(t)\,dt$ e solo dopo dichiarando convergenza o divergenza (si veda [Integrali impropri di prima specie](ref:chapter/10#p2)). Per la convergenza senza calcolo si usano i criteri del confronto (si veda [Criteri di convergenza](ref:chapter/10#p4)).
+5. Per limitare un integrale con una costante, maggiorare l'integrando con una funzione di cui si conosce l'integrale e usare la monotonia dell'integrale ({{formula:9.11}}).
+
+**Errori tipici.**
+- Derivare $F(g(x))$ dimenticando il fattore $g'(x)$.
+- Concludere che $F$ ha asintoto orizzontale perché $f\to 0$. Servono la convergenza dell'integrale e un limite finito di $F$.
+- Scambiare "$F$ crescente" con "$F$ limitata".
+
+**Esempi.**
+- *Esame del 10 settembre 2019, esercizio 2*: si calcola un integrale improprio su $\lbrack 0,+\infty\lbrack $, poi si mostra che $F(x^5)$ è crescente e se ne trova l'estremo superiore. Il calcolo si fa con la sostituzione $u=e^t$ e una decomposizione in fratti semplici (si veda [Integrali indefiniti](ref:chapter/9#p2)). La crescita segue da $F'(x^5)\cdot 5x^4\ge 0$. L'estremo superiore coincide con il limite a $+\infty$, cioè con il valore del punto (a).
+- *Esame del 31 gennaio 2018 - IIo turno, esercizio 2A e 2B*: si chiede di maggiorare $\int_0^a e^{-x^2}\,dx$ con una costante e di mostrare che la funzione integrale ha asintoti orizzontali. Nella versione B l'integrando è $e^{x^2}$ e si deve mostrare che gli asintoti non ci sono. Nella versione A si maggiora $e^{-x^2}$ con una funzione integrabile su tutta la semiretta. Nella B si osserva che $e^{x^2}\ge 1$, quindi $F$ diverge.
+
+### Tipo 2: studio di funzione con un punto sul teorema fondamentale
+
+**Cosa chiede l'esame.** È l'Esercizio 1 dello scritto: dominio, simmetrie, limiti, asintoti, continuità e derivabilità, monotonia ed estremi, grafico qualitativo. Nelle sessioni elencate compare anche l'etichetta del teorema fondamentale del calcolo integrale, oppure quella degli integrali impropri o definiti. Questo accade nelle quattro versioni del 13 giugno 2025, nelle quattro del 22 gennaio 2025, nel 25 gennaio 2023, nel 25 gennaio 2022 (IIo turno), nel 29 gennaio 2020 e nel 18 settembre 2018. I testi disponibili ne mostrano soprattutto i primi punti, quelli di studio di funzione. Il metodo dello studio completo è nella sezione [Studio di funzione completo](ref:chapter/8#p4). Qui interessa il raccordo con il calcolo integrale.
+
+**Metodo.**
+1. Svolgere i punti (a)–(d) con lo schema consueto. Le simmetrie dimezzano il lavoro (si veda [Simmetrie, periodicità e funzioni particolari](ref:chapter/3#p4)).
+2. Leggere con attenzione l'ultimo punto, che può chiedere una funzione integrale o un integrale improprio costruito sulla $f$ appena studiata.
+3. Riusare i risultati già ottenuti: segno di $f$, continuità, comportamento agli estremi del dominio. Il segno di $f$ dà la monotonia di $F$. Il comportamento di $f$ agli estremi dice se l'integrale è improprio e con quale integrando campione si confronta (si veda [Integrali impropri di seconda specie](ref:chapter/10#p3)).
+4. Se $f$ ha un punto di discontinuità eliminabile o un valore anomalo in un punto, ricordare che cambiarne il valore in un punto non cambia l'integrale. La discontinuità di $f$ impedisce di applicare direttamente il teorema fondamentale in quel punto, ma da sola non implica che $F$ non sia derivabile.
+
+**Errori tipici.**
+- Applicare il teorema fondamentale in un punto dove $f$ non è continua.
+- Trattare come improprio un integrale di funzione continua su un intervallo chiuso e limitato.
+- Non riusare lo studio fatto nei punti precedenti e rifare i calcoli da zero.
+
+**Esempi.**
+- *Esame del 22 gennaio 2025 - turno 2 - versione 1, esercizio 1*: la funzione vale $\sqrt[4]{x^2(2-|x|)}$ fuori da $0$ e $1$ in $0$. Si studiano simmetria, discontinuità in $0$ e non derivabilità, e il testo prevede anche integrali impropri. Il valore anomalo in $0$ non influisce sull'integrale.
+- *Esame del 13 giugno 2025 - turno U - versione 1, esercizio 1*: la funzione è $x\sqrt[3]{(\log|x|)^2}$. Si procede con simmetria, limiti e derivabilità, mentre l'etichetta indica un punto sul teorema fondamentale.
+
+### Tipo 3: enunciati e dimostrazioni di teoria
+
+**Cosa chiede l'esame.** Spesso come primo sottopunto di un esercizio di due o tre domande, e anche nel test a risposta multipla, si chiede di enunciare o dimostrare un risultato del capitolo. Nelle sessioni elencate sono richiesti:
+- il teorema della media integrale (31 gennaio 2018 e 3 luglio 2017);
+- il teorema fondamentale del calcolo integrale (31 gennaio 2018, versione B, e 21 settembre 2016);
+- la definizione di primitiva (28 giugno 2019, versione A);
+- l'additività rispetto al dominio di integrazione (30 gennaio 2019);
+- la definizione di integrale improprio convergente su $\lbrack 2,+\infty\lbrack $ (25 gennaio 2022, Io turno).
+
+**Metodo.**
+1. Scrivere **tutte** le ipotesi. Per il teorema della media integrale: $f$ continua su $\lbrack a,b\rbrack $ (si veda {{formula:9.12}}). Per il teorema fondamentale: $f$ continua su un intervallo e $F$ funzione integrale ({{formula:9.14}}).
+2. Scrivere la tesi con le stesse notazioni, ad esempio $F'(x)=f(x)$ per ogni punto interno dell'intervallo; agli estremi inclusi, la derivata è quella unilatera corrispondente.
+3. Per le definizioni, usare la forma "se e solo se" ed esplicitare il limite, ad esempio $\lim_{b\to+\infty}\int_2^b f(x)\,dx$ esistente e finito.
+4. Se il punto successivo chiede di applicare l'enunciato, controllare esplicitamente che le ipotesi siano soddisfatte nel caso dato. Questo è il vero scopo della domanda.
+5. Per le piccole dimostrazioni, partire dalla proprietà citata. Per $\int_{-3}^{3}f(x)\sin x\,dx=0$ con $f$ pari, spezzare in $\lbrack -3,0\rbrack $ e $\lbrack 0,3\rbrack $ con l'additività, poi cambiare variabile $x\to-x$ in una delle due parti.
+
+**Errori tipici.**
+- Dimenticare la continuità nell'enunciato della media integrale.
+- Citare il teorema fondamentale come "derivata e integrale sono inverse" senza dire dove vale.
+- Dimostrare con la parità senza specificare che $f(x)\sin x$ è dispari.
+
+**Esempi.**
+- *Esame del 30 gennaio 2019 - IIo turno, esercizio 2A*: enunciare l'additività e usarla per mostrare che l'integrale di $f(x)\sin x$ su $\lbrack -3,3\rbrack $ con $f$ pari è nullo. Si spezza l'intervallo in $0$ e si usa la disparità dell'integrando.
+- *Esame del 25 gennaio 2022 - Io turno, esercizio 2*: la definizione di integrale improprio convergente, poi lo studio di $\int_2^{+\infty}\left(\frac{k}{x}-\frac{2}{x+1}\right)dx$ al variare di $k$. Una primitiva è $k\log x-2\log(x+1)$, e il limite a $+\infty$ è finito solo se $k=2$. Infine si mostra che $G(x)=\int_2^x g(t)\,dt$ con $g$ continua e positiva ammette limite, perché $G$ è crescente (monotonia dell'integrale).
+
+### Tipo 4: integrali e aree di funzioni definite a tratti
+
+**Cosa chiede l'esame.** Una funzione è data con due espressioni su due intervalli. Si chiede un integrale definito, un'area oppure una media integrale. Spesso un sottopunto domanda se il teorema fondamentale o quello della media siano applicabili.
+
+**Metodo.**
+1. Controllare la continuità nel punto di raccordo, verificando che i due limiti unilateri coincidano con il valore della funzione nel punto. Nell'esame del 13 febbraio 2015, esercizio 2, entrambi i rami e la funzione valgono $0$ in $x=3$.
+2. Spezzare l'integrale nel punto di raccordo con l'additività ({{formula:9.11}}) e calcolare ciascun pezzo con una primitiva, con la {{formula:9.15}}. Se un ramo ha un prodotto di funzioni diverse, come $x\log 3-x\log x$, serve l'integrazione per parti (si veda [Integrali indefiniti](ref:chapter/9#p2)).
+3. Per un'**area**, studiare il segno di $f$ e integrare $|f|$, cioè cambiare segno ai pezzi negativi. L'integrale con segno e l'area coincidono solo dove $f\ge 0$ (si veda [Teorema fondamentale](ref:chapter/9#p4)).
+4. Per la media integrale $\frac{1}{b-a}\int_a^b f(x)\,dx$, dividere per la lunghezza dell'intervallo. Per chiedersi se è un valore assunto da $f$ si usa il teorema della media (se $f$ è continua) oppure, se non lo è, si controlla direttamente l'immagine di $f$. La continuità si controlla con la sezione [Funzioni continue](ref:chapter/5#p2).
+
+**Errori tipici.**
+- Calcolare l'area come $\int h$ quando $h$ cambia segno.
+- Scrivere una sola primitiva su tutto l'intervallo, ignorando che le due espressioni sono diverse.
+- Affermare che la media integrale è un valore assunto "per il teorema della media" quando $f$ non è continua.
+
+**Esempi.**
+- *Esame del 21 settembre 2016, esercizio 2*: area della regione tra l'asse $x$, le rette $x=1$, $x=4$ e il grafico di $h$. Si studia il segno di $h$ (negativa su $\lbrack 1,3\lbrack $, positiva su $\rbrack 3,4\rbrack $), quindi l'area è $-\int_1^3 h+\int_3^4 h$. Poi si verifica se $h$ soddisfa le ipotesi del teorema fondamentale su $\lbrack 1,4\rbrack $.
+- *Esame del 3 luglio 2017, esercizio 2*: la funzione è $1$ per $x<0$ e $x$ per $x\ge 0$. La media su $\lbrack -1,1\rbrack $ è $\tfrac34$, valore assunto da $f$ in $x=\tfrac34$. La media su $\lbrack -1,\tfrac12\rbrack $ è anch'essa $\tfrac34$, ma non è assunta da $f$ su quell'intervallo, la cui immagine è $\lbrack 0,\tfrac12\rbrack \cup\{1\}$.
+
+### Tipi che compaiono in una sola sessione
+
+Il 28 giugno 2019, esercizio 2, chiede se $\frac{f(x)}{1+(f(x))^2}$ ammette primitiva su $I$ quando $f$ è continua su $I$. Il metodo è mostrare che l'espressione è continua e applicare il corollario di esistenza della primitiva per le funzioni continue.
+
+Nel 2020 e nel 2023 il capitolo compare solo come etichetta in esercizi di studio di funzione, senza richieste specifiche di calcolo integrale nei testi disponibili.
+
+### Come prepararsi
+
+- Prima dello scritto, esercitarsi sul tipo 1 e sul tipo 2 su funzioni diverse, perché sono i più frequenti.
+- Imparare a memoria gli enunciati del tipo 3, con tutte le ipotesi, perché sono richiesti in modo quasi letterale.
+- Nel calcolo del tipo 4 controllare sempre prima la continuità nel punto di raccordo e il segno della funzione, prima di scrivere qualunque primitiva.

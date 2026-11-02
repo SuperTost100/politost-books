@@ -141,7 +141,7 @@ $$H_2O(l) + H_2O(l) \rightleftharpoons H_3O^+(aq) + OH^-(aq).$$
 Questa è una reazione di equilibrio come quelle già incontrate in [Equilibrio dinamico e costante di equilibrio](ref:chapter/12#p2): se ne può scrivere l'espressione della $K_c$, e poiché il solvente puro non compare nell'espressione di un equilibrio (la sua concentrazione resta praticamente costante e viene assorbita nella costante stessa), si ottiene una nuova costante, detta prodotto ionico dell'acqua.
 
 :::formula{id="13.1" label="Prodotto ionico dell'acqua"}
-$$K_w = [H_3O^+][OH^-] = 1,0 \times 10^{-14} \quad \text{(a 25 °C)}$$
+$$K_w = \lbrack H_3O^+\rbrack \lbrack OH^-\rbrack  = 1,0 \times 10^{-14} \quad \text{(a 25 °C)}$$
 :::
 
 Dal valore numerico di $K_w$ si ricava che nell'acqua pura $\lbrack H_3O^+\rbrack  = \lbrack OH^-\rbrack  = 1,0 \times 10^{-7}\ \text{M}$: sapendo che la molarità dell'acqua pura è 55,5 M, solo una molecola su circa 555 milioni risulta dissociata in ioni.
@@ -179,7 +179,7 @@ $$\lbrack H_3O^+\rbrack  = 10^{-9,52} = 3,0 \times 10^{-10}\ \text{M}$$
 
 Verifica: la soluzione è basica (pH > 7) e $\lbrack H_3O^+\rbrack  \cdot \lbrack OH^-\rbrack  \approx 1,0 \times 10^{-14}$, coerente con $K_w$.
 
-**Errore tipico 13.2**. Scrivere $\mathrm{pH} = -\log\lbrack H_3O^+\rbrack $ usando direttamente la molarità anche in soluzioni molto concentrate o con forza ionica elevata porta a risultati errati, perché a rigore la definizione andrebbe scritta in termini di attività ioniche e non di concentrazioni: in soluzioni molto cariche di ioni, parte di essi resta schermata dal solvente e non partecipa pienamente all'equilibrio. Nel corso si continua comunque a usare le molarità, come approssimazione valida per soluzioni diluite. Un secondo errore riguarda le soluzioni estremamente diluite di acido o base forte, a concentrazione $\le 10^{-7}$ M: qui il contributo dell'autoionizzazione dell'acqua non è più trascurabile rispetto a quello dell'acido/base, e occorre impostare uno schema ICE per la reazione di autoprotolisi, usando come concentrazione iniziale di $H_3O^+$ (o $OH^-$) quella liberata dall'acido (o base) forte e risolvendo con $K_w$ come costante di equilibrio.
+**Errore tipico 13.2**. Scrivere $\mathrm{pH} = -\log[H_3O^+]$ usando direttamente la molarità anche in soluzioni molto concentrate o con forza ionica elevata porta a risultati errati, perché a rigore la definizione andrebbe scritta in termini di attività ioniche e non di concentrazioni: in soluzioni molto cariche di ioni, parte di essi resta schermata dal solvente e non partecipa pienamente all'equilibrio. Nel corso si continua comunque a usare le molarità, come approssimazione valida per soluzioni diluite. Un secondo errore riguarda le soluzioni estremamente diluite di acido o base forte, a concentrazione $\le 10^{-7}$ M: qui il contributo dell'autoionizzazione dell'acqua non è più trascurabile rispetto a quello dell'acido/base, e occorre impostare uno schema ICE per la reazione di autoprotolisi, usando come concentrazione iniziale di $H_3O^+$ (o $OH^-$) quella liberata dall'acido (o base) forte e risolvendo con $K_w$ come costante di equilibrio.
 
 ### Acidi e basi forti
 
@@ -220,13 +220,13 @@ Gli acidi deboli (tra cui si contano ad esempio molti ossiacidi non elencati tra
 Per un acido debole $HA$ in acqua, $HA(aq) + H_2O(l) \rightleftharpoons H_3O^+(aq) + A^-(aq)$, con tabella ICE iniziale/variazione/equilibrio a partire dalla concentrazione iniziale $C_0$:
 
 :::formula{id="13.4" label="Costante di dissociazione acida"}
-$$K_a = \frac{[H_3O^+][A^-]}{[HA]}$$
+$$K_a = \frac{\lbrack H_3O^+\rbrack \lbrack A^-\rbrack }{\lbrack HA\rbrack }$$
 :::
 
 Per una base debole $B$, analogamente, $B(aq) + H_2O(l) \rightleftharpoons BH^+(aq) + OH^-(aq)$.
 
 :::formula{id="13.5" label="Costante di dissociazione basica"}
-$$K_b = \frac{[BH^+][OH^-]}{[B]}$$
+$$K_b = \frac{\lbrack BH^+\rbrack \lbrack OH^-\rbrack }{\lbrack B\rbrack }$$
 :::
 
 La procedura di calcolo riprende lo schema ICE già visto in [Quoziente di reazione e calcoli di equilibrio](ref:chapter/12#p3): si parte dalla concentrazione iniziale del soluto debole e da zero per i prodotti, si introduce la variazione $x$ secondo i coefficienti stechiometrici (1:1:1 in questo caso) e si risolve l'equazione che ne risulta per $K_a$ o $K_b$, spesso con l'approssimazione $C_0 - x \approx C_0$ quando $K_a$ (o $K_b$) è molto più piccola di $C_0$.
@@ -318,7 +318,7 @@ L'equilibrio è $HA_{(aq)}+H_2O_{(l)}\rightleftharpoons A^-_{(aq)}+H_3O^+_{(aq)}
 Dalla definizione di $K_a$ si ottiene $\lbrack H_3O^+\rbrack =K_a\lbrack HA\rbrack /\lbrack A^-\rbrack $. Applicando il logaritmo decimale e ponendo $pK_a=-\log K_a$ si ricava l'equazione di Henderson–Hasselbalch.
 
 :::formula{id="13.8" label="Equazione di Henderson–Hasselbalch"}
-$$pH=pK_a+\log\left(\frac{[A^-]}{[HA]}\right)$$
+$$pH=pK_a+\log\left(\frac{\lbrack A^-\rbrack }{\lbrack HA\rbrack }\right)$$
 :::
 
 Le concentrazioni nella {{formula:13.8}} sono quelle all'equilibrio. Nei consueti calcoli di tampone si usano le concentrazioni ottenute dal bilancio stechiometrico quando la dissociazione ulteriore di $HA$ e l'autoionizzazione dell'acqua sono trascurabili. Poiché le due specie occupano lo stesso volume, il loro rapporto si può calcolare anche dalle moli. Se si aggiunge acido o base forte, occorre prima aggiornare le moli di entrambe le componenti con la reazione di neutralizzazione.
@@ -367,7 +367,7 @@ Un sale poco solubile può lasciare un corpo di fondo anche dopo che la soluzion
 **Definizione 13.7** (prodotto di solubilità). Per un sale poco solubile $A_aB_b$ che, in acqua, dà $a$ ioni $A^{b+}$ e $b$ ioni $B^{a-}$, il prodotto di solubilità $K_{\mathrm{ps}}$ è il prodotto delle concentrazioni degli ioni *all’equilibrio*, ciascuna elevata al proprio coefficiente stechiometrico. Il solido puro non compare nell’espressione. Il valore di $K_{\mathrm{ps}}$ si riferisce a una temperatura specificata; nei calcoli con soluzioni diluite si usano le concentrazioni molari come approssimazione delle attività.
 
 :::formula{id="13.9" label="Prodotto di solubilità di un sale ionico"}
-$$A_aB_{b\,(s)} \rightleftharpoons aA^{b+}_{(aq)}+bB^{a-}_{(aq)},\qquad K_{\mathrm{ps}}=[A^{b+}]^a[B^{a-}]^b$$
+$$A_aB_{b\,(s)} \rightleftharpoons aA^{b+}_{(aq)}+bB^{a-}_{(aq)},\qquad K_{\mathrm{ps}}=\lbrack A^{b+}\rbrack ^a\lbrack B^{a-}\rbrack ^b$$
 :::
 
 Per esempio, $\mathrm{Ag_2S}_{(s)}\rightleftharpoons 2\mathrm{Ag}^{+}_{(aq)}+\mathrm{S}^{2-}_{(aq)}$ dà $K_{\mathrm{ps}}=\lbrack \mathrm{Ag}^{+}\rbrack ^2\lbrack \mathrm{S}^{2-}\rbrack $. Il coefficiente $2$ diventa un esponente; non si inserisce $\lbrack \mathrm{Ag_2S}\rbrack $ al denominatore.

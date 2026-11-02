@@ -445,3 +445,31 @@ $$\Delta H_r^\circ = -\Delta H_1^\circ + \Delta H_2^\circ + \Delta H_3^\circ = 8
 - **Trascurare lo stato di aggregazione.** Il $\Delta H^\circ_f$ dell'acqua liquida e quello dell'acqua gassosa sono diversi: la differenza tra i due corrisponde esattamente al calore di vaporizzazione, $\Delta H_{\text{vap}} \approx 44 \ \text{kJ/mol}$. Usare per errore il valore riferito alla fase sbagliata falsa completamente il risultato.
 - **Assegnare $\Delta H^\circ_f = 0$ a un elemento che non è nel suo stato standard.** La convenzione vale solo per la forma stabile a 25 °C e 1 bar (per esempio $\mathrm{Na_{(s)}}$, non $\mathrm{Na_{(g)}}$).
 - **Confondere il coefficiente stechiometrico della sostanza di riferimento.** Quando ci si riferisce al $\Delta H^\circ_f$ di una mole di un certo composto, quel composto deve avere coefficiente 1 nell'equazione, anche se questo costringe a usare coefficienti frazionari per le altre specie, come in $\mathrm{H_{2(g)} + \tfrac{1}{2}O_{2(g)} \to H_2O_{(l)}}$ e non $\mathrm{2H_{2(g)} + O_{2(g)} \to 2H_2O_{(l)}}$.
+
+## p6 | Come viene chiesto all'esame
+
+Nelle 4 sessioni d'esame esaminate, solo 1 conteneva domande su questo capitolo: la termochimica compare quindi di rado come tema a sé. Quando compare, è dentro un esercizio composito, in cui il calcolo termochimico viene dopo una parte sui gas e sulla stechiometria.
+
+Il test informatizzato iniziale ha 15 domande a risposta multipla, mentre la prova scritta dura 70 minuti e ha esercizi e domande teoriche. Qui conta il secondo formato, perché l'unica domanda disponibile è un esercizio da svolgere per intero. Non si possono consultare materiali didattici, quindi i valori delle costanti e delle masse molari vanno saputi o ricavati dai dati forniti.
+
+### L'unico tipo rilevato: esercizio composito gas, stechiometria ed entalpia
+
+Il quesito è **Tema d_esame 15 + soluzione, esercizio 2**. Un recipiente chiuso da 2500 cm³ contiene ossigeno e azoto a 25 °C. La prima parte dà la massa della miscela (0,012 kg) e la percentuale in peso dell'ossigeno (20%), e chiede frazioni molari e pressioni parziali. La seconda parte immagina che i due gas reagiscano in modo stechiometrico per formare ossido di diazoto. Gli argomenti indicati per il quesito comprendono "Entalpia e reazioni termochimiche", ma il testo che ho a disposizione si interrompe prima della richiesta finale. Non posso quindi dire con certezza quale grandezza termochimica si debba calcolare. Il metodo seguente copre ciò che il testo mostra.
+
+1. Converti i dati nelle unità giuste: 2500 cm³ = 2,500 L, 0,012 kg = 12 g, $T = 25 + 273{,}15 = 298{,}15$ K. Dichiara quale valore di R usi, per esempio 0,08206 L·atm/(mol·K).
+2. Dalla percentuale in peso ricava la massa di ciascun gas, poi le moli con la relazione tra moli, massa e massa molare ([formula (2.4)](ref:formula/2.4)). Per questa parte vedi [Masse atomiche, mole e massa molare](ref:chapter/2#p5).
+3. Calcola le frazioni molari ([formula (6.9)](ref:formula/6.9)) e la pressione totale con l'equazione di stato dei gas ideali ([formula (6.5)](ref:formula/6.5)). Le pressioni parziali seguono da [formula (6.10)](ref:formula/6.10). Il riferimento è [Densità, massa molare e miscele gassose](ref:chapter/6#p3).
+4. Scrivi l'equazione bilanciata della formazione di N₂O, con gli stati fisici. Con i rapporti molari ([formula (4.2)](ref:formula/4.2)) verifica se le moli iniziali sono davvero in rapporto stechiometrico. Altrimenti individua il reagente limitante, come spiegato in [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4).
+5. Se serve un calore o una variazione di entalpia, usa l'equazione termochimica: $\Delta H_r$ si riferisce ai coefficienti scritti. Per la sostanza di riferimento il calore scambiato è la quantità di sostanza che reagisce, divisa per il suo coefficiente, per $\Delta H_r$. Vedi [Entalpia ed equazioni termochimiche](ref:chapter/7#p3). Se l'esercizio chiedesse di ottenere $\Delta H_r$ dai dati di formazione, si applicherebbe {{formula:7.10}}, spiegata in [Legge di Hess ed entalpie standard di formazione](ref:chapter/7#p5).
+6. Se compare la differenza tra $\Delta H$ e $\Delta U$ in un sistema gassoso, usa {{formula:7.4}} con $\Delta n_{\text{gas}}$ calcolato sui coefficienti dell'equazione bilanciata.
+
+Gli errori tipici in questo esercizio sono quattro:
+
+- Usare 25 °C al posto di 298,15 K nell'equazione di stato.
+- Applicare la percentuale in peso come se fosse percentuale in moli. Le frazioni molari si ottengono solo dopo la conversione in moli.
+- Dimenticare di convertire i cm³ in litri o i kg in grammi.
+- Dimenticare che il calore dipende dalle moli che reagiscono davvero, e non da quelle presenti in totale. Se uno dei reagenti è limitante, conta solo quella quantità.
+
+### Cosa portare con sé
+
+Dato che il capitolo è emerso una sola volta, e dentro un esercizio misto, la preparazione più utile è saper collegare i tre passaggi: dai dati di massa alle moli, dalle moli alla stechiometria, dalla stechiometria al calore. Per consolidare i singoli strumenti, ripassa gli esempi di [Entalpia ed equazioni termochimiche](ref:chapter/7#p3), di [Calorimetria](ref:chapter/7#p4) e di [Sistemi, energia interna e primo principio](ref:chapter/7#p2). Il dato d'esame non permette di dire altro su altri tipi di richiesta.

@@ -75,7 +75,7 @@ La soluzione generale è $\theta(t) = A\sin(\Omega t + \varphi)$, dove $A$ è l'
 $$T = 2\pi\sqrt{\frac{I_z}{mgh}}$$
 :::
 
-Definendo la **lunghezza ridotta** del pendolo composto come $l = I_z/(mh)$, il periodo assume la stessa forma del pendolo semplice già vista in [Dinamica del moto curvilineo](ref:chapter/3#p7) ([formula (3.27)](ref:formula/3.27)):
+Definendo la **lunghezza ridotta** del pendolo composto come $l = I_z/(mh)$, il periodo assume la stessa forma del pendolo semplice già vista in [Dinamica del moto curvilineo](ref:chapter/3#p8) ([formula (3.29)](ref:formula/3.29)):
 
 $$T = 2\pi\sqrt{\frac{l}{g}} .$$
 
@@ -142,11 +142,11 @@ $$T_1 = m_1 g\,\frac{2m_2 + \frac{I}{R^2}}{m_1 + m_2 + \frac{I}{R^2}} , \qquad T
 
 $$N = T_1 + T_2 + mg = g\,\frac{4m_1 m_2 + m(m_1+m_2) + \frac{I}{R^2}(m+m_1+m_2)}{m_1 + m_2 + \frac{I}{R^2}} \quad\text{} .$$
 
-Controllo: nel limite $I \to 0$, in cui la carrucola ha inerzia trascurabile, si ritrova $T_1 = T_2 = \dfrac{2m_1 m_2}{m_1+m_2}g$ e $N = mg + 2T_1$. Per una carrucola senza massa occorre porre anche $m \to 0$, ottenendo $N = 2T_1$. Questo è coerente con il caso di carrucola ideale già incontrato con le [reazioni vincolari ed equilibrio](ref:chapter/3#p4), in cui l'uguaglianza delle tensioni ai due lati era un'ipotesi; quando la carrucola ha inerzia, invece, $T_1 \ne T_2$ perché serve un momento netto per accelerarla angolarmente.
+Controllo: nel limite $I \to 0$, in cui la carrucola ha inerzia trascurabile, si ritrova $T_1 = T_2 = \dfrac{2m_1 m_2}{m_1+m_2}g$ e $N = mg + 2T_1$. Per una carrucola senza massa occorre porre anche $m \to 0$, ottenendo $N = 2T_1$. Questo è coerente con il caso di carrucola ideale già incontrato con le [reazioni vincolari ed equilibrio](ref:chapter/3#p5), in cui l'uguaglianza delle tensioni ai due lati era un'ipotesi; quando la carrucola ha inerzia, invece, $T_1 \ne T_2$ perché serve un momento netto per accelerarla angolarmente.
 
 Lo stesso schema si applica a un filo avvolto attorno al bordo di un disco (o di un sistema di dischi coassiali) che sostiene una massa appesa: se il disco di raggio $R_1$ ha momento d'inerzia totale $I_{DD}$ rispetto al proprio asse, la seconda equazione cardinale per il disco dà $I_{DD}\,\alpha = R_1 T$, mentre l'inestensibilità del filo impone $a = \alpha R_1$ fra l'accelerazione di discesa della massa appesa e l'accelerazione angolare del disco.
 
-**Errore tipico 9.2.** Nei sistemi con carrucole di massa non trascurabile è sbagliato assumere $T_1 = T_2$: questa uguaglianza vale solo per la carrucola ideale priva di massa (e quindi di momento d'inerzia), già vista in [Reazioni vincolari ed equilibrio](ref:chapter/3#p4); qui la differenza $T_1 - T_2$ è proprio la causa dell'accelerazione angolare della carrucola. È altrettanto sbagliato dimenticare l'equazione del moto traslatorio del centro di massa della carrucola per calcolare la reazione vincolare $N$: anche se l'asse è fisso e il centro di massa non si sposta, questa equazione resta necessaria perché contiene l'incognita $N$, che non compare nell'equazione rotazionale.
+**Errore tipico 9.2.** Nei sistemi con carrucole di massa non trascurabile è sbagliato assumere $T_1 = T_2$: questa uguaglianza vale solo per la carrucola ideale priva di massa (e quindi di momento d'inerzia), già vista in [Reazioni vincolari ed equilibrio](ref:chapter/3#p5); qui la differenza $T_1 - T_2$ è proprio la causa dell'accelerazione angolare della carrucola. È altrettanto sbagliato dimenticare l'equazione del moto traslatorio del centro di massa della carrucola per calcolare la reazione vincolare $N$: anche se l'asse è fisso e il centro di massa non si sposta, questa equazione resta necessaria perché contiene l'incognita $N$, che non compare nell'equazione rotazionale.
 
 ## p3 | Energia nel moto del corpo rigido
 
@@ -230,9 +230,9 @@ $$E_k = mv_0^2 + m\omega^2R^2 = m\left(v_0^2+\omega^2R^2\right) .$$
 
 Sostituendo i valori numerici ($m=0,50\ \text{kg}$, $v_0=0,80\ \text{m/s}$, $\omega=10\ \text{s}^{-1}$, $R=0,20\ \text{m}$):
 
-$$E_k = 0,50\ \text{kg}\left\lbrack (0,80\ \text{m/s})^2+(10\ \text{s}^{-1})^2(0,20\ \text{m})^2\right\rbrack  = 0,50\ \text{kg}\,(0,64+4,0)\ \text{m}^2/\text{s}^2 \approx 2,3\ \text{J} .$$
+$$E_k = 0,50\ \text{kg}\left[(0,80\ \text{m/s})^2+(10\ \text{s}^{-1})^2(0,20\ \text{m})^2\right] = 0,50\ \text{kg}\,(0,64+4,0)\ \text{m}^2/\text{s}^2 \approx 2,3\ \text{J} .$$
 
-Il controllo dimensionale è immediato: $\lbrack \text{kg}\rbrack \cdot\lbrack \text{m}^2/\text{s}^2\rbrack  = \text{J}$, e l'ordine di grandezza (pochi joule) è ragionevole per masse sub-chilogrammiche con velocità dell'ordine del metro al secondo.
+Il controllo dimensionale è immediato: $\lbrack \text{kg}\rbrack \cdot[\text{m}^2/\text{s}^2] = \text{J}$, e l'ordine di grandezza (pochi joule) è ragionevole per masse sub-chilogrammiche con velocità dell'ordine del metro al secondo.
 
 Un disco omogeneo di massa $M = 2,0\ \text{kg}$ e raggio $R = 0,20\ \text{m}$ parte da fermo e rotola senza strisciare lungo un piano inclinato, scendendo di un dislivello $h = 0,50\ \text{m}$. Assumendo trascurabili le altre forze non conservative e usando $I_{CM}=\frac{1}{2}MR^2$, calcoliamo la velocità del centro di massa alla fine della discesa.
 
@@ -351,7 +351,7 @@ Infine, è utile ricordare che nel moto di puro rotolamento sotto l'azione di fo
 
 ### Rotolamento con strisciamento
 
-Quando le condizioni iniziali di velocità del centro di massa $v_{CM,0}$ e di velocità angolare $\omega_0$ non soddisfano la relazione {{formula:9.8}}, il punto di contatto ha velocità relativa non nulla rispetto al piano: il corpo striscia, e la forza di attrito è di tipo dinamico, con modulo noto $F_{att}=\mu_d N$ (si veda la sezione sulle [forze di attrito](ref:chapter/3#p5)), diretta in modo da opporsi allo strisciamento relativo nel punto di contatto. In questa fase le equazioni del moto sono completamente determinate e permettono di seguire l'evoluzione di $v_{CM}(t)$ e $\omega(t)$. Nell'esempio seguente, in cui l'unica forza orizzontale agente è l'attrito dinamico, si può mostrare che esiste un istante $t^*$ in cui le due grandezze soddisfano la condizione di puro rotolamento. In generale, però, questa transizione non è garantita: occorre verificare, risolvendo le equazioni del moto proprie del problema considerato, sia l'esistenza effettiva di un istante $t^*$ in cui $v_{CM}(t^*)=\omega(t^*)R$, sia, una volta raggiunta tale condizione cinematica, che l'attrito statico disponibile sia sufficiente a soddisfare la condizione di aderenza $|F_{att}|\le \mu_s N$; solo se entrambe le verifiche sono positive il corpo prosegue effettivamente rotolando senza più strisciare, altrimenti il moto può continuare a strisciare anche dopo $t^*$.
+Quando le condizioni iniziali di velocità del centro di massa $v_{CM,0}$ e di velocità angolare $\omega_0$ non soddisfano la relazione {{formula:9.8}}, il punto di contatto ha velocità relativa non nulla rispetto al piano: il corpo striscia, e la forza di attrito è di tipo dinamico, con modulo noto $F_{att}=\mu_d N$ (si veda la sezione sulle [forze di attrito](ref:chapter/3#p6)), diretta in modo da opporsi allo strisciamento relativo nel punto di contatto. In questa fase le equazioni del moto sono completamente determinate e permettono di seguire l'evoluzione di $v_{CM}(t)$ e $\omega(t)$. Nell'esempio seguente, in cui l'unica forza orizzontale agente è l'attrito dinamico, si può mostrare che esiste un istante $t^*$ in cui le due grandezze soddisfano la condizione di puro rotolamento. In generale, però, questa transizione non è garantita: occorre verificare, risolvendo le equazioni del moto proprie del problema considerato, sia l'esistenza effettiva di un istante $t^*$ in cui $v_{CM}(t^*)=\omega(t^*)R$, sia, una volta raggiunta tale condizione cinematica, che l'attrito statico disponibile sia sufficiente a soddisfare la condizione di aderenza $|F_{att}|\le \mu_s N$; solo se entrambe le verifiche sono positive il corpo prosegue effettivamente rotolando senza più strisciare, altrimenti il moto può continuare a strisciare anche dopo $t^*$.
 
 **Esempio 9.4.** Un disco omogeneo di massa $m=2,0$ kg e raggio $R=0,10$ m, con $I_{CM}=\tfrac12 mR^2$, viene lanciato su un piano orizzontale scabro con velocità iniziale del centro di massa $v_0=4,0$ m/s e velocità angolare iniziale nulla, $\omega_0=0$ (il disco inizialmente striscia senza ruotare). Il coefficiente di attrito dinamico tra disco e piano è $\mu_d=0,20$. Si vuole determinare dopo quanto tempo il disco inizia a rotolare senza strisciare, e la velocità del centro di massa in quell'istante.
 
@@ -461,7 +461,7 @@ Numericamente $J = (1,0\ \text{kg})(2,0+0,50)\ \text{m/s} = 2,5\ \text{kg}\cdot\
 
 Se invece l'urto fosse **elastico** (energia cinetica conservata, oltre al momento angolare), $v'$ non sarebbe più un dato ma un'incognita, e si dovrebbe risolvere il sistema
 
-$$\begin{cases} \dfrac{l}{2}mv = \dfrac{l}{2}mv'' + I\omega' \\\lbrack 4pt\rbrack  \dfrac{1}{2}mv^2 = \dfrac{1}{2}mv''^2 + \dfrac{1}{2}I\omega'^2 \end{cases}$$
+$$\begin{cases} \dfrac{l}{2}mv = \dfrac{l}{2}mv'' + I\omega' \\[4pt] \dfrac{1}{2}mv^2 = \dfrac{1}{2}mv''^2 + \dfrac{1}{2}I\omega'^2 \end{cases}$$
 
 Risolvendo e sostituendo $I=\frac{1}{12}Ml^2$ si trova, con i dati numerici dell'esercizio, $\omega' = 1,6\ \text{s}^{-1}$ e $v'' = -1,2\ \text{m/s}$ (l'oggetto rimbalza indietro), con impulso sul perno $J' = 3,2\ \text{kg}\cdot\text{m/s}$.
 
@@ -517,3 +517,88 @@ Il risultato mostra, in modo del tutto analogo al caso del disco libero visto ne
 **Errore tipico 9.5**
 
 Un errore frequente consiste nell'applicare automaticamente la conservazione della quantità di moto totale a un urto che coinvolge un corpo vincolato, come se il perno non esistesse: la reazione vincolare è una forza esterna impulsiva, e salvo casi particolari $\vec{p}$ non si conserva. Un secondo errore è imporre la conservazione dell'intero vettore momento angolare quando il vincolo fissa solo un asse (non un punto isolato): anche ammettendo che la componente assiale $L_z$ si conservi, le altre componenti subiscono comunque una variazione impulsiva dovuta al momento vincolare incognito. Va inoltre ricordato che la conservazione di $L_z$ non è automatica: essa richiede che non vi siano momenti impulsivi esterni lungo l'asse, compresi eventuali momenti impulsivi trasmessi dal vincolo stesso (per esempio per attrito nel perno); se il vincolo fissa l'asse trasmettendo anche una coppia impulsiva assiale, nemmeno $L_z$ si conserva. Un terzo errore è assumere che l'urto sia elastico senza che il testo lo specifichi esplicitamente, usando la conservazione dell'energia cinetica al posto, o in aggiunta, alla sola conservazione del momento angolare: se non è detto altrimenti, l'unica grandezza di cui si ha certezza è la conservazione del momento angolare rispetto al polo opportuno.
+
+## p6 | Come viene chiesto all'esame
+
+Il capitolo è comparso in tutte e 6 le sessioni d'esame passate, quindi non c'è stata una sessione senza almeno una domanda sul corpo rigido. L'esercizio più frequente è il **rotolamento di un cilindro o di un disco** (4 sessioni su 6). Seguono gli **urti tra un punto materiale e un'asta o un disco** (3 sessioni).
+
+Gli esercizi sono problemi strutturati a più domande. Un problema spesso mette in sequenza fasi diverse: un tratto con attrito o energia, poi un urto, poi una rotazione. Nelle sessioni elencate non compare una domanda sul solo pendolo composto, ma le equazioni di rotazione attorno a un asse fisso servono quasi ovunque.
+
+### Tipo 1: rotolamento di cilindri e dischi
+
+**Che cosa chiede l'esame.** Un cilindro o un disco rotola senza strisciare su un piano inclinato, su una superficie curva o su un piano orizzontale. È collegato a un altro corpo, a una molla o a una carrucola con massa. Si chiedono accelerazioni, forze di attrito, la verifica dell'aderenza, tempi e velocità.
+
+**Metodo.**
+
+1. Disegna le forze su ciascun corpo e dichiara le incognite. Nel puro rotolamento l'attrito statico $f_s$ è un'incognita, non vale $\mu_s N$.
+2. Scrivi la traslazione del centro di massa lungo e perpendicolarmente al piano. Scrivi poi la rotazione $M_{CM} = I_{CM}\,\alpha$ rispetto al CM (vedi [Rotazione attorno a un asse fisso](ref:chapter/9#p2)), scegliendo con cura i segni dei momenti.
+3. Aggiungi la condizione di rotolamento {{formula:9.8}}, cioè $a_{CM} = \alpha R$. Se c'è un filo su una carrucola con massa, aggiungi anche la sua condizione di inestensibilità, con tensioni diverse sui due lati.
+4. Risolvi in forma letterale per $a_{CM}$, per le tensioni e per $f_s$.
+5. Verifica a posteriori l'aderenza, $|f_s| \le \mu_s N$, come in {{formula:9.9}}. Se la condizione cade, il rotolamento puro non è possibile e si passa allo strisciamento con $f_d = \mu_d N$.
+6. Se la domanda riguarda velocità dopo uno spostamento, puoi usare l'energia: nel puro rotolamento l'attrito non compie lavoro (vedi [Energia nel moto del corpo rigido](ref:chapter/9#p3) e [Rotolamento](ref:chapter/9#p4)).
+
+**Errori tipici.**
+
+- Scrivere $f_s = \mu_s N$ senza averla ricavata, oppure usare $\mu_d N$ in un rotolamento puro.
+- Dimenticare il termine rotazionale nell'energia cinetica, che è $\tfrac{1}{2}m v_{CM}^2 + \tfrac{1}{2} I_{CM}\omega^2$.
+- Usare per la carrucola $T_1 = T_2$ quando la sua massa non è trascurabile.
+- Sbagliare il verso dell'attrito: va scelto, e il segno del risultato lo corregge.
+
+**Esempi.**
+
+- Prova scritta del 25 giugno 2026, esercizio 2A (e la variante 2B con altri dati): due corpi rigidi su piani inclinati simmetrici, uniti da un filo che passa su una carrucola non ideale a disco. Si applica il metodo scrivendo traslazione e rotazione del cilindro, rotazione della carrucola e inestensibilità del filo. Il testo mette insieme rotolamento, momento d'inerzia, attrito e forza elastica, quindi tutte le equazioni vanno risolte insieme.
+- Prova scritta del 23 giugno 2022, esercizio 2A: un cubo che scivola con attrito dinamico è unito da una barretta all'asse di un cilindro che rotola senza strisciare. Il metodo richiede due gruppi di equazioni, uno per il cubo con $f_d = \mu N$ e uno per il cilindro con attrito statico incognito. Li collega la forza trasmessa dalla barretta, con la stessa accelerazione per i due corpi.
+- Prova scritta - TEMA ESAME 2025 - 1, esercizio 2: un cilindro parte dalla sommità di una superficie cilindrica fissa e rotola senza strisciare, con $\mu_s = 0{,}6$. Si usano la conservazione dell'energia per la velocità in funzione dell'angolo, e poi le equazioni cardinali per $N$ e $f_s$. Il coefficiente $\mu_s$ dato dal testo serve alla verifica di aderenza del punto 5.
+- Prova scritta - TEMA ESAME 1 - 2024, esercizio 2A: un disco è attaccato a una molla orizzontale e poggia su un piano scabro con $\mu_s = 0{,}27$. La forza elastica entra nelle equazioni come forza sull'asse e l'aderenza va verificata dove la forza è più grande.
+
+### Tipo 2: urti con aste e dischi
+
+**Che cosa chiede l'esame.** Un punto materiale colpisce un'asta o un disco, incernierati oppure liberi su un piano liscio. Si chiedono la velocità angolare subito dopo l'urto e la velocità del punto dopo l'urto, ed eventualmente l'energia dissipata.
+
+**Metodo.**
+
+1. Individua il vincolo: perno, cerniera, asse fisso. Questo decide che cosa si conserva, come spiegato in [Urti con corpi rigidi](ref:chapter/9#p5).
+2. Scegli come polo il punto del vincolo. La reazione vincolare ha momento nullo rispetto a quel polo, quindi vale {{formula:9.11}}. Se il vincolo blocca solo un asse, si conserva la sola componente assiale $L_z$.
+3. Scrivi $L_z$ prima dell'urto come $m\,v\,b$ (con $b$ il braccio del punto rispetto al polo) e dopo come $I_z\,\omega$ più il contributo del punto. Calcola $I_z$ con Huygens-Steiner, se il perno non passa per il CM.
+4. Se l'urto è completamente anelastico e il punto resta attaccato al corpo, includi la sua massa nel momento d'inerzia dopo l'urto e usa $v=\omega d$, dove $d$ è la distanza dal perno. Un urto anelastico parziale non implica che il punto resti attaccato: in quel caso i corpi si separano e la relazione $v=\omega d$ non vale. Se l'urto è elastico, aggiungi la conservazione dell'energia cinetica. Se il testo dà la velocità del punto dopo l'urto, il solo momento angolare basta.
+5. Per le domande successive all'urto, passa all'energia o alla dinamica rotazionale con $\omega$ come condizione iniziale.
+
+**Errori tipici.**
+
+- Conservare la quantità di moto $\vec{p}$ quando c'è un perno: la reazione impulsiva la cambia.
+- Conservare l'energia cinetica senza che il testo dica «elastico».
+- Dimenticare il contributo del punto materiale (o del corpo che resta attaccato) in $I_z$ dopo l'urto.
+- Trascurare il segno di $L_z$ quando il punto rimbalza: la velocità dopo l'urto cambia verso.
+
+**Esempi.**
+
+- Prova scritta - TEMA ESAME 2 - 2024, esercizio 2A: un'asta vincolata nel centro è colpita a un estremo da un punto materiale che rimbalza. Il momento angolare rispetto al centro si conserva, con $I = \tfrac{1}{12} M L^2$ e velocità finale del punto data dal testo, da cui si ricava $\omega$.
+- Prova scritta dell'11 luglio 2022, esercizio 2A: un disco, fermo su un piano orizzontale liscio, è colpito da due corpi puntiformi. Il disco non ha vincoli, quindi il metodo cambia: valgono sia la quantità di moto sia il momento angolare (con $I_{CM} = \tfrac{1}{2}mR^2$), e c'è un'incognita in più per il moto del CM.
+
+### Tipo 3: problemi a più fasi con energia e urto
+
+**Che cosa chiede l'esame.** Prima una fase di discesa su un piano scabro, poi un urto con un corpo rigido, poi la rotazione che ne segue. Ogni domanda dipende dalla precedente: sbagliare la velocità del primo tratto compromette tutte le altre.
+
+**Metodo.**
+
+1. Dividi il problema in fasi e scrivi per ciascuna il principio da usare: teorema dell'energia con $W_{att}$ nel tratto scabro, momento angolare nell'urto, energia meccanica dopo l'urto se non ci sono forze dissipative.
+2. Nel tratto scabro ricorda che $W_{att} = -\mu_d\,N\,s$ (vedi [Forze di attrito](ref:chapter/3#p6)).
+3. Passa alla fase dell'urto con il valore di $v$ appena calcolato, come nel tipo 2.
+4. Per la rotazione successiva usa $E_k = \tfrac{1}{2} I_z \omega^2$ e l'energia potenziale del CM del corpo rigido, come in {{formula:9.5}}.
+
+**Errori tipici.**
+
+- Applicare la conservazione dell'energia attraverso l'urto, che di norma è anelastico.
+- Calcolare $E_p$ dell'asta con la quota dell'estremo invece di quella del CM.
+- Ricalcolare $I_z$ senza includere la massa che si è conficcata nell'asta.
+
+**Esempi.**
+
+- Prova scritta - TEMA ESAME 2025 - 1, esercizio 1: un punto scende da una quota $h = 50$ cm su un piano inclinato scabro con $\mu = 0{,}3$, percorre un tratto liscio e si conficca nell'estremo inferiore di un'asta. Si calcola la velocità con il teorema dell'energia, poi si conserva $L_z$ rispetto al perno dell'asta e infine si usa l'energia per il moto successivo.
+- Prova scritta dell'11 luglio 2022, esercizio 2A1: un punto materiale percorre una guida scabra, con tratto inclinato e tratto orizzontale. Il testo associa a questo esercizio momento angolare, momento d'inerzia e urti. L'attrito dinamico della guida porta alla velocità prima dell'urto, come nel tipo precedente.
+
+### Altri tipi, in breve
+
+Alcune domande su urti riguardano solo punti materiali: pendoli che urtano un punto, proiettili che attraversano un corpo appeso a un filo (Prova scritta dell'11 luglio 2022, esercizio 1A; Prova scritta - TEMA ESAME 2 - 2024, esercizio 1A; Prova scritta del 23 giugno 2022, esercizio 1A). Queste si risolvono con la teoria di [Urti](ref:chapter/7#p7) e non richiedono il momento d'inerzia.
+
+Per lo scritto restano poi le domande aperte di teoria, che possono includere le dimostrazioni del corso. Per questo capitolo conviene saper ricavare $M_z = I_z\,\alpha$, il periodo del pendolo composto e la conservazione del momento angolare in un urto vincolato.
