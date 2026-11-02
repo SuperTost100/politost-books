@@ -396,7 +396,7 @@ Quindi $g$ soddisfa tutte le ipotesi del teorema di Rolle sull'intervallo $\lbra
 
 $$f'(x_0) - \frac{f(b)-f(a)}{b-a} = 0 \implies f'(x_0) = \frac{f(b)-f(a)}{b-a}. \qquad \square$$
 
-**Dal teorema di Lagrange al test di monotonia.** Una delle applicazioni più importanti del teorema di Lagrange è la deduzione rigorosa del legame tra segno della derivata e monotonia della funzione, già anticipato nella sezione su [funzioni limitate e monotone](ref:chapter/3#p5).
+**Dal teorema di Lagrange al test di monotonia.** Una delle applicazioni più importanti del teorema di Lagrange è la deduzione rigorosa del legame tra segno della derivata e monotonia della funzione.
 
 :::formula{id="7.13" label="Test di monotonia tramite la derivata"}
 $$\begin{aligned}
