@@ -184,7 +184,7 @@ dove $I_z$ è il momento d'inerzia del corpo rispetto all'asse $z$, già definit
 $$E_k = \frac{1}{2}I_z\omega^2$$
 :::
 
-Nel caso in cui il momento angolare sia parallelo alla velocità angolare, come accade per un asse principale d'inerzia, vale $L_z = I_z\omega$, da cui si ottiene una forma alternativa utile quando si conosce il momento angolare invece della velocità angolare.
+Per ogni rotazione attorno a un asse fisso $z$ vale $L_z = I_z\omega$, anche quando $\vec{L}$ ha componenti trasverse all'asse, da cui si ottiene una forma alternativa utile quando si conosce il momento angolare invece della velocità angolare.
 
 :::formula{id="9.6" label="Energia cinetica in funzione del momento angolare assiale"}
 $$E_k = \frac{L_z^2}{2I_z}$$
