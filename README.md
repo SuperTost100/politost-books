@@ -31,11 +31,12 @@
 
 Every book is a set of chapters. Most add exercises, past-exam practice and interactive graphs, which the reader shows as tabs. The books are in Italian.
 
-| Book                                    | Chapters | Also has                     |
-| --------------------------------------- | -------- | ---------------------------- |
-| [Analisi Matematica 1](books/analisi-1) | 11       | Exercises, exams, graphs     |
-| [Fisica 1](books/fisica-1)              | 14       | Exercises, exams, graphs     |
-| [Guida di esempio](books/esempio)       | 3        | Every file type, incl. a lab |
+| Book                                     | Chapters | Also has                     |
+| ---------------------------------------- | -------- | ---------------------------- |
+| [Analisi Matematica 1](books/analisi-1)  | 11       | Exercises, exams, graphs     |
+| [Chimica di base](books/chimica-di-base) | 17       | Exercises, exams, graphs     |
+| [Fisica 1](books/fisica-1)               | 14       | Exercises, exams, graphs     |
+| [Guida di esempio](books/esempio)        | 3        | Every file type, incl. a lab |
 
 `books/esempio` uses every file the format allows. It is the quickest way to see the syntax before you write your own.
 
