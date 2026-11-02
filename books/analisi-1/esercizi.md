@@ -1092,11 +1092,11 @@ $$
 sia continua in $x=0$.
 
 :::hint
-Calcolare separatamente il limite da sinistra con il limite notevole esponenziale {{formula:6.2}} e il limite da destra con il limite notevole del logaritmo {{formula:6.3}}.
+Calcolare separatamente il limite da sinistra con il limite notevole dell'esponenziale {{formula:6.4}} e il limite da destra con il limite notevole del logaritmo {{formula:6.3}}.
 :::
 
 :::solution
-Per il limite notevole esponenziale {{formula:6.2}} si ha
+Per il limite notevole dell'esponenziale {{formula:6.4}} si ha
 
 $$
 \lim_{x\to 0^-}\frac{e^x-1}{x}=1.
@@ -1405,7 +1405,7 @@ Calcolare il limite
 $$\lim_{x\to 0}\frac{\ln(1+4x)}{e^{2x}-1}.$$
 
 :::hint
-Dividi numeratore e denominatore per gli argomenti $4x$ e $2x$ e applica {{formula:6.3}} e {{formula:6.2}}.
+Dividi numeratore e denominatore per gli argomenti $4x$ e $2x$ e applica {{formula:6.3}} e {{formula:6.4}}.
 :::
 
 :::solution
@@ -1417,7 +1417,7 @@ Per $x\to 0$, usando {{formula:6.3}} si ha
 
 $$\frac{\ln(1+4x)}{4x}\to 1,$$
 
-e usando {{formula:6.2}}
+e usando {{formula:6.4}}
 
 $$\frac{e^{2x}-1}{2x}\to 1 \quad\Longrightarrow\quad \frac{2x}{e^{2x}-1}\to 1.$$
 
