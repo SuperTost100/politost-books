@@ -192,7 +192,7 @@ Le forze di contatto sono quelle che i problemi di dinamica usano più spesso. C
 
 Anche la **forza centripeta** non è una forza di tipo particolare. È il nome della componente della risultante ortogonale alla traiettoria, ed è diversa da zero nei punti in cui la velocità e la curvatura della traiettoria sono entrambe diverse da zero.
 
-Come forze a distanza, nei problemi di questo corso compaiono soprattutto il peso e, in generale, la gravitazione. L'elettrostatica ha una sezione dedicata in [Cenni di elettrostatica](ref:chapter/10#p6).
+Come forze a distanza, nei problemi di questo corso compaiono soprattutto il peso e, in generale, la gravitazione. L'elettrostatica ha una sezione dedicata in Cenni di elettrostatica.
 
 ### Errori tipici
 
@@ -247,13 +247,19 @@ Queste due proprietà seguono direttamente dalla linearità dell'integrale e per
 :::image{src="assets/7b42e0ee-forza-impulsiva.svg" alt="Grafico di una forza impulsiva in funzione del tempo, a campana, con area sottesa pari all'impulso" caption="Fig. 3.2 — Una forza impulsiva F(t): intensa ma concentrata in un breve intervallo di tempo. L'area sotto la curva, tra t0 e t, è l'impulso J"}
 :::
 
-**Teorema 3.2** (dell'impulso). Quando su un punto materiale di massa $m$ agisce, in un intervallo di tempo finito $\lbrack t_0,t\rbrack $, una risultante di forze $\vec{F}(t)$, la variazione della quantità di moto del punto è uguale all'impulso totale della forza risultante. La dimostrazione usa la definizione di impulso e la seconda legge di Newton:
+**Teorema 3.2** (dell'impulso). Quando su un punto materiale di massa $m$ agisce, in un intervallo di tempo finito $\lbrack t_0,t\rbrack $, una risultante di forze $\vec{F}(t)$, la variazione della quantità di moto del punto è uguale all'impulso totale della forza risultante.
+
+**Dimostrazione richiesta all'esame.**
+
+Si parte dalla definizione di impulso e dalla seconda legge di Newton $\vec{F} = m\vec{a}$, con $m$ costante e $\vec{a} = d\vec{v}/dt$. Si sostituisce la forza nell'integrale, si osserva che $m\,\frac{d\vec{v}}{dt}\,dt = m\,d\vec{v}$ e si integra tra la velocità iniziale $\vec{v}_0 = \vec{v}(t_0)$ e quella finale $\vec{v} = \vec{v}(t)$:
 
 $$\vec{J}(t_0,t) = \int_{t_0}^{t}\vec{F}(t)\,dt = \int_{t_0}^{t} m\vec{a}\,dt = \int_{t_0}^{t} m\,\frac{d\vec{v}}{dt}\,dt = \int_{\vec{v}_0}^{\vec{v}} m\,d\vec{v} = m\vec{v} - m\vec{v}_0 = \vec{p} - \vec{p}_0 = \Delta\vec{p}.$$
 
 :::formula{id="3.9" label="Teorema dell'impulso"}
 $$\vec{J}(t_0,t) = \Delta\vec{p} = \vec{p} - \vec{p}_0.$$
 :::
+
+Il passaggio centrale è $\int_{t_0}^{t} m\,\frac{d\vec{v}}{dt}\,dt = \int_{\vec{v}_0}^{\vec{v}} m\,d\vec{v}$, cioè il cambio di variabile da $t$ a $\vec{v}$, con $\vec{v}_0 = \vec{v}(t_0)$ e $\vec{v} = \vec{v}(t)$. Lo stesso risultato vale anche a massa variabile: da $\vec{F} = d\vec{p}/dt$ si ha direttamente $\int_{t_0}^{t}\vec{F}\,dt = \int_{t_0}^{t}\frac{d\vec{p}}{dt}\,dt = \vec{p}(t)-\vec{p}(t_0)$. Il teorema vale per ciascuna componente cartesiana, quindi per il vettore.
 
 Se la massa è costante, il teorema si riscrive in termini della sola velocità,
 

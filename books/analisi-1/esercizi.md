@@ -102,7 +102,7 @@ Unendo i tre casi: $\lbrack -4,-3)\cup\lbrack -3,1)\cup[1,2]=\lbrack -4,2\rbrack
 Utilizzando il principio dell'estremo superiore, dimostrare l'esistenza di un numero reale $L>0$ tale che $L^2=2$. Si consideri l'insieme $A=\{x\in\mathbb{R} : x\ge0,\ x^2\le2\}$.
 
 :::hint
-Mostra che $A$ è non vuoto e limitato superiormente, poni $L=\sup A$ (che esiste per {{formula:1.9}}), ed escludi per assurdo sia $L^2<2$ sia $L^2>2$.
+Mostra che $A$ è non vuoto e limitato superiormente, poni $L=\sup A$ (che esiste per {{formula:1.7}}), ed escludi per assurdo sia $L^2<2$ sia $L^2>2$.
 :::
 
 :::solution
@@ -176,7 +176,7 @@ Unendo i due casi, $A=(-\infty,-3)\cup\left\lbrack \frac12,+\infty\right)$.
 
 :::exercise{id="E1.8" chapter="1" difficulty="facile"}
 ## Domanda
-Sia $A$ un sottoinsieme non vuoto di $\mathbb{R}$, limitato superiormente, e sia $L\in\mathbb{R}$. Enunciare la caratterizzazione dell'estremo superiore {{formula:1.7}} e usarla per verificare che $\sup A=2$ per $A=\lbrack 0,2)$.
+Sia $A$ un sottoinsieme non vuoto di $\mathbb{R}$, limitato superiormente, e sia $L\in\mathbb{R}$. Enunciare la caratterizzazione dell'estremo superiore {{formula:1.5}} e usarla per verificare che $\sup A=2$ per $A=\lbrack 0,2)$.
 
 :::hint
 Devi verificare due condizioni: che $2$ sia un maggiorante di $A$ e che per ogni $\varepsilon>0$ esista un elemento di $A$ maggiore di $2-\varepsilon$.
@@ -242,11 +242,11 @@ $$
 e utilizzare questo risultato per stabilire che, se $|x-3|<0.1$, allora $\big||x|-3\big|<0.1$.
 
 :::hint
-Applica due volte {{formula:1.5}}, scrivendo $x=(x-y)+y$ e $y=(y-x)+x$, per ottenere le due disuguaglianze $|x|-|y|\le|x-y|$ e $|y|-|x|\le|x-y|$.
+Applica due volte {{formula:1.3}}, scrivendo $x=(x-y)+y$ e $y=(y-x)+x$, per ottenere le due disuguaglianze $|x|-|y|\le|x-y|$ e $|y|-|x|\le|x-y|$.
 :::
 
 :::solution
-Scriviamo $x=(x-y)+y$. Per {{formula:1.5}},
+Scriviamo $x=(x-y)+y$. Per {{formula:1.3}},
 
 $$
 |x|=|(x-y)+y|\le|x-y|+|y|,
@@ -268,7 +268,7 @@ $$
 \big||x|-|y|\big|\le|x-y|,
 $$
 
-che è esattamente {{formula:1.6}}.
+che è esattamente {{formula:1.4}}.
 
 Applichiamo ora questo risultato con $y=3$: poiché $|3|=3$, otteniamo
 
@@ -303,48 +303,7 @@ L'intersezione delle due condizioni $x>-1$ e $-4<x<4$ è $-1<x<4$.
 :::
 :::
 
-:::exercise{id="E1.13" chapter="1" difficulty="difficile"}
-## Domanda
-Dimostrare per induzione su $n$ che per ogni $n\in\mathbb{N}$ vale
-
-$$
-\sum_{k=0}^n \binom{n}{k} = 2^n,
-$$
-
-utilizzando l'identità di Pascal $\binom{n}{k-1}+\binom{n}{k}=\binom{n+1}{k}$.
-
-:::hint
-Nel passo induttivo scrivi la somma per $n+1$ isolando i termini estremi e raggruppa i rimanenti tramite l'identità di Pascal, oppure applica {{formula:1.4}} con $x=y=1$.
-:::
-
-:::solution
-**Passo base** ($n=0$): $\sum_{k=0}^0\binom{0}{k}=\binom{0}{0}=1=2^0$.
-
-**Passo induttivo**: supponiamo $\sum_{k=0}^n\binom{n}{k}=2^n$. Allora
-
-$$
-\sum_{k=0}^{n+1}\binom{n+1}{k}=\binom{n+1}{0}+\sum_{k=1}^{n}\binom{n+1}{k}+\binom{n+1}{n+1}.
-$$
-
-Usando l'identità di Pascal $\binom{n+1}{k}=\binom{n}{k-1}+\binom{n}{k}$ per $1\le k\le n$, si ha
-
-$$
-\sum_{k=1}^{n}\binom{n+1}{k}=\sum_{k=1}^{n}\binom{n}{k-1}+\sum_{k=1}^{n}\binom{n}{k}=\sum_{j=0}^{n-1}\binom{n}{j}+\sum_{k=1}^{n}\binom{n}{k}.
-$$
-
-Ora $\sum_{j=0}^{n-1}\binom{n}{j}=2^n-\binom{n}{n}=2^n-1$ e $\sum_{k=1}^{n}\binom{n}{k}=2^n-\binom{n}{0}=2^n-1$, quindi quella somma vale $(2^n-1)+(2^n-1)=2^{n+1}-2$.
-
-Aggiungendo i termini estremi $\binom{n+1}{0}=\binom{n+1}{n+1}=1$:
-
-$$
-\sum_{k=0}^{n+1}\binom{n+1}{k}=1+(2^{n+1}-2)+1=2^{n+1}.
-$$
-
-Per il principio di induzione la formula vale per ogni $n\in\mathbb{N}$. In alternativa, basta applicare {{formula:1.4}} con $x=y=1$: $(1+1)^n=\sum_{k=0}^n\binom{n}{k}1^{n-k}1^k=\sum_{k=0}^n\binom{n}{k}=2^n$.
-:::
-:::
-
-:::exercise{id="E1.14" chapter="1" difficulty="medio"}
+:::exercise{id="E1.13" chapter="1" difficulty="medio"}
 ## Domanda
 Sia $A=\left\{(-1)^n+\dfrac1n : n\in\mathbb{N},\ n\ge1\right\}$. Determinare, motivando la risposta, $\inf A$, $\sup A$, $\min A$, $\max A$.
 
@@ -361,9 +320,9 @@ Confrontando le due famiglie: il valore massimo assoluto di $A$ è $a_2=\frac32$
 :::
 :::
 
-:::exercise{id="E1.15" chapter="1" difficulty="medio"}
+:::exercise{id="E1.14" chapter="1" difficulty="medio"}
 ## Domanda
-Sia $A=\{x\in\mathbb{Q} : x^2<3\}$. Dimostrare, usando il principio dell'estremo superiore {{formula:1.9}}, che $\sup A=\sqrt3$, e spiegare perché $A$ non ha massimo.
+Sia $A=\{x\in\mathbb{Q} : x^2<3\}$. Dimostrare, usando il principio dell'estremo superiore {{formula:1.7}}, che $\sup A=\sqrt3$, e spiegare perché $A$ non ha massimo.
 
 :::hint
 Mostra che $A$ è non vuoto e limitato superiormente in $\mathbb{R}$, così il principio garantisce l'esistenza di $L=\sup A\in\mathbb{R}$; poi escludi per assurdo sia $L<\sqrt3$ sia $L>\sqrt3$. Per concludere che $A$ non ha massimo, ricorda che $\sqrt3$ è irrazionale: dimostralo per assurdo supponendo $\sqrt3=p/q$ con $p,q$ interi coprimi e deducendo che $3$ divide sia $p$ sia $q$.
@@ -915,47 +874,6 @@ I punti di accumulazione di $A$ sono i limiti delle sottosuccessioni: $1$ (limit
 
 :::exercise{id="E4.2" chapter="4" difficulty="difficile"}
 ## Domanda
-Studiare, mediante il criterio del rapporto, la convergenza della successione $a_n = \dfrac{2^n\, n!}{n^n}$ e calcolarne il limite.
-
-:::hint
-Nel calcolare $a_{n+1}/a_n$, far emergere un fattore del tipo $\left(\dfrac{n}{n+1}\right)^n$ e ricondursi al limite notevole esponenziale.
-:::
-
-:::solution
-Calcoliamo il rapporto tra termini consecutivi:
-$$\frac{a_{n+1}}{a_n} = \frac{2^{n+1}(n+1)!}{(n+1)^{n+1}}\cdot\frac{n^n}{2^n n!} = \frac{2(n+1)\, n^n}{(n+1)^{n+1}} = 2\left(\frac{n}{n+1}\right)^n.$$
-
-Scriviamo $\left(\dfrac{n}{n+1}\right)^n = \left(\dfrac{1}{1+1/n}\right)^n = \dfrac{1}{\left(1+\frac{1}{n}\right)^n}$. Per il {{formula:6.1}}, $\left(1+\dfrac{1}{n}\right)^n \to e$, quindi
-
-$$
-\frac{a_{n+1}}{a_n} \to \frac{2}{e} \approx 0{,}7358 < 1.
-$$
-
-Per il {{formula:4.16}}, poiché il limite del rapporto è strettamente minore di $1$, la successione $a_n$ tende a $0$.
-:::
-:::
-
-:::exercise{id="E4.3" chapter="4" difficulty="medio"}
-## Domanda
-Usando il criterio della radice, studiare la convergenza della successione $a_n = \left(\dfrac{n+1}{2n+3}\right)^n$ e calcolarne il limite.
-
-:::hint
-Applicare il criterio della radice alla successione $a_n$, che è già scritta come potenza $n$-esima di una quantità.
-:::
-
-:::solution
-Essendo $a_n \ge 0$ per ogni $n$, calcoliamo la radice $n$-esima:
-
-$$
-\sqrt[n]{a_n} = \frac{n+1}{2n+3}.
-$$
-
-Si ha $\displaystyle\lim_{n\to\infty}\frac{n+1}{2n+3} = \frac{1}{2} < 1$. Per il {{formula:4.17}}, poiché il limite della radice $n$-esima è strettamente minore di $1$, la successione $a_n$ tende a $0$.
-:::
-:::
-
-:::exercise{id="E4.4" chapter="4" difficulty="difficile"}
-## Domanda
 Dimostrare rigorosamente, usando la definizione di limite, che $\lim_{x\to+\infty}\left(\sqrt{x+1}-\sqrt{x}\right)=0$, determinando esplicitamente, per ogni $\varepsilon>0$, un valore $M(\varepsilon)$ tale che $x>M(\varepsilon)$ implichi $\left|\sqrt{x+1}-\sqrt{x}\right|<\varepsilon$.
 
 :::hint
@@ -979,7 +897,7 @@ La condizione $\dfrac{1}{2\sqrt{x}}<\varepsilon$ equivale a $\sqrt{x}>\dfrac{1}{
 :::
 :::
 
-:::exercise{id="E4.5" chapter="4" difficulty="facile"}
+:::exercise{id="E4.3" chapter="4" difficulty="facile"}
 ## Domanda
 Verificare, usando la definizione $\varepsilon$-$\delta$, che $\lim_{x\to 2}(3x-1)=5$. Determinare un valore di $\delta>0$ in funzione di $\varepsilon$ e calcolarlo esplicitamente per $\varepsilon = 0{,}03$.
 
@@ -994,7 +912,7 @@ Per $\varepsilon = 0{,}03$ si ottiene $\delta = 0{,}01$.
 :::
 :::
 
-:::exercise{id="E4.6" chapter="4" difficulty="difficile"}
+:::exercise{id="E4.4" chapter="4" difficulty="difficile"}
 ## Domanda
 Sia $a_n = \sin\!\left(\dfrac{n\pi}{2}\right)$. Mostrare che $(a_n)$ è limitata ma non converge, determinando tutti i possibili limiti delle sue sottosuccessioni.
 
@@ -1017,7 +935,7 @@ Poiché esistono sottosuccessioni con limiti diversi, per il teorema di unicità
 :::
 :::
 
-:::exercise{id="E4.7" chapter="4" difficulty="facile"}
+:::exercise{id="E4.5" chapter="4" difficulty="facile"}
 ## Domanda
 Si consideri l'insieme $A = (0,1\rbrack  \cup \{2\}$. Classificare i punti $x=0$, $x=1$ e $x=2$ come punti interni, di frontiera, isolati o di accumulazione per $A$, e determinare $\sup A$, $\inf A$ e, se esistono, $\max A$ e $\min A$.
 
@@ -1038,7 +956,7 @@ Infine $\sup A = \max A = 2$, mentre $\inf A = 0$ non è raggiunto, quindi $A$ n
 :::
 :::
 
-:::exercise{id="E4.8" chapter="4" difficulty="difficile"}
+:::exercise{id="E4.6" chapter="4" difficulty="difficile"}
 ## Domanda
 Sia $a_n = \sqrt{n}$. Calcolare, se esistono, i seguenti limiti, motivando la risposta con i teoremi opportuni:
 
@@ -1067,7 +985,7 @@ La sottosuccessione con $n$ pari tende a $0$, mentre quella con $n$ dispari tend
 :::
 :::
 
-:::exercise{id="E4.9" chapter="4" difficulty="facile"}
+:::exercise{id="E4.7" chapter="4" difficulty="facile"}
 ## Domanda
 Sia $a_n = (-1)^n \dfrac{n}{n+1}$. Determinare i limiti delle sottosuccessioni $a_{2n}$ e $a_{2n+1}$, e stabilire se $(a_n)$ converge.
 
@@ -1084,23 +1002,7 @@ Le due sottosuccessioni, definite tramite la {{formula:4.14}}, convergono a limi
 :::
 :::
 
-:::exercise{id="E4.10" chapter="4" difficulty="facile"}
-## Domanda
-Usando il criterio del rapporto, studiare la convergenza della successione $a_n = \dfrac{3^n}{n!}$ e calcolarne il limite.
-
-:::hint
-Calcolare il rapporto $a_{n+1}/a_n$ e studiarne il limite per $n\to\infty$.
-:::
-
-:::solution
-Calcoliamo il rapporto tra termini consecutivi:
-$$\frac{a_{n+1}}{a_n} = \frac{3^{n+1}}{(n+1)!}\cdot\frac{n!}{3^n} = \frac{3}{n+1}.$$
-
-Si ha $\displaystyle\lim_{n\to\infty}\frac{3}{n+1} = 0 < 1$. Per il {{formula:4.16}}, poiché il limite del rapporto è strettamente minore di $1$, la successione $a_n$ tende a $0$.
-:::
-:::
-
-:::exercise{id="E4.11" chapter="4" difficulty="medio"}
+:::exercise{id="E4.8" chapter="4" difficulty="medio"}
 ## Domanda
 Calcolare, usando il teorema del confronto, i limiti $\displaystyle\lim_{n\to\infty}\frac{2+\sin n}{n}$ e $\displaystyle\lim_{n\to\infty}\frac{n+(-1)^n\sqrt{n}}{n}$, motivando ogni passaggio.
 
@@ -1124,7 +1026,7 @@ Poiché $-\dfrac{1}{\sqrt{n}} \le \dfrac{(-1)^n}{\sqrt{n}} \le \dfrac{1}{\sqrt{n
 :::
 :::
 
-:::exercise{id="E4.12" chapter="4" difficulty="facile"}
+:::exercise{id="E4.9" chapter="4" difficulty="facile"}
 ## Domanda
 Sia $(a_n)$ tale che $\lim_{n\to\infty} a_n = 5$. Usando il teorema della permanenza del segno, dimostrare che esiste $N_0$ tale che $a_n>4$ per ogni $n>N_0$. Verificarlo esplicitamente nel caso $a_n = 5+\dfrac{1}{n}$.
 
@@ -1141,7 +1043,7 @@ Nel caso $a_n = 5+\dfrac{1}{n}$, si ha $a_n > 5 > 4$ per ogni $n\ge 1$, quindi l
 :::
 :::
 
-:::exercise{id="E4.13" chapter="4" difficulty="medio"}
+:::exercise{id="E4.10" chapter="4" difficulty="medio"}
 ## Domanda
 Dimostrare che la successione $a_n = n\sin\!\left(\frac{1}{n}\right)$ converge e calcolarne il limite, usando un cambio di variabile e la caratterizzazione sequenziale del limite.
 
@@ -1162,7 +1064,7 @@ Quindi $\lim_{n\to\infty} a_n = 1$.
 :::
 :::
 
-:::exercise{id="E4.14" chapter="4" difficulty="medio"}
+:::exercise{id="E4.11" chapter="4" difficulty="medio"}
 ## Domanda
 Verificare, usando la definizione di limite di successione, che $\lim_{n\to\infty}\frac{2n+1}{n+3}=2$. Determinare $N(\varepsilon)$ tale che $|a_n-2|<\varepsilon$ per ogni $n>N(\varepsilon)$, e calcolarlo per $\varepsilon=0{,}01$.
 
@@ -1179,7 +1081,7 @@ Per $\varepsilon = 0{,}01$: $N = 500-3 = 497$, quindi basta prendere $n\ge 498$.
 :::
 :::
 
-:::exercise{id="E4.15" chapter="4" difficulty="difficile"}
+:::exercise{id="E4.12" chapter="4" difficulty="difficile"}
 ## Domanda
 Sia $A = \left\{ \frac{1}{n} \;:\; n\in\mathbb{N},\, n\ge 1 \right\} \cup \{0\}$. Dimostrare che $A$ è chiuso ma non aperto, determinare l'interno di $A$, e verificare che $0$ è un punto di accumulazione di $A$ mentre ogni punto $1/n$ è isolato.
 

@@ -289,56 +289,7 @@ Se è nota l'efficienza di corrente $\eta$, definita come frazione della carica 
 - ★★ Una corrente di $2{,}00\ \mathrm{A}$ attraversa per $30{,}0\ \mathrm{min}$ una cella in cui avviene soltanto $\mathrm{Cu^{2+}}+2e^-\to\mathrm{Cu}$. Calcolare la carica e la massa depositata usando $M_{\mathrm{Cu}}=63{,}55\ \mathrm{g/mol}$.
 - ★★★ Per ottenere $1{,}50\ \mathrm{g}$ di rame con $I=4{,}75\ \mathrm{A}$ e $\eta=0{,}80$, calcolare la carica totale e il tempo richiesti. Confrontare il tempo con quello dell'esempio svolto.
 
-## p6 | Batterie e celle a combustibile
-
-### Batterie: principio di funzionamento
-
-Le batterie forniscono energia elettrica mediante reazioni di ossidoriduzione spontanee. In ciascuna cella, l’ossidazione avviene all’anodo e la riduzione al catodo: gli elettroni percorrono il circuito esterno dall’anodo al catodo, mentre gli ioni si muovono nell’elettrolita per mantenere il bilancio delle cariche. Questi percorsi sono descritti nella sezione sulle [celle voltaiche](ref:chapter/16#p2).
-
-**Definizione 16.7** (batteria). Nel linguaggio del corso, una batteria è un insieme di celle voltaiche collegate in serie: le loro differenze di potenziale si sommano. Nell’uso comune si chiama spesso «batteria» anche una singola cella confezionata per l’impiego. Il potenziale dipende dalle specie presenti e dalle condizioni di funzionamento; per il suo calcolo si rimanda ai [potenziali standard e all’equazione di Nernst](ref:chapter/16#p3).
-
-### Batterie primarie
-
-**Definizione 16.8** (batteria primaria). È una batteria destinata a un solo ciclo di scarica: una volta consumati i reagenti, non si ricarica per l’uso ordinario. La pila a secco di Leclanché e la pila alcalina sono due esempi.
-
-Nella pila a secco di Leclanché lo zinco costituisce l’anodo; una barretta di grafite funge da conduttore al catodo. Fra i due si trova una pasta contenente $\mathrm{MnO_2}$, $\mathrm{NH_4Cl}$ e $\mathrm{ZnCl_2}$. Durante la scarica lo zinco si ossida secondo $\mathrm{Zn}_{(s)} \rightarrow \mathrm{Zn}^{2+}+2e^-$. La cella fornisce circa $1,5\ \mathrm{V}$, ma l’accumulo di ammoniaca vicino al catodo tende a diminuirne il potenziale.
-
-:::image{src="assets/34b4b170-pila-leclanche.svg" alt="Schema della pila a secco di Leclanché con anodo di zinco e catodo di grafite in un unico contenitore" caption="Fig. 16.5 — Pila a secco di Leclanché: l'anodo di zinco si ossida, il catodo di grafite è a contatto con la pasta di MnO2, NH4Cl e ZnCl2"}
-:::
-
-La pila alcalina usa invece una pasta acquosa di $\mathrm{KOH}$ come elettrolita. Il mezzo basico evita l’accumulo di gas descritto per la pila a secco e rende più stabile la tensione durante l’impiego. Esistono anche pile primarie al litio: il loro anodo è litio metallico e al catodo gli ioni litio si inseriscono in un ossido. La presenza di litio metallico distingue questo esempio dalle batterie ricaricabili agli ioni litio.
-
-### Batterie secondarie o accumulatori
-
-**Definizione 16.9** (batteria secondaria). È ricaricabile: una sorgente elettrica esterna forza la reazione inversa a quella di scarica e rigenera i reagenti. In scarica funziona come cella voltaica; durante la ricarica il processo è elettrolitico. La definizione di anodo resta legata all’**ossidazione** e quella di catodo alla **riduzione**: quando si inverte la reazione, si inverte anche il ruolo dei due elettrodi. Il funzionamento delle celle elettrolitiche è trattato nella sezione su [elettrolisi e leggi di Faraday](ref:chapter/16#p5).
-
-Nell’accumulatore al piombo, durante la scarica, l’anodo contiene piombo spugnoso e il catodo contiene $\mathrm{PbO_2}$; entrambi sono immersi in una soluzione di acido solforico. Il piombo che reagisce ai due elettrodi finisce in $\mathrm{PbSO_4}$. Una batteria automobilistica indicata come $12\ \mathrm{V}$ comprende sei celle in serie, ciascuna capace di fornire circa $2,1\ \mathrm{V}$ nelle condizioni riportate dal corso.
-
-:::image{src="assets/34b4b170-accumulatore-piombo.svg" alt="Schema di una cella dell'accumulatore al piombo con elettrodi di Pb e PbO2 immersi in acido solforico" caption="Fig. 16.6 — Accumulatore al piombo in scarica: anodo di piombo spugnoso, catodo di PbO2, entrambi in acido solforico; in entrambi gli elettrodi si forma PbSO4"}
-:::
-
-**Esempio svolto 16.10** (scarica dell’accumulatore al piombo).
-
-1. **Dati.** L’anodo contiene $\mathrm{Pb}$, il catodo $\mathrm{PbO_2}$ e l’elettrolita fornisce ioni idrogenosolfato. Entrambi gli elettrodi producono $\mathrm{PbSO_4}$ durante la scarica.
-2. **Strategia.** Si scrivono le semireazioni in ambiente acido, si pareggiano gli elettroni e poi si sommano, verificando atomi e cariche.
-3. **Calcolo.** All’anodo: $\mathrm{Pb}_{(s)}+\mathrm{HSO_4^-}_{(aq)} \rightarrow \mathrm{PbSO_{4(s)}}+\mathrm{H^+}_{(aq)}+2e^-$. Al catodo: $\mathrm{PbO_{2(s)}}+\mathrm{HSO_4^-}_{(aq)}+3\mathrm{H^+}_{(aq)}+2e^- \rightarrow \mathrm{PbSO_{4(s)}}+2\mathrm{H_2O}_{(l)}$. Sommando e cancellando i $2e^-$ si ottiene $\mathrm{Pb}_{(s)}+\mathrm{PbO_{2(s)}}+2\mathrm{HSO_4^-}_{(aq)}+2\mathrm{H^+}_{(aq)} \rightarrow 2\mathrm{PbSO_{4(s)}}+2\mathrm{H_2O}_{(l)}$.
-4. **Verifica.** Gli elettroni ceduti e acquistati sono due; atomi e cariche coincidono ai due lati. Il prodotto $\mathrm{PbSO_4}$ compare a entrambi gli elettrodi, come previsto. Sei potenziali di circa $2,1\ \mathrm{V}$ danno circa $12,6\ \mathrm{V}$ nelle condizioni citate; «$12\ \mathrm{V}$» è la designazione nominale della batteria, non il risultato esatto della moltiplicazione.
-
-Un altro accumulatore è quello agli ioni litio. Durante la scarica, gli atomi di litio inseriti nella grafite dell’anodo cedono elettroni al circuito esterno; gli ioni $\mathrm{Li^+}$ attraversano l’elettrolita verso il catodo, costituito da un ossido metallico capace di ospitarli. Durante la carica i flussi si invertono. L’elettrolita tipico contiene un sale di litio in un solvente organico; per limitare sovratensioni e surriscaldamento si impiegano circuiti di protezione.
-
-**Errore tipico 16.12.** Identificare «litio» e «ioni litio» come la stessa batteria porta ad attribuire litio metallico all’anodo dell’accumulatore descritto qui. Nella pila primaria citata l’anodo è una lamina di litio; nell’accumulatore agli ioni litio il litio è inserito fra i piani della grafite.
-
-### Celle a combustibile
-
-**Definizione 16.10** (cella a combustibile). È una cella elettrochimica alimentata dall’esterno: il combustibile e l’ossidante entrano continuamente, mentre i prodotti escono. Può quindi continuare a erogare corrente finché riceve reagenti e i componenti funzionano. Una batteria ordinaria, invece, contiene al proprio interno una quantità limitata dei reagenti necessari alla scarica.
-
-Nella cella a idrogeno con membrana a scambio protonico, un catalizzatore elettrodico, tipicamente platino su grafite, facilita le reazioni. All’anodo l’idrogeno si ossida: $2\mathrm{H_{2(g)}} \rightarrow 4\mathrm{H^+}_{(aq)}+4e^-$. Gli elettroni passano nel circuito esterno; i protoni, trasportati nella membrana in forma idratata, raggiungono il catodo. Qui l’ossigeno si riduce: $\mathrm{O_{2(g)}}+4\mathrm{H^+}_{(aq)}+4e^- \rightarrow 2\mathrm{H_2O}_{(l)}$. La reazione complessiva è $2\mathrm{H_{2(g)}}+\mathrm{O_{2(g)}} \rightarrow 2\mathrm{H_2O}_{(l)}$. Il coefficiente $4$ davanti ai protoni e agli elettroni è necessario per bilanciare due molecole di idrogeno.
-
-La cella produce acqua nel punto d’uso. Per valutarne l’impatto ambientale occorre però considerare anche come è stato prodotto l’idrogeno: se proviene dall’elettrolisi dell’acqua, conta la fonte dell’elettricità impiegata.
-
-**Errore tipico 16.13.** Una cella a combustibile non si «ricarica» invertendo la propria reazione come un accumulatore: per proseguire il funzionamento riceve nuovo combustibile e nuovo ossidante. In qualunque dei tre dispositivi, durante l’erogazione di corrente l’ossidazione resta all’anodo e la riduzione al catodo.
-
-## p7 | Come viene chiesto all'esame
+## p6 | Come viene chiesto all'esame
 
 Il capitolo di elettrochimica è comparso in 3 delle 4 sessioni d'esame esaminate. Gli esercizi che lo riguardano sono quasi sempre problemi misti, in cui l'elettrochimica si combina con il bilanciamento delle redox, con i gas o con le concentrazioni. Il tipo più frequente è il bilanciamento di una redox con un ossidante forte, presente in tutte e tre le sessioni. Segue l'elettrolisi con le leggi di Faraday, presente in due sessioni. Nella prova scritta (70 minuti, senza materiale didattico) conviene perciò avere pronti due metodi: le semireazioni e il conto della carica.
 
@@ -396,10 +347,10 @@ Per i dettagli sull'ambiente acido o basico e sulla disproporzione vedi [Reazion
 
 ### Due temi: celle voltaiche e potenziali
 
-Le pile, la notazione di cella e i potenziali di cella compaiono come argomento esplicito nei temi 14 e 15: nel tema 15, dentro un esercizio che parte dalla redox di rame e piombo; nel tema 14, con una domanda sull’anodo, il catodo e il potenziale standard di cella. Per questo tipo di domande vale il metodo delle sezioni [Celle voltaiche](ref:chapter/16#p2) e [Potenziali standard ed equazione di Nernst](ref:chapter/16#p3): $E^\circ_{\mathrm{cella}} = E^\circ_{\mathrm{catodo}} - E^\circ_{\mathrm{anodo}}$, e Nernst quando le concentrazioni non sono 1 M. Le batterie e le celle a combustibile compaiono solo come argomento associato al tema 3 e al tema 14. Il loro funzionamento è in [Batterie e celle a combustibile](ref:chapter/16#p6).
+Le pile, la notazione di cella e i potenziali di cella compaiono come argomento esplicito nei temi 14 e 15: nel tema 15, dentro un esercizio che parte dalla redox di rame e piombo; nel tema 14, con una domanda sull’anodo, il catodo e il potenziale standard di cella. Per questo tipo di domande vale il metodo delle sezioni [Celle voltaiche](ref:chapter/16#p2) e [Potenziali standard ed equazione di Nernst](ref:chapter/16#p3): $E^\circ_{\mathrm{cella}} = E^\circ_{\mathrm{catodo}} - E^\circ_{\mathrm{anodo}}$, e Nernst quando le concentrazioni non sono 1 M. Le batterie e le celle a combustibile compaiono solo come argomento associato al tema 3 e al tema 14. Il loro funzionamento è in Batterie e celle a combustibile.
 
 ### Prima di consegnare
 
 - Controlla che i coefficienti siano interi e minimi e che gli elettroni scambiati si bilancino.
 - Controlla che ogni calcolo con i gas usi $T$ in kelvin e che l'unità di $P$ sia coerente con il valore di $R$.
-- Esprimi il risultato con le cifre significative dei dati ([Grandezze, unità e cifre significative](ref:chapter/1#p3)).
+- Esprimi il risultato con le cifre significative dei dati ([Grandezze, unità e cifre significative](ref:chapter/1#p2)).

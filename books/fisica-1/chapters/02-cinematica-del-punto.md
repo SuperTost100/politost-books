@@ -306,6 +306,20 @@ $$\frac{d^2x}{dt^2} + \omega^2 x = 0$$
 
 per ogni $t$, con $\omega$ costante reale positiva.
 
+**Dimostrazione richiesta all'esame.**
+
+($\Rightarrow$) Se il moto è armonico, $x(t) = A\sin(\omega t + \varphi)$. Derivando una volta si ha $v(t) = \omega A\cos(\omega t + \varphi)$ e derivando ancora
+
+$$a(t) = \frac{d^2x}{dt^2} = -\omega^2 A\sin(\omega t + \varphi) = -\omega^2 x(t),$$
+
+cioè $\ddot{x} + \omega^2 x = 0$ per ogni $t$.
+
+($\Leftarrow$) Sia $x(t)$ una soluzione di $\ddot{x} + \omega^2 x = 0$ con $\omega > 0$. L'equazione è lineare del secondo ordine a coefficienti costanti, e per quanto appena visto le funzioni $A\sin(\omega t + \varphi)$ la risolvono per ogni $A$ e $\varphi$. Siano $x_0 = x(0)$ e $v_0 = \dot{x}(0)$ la posizione e la velocità iniziali, qualsiasi, con $x_0$ e $v_0$ non entrambi nulli (altrimenti il moto è la quiete nell'origine, esclusa dal teorema). Si pone
+
+$$A = \sqrt{x_0^2 + \left(\frac{v_0}{\omega}\right)^2} > 0$$
+
+e si sceglie $\varphi$ tale che $A\sin\varphi = x_0$ e $A\omega\cos\varphi = v_0$. Un tale $\varphi$ esiste sempre: i numeri $x_0/A$ e $v_0/(A\omega)$ hanno somma dei quadrati uguale a $1$, quindi sono seno e coseno di uno stesso angolo. La funzione $A\sin(\omega t + \varphi)$ è allora una soluzione armonica con $x(0) = x_0$ e $v(0) = v_0$, cioè con le stesse condizioni iniziali di $x(t)$. Per l'unicità della soluzione del problema di Cauchy per l'equazione lineare, $x(t)$ coincide con essa per ogni $t$: ogni moto con $a = -\omega^2 x$ è dunque armonico semplice. $\blacksquare$
+
 Questa è una condizione necessaria e sufficiente: ogni legge oraria sinusoidale del tipo $A\sin(\omega t + \varphi)$ la soddisfa (verifica diretta per sostituzione); viceversa, a parte la soluzione di equilibrio costante $x(t) = 0$ per ogni $t$ — che si può interpretare come il caso degenere $A = 0$, escluso dalla definizione di moto armonico semplice che richiede $A > 0$ — ogni altra soluzione dell'equazione differenziale è necessariamente di questa forma. Una forma equivalente, spesso più comoda per imporre le condizioni iniziali, è
 
 :::formula{id="2.21" label="Soluzione generale in forma C,D"}

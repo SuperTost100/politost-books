@@ -1484,7 +1484,7 @@ Arrotondando a tre cifre significative, l'energia media è $8{,}28\times10^{-21}
 Una mole di anidride carbonica occupa $1{,}00\,\text{L}$ a $300\,\text{K}$. Calcola la pressione prevista dall'equazione di van der Waals, usando $a=3{,}592\,\text{L}^2\text{atm mol}^{-2}$, $b=0{,}04267\,\text{L mol}^{-1}$ e $R=0{,}082057\,\text{L atm mol}^{-1}\text{K}^{-1}$.
 
 :::hint
-Inserisci i dati nell'equazione di van der Waals e sottrai il termine di attrazione al termine di pressione corretto per il volume escluso. {{formula:6.17}}
+Inserisci i dati nell'equazione di van der Waals e sottrai il termine di attrazione al termine di pressione corretto per il volume escluso. {{formula:6.16}}
 :::
 
 :::solution
@@ -1505,7 +1505,7 @@ La pressione prevista è $22{,}1\,\text{atm}$ a tre cifre significative.
 Per $1{,}00\,\text{mol}$ di gas, a $300\,\text{K}$, si misurano $P=10{,}0\,\text{atm}$ e $V=2{,}00\,\text{L}$. Calcola il fattore di comprimibilità usando $R=0{,}082057\,\text{L atm mol}^{-1}\text{K}^{-1}$ e indica se il gas si discosta dal comportamento ideale.
 
 :::hint
-Calcola $Z$ dal rapporto tra il prodotto sperimentale $PV$ e il valore $nRT$. {{formula:6.16}}
+Calcola $Z$ dal rapporto tra il prodotto sperimentale $PV$ e il valore $nRT$. {{formula:6.15}}
 :::
 
 :::solution
@@ -1590,23 +1590,6 @@ A tre cifre significative, la densità della miscela è $3{,}05\,\text{g L}^{-1}
 :::
 
 :::exercise{id="E6.14" chapter="6" difficulty="medio"}
-## Domanda
-Alla stessa temperatura e pressione, una certa quantità di argon effonde attraverso un foro in $12{,}0\,\text{min}$. Quanto tempo impiega a effondere la stessa quantità di elio? Assumi $M_{\mathrm{Ar}}=39{,}95\,\text{g mol}^{-1}$ e $M_{\mathrm{He}}=4{,}003\,\text{g mol}^{-1}$.
-
-:::hint
-A parità di quantità effusa, il tempo è inversamente proporzionale alla velocità di effusione; confronta le masse molari con la legge di Graham. {{formula:6.14}}
-:::
-
-:::solution
-Per la legge di Graham, il rapporto tra le velocità di effusione è $r_{\mathrm{He}}/r_{\mathrm{Ar}}=\sqrt{M_{\mathrm{Ar}}/M_{\mathrm{He}}}$. Per la stessa quantità di gas, i tempi sono inversamente proporzionali alle velocità, quindi
-
-$$t_{\mathrm{He}}=t_{\mathrm{Ar}}\sqrt{\frac{M_{\mathrm{He}}}{M_{\mathrm{Ar}}}}=(12{,}0\,\text{min})\sqrt{\frac{4{,}003}{39{,}95}}=3{,}80\,\text{min}.$$
-
-L'elio impiega circa $3{,}80\,\text{min}$.
-:::
-:::
-
-:::exercise{id="E6.15" chapter="6" difficulty="medio"}
 ## Domanda
 Un gas ideale si trova a $1{,}00\,\text{atm}$ e $273{,}15\,\text{K}$ in un recipiente rigido. Il recipiente viene riscaldato fino a $373{,}15\,\text{K}$. Calcola la pressione finale.
 
@@ -2931,20 +2914,7 @@ Dall’equazione di Arrhenius, $k=Ae^{-E_a/(RT)}$. Poiché i fattori pre-esponen
 :::
 :::
 
-:::exercise{id="E15.2" chapter="15" difficulty="facile"}
-## Domanda
-Un campione contiene inizialmente $160\,\mathrm{mg}$ di un isotopo radioattivo con tempo di dimezzamento di $5{,}0\,\mathrm{giorni}$. Quanta massa dell’isotopo rimane dopo $15{,}0\,\mathrm{giorni}$?
-
-:::hint
-Calcola quanti tempi di dimezzamento sono trascorsi. Applica {{formula:15.10}}.
-:::
-
-:::solution
-In $15{,}0\,\mathrm{giorni}$ trascorrono $15{,}0/5{,}0=3$ tempi di dimezzamento. La frazione residua è $(1/2)^3=1/8$. La massa rimasta è $160/8=20\,\mathrm{mg}$.
-:::
-:::
-
-:::exercise{id="E15.3" chapter="15" difficulty="medio"}
+:::exercise{id="E15.2" chapter="15" difficulty="medio"}
 ## Domanda
 Una reazione del primo ordine ha concentrazione iniziale $\lbrack A\rbrack _0=0{,}80\,\mathrm{mol\,L^{-1}}$ e tempo di dimezzamento pari a $40\,\mathrm{min}$. Calcola la costante cinetica e la concentrazione di $A$ dopo $100\,\mathrm{min}$.
 
@@ -2957,7 +2927,7 @@ Per una reazione del primo ordine, $t_{1/2}=\ln 2/k$, quindi $k=\ln 2/40\approx0
 :::
 :::
 
-:::exercise{id="E15.4" chapter="15" difficulty="facile"}
+:::exercise{id="E15.3" chapter="15" difficulty="facile"}
 ## Domanda
 Per una reazione tra $A$ e altri reagenti si misurano le seguenti velocità iniziali: quando $\lbrack A\rbrack =0{,}10\,\mathrm{mol\,L^{-1}}$, la velocità è $2{,}0\times10^{-3}\,\mathrm{mol\,L^{-1}\,s^{-1}}$; quando $\lbrack A\rbrack =0{,}20\,\mathrm{mol\,L^{-1}}$, la velocità è $8{,}0\times10^{-3}\,\mathrm{mol\,L^{-1}\,s^{-1}}$. Determina l’ordine rispetto ad $A$ e la costante cinetica nella legge $v=k\lbrack A\rbrack ^n$.
 
@@ -2970,7 +2940,7 @@ Il rapporto tra le concentrazioni è $0{,}20/0{,}10=2$, mentre quello tra le vel
 :::
 :::
 
-:::exercise{id="E15.5" chapter="15" difficulty="difficile"}
+:::exercise{id="E15.4" chapter="15" difficulty="difficile"}
 ## Domanda
 Per una reazione, la costante cinetica vale $1{,}5\times10^{-3}\,\mathrm{s^{-1}}$ a $300\,\mathrm{K}$ e $6{,}0\times10^{-3}\,\mathrm{s^{-1}}$ a $330\,\mathrm{K}$. Supponendo che il fattore pre-esponenziale di Arrhenius sia costante, determina l’energia di attivazione in $\mathrm{kJ\,mol^{-1}}$. Usa $R=8{,}314\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
@@ -2983,7 +2953,7 @@ Dai dati, $k_2/k_1=4$. La forma a due punti dell’equazione di Arrhenius dà $\
 :::
 :::
 
-:::exercise{id="E15.6" chapter="15" difficulty="difficile"}
+:::exercise{id="E15.5" chapter="15" difficulty="difficile"}
 ## Domanda
 Un nucleo con numero di massa $210$ e numero atomico $84$ emette una particella alfa e poi due particelle beta meno. Determina il numero di massa e il numero atomico del nucleo finale, identifica l’elemento e scrivi le tre trasformazioni nucleari in forma simbolica. Usa $\mathrm{^{4}_{2}He}$ per la particella alfa e $\mathrm{^{0}_{-1}e}$ per la particella beta meno.
 
@@ -2996,20 +2966,7 @@ Dopo l’emissione alfa, il numero di massa è $210-4=206$ e il numero atomico �
 :::
 :::
 
-:::exercise{id="E15.7" chapter="15" difficulty="medio"}
-## Domanda
-Un campione radioattivo ha attività iniziale $960\,\mathrm{Bq}$ e tempo di dimezzamento di $8{,}0\,\mathrm{h}$. Determina la sua attività dopo $24{,}0\,\mathrm{h}$.
-
-:::hint
-L’attività diminuisce con lo stesso fattore esponenziale del numero di nuclei radioattivi. Conta i tempi di dimezzamento trascorsi e applica {{formula:15.11}}.
-:::
-
-:::solution
-In $24{,}0\,\mathrm{h}$ trascorrono $24{,}0/8{,}0=3$ tempi di dimezzamento. L’attività residua è $A=A_0(1/2)^3=960/8\,\mathrm{Bq}=120\,\mathrm{Bq}$.
-:::
-:::
-
-:::exercise{id="E15.8" chapter="15" difficulty="facile"}
+:::exercise{id="E15.6" chapter="15" difficulty="facile"}
 ## Domanda
 La reazione globale $\mathrm{NO_2+CO\longrightarrow NO+CO_2}$ avviene secondo il meccanismo in due stadi: $\mathrm{2NO_2\longrightarrow NO_3+NO}$, lento; $\mathrm{NO_3+CO\longrightarrow NO_2+CO_2}$, rapido. Somma gli stadi per verificare la reazione globale e scrivi la legge cinetica prevista dal meccanismo, indicando l’ordine complessivo.
 
@@ -3022,7 +2979,7 @@ Sommando i due stadi, $\mathrm{2NO_2+NO_3+CO\longrightarrow NO_3+NO+NO_2+CO_2}$.
 :::
 :::
 
-:::exercise{id="E15.9" chapter="15" difficulty="medio"}
+:::exercise{id="E15.7" chapter="15" difficulty="medio"}
 ## Domanda
 Considera il meccanismo $\mathrm{A+B\rightleftharpoons AB}$, rapido e in pre-equilibrio, seguito da $\mathrm{AB\longrightarrow P}$, lento. Le costanti cinetiche dei tre processi sono rispettivamente $k_1$, $k_{-1}$ e $k_2$. Ricava la legge cinetica in funzione di $\lbrack A\rbrack $ e $\lbrack B\rbrack $ e indica l’ordine complessivo.
 

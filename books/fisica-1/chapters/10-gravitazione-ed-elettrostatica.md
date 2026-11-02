@@ -354,7 +354,7 @@ $$\vec{G} = -\vec{\nabla} V$$
 
 Si chiama **superficie equipotenziale** una superficie su cui $V$ è costante: per qualunque spostamento tra due suoi punti il lavoro della forza gravitazionale è nullo, poiché dipende solo dalla differenza di potenziale tra gli estremi.
 
-Questo linguaggio in termini di potenziale non modifica i risultati già ottenuti nella sezione sulle [forze centrali](ref:chapter/5#p4): la classificazione delle orbite in iperboliche ($E_m>0$), paraboliche ($E_m=0$) ed ellittiche ($E_m<0$) resta quella stabilita tramite [formula (5.12)](ref:formula/5.12), e la velocità di fuga {{formula:10.4}} si ricava imponendo che l'energia meccanica all'infinito, dove $V=0$, sia nulla o positiva.
+Questo linguaggio in termini di potenziale non modifica i risultati già ottenuti nella sezione sulle [forze centrali](ref:chapter/5#p4): la classificazione delle orbite in iperboliche ($E_m>0$), paraboliche ($E_m=0$) ed ellittiche ($E_m<0$) resta quella stabilita tramite [formula (5.11)](ref:formula/5.11), e la velocità di fuga {{formula:10.4}} si ricava imponendo che l'energia meccanica all'infinito, dove $V=0$, sia nulla o positiva.
 
 ### Teorema di Gauss per il campo gravitazionale
 
@@ -438,104 +438,3 @@ $$G\!\left(\frac{R_T}{2}\right) = G(R_T)\cdot\frac{1}{2} \approx 9,82 \cdot 0,5\
 Controllo: il risultato è positivo, ha le dimensioni di un'accelerazione, e dimezza correttamente il valore superficiale, coerentemente con l'andamento lineare previsto da {{formula:10.17}}; nella realtà la densità terrestre non è uniforme (il nucleo è molto più denso del mantello), quindi questo è solo un modello approssimato.
 
 **Errore tipico 10.5.** Un errore frequente è assumere che il campo all'interno di una qualunque distribuzione sferica sia nullo, confondendo il caso del guscio cavo ({{formula:10.16}}) con quello della sfera piena, dove invece il campo cresce linearmente con $r$ ({{formula:10.17}}). Un secondo errore tipico è applicare il teorema di Gauss a forze che non seguono la legge dell'inverso del quadrato, oppure dimenticare che, sebbene il campo nell'integrale di flusso sia generato da tutte le masse presenti, solo quelle interne alla superficie gaussiana contribuiscono al flusso totale.
-
-## p6 | Cenni di elettrostatica
-
-*Questa sezione va oltre il programma del corso: all'esame non viene chiesta.*
-
-L'interazione gravitazionale e quella elettrostatica condividono la stessa struttura matematica: entrambe sono descritte da una forza centrale che decresce con l'inverso del quadrato della distanza, e in entrambi i casi conviene introdurre il concetto di campo. Il campo è una grandezza fisica, scalare o vettoriale, definita in ogni punto di una regione di spazio, che media l'interazione tra le sorgenti senza bisogno di invocare un'azione istantanea a distanza: una carica (o una massa) sorgente modifica le proprietà dello spazio circostante, e questa modifica agisce poi su una seconda carica (o massa) posta in quel punto.
-
-### Legge di Coulomb e campo elettrostatico
-
-**Definizione 10.4** (Forza di Coulomb). Due cariche puntiformi $q_1$ e $q_2$ poste nel vuoto a distanza $r$ interagiscono con una forza di modulo
-
-:::formula{id="10.18" label="Legge di Coulomb"}
-$$F = k\,\frac{|q_1 q_2|}{r^2}, \qquad k = \frac{1}{4\pi\varepsilon_0}, \qquad \varepsilon_0 = 8{,}85\cdot 10^{-12}\ \frac{\mathrm{C}^2}{\mathrm{N\,m}^2}$$
-:::
-
-diretta lungo la congiungente delle due cariche: repulsiva se $q_1 q_2 > 0$, attrattiva se $q_1 q_2 < 0$.
-
-In perfetta analogia con il campo gravitazionale (trattato nella sezione [Campo gravitazionale](ref:chapter/10#p3)), si definisce il **campo elettrostatico** generato da una carica sorgente $Q$ in un punto $P$ come la forza per unità di carica che una piccola carica di prova $q_0$, posta in $P$, subirebbe
-
-:::formula{id="10.19" label="Campo elettrostatico di una carica puntiforme"}
-$$\vec{E}(P) = \frac{\vec{F}_0}{q_0} = k\,\frac{Q}{r^2}\,\hat{u}_{S\to P}$$
-:::
-
-dove $\hat{u}_{S\to P}$ è il versore che va dalla sorgente $S$ al punto $P$ e $r$ è la distanza tra i due.
-
-Dato che la forza elettrostatica è centrale, essa è anche conservativa, esattamente come la forza gravitazionale: su una carica $q_0$ immersa nel campo agisce
-
-$$\vec{F}_{q_0} = q_0\vec{E} = m\vec{a},$$
-
-equazione del moto da cui si parte per studiare la dinamica di una carica in un campo noto.
-
-### Principio di sovrapposizione
-
-**Teorema 10.2** (Principio di sovrapposizione per il campo elettrostatico). Se $n$ cariche sorgenti $Q_1,\dots,Q_n$ generano ciascuna, isolatamente, un campo $\vec{E}_i$, il campo totale nel punto $P$ è la somma vettoriale
-
-:::formula{id="10.20" label="Sovrapposizione del campo elettrostatico"}
-$$\vec{E}(P) = \sum_{i=1}^{n} \vec{E}_i(P) = \sum_{i=1}^{n} k\,\frac{Q_i}{r_i^2}\,\hat{u}_i$$
-:::
-
-Questa proprietà è l'esatto analogo della sovrapposizione già vista per il campo gravitazionale (formula {{formula:10.6}}) e discende dalla linearità della legge di Coulomb rispetto a ciascuna carica sorgente.
-
-**Esempio 10.4.** Due cariche puntiformi $Q$ e $3Q$ (con $Q>0$) sono poste rispettivamente nei punti $(-a,0)$ e $(b,0)$ sull'asse $x$, con le cariche orientate in modo che il campo di $3Q$ nell'origine punti verso $-x$. Si vuole il campo elettrico totale nell'origine.
-
-Dati: $Q_1 = Q$ a distanza $a$, $Q_2 = 3Q$ a distanza $b$, entrambe sull'asse $x$.
-
-Scelta del riferimento: asse $x$ lungo la congiungente delle cariche, origine nel punto di calcolo.
-
-Equazioni: applicando {{formula:10.19}} a ciascuna sorgente e sommando come richiesto da {{formula:10.20}},
-
-$$\vec{E}(0,0) = \vec{E}_1(0,0) + \vec{E}_2(0,0) = \frac{1}{4\pi\varepsilon_0}\frac{Q}{a^2}(1,0) - \frac{1}{4\pi\varepsilon_0}\frac{3Q}{b^2}(1,0) = \frac{1}{4\pi\varepsilon_0}\left(\frac{Q}{a^2} - \frac{3Q}{b^2},\,0\right).$$
-
-Il campo si annulla quando $Q/a^2 = 3Q/b^2$, cioè per $b = a\sqrt{3}$: la condizione di equilibrio del campo dipende solo dal rapporto geometrico tra le distanze, non dal valore assoluto di $Q$.
-
-### Potenziale elettrostatico
-
-Poiché la forza elettrostatica è conservativa, ad essa è associata un'energia potenziale. Calcolando il lavoro della forza di Coulomb lungo la congiungente radiale tra due punti a distanza $r_A$ e $r_B$ dalla sorgente,
-
-$$W = k\,q\,q_0\int_{r_A}^{r_B}\frac{1}{r^2}\,dr = k\,q\,q_0\left[-\frac{1}{r_B}+\frac{1}{r_A}\right] = -E_p(r_B) + E_p(r_A),$$
-
-si ottiene l'energia potenziale elettrostatica di una coppia di cariche puntiformi
-
-:::formula{id="10.21" label="Energia potenziale elettrostatica"}
-$$E_p(r) = \frac{k\,q\,q_0}{r}$$
-:::
-
-in perfetta analogia con l'energia potenziale gravitazionale già vista in [Forze centrali](ref:chapter/5#p4).
-
-Dividendo $E_p$ per la carica di prova $q_0$ si definisce il **potenziale elettrostatico** generato da una carica puntiforme $Q$
-
-:::formula{id="10.22" label="Potenziale elettrostatico di una carica puntiforme"}
-$$V(r) = \frac{Q}{4\pi\varepsilon_0 r} = k\,\frac{Q}{r}$$
-:::
-
-:::image{src="assets/0dc2501f-potenziale-elettrostatico-puntiforme.svg" alt="Grafico del potenziale elettrostatico V in funzione della distanza r, con andamento 1 su r" caption="Fig. 10.8 — Potenziale elettrostatico V(r) generato da una carica puntiforme Q positiva: decresce come 1/r e tende a zero per r che tende a infinito, a differenza del campo E che decresce come 1/r²."}
-:::
-
-legato al campo dalla relazione $V(A)-V(B) = \int_{A,\gamma}^{B}\vec{E}\cdot d\vec{s}$, e il lavoro compiuto dal campo su una carica $q_0$ che si sposta da $A$ a $B$ vale
-
-:::formula{id="10.23" label="Lavoro del campo elettrostatico"}
-$$W_{A\to B} = -q_0\Delta V = q_0\left[V(A)-V(B)\right], \qquad E_p = q_0 V$$
-:::
-
-Come per il campo, anche il potenziale generato da più cariche sorgenti si ottiene per sovrapposizione (somma scalare, non vettoriale, essendo $V$ una grandezza scalare)
-
-:::formula{id="10.24" label="Sovrapposizione del potenziale elettrostatico"}
-$$V(\vec{r}) = \sum_{i=1}^{n} V_i(\vec{r}) = \sum_{i=1}^{n} \frac{1}{4\pi\varepsilon_0}\frac{Q_i}{|\vec{r}-\vec{r}_i|}$$
-:::
-
-Il legame inverso tra campo e potenziale, valido anche in più dimensioni, è dato dal gradiente
-
-$$\vec{E}(x,y) = -\vec{\nabla}V(x,y) = \left(-\frac{\partial V}{\partial x}, -\frac{\partial V}{\partial y}\right),$$
-
-del tutto analogo a quanto già visto per il campo gravitazionale, $\vec{G} = -\vec{\nabla}V$, nella sezione [Potenziale gravitazionale e teorema di Gauss](ref:chapter/10#p5). Conseguenza diretta della conservatività del campo elettrostatico è che il lavoro per spostare una carica da un punto $A$ a un punto $D$ non dipende dal percorso scelto, ma solo dai punti iniziale e finale.
-
-Il teorema di Gauss, già dimostrato per il campo gravitazionale, si estende identicamente al campo elettrostatico: il flusso attraverso una superficie chiusa è proporzionale alla carica netta racchiusa,
-
-$$\Phi_{\Sigma}(\vec{E}) = \oint_{\Sigma}\vec{E}\cdot\hat{u}_n\,d\Sigma = \frac{1}{\varepsilon_0}\sum_{i} q_i = \frac{Q_{\mathrm{int}}}{\varepsilon_0},$$
-
-dove il versore normale è orientato verso l'esterno della superficie, cosicché una carica interna positiva dà flusso uscente positivo; se la carica netta racchiusa è nulla il flusso totale è nullo, pur potendo le linee di campo attraversare la superficie sia entrando sia uscendo.
-
-**Errore tipico 10.6.** Scrivere $\Delta W_{A\to B}$ o trattare il lavoro come se fosse la variazione di una funzione di stato è concettualmente scorretto: il lavoro non è definito punto per punto nello spazio, ma è sempre una quantità associata a un percorso, anche quando (come nel caso conservativo) il suo valore finisce per dipendere solo dagli estremi. Vanno inoltre sommate vettorialmente le intensità di campo (mai sommate come scalari i loro moduli) e verificata sempre l'omogeneità dimensionale di ogni passaggio, poiché un risultato numericamente sbagliato resta comunque un risultato, mentre uno dimensionalmente inconsistente è privo di significato fisico.

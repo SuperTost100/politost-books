@@ -25,7 +25,7 @@ Osserviamo che
 
 $$I_r(x_0) = \{x \in \mathbb{R} : x_0-r < x < x_0+r\} = \{x \in \mathbb{R} : -r < x-x_0 < r\} = \{x \in \mathbb{R} : |x-x_0| < r\},$$
 
-quindi un intorno è esattamente l'insieme dei punti che distano da $x_0$ meno di $r$, nel senso del valore assoluto introdotto in [Valore assoluto](ref:chapter/1#p5). Scriveremo semplicemente $I(x_0)$ quando il raggio non è rilevante.
+quindi un intorno è esattamente l'insieme dei punti che distano da $x_0$ meno di $r$, nel senso del valore assoluto introdotto in [Valore assoluto](ref:chapter/1#p4). Scriveremo semplicemente $I(x_0)$ quando il raggio non è rilevante.
 
 Si definiscono anche l'**intorno destro** $I^+_r(x_0) = \,\rbrack x_0, x_0+r\lbrack $ e l'**intorno sinistro** $I^-_r(x_0) = \,\rbrack x_0-r, x_0\lbrack $. Per $x_0 = +\infty$ (rispettivamente $-\infty$) un intorno è un insieme del tipo $\rbrack M,+\infty\lbrack $ (rispettivamente $\rbrack -\infty,M\lbrack $), con $M \in \mathbb{R}$.
 
@@ -264,13 +264,69 @@ Questa tecnica è esattamente quella alla base della dimostrazione del [formula 
 
 **Errore tipico 4.4.** Nell'applicare il teorema dei carabinieri si deve controllare che la disuguaglianza $f(x) \leq g(x) \leq h(x)$ valga davvero in un intorno di $x_0$ (eventualmente escluso $x_0$), non su tutto il dominio: basta che valga localmente. È inoltre indispensabile che i due limiti estremi coincidano; se $f$ e $h$ tendono a valori diversi, il teorema non si applica e non si può concludere nulla sul limite di $g$.
 
-## p5 | Algebra dei limiti e forme indeterminate
+## p5 | Limiti di funzioni monotone
+
+### Perché serve un teorema sulle funzioni monotone
+
+In generale un limite può non esistere. Per le funzioni monotone, invece, l'esistenza dei limiti unilateri è garantita, e il loro valore si legge direttamente sull'insieme dei valori assunti dalla funzione. Per le definizioni di funzione crescente e decrescente si veda la sezione [Funzioni limitate e monotone, massimi e minimi](ref:chapter/3#p5). Per l'estremo superiore e inferiore si veda [Maggioranti, minoranti ed estremi](ref:chapter/1#p5).
+
+### Enunciato
+
+**Teorema 4.5** (limiti unilateri delle funzioni monotone). Sia $f$ definita e monotona in un intorno destro (rispettivamente sinistro) di $x_0$. Allora esiste il limite destro (rispettivamente sinistro) di $f$ in $x_0$, finito o infinito, ed è un estremo superiore o inferiore dei valori di $f$ su quell'intorno.
+
+Più precisamente, sia $f$ monotona in $\rbrack x_0-r,x_0\lbrack $ e in $\rbrack x_0,x_0+r\lbrack $, con $r>0$. Se $f$ è crescente si ha
+
+$$\lim_{x\to x_0^-} f(x)=\sup_{x\in\,\rbrack x_0-r,\,x_0\lbrack } f(x),\qquad \lim_{x\to x_0^+} f(x)=\inf_{x\in\,\rbrack x_0,\,x_0+r\lbrack } f(x).$$
+
+Se $f$ è decrescente, $\sup$ e $\inf$ si scambiano.
+
+Il motivo è intuitivo. Avvicinandosi a $x_0$ da sinistra, una funzione crescente non può che salire. I suoi valori o restano limitati, e allora si accumulano sul loro estremo superiore, oppure crescono senza limite verso $+\infty$. Il caso $\sup=+\infty$ è incluso, perché gli estremi sono presi in $\mathbb{R}^*$. Lo stesso vale per $x_0=\pm\infty$ con gli intorni di $\pm\infty$.
+
+**Dimostrazione** (limite destro, $f$ crescente). Sia $\ell=\inf_{\rbrack x_0,x_0+r\lbrack } f$.
+
+- Se $\ell\in\mathbb{R}$, fissiamo $\varepsilon>0$. Per la caratterizzazione dell'estremo inferiore esiste $x_1\in\,\rbrack x_0,x_0+r\lbrack $ con $f(x_1)<\ell+\varepsilon$. Per $x_0<x<x_1$ la monotonia dà $\ell\le f(x)\le f(x_1)<\ell+\varepsilon$, cioè $|f(x)-\ell|<\varepsilon$ in un intorno destro di $x_0$.
+- Se $\ell=-\infty$, per ogni $M$ esiste $x_1$ con $f(x_1)<M$. Per $x_0<x<x_1$ si ha $f(x)\le f(x_1)<M$.
+
+Gli altri casi sono analoghi. □
+
+### Discontinuità delle funzioni monotone
+
+**Corollario 4.2.** Sia $f$ crescente in un intervallo $I$ e sia $x_0$ interno a $I$. Allora esistono finiti i limiti $\ell_- = \lim_{x\to x_0^-}f(x)$ e $\ell_+ = \lim_{x\to x_0^+}f(x)$, e vale
+
+$$\ell_-\le f(x_0)\le \ell_+.$$
+
+Di conseguenza $f$ è continua in $x_0$ se e solo se $\ell_- = \ell_+$. Se invece $\ell_- < \ell_+$, la discontinuità in $x_0$ è di prima specie, cioè di salto. Le discontinuità eliminabili e quelle di seconda specie non possono quindi comparire. Se $f$ è decrescente, si ha invece $\ell_-\ge f(x_0)\ge\ell_+$; in questo caso la discontinuità è di salto quando $\ell_->\ell_+$. La continuità equivale ancora a $\ell_- = \ell_+$.
+
+Per $x<x_0$ si ha $f(x)\le f(x_0)$, quindi $f(x_0)$ è un maggiorante dei valori a sinistra e $\ell_- = \sup\le f(x_0)$. Analogamente $f(x_0)$ è un minorante dei valori a destra e dunque $f(x_0)\le\inf = \ell_+$. I limiti sono perciò finiti. Se $\ell_- = \ell_+$ il teorema del confronto dà $\lim_{x\to x_0}f(x)=f(x_0)$.
+
+Agli estremi dell'intervallo si considera solo il limite unilatero disponibile, che esiste comunque per il teorema.
+
+:::image{src="assets/212dc628-monotona-salto.svg" alt="Grafico di una funzione crescente con un salto in x = 1" caption="Fig. 4.4 — Funzione crescente con salto in x = 1: il limite sinistro è 1, il limite destro è 2 e il valore f(1) = 1,5 sta in mezzo."}
+:::
+
+**Esempio 4.7.** Sia $f(x)=x$ per $x<1$, $f(1)=\tfrac32$ e $f(x)=x+1$ per $x>1$. La funzione è crescente su $\mathbb{R}$. I limiti unilateri sono
+
+$$\lim_{x\to1^-}f(x)=\sup_{x<1}x=1,\qquad \lim_{x\to1^+}f(x)=\inf_{x>1}(x+1)=2.$$
+
+Vale $1\le f(1)=\tfrac32\le 2$, come previsto dal corollario. Poiché $1\ne2$, in $x=1$ c'è una discontinuità di salto di ampiezza $2-1=1$.
+
+### Errori tipici
+
+**Errore tipico 4.5.** Credere che il limite di una funzione monotone sia $f(x_0)$. Il teorema riguarda i limiti unilateri, che sono estremi dei valori vicini a $x_0$ e non coincidono necessariamente con $f(x_0)$. Si veda il valore $f(1)=\tfrac32$ nell'esempio.
+
+**Errore tipico 4.6.** Dimenticare l'ipotesi di monotonia in un intorno del punto. Se $f$ è monotona solo a tratti, il teorema si applica separatamente su ciascun tratto vicino a $x_0$. Per $\sin(1/x)$ vicino a $0$ non si può applicare, e infatti i limiti non esistono.
+
+**Errore tipico 4.7.** Concludere che una funzione monotona è continua, oppure che il teorema vieti i salti. Il teorema esclude soltanto le discontinuità diverse dal salto.
+
+Per la classificazione generale dei punti di discontinuità si veda [Punti di discontinuità](ref:chapter/5#p3).
+
+## p6 | Algebra dei limiti e forme indeterminate
 
 Dopo aver definito il limite e dimostrato i teoremi di unicità, permanenza del segno e confronto, serve uno strumento per **calcolare** i limiti senza tornare ogni volta alla definizione. Questo strumento è l'algebra dei limiti: se due funzioni hanno limite, anche la loro somma, il prodotto e il quoziente lo hanno, e il limite si ottiene operando sui limiti. Il calcolo ha però dei punti deboli: in alcuni casi i limiti di $f$ e $g$ non bastano a determinare quello di $f+g$, $f\cdot g$ o $f/g$. Sono le **forme indeterminate**.
 
 ### Teoremi sull'algebra dei limiti
 
-**Teorema 4.5** (algebra dei limiti). Siano $f,g: A\to\mathbb{R}$, con $A\subseteq\mathbb{R}$, e sia $x_0\in\mathbb{R}\cup\{-\infty,+\infty\}$ un punto di accumulazione di $A$. Supponiamo che esistano
+**Teorema 4.6** (algebra dei limiti). Siano $f,g: A\to\mathbb{R}$, con $A\subseteq\mathbb{R}$, e sia $x_0\in\mathbb{R}\cup\{-\infty,+\infty\}$ un punto di accumulazione di $A$. Supponiamo che esistano
 
 $$
 \lim_{x\to x_0} f(x)=\ell_1,\qquad \lim_{x\to x_0} g(x)=\ell_2,\qquad \ell_1,\ell_2\in\mathbb{R}^*.
@@ -311,7 +367,7 @@ Le ultime tre si ottengono dalle potenze $f^g=e^{g\log f}$ e si riconducono a $0
 - $x-x^2$ ha la stessa forma e il limite vale $-\infty$;
 - $(x+3)-x$ ha la stessa forma e il limite vale $3$.
 
-**Errore tipico 4.5.** Scrivere "$\infty-\infty=0$" oppure "$\frac{\infty}{\infty}=1$" oppure "$1^\infty=1$". Sono tutte forme indeterminate, e il loro valore dipende dalle funzioni coinvolte.
+**Errore tipico 4.8.** Scrivere "$\infty-\infty=0$" oppure "$\frac{\infty}{\infty}=1$" oppure "$1^\infty=1$". Sono tutte forme indeterminate, e il loro valore dipende dalle funzioni coinvolte.
 
 Un'altra trappola: $\frac{1}{0}$ **non** è una forma indeterminata, ma bisogna controllare il segno di $g$. Per esempio $\frac1x$ per $x\to0$ non ha limite (i limiti laterali sono $\pm\infty$), mentre $\frac1{x^2}\to+\infty$.
 
@@ -321,7 +377,7 @@ Per una funzione razionale $\frac{P(x)}{Q(x)}$ si distinguono due casi.
 
 **Caso $x\to\pm\infty$.** Si raccoglie al numeratore e al denominatore la potenza di grado massimo. Se $P$ ha grado $p$ e coefficiente direttivo $a$, e $Q$ ha grado $q$ e coefficiente direttivo $b$, il limite è $a/b$ se $p=q$, è $0$ se $p<q$, ed è $\pm\infty$ se $p>q$, con segno dato dai coefficienti e dal segno di $x^{p-q}$. Questo si basa sul principio di eliminazione dei termini trascurabili, che è trattato in dettaglio in [Infiniti e infinitesimi](ref:chapter/6#p3).
 
-**Esempio 4.7.** Calcoliamo $\displaystyle\lim_{x\to+\infty}\frac{3x^2-x+1}{2x^2+5}$. È della forma $\frac{\infty}{\infty}$. Raccogliendo $x^2$:
+**Esempio 4.8.** Calcoliamo $\displaystyle\lim_{x\to+\infty}\frac{3x^2-x+1}{2x^2+5}$. È della forma $\frac{\infty}{\infty}$. Raccogliendo $x^2$:
 
 $$
 \frac{x^2\left(3-\frac1x+\frac1{x^2}\right)}{x^2\left(2+\frac5{x^2}\right)}=\frac{3-\frac1x+\frac1{x^2}}{2+\frac5{x^2}}\longrightarrow\frac32.
@@ -331,7 +387,7 @@ Qui l'ultimo passaggio usa il teorema sull'algebra dei limiti, perché numerator
 
 **Caso $x\to x_0\in\mathbb{R}$.** Se $Q(x_0)\neq0$, il limite è $\frac{P(x_0)}{Q(x_0)}$. Se $P(x_0)=Q(x_0)=0$ (forma $\frac00$) si **scompone** il numeratore e il denominatore, perché entrambi contengono il fattore $(x-x_0)$, e si semplifica.
 
-**Esempio 4.8.** Calcoliamo $\displaystyle\lim_{x\to1}\frac{x^2-1}{x-1}$. Per $x\neq1$:
+**Esempio 4.9.** Calcoliamo $\displaystyle\lim_{x\to1}\frac{x^2-1}{x-1}$. Per $x\neq1$:
 
 $$
 \frac{x^2-1}{x-1}=\frac{(x-1)(x+1)}{x-1}=x+1,
@@ -339,7 +395,7 @@ $$
 
 quindi il limite vale $1+1=2$. La semplificazione è lecita perché nel limite si considera sempre $x\neq x_0$.
 
-**Esempio 4.9.** Calcoliamo $\displaystyle\lim_{x\to2}\frac{x+1}{(x-2)^2}$. Il numeratore tende a $3\ne0$ e il denominatore tende a $0$ restando positivo: il limite è $+\infty$. Invece $\displaystyle\lim_{x\to2}\frac{x+1}{x-2}$ non esiste, perché il limite destro è $+\infty$ e il sinistro è $-\infty$.
+**Esempio 4.10.** Calcoliamo $\displaystyle\lim_{x\to2}\frac{x+1}{(x-2)^2}$. Il numeratore tende a $3\ne0$ e il denominatore tende a $0$ restando positivo: il limite è $+\infty$. Invece $\displaystyle\lim_{x\to2}\frac{x+1}{x-2}$ non esiste, perché il limite destro è $+\infty$ e il sinistro è $-\infty$.
 
 ### Funzioni irrazionali
 
@@ -348,7 +404,7 @@ Con le radici le forme indeterminate si risolvono di solito in due modi.
 1. **Razionalizzazione.** Per $\sqrt{a}-\sqrt{b}$ si moltiplica e si divide per $\sqrt a+\sqrt b$, usando $(\sqrt a-\sqrt b)(\sqrt a+\sqrt b)=a-b$.
 2. **Raccoglimento del termine dominante** sotto radice, ricordando che $\sqrt{x^2}=|x|$.
 
-**Esempio 4.10.** Calcoliamo $\displaystyle\lim_{x\to+\infty}\left(\sqrt{x^2+x}-x\right)$, che è della forma $+\infty-\infty$. Razionalizziamo:
+**Esempio 4.11.** Calcoliamo $\displaystyle\lim_{x\to+\infty}\left(\sqrt{x^2+x}-x\right)$, che è della forma $+\infty-\infty$. Razionalizziamo:
 
 $$
 \sqrt{x^2+x}-x=\frac{(x^2+x)-x^2}{\sqrt{x^2+x}+x}=\frac{x}{\sqrt{x^2+x}+x}.
@@ -360,13 +416,13 @@ $$
 \frac{x}{x\sqrt{1+\frac1x}+x}=\frac{1}{\sqrt{1+\frac1x}+1}\longrightarrow\frac{1}{1+1}=\frac12.
 $$
 
-**Esempio 4.11.** Calcoliamo $\displaystyle\lim_{x\to-\infty}\frac{\sqrt{x^2+1}}{x}$. Per $x<0$ vale $\sqrt{x^2+1}=|x|\sqrt{1+\frac1{x^2}}=-x\sqrt{1+\frac1{x^2}}$. Quindi
+**Esempio 4.12.** Calcoliamo $\displaystyle\lim_{x\to-\infty}\frac{\sqrt{x^2+1}}{x}$. Per $x<0$ vale $\sqrt{x^2+1}=|x|\sqrt{1+\frac1{x^2}}=-x\sqrt{1+\frac1{x^2}}$. Quindi
 
 $$
 \frac{\sqrt{x^2+1}}{x}=-\sqrt{1+\frac1{x^2}}\longrightarrow-1.
 $$
 
-**Errore tipico 4.6.** Scrivere $\sqrt{x^2}=x$ quando $x\to-\infty$. La formula corretta è $\sqrt{x^2}=|x|$, che per $x<0$ vale $-x$. Dimenticarlo cambia il segno del risultato.
+**Errore tipico 4.9.** Scrivere $\sqrt{x^2}=x$ quando $x\to-\infty$. La formula corretta è $\sqrt{x^2}=|x|$, che per $x<0$ vale $-x$. Dimenticarlo cambia il segno del risultato.
 
 ### Metodo riassuntivo
 
@@ -377,9 +433,9 @@ Per calcolare un limite:
 3. se compare, si trasforma l'espressione (scomposizione, razionalizzazione, raccoglimento del termine dominante, termini trascurabili) fino a eliminarla;
 4. per altre tecniche si usano i [limiti notevoli](ref:chapter/6#p2) e il [teorema di de l'Hôpital](ref:chapter/7#p5).
 
-**Errore tipico 4.7.** Calcolare "a pezzi" una forma indeterminata, per esempio sostituire $x\to\infty$ solo in una parte di un'espressione e lasciare il resto. L'algebra dei limiti si applica solo quando **ogni** limite esiste e l'operazione ha senso.
+**Errore tipico 4.10.** Calcolare "a pezzi" una forma indeterminata, per esempio sostituire $x\to\infty$ solo in una parte di un'espressione e lasciare il resto. L'algebra dei limiti si applica solo quando **ogni** limite esiste e l'operazione ha senso.
 
-## p6 | Successioni e sottosuccessioni
+## p7 | Successioni e sottosuccessioni
 
 ### Successioni: definizione e comportamento al limite
 
@@ -431,7 +487,7 @@ $$\begin{aligned}
 
 Se le disuguaglianze sono strette si parla di monotonia in senso stretto.
 
-**Teorema 4.6 (limite delle successioni monotone).** Sia $(a_n)$ una successione monotona. Allora $(a_n)$ ammette limite (finito o infinito) e
+**Teorema 4.7 (limite delle successioni monotone).** Sia $(a_n)$ una successione monotona. Allora $(a_n)$ ammette limite (finito o infinito) e
 
 :::formula{id="4.13" label="Limite di una successione monotona"}
 $$\lim_{n\to+\infty} a_n =
@@ -441,15 +497,15 @@ $$\lim_{n\to+\infty} a_n =
 \end{cases}$$
 :::
 
-In particolare, se $(a_n)$ è crescente e superiormente limitata, il limite è finito e coincide con l'estremo superiore dell'insieme dei valori $\{a_n : n \in \mathbb{N}\}$, grazie al [principio dell'estremo superiore](ref:chapter/1#p7); se invece non è limitata superiormente, $a_n \to +\infty$. Il caso decrescente è analogo. Questo risultato è il caso particolare, per $x_0 = +\infty$, del teorema sul limite delle funzioni monotone.
+In particolare, se $(a_n)$ è crescente e superiormente limitata, il limite è finito e coincide con l'estremo superiore dell'insieme dei valori $\{a_n : n \in \mathbb{N}\}$, grazie al [principio dell'estremo superiore](ref:chapter/1#p6); se invece non è limitata superiormente, $a_n \to +\infty$. Il caso decrescente è analogo. Questo risultato è il caso particolare, per $x_0 = +\infty$, del teorema sul limite delle funzioni monotone.
 
-**Esempio 4.12.** La successione $a_n = \left(1 + \frac{1}{n}\right)^n$, definita per $n\in\mathbb{N}^+$, si dimostra essere crescente e superiormente limitata; per il Teorema 4.6 essa ammette dunque limite finito, che si definisce come il numero $e$:
+**Esempio 4.13.** La successione $a_n = \left(1 + \frac{1}{n}\right)^n$, definita per $n\in\mathbb{N}^+$, si dimostra essere crescente e superiormente limitata; per il Teorema 4.7 essa ammette dunque limite finito, che si definisce come il numero $e$:
 
 $$\lim_{n\to+\infty} \left(1+\frac{1}{n}\right)^n = e.$$
 
 Questo limite di successione riguarda soltanto valori agli indici interi e, da solo, non implica i corrispondenti limiti per una variabile reale. Per passare dai limiti notevoli delle successioni a quelli delle funzioni occorrono dimostrazioni specifiche, che si trovano nella sezione [Limiti notevoli](ref:chapter/6#p2).
 
-**Errore tipico 4.8.** Molti studenti credono che una successione monotona ma non limitata non abbia limite: in realtà il Teorema 4.6 garantisce *sempre* l'esistenza del limite per una successione monotona, eventualmente infinito. Ciò che il teorema non garantisce, in generale, è la finitezza del limite.
+**Errore tipico 4.11.** Molti studenti credono che una successione monotona ma non limitata non abbia limite: in realtà il Teorema 4.7 garantisce *sempre* l'esistenza del limite per una successione monotona, eventualmente infinito. Ciò che il teorema non garantisce, in generale, è la finitezza del limite.
 
 ### Sottosuccessioni
 
@@ -465,11 +521,11 @@ Intuitivamente, una sottosuccessione "scarta" alcuni termini della successione o
 
 Questo fatto è lo strumento chiave per dimostrare che una successione **non** ammette limite: basta esibire due sottosuccessioni che convergono a limiti diversi, oppure una sola sottosuccessione che non ha limite.
 
-**Esempio 4.13 (non esistenza del limite).** Consideriamo $a_n = (-1)^n$. La sottosuccessione dei termini di indice pari è $a_{2k} = (-1)^{2k} = 1 \to 1$, mentre la sottosuccessione dei termini di indice dispari è $a_{2k+1} = (-1)^{2k+1} = -1 \to -1$. Poiché le due sottosuccessioni convergono a limiti distinti ($1 \ne -1$), per la Proposizione 4.1 la successione $(a_n)$ non può ammettere limite.
+**Esempio 4.14 (non esistenza del limite).** Consideriamo $a_n = (-1)^n$. La sottosuccessione dei termini di indice pari è $a_{2k} = (-1)^{2k} = 1 \to 1$, mentre la sottosuccessione dei termini di indice dispari è $a_{2k+1} = (-1)^{2k+1} = -1 \to -1$. Poiché le due sottosuccessioni convergono a limiti distinti ($1 \ne -1$), per la Proposizione 4.1 la successione $(a_n)$ non può ammettere limite.
 
 Lo stesso principio vale per le funzioni: se $f(x) = \sin(1/x)$ per $x \to 0$, scegliendo $x_n = \frac{1}{2n\pi}$ per $n\in\mathbb{N}^+$ si ottiene $f(x_n) = 0 \to 0$, mentre scegliendo $y_n = \frac{1}{2n\pi + \pi/2}$ per $n\in\mathbb{N}^+$ si ottiene $f(y_n) = 1 \to 1$: dunque $\lim_{x\to 0} \sin(1/x)$ non esiste. Questa equivalenza è garantita dal teorema seguente, che lega limiti di funzione e limiti di successione.
 
-**Teorema 4.7 (caratterizzazione sequenziale del limite).** Sia $f: \operatorname{dom} f \to \mathbb{R}$ e sia $x_0$ punto di accumulazione di $\operatorname{dom} f$. Allora
+**Teorema 4.8 (caratterizzazione sequenziale del limite).** Sia $f: \operatorname{dom} f \to \mathbb{R}$ e sia $x_0$ punto di accumulazione di $\operatorname{dom} f$. Allora
 
 :::formula{id="4.15" label="Caratterizzazione sequenziale del limite"}
 $$\lim_{x\to x_0} f(x) = l \iff \text{per ogni successione } (x_n) \text{ con } x_n \in \operatorname{dom} f \setminus \{x_0\},\ x_n \to x_0,\ \text{si ha } f(x_n) \to l.$$
@@ -481,105 +537,15 @@ In particolare, se si trovano due successioni $x_n \to x_0$ e $y_n \to x_0$ tali
 
 Non ogni successione ammette limite, ma si può sempre dire qualcosa sulle sue sottosuccessioni.
 
-**Teorema 4.8 (estrazione monotona).** Ogni successione $(a_n)$ a valori reali possiede una sottosuccessione monotona.
+**Teorema 4.9 (estrazione monotona).** Ogni successione $(a_n)$ a valori reali possiede una sottosuccessione monotona.
 
-**Teorema 4.9 (Bolzano-Weierstrass).** Ogni successione limitata $(a_n)$ possiede una sottosuccessione convergente.
+**Teorema 4.10 (Bolzano-Weierstrass).** Ogni successione limitata $(a_n)$ possiede una sottosuccessione convergente.
 
-La dimostrazione combina i due risultati: per il Teorema 4.8 esiste una sottosuccessione $(a_{n_k})$ monotona; essendo $(a_n)$ limitata, anche $(a_{n_k})$ lo è, e per il Teorema 4.6 una successione monotona e limitata converge a un limite finito. $\square$
+La dimostrazione combina i due risultati: per il Teorema 4.9 esiste una sottosuccessione $(a_{n_k})$ monotona; essendo $(a_n)$ limitata, anche $(a_{n_k})$ lo è, e per il Teorema 4.7 una successione monotona e limitata converge a un limite finito. $\square$
 
 Il teorema di Bolzano-Weierstrass è utile quando si sa che una successione è limitata e si vuole garantire l'esistenza di una sottosuccessione convergente, senza determinarne il limite. Se l'insieme dei valori della successione è anche infinito, la sua limitatezza garantisce l'esistenza di un punto di accumulazione; un insieme limitato con un solo valore, invece, non ne ha.
 
-**Errore tipico 4.9.** Il teorema di Bolzano-Weierstrass garantisce l'esistenza di *una* sottosuccessione convergente, non la convergenza della successione intera: una successione limitata può benissimo essere oscillante, come $(-1)^n$, che è limitata ma non converge, pur avendo (ovviamente) sottosuccessioni convergenti (quella dei pari e quella dei dispari).
-
-## p7 | Criteri del rapporto e della radice
-
-*Questa sezione va oltre il programma del corso: all'esame non viene chiesta.*
-
-Quando il termine generale di una successione è definito da un prodotto di fattori che cambiano con $n$ (potenze, fattoriali, esponenziali), il calcolo diretto del limite tramite le operazioni algebriche studiate in precedenza può risultare complicato o portare a forme indeterminate. I due criteri che seguono permettono di stabilire il comportamento della successione confrontando termini consecutivi (criterio del rapporto) oppure analizzando la radice $n$-esima del termine generale (criterio della radice).
-
-### Criterio del rapporto
-
-**Teorema 4.10 (Criterio del rapporto).** Sia $(a_n)_{n\in\mathbb{N}}$ una successione a termini positivi e sia $l\in\mathbb{R}^*$ tale che
-
-$$\lim_{n\to+\infty}\frac{a_{n+1}}{a_n}=l.$$
-
-Allora:
-
-- se $l>1$ si ha $\lim_{n\to+\infty} a_n=+\infty$;
-- se $l<1$ si ha $\lim_{n\to+\infty} a_n=0$.
-
-:::formula{id="4.16" label="Criterio del rapporto per successioni"}
-$$\lim_{n\to+\infty}\frac{a_{n+1}}{a_n}=l \implies \begin{cases} l>1 \implies a_n\to+\infty \\ l<1 \implies a_n\to 0\end{cases}$$
-:::
-
-**Dimostrazione (caso $l<1$).** Per definizione di limite, fissato $\varepsilon>0$ tale che $l+\varepsilon<1$, esiste $n_0$ tale che per ogni $n>n_0$
-
-$$l-\varepsilon<\frac{a_{n+1}}{a_n}<l+\varepsilon,$$
-
-da cui, essendo $a_n>0$,
-
-$$a_{n+1}<(l+\varepsilon)a_n.$$
-
-Iterando la disuguaglianza a partire da $a_{n_0+1}$ si ottiene, per $n>n_0$,
-
-$$0<a_{n+1}<(l+\varepsilon)^{\,n-n_0}a_{n_0+1}.$$
-
-Poiché $0<l+\varepsilon<1$, la quantità $(l+\varepsilon)^{\,n-n_0}$ tende a $0$ e, per il teorema del confronto, $a_n\to 0$. Se $l>1$, anche quando $l=+\infty$, si fissa $q$ con $1<q<l$ nel caso finito, oppure un qualunque $q>1$ nel caso infinito. Da un certo indice $N$ in poi si ha $a_{n+1}>q a_n$; quindi $a_n>q^{\,n-N}a_N$ per $n>N$ e $a_n\to+\infty$. $\square$
-
-Se $l=1$ il criterio non fornisce alcuna informazione: esistono successioni con $\frac{a_{n+1}}{a_n}\to 1$ che convergono, altre che divergono e altre ancora con comportamento oscillante.
-
-### Criterio della radice
-
-**Teorema 4.11 (Criterio della radice).** Sia $(a_n)_{n\in\mathbb{N}}$ una successione a termini positivi e sia $l\in\mathbb{R}^*$ tale che
-
-$$\lim_{n\to+\infty}\sqrt[n]{a_n}=l.$$
-
-Allora:
-
-- se $l>1$ si ha $\lim_{n\to+\infty} a_n=+\infty$;
-- se $l<1$ si ha $\lim_{n\to+\infty} a_n=0$.
-
-:::formula{id="4.17" label="Criterio della radice per successioni"}
-$$\lim_{n\to+\infty}\sqrt[n]{a_n}=l \implies \begin{cases} l>1 \implies a_n\to+\infty \\ l<1 \implies a_n\to 0\end{cases}$$
-:::
-
-Se $l<1$, si sceglie $\varepsilon>0$ con $l+\varepsilon<1$. Per $n$ sufficientemente grande, $a_n<(l+\varepsilon)^n$, dunque $a_n\to 0$. Se $l>1$ è finito, si sceglie $q$ con $1<q<l$; se $l=+\infty$, si sceglie un qualunque $q>1$. In entrambi i casi, definitivamente $\sqrt[n]{a_n}>q$, perciò $a_n>q^n\to+\infty$. Se $l=1$, il criterio non è conclusivo.
-
-**Esempio 4.14.** Si studi il limite di $a_n=\dfrac{2^n}{n!}$ con il criterio del rapporto. I termini sono positivi e
-
-$$\frac{a_{n+1}}{a_n}=\frac{2^{n+1}}{(n+1)!}\cdot\frac{n!}{2^n}=\frac{2}{n+1}\;\longrightarrow\;0.$$
-
-Essendo $l=0<1$, per il {{formula:4.16}} si conclude $a_n\to 0$.
-
-**Esempio 4.15.** Si studi $a_n=\left(\dfrac{1}{2}+\dfrac{1}{n}\right)^{n}$ con il criterio della radice. Si ha
-
-$$\sqrt[n]{a_n}=\frac{1}{2}+\frac{1}{n}\;\longrightarrow\;\frac{1}{2}.$$
-
-Essendo $l=\frac{1}{2}<1$, per il {{formula:4.17}} si conclude $a_n\to 0$.
-
-**Errore tipico 4.10.** Molti studenti applicano meccanicamente il criterio del rapporto o della radice anche quando il limite del rapporto (o della radice) vale esattamente $1$, concludendo in modo errato la convergenza o la divergenza della successione. In quel caso i criteri non dicono nulla e occorre uno studio diretto, per esempio tramite confronto con successioni note o tramite le tecniche del capitolo sui [limiti notevoli](ref:chapter/6#p2). Un secondo errore frequente è applicare i criteri a successioni che non sono a termini (eventualmente definitivamente) positivi: l'ipotesi $a_n>0$ è essenziale per poter dividere e per il confronto con le potenze.
-
-### Gerarchia degli infiniti per successioni
-
-I criteri precedenti permettono di confrontare tra loro le principali successioni divergenti e di stabilire un ordine di "velocità" di divergenza, detto gerarchia degli infiniti. Per $n\to+\infty$, con $a>1$, $p>0$, $q>0$ e $c>1$, vale
-
-$$(\log_a n)^p \;\ll\; n^q \;\ll\; c^n \;\ll\; n! \;\ll\; n^n,$$
-
-dove il simbolo $\ll$ indica che il termine a sinistra è trascurabile rispetto a quello a destra, cioè che il loro rapporto tende a $0$.
-
-:::formula{id="4.18" label="Gerarchia degli infiniti per successioni"}
-$$(\log_a n)^p \ll n^q \ll c^n \ll n! \ll n^n \qquad (a>1,\ p>0,\ q>0,\ c>1)$$
-:::
-
-Il primo confronto richiede un argomento distinto. Posto $r=q/p>0$, sia $k$ l'intero tale che $2^k\le n<2^{k+1}$. Allora
-
-$$0\le\frac{\log_a n}{n^r}\le\frac{(k+1)\log_a 2}{2^{kr}}\longrightarrow 0,$$
-
-perché il rapporto tra termini consecutivi della successione a destra tende a $2^{-r}<1$. Elevando alla potenza $p$ si ottiene $(\log_a n)^p/n^q\to0$. Per gli altri confronti il criterio del rapporto è conclusivo: i rapporti tra termini consecutivi di $n^q/c^n$ e $c^n/n!$ tendono rispettivamente a $1/c<1$ e a $0$. Per $b_n=n!/n^n$ si ha
-
-$$\frac{b_{n+1}}{b_n}=\left(\frac{n}{n+1}\right)^n\le\frac12,$$
-
-poiché $(1+1/n)^n\ge2$; quindi anche $b_n\to0$. La gerarchia permette di riconoscere i termini trascurabili nei limiti, secondo il [principio di eliminazione dei termini trascurabili](ref:chapter/6#p4). I confronti tra logaritmi, potenze ed esponenziali valgono anche per le funzioni di variabile reale, trattate nella sezione sugli [infiniti e infinitesimi](ref:chapter/6#p3).
+**Errore tipico 4.12.** Il teorema di Bolzano-Weierstrass garantisce l'esistenza di *una* sottosuccessione convergente, non la convergenza della successione intera: una successione limitata può benissimo essere oscillante, come $(-1)^n$, che è limitata ma non converge, pur avendo (ovviamente) sottosuccessioni convergenti (quella dei pari e quella dei dispari).
 
 ## p8 | Come viene chiesto all'esame
 
@@ -617,7 +583,7 @@ Delle 83 sessioni d'esame passate, 32 contengono almeno una domanda sugli argome
 **Metodo.**
 
 1. Se devi provare che non esiste $\lim_{x\to+\infty}M(kx)$, con $k>0$, scegli due successioni $x_n\to+\infty$ e $y_n\to+\infty$ su cui $M(kx)$ vale costantemente valori diversi. Per esempio $x_n=n/k$ dà $M(kx_n)=0$, mentre $y_n=(n+\tfrac12)/k$ dà $M(ky_n)=\tfrac12$.
-2. Concludi con la caratterizzazione sequenziale e con l'unicità del limite. Se il limite esistesse, tutte le successioni dovrebbero avere lo stesso limite. Gli strumenti sono in [Successioni e sottosuccessioni](ref:chapter/4#p6) e [Teoremi sui limiti](ref:chapter/4#p4).
+2. Concludi con la caratterizzazione sequenziale e con l'unicità del limite. Se il limite esistesse, tutte le successioni dovrebbero avere lo stesso limite. Gli strumenti sono in [Successioni e sottosuccessioni](ref:chapter/4#p7) e [Teoremi sui limiti](ref:chapter/4#p4).
 3. Per un limite come $x^6M(2x)+\sqrt[3]{x}$ non cercare l'oscillazione. Poiché $M\ge0$, la somma è maggiore o uguale a $\sqrt[3]{x}\to+\infty$, quindi il limite è $+\infty$.
 4. Per un quoziente come $\dfrac{x(\sin x-2)}{x-2}$ separa il fattore che converge, $\frac{x}{x-2}\to1$, dal fattore oscillante. Se il fattore oscillante non ha limite, nemmeno il prodotto ce l'ha. Lo si dimostra con due successioni lungo le quali $\sin x$ assume valori diversi, per esempio $x_n=\tfrac{\pi}{2}+2n\pi$ e $y_n=-\tfrac{\pi}{2}+2n\pi$ (con segno adeguato per $x\to-\infty$).
 
@@ -641,8 +607,8 @@ Delle 83 sessioni d'esame passate, 32 contengono almeno una domanda sugli argome
 
 1. Determina il dominio e individua gli estremi, finiti e infiniti, in cui servono i limiti. Per le funzioni definite a tratti, studia a parte ogni ramo.
 2. Semplifica prima di calcolare: per esempio $e^{\frac12\log x}=\sqrt{x}$ per $x>0$, oppure $|x|=x$ o $-x$ a seconda del segno.
-3. Calcola ogni limite con l'algebra dei limiti e riconosci le forme indeterminate ([Algebra dei limiti e forme indeterminate](ref:chapter/4#p5)). Se compaiono radici con differenza, razionalizza.
-4. Quando serve confrontare esponenziali, potenze e logaritmi, usa la gerarchia degli infiniti e gli strumenti di [Criteri del rapporto e della radice](ref:chapter/4#p7).
+3. Calcola ogni limite con l'algebra dei limiti e riconosci le forme indeterminate ([Algebra dei limiti e forme indeterminate](ref:chapter/4#p6)). Se compaiono radici con differenza, razionalizza.
+4. Quando serve confrontare esponenziali, potenze e logaritmi, usa la gerarchia degli infiniti e i confronti tra funzioni studiati nella sezione [Infiniti e infinitesimi](ref:chapter/6#p3).
 5. Nei punti in cui il comportamento a destra e a sinistra differisce (valori assoluti, $e^{1/x}$, denominatori che si annullano) calcola i due limiti unilateri separatamente ([Definizione di limite](ref:chapter/4#p3)).
 6. Per individuare tutti gli asintoti orizzontali, studia separatamente i limiti per $x\to-\infty$ e per $x\to+\infty$. Ogni limite finito in uno di questi versi dà un asintoto orizzontale da quel lato; ogni limite infinito in un punto finito dà un asintoto verticale.
 
@@ -667,7 +633,7 @@ Delle 83 sessioni d'esame passate, 32 contengono almeno una domanda sugli argome
 **Metodo.**
 
 1. Decidi per prima cosa se l'affermazione è plausibile. Una successione limitata non è convergente in generale; per una funzione monotona, il teorema garantisce il limite appropriato a un estremo dell'intervallo oppure il limite della successione per $n\to+\infty$.
-2. Se è vera, scrivi le ipotesi e applica il teorema sul limite di una funzione o successione monotona. Per una successione monotona definita su tutti gli indici naturali, il limite per $n\to+\infty$ coincide con il suo estremo superiore se è crescente e con il suo estremo inferiore se è decrescente. Per una funzione monotona su un intervallo, il limite è l'estremo superiore o inferiore dei valori assunti secondo il verso di avvicinamento: una funzione crescente su $\rbrack a,b\lbrack $ ha limite destro in $a$ pari all'estremo inferiore e limite sinistro in $b$ pari all'estremo superiore; per una funzione decrescente vale il contrario. Si veda [Successioni e sottosuccessioni](ref:chapter/4#p6). Poi confronta con altri valori, per esempio con $f(1)$ o con un valore interno.
+2. Se è vera, scrivi le ipotesi e applica il teorema sul limite di una funzione o successione monotona. Per una successione monotona definita su tutti gli indici naturali, il limite per $n\to+\infty$ coincide con il suo estremo superiore se è crescente e con il suo estremo inferiore se è decrescente. Per una funzione monotona su un intervallo, il limite è l'estremo superiore o inferiore dei valori assunti secondo il verso di avvicinamento: una funzione crescente su $\rbrack a,b\lbrack $ ha limite destro in $a$ pari all'estremo inferiore e limite sinistro in $b$ pari all'estremo superiore; per una funzione decrescente vale il contrario. Si veda [Successioni e sottosuccessioni](ref:chapter/4#p7). Poi confronta con altri valori, per esempio con $f(1)$ o con un valore interno.
 3. Se è falsa, costruisci un controesempio esplicito e verifica tutte le ipotesi. Spesso funziona $(-1)^n$ o una funzione come $1-x$.
 4. Per la monotonia di una composizione, studia come cambiano le disuguaglianze: crescente seguita da decrescente dà decrescente.
 5. Per una successione concreta, studia monotonia e limite, poi determina massimo, minimo o estremi dell'insieme dei valori.

@@ -105,7 +105,7 @@ Per nominare i derivati più semplici si usa **benzene** come nome della struttu
 
 **Definizione 17.7**. Due composti sono **isomeri** se hanno la stessa formula molecolare, quindi lo stesso numero di atomi di ciascun elemento, ma differiscono nella struttura. La formula molecolare da sola non basta a identificare una sostanza: isomeri diversi possono avere proprietà fisiche e comportamento chimico differenti.
 
-La prima distinzione riguarda ciò che cambia. Negli **isomeri costituzionali**, o **di struttura**, cambia il modo in cui gli atomi sono collegati. Negli **stereoisomeri**, i collegamenti restano gli stessi, ma cambia la disposizione degli atomi nello spazio. L’isomeria geometrica e quella ottica appartengono alla stereoisomeria.
+La distinzione riguarda ciò che cambia. Negli **isomeri costituzionali**, o **di struttura**, cambia il modo in cui gli atomi sono collegati.
 
 ### Isomeria costituzionale
 
@@ -117,41 +117,11 @@ Nel but-$1$-ene e nel but-$2$-ene cambia invece la **posizione** del doppio lega
 
 **Errore tipico 17.3**. Contare soltanto gli atomi e concludere che due disegni rappresentino la stessa molecola. Dopo aver verificato la formula molecolare, bisogna confrontare i collegamenti: una ramificazione, un doppio legame spostato o un gruppo funzionale diverso possono individuare composti distinti.
 
-### Isomeria geometrica
-
-**Definizione 17.8**. L’isomeria geometrica è una stereoisomeria dovuta a una disposizione relativa diversa di gruppi la cui rotazione è impedita o fortemente limitata. Negli alcheni la componente $\pi$ del doppio legame $\mathrm{C=C}$ limita la rotazione e mantiene i sostituenti nelle rispettive posizioni. Anche un anello può vincolare la posizione relativa dei sostituenti.
-
-Perché un doppio legame dia due configurazioni geometriche, **ciascuno** dei suoi atomi di carbonio deve portare due sostituenti diversi. Nel but-$2$-ene ogni carbonio del doppio legame porta $\mathrm{H}$ e $\mathrm{CH_3}$: i due gruppi $\mathrm{CH_3}$ possono trovarsi dalla stessa parte, nell’isomero **cis**, oppure da parti opposte, nell’isomero **trans**. Nel but-$1$-ene, invece, un carbonio del doppio legame porta due atomi di $\mathrm{H}$; scambiarne le posizioni non produce una nuova configurazione.
-
-I termini **cis** e **trans** sono immediati quando si può confrontare una coppia di gruppi uguali sui due atomi del doppio legame. Se i quattro sostituenti sono tutti diversi, questa descrizione non identifica in modo univoco le configurazioni. Nei cicloalcani sostituiti, **cis** indica sostituenti dalla stessa parte dell’anello e **trans** sostituenti da parti opposte.
-
-**Errore tipico 17.4**. Attribuire isomeria geometrica a ogni molecola che contiene $\mathrm{C=C}$. La presenza del doppio legame limita la rotazione, ma occorre anche controllare separatamente i due sostituenti legati a ciascun carbonio.
-
-### Isomeria ottica e centri chirali
-
-**Definizione 17.9**. Una molecola è **chirale** quando la sua immagine speculare non è sovrapponibile a essa. Due stereoisomeri che sono immagini speculari non sovrapponibili si chiamano **enantiomeri**. Un caso comune è un carbonio tetraedrico legato a **quattro gruppi differenti**: tale atomo è un **centro chirale**, indicabile con $\mathrm{C}^*$. Una molecola può contenere più centri chirali.
-
-Per cercare un centro chirale, si esaminano i quattro gruppi legati al carbonio candidato. Due gruppi che iniziano con lo stesso elemento non sono necessariamente identici: occorre seguirli lungo la struttura finché compare una differenza. Un carbonio che porta due gruppi uguali non soddisfa il criterio. Il carbonio di un doppio legame, avendo geometria trigonale planare, non è un centro chirale del tipo tetraedrico qui considerato.
-
-**Esempio svolto 17.3**. Si consideri l’acido lattico, $\mathrm{CH_3CH(OH)COOH}$, di formula $\mathrm{C_3H_6O_3}$. Si vuole individuare un eventuale centro chirale e stabilire quale coppia di stereoisomeri esso può generare.
-
-1. **Dati**. La molecola contiene il carbonio del gruppo $\mathrm{CH_3}$, quello del gruppo $\mathrm{COOH}$ e il carbonio intermedio $\mathrm{CH(OH)}$.
-2. **Strategia**. Si confrontano i quattro gruppi legati al carbonio intermedio; gli altri due carboni non sono candidati a un centro tetraedrico con quattro gruppi diversi.
-3. **Verifica dei gruppi**. Il carbonio intermedio è legato a $\mathrm{H}$, $\mathrm{OH}$, $\mathrm{CH_3}$ e $\mathrm{COOH}$. I quattro gruppi sono differenti: è quindi un centro chirale, $\mathrm{CH_3C^*H(OH)COOH}$. La sua disposizione spaziale e quella speculare costituiscono una coppia di enantiomeri.
-4. **Controllo**. La sola formula $\mathrm{C_3H_6O_3}$ non distingue i due enantiomeri: per distinguerli bisogna rappresentare anche la disposizione tridimensionale dei gruppi.
-
-:::image{src="assets/ca8fa7bd-acido-lattico-centro-chirale.svg" alt="Struttura tridimensionale dell'acido lattico con il carbonio centrale legato a H, OH, CH3 e COOH (C3H6O3)" caption="Fig. 17.3 — Una configurazione dell'acido lattico: il carbonio centrale porta quattro gruppi diversi."}
-:::
-
-I due enantiomeri ruotano il piano della luce polarizzata in versi opposti; il verso si misura con un polarimetro. Una miscela equimolare dei due, detta **racemo**, non mostra rotazione ottica complessiva perché i contributi si annullano. In un ambiente chimico chirale, come quello di molti sistemi biologici, i due enantiomeri possono comportarsi diversamente.
-
-**Errore tipico 17.5**. Dedurre l’attività ottica di un campione dalla sola presenza di un centro chirale nelle sue molecole. Il criterio dei quattro gruppi diversi individua un possibile centro chirale nella struttura; un racemo di molecole chirali, però, non ruota complessivamente la luce polarizzata.
-
 ## p5 | Gruppi funzionali
 
 ### Riconoscere e nominare i gruppi funzionali
 
-**Definizione 17.10**. Un gruppo funzionale è una parte della struttura molecolare che conferisce proprietà e reattività caratteristiche ai composti che la contengono. La distribuzione degli elettroni nel gruppo permette spesso di prevedere dove avverrà una reazione. Nelle formule seguenti, $R$ e $R'$ indicano resti organici; $X$ indica un alogeno. I due resti possono essere uguali o diversi.
+**Definizione 17.8**. Un gruppo funzionale è una parte della struttura molecolare che conferisce proprietà e reattività caratteristiche ai composti che la contengono. La distribuzione degli elettroni nel gruppo permette spesso di prevedere dove avverrà una reazione. Nelle formule seguenti, $R$ e $R'$ indicano resti organici; $X$ indica un alogeno. I due resti possono essere uguali o diversi.
 
 - **Alcoli**: $R{-}OH$, con il gruppo ossidrile legato a un carbonio non aromatico. Il suffisso è **-olo**; si numera la catena per assegnare al carbonio che porta $OH$ il numero più basso possibile. $\mathrm{CH_3OH}$ è metanolo, mentre $\mathrm{CH_3CH(OH)CH_3}$ è propan-2-olo. Un alcol è primario, secondario o terziario secondo che il carbonio legato a $OH$ sia unito, rispettivamente, a uno, due o tre altri atomi di carbonio; il metanolo è un caso a sé, privo di legami carbonio–carbonio.
 - **Eteri**: $R{-}O{-}R'$. L'ossigeno è inserito fra due resti organici e non porta un idrogeno. $\mathrm{CH_3OCH_2CH_3}$ si chiama metossietano nella nomenclatura sistematica; si incontra anche il nome di classe *etere etilmetilico*, formato dai nomi dei due gruppi.
@@ -184,53 +154,19 @@ Il gruppo carbossilico può reagire con un alcol formando un estere e acqua. Est
 
 ### Esempio svolto ed errori tipici
 
-**Esempio svolto 17.4**. Riconoscere e nominare $\mathrm{CH_3COOCH_2CH_3}$, distinguendolo da un etere e da un acido carbossilico.
+**Esempio svolto 17.3**. Riconoscere e nominare $\mathrm{CH_3COOCH_2CH_3}$, distinguendolo da un etere e da un acido carbossilico.
 
 1. **Dati**. La formula di struttura condensata contiene la sequenza $\mathrm{C(=O)O}$; il carbonio carbonilico è legato a $\mathrm{CH_3}$ e l'ossigeno singolarmente legato è unito a $\mathrm{CH_2CH_3}$.
 2. **Strategia**. Si riconosce $R{-}COO{-}R'$ come estere. La parte $\mathrm{CH_3COO{-}}$ proviene dall'acido etanoico; la parte $\mathrm{{-}CH_2CH_3}$ è il gruppo etile.
 3. **Calcolo del nome**. Il nome è **etanoato di etile**. Qui non occorre un calcolo numerico: occorre attribuire correttamente i due lati del legame $C(=O){-}O$.
 4. **Verifica**. Non è un etere semplice, perché possiede $C{=}O$; non è un acido carbossilico, perché l'ossigeno singolarmente legato porta etile anziché idrogeno. La formula molecolare ricavata contando gli atomi è $\mathrm{C_4H_8O_2}$.
 
-:::image{src="assets/3925a881-etanoato-di-etile.svg" alt="Struttura dell'etanoato di etile: carbonile e ossigeno legato al gruppo etile (C4H8O2)" caption="Fig. 17.4 — Etanoato di etile: il gruppo estere comprende entrambi gli ossigeni e il carbonio del carbonile."}
+:::image{src="assets/3925a881-etanoato-di-etile.svg" alt="Struttura dell'etanoato di etile: carbonile e ossigeno legato al gruppo etile (C4H8O2)" caption="Fig. 17.3 — Etanoato di etile: il gruppo estere comprende entrambi gli ossigeni e il carbonio del carbonile."}
 :::
 
-**Errore tipico 17.6**. Classificare ogni composto con ossigeno fra due carboni come etere. Prima di assegnare il nome bisogna controllare se uno di quei carboni porta anche un doppio legame con ossigeno: in tal caso la sequenza $C(=O){-}O$ identifica un estere. Analogamente, $R{-}CHO$ è un'aldeide perché il carbonio carbonilico porta un idrogeno; $R{-}CO{-}R'$ è un chetone perché porta due resti carboniosi.
+**Errore tipico 17.4**. Classificare ogni composto con ossigeno fra due carboni come etere. Prima di assegnare il nome bisogna controllare se uno di quei carboni porta anche un doppio legame con ossigeno: in tal caso la sequenza $C(=O){-}O$ identifica un estere. Analogamente, $R{-}CHO$ è un'aldeide perché il carbonio carbonilico porta un idrogeno; $R{-}CO{-}R'$ è un chetone perché porta due resti carboniosi.
 
-## p6 | Polimeri
-
-*Questa sezione va oltre il programma del corso: all'esame non viene chiesta.*
-
-### Monomero e unità ripetitiva
-
-**Definizione 17.11**. Un polimero è una macromolecola formata da molte unità strutturali unite da legami covalenti. Il **monomero** è la molecola reagente da cui il polimero si forma; l’**unità ripetitiva** è il gruppo di atomi che ricorre lungo la catena. Le due cose vanno distinte: durante la reazione la struttura del monomero può cambiare. Un polimero ottenuto da un solo tipo di monomero è un omopolimero; se intervengono monomeri di specie diverse, è un copolimero.
-
-### Addizione e condensazione
-
-Nella **polimerizzazione per addizione**, le molecole di monomero si uniscono senza liberare un prodotto secondario. Nel caso comune degli alcheni, si apre il doppio legame carbonio-carbonio e si formano nuovi legami tra le unità. La crescita può procedere a catena: l’aggiunta di un monomero lascia un sito reattivo per l’aggiunta successiva. L’etene dà così il polietilene.
-
-:::formula{id="17.1" label="Formazione schematica del polietilene"}
-$$n\,\mathrm{CH_2{=}CH_2}\;\longrightarrow\;\lbrack \mathrm{-CH_2-CH_2-}\rbrack _n$$
-:::
-
-Nello schema, $n$ indica il numero di molecole di etene incorporate e le parentesi quadre delimitano l’unità ripetitiva. I trattini ai lati della parentesi rappresentano i legami con le unità vicine; per una catena reale occorre considerare anche i gruppi terminali.
-
-Nella **polimerizzazione per condensazione**, monomeri con due gruppi funzionali capaci di reagire tra loro formano legami lungo la catena liberando una piccola molecola, spesso acqua. Per esempio, un acido dicarbossilico e una diammina possono formare una poliammide, come il nylon: il nuovo collegamento tra le unità contiene un gruppo ammidico. Per ottenere una catena lunga, ciascuna unità deve poter stabilire collegamenti in due direzioni.
-
-:::image{src="assets/c5abe735-gruppo-ammidico-nylon.svg" alt="Struttura di Lewis della formammide con il gruppo ammidico carbonile-azoto (HCONH2)" caption="Fig. 17.5 — Il gruppo funzionale ammidico che collega le unità nel nylon, mostrato nella formammide, la molecola più semplice che lo contiene."}
-:::
-
-### Esempio svolto: dalla formula del monomero al polimero
-
-**Esempio svolto 17.5**. Si vuole scrivere la formazione del polietilene a partire dall’etene.
-
-1. **Dati**. Il monomero è $\mathrm{CH_2{=}CH_2}$: i due atomi di carbonio sono uniti da un doppio legame.
-2. **Strategia**. Nell’addizione, il doppio legame diventa singolo e ciascuno dei due carboni forma un nuovo legame con un’unità adiacente; non si elimina alcun atomo del monomero.
-3. **Scrittura**. L’unità ripetitiva è $\mathrm{-CH_2-CH_2-}$. Con $n$ monomeri si ottiene lo schema {{formula:17.1}}.
-4. **Verifica**. Ogni unità contiene ancora due atomi di carbonio e quattro di idrogeno, come una molecola di etene. La formula tra parentesi descrive l’interno della catena, mentre i gruppi terminali sono omessi dallo schema.
-
-**Errore tipico 17.7**. Non si scrive $\mathrm{\lbrack -CH_2{=}CH_2-\rbrack }_n$ per il polietilene: il doppio legame del monomero è stato consumato. Non si aggiunge neppure acqua tra i prodotti dell’addizione. Nella condensazione, invece, bisogna identificare i gruppi funzionali che reagiscono e contare le molecole eliminate tenendo conto delle estremità della catena.
-
-## p7 | Come viene chiesto all'esame
+## p6 | Come viene chiesto all'esame
 
 Nell'archivio delle prove passate, 1 sessione su 4 conteneva domande sugli argomenti di questo capitolo. L'unica domanda trovata è un esercizio misto: un calcolo di proprietà colligative a cui si aggancia una domanda breve di chimica organica sul riconoscimento del gruppo funzionale e sull'ibridazione.
 
@@ -250,8 +186,8 @@ Per la sottodomanda D2 il metodo ha questi passi:
 
 Gli errori tipici che questa domanda invita a evitare sono i seguenti:
 
-- **Errore tipico 17.8**: scrivere la formula senza i tre $-\mathrm{OH}$, o con due di essi sullo stesso carbonio, perché non si è letta con attenzione la numerazione 1,2,3.
-- **Errore tipico 17.9**: attribuire ibridazione $sp^2$ ai carboni legati all'ossigeno. L'ibridazione dipende dal numero di legami $\pi$ e di coppie di legame, non dalla presenza di un eteroatomo: qui non ci sono doppi legami.
-- **Errore tipico 17.10**: classificare il glicerolo come un acido carbossilico, o come un etere, per confusione con l'atomo di ossigeno. Un $-\mathrm{OH}$ legato a un carbonio saturo è sempre un alcol.
+- **Errore tipico 17.5**: scrivere la formula senza i tre $-\mathrm{OH}$, o con due di essi sullo stesso carbonio, perché non si è letta con attenzione la numerazione 1,2,3.
+- **Errore tipico 17.6**: attribuire ibridazione $sp^2$ ai carboni legati all'ossigeno. L'ibridazione dipende dal numero di legami $\pi$ e di coppie di legame, non dalla presenza di un eteroatomo: qui non ci sono doppi legami.
+- **Errore tipico 17.7**: classificare il glicerolo come un acido carbossilico, o come un etere, per confusione con l'atomo di ossigeno. Un $-\mathrm{OH}$ legato a un carbonio saturo è sempre un alcol.
 
-Per prepararti, tieni presente che la struttura dell'esame è questa: il test informatizzato iniziale e la prova scritta con esercizi e domande teoriche, senza materiale didattico. Una domanda come la sottodomanda D2 si risolve a memoria, perché richiede solo di saper scrivere la semistruttura, contare i legami e riconoscere il gruppo funzionale. Prima di una prova, allenati a passare dal nome alla formula e viceversa per i dieci gruppi del capitolo, e a ricavare l'ibridazione di ogni carbonio. Se vuoi ripassare anche l'isomeria o i polimeri, trovi i criteri in [Isomeria](ref:chapter/17#p4) e in [Polimeri](ref:chapter/17#p6), anche se le domande a disposizione non li hanno finora richiesti.
+Per prepararti, tieni presente che la struttura dell'esame è questa: il test informatizzato iniziale e la prova scritta con esercizi e domande teoriche, senza materiale didattico. Una domanda come la sottodomanda D2 si risolve a memoria, perché richiede solo di saper scrivere la semistruttura, contare i legami e riconoscere il gruppo funzionale. Prima di una prova, allenati a passare dal nome alla formula e viceversa per i dieci gruppi del capitolo, e a ricavare l'ibridazione di ogni carbonio. Se vuoi ripassare anche l'isomeria o i polimeri, trovi i criteri in [Isomeria](ref:chapter/17#p4) e in Polimeri, anche se le domande a disposizione non li hanno finora richiesti.

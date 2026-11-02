@@ -990,28 +990,7 @@ L’energia potenziale elastica è $1.0\,\text{J}$.
 :::
 :::
 
-:::exercise{id="E5.1" chapter="5" difficulty="difficile"}
-## Domanda
-Un punto materiale di massa $m=2{,}0\ \text{kg}$ si muove in un campo centrale con forza $\mathbf F(r)=-\dfrac{k}{r^2}\mathbf e_r$, dove $k=18\ \text{N}\,\text{m}^2$. La sua orbita è descritta, in coordinate polari centrate sulla forza, da $r(\theta)=\dfrac{p}{1+e\cos\theta}$, con $p=0{,}50\ \text{m}$ ed eccentricità $e=0{,}60$. Usando la formula di Binet, determinare il modulo del momento angolare, la velocità al perielio e la velocità areolare.
-
-:::hint
-Poni $u=1/r$ nella formula di Binet e sostituisci la forma assegnata dell’orbita per ricavare la relazione tra $k$, $p$ e il momento angolare specifico. Al perielio la velocità è perpendicolare al raggio e $r$ è minimo.
-:::
-
-:::solution
-Ponendo $u=1/r$, l’orbita diventa $u=(1+e\cos\theta)/p$. Si ottiene $u''+u=1/p$, dove gli apici indicano derivate rispetto a $\theta$. La formula di Binet, {{formula:5.11}}, per una forza radiale dà $F_r=-mh^2u^2(u''+u)$, con $h=L/m$ momento angolare specifico. Confrontando con $F_r=-ku^2$ segue
-
-$$k=\frac{mh^2}{p},\qquad h=\sqrt{\frac{kp}{m}}=\sqrt{\frac{(18\ \text{N}\,\text{m}^2)(0{,}50\ \text{m})}{2{,}0\ \text{kg}}}=2{,}12\ \text{m}^2\,\text{s}^{-1}.$$
-
-Il momento angolare è $L=mh$, quindi $L=(2{,}0\ \text{kg})(2{,}12\ \text{m}^2\,\text{s}^{-1})=4{,}24\ \text{kg}\,\text{m}^2\,\text{s}^{-1}$. Al perielio, $\cos\theta=1$ e $r_p=p/(1+e)=0{,}50\ \text{m}/1{,}60=0{,}3125\ \text{m}$. La velocità è perpendicolare al raggio, perciò $h=r_pv_p$ e
-
-$$v_p=\frac{h}{r_p}=\frac{2{,}12\ \text{m}^2\,\text{s}^{-1}}{0{,}3125\ \text{m}}=6{,}79\ \text{m}\,\text{s}^{-1}.$$
-
-Infine, la velocità areolare è $\dot A=h/2$, dunque $\dot A=1{,}06\ \text{m}^2\,\text{s}^{-1}$.
-:::
-:::
-
-:::exercise{id="E5.2" chapter="5" difficulty="medio"}
+:::exercise{id="E5.1" chapter="5" difficulty="medio"}
 ## Domanda
 Un punto materiale di massa $m=2{,}0\ \text{kg}$ si muove sotto l’azione di una forza centrale. In un certo istante si trova a distanza $r_1=3{,}0\ \text{m}$ dal centro e la sua velocità è perpendicolare al raggio, con modulo $v_1=4{,}0\ \text{m}\,\text{s}^{-1}$. In un secondo istante si trova a distanza $r_2=1{,}5\ \text{m}$ dal centro e la velocità è ancora perpendicolare al raggio. Determinare il modulo della velocità nel secondo istante e la velocità areolare.
 
@@ -1034,7 +1013,7 @@ $$\dot A=\frac{L}{2m}=\frac{24\ \text{kg}\,\text{m}^2\,\text{s}^{-1}}{4{,}0\ \te
 :::
 :::
 
-:::exercise{id="E5.3" chapter="5" difficulty="difficile"}
+:::exercise{id="E5.2" chapter="5" difficulty="difficile"}
 ## Domanda
 Una scala uniforme di lunghezza $5{,}0\ \text{m}$ e massa $20\ \text{kg}$ è appoggiata a un pavimento orizzontale scabro e a una parete verticale liscia. La scala forma un angolo di $53^\circ$ con il pavimento. Una persona di massa $60\ \text{kg}$ si trova sulla scala a $3{,}0\ \text{m}$ dal piede, misurati lungo la scala. Assumendo $g=9{,}8\ \text{m}\,\text{s}^{-2}$, determinare la reazione della parete, la reazione normale del pavimento e la forza di attrito al piede. Verificare se l’equilibrio è possibile quando il coefficiente di attrito statico è $\mu_s=0{,}50$.
 
@@ -1059,7 +1038,7 @@ L’attrito statico massimo vale $f_{s,\max}=\mu_sN_p=(0{,}50)(784\ \text{N})=39
 :::
 :::
 
-:::exercise{id="E5.4" chapter="5" difficulty="facile"}
+:::exercise{id="E5.3" chapter="5" difficulty="facile"}
 ## Domanda
 Una chiave inglese è applicata a un bullone nel punto a distanza $r=0{,}25\ \text{m}$ dal suo asse. Si esercita una forza di modulo $F=40\ \text{N}$ che forma un angolo di $30^\circ$ con la chiave. Calcolare il modulo del momento della forza rispetto all’asse del bullone.
 
@@ -1076,7 +1055,7 @@ Il modulo del momento rispetto all’asse del bullone è quindi $5{,}0\ \text{N}
 :::
 :::
 
-:::exercise{id="E5.5" chapter="5" difficulty="facile"}
+:::exercise{id="E5.4" chapter="5" difficulty="facile"}
 ## Domanda
 Un punto materiale di massa $m=0{,}50\ \text{kg}$ percorre una circonferenza di raggio $r=0{,}80\ \text{m}$ con velocità di modulo $v=3{,}0\ \text{m}\,\text{s}^{-1}$. Calcolare il modulo del momento angolare rispetto al centro della circonferenza e la velocità areolare.
 
@@ -1097,7 +1076,7 @@ Queste relazioni corrispondono a {{formula:5.4}} e {{formula:5.9}}.
 :::
 :::
 
-:::exercise{id="E5.6" chapter="5" difficulty="medio"}
+:::exercise{id="E5.5" chapter="5" difficulty="medio"}
 ## Domanda
 Una trave orizzontale uniforme, lunga $2{,}4\ \text{m}$ e di peso $120\ \text{N}$, è incernierata a un muro a un’estremità. All’altra estremità è appeso un carico di peso $200\ \text{N}$. La trave è mantenuta orizzontale da un cavo collegato alla sua estremità libera, che forma un angolo di $40^\circ$ con la trave e tira verso l’alto e verso il muro. Determinare il modulo della tensione del cavo e le componenti orizzontale e verticale della reazione della cerniera.
 
@@ -2557,7 +2536,7 @@ Usa la legge di Newton per la convezione e mantieni il segno positivo per la pot
 :::
 
 :::solution
-La differenza di temperatura tra superficie e aria è $\Delta T=80-20=60\,\mathrm{K}$. Dalla legge di Newton, {{formula:12.22}}, la potenza ceduta vale $P=hA\Delta T=(12)(0{,}50)(60)=360\,\mathrm{W}$.
+La differenza di temperatura tra superficie e aria è $\Delta T=80-20=60\,\mathrm{K}$. Dalla legge di Newton, {{formula:12.18}}, la potenza ceduta vale $P=hA\Delta T=(12)(0{,}50)(60)=360\,\mathrm{W}$.
 :::
 :::
 
@@ -2583,7 +2562,7 @@ Applica la legge di Fourier in valore assoluto usando la differenza di temperatu
 :::
 
 :::solution
-La differenza di temperatura è $\Delta T=20-5=15\,\mathrm{K}$. Dalla legge di Fourier, {{formula:12.20}}, la potenza termica in valore assoluto è $P=kA\Delta T/L$. Quindi $P=(0{,}80)(2{,}0)(15)/(0{,}10)=240\,\mathrm{W}$. Il calore fluisce dalla faccia più calda a quella più fredda.
+La differenza di temperatura è $\Delta T=20-5=15\,\mathrm{K}$. Dalla legge di Fourier, {{formula:12.16}}, la potenza termica in valore assoluto è $P=kA\Delta T/L$. Quindi $P=(0{,}80)(2{,}0)(15)/(0{,}10)=240\,\mathrm{W}$. Il calore fluisce dalla faccia più calda a quella più fredda.
 :::
 :::
 
@@ -2738,19 +2717,6 @@ La variazione di temperatura è $\Delta T=30\,\mathrm{K}$. L’aumento del volum
 
 :::exercise{id="E12.16" chapter="12" difficulty="facile"}
 ## Domanda
-Una barra di rame lunga $2{,}0\,\mathrm{m}$ a $20\,\mathrm{°C}$ viene riscaldata fino a $70\,\mathrm{°C}$. Il coefficiente di dilatazione lineare del rame è $1{,}7\times10^{-5}\,\mathrm{K^{-1}}$. Calcola l’allungamento e la lunghezza finale.
-
-:::hint
-Calcola la variazione di lunghezza con la legge della dilatazione lineare e sommala alla lunghezza iniziale.
-:::
-
-:::solution
-La variazione di temperatura è $\Delta T=50\,\mathrm{K}$. Dalla legge della dilatazione lineare, {{formula:12.16}}, si ha $\Delta L=\alpha L_0\Delta T=(1{,}7\times10^{-5})(2{,}0)(50)=1{,}7\times10^{-3}\,\mathrm{m}$. La lunghezza finale è $L_f=L_0+\Delta L=2{,}0017\,\mathrm{m}$.
-:::
-:::
-
-:::exercise{id="E12.17" chapter="12" difficulty="facile"}
-## Domanda
 Un recipiente rigido e chiuso contiene un gas. Le pareti sono diatermane e il recipiente viene immerso in un ambiente a temperatura costante. Dopo un tempo sufficiente il gas raggiunge la stessa temperatura dell’ambiente. Indica se il sistema è aperto o chiuso e se, rispetto allo scambio termico, è isolato o non isolato.
 
 :::hint
@@ -2762,7 +2728,7 @@ Il sistema è il gas contenuto nel recipiente. Il recipiente è chiuso, quindi l
 :::
 :::
 
-:::exercise{id="E12.18" chapter="12" difficulty="medio"}
+:::exercise{id="E12.17" chapter="12" difficulty="medio"}
 ## Domanda
 Un gas è chiuso in un cilindro con pistone mobile e senza attrito. Il pistone è fermo, la pressione del gas è $1{,}20\times10^5\,\mathrm{Pa}$ e quella esterna è $1{,}00\times10^5\,\mathrm{Pa}$. Il gas e l’ambiente sono alla stessa temperatura. Il sistema è in equilibrio termodinamico? Motiva la risposta e determina la differenza di pressione che impedisce l’equilibrio meccanico.
 

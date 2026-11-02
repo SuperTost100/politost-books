@@ -72,7 +72,7 @@ Valgono inoltre, per ogni $z, z' \in \mathbb{C}$, le proprietà seguenti, che us
 
 - $|z| \ge 0$ e $|z| = 0 \iff z = 0$;
 - $|z \cdot z'| = |z| \cdot |z'|$;
-- $|z + z'| \le |z| + |z'|$ (disuguaglianza triangolare, analoga a [formula (1.5)](ref:formula/1.5));
+- $|z + z'| \le |z| + |z'|$ (disuguaglianza triangolare, analoga a [formula (1.3)](ref:formula/1.3));
 - $|z| = |\bar z|$;
 - $|z| \ge |\operatorname{Re}(z)|$ e $|z| \ge |\operatorname{Im}(z)|$;
 - $\overline{z + z'} = \bar z + \bar z'$ e $\overline{z \cdot z'} = \bar z \cdot \bar z'$;
@@ -289,7 +289,7 @@ In altre parole, per elevare a potenza un numero complesso basta elevare a poten
 
 $$(1+i)^8 = \left(\sqrt{2}\right)^8 e^{i\cdot 8 \cdot \frac{\pi}{4}} = 2^4 e^{i2\pi} = 16 \cdot 1 = 16,$$
 
-dove si è usato $e^{i2\pi} = \cos(2\pi) + i\sin(2\pi) = 1$. Il calcolo diretto tramite il binomio di Newton (si veda [Principio di induzione e coefficiente binomiale](ref:chapter/1#p4)) richiederebbe molti più passaggi.
+dove si è usato $e^{i2\pi} = \cos(2\pi) + i\sin(2\pi) = 1$. Il calcolo diretto tramite il binomio di Newton (si veda Principio di induzione e coefficiente binomiale) richiederebbe molti più passaggi.
 
 **Errore tipico 2.4.** Un errore frequente è applicare De Moivre elevando il modulo ma **non** moltiplicando l'argomento per $n$ (o viceversa): entrambe le operazioni, sul modulo e sull'argomento, vanno eseguite insieme. Un secondo errore comune è dimenticare che l'angolo risultante $n\theta$ può uscire dall'intervallo $\rbrack -\pi,\pi\rbrack $: ciò non è un problema, perché coseno e seno sono periodici, ma se si vuole l'argomento principale occorre ridurre $n\theta$ modulo $2\pi$.
 

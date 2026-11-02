@@ -327,7 +327,7 @@ dove il segno negativo riflette la natura attrattiva della forza. Con lo stesso 
 
 $$E_p(r) = \frac{q\,q_0}{4\pi\varepsilon_0\, r} ,$$
 
-espressione analoga a [formula (10.21)](ref:formula/10.21), dove $\varepsilon_0$ è la costante dielettrica del vuoto già introdotta nella sezione sui [cenni di elettrostatica](ref:chapter/10#p6). Questa energia potenziale ha lo stesso andamento in $1/r$ del caso gravitazionale, ma segno opposto per cariche dello stesso segno: mentre la forza gravitazionale è sempre attrattiva, la forza elettrostatica tra due cariche omonime è repulsiva, e l'energia potenziale corrispondente è positiva e decresce allontanando le cariche, coerentemente con questa natura repulsiva.
+espressione analoga a energia potenziale elettrostatica, dove $\varepsilon_0$ è la costante dielettrica del vuoto già introdotta nella sezione sui cenni di elettrostatica. Questa energia potenziale ha lo stesso andamento in $1/r$ del caso gravitazionale, ma segno opposto per cariche dello stesso segno: mentre la forza gravitazionale è sempre attrattiva, la forza elettrostatica tra due cariche omonime è repulsiva, e l'energia potenziale corrispondente è positiva e decresce allontanando le cariche, coerentemente con questa natura repulsiva.
 
 :::image{src="assets/cfcb3087-energia-potenziale-gravitazionale-elettrostatica.svg" alt="Due curve E_p(r): una negativa che cresce verso zero, una positiva che decresce verso zero" caption="Fig. 4.1 — Energia potenziale in funzione della distanza r: gravitazionale (sempre negativa, forza attrattiva) ed elettrostatica tra cariche omonime (sempre positiva, forza repulsiva), entrambe nulle per r che tende a infinito"}
 :::
@@ -347,6 +347,22 @@ Uguagliando si ottiene $\Delta E_k + \Delta E_p = 0$, cioè la somma dell'energi
 :::formula{id="4.14" label="Conservazione dell'energia meccanica"}
 $$E_m = E_k + E_p = \text{costante}$$
 :::
+
+**Dimostrazione richiesta all'esame.**
+
+Siano $A$ e $B$ due punti qualsiasi della traiettoria $\gamma$ del punto materiale, percorsa sotto l'azione delle sole forze conservative. Il teorema dell'energia cinetica dà il lavoro totale compiuto da $A$ a $B$:
+
+$$W_{A\to B,\gamma} = E_k(B) - E_k(A) .$$
+
+Poiché la forza è conservativa, esiste l'energia potenziale $E_p$ con $\vec{F} = -\vec{\nabla}E_p$, e dunque $d\mathcal{L} = \vec{F}\cdot d\vec{r} = -dE_p$. Integrando lungo $\gamma$ si ottiene lo stesso lavoro espresso tramite l'energia potenziale:
+
+$$W_{A\to B,\gamma} = -\int_{A,\gamma}^{B} dE_p = E_p(A) - E_p(B) .$$
+
+Uguagliando le due espressioni:
+
+$$E_k(B) - E_k(A) = E_p(A) - E_p(B) \quad\Longrightarrow\quad E_k(A) + E_p(A) = E_k(B) + E_p(B) .$$
+
+I punti $A$ e $B$ sono arbitrari, quindi $E_m = E_k + E_p$ ha lo stesso valore in ogni punto della traiettoria, cioè è costante durante il moto. $\square$
 
 Questo risultato è preso dalle fonti. Il lavoro ottenuto a spese di una diminuzione di energia potenziale si traduce in un corrispondente aumento di energia cinetica, e viceversa, proprio perché la loro somma resta costante. Quando, come avviene in generale, agiscono sia forze conservative sia forze non conservative (per esempio l'attrito), il lavoro totale si scompone in $W = W_c + W_{nc}$, e ripetendo il calcolo precedente si trova che la variazione di energia meccanica è uguale al lavoro delle sole forze non conservative,
 

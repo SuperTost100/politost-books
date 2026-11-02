@@ -7,7 +7,7 @@ title: Struttura elettronica e periodicità
 
 Per capire perché gli elementi assorbono o emettono luce a frequenze caratteristiche e perché reagiscono in modo diverso, occorre collegare la struttura dell’atomo alle sue proprietà osservabili. In questo capitolo la descrizione passa dai quanti di luce e dagli spettri atomici agli orbitali e alla disposizione degli elettroni; da qui si comprende come la configurazione elettronica influenzi dimensioni atomiche, tendenza a perdere o acquistare elettroni e reattività. Queste idee forniscono anche le basi per affrontare il legame ionico.
 
-Per iniziare, è utile conoscere la struttura dell'atomo e distinguere elementi e isotopi, come discusso in [Struttura dell'atomo e isotopi](ref:chapter/2#p3), e avere familiarità con la tavola periodica, come discusso in [La tavola periodica](ref:chapter/2#p4). Servono inoltre le operazioni algebriche di base e la capacità di leggere simboli e unità di misura.
+Per iniziare, è utile conoscere la struttura dell'atomo e distinguere elementi e isotopi, come discusso in [Struttura dell'atomo e isotopi](ref:chapter/2#p2), e avere familiarità con la tavola periodica, come discusso in [La tavola periodica](ref:chapter/2#p3). Servono inoltre le operazioni algebriche di base e la capacità di leggere simboli e unità di misura.
 
 Al termine saprai descrivere la natura quantistica della luce e della materia, interpretare gli spettri e riconoscere che cosa spiega il modello di Bohr e dove non basta. Saprai individuare i numeri quantici e gli orbitali, scrivere configurazioni elettroniche per atomi e ioni applicando le regole di riempimento, e prevedere se una specie è paramagnetica o diamagnetica. Infine, userai la carica nucleare efficace per spiegare e confrontare i raggi atomici e ionici, le energie di ionizzazione e le affinità elettroniche, collegando queste tendenze alla reattività degli elementi.
 
@@ -99,7 +99,7 @@ $$E_{\text{mole}} = E_{\text{fotone}} \cdot N_A = (4,968 \times 10^{-19}\ \text{
 
 4. *Verifica.* L'ordine di grandezza è quello tipico dei fotoni di luce visibile ($10^{-19}\ \text{J}$ per fotone, poche centinaia di kJ/mol su scala molare), confrontabile con le energie di legame chimico: non a caso la luce visibile e ultravioletta può indurre reazioni fotochimiche, mentre le onde radio, molto meno energetiche, non lo possono.
 
-**Errore tipico 8.2.** Dimenticare di convertire $\lambda$ in metri prima di applicare $\nu = c/\lambda$ (un valore in nanometri lasciato tale nel calcolo produce un errore di nove ordini di grandezza), oppure confondere l'energia di un singolo fotone con l'energia riferita a una mole di fotoni, che va moltiplicata per $N_A$ secondo quanto fissato nella sezione su [massa, mole e massa molare](ref:chapter/2#p5).
+**Errore tipico 8.2.** Dimenticare di convertire $\lambda$ in metri prima di applicare $\nu = c/\lambda$ (un valore in nanometri lasciato tale nel calcolo produce un errore di nove ordini di grandezza), oppure confondere l'energia di un singolo fotone con l'energia riferita a una mole di fotoni, che va moltiplicata per $N_A$ secondo quanto fissato nella sezione su [massa, mole e massa molare](ref:chapter/2#p4).
 
 La quantizzazione dell'energia, introdotta qui per la radiazione del corpo nero e per l'effetto fotoelettrico, sarà il filo conduttore della sezione successiva, dove si applicherà agli spettri a righe degli atomi e al modello di Bohr dell'atomo di idrogeno.
 
@@ -318,7 +318,7 @@ Gli orbitali f ($l=3$), con sette possibili orientamenti e forme multilobate pi�
 
 ## p5 | Configurazione elettronica di atomi e ioni
 
-La configurazione elettronica è la rappresentazione completa dei sottolivelli occupati da tutti gli elettroni di un atomo o di uno ione, e descrive come gli elettroni sono distribuiti tra i vari orbitali atomici. Conoscerla permette di prevedere il comportamento chimico di un elemento, il suo posto nella tavola periodica (già discussa in [La tavola periodica](ref:chapter/2#p4)) e, come si vedrà in chiusura di sezione, la sua risposta a un campo magnetico esterno.
+La configurazione elettronica è la rappresentazione completa dei sottolivelli occupati da tutti gli elettroni di un atomo o di uno ione, e descrive come gli elettroni sono distribuiti tra i vari orbitali atomici. Conoscerla permette di prevedere il comportamento chimico di un elemento, il suo posto nella tavola periodica (già discussa in [La tavola periodica](ref:chapter/2#p3)) e, come si vedrà in chiusura di sezione, la sua risposta a un campo magnetico esterno.
 
 ### Le tre regole di costruzione: Aufbau, Pauli, Hund
 

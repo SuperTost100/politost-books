@@ -93,7 +93,7 @@ Queste reazioni possono portare alla formazione di un gas (come $\mathrm{CO_2}$,
 
 ### Distinguere reazioni redox e non redox
 
-**Definizione 5.5** (reazione redox). Una reazione è detta di ossidoriduzione (redox) quando durante il processo il numero di ossidazione di almeno un elemento aumenta e quello di almeno un altro diminuisce. L'ossidazione è l'aumento del numero di ossidazione; l'elemento che si ossida è detto riducente. La riduzione è la diminuzione del numero di ossidazione; l'elemento che si riduce è detto ossidante. In alcuni casi, come nelle reazioni tra ioni, queste variazioni corrispondono a un trasferimento netto di elettroni da un reagente all'altro; nelle specie covalenti, invece, il numero di ossidazione è un conteggio formale. Ossidazione e riduzione possono riguardare atomi dello stesso elemento.
+**Definizione 5.5** (reazione redox). Una reazione è detta di ossidoriduzione (redox) quando durante il processo il numero di ossidazione aumenta per alcuni atomi e diminuisce per altri, anche se appartengono allo stesso elemento. L'ossidazione è l'aumento del numero di ossidazione; l'elemento che si ossida è detto riducente. La riduzione è la diminuzione del numero di ossidazione; l'elemento che si riduce è detto ossidante. In alcuni casi, come nelle reazioni tra ioni, queste variazioni corrispondono a un trasferimento netto di elettroni da un reagente all'altro; nelle specie covalenti, invece, il numero di ossidazione è un conteggio formale.
 
 In una reazione non redox, invece, nessun elemento cambia numero di ossidazione. Rientrano in questa categoria le reazioni acido-base (salificazione), di forma generale acido $+$ base $\to$ sale $+$ acqua, come $\mathrm{HNO_3} + \mathrm{NaOH} \to \mathrm{NaNO_3} + \mathrm{H_2O}$ e $\mathrm{H_2SO_4} + \mathrm{Ca(OH)_2} \to \mathrm{CaSO_4} + 2\mathrm{H_2O}$, e i casi analoghi acido $+$ ossido basico, ossido acido $+$ base, ossido acido $+$ ossido basico, acido $+$ ammoniaca. Sono non redox anche le reazioni di dissociazione, in cui un composto ionico libera in acqua gli ioni già presenti nel reticolo (per esempio $\mathrm{NaCl}_{(s)} \to \mathrm{Na}^+_{(aq)} + \mathrm{Cl}^-_{(aq)}$), e le reazioni di ionizzazione, in cui un composto molecolare reagisce con l'acqua formando ioni che non erano presenti nella molecola di partenza, come in $\mathrm{HCl} + \mathrm{H_2O} \to \mathrm{H_3O}^+ + \mathrm{Cl}^-$.
 
@@ -166,7 +166,7 @@ Sono considerati **insolubili** (salvo eccezioni indicate):
 :::image{src="assets/0c3d550b-gruppi-1a-2a-solubilita.svg" alt="Tavola periodica con i gruppi 1A e 2A evidenziati" caption="Fig. 5.5 — I cationi del gruppo 1A (sempre solubili) e del gruppo 2A (che compaiono come eccezioni in più regole di solubilità) ricorrono spesso nelle regole empiriche di solubilità."}
 :::
 
-Un trattamento quantitativo della solubilità, basato sul confronto tra il prodotto ionico $Q_{ps}$ e la costante di prodotto di solubilità $K_{ps}$ ($Q_{ps}>K_{ps}$ precipitazione, $Q_{ps}=K_{ps}$ equilibrio, $Q_{ps}<K_{ps}$ soluzione insatura), è rimandato alla sezione sugli [equilibri di solubilità](ref:chapter/13#p5); in questa sede è sufficiente la previsione qualitativa basata sulle regole precedenti.
+Un trattamento quantitativo della solubilità, basato sul confronto tra il prodotto ionico $Q_{ps}$ e la costante di prodotto di solubilità $K_{ps}$ ($Q_{ps}>K_{ps}$ precipitazione, $Q_{ps}=K_{ps}$ equilibrio, $Q_{ps}<K_{ps}$ soluzione insatura), è rimandato alla sezione sugli equilibri di solubilità; in questa sede è sufficiente la previsione qualitativa basata sulle regole precedenti.
 
 **Esempio svolto 5.2**
 
@@ -401,7 +401,72 @@ $$4\,\text{FeCr}_2\text{O}_4 + 8\,\text{Na}_2\text{CO}_3 + 8\,\text{CaO} + 7\,\t
 
 Una volta bilanciata l'equazione, i coefficienti si interpretano come rapporti molari esattamente come per qualunque altra reazione, secondo [formula (4.2)](ref:formula/4.2), e si applicano i quattro passi (bilanciare, convertire in moli, usare i coefficienti, riconvertire in massa) e il criterio del reagente limitante [formula (4.3)](ref:formula/4.3) già illustrati in [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4): nelle redox l'unica differenza è che il rapporto tra i coefficienti dei reagenti che si ossidano e si riducono deve rispettare, a monte, l'uguaglianza degli elettroni scambiati appena descritta, e non va ricalcolato ogni volta a parte durante il calcolo stechiometrico.
 
-## p6 | Come viene chiesto all'esame
+## p6 | Reazioni di combustione
+
+Quando una sostanza brucia, un combustibile reagisce con l'ossigeno sviluppando molto calore. È la reazione più familiare della vita quotidiana (fiamma del gas, motore a scoppio) e, dal punto di vista chimico, un caso particolare di ossidoriduzione già incontrato in [Classificazione delle reazioni](ref:chapter/5#p2) e in [Reazioni di ossidoriduzione](ref:chapter/5#p5).
+
+### Che cos'è una combustione
+
+**Definizione 5.9** (reazione di combustione). È il processo di combinazione di una sostanza con l'ossigeno, che di solito avviene con il rilascio di grandi quantità di calore e luce.
+
+Un esempio con un elemento è $\mathrm{S_8(s) + 8\,O_2(g) \to 8\,SO_2(g)}$.
+
+La sostanza che brucia si chiama **combustibile**; l'ossigeno, di solito, è il **comburente**.
+
+### Una combustione è una redox
+
+Nelle reazioni tra un elemento e l'ossigeno variano i numeri di ossidazione: aumenta quello dell'elemento e diminuisce quello dell'ossigeno. Queste reazioni sono quindi ossidoriduzioni. Il combustibile si ossida ed è il riducente. L'ossigeno si riduce ed è l'ossidante.
+
+Nei composti organici, il carbonio che forma più legami con O e meno legami con H risulta ossidato. Si parla spesso di "ossidazione" del composto organico, ma la riduzione di $\mathrm{O_2}$ avviene sempre in parallelo.
+
+**Esempio svolto 5.8** (numeri di ossidazione nella combustione del metano).
+
+1. Dati: $\mathrm{CH_4 + 2\,O_2 \to CO_2 + 2\,H_2O}$.
+2. Strategia: si assegnano i numeri di ossidazione con le regole viste in [Numero di ossidazione](ref:chapter/3#p3).
+3. Calcolo: in $\mathrm{CH_4}$ si ha H(+1), quindi C($-4$). In $\mathrm{CO_2}$ si ha O($-2$), quindi C($+4$). L'ossigeno passa da 0 in $\mathrm{O_2}$ a $-2$.
+4. Verifica: l'aumento del numero di ossidazione del carbonio da $-4$ a $+4$ corrisponde formalmente alla cessione di 8 elettroni; ciascun O scende da 0 a $-2$ (4 atomi di O acquistano formalmente in totale 8 elettroni). I conteggi formali coincidono.
+
+### Combustione completa di idrocarburi e composti organici
+
+Tutti i composti organici che contengono C e H bruciano in $\mathrm{O_2}$ formando $\mathrm{CO_2}$ e $\mathrm{H_2O}$. Perché la combustione sia **completa**, occorre ossigeno sufficiente; nella pratica si usa spesso un eccesso per favorirla.
+
+Per bilanciare si usa il metodo per ispezione ([Equazioni chimiche e bilanciamento](ref:chapter/4#p3)) con un ordine pratico. Si parte dal carbonio e poi dall'idrogeno, e l'ossigeno si bilancia per ultimo. Per un idrocarburo $\mathrm{C_xH_y}$ si ottiene:
+
+:::formula{id="5.9" label="Combustione completa di un idrocarburo"}
+$$\mathrm{C_xH_y} + \left(x+\frac{y}{4}\right)\mathrm{O_2} \to x\,\mathrm{CO_2} + \frac{y}{2}\,\mathrm{H_2O}$$
+:::
+
+La formula si ricava contando gli atomi: $x$ atomi di C danno $x$ molecole di $\mathrm{CO_2}$, $y$ atomi di H danno $y/2$ molecole di $\mathrm{H_2O}$. L'ossigeno richiesto è $2x + y/2$ atomi, cioè $x + y/4$ molecole di $\mathrm{O_2}$. Se compaiono frazioni, si moltiplicano tutti i coefficienti per il minimo comune denominatore, perché i coefficienti finali devono essere interi non ulteriormente semplificabili.
+
+**Esempio svolto 5.9** (ottano, $\mathrm{C_8H_{18}}$).
+
+1. Dati: $\mathrm{C_8H_{18} + O_2 \to CO_2 + H_2O}$.
+2. Strategia: si bilanciano C, H e infine O.
+3. Calcolo: C dà $8\,\mathrm{CO_2}$; H dà $18/2 = 9\,\mathrm{H_2O}$; O richiede $(16 + 9)/2 = 25/2$ molecole di $\mathrm{O_2}$. Moltiplicando per 2:
+
+$$\mathrm{2\,C_8H_{18} + 25\,O_2 \to 16\,CO_2 + 18\,H_2O}$$
+
+4. Verifica: a sinistra 16 C, 36 H, 50 O; a destra 16 C, 36 H, $32+18 = 50$ O.
+
+Per il propano la reazione è $\mathrm{C_3H_8(g) + 5\,O_2(g) \to 3\,CO_2(g) + 4\,H_2O(g)}$.
+
+Se il composto contiene già ossigeno (per esempio il metanolo), l'ossigeno presente nella molecola va sottratto da quello richiesto: $\mathrm{2\,CH_3OH + 3\,O_2 \to 2\,CO_2 + 4\,H_2O}$. Il conteggio è lo stesso: a sinistra 2 C, 8 H, $2 + 6 = 8$ O; a destra 2 C, 8 H, $4 + 4 = 8$ O.
+
+Lo stato fisico dell'acqua prodotta cambia il calore sviluppato: per $\mathrm{CH_4}$ si ha $\Delta H = -191{,}7$ kcal con $\mathrm{H_2O(g)}$ e $-212{,}7$ kcal con $\mathrm{H_2O(l)}$. Il calore è proporzionale alle moli bruciate. Gli alcani più lunghi sviluppano più calore. Il calore sviluppato per mole di sostanza bruciata è l'entalpia di combustione.
+
+I coefficienti legano moli, non grammi: 2 g di Mg e 1 g di $\mathrm{O_2}$ reagiscono, ma non completamente tra loro. Per i calcoli si passa dalle masse alle moli dividendo ciascuna massa per la massa molare; il confronto con il rapporto stechiometrico mostra che l'ossigeno è limitante e che 1 g di $\mathrm{O_2}$ consuma circa 1,52 g di Mg, lasciandone una parte non reagita.
+
+### Combustione incompleta
+
+Se l'ossigeno non basta, l'ossidazione è parziale e può formarsi monossido di carbonio, CO, molto pericoloso. Il CO è velenoso, incolore e inodore. Un esempio di reazione è $\mathrm{2\,CH_4 + 3\,O_2 \to 2\,CO + 4\,H_2O}$. Nel CO il carbonio ha numero di ossidazione $+2$, contro il $+4$ di $\mathrm{CO_2}$. Con carenza ancora maggiore si può formare anche carbonio (fuliggine). In difetto di ossigeno si formano anche idrocarburi policiclici aromatici, potenti inquinanti.
+
+**Errore tipico 5.8**: scrivere sempre $\mathrm{CO_2}$ come prodotto. Prima di bilanciare occorre verificare se il testo parla di eccesso o di difetto di ossigeno.
+
+**Errore tipico 5.9**: cambiare i pedici delle formule per far tornare i conti. Si modificano solo i coefficienti, perché cambiare un pedice significa scrivere un'altra sostanza.
+
+**Errore tipico 5.10**: lasciare coefficienti frazionari o non ridotti, come $\mathrm{C_4H_{10} + \tfrac{13}{2}\,O_2}$. Nella forma finale bisogna moltiplicare per 2: $\mathrm{2\,C_4H_{10} + 13\,O_2 \to 8\,CO_2 + 10\,H_2O}$.
+
+## p7 | Come viene chiesto all'esame
 
 Il capitolo è comparso in tutte e 4 le sessioni d'esame esaminate. L'esercizio che ritorna più spesso è il bilanciamento di una reazione redox data a parole, seguito da un calcolo stechiometrico sui suoi coefficienti. Compare in 3 sessioni su 4. Le altre domande ricorrenti sono l'elettrolisi con volumi di gas e le domande teoriche brevi. L'esame ha una prova scritta di 70 minuti senza materiale didattico, quindi servono un metodo ordinato e le formule a memoria.
 
@@ -439,7 +504,7 @@ Metodo:
 2. Dividi le moli di ciascun reagente per il suo coefficiente. Il più piccolo quoziente indica il reagente limitante, secondo [formula (4.3)](ref:formula/4.3) e [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4).
 3. Usa i rapporti di [formula (4.2)](ref:formula/4.2) per ottenere le moli di prodotto, e da queste la massa richiesta.
 4. Se la domanda chiede le moli contenute in un'aliquota prelevata, la concentrazione resta quella della soluzione e le moli si ottengono con $n = cV$ usando il volume prelevato. Se quell'aliquota viene poi diluita, usa [formula (11.7)](ref:formula/11.7): le moli della stessa aliquota non cambiano, cambia solo il volume.
-5. Controlla le cifre significative e dai la risposta con unità e arrotondamento finale ([Grandezze, unità e cifre significative](ref:chapter/1#p3)).
+5. Controlla le cifre significative e dai la risposta con unità e arrotondamento finale ([Grandezze, unità e cifre significative](ref:chapter/1#p2)).
 
 Errori tipici:
 

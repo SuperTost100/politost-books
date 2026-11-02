@@ -13,7 +13,7 @@ Al termine saprai descrivere legami ionici, covalenti e metallici e rappresentar
 
 ## p2 | Legame ionico ed energia reticolare
 
-Un composto ionico come il cloruro di sodio non contiene molecole discrete di NaCl, eppure la sua formula minima si scrive con estrema facilità a partire dalla posizione degli elementi nella [tavola periodica](ref:chapter/2#p4). In questa sezione si vede perché: il legame ionico nasce da un trasferimento di elettroni tra un metallo e un non metallo, e la stabilità del solido che ne risulta è governata da un bilancio energetico che si può ricostruire passo per passo con il ciclo di Born-Haber.
+Un composto ionico come il cloruro di sodio non contiene molecole discrete di NaCl, eppure la sua formula minima si scrive con estrema facilità a partire dalla posizione degli elementi nella [tavola periodica](ref:chapter/2#p3). In questa sezione si vede perché: il legame ionico nasce da un trasferimento di elettroni tra un metallo e un non metallo, e la stabilità del solido che ne risulta è governata da un bilancio energetico che si può ricostruire passo per passo con il ciclo di Born-Haber.
 
 ### Formazione del legame ionico e simboli di Lewis
 

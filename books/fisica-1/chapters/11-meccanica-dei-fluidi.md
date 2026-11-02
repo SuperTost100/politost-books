@@ -132,7 +132,7 @@ $$
 M_x^{\text{tot}} = \int_0^h (h-z)\,\rho g z\, l\, dz = l\rho g \frac{h^3}{6}.
 $$
 
-Per l'equilibrio secondo le [equazioni cardinali della statica del corpo rigido](ref:chapter/8#p6), occorre applicare una forza esterna $\vec{F}_{\text{ext}} = -\vec{F}_{\text{tot}}$ e un momento $M_x^{\text{ext}} = -M_x^{\text{tot}}$; equivalentemente, basta applicare $-F_{\text{tot}}$ a una distanza $d$ dal fondo tale che $M_x^{\text{tot}} = F_{\text{tot}}\,d$, da cui
+Per l'equilibrio secondo le [equazioni cardinali della statica del corpo rigido](ref:chapter/8#p5), occorre applicare una forza esterna $\vec{F}_{\text{ext}} = -\vec{F}_{\text{tot}}$ e un momento $M_x^{\text{ext}} = -M_x^{\text{tot}}$; equivalentemente, basta applicare $-F_{\text{tot}}$ a una distanza $d$ dal fondo tale che $M_x^{\text{tot}} = F_{\text{tot}}\,d$, da cui
 
 $$
 d = \frac{l\rho g h^3/6}{\rho g l h^2/2} = \frac{h}{3}.

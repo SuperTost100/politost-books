@@ -359,7 +359,7 @@ Il capitolo sulle soluzioni è comparso in 3 delle 4 sessioni d'esame esaminate.
 2. Porta ogni reagente a moli. Per un solido usa $n = m/M$ ([formula (2.4)](ref:formula/2.4)). Per un reagente dato come soluzione percentuale converti il volume in massa con la densità e applica la percentuale in massa del soluto ({{formula:11.6}}).
 3. Confronta le moli con i coefficienti stechiometrici e individua il reagente limitante ([Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4)).
 4. Calcola le moli del prodotto richiesto dal reagente limitante e convertile in grammi con la massa molare.
-5. Verifica che le unità si semplifichino e che le cifre significative rispettino i dati ([Grandezze, unità e cifre significative](ref:chapter/1#p3)).
+5. Verifica che le unità si semplifichino e che le cifre significative rispettino i dati ([Grandezze, unità e cifre significative](ref:chapter/1#p2)).
 
 **Errori tipici.**
 

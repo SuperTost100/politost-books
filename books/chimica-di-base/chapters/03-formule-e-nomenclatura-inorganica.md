@@ -82,7 +82,7 @@ Questo principio fornisce la regola operativa per scrivere la formula di un comp
 2. si scambiano numericamente le cariche, usandole come indici (senza segno) dell'altro ione, e si riducono gli indici al rapporto minimo con numeri interi;
 3. si scrive il catione a sinistra e l'anione a destra, racchiudendo tra parentesi lo ione poliatomico se il suo indice è maggiore di 1.
 
-Le cariche più comuni degli ioni monoatomici si possono prevedere dalla posizione dell'elemento nella tavola periodica, come già osservato nella sezione sulla [tavola periodica](ref:chapter/2#p4): i metalli dei gruppi principali tendono a cedere tutti gli elettroni di valenza, i non metalli tendono ad acquistarne il numero necessario per raggiungere la configurazione del gas nobile più vicino. Per esempio gli elementi del gruppo 1 cedono un elettrone formando ioni $+1$, quelli del gruppo 2 ne cedono due formando ioni $+2$, mentre gli elementi del gruppo 17 acquistano un elettrone formando ioni $-1$.
+Le cariche più comuni degli ioni monoatomici si possono prevedere dalla posizione dell'elemento nella tavola periodica, come già osservato nella sezione sulla [tavola periodica](ref:chapter/2#p3): i metalli dei gruppi principali tendono a cedere tutti gli elettroni di valenza, i non metalli tendono ad acquistarne il numero necessario per raggiungere la configurazione del gas nobile più vicino. Per esempio gli elementi del gruppo 1 cedono un elettrone formando ioni $+1$, quelli del gruppo 2 ne cedono due formando ioni $+2$, mentre gli elementi del gruppo 17 acquistano un elettrone formando ioni $-1$.
 
 Molti composti ionici contengono anche ioni poliatomici, cioè gruppi di atomi legati covalentemente tra loro che portano complessivamente una carica netta, come l'anione solfato $\mathrm{SO_4^{2-}}$ o il catione ammonio $\mathrm{NH_4^+}$; anche in questo caso vale la regola dell'elettroneutralità, considerando la carica complessiva dello ione poliatomico.
 
@@ -181,7 +181,7 @@ I risultati, $+1/+3/-2$ per $\text{CsNO}_2$ e $+1/+5/-2$ per $\text{HPO}_4^{2-}$
 
 ### Numeri di ossidazione comuni secondo la posizione nella tavola periodica
 
-I numeri di ossidazione variano con periodicità lungo la tavola periodica, perché dipendono dal numero di elettroni di valenza e dalla configurazione elettronica di ciascun elemento, già introdotti in [La tavola periodica](ref:chapter/2#p4) e ripresi in [Configurazione elettronica di atomi e ioni](ref:chapter/8#p5). Alcuni elementi hanno un unico numero di ossidazione possibile, mentre i metalli di transizione e molti non metalli, disponendo di più elettroni utilizzabili per formare legami, possono assumere numeri di ossidazione diversi secondo il composto, a seconda di quale configurazione elettronica risulta più stabile nel contesto.
+I numeri di ossidazione variano con periodicità lungo la tavola periodica, perché dipendono dal numero di elettroni di valenza e dalla configurazione elettronica di ciascun elemento, già introdotti in [La tavola periodica](ref:chapter/2#p3) e ripresi in [Configurazione elettronica di atomi e ioni](ref:chapter/8#p5). Alcuni elementi hanno un unico numero di ossidazione possibile, mentre i metalli di transizione e molti non metalli, disponendo di più elettroni utilizzabili per formare legami, possono assumere numeri di ossidazione diversi secondo il composto, a seconda di quale configurazione elettronica risulta più stabile nel contesto.
 
 - Gruppo 1 (metalli alcalini): N.O. $+1$.
 - Gruppo 2 (metalli alcalino-terrosi): N.O. $+2$.

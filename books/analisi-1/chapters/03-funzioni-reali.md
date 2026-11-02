@@ -421,7 +421,7 @@ Le nozioni di parità, disparità e periodicità saranno riprese nello [studio d
 
 ### Funzioni limitate
 
-Una prima proprietà globale che si può chiedere a una funzione reale è la limitatezza della sua immagine, concetto già introdotto per i sottoinsiemi di $\mathbb{R}$ nella sezione su [maggioranti, minoranti ed estremi](ref:chapter/1#p6).
+Una prima proprietà globale che si può chiedere a una funzione reale è la limitatezza della sua immagine, concetto già introdotto per i sottoinsiemi di $\mathbb{R}$ nella sezione su [maggioranti, minoranti ed estremi](ref:chapter/1#p5).
 
 Sia $f : A \to \mathbb{R}$, con $A \subseteq \mathbb{R}$.
 
@@ -723,4 +723,4 @@ Esempio:
 
 ### Altri tipi, in breve
 
-Una sola sessione (29 gennaio 2020, esercizio 2, versioni A e C) propone estremi di un insieme come $A=\{\frac4n-2: n\in\mathbb{Z}\setminus\{0\}\}\cup\{10\}$ e poi estremi dell'immagine $g(A)$: si veda [Maggioranti, minoranti ed estremi](ref:chapter/1#p6). Nella sessione dell'11 febbraio 2020 (esercizio 2D) compaiono definizione e condizione sufficiente di invertibilità, e lo sviluppo $f^{-1}(x)=m(x-x_0)+o(x-x_0)$ per $f(x)=e^{3x}+x^5$: è la derivata dell'inversa, anticipata dalla sezione [Grafico, composizione e funzione inversa](ref:chapter/3#p3).
+Una sola sessione (29 gennaio 2020, esercizio 2, versioni A e C) propone estremi di un insieme come $A=\{\frac4n-2: n\in\mathbb{Z}\setminus\{0\}\}\cup\{10\}$ e poi estremi dell'immagine $g(A)$: si veda [Maggioranti, minoranti ed estremi](ref:chapter/1#p5). Nella sessione dell'11 febbraio 2020 (esercizio 2D) compaiono definizione e condizione sufficiente di invertibilità, e lo sviluppo $f^{-1}(x)=m(x-x_0)+o(x-x_0)$ per $f(x)=e^{3x}+x^5$: è la derivata dell'inversa, anticipata dalla sezione [Grafico, composizione e funzione inversa](ref:chapter/3#p3).
