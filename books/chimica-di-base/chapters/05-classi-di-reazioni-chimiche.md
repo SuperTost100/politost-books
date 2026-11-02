@@ -231,7 +231,7 @@ La forma generale di una reazione di neutralizzazione tra un acido monoprotico $
 
 $$HX_{(aq)} + MOH_{(aq)} \rightarrow MX_{(aq)} + H_2O_{(l)}$$
 
-dove $MX$ è il sale risultante. In termini più generali, la classe di reazione si scrive come richiamato con la formula [formula (3.8)](ref:formula/3.8), già introdotta a proposito dei sali.
+dove $MX$ è il sale risultante. In termini più generali, la classe di reazione si scrive come richiamato con la formula [(3.8)](ref:formula/3.8), già introdotta a proposito dei sali.
 
 Esempi tipici con acidi e basi forti sono
 
@@ -259,7 +259,7 @@ Oltre alla reazione diretta tra un acido e un idrossido, esistono altre vie di s
 - ossido acido + ossido basico, per esempio $SO_2 + K_2O \rightarrow K_2SO_3$;
 - acido + ammoniaca, per esempio $HNO_2 + NH_3 \rightarrow NH_4NO_2$
 
-. Questi schemi richiamano i composti studiati in [Ossidi, idrossidi, perossidi e idruri](ref:chapter/3#p5): un ossido basico si comporta come l'idrossido corrispondente e un ossido acido come l'ossiacido corrispondente, secondo lo schema [formula (3.7)](ref:formula/3.7) già incontrato in quella sezione.
+. Questi schemi richiamano i composti studiati in [Ossidi, idrossidi, perossidi e idruri](ref:chapter/3#p5): un ossido basico si comporta come l'idrossido corrispondente e un ossido acido come l'ossiacido corrispondente, secondo lo schema [(3.7)](ref:formula/3.7) già incontrato in quella sezione.
 
 **Errore tipico 5.4**
 
@@ -267,7 +267,7 @@ Un errore frequente è dimenticare che la salificazione è classificata come rea
 
 ### Stechiometria delle reazioni di neutralizzazione
 
-I calcoli stechiometrici su una reazione di neutralizzazione seguono esattamente la procedura generale già stabilita in [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4): si scrive e si bilancia l'equazione, si convertono i dati in moli, si usano i coefficienti stechiometrici per passare da una specie all'altra tramite il rapporto [formula (4.2)](ref:formula/4.2), e si riconvertono le moli trovate nell'unità richiesta. L'unica particolarità delle soluzioni acquose è che le moli di soluto si ricavano spesso dalla concentrazione molare piuttosto che dalla massa, tramite
+I calcoli stechiometrici su una reazione di neutralizzazione seguono esattamente la procedura generale già stabilita in [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4): si scrive e si bilancia l'equazione, si convertono i dati in moli, si usano i coefficienti stechiometrici per passare da una specie all'altra tramite il rapporto [(4.2)](ref:formula/4.2), e si riconvertono le moli trovate nell'unità richiesta. L'unica particolarità delle soluzioni acquose è che le moli di soluto si ricavano spesso dalla concentrazione molare piuttosto che dalla massa, tramite
 
 $$n = M \cdot V$$
 
@@ -399,7 +399,7 @@ $$4\,\text{FeCr}_2\text{O}_4 + 8\,\text{Na}_2\text{CO}_3 + 8\,\text{CaO} + 7\,\t
 
 . La regola generale, utile anche per riconoscere subito una redox, resta quella già incontrata in [Classificazione delle reazioni](ref:chapter/5#p2): quando un elemento è presente allo stato elementare (come $\text{O}_2$ sopra) tra reagenti o prodotti, il N.O. passa necessariamente da zero a un valore diverso da zero, e la reazione è quasi sempre una redox.
 
-Una volta bilanciata l'equazione, i coefficienti si interpretano come rapporti molari esattamente come per qualunque altra reazione, secondo [formula (4.2)](ref:formula/4.2), e si applicano i quattro passi (bilanciare, convertire in moli, usare i coefficienti, riconvertire in massa) e il criterio del reagente limitante [formula (4.3)](ref:formula/4.3) già illustrati in [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4): nelle redox l'unica differenza è che il rapporto tra i coefficienti dei reagenti che si ossidano e si riducono deve rispettare, a monte, l'uguaglianza degli elettroni scambiati appena descritta, e non va ricalcolato ogni volta a parte durante il calcolo stechiometrico.
+Una volta bilanciata l'equazione, i coefficienti si interpretano come rapporti molari esattamente come per qualunque altra reazione, secondo [(4.2)](ref:formula/4.2), e si applicano i quattro passi (bilanciare, convertire in moli, usare i coefficienti, riconvertire in massa) e il criterio del reagente limitante [(4.3)](ref:formula/4.3) già illustrati in [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4): nelle redox l'unica differenza è che il rapporto tra i coefficienti dei reagenti che si ossidano e si riducono deve rispettare, a monte, l'uguaglianza degli elettroni scambiati appena descritta, e non va ricalcolato ogni volta a parte durante il calcolo stechiometrico.
 
 ## p6 | Reazioni di combustione
 
@@ -500,10 +500,10 @@ Dopo il bilanciamento, gli esercizi del tipo 1 proseguono con un calcolo quantit
 
 Metodo:
 
-1. Converti ogni dato in moli: da massa con [formula (2.4)](ref:formula/2.4), da soluzione con [formula (11.3)](ref:formula/11.3) (se la soluzione è data in percentuale in massa e densità, usa [Espressioni della concentrazione](ref:chapter/11#p3) e [formula (11.6)](ref:formula/11.6)).
-2. Dividi le moli di ciascun reagente per il suo coefficiente. Il più piccolo quoziente indica il reagente limitante, secondo [formula (4.3)](ref:formula/4.3) e [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4).
-3. Usa i rapporti di [formula (4.2)](ref:formula/4.2) per ottenere le moli di prodotto, e da queste la massa richiesta.
-4. Se la domanda chiede le moli contenute in un'aliquota prelevata, la concentrazione resta quella della soluzione e le moli si ottengono con $n = cV$ usando il volume prelevato. Se quell'aliquota viene poi diluita, usa [formula (11.7)](ref:formula/11.7): le moli della stessa aliquota non cambiano, cambia solo il volume.
+1. Converti ogni dato in moli: da massa con [(2.4)](ref:formula/2.4), da soluzione con [(11.3)](ref:formula/11.3) (se la soluzione è data in percentuale in massa e densità, usa [Espressioni della concentrazione](ref:chapter/11#p3) e [(11.6)](ref:formula/11.6)).
+2. Dividi le moli di ciascun reagente per il suo coefficiente. Il più piccolo quoziente indica il reagente limitante, secondo [(4.3)](ref:formula/4.3) e [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4).
+3. Usa i rapporti di [(4.2)](ref:formula/4.2) per ottenere le moli di prodotto, e da queste la massa richiesta.
+4. Se la domanda chiede le moli contenute in un'aliquota prelevata, la concentrazione resta quella della soluzione e le moli si ottengono con $n = cV$ usando il volume prelevato. Se quell'aliquota viene poi diluita, usa [(11.7)](ref:formula/11.7): le moli della stessa aliquota non cambiano, cambia solo il volume.
 5. Controlla le cifre significative e dai la risposta con unità e arrotondamento finale ([Grandezze, unità e cifre significative](ref:chapter/1#p2)).
 
 Errori tipici:
@@ -526,9 +526,9 @@ Metodo:
 
 1. Disegna la cella con un unico recipiente, due elettrodi e il generatore. L'ossidazione avviene all'anodo, la riduzione al catodo ([Elettrolisi e leggi di Faraday](ref:chapter/16#p5)).
 2. Scrivi le semireazioni. Per KOH in acqua, per esempio, all'anodo si ha $\mathrm{4\,OH^- \to O_2 + 2\,H_2O + 4\,e^-}$ e al catodo $\mathrm{2\,H_2O + 2\,e^- \to H_2 + 2\,OH^-}$.
-3. Calcola le moli di gas con [formula (6.5)](ref:formula/6.5), con $T$ in kelvin e pressione e volume nelle unità di $R$. Dichiara quale $R$ usi, per esempio $R = 0{,}08206\ \mathrm{L\cdot atm/(mol\cdot K)}$, e converti i $\mathrm{mmHg}$ in atm ([Pressione e leggi dei gas ideali](ref:chapter/6#p2)). Se il gas è secco, non si sottrae la tensione di vapore dell'acqua.
+3. Calcola le moli di gas con [(6.5)](ref:formula/6.5), con $T$ in kelvin e pressione e volume nelle unità di $R$. Dichiara quale $R$ usi, per esempio $R = 0{,}08206\ \mathrm{L\cdot atm/(mol\cdot K)}$, e converti i $\mathrm{mmHg}$ in atm ([Pressione e leggi dei gas ideali](ref:chapter/6#p2)). Se il gas è secco, non si sottrae la tensione di vapore dell'acqua.
 4. Moltiplica le moli di gas per gli elettroni scambiati nella semireazione (4 per $\mathrm{O_2}$, 2 per $\mathrm{H_2}$) per ottenere le moli di elettroni.
-5. Ottieni la carica con [formula (16.4)](ref:formula/16.4), $Q = n_{e^-}F$ con $F = 96\,485\ \mathrm{C/mol}$. Poi calcola $I = Q/t$ con $t$ in secondi, ricordando il rendimento dichiarato.
+5. Ottieni la carica con [(16.4)](ref:formula/16.4), $Q = n_{e^-}F$ con $F = 96\,485\ \mathrm{C/mol}$. Poi calcola $I = Q/t$ con $t$ in secondi, ricordando il rendimento dichiarato.
 
 Errori tipici:
 

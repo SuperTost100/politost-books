@@ -374,7 +374,7 @@ La nomenclatura degli idracidi segue due regole alternative, legate anche allo s
 1. Dati: in $H_2Se$ l'idrogeno (N.O. $+1$) è legato al selenio (N.O. $-2$); in $HCN$ l'idrogeno è legato al gruppo ciano $(CN)^-$.
 2. Strategia: si applica lo schema $E$-uro di (prefisso) idrogeno per l'IUPAC e acido $E$-idrico per la nomenclatura tradizionale, usando il prefisso di- quando ci sono due atomi di H.
 3. Calcolo: $H_2Se$ diventa seleniuro di diidrogeno (IUPAC) e acido selenidrico (tradizionale); $HCN$ diventa cianuro di idrogeno (IUPAC) e acido cianidrico (tradizionale).
-4. Verifica: in entrambi i casi la somma dei numeri di ossidazione è nulla, come richiesto per una molecola neutra ({{formula:3.3}}).
+4. Verifica: in entrambi i casi la somma dei numeri di ossidazione è nulla, come richiesto per una molecola neutra {{formula:3.3}}.
 
 Gli stessi passaggi, applicati agli alogenuri di idrogeno più comuni, danno: $HF$ = fluoruro di idrogeno / acido fluoridrico; $HCl$ = cloruro di idrogeno / acido cloridrico; $HBr$ = bromuro di idrogeno / acido bromidrico; $HI$ = ioduro di idrogeno / acido iodidrico; $H_2S$ = solfuro di idrogeno / acido solfidrico.
 
@@ -434,7 +434,7 @@ Questo comportamento compare a più livelli nella chimica inorganica.
 1. Dati: $Cr$ con N.O. $+2$ forma un idrossido basico, con N.O. $+3$ forma l'idrossido anfotero $Cr(OH)_3$ e con N.O. $+6$ forma un ossiacido; $Mn$ con N.O. $+2$ forma un idrossido, con N.O. $+6$ e $+7$ forma ossiacidi.
 2. Strategia: si applicano le regole degli idrossidi (viste nella sezione precedente) ai N.O. bassi e quelle degli ossiacidi ai N.O. alti; per $Cr(OH)_3$ si segnala il comportamento anfotero.
 3. Calcolo: $Cr(OH)_2$ = diidrossido di cromo / idrossido cromoso; $Cr(OH)_3$ = triidrossido di cromo / idrossido cromico (idrossido anfotero); $H_2CrO_4$ = acido tetraossocromico (VI) / acido cromico; $Mn(OH)_2$ = diidrossido di manganese / idrossido manganoso; $H_2MnO_4$ = acido tetraossomanganico (VI) / acido manganico; $HMnO_4$ = acido tetraossomanganico (VII) / acido permanganico.
-4. Verifica: in ciascun caso il suffisso tradizionale (-oso per N.O. basso, -ico per N.O. alto) e il numero romano IUPAC sono coerenti con il N.O. calcolato, confermando la coerenza con la regola della somma dei numeri di ossidazione ({{formula:3.3}}).
+4. Verifica: in ciascun caso il suffisso tradizionale (-oso per N.O. basso, -ico per N.O. alto) e il numero romano IUPAC sono coerenti con il N.O. calcolato, confermando la coerenza con la regola della somma dei numeri di ossidazione {{formula:3.3}}.
 
 **Errore tipico 3.9.** Trattare l'ossido o l'idrossido di un elemento anfotero sempre nello stesso modo, senza controllare prima il numero di ossidazione: per cromo e manganese la scelta fra regole degli ossidi basici/idrossidi e regole degli ossidi acidi/ossiacidi dipende esclusivamente dal N.O. dell'atomo centrale.
 

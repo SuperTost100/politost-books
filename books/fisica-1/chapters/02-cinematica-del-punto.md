@@ -312,7 +312,7 @@ per ogni $t$, con $\omega$ costante reale positiva.
 
 $$a(t) = \frac{d^2x}{dt^2} = -\omega^2 A\sin(\omega t + \varphi) = -\omega^2 x(t),$$
 
-cioè $\ddot{x} + \omega^2 x = 0$ per ogni $t$.
+cioè $\frac{d^2x}{dt^2} + \omega^2 x = 0$ per ogni $t$.
 
 ($\Leftarrow$) Sia $x(t)$ una soluzione di $\ddot{x} + \omega^2 x = 0$ con $\omega > 0$. L'equazione è lineare del secondo ordine a coefficienti costanti, e per quanto appena visto le funzioni $A\sin(\omega t + \varphi)$ la risolvono per ogni $A$ e $\varphi$. Siano $x_0 = x(0)$ e $v_0 = \dot{x}(0)$ la posizione e la velocità iniziali, qualsiasi, con $x_0$ e $v_0$ non entrambi nulli (altrimenti il moto è la quiete nell'origine, esclusa dal teorema). Si pone
 
@@ -478,7 +478,7 @@ Poiché $\theta(t)$ varia nel tempo, questi versori ruotano; derivandoli si trov
 $$\dot{\hat{u}}_r = \dot\theta\,\hat{u}_\theta, \qquad \dot{\hat{u}}_\theta = -\dot\theta\,\hat{u}_r$$
 :::
 
-(si veda anche [formula (1.13)](ref:formula/1.13) e [formula (1.11)](ref:formula/1.11)).
+(si veda anche [(1.13)](ref:formula/1.13) e [(1.11)](ref:formula/1.11)).
 
 Derivando $\vec{r} = r\hat{u}_r$ e usando queste relazioni si ottiene la velocità in coordinate polari.
 
@@ -673,7 +673,7 @@ Le grandezze angolari sono in realtà associate a vettori. La **velocità angola
 
 $$\vec{v} = \vec{\omega} \times \vec{r},$$
 
-dove $\vec{r}$ è il vettore posizione rispetto a un punto qualunque dell'asse di rotazione; se $\vec{\omega}$ è applicata nel centro O della circonferenza, $|\vec{r}| = R$, ma la relazione resta valida applicando $\vec{\omega}$ in un punto qualsiasi dell'asse. Questo risultato richiama le formule di Poisson per la derivata di un versore rotante già incontrate in [Vettori e versori](ref:chapter/1#p3) ([formula (1.13)](ref:formula/1.13)): $\vec{v} = \vec{\omega}\times\vec{r}$ ne è l'applicazione diretta al moto circolare.
+dove $\vec{r}$ è il vettore posizione rispetto a un punto qualunque dell'asse di rotazione; se $\vec{\omega}$ è applicata nel centro O della circonferenza, $|\vec{r}| = R$, ma la relazione resta valida applicando $\vec{\omega}$ in un punto qualsiasi dell'asse. Questo risultato richiama le formule di Poisson per la derivata di un versore rotante già incontrate in [Vettori e versori](ref:chapter/1#p3) [(1.13)](ref:formula/1.13): $\vec{v} = \vec{\omega}\times\vec{r}$ ne è l'applicazione diretta al moto circolare.
 
 :::formula{id="2.46" label="Velocità nel moto circolare come prodotto vettoriale"}
 $$\vec{v} = \vec{\omega} \times \vec{r}$$

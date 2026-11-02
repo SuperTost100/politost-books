@@ -978,7 +978,7 @@ Il lavoro compiuto è $21\,\text{J}$.
 Una molla ideale ha costante elastica $k=200\,\text{N/m}$. Calcolare l’energia potenziale elastica quando la molla è allungata di $0.10\,\text{m}$ rispetto alla lunghezza naturale.
 
 :::hint
-Usa $U_e=\frac12kx^2$ con l’allungamento espresso in metri. {{formula:3.24}}
+Usa $U_e=\frac12kx^2$ con l’allungamento espresso in metri. {{formula:3.23}}
 :::
 
 :::solution
@@ -2233,7 +2233,7 @@ La distanza di ciascuna carica dal punto è $r=\sqrt{(0{,}30)^2+(0{,}40)^2}=0{,}
 Due satelliti orbitano circolarmente attorno allo stesso pianeta. Il raggio dell'orbita del secondo è quattro volte quello del primo. Se il primo ha periodo $T_1=3{,}0\,\mathrm{h}$, determina il periodo $T_2$ del secondo.
 
 :::hint
-Per orbite attorno allo stesso corpo, il quadrato del periodo è proporzionale al cubo del raggio orbitale. Applica {{formula:10.3}}.
+Per orbite attorno allo stesso corpo, il quadrato del periodo è proporzionale al cubo del raggio orbitale. Applica {{formula:10.4}}.
 :::
 
 :::solution
@@ -2246,7 +2246,7 @@ Dalla terza legge di Keplero, $T_2^2/T_1^2=(r_2/r_1)^3$. Quindi $T_2=T_1(r_2/r_1
 Calcola il modulo del campo gravitazionale prodotto da una massa puntiforme $M=5{,}0\times10^{12}\,\mathrm{kg}$ in un punto distante $r=2{,}0\times10^3\,\mathrm{m}$. Usa $G=6{,}67\times10^{-11}\,\mathrm{N\,m^2/kg^2}$.
 
 :::hint
-Il modulo del campo gravitazionale di una massa puntiforme dipende da $M$ e da $r^2$. Applica {{formula:10.5}}.
+Il modulo del campo gravitazionale di una massa puntiforme dipende da $M$ e da $r^2$. Applica {{formula:10.6}}.
 :::
 
 :::solution
@@ -2272,7 +2272,7 @@ Sia $x$ la distanza da $M_1$, perciò la distanza da $M_2$ è $d-x$. La condizio
 Una massa puntiforme $M=5{,}0\times10^{12}\,\mathrm{kg}$ genera un potenziale gravitazionale, posto nullo all'infinito. Calcola la variazione di energia potenziale di una massa di prova $m=2{,}0\,\mathrm{kg}$ che si sposta da $r_i=4{,}0\times10^3\,\mathrm{m}$ a $r_f=2{,}0\times10^3\,\mathrm{m}$. Usa $G=6{,}67\times10^{-11}\,\mathrm{N\,m^2/kg^2}$.
 
 :::hint
-Trova il potenziale in ciascun punto usando {{formula:10.10}}, poi moltiplica la differenza per la massa di prova.
+Trova il potenziale in ciascun punto usando {{formula:10.11}}, poi moltiplica la differenza per la massa di prova.
 :::
 
 :::solution
@@ -2324,7 +2324,7 @@ Poiché il campo interno è nullo, il potenziale non varia all'interno del gusci
 Un satellite percorre un'orbita circolare di raggio $r=8{,}0\times10^6\,\mathrm{m}$ attorno a un pianeta. La velocità di fuga alla distanza $r$ è $v_f=10{,}0\,\mathrm{km/s}$. Quanto deve aumentare istantaneamente la sua velocità, nella direzione del moto, per raggiungere la velocità di fuga?
 
 :::hint
-Confronta la velocità orbitale circolare con quella di fuga alla stessa distanza. Ricava la prima da {{formula:10.2}} e usa {{formula:10.4}}.
+Confronta la velocità orbitale circolare con quella di fuga alla stessa distanza. Ricava la prima da {{formula:10.3}} e usa {{formula:10.5}}.
 :::
 
 :::solution
@@ -2363,7 +2363,7 @@ La densità è uniforme, quindi la massa entro $r$ è $M_r=M(r/R)^3$. Il campo i
 Un satellite descrive un'orbita circolare di raggio $r=7{,}0\times10^6\,\mathrm{m}$ attorno a un pianeta di massa $M=5{,}97\times10^{24}\,\mathrm{kg}$. Calcola la velocità orbitale. Usa $G=6{,}67\times10^{-11}\,\mathrm{N\,m^2/kg^2}$.
 
 :::hint
-Imponi che la forza gravitazionale fornisca la forza centripeta, oppure applica {{formula:10.2}}.
+Imponi che la forza gravitazionale fornisca la forza centripeta, oppure applica {{formula:10.3}}.
 :::
 
 :::solution

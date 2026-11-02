@@ -72,7 +72,7 @@ Valgono inoltre, per ogni $z, z' \in \mathbb{C}$, le proprietà seguenti, che us
 
 - $|z| \ge 0$ e $|z| = 0 \iff z = 0$;
 - $|z \cdot z'| = |z| \cdot |z'|$;
-- $|z + z'| \le |z| + |z'|$ (disuguaglianza triangolare, analoga a [formula (1.3)](ref:formula/1.3));
+- $|z + z'| \le |z| + |z'|$ (disuguaglianza triangolare, analoga a [(1.3)](ref:formula/1.3));
 - $|z| = |\bar z|$;
 - $|z| \ge |\operatorname{Re}(z)|$ e $|z| \ge |\operatorname{Im}(z)|$;
 - $\overline{z + z'} = \bar z + \bar z'$ e $\overline{z \cdot z'} = \bar z \cdot \bar z'$;

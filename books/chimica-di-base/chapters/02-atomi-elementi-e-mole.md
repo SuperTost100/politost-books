@@ -269,8 +269,8 @@ Le domande a disposizione sono esercizi della prova scritta, e in entrambe le se
 1. Dai nomi ricava le formule e scrivi la reazione, poi bilanciala; se è una redox, usa le semireazioni ([Reazioni di ossidoriduzione](ref:chapter/5#p5) e [Equazioni chimiche e bilanciamento](ref:chapter/4#p3)).
 2. Calcola la massa molare $M$ di ogni specie coinvolta sommando le masse atomiche medie, tenendo conto degli indici ([Masse atomiche, mole e massa molare](ref:chapter/2#p4)).
 3. Converti ogni quantità di reagente in moli con {{formula:2.4}}. Se un reagente è dato come volume di soluzione e percentuale in massa, ricava prima la massa della soluzione dalla densità e poi la massa del soluto, secondo il metodo della sezione successiva.
-4. Dividi le moli di ciascun reagente per il suo coefficiente stechiometrico: il valore più piccolo indica il reagente limitante ([formula (4.3)](ref:formula/4.3)).
-5. Con il rapporto molare dell'equazione bilanciata ([formula (4.2)](ref:formula/4.2)) ricava le moli di prodotto a partire dal solo reagente limitante.
+4. Dividi le moli di ciascun reagente per il suo coefficiente stechiometrico: il valore più piccolo indica il reagente limitante [(4.3)](ref:formula/4.3).
+5. Con il rapporto molare dell'equazione bilanciata [(4.2)](ref:formula/4.2) ricava le moli di prodotto a partire dal solo reagente limitante.
 6. Riconverti in grammi moltiplicando per la massa molare del prodotto e arrotonda solo alla fine, rispettando le cifre significative ([Grandezze, unità e cifre significative](ref:chapter/1#p2)).
 
 Per illustrare il passo 3: $565{,}0\ \mathrm{g}$ di $\mathrm{SnCl_2}$, con $M \approx 189{,}6\ \mathrm{g/mol}$, corrispondono a circa $2{,}98\ \mathrm{mol}$. Per il calcolo completo serve il resto dei dati del tema.
@@ -296,8 +296,8 @@ Per illustrare il passo 3: $565{,}0\ \mathrm{g}$ di $\mathrm{SnCl_2}$, con $M \a
 
 1. Individua se il dato è una massa di soluto (per esempio in mg), un volume di soluzione o una percentuale in massa ([Espressioni della concentrazione](ref:chapter/11#p3)).
 2. Porta tutte le unità a quelle coerenti: mg in g, cm$^3$ e mL in L (con $1\ \mathrm{cm^3} = 1\ \mathrm{mL}$).
-3. Per una massa di soluto, calcola le moli con {{formula:2.4}} e poi la molarità con [formula (11.3)](ref:formula/11.3).
-4. Per una percentuale in massa ([formula (11.6)](ref:formula/11.6)) la massa di soluto si ricava dalla massa della soluzione; per passare da un volume a una massa serve la densità.
+3. Per una massa di soluto, calcola le moli con {{formula:2.4}} e poi la molarità con [(11.3)](ref:formula/11.3).
+4. Per una percentuale in massa [(11.6)](ref:formula/11.6) la massa di soluto si ricava dalla massa della soluzione; per passare da un volume a una massa serve la densità.
 5. Se si preleva solo una parte della soluzione, la concentrazione resta uguale e cambiano le moli, che sono proporzionali al volume prelevato.
 
 **Errori tipici.**

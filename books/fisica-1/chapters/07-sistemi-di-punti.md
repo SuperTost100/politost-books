@@ -253,7 +253,7 @@ Sommando questa relazione su tutti i punti del sistema,
 
 $$\sum_{i=1}^{N} \vec{F}_i^{(I)} + \sum_{i=1}^{N} \vec{F}_i^{(E)} = \sum_{i=1}^{N} m_i \vec{a}_i ,$$
 
-e ricordando che la risultante delle forze interne è nulla ({{formula:7.1}}), il primo addendo scompare: le forze interne si annullano sempre a due a due per il terzo principio della dinamica.
+e ricordando che la risultante delle forze interne è nulla {{formula:7.1}}, il primo addendo scompare: le forze interne si annullano sempre a due a due per il terzo principio della dinamica.
 
 Nella sezione sul [centro di massa](ref:chapter/7#p3) abbiamo definito $\vec{r}_{CM} = \dfrac{\sum_i m_i \vec{r}_i}{M}$ con $M = \sum_i m_i$, e derivando due volte rispetto al tempo si ottiene l'accelerazione del centro di massa
 
@@ -281,7 +281,7 @@ che è una riscrittura equivalente del teorema precedente: la risultante delle f
 $$\vec{R}^{(E)} = \frac{d\vec{p}_{tot}}{dt}$$
 :::
 
-Questa forma è l'analogo, per un sistema di punti, della forma generale della seconda legge della dinamica già incontrata per il punto materiale ([formula (3.2)](ref:formula/3.2)): la risultante delle forze esterne gioca lo stesso ruolo che la forza totale gioca per un singolo punto, a patto di usare la quantità di moto *totale* del sistema.
+Questa forma è l'analogo, per un sistema di punti, della forma generale della seconda legge della dinamica già incontrata per il punto materiale [(3.2)](ref:formula/3.2): la risultante delle forze esterne gioca lo stesso ruolo che la forza totale gioca per un singolo punto, a patto di usare la quantità di moto *totale* del sistema.
 
 ### Conservazione della quantità di moto di un sistema
 
@@ -455,7 +455,7 @@ Si ottiene così il **primo teorema di König**:
 $$\vec{L} = \vec{r}_{CM}\times m\vec{v}_{CM} + \vec{L}', \qquad \vec{L}' = \sum_i m_i\, \vec{r}'_i\times \vec{v}'_i$$
 :::
 
-Il momento angolare del sistema, calcolato rispetto a un polo fisso nel riferimento inerziale, è dunque la somma del momento angolare dovuto al moto del centro di massa e del momento angolare dovuto al moto interno rispetto al centro di massa. Questa scomposizione è lo strumento fondamentale per trattare il corpo rigido: nel caso particolare in cui tutto il moto interno sia una rotazione rigida attorno al centro di massa, in generale $\vec{L}'$ non è parallelo a $\vec{\omega}$, perché il legame tra le due grandezze è mediato dal tensore d'inerzia rispetto al centro di massa, $\vec{L}' = I_{CM}\vec{\omega}$ in senso tensoriale. Solo se il moto è piano (asse di rotazione fisso e perpendicolare al piano del moto) oppure se $\vec{\omega}$ è diretto lungo un asse principale d'inerzia passante per il centro di massa, la relazione si riduce alla forma scalare $\vec{L}' = I_{CM}\vec{\omega}$, come vedremo nel capitolo dedicato (ved. [Teoremi di Huygens-Steiner e di König](ref:chapter/8#p4)).
+Il momento angolare del sistema, calcolato rispetto a un polo fisso nel riferimento inerziale, è dunque la somma del momento angolare dovuto al moto del centro di massa e del momento angolare dovuto al moto interno rispetto al centro di massa. Questa scomposizione è lo strumento fondamentale per trattare il corpo rigido: nel caso particolare in cui tutto il moto interno sia una rotazione rigida attorno al centro di massa, in generale $\vec{L}'$ non è parallelo a $\vec{\omega}$, perché il legame tra le due grandezze è mediato dal tensore d'inerzia rispetto al centro di massa, $\vec{L}' = I_{CM}\vec{\omega}$ in senso tensoriale. Se il corpo è piano e contenuto nel piano del moto, oppure se l'asse di rotazione è principale d'inerzia e passa per il centro di massa, la relazione si riduce alla forma scalare $\vec{L}' = I_{CM}\vec{\omega}$, come vedremo nel capitolo dedicato (ved. [Teoremi di Huygens-Steiner e di König](ref:chapter/8#p4)).
 
 ### Esempio svolto
 
@@ -468,7 +468,7 @@ Il momento angolare del sistema, calcolato rispetto a un polo fisso nel riferime
 :::image{src="assets/9ab5bcdb-schema-esempio-due-punti-rotanti.svg" alt="Due punti materiali su una circonferenza di raggio R centrata nel centro di massa CM, con il polo fisso O sulla stessa retta orizzontale percorsa dal centro di massa" caption="Fig. 7.5 — Schema dell'esempio nell'istante considerato: i due punti di massa m ruotano sulla circonferenza di raggio R attorno al centro di massa CM, che percorre la retta fissa passante per il polo O"}
 :::
 
-*Momento angolare interno*. Nel riferimento del centro di massa i due punti percorrono una circonferenza di raggio $R$ con velocità relativa di modulo $v' = R\omega$, in direzioni opposte rispetto al centro: entrambi i contributi $m\vec{r}'_i\times\vec{v}'_i$ hanno lo stesso verso (lungo $\hat{u}_z$), quindi si sommano. Usando [formula (5.4)](ref:formula/5.4) per ciascun punto e moltiplicando per due,
+*Momento angolare interno*. Nel riferimento del centro di massa i due punti percorrono una circonferenza di raggio $R$ con velocità relativa di modulo $v' = R\omega$, in direzioni opposte rispetto al centro: entrambi i contributi $m\vec{r}'_i\times\vec{v}'_i$ hanno lo stesso verso (lungo $\hat{u}_z$), quindi si sommano. Usando [(5.4)](ref:formula/5.4) per ciascun punto e moltiplicando per due,
 
 $$L' = 2\, m R^2 \omega = 2\cdot(0,50\ \text{kg})\cdot(0,20\ \text{m})^2\cdot(10\ \text{s}^{-1}) = 0,40\ \text{kg}\cdot\text{m}^2/\text{s},$$
 
@@ -782,11 +782,11 @@ Dalle tracce emergono tre tipi ricorrenti.
 **Metodo.**
 
 1. Dividi il problema in tre fasi: prima dell'urto, urto, dopo l'urto. Ogni fase ha il suo principio.
-2. Prima e dopo l'urto lavora con l'energia: lavoro dell'attrito dinamico e teorema dell'energia meccanica ([formula (4.11)](ref:formula/4.11), [formula (4.12)](ref:formula/4.12)), vedi [Energia cinetica e teorema lavoro-energia](ref:chapter/4#p3) e [Forze conservative ed energia potenziale](ref:chapter/4#p4). Se c'è attrito, l'energia meccanica non si conserva.
-3. Durante l'urto non usare l'energia meccanica, a meno che l'urto sia dichiarato elastico. Scrivi la conservazione della quantità di moto del sistema dei due corpi ({{formula:7.20}}), proiettata sugli assi. Giustificala verificando che l'impulso esterno sia trascurabile nella direzione considerata. Se un filo si tende, controlla quali componenti della quantità di moto possono conservarsi. Vedi [Urti](ref:chapter/7#p7).
-4. Se i corpi restano attaccati, usa $v_{fin}=v_{CM}$ ({{formula:7.22}}). Se il testo dà una velocità finale (per esempio un proiettile che esce con metà della velocità iniziale), questa è il dato che chiude l'equazione.
+2. Prima e dopo l'urto lavora con l'energia: lavoro dell'attrito dinamico e teorema dell'energia meccanica ([(4.11)](ref:formula/4.11), [(4.12)](ref:formula/4.12)), vedi [Energia cinetica e teorema lavoro-energia](ref:chapter/4#p3) e [Forze conservative ed energia potenziale](ref:chapter/4#p4). Se c'è attrito, l'energia meccanica non si conserva.
+3. Durante l'urto non usare l'energia meccanica, a meno che l'urto sia dichiarato elastico. Scrivi la conservazione della quantità di moto del sistema dei due corpi {{formula:7.20}}, proiettata sugli assi. Giustificala verificando che l'impulso esterno sia trascurabile nella direzione considerata. Se un filo si tende, controlla quali componenti della quantità di moto possono conservarsi. Vedi [Urti](ref:chapter/7#p7).
+4. Se i corpi restano attaccati, usa $v_{fin}=v_{CM}$ {{formula:7.22}}. Se il testo dà una velocità finale (per esempio un proiettile che esce con metà della velocità iniziale), questa è il dato che chiude l'equazione.
 5. Se il corpo è appeso a un filo, la fase successiva è un moto circolare: usa l'energia per la velocità e la seconda legge in direzione radiale per la tensione ([Dinamica del moto curvilineo](ref:chapter/3#p8)).
-6. Controlla i segni: l'energia dissipata nell'urto deve risultare $\Delta E_k\le 0$.
+6. Controlla i segni: nell'urto deve risultare $\Delta E_k\le 0$, cioè l'energia dissipata $E_{diss}=-\Delta E_k$ è positiva o nulla.
 
 **Errori tipici.**
 
@@ -809,7 +809,7 @@ Strutture analoghe compaiono nell'*Esame TEMA 2 - 2024, esercizio 1A* (pendolo s
 **Metodo.**
 
 1. Scegli il polo. Se usi il momento angolare vettoriale, specifica il punto effettivo di applicazione della reazione del vincolo: il suo momento è nullo rispetto a quel punto solo se la reazione vi è applicata. Per un asse fisso, puoi invece considerare la componente del momento angolare lungo l'asse: essa si conserva durante l'urto se il momento impulsivo esterno lungo l'asse è nullo.
-2. Scrivi la conservazione del momento angolare rispetto al polo scelto oppure della sua componente assiale, verificando che il momento impulsivo esterno pertinente sia nullo ([Momento angolare di un sistema](ref:chapter/7#p5), [formula (9.11)](ref:formula/9.11)). La quantità di moto totale **non** si conserva: il vincolo esercita una forza impulsiva.
+2. Scrivi la conservazione del momento angolare rispetto al polo scelto oppure della sua componente assiale, verificando che il momento impulsivo esterno pertinente sia nullo ([Momento angolare di un sistema](ref:chapter/7#p5), [(9.11)](ref:formula/9.11)). La quantità di moto totale **non** si conserva: il vincolo esercita una forza impulsiva.
 3. Scrivi $L$ prima come $\vec{r}\times m\vec{v}$ per il punto, e dopo come somma del contributo del punto e di $I\omega$ per il corpo rigido. Il momento d'inerzia si ricava dalle formule note e dal teorema di Huygens-Steiner ([Momento d'inerzia](ref:chapter/8#p3), [Teoremi di Huygens-Steiner e di König](ref:chapter/8#p4)). Se il punto resta conficcato nell'asta, aggiungi $m d^2$ al momento d'inerzia totale.
 4. Per un urto con rimbalzo, il testo fornisce la velocità del punto dopo l'urto, con il suo segno: mantieni il segno nel prodotto vettoriale.
 5. Calcola l'energia cinetica prima e dopo l'urto e ricava l'energia dissipata. Nel caso di rimbalzo, includi nell'energia finale sia $\tfrac12 m v_{fin}^2$ sia $\tfrac12 I\omega^2$; nel caso di adesione usa $\tfrac12 I_{tot}\omega^2$. Vedi [Urti con corpi rigidi](ref:chapter/9#p5).

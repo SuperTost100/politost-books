@@ -245,9 +245,6 @@ avendo diviso per $\Delta t$ e usato $\Delta l_i = v_i \Delta t$.
 
 Dall'equazione di continuità segue la conseguenza qualitativa più usata nelle applicazioni: dove la sezione del tubo diminuisce la velocità aumenta, e dove la sezione aumenta la velocità diminuisce.
 
-:::image{src="assets/c9687187-continuita-velocita-sezione.svg" alt="Curva iperbolica v=Q/S che decresce al crescere di S" caption="Fig. 11.4 — Velocità v in funzione della sezione S a portata Q costante (equazione di continuità): dove la sezione diminuisce la velocità aumenta, e viceversa."}
-:::
-
 ### Teorema di Bernoulli
 
 Vogliamo ora legare la velocità del fluido alla pressione e alla quota. Il risultato si ottiene applicando il [teorema dell'energia cinetica](ref:chapter/4#p3) a una porzione di fluido ideale che scorre in regime stazionario lungo un tubo di sezione variabile e non necessariamente orizzontale.
@@ -286,7 +283,7 @@ Poiché le sezioni $S_1$ e $S_2$ sono arbitrarie, la grandezza $p + \rho g y + \
 
 Se il condotto è orizzontale ($y = \text{costante}$) la relazione si riduce a $p + \tfrac12 \rho v^2 = \text{costante}$, cosicché, confrontando due sezioni, a un aumento di velocità corrisponde necessariamente una diminuzione di pressione. Se invece il fluido è fermo ($v=0$ ovunque) il teorema di Bernoulli si riduce alla legge di Stevino già vista nella sezione sulla [statica dei fluidi](ref:chapter/11#p2): $p + \rho g y = \text{costante}$.
 
-:::image{src="assets/c9687187-bernoulli-pressione-velocita-orizzontale.svg" alt="Retta decrescente di p in funzione di v al quadrato" caption="Fig. 11.5 — Pressione p in funzione della velocità v in un condotto orizzontale secondo il teorema di Bernoulli: a velocità maggiore corrisponde pressione minore."}
+:::image{src="assets/c9687187-bernoulli-pressione-velocita-orizzontale.svg" alt="Retta decrescente di p in funzione di v al quadrato" caption="Fig. 11.4 — Pressione p in funzione della velocità v in un condotto orizzontale secondo il teorema di Bernoulli: a velocità maggiore corrisponde pressione minore."}
 :::
 
 Questa versione orizzontale è alla base del **venturimetro**, uno strumento che misura la velocità di un fluido incomprimibile da un restringimento di sezione: applicando contemporaneamente l'equazione di continuità $A_1 v_1 = A_2 v_2$ e il teorema di Bernoulli $p_1 + \tfrac12\rho v_1^2 = p_2 + \tfrac12\rho v_2^2$ fra una sezione larga ($A_1$) e una stretta ($A_2 < A_1$), e misurando con un manometro il salto di pressione $\Delta p = p_1 - p_2$ (positivo, poiché nella sezione stretta la velocità è maggiore e la pressione minore), si ricava
@@ -319,7 +316,7 @@ Per {{formula:11.8}}:
 
 $$v_b = \sqrt{2gh} = \sqrt{2 \cdot 9,81\,\mathrm{m/s^2}\cdot 2,0\,\mathrm{m}} = \sqrt{39,2\,\mathrm{m^2/s^2}} \approx 6,3\,\mathrm{m/s}$$
 
-:::image{src="assets/c9687187-torricelli-velocita-altezza.svg" alt="Curva v_b = radice di 2gh crescente con h, con punto evidenziato a h=2m, v=6,3 m/s" caption="Fig. 11.6 — Velocità di efflusso v_b in funzione dell'altezza h del pelo libero sopra il foro, secondo il teorema di Torricelli; il punto segnato corrisponde all'esempio con h = 2,0 m."}
+:::image{src="assets/c9687187-torricelli-velocita-altezza.svg" alt="Curva v_b = radice di 2gh crescente con h, con punto evidenziato a h=2m, v=6,3 m/s" caption="Fig. 11.5 — Velocità di efflusso v_b in funzione dell'altezza h del pelo libero sopra il foro, secondo il teorema di Torricelli; il punto segnato corrisponde all'esempio con h = 2,0 m."}
 :::
 
 La portata volumica attraverso il foro, per {{formula:11.5}}, vale
@@ -348,7 +345,7 @@ dove il coefficiente $\eta$ è detto viscosità (o coefficiente di viscosità) d
 
 Si definisce fluido ideale un fluido con $\eta = 0$ e densità costante, cioè non viscoso e incompressibile; un fluido reale ha sempre $\eta \neq 0$, e il fluido ideale va inteso come caso limite utile per i modelli semplificati (Bernoulli, Torricelli) già discussi in [Fluidodinamica](ref:chapter/11#p3).
 
-Quando un corpo si muove immerso in un fluido (non lungo un condotto) in regime di moto viscoso lento, cioè a numero di Reynolds basso, subisce una forza di attrito viscoso proporzionale alla velocità, [formula (3.19)](ref:formula/3.19), con il coefficiente geometrico $\gamma$ che dipende dalla forma del corpo e $\eta$ la viscosità del fluido. Questa legge lineare, già incontrata in [Forze di attrito](ref:chapter/3#p6), è all'origine dei moti smorzati esponenzialmente ([formula (3.20)](ref:formula/3.20), [formula (3.21)](ref:formula/3.21)) e del fatto che in presenza di sola forza viscosa non esiste equilibrio statico, poiché per $v=0$ la forza si annulla; a numero di Reynolds non basso, come si vedrà più avanti in questa sezione, la resistenza del mezzo non è più lineare nella velocità.
+Quando un corpo si muove immerso in un fluido (non lungo un condotto) in regime di moto viscoso lento, cioè a numero di Reynolds basso, subisce una forza di attrito viscoso proporzionale alla velocità, [(3.18)](ref:formula/3.18), con $\beta=\kappa\eta$, dove $\kappa$ dipende dalla forma del corpo e $\eta$ è la viscosità del fluido. Questa legge lineare, già incontrata in [Forze di attrito](ref:chapter/3#p6), è all'origine dei moti smorzati esponenzialmente ([(3.19)](ref:formula/3.19), [(3.20)](ref:formula/3.20)) e del fatto che in presenza di sola forza viscosa non esiste equilibrio statico, poiché per $v=0$ la forza si annulla; a numero di Reynolds non basso, come si vedrà più avanti in questa sezione, la resistenza del mezzo non è più lineare nella velocità.
 
 ### Moto laminare e legge di Hagen-Poiseuille
 
@@ -360,7 +357,7 @@ $$v(r) = \frac{p_1 - p_2}{4\eta l}\left(R^2 - r^2\right)$$
 
 da cui la velocità massima sull'asse, $v_{max} = \dfrac{p_1-p_2}{4\eta l}R^2$, e la velocità nulla alle pareti ($r=R$). Se il condotto non è orizzontale, al posto di $p_1-p_2$ va usata la differenza di pressione corretta per la quota, cioè $(p_1-p_2) - \rho g (z_2-z_1)$ con $z_1,z_2$ le quote delle due sezioni, in modo da tenere conto anche del contributo idrostatico del peso del fluido.
 
-:::image{src="assets/0033b32f-profilo-velocita-laminare.svg" alt="Grafico a campana della velocità in funzione della distanza dall'asse del condotto, nulla ai bordi e massima al centro" caption="Fig. 11.7 — Profilo di velocità v(r) nel moto laminare in un condotto cilindrico: è massimo sull'asse (r=0) e si annulla alle pareti (r=R)."}
+:::image{src="assets/0033b32f-profilo-velocita-laminare.svg" alt="Grafico a campana della velocità in funzione della distanza dall'asse del condotto, nulla ai bordi e massima al centro" caption="Fig. 11.6 — Profilo di velocità v(r) nel moto laminare in un condotto cilindrico: è massimo sull'asse (r=0) e si annulla alle pareti (r=R)."}
 :::
 
 Integrando il profilo su tutta la sezione si ottiene la portata, data dalla legge di Hagen-Poiseuille
@@ -395,7 +392,7 @@ $$F_{res} = 6\pi\eta R v$$
 
 che è, in quel regime, la forma esplicita della forza di attrito viscoso.
 
-:::image{src="assets/0033b32f-resistenza-lineare-quadratica.svg" alt="Due curve della forza resistente in funzione della velocità, una retta e una parabola che cresce più rapidamente" caption="Fig. 11.8 — Confronto qualitativo tra la resistenza del mezzo lineare nella velocità, legge di Stokes nel regime di moto viscoso lento, e quella quadratica nella velocità, valida a numero di Reynolds non basso."}
+:::image{src="assets/0033b32f-resistenza-lineare-quadratica.svg" alt="Due curve della forza resistente in funzione della velocità, una retta e una parabola che cresce più rapidamente" caption="Fig. 11.7 — Confronto qualitativo tra la resistenza del mezzo lineare nella velocità, legge di Stokes nel regime di moto viscoso lento, e quella quadratica nella velocità, valida a numero di Reynolds non basso."}
 :::
 
 ### Esempio: portata in un condotto e verifica del regime

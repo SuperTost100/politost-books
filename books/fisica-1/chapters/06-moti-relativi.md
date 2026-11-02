@@ -55,7 +55,7 @@ mentre $y_B = L = 20\ \text{m}$. Il controllo dimensionale è immediato: $\lbrac
 
 ### Riferimenti in rotazione
 
-Se il riferimento mobile ruota, con velocità angolare $\vec{\omega}$, rispetto al riferimento fisso, i versori $\hat{u}_{x'},\hat{u}_{y'},\hat{u}_{z'}$ non sono più costanti: la loro derivata è data dalle [formula (1.13)](ref:formula/1.13), già introdotte in [Vettori e versori](ref:chapter/1#p3), che qui si scrivono riferite al sistema mobile come $d\hat{u}_{x'}/dt=\vec{\omega}\times\hat{u}_{x'}$ e analoghe per $\hat{u}_{y'},\hat{u}_{z'}$. Derivando $\vec{r}=\vec{OO'}+\vec{r}\,'$ e tenendo conto di questi termini si ottiene il risultato fondamentale di questa sezione.
+Se il riferimento mobile ruota, con velocità angolare $\vec{\omega}$, rispetto al riferimento fisso, i versori $\hat{u}_{x'},\hat{u}_{y'},\hat{u}_{z'}$ non sono più costanti: la loro derivata è data dalle [(1.13)](ref:formula/1.13), già introdotte in [Vettori e versori](ref:chapter/1#p3), che qui si scrivono riferite al sistema mobile come $d\hat{u}_{x'}/dt=\vec{\omega}\times\hat{u}_{x'}$ e analoghe per $\hat{u}_{y'},\hat{u}_{z'}$. Derivando $\vec{r}=\vec{OO'}+\vec{r}\,'$ e tenendo conto di questi termini si ottiene il risultato fondamentale di questa sezione.
 
 **Teorema 6.1** (delle velocità relative). Siano $Oxyz$ un riferimento fisso e $O'x'y'z'$ un riferimento mobile che ruota con velocità angolare $\vec{\omega}(t)$ rispetto al primo. Per un punto materiale $P$ vale
 
@@ -113,9 +113,9 @@ $$\vec{a}_{Co} = 2\vec{\omega}\times \vec{v}\,'$$
 
 *Dimostrazione del teorema delle accelerazioni relative.* Si parte dal teorema delle velocità relative $\vec{v}=\vec{v}_{O'}+\vec{v}\,'+\vec{\omega}\times\vec{r}\,'$ e lo si deriva termine a termine. Il primo termine dà $d\vec{v}_{O'}/dt=\vec{a}_{O'}$.
 
-Per il secondo, $\vec{v}\,'=\dot{x}'\hat{u}_{x'}+\dot{y}'\hat{u}_{y'}+\dot{z}'\hat{u}_{z'}$, quindi
+Per il secondo, $\vec{v}\,'=\frac{dx'}{dt}\hat{u}_{x'}+\frac{dy'}{dt}\hat{u}_{y'}+\frac{dz'}{dt}\hat{u}_{z'}$, quindi
 
-$$\frac{d\vec{v}\,'}{dt}=\ddot{x}'\hat{u}_{x'}+\ddot{y}'\hat{u}_{y'}+\ddot{z}'\hat{u}_{z'}+\dot{x}'\frac{d\hat{u}_{x'}}{dt}+\dot{y}'\frac{d\hat{u}_{y'}}{dt}+\dot{z}'\frac{d\hat{u}_{z'}}{dt}=\vec{a}\,'+\vec{\omega}\times\vec{v}\,',$$
+$$\frac{d\vec{v}\,'}{dt}=\frac{d^2x'}{dt^2}\hat{u}_{x'}+\frac{d^2y'}{dt^2}\hat{u}_{y'}+\frac{d^2z'}{dt^2}\hat{u}_{z'}+\frac{dx'}{dt}\frac{d\hat{u}_{x'}}{dt}+\frac{dy'}{dt}\frac{d\hat{u}_{y'}}{dt}+\frac{dz'}{dt}\frac{d\hat{u}_{z'}}{dt}=\vec{a}\,'+\vec{\omega}\times\vec{v}\,',$$
 
 usando le formule di Poisson. Per il terzo, con la regola del prodotto e il risultato $d\vec{r}\,'/dt=\vec{v}\,'+\vec{\omega}\times\vec{r}\,'$,
 
@@ -167,7 +167,7 @@ Richiamando la scomposizione dell'accelerazione di trascinamento
 
 $$\vec{a}_T = \vec{a}_{O'} + \vec{\omega}\times(\vec{\omega}\times\vec{r}') + \frac{d\vec{\omega}}{dt}\times\vec{r}'$$
 
-({{formula:6.5}}) e di quella di Coriolis $\vec{a}_{Co} = 2\vec{\omega}\times\vec{v}'$ ({{formula:6.6}}), la forza apparente si scompone in tre contributi distinti:
+{{formula:6.5}} e di quella di Coriolis $\vec{a}_{Co} = 2\vec{\omega}\times\vec{v}'$ {{formula:6.6}}, la forza apparente si scompone in tre contributi distinti:
 
 :::formula{id="6.7" label="Forza di trascinamento"}
 $$\vec{F}_T = -m\vec{a}_{O'} - m\frac{d\vec{\omega}}{dt}\times\vec{r}'$$
@@ -243,7 +243,7 @@ Il pendolo si assesta dunque in una posizione obliqua, come se fosse soggetto a 
 
 $$T_{\text{osc}} = 2\pi\sqrt{\frac{l}{\sqrt{g^2+A^2}}}$$
 
-, da confrontare con [formula (3.29)](ref:formula/3.29) del pendolo in quiete, in cui compare semplicemente $g$ al posto di $g_{\text{eff}}$.
+, da confrontare con [(3.28)](ref:formula/3.28) del pendolo in quiete, in cui compare semplicemente $g$ al posto di $g_{\text{eff}}$.
 
 Lo stesso schema si applica a un corpo su un piano inclinato solidale con un sistema accelerato (vagone, carrello): ci si mette nel riferimento non inerziale del piano, si sommano alle forze reali (peso, reazione normale, attrito) la forza apparente $-m\vec{A}$, e si impone l'equilibrio relativo per trovare la condizione sull'angolo e sul coefficiente di attrito statico.
 
@@ -314,7 +314,7 @@ Integrando due volte con condizioni iniziali nulle si ottiene
 
 $$v_x'(t) = \omega g t^2 \cos\phi, \qquad x'(t) = \frac{1}{3}\omega g t^3 \cos\phi$$
 
-Il tempo di caduta da un'altezza $h$ è $t^\ast = \sqrt{2h/g}$ (richiamando la legge oraria del moto verticale, [formula (2.9)](ref:formula/2.9)), quindi la deviazione totale verso est risulta
+Il tempo di caduta da un'altezza $h$ è $t^\ast = \sqrt{2h/g}$ (richiamando la legge oraria del moto verticale, [(2.9)](ref:formula/2.9)), quindi la deviazione totale verso est risulta
 
 $$x'(t^\ast) = \frac{1}{3}\omega\cos\phi\sqrt{\frac{8h^3}{g}}$$
 

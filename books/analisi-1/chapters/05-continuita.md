@@ -330,7 +330,11 @@ Il [teorema di esistenza degli zeri](ref:chapter/5#p4) garantisce che una funzio
 
 $$\exists\, x_m, x_M \in \lbrack a,b\rbrack  \ \text{tali che} \ \forall x \in \lbrack a,b\rbrack  \quad f(x_m) \le f(x) \le f(x_M).$$
 
-Questo risultato è già stato indicato con la formula [formula (3.18)](ref:formula/3.18). Le ipotesi del teorema sono tre, tutte essenziali: la funzione $f$ deve essere **continua**, il dominio deve essere un **intervallo chiuso** e l'intervallo deve essere **limitato**. Il teorema fornisce una condizione *sufficiente*: non dà alcuna informazione su come trovare $x_m$ e $x_M$, né esclude che il massimo o il minimo siano raggiunti in più punti.
+:::formula{id="5.6" label="Teorema di Weierstrass"}
+$$f \in C(\lbrack a,b\rbrack ) \implies \exists x_m, x_M \in \lbrack a,b\rbrack : \ \forall x \in \lbrack a,b\rbrack , \ f(x_m) \le f(x) \le f(x_M)$$
+:::
+
+Le ipotesi del teorema sono tre, tutte essenziali: la funzione $f$ deve essere **continua**, il dominio deve essere un **intervallo chiuso** e l'intervallo deve essere **limitato**. Il teorema fornisce una condizione *sufficiente*: non dà alcuna informazione su come trovare $x_m$ e $x_M$, né esclude che il massimo o il minimo siano raggiunti in più punti.
 
 Un corollario immediato è che $f$ è limitata su $\lbrack a,b\rbrack $, con $m = f(x_m)$ e $M = f(x_M)$.
 
@@ -364,7 +368,7 @@ Combinando il teorema di Weierstrass con il [teorema di esistenza degli zeri](re
 
 **Teorema 5.4 (dei valori intermedi).** Sia $f : \lbrack a,b\rbrack  \to \mathbb{R}$ una funzione continua, con $a, b \in \mathbb{R}$ e $a < b$. Allora $f$ assume tutti i valori compresi tra $f(a)$ e $f(b)$: per ogni $y_0$ compreso tra $f(a)$ e $f(b)$ esiste $\bar{x} \in \lbrack a,b\rbrack $ tale che $f(\bar{x}) = y_0$.
 
-:::formula{id="5.6" label="Teorema dei valori intermedi"}
+:::formula{id="5.7" label="Teorema dei valori intermedi"}
 $$f \ \text{continua su} \ \lbrack a,b\rbrack , \quad y_0 \ \text{compreso tra} \ f(a) \ \text{e} \ f(b) \ \implies \ \exists\, \bar{x} \in \lbrack a,b\rbrack  : f(\bar{x}) = y_0$$
 :::
 

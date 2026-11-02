@@ -474,7 +474,7 @@ $$\lim_{x\to 0} \frac{1 - \cos x}{3x^2}$$
 
 $$\lim_{x\to 0} \frac{\sin x}{6x} = \frac{1}{6} \lim_{x\to 0} \frac{\sin x}{x} = \frac{1}{6},$$
 
-usando [formula (6.6)](ref:formula/6.6). Poiché l'ultimo limite esiste (finito), per il teorema applicato a ritroso anche i due limiti precedenti valgono $\frac{1}{6}$, dunque
+usando [(6.6)](ref:formula/6.6). Poiché l'ultimo limite esiste (finito), per il teorema applicato a ritroso anche i due limiti precedenti valgono $\frac{1}{6}$, dunque
 
 $$\lim_{x\to 0} \frac{x - \sin x}{x^3} = \frac{1}{6}.$$
 

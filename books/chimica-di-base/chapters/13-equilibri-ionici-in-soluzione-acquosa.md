@@ -71,10 +71,6 @@ $$
 A + :B \rightleftharpoons A\!-\!B.
 $$
 
-$$
-A + :B \rightleftharpoons A\!-\!B.
-$$
-
 Un esempio tipico è la reazione tra un protone e l'ammoniaca,
 
 $$
@@ -103,10 +99,6 @@ $$
 :::
 
 **Ossiacidi (HEO).** Per un ossiacido generico HEO, la forza aumenta con l'elettronegatività dell'atomo centrale E a parità di numero di atomi di ossigeno: E più elettronegativo attrae densità elettronica allontanandola dal legame H–O, rendendolo più polare e favorendo il rilascio del protone (HClO è più forte di HBrO, perché Cl è più elettronegativo di Br). La forza aumenta anche al crescere del numero di atomi di O legati a E, perché gli atomi di ossigeno, molto elettronegativi, sottraggono densità elettronica a E rendendo più polare il legame H–O residuo; per gli ossiacidi del cloro vale la tendenza
-
-$$
-HClO < HClO_2 < HClO_3 \ll HClO_4.
-$$
 
 $$
 HClO < HClO_2 < HClO_3 \ll HClO_4.
@@ -251,7 +243,7 @@ Allora $\lbrack H_3O^+\rbrack  = 1,14 \times 10^{-3}\ \text{M}$ e
 
 $$\mathrm{pH} = -\log(1,14 \times 10^{-3}) = 2,94.$$
 
-Verifica: il grado di dissociazione $\alpha = x/C_0 \approx 1{,}1\%$, molto inferiore al 5% spesso usato come soglia di validità dell'approssimazione: il calcolo semplificato è dunque giustificato (si veda [formula (5.5)](ref:formula/5.5)).
+Verifica: il grado di dissociazione $\alpha = x/C_0 \approx 1{,}1\%$, molto inferiore al 5% spesso usato come soglia di validità dell'approssimazione: il calcolo semplificato è dunque giustificato (si veda [(5.5)](ref:formula/5.5)).
 
 **Errore tipico 13.4**. Un errore frequente è dimenticare di verificare l'approssimazione $C_0 - x \approx C_0$: se $K_a$ (o $K_b$) non è trascurabile rispetto a $C_0$, l'equazione quadratica va risolta per intero, scartando la radice priva di significato fisico (concentrazione negativa o maggiore della concentrazione iniziale), come già discusso in [Quoziente di reazione e calcoli di equilibrio](ref:chapter/12#p3).
 
@@ -327,7 +319,7 @@ Il tamponamento è più efficace quando $\lbrack A^-\rbrack $ e $\lbrack HA\rbra
 
 ### Curve di titolazione
 
-**Definizione 13.5.** In una titolazione si aggiunge una soluzione di concentrazione nota a una soluzione da analizzare. La curva di titolazione riporta il $pH$ in funzione del volume di titolante aggiunto. Al **punto di equivalenza** le quantità di acido e base hanno reagito secondo i coefficienti stechiometrici; il **punto finale** è il viraggio osservato dell'indicatore. I due punti devono essere vicini, ma non sono la stessa cosa. Per acido e base monoprotici vale la condizione [formula (5.6)](ref:formula/5.6).
+**Definizione 13.5.** In una titolazione si aggiunge una soluzione di concentrazione nota a una soluzione da analizzare. La curva di titolazione riporta il $pH$ in funzione del volume di titolante aggiunto. Al **punto di equivalenza** le quantità di acido e base hanno reagito secondo i coefficienti stechiometrici; il **punto finale** è il viraggio osservato dell'indicatore. I due punti devono essere vicini, ma non sono la stessa cosa. Per acido e base monoprotici vale la condizione [(5.6)](ref:formula/5.6).
 
 Per costruire la curva, a ogni volume aggiunto si confrontano le moli iniziali di acido con quelle di base introdotte e si calcola il volume totale. Prima dell'equivalenza di un acido forte con una base forte, il $pH$ dipende dall'acido forte residuo; dopo, dalla base forte in eccesso. All'equivalenza resta una soluzione di sale senza idrolisi apprezzabile: a $25\, ^\circ\mathrm{C}$ il $pH$ è $7{,}00$. La variazione è molto rapida vicino a quel volume.
 

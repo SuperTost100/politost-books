@@ -109,7 +109,7 @@ $$Q_{CA} = 100\ \mathrm{J} - 600\ \mathrm{J} + 400\ \mathrm{J} = -100\ \mathrm{J
 
 cioè calore ceduto. Per i singoli tratti, con {{formula:13.1}}:
 
-$$\Delta U_{AB} = 600 - 250 = 350\ \mathrm{J}, \quad \Delta U_{BC} = -400 - 0 = -400\ \mathrm{J}, \quad \Delta U_{CA} = -100 - (-150) = 50\ \mathrm{J}.$$
+$$\Delta U_{AB} = 600\ \mathrm{J} - 250\ \mathrm{J} = 350\ \mathrm{J}, \quad \Delta U_{BC} = -400\ \mathrm{J} - 0\ \mathrm{J} = -400\ \mathrm{J}, \quad \Delta U_{CA} = -100\ \mathrm{J} - (-150\ \mathrm{J}) = 50\ \mathrm{J}.$$
 
 *Controllo.* La somma $350-400+50=0$ conferma che $U$ è funzione di stato; il lavoro netto positivo (100 J) è pari al calore netto assorbito, quindi il ciclo si comporta come una macchina termica.
 
@@ -394,7 +394,7 @@ Sotto queste ipotesi la pressione che il gas esercita sulle pareti del recipient
 
 ### Pressione dal modello cinetico
 
-Si consideri un gas di $N$ molecole identiche di massa $m$, contenuto in un recipiente cubico di lato $L$ e volume $V=L^3$. Nel calcolo seguente si trascurano gli urti intermolecolari tra due urti consecutivi di una molecola contro la stessa parete: la sua componente della velocità $v_x$ resta quindi costante durante il tragitto. Un urto elastico contro una parete perpendicolare all'asse $x$ inverte tale componente. La variazione della quantità di moto della molecola ha modulo $2m|v_x|$; per il teorema dell'impulso ([formula (3.9)](ref:formula/3.9)), la parete riceve un impulso di uguale modulo. Tra due urti successivi contro la stessa parete la molecola percorre la distanza $2L$, quindi il tempo tra gli urti è $2L/|v_x|$ e la frequenza degli urti è $|v_x|/(2L)$. La forza media esercitata da quella molecola sulla parete è dunque $m v_x^2/L$. Sommando i contributi delle molecole e dividendo per l'area $L^2$, la pressione risulta $p = (m/V)\sum_{i=1}^{N}v_{x,i}^2 = (mN/V)\overline{v_x^2}$. Poiché il moto è isotropo, le tre componenti hanno la stessa media quadratica e $\overline{v^2}=\overline{v_x^2}+\overline{v_y^2}+\overline{v_z^2}=3\overline{v_x^2}$. Pertanto $\overline{v_x^2}=\overline{v^2}/3$ e, posto $v_{qm}=\sqrt{\overline{v^2}}$, si ottiene la pressione in funzione delle grandezze microscopiche
+Si consideri un gas di $N$ molecole identiche di massa $m$, contenuto in un recipiente cubico di lato $L$ e volume $V=L^3$. Nel calcolo seguente si trascurano gli urti intermolecolari tra due urti consecutivi di una molecola contro la stessa parete: la sua componente della velocità $v_x$ resta quindi costante durante il tragitto. Un urto elastico contro una parete perpendicolare all'asse $x$ inverte tale componente. La variazione della quantità di moto della molecola ha modulo $2m|v_x|$; per il teorema dell'impulso [(3.8)](ref:formula/3.8), la parete riceve un impulso di uguale modulo. Tra due urti successivi contro la stessa parete la molecola percorre la distanza $2L$, quindi il tempo tra gli urti è $2L/|v_x|$ e la frequenza degli urti è $|v_x|/(2L)$. La forza media esercitata da quella molecola sulla parete è dunque $m v_x^2/L$. Sommando i contributi delle molecole e dividendo per l'area $L^2$, la pressione risulta $p = (m/V)\sum_{i=1}^{N}v_{x,i}^2 = (mN/V)\overline{v_x^2}$. Poiché il moto è isotropo, le tre componenti hanno la stessa media quadratica e $\overline{v^2}=\overline{v_x^2}+\overline{v_y^2}+\overline{v_z^2}=3\overline{v_x^2}$. Pertanto $\overline{v_x^2}=\overline{v^2}/3$ e, posto $v_{qm}=\sqrt{\overline{v^2}}$, si ottiene la pressione in funzione delle grandezze microscopiche
 
 $$p = \frac{mN}{V}\frac{v_{qm}^2}{3},$$
 
@@ -418,7 +418,7 @@ Sostituendo questa espressione in {{formula:13.14}} si ottiene
 
 $$pV = \frac{1}{3}mN\frac{2\bar{K}}{m} = \frac{2}{3}N\bar{K},$$
 
-e confrontando con l'equazione di stato $pV = nRT$ ({{formula:13.3}}) si trova
+e confrontando con l'equazione di stato $pV = nRT$ {{formula:13.3}} si trova
 
 $$\frac{2}{3}N\bar{K} = nRT. $$
 
@@ -594,4 +594,4 @@ Nella sessione dell'11 luglio 2022 compaiono due tipi che le altre non mostrano.
 
 ### Cosa portare all'esame
 
-Lo scritto dura 2 ore e il problema sul gas ideale è uno dei due problemi strutturati: conviene saper svolgere in modo rapido e senza errori la sequenza isoterma, isocora e adiabatica. Le domande di teoria dello scritto e l'eventuale orale possono chiedere le dimostrazioni, quindi vanno preparate la relazione di Mayer ({{formula:13.6}}) e l'equazione delle adiabatiche reversibili ({{formula:13.10}}).
+Lo scritto dura 2 ore e il problema sul gas ideale è uno dei due problemi strutturati: conviene saper svolgere in modo rapido e senza errori la sequenza isoterma, isocora e adiabatica. Le domande di teoria dello scritto e l'eventuale orale possono chiedere le dimostrazioni, quindi vanno preparate la relazione di Mayer {{formula:13.6}} e l'equazione delle adiabatiche reversibili {{formula:13.10}}.

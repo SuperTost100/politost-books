@@ -137,7 +137,7 @@ Quando una sostanza viene riscaldata a pressione costante, il calore fornito alt
 
 $$q = m\,c\,\Delta T \qquad \text{oppure} \qquad q = n\,C_m\,\Delta T$$
 
-(riprendendo [formula (1.8)](ref:formula/1.8) e [formula (7.6)](ref:formula/7.6)). Durante un cambiamento di fase, invece, tutta l'energia fornita serve a rompere (o formare) le interazioni intermolecolari a temperatura costante, ed è legata alle moli trasformate tramite l'entalpia molare di transizione $\Delta H_{fus}$ o $\Delta H_{vap}$, già introdotta nella sezione sull'entalpia ([Entalpia ed equazioni termochimiche](ref:chapter/7#p3)):
+(riprendendo [(1.8)](ref:formula/1.8) e [(7.6)](ref:formula/7.6)). Durante un cambiamento di fase, invece, tutta l'energia fornita serve a rompere (o formare) le interazioni intermolecolari a temperatura costante, ed è legata alle moli trasformate tramite l'entalpia molare di transizione $\Delta H_{fus}$ o $\Delta H_{vap}$, già introdotta nella sezione sull'entalpia ([Entalpia ed equazioni termochimiche](ref:chapter/7#p3)):
 
 :::formula{id="10.3" label="Calore scambiato in un cambiamento di fase"}
 $$q = n\,\Delta H_{transizione}$$

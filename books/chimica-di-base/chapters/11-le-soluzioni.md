@@ -202,9 +202,9 @@ Verifica: il volume finale è 20 volte quello iniziale, quindi la concentrazione
 :::image{src="assets/c5a30c3b-diluizione-concentrazione-volume.svg" alt="Grafico della molarità in funzione del volume durante una diluizione, con due punti evidenziati: lo stato iniziale a 0,250 L e 2,00 mol/L, lo stato finale a 5,00 L e 0,100 mol/L" caption="Fig. 11.2 — Concentrazione finale in funzione del volume finale per la diluizione di 250 mL di HCl 2,00 M: la curva è un'iperbole, perché a parità di moli di soluto raddoppiare il volume dimezza la concentrazione; il punto a 5,00 L corrisponde alla diluizione a 0,100 M calcolata nell'esempio."}
 :::
 
-Le equazioni di diluizione si combinano direttamente con le tecniche di calcolo stechiometrico già introdotte per le reazioni in soluzione (si veda [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4)): la molarità permette di passare dal volume di una soluzione alle moli di reagente tramite $n = M V$, e da lì ai rapporti molari stechiometrici [formula (4.2)](ref:formula/4.2) già definiti per le reazioni in fase gassosa e solida. Lo stesso schema è già stato applicato alle titolazioni acido-base in [Reazioni acido-base e neutralizzazione](ref:chapter/5#p4), dove la condizione di equivalenza [formula (5.6)](ref:formula/5.6) è un caso particolare di questo procedimento generale: moli di reagente $A$ note dal volume e dalla molarità della sua soluzione, convertite tramite il rapporto stechiometrico in moli dell'altro reagente o prodotto.
+Le equazioni di diluizione si combinano direttamente con le tecniche di calcolo stechiometrico già introdotte per le reazioni in soluzione (si veda [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4)): la molarità permette di passare dal volume di una soluzione alle moli di reagente tramite $n = M V$, e da lì ai rapporti molari stechiometrici [(4.2)](ref:formula/4.2) già definiti per le reazioni in fase gassosa e solida. Lo stesso schema è già stato applicato alle titolazioni acido-base in [Reazioni acido-base e neutralizzazione](ref:chapter/5#p4), dove la condizione di equivalenza [(5.6)](ref:formula/5.6) è un caso particolare di questo procedimento generale: moli di reagente $A$ note dal volume e dalla molarità della sua soluzione, convertite tramite il rapporto stechiometrico in moli dell'altro reagente o prodotto.
 
-Un procedimento tipico di stechiometria in soluzione segue quindi questi passi: si scrive e si bilancia l'equazione della reazione; si convertono i volumi e le molarità delle soluzioni note in moli, con $n = MV$; si usano i coefficienti stechiometrici bilanciati per passare dalle moli di una specie alle moli di un'altra, individuando se richiesto il reagente limitante con il criterio [formula (4.3)](ref:formula/4.3); infine si riconvertono le moli trovate in massa, volume di soluzione o concentrazione, secondo quanto richiesto dal problema.
+Un procedimento tipico di stechiometria in soluzione segue quindi questi passi: si scrive e si bilancia l'equazione della reazione; si convertono i volumi e le molarità delle soluzioni note in moli, con $n = MV$; si usano i coefficienti stechiometrici bilanciati per passare dalle moli di una specie alle moli di un'altra, individuando se richiesto il reagente limitante con il criterio [(4.3)](ref:formula/4.3); infine si riconvertono le moli trovate in massa, volume di soluzione o concentrazione, secondo quanto richiesto dal problema.
 
 **Errore tipico 11.6.** Applicare $M_i V_i = M_f V_f$ a una miscelazione tra due soluzioni diverse di soluti differenti, invece che a una vera diluizione con solvente puro: l'equazione vale solo quando le moli dello stesso soluto si conservano passando da uno stato iniziale a uno finale, non quando si mescolano quantità di sostanze chimicamente diverse, caso che va trattato invece come un problema di bilancio di moli separato per ciascuna specie.
 
@@ -297,7 +297,7 @@ La pressione osmotica si osserva quando due soluzioni a diversa concentrazione (
 $$\pi = \frac{n_{\text{soluto}}\cdot R \cdot T}{V_{\text{soluzione}}} = M \cdot R \cdot T$$
 :::
 
-dove $M$ è la molarità del soluto, $R$ è la costante universale dei gas ($0,08206$ L·atm/(mol·K) oppure $8,314$ J/(mol·K), a seconda delle unità di $\pi$) e $T$ è la temperatura assoluta. La forma dell'equazione è formalmente identica a quella dei gas ideali, [formula (6.5)](ref:formula/6.5), con $\pi$ al posto di $P$ e $M = n/V$ al posto di $n/V$.
+dove $M$ è la molarità del soluto, $R$ è la costante universale dei gas ($0,08206$ L·atm/(mol·K) oppure $8,314$ J/(mol·K), a seconda delle unità di $\pi$) e $T$ è la temperatura assoluta. La forma dell'equazione è formalmente identica a quella dei gas ideali, [(6.5)](ref:formula/6.5), con $\pi$ al posto di $P$ e $M = n/V$ al posto di $n/V$.
 
 Applicando una pressione esterna maggiore di $\pi$ sul lato più concentrato si inverte il flusso naturale dell'osmosi: il solvente passa dalla soluzione concentrata a quella diluita, processo detto **osmosi inversa**, usato per esempio nella dissalazione dell'acqua di mare.
 
@@ -314,7 +314,7 @@ $\displaystyle M = \frac{m}{n} = \frac{21,5\times 10^{-3}}{3,12\times 10^{-7}} =
 
 ### Soluzioni di elettroliti e coefficiente di van 't Hoff
 
-Le equazioni precedenti valgono per soluti non elettroliti, in cui ogni unità formula resta una singola particella. Per gli elettroliti il numero di particelle effettivamente presenti in soluzione dipende dal grado di dissociazione, già definito con [formula (5.5)](ref:formula/5.5) nella sezione su [l'acqua come solvente](ref:chapter/5#p3). A parità di concentrazione, una soluzione di NaCl produce un innalzamento ebullioscopico circa doppio rispetto a una soluzione di glucosio della stessa molalità, perché NaCl si dissocia in due particelle mentre il glucosio resta indissociato.
+Le equazioni precedenti valgono per soluti non elettroliti, in cui ogni unità formula resta una singola particella. Per gli elettroliti il numero di particelle effettivamente presenti in soluzione dipende dal grado di dissociazione, già definito con [(5.5)](ref:formula/5.5) nella sezione su [l'acqua come solvente](ref:chapter/5#p3). A parità di concentrazione, una soluzione di NaCl produce un innalzamento ebullioscopico circa doppio rispetto a una soluzione di glucosio della stessa molalità, perché NaCl si dissocia in due particelle mentre il glucosio resta indissociato.
 
 **Definizione 11.7** (coefficiente di van 't Hoff). Si definisce
 
@@ -356,7 +356,7 @@ Il capitolo sulle soluzioni è comparso in 3 delle 4 sessioni d'esame esaminate.
 **Metodo passo per passo.**
 
 1. Bilancia la reazione. Se è una redox, scrivi le semireazioni e fai uguagliare gli elettroni scambiati (vedi [Reazioni di ossidoriduzione](ref:chapter/5#p5)).
-2. Porta ogni reagente a moli. Per un solido usa $n = m/M$ ([formula (2.4)](ref:formula/2.4)). Per un reagente dato come soluzione percentuale converti il volume in massa con la densità e applica la percentuale in massa del soluto ({{formula:11.6}}).
+2. Porta ogni reagente a moli. Per un solido usa $n = m/M$ [(2.4)](ref:formula/2.4). Per un reagente dato come soluzione percentuale converti il volume in massa con la densità e applica la percentuale in massa del soluto {{formula:11.6}}.
 3. Confronta le moli con i coefficienti stechiometrici e individua il reagente limitante ([Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4)).
 4. Calcola le moli del prodotto richiesto dal reagente limitante e convertile in grammi con la massa molare.
 5. Verifica che le unità si semplifichino e che le cifre significative rispettino i dati ([Grandezze, unità e cifre significative](ref:chapter/1#p2)).
@@ -370,7 +370,7 @@ Il capitolo sulle soluzioni è comparso in 3 delle 4 sessioni d'esame esaminate.
 **Esempi.**
 
 - *Tema d_esame 16 + soluzione (Savorani), esercizio 1.* Chiede di bilanciare la redox tra dicromato di potassio, cloruro di stagno(II) e acido cloridrico, poi la massa di cloruro di cromo(III) ottenuta da 565,0 g di cloruro di stagno(II) e 2,0 L di acido cloridrico al 37,0 %. Si risolve con i passi 1-4: i grammi di SnCl₂ diventano moli con la massa molare, l'acido dato come volume e percentuale diventa moli passando da volume a massa e da massa di soluzione a massa di soluto, e il confronto con i coefficienti indica il reagente limitante.
-- *Tema d_esame 15 + soluzione, esercizio 1.* Parte dalla reazione tra nitrato di piombo(II), rame e acido solforico, da bilanciare. Poi 780 mg del solfato rameico prodotto vengono sciolti in acqua fino a 980 cm³ di soluzione, e si prelevano 100 mL. La concentrazione si ottiene da $n/V$ con il volume finale della soluzione, non con il volume di solvente aggiunto ({{formula:11.3}}).
+- *Tema d_esame 15 + soluzione, esercizio 1.* Parte dalla reazione tra nitrato di piombo(II), rame e acido solforico, da bilanciare. Poi 780 mg del solfato rameico prodotto vengono sciolti in acqua fino a 980 cm³ di soluzione, e si prelevano 100 mL. La concentrazione si ottiene da $n/V$ con il volume finale della soluzione, non con il volume di solvente aggiunto {{formula:11.3}}.
 
 ### Porzione prelevata e diluizione
 

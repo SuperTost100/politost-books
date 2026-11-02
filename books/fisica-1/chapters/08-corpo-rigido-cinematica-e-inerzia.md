@@ -71,7 +71,7 @@ dove $O'$ è un punto arbitrario, solidale al corpo rigido (eventualmente mobile
 
 Il moto di $P$ risulta ancora una rototraslazione, caratterizzata però dalla velocità $\vec{v}_Q$ (o $\vec{v}_{O'}$) del nuovo polo e dalla stessa velocità angolare $\vec{\omega}$, che individua un asse di rotazione istantaneo passante per il nuovo polo. In particolare, se il punto scelto come polo è istantaneamente fermo, il moto si riduce, in quell'istante, a una pura rotazione attorno a esso. La velocità angolare delle due descrizioni (rispetto a $O$ o rispetto a $Q$) coincide, perché in un intervallo di tempo $dt$ l'angolo $d\theta$ descritto in una rotazione è lo stesso angolo descritto nell'altra, essendo il corpo indeformabile.
 
-Questa relazione è formalmente identica al teorema delle velocità relative già incontrato per riferimenti mobili (si veda [Velocità e accelerazioni relative](ref:chapter/6#p2), [formula (6.2)](ref:formula/6.2)), nel caso particolare in cui il punto in esame sia fermo rispetto al riferimento mobile ($\vec{v}' = \vec{0}$): il riferimento mobile solidale al corpo rigido gioca qui il ruolo del corpo stesso.
+Questa relazione è formalmente identica al teorema delle velocità relative già incontrato per riferimenti mobili (si veda [Velocità e accelerazioni relative](ref:chapter/6#p2), [(6.2)](ref:formula/6.2)), nel caso particolare in cui il punto in esame sia fermo rispetto al riferimento mobile ($\vec{v}' = \vec{0}$): il riferimento mobile solidale al corpo rigido gioca qui il ruolo del corpo stesso.
 
 ### Esempio svolto: velocità dei punti di una ruota che rotola
 
@@ -287,9 +287,9 @@ Nella sezione sul [momento angolare di un sistema](ref:chapter/7#p5) e in quella
 
 Per un sistema di punti, assunto un polo $O$ fisso nel riferimento inerziale, si definisce il riferimento del centro di massa come il riferimento con origine nel centro di massa e assi paralleli a quelli inerziali; tale riferimento è in generale non inerziale, ma la quantità di moto totale calcolata al suo interno è sempre nulla, e il momento angolare rispetto al centro di massa ha lo stesso valore sia calcolato nel riferimento inerziale sia calcolato nel riferimento del centro di massa.
 
-Decomponendo $\vec{r}_i = \vec{r}_{CM} + \vec{r}_i'$ e $\vec{v}_i = \vec{v}_{CM} + \vec{v}_i'$ nella definizione di momento angolare, i termini misti si annullano perché $\sum_i m_i \vec{r}_i' = 0$ e $\sum_i m_i \vec{v}_i' = 0$, e si ottiene il **primo teorema di König**, [formula (7.16)](ref:formula/7.16), cioè $\vec{L}_O = \vec{r}_{CM}\times m\vec{v}_{CM} + \vec{L}'$: il momento angolare del sistema è la somma del momento angolare del centro di massa (come se tutta la massa fosse concentrata lì) e del momento angolare relativo al centro di massa.
+Decomponendo $\vec{r}_i = \vec{r}_{CM} + \vec{r}_i'$ e $\vec{v}_i = \vec{v}_{CM} + \vec{v}_i'$ nella definizione di momento angolare, i termini misti si annullano perché $\sum_i m_i \vec{r}_i' = 0$ e $\sum_i m_i \vec{v}_i' = 0$, e si ottiene il **primo teorema di König**, [(7.16)](ref:formula/7.16), cioè $\vec{L}_O = \vec{r}_{CM}\times m\vec{v}_{CM} + \vec{L}'$: il momento angolare del sistema è la somma del momento angolare del centro di massa (come se tutta la massa fosse concentrata lì) e del momento angolare relativo al centro di massa.
 
-Analogamente, decomponendo la velocità nell'espressione dell'energia cinetica totale, il termine misto $\sum_i m_i \vec{v}_{CM}\cdot\vec{v}_i'$ si annulla per lo stesso motivo, e si ottiene il **secondo teorema di König**, [formula (7.19)](ref:formula/7.19), cioè $E_k = \frac{1}{2}Mv_{CM}^2 + E_k'$: l'energia cinetica del sistema è la somma dell'energia cinetica del centro di massa e dell'energia cinetica relativa al centro di massa.
+Analogamente, decomponendo la velocità nell'espressione dell'energia cinetica totale, il termine misto $\sum_i m_i \vec{v}_{CM}\cdot\vec{v}_i'$ si annulla per lo stesso motivo, e si ottiene il **secondo teorema di König**, [(7.19)](ref:formula/7.19), cioè $E_k = \frac{1}{2}Mv_{CM}^2 + E_k'$: l'energia cinetica del sistema è la somma dell'energia cinetica del centro di massa e dell'energia cinetica relativa al centro di massa.
 
 ### Applicazione al corpo rigido
 
@@ -324,7 +324,7 @@ Nel caso più generale di rototraslazione (il corpo non ruota attorno a un asse 
 :::image{src="assets/55a26821-konig-piattaforma-schema.svg" alt="Due masse agli estremi di un'asta che ruota attorno al suo centro, il quale trasla con velocità v0" caption="Fig. 8.2 — Configurazione del sistema nel riferimento del centro di massa: le due masse m, agli estremi dell'asta di lunghezza 2R = 0,40 m, ruotano con velocità angolare ω = 10 s⁻¹ attorno al centro; il centro di massa trasla rispetto al laboratorio con velocità v0 = 0,8 m/s."}
 :::
 
-**Equazioni.** Per il secondo teorema di König, [formula (7.19)](ref:formula/7.19),
+**Equazioni.** Per il secondo teorema di König, [(7.19)](ref:formula/7.19),
 
 $$E_k = \frac{1}{2}Mv_{CM}^2 + E_k', \qquad M = 2m.$$
 
@@ -348,7 +348,7 @@ Per il momento angolare relativo al centro di massa, essendo il centro di massa 
 
 ### Condizioni di equilibrio del corpo rigido
 
-Per il punto materiale l'equilibrio statico si riduce all'annullamento della risultante delle forze applicate, come stabilito nella sezione sulle [reazioni vincolari ed equilibrio](ref:chapter/3#p5): $\vec{R} = \vec{0}$ [formula (3.11)](ref:formula/3.11). Per un corpo rigido questa condizione resta necessaria, ma non è più sufficiente: anche se la risultante delle forze esterne è nulla, il corpo può ruotare attorno al proprio centro di massa, perché per un corpo estesa conta anche il punto di applicazione di ciascuna forza, cioè il suo momento.
+Per il punto materiale l'equilibrio statico si riduce all'annullamento della risultante delle forze applicate, come stabilito nella sezione sulle [reazioni vincolari ed equilibrio](ref:chapter/3#p5): $\vec{R} = \vec{0}$ [(3.10)](ref:formula/3.10). Per un corpo rigido questa condizione resta necessaria, ma non è più sufficiente: anche se la risultante delle forze esterne è nulla, il corpo può ruotare attorno al proprio centro di massa, perché per un corpo estesa conta anche il punto di applicazione di ciascuna forza, cioè il suo momento.
 
 Le condizioni di equilibrio statico di un corpo rigido, note come equazioni cardinali della statica, richiedono quindi che si annullino simultaneamente la risultante e il momento risultante di tutte le forze esterne rispetto a un polo $O$ scelto a piacere.
 
@@ -551,7 +551,7 @@ Il metodo, passo per passo:
 1. Individuare il sistema (punto più corpo rigido) e scegliere un **polo** fisso, dichiarandolo. Con un'asta incernierata il polo naturale è il vincolo, perché la reazione vincolare ha momento nullo rispetto a esso.
 2. Verificare quali grandezze si conservano durante l'urto, che è istantaneo. Il momento angolare rispetto al polo si conserva se i momenti esterni sono nulli o trascurabili, come spiegato in [Urti con corpi rigidi](ref:chapter/9#p5). La quantità di moto invece non si conserva se c'è un vincolo fisso, perché la reazione del vincolo è impulsiva.
 3. Calcolare il momento d'inerzia del corpo rispetto all'asse di rotazione, usando i valori noti ([Momento d'inerzia](ref:chapter/8#p3)) e, se l'asse non passa per il centro di massa, il trasporto di Huygens-Steiner ([Teoremi di Huygens-Steiner e di König](ref:chapter/8#p4)).
-4. Scrivere il momento angolare prima e dopo l'urto: $L = r\,m\,v$ per il punto (con il braccio rispetto al polo). Per un rigido vincolato a ruotare attorno a un asse fisso si usa la componente assiale $L_z = I_z\omega$; la forma vettoriale $\vec L = I\vec\omega$ vale solo per un asse principale o di simmetria. Per un rigido libero il momento angolare rispetto al polo comprende anche il contributo orbitale del centro di massa, $\vec r_{CM}\times m\vec v_{CM}$, secondo il primo teorema di König. Se dopo l'urto il punto resta attaccato, il suo contributo diventa $m r^2 \omega$ e va sommato a $I$. Si risolve in $\omega$.
+4. Scrivere il momento angolare prima e dopo l'urto: $L = r\,m\,v$ per il punto (con il braccio rispetto al polo). Per un rigido vincolato a ruotare attorno a un asse fisso si usa la componente assiale $L_z = I_z\omega$; la forma vettoriale $\vec L = I\vec\omega$ vale solo per un asse principale o di simmetria. Per un rigido libero il momento angolare rispetto al polo comprende anche il contributo orbitale del centro di massa, $\vec r_{CM}\times m\vec v_{CM}$, secondo il primo teorema di König. Se il sistema ruota attorno a un asse fisso e dopo l'urto il punto resta attaccato a distanza $r$ dall'asse, il suo contributo diventa $m r^2 \omega$ e va sommato a $I$; si risolve in $\omega$. Per un rigido libero le incognite sono due, $\vec v_{CM}$ e $\omega$: si scrivono insieme la conservazione della quantità di moto, valida se l'impulso esterno è trascurabile, e quella del momento angolare, con il centro di massa del sistema dopo l'urto e i teoremi di König.
 5. Per l'energia dissipata, confrontare l'energia cinetica prima e dopo, usando {{formula:8.15}} se il corpo si muove anche di traslazione.
 6. Controllare il segno del verso di rotazione (con la regola della mano destra) e le dimensioni.
 
@@ -599,8 +599,8 @@ Il metodo:
 
 1. Disegnare il diagramma delle forze di ogni corpo, compresi la carrucola e il cilindro. Le due tensioni del filo ai lati della carrucola sono in generale diverse, perché la carrucola ha un momento d'inerzia non nullo.
 2. Per il centro di massa di ciascun corpo, scrivere la seconda legge di Newton lungo il piano e perpendicolarmente a esso.
-3. Per ogni corpo che ruota, scrivere l'equazione dei momenti rispetto al centro di massa o a un asse fisso, [formula (9.1)](ref:formula/9.1), con il giusto $I$ (per il cilindro pieno e per il disco della carrucola, $I=\tfrac{1}{2}mr^2$, {{formula:8.8}}).
-4. Collegare accelerazione lineare e angolare con il vincolo di puro rotolamento [formula (9.8)](ref:formula/9.8). Per la carrucola ad asse fisso, il centro di massa resta fermo; il vincolo di non slittamento lega invece l'accelerazione del filo all'accelerazione angolare tramite $a_f=\alpha_p R_p$, con i segni determinati dalle convenzioni scelte.
+3. Per ogni corpo che ruota, scrivere l'equazione dei momenti rispetto al centro di massa o a un asse fisso, [(9.1)](ref:formula/9.1), con il giusto $I$ (per il cilindro pieno e per il disco della carrucola, $I=\tfrac{1}{2}mr^2$, {{formula:8.8}}).
+4. Collegare accelerazione lineare e angolare con il vincolo di puro rotolamento [(9.8)](ref:formula/9.8). Per la carrucola ad asse fisso, il centro di massa resta fermo; il vincolo di non slittamento lega invece l'accelerazione del filo all'accelerazione angolare tramite $a_f=\alpha_p R_p$, con i segni determinati dalle convenzioni scelte.
 5. Risolvere il sistema in forma letterale, poi sostituire i numeri con le unità.
 6. Verificare l'aderenza: la forza di attrito statico trovata deve soddisfare $|\vec{f}_s| \le \mu_s N$ ([Rotolamento](ref:chapter/9#p4) e [Rotazione attorno a un asse fisso](ref:chapter/9#p2)).
 7. Se si chiede una velocità dopo un tratto, si può usare l'energia, con {{formula:8.15}}, sommando i termini di traslazione e di rotazione ([Energia nel moto del corpo rigido](ref:chapter/9#p3)).

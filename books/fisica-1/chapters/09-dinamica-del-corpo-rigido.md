@@ -13,7 +13,7 @@ Al termine saprai impostare e risolvere problemi di rotazione attorno a un asse 
 
 ## p2 | Rotazione attorno a un asse fisso
 
-Quando un corpo rigido ruota attorno a un asse fisso $z$, tutti i suoi punti descrivono archi di circonferenza su piani perpendicolari all'asse, con la stessa velocità angolare $\omega$ istante per istante, mentre la velocità lineare $v_i = \omega R_i$ dipende dalla distanza $R_i$ del punto dall'asse. Questa osservazione, già usata per definire cinematicamente la rotazione nella sezione su [Corpo rigido e suoi moti](ref:chapter/8#p2), permette ora di scrivere l'equazione dinamica che governa il moto, sfruttando la seconda equazione cardinale ([formula (7.14)](ref:formula/7.14)) già stabilita per i sistemi di punti materiali.
+Quando un corpo rigido ruota attorno a un asse fisso $z$, tutti i suoi punti descrivono archi di circonferenza su piani perpendicolari all'asse, con la stessa velocità angolare $\omega$ istante per istante, mentre la velocità lineare $v_i = \omega R_i$ dipende dalla distanza $R_i$ del punto dall'asse. Questa osservazione, già usata per definire cinematicamente la rotazione nella sezione su [Corpo rigido e suoi moti](ref:chapter/8#p2), permette ora di scrivere l'equazione dinamica che governa il moto, sfruttando la seconda equazione cardinale [(7.14)](ref:formula/7.14) già stabilita per i sistemi di punti materiali.
 
 ### Equazione del moto di rotazione
 
@@ -49,13 +49,13 @@ Questa è l'analogo rotazionale di $\vec{R} = m\vec{a}$: il momento assiale risu
 
 **Teorema 9.2.** Sia dato un corpo rigido che ruota con velocità angolare $\omega$ attorno a un asse fisso $z$, di versore $\hat{k}$, e sia $O$ un polo fisso sull'asse. Allora la componente lungo $z$ del momento risultante delle forze esterne rispetto a $O$ vale $M_z = I_z\alpha$, con $I_z = \sum_i m_i R_i^2$ e $\alpha = d\omega/dt$.
 
-*Dimostrazione.* Per un polo fisso la seconda equazione cardinale ([formula (7.14)](ref:formula/7.14)) afferma che $d\vec{L}/dt = \vec{M}$, dove $\vec{M}$ è il momento risultante delle sole forze esterne, perché il momento delle forze interne è nullo. Poiché $\hat{k}$ è costante nel tempo, proiettando l'equazione su $z$ si ottiene
+*Dimostrazione.* Per un polo fisso la seconda equazione cardinale [(7.14)](ref:formula/7.14) afferma che $d\vec{L}/dt = \vec{M}$, dove $\vec{M}$ è il momento risultante delle sole forze esterne, perché il momento delle forze interne è nullo. Poiché $\hat{k}$ è costante nel tempo, proiettando l'equazione su $z$ si ottiene
 
 $$\frac{dL_z}{dt} = M_z , \qquad L_z = \vec{L}\cdot\hat{k} .$$
 
-Calcoliamo $L_z$. Il punto $P_i$ di massa $m_i$ percorre una circonferenza di raggio $R_i$ attorno all'asse, con velocità $v_i = \omega R_i$ tangente alla circonferenza. La componente lungo $z$ di $\vec{r}_i \times m_i\vec{v}_i$ dipende solo dalle componenti di $\vec{r}_i$ e $\vec{v}_i$ nel piano perpendicolare all'asse, cioè da $x_i v_{i,y} - y_i v_{i,x}$. In tale piano il vettore posizione ha modulo $R_i$ ed è ortogonale a $\vec{v}_i$, quindi
+Calcoliamo $L_z$. Il punto $P_i$ di massa $m_i$ percorre una circonferenza di raggio $R_i$ attorno all'asse, con velocità di modulo $v_i = |\omega|R_i$ tangente alla circonferenza. La componente tangenziale con segno è $v_{i,\theta} = \omega R_i$. La componente lungo $z$ di $\vec{r}_i \times m_i\vec{v}_i$ dipende solo dalle componenti di $\vec{r}_i$ e $\vec{v}_i$ nel piano perpendicolare all'asse, cioè da $x_i v_{i,y} - y_i v_{i,x}$. In tale piano il vettore posizione ha modulo $R_i$ ed è ortogonale alla velocità tangenziale, quindi
 
-$$L_{i,z} = m_i R_i v_i = m_i R_i^2\,\omega .$$
+$$L_{i,z} = m_i R_i v_{i,\theta} = m_i R_i^2\,\omega .$$
 
 Sommando su tutti i punti, e ricordando che $\omega$ è la stessa per tutti,
 
@@ -81,7 +81,7 @@ dove il segno negativo indica che ad angoli positivi corrisponde un'accelerazion
 
 $$\frac{d^2\theta}{dt^2} + \frac{mgh}{I_z}\sin\theta = 0 ,$$
 
-dove $I_z$ è il momento d'inerzia del corpo rispetto all'asse $O$, legato al momento d'inerzia rispetto al centro di massa dal teorema di Huygens-Steiner, [formula (8.13)](ref:formula/8.13), nella forma $I_z = I_{CM} + mh^2$.
+dove $I_z$ è il momento d'inerzia del corpo rispetto all'asse $O$, legato al momento d'inerzia rispetto al centro di massa dal teorema di Huygens-Steiner, [(8.13)](ref:formula/8.13), nella forma $I_z = I_{CM} + mh^2$.
 
 :::formula{id="9.2" label="Equazione del moto del pendolo composto"}
 $$\frac{d^2\theta}{dt^2} + \frac{mgh}{I_z}\sin\theta = 0$$
@@ -97,7 +97,7 @@ La soluzione generale è $\theta(t) = A\sin(\Omega t + \varphi)$, dove $A$ è l'
 $$T = 2\pi\sqrt{\frac{I_z}{mgh}}$$
 :::
 
-Definendo la **lunghezza ridotta** del pendolo composto come $l = I_z/(mh)$, il periodo assume la stessa forma del pendolo semplice già vista in [Dinamica del moto curvilineo](ref:chapter/3#p8) ([formula (3.29)](ref:formula/3.29)):
+Definendo la **lunghezza ridotta** del pendolo composto come $l = I_z/(mh)$, il periodo assume la stessa forma del pendolo semplice già vista in [Dinamica del moto curvilineo](ref:chapter/3#p8) [(3.28)](ref:formula/3.28):
 
 $$T = 2\pi\sqrt{\frac{l}{g}} .$$
 
@@ -115,7 +115,7 @@ Schema: l'unica forza con momento non nullo rispetto all'asse è il peso applica
 
 Riferimento: polo $O$ sull'asse di rotazione, angolo $\theta$ misurato dalla verticale.
 
-Momento d'inerzia: dalla sezione sul [momento d'inerzia](ref:chapter/8#p3), $I_z = \frac{1}{3}mL^2$ (momento rispetto a un estremo, equivalente alla chiave [formula (8.6)](ref:formula/8.6)).
+Momento d'inerzia: dalla sezione sul [momento d'inerzia](ref:chapter/8#p3), $I_z = \frac{1}{3}mL^2$ (momento rispetto a un estremo, equivalente alla chiave [(8.6)](ref:formula/8.6)).
 
 Soluzione letterale: applicando {{formula:9.3}} con $h = L/2$,
 
@@ -214,7 +214,7 @@ Quando l'asse di rotazione non passa per il centro di massa, oppure il corpo è 
 
 $$E_k = \frac{1}{2}I_{CM}\omega^2 + \frac{1}{2}mv_{CM}^2 .$$
 
-Questa è esattamente la forma [formula (8.15)](ref:formula/8.15) già introdotta: il primo termine è l'energia cinetica "interna", calcolata nel sistema del centro di massa (dove il moto osservato è una pura rotazione), il secondo è l'energia cinetica dovuta al moto di trascinamento del centro di massa. Questa decomposizione sarà il punto di partenza per lo studio del [rotolamento](ref:chapter/9#p4), dove compare esplicitamente nella forma $E_k=\frac12 Mv_{CM}^2+\frac12 I\omega^2$.
+Questa è esattamente la forma [(8.15)](ref:formula/8.15) già introdotta: il primo termine è l'energia cinetica "interna", calcolata nel sistema del centro di massa (dove il moto osservato è una pura rotazione), il secondo è l'energia cinetica dovuta al moto di trascinamento del centro di massa. Questa decomposizione sarà il punto di partenza per lo studio del [rotolamento](ref:chapter/9#p4), dove compare esplicitamente nella forma $E_k=\frac12 Mv_{CM}^2+\frac12 I\omega^2$.
 
 ### Conservazione dell'energia meccanica nel corpo rigido
 
@@ -313,7 +313,7 @@ Entrambe le scelte sono legittime e portano allo stesso risultato per $\alpha$; 
 
 $$F_{att} = \mu_d N = \mu_d mg\cos\theta \quad \text{SBAGLIATO}, \qquad F_{att} = \mu_s N = \mu_s mg\cos\theta \quad \text{SBAGLIATO} :$$
 
-il primo perché l'attrito non è dinamico (non c'è strisciamento), il secondo perché $\mu_s N$ è solo il valore massimo che l'attrito statico può raggiungere, non il suo valore effettivo, che vale $0 \le |F_{att}| \le \mu_s N$. Il valore corretto di $F_{att}$ deve essere ricavato come incognita, risolvendo insieme l'equazione di traslazione del CM (prima equazione cardinale) e l'equazione della rotazione attorno al CM (seconda equazione cardinale, data anche da [questa sezione](ref:chapter/9#p2)) come $M_z = I_z\alpha$), insieme alla condizione di puro rotolamento {{formula:9.8}}.
+il primo perché l'attrito non è dinamico (non c'è strisciamento), il secondo perché $\mu_s N$ è solo il valore massimo che l'attrito statico può raggiungere, non il suo valore effettivo, che vale $0 \le |F_{att}| \le \mu_s N$. Il valore corretto di $F_{att}$ deve essere ricavato come incognita, risolvendo insieme l'equazione di traslazione del CM (prima equazione cardinale) e la seconda equazione cardinale dei momenti rispetto al CM, che nel moto piano vale $M_{CM,z}=I_{CM}\alpha$, insieme alla condizione di puro rotolamento {{formula:9.8}}.
 
 Una volta determinato $F_{att}$, bisogna sempre verificare che il moto di puro rotolamento sia effettivamente possibile, cioè che
 

@@ -69,7 +69,7 @@ $$f(x) = T_{n,x_0}(x) + \frac{f^{(n+1)}(c)}{(n+1)!}(x-x_0)^{n+1}.$$
 
 Per $x = x_0$ la formula è banalmente vera senza bisogno di alcuna ipotesi su $f^{(n+1)}$: entrambi i membri valgono $f(x_0)$, poiché $T_{n,x_0}(x_0) = f(x_0)$ e il termine di resto si annulla.
 
-Il resto di Lagrange generalizza il teorema di Lagrange ([teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4)): si noti infatti che per $n=0$ la formula di Taylor con resto di Lagrange coincide esattamente con [formula (7.12)](ref:formula/7.12).
+Il resto di Lagrange generalizza il teorema di Lagrange ([teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4)): si noti infatti che per $n=0$ la formula di Taylor con resto di Lagrange coincide esattamente con [(7.12)](ref:formula/7.12).
 
 **Errore tipico 8.1.** Le ipotesi dei due resti sono diverse: il resto di Peano richiede solo l'esistenza di $f^{(n)}(x_0)$ nel punto, mentre il resto di Lagrange richiede, su un intervallo $I$ che contiene $x_0$, che $f$ sia derivabile $n$ volte con $f^{(n)}$ continua e derivabile $n+1$ volte almeno in $I\setminus\{x_0\}$ (Teorema 8.2). Non si può usare il resto di Lagrange se la funzione non è sufficientemente regolare in un intorno di $x_0$, e non si deve confondere il punto $c$ (generico, non noto esplicitamente) con $x_0$.
 
@@ -97,7 +97,7 @@ Notiamo che per $\sin x$ e $\cos x$ compaiono solo le potenze dispari e pari di 
 
 ### Calcolo di limiti e ordini di infinitesimo con Taylor
 
-Lo strumento chiave per usare gli sviluppi nel calcolo dei limiti è il **principio di eliminazione dei termini trascurabili** (già incontrato in [Infiniti e infinitesimi](ref:chapter/6#p3)): se $f = o(g)$ per $x \to x_0$ ([formula (6.9)](ref:formula/6.9)), allora nelle somme i termini $o(\cdot)$ possono essere trascurati rispetto al termine dominante, purché si confrontino numeratore e denominatore in modo omogeneo.
+Lo strumento chiave per usare gli sviluppi nel calcolo dei limiti è il **principio di eliminazione dei termini trascurabili** (già incontrato in [Infiniti e infinitesimi](ref:chapter/6#p3)): se $f = o(g)$ per $x \to x_0$ [(6.9)](ref:formula/6.9), allora nelle somme i termini $o(\cdot)$ possono essere trascurati rispetto al termine dominante, purché si confrontino numeratore e denominatore in modo omogeneo.
 
 **Esempio 8.1.** Calcoliamo
 
@@ -115,13 +115,13 @@ quindi
 
 $$\lim_{x \to 0} \frac{\sin x - x}{x^3} = \lim_{x \to 0} \left(-\frac{1}{6} + \frac{o(x^3)}{x^3}\right) = -\frac{1}{6},$$
 
-perché $\dfrac{o(x^3)}{x^3} \to 0$ per definizione di $o$-piccolo. In questo modo abbiamo anche determinato che $\sin x - x$ è un infinitesimo di ordine $3$ rispetto al campione $x$, con parte principale $-\dfrac{x^3}{6}$ (si veda [formula (6.10)](ref:formula/6.10)).
+perché $\dfrac{o(x^3)}{x^3} \to 0$ per definizione di $o$-piccolo. In questo modo abbiamo anche determinato che $\sin x - x$ è un infinitesimo di ordine $3$ rispetto al campione $x$, con parte principale $-\dfrac{x^3}{6}$ (si veda [(6.10)](ref:formula/6.10)).
 
 **Esempio 8.2.** Riprendiamo il limite
 
 $$\lim_{x \to +\infty} \frac{e^x + x}{e^{2x} + \log x}.$$
 
-Per $x \to +\infty$ confrontiamo i termini con la gerarchia degli infiniti ([formula (6.11)](ref:formula/6.11)): $x = o(e^x)$ e $\log x = o(e^{2x})$. Allora
+Per $x \to +\infty$ confrontiamo i termini con la gerarchia degli infiniti [(6.11)](ref:formula/6.11): $x = o(e^x)$ e $\log x = o(e^{2x})$. Allora
 
 $$\lim_{x \to +\infty} \frac{e^x + o(e^x)}{e^{2x} + o(e^{2x})} = \lim_{x \to +\infty} \frac{e^x}{e^{2x}} = \lim_{x \to +\infty} \frac{1}{e^x} = 0.$$
 
@@ -147,7 +147,7 @@ In questa sezione raccogliamo tutti gli strumenti per decidere, una volta trovat
 
 ### Punti stazionari: richiami e dove cercarli
 
-Ricordiamo che $x_0$ è un **punto stazionario** (o punto critico) di $f$ se $f$ è derivabile in $x_0$ e $f'(x_0) = 0$ [formula (7.9)](ref:formula/7.9). Se $x_0 \in A$ è un punto interno al dominio ed è punto di massimo o di minimo relativo per $f$, e $f$ è derivabile in $x_0$, allora $x_0$ è un punto stazionario. Questo risultato, già visto nella sezione sui [teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4), ci dice **dove cercare** i candidati punti di estremo relativo o assoluto di una funzione derivabile su un intervallo: i punti interni in cui $f'(x) = 0$, i punti interni in cui $f$ non è derivabile e, se si cercano estremi assoluti su $\lbrack a,b\rbrack $, i punti $a$ e $b$. Non basta però trovare $f'(x_0) = 0$: bisogna classificare il punto, e per farlo esistono due strade complementari, che esaminiamo di seguito.
+Ricordiamo che $x_0$ è un **punto stazionario** (o punto critico) di $f$ se $f$ è derivabile in $x_0$ e $f'(x_0) = 0$ [(7.9)](ref:formula/7.9). Se $x_0 \in A$ è un punto interno al dominio ed è punto di massimo o di minimo relativo per $f$, e $f$ è derivabile in $x_0$, allora $x_0$ è un punto stazionario. Questo risultato, già visto nella sezione sui [teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4), ci dice **dove cercare** i candidati punti di estremo relativo o assoluto di una funzione derivabile su un intervallo: i punti interni in cui $f'(x) = 0$, i punti interni in cui $f$ non è derivabile e, se si cercano estremi assoluti su $\lbrack a,b\rbrack $, i punti $a$ e $b$. Non basta però trovare $f'(x_0) = 0$: bisogna classificare il punto, e per farlo esistono due strade complementari, che esaminiamo di seguito.
 
 ### Classificazione tramite il segno della derivata prima
 
@@ -276,7 +276,7 @@ Osserviamo che qui il criterio del segno della derivata prima sarebbe stato meno
 
 ## p4 | Studio di funzione completo
 
-Lo **studio di funzione completo** è l'esercizio che riassume quasi tutti gli strumenti del calcolo differenziale sviluppati nei capitoli precedenti: dominio e simmetrie (cfr. [Funzioni: dominio, immagine, iniettività](ref:chapter/3#p2) e [Simmetrie, periodicità e funzioni particolari](ref:chapter/3#p4)), limiti agli estremi del dominio ([Definizione di limite](ref:chapter/4#p3)), continuità ([Funzioni continue](ref:chapter/5#p2)), segno della derivata prima per la monotonia ([formula (7.13)](ref:formula/7.13)) e segno della derivata seconda per la convessità, oltre alla caratterizzazione dei punti critici tramite le derivate successive studiata nella sezione precedente. Lo schema procedurale standard è il seguente.
+Lo **studio di funzione completo** è l'esercizio che riassume quasi tutti gli strumenti del calcolo differenziale sviluppati nei capitoli precedenti: dominio e simmetrie (cfr. [Funzioni: dominio, immagine, iniettività](ref:chapter/3#p2) e [Simmetrie, periodicità e funzioni particolari](ref:chapter/3#p4)), limiti agli estremi del dominio ([Definizione di limite](ref:chapter/4#p3)), continuità ([Funzioni continue](ref:chapter/5#p2)), segno della derivata prima per la monotonia [(7.13)](ref:formula/7.13) e segno della derivata seconda per la convessità, oltre alla caratterizzazione dei punti critici tramite le derivate successive studiata nella sezione precedente. Lo schema procedurale standard è il seguente.
 
 1. Determinare il dominio $\operatorname{dom} f$ e, se possibile, eventuali simmetrie (parità, disparità, periodicità) per restringere lo studio a una metà del dominio.
 2. Calcolare i limiti di $f$ agli estremi del dominio e nei punti di discontinuità eliminabili dal dominio stesso, classificando gli asintoti.
@@ -314,13 +314,13 @@ La retta $y = mx + q$ è l'**asintoto obliquo** di $f$ per $x \to +\infty$. Se $
 
 ### Dal segno delle derivate al grafico
 
-Una volta noti dominio, simmetrie e asintoti, si studia la derivata prima $f'$ sul dominio. Il test di monotonia [formula (7.13)](ref:formula/7.13) permette di tradurre il segno di $f'$ in intervalli di crescenza e decrescenza:
+Una volta noti dominio, simmetrie e asintoti, si studia la derivata prima $f'$ sul dominio. Il test di monotonia [(7.13)](ref:formula/7.13) permette di tradurre il segno di $f'$ in intervalli di crescenza e decrescenza:
 
 - $f'(x) \geq 0$ su un intervallo $I$ $\Rightarrow$ $f$ crescente su $I$ (strettamente se $f'(x) > 0$ tranne eventualmente in punti isolati);
 - $f'(x) \leq 0$ su $I$ $\Rightarrow$ $f$ decrescente su $I$;
 - $f'(x) = 0$ su tutto $I$ $\Rightarrow$ $f$ costante su $I$.
 
-I punti in cui $f'$ cambia segno (punti stazionari interni, [formula (7.9)](ref:formula/7.9), oppure punti interni di non derivabilità, cfr. [Punti di non derivabilità](ref:chapter/7#p3)) sono candidati a massimi o minimi relativi, purché $f$ sia continua nel punto: come già richiesto dal criterio della sezione precedente, il passaggio da derivata positiva a negativa indica un massimo, quello da negativa a positiva un minimo, solo se $f$ è continua in quel punto. Senza continuità la conclusione può fallire, come mostra $f(x) = x^2$ per $x \neq 0$ e $f(0) = 1$: la derivata è negativa a sinistra e positiva a destra di $0$, ma $0$ è in realtà un punto di massimo relativo, perché $f(0)=1$ supera i valori di $f$ in un intorno dell'origine. Se $f'$ non cambia segno attraverso un punto stazionario, questo test non vi individua un estremo stretto. Per stabilire se sia un flesso a tangente orizzontale occorre verificare separatamente il cambio di convessità; quando sono applicabili, le derivate successive possono aiutare nella verifica, come spiegato nella sezione sulla [Caratterizzazione dei punti critici](ref:chapter/8#p3).
+I punti in cui $f'$ cambia segno (punti stazionari interni, [(7.9)](ref:formula/7.9), oppure punti interni di non derivabilità, cfr. [Punti di non derivabilità](ref:chapter/7#p3)) sono candidati a massimi o minimi relativi, purché $f$ sia continua nel punto: come già richiesto dal criterio della sezione precedente, il passaggio da derivata positiva a negativa indica un massimo, quello da negativa a positiva un minimo, solo se $f$ è continua in quel punto. Senza continuità la conclusione può fallire, come mostra $f(x) = x^2$ per $x \neq 0$ e $f(0) = 1$: la derivata è negativa a sinistra e positiva a destra di $0$, ma $0$ è in realtà un punto di massimo relativo, perché $f(0)=1$ supera i valori di $f$ in un intorno dell'origine. Se $f'$ non cambia segno attraverso un punto stazionario, questo test non vi individua un estremo stretto. Per stabilire se sia un flesso a tangente orizzontale occorre verificare separatamente il cambio di convessità; quando sono applicabili, le derivate successive possono aiutare nella verifica, come spiegato nella sezione sulla [Caratterizzazione dei punti critici](ref:chapter/8#p3).
 
 Lo studio del segno di $f''$ fornisce in modo analogo la convessità: $f''(x) \geq 0$ su un intervallo implica $f$ convessa (equivalentemente $f'$ crescente), $f''(x) \leq 0$ implica $f$ concava. I punti in cui $f''$ cambia segno sono punti di flesso: se $f''(x_0) = 0$ e $f''$ assume segni opposti a destra e a sinistra di $x_0$, allora $x_0$ è un punto di flesso per $f$.
 
@@ -330,7 +330,7 @@ A questo punto si costruisce una tabella dei segni di $f'$ e $f''$ sull'intero d
 
 $$f(x)=\frac{x^3}{x^2-1}.$$
 
-*Dominio e simmetrie.* Il denominatore si annulla per $x = \pm 1$, quindi $\operatorname{dom} f = \mathbb{R} \setminus \{-1, 1\}$, insieme simmetrico rispetto all'origine. Si ha $f(-x) = \dfrac{(-x)^3}{(-x)^2-1} = \dfrac{-x^3}{x^2-1} = -f(x)$, quindi $f$ è dispari ([formula (3.8)](ref:formula/3.8)): il grafico è simmetrico rispetto all'origine, e basta studiare $f$ per $x \geq 0$.
+*Dominio e simmetrie.* Il denominatore si annulla per $x = \pm 1$, quindi $\operatorname{dom} f = \mathbb{R} \setminus \{-1, 1\}$, insieme simmetrico rispetto all'origine. Si ha $f(-x) = \dfrac{(-x)^3}{(-x)^2-1} = \dfrac{-x^3}{x^2-1} = -f(x)$, quindi $f$ è dispari [(3.8)](ref:formula/3.8): il grafico è simmetrico rispetto all'origine, e basta studiare $f$ per $x \geq 0$.
 
 *Limiti e asintoti.* Per $x\to\pm1$ il numeratore tende a un valore non nullo mentre il denominatore tende a $0$. In particolare,
 
@@ -404,12 +404,12 @@ Metodo, passo per passo (si veda [Studio di funzione completo](ref:chapter/8#p4)
 1. Scrivi le condizioni di esistenza di ogni pezzo (radici, logaritmi, denominatori, argomenti di arcotangente) e ricava il dominio. Cerca le simmetrie ([Simmetrie, periodicità e funzioni particolari](ref:chapter/3#p4)): una parità dimezza il lavoro.
 2. Calcola i limiti agli estremi del dominio e nei punti esclusi. Per l'asintoto obliquo usa {{formula:8.7}}, separatamente per $+\infty$ e $-\infty$ ([Limiti notevoli](ref:chapter/6#p2)).
 3. Riscrivi $f$ senza valore assoluto, spezzando sui casi, e calcola $f'$ in ciascun caso. Nei punti di raccordo e nei punti dove la derivata non esiste calcola i limiti di $f'$ e le derivate unilatere ([Punti di non derivabilità](ref:chapter/7#p3)).
-4. Studia il segno di $f'$ con [formula (7.13)](ref:formula/7.13) e classifica i punti critici con {{formula:8.4}} ([Caratterizzazione dei punti critici](ref:chapter/8#p3)). Distingui massimi e minimi relativi da quelli assoluti confrontando i valori con i limiti agli estremi.
+4. Studia il segno di $f'$ con [(7.13)](ref:formula/7.13) e classifica i punti critici con {{formula:8.4}} ([Caratterizzazione dei punti critici](ref:chapter/8#p3)). Distingui massimi e minimi relativi da quelli assoluti confrontando i valori con i limiti agli estremi.
 5. Se richiesto, studia $f''$ per convessità e flessi con {{formula:8.6}}; poi disegna il grafico coerente con tutti i dati.
 
 Errori tipici:
 - Dimenticare di escludere dal dominio un punto che annulla il denominatore, o di controllare che un punto di non derivabilità appartenga davvero al dominio.
-- Dichiarare «punto angoloso» o «cuspide» senza calcolare i limiti di $f'$: serve la distinzione di [formula (7.5)](ref:formula/7.5) e [formula (7.6)](ref:formula/7.6).
+- Dichiarare «punto angoloso» o «cuspide» senza calcolare i limiti di $f'$: serve la distinzione di [(7.5)](ref:formula/7.5) e [(7.6)](ref:formula/7.6).
 - Considerare massimo assoluto un massimo relativo senza confrontarlo con il comportamento della funzione agli estremi del dominio.
 - Derivare ignorando il valore assoluto: $f'$ va scritta caso per caso.
 
@@ -425,8 +425,8 @@ Metodo:
 
 1. Per ciascun tratto studia la funzione nel suo intervallo aperto, come nel tipo precedente.
 2. Nel punto di raccordo calcola limite sinistro, limite destro e valore, e confrontali ([Punti di discontinuità](ref:chapter/5#p3)).
-3. Se la funzione è continua, calcola $f'_-(x_0)$ e $f'_+(x_0)$ come limiti del rapporto incrementale oppure, con cautela, come limiti di $f'$ ([Derivata e retta tangente](ref:chapter/7#p2)). Se il limite di $f'$ esiste, per il [formula (7.8)](ref:formula/7.8) coincide con la derivata unilatera (se $f$ è continua).
-4. Per le forme indeterminate con esponenziali e logaritmi scegli una variabile che tenda all'infinito nel caso concreto e usa la [formula (6.11)](ref:formula/6.11) ([Infiniti e infinitesimi](ref:chapter/6#p3)): per l'esempio in $x=0$ poni $t=1/x$, mentre per quello in $x=1$ poni $t=1/(x-1)^2$.
+3. Se la funzione è continua, calcola $f'_-(x_0)$ e $f'_+(x_0)$ come limiti del rapporto incrementale oppure, con cautela, come limiti di $f'$ ([Derivata e retta tangente](ref:chapter/7#p2)). Se il limite di $f'$ esiste, per il [(7.8)](ref:formula/7.8) coincide con la derivata unilatera (se $f$ è continua).
+4. Per le forme indeterminate con esponenziali e logaritmi scegli una variabile che tenda all'infinito nel caso concreto e usa la [(6.11)](ref:formula/6.11) ([Infiniti e infinitesimi](ref:chapter/6#p3)): per l'esempio in $x=0$ poni $t=1/x$, mentre per quello in $x=1$ poni $t=1/(x-1)^2$.
 
 Errori tipici: dedurre la derivabilità dalla sola continuità; calcolare $f'$ solo dove la formula è «comoda» e non nel punto di raccordo; confondere il limite di $f'$ con la derivata nel punto senza verificare la continuità di $f$.
 
@@ -441,12 +441,12 @@ Esempi:
 
 Metodo ([Teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4)):
 
-1. Enuncia il teorema con tutte le ipotesi: continuità su $\lbrack a,b\rbrack $, derivabilità su $\rbrack a,b\lbrack $, e per Rolle $f(a)=f(b)$ ([formula (7.11)](ref:formula/7.11), [formula (7.12)](ref:formula/7.12)).
+1. Enuncia il teorema con tutte le ipotesi: continuità su $\lbrack a,b\rbrack $, derivabilità su $\rbrack a,b\lbrack $, e per Rolle $f(a)=f(b)$ ([(7.11)](ref:formula/7.11), [(7.12)](ref:formula/7.12)).
 2. Verifica le ipotesi sul caso concreto, punto per punto, prima di concludere.
 3. Per una domanda del tipo «è possibile che…» traduci i dati in pendenze: il teorema di Lagrange confronta la pendenza media con i valori di $f'$, e il segno di $f''$ dà la monotonia di $f'$.
-4. Per estremi su un intervallo chiuso usa il teorema di Weierstrass ([formula (3.18)](ref:formula/3.18)) e confronta valori in estremi, punti stazionari e punti di non derivabilità.
+4. Per estremi su un intervallo chiuso usa il teorema di Weierstrass [(5.6)](ref:formula/5.6) e confronta valori in estremi, punti stazionari e punti di non derivabilità.
 
-Errori tipici: dire che un punto di estremo è stazionario senza controllare che $f$ sia derivabile ([formula (7.10)](ref:formula/7.10) lo richiede); concludere che Rolle non vale perché non ci sono punti stazionari, quando semplicemente non è soddisfatta un'ipotesi; dimenticare i punti di bordo.
+Errori tipici: dire che un punto di estremo è stazionario senza controllare che $f$ sia derivabile ([(7.10)](ref:formula/7.10) lo richiede); concludere che Rolle non vale perché non ci sono punti stazionari, quando semplicemente non è soddisfatta un'ipotesi; dimenticare i punti di bordo.
 
 ### Formula di Taylor, limiti e ordini di infinitesimo
 

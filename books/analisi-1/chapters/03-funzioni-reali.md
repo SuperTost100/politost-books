@@ -442,12 +442,6 @@ Al contrario, $f(x) = x^2$ su $\mathbb{R}$ è limitata inferiormente ($\inf(\ope
 :::image{src="assets/72d81f23-funzione-illimitata-tangente.svg" alt="Grafico della tangente con asintoti verticali in -pi/2 e pi/2" caption="Fig. 3.6 — La funzione tangente non è limitata: vicino agli asintoti verticali assume valori arbitrariamente grandi in modulo"}
 :::
 
-La limitatezza non è però solo una proprietà globale: se una funzione ammette limite finito in un punto, essa è automaticamente limitata in un intorno di quel punto.
-
-**Teorema 3.1** (limitatezza locale). *Sia $f : \operatorname{dom} f \to \mathbb{R}$ e sia $x_0$ punto di accumulazione di $\operatorname{dom} f$. Se esiste $\displaystyle\lim_{x \to x_0} f(x) = \ell \in \mathbb{R}$, allora esiste un intorno $I(x_0)$ tale che $f|_{\operatorname{dom} f \cap I(x_0)}$ è limitata.*
-
-In particolare, se $f$ è continua in $x_0$ la stessa conclusione vale senza richiedere che l'intervallo di partenza sia chiuso: basta la continuità puntuale per garantire la limitatezza locale. Questo risultato sarà ripreso e sfruttato nel capitolo sui [teoremi sui limiti](ref:chapter/4#p4) e nello studio delle [funzioni continue](ref:chapter/5#p2).
-
 ### Funzioni monotone
 
 Sia $f : A \to \mathbb{R}$, con $A \subseteq \mathbb{R}$.
@@ -521,31 +515,15 @@ Ogni punto di massimo (o minimo) assoluto è anche un punto di massimo (o minimo
 :::image{src="assets/72d81f23-massimi-minimi-cubica.svg" alt="Grafico di x al cubo meno 3x più 2 con massimo relativo in -1 e minimo relativo in 1" caption="Fig. 3.7 — Punto di massimo relativo in x = -1 e punto di minimo relativo in x = 1 per f(x) = x^3 - 3x + 2"}
 :::
 
-Un risultato fondamentale garantisce l'esistenza di massimo e minimo assoluti sotto ipotesi molto generali.
+Non tutte le funzioni hanno massimo e minimo assoluti: $f(x) = 1/x$ su $\rbrack 0,1\rbrack $ è illimitata superiormente e non ha massimo. Per una funzione continua su un intervallo chiuso e limitato la loro esistenza è garantita dal [teorema di Weierstrass](ref:chapter/5#p5), che si vedrà dopo aver introdotto la continuità.
 
-**Teorema 3.2** (di Weierstrass). *Sia $f : \lbrack a,b\rbrack  \to \mathbb{R}$ una funzione continua, con $a, b \in \mathbb{R}$ e $a < b$. Allora esistono $x_m, x_M \in \lbrack a,b\rbrack $ tali che*
-
-$$
-\forall x \in \lbrack a,b\rbrack  \qquad f(x_m) \le f(x) \le f(x_M),
-$$
-
-*cioè $f$ ammette almeno un punto di minimo assoluto $x_m$ e almeno un punto di massimo assoluto $x_M$ su $\lbrack a,b\rbrack $.*
-
-:::formula{id="3.18" label="Teorema di Weierstrass"}
-$$f \in C(\lbrack a,b\rbrack ) \implies \exists x_m, x_M \in \lbrack a,b\rbrack : \ \forall x \in \lbrack a,b\rbrack , \ f(x_m) \le f(x) \le f(x_M)$$
-:::
-
-In particolare, poiché $m = f(x_m)$ e $M = f(x_M)$ sono entrambi valori reali, $f$ è limitata su $\lbrack a,b\rbrack $. Le ipotesi di chiusura e limitatezza dell'intervallo e di continuità della funzione garantiscono l'esistenza di massimo e minimo assoluti; togliendo una di queste ipotesi, la conclusione non è più garantita, anche se può ancora valere per una funzione specifica. Per esempio, la funzione costante su $\mathbb{R}$ possiede massimo e minimo assoluti. Invece, $f(x) = 1/x$ su $\rbrack 0,1\rbrack $ è illimitata superiormente e non ha massimo; una funzione discontinua su un intervallo chiuso e limitato può a sua volta non assumere un valore estremo.
-
-Viceversa, per determinare i candidati punti di massimo o minimo assoluto di una funzione continua su $\lbrack a,b\rbrack $, una volta garantita l'esistenza dal teorema di Weierstrass, occorre confrontare i valori di $f$ in tre tipi di punti: i punti interni in cui $f$ è derivabile e $f'(x) = 0$, i punti interni in cui $f$ non è derivabile, e i punti agli estremi $a$ e $b$ dell'intervallo. Il motivo per cui i punti con $f'(x) = 0$ sono candidati naturali sarà chiarito dal teorema di Fermat, che verrà enunciato e dimostrato nel capitolo sul calcolo differenziale: se $x_0$ è interno al dominio, è un punto di massimo o di minimo relativo, ed $f$ è derivabile in $x_0$, allora necessariamente $f'(x_0) = 0$. Questo risultato sarà il punto di partenza per i [teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4) e per la [caratterizzazione dei punti critici](ref:chapter/8#p3) tramite le derivate successive.
+Per determinare i candidati punti di massimo o minimo assoluto di una funzione continua su $\lbrack a,b\rbrack $, una volta garantita l'esistenza dal teorema di Weierstrass, occorre confrontare i valori di $f$ in tre tipi di punti: i punti interni in cui $f$ è derivabile e $f'(x) = 0$, i punti interni in cui $f$ non è derivabile, e i punti agli estremi $a$ e $b$ dell'intervallo. Il motivo per cui i punti con $f'(x) = 0$ sono candidati naturali sarà chiarito dal teorema di Fermat, che verrà enunciato e dimostrato nel capitolo sul calcolo differenziale: se $x_0$ è interno al dominio, è un punto di massimo o di minimo relativo, ed $f$ è derivabile in $x_0$, allora necessariamente $f'(x_0) = 0$. Questo risultato sarà il punto di partenza per i [teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4) e per la [caratterizzazione dei punti critici](ref:chapter/8#p3) tramite le derivate successive.
 
 ### Errori tipici
 
 Un primo errore frequente è confondere il **punto di massimo** $x_0$ con il **valore massimo** $f(x_0)$: quando si risponde a una domanda d'esame del tipo "determinare massimi e minimi di $f$" occorre sempre specificare entrambi, scrivendo per esempio "$x_0 = 1$ è punto di massimo relativo, con valore massimo $f(1) = 3$", e non limitarsi a uno dei due dati.
 
-Un secondo errore è applicare il teorema di Weierstrass senza controllare le ipotesi: il teorema richiede che il dominio sia un intervallo **chiuso e limitato** $\lbrack a,b\rbrack $ e che $f$ sia **continua su tutto l'intervallo**. Se il dominio è aperto, semiaperto o illimitato, oppure se $f$ presenta anche un solo punto di discontinuità, l'esistenza di massimo e minimo assoluti non è più garantita e deve essere verificata caso per caso.
-
-Un terzo errore riguarda il teorema di Fermat: la condizione $f'(x_0) = 0$ è **necessaria ma non sufficiente** per avere un punto di estremo relativo, e vale solo per punti **interni** al dominio in cui $f$ è derivabile. Non bisogna quindi cercare i massimi e minimi assoluti di una funzione su $\lbrack a,b\rbrack $ soltanto risolvendo $f'(x) = 0$: occorre anche controllare gli estremi $a, b$ dell'intervallo e gli eventuali punti interni di non derivabilità, dove la derivata non si annulla (o non esiste) ma la funzione può comunque avere un estremo, come $f(x) = |x|$, che ha un minimo assoluto in $x = 0$ pur avendo in quel punto un punto angoloso e quindi non essendo derivabile. Simmetricamente, l'annullarsi della derivata non implica che il punto sia un estremo: $f(x) = x^3$ ha $f'(0) = 0$ ma $x = 0$ non è né punto di massimo né di minimo, essendo un punto di flesso a tangente orizzontale.
+Un secondo errore riguarda il teorema di Fermat: la condizione $f'(x_0) = 0$ è **necessaria ma non sufficiente** per avere un punto di estremo relativo, e vale solo per punti **interni** al dominio in cui $f$ è derivabile. Non bisogna quindi cercare i massimi e minimi assoluti di una funzione su $\lbrack a,b\rbrack $ soltanto risolvendo $f'(x) = 0$: occorre anche controllare gli estremi $a, b$ dell'intervallo e gli eventuali punti interni di non derivabilità, dove la derivata non si annulla (o non esiste) ma la funzione può comunque avere un estremo, come $f(x) = |x|$, che ha un minimo assoluto in $x = 0$ pur avendo in quel punto un punto angoloso e quindi non essendo derivabile. Simmetricamente, l'annullarsi della derivata non implica che il punto sia un estremo: $f(x) = x^3$ ha $f'(0) = 0$ ma $x = 0$ non è né punto di massimo né di minimo, essendo un punto di flesso a tangente orizzontale.
 
 ## p6 | Funzioni elementari e loro inverse
 
@@ -581,7 +559,7 @@ Le identità di base sono $\sin^2x+\cos^2x=1$, $\sin\left(\frac{\pi}{2}-x\right)
 
 Seno, coseno e tangente non sono iniettive, quindi non sono invertibili sul loro dominio naturale. Si **restringe** il dominio a un intervallo su cui la funzione è strettamente monotona e assume tutti i suoi valori. Su questo intervallo la funzione è biettiva verso la sua immagine e la funzione inversa è ben definita.
 
-:::formula{id="3.19" label="Funzioni trigonometriche inverse"}
+:::formula{id="3.18" label="Funzioni trigonometriche inverse"}
 $$\begin{aligned}
 &\sin:\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]\to[-1,1]\ \text{biettiva},\ \ \arcsin:\lbrack -1,1\rbrack \to\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]\\
 &\cos:\lbrack 0,\pi\rbrack \to[-1,1]\ \text{biettiva},\ \ \arccos:\lbrack -1,1\rbrack \to[0,\pi]\\
@@ -599,7 +577,7 @@ Dunque $\arcsin y$ è l'**unico** $x\in\left[-\frac{\pi}{2},\frac{\pi}{2}\right]
 
 Valgono le relazioni, con le condizioni di validità indicate:
 
-:::formula{id="3.20" label="Composizione con le inverse trigonometriche"}
+:::formula{id="3.19" label="Composizione con le inverse trigonometriche"}
 $$\sin(\arcsin y)=y\ \ \forall y\in[-1,1],\qquad \arcsin(\sin x)=x\ \Longleftrightarrow\ x\in\left[-\tfrac{\pi}{2},\tfrac{\pi}{2}\right],\qquad \arcsin y+\arccos y=\tfrac{\pi}{2}\ \ \forall y\in[-1,1]$$
 :::
 
@@ -661,8 +639,8 @@ Qui la domanda è quasi letterale: "indicare dominio e immagine, motivando in mo
 Metodo:
 
 1. Determina il dominio con le condizioni di esistenza, come nel tipo 1.
-2. Per l'immagine, leggi dal grafico (o ricostruisci dallo studio di monotonia e dai limiti agli estremi) gli intervalli percorsi da $f$ su ogni tratto monotono. L'immagine è l'unione di questi intervalli. Attenzione agli estremi: un valore raggiunto va incluso, un valore solo approssimato (limite) va escluso. Si veda [Funzioni: dominio, immagine, iniettività](ref:chapter/3#p2).
-3. Per dimostrare l'iniettività, puoi mostrare che $f$ è strettamente monotona sull'intero dominio, oppure verificare che i valori assunti su tratti distinti non coincidano. Per dimostrare che non è iniettiva, trova due punti distinti con lo stesso valore. Se $f$ è derivabile su un intervallo, $f'(x)>0$ per ogni $x$ oppure $f'(x)<0$ per ogni $x$ implica che è strettamente monotona su quell'intervallo.
+2. Per l'immagine, leggi dal grafico (o ricostruisci dallo studio di monotonia e dai limiti agli estremi) i valori assunti da $f$ su ciascun tratto monotono. Se la restrizione a un tratto è continua, la sua immagine è un intervallo; altrimenti determina i valori effettivamente assunti, tenendo conto degli eventuali salti. L'immagine è l'unione di questi insiemi. Attenzione agli estremi: un valore raggiunto va incluso, un valore solo approssimato (limite) va escluso. Si veda [Funzioni: dominio, immagine, iniettività](ref:chapter/3#p2).
+3. Per dimostrare l'iniettività, puoi mostrare che $f$ è strettamente monotona sull'intero dominio, oppure verificare che la restrizione a ciascun tratto sia iniettiva e che i valori assunti su tratti distinti non coincidano. Per dimostrare che non è iniettiva, trova due punti distinti con lo stesso valore. Se $f$ è derivabile su un intervallo, $f'(x)>0$ per ogni $x$ oppure $f'(x)<0$ per ogni $x$ implica che è strettamente monotona su quell'intervallo.
 4. Per invertire, restringi $f$ a un intervallo su cui è strettamente monotona. Dominio e immagine dell'inversa si scambiano con quelli della restrizione. Vedi [Grafico, composizione e funzione inversa](ref:chapter/3#p3).
 
 Errori tipici:
@@ -675,7 +653,7 @@ Esempi:
 
 - **Esame del 23 giugno 2020, esercizio 1**: $f(x)=\frac{|x|+1}{|x|-1}$ con il grafico in figura. Dominio $\mathbb{R}\setminus\{-1,1\}$. L'immagine si ricava dai limiti agli estremi e dai tratti monotoni su $\lbrack 0,1\lbrack $, $\rbrack 1,+\infty\lbrack $ e per simmetria.
 - **Esame dell'11 febbraio 2020 - Io turno, esercizio 2A**: si deve mostrare che $e^x+x^3$ si annulla in un solo punto. La funzione è somma di due funzioni strettamente crescenti, quindi iniettiva. Il teorema di esistenza degli zeri dà l'esistenza e la stretta monotonia l'unicità. Poi si studia $g=\log f$ sull'intervallo dove $f>0$, cioè a destra di questo zero.
-- **Esame del 25 gennaio 2023 - turno 1, esercizio 2** (versioni A e B): una funzione continua su $\lbrack 1,3\rbrack $ con $f(1)=-3$, $f(3)=-4$, $f(2)=-2$ non è iniettiva. Si sceglie un valore intermedio tra $-2$ e $-3$ (per esempio $-2{,}5$) e lo si raggiunge sia in $\rbrack 1,2\lbrack $ sia in $\rbrack 2,3\lbrack $ per il teorema dei valori intermedi ([formula (5.6)](ref:formula/5.6)). Due punti distinti con la stessa immagine contraddicono l'iniettività.
+- **Esame del 25 gennaio 2023 - turno 1, esercizio 2** (versioni A e B): una funzione continua su $\lbrack 1,3\rbrack $ con $f(1)=-3$, $f(3)=-4$, $f(2)=-2$ non è iniettiva. Si sceglie un valore intermedio tra $-2$ e $-3$ (per esempio $-2{,}5$) e lo si raggiunge sia in $\rbrack 1,2\lbrack $ sia in $\rbrack 2,3\lbrack $ per il teorema dei valori intermedi [(5.7)](ref:formula/5.7). Due punti distinti con la stessa immagine contraddicono l'iniettività.
 
 ### Tipo 3: definizioni e teoremi su estremi, monotonia e funzioni composte
 
@@ -684,7 +662,7 @@ L'esercizio 2 dello scritto (6 punti) è molto spesso diviso in tre parti: una d
 Metodo:
 
 1. Scrivi la definizione con i quantificatori, senza parole vaghe. Per un punto di massimo assoluto $x_0\in\operatorname{dom}(f)$ occorre $f(x)\le f(x_0)$ per ogni $x\in\operatorname{dom}(f)$. Per il massimo relativo la disuguaglianza vale solo per $x$ in un intorno $I_r(x_0)$ intersecato con il dominio. Si veda {{formula:3.15}} e {{formula:3.17}}.
-2. Enuncia i teoremi con tutte le ipotesi (intervallo chiuso e limitato, continuità, ecc.), come in {{formula:3.18}} e [formula (5.3)](ref:formula/5.3).
+2. Enuncia i teoremi con tutte le ipotesi (intervallo chiuso e limitato, continuità, ecc.), come in [(5.6)](ref:formula/5.6) e [(5.3)](ref:formula/5.3).
 3. Nell'applicazione, verifica una per una le ipotesi del teorema prima di usarlo, e usa la monotonia dove serve (per esempio per l'unicità).
 4. Per i problemi su estremi senza derivata, riscrivi la funzione con valori assoluti come composizione di funzioni note e usa il grafico: gli zeri di un valore assoluto sono minimi assoluti, e gli estremi dell'intervallo possono essere punti di estremo.
 
@@ -707,7 +685,7 @@ Domande specifiche su parte intera e mantissa compaiono nell'esercizio 2 del 22 
 Metodo:
 
 1. Scrivi la definizione: $g$ è periodica se esiste $T>0$ tale che il dominio sia invariato dalla traslazione di $T$ (se $x\in\operatorname{dom}(g)$ allora $x\pm T\in\operatorname{dom}(g)$) e $g(x+T)=g(x)$ per ogni $x\in\operatorname{dom}(g)$. Ricorda che $M(x)=x-\lbrack x\rbrack $ ha periodo $1$, quindi, per $k>0$, $M(kx)$ ha periodo $1/k$ (vedi {{formula:3.11}}).
-2. Per dimostrare che il limite non esiste, scegli due successioni $x_n\to+\infty$ con $M(kx_n)$ che tendono a valori diversi. Per $k>0$, per esempio $x_n=n/k$ dà $M(kx_n)=0$, mentre $y_n=(n+\tfrac12)/k$ dà $M(ky_n)=\tfrac12$. Basta la caratterizzazione sequenziale ([formula (4.15)](ref:formula/4.15)).
+2. Per dimostrare che il limite non esiste, scegli due successioni $x_n\to+\infty$ con $M(kx_n)$ che tendono a valori diversi. Per $k>0$, per esempio $x_n=n/k$ dà $M(kx_n)=0$, mentre $y_n=(n+\tfrac12)/k$ dà $M(ky_n)=\tfrac12$. Basta la caratterizzazione sequenziale [(4.15)](ref:formula/4.15).
 3. Per i limiti con la mantissa, usa che $0\le M<1$ (funzione limitata) e confronta con i termini che divergono, oppure usa il teorema del confronto (si veda [Teoremi sui limiti](ref:chapter/4#p4)).
 4. Per le funzioni definite a tratti, studia ogni pezzo separatamente e poi i punti di raccordo con limiti unilateri (si veda [Funzioni continue](ref:chapter/5#p2)).
 
