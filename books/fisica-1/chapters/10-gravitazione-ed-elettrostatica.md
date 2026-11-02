@@ -253,7 +253,7 @@ Il modulo del campo generato da ciascuna massa in $P$ è
 
 $$G_i = G\frac{m_i}{r^2}.$$
 
-Il versore che punta da $A$ (o da $B$) verso $P$ ha componente verticale $+2{,}0\ \text{m}/r$ (verso l'alto) e componente orizzontale $\pm 1{,}0\ \text{m}/r$; nella formula {{formula:10.7}} questo versore compare preceduto dal segno meno, cosicché le componenti orizzontali si cancellano e resta una componente verticale negativa, diretta verso le masse.
+Il versore che punta da $A$ (o da $B$) verso $P$ ha componente verticale $+2{,}0\ \text{m}/r$ (verso l'alto) e componente orizzontale $\pm 1{,}0\ \text{m}/r$; le componenti orizzontali opposte dei due versori si cancellano, mentre il segno meno nella formula {{formula:10.7}} rende negativa la componente verticale, diretta verso le masse.
 
 $$G_y(P) = -2\,G\frac{m}{r^2}\cdot\frac{2{,}0\ \text{m}}{r} = -\frac{(4{,}0\ \text{m})\,G\,m}{r^3}.$$
 

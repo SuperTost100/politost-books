@@ -612,7 +612,7 @@ Metodo:
 1. Scrivi le condizioni di esistenza di ogni pezzo della formula: radici di indice pari, logaritmi, denominatori e argomenti di \(\arcsin\) e \(\arccos\); per \(\arctan\), verifica solo che l'espressione interna sia definita. Considera anche i valori assoluti. Intersecale. Le funzioni elementari da ricordare sono nella sezione [Funzioni elementari e loro inverse](ref:chapter/3#p6).
 2. Controlla che il dominio sia simmetrico rispetto a $0$. Se lo è, calcola $f(-x)$ e confrontalo con $f(x)$ e con $-f(x)$ (vedi [Simmetrie, periodicità e funzioni particolari](ref:chapter/3#p4)). Se $f$ è pari o dispari, studia solo $x\ge 0$ e completa per simmetria.
 3. Calcola i limiti agli estremi del dominio, compresi i punti isolati esclusi. Dai limiti ricava gli asintoti verticali, orizzontali e obliqui.
-4. Per la monotonia studia il segno di $f'$ sugli intervalli del dominio. Poi classifica i punti critici e i punti di non derivabilità, distinguendo punti di massimo o minimo, relativi o assoluti, dai valori corrispondenti (vedi [Funzioni limitate e monotone, massimi e minimi](ref:chapter/3#p5)).
+4. Per la monotonia studia il segno di $f'$ sugli intervalli del dominio, con il test di monotonia [(7.13)](ref:formula/7.13) ([Teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4)). Poi classifica i punti critici e i punti di non derivabilità, distinguendo punti di massimo o minimo, relativi o assoluti, dai valori corrispondenti (vedi [Funzioni limitate e monotone, massimi e minimi](ref:chapter/3#p5)).
 
 Errori tipici:
 
