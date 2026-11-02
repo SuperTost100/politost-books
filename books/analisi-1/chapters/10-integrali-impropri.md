@@ -420,9 +420,9 @@ Gli esempi qui sotto vengono tutti dalla prova scritta, di cui abbiamo i testi.
 
 **Metodo.**
 
-1. Riprendi dai punti (a) e (b) il comportamento di $f$ vicino ai punti dove è illimitata e a $\pm\infty$. Questi limiti sono già calcolati e non vanno rifatti.
-2. Individua tutte le cause di impropria integrabilità: estremi infiniti e punti interni o di bordo dove $f$ non è limitata. Se sono più d'una, spezza l'intervallo come in [Integrali multi-impropri e con parametri](ref:chapter/10#p5), in modo che ogni pezzo abbia una sola causa.
-3. Scrivi $f$ come costante per $\dfrac{1}{|x-x_0|^\alpha}$ vicino a un punto singolare finito $x_0$, e come costante per $\dfrac{1}{x^\alpha}$ a $\pm\infty$, usando gli sviluppi e i limiti notevoli ([Infiniti e infinitesimi](ref:chapter/6#p3)).
+1. Riprendi dai punti (a) e (b) il comportamento dell'integranda vicino ai punti dove è illimitata e a $\pm\infty$. Questi limiti sono già calcolati e non vanno rifatti.
+2. Individua tutte le cause di impropria integrabilità: estremi infiniti e punti interni o di bordo dove l'integranda non è limitata. Se il testo integra una funzione costruita da $f$, per esempio $1/f$, studia quella: i suoi punti singolari possono essere gli zeri di $f$, non i punti dove $f$ è illimitata. Se sono più d'una, spezza l'intervallo come in [Integrali multi-impropri e con parametri](ref:chapter/10#p5), in modo che ogni pezzo abbia una sola causa.
+3. Scrivi $f$ come costante per $\dfrac{1}{|x-x_0|^\alpha}$ vicino a un punto singolare finito $x_0$, e come costante per $\dfrac{1}{|x|^\alpha}$ a $\pm\infty$, usando gli sviluppi e i limiti notevoli ([Infiniti e infinitesimi](ref:chapter/6#p3)).
 4. Applica il confronto asintotico con il campione. Vicino a un punto finito $\alpha<1$ dà convergenza ([Integrali impropri di seconda specie](ref:chapter/10#p3)). All'infinito serve $\alpha>1$ ([Integrali impropri di prima specie](ref:chapter/10#p2)).
 5. Concludi con "converge se e solo se tutti i pezzi convergono". Se un pezzo diverge, l'integrale non converge.
 
@@ -434,7 +434,7 @@ Gli esempi qui sotto vengono tutti dalla prova scritta, di cui abbiamo i testi.
 
 **Esempi.**
 
-- Esame del 31 gennaio 2024 - turno 1, esercizio 1: la funzione $\dfrac{x^3}{\sqrt{|x^4-1|}}$ ha singolarità in $\pm 1$, dove il denominatore si annulla. Il comportamento del denominatore ti dice con quale potenza va confrontata, e quindi se l'integrale vicino a quei punti converge. Le quattro versioni della stessa sessione cambiano segni e costante (ad esempio $|x^4-16|$ al posto di $|x^4-1|$).
+- Esame del 31 gennaio 2024 - turno 1, esercizio 1: il sottopunto chiede di studiare $\int_{-2}^{0}\frac{1}{f(x)}\,dx$, con $f(x)=\frac{x^3}{\sqrt{|x^4-1|}}$. Si cercano le singolarità dell’integranda $1/f$: presso $-1$ essa tende a zero, mentre presso $0$ è illimitata. Per $x\to0^-$, $1/f(x)$ è asintotica a $1/x^3$, quindi l’integrale diverge. Le quattro versioni della stessa sessione cambiano segni e costante (ad esempio $|x^4-16|$ al posto di $|x^4-1|$).
 - Esame del 22 gennaio 2025 - turno 2 - versione 1, esercizio 1: la funzione $\sqrt[4]{x^2(2-|x|)}$ è definita su $\lbrack -2,2\rbrack $ con un valore particolare in $0$. Vicino a $\pm2$ si studia l'ordine con cui la funzione si annulla.
 
 ### Tipo 2: definizione, teoria e studio con i criteri

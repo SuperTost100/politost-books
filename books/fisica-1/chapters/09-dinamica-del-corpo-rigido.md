@@ -53,7 +53,7 @@ Questa è l'analogo rotazionale di $\vec{R} = m\vec{a}$: il momento assiale risu
 
 $$\frac{dL_z}{dt} = M_z , \qquad L_z = \vec{L}\cdot\hat{k} .$$
 
-Calcoliamo $L_z$. Il punto $P_i$ di massa $m_i$ percorre una circonferenza di raggio $R_i$ attorno all'asse, con velocità $v_i = \omega R_i$ tangente alla circonferenza. La componente lungo $z$ di $\vec{r}_i \times m_i\vec{v}_i$ dipende solo dalle componenti di $\vec{r}_i$ e $\vec{v}_i$ nel piano perpendicolare all'asse, cioè da $x_i v_{i,y} - y_i v_{i,x}$. In tale piano il vettore posizione ha modulo $R_i$ ed è ortogonale a $\vec{v}_i$, quindi
+Calcoliamo $L_z$. Il punto $P_i$ di massa $m_i$ percorre una circonferenza di raggio $R_i$ attorno all'asse, con velocità di modulo $v_i = |\omega|R_i$ tangente alla circonferenza. La componente tangenziale con segno è $v_{i,\theta} = \omega R_i$. La componente lungo $z$ di $\vec{r}_i \times m_i\vec{v}_i$ dipende solo dalle componenti di $\vec{r}_i$ e $\vec{v}_i$ nel piano perpendicolare all'asse, cioè da $x_i v_{i,y} - y_i v_{i,x}$. In tale piano il vettore posizione ha modulo $R_i$ ed è ortogonale alla velocità tangenziale, quindi
 
 $$L_{i,z} = m_i R_i v_i = m_i R_i^2\,\omega .$$
 
@@ -97,7 +97,7 @@ La soluzione generale è $\theta(t) = A\sin(\Omega t + \varphi)$, dove $A$ è l'
 $$T = 2\pi\sqrt{\frac{I_z}{mgh}}$$
 :::
 
-Definendo la **lunghezza ridotta** del pendolo composto come $l = I_z/(mh)$, il periodo assume la stessa forma del pendolo semplice già vista in [Dinamica del moto curvilineo](ref:chapter/3#p8) ([formula (3.29)](ref:formula/3.29)):
+Definendo la **lunghezza ridotta** del pendolo composto come $l = I_z/(mh)$, il periodo assume la stessa forma del pendolo semplice già vista in [Dinamica del moto curvilineo](ref:chapter/3#p8) ([formula (3.28)](ref:formula/3.28)):
 
 $$T = 2\pi\sqrt{\frac{l}{g}} .$$
 
@@ -313,7 +313,7 @@ Entrambe le scelte sono legittime e portano allo stesso risultato per $\alpha$; 
 
 $$F_{att} = \mu_d N = \mu_d mg\cos\theta \quad \text{SBAGLIATO}, \qquad F_{att} = \mu_s N = \mu_s mg\cos\theta \quad \text{SBAGLIATO} :$$
 
-il primo perché l'attrito non è dinamico (non c'è strisciamento), il secondo perché $\mu_s N$ è solo il valore massimo che l'attrito statico può raggiungere, non il suo valore effettivo, che vale $0 \le |F_{att}| \le \mu_s N$. Il valore corretto di $F_{att}$ deve essere ricavato come incognita, risolvendo insieme l'equazione di traslazione del CM (prima equazione cardinale) e l'equazione della rotazione attorno al CM (seconda equazione cardinale, data anche da [questa sezione](ref:chapter/9#p2)) come $M_z = I_z\alpha$), insieme alla condizione di puro rotolamento {{formula:9.8}}.
+il primo perché l'attrito non è dinamico (non c'è strisciamento), il secondo perché $\mu_s N$ è solo il valore massimo che l'attrito statico può raggiungere, non il suo valore effettivo, che vale $0 \le |F_{att}| \le \mu_s N$. Il valore corretto di $F_{att}$ deve essere ricavato come incognita, risolvendo insieme l'equazione di traslazione del CM (prima equazione cardinale) e la seconda equazione cardinale dei momenti rispetto al CM, che nel moto piano vale $M_{CM,z}=I_{CM}\alpha$, insieme alla condizione di puro rotolamento {{formula:9.8}}.
 
 Una volta determinato $F_{att}$, bisogna sempre verificare che il moto di puro rotolamento sia effettivamente possibile, cioè che
 

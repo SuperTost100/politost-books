@@ -201,11 +201,19 @@ Se esistesse $l < 0$, la permanenza del segno darebbe un intorno $U_1$ di $x_0$ 
 
 **Errore tipico 4.3.** Molti studenti credono che da $f(x) > 0$ in un intorno di $x_0$ segua $l > 0$ in senso stretto. Questo è falso: il corollario garantisce solo $l \geq 0$. Un controesempio tipico è $f(x) = x^2$ per $x \to 0$: si ha $f(x) > 0$ per ogni $x \neq 0$, ma $\lim_{x \to 0} f(x) = 0$, non strettamente positivo. La disuguaglianza stretta si "indebolisce" passando al limite.
 
+### Limitatezza locale
+
+**Teorema 4.3 (di limitatezza locale).** Sia $f : \operatorname{dom}(f) \to \mathbb{R}$ e sia $x_0$ punto di accumulazione di $\operatorname{dom}(f)$. Se esiste $\lim_{x \to x_0} f(x) = l \in \mathbb{R}$, allora esiste un intorno $I(x_0)$ tale che $f$ è limitata su $\operatorname{dom}(f) \cap I(x_0)$.
+
+*Dimostrazione.* Applichiamo la definizione di limite con l’intorno $\rbrack l-1,l+1\lbrack $: esiste un intorno $I(x_0)$ tale che $l-1 < f(x) < l+1$ per ogni $x \in \operatorname{dom}(f) \cap I(x_0)$ con $x \neq x_0$. Su questi punti vale quindi $|f(x)| < |l| + 1$. Se $x_0 \in \operatorname{dom}(f)$ si aggiunge il solo valore $f(x_0)$, e $|f(x)| \le \max\{|l|+1, |f(x_0)|\}$ su tutto $\operatorname{dom}(f) \cap I(x_0)$. $\square$
+
+**Osservazione 4.3.** L’ipotesi $l \in \mathbb{R}$ è necessaria: $f(x) = 1/x^2$ ha limite $+\infty$ per $x \to 0$ e non è limitata in nessun intorno di $0$. Il viceversa è falso: $f(x) = \sin(1/x)$ è limitata vicino a $0$, ma non ha limite per $x \to 0$.
+
 ### Teoremi del confronto
 
 Il primo risultato permette di confrontare i limiti di due funzioni a partire da una disuguaglianza locale tra le funzioni stesse.
 
-**Teorema 4.3 (primo teorema del confronto).** Siano $f, g : A \to \mathbb{R}$, con $A \subseteq \mathbb{R}$, e $x_0 \in \mathbb{R} \cup \{\pm\infty\}$ punto di accumulazione per $A$. Supponiamo che:
+**Teorema 4.4 (primo teorema del confronto).** Siano $f, g : A \to \mathbb{R}$, con $A \subseteq \mathbb{R}$, e $x_0 \in \mathbb{R} \cup \{\pm\infty\}$ punto di accumulazione per $A$. Supponiamo che:
 
 1. esista un intorno $I(x_0)$ tale che $f(x) \leq g(x)$ per ogni $x \in I(x_0) \cap A$;
 2. esista $\lim_{x \to x_0} f(x) = l$;
@@ -215,7 +223,7 @@ Allora $l \leq m$.
 
 *Dimostrazione (idea).* Supponiamo per assurdo che $l > m$. Esistono intorni disgiunti $J_l$ di $l$ e $J_m$ di $m$ tali che ogni elemento di $J_l$ sia maggiore di ogni elemento di $J_m$. Questo vale anche se uno o entrambi i limiti sono infiniti, scegliendo intervalli o semirette adeguati. Per la definizione dei due limiti e per l’ipotesi di confronto, esiste un intorno comune $U$ di $x_0$ in cui, per ogni $x \in A \cap U$ con $x \neq x_0$, si ha $f(x) \in J_l$, $g(x) \in J_m$ e $f(x) \leq g(x)$. Poiché $x_0$ è punto di accumulazione di $A$, tale intersezione contiene un punto $\bar{x} \neq x_0$; ma allora ogni elemento di $J_l$ è maggiore di ogni elemento di $J_m$, in contraddizione con $f(\bar{x}) \leq g(\bar{x})$. Pertanto $l \leq m$. $\square$
 
-**Osservazione 4.3.** Il risultato vale anche se l'ipotesi è una disuguaglianza stretta $f(x) < g(x)$: la conclusione resta comunque $l \leq m$, mai $l < m$. Non si può in generale rafforzare la conclusione.
+**Osservazione 4.4.** Il risultato vale anche se l'ipotesi è una disuguaglianza stretta $f(x) < g(x)$: la conclusione resta comunque $l \leq m$, mai $l < m$. Non si può in generale rafforzare la conclusione.
 
 **Variante per i limiti infiniti.** Siano $f, g : A \to \mathbb{R}$ e $x_0$ come sopra, con $f(x) \leq g(x)$ in un intorno di $x_0$ (escluso al più $x_0$).
 
@@ -228,7 +236,7 @@ Questa variante è molto utile per stabilire limiti infiniti senza conoscere esp
 
 Quando invece una funzione è compresa tra **due** funzioni che tendono allo stesso limite finito, si parla del teorema dei carabinieri.
 
-**Teorema 4.4 (dei carabinieri, o secondo teorema del confronto).** Siano $A \subseteq \mathbb{R}$ non vuoto, $f, g, h : A \to \mathbb{R}$ e $x_0 \in \mathbb{R} \cup \{\pm\infty\}$ punto di accumulazione per $A$. Supponiamo che:
+**Teorema 4.5 (dei carabinieri, o secondo teorema del confronto).** Siano $A \subseteq \mathbb{R}$ non vuoto, $f, g, h : A \to \mathbb{R}$ e $x_0 \in \mathbb{R} \cup \{\pm\infty\}$ punto di accumulazione per $A$. Supponiamo che:
 
 1. esista un intorno $I(x_0)$ tale che $f(x) \leq g(x) \leq h(x)$ per ogni $x \in A \cap I(x_0) \setminus \{x_0\}$;
 2. esistano $\lim_{x \to x_0} f(x) = \lim_{x \to x_0} h(x) = l \in \mathbb{R}$.
@@ -272,7 +280,7 @@ In generale un limite può non esistere. Per le funzioni monotone, invece, l'esi
 
 ### Enunciato
 
-**Teorema 4.5** (limiti unilateri delle funzioni monotone). Sia $f$ definita e monotona in un intorno destro (rispettivamente sinistro) di $x_0$. Allora esiste il limite destro (rispettivamente sinistro) di $f$ in $x_0$, finito o infinito, ed è un estremo superiore o inferiore dei valori di $f$ su quell'intorno.
+**Teorema 4.6** (limiti unilateri delle funzioni monotone). Sia $f$ definita e monotona in un intorno destro (rispettivamente sinistro) di $x_0$. Allora esiste il limite destro (rispettivamente sinistro) di $f$ in $x_0$, finito o infinito, ed è un estremo superiore o inferiore dei valori di $f$ su quell'intorno.
 
 Più precisamente, sia $f$ monotona in $\rbrack x_0-r,x_0\lbrack $ e in $\rbrack x_0,x_0+r\lbrack $, con $r>0$. Se $f$ è crescente si ha
 
@@ -326,7 +334,7 @@ Dopo aver definito il limite e dimostrato i teoremi di unicità, permanenza del 
 
 ### Teoremi sull'algebra dei limiti
 
-**Teorema 4.6** (algebra dei limiti). Siano $f,g: A\to\mathbb{R}$, con $A\subseteq\mathbb{R}$, e sia $x_0\in\mathbb{R}\cup\{-\infty,+\infty\}$ un punto di accumulazione di $A$. Supponiamo che esistano
+**Teorema 4.7** (algebra dei limiti). Siano $f,g: A\to\mathbb{R}$, con $A\subseteq\mathbb{R}$, e sia $x_0\in\mathbb{R}\cup\{-\infty,+\infty\}$ un punto di accumulazione di $A$. Supponiamo che esistano
 
 $$
 \lim_{x\to x_0} f(x)=\ell_1,\qquad \lim_{x\to x_0} g(x)=\ell_2,\qquad \ell_1,\ell_2\in\mathbb{R}^*.
@@ -487,7 +495,7 @@ $$\begin{aligned}
 
 Se le disuguaglianze sono strette si parla di monotonia in senso stretto.
 
-**Teorema 4.7 (limite delle successioni monotone).** Sia $(a_n)$ una successione monotona. Allora $(a_n)$ ammette limite (finito o infinito) e
+**Teorema 4.8 (limite delle successioni monotone).** Sia $(a_n)$ una successione monotona. Allora $(a_n)$ ammette limite (finito o infinito) e
 
 :::formula{id="4.13" label="Limite di una successione monotona"}
 $$\lim_{n\to+\infty} a_n =
@@ -499,13 +507,13 @@ $$\lim_{n\to+\infty} a_n =
 
 In particolare, se $(a_n)$ è crescente e superiormente limitata, il limite è finito e coincide con l'estremo superiore dell'insieme dei valori $\{a_n : n \in \mathbb{N}\}$, grazie al [principio dell'estremo superiore](ref:chapter/1#p6); se invece non è limitata superiormente, $a_n \to +\infty$. Il caso decrescente è analogo. Questo risultato è il caso particolare, per $x_0 = +\infty$, del teorema sul limite delle funzioni monotone.
 
-**Esempio 4.13.** La successione $a_n = \left(1 + \frac{1}{n}\right)^n$, definita per $n\in\mathbb{N}^+$, si dimostra essere crescente e superiormente limitata; per il Teorema 4.7 essa ammette dunque limite finito, che si definisce come il numero $e$:
+**Esempio 4.13.** La successione $a_n = \left(1 + \frac{1}{n}\right)^n$, definita per $n\in\mathbb{N}^+$, si dimostra essere crescente e superiormente limitata; per il Teorema 4.8 essa ammette dunque limite finito, che si definisce come il numero $e$:
 
 $$\lim_{n\to+\infty} \left(1+\frac{1}{n}\right)^n = e.$$
 
 Questo limite di successione riguarda soltanto valori agli indici interi e, da solo, non implica i corrispondenti limiti per una variabile reale. Per passare dai limiti notevoli delle successioni a quelli delle funzioni occorrono dimostrazioni specifiche, che si trovano nella sezione [Limiti notevoli](ref:chapter/6#p2).
 
-**Errore tipico 4.11.** Molti studenti credono che una successione monotona ma non limitata non abbia limite: in realtà il Teorema 4.7 garantisce *sempre* l'esistenza del limite per una successione monotona, eventualmente infinito. Ciò che il teorema non garantisce, in generale, è la finitezza del limite.
+**Errore tipico 4.11.** Molti studenti credono che una successione monotona ma non limitata non abbia limite: in realtà il Teorema 4.8 garantisce *sempre* l'esistenza del limite per una successione monotona, eventualmente infinito. Ciò che il teorema non garantisce, in generale, è la finitezza del limite.
 
 ### Sottosuccessioni
 
@@ -525,7 +533,7 @@ Questo fatto è lo strumento chiave per dimostrare che una successione **non** a
 
 Lo stesso principio vale per le funzioni: se $f(x) = \sin(1/x)$ per $x \to 0$, scegliendo $x_n = \frac{1}{2n\pi}$ per $n\in\mathbb{N}^+$ si ottiene $f(x_n) = 0 \to 0$, mentre scegliendo $y_n = \frac{1}{2n\pi + \pi/2}$ per $n\in\mathbb{N}^+$ si ottiene $f(y_n) = 1 \to 1$: dunque $\lim_{x\to 0} \sin(1/x)$ non esiste. Questa equivalenza è garantita dal teorema seguente, che lega limiti di funzione e limiti di successione.
 
-**Teorema 4.8 (caratterizzazione sequenziale del limite).** Sia $f: \operatorname{dom} f \to \mathbb{R}$ e sia $x_0$ punto di accumulazione di $\operatorname{dom} f$. Allora
+**Teorema 4.9 (caratterizzazione sequenziale del limite).** Sia $f: \operatorname{dom} f \to \mathbb{R}$ e sia $x_0$ punto di accumulazione di $\operatorname{dom} f$. Allora
 
 :::formula{id="4.15" label="Caratterizzazione sequenziale del limite"}
 $$\lim_{x\to x_0} f(x) = l \iff \text{per ogni successione } (x_n) \text{ con } x_n \in \operatorname{dom} f \setminus \{x_0\},\ x_n \to x_0,\ \text{si ha } f(x_n) \to l.$$
@@ -537,11 +545,11 @@ In particolare, se si trovano due successioni $x_n \to x_0$ e $y_n \to x_0$ tali
 
 Non ogni successione ammette limite, ma si può sempre dire qualcosa sulle sue sottosuccessioni.
 
-**Teorema 4.9 (estrazione monotona).** Ogni successione $(a_n)$ a valori reali possiede una sottosuccessione monotona.
+**Teorema 4.10 (estrazione monotona).** Ogni successione $(a_n)$ a valori reali possiede una sottosuccessione monotona.
 
-**Teorema 4.10 (Bolzano-Weierstrass).** Ogni successione limitata $(a_n)$ possiede una sottosuccessione convergente.
+**Teorema 4.11 (Bolzano-Weierstrass).** Ogni successione limitata $(a_n)$ possiede una sottosuccessione convergente.
 
-La dimostrazione combina i due risultati: per il Teorema 4.9 esiste una sottosuccessione $(a_{n_k})$ monotona; essendo $(a_n)$ limitata, anche $(a_{n_k})$ lo è, e per il Teorema 4.7 una successione monotona e limitata converge a un limite finito. $\square$
+La dimostrazione combina i due risultati: per il Teorema 4.10 esiste una sottosuccessione $(a_{n_k})$ monotona; essendo $(a_n)$ limitata, anche $(a_{n_k})$ lo è, e per il Teorema 4.8 una successione monotona e limitata converge a un limite finito. $\square$
 
 Il teorema di Bolzano-Weierstrass è utile quando si sa che una successione è limitata e si vuole garantire l'esistenza di una sottosuccessione convergente, senza determinarne il limite. Se l'insieme dei valori della successione è anche infinito, la sua limitatezza garantisce l'esistenza di un punto di accumulazione; un insieme limitato con un solo valore, invece, non ne ha.
 

@@ -113,9 +113,9 @@ $$\vec{a}_{Co} = 2\vec{\omega}\times \vec{v}\,'$$
 
 *Dimostrazione del teorema delle accelerazioni relative.* Si parte dal teorema delle velocità relative $\vec{v}=\vec{v}_{O'}+\vec{v}\,'+\vec{\omega}\times\vec{r}\,'$ e lo si deriva termine a termine. Il primo termine dà $d\vec{v}_{O'}/dt=\vec{a}_{O'}$.
 
-Per il secondo, $\vec{v}\,'=\dot{x}'\hat{u}_{x'}+\dot{y}'\hat{u}_{y'}+\dot{z}'\hat{u}_{z'}$, quindi
+Per il secondo, $\vec{v}\,'=\frac{dx'}{dt}\hat{u}_{x'}+\frac{dy'}{dt}\hat{u}_{y'}+\frac{dz'}{dt}\hat{u}_{z'}$, quindi
 
-$$\frac{d\vec{v}\,'}{dt}=\ddot{x}'\hat{u}_{x'}+\ddot{y}'\hat{u}_{y'}+\ddot{z}'\hat{u}_{z'}+\dot{x}'\frac{d\hat{u}_{x'}}{dt}+\dot{y}'\frac{d\hat{u}_{y'}}{dt}+\dot{z}'\frac{d\hat{u}_{z'}}{dt}=\vec{a}\,'+\vec{\omega}\times\vec{v}\,',$$
+$$\frac{d\vec{v}\,'}{dt}=\frac{d^2x'}{dt^2}\hat{u}_{x'}+\frac{d^2y'}{dt^2}\hat{u}_{y'}+\frac{d^2z'}{dt^2}\hat{u}_{z'}+\frac{dx'}{dt}\frac{d\hat{u}_{x'}}{dt}+\frac{dy'}{dt}\frac{d\hat{u}_{y'}}{dt}+\frac{dz'}{dt}\frac{d\hat{u}_{z'}}{dt}=\vec{a}\,'+\vec{\omega}\times\vec{v}\,',$$
 
 usando le formule di Poisson. Per il terzo, con la regola del prodotto e il risultato $d\vec{r}\,'/dt=\vec{v}\,'+\vec{\omega}\times\vec{r}\,'$,
 
@@ -243,7 +243,7 @@ Il pendolo si assesta dunque in una posizione obliqua, come se fosse soggetto a 
 
 $$T_{\text{osc}} = 2\pi\sqrt{\frac{l}{\sqrt{g^2+A^2}}}$$
 
-, da confrontare con [formula (3.29)](ref:formula/3.29) del pendolo in quiete, in cui compare semplicemente $g$ al posto di $g_{\text{eff}}$.
+, da confrontare con [formula (3.28)](ref:formula/3.28) del pendolo in quiete, in cui compare semplicemente $g$ al posto di $g_{\text{eff}}$.
 
 Lo stesso schema si applica a un corpo su un piano inclinato solidale con un sistema accelerato (vagone, carrello): ci si mette nel riferimento non inerziale del piano, si sommano alle forze reali (peso, reazione normale, attrito) la forza apparente $-m\vec{A}$, e si impone l'equilibrio relativo per trovare la condizione sull'angolo e sul coefficiente di attrito statico.
 

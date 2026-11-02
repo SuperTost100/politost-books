@@ -455,7 +455,7 @@ Si ottiene così il **primo teorema di König**:
 $$\vec{L} = \vec{r}_{CM}\times m\vec{v}_{CM} + \vec{L}', \qquad \vec{L}' = \sum_i m_i\, \vec{r}'_i\times \vec{v}'_i$$
 :::
 
-Il momento angolare del sistema, calcolato rispetto a un polo fisso nel riferimento inerziale, è dunque la somma del momento angolare dovuto al moto del centro di massa e del momento angolare dovuto al moto interno rispetto al centro di massa. Questa scomposizione è lo strumento fondamentale per trattare il corpo rigido: nel caso particolare in cui tutto il moto interno sia una rotazione rigida attorno al centro di massa, in generale $\vec{L}'$ non è parallelo a $\vec{\omega}$, perché il legame tra le due grandezze è mediato dal tensore d'inerzia rispetto al centro di massa, $\vec{L}' = I_{CM}\vec{\omega}$ in senso tensoriale. Solo se il moto è piano (asse di rotazione fisso e perpendicolare al piano del moto) oppure se $\vec{\omega}$ è diretto lungo un asse principale d'inerzia passante per il centro di massa, la relazione si riduce alla forma scalare $\vec{L}' = I_{CM}\vec{\omega}$, come vedremo nel capitolo dedicato (ved. [Teoremi di Huygens-Steiner e di König](ref:chapter/8#p4)).
+Il momento angolare del sistema, calcolato rispetto a un polo fisso nel riferimento inerziale, è dunque la somma del momento angolare dovuto al moto del centro di massa e del momento angolare dovuto al moto interno rispetto al centro di massa. Questa scomposizione è lo strumento fondamentale per trattare il corpo rigido: nel caso particolare in cui tutto il moto interno sia una rotazione rigida attorno al centro di massa, in generale $\vec{L}'$ non è parallelo a $\vec{\omega}$, perché il legame tra le due grandezze è mediato dal tensore d'inerzia rispetto al centro di massa, $\vec{L}' = I_{CM}\vec{\omega}$ in senso tensoriale. Se il corpo è piano e contenuto nel piano del moto, oppure se l'asse di rotazione è principale d'inerzia e passa per il centro di massa, la relazione si riduce alla forma scalare $\vec{L}' = I_{CM}\vec{\omega}$, come vedremo nel capitolo dedicato (ved. [Teoremi di Huygens-Steiner e di König](ref:chapter/8#p4)).
 
 ### Esempio svolto
 
@@ -786,7 +786,7 @@ Dalle tracce emergono tre tipi ricorrenti.
 3. Durante l'urto non usare l'energia meccanica, a meno che l'urto sia dichiarato elastico. Scrivi la conservazione della quantità di moto del sistema dei due corpi ({{formula:7.20}}), proiettata sugli assi. Giustificala verificando che l'impulso esterno sia trascurabile nella direzione considerata. Se un filo si tende, controlla quali componenti della quantità di moto possono conservarsi. Vedi [Urti](ref:chapter/7#p7).
 4. Se i corpi restano attaccati, usa $v_{fin}=v_{CM}$ ({{formula:7.22}}). Se il testo dà una velocità finale (per esempio un proiettile che esce con metà della velocità iniziale), questa è il dato che chiude l'equazione.
 5. Se il corpo è appeso a un filo, la fase successiva è un moto circolare: usa l'energia per la velocità e la seconda legge in direzione radiale per la tensione ([Dinamica del moto curvilineo](ref:chapter/3#p8)).
-6. Controlla i segni: l'energia dissipata nell'urto deve risultare $\Delta E_k\le 0$.
+6. Controlla i segni: nell'urto deve risultare $\Delta E_k\le 0$, cioè l'energia dissipata $E_{diss}=-\Delta E_k$ è positiva o nulla.
 
 **Errori tipici.**
 

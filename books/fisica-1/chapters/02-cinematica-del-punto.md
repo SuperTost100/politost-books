@@ -312,7 +312,7 @@ per ogni $t$, con $\omega$ costante reale positiva.
 
 $$a(t) = \frac{d^2x}{dt^2} = -\omega^2 A\sin(\omega t + \varphi) = -\omega^2 x(t),$$
 
-cioè $\ddot{x} + \omega^2 x = 0$ per ogni $t$.
+cioè $\frac{d^2x}{dt^2} + \omega^2 x = 0$ per ogni $t$.
 
 ($\Leftarrow$) Sia $x(t)$ una soluzione di $\ddot{x} + \omega^2 x = 0$ con $\omega > 0$. L'equazione è lineare del secondo ordine a coefficienti costanti, e per quanto appena visto le funzioni $A\sin(\omega t + \varphi)$ la risolvono per ogni $A$ e $\varphi$. Siano $x_0 = x(0)$ e $v_0 = \dot{x}(0)$ la posizione e la velocità iniziali, qualsiasi, con $x_0$ e $v_0$ non entrambi nulli (altrimenti il moto è la quiete nell'origine, esclusa dal teorema). Si pone
 

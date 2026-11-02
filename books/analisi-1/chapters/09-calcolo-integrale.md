@@ -446,7 +446,7 @@ Nel test a risposta multipla le stesse nozioni compaiono in forma teorica. Nello
 **Metodo.**
 1. Verificare che $f$ sia continua sull'intervallo considerato. Per il {{formula:9.14}} si ha allora $F'(x)=f(x)$. Se l'estremo è composto, come in $F(x^5)$, si applica $\frac{d}{dx}F(g(x))=f(g(x))\,g'(x)$ (si veda [Teorema fondamentale del calcolo integrale](ref:chapter/9#p4)).
 2. Studiare il segno di $F'$ per la monotonia: se $f\ge 0$, $F$ è crescente. Con l'estremo composto, il segno di $g'$ entra nel prodotto.
-3. Per gli asintoti orizzontali e per l'estremo superiore, calcolare $\lim_{x\to+\infty}F(x)$. Se $F$ è crescente il limite esiste sempre. Il problema è se sia finito.
+3. Per gli asintoti orizzontali, controllare i limiti a entrambi gli infiniti che appartengono al dominio; usare il limite a $+\infty$ per l'estremo superiore quando $F$ è crescente su un dominio illimitato superiormente.
 4. Se serve il valore del limite, calcolare l'integrale improprio come limite, scrivendo prima $\lim_{b\to+\infty}\int_{x_0}^b f(t)\,dt$ e solo dopo dichiarando convergenza o divergenza (si veda [Integrali impropri di prima specie](ref:chapter/10#p2)). Per la convergenza senza calcolo si usano i criteri del confronto (si veda [Criteri di convergenza](ref:chapter/10#p4)).
 5. Per limitare un integrale con una costante, maggiorare l'integrando con una funzione di cui si conosce l'integrale e usare la monotonia dell'integrale ({{formula:9.11}}).
 

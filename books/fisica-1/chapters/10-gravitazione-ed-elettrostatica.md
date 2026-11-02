@@ -73,6 +73,32 @@ Numerosi esperimenti, a partire dalla metà del XIX secolo, hanno verificato che
 
 Si può quindi scegliere una normalizzazione delle masse e della costante $G$ in cui $m_G=m_I=m$. Questa identificazione, oggi nota come **principio di equivalenza**, riflette un risultato sperimentale e non è una conseguenza logica della legge di gravitazione; con questa normalizzazione, tutti i corpi cadono con la stessa accelerazione in un dato campo gravitazionale.
 
+### Accelerazione di gravità e forza peso
+
+Vicino alla superficie terrestre la gravità si riduce alla forza peso $\vec{P} = m\vec{g}$, introdotta in [Le forze in natura](ref:chapter/3#p3). Si assume che l'attrazione di tutti i punti della Terra sia equivalente a quella di un punto al centro che contiene l'intera massa $M_T$: il teorema di Gauss lo giustifica in [Potenziale gravitazionale e teorema di Gauss](ref:chapter/10#p5).
+
+:::formula{id="10.2" label="Accelerazione di gravità alla superficie terrestre"}
+$$g = G\frac{M_T}{R_T^2}$$
+:::
+
+**Dimostrazione richiesta all'esame.** Un punto di massa $m$ a quota $h$ sopra la superficie, con $R_T$ raggio terrestre, risente della forza di modulo
+
+$$F_G = G\frac{m M_T}{(R_T+h)^2} = G\frac{m M_T}{R_T^2\left(1+\frac{h}{R_T}\right)^2}.$$
+
+Per $h \ll R_T$ il rapporto $h/R_T$ è trascurabile rispetto a 1, quindi $\left(1+h/R_T\right)^2 \simeq 1$. La direzione della forza, verso il centro della Terra, si approssima con la verticale. Con $\hat{u}_y$ verticale verso l'alto si ottiene
+
+$$\vec{F}_G = -G\frac{m M_T}{R_T^2}\,\hat{u}_y = -m g\,\hat{u}_y, \qquad g = G\frac{M_T}{R_T^2}.$$
+
+Il fattore $g$ non dipende da $m$. $\square$
+
+Con i valori $M_T = 5{,}97\cdot10^{24}\ \mathrm{kg}$ e $R_T = 6{,}37\cdot10^{6}\ \mathrm{m}$ si ha
+
+$$
+g = 6{,}67\cdot10^{-11}\ \mathrm{N\cdot m^2/kg^2}\cdot\frac{5{,}97\cdot10^{24}\ \mathrm{kg}}{(6{,}37\cdot10^{6}\ \mathrm{m})^2} \simeq 9{,}8\ \mathrm{m/s^2}.
+$$
+
+Il controllo dimensionale dà $\mathrm{N\cdot m^2/kg^2}\cdot\mathrm{kg/m^2} = \mathrm{N/kg} = \mathrm{m/s^2}$, come richiesto per un'accelerazione. A $h = 1$ km lo sviluppo al primo ordine dà una variazione relativa $2h/R_T \simeq 3\cdot10^{-4}$, e l'approssimazione di $g$ costante è dunque ottima.
+
 ### Terza legge di Keplero per orbite circolari
 
 Per un'orbita circolare di raggio $r$, l'accelerazione del corpo orbitante è puramente centripeta, $\vec{a} = -\dfrac{v^2}{r}\hat{u}_r$. Applicando la seconda legge della dinamica alla forza gravitazionale esercitata da un corpo centrale di massa $M$ su un corpo di massa $m$,
@@ -83,7 +109,7 @@ $$
 
 Nel moto circolare uniforme vale $v = \omega r = \dfrac{2\pi r}{T}$ (già visto in [Moto circolare](ref:chapter/2#p6)); sostituendo si ottiene
 
-:::formula{id="10.2" label="Velocità orbitale su un'orbita circolare"}
+:::formula{id="10.3" label="Velocità orbitale su un'orbita circolare"}
 $$v = \sqrt{\frac{GM}{r}}$$
 :::
 
@@ -95,7 +121,7 @@ $$
 
 Elevando ancora al quadrato si ritrova la terza legge di Keplero in forma esplicita per orbite circolari:
 
-:::formula{id="10.3" label="Terza legge di Keplero per orbite circolari"}
+:::formula{id="10.4" label="Terza legge di Keplero per orbite circolari"}
 $$T^2 = \frac{4\pi^2}{GM}\,r^3$$
 :::
 
@@ -115,7 +141,7 @@ $$
 
 il valore minimo di $v_F$ corrisponde a $v_\infty = 0$, cioè il corpo arriva all'infinito con velocità nulla. Si ottiene quindi
 
-:::formula{id="10.4" label="Velocità di fuga"}
+:::formula{id="10.5" label="Velocità di fuga"}
 $$v_F = \sqrt{\frac{2GM}{R}}$$
 :::
 
@@ -135,7 +161,7 @@ Schema: il satellite percorre un'orbita circolare di raggio $r = R_T + h$ attorn
 
 Riferimento: origine nel centro della Terra, versore radiale $\hat{u}_r$ uscente.
 
-Equazioni: {{formula:10.2}} e {{formula:10.3}}.
+Equazioni: {{formula:10.3}} e {{formula:10.4}}.
 
 Soluzione letterale: $r = R_T + h$, $v = \sqrt{GM_T/r}$, $T = 2\pi\sqrt{r^3/(GM_T)}$.
 
@@ -158,13 +184,13 @@ $$v_F = \sqrt{\frac{2GM_T}{R_T}} = \sqrt{\frac{2\cdot 3{,}99\cdot 10^{14}}{6{,}3
 
 Controllo: dimensionalmente $\lbrack GM/r\rbrack  = \mathrm{m^3\,s^{-2}/m} = \mathrm{m^2/s^2}$, coerente con una velocità al quadrato. Numericamente $v < v_F$ come deve essere: il satellite è legato, mentre $v_F$ rappresenta la soglia per sfuggire del tutto al campo gravitazionale; l'ordine di grandezza (pochi $\mathrm{km/s}$) è quello tipico dei satelliti in orbita bassa.
 
-**Errore tipico 10.1.** Un errore frequente è usare il raggio della Terra $R_T$ al posto del raggio dell'orbita $r = R_T + h$ nelle formule di velocità orbitale e periodo: le formule {{formula:10.2}} e {{formula:10.3}} vanno sempre applicate con la distanza dal centro del corpo attrattore, non con la quota sopra la sua superficie. Un secondo errore è confondere massa inerziale e massa gravitazionale trattandole come concettualmente identiche per definizione, invece di riconoscere che la loro uguaglianza è un risultato sperimentale (il principio di equivalenza) e non un'ovvietà logica.
+**Errore tipico 10.1.** Un errore frequente è usare il raggio della Terra $R_T$ al posto del raggio dell'orbita $r = R_T + h$ nelle formule di velocità orbitale e periodo: le formule {{formula:10.3}} e {{formula:10.4}} vanno sempre applicate con la distanza dal centro del corpo attrattore, non con la quota sopra la sua superficie. Un secondo errore è confondere massa inerziale e massa gravitazionale trattandole come concettualmente identiche per definizione, invece di riconoscere che la loro uguaglianza è un risultato sperimentale (il principio di equivalenza) e non un'ovvietà logica.
 
 ## p3 | Campo gravitazionale
 
 ### Il concetto di campo
 
-La forza di gravitazione universale agisce a distanza e in apparenza senza che nulla si propaghi nello spazio tra le due masse. Per evitare l'idea di un'azione istantanea e a distanza si introduce il concetto di campo: ogni massa modifica le proprietà dello spazio circostante, e questa modifica agisce poi su una seconda massa posta in quel punto. Simbolicamente, Massa 1 $\leftrightarrow$ campo $\leftrightarrow$ Massa 2. Un campo è una grandezza fisica, scalare o vettoriale, alla quale è possibile associare un valore definito in ogni punto di una regione di spazio.
+La forza di gravitazione universale agisce a distanza. Il campo gravitazionale descrive localmente la forza per unità di massa che una massa sorgente esercita su una massa di prova posta in un punto. Simbolicamente, Massa 1 $\leftrightarrow$ campo $\leftrightarrow$ Massa 2. Un campo è una grandezza fisica, scalare o vettoriale, alla quale è possibile associare un valore definito in ogni punto di una regione di spazio.
 
 Questa nozione era già stata anticipata quando si è parlato dell'accelerazione $\vec{g}$ prossima alla superficie terrestre, nella sezione su [Gravitazione e leggi di Keplero](ref:chapter/10#p2): $\vec{g}$ è precisamente il campo gravitazionale generato dalla Terra, valutato in prossimità della sua superficie.
 
@@ -178,7 +204,7 @@ dove $m_0$ deve essere sufficientemente piccola da non perturbare la distribuzio
 
 Usando la legge di gravitazione universale, il campo generato da una massa puntiforme $M$ (o da una distribuzione a simmetria sferica, come si vedrà nella sezione successiva) vale
 
-:::formula{id="10.5" label="Campo gravitazionale di una massa puntiforme"}
+:::formula{id="10.6" label="Campo gravitazionale di una massa puntiforme"}
 $$\vec{G}(P) = -G\frac{M}{r^2}\hat{u}_r$$
 :::
 
@@ -192,7 +218,7 @@ Le formule precedenti valgono per una singola massa puntiforme. Quando nello spa
 
 Se $\vec{G}_i$ è il campo generato dalla massa $m_i$ a distanza $r_i$ da $P$,
 
-:::formula{id="10.6" label="Principio di sovrapposizione del campo gravitazionale"}
+:::formula{id="10.7" label="Principio di sovrapposizione del campo gravitazionale"}
 $$\vec{G}(P) = \sum_{i=1}^{n} \vec{G}_i = -G\sum_{i=1}^{n} \frac{m_i}{r_i^2}\,\hat{u}_i$$
 :::
 
@@ -227,7 +253,7 @@ Il modulo del campo generato da ciascuna massa in $P$ è
 
 $$G_i = G\frac{m_i}{r^2}.$$
 
-Il versore che punta da $A$ (o da $B$) verso $P$ ha componente verticale $+2{,}0\ \text{m}/r$ (verso l'alto) e componente orizzontale $\pm 1{,}0\ \text{m}/r$; nella {{formula:10.6}} questo versore compare preceduto dal segno meno, cosicché le componenti orizzontali si cancellano e resta una componente verticale negativa, diretta verso le masse.
+Il versore che punta da $A$ (o da $B$) verso $P$ ha componente verticale $+2{,}0\ \text{m}/r$ (verso l'alto) e componente orizzontale $\pm 1{,}0\ \text{m}/r$; nella {{formula:10.7}} questo versore compare preceduto dal segno meno, cosicché le componenti orizzontali si cancellano e resta una componente verticale negativa, diretta verso le masse.
 
 $$G_y(P) = -2\,G\frac{m}{r^2}\cdot\frac{2{,}0\ \text{m}}{r} = -\frac{(4{,}0\ \text{m})\,G\,m}{r^3}.$$
 
@@ -241,7 +267,7 @@ Quindi $\vec{G}(P) \approx -4{,}8\cdot10^{-8}\,\hat{u}_y$ m/s².
 
 ### Errori tipici
 
-**Errore tipico 10.2** (somma scalare invece che vettoriale). Un errore frequente consiste nel sommare i moduli dei singoli campi $G_i$ invece delle loro componenti vettoriali, ottenendo nell'esempio precedente un valore eccessivo rispetto a quello corretto, perché si ignora la cancellazione delle componenti orizzontali imposta dalla simmetria del problema. Il principio di sovrapposizione richiede sempre di decomporre ciascun $\vec{G}_i$ nelle sue componenti cartesiane e di sommare componente per componente, come indicato dalla {{formula:10.6}}.
+**Errore tipico 10.2** (somma scalare invece che vettoriale). Un errore frequente consiste nel sommare i moduli dei singoli campi $G_i$ invece delle loro componenti vettoriali, ottenendo nell'esempio precedente un valore eccessivo rispetto a quello corretto, perché si ignora la cancellazione delle componenti orizzontali imposta dalla simmetria del problema. Il principio di sovrapposizione richiede sempre di decomporre ciascun $\vec{G}_i$ nelle sue componenti cartesiane e di sommare componente per componente, come indicato dalla {{formula:10.7}}.
 
 **Errore tipico 10.3** (dipendenza errata dalla distanza). Un secondo errore tipico è confondere la dipendenza del campo dalla distanza, scrivendo $G \propto 1/r$ invece di $G \propto 1/r^2$. Il controllo dimensionale smaschera immediatamente l'errore: con $\lbrack G_{\text{cost}}\rbrack  = \text{m}^3/(\text{kg}\cdot\text{s}^2)$, la formula $a = G_{\text{cost}}\,M/r^2$ dà $\lbrack a\rbrack =\text{m/s}^2$ (corretta), mentre $a = G_{\text{cost}}\,M/r$ darebbe $\lbrack a\rbrack  = \text{m}^2/\text{s}^2$, privo di senso per un'accelerazione. Più in generale, un risultato numericamente sbagliato resta comunque un risultato, mentre una scrittura dimensionalmente inconsistente è priva di significato fisico e costituisce un errore ben più grave; per questo ogni passaggio intermedio del calcolo di un campo va sempre accompagnato dalle unità di misura.
 
@@ -258,13 +284,13 @@ La misura dell'angolo solido è costruita per analogia con quella dell'angolo pi
 
 Nel caso dello spazio tridimensionale si traccia invece una sfera di raggio $r$ centrata nel vertice dell'angolo solido; l'angolo solido ritaglia sulla superficie della sfera una porzione di area $S$. La misura dell'angolo solido, espressa in steradianti (sr), si ottiene dividendo $S$ per $r^2$
 
-:::formula{id="10.7" label="Angolo solido sotteso da una superficie sferica"}
+:::formula{id="10.8" label="Angolo solido sotteso da una superficie sferica"}
 $$\Omega = \frac{S}{r^2}$$
 :::
 
 Poiché $\Omega$ è il rapporto fra due grandezze omogenee (due aree), è adimensionale; lo steradiante è un'unità di misura convenzionale, analoga al radiante per gli angoli piani, e non va mai omessa quando si riporta il valore numerico di $\Omega$. L'angolo solido sotteso dall'intera sfera, cioè quello che "vede" tutto lo spazio attorno a $O$, vale
 
-:::formula{id="10.8" label="Angolo solido totale attorno a un punto"}
+:::formula{id="10.9" label="Angolo solido totale attorno a un punto"}
 $$\Omega_{\text{tot}} = \frac{4\pi r^2}{r^2} = 4\pi \ \text{sr}$$
 :::
 
@@ -280,7 +306,7 @@ $$d\vec{S} = \hat{u}_n \, dS .$$
 
 Sia $O$ un punto esterno a $dS$, posto a distanza $r$ da esso, e sia $\hat{u}_r$ il versore che va da $O$ verso l'elemento di superficie. L'elemento $dS$ è visto da $O$ sotto un angolo solido infinitesimo $d\Omega$, dato da
 
-:::formula{id="10.9" label="Angolo solido infinitesimo sotteso da un elemento di superficie"}
+:::formula{id="10.10" label="Angolo solido infinitesimo sotteso da un elemento di superficie"}
 $$d\Omega = \frac{|\hat{u}_r \cdot \hat{u}_n| \, dS}{r^2}$$
 :::
 
@@ -331,7 +357,7 @@ Il segno negativo riflette il carattere attrattivo della forza: l'energia potenz
 
 Dividendo $E_p$ per la massa $m_2$ che subisce l'interazione si ottiene una grandezza che dipende solo dalla massa sorgente $m_1$, detta **potenziale gravitazionale** del campo prodotto da $m_1$:
 
-:::formula{id="10.10" label="Potenziale gravitazionale"}
+:::formula{id="10.11" label="Potenziale gravitazionale"}
 $$V_1 = \frac{E_p}{m_2} = -\frac{G m_1}{r}$$
 :::
 
@@ -342,25 +368,25 @@ La situazione è simmetrica nelle due masse: si può scrivere altrettanto bene $
 
 Il lavoro compiuto dalla forza gravitazionale su $m_2$ per uno spostamento generico dal punto $A$ al punto $B$ nel campo di $m_1$ si scrive quindi in termini della sola variazione di potenziale:
 
-:::formula{id="10.11" label="Lavoro tramite la differenza di potenziale"}
+:::formula{id="10.12" label="Lavoro tramite la differenza di potenziale"}
 $$W_{AB} = -\Delta E_p = -m_2\,\Delta V_1 = m_2\left(V_{1,A} - V_{1,B}\right)$$
 :::
 
 Tra campo gravitazionale e potenziale sussiste la relazione differenziale, analoga a quella già vista tra forza ed energia potenziale ([formula (4.13)](ref:formula/4.13)):
 
-:::formula{id="10.12" label="Campo come gradiente del potenziale"}
+:::formula{id="10.13" label="Campo come gradiente del potenziale"}
 $$\vec{G} = -\vec{\nabla} V$$
 :::
 
 Si chiama **superficie equipotenziale** una superficie su cui $V$ è costante: per qualunque spostamento tra due suoi punti il lavoro della forza gravitazionale è nullo, poiché dipende solo dalla differenza di potenziale tra gli estremi.
 
-Questo linguaggio in termini di potenziale non modifica i risultati già ottenuti nella sezione sulle [forze centrali](ref:chapter/5#p4): la classificazione delle orbite in iperboliche ($E_m>0$), paraboliche ($E_m=0$) ed ellittiche ($E_m<0$) resta quella stabilita nella sezione sulle [forze centrali](ref:chapter/5#p4), e la velocità di fuga {{formula:10.4}} si ricava imponendo che l’energia meccanica all’infinito, dove $V=0$, sia nulla o positiva.
+Questo linguaggio in termini di potenziale non modifica i risultati già ottenuti nella sezione sulle [forze centrali](ref:chapter/5#p4): la classificazione delle orbite in iperboliche ($E_m>0$), paraboliche ($E_m=0$) ed ellittiche ($E_m<0$) resta quella stabilita nella sezione sulle [forze centrali](ref:chapter/5#p4), e la velocità di fuga {{formula:10.5}} si ricava imponendo che l’energia meccanica all’infinito, dove $V=0$, sia nulla o positiva.
 
 ### Teorema di Gauss per il campo gravitazionale
 
 Il teorema di Gauss è uno strumento che collega il campo gravitazionale sulla superficie di una regione chiusa alla massa contenuta al suo interno, e risulta particolarmente utile per calcolare il campo generato da distribuzioni di massa dotate di simmetria. Consideriamo un insieme di masse e una superficie chiusa $S$ che ne racchiude alcune. In ogni punto di $S$ il campo $\vec{G}$ è quello totale dovuto a tutte le masse presenti, interne ed esterne. Si definisce il flusso elementare
 
-:::formula{id="10.13" label="Flusso elementare del campo gravitazionale"}
+:::formula{id="10.14" label="Flusso elementare del campo gravitazionale"}
 $$d\Phi = \vec{G}\cdot \hat{u}_n\, dS$$
 :::
 
@@ -368,7 +394,7 @@ dove $\hat{u}_n$ è il versore normale uscente alla superficie $S$ (la stessa co
 
 **Teorema 10.1** (di Gauss per la gravitazione). Se la superficie chiusa non passa per alcuna massa puntiforme (una massa posta esattamente sulla superficie renderebbe il campo singolare nell'integrale di flusso), il flusso del campo gravitazionale attraverso di essa è proporzionale alla somma delle masse interne alla superficie:
 
-:::formula{id="10.14" label="Teorema di Gauss per il campo gravitazionale"}
+:::formula{id="10.15" label="Teorema di Gauss per il campo gravitazionale"}
 $$\Phi = -4\pi G \sum_i m_i$$
 :::
 
@@ -378,9 +404,9 @@ L'ipotesi essenziale alla base del teorema è che il campo dipenda dall'inverso 
 
 $$d\Phi = \vec{G}\cdot\hat{u}_n\,dS = -GM\,\frac{\hat{u}_r\cdot\hat{u}_n\,dS}{r^2} = -GM\, d\Omega_{\mathrm{or}},$$
 
-dove $d\Omega_{\mathrm{or}} = (\hat{u}_r\cdot\hat{u}_n)\,dS/r^2$ è l'angolo solido orientato sotteso da $dS$ visto dal punto dove si trova $M$. A differenza dell'angolo solido infinitesimo definito con valore assoluto nella sezione sull'[angolo solido](ref:chapter/10#p4) ({{formula:10.9}}), qui il segno di $d\Omega_{\mathrm{or}}$ dipende dall'orientazione relativa di $\hat{u}_r$ e $\hat{u}_n$: per una superficie non convessa alcuni contributi risultano negativi, ed è proprio integrando questa versione orientata, e non il suo valore assoluto, che la dimostrazione dà come risultato $4\pi$ anche in presenza di concavità.
+dove $d\Omega_{\mathrm{or}} = (\hat{u}_r\cdot\hat{u}_n)\,dS/r^2$ è l'angolo solido orientato sotteso da $dS$ visto dal punto dove si trova $M$. A differenza dell'angolo solido infinitesimo definito con valore assoluto nella sezione sull'[angolo solido](ref:chapter/10#p4) ({{formula:10.10}}), qui il segno di $d\Omega_{\mathrm{or}}$ dipende dall'orientazione relativa di $\hat{u}_r$ e $\hat{u}_n$: per una superficie non convessa alcuni contributi risultano negativi, ed è proprio integrando questa versione orientata, e non il suo valore assoluto, che la dimostrazione dà come risultato $4\pi$ anche in presenza di concavità.
 
-Integrando l'angolo solido orientato su tutta la superficie chiusa, il suo valore totale è $4\pi$ sr ({{formula:10.8}}), da cui $\Phi = -4\pi GM$. Se la massa $M$ è invece esterna a $S$, la superficie chiusa sottende, vista da $M$, un angolo solido orientato netto nullo, quindi il suo contributo al flusso totale è nullo. Sommando su tutte le masse presenti, interne ed esterne, e applicando la sovrapposizione dei campi, si ottiene {{formula:10.14}}: il campo che compare nell'integrale è quello totale generato da tutte le masse, ma il flusso attraverso l'intera superficie chiusa dipende soltanto dalle masse interne. $\blacksquare$
+Integrando l'angolo solido orientato su tutta la superficie chiusa, il suo valore totale è $4\pi$ sr ({{formula:10.9}}), da cui $\Phi = -4\pi GM$. Se la massa $M$ è invece esterna a $S$, la superficie chiusa sottende, vista da $M$, un angolo solido orientato netto nullo, quindi il suo contributo al flusso totale è nullo. Sommando su tutte le masse presenti, interne ed esterne, e applicando la sovrapposizione dei campi, si ottiene {{formula:10.15}}: il campo che compare nell'integrale è quello totale generato da tutte le masse, ma il flusso attraverso l'intera superficie chiusa dipende soltanto dalle masse interne. $\blacksquare$
 
 La superficie chiusa usata per applicare il teorema (detta superficie gaussiana) è in generale una superficie geometrica immaginaria, scelta per comodità di calcolo, e non deve coincidere con il contorno fisico di un oggetto.
 
@@ -396,7 +422,7 @@ $$\Phi = \oint -G(r)\,\hat{u}_r\cdot\hat{u}_n\,dS = -G(r)\oint dS = -4\pi r^2 G(
 
 da cui
 
-:::formula{id="10.15" label="Campo gravitazionale all'esterno di una sfera omogenea"}
+:::formula{id="10.16" label="Campo gravitazionale all'esterno di una sfera omogenea"}
 $$G(r) = G\frac{m}{r^2}, \qquad r \ge R.$$
 :::
 
@@ -404,7 +430,7 @@ Il risultato coincide con quello di una massa puntiforme $m$ nel centro, conferm
 
 **Caso $r < R$, guscio sferico cavo.** Se tutta la massa è concentrata su un guscio sottile di raggio $R$, qualunque superficie gaussiana sferica di raggio $r<R$ non racchiude alcuna massa, quindi il flusso attraverso di essa è nullo e per simmetria
 
-:::formula{id="10.16" label="Campo gravitazionale all'interno di un guscio sferico"}
+:::formula{id="10.17" label="Campo gravitazionale all'interno di un guscio sferico"}
 $$G(r) = 0, \qquad r < R.$$
 :::
 
@@ -412,7 +438,7 @@ $$G(r) = 0, \qquad r < R.$$
 
 $$\Phi = -4\pi G\, m(r) = -4\pi G\,\rho_0\frac{4}{3}\pi r^3 = -G(r)\cdot 4\pi r^2,$$
 
-:::formula{id="10.17" label="Campo gravitazionale all'interno di una sfera omogenea piena"}
+:::formula{id="10.18" label="Campo gravitazionale all'interno di una sfera omogenea piena"}
 $$G(r) = \frac{4}{3}\pi G\rho_0\, r, \qquad r < R.$$
 :::
 
@@ -425,16 +451,16 @@ All'interno di una sfera omogenea il campo cresce quindi linearmente con la dist
 
 Dati: $G$ (costante gravitazionale) $=6,67\cdot10^{-11}\ \text{N}\cdot\text{m}^2/\text{kg}^2$, $M_T$, $R_T$ come sopra.
 
-Sulla superficie ($r=R_T$) applichiamo {{formula:10.15}}:
+Sulla superficie ($r=R_T$) applichiamo {{formula:10.16}}:
 
 $$G(R_T) = G\frac{M_T}{R_T^2} = \frac{(6,67\cdot10^{-11})(5,98\cdot10^{24})}{(6,37\cdot10^{6})^2}\ \text{m/s}^2 \approx 9,82\ \text{m/s}^2,$$
 
 in accordo con il valore noto di $g$ al suolo.
 
-A metà del raggio ($r = R_T/2$, modello di densità uniforme) applichiamo {{formula:10.17}}, osservando che $G(r) = G(R_T)\cdot(r/R_T)$:
+A metà del raggio ($r = R_T/2$, modello di densità uniforme) applichiamo {{formula:10.18}}, osservando che $G(r) = G(R_T)\cdot(r/R_T)$:
 
 $$G\!\left(\frac{R_T}{2}\right) = G(R_T)\cdot\frac{1}{2} \approx 9,82 \cdot 0,5\ \text{m/s}^2 = 4,91\ \text{m/s}^2.$$
 
-Controllo: il risultato è positivo, ha le dimensioni di un'accelerazione, e dimezza correttamente il valore superficiale, coerentemente con l'andamento lineare previsto da {{formula:10.17}}; nella realtà la densità terrestre non è uniforme (il nucleo è molto più denso del mantello), quindi questo è solo un modello approssimato.
+Controllo: il risultato è positivo, ha le dimensioni di un'accelerazione, e dimezza correttamente il valore superficiale, coerentemente con l'andamento lineare previsto da {{formula:10.18}}; nella realtà la densità terrestre non è uniforme (il nucleo è molto più denso del mantello), quindi questo è solo un modello approssimato.
 
-**Errore tipico 10.5.** Un errore frequente è assumere che il campo all'interno di una qualunque distribuzione sferica sia nullo, confondendo il caso del guscio cavo ({{formula:10.16}}) con quello della sfera piena, dove invece il campo cresce linearmente con $r$ ({{formula:10.17}}). Un secondo errore tipico è applicare il teorema di Gauss a forze che non seguono la legge dell'inverso del quadrato, oppure dimenticare che, sebbene il campo nell'integrale di flusso sia generato da tutte le masse presenti, solo quelle interne alla superficie gaussiana contribuiscono al flusso totale.
+**Errore tipico 10.5.** Un errore frequente è assumere che il campo all'interno di una qualunque distribuzione sferica sia nullo, confondendo il caso del guscio cavo ({{formula:10.17}}) con quello della sfera piena, dove invece il campo cresce linearmente con $r$ ({{formula:10.18}}). Un secondo errore tipico è applicare il teorema di Gauss a forze che non seguono la legge dell'inverso del quadrato, oppure dimenticare che, sebbene il campo nell'integrale di flusso sia generato da tutte le masse presenti, solo quelle interne alla superficie gaussiana contribuiscono al flusso totale.

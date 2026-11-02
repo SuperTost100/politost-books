@@ -224,7 +224,7 @@ Come nel caso della quantità di moto, per produrre una variazione finita del mo
 
 $$\int_{t_1}^{t_2} \vec{M}_O\, dt = \vec{L}_O(t_2) - \vec{L}_O(t_1) = \Delta \vec{L}_O,$$
 
-relazione detta teorema del momento dell'impulso, perfettamente analoga a [formula (3.9)](ref:formula/3.9) per la quantità di moto.
+relazione detta teorema del momento dell'impulso, perfettamente analoga a [formula (3.8)](ref:formula/3.8) per la quantità di moto.
 
 ### Esempio svolto: punto vincolato a una guida circolare da un filo
 

@@ -444,7 +444,7 @@ Metodo ([Teoremi di Fermat, Rolle e Lagrange](ref:chapter/7#p4)):
 1. Enuncia il teorema con tutte le ipotesi: continuità su $\lbrack a,b\rbrack $, derivabilità su $\rbrack a,b\lbrack $, e per Rolle $f(a)=f(b)$ ([formula (7.11)](ref:formula/7.11), [formula (7.12)](ref:formula/7.12)).
 2. Verifica le ipotesi sul caso concreto, punto per punto, prima di concludere.
 3. Per una domanda del tipo «è possibile che…» traduci i dati in pendenze: il teorema di Lagrange confronta la pendenza media con i valori di $f'$, e il segno di $f''$ dà la monotonia di $f'$.
-4. Per estremi su un intervallo chiuso usa il teorema di Weierstrass ([formula (3.18)](ref:formula/3.18)) e confronta valori in estremi, punti stazionari e punti di non derivabilità.
+4. Per estremi su un intervallo chiuso usa il teorema di Weierstrass ([formula (5.6)](ref:formula/5.6)) e confronta valori in estremi, punti stazionari e punti di non derivabilità.
 
 Errori tipici: dire che un punto di estremo è stazionario senza controllare che $f$ sia derivabile ([formula (7.10)](ref:formula/7.10) lo richiede); concludere che Rolle non vale perché non ci sono punti stazionari, quando semplicemente non è soddisfatta un'ipotesi; dimenticare i punti di bordo.
 

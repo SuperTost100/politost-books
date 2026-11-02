@@ -293,13 +293,13 @@ $$\vec{F} = -\vec{\nabla} E_p$$
 
 La forza è l'opposto del gradiente dell'energia potenziale, ed è quindi diretta lungo il verso di massima diminuzione di $E_p$. L'insieme dei punti in cui $E_p$ è costante si chiama superficie equipotenziale; uno spostamento lungo una superficie equipotenziale non compie lavoro, e di conseguenza la forza associata è sempre ortogonale, in ogni punto, alla superficie equipotenziale che passa per quel punto.
 
-Integrando l'espressione del lavoro infinitesimo $d\mathcal{L} = \vec{F}\cdot d\vec{r} = -dE_p$ lungo un cammino $\gamma$ da $A$ a $B$ si ottiene la relazione fondamentale già introdotta a proposito del [teorema dell'energia cinetica](ref:chapter/4#p3):
+Integrando l'espressione del lavoro infinitesimo $\delta W = \vec{F}\cdot d\vec{r} = -dE_p$ lungo un cammino $\gamma$ da $A$ a $B$ si ottiene la relazione fondamentale già introdotta a proposito del [teorema dell'energia cinetica](ref:chapter/4#p3):
 
 $$W_{A\to B,\gamma} = \int_{A,\gamma}^{B} \vec{F}\cdot d\vec{r} = -\int_{A,\gamma}^{B} dE_p = E_p(A) - E_p(B) = -\Delta E_p .$$
 
 Da questa scrittura seguono le due conseguenze annunciate sopra: il lavoro di una forza conservativa dipende solo dalla posizione iniziale $A$ e finale $B$, non dal cammino $\gamma$, e si annulla lungo una curva chiusa, perché in tal caso $A$ e $B$ coincidono e quindi $E_p(A) = E_p(B)$.
 
-Vediamo ora come ricavare $E_p$ per le forze più comuni, applicando sempre la stessa procedura: si parte dal lavoro infinitesimo $d\mathcal{L} = \vec{F}\cdot d\vec{r}$ e si integra da una posizione di riferimento alla posizione generica.
+Vediamo ora come ricavare $E_p$ per le forze più comuni, applicando sempre la stessa procedura: si parte dal lavoro infinitesimo $\delta W = \vec{F}\cdot d\vec{r}$ e si integra da una posizione di riferimento alla posizione generica.
 
 Per la forza peso $\vec{P} = -mg\,\hat{u}_z$, con asse $z$ verticale verso l'alto, il lavoro per uno spostamento da una quota $z_0$ a una quota $z$ vale
 
@@ -311,9 +311,9 @@ $$E_p(z) = mgz .$$
 
 Per la forza elastica $\vec{F}_{el} = -kx\,\hat{u}_x$, lo stesso procedimento dà
 
-$$\int_{A,\gamma}^{B} d\mathcal{L} = \int_{x_A,\gamma}^{x} (-kx)\,dx = -\frac{1}{2}kx^2 + \frac{1}{2}kx_A^2 ,$$
+$$\int_{A,\gamma}^{B} \delta W = \int_{x_A,\gamma}^{x} (-kx)\,dx = -\frac{1}{2}kx^2 + \frac{1}{2}kx_A^2 ,$$
 
-che fornisce, già fissata nella sezione sulla [forza elastica](ref:chapter/3#p7), l'energia potenziale elastica [formula (3.24)](ref:formula/3.24). Un errore tipico è scrivere $E_p = -\tfrac{1}{2}kx^2$ trasportando il segno meno della forza anche nell'energia potenziale; il segno meno compare solo nella relazione $F = -dE_p/dx$, non nell'espressione di $E_p$ stessa. Con la scelta usuale di porre $E_p=0$ quando la deformazione è nulla, cioè $x=0$, si ottiene $E_p = \tfrac{1}{2}kx^2 \geq 0$; questa non negatività non è una proprietà generale dell'energia potenziale, che essendo definita a meno di una costante additiva arbitraria può in linea di principio assumere anche valori negativi, ma è una conseguenza di quella specifica scelta dello zero dell'energia.
+che fornisce, già fissata nella sezione sulla [forza elastica](ref:chapter/3#p7), l'energia potenziale elastica [formula (3.23)](ref:formula/3.23). Un errore tipico è scrivere $E_p = -\tfrac{1}{2}kx^2$ trasportando il segno meno della forza anche nell'energia potenziale; il segno meno compare solo nella relazione $F = -dE_p/dx$, non nell'espressione di $E_p$ stessa. Con la scelta usuale di porre $E_p=0$ quando la deformazione è nulla, cioè $x=0$, si ottiene $E_p = \tfrac{1}{2}kx^2 \geq 0$; questa non negatività non è una proprietà generale dell'energia potenziale, che essendo definita a meno di una costante additiva arbitraria può in linea di principio assumere anche valori negativi, ma è una conseguenza di quella specifica scelta dello zero dell'energia.
 
 Per le forze centrali, cioè le forze il cui modulo dipende solo dalla distanza $r$ da un centro fisso e la cui direzione è sempre quella del versore radiale $\hat{u}_r$ (studiate in dettaglio nella sezione sulle [forze centrali](ref:chapter/5#p4)), il lavoro infinitesimo si riduce a una funzione della sola variazione di $r$:
 
@@ -322,8 +322,6 @@ $$W = \int_A^B F(r)\,\hat{u}_r\cdot d\vec{s} = \int_{r_A}^{r_B} F(r)\,dr = \math
 poiché $\hat{u}_r\cdot d\vec{s} = ds\cos\theta = dr$ è la variazione del modulo di $r$ lungo lo spostamento, e $\mathcal{F}$ è una primitiva di $F$, cioè una funzione tale che $\mathcal{F}'(r) = F(r)$. Il lavoro dipende solo da una funzione delle coordinate di $A$ e $B$: questa è precisamente la condizione perché la forza sia conservativa. Per la forza gravitazionale tra due masse, $\vec{F}(r) = -\dfrac{Gm_1 m_2}{r^2}\,\hat{u}_r$, integrando si ottiene l'energia potenziale gravitazionale
 
 $$E_p(r) = -\frac{Gm_1 m_2}{r} ,$$
-
-Per la forza gravitazionale tra due masse, $\vec{F}(r) = -\dfrac{Gm_1 m_2}{r^2}\,\hat{u}_r$, integrando si ottiene l'energia potenziale gravitazionale
 
 $$E_p(r) = -\frac{Gm_1 m_2}{r} ,$$
 
@@ -351,7 +349,7 @@ Siano $A$ e $B$ due punti qualsiasi della traiettoria $\gamma$ del punto materia
 
 $$W_{A\to B,\gamma} = E_k(B) - E_k(A) .$$
 
-Poiché la forza è conservativa, esiste l'energia potenziale $E_p$ con $\vec{F} = -\vec{\nabla}E_p$, e dunque $d\mathcal{L} = \vec{F}\cdot d\vec{r} = -dE_p$. Integrando lungo $\gamma$ si ottiene lo stesso lavoro espresso tramite l'energia potenziale:
+Poiché la forza è conservativa, esiste l'energia potenziale $E_p$ con $\vec{F} = -\vec{\nabla}E_p$, e dunque $\delta W = \vec{F}\cdot d\vec{r} = -dE_p$. Integrando lungo $\gamma$ si ottiene lo stesso lavoro espresso tramite l'energia potenziale:
 
 $$W_{A\to B,\gamma} = -\int_{A,\gamma}^{B} dE_p = E_p(A) - E_p(B) .$$
 
@@ -405,6 +403,29 @@ Un tipico errore è dimenticare che la condizione di equilibrio riguarda la deri
 
 Queste idee di energia potenziale e di equilibrio a partire da $E_p(x)$ saranno riprese nello studio del moto nel campo gravitazionale, nella sezione sulle [forze centrali](ref:chapter/5#p4), e torneranno nel bilancio energetico dei sistemi di punti materiali trattato più avanti nel capitolo sui sistemi.
 
+### Pendolo e guida circolare: energia e dinamica insieme
+
+Nei moti su una traiettoria circolare vincolata la conservazione dell’energia dà il modulo della velocità in ogni punto, e la seconda legge lungo la normale, vista in [Dinamica del moto curvilineo](ref:chapter/3#p8), dà poi la forza vincolare. La tensione di un filo e la reazione di una guida liscia sono sempre ortogonali allo spostamento ($\vec{T}\cdot d\vec{r} = 0$), quindi non compiono lavoro e non compaiono nel bilancio: l’energia meccanica si conserva perché l’unica forza che compie lavoro è il peso.
+
+**Pendolo rilasciato da fermo.** Un pendolo semplice di lunghezza $L$ è rilasciato da fermo all’angolo $\theta_0$. All’angolo $\theta$ il punto si trova alla quota $L(1-\cos\theta)$ sopra la posizione più bassa, e la conservazione dell’energia meccanica dà $v^2(\theta)=2gL(\cos\theta-\cos\theta_0)$. Sostituendo nell’equazione lungo la normale, $T_f = mg\cos\theta + m v^2/L$, si ottiene la tensione in funzione dell’angolo, finché il filo resta teso:
+
+:::formula{id="4.15" label="Tensione del filo del pendolo rilasciato da fermo"}
+$$
+T_f(\theta) = mg\left(3\cos\theta - 2\cos\theta_0\right)
+$$
+:::
+
+La tensione è massima al passaggio per la verticale ($\theta = 0$), dove vale $mg(3 - 2\cos\theta_0)$, ed è minima nei punti di inversione ($\theta = \pm\theta_0$), dove vale $mg\cos\theta_0$. Il filo resta teso solo dove $T_f(\theta) \geq 0$.
+
+:::image{src="assets/d8b25800-tensione-filo-pendolo-angolo.svg" alt="Grafico della tensione del filo del pendolo T_f/(mg) in funzione dell'angolo θ, parabola rovesciata con massimo a θ=0" caption="Fig. 4.3 — Tensione del filo T_f in funzione dell'angolo θ per un pendolo rilasciato da fermo a θ₀ = 60°: massima al passaggio per la verticale (θ = 0), minima e positiva nei punti di inversione (θ = ±θ₀)"}
+:::
+
+**Giro della morte.** Nella guida circolare verticale liscia dell’esempio in [Dinamica del moto curvilineo](ref:chapter/3#p8) il punto entra nel punto più basso $A$ con $v_A = 20$ m/s, e la guida ha raggio $R = 5$ m. Tra $A$ e un punto alla quota $h$ sopra $A$ la conservazione dell’energia dà $v^2 = v_A^2 - 2gh$. Con $h = R$ e $h = 2R$ si trovano $v_B \approx 17{,}38$ m/s e $v_C \approx 14{,}28$ m/s, le velocità usate in quell’esempio.
+
+Il punto percorre il lato interno di una guida unilaterale e resta a contatto fino in cima solo se $v_C^2 \geq gR$. Combinando questa condizione con $\frac{1}{2}mv_A^2 = \frac{1}{2}mv_C^2 + 2mgR$ si ottiene la velocità minima di ingresso, $v_{A,\min} = \sqrt{5gR} \approx 15{,}7$ m/s.
+
+**Errore tipico 4.6** (usare solo la conservazione dell'energia per la velocità minima nel giro della morte). Imporre $v_C = 0$ nella sola conservazione dell'energia dà $v_{A,\min} = \sqrt{4gR}$, un valore inferiore ma fisicamente impossibile per il punto sul lato interno di una guida unilaterale: sostituendo $v_C = 0$ nell'espressione della reazione [formula (3.29)](ref:formula/3.29) si ottiene $N_C = -mg < 0$, cioè una reazione diretta verso l'esterno, che la guida non può esercitare. La reazione vincolare non compie lavoro e perciò non compare nella conservazione dell'energia, ma resta la condizione che determina se il moto può restare circolare; il valore corretto è $v_{A,\min} = \sqrt{5gR}$, maggiore di $\sqrt{4gR}$.
+
 ## p5 | Come viene chiesto all'esame
 
 Il capitolo è comparso in 5 delle 6 sessioni d'esame analizzate. Il tipo di esercizio più frequente è il problema strutturato in cui una massa percorre in successione tratti diversi (pista liscia, piano scabro, molla, filo) e si risolve con un bilancio di energia, spesso preceduto o seguito da un urto.
@@ -444,7 +465,7 @@ La teoria di riferimento è nelle sezioni [Energia cinetica e teorema lavoro-ene
 **Metodo.**
 
 1. Verificare che nel tratto considerato nessuna forza non conservativa compia lavoro (nessun attrito, nessun urto). Altrimenti tornare al tipo 1.
-2. Scegliere lo zero dell'energia potenziale gravitazionale e scrivere $E_p = mgz$. Per la molla usare [formula (3.24)](ref:formula/3.24) con l'allungamento misurato dalla lunghezza a riposo.
+2. Scegliere lo zero dell'energia potenziale gravitazionale e scrivere $E_p = mgz$. Per la molla usare [formula (3.23)](ref:formula/3.23) con l'allungamento misurato dalla lunghezza a riposo.
 3. Imporre $E_m$ nello stato iniziale uguale a $E_m$ nello stato finale, come in {{formula:4.14}}, e risolvere per l'incognita.
 4. Se il testo chiede una forza (tensione, reazione) in un punto del percorso circolare, usare il risultato in velocità nell'equazione della dinamica radiale. Si veda [Dinamica del moto curvilineo](ref:chapter/3#p8).
 
