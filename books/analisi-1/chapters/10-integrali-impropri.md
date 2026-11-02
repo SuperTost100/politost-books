@@ -422,7 +422,7 @@ Gli esempi qui sotto vengono tutti dalla prova scritta, di cui abbiamo i testi.
 
 1. Riprendi dai punti (a) e (b) il comportamento dell'integranda vicino ai punti dove è illimitata e a $\pm\infty$. Questi limiti sono già calcolati e non vanno rifatti.
 2. Individua tutte le cause di impropria integrabilità: estremi infiniti e punti interni o di bordo dove l'integranda non è limitata. Se il testo integra una funzione costruita da $f$, per esempio $1/f$, studia quella: i suoi punti singolari possono essere gli zeri di $f$, non i punti dove $f$ è illimitata. Se sono più d'una, spezza l'intervallo come in [Integrali multi-impropri e con parametri](ref:chapter/10#p5), in modo che ogni pezzo abbia una sola causa.
-3. Scrivi $f$ come costante per $\dfrac{1}{|x-x_0|^\alpha}$ vicino a un punto singolare finito $x_0$, e come costante per $\dfrac{1}{|x|^\alpha}$ a $\pm\infty$, usando gli sviluppi e i limiti notevoli ([Infiniti e infinitesimi](ref:chapter/6#p3)).
+3. Scrivi l'integranda come costante per $\dfrac{1}{|x-x_0|^\alpha}$ vicino a un punto singolare finito $x_0$, e come costante per $\dfrac{1}{|x|^\alpha}$ a $\pm\infty$, usando gli sviluppi e i limiti notevoli ([Infiniti e infinitesimi](ref:chapter/6#p3)).
 4. Applica il confronto asintotico con il campione. Vicino a un punto finito $\alpha<1$ dà convergenza ([Integrali impropri di seconda specie](ref:chapter/10#p3)). All'infinito serve $\alpha>1$ ([Integrali impropri di prima specie](ref:chapter/10#p2)).
 5. Concludi con "converge se e solo se tutti i pezzi convergono". Se un pezzo diverge, l'integrale non converge.
 
