@@ -873,7 +873,7 @@ Quindi $a_n \in \{-1,0,1\}$ per ogni $n$, e in particolare $|a_n|\le 1$: la succ
 
 Le sottosuccessioni (secondo la formula {{formula:4.14}}) con $n = 4k+1$ sono costanti uguali a $1$, con $n=4k+3$ costanti uguali a $-1$, e con $n=4k$ o $n=4k+2$ costanti uguali a $0$: esse convergono quindi rispettivamente a $1$, $-1$ e $0$.
 
-Poiché esistono sottosuccessioni con limiti diversi, per il teorema di unicità del limite la successione $(a_n)$ non converge. Inoltre, poiché $a_n$ assume solo i valori $-1,0,1$ per ogni $n$, non esistono altri possibili limiti sottosequenziali.
+Poiché esistono sottosuccessioni con limiti diversi, per il teorema di unicità del limite la successione $(a_n)$ non converge. Inoltre, poiché $a_n$ assume solo i valori $-1,0,1$ per ogni $n$, non esistono altri possibili limiti sottosequenziali. Infatti, se una sottosuccessione convergesse a un limite esterno a $\{-1,0,1\}$, la distanza di tale limite da questo insieme finito sarebbe positiva. Ogni termine della sottosuccessione avrebbe quindi distanza almeno pari a quel valore positivo dal limite, il che è impossibile per una successione convergente.
 :::
 :::
 
