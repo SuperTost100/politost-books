@@ -386,7 +386,7 @@ L'importanza relativa dei due termini correttivi dipende dalla pressione. A pres
 2. Strategia: si calcola $P$ con $PV = nRT$ e, separatamente, con {{formula:6.16}} risolta per $P$.
 3. Calcolo del modello ideale:
 
-$\displaystyle P_{\text{ideale}} = \frac{nRT}{V} = \frac{(1,00)(0,08206)(273,15)}{1,00} = 22,41\ \text{atm}$
+$\displaystyle P_{\text{ideale}} = \frac{nRT}{V} = \frac{(1{,}00)(0{,}08206)(273{,}15)}{1{,}00} = 22{,}41\ \text{atm}$
 4. Calcolo del modello di van der Waals:
 
 $\displaystyle P_{\text{reale}} = \frac{nRT}{V - nb} - \frac{n^2 a}{V^2} = \frac{22,41}{1,00 - 0,0427} - \frac{3,59}{(1,00)^2} = 23,41 - 3,59 = 19,8\ \text{atm}$
