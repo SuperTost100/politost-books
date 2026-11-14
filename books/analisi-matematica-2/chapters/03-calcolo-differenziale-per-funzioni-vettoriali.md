@@ -365,7 +365,7 @@ Il vettore $\boldsymbol{\gamma}'(t_0)$ è il limite dei rapporti incrementali $\
 $$T(t)=\boldsymbol{\gamma}(t_0)+\boldsymbol{\gamma}'(t_0)\,(t-t_0),\qquad t\in\mathbb{R}$$
 :::
 
-Il vettore tangente dipende dalla parametrizzazione, la retta tangente no. Se $\boldsymbol{\delta}=\boldsymbol{\gamma}\circ\varphi$ con $\varphi$ di classe $C^1$ e $\varphi'\neq0$ (curve congruenti), vale $\boldsymbol{\delta}'(\tau_0)=\boldsymbol{\gamma}'(t_0)\varphi'(\tau_0)$: i vettori sono paralleli e la retta è la stessa. Se $\varphi'>0$ le curve si dicono equivalenti e hanno vettori tangenti con lo stesso verso. Se $\varphi'<0$ si dicono anti-equivalenti e i versi sono opposti. Per una curva regolare e semplice, ogni altra parametrizzazione regolare e semplice dello stesso sostegno è congruente alla prima, quindi ci sono solo due orientazioni possibili.
+Il vettore tangente dipende dalla parametrizzazione, la retta tangente no. Se $\boldsymbol{\delta}=\boldsymbol{\gamma}\circ\varphi$ con $\varphi$ di classe $C^1$, biiettiva tra gli intervalli dei parametri e con $\varphi'\neq0$ (curve congruenti), vale $\boldsymbol{\delta}'(\tau_0)=\boldsymbol{\gamma}'(t_0)\varphi'(\tau_0)$: i vettori sono paralleli e la retta è la stessa. Se $\varphi'>0$ le curve si dicono equivalenti e hanno vettori tangenti con lo stesso verso. Se $\varphi'<0$ si dicono anti-equivalenti e i versi sono opposti. Per un arco regolare e semplice, ogni altra parametrizzazione regolare e semplice dello stesso sostegno su un intervallo chiuso è congruente alla prima, quindi ci sono solo due orientazioni possibili.
 
 Il **versore tangente** è $\boldsymbol{\tau}(t)=\boldsymbol{\gamma}'(t)/\|\boldsymbol{\gamma}'(t)\|$.
 
@@ -639,7 +639,7 @@ $$\boldsymbol{\nu}(u_0,v_0)=\frac{\partial\boldsymbol{\sigma}}{\partial u}(u_0,v
 
 Il **versore normale** è $\mathbf{n}=\boldsymbol{\nu}/\|\boldsymbol{\nu}\|$. Per la regolarità $\boldsymbol{\nu}\neq\mathbf{0}$. Il prodotto vettoriale [(1.2)](ref:formula/1.2) è ortogonale a $\boldsymbol{\sigma}_u$ e $\boldsymbol{\sigma}_v$, perciò $\boldsymbol{\nu}$ è ortogonale al piano tangente.
 
-Le curve coordinate $u\mapsto\boldsymbol{\sigma}(u,v_0)$ e $v\mapsto\boldsymbol{\sigma}(u_0,v)$ giacciono su $\Sigma$ e hanno in $P_0$ tangenti $\boldsymbol{\sigma}_u$ e $\boldsymbol{\sigma}_v$. Il **piano tangente** in $P_0$ è il piano per $P_0$ generato da questi due vettori. Contiene la tangente a ogni curva regolare di $\Sigma$ passante per $P_0$. La sua equazione è
+Le curve coordinate $u\mapsto\boldsymbol{\sigma}(u,v_0)$ e $v\mapsto\boldsymbol{\sigma}(u_0,v)$ giacciono su $\Sigma$ e hanno in $P_0$ tangenti $\boldsymbol{\sigma}_u$ e $\boldsymbol{\sigma}_v$. Il **piano tangente** in $P_0$ è il piano per $P_0$ generato da questi due vettori. Se $\Sigma$ è semplice, contiene la tangente a ogni curva regolare di $\Sigma$ passante per $P_0$. La sua equazione è
 
 :::formula{id="3.27" label="Piano tangente a una superficie parametrica"}
 $$\boldsymbol{\nu}(u_0,v_0)\cdot(\mathbf{x}-P_0)=0$$
@@ -694,7 +694,7 @@ Sia $\Sigma$ regolare e semplice, con $\Sigma=\bar\Sigma$ (insieme chiuso di $\m
 
 $$\partial\Sigma=\bigcap_{\boldsymbol{\sigma}}\partial\Sigma_{\boldsymbol{\sigma}}$$
 
-su tutte le parametrizzazioni $\boldsymbol{\sigma}$, anche non regolari. Per le superfici interviene il bordo, non la frontiera come sottoinsieme di $\mathbb{R}^3$.
+su tutte le parametrizzazioni semplici $\boldsymbol{\sigma}$, anche non regolari. Per le superfici interviene il bordo, non la frontiera come sottoinsieme di $\mathbb{R}^3$.
 
 **Esempio 3.15.** Con {{formula:3.24}} su $\lbrack 0,\pi\rbrack \times[0,2\pi]$, l'insieme $\Sigma\setminus\boldsymbol{\sigma}(\mathring{R})$ contiene il semicerchio meridiano $v=0$ e i poli, che sono punti "di bordo" solo per quella parametrizzazione. Ruotando il meridiano di partenza si ottiene un'altra parametrizzazione e l'intersezione è vuota: la sfera non ha bordo. L'emisfero $z=\sqrt{1-u^2-v^2}$ ha invece come bordo la circonferenza $x^2+y^2=1$, $z=0$. La superficie laterale del cilindro con $0\le z\le h$ ha per bordo le due circonferenze di base.
 

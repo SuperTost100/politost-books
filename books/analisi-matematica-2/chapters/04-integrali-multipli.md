@@ -130,7 +130,7 @@ Geometricamente, $\Omega$ è normale rispetto all'asse $x$ se ogni retta vertica
 
 Un dominio normale ha frontiera di misura nulla: è formata da grafici di funzioni continue e da al più due segmenti. Quindi è misurabile. Una funzione limitata con punti di discontinuità di misura nulla (*generalmente continua*) è integrabile su un insieme misurabile.
 
-Un insieme può essere normale rispetto a entrambi gli assi (un disco, un triangolo), a uno solo, o a nessuno. In quest'ultimo caso si spezza $\Omega$ in un numero finito di pezzi normali, che si sovrappongono al più lungo curve di area nulla, e si usa l'additività dell'integrale rispetto al dominio.
+Un insieme può essere normale rispetto a entrambi gli assi (un disco, un triangolo), a uno solo, o a nessuno. In quest'ultimo caso si spezza $\Omega$, quando è possibile, in un numero finito di pezzi normali, che si sovrappongono al più lungo curve di area nulla, e si usa l'additività dell'integrale rispetto al dominio.
 
 ### Formule di riduzione
 
@@ -262,7 +262,7 @@ Negli integrali doppi il cambio di variabile serve soprattutto a **semplificare 
 
 ### Il teorema del cambio di variabili
 
-**Definizione 4.3** (cambiamento di variabile). Siano $\mathcal{R}'$ e $\mathcal{R}$ regioni di $\mathbb{R}^n$ e $A'$ l'interno di $\mathcal{R}'$. Un campo vettoriale $\boldsymbol{\Phi}:\mathcal{R}'\to\mathcal{R}$ è un cambiamento di variabile se $\boldsymbol{\Phi}$ è una biiezione tra $\mathcal{R}'$ e $\mathcal{R}$, se è di classe $C^1$ in $A'$ e se la sua jacobiana $J\boldsymbol{\Phi}$ è non singolare in ogni punto di $A'$.
+**Definizione 4.3** (cambiamento di variabile). Siano $\mathcal{R}'$ e $\mathcal{R}$ regioni di $\mathbb{R}^n$ e $A'$ l'interno di $\mathcal{R}'$. Un campo vettoriale $\boldsymbol{\Phi}:\mathcal{R}'\to\mathcal{R}$ è un cambiamento di variabile se $\boldsymbol{\Phi}$ è continua in $\mathcal{R}'$ ed è una biiezione tra $\mathcal{R}'$ e $\mathcal{R}$, se è di classe $C^1$ in $A'$ e se la sua jacobiana $J\boldsymbol{\Phi}$ è non singolare in ogni punto di $A'$.
 
 **Teorema 4.3** (cambio di variabili negli integrali doppi). Siano $\Omega'$ e $\Omega$ regioni misurabili di $\mathbb{R}^2$ e $\boldsymbol{\Phi}:\Omega'\to\Omega$ un cambiamento di variabile, con componenti $x=\varphi(u,v)$, $y=\psi(u,v)$. Se $f$ è continua e limitata su $\Omega$, allora
 
