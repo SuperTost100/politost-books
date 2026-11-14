@@ -453,7 +453,7 @@ Il teorema non si inverte. La serie armonica a segni alterni $\sum_{k=1}^{\infty
 $$\sum_{k=0}^{\infty}(a_k+b_k)=s+t$$
 :::
 
-Converge se $s+t\in\mathbb{R}$ e diverge se $s+t=\pm\infty$. Se una delle due converge e l'altra è indeterminata, la somma è indeterminata. Nelle forme $+\infty-\infty$ non si può dedurre nulla dai carattere degli addendi. Ad esempio con $a_k=1$ e $b_k=-1$ la serie somma è nulla e converge, mentre con $a_k=b_k=1$ diverge.
+Converge se $s+t\in\mathbb{R}$ e diverge se $s+t=\pm\infty$. Se una delle due converge e l'altra è indeterminata, la somma è indeterminata. Nelle forme $+\infty-\infty$ non si può dedurre nulla dal carattere degli addendi. Ad esempio con $a_k=1$ e $b_k=-1$ la serie somma è nulla e converge, mentre con $a_k=2$ e $b_k=-1$ diverge.
 
 **Prodotto per uno scalare.** Per $\lambda\in\mathbb{R}$, se $\sum a_k$ converge a $s$, allora $\sum\lambda a_k$ converge a $\lambda s$. Se $\sum a_k$ diverge e $\lambda\ne 0$, anche $\sum\lambda a_k$ diverge. Per $\lambda=0$, la serie risultante è nulla.
 

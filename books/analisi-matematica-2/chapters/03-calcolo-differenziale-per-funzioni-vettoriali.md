@@ -281,7 +281,7 @@ $\displaystyle J(\mathbf{f}^{-1})(\mathbf{y}_0)=\bigl(J\mathbf{f}(\mathbf{x}_0)\
 
 ### Funzioni ristrette a una curva
 
-Sia $\boldsymbol{\gamma}:I\subseteq\mathbb{R}\to\mathbb{R}^3$ una curva con componenti derivabili (le curve sono trattate in [Curve in $\mathbb{R}^m$](ref:chapter/3#p5)) e sia $f:\mathbb{R}^3\to\mathbb{R}$ differenziabile. La restrizione di $f$ alla curva è $h(t)=f(\boldsymbol{\gamma}(t))$, cioè $h=f\circ\boldsymbol{\gamma}$, dove $J\boldsymbol{\gamma}=\boldsymbol{\gamma}'$ è una colonna e $Jf=\nabla f^{\mathsf T}$ è una riga. Dalla regola della catena segue
+Sia $\boldsymbol{\gamma}:I\subseteq\mathbb{R}\to\mathbb{R}^3$ una curva con componenti derivabili (le curve sono trattate in [Curve in $\mathbb{R}^m$](ref:chapter/3#p5)) e sia $f:\mathbb{R}^3\to\mathbb{R}$ differenziabile. La restrizione di $f$ alla curva è $h(t)=f(\boldsymbol{\gamma}(t))$, cioè $h=f\circ\boldsymbol{\gamma}$, dove $J\boldsymbol{\gamma}=\boldsymbol{\gamma}'$ è una colonna e $Jf=\nabla f$ è una riga. Dalla regola della catena segue
 
 :::formula{id="3.13" label="Derivata di una funzione ristretta a una curva"}
 $$h'(t)=\nabla f(\boldsymbol{\gamma}(t))\cdot\boldsymbol{\gamma}'(t)$$

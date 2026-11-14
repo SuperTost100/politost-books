@@ -61,7 +61,7 @@ La soluzione è definita su tutto $\mathbb{R}$, come prevede il risultato sui si
 
 ### Equazioni a variabili separabili
 
-Un'equazione del tipo $y'=g(t)\,h(y)$, con $g$ e $h$ continue, si risolve in due passi.
+Un'equazione del tipo $y'=g(t)\,h(y)$, con $g$ continua e $h$ di classe $C^1$, si risolve in due passi.
 
 1. Ogni zero $y_*$ di $h$ dà la soluzione costante $y\equiv y_*$.
 2. Dove $h(y)\neq 0$ si separano le variabili:
@@ -373,7 +373,7 @@ Si fattorizza $Q$ in $\mathbb{R}$ e a ogni fattore si associano i fratti semplic
 2. un fattore $(s-a)^m$ dà $\dfrac{A_1}{s-a}+\dfrac{A_2}{(s-a)^2}+\dots+\dfrac{A_m}{(s-a)^m}$;
 3. un fattore irriducibile $s^2+ps+q$ (con $p^2-4q<0$) di molteplicità $m$ dà $\displaystyle\sum_{j=1}^{m}\dfrac{B_j s+C_j}{(s^2+ps+q)^j}$.
 
-I coefficienti si trovano per confronto dei polinomi o valutando in punti opportuni. Per un fattore quadratico si completa il quadrato, $s^2+ps+q=(s-a)^2+\omega^2$, e si scrive il numeratore come $B(s-a)+D$. Così i termini diventano $\dfrac{s-a}{(s-a)^2+\omega^2}$ e $\dfrac{\omega}{(s-a)^2+\omega^2}$, che si antitrasformano in $e^{at}\cos\omega t$ ed $e^{at}\sin\omega t$.
+I coefficienti si trovano per confronto dei polinomi o valutando in punti opportuni. Per un fattore quadratico semplice ($m=1$) si completa il quadrato, $s^2+ps+q=(s-a)^2+\omega^2$, e si scrive il numeratore come $B(s-a)+D$. Così i termini diventano $\dfrac{s-a}{(s-a)^2+\omega^2}$ e $\dfrac{\omega}{(s-a)^2+\omega^2}$, che si antitrasformano in $e^{at}\cos\omega t$ ed $e^{at}\sin\omega t$. Per $m\ge2$ i termini con $j\ge2$ si antitrasformano con la convoluzione.
 
 **Esempio 9.8.** Antitrasformare
 
@@ -616,7 +616,7 @@ Esplicitiamo i due tratti.
 
 Controlli. Nel primo tratto $y(0)=0$ e $y'(0)=e^{-0}-e^{0}=0$. Nel punto di raccordo il secondo tratto vale $1-e^{-1}+\frac{e^{-2}}{2}-\frac12=\frac12-e^{-1}+\frac12e^{-2}=g(1)$: la soluzione è continua in $t=1$, come deve essere. Anche $y'$ è continua in $t=1$ (infatti $g'(0)=0$, quindi $y'(1^+)=g'(1)$), mentre il salto di $f$ si riflette in un salto di $y''$.
 
-:::image{src="assets/25a729d0-laplace-impulso-risposta.svg" alt="Grafico della risposta y(t) a un impulso rettangolare e del termine noto f(t)" caption="Fig. 9.3 — La risposta y(t) (continua) cresce durante l'impulso f(t) (tratteggiata, uguale a 1 per 0 ≤ t < 1), poi decade a zero per t ≥ 1: nel punto di raccordo t = 1 la curva non ha punti angolosi, perché y e y' sono continue; il salto di f compare solo in y''."}
+:::image{src="assets/25a729d0-laplace-impulso-risposta.svg" alt="Grafico della risposta y(t) a un impulso rettangolare e del termine noto f(t)" caption="Fig. 9.3 — La risposta y(t) (continua) cresce durante l'impulso f(t) (tratteggiata, uguale a 1 per 0 ≤ t < 1), poi continua a crescere fino al massimo in t = ln(e+1) ≈ 1,31 e decade a zero: nel punto di raccordo t = 1 la curva non ha punti angolosi, perché y e y' sono continue; il salto di f compare solo in y''."}
 :::
 
 **Errore tipico 9.11.** Antitrasformare $e^{-s}G(s)$ scrivendo semplicemente $g(t)$, oppure $H(t-1)g(t)$, trascurando il ritardo nell'argomento. La risposta corretta è $H(t-1)\,g(t-1)$: la soluzione "parte" all'istante $1$ come se il tempo fosse ricominciato da $0$. Un indizio che qualcosa non va: se $y$ ottenuta non è continua nel punto di raccordo, mentre $y$ e $y'$ devono esserlo per un'equazione del secondo ordine con $f$ limitata, il ritardo è stato sbagliato. Un secondo errore è scrivere il termine noto a tratti senza gradino, per esempio $f(t)=1$ per $t<1$ e poi "dimenticarsi" di annullarlo: occorre sempre $1-H(t-1)$, non $1$.

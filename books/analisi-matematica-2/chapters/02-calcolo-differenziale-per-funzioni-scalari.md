@@ -601,4 +601,4 @@ La derivata $h'(x) = -2x - 1$ si annulla in $x = -\tfrac12$, con $h(-\tfrac12) =
 
 **Errore tipico 2.14.** Si studia solo l'interno e si dimentica la frontiera, o viceversa. In questo esempio il punto interno dà il minimo e il bordo dà il massimo: ignorare uno dei due insiemi porta a un risultato sbagliato. Altri errori frequenti sono dimenticare gli estremi dell'intervallo di $x$ (o il punto in cui la parametrizzazione si chiude) e non confrontare i valori numerici di $f$, ma solo i punti.
 
-Su un insieme compatto, se $f$ non è costante, il massimo e il minimo sono distinti. Se $f$ ha come unico punto critico interno il suo minimo assoluto, come $\|\boldsymbol{x}\|^2$ su un compatto che contiene l'origine nel suo interno, il massimo si trova necessariamente sulla frontiera.
+Su un insieme compatto, se $f$ non è costante, il massimo e il minimo sono distinti. Se $f$ è differenziabile in $\mathring{K}$ e ha come unico punto critico interno il suo minimo assoluto, come $\|\boldsymbol{x}\|^2$ su un compatto che contiene l'origine nel suo interno, il massimo si trova necessariamente sulla frontiera.
