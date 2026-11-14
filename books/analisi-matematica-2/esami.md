@@ -5,7 +5,7 @@ printable: true
 
 :::exercise{id="X1" type="esame" chapter="1" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 a) Calcolare, se esiste,
 
@@ -44,7 +44,7 @@ Conclusione: $g$ è continua in $(0,0)$ se e solo se $a<\frac32$.
 
 :::exercise{id="X2" type="esame" chapter="1" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Si consideri la funzione
 
@@ -290,7 +290,7 @@ L'equazione trovata coincide con l'opzione **B**.
 
 :::exercise{id="X7" type="esame" chapter="3" difficulty="difficile"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Sia $F:\mathbb{R}^2\to\mathbb{R}^2$ definita da
 
@@ -331,7 +331,7 @@ Se $F$ fosse lipschitziana con costante $L'<2$, il rapporto sarebbe $\le L'$ per
 
 :::exercise{id="X8" type="esame" chapter="3" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Sia $F:\mathbb{R}^3\to\mathbb{R}^2$ la funzione definita da
 
