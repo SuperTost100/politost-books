@@ -101,7 +101,7 @@ Qui $\nu_i$ e $\nu_j$ sono i coefficienti **positivi** dell’equazione bilancia
 
 1. **Dati:** il coefficiente di $\mathrm{B}$ è $2$; quelli di $\mathrm{A}$ e $\mathrm{C}$ sono $1$.
 2. **Strategia:** si usa {{formula:14.5}} , sommando i contributi dei prodotti e sottraendo quelli dei reagenti.
-3. **Calcolo:** $\Delta G_r^\circ=\lbrack 1(-40,0)\rbrack -\lbrack 1(-10,0)+2(+5,0)\rbrack =-40,0\ \mathrm{kJ/mol}$. I due contributi dei reagenti si annullano.
+3. **Calcolo:** $\Delta G_r^\circ=\lbrack 1(-40{,}0)\rbrack -\lbrack 1(-10{,}0)+2(+5{,}0)\rbrack =-40{,}0\ \mathrm{kJ/mol}$. I due contributi dei reagenti si annullano.
 4. **Verifica:** il risultato è riferito a una mole di reazione come scritta ed è negativo. La reazione modello è quindi favorita nel verso diretto in condizioni standard.
 
 ### Temperatura e segno dell’energia libera
@@ -123,7 +123,7 @@ $$T_{\mathrm{soglia}}=\frac{\Delta H_r^\circ}{\Delta S_r^\circ}$$
 
 1. **Dati:** $T=900+273,15=1\,173,15\ \mathrm{K}$ e $\Delta S_r^\circ=-0,1879\ \mathrm{kJ/(mol\cdot K)}$.
 2. **Strategia:** poiché entalpia ed entropia sono entrambe negative, l’aumento di temperatura rende $\Delta G_r^\circ$ meno negativo e può cambiarne il segno.
-3. **Calcolo:** $\Delta G_r^\circ=-198,4-(1\,173,15)(-0,1879)=+22,0\ \mathrm{kJ/mol}$, arrotondato alla precisione dei dati. La soglia stimata è $T_{\mathrm{soglia}}=(-198,4)/(-0,1879)=1\,056\ \mathrm{K}$; $1\,173,15\ \mathrm{K}$ è sopra tale soglia.
+3. **Calcolo:** $\Delta G_r^\circ=-198{,}4-(1\,173{,}15)(-0{,}1879)=+22{,}0\ \mathrm{kJ/mol}$, arrotondato alla precisione dei dati. La soglia stimata è $T_{\mathrm{soglia}}=(-198{,}4)/(-0{,}1879)=1\,056\ \mathrm{K}$; $1\,173,15\ \mathrm{K}$ è sopra tale soglia.
 4. **Verifica:** il segno positivo indica che il verso diretto non è favorito **nelle condizioni standard** a questa temperatura. Per stabilire il verso in una miscela concreta servono anche le sue pressioni parziali.
 
 :::image{src="assets/5a685a00-gibbs-ossidazione-so2.svg" alt="Retta crescente della variazione di energia libera standard in funzione della temperatura, con attraversamento dello zero vicino a 1056 kelvin e valore positivo a 1173 kelvin" caption="Fig. 14.2 — Stima per l’ossidazione dell’anidride solforosa: con entalpia ed entropia considerate costanti, la variazione di energia libera standard cresce e cambia segno."}
