@@ -48,7 +48,7 @@ Mostra che $A$ è non vuoto e limitato superiormente, poni $L=\sup A$ (che esist
 :::
 
 :::solution
-L'insieme $A$ è non vuoto, poiché $0,1\in A$ (infatti $0^2=0\le2$ e $1^2=1\le2$). È anche limitato superiormente: se $x>2$ allora $x^2>4>2$, quindi $x\notin A$, e $2$ è un maggiorante. Per il principio dell'estremo superiore esiste $L=\sup A\in\mathbb{R}$, con $1\le L\le2$, in particolare $L>0$.
+L'insieme $A$ è non vuoto, poiché $0, 1\in A$ (infatti $0^2=0\le2$ e $1^2=1\le2$). È anche limitato superiormente: se $x>2$ allora $x^2>4>2$, quindi $x\notin A$, e $2$ è un maggiorante. Per il principio dell'estremo superiore esiste $L=\sup A\in\mathbb{R}$, con $1\le L\le2$, in particolare $L>0$.
 
 Supponiamo $L^2<2$. Poniamo $\varepsilon=\dfrac{2-L^2}{2L+1}>0$ e scegliamo $h$ con $0<h<\min(1,\varepsilon)$. Allora
 

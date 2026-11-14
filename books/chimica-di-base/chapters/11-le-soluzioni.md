@@ -167,7 +167,7 @@ Molarità: occorre prima il volume della soluzione tramite la densità,
 $$V_{\text{soluzione}} = \frac{m_{\text{soluzione}}}{\rho} = \frac{100\ \mathrm{g}}{1,11\ \mathrm{g/mL}} = 90,1\ \mathrm{mL}$$
 $$M_{\mathrm{H_2O_2}} = \frac{0,882\ \mathrm{mol}}{90,1 \times 10^{-3}\ \mathrm{L}} = 9,79\ \mathrm{mol/L}$$
 
-Verifica: usando unità coerenti, la molarità si calcola da $c = \rho\,w/M_{\mathrm{H_2O_2}}$, dove $w = 0,300$ è la frazione massica e si esprime la densità in $\mathrm{g/L}$: $c = (1110\ \mathrm{g/L})(0,300)/(34,02\ \mathrm{g/mol}) = 9,79\ \mathrm{mol/L}$.
+Verifica: usando unità coerenti, la molarità si calcola da $c = \rho\,w/M_{\mathrm{H_2O_2}}$, dove $w = 0,300$ è la frazione massica e si esprime la densità in $\mathrm{g/L}$: $c = (1110\ \mathrm{g/L})(0{,}300)/(34{,}02\ \mathrm{g/mol}) = 9{,}79\ \mathrm{mol/L}$.
 
 **Errore tipico 11.3.** Confondere il denominatore della molalità (massa di solvente) con quello della molarità e della percentuale in massa (massa o volume di soluzione intera) porta a errori sistematici quando il soluto è presente in quantità non trascurabile; l'errore si amplifica proprio nei casi, come quello appena svolto, in cui le due quantità differiscono sensibilmente.
 
@@ -308,7 +308,7 @@ Applicando una pressione esterna maggiore di $\pi$ sul lato più concentrato si 
 
 - Strategia: isolare $n_{\text{soluto}}$ da {{formula:11.11}}, poi dividere la massa nota per le moli trovate.
 - Calcolo:
-$\displaystyle n_{\text{soluto}} = \frac{\pi V}{RT} = \frac{(3,61/760)\cdot 1,50\times 10^{-3}}{0,08206 \cdot (5,00+273,15)} = 3,12\times 10^{-7}\ \text{mol}$
+$\displaystyle n_{\text{soluto}} = \frac{\pi V}{RT} = \frac{(3{,}61/760)\cdot 1{,}50\times 10^{-3}}{0{,}08206 \cdot (5{,}00+273{,}15)} = 3{,}12\times 10^{-7}\ \text{mol}$
 $\displaystyle M = \frac{m}{n} = \frac{21,5\times 10^{-3}}{3,12\times 10^{-7}} = 6,89\times 10^{4}\ \text{g/mol}$
 - Verifica: il valore è plausibile per una macromolecola proteica. Questo esempio mostra che, tra le proprietà colligative, la pressione osmotica è la più sensibile per determinare masse molari elevate, perché a parità di massa di soluto genera un effetto misurabile anche con pochissime moli.
 

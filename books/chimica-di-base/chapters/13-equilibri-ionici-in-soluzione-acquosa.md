@@ -280,7 +280,7 @@ Calcolo: la costante di idrolisi è
 
 $$K_i = \frac{K_w}{K_a} = \frac{1,0 \times 10^{-14}}{2,9 \times 10^{-8}} = 3,4 \times 10^{-7}.$$
 
-Con lo schema ICE, $K_i = x^2/(0,20-x) \approx x^2/0,20$, da cui
+Con lo schema ICE, $K_i = x^2/(0{,}20-x) \approx x^2/0{,}20$, da cui
 
 $$x = \lbrack OH^-\rbrack  = \sqrt{3,4 \times 10^{-7} \cdot 0,20} = 2,6 \times 10^{-4}\ \text{M},$$
 

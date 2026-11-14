@@ -529,7 +529,7 @@ $$
 b) La media integrale della funzione nell’intervallo $\lbrack -1,1\rbrack $ è
 
 $$
-m(f;-1,1)=\frac{1}{2}\int_{-1}^{1}f(x)\,dx
+m(f;-1, 1)=\frac{1}{2}\int_{-1}^{1}f(x)\,dx
 =\frac{1}{2}\left(\int_{-1}^{0}f(x)\,dx+\int_{0}^{1}f(x)\,dx\right)
 =\frac{1}{2}\left(1+\frac{1}{2}\right)=\frac{3}{4}.
 $$
@@ -1377,7 +1377,7 @@ Dunque l'insieme $A$ è limitato superiormente e inferiormente, e
 - $\sup A=\max A=10$;
 - $\inf A=\min A=-6$.
 
-(c) La funzione $g(x)=e^{|x|}$ è pari ed è crescente per $x\ge 0$. Da quanto detto nel punto (b), sappiamo che, se $x\in A$, allora $0\le |x|\le 10$, e che $0,10\in A$. Dunque, poiché $g$ è crescente per $x\ge 0$, abbiamo che
+(c) La funzione $g(x)=e^{|x|}$ è pari ed è crescente per $x\ge 0$. Da quanto detto nel punto (b), sappiamo che, se $x\in A$, allora $0\le |x|\le 10$, e che $0, 10\in A$. Dunque, poiché $g$ è crescente per $x\ge 0$, abbiamo che
 
 - $\sup\{e^{|x|}:x\in A\}=\max\{e^{|x|}:x\in A\}=e^{10}$;
 - $\inf\{e^{|x|}:x\in A\}=\min\{e^{|x|}:x\in A\}=e^0=1$.
@@ -4020,7 +4020,7 @@ $$
 \end{aligned}
 $$
 
-Dallo studio della monotonia si vede anche che $-4/3$ e $4/3$ sono punti di minimo locale. Inoltre, siccome $f(0)=-2<0=\lim_{x\to0}f(x)$, esiste un intorno di $0$ in cui $f(x)\ge f(0)$ e dunque anche $0$ è un punto di minimo locale. Per il teorema di Fermat, siccome $\operatorname{dom}(f)=(-2,2)$ è aperto, i punti di estremo locale di $f$ sono necessariamente punti stazionari oppure punti di non derivabilità di $f$, pertanto non ci sono altri punti di estremo locale oltre a $-4/3,4/3,0$.
+Dallo studio della monotonia si vede anche che $-4/3$ e $4/3$ sono punti di minimo locale. Inoltre, siccome $f(0)=-2<0=\lim_{x\to0}f(x)$, esiste un intorno di $0$ in cui $f(x)\ge f(0)$ e dunque anche $0$ è un punto di minimo locale. Per il teorema di Fermat, siccome $\operatorname{dom}(f)=(-2,2)$ è aperto, i punti di estremo locale di $f$ sono necessariamente punti stazionari oppure punti di non derivabilità di $f$, pertanto non ci sono altri punti di estremo locale oltre a $-4/3, 4/3, 0$.
 
 Infine, dalle proprietà di monotonia e parità di $f$, vediamo che per ogni $x\in(-2,0)\cup(0,2)$,
 
@@ -4050,7 +4050,7 @@ $$
 \frac{-1}{\sqrt[4]{x^2(2-x)}}\sim \frac{-2^{-1/4}}{|x|^{1/2}}\quad\text{per }x\to 0^+,
 $$
 
-ed entrambi $1/2,1/4<1$, dal criterio del confronto asintotico deduciamo che entrambi gli integrali impropri
+ed entrambi $1/2, 1/4<1$, dal criterio del confronto asintotico deduciamo che entrambi gli integrali impropri
 
 $$
 \int_0^1 \frac{-1}{\sqrt[4]{x^2(2-x)}}\,dx,
@@ -4169,7 +4169,7 @@ f &\text{ è strettamente decrescente sugli intervalli }\lbrack -4/3,0),\ \lbrac
 \end{aligned}
 $$
 
-Dallo studio della monotonia si vede anche che $-4/3$ e $4/3$ sono punti di massimo locale. Inoltre, siccome $f(0)=1>0=\lim_{x\to0}f(x)$, esiste un intorno di $0$ in cui $f(x)\le f(0)$ e dunque anche $0$ è un punto di massimo locale. Per il teorema di Fermat, siccome $\operatorname{dom}(f)=(-2,2)$ è aperto, i punti di estremo locale di $f$ sono necessariamente punti stazionari oppure punti di non derivabilità di $f$, pertanto non ci sono altri punti di estremo locale oltre a $-4/3,4/3,0$.
+Dallo studio della monotonia si vede anche che $-4/3$ e $4/3$ sono punti di massimo locale. Inoltre, siccome $f(0)=1>0=\lim_{x\to0}f(x)$, esiste un intorno di $0$ in cui $f(x)\le f(0)$ e dunque anche $0$ è un punto di massimo locale. Per il teorema di Fermat, siccome $\operatorname{dom}(f)=(-2,2)$ è aperto, i punti di estremo locale di $f$ sono necessariamente punti stazionari oppure punti di non derivabilità di $f$, pertanto non ci sono altri punti di estremo locale oltre a $-4/3, 4/3, 0$.
 
 Infine, dalle proprietà di monotonia e parità di $f$, vediamo che per ogni $x\in(-2,0)\cup(0,2)$,
 

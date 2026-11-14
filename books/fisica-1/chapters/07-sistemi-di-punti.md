@@ -684,11 +684,11 @@ Dati: $m_1=2,0$ kg, $v_{1,in}=4,0$ m/s, $m_2=1,0$ kg, $v_{2,in}=-2,0$ m/s.
 
 Applicando {{formula:7.25}}:
 
-$$v_{1,fin} = \frac{(2,0-1,0)\cdot 4,0 + 2\cdot 1,0\cdot(-2,0)}{3,0} = \frac{4,0-4,0}{3,0} = 0\text{ m/s}$$
+$$v_{1,fin} = \frac{(2{,}0-1{,}0)\cdot 4{,}0 + 2\cdot 1{,}0\cdot(-2{,}0)}{3{,}0} = \frac{4{,}0-4{,}0}{3{,}0} = 0\text{ m/s}$$
 
-$$v_{2,fin} = \frac{(1,0-2,0)\cdot(-2,0) + 2\cdot 2,0\cdot 4,0}{3,0} = \frac{2,0+16}{3,0} = 6,0\text{ m/s}$$
+$$v_{2,fin} = \frac{(1{,}0-2{,}0)\cdot(-2{,}0) + 2\cdot 2{,}0\cdot 4{,}0}{3{,}0} = \frac{2{,}0+16}{3{,}0} = 6{,}0\text{ m/s}$$
 
-Verifica della quantità di moto: $P_{in} = 2,0\cdot 4,0 + 1,0\cdot(-2,0) = 6,0$ kg·m/s; $P_{fin} = 2,0\cdot 0 + 1,0\cdot 6,0 = 6,0$ kg·m/s. Verifica dell'energia: $E_{k,in} = \frac{1}{2}(2,0)(4,0)^2 + \frac{1}{2}(1,0)(-2,0)^2 = 16+2,0 = 18$ J; $E_{k,fin} = \frac{1}{2}(2,0)(0)^2 + \frac{1}{2}(1,0)(6,0)^2 = 18$ J. Entrambe le grandezze sono conservate, come richiesto.
+Verifica della quantità di moto: $P_{in} = 2{,}0\cdot 4{,}0 + 1{,}0\cdot(-2{,}0) = 6{,}0$ kg·m/s; $P_{fin} = 2,0\cdot 0 + 1,0\cdot 6,0 = 6,0$ kg·m/s. Verifica dell'energia: $E_{k,in} = \frac{1}{2}(2{,}0)(4{,}0)^2 + \frac{1}{2}(1{,}0)(-2{,}0)^2 = 16+2{,}0 = 18$ J; $E_{k,fin} = \frac{1}{2}(2{,}0)(0)^2 + \frac{1}{2}(1{,}0)(6{,}0)^2 = 18$ J. Entrambe le grandezze sono conservate, come richiesto.
 
 In generale, nel caso particolare $m_1 = m_2$, le velocità iniziali e finali risultano scambiate ($v_{1,fin}=v_{2,in}$, $v_{2,fin}=v_{1,in}$); se invece $m_2 \gg m_1$ e $v_{2,in}=0$, si ritrova $v_{1,fin}\approx -v_{1,in}$ (rimbalzo contro una parete fissa) e $v_{2,fin}\approx 0$.
 
@@ -763,7 +763,7 @@ $$v_{x}' = \frac{m\cdot 15\text{ m/s} + m\cdot 0}{2m} = 7,5\text{ m/s} \qquad v_
 
 Il modulo della velocità finale è
 
-$$v' = \sqrt{v_x'^2+v_y'^2} = \sqrt{(7,5)^2+(5,0)^2}\text{ m/s} \approx 9,0\text{ m/s}$$
+$$v' = \sqrt{v_x'^2+v_y'^2} = \sqrt{(7{,}5)^2+(5{,}0)^2}\text{ m/s} \approx 9{,}0\text{ m/s}$$
 
 e la direzione, misurata rispetto all'asse $x$, è $\varphi = \arctan(v_y'/v_x') = \arctan(5,0/7,5) \approx 34°$. Il controllo di coerenza: il modulo di $\vec{v}'$ è compreso tra $0$ e $\sqrt{15^2+10^2}\text{ m/s}\approx 18$ m/s, come deve essere per una media pesata vettoriale delle velocità iniziali.
 

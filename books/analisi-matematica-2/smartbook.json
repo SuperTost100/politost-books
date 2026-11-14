@@ -1,0 +1,106 @@
+{
+  "id": "analisi-matematica-2",
+  "title": "Analisi Matematica 2",
+  "subject": "Analisi Matematica",
+  "access": "public",
+  "authors": [
+    "Tost"
+  ],
+  "version": "1.0.0",
+  "specVersion": "1.1",
+  "sections": {
+    "smartbook": {
+      "enabled": true,
+      "label": "Capitoli"
+    },
+    "formulario": {
+      "enabled": true,
+      "label": "Formulario"
+    },
+    "esercizi": {
+      "enabled": true,
+      "label": "Esercizi"
+    },
+    "esami": {
+      "enabled": true,
+      "label": "Prove d'esame"
+    },
+    "ide": {
+      "enabled": false,
+      "label": "Laboratorio"
+    },
+    "grafici": {
+      "enabled": true,
+      "label": "Grafici & Calcoli"
+    },
+    "risposte": {
+      "enabled": false,
+      "label": "Soluzioni"
+    }
+  },
+  "chapters": [
+    {
+      "id": "spazio-rn-e-funzioni-di-piu-variabili",
+      "number": 1,
+      "title": "Lo spazio ℝⁿ e le funzioni di più variabili",
+      "file": "01-spazio-rn-e-funzioni-di-piu-variabili.md",
+      "printable": true
+    },
+    {
+      "id": "calcolo-differenziale-per-funzioni-scalari",
+      "number": 2,
+      "title": "Calcolo differenziale per funzioni scalari",
+      "file": "02-calcolo-differenziale-per-funzioni-scalari.md",
+      "printable": true
+    },
+    {
+      "id": "calcolo-differenziale-per-funzioni-vettoriali",
+      "number": 3,
+      "title": "Calcolo differenziale per funzioni vettoriali",
+      "file": "03-calcolo-differenziale-per-funzioni-vettoriali.md",
+      "printable": true
+    },
+    {
+      "id": "integrali-multipli",
+      "number": 4,
+      "title": "Integrali multipli",
+      "file": "04-integrali-multipli.md",
+      "printable": true
+    },
+    {
+      "id": "integrali-su-curve-e-superfici",
+      "number": 5,
+      "title": "Integrali su curve e superfici",
+      "file": "05-integrali-su-curve-e-superfici.md",
+      "printable": true
+    },
+    {
+      "id": "serie-numeriche",
+      "number": 6,
+      "title": "Serie numeriche",
+      "file": "06-serie-numeriche.md",
+      "printable": true
+    },
+    {
+      "id": "serie-di-funzioni-e-di-potenze",
+      "number": 7,
+      "title": "Serie di funzioni e serie di potenze",
+      "file": "07-serie-di-funzioni-e-di-potenze.md",
+      "printable": true
+    },
+    {
+      "id": "serie-di-fourier",
+      "number": 8,
+      "title": "Serie di Fourier",
+      "file": "08-serie-di-fourier.md",
+      "printable": true
+    },
+    {
+      "id": "equazioni-differenziali-e-trasformata-di-laplace",
+      "number": 9,
+      "title": "Equazioni differenziali lineari e trasformata di Laplace",
+      "file": "09-equazioni-differenziali-e-trasformata-di-laplace.md",
+      "printable": true
+    }
+  ]
+}

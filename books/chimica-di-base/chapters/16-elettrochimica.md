@@ -71,7 +71,7 @@ $$E_{\mathrm{cella}}^\circ=E_{\mathrm{catodo}}^\circ-E_{\mathrm{anodo}}^\circ$$
 
 Nella formula i due termini a destra sono potenziali standard **di riduzione**. Per una pila voltaica che opera spontaneamente nelle condizioni standard, $E_{\mathrm{cella}}^\circ>0$.
 
-**Errore tipico 16.3.** Nel bilanciare gli elettroni si moltiplicano le semireazioni, ma **non** i rispettivi potenziali: $E^\circ$ è una grandezza intensiva. Per la pila Daniell, per esempio, i valori $E^\circ_{\mathrm{Cu^{2+}/Cu}}=+0,34\ \mathrm{V}$ ed $E^\circ_{\mathrm{Zn^{2+}/Zn}}=-0,76\ \mathrm{V}$ danno $E_{\mathrm{cella}}^\circ=0,34-(-0,76)=1,10\ \mathrm{V}$.
+**Errore tipico 16.3.** Nel bilanciare gli elettroni si moltiplicano le semireazioni, ma **non** i rispettivi potenziali: $E^\circ$ è una grandezza intensiva. Per la pila Daniell, per esempio, i valori $E^\circ_{\mathrm{Cu^{2+}/Cu}}=+0,34\ \mathrm{V}$ ed $E^\circ_{\mathrm{Zn^{2+}/Zn}}=-0,76\ \mathrm{V}$ danno $E_{\mathrm{cella}}^\circ=0{,}34-(-0{,}76)=1{,}10\ \mathrm{V}$.
 
 ### Equazione di Nernst e calcolo della forza elettromotrice
 
@@ -89,7 +89,7 @@ Qui $T$ è in kelvin, $R=8,314\ \mathrm{J/(mol\cdot K)}$ e $F=96\,485\ \mathrm{C
 
 2. **Strategia.** Si bilanciano le semireazioni $\mathrm{Zn}_{(s)}\to\mathrm{Zn^{2+}}_{(aq)}+2e^-$ e $2\mathrm{Ag^+}_{(aq)}+2e^-\to2\mathrm{Ag}_{(s)}$. La somma è $\mathrm{Zn}_{(s)}+2\mathrm{Ag^+}_{(aq)}\to\mathrm{Zn^{2+}}_{(aq)}+2\mathrm{Ag}_{(s)}$; dunque $n=2$ e $Q=a_{\mathrm{Zn^{2+}}}/a_{\mathrm{Ag^+}}^2$.
 
-3. **Calcolo.** $E_{\mathrm{cella}}^\circ=0,80-(-0,76)=1,56\ \mathrm{V}$. Approssimando le attività con le concentrazioni relative allo standard, $Q=0,10/(0,20)^2=2,5$; quindi $E_{\mathrm{cella}}=1,56-(0,0592/2)\log(2,5)=1,55\ \mathrm{V}$. I potenziali tabulati non sono stati moltiplicati per $2$.
+3. **Calcolo.** $E_{\mathrm{cella}}^\circ=0{,}80-(-0{,}76)=1{,}56\ \mathrm{V}$. Approssimando le attività con le concentrazioni relative allo standard, $Q=0{,}10/(0{,}20)^2=2{,}5$; quindi $E_{\mathrm{cella}}=1,56-(0,0592/2)\log(2,5)=1,55\ \mathrm{V}$. I potenziali tabulati non sono stati moltiplicati per $2$.
 
 4. **Verifica.** Poiché $Q>1$, Nernst richiede $E_{\mathrm{cella}}<E_{\mathrm{cella}}^\circ$: $1,55\ \mathrm{V}<1,56\ \mathrm{V}$. Il risultato è coerente.
 
