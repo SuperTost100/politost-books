@@ -199,7 +199,7 @@ L'idea della dimostrazione è breve. Ad esempio, la prima componente di $\operat
 
 Un campo di tipo rotore è un campo $\mathbf{F}=\operatorname{rot}\mathbf{\Phi}$, e $\mathbf{\Phi}$ si dice potenziale vettore di $\mathbf{F}$. Le identità precedenti si traducono in condizioni necessarie:
 
-- se $\mathbf{F}$, di classe $C^1$ in $\Omega\subseteq\mathbb{R}^n$ con $n=2,3$, è conservativo (cioè $\mathbf{F}=\nabla\varphi$ con $\varphi\in C^2$), allora è irrotazionale;
+- se $\mathbf{F}$, di classe $C^1$ in $\Omega\subseteq\mathbb{R}^n$ con $n=2, 3$, è conservativo (cioè $\mathbf{F}=\nabla\varphi$ con $\varphi\in C^2$), allora è irrotazionale;
 - se $\mathbf{F}$, di classe $C^1$ in $\Omega\subseteq\mathbb{R}^3$, ha un potenziale vettore di classe $C^2$, allora è solenoidale.
 
 In un aperto convesso di $\mathbb{R}^3$ un campo $C^1$ è irrotazionale se e solo se è conservativo. Il tema dei potenziali è ripreso in [Campi conservativi e potenziale](ref:chapter/5#p4).

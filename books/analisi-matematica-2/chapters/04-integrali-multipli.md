@@ -104,7 +104,7 @@ $$
 \iint_B x\,e^y\,dx\,dy=\left(\int_0^2 x\,dx\right)\left(\int_0^1 e^y\,dy\right)=2\,(e-1).
 $$
 
-**Errore tipico 4.1.** Scegliere l'ordine di integrazione a caso. Entrambi gli ordini danno lo stesso risultato, ma uno può richiedere calcoli molto più pesanti: conviene prima integrare nella variabile per cui la primitiva è immediata, come $y$ nell'esempio sopra. Si sbaglia anche applicando la formula del prodotto a una funzione non separabile, per esempio a $f(x,y)=x\cos(xy)$ o a $e^{x+y^2}\cos(xy)$: $f(x,y)$ deve essere davvero un prodotto di una funzione di $x$ per una funzione di $y$. Infine, bisogna associare ogni estremo alla sua variabile: nell'integrale iterato $\int_1^2\left(\int_0^\pi\cdots dy\right)dx$ gli estremi $0,\pi$ vanno con $dy$ e $1,2$ con $dx$.
+**Errore tipico 4.1.** Scegliere l'ordine di integrazione a caso. Entrambi gli ordini danno lo stesso risultato, ma uno può richiedere calcoli molto più pesanti: conviene prima integrare nella variabile per cui la primitiva è immediata, come $y$ nell'esempio sopra. Si sbaglia anche applicando la formula del prodotto a una funzione non separabile, per esempio a $f(x,y)=x\cos(xy)$ o a $e^{x+y^2}\cos(xy)$: $f(x,y)$ deve essere davvero un prodotto di una funzione di $x$ per una funzione di $y$. Infine, bisogna associare ogni estremo alla sua variabile: nell'integrale iterato $\int_1^2\left(\int_0^\pi\cdots dy\right)dx$ gli estremi $0,\pi$ vanno con $dy$ e $1, 2$ con $dx$.
 
 ## p3 | Integrale doppio su domini normali
 
@@ -278,7 +278,7 @@ $$
 \det J\boldsymbol{\Phi}(u,v)=\frac{1}{\det J\boldsymbol{\Psi}(x,y)}.
 $$
 
-Le ipotesi di biiettività e di jacobiana non nulla possono cadere su un insieme di area nulla (un punto, un segmento, una curva) senza che la formula cambi, perché tale insieme non contribuisce all'integrale. È ciò che accade nelle coordinate polari per $r=0$ e per $\theta=0,2\pi$.
+Le ipotesi di biiettività e di jacobiana non nulla possono cadere su un insieme di area nulla (un punto, un segmento, una curva) senza che la formula cambi, perché tale insieme non contribuisce all'integrale. È ciò che accade nelle coordinate polari per $r=0$ e per $\theta=0, 2\pi$.
 
 ### Trasformazioni lineari e affini
 
