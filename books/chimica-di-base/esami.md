@@ -64,10 +64,18 @@ b) Il rapporto in massa tra ferro e zolfo nel prodotto è $14,0:8,00=7:4$. Quind
 ## Domanda
 **Esercizio in stile d'esame (generato)**
 
-Il cloro naturale è formato dagli isotopi $^{35}\mathrm{Cl}$ e $^{37}\mathrm{Cl}$, presenti rispettivamente con abbondanze del $75,8\%$ e del $24,2\%$.\n\na) Calcola la massa atomica media del cloro, esprimendola in unità di massa atomica.\n\nb) Per lo ione $^{37}\mathrm{Cl}^{-}$, determina il numero di protoni, neutroni ed elettroni. Il numero atomico del cloro è $Z=17$.
+Il cloro naturale è formato dagli isotopi $^{35}\mathrm{Cl}$ e $^{37}\mathrm{Cl}$, presenti rispettivamente con abbondanze del $75,8\%$ e del $24,2\%$.
+
+a) Calcola la massa atomica media del cloro, esprimendola in unità di massa atomica.
+
+b) Per lo ione $^{37}\mathrm{Cl}^{-}$, determina il numero di protoni, neutroni ed elettroni. Il numero atomico del cloro è $Z=17$.
 
 :::solution
-a) La massa atomica media è la media pesata delle masse isotopiche sulle rispettive abbondanze: {{formula:2.3}} $\bar m=(35\cdot0{,}758)+(37\cdot0{,}242)=26{,}53+8{,}954=35{,}484\,\mathrm{u}$. Arrotondando a tre cifre significative, si ottiene $35,5\,\mathrm{u}$.\n\nb) Il numero di protoni è il numero atomico: $Z=17$. Il numero di neutroni è la differenza tra numero di massa e numero atomico: $N=A-Z=37-17=20$. Uno ione con carica $-1$ ha un elettrone in più dell'atomo neutro, quindi possiede $17+1=18$ elettroni: {{formula:2.1}} {{formula:2.2}}.\n\n**Risultati:** massa atomica media $35,5\,\mathrm{u}$; lo ione $^{37}\mathrm{Cl}^{-}$ contiene $17$ protoni, $20$ neutroni e $18$ elettroni.
+a) La massa atomica media è la media pesata delle masse isotopiche sulle rispettive abbondanze: {{formula:2.3}} $\bar m=(35\cdot0{,}758)+(37\cdot0{,}242)=26{,}53+8{,}954=35{,}484\,\mathrm{u}$. Arrotondando a tre cifre significative, si ottiene $35,5\,\mathrm{u}$.
+
+b) Il numero di protoni è il numero atomico: $Z=17$. Il numero di neutroni è la differenza tra numero di massa e numero atomico: $N=A-Z=37-17=20$. Uno ione con carica $-1$ ha un elettrone in più dell'atomo neutro, quindi possiede $17+1=18$ elettroni: {{formula:2.1}} {{formula:2.2}}.
+
+**Risultati:** massa atomica media $35,5\,\mathrm{u}$; lo ione $^{37}\mathrm{Cl}^{-}$ contiene $17$ protoni, $20$ neutroni e $18$ elettroni.
 :::
 :::
 
@@ -84,7 +92,9 @@ $$
 2(+1)+2x+7(-2)=0.
 $$
 
-Si ottiene $2+2x-14=0$, quindi $2x=12$ e $x=+6$.\n\nVerifica con lo ione dicromato: la somma dei numeri di ossidazione deve uguagliare la carica $-2$. Pertanto
+Si ottiene $2+2x-14=0$, quindi $2x=12$ e $x=+6$.
+
+Verifica con lo ione dicromato: la somma dei numeri di ossidazione deve uguagliare la carica $-2$. Pertanto
 
 $$
 2x+7(-2)=-2,
@@ -98,10 +108,16 @@ da cui $2x-14=-2$, $2x=12$ e nuovamente $x=+6$.
 ## Domanda
 **Esercizio in stile d'esame (generato)**
 
-L’alluminio forma ioni $\mathrm{Al^{3+}}$ e il solfato è lo ione poliatomico $\mathrm{SO_4^{2-}}$.\n\na) Determinare la formula del composto ionico elettricamente neutro formato da questi ioni.\n\nb) Indicare il rapporto tra gli ioni presenti nell’unità formula e il numero totale di atomi contenuti in essa.
+L’alluminio forma ioni $\mathrm{Al^{3+}}$ e il solfato è lo ione poliatomico $\mathrm{SO_4^{2-}}$.
+
+a) Determinare la formula del composto ionico elettricamente neutro formato da questi ioni.
+
+b) Indicare il rapporto tra gli ioni presenti nell’unità formula e il numero totale di atomi contenuti in essa.
 
 :::solution
-a) La carica totale deve essere nulla. Il minimo comune multiplo tra $3$ e $2$ è $6$: servono quindi $2$ ioni $\mathrm{Al^{3+}}$, con carica complessiva $+6$, e $3$ ioni $\mathrm{SO_4^{2-}}$, con carica complessiva $-6$. La formula è $\mathrm{Al_2(SO_4)_3}$. Le parentesi indicano che il gruppo solfato compare tre volte.\n\nb) Il rapporto tra ioni alluminio e ioni solfato è $2:3$. La formula contiene $2$ atomi di alluminio, $3$ atomi di zolfo e $3\cdot 4=12$ atomi di ossigeno. Il totale è $2+3+12=17$ atomi per unità formula.
+a) La carica totale deve essere nulla. Il minimo comune multiplo tra $3$ e $2$ è $6$: servono quindi $2$ ioni $\mathrm{Al^{3+}}$, con carica complessiva $+6$, e $3$ ioni $\mathrm{SO_4^{2-}}$, con carica complessiva $-6$. La formula è $\mathrm{Al_2(SO_4)_3}$. Le parentesi indicano che il gruppo solfato compare tre volte.
+
+b) Il rapporto tra ioni alluminio e ioni solfato è $2:3$. La formula contiene $2$ atomi di alluminio, $3$ atomi di zolfo e $3\cdot 4=12$ atomi di ossigeno. Il totale è $2+3+12=17$ atomi per unità formula.
 :::
 :::
 
@@ -435,10 +451,20 @@ $$P_f = \frac{n_{\mathrm{gas},f} R T_f}{V_f} = \frac{6{,}25\cdot 0{,}082057\cdot
 ## Domanda
 **Esercizio in stile d'esame (generato)**
 
-La combustione completa del metano gassoso è descritta dalla reazione $\mathrm{CH_4(g)+2O_2(g)\rightarrow CO_2(g)+2H_2O(l)}$. Le entalpie standard di formazione sono $\Delta H_f^\circ(\mathrm{CH_4(g)})=-74{,}8\,\mathrm{kJ\,mol^{-1}}$, $\Delta H_f^\circ(\mathrm{CO_2(g)})=-393{,}5\,\mathrm{kJ\,mol^{-1}}$ e $\Delta H_f^\circ(\mathrm{H_2O(l)})=-285{,}8\,\mathrm{kJ\,mol^{-1}}$; per $\mathrm{O_2(g)}$, $\Delta H_f^\circ=0$.\n\na) Calcola l’entalpia standard della reazione come scritta.\nb) Scrivi l’equazione termochimica completa.\nc) Calcola il calore scambiato a pressione costante quando bruciano completamente $8{,}00\,\mathrm{g}$ di metano, usando $M(\mathrm{CH_4})=16{,}04\,\mathrm{g\,mol^{-1}}$. Indica se il calore è assorbito o ceduto dal sistema.
+La combustione completa del metano gassoso è descritta dalla reazione $\mathrm{CH_4(g)+2O_2(g)\rightarrow CO_2(g)+2H_2O(l)}$. Le entalpie standard di formazione sono $\Delta H_f^\circ(\mathrm{CH_4(g)})=-74{,}8\,\mathrm{kJ\,mol^{-1}}$, $\Delta H_f^\circ(\mathrm{CO_2(g)})=-393{,}5\,\mathrm{kJ\,mol^{-1}}$ e $\Delta H_f^\circ(\mathrm{H_2O(l)})=-285{,}8\,\mathrm{kJ\,mol^{-1}}$; per $\mathrm{O_2(g)}$, $\Delta H_f^\circ=0$.
+
+a) Calcola l’entalpia standard della reazione come scritta.
+
+b) Scrivi l’equazione termochimica completa.
+
+c) Calcola il calore scambiato a pressione costante quando bruciano completamente $8{,}00\,\mathrm{g}$ di metano, usando $M(\mathrm{CH_4})=16{,}04\,\mathrm{g\,mol^{-1}}$. Indica se il calore è assorbito o ceduto dal sistema.
 
 :::solution
-a) Si usa la relazione tra l’entalpia standard di reazione e le entalpie standard di formazione {{formula:7.10}}. La somma per i prodotti è $\lbrack -393{,}5+2(-285{,}8)\rbrack \,\mathrm{kJ\,mol^{-1}}=-965{,}1\,\mathrm{kJ\,mol^{-1}}$. La somma per i reagenti è $\lbrack -74{,}8+2(0)\rbrack \,\mathrm{kJ\,mol^{-1}}=-74{,}8\,\mathrm{kJ\,mol^{-1}}$. Quindi $\Delta H^\circ_{\mathrm{reaz}}=-965{,}1-(-74{,}8)=-890{,}3\,\mathrm{kJ\,mol^{-1}}$.\n\nb) L’equazione termochimica è $\mathrm{CH_4(g)+2O_2(g)\rightarrow CO_2(g)+2H_2O(l)}$, con $\Delta H^\circ=-890{,}3\,\mathrm{kJ}$ per ogni mole di reazione come scritta. Il segno negativo indica una reazione esotermica.\n\nc) Le moli di metano sono $n=\frac{8{,}00\,\mathrm{g}}{16{,}04\,\mathrm{g\,mol^{-1}}}=0{,}4988\,\mathrm{mol}$. A pressione costante il calore scambiato è uguale alla variazione di entalpia. Dunque $q_p=n\Delta H^\circ_{\mathrm{reaz}}=(0{,}4988\,\mathrm{mol})(-890{,}3\,\mathrm{kJ\,mol^{-1}})=-444\,\mathrm{kJ}$, con tre cifre significative. Il calore è ceduto dal sistema.
+a) Si usa la relazione tra l’entalpia standard di reazione e le entalpie standard di formazione {{formula:7.10}}. La somma per i prodotti è $\lbrack -393{,}5+2(-285{,}8)\rbrack \,\mathrm{kJ\,mol^{-1}}=-965{,}1\,\mathrm{kJ\,mol^{-1}}$. La somma per i reagenti è $\lbrack -74{,}8+2(0)\rbrack \,\mathrm{kJ\,mol^{-1}}=-74{,}8\,\mathrm{kJ\,mol^{-1}}$. Quindi $\Delta H^\circ_{\mathrm{reaz}}=-965{,}1-(-74{,}8)=-890{,}3\,\mathrm{kJ\,mol^{-1}}$.
+
+b) L’equazione termochimica è $\mathrm{CH_4(g)+2O_2(g)\rightarrow CO_2(g)+2H_2O(l)}$, con $\Delta H^\circ=-890{,}3\,\mathrm{kJ}$ per ogni mole di reazione come scritta. Il segno negativo indica una reazione esotermica.
+
+c) Le moli di metano sono $n=\frac{8{,}00\,\mathrm{g}}{16{,}04\,\mathrm{g\,mol^{-1}}}=0{,}4988\,\mathrm{mol}$. A pressione costante il calore scambiato è uguale alla variazione di entalpia. Dunque $q_p=n\Delta H^\circ_{\mathrm{reaz}}=(0{,}4988\,\mathrm{mol})(-890{,}3\,\mathrm{kJ\,mol^{-1}})=-444\,\mathrm{kJ}$, con tre cifre significative. Il calore è ceduto dal sistema.
 :::
 :::
 
@@ -446,10 +472,20 @@ a) Si usa la relazione tra l’entalpia standard di reazione e le entalpie stand
 ## Domanda
 **Esercizio in stile d'esame (generato)**
 
-Un gas in un cilindro è il sistema termodinamico considerato. Durante una trasformazione il gas assorbe $1{,}25\,\mathrm{kJ}$ di calore e compie $0{,}40\,\mathrm{kJ}$ di lavoro sull’ambiente. L’energia interna iniziale del gas è $12{,}60\,\mathrm{kJ}$.\n\na) Indica i segni di $q$ e $w$ adottando la convenzione secondo cui il lavoro compiuto dal sistema è positivo.\nb) Calcola la variazione di energia interna del gas.\nc) Determina l’energia interna finale.
+Un gas in un cilindro è il sistema termodinamico considerato. Durante una trasformazione il gas assorbe $1{,}25\,\mathrm{kJ}$ di calore e compie $0{,}40\,\mathrm{kJ}$ di lavoro sull’ambiente. L’energia interna iniziale del gas è $12{,}60\,\mathrm{kJ}$.
+
+a) Indica i segni di $q$ e $w$ adottando la convenzione secondo cui il lavoro compiuto dal sistema è positivo.
+
+b) Calcola la variazione di energia interna del gas.
+
+c) Determina l’energia interna finale.
 
 :::solution
-a) Il calore assorbito dal sistema è positivo, quindi $q=+1{,}25\,\mathrm{kJ}$. Il lavoro è compiuto dal sistema sull’ambiente, quindi $w=+0{,}40\,\mathrm{kJ}$ secondo la convenzione indicata.\n\nb) Con questa convenzione, il primo principio si scrive {{formula:7.1}}. Pertanto $\Delta U=q-w$, da cui $\Delta U=1{,}25\,\mathrm{kJ}-0{,}40\,\mathrm{kJ}=+0{,}85\,\mathrm{kJ}$. L’energia interna aumenta.\n\nc) L’energia interna finale è $U_f=U_i+\Delta U=12{,}60\,\mathrm{kJ}+0{,}85\,\mathrm{kJ}=13{,}45\,\mathrm{kJ}$.
+a) Il calore assorbito dal sistema è positivo, quindi $q=+1{,}25\,\mathrm{kJ}$. Il lavoro è compiuto dal sistema sull’ambiente, quindi $w=+0{,}40\,\mathrm{kJ}$ secondo la convenzione indicata.
+
+b) In {{formula:7.1}} il lavoro è positivo quando è compiuto sul sistema; con la convenzione opposta adottata qui il primo principio diventa $\Delta U=q-w$, da cui $\Delta U=1{,}25\,\mathrm{kJ}-0{,}40\,\mathrm{kJ}=+0{,}85\,\mathrm{kJ}$. L’energia interna aumenta.
+
+c) L’energia interna finale è $U_f=U_i+\Delta U=12{,}60\,\mathrm{kJ}+0{,}85\,\mathrm{kJ}=13{,}45\,\mathrm{kJ}$.
 :::
 :::
 

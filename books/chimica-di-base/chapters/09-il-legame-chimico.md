@@ -68,7 +68,7 @@ Conviene infine ricordare che, pur parlando di ioni "positivi" e "negativi" come
 
 ### Il ciclo di Born-Haber
 
-L'energia reticolare non si può misurare direttamente, perché non esiste un processo sperimentale che unisca direttamente ioni gassosi isolati in un cristallo; si ricava invece applicando la [legge di Hess](ref:formula:@legge-di-hess) a un ciclo ipotetico noto come **ciclo di Born-Haber**.
+L'energia reticolare non si può misurare direttamente, perché non esiste un processo sperimentale che unisca direttamente ioni gassosi isolati in un cristallo; si ricava invece applicando la [legge di Hess](ref:formula/7.9) a un ciclo ipotetico noto come **ciclo di Born-Haber**.
 
 **Definizione 9.3** (ciclo di Born-Haber). Il ciclo di Born-Haber è l'insieme delle tappe che portano dagli elementi nel loro stato standard al composto ionico solido, tappe per le quali sono note tutte le entalpie eccetto l'energia reticolare, che risulta quindi l'unica incognita. Le tappe scelte sono ipotetiche: non sono le tappe effettive della reazione reale, ma vengono scelte perché corrispondono a processi la cui variazione di entalpia è misurabile indipendentemente.
 
@@ -181,6 +181,8 @@ Alcune regole vincolano le strutture limite ammissibili:
 
 La regola dell'ottetto descrive correttamente la maggior parte delle molecole del secondo periodo, ma esistono tre classi di eccezioni sistematiche.
 
+1. Ottetto incompleto: alcuni atomi centrali hanno meno di 8 elettroni attorno a sé, come il boro in $\mathrm{BF_3}$ (6 elettroni).
+2. Specie con un numero dispari di elettroni: almeno un atomo non può completare l'ottetto, come in $\mathrm{NO}$ (11 elettroni di valenza).
 3. Gusci di valenza espansi (ottetto espanso): alcune strutture di Lewis di specie con un atomo centrale del terzo periodo o successivo rappresentano più di 8 elettroni attorno a tale atomo, come nello zolfo in $SF_6$ (12 elettroni) o nel fosforo in composti con 10 elettroni attorno al centro. L'ottetto espanso è un limite della rappresentazione di Lewis e non si spiega attribuendo la partecipazione di orbitali $d$.
 
 :::image{src="assets/385525d7-sf6-lewis.svg" alt="Struttura di Lewis di SF6 con zolfo centrale legato a sei atomi di fluoro" caption="Fig. 9.5 — Struttura di Lewis dell'esafluoruro di zolfo SF6: lo zolfo centrale è circondato da 12 elettroni, sei legami singoli con altrettanti atomi di fluoro, un caso tipico di ottetto espanso."}

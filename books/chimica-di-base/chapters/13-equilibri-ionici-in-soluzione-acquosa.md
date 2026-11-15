@@ -203,7 +203,7 @@ $$\lbrack H_3O^+\rbrack  = 0,952\ \text{M} \qquad \mathrm{pH} = -\log(0,952) = 0
 
 Verifica: il pH ottenuto è nettamente inferiore a 7, coerente con una soluzione concentrata di acido forte.
 
-**Errore tipico 13.3**. Per acidi o basi poliprotici forti (praticamente solo per la prima dissociazione di H2SO4, che è un acido forte in prima dissociazione), occorre ricordare che ogni mole di soluto libera più moli di $H_3O^+$ o $OH^-$: trascurare il coefficiente stechiometrico porta a sottostimare la concentrazione degli ioni e quindi a un pH errato.
+**Errore tipico 13.3**. Per le basi forti con più ioni idrossido, come Ba(OH)2, occorre ricordare che ogni mole di soluto libera più moli di $OH^-$ (per H2SO4 invece la prima dissociazione, l'unica completa, libera una sola mole di $H_3O^+$ e la seconda va trattata come equilibrio a parte): trascurare il coefficiente stechiometrico porta a sottostimare la concentrazione degli ioni e quindi a un pH errato.
 
 ### Acidi e basi deboli, K_a e K_b
 

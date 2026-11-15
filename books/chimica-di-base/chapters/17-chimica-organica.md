@@ -73,7 +73,7 @@ I cicloalcani subiscono combustione e sostituzione radicalica come gli alcani. I
 
 La catena principale deve contenere il doppio legame. La si numera dall’estremità che assegna al doppio legame il numero più basso, anche se così un sostituente riceve un numero più alto. La posizione del doppio legame è quella del primo dei due carboni coinvolti: $\mathrm{CH_2=CH-CH_2-CH_3}$ è **1-butene**, mentre $\mathrm{CH_3-CH=CH-CH_3}$ è **2-butene**. In $\mathrm{CH_2=C(CH_3)-CH_3}$ la catena principale ha tre carboni e si ottiene **2-metil-1-propene**.
 
-Il doppio legame comprende un legame $\sigma$ e un legame $\pi$. Nelle reazioni tipiche di **addizione**, il legame $\pi$ viene consumato e ai due carboni si legano nuovi atomi o gruppi: l’addizione di idrogeno trasforma un alchene in un alcano, quella di un alogeno introduce due atomi di alogeno. Molte addizioni agli alcheni sono elettrofile. La rotazione attorno al doppio legame è impedita; le condizioni per distinguere gli isomeri geometrici sono trattate in [Isomeria](ref:chapter/17#p4).
+Il doppio legame comprende un legame $\sigma$ e un legame $\pi$. Nelle reazioni tipiche di **addizione**, il legame $\pi$ viene consumato e ai due carboni si legano nuovi atomi o gruppi: l’addizione di idrogeno trasforma un alchene in un alcano, quella di un alogeno introduce due atomi di alogeno. Molte addizioni agli alcheni sono elettrofile. La rotazione attorno al doppio legame è impedita: per questo, se ciascun carbonio del doppio legame porta due gruppi diversi, esistono due isomeri geometrici distinti, cis e trans.
 
 **Esempio svolto 17.2**. Si nomini $\mathrm{CH_3-CH_2-CH=CH_2}$ e si preveda il prodotto della sua addizione di idrogeno.
 

@@ -69,7 +69,7 @@ Un esempio classico è $\mathrm{Zn} + 2\mathrm{HCl} \to \mathrm{ZnCl_2} + \mathr
 :::image{src="assets/0001dc9b-reattivita-alogeni.svg" alt="Tavola periodica con il gruppo degli alogeni (F, Cl, Br, I) evidenziato e una freccia che indica la reattività decrescente scendendo nel gruppo" caption="Fig. 5.1 — Reattività degli alogeni nelle reazioni di scambio semplice: il fluoro è il più reattivo, seguito da cloro, bromo e iodio."}
 :::
 
-Tutte le reazioni di scambio semplice sono reazioni di ossidoriduzione, perché nel passaggio dall'elemento libero allo ione (o viceversa) il numero di ossidazione cambia necessariamente: in generale, ogni volta che una sostanza elementare compare come reagente o come prodotto si tratta sicuramente di una redox.
+Tutte le reazioni di scambio semplice sono reazioni di ossidoriduzione, perché nel passaggio dall'elemento libero allo ione (o viceversa) il numero di ossidazione cambia necessariamente: in generale, ogni volta che una sostanza elementare compare come reagente o come prodotto si tratta quasi sempre di una redox.
 
 **Esempio svolto 5.1.** Stabilire se la reazione $\mathrm{Mg}_{(s)} + \mathrm{CuSO_4(aq)} \to \mathrm{MgSO_4(aq)} + \mathrm{Cu}_{(s)}$ è una reazione di scambio semplice e se è redox.
 

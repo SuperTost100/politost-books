@@ -95,7 +95,7 @@ Si scriva la formula del composto ionico formato da ioni alluminio e ioni solfat
 
 1. *Dati*: il catione è $\mathrm{Al^{3+}}$ (carica $+3$, prevista dal gruppo 13); l'anione è $\mathrm{SO_4^{2-}}$ (carica $-2$).
 2. *Strategia*: si applica la regola dell'elettroneutralità scambiando le cariche come indici.
-3. *Calcolo*: il numero di cariche negative necessarie per bilanciare 3 cationi $\mathrm{Al^{3+}}$ (cioè $9+$ in totale) con anioni $\mathrm{SO_4^{2-}}$ (cioè $2-$ ciascuno) si trova cercando il minimo comune multiplo tra 3 e 2, che è 6: servono 2 ioni $\mathrm{Al^{3+}}$ (carica totale $+6$) e 3 ioni $\mathrm{SO_4^{2-}}$ (carica totale $-6$). Poiché l'indice dello ione poliatomico è maggiore di 1, lo si racchiude tra parentesi: $\mathrm{Al_2(SO_4)_3}$.
+3. *Calcolo*: il numero di cationi $\mathrm{Al^{3+}}$ ($3+$ ciascuno) e di anioni $\mathrm{SO_4^{2-}}$ ($2-$ ciascuno) che si bilanciano si trova cercando il minimo comune multiplo tra 3 e 2, che è 6: servono 2 ioni $\mathrm{Al^{3+}}$ (carica totale $+6$) e 3 ioni $\mathrm{SO_4^{2-}}$ (carica totale $-6$). Poiché l'indice dello ione poliatomico è maggiore di 1, lo si racchiude tra parentesi: $\mathrm{Al_2(SO_4)_3}$.
 4. *Verifica*: la carica totale è $2(+3) + 3(-2) = 0$, come richiesto dall'elettroneutralità.
 
 **Errore tipico 3.2**
@@ -378,7 +378,7 @@ La nomenclatura degli idracidi segue due regole alternative, legate anche allo s
 
 Gli stessi passaggi, applicati agli alogenuri di idrogeno più comuni, danno: $HF$ = fluoruro di idrogeno / acido fluoridrico; $HCl$ = cloruro di idrogeno / acido cloridrico; $HBr$ = bromuro di idrogeno / acido bromidrico; $HI$ = ioduro di idrogeno / acido iodidrico; $H_2S$ = solfuro di idrogeno / acido solfidrico.
 
-**Errore tipico 3.7.** Scrivere «acido cloruro» o «cloruro acido» mescolando le due nomenclature: il suffisso -idrico appartiene solo alla nomenclatura tradizionale e va sempre precedi dalla parola «acido», mentre il suffisso -uro appartiene solo alla nomenclatura IUPAC e non si accompagna mai alla parola «acido».
+**Errore tipico 3.7.** Scrivere «acido cloruro» o «cloruro acido» mescolando le due nomenclature: il suffisso -idrico appartiene solo alla nomenclatura tradizionale e va sempre preceduto dalla parola «acido», mentre il suffisso -uro appartiene solo alla nomenclatura IUPAC e non si accompagna mai alla parola «acido».
 
 ### Ossiacidi e la loro formazione dall'anidride
 
@@ -497,7 +497,7 @@ Vale la corrispondenza diretta tra il nome dell'acido di partenza e il nome del 
 - $HClO$ (acido ipocloroso) $\to NaClO$ (ipoclorito di sodio);
 - $HClO_4$ (acido perclorico) $\to NaClO_4$ (perclorato di sodio).
 
-Altri esempi completi: $Sn(CO_3)_2$, di-triossocarbonato di stagno(IV) / carbonato stannico; $Cs_3PO_4$, tetraossofosfato(V) di cesio / ortofosfato di cesio; $Fe_2(CO_3)_3$, tri-triossocarbonato di diferro / carbonato ferrico; $K_2MnO_4$, tetraossomanganato di dipotassio / manganato di potassio.
+Altri esempi completi: $Sn(CO_3)_2$, di-triossocarbonato di stagno(IV) / carbonato stannico; $Cs_3PO_4$, tetraossofosfato(V) di cesio / ortofosfato di cesio; $Fe_2(CO_3)_3$, tri-triossocarbonato di ferro(III) / carbonato ferrico; $K_2MnO_4$, tetraossomanganato(VI) di potassio / manganato di potassio.
 
 **Esempio svolto 3.12** (dall'acido all'ossoanione)
 

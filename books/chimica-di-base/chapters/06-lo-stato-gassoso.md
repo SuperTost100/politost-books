@@ -253,7 +253,7 @@ Per una singola particella di massa $m$ e velocità istantanea $v$, l'energia ci
 $$E_k = \frac{1}{2}M\,\bar{u}^2 = \frac{3}{2}RT$$
 :::
 
-dove $M$ è la massa molare del gas (in kg/mol se si vuole $E_k$ in joule) e $R$ la costante dei gas. Uguagliando i due membri si ottiene la velocità quadratica media.
+dove $M$ è la massa molare del gas (in kg/mol se si vuole $E_k$ in joule per mole) e $R$ la costante dei gas. Uguagliando i due membri si ottiene la velocità quadratica media.
 
 :::formula{id="6.12" label="Velocità quadratica media"}
 $$\bar{u} = \sqrt{\frac{3RT}{M}}$$
