@@ -33148,6 +33148,7 @@
           ]
         },
         "yaxis": {
+          "scaleanchor": "x",
           "title": "Y (lungo e₂)",
           "range": [
             -1,
