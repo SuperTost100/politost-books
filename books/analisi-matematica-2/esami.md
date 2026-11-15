@@ -446,7 +446,7 @@ $$
 D=\{(x,y)\in\mathbb{R}^2 : 0\le y\le 1,\ y\le x\le 1\}.
 $$
 
-Si tratta del triangolo di vertici $(0,0)$, $(1,1)$ e $(0,1)$ nel piano $(x,y)$ con $y\le x$, cioè il triangolo di vertici $(0,0)$, $(1,0)$, $(1,1)$. Lo si descrive anche come
+Si tratta del triangolo di vertici $(0,0)$, $(1,0)$, $(1,1)$ nel piano $(x,y)$. Lo si descrive anche come
 
 $$
 D=\{(x,y) : 0\le x\le 1,\ 0\le y\le x\}.

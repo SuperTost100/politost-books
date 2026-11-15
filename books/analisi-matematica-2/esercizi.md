@@ -4050,7 +4050,7 @@ $$a_0=\frac1{2\pi}\int_0^{2\pi}f(x)\,dx,\qquad a_k=\frac1\pi\int_0^{2\pi}f(x)\co
 
 e il fatto che $f$ è nulla su $(-\pi,0)$:
 
-$$a_0=\frac1\pi\int_0^\pi 1\,dx=1,\qquad a_n=\frac1\pi\int_0^\pi\cos nx\,dx=\frac{\sin n\pi}{n\pi}=0,$$
+$$a_0=\frac1{2\pi}\int_0^\pi 1\,dx=\frac12,\qquad a_n=\frac1\pi\int_0^\pi\cos nx\,dx=\frac{\sin n\pi}{n\pi}=0,$$
 
 $$b_n=\frac1\pi\int_0^\pi\sin nx\,dx=\frac{1-\cos n\pi}{n\pi}=\frac{1-(-1)^n}{n\pi}.$$
 

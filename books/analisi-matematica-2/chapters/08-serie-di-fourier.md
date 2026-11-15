@@ -213,7 +213,7 @@ $$a_k=0\ (k\ge0),\qquad b_k=\frac2\pi\int_0^\pi f(x)\sin kx\,dx\ (k\ge1)$$
 $$b_k=0\ (k\ge1),\qquad a_0=\frac1\pi\int_0^\pi f(x)\,dx,\qquad a_k=\frac2\pi\int_0^\pi f(x)\cos kx\,dx\ (k\ge1)$$
 :::
 
-Per periodo $T$ le stesse formule valgono con $\left[0,\frac T2\right]$ al posto di $\lbrack 0,\pi\rbrack $, $\frac2T$ al posto di $\frac1\pi$ e $\frac4T$ al posto di $\frac2\pi$.
+Per periodo $T$ le stesse formule valgono con $\left[0,\frac T2\right]$ al posto di $\lbrack 0,\pi\rbrack $, $\frac2T$ al posto di $\frac1\pi$, $\frac4T$ al posto di $\frac2\pi$ e $k\frac{2\pi}{T}x$ al posto di $kx$.
 
 ### Prolungamenti pari e dispari
 
@@ -396,7 +396,7 @@ e non a $f(x_0)$.
 
 ### Convergenza uniforme, totale e fenomeno di Gibbs
 
-La convergenza totale è la più forte: implica quella assoluta, dunque puntuale e uniforme, e quella quadratica. Se $\sum_k(|a_k|+|b_k|)<\infty$, la serie di Fourier converge totalmente su $\mathbb R$. Lo si verifica con il criterio di Weierstrass (si veda [Serie di funzioni](ref:chapter/7#p3)), poiché $|a_k\cos kx+b_k\sin kx|\le|a_k|+|b_k|$.
+La convergenza totale è la più forte: implica quella assoluta, dunque quella puntuale, e implica anche quella uniforme e quella quadratica. Se $\sum_k(|a_k|+|b_k|)<\infty$, la serie di Fourier converge totalmente su $\mathbb R$. Lo si verifica con il criterio di Weierstrass (si veda [Serie di funzioni](ref:chapter/7#p3)), poiché $|a_k\cos kx+b_k\sin kx|\le|a_k|+|b_k|$.
 
 Se $f$ è continua su $\mathbb R$, $2\pi$-periodica e regolare a tratti, la serie converge totalmente a $f$ su $\mathbb R$, quindi puntualmente in ogni $x$. Questo è il caso dell'Esempio sotto con $f(x)=x^2$.
 
@@ -520,4 +520,4 @@ Il collegamento si legge in due versi.
 
 **Errore tipico 8.12.** Concludere che $f$ è $C^r$ perché $a_k,b_k=O(1/k^r)$. Il decadimento è condizione necessaria per $f\in C^r$, non sufficiente. Si prenda $f(x)=\sum_{k=1}^\infty\frac{\sin kx}{k^2}$: i coefficienti sono $O(1/k^2)$, ma la serie derivata $\sum\frac{\cos kx}{k}$ diverge in $x=0$ e $f$ non è nemmeno di classe $C^1$. Per dedurre regolarità dai coefficienti serve un margine (ad esempio l'esponente $r+2$ visto sopra), o la convergenza totale della serie derivata.
 
-Il decadimento dà anche un criterio rapido di confronto. Il dente di sega, con salti, ha coefficienti $b_k\sim1/k$. L'onda $|x|$, continua ma non $C^1$ come funzione periodica, ha $a_k\sim1/k^2$. Una funzione $C^2$ periodica ha coefficienti almeno $O(1/k^2)$, con convergenza totale della serie. Più la funzione è liscia, più la serie converge in fretta.
+Il decadimento dà anche un criterio rapido di confronto. Il dente di sega, con salti, ha coefficienti $|b_k|=2/k$. L'onda $|x|$, continua ma non $C^1$ come funzione periodica, ha $|a_k|=\frac{4}{\pi k^2}$ per $k$ dispari e $a_k=0$ per $k$ pari. Una funzione $C^2$ periodica ha coefficienti almeno $O(1/k^2)$, con convergenza totale della serie. Più la funzione è liscia, più la serie converge in fretta.

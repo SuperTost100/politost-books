@@ -357,7 +357,7 @@ Date $\sum a_kx^k$ e $\sum b_kx^k$ con raggi $R_1$ e $R_2$, la serie somma $\sum
 
 ### Derivazione e integrazione termine a termine
 
-Le serie $\sum a_kx^k$ e $\sum k\,a_kx^k$ hanno lo stesso raggio di convergenza. Perciò derivando o integrando una serie di potenze il raggio non cambia. Si applicano i teoremi di derivazione e integrazione per serie di funzioni, che richiedono la convergenza totale. Questa si ha su ogni intervallo chiuso contenuto in $(x_0-R,x_0+R)$.
+Le serie $\sum a_kx^k$ e $\sum k\,a_kx^k$ hanno lo stesso raggio di convergenza. Perciò derivando o integrando una serie di potenze il raggio non cambia. Si applicano i teoremi di derivazione e integrazione per serie di funzioni, che richiedono la convergenza uniforme, garantita qui da quella totale. Questa si ha su ogni intervallo chiuso e limitato contenuto in $(x_0-R,x_0+R)$.
 
 **Teorema 7.9** (derivazione e integrazione per serie di potenze). Sia $s(x)=\sum_{k=0}^\infty a_k(x-x_0)^k$ con raggio $R>0$. Allora, per ogni $x$ con $|x-x_0|<R$:
 
