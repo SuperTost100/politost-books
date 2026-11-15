@@ -1924,6 +1924,7 @@
           ]
         },
         "yaxis": {
+          "scaleanchor": "x",
           "title": "y",
           "range": [
             -2.5,
@@ -23304,6 +23305,7 @@
           ]
         },
         "yaxis": {
+          "scaleanchor": "x",
           "title": "y",
           "range": [
             -3,

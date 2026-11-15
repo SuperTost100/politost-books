@@ -69,11 +69,11 @@ I cicloalcani subiscono combustione e sostituzione radicalica come gli alcani. I
 
 ### Alcheni
 
-**Definizione 17.5**. Gli **alcheni** contengono almeno un doppio legame $\mathrm{C=C}$. Un alchene a catena aperta con **un solo** doppio legame ha formula $\mathrm{C}_n\mathrm{H}_{2n}$, con $n\geq 2$. I due carboni del doppio legame sono ibridati $sp^2$ e hanno disposizione trigonale planare. Il suffisso è **-ene**: $\mathrm{C_2H_4}$ è etene, detto anche etilene.
+**Definizione 17.5**. Gli **alcheni** contengono almeno un doppio legame $\mathrm{C=C}$. Un alchene a catena aperta con **un solo** doppio legame e nessun altro legame multiplo ha formula $\mathrm{C}_n\mathrm{H}_{2n}$, con $n\geq 2$. I due carboni del doppio legame sono ibridati $sp^2$ e hanno disposizione trigonale planare. Il suffisso è **-ene**: $\mathrm{C_2H_4}$ è etene, detto anche etilene.
 
 La catena principale deve contenere il doppio legame. La si numera dall’estremità che assegna al doppio legame il numero più basso, anche se così un sostituente riceve un numero più alto. La posizione del doppio legame è quella del primo dei due carboni coinvolti: $\mathrm{CH_2=CH-CH_2-CH_3}$ è **1-butene**, mentre $\mathrm{CH_3-CH=CH-CH_3}$ è **2-butene**. In $\mathrm{CH_2=C(CH_3)-CH_3}$ la catena principale ha tre carboni e si ottiene **2-metil-1-propene**.
 
-Il doppio legame comprende un legame $\sigma$ e un legame $\pi$. Nelle reazioni tipiche di **addizione**, il legame $\pi$ viene consumato e ai due carboni si legano nuovi atomi o gruppi: l’addizione di idrogeno trasforma un alchene in un alcano, quella di un alogeno introduce due atomi di alogeno. Molte addizioni agli alcheni sono elettrofile. La rotazione attorno al doppio legame è impedita; le condizioni per distinguere gli isomeri geometrici sono trattate in [Isomeria](ref:chapter/17#p4).
+Il doppio legame comprende un legame $\sigma$ e un legame $\pi$. Nelle reazioni tipiche di **addizione**, il legame $\pi$ viene consumato e ai due carboni si legano nuovi atomi o gruppi: l’addizione di idrogeno trasforma un alchene in un alcano, quella di un alogeno introduce due atomi di alogeno. Molte addizioni agli alcheni sono elettrofile. La rotazione attorno al doppio legame è impedita: per questo, se ciascun carbonio del doppio legame porta due gruppi diversi, esistono due isomeri geometrici distinti.
 
 **Esempio svolto 17.2**. Si nomini $\mathrm{CH_3-CH_2-CH=CH_2}$ e si preveda il prodotto della sua addizione di idrogeno.
 
@@ -84,7 +84,7 @@ Il doppio legame comprende un legame $\sigma$ e un legame $\pi$. Nelle reazioni 
 
 ### Alchini
 
-**Definizione 17.6**. Gli **alchini** contengono almeno un triplo legame $\mathrm{C\equiv C}$. Per una catena aperta con **un solo** triplo legame la formula generale è $\mathrm{C}_n\mathrm{H}_{2n-2}$, con $n\geq 2$. I carboni del triplo legame sono ibridati $sp$ e la geometria locale è lineare. Il suffisso è **-ino**: $\mathrm{C_2H_2}$ si chiama etino, o acetilene.
+**Definizione 17.6**. Gli **alchini** contengono almeno un triplo legame $\mathrm{C\equiv C}$. Per una catena aperta con **un solo** triplo legame e nessun altro legame multiplo la formula generale è $\mathrm{C}_n\mathrm{H}_{2n-2}$, con $n\geq 2$. I carboni del triplo legame sono ibridati $sp$ e la geometria locale è lineare. Il suffisso è **-ino**: $\mathrm{C_2H_2}$ si chiama etino, o acetilene.
 
 Come per gli alcheni, la catena principale contiene il legame multiplo e la numerazione gli assegna il numero più basso. Così $\mathrm{CH\equiv C-CH_2-CH_3}$ è **1-butino**, mentre $\mathrm{CH_3-C\equiv C-CH_3}$ è **2-butino**. Gli alchini reagiscono soprattutto per **addizione** al triplo legame: in condizioni opportune una prima addizione può dare un alchene; un’ulteriore addizione può portare a un prodotto saturo. Gli alchini che hanno un idrogeno legato direttamente a un carbonio del triplo legame, detti terminali, mostrano anche un’acidità assente negli alchini interni.
 
@@ -123,7 +123,7 @@ Nel but-$1$-ene e nel but-$2$-ene cambia invece la **posizione** del doppio lega
 
 **Definizione 17.8**. Un gruppo funzionale è una parte della struttura molecolare che conferisce proprietà e reattività caratteristiche ai composti che la contengono. La distribuzione degli elettroni nel gruppo permette spesso di prevedere dove avverrà una reazione. Nelle formule seguenti, $R$ e $R'$ indicano resti organici; $X$ indica un alogeno. I due resti possono essere uguali o diversi.
 
-- **Alcoli**: $R{-}OH$, con il gruppo ossidrile legato a un carbonio non aromatico. Il suffisso è **-olo**; si numera la catena per assegnare al carbonio che porta $OH$ il numero più basso possibile. $\mathrm{CH_3OH}$ è metanolo, mentre $\mathrm{CH_3CH(OH)CH_3}$ è propan-2-olo. Un alcol è primario, secondario o terziario secondo che il carbonio legato a $OH$ sia unito, rispettivamente, a uno, due o tre altri atomi di carbonio; il metanolo è un caso a sé, privo di legami carbonio–carbonio.
+- **Alcoli**: $R{-}OH$, con il gruppo ossidrile legato a un carbonio saturo. Il suffisso è **-olo**; si numera la catena per assegnare al carbonio che porta $OH$ il numero più basso possibile. $\mathrm{CH_3OH}$ è metanolo, mentre $\mathrm{CH_3CH(OH)CH_3}$ è propan-2-olo. Un alcol è primario, secondario o terziario secondo che il carbonio legato a $OH$ sia unito, rispettivamente, a uno, due o tre altri atomi di carbonio; il metanolo è un caso a sé, privo di legami carbonio–carbonio.
 - **Eteri**: $R{-}O{-}R'$. L'ossigeno è inserito fra due resti organici e non porta un idrogeno. $\mathrm{CH_3OCH_2CH_3}$ si chiama metossietano nella nomenclatura sistematica; si incontra anche il nome di classe *etere etilmetilico*, formato dai nomi dei due gruppi.
 - **Aloalcani**: $R{-}X$, dove l'alogeno è legato a un carbonio alifatico. L'alogeno compare come prefisso, per esempio **cloro-** in 2-cloropropano, $\mathrm{CH_3CH(Cl)CH_3}$.
 - **Ammine**: derivano formalmente da $\mathrm{NH_3}$ sostituendo uno, due o tre idrogeni con resti organici. Si distinguono così ammine primarie $R{-}NH_2$, secondarie $R{-}NH{-}R'$ e terziarie con tre resti legati all'azoto. Quando l'ammina è il gruppo principale si usa **-ammina**, come in metilammina, $\mathrm{CH_3NH_2}$; come sostituente si usa **ammino-**.
@@ -164,7 +164,7 @@ Il gruppo carbossilico può reagire con un alcol formando un estere e acqua. Est
 :::image{src="assets/3925a881-etanoato-di-etile.svg" alt="Struttura dell'etanoato di etile: carbonile e ossigeno legato al gruppo etile (C4H8O2)" caption="Fig. 17.3 — Etanoato di etile: il gruppo estere comprende entrambi gli ossigeni e il carbonio del carbonile."}
 :::
 
-**Errore tipico 17.4**. Classificare ogni composto con ossigeno fra due carboni come etere. Prima di assegnare il nome bisogna controllare se uno di quei carboni porta anche un doppio legame con ossigeno: in tal caso la sequenza $C(=O){-}O$ identifica un estere. Analogamente, $R{-}CHO$ è un'aldeide perché il carbonio carbonilico porta un idrogeno; $R{-}CO{-}R'$ è un chetone perché porta due resti carboniosi.
+**Errore tipico 17.4**. Classificare ogni composto con ossigeno fra due carboni come etere. Prima di assegnare il nome bisogna controllare se uno di quei carboni porta anche un doppio legame con ossigeno: in tal caso, se l'altro carbonio non è a sua volta carbonilico, la sequenza $C(=O){-}O$ identifica un estere. Analogamente, $R{-}CHO$ è un'aldeide perché il carbonio carbonilico porta un idrogeno; $R{-}CO{-}R'$ è un chetone perché porta due resti carboniosi.
 
 ## p6 | Come viene chiesto all'esame
 

@@ -145,7 +145,7 @@ $$
 
 **Esercizio 2A1**
 
-Un punto materiale di massa $m_1=0.1\,\text{kg}$ si muove lungo una guida scabra formata da un tratto di lunghezza $x_1=1.15\,\text{m}$, inclinato di un angolo $\theta=60^\circ$ rispetto all’orizzontale, e da un tratto orizzontale lungo $x_2=0.45\,\text{m}$. Il coefficiente di attrito dinamico fra il corpo e la guida è $\mu_d=0.6$. All’istante $t=0$ il punto si trova in $A$ e possiede una velocità $v_0=3\,\text{m/s}$ diretta lungo la guida. Al termine del tratto orizzontale della guida il punto materiale urta perpendicolarmente un estremo di un’asta omogenea di massa $m_{\text{asta}}=1.4\,\text{kg}$ e lunghezza $d=0.5\,\text{m}$. L’asta può ruotare senza attrito nel piano orizzontale intorno a un asse verticale passante per il suo centro. Il momento di inerzia dell’asta rispetto al suo centro di massa è $I_a=\frac{1}{12}m_{\text{asta}}d^2$. Al momento dell’urto, che è completamente anelastico, l’asta ruota in senso orario con velocità angolare $\omega=3\,\text{rad/s}$ ed è ortogonale alla traiettoria del punto. La particella si muove verso l’estremo dell’asta in direzione $+x$. Calcolare:
+Un punto materiale di massa $m_1=0.1\,\text{kg}$ si muove lungo una guida scabra formata da un tratto di lunghezza $x_1=1.15\,\text{m}$, inclinato di un angolo $\theta=60^\circ$ rispetto all’orizzontale, e da un tratto orizzontale lungo $x_2=0.45\,\text{m}$. Il coefficiente di attrito dinamico fra il corpo e la guida è $\mu_d=0.6$. All’istante $t=0$ il punto si trova in $A$ e possiede una velocità $v_0=3\,\text{m/s}$ diretta lungo la guida. Al termine del tratto orizzontale della guida il punto materiale urta perpendicolarmente un estremo di un’asta omogenea di massa $m_{\text{asta}}=1.4\,\text{kg}$ e lunghezza $d=0.5\,\text{m}$. L’asta può ruotare senza attrito nel piano orizzontale intorno a un asse verticale passante per il suo centro. Il momento di inerzia dell’asta rispetto al suo centro di massa è $I_a=\frac{1}{12}m_{\text{asta}}d^2$. Al momento dell’urto, che è completamente anelastico, l’asta ruota in senso orario con velocità angolare $\omega=3\,\text{rad/s}$ ed è ortogonale alla traiettoria del punto. La particella si muove verso l’estremo dell’asta in direzione $+x$ e colpisce l’estremo rispetto al quale il suo momento angolare, calcolato rispetto al centro dell’asta, è antiorario. Calcolare:
 
 1. La velocità della massa $m_1$ al termine del tratto orizzontale della guida, un istante prima dell’urto con l’asta.
 2. La velocità angolare del sistema formato dalla particella e dall’asta dopo l’urto.
@@ -565,7 +565,7 @@ $$F_{\mathrm{el}} = 0$$
 
 Indichiamo con $a$ l’accelerazione iniziale e la consideriamo verso destra, assumendo che il cilindro salga lungo il piano sinistro e la sfera scenda lungo il piano destro. Chiamiamo $T_1$ la tensione lato cilindro e $T_2$ la tensione lato sfera.
 
-Per muoversi di puro rotolamento, la sfera e il cilindro subiranno una forza d’attrito statico $f_s$ con il piano inclinato diretta in direzione opposta allo spostamento traslazionale.
+Per muoversi di puro rotolamento, la sfera e il cilindro subiranno una forza d’attrito statico $f_s$ con il piano inclinato diretta in direzione opposta all'accelerazione del centro di massa (all'istante iniziale, cioè allo spostamento traslazionale).
 
 Scriviamo ora le equazioni delle forze e dei momenti per la sfera, il cilindro e la carrucola:
 
@@ -664,7 +664,7 @@ $$F_{\mathrm{el}} = 0$$
 
 Indichiamo con $a$ l’accelerazione iniziale e la consideriamo verso destra, assumendo che il cilindro salga lungo il piano sinistro e la sfera scenda lungo il piano destro. Chiamiamo $T_1$ la tensione lato cilindro e $T_2$ la tensione lato sfera.
 
-Per muoversi di puro rotolamento, la sfera e il cilindro subiranno una forza d’attrito statico $f_s$ con il piano inclinato, diretta in direzione opposta allo spostamento traslazionale. Scriviamo le equazioni delle forze e dei momenti per la sfera, il cilindro e la carrucola:
+Per muoversi di puro rotolamento, la sfera e il cilindro subiranno una forza d’attrito statico $f_s$ con il piano inclinato, diretta in direzione opposta all'accelerazione del centro di massa (all'istante iniziale, cioè allo spostamento traslazionale). Scriviamo le equazioni delle forze e dei momenti per la sfera, il cilindro e la carrucola:
 
 $$\left\{
 \begin{aligned}
@@ -997,21 +997,21 @@ $$A\cos\varphi=0{,}06\,\mathrm{m},\qquad A\sin\varphi=\frac{0{,}08\pi\,\mathrm{m
 
 Sommando i quadrati delle due relazioni si ottiene
 
-$$A=\sqrt{(0{,}06\,\mathrm{m})^2+(0{,}04\,\mathrm{m})^2}=0{,}10\,\mathrm{m}.$$
+$$A=\sqrt{(0{,}06\,\mathrm{m})^2+(0{,}04\,\mathrm{m})^2}=0{,}02\sqrt{13}\,\mathrm{m}\approx0{,}072\,\mathrm{m}.$$
 
-Entrambe le componenti $A\cos\varphi$ e $A\sin\varphi$ sono positive, quindi $\varphi$ è nel primo quadrante. In particolare, $\cos\varphi=3/5$ e $\sin\varphi=2/5$, da cui $\varphi=\arctan(2/3)$.
+Entrambe le componenti $A\cos\varphi$ e $A\sin\varphi$ sono positive, quindi $\varphi$ è nel primo quadrante. In particolare, $\cos\varphi=3/\sqrt{13}$ e $\sin\varphi=2/\sqrt{13}$, da cui $\varphi=\arctan(2/3)$.
 
 La legge oraria è dunque
 
-$$x(t)=0{,}10\cos\left(2\pi t+\arctan\frac{2}{3}\right)\,\mathrm{m}.$$
+$$x(t)=0{,}072\cos\left(2\pi t+\arctan\frac{2}{3}\right)\,\mathrm{m}.$$
 
-Il periodo vale $T=2\pi/\omega$ {{formula:2.15}}, quindi $T=1\,\mathrm{s}$. Dalla formula della velocità, il modulo massimo si ha quando il seno vale $1$ in valore assoluto: $v_{\max}=A\omega=0{,}20\pi\,\mathrm{m/s}$.
+Il periodo vale $T=2\pi/\omega$ {{formula:2.15}}, quindi $T=1\,\mathrm{s}$. Dalla formula della velocità, il modulo massimo si ha quando il seno vale $1$ in valore assoluto: $v_{\max}=A\omega=0{,}04\sqrt{13}\,\pi\,\mathrm{m/s}\approx0{,}45\,\mathrm{m/s}$.
 
 Per trovare il primo passaggio per l’origine imponiamo $x(t)=0$. Poiché la fase iniziale è nel primo quadrante, la prima fase successiva per cui il coseno si annulla è $\pi/2$. Pertanto $2\pi t+\varphi=\pi/2$ e
 
 $$t=\frac{\pi/2-\arctan(2/3)}{2\pi}\,\mathrm{s}\approx0{,}156\,\mathrm{s}.$$
 
-**Risultati:** $A=0{,}10\,\mathrm{m}$, $\varphi=\arctan(2/3)$, $T=1\,\mathrm{s}$, $v_{\max}=0{,}20\pi\,\mathrm{m/s}$; il primo passaggio per l’origine avviene a $t\approx0{,}156\,\mathrm{s}$.
+**Risultati:** $A=0{,}02\sqrt{13}\,\mathrm{m}\approx0{,}072\,\mathrm{m}$, $\varphi=\arctan(2/3)$, $T=1\,\mathrm{s}$, $v_{\max}=0{,}04\sqrt{13}\,\pi\,\mathrm{m/s}\approx0{,}45\,\mathrm{m/s}$; il primo passaggio per l’origine avviene a $t\approx0{,}156\,\mathrm{s}$.
 :::
 :::
 

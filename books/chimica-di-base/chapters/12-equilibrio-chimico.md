@@ -93,7 +93,7 @@ $$K_p = K_c\,(RT)^{\Delta n}, \qquad \Delta n = (c+d) - (a+b)$$
 
 dove $\Delta n$ è la somma dei coefficienti stechiometrici dei prodotti gassosi meno quella dei reagenti gassosi. Nella formula, $R$ e $T$ vanno espressi in unità coerenti con quelle scelte per le pressioni parziali (tipicamente $R = 0,08206 \ \mathrm{L\cdot atm/(mol\cdot K)}$ se le pressioni sono in atm).
 
-Un caso particolare importante: se il numero di moli gassose non cambia durante la reazione, cioè $\Delta n = 0$, allora $(RT)^{\Delta n} = 1$ e $K_p = K_c$; più in generale $K_c = K_p$ se e solo se la costante di equilibrio risulta adimensionale.
+Un caso particolare importante: se il numero di moli gassose non cambia durante la reazione, cioè $\Delta n = 0$, allora $(RT)^{\Delta n} = 1$ e $K_p = K_c$; per un equilibrio tra soli gas questo accade se e solo se la costante di equilibrio risulta adimensionale.
 
 Quando tutti i coefficienti stechiometrici di una reazione bilanciata vengono moltiplicati per uno stesso numero $n$ (ad esempio per dimezzare o raddoppiare l'equazione), la nuova costante di equilibrio diventa
 

@@ -106,7 +106,7 @@ Riordinando {{formula:15.5}} si ottiene $1/\lbrack A\rbrack _t=kt+1/\lbrack A\rb
 
 ### Esempio svolto ed errori frequenti
 
-**Esempio svolto 15.2.** A $25\ ^\circ\mathrm{C}$, lo ioduro di idrogeno si decompone con legge sperimentale $v=k\lbrack \mathrm{HI}\rbrack ^2$ e $k=2,4\times10^{-21}\ \mathrm{L/(mol\cdot s)}$. Si introducono $0,0100\ \mathrm{mol}$ di $\mathrm{HI}$ in un recipiente di volume costante pari a $1,0\ \mathrm{L}$. Quanto tempo occorre perché reagisca il $10\%$ dello ioduro di idrogeno?
+**Esempio svolto 15.2.** A $25\ ^\circ\mathrm{C}$, lo ioduro di idrogeno si decompone con legge sperimentale $-\mathrm{d}\lbrack \mathrm{HI}\rbrack /\mathrm{d}t=k\lbrack \mathrm{HI}\rbrack ^2$ e $k=2,4\times10^{-21}\ \mathrm{L/(mol\cdot s)}$. Si introducono $0,0100\ \mathrm{mol}$ di $\mathrm{HI}$ in un recipiente di volume costante pari a $1,0\ \mathrm{L}$. Quanto tempo occorre perché reagisca il $10\%$ dello ioduro di idrogeno?
 
 1. **Dati.** La concentrazione iniziale è $\lbrack \mathrm{HI}\rbrack _0=n/V=0,0100/1,0=0,010\ \mathrm{mol/L}$. Se reagisce il $10\%$, resta il $90\%$: $\lbrack \mathrm{HI}\rbrack _t=0,90\lbrack \mathrm{HI}\rbrack _0=0,0090\ \mathrm{mol/L}$.
 2. **Strategia.** La legge data è di secondo ordine rispetto a $\mathrm{HI}$; si isola $t$ in {{formula:15.5}}.
@@ -122,7 +122,7 @@ $$t=\frac{1}{k}\left(\frac{1}{\lbrack \mathrm{HI}\rbrack _t}-\frac{1}{\lbrack \m
 
 ### Effetto della temperatura sulla costante di velocità
 
-La [velocità di reazione](ref:chapter/15#p2) dipende dalla concentrazione dei reagenti attraverso la legge cinetica $v=k\lbrack A\rbrack ^x\lbrack B\rbrack ^y$, ma la costante $k$ non è affatto una vera costante: essa cambia con la temperatura. Raccogliendo dati di concentrazione e tempo per una stessa reazione condotta a diverse temperature, e ricavando $k$ da ciascun esperimento, si osserva che $k$ aumenta sempre al crescere della temperatura. La temperatura, quindi, non compare esplicitamente nella legge cinetica differenziale, ma ne modifica la velocità agendo sulla costante $k$.
+La [velocità di reazione](ref:chapter/15#p2) dipende dalla concentrazione dei reagenti attraverso la legge cinetica $v=k\lbrack A\rbrack ^x\lbrack B\rbrack ^y$, ma la costante $k$ non è affatto una vera costante: essa cambia con la temperatura. Raccogliendo dati di concentrazione e tempo per una stessa reazione condotta a diverse temperature, e ricavando $k$ da ciascun esperimento, si osserva che nella quasi totalità dei casi $k$ aumenta al crescere della temperatura. La temperatura, quindi, non compare esplicitamente nella legge cinetica differenziale, ma ne modifica la velocità agendo sulla costante $k$.
 
 Sperimentalmente il grafico di $k$ in funzione di $T$ è una curva esponenziale crescente, descritta dall'**equazione di Arrhenius**.
 

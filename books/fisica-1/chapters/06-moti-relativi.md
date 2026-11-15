@@ -27,7 +27,7 @@ Il caso più semplice si ha quando il riferimento mobile trasla rispetto a quell
 
 $$\vec{v} = \vec{v}_{O'} + \vec{v}\,', \qquad \vec{a} = \vec{a}_{O'} + \vec{a}\,'$$
 
-come caso particolare (con $\vec{\omega}=\vec{0}$) del teorema generale che enunceremo nella sottosezione successiva. La velocità (e l'accelerazione) assoluta è semplicemente la somma vettoriale della velocità (accelerazione) relativa e di quella dell'origine mobile: non compaiono né termine centripeto né termine di Coriolis, perché nessuno dei due richiede una rotazione degli assi. Si parla propriamente di **trasformazioni di Galileo** soltanto quando $\vec{v}_{O'}$ è costante nel tempo, cosicché entrambi i riferimenti risultano inerziali; se invece l'origine mobile accelera, le stesse relazioni restano valide come semplici relazioni cinematiche tra riferimenti in traslazione, ma non collegano due riferimenti inerziali.
+come caso particolare (con $\vec{\omega}=\vec{0}$) del teorema generale che enunceremo nella sottosezione successiva. La velocità (e l'accelerazione) assoluta è semplicemente la somma vettoriale della velocità (accelerazione) relativa e di quella dell'origine mobile: non compaiono né termine centripeto né termine di Coriolis, perché entrambi richiedono una rotazione degli assi. Si parla propriamente di **trasformazioni di Galileo** soltanto quando $\vec{v}_{O'}$ è costante nel tempo, cosicché entrambi i riferimenti risultano inerziali; se invece l'origine mobile accelera, le stesse relazioni restano valide come semplici relazioni cinematiche tra riferimenti in traslazione, ma non collegano due riferimenti inerziali.
 
 **Esempio 6.1** (attraversamento di un fiume con corrente non uniforme). Un nuotatore attraversa un fiume di larghezza $L = 20\ \text{m}$ partendo dal punto $A$ e puntando sempre in direzione normale alle sponde. Rispetto all'acqua la sua velocità relativa è costante e pari a $v_y = 3{,}6\ \text{km/h} = 1{,}0\ \text{m/s}$, diretta lungo $y$ (perpendicolare alla corrente). La corrente ha una velocità di trascinamento che varia con la distanza $y$ dalla sponda di partenza secondo $v(y)=\lambda y(L-y)$, con $\lambda = 5{,}0\cdot10^{-3}\ \text{m}^{-1}\text{s}^{-1}$. Si vuole determinare la coordinata $x_B$ del punto di arrivo.
 
@@ -267,7 +267,7 @@ Lo stesso schema, con l'aggiunta della forza apparente di trascinamento traslato
 
 ### Errori tipici
 
-- Scrivere la forza apparente con il segno sbagliato: $\vec{F}_{\text{app}} = -m\vec{a}_T$ (o $-m\vec{a}_{O'}$ nel caso puramente traslatorio), mai $+m\vec{a}_T$; il segno meno è essenziale e va sempre controllato.
+- Scrivere la forza apparente con il segno sbagliato: $\vec{F}_{\text{app}} = -m\vec{a}_T - m\vec{a}_{Co}$ (o $-m\vec{a}_{O'}$ nel caso puramente traslatorio), mai $+m\vec{a}_T + m\vec{a}_{Co}$; il segno meno è essenziale e va sempre controllato.
 
 - Introdurre la forza centrifuga anche nel riferimento inerziale del laboratorio: in tale riferimento esistono solo le forze vere, e l'accelerazione centripeta compare a secondo membro dell'equazione $\vec{F} = m\vec{a}$, non come forza aggiuntiva.
 
@@ -275,7 +275,7 @@ Lo stesso schema, con l'aggiunta della forza apparente di trascinamento traslato
 
 - Confondere il riferimento in cui si scrive l'equazione: occorre sempre dichiarare esplicitamente se si sta lavorando nel riferimento inerziale (solo forze vere) o in quello non inerziale (forze vere più forze apparenti), per evitare di sommare due volte lo stesso effetto.
 
-- Applicare meccanicamente formule del pendolo o del piano inclinato in quiete dimenticando di sostituire $g$ con la gravità efficace $g_{\text{eff}} = \sqrt{g^2+A^2}$ quando il sistema è accelerato orizzontalmente.
+- Applicare meccanicamente formule del pendolo o del piano inclinato in quiete dimenticando di sostituire $\vec{g}$ con la gravità efficace $\vec{g}_{\text{eff}} = \vec{g} - \vec{A}$ quando il sistema è accelerato orizzontalmente: per il pendolo basta il modulo $\sqrt{g^2+A^2}$, mentre sul piano inclinato occorre scomporre $\vec{g}_{\text{eff}}$, che non è verticale, lungo il piano e perpendicolarmente a esso.
 
 ## p4 | La Terra come riferimento
 

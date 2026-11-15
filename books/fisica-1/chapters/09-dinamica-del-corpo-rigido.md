@@ -305,7 +305,7 @@ La seconda relazione si ottiene derivando la prima nel tempo, essendo $R$ costan
 La condizione {{formula:9.8}} fornisce il legame cinematico tra traslazione e rotazione, ma per scrivere le equazioni dinamiche occorre ancora scegliere un polo per il momento angolare. Le due scelte più comode sono:
 
 - il centro di massa CM, per il quale vale sempre la [seconda equazione cardinale](ref:chapter/7#p5) $I_{CM}\,d\omega/dt = M'_{tot}$, indipendentemente dal fatto che il CM sia o non sia un punto fisso. Scegliendo questo polo, il peso, la reazione normale e un'eventuale tensione applicata sull'asse hanno braccio nullo (sono applicati in CM o diretti lungo il raggio), e l'unico momento non nullo è in genere quello della forza di attrito, $M'_{att} = R\,F_{att}$;
-- il punto di contatto istantaneo $C$: trattandolo come polo si usa il momento d'inerzia rispetto a quell'asse, $I_C = I_{CM} + mR^2$ per il [teorema di Huygens-Steiner](ref:chapter/8#p4); il vantaggio è che la forza di attrito, applicata proprio in $C$, ha braccio nullo e non compare nell'equazione dei momenti, che si riduce a $M_{peso} + M_N = I_C\,\alpha$.
+- il punto di contatto istantaneo $C$: trattandolo come polo si usa il momento d'inerzia rispetto a quell'asse, $I_C = I_{CM} + mR^2$ per il [teorema di Huygens-Steiner](ref:chapter/8#p4); il vantaggio è che la forza di attrito, applicata proprio in $C$, ha braccio nullo e non compare nell'equazione dei momenti, che si riduce a $M_{peso} + M_N + M_{altre} = I_C\,\alpha$, dove $M_{altre}$ è il momento rispetto a $C$ delle altre forze esterne (tensioni, forze applicate all'asse).
 
 Entrambe le scelte sono legittime e portano allo stesso risultato per $\alpha$; conviene scegliere $C$ quando si vuole eliminare subito l'incognita $F_{att}$ dall'equazione dei momenti, e il CM quando si deve comunque scrivere l'equazione di traslazione (nella quale $F_{att}$ compare sempre).
 
@@ -361,9 +361,9 @@ $$a = g\,\frac{m-M\sin\theta}{m+\tfrac32 M}.$$
 
 Di conseguenza $F_{att} = \tfrac12 M a$ e $T = m(g-a)$.
 
-*Controllo (condizione di aderenza).* Affinché il moto sia effettivamente di puro rotolamento occorre $F_{att}\le \mu_s Mg\cos\theta$, cioè
+*Controllo (condizione di aderenza).* Affinché il moto sia effettivamente di puro rotolamento occorre $|F_{att}|\le \mu_s Mg\cos\theta$, cioè
 
-$$\tfrac12 M a \le \mu_s Mg\cos\theta \quad\Longrightarrow\quad \mu_s \ge \frac{m-M\sin\theta}{(2m+3M)\cos\theta} .$$
+$$\tfrac12 M |a| \le \mu_s Mg\cos\theta \quad\Longrightarrow\quad \mu_s \ge \frac{|m-M\sin\theta|}{(2m+3M)\cos\theta} .$$
 
 Se i dati numerici del problema non soddisfano questa disuguaglianza, il disco non può rotolare senza strisciare e il problema deve essere rifatto con attrito dinamico $F_{att}=\mu_d Mg\cos\theta$ noto a priori, al posto dell'incognita $F_{att}$.
 

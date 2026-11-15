@@ -67,7 +67,7 @@ Un $\Delta H_{\text{soluz}}$ favorevole, cioè negativo o modesto, non basta da 
 
 Per i soluti solidi la solubilità in acqua in genere aumenta con la temperatura, con alcune eccezioni; una parte rilevante dei processi di dissoluzione di elettroliti solidi è endotermica, per cui in questi casi un aumento di temperatura favorisce ulteriormente la dissoluzione per il principio dell'equilibrio spostato verso i prodotti.
 
-Per i gas disciolti in acqua vale invece l'andamento opposto: la solubilità diminuisce all'aumentare della temperatura. La ragione sta nel bilancio energetico: poiché le particelle di un gas sono già separate tra loro, il termine $\Delta H_{\text{soluto}}$ è trascurabile ($\Delta H_{\text{soluto}} \approx 0$), e dato che l'idratazione è sempre esotermica ($\Delta H_{\text{idr}} < 0$), il contributo entalpico totale risulta negativo, $\Delta H_{\text{soluz}} < 0$: la dissoluzione di un gas libera calore. Un aumento di temperatura fornisce alle particelle gassose disciolte l'energia cinetica necessaria a superare le deboli forze intermolecolari gas-solvente e a tornare in fase gassosa, riducendo quindi la solubilità del gas.
+Per i gas disciolti in acqua vale invece, di norma, l'andamento opposto: la solubilità diminuisce all'aumentare della temperatura. La ragione sta nel bilancio energetico: poiché le particelle di un gas sono già separate tra loro, il termine $\Delta H_{\text{soluto}}$ è trascurabile ($\Delta H_{\text{soluto}} \approx 0$), e dato che l'idratazione di un gas è di solito esotermica ($\Delta H_{\text{idr}} < 0$), il contributo entalpico totale risulta negativo, $\Delta H_{\text{soluz}} < 0$: la dissoluzione di un gas libera calore. Un aumento di temperatura fornisce alle particelle gassose disciolte l'energia cinetica necessaria a superare le deboli forze intermolecolari gas-solvente e a tornare in fase gassosa, riducendo quindi la solubilità del gas.
 
 ### Effetto della pressione e legge di Henry
 
@@ -191,7 +191,7 @@ valida a condizione che i due volumi $V_i$ e $V_f$ siano espressi nella stessa u
 
 Dati: $M_i = 2,00\ \mathrm{mol/L}$, $V_i = 250\ \mathrm{mL}$, $M_f = 0,100\ \mathrm{mol/L}$.
 
-Strategia: le moli di $\mathrm{HCl}$ restano costanti durante la diluizione, quindi si applica {{formula:11.7}} per trovare il volume finale, da cui si sottrae il volume iniziale per avere il volume di acqua da aggiungere.
+Strategia: le moli di $\mathrm{HCl}$ restano costanti durante la diluizione, quindi si applica {{formula:11.7}} per trovare il volume finale, da cui, supponendo i volumi additivi, si sottrae il volume iniziale per avere il volume di acqua da aggiungere.
 
 Calcolo.
 $$V_f = \frac{M_i V_i}{M_f} = \frac{2,00 \times 250\ \mathrm{mL}}{0,100} = 5,00 \times 10^3\ \mathrm{mL} = 5,00\ \mathrm{L}$$

@@ -253,7 +253,7 @@ Per una singola particella di massa $m$ e velocità istantanea $v$, l'energia ci
 $$E_k = \frac{1}{2}M\,\bar{u}^2 = \frac{3}{2}RT$$
 :::
 
-dove $M$ è la massa molare del gas (in kg/mol se si vuole $E_k$ in joule) e $R$ la costante dei gas. Uguagliando i due membri si ottiene la velocità quadratica media.
+dove $M$ è la massa molare del gas (in kg/mol se si vuole $E_k$ in joule per mole) e $R$ la costante dei gas. Uguagliando i due membri si ottiene la velocità quadratica media.
 
 :::formula{id="6.12" label="Velocità quadratica media"}
 $$\bar{u} = \sqrt{\frac{3RT}{M}}$$
@@ -344,10 +344,10 @@ Un gas reale si comporta in modo quasi ideale a temperature prossime a quella am
 Per quantificare la deviazione dall'idealità si definisce il fattore di comprimibilità
 
 :::formula{id="6.15" label="Fattore di comprimibilità"}
-$$Z = \frac{PV}{RT}$$
+$$Z = \frac{PV}{nRT}$$
 :::
 
-Per un gas ideale $Z = 1$ a qualunque pressione, perché $PV = nRT$ con $n = 1\ \text{mol}$. Se si riporta in un grafico $Z$ in funzione della pressione esterna per una mole di gas reale, la curva tipica (quella osservata per il metano, $\text{CH}_4$) scende sotto il valore $1$ a pressioni moderate per poi risalire proporzionalmente alla pressione quando questa diventa molto alta.
+Per un gas ideale $Z = 1$ a qualunque pressione, perché $PV = nRT$. Se si riporta in un grafico $Z$ in funzione della pressione esterna per una mole di gas reale, la curva tipica (quella osservata per il metano, $\text{CH}_4$) scende sotto il valore $1$ a pressioni moderate per poi risalire proporzionalmente alla pressione quando questa diventa molto alta.
 
 Questo andamento è il risultato di due effetti che si sovrappongono parzialmente.
 

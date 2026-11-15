@@ -89,7 +89,7 @@ In altre parole, ogni cambiamento della pressione esterna si trasmette inalterat
 
 Si consideri, per esempio, un sistema idraulico con due pistoni di aree $A_1$ e $A_2$, collegati da un fluido incomprimibile in equilibrio, in cui gli effetti della gravità sul fluido siano trascurabili rispetto alle forze applicate. Una forza $F_1$ applicata al primo pistone produce una variazione di pressione $\Delta p = F_1/A_1$, che per il principio di Pascal si trasmette inalterata al secondo pistone; la forza che il fluido esercita su di esso vale allora $F_2 = \Delta p\, A_2 = F_1\, \frac{A_2}{A_1}$. Con $A_2 > A_1$ si ottiene un'amplificazione della forza, a spese di uno spostamento proporzionalmente minore del secondo pistone, in accordo con la conservazione dell'energia.
 
-**Superfici isobariche fra fluidi diversi.** La superficie di separazione tra due liquidi di densità diverse è sempre orizzontale. Si considerino due punti $A$ e $B$ dell'interfaccia, posti alle quote $y_A$ e $y_B$ in corrispondenza di due ascisse diverse $x_1$ e $x_2$. Poiché entrambi i punti appartengono alla regione connessa occupata dal liquido superiore, di densità $\rho_1$, la legge di Stevino applicata entro tale liquido fornisce $p_A - p_B = \rho_1 g (y_B - y_A)$. Allo stesso tempo, poiché $A$ e $B$ appartengono anche alla regione connessa occupata dal liquido inferiore, di densità $\rho_2$, la stessa legge applicata entro quest'ultimo fornisce $p_A - p_B = \rho_2 g (y_B - y_A)$. Ma la pressione in un punto è un valore univoco, indipendente dal percorso lungo cui viene calcolata la sua differenza rispetto a un altro punto; deve quindi essere $\rho_1 g(y_B - y_A) = \rho_2 g(y_B - y_A)$. Essendo $\rho_1 \neq \rho_2$ e $g \neq 0$, l'unica possibilità è $y_B = y_A$: l'interfaccia è dunque a quota costante, cioè orizzontale.
+**Superfici isobariche fra fluidi diversi.** Trascurando la tensione superficiale, la superficie di separazione tra due liquidi di densità diverse è sempre orizzontale. Si considerino due punti $A$ e $B$ dell'interfaccia, posti alle quote $y_A$ e $y_B$ in corrispondenza di due ascisse diverse $x_1$ e $x_2$. Poiché entrambi i punti appartengono alla regione connessa occupata dal liquido superiore, di densità $\rho_1$, la legge di Stevino applicata entro tale liquido fornisce $p_A - p_B = \rho_1 g (y_B - y_A)$. Allo stesso tempo, poiché $A$ e $B$ appartengono anche alla regione connessa occupata dal liquido inferiore, di densità $\rho_2$, la stessa legge applicata entro quest'ultimo fornisce $p_A - p_B = \rho_2 g (y_B - y_A)$. Ma la pressione in un punto è un valore univoco, indipendente dal percorso lungo cui viene calcolata la sua differenza rispetto a un altro punto; deve quindi essere $\rho_1 g(y_B - y_A) = \rho_2 g(y_B - y_A)$. Essendo $\rho_1 \neq \rho_2$ e $g \neq 0$, l'unica possibilità è $y_B = y_A$: l'interfaccia è dunque a quota costante, cioè orizzontale.
 
 **Paradosso idrostatico.** La pressione sul fondo di un recipiente dipende solo dalla profondità $h$ del liquido e non dalla forma del recipiente: recipienti di uguale base $A$, riempiti fino alla stessa altezza $h$ con lo stesso liquido, hanno sul fondo la stessa pressione $p = p_0 + \rho g h$, dove $p_0$ è la pressione esterna (per esempio quella atmosferica) che agisce anche sulla superficie libera del liquido. La forza totale esercitata dal liquido sul fondo è quindi $F = pA = (p_0 + \rho g h) A$. Se però si considera la forza netta, cioè la differenza fra la forza dovuta al liquido e quella che la pressione esterna $p_0$ eserciterebbe da sola sulla stessa area, si ottiene $F_{\text{netta}} = \rho g h A$, pari al peso di una colonna di liquido di base $A$ e altezza $h$. Questo valore è lo stesso nei tre recipienti, anche se il peso totale del liquido effettivamente contenuto differisce da un recipiente all'altro (la differenza è compensata dalla reazione normale delle pareti oblique).
 
@@ -249,13 +249,13 @@ Dall'equazione di continuità segue la conseguenza qualitativa più usata nelle 
 
 Vogliamo ora legare la velocità del fluido alla pressione e alla quota. Il risultato si ottiene applicando il [teorema dell'energia cinetica](ref:chapter/4#p3) a una porzione di fluido ideale che scorre in regime stazionario lungo un tubo di sezione variabile e non necessariamente orizzontale.
 
-**Teorema 11.4** (di Bernoulli). Sia un fluido ideale (incompressibile, non viscoso, $\eta = 0$) in moto in regime stazionario lungo un tubo di flusso, sottoposto alla sola forza peso (assunta uniforme) e privo di pompe, turbine o altri dispositivi che aggiungano o sottraggano energia al flusso. Allora lungo ogni tubo di flusso vale
+**Teorema 11.4** (di Bernoulli). Sia un fluido ideale (incompressibile, non viscoso, $\eta = 0$) in moto in regime stazionario lungo un tubo di flusso, sottoposto alla sola forza peso (assunta uniforme) e privo di pompe, turbine o altri dispositivi che aggiungano o sottraggano energia al flusso. Allora lungo ogni linea di corrente vale
 
 :::formula{id="11.7" label="Teorema di Bernoulli"}
 $$p + \rho g y + \frac12 \rho v^2 = \text{costante}$$
 :::
 
-ossia la somma di pressione, densità di energia potenziale gravitazionale ($\rho g y$) e densità di energia cinetica ($\tfrac12 \rho v^2$) è costante lungo il condotto.
+ossia la somma di pressione, densità di energia potenziale gravitazionale ($\rho g y$) e densità di energia cinetica ($\tfrac12 \rho v^2$) è costante lungo la linea di corrente.
 
 **Dimostrazione richiesta all'esame.**
 
@@ -319,7 +319,7 @@ $$v_b = \sqrt{2gh} = \sqrt{2 \cdot 9,81\,\mathrm{m/s^2}\cdot 2,0\,\mathrm{m}} = 
 :::image{src="assets/c9687187-torricelli-velocita-altezza.svg" alt="Curva v_b = radice di 2gh crescente con h, con punto evidenziato a h=2m, v=6,3 m/s" caption="Fig. 11.5 — Velocità di efflusso v_b in funzione dell'altezza h del pelo libero sopra il foro, secondo il teorema di Torricelli; il punto segnato corrisponde all'esempio con h = 2,0 m."}
 :::
 
-La portata volumica attraverso il foro, per {{formula:11.5}}, vale
+La portata volumica attraverso il foro, trascurando la contrazione del getto all'uscita, per {{formula:11.5}}, vale
 
 $$Q_v = v_b\, S_f = 6,3\,\mathrm{m/s} \cdot 1,0\cdot 10^{-4}\,\mathrm{m^2} \approx 6,3\cdot 10^{-4}\,\mathrm{m^3/s}$$
 
@@ -335,7 +335,7 @@ Finché un fluido viene trattato come ideale (densità costante, nessuna dissipa
 
 Quando due elementi adiacenti di un fluido scorrono l'uno rispetto all'altro, lungo la superficie di contatto compare una forza tangenziale, detta forza di attrito interno, con verso sempre opposto a quello della velocità relativa; per il terzo principio della dinamica, l'elemento 1 esercita sull'elemento 2 una forza uguale e contraria a quella che l'elemento 2 esercita su 1.
 
-Per i fluidi newtoniani, sperimentalmente si trova che il modulo di questa forza è proporzionale all'area di contatto $dS$ e al valore assoluto del gradiente della velocità in direzione ortogonale a tale area
+Per i fluidi newtoniani in moto a strati piani paralleli, sperimentalmente si trova che il modulo di questa forza è proporzionale all'area di contatto $dS$ e al valore assoluto del gradiente della velocità in direzione ortogonale a tale area
 
 :::formula{id="11.9" label="Forza di attrito interno"}
 $$dF = \eta\, dS\, \left|\frac{dv}{dn}\right|$$

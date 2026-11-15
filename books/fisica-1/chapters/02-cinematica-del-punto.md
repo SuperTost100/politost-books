@@ -280,7 +280,7 @@ $$v(t) = \frac{dx}{dt} = \omega A \cos(\omega t + \varphi)$$
 $$a(t) = \frac{dv}{dt} = \frac{d^2x}{dt^2} = -\omega^2 A \sin(\omega t + \varphi) = -\omega^2 x(t)$$
 :::
 
-La velocità ha ampiezza $\omega A$ ed è massima (in modulo) nel centro di oscillazione $x = 0$, dove si annulla agli estremi $x = \pm A$ (punti di inversione del moto). L'accelerazione ha ampiezza $\omega^2 A$, si annulla nel centro di oscillazione e assume valore massimo in modulo agli estremi: essa è sempre proporzionale e di segno opposto allo spostamento dal centro, $a = -\omega^2 x$. Le tre grandezze $x$, $v$, $a$ sono sfasate tra loro: la velocità è in quadratura di fase rispetto alla posizione (sfasamento $\pi/2$), mentre l'accelerazione è in opposizione di fase rispetto alla posizione (sfasamento $\pi$).
+La velocità ha ampiezza $\omega A$ ed è massima (in modulo) nel centro di oscillazione $x = 0$, e si annulla agli estremi $x = \pm A$ (punti di inversione del moto). L'accelerazione ha ampiezza $\omega^2 A$, si annulla nel centro di oscillazione e assume valore massimo in modulo agli estremi: essa è sempre proporzionale e di segno opposto allo spostamento dal centro, $a = -\omega^2 x$. Le tre grandezze $x$, $v$, $a$ sono sfasate tra loro: la velocità è in quadratura di fase rispetto alla posizione (sfasamento $\pi/2$), mentre l'accelerazione è in opposizione di fase rispetto alla posizione (sfasamento $\pi$).
 
 Eliminando il tempo tra $x(t)$ e $v(t)$ si ricava anche la relazione diretta tra velocità e posizione:
 
@@ -390,10 +390,10 @@ $$v(t) = v_0\, e^{-kt}$$
 
 La corrispondente legge oraria si trova integrando ulteriormente; assumendo $x(0) = 0$, si ottiene $x(t) = \frac{v_0}{k}\left(1 - e^{-kt}\right)$, e la velocità in funzione della posizione è $v(x) = v_0 - kx$: il punto si arresta asintoticamente nella posizione $x = v_0/k$. Per una posizione iniziale $x_0$ generica basta traslare la legge oraria, ottenendo $x(t) - x_0 = \frac{v_0}{k}\left(1 - e^{-kt}\right)$, mentre la relazione tra velocità e posizione diventa $v(x) = v_0 - k(x - x_0)$.
 
-Quando invece è presente sia la forza di richiamo elastica sia l'attrito viscoso, si parla propriamente di **oscillatore armonico smorzato**: la posizione tipica ha la forma di una sinusoide moltiplicata per un fattore esponenziale decrescente, del tipo $x(t) = A\sin(\omega t)\, e^{-\gamma t}$, dove $\gamma = 1/\tau$ è legato al tempo caratteristico di smorzamento $\tau$. A differenza del caso di sola attrito viscoso, qui la velocità dell'oscillatore, ottenuta derivando questa legge oraria, cambia periodicamente segno a ogni oscillazione e non segue in generale un singolo andamento esponenziale: resta comunque racchiusa tra due curve inviluppo che decrescono esponenzialmente nel tempo. A seconda del rapporto tra l'intensità dell'attrito e la forza di richiamo elastica si distinguono qualitativamente tre regimi: lo **smorzamento debole** (o sottocritico), in cui il sistema oscilla con ampiezza che decresce lentamente nel tempo; lo **smorzamento critico**, caso di transizione in cui il sistema ritorna all'equilibrio nel modo più rapido possibile senza oscillare; e lo **smorzamento forte** (o sovracritico), in cui il sistema ritorna all'equilibrio lentamente e senza oscillare.
+Quando invece è presente sia la forza di richiamo elastica sia l'attrito viscoso, si parla propriamente di **oscillatore armonico smorzato**: la posizione tipica ha la forma di una sinusoide moltiplicata per un fattore esponenziale decrescente, del tipo $x(t) = A\sin(\omega t)\, e^{-\gamma t}$, dove $\gamma = 1/\tau$ è legato al tempo caratteristico di smorzamento $\tau$. A differenza del caso di sola attrito viscoso, qui la velocità dell'oscillatore, ottenuta derivando questa legge oraria, cambia periodicamente segno a ogni oscillazione e non segue in generale un singolo andamento esponenziale. La posizione resta invece racchiusa tra le due curve inviluppo $\pm A\,e^{-\gamma t}$, che decrescono esponenzialmente nel tempo. A seconda del rapporto tra l'intensità dell'attrito e la forza di richiamo elastica si distinguono qualitativamente tre regimi: lo **smorzamento debole** (o sottocritico), in cui il sistema oscilla con ampiezza che decresce lentamente nel tempo; lo **smorzamento critico**, caso di transizione in cui il sistema ritorna all'equilibrio nel modo più rapido possibile senza oscillare; e lo **smorzamento forte** (o sovracritico), in cui il sistema ritorna all'equilibrio lentamente e senza oscillare.
 
-:::formula{id="2.24" label="Decadimento esponenziale della velocità nel moto smorzato"}
-$$v(t) = v_0\, e^{-\gamma t}, \qquad \gamma = \frac{1}{\tau}$$
+:::formula{id="2.24" label="Curve inviluppo nel moto smorzato"}
+$$x_{\pm}(t) = \pm A\, e^{-\gamma t}, \qquad \gamma = \frac{1}{\tau}$$
 :::
 
 Fisicamente, questo tipo di legge oraria descrive ad esempio il moto di una massa attaccata a una molla in presenza di attrito, come un carrello su una guida con resistenza dell'aria o una sospensione meccanica: a ogni oscillazione lo scostamento massimo (a destra e a sinistra del centro) si riduce di un fattore costante rispetto all'oscillazione precedente, e il moto tende asintoticamente alla posizione di equilibrio. La trattazione quantitativa completa dell'equazione differenziale dell'oscillatore smorzato, e il confronto con il caso dell'oscillatore forzato, richiede strumenti che esulano da questa sezione introduttiva; qui è sufficiente saper riconoscere qualitativamente i tre regimi e la forma della soluzione.
@@ -629,10 +629,10 @@ $$\int_{\theta_0}^{\theta}\alpha(\theta)\,d\theta = \frac{1}{2}\omega^2 - \frac{
 
 Il moto circolare si dice **uniforme** se in tempi uguali viene percorso lo stesso arco $s$, cioè se $v$ (e quindi $\omega$) è costante. Il modulo della velocità è costante ma la sua direzione cambia continuamente, quindi l'accelerazione totale non è nulla: si ha $a_T = 0$ e $a = a_N$, un'accelerazione costante in modulo e sempre ortogonale alla traiettoria. Le leggi orarie, in perfetta analogia con il moto rettilineo uniforme, sono
 
-$$s(t) = s_0 + vt, \qquad \theta(t) = \theta_0 + \omega t.$$
+$$s(t) = s_0 + R\omega t, \qquad \theta(t) = \theta_0 + \omega t.$$
 
 :::formula{id="2.42" label="Leggi orarie del moto circolare uniforme"}
-$$\theta(t) = \theta_0 + \omega t, \qquad s(t) = s_0 + vt$$
+$$\theta(t) = \theta_0 + \omega t, \qquad s(t) = s_0 + R\omega t$$
 :::
 
 Il tempo necessario a percorrere un giro completo ($2\pi R$) è il **periodo di rivoluzione**

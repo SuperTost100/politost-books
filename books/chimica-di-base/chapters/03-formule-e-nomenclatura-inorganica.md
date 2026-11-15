@@ -70,7 +70,7 @@ Uno **ione** è un atomo o un gruppo di atomi che ha acquistato o perso uno o pi
 
 Un **composto ionico** si forma generalmente quando un metallo reagisce con un non metallo: il metallo cede uno o più elettroni e diventa un catione, mentre il non metallo li acquista e diventa un anione; cationi e anioni si attraggono poi per forza elettrostatica (legge di Coulomb) formando il composto.
 
-Diversamente dai composti covalenti molecolari, nei composti ionici non esistono molecole discrete: gli ioni si dispongono in un reticolo cristallino tridimensionale in cui ogni ione è circondato da più ioni di carica opposta. Per questo motivo la formula di un composto ionico, come $\mathrm{NaCl}$, non è una formula molecolare ma una **formula minima**, detta anche **unità formula**: essa indica semplicemente il rapporto minimo tra cationi e anioni nel reticolo, e non corrisponde a nessuna molecola $\mathrm{NaCl}$ realmente esistente.
+Diversamente dai composti covalenti molecolari, nei composti ionici non esistono molecole discrete: gli ioni si dispongono in un reticolo cristallino tridimensionale in cui ogni ione è circondato da più ioni di carica opposta. Per questo motivo la formula di un composto ionico, come $\mathrm{NaCl}$, non è una formula molecolare ma un'**unità formula**, che di solito coincide con la **formula minima**: essa indica semplicemente il rapporto minimo tra cationi e anioni nel reticolo, e non corrisponde a nessuna molecola $\mathrm{NaCl}$ realmente esistente.
 
 **Teorema 3.1** (elettroneutralità dei composti ionici)
 
@@ -95,7 +95,7 @@ Si scriva la formula del composto ionico formato da ioni alluminio e ioni solfat
 
 1. *Dati*: il catione è $\mathrm{Al^{3+}}$ (carica $+3$, prevista dal gruppo 13); l'anione è $\mathrm{SO_4^{2-}}$ (carica $-2$).
 2. *Strategia*: si applica la regola dell'elettroneutralità scambiando le cariche come indici.
-3. *Calcolo*: il numero di cariche negative necessarie per bilanciare 3 cationi $\mathrm{Al^{3+}}$ (cioè $9+$ in totale) con anioni $\mathrm{SO_4^{2-}}$ (cioè $2-$ ciascuno) si trova cercando il minimo comune multiplo tra 3 e 2, che è 6: servono 2 ioni $\mathrm{Al^{3+}}$ (carica totale $+6$) e 3 ioni $\mathrm{SO_4^{2-}}$ (carica totale $-6$). Poiché l'indice dello ione poliatomico è maggiore di 1, lo si racchiude tra parentesi: $\mathrm{Al_2(SO_4)_3}$.
+3. *Calcolo*: il numero di cationi $\mathrm{Al^{3+}}$ ($3+$ ciascuno) e di anioni $\mathrm{SO_4^{2-}}$ ($2-$ ciascuno) che si bilanciano si trova cercando il minimo comune multiplo tra 3 e 2, che è 6: servono 2 ioni $\mathrm{Al^{3+}}$ (carica totale $+6$) e 3 ioni $\mathrm{SO_4^{2-}}$ (carica totale $-6$). Poiché l'indice dello ione poliatomico è maggiore di 1, lo si racchiude tra parentesi: $\mathrm{Al_2(SO_4)_3}$.
 4. *Verifica*: la carica totale è $2(+3) + 3(-2) = 0$, come richiesto dall'elettroneutralità.
 
 **Errore tipico 3.2**
@@ -378,7 +378,7 @@ La nomenclatura degli idracidi segue due regole alternative, legate anche allo s
 
 Gli stessi passaggi, applicati agli alogenuri di idrogeno più comuni, danno: $HF$ = fluoruro di idrogeno / acido fluoridrico; $HCl$ = cloruro di idrogeno / acido cloridrico; $HBr$ = bromuro di idrogeno / acido bromidrico; $HI$ = ioduro di idrogeno / acido iodidrico; $H_2S$ = solfuro di idrogeno / acido solfidrico.
 
-**Errore tipico 3.7.** Scrivere «acido cloruro» o «cloruro acido» mescolando le due nomenclature: il suffisso -idrico appartiene solo alla nomenclatura tradizionale e va sempre precedi dalla parola «acido», mentre il suffisso -uro appartiene solo alla nomenclatura IUPAC e non si accompagna mai alla parola «acido».
+**Errore tipico 3.7.** Scrivere «acido cloruro» o «cloruro acido» mescolando le due nomenclature: il suffisso -idrico appartiene solo alla nomenclatura tradizionale e va sempre preceduto dalla parola «acido», mentre il suffisso -uro appartiene solo alla nomenclatura IUPAC e non si accompagna mai alla parola «acido».
 
 ### Ossiacidi e la loro formazione dall'anidride
 
@@ -448,7 +448,7 @@ e la forza motrice della reazione è l'unione di uno ione $H^+$ proveniente dall
 
 Ogni sale è formato da un catione, che deriva dall'idrossido (un metallo, con carica pari al suo numero di ossidazione, oppure lo ione ammonio $NH_4^+$), e da un anione, che deriva dall'acido togliendo gli atomi di idrogeno ionizzabili (un anione semplice come $F^-$, $S^{2-}$, $Cl^-$, oppure un anione poliatomico come $CO_3^{2-}$, $NO_3^-$, $SO_3^{2-}$, $ClO_4^-$). La formula del sale si scrive quindi con le stesse regole già viste per i composti ionici in generale: si uniscono catione e anione nelle proporzioni che garantiscono l'elettroneutralità, come discusso nella sezione su [simboli, formule e ioni](ref:chapter/3#p2).
 
-I sali sono composti ionici e non sono costituiti da molecole discrete: la formula che si scrive è sempre una formula minima, cioè un'unità formula che indica solo il rapporto tra gli ioni nel reticolo. Non esiste, per esempio, la molecola $NaCl$, ma solo un reticolo di ioni $Na^+$ e $Cl^-$ in rapporto 1:1. In base alla composizione si distinguono sali binari (metallo più non metallo, derivati da un idracido), sali ternari (derivati da un ossiacido, contengono un ossoanione) e sali acidi (contengono ancora atomi di idrogeno residui).
+I sali sono composti ionici e non sono costituiti da molecole discrete: la formula che si scrive è un'unità formula, che indica solo il rapporto tra gli ioni nel reticolo. Non esiste, per esempio, la molecola $NaCl$, ma solo un reticolo di ioni $Na^+$ e $Cl^-$ in rapporto 1:1. In base alla composizione si distinguono sali binari (metallo più non metallo, derivati da un idracido), sali ternari (derivati da un ossiacido, contengono un ossoanione) e sali acidi (contengono ancora atomi di idrogeno residui).
 
 :::formula{id="3.8" label="Reazione di neutralizzazione (salificazione)"}
 $$HX_{(aq)} + MOH_{(aq)} \to MX_{(aq)} + H_2O_{(l)}$$
@@ -497,7 +497,7 @@ Vale la corrispondenza diretta tra il nome dell'acido di partenza e il nome del 
 - $HClO$ (acido ipocloroso) $\to NaClO$ (ipoclorito di sodio);
 - $HClO_4$ (acido perclorico) $\to NaClO_4$ (perclorato di sodio).
 
-Altri esempi completi: $Sn(CO_3)_2$, di-triossocarbonato di stagno(IV) / carbonato stannico; $Cs_3PO_4$, tetraossofosfato(V) di cesio / ortofosfato di cesio; $Fe_2(CO_3)_3$, tri-triossocarbonato di diferro / carbonato ferrico; $K_2MnO_4$, tetraossomanganato di dipotassio / manganato di potassio.
+Altri esempi completi: $Sn(CO_3)_2$, di-triossocarbonato di stagno(IV) / carbonato stannico; $Cs_3PO_4$, tetraossofosfato(V) di cesio / ortofosfato di cesio; $Fe_2(CO_3)_3$, tri-triossocarbonato di ferro(III) / carbonato ferrico; $K_2MnO_4$, tetraossomanganato(VI) di potassio / manganato di potassio.
 
 **Esempio svolto 3.12** (dall'acido all'ossoanione)
 

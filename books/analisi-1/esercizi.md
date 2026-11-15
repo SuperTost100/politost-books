@@ -1475,7 +1475,7 @@ $$f(x)=\sqrt{1+x^2}-\cos x$$
 per $x\to 0$.
 
 :::hint
-Sviluppa $\sqrt{1+x^2}$ con {{formula:6.5}} e $\cos x$ con {{formula:6.8}} fino all'ordine $x^4$, poi applica {{formula:6.10}}.
+Sviluppa $\sqrt{1+x^2}$ e $\cos x$ con la formula di Taylor {{formula:8.2}} fino all'ordine $x^4$, poi applica {{formula:6.10}}.
 :::
 
 :::solution
@@ -1483,11 +1483,11 @@ Usiamo gli sviluppi asintotici per $x\to 0$:
 
 $$\sqrt{1+x^2}=1+\frac{x^2}{2}-\frac{x^4}{8}+o(x^4),$$
 
-ottenuto da {{formula:6.5}} con esponente $1/2$ applicato a $x^2$, e
+ottenuto da {{formula:8.2}} applicata a $(1+t)^{1/2}$ fino all'ordine $t^2$, con $t=x^2$, e
 
 $$\cos x = 1-\frac{x^2}{2}+\frac{x^4}{24}+o(x^4)$$
 
-da {{formula:6.8}}. Sottraendo:
+da {{formula:8.2}}. Sottraendo:
 
 $$f(x)=\left(1+\frac{x^2}{2}-\frac{x^4}{8}\right)-\left(1-\frac{x^2}{2}+\frac{x^4}{24}\right)+o(x^4)$$
 $$=x^2-\frac{x^4}{8}-\frac{x^4}{24}+o(x^4)=x^2-\frac{x^4}{6}+o(x^4).$$

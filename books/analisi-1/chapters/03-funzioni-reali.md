@@ -437,7 +437,7 @@ Per indicare che l’immagine di $f$ è limitata superiormente si scrive $\sup(\
 
 **Esempio 3.11.** Le funzioni trigonometriche $\sin x$ e $\cos x$ sono limitate, poiché la loro immagine è $\lbrack -1,1\rbrack $: in questo caso $\sup(\operatorname{im} f) = 1$ e $\inf(\operatorname{im} f) = -1$. Lo stesso vale per la funzione mantissa $M(x) = x - \lbrack x\rbrack $, la cui immagine è $\lbrack 0,1\lbrack $, dunque limitata sia superiormente che inferiormente, anche se il massimo non è raggiunto ($\sup(\operatorname{im} f) = 1$ ma non esiste $x$ con $M(x) = 1$). Si tratta di funzioni periodiche: come osservato nella sezione precedente, il comportamento su un periodo determina già la limitatezza su tutto il dominio.
 
-Al contrario, $f(x) = x^2$ su $\mathbb{R}$ è limitata inferiormente ($\inf(\operatorname{im} f) = 0$) ma non superiormente, mentre $f(x) = \tan x$ non è limitata né superiormente né inferiormente su nessun intervallo contenente un asintoto verticale.
+Al contrario, $f(x) = x^2$ su $\mathbb{R}$ è limitata inferiormente ($\inf(\operatorname{im} f) = 0$) ma non superiormente, mentre $f(x) = \tan x$ non è limitata né superiormente né inferiormente su nessun intervallo che contenga al suo interno un asintoto verticale.
 
 :::image{src="assets/72d81f23-funzione-illimitata-tangente.svg" alt="Grafico della tangente con asintoti verticali in -pi/2 e pi/2" caption="Fig. 3.6 — La funzione tangente non è limitata: vicino agli asintoti verticali assume valori arbitrariamente grandi in modulo"}
 :::

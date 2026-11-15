@@ -306,7 +306,7 @@ Una funzione derivabile $P:I\to\mathbb{R}$ è soluzione del problema di Cauchy s
 
 **Teorema 11.5 (esistenza e unicità locale).** Dato il problema di Cauchy $y' = f(y)g(t)$, $y(t_0) = y_0$, se $g$ è continua in un intorno $I(t_0)$ e $f$ è continua in un intorno $I(y_0)$, allora esiste una soluzione locale $P \colon \tilde I(t_0) \to \hat I(y_0)$. Se inoltre $f$ è di classe $C^1$ in $I(y_0)$, la soluzione è anche unica in un opportuno intorno $\tilde I(t_0)$.
 
-La continuità garantisce l'esistenza locale, mentre l'ipotesi $f\in C^1$ garantisce l'unicità locale. Se due soluzioni passano per un punto in cui $f$ è di classe $C^1$ in un intorno del valore assunto, coincidono in un intorno di quel punto. Se tale ipotesi vale per tutti i valori assunti dalle soluzioni, due soluzioni che si incontrano coincidono su tutto l'intervallo comune di definizione. In particolare, dove vale questa ipotesi, una soluzione non costante non può attraversare una soluzione costante $y=k$.
+La continuità garantisce l'esistenza locale, mentre l'ipotesi $f\in C^1$ garantisce l'unicità locale. Supponendo $g$ continua, se due soluzioni passano per un punto in cui $f$ è di classe $C^1$ in un intorno del valore assunto, coincidono in un intorno di quel punto. Se tale ipotesi vale per tutti i valori assunti dalle soluzioni, due soluzioni che si incontrano coincidono su tutto l'intervallo comune di definizione. In particolare, dove vale questa ipotesi, una soluzione non costante non può attraversare una soluzione costante $y=k$.
 
 ### Osservazione: l'intervallo massimale di soluzione
 
@@ -602,7 +602,7 @@ perché ciascuna parentesi è nulla.
 **Cosa chiede l'esame.** Dopo la definizione di soluzione di un problema di Cauchy, si chiede di risolverlo esplicitamente. La soluzione si vuole in forma esplicita e, quando serve, con il suo intervallo di definizione.
 
 **Metodo.**
-1. Riconosci la forma $y'=f(y)g(t)$ e cerca gli zeri di $f$: sono le soluzioni costanti {{formula:11.7}}. Controlla se il dato iniziale ne coincide con una.
+1. Riconosci la forma $y'=f(y)g(t)$ e cerca gli zeri di $f$: sono le soluzioni costanti {{formula:11.7}}. Controlla se il dato iniziale ne coincide con una: in tal caso, se $f$ è di classe $C^1$ in un intorno di $y_0$, quella costante è l'unica soluzione (Teorema 11.5).
 2. Se $y_0$ non è uno zero di $f$, separa le variabili e integra entrambi i membri con {{formula:11.8}} ([Equazioni a variabili separabili](ref:chapter/11#p4)).
 3. Imponi la condizione iniziale per fissare la costante $c$.
 4. Esplicita $y$, scegliendo il segno della radice o il ramo coerente con il dato iniziale.
@@ -625,7 +625,7 @@ perché ciascuna parentesi è nulla.
 3. Per la retta tangente non risolvere l'equazione: ricava $y'(x_0)$ dall'equazione e dal dato iniziale, poi scrivi $y=y(x_0)+y'(x_0)(x-x_0)$ ([Derivata e retta tangente](ref:chapter/7#p2)).
 4. Per l'integrale generale applica {{formula:11.5}}.
 
-**Errori tipici.** Risolvere l'equazione completa quando bastava la derivata nel punto. Dimenticare di cambiare segno al coefficiente passando da $y'+a(x)y=b(x)$ a $y'=-a(x)y+b(x)$. Applicare un metodo da variabili separabili a un'equazione lineare non omogenea.
+**Errori tipici.** Risolvere l'equazione completa quando bastava la derivata nel punto. Dimenticare di cambiare segno al coefficiente passando da $y'+a(x)y=b(x)$ a $y'=-a(x)y+b(x)$. Applicare un metodo da variabili separabili a un'equazione lineare non omogenea che non si scrive nella forma $y'=f(y)g(x)$.
 
 **Esempi.**
 - Esame del 29 gennaio 2020 - IIo turno, esercizio 2: definizione di integrale particolare di $y'+a(x)y=b(x)$ e ricerca dei valori $y_0$ che rendono $x_0$ un punto critico. Si risolve con il passo 2.

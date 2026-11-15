@@ -47,7 +47,7 @@ Una stima grossolana dell'incertezza dovuta agli errori casuali è la **semidisp
 $$\delta_x = \frac{x_{max} - x_{min}}{2}$$
 :::
 
-che fornisce un limite superiore immediato, ma poco raffinato, dell'incertezza.
+che fornisce una stima immediata, in genere per eccesso ma poco raffinata, dell'incertezza.
 
 Una stima più accurata si ottiene tramite la **devianza**
 
@@ -77,7 +77,7 @@ La semidispersione massima è $\delta_x = (12{,}3-11{,}9)/2 = 0{,}2$ cm.
 
 La somma dei quadrati degli scarti dalla media è $\sum_{i=1}^{5}(x_i-\bar{x})^2 = 0{,}10\ \text{cm}^2$, da cui l'errore standard empirico $s_x = \sqrt{0{,}10/4} \approx 0{,}16$ cm.
 
-Il risultato si scrive quindi $X = (12{,}10 \pm 0{,}16)$ cm usando l'errore standard, oppure $X = (12{,}1 \pm 0{,}2)$ cm usando la semidispersione massima come stima grossolana.
+Il risultato si scrive quindi $X = (12{,}10 \pm 0{,}07)$ cm usando l'incertezza sulla media $s_x/\sqrt{5} \approx 0{,}07$ cm, oppure $X = (12{,}1 \pm 0{,}2)$ cm usando la semidispersione massima come stima grossolana.
 
 Per misure indirette, cioè funzioni $f(x,y,z,\dots)$ di più grandezze misurate direttamente, l'errore si propaga tramite le derivate parziali
 
@@ -85,7 +85,7 @@ $$\sigma_f = \sqrt{\left(\frac{\partial f}{\partial x}\right)^2 \sigma_x^2 + \le
 
 calcolate rispetto a una variabile alla volta, tenendo costanti le altre, supponendo che le misure dirette $x, y, z, \dots$ siano statisticamente indipendenti tra loro.
 
-L'errore standard esprime la bontà media della singola misura e il limite di confidenza associato: si dimostra che il 68,3% dei risultati cade entro $\sigma$ dal valore vero, il 95,4% entro $2\sigma$ e il 99,7% entro $3\sigma$. Un **errore relativo** utile per giudicare la qualità della misura è
+L'errore standard esprime la bontà media della singola misura e il limite di confidenza associato, mentre l'incertezza sulla media di $n$ misure indipendenti è $s_x/\sqrt{n}$; se gli errori seguono la distribuzione normale introdotta più avanti, si dimostra che il 68,3% dei risultati cade entro $\sigma$ dal valore vero, il 95,4% entro $2\sigma$ e il 99,7% entro $3\sigma$. Un **errore relativo** utile per giudicare la qualità della misura è
 
 $$\varepsilon_r = \frac{\sigma_x}{|\bar{x}|}, \qquad \varepsilon_{r\%} = \frac{\sigma_x}{|\bar{x}|} \times 100$$
 

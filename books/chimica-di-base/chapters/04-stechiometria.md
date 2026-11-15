@@ -39,7 +39,7 @@ Lo stesso procedimento, applicato al carbonato di ammonio, dà $\%H = 8,41\%$.
 
 ### Dalla composizione percentuale alla formula minima
 
-**Definizione 4.2** (formula minima). La formula minima, o empirica, indica il rapporto di numeri interi più semplice tra le quantità (in moli) di ciascun elemento presente in un composto. Per le sostanze ioniche o polimeriche, in cui non esistono molecole discrete, la formula minima è l'unica formula possibile: ad esempio nel cloruro di sodio ogni ione Na+ è circondato da sei ioni Cl- e viceversa, con rapporto 1:1.
+**Definizione 4.2** (formula minima). La formula minima, o empirica, indica il rapporto di numeri interi più semplice tra le quantità (in moli) di ciascun elemento presente in un composto. Per le sostanze ioniche o polimeriche, in cui non esistono molecole discrete, si usa di norma la formula minima (fanno eccezione i composti con ioni come $\mathrm{O_2^{2-}}$, per cui il perossido di sodio si scrive $\mathrm{Na_2O_2}$): ad esempio nel cloruro di sodio ogni ione Na+ è circondato da sei ioni Cl- e viceversa, con rapporto 1:1.
 
 Per ricavare la formula minima a partire da dati analitici si procede così.
 
@@ -222,7 +222,7 @@ Questa catena si riassume spesso con lo schema massa $\to$ moli $\to$ moli $\to$
 $$n_B = \frac{\nu_B}{\nu_A}\, n_A$$
 :::
 
-dove $\nu_A$ e $\nu_B$ sono i coefficienti stechiometrici di $A$ e $B$ nell'equazione bilanciata e $n_A$, $n_B$ le rispettive moli. Questa relazione vale sia che $A$ e $B$ siano entrambi reagenti, entrambi prodotti, oppure un reagente e un prodotto.
+dove $\nu_A$ e $\nu_B$ sono i coefficienti stechiometrici di $A$ e $B$ nell'equazione bilanciata e $n_A$, $n_B$ le rispettive moli che reagiscono o si formano. Questa relazione vale sia che $A$ e $B$ siano entrambi reagenti, entrambi prodotti, oppure un reagente e un prodotto.
 
 **Esempio svolto 4.6** (massa di ossigeno necessaria a una combustione)
 

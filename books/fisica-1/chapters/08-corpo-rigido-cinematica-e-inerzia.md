@@ -159,7 +159,7 @@ coerente con il valore riportato nelle fonti per l'asta incernierata a un perno 
 $$I = M R^2$$
 :::
 
-risultato usato ad esempio nel moto di un anello che rotola. Rispetto a un diametro (asse nel piano dell'anello, passante per il centro), per simmetria il momento d'inerzia si dimezza rispetto a un diametro ortogonale, e la somma dei due deve eguagliare $I$ dell'asse centrale (teorema degli assi perpendicolari per figure piane): si ottiene $I = \frac{1}{2}MR^2$.
+risultato usato ad esempio nel moto di un anello che rotola. Rispetto a un diametro (asse nel piano dell'anello, passante per il centro), per simmetria il momento d'inerzia è uguale a quello rispetto a un diametro ortogonale, e la somma dei due deve eguagliare $I$ dell'asse centrale (teorema degli assi perpendicolari per figure piane): si ottiene $I = \frac{1}{2}MR^2$.
 
 **Disco (o cilindro pieno) omogeneo.** Sia $M$ la massa, $R$ il raggio, densità superficiale $\sigma = M/(\pi R^2)$. Scomponendo il disco in corone circolari sottili di raggio $r$ e spessore $dr$, la massa della corona è $dm = \sigma\, 2\pi r\, dr$ e il suo contributo al momento d'inerzia (rispetto all'asse perpendicolare al disco passante per il centro) è $r^2\, dm$. Integrando:
 

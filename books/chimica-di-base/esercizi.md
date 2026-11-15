@@ -692,7 +692,7 @@ $\mathrm{Na_2O_2}$ contiene due sodii con numero di ossidazione $+1$, per un tot
 
 :::exercise{id="E3.9" chapter="3" difficulty="medio"}
 ## Domanda
-Nello ione ammonio nitrato, $\mathrm{NH_4NO_3}$, determina il numero di ossidazione di ciascun atomo di azoto. Considera $\mathrm{NH_4^+}$ e $\mathrm{NO_3^-}$ come ioni distinti; idrogeno vale $+1$ e ossigeno $-2$.
+Nel nitrato di ammonio, $\mathrm{NH_4NO_3}$, determina il numero di ossidazione di ciascun atomo di azoto. Considera $\mathrm{NH_4^+}$ e $\mathrm{NO_3^-}$ come ioni distinti; idrogeno vale $+1$ e ossigeno $-2$.
 
 :::hint
 Imponi separatamente la somma dei numeri di ossidazione uguale alla carica di ciascuno ione.
@@ -738,7 +738,7 @@ Il cloro nei composti binari con un metallo ha numero di ossidazione $-1$; il nu
 :::
 
 :::solution
-In $\mathrm{FeCl_2}$, il ferro deve bilanciare due clori con numero di ossidazione $-1$, quindi ha numero di ossidazione $+2$. Il nome è cloruro di ferro(II). In $\mathrm{FeCl_3}$, tre clori contribuiscono per $-3$, perciò il ferro è $+3$; il nome è cloruro di ferro(III)~.
+In $\mathrm{FeCl_2}$, il ferro deve bilanciare due clori con numero di ossidazione $-1$, quindi ha numero di ossidazione $+2$. Il nome è cloruro di ferro(II). In $\mathrm{FeCl_3}$, tre clori contribuiscono per $-3$, perciò il ferro è $+3$; il nome è cloruro di ferro(III).
 :::
 :::
 
@@ -783,7 +783,7 @@ Per l'ossido, il minimo comune multiplo tra le cariche $3$ e $2$ è $6$: servono
 
 :::exercise{id="E3.16" chapter="3" difficulty="medio"}
 ## Domanda
-Una molecola contiene $2$ atomi di alluminio, $3$ atomi di zolfo e $12$ atomi di ossigeno. Scrivi la formula e determina il numero totale di atomi e il numero di atomi di ossigeno in $0{,}250\,\mathrm{mol}$ di molecole. Usa $N_A=6{,}022\times10^{23}\,\mathrm{mol^{-1}}$.
+Un'unità formula di un composto ionico contiene $2$ atomi di alluminio, $3$ atomi di zolfo e $12$ atomi di ossigeno. Scrivi la formula e determina il numero totale di atomi e il numero di atomi di ossigeno in $0{,}250\,\mathrm{mol}$ di unità formula. Usa $N_A=6{,}022\times10^{23}\,\mathrm{mol^{-1}}$.
 
 :::hint
 Scrivi i pedici corrispondenti agli atomi indicati; poi moltiplica le moli per il numero di Avogadro e applica i pedici richiesti.
@@ -1020,7 +1020,7 @@ La resa percentuale è $100\times(8{,}00/10{,}0)=80{,}0\%$.
 Il fosfato di calcio reagisce con diossido di silicio e carbonio formando fosforo elementare, silicato di calcio e monossido di carbonio. Bilancia l’equazione $\mathrm{Ca_3(PO_4)_2+SiO_2+C\rightarrow P_4+CaSiO_3+CO}$. Indica i coefficienti interi minimi.
 
 :::hint
-Bilancia nell’ordine fosforo, calcio, silicio, ossigeno e carbonio. Considera che il fosforo prodotto è biatomico? Controlla la formula indicata: qui è $\mathrm{P_4}$.
+Bilancia nell’ordine fosforo, calcio, silicio, ossigeno e carbonio. Il fosforo prodotto è tetratomico, $\mathrm{P_4}$.
 :::
 
 :::solution
@@ -1050,7 +1050,7 @@ Considera un campione di $100{,}00\,\mathrm{g}$ e trasforma le masse di ciascun 
 :::
 
 :::solution
-In $100{,}00\,\mathrm{g}$ di composto ci sono $40{,}00\,\mathrm{g}$ di carbonio, $6{,}71\,\mathrm{g}$ di idrogeno e $53{,}29\,\mathrm{g}$ di ossigeno. Le quantità di sostanza sono $n_{\mathrm C}=40{,}00/12{,}01=3{,}331\,\mathrm{mol}$, $n_{\mathrm H}=6{,}71/1{,}008=6{,}657\,\mathrm{mol}$ e $n_{\mathrm O}=53{,}29/16{,}00=3{,}331\,\mathrm{mol}$. Dividendo ciascun valore per il più piccolo, si ottiene il rapporto $1:2:1$ e quindi la formula empirica $\mathrm{CH_2O}$. La sua massa molare è $30{,}03\,\mathrm{g\,mol^{-1}}$. Il rapporto tra la massa molare del composto e quella empirica è $180{,}16/30{,}03\simeq 6$, perciò moltiplicando per 6 gli indici della formula empirica si ottiene la formula molecolare $\mathrm{C_6H_{12}O_6}$.н
+In $100{,}00\,\mathrm{g}$ di composto ci sono $40{,}00\,\mathrm{g}$ di carbonio, $6{,}71\,\mathrm{g}$ di idrogeno e $53{,}29\,\mathrm{g}$ di ossigeno. Le quantità di sostanza sono $n_{\mathrm C}=40{,}00/12{,}01=3{,}331\,\mathrm{mol}$, $n_{\mathrm H}=6{,}71/1{,}008=6{,}657\,\mathrm{mol}$ e $n_{\mathrm O}=53{,}29/16{,}00=3{,}331\,\mathrm{mol}$. Dividendo ciascun valore per il più piccolo, si ottiene il rapporto $1:2:1$ e quindi la formula empirica $\mathrm{CH_2O}$. La sua massa molare è $30{,}03\,\mathrm{g\,mol^{-1}}$. Il rapporto tra la massa molare del composto e quella empirica è $180{,}16/30{,}03\simeq 6$, perciò moltiplicando per 6 gli indici della formula empirica si ottiene la formula molecolare $\mathrm{C_6H_{12}O_6}$.
 :::
 :::
 
@@ -1880,7 +1880,7 @@ Applica la stima della carica nucleare effettiva {{formula:8.11}} e confronta l�
 :::
 
 :::solution
-Per il silicio, $Z_{\mathrm{eff}}=14-10{,}2=3{,}8$. Per il fosforo, $Z_{\mathrm{eff}}=15-10{,}2=4{,}8$. I due elettroni rimossi nella prima ionizzazione appartengono allo stesso livello principale, ma nel fosforo risentono di una carica nucleare effettiva maggiore. Occorre quindi più energia per rimuovere un elettrone dal fosforo, e la sua prima energia di ionizzazione è maggiore.
+Per il silicio, $Z_{\mathrm{eff}}=14-10{,}2=3{,}8$. Per il fosforo, $Z_{\mathrm{eff}}=15-10{,}2=4{,}8$. Gli elettroni rimossi nella prima ionizzazione dei due elementi appartengono allo stesso livello principale, ma nel fosforo risentono di una carica nucleare effettiva maggiore. Occorre quindi più energia per rimuovere un elettrone dal fosforo, e la sua prima energia di ionizzazione è maggiore.
 :::
 :::
 
@@ -2395,7 +2395,7 @@ Scomponi il processo in cinque passaggi, assumendo che a $1\,\mathrm{atm}$ il gh
 :::
 
 :::solution
-Il calore totale è la somma dei contributi dei cinque passaggi. A $1\,\mathrm{atm}$, per riscaldare il ghiaccio da $-10{,}0\,^{\circ}\mathrm{C}$ a $0\,^{\circ}\mathrm{C}$: $q_1=mc\Delta T=(18{,}0)(2{,}09)(10{,}0)=376\,\mathrm{J}$. Per fondere il ghiaccio: $q_2=mL_{\mathrm{fus}}=(18{,}0)(334)=6012\,\mathrm{J}$. Per riscaldare l’acqua da $0\,^{\circ}\mathrm{C}$ a $100\,^{\circ}\mathrm{C}$: $q_3=(18{,}0)(4{,}18)(100)=7524\,\mathrm{J}$. Per vaporizzare l’acqua: $q_4=(18{,}0)(2257)=40626\,\mathrm{J}$. Per riscaldare il vapore da $100\,^{\circ}\mathrm{C}$ a $110\,^{\circ}\mathrm{C}$: $q_5=(18{,}0)(2{,}01)(10{,}0)=362\,\mathrm{J}$. Pertanto $q_{\mathrm{tot}}=376+6012+7524+40626+362=54900\,\mathrm{J}=54{,}9\,\mathrm{kJ}$..
+Il calore totale è la somma dei contributi dei cinque passaggi. A $1\,\mathrm{atm}$, per riscaldare il ghiaccio da $-10{,}0\,^{\circ}\mathrm{C}$ a $0\,^{\circ}\mathrm{C}$: $q_1=mc\Delta T=(18{,}0)(2{,}09)(10{,}0)=376\,\mathrm{J}$. Per fondere il ghiaccio: $q_2=mL_{\mathrm{fus}}=(18{,}0)(334)=6012\,\mathrm{J}$. Per riscaldare l’acqua da $0\,^{\circ}\mathrm{C}$ a $100\,^{\circ}\mathrm{C}$: $q_3=(18{,}0)(4{,}18)(100)=7524\,\mathrm{J}$. Per vaporizzare l’acqua: $q_4=(18{,}0)(2257)=40626\,\mathrm{J}$. Per riscaldare il vapore da $100\,^{\circ}\mathrm{C}$ a $110\,^{\circ}\mathrm{C}$: $q_5=(18{,}0)(2{,}01)(10{,}0)=362\,\mathrm{J}$. Pertanto $q_{\mathrm{tot}}=376+6012+7524+40626+362=54900\,\mathrm{J}=54{,}9\,\mathrm{kJ}$.
 :::
 :::
 
@@ -2623,7 +2623,7 @@ Calcola $Q_c$ con la stessa espressione usata per $K_c$, quindi confronta i due 
 :::
 
 :::solution
-Per questa reazione il quoziente di reazione è $Q_c=\frac{\lbrack \mathrm{NH_3}\rbrack ^2}{\lbrack \mathrm{N_2}\rbrack \lbrack \mathrm{H_2}\rbrack ^3}$. Sostituendo i dati si ha $Q_c=\frac{(0{,}25)^2}{(0{,}50)(0{,}50)^3}=\frac{0{,}0625}{0{,}0625}=1{,}0$. Poiché $Q_c<K_c$, nel sistema sono presenti relativamente pochi prodotti rispetto alla composizione di equilibrio. La reazione procede quindi verso destra, formando altro ammoniaca, fino a quando $Q_c$ raggiunge $K_c$.
+Per questa reazione il quoziente di reazione è $Q_c=\frac{\lbrack \mathrm{NH_3}\rbrack ^2}{\lbrack \mathrm{N_2}\rbrack \lbrack \mathrm{H_2}\rbrack ^3}$. Sostituendo i dati si ha $Q_c=\frac{(0{,}25)^2}{(0{,}50)(0{,}50)^3}=\frac{0{,}0625}{0{,}0625}=1{,}0$. Poiché $Q_c<K_c$, nel sistema sono presenti relativamente pochi prodotti rispetto alla composizione di equilibrio. La reazione procede quindi verso destra, formando altra ammoniaca, fino a quando $Q_c$ raggiunge $K_c$.
 :::
 :::
 
@@ -2818,7 +2818,7 @@ La costante di equilibrio si calcola usando le energie in joule:
 $$\begin{aligned}
 K&=\exp\left(-\frac{\Delta G^\circ}{RT}\right)\\
 &=\exp\left(-\frac{4812}{(8{,}314)(298)}\right)\\
-&\approx0{,}144.
+&\approx0{,}143.
 \end{aligned}$$
 
 Per $Q=0{,}100$,
@@ -3137,79 +3137,79 @@ La struttura $\mathrm{CH_3CH_2COOH}$ è l'acido propanoico. Nella reazione con e
 
 :::exercise{id="E17.3" chapter="17" difficulty="difficile"}
 ## Domanda
-Una molecola di 2-butanolo, $4\mathrm{CH_3CH(OH)CH_2CH_3}4$, ha un carbonio tetraedrico legato a quattro gruppi diversi. Determina il numero di stereoisomeri configurazionali e spiega quale relazione hanno tra loro.
+Una molecola di 2-butanolo, $\mathrm{CH_3CH(OH)CH_2CH_3}$, ha un carbonio tetraedrico legato a quattro gruppi diversi. Determina il numero di stereoisomeri configurazionali e spiega quale relazione hanno tra loro.
 
 :::hint
 Un singolo centro stereogenico con quattro sostituenti diversi ammette due configurazioni. Confronta le configurazioni come immagini speculari non sovrapponibili.
 :::
 
 :::solution
-Il carbonio 2 è legato a $4\mathrm{H}4$, $4\mathrm{OH}4$, un gruppo metile e un gruppo etile: i quattro sostituenti sono diversi. Il centro stereogenico può assumere due configurazioni, quindi la molecola ha due stereoisomeri configurazionali. Le due configurazioni sono immagini speculari non sovrapponibili, perciò costituiscono una coppia di enantiomeri.
+Il carbonio 2 è legato a $\mathrm{H}$, $\mathrm{OH}$, un gruppo metile e un gruppo etile: i quattro sostituenti sono diversi. Il centro stereogenico può assumere due configurazioni, quindi la molecola ha due stereoisomeri configurazionali. Le due configurazioni sono immagini speculari non sovrapponibili, perciò costituiscono una coppia di enantiomeri.
 :::
 :::
 
 :::exercise{id="E17.4" chapter="17" difficulty="facile"}
 ## Domanda
-Scrivi le formule condensate di due isomeri di struttura con formula molecolare $4\mathrm{C_4H_{10}}4$ e dai il nome di ciascuno.
+Scrivi le formule condensate di due isomeri di struttura con formula molecolare $\mathrm{C_4H_{10}}$ e dai il nome di ciascuno.
 
 :::hint
 Considera una catena lineare di quattro carboni e una catena ramificata di tre carboni con un sostituente metile.
 :::
 
 :::solution
-Una prima struttura è la catena lineare $4\mathrm{CH_3CH_2CH_2CH_3}4$, che si chiama butano. Una seconda struttura è $4\mathrm{CH_3CH(CH_3)CH_3}4$, che si chiama 2-metilpropano. Hanno entrambe formula molecolare $4\mathrm{C_4H_{10}}4$, ma connettività diversa, quindi sono isomeri di struttura.
+Una prima struttura è la catena lineare $\mathrm{CH_3CH_2CH_2CH_3}$, che si chiama butano. Una seconda struttura è $\mathrm{CH_3CH(CH_3)CH_3}$, che si chiama 2-metilpropano. Hanno entrambe formula molecolare $\mathrm{C_4H_{10}}$, ma connettività diversa, quindi sono isomeri di struttura.
 :::
 :::
 
 :::exercise{id="E17.5" chapter="17" difficulty="difficile"}
 ## Domanda
-Un composto organico neutro contiene carbonio, idrogeno e ossigeno. La combustione completa di $0{,}10$ mol produce $0{,}20$ mol di $4\mathrm{CO_2}4$ e $0{,}20$ mol di $4\mathrm{H_2O}4$. La sua massa molare è $88{,}0\,\mathrm{g\,mol^{-1}}$. Determina la formula molecolare e, sapendo che il composto contiene un solo gruppo carbossilico e nessun altro gruppo funzionale, scrivine una struttura possibile e il nome.
+Un composto organico neutro contiene carbonio, idrogeno e ossigeno. La combustione completa di $0{,}10$ mol produce $0{,}40$ mol di $\mathrm{CO_2}$ e $0{,}40$ mol di $\mathrm{H_2O}$. La sua massa molare è $88{,}0\,\mathrm{g\,mol^{-1}}$. Determina la formula molecolare e, sapendo che il composto contiene un solo gruppo carbossilico e nessun altro gruppo funzionale, scrivine una struttura possibile e il nome.
 
 :::hint
 Dai prodotti di combustione ricava carbonio e idrogeno per mole di composto; completa la formula usando la massa molare. La presenza di un solo gruppo carbossilico restringe la scelta della struttura.
 :::
 
 :::solution
-Per mole di composto si producono $0{,}20/0{,}10=2$ mol di $4\mathrm{CO_2}4$, quindi ci sono due atomi di carbonio. Si producono anche due moli di $4\mathrm{H_2O}4$, quindi ci sono quattro atomi di idrogeno. La massa di questi atomi per mole di composto è $2(12{,}0)+4(1{,}0)=28{,}0$ g. Restano $88{,}0-28{,}0=60{,}0$ g, equivalenti a $60{,}0/16{,}0=3{,}75$ atomi di ossigeno: ciò rivela che i dati non possono descrivere una molecola formata da un numero intero di atomi. Pertanto non esiste una formula molecolare compatibile con tutti i dati forniti.
+Per mole di composto si producono $0{,}40/0{,}10=4$ mol di $\mathrm{CO_2}$, quindi ci sono quattro atomi di carbonio. Si producono anche quattro moli di $\mathrm{H_2O}$, quindi ci sono otto atomi di idrogeno. La massa di questi atomi per mole di composto è $4(12{,}0)+8(1{,}0)=56{,}0$ g. Restano $88{,}0-56{,}0=32{,}0$ g, equivalenti a $32{,}0/16{,}0=2$ atomi di ossigeno, quindi la formula molecolare è $\mathrm{C_4H_8O_2}$. I due ossigeni e l'unica insaturazione, $(2\cdot4+2-8)/2=1$, appartengono al gruppo carbossilico: una struttura possibile è $\mathrm{CH_3CH_2CH_2COOH}$, l'acido butanoico.
 :::
 :::
 
 :::exercise{id="E17.6" chapter="17" difficulty="difficile"}
 ## Domanda
-Un composto organico contiene solo carbonio, idrogeno e ossigeno. La combustione completa di $0{,}10$ mol del composto produce $0{,}30$ mol di $4\mathrm{CO_2}4$ e $0{,}30$ mol di $4\mathrm{H_2O}4$. La massa molare del composto è $60{,}0\,\mathrm{g\,mol^{-1}}$. Determina la formula molecolare e il numero di insaturazioni, assumendo che ogni insaturazione corrisponda a un anello o a un legame multiplo.
+Un composto organico contiene solo carbonio, idrogeno e ossigeno. La combustione completa di $0{,}10$ mol del composto produce $0{,}30$ mol di $\mathrm{CO_2}$ e $0{,}30$ mol di $\mathrm{H_2O}$. La massa molare del composto è $58{,}0\,\mathrm{g\,mol^{-1}}$. Determina la formula molecolare e il numero di insaturazioni, assumendo che ogni insaturazione corrisponda a un anello o a un legame multiplo.
 
 :::hint
 Ricava gli atomi di carbonio e idrogeno da una mole di composto; usa poi la massa molare per determinare l'ossigeno. Calcola infine il grado di insaturazione con $(2C+2-H)/2$.
 :::
 
 :::solution
-Per ogni mole di composto si formano $0{,}30/0{,}10=3$ mol di $4\mathrm{CO_2}4$, dunque la molecola contiene tre atomi di carbonio. Si formano anche $0{,}30/0{,}10=3$ mol di $4\mathrm{H_2O}4$, corrispondenti a sei moli di atomi di idrogeno per mole di composto: la formula ha sei idrogeni. La massa attribuita a carbonio e idrogeno in una mole è $3(12{,}0)+6(1{,}0)=42{,}0$ g. Restano $60{,}0-42{,}0=18{,}0$ g di ossigeno, cioè un atomo di ossigeno per molecola. La formula molecolare è quindi $4\mathrm{C_3H_6O}4$. Il grado di insaturazione è $(2\cdot3+2-6)/2=1$.
+Per ogni mole di composto si formano $0{,}30/0{,}10=3$ mol di $\mathrm{CO_2}$, dunque la molecola contiene tre atomi di carbonio. Si formano anche $0{,}30/0{,}10=3$ mol di $\mathrm{H_2O}$, corrispondenti a sei moli di atomi di idrogeno per mole di composto: la formula ha sei idrogeni. La massa attribuita a carbonio e idrogeno in una mole è $3(12{,}0)+6(1{,}0)=42{,}0$ g. Restano $58{,}0-42{,}0=16{,}0$ g di ossigeno, cioè un atomo di ossigeno per molecola. La formula molecolare è quindi $\mathrm{C_3H_6O}$. Il grado di insaturazione è $(2\cdot3+2-6)/2=1$.
 :::
 :::
 
 :::exercise{id="E17.7" chapter="17" difficulty="facile"}
 ## Domanda
-Individua il gruppo funzionale di ciascun composto e classificalo: $4\mathrm{CH_3CH_2OH}4$, $4\mathrm{CH_3CHO}4$ e $4\mathrm{CH_3COOH}4$.
+Individua il gruppo funzionale di ciascun composto e classificalo: $\mathrm{CH_3CH_2OH}$, $\mathrm{CH_3CHO}$ e $\mathrm{CH_3COOH}$.
 
 :::hint
-Cerca rispettivamente il gruppo $4\mathrm{-OH}4$, il carbonile terminale e il gruppo $4\mathrm{-COOH}4$.
+Cerca rispettivamente il gruppo $\mathrm{-OH}$, il carbonile terminale e il gruppo $\mathrm{-COOH}$.
 :::
 
 :::solution
-$4\mathrm{CH_3CH_2OH}4$ contiene il gruppo ossidrile legato a un carbonio saturo, quindi è un alcol. $4\mathrm{CH_3CHO}4$ contiene un carbonile terminale, cioè il gruppo aldeidico, quindi è un'aldeide. $4\mathrm{CH_3COOH}4$ contiene il gruppo carbossilico $4\mathrm{-COOH}4$, quindi è un acido carbossilico.
+$\mathrm{CH_3CH_2OH}$ contiene il gruppo ossidrile legato a un carbonio saturo, quindi è un alcol. $\mathrm{CH_3CHO}$ contiene un carbonile terminale, cioè il gruppo aldeidico, quindi è un'aldeide. $\mathrm{CH_3COOH}$ contiene il gruppo carbossilico $\mathrm{-COOH}$, quindi è un acido carbossilico.
 :::
 :::
 
 :::exercise{id="E17.8" chapter="17" difficulty="facile"}
 ## Domanda
-Considera la molecola di etene, $4\mathrm{C_2H_4}4$. Indica l'ibridazione dei due atomi di carbonio, la geometria locale attorno a ciascun carbonio e il numero totale di legami $4\sigma4$ e $4\pi4$.
+Considera la molecola di etene, $\mathrm{C_2H_4}$. Indica l'ibridazione dei due atomi di carbonio, la geometria locale attorno a ciascun carbonio e il numero totale di legami $\sigma$ e $\pi$.
 
 :::hint
-Conta i domini di legame attorno a ciascun carbonio e ricorda che un doppio legame contiene una componente $4\sigma4$ e una $4\pi4$.
+Conta i domini di legame attorno a ciascun carbonio e ricorda che un doppio legame contiene una componente $\sigma$ e una $\pi$.
 :::
 
 :::solution
-Ogni carbonio dell'etene forma tre legami: due con gli atomi di idrogeno e uno con l'altro carbonio. Ha quindi tre domini di legame, è ibridato $4sp^24$ e presenta geometria trigonale planare. Ciascun legame C–H è un legame $4\sigma4$ e il doppio legame C=C contiene un legame $4\sigma4$ e uno $4\pi4$. In totale ci sono quattro legami C–H $4\sigma4$ e un legame C–C $4\sigma4$, oltre a un legame $4\pi4$.
+Ogni carbonio dell'etene forma tre legami: due con gli atomi di idrogeno e uno con l'altro carbonio. Ha quindi tre domini di legame, è ibridato $sp^2$ e presenta geometria trigonale planare. Ciascun legame C–H è un legame $\sigma$ e il doppio legame C=C contiene un legame $\sigma$ e uno $\pi$. In totale ci sono quattro legami C–H $\sigma$ e un legame C–C $\sigma$, oltre a un legame $\pi$.
 :::
 :::
 
@@ -3228,27 +3228,27 @@ La combustione si scrive $\mathrm{C_3H_8 + O_2 \rightarrow CO_2 + H_2O}$. Bilanc
 
 :::exercise{id="E17.10" chapter="17" difficulty="medio"}
 ## Domanda
-Nomina secondo la nomenclatura IUPAC la molecola $4\mathrm{CH_3-CH(CH_3)-CH=CH_2}4$. Indica anche quale numero si assegna al doppio legame nella catena principale.
+Nomina secondo la nomenclatura IUPAC la molecola $\mathrm{CH_3-CH(CH_3)-CH=CH_2}$. Indica anche quale numero si assegna al doppio legame nella catena principale.
 
 :::hint
 Scegli la catena più lunga che contiene il doppio legame e numerala dall'estremità più vicina al doppio legame.
 :::
 
 :::solution
-La catena più lunga che contiene il doppio legame ha quattro atomi di carbonio. Si numera partendo dall'estremità $4\mathrm{CH_2}4$, così il doppio legame inizia al carbonio 1. Il gruppo metile è sul carbonio 3. Il nome è 3-metilbut-1-ene.
+La catena più lunga che contiene il doppio legame ha quattro atomi di carbonio. Si numera partendo dall'estremità $\mathrm{CH_2}$, così il doppio legame inizia al carbonio 1. Il gruppo metile è sul carbonio 3. Il nome è 3-metilbut-1-ene.
 :::
 :::
 
 :::exercise{id="E17.11" chapter="17" difficulty="difficile"}
 ## Domanda
-Un idrocarburo ha formula $4\mathrm{C_8H_{10}}4$. Calcola il suo grado di insaturazione e stabilisci se può essere un idrocarburo aromatico con un anello benzenico. Motiva la risposta con una struttura compatibile con la formula.
+Un idrocarburo ha formula $\mathrm{C_8H_{10}}$. Calcola il suo grado di insaturazione e stabilisci se può essere un idrocarburo aromatico con un anello benzenico. Motiva la risposta con una struttura compatibile con la formula.
 
 :::hint
 Per un idrocarburo usa $(2C+2-H)/2$. Un anello benzenico contribuisce quattro insaturazioni; verifica quale sostituente lascia la formula corretta.
 :::
 
 :::solution
-Il grado di insaturazione è $(2\cdot8+2-10)/2=4$. Un anello benzenico contiene tre doppi legami e un anello, per un totale di quattro insaturazioni. Sostituendo un idrogeno del benzene con un gruppo etile si ottiene etilbenzene, $4\mathrm{C_6H_5-C_2H_5}4$, la cui formula complessiva è $4\mathrm{C_8H_{10}}4$. La formula è quindi compatibile con un idrocarburo aromatico contenente un anello benzenico.
+Il grado di insaturazione è $(2\cdot8+2-10)/2=4$. Un anello benzenico contiene tre doppi legami e un anello, per un totale di quattro insaturazioni. Sostituendo un idrogeno del benzene con un gruppo etile si ottiene etilbenzene, $\mathrm{C_6H_5-C_2H_5}$, la cui formula complessiva è $\mathrm{C_8H_{10}}$. La formula è quindi compatibile con un idrocarburo aromatico contenente un anello benzenico.
 :::
 :::
 
@@ -3261,6 +3261,6 @@ La rotazione attorno al doppio legame è impedita. Per avere isomeria geometrica
 :::
 
 :::solution
-Nel 1,2-dicloroetene, $4\mathrm{CHCl=CHCl}4$, ciascun carbonio del doppio legame è legato a un idrogeno e a un cloro, cioè a due gruppi diversi. Si hanno quindi due disposizioni distinte: cis e trans. Nel 1,1-dicloroetene, $4\mathrm{CCl_2=CH_2}4$, ciascun carbonio è legato a due gruppi uguali; la condizione per l'isomeria geometrica non è soddisfatta e non esistono isomeri geometrici distinti.
+Nel 1,2-dicloroetene, $\mathrm{CHCl=CHCl}$, ciascun carbonio del doppio legame è legato a un idrogeno e a un cloro, cioè a due gruppi diversi. Si hanno quindi due disposizioni distinte: cis e trans. Nel 1,1-dicloroetene, $\mathrm{CCl_2=CH_2}$, ciascun carbonio è legato a due gruppi uguali; la condizione per l'isomeria geometrica non è soddisfatta e non esistono isomeri geometrici distinti.
 :::
 :::

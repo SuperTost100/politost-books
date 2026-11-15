@@ -461,7 +461,7 @@ Il quesito è **Tema d_esame 15 + soluzione, esercizio 2**. Un recipiente chiuso
 3. Calcola le frazioni molari [(6.9)](ref:formula/6.9) e la pressione totale con l'equazione di stato dei gas ideali [(6.5)](ref:formula/6.5). Le pressioni parziali seguono da [(6.10)](ref:formula/6.10). Il riferimento è [Densità, massa molare e miscele gassose](ref:chapter/6#p3).
 4. Scrivi l'equazione bilanciata della formazione di N₂O, con gli stati fisici. Con i rapporti molari [(4.2)](ref:formula/4.2) verifica se le moli iniziali sono davvero in rapporto stechiometrico. Altrimenti individua il reagente limitante, come spiegato in [Calcoli stechiometrici e reagente limitante](ref:chapter/4#p4).
 5. Se serve un calore o una variazione di entalpia, usa l'equazione termochimica: $\Delta H_r$ si riferisce ai coefficienti scritti. Per la sostanza di riferimento il calore scambiato è la quantità di sostanza che reagisce, divisa per il suo coefficiente, per $\Delta H_r$. Vedi [Entalpia ed equazioni termochimiche](ref:chapter/7#p3). Se l'esercizio chiedesse di ottenere $\Delta H_r$ dai dati di formazione, si applicherebbe {{formula:7.10}}, spiegata in [Legge di Hess ed entalpie standard di formazione](ref:chapter/7#p5).
-6. Se compare la differenza tra $\Delta H$ e $\Delta U$ in un sistema gassoso, usa {{formula:7.4}} con $\Delta n_{\text{gas}}$ calcolato sui coefficienti dell'equazione bilanciata.
+6. Se compare la differenza tra $\Delta H$ e $\Delta U$ in un sistema gassoso, usa {{formula:7.4}} con $\Delta n_{\text{gas}}$ calcolato sui coefficienti dell'equazione bilanciata: il risultato vale per la reazione come scritta e va riportato al campione come al punto 5.
 
 Gli errori tipici in questo esercizio sono quattro:
 
