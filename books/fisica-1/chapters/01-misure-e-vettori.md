@@ -47,7 +47,7 @@ Una stima grossolana dell'incertezza dovuta agli errori casuali è la **semidisp
 $$\delta_x = \frac{x_{max} - x_{min}}{2}$$
 :::
 
-che fornisce un limite superiore immediato, ma poco raffinato, dell'incertezza.
+che fornisce una stima immediata, in genere per eccesso ma poco raffinata, dell'incertezza.
 
 Una stima più accurata si ottiene tramite la **devianza**
 
@@ -85,7 +85,7 @@ $$\sigma_f = \sqrt{\left(\frac{\partial f}{\partial x}\right)^2 \sigma_x^2 + \le
 
 calcolate rispetto a una variabile alla volta, tenendo costanti le altre, supponendo che le misure dirette $x, y, z, \dots$ siano statisticamente indipendenti tra loro.
 
-L'errore standard esprime la bontà media della singola misura e il limite di confidenza associato: si dimostra che il 68,3% dei risultati cade entro $\sigma$ dal valore vero, il 95,4% entro $2\sigma$ e il 99,7% entro $3\sigma$. Un **errore relativo** utile per giudicare la qualità della misura è
+L'errore standard esprime la bontà media della singola misura e il limite di confidenza associato, mentre l'incertezza sulla media di $n$ misure indipendenti è $s_x/\sqrt{n}$; se gli errori seguono la distribuzione normale introdotta più avanti, si dimostra che il 68,3% dei risultati cade entro $\sigma$ dal valore vero, il 95,4% entro $2\sigma$ e il 99,7% entro $3\sigma$. Un **errore relativo** utile per giudicare la qualità della misura è
 
 $$\varepsilon_r = \frac{\sigma_x}{|\bar{x}|}, \qquad \varepsilon_{r\%} = \frac{\sigma_x}{|\bar{x}|} \times 100$$
 

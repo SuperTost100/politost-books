@@ -95,7 +95,7 @@ $$Q_{\mathrm{II}} = 300\ \mathrm{J} + 50\ \mathrm{J} = 350\ \mathrm{J}.$$
 
 *Controllo.* $\Delta U$ è la stessa nei due casi (300 J), come deve essere trattandosi di una funzione di stato, mentre $Q$ e $W$ sono diversi nei due percorsi (500 J e 200 J contro 350 J e 50 J): questo è proprio il contenuto fisico del primo principio enunciato sopra. Il segno positivo di $Q_{\mathrm{II}}$ indica calore assorbito dal sistema, coerente con la convenzione adottata.
 
-**Esempio 13.2** (ciclo). Un sistema compie il ciclo $A\to B\to C\to A$. Nel tratto $A\to B$ assorbe $Q_{AB}=600\ \mathrm{J}$ e compie $W_{AB}=250\ \mathrm{J}$. Nel tratto $B\to C$, a volume costante, cede $400\ \mathrm{J}$ di calore. Nel tratto $C\to A$ l'ambiente compie sul sistema un lavoro di $150\ \mathrm{J}$. Si chiedono $Q_{CA}$ e le variazioni di energia interna di ciascun tratto.
+**Esempio 13.2** (ciclo). Un sistema compie il ciclo $A\to B\to C\to A$. Nel tratto $A\to B$ assorbe $Q_{AB}=600\ \mathrm{J}$ e compie $W_{AB}=250\ \mathrm{J}$. Nel tratto $B\to C$, a volume costante e senza altre forme di lavoro, cede $400\ \mathrm{J}$ di calore. Nel tratto $C\to A$ l'ambiente compie sul sistema un lavoro di $150\ \mathrm{J}$. Si chiedono $Q_{CA}$ e le variazioni di energia interna di ciascun tratto.
 
 *Schema.* Nel tratto isocoro $W_{BC}=0$ e $Q_{BC}=-400\ \mathrm{J}$ (calore ceduto); il lavoro subìto nel tratto $CA$ vale $W_{CA}=-150\ \mathrm{J}$. Su tutto il ciclo $\Delta U=0$, quindi $Q_{\text{tot}}=W_{\text{tot}}$.
 
@@ -133,7 +133,7 @@ $$Q_{AC}=7500-4500=3000\ \mathrm{J}, \quad W_{AC}=3000+0=3000\ \mathrm{J}, \quad
 
 ### Errore tipico
 
-**Errore tipico 13.1.** Uno degli errori concettuali più gravi, e più frequenti, consiste nello scrivere $\Delta Q_{A\to B}$ o $\Delta W_{A\to B}$ al posto di $Q_{A\to B}$ e $W_{A\to B}$. Il simbolo $\Delta f$ ha senso solo se $f$ è una funzione di stato, cioè una funzione definita in ogni punto dello spazio delle coordinate termodinamiche, di cui si possa calcolare la differenza $\Delta f \doteq f(B) - f(A)$ tra due stati. Scrivere $\Delta W_{A\to B}$ significherebbe trattare il lavoro come una funzione di stato di cui si calcola la variazione $W(B)-W(A)$, e analogamente per $\Delta Q_{A\to B}$; ma il primo principio stabilisce esattamente il contrario, cioè che né $Q$ né $W$ sono funzioni di stato, mentre lo è soltanto $U$. Chi scrive $\Delta Q_{A\to B}$ o $\Delta W_{A\to B}$, anche se esegue correttamente i calcoli numerici, dimostra di non avere compreso il contenuto del primo principio. La notazione corretta è dunque sempre
+**Errore tipico 13.1.** Uno degli errori concettuali più gravi, e più frequenti, consiste nello scrivere $\Delta Q_{A\to B}$ o $\Delta W_{A\to B}$ al posto di $Q_{A\to B}$ e $W_{A\to B}$. Il simbolo $\Delta f$ ha senso solo se $f$ è una funzione di stato, cioè una funzione definita in ogni punto dello spazio delle coordinate termodinamiche, di cui si possa calcolare la differenza $\Delta f \doteq f(B) - f(A)$ tra due stati. Scrivere $\Delta W_{A\to B}$ significherebbe trattare il lavoro come una funzione di stato di cui si calcola la variazione $W(B)-W(A)$, e analogamente per $\Delta Q_{A\to B}$; ma il primo principio stabilisce esattamente il contrario, cioè che né $Q$ né $W$ sono funzioni di stato, mentre lo è $U$. Chi scrive $\Delta Q_{A\to B}$ o $\Delta W_{A\to B}$, anche se esegue correttamente i calcoli numerici, dimostra di non avere compreso il contenuto del primo principio. La notazione corretta è dunque sempre
 
 $$\Delta U_{A\to B} = Q_{A\to B} - W_{A\to B},$$
 
