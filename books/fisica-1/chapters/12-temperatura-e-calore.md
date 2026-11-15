@@ -197,7 +197,7 @@ Questa equazione, oltre a stabilire che il calore si misura nella stessa unità 
 
 **Errore tipico 12.4**
 
-Un errore concettuale frequente, segnalato esplicitamente nelle guide alla risoluzione dei problemi, consiste nello scrivere $\Delta Q_{AB}$ o $\Delta W_{AB}$ come se calore e lavoro fossero funzioni di stato (cioè come differenze $Q(B)-Q(A)$ o $W(B)-W(A)$). Il simbolo $\Delta f$ ha senso solo se $f$ è definita punto per punto nello spazio degli stati termodinamici; $Q$ e $W$ non lo sono, perché il loro valore dipende dal particolare cammino seguito tra $A$ e $B$ e non soltanto dagli stati estremi. Solo l'energia interna $U$ è una funzione di stato, e solo per essa è corretto scrivere $\Delta U_{AB} = U(B) - U(A)$.
+Un errore concettuale frequente, segnalato esplicitamente nelle guide alla risoluzione dei problemi, consiste nello scrivere $\Delta Q_{AB}$ o $\Delta W_{AB}$ come se calore e lavoro fossero funzioni di stato (cioè come differenze $Q(B)-Q(A)$ o $W(B)-W(A)$). Il simbolo $\Delta f$ ha senso solo se $f$ è definita punto per punto nello spazio degli stati termodinamici; $Q$ e $W$ non lo sono, perché il loro valore dipende dal particolare cammino seguito tra $A$ e $B$ e non soltanto dagli stati estremi. L'energia interna $U$ è invece una funzione di stato, e per essa è corretto scrivere $\Delta U_{AB} = U(B) - U(A)$.
 
 ### Il lavoro termodinamico come integrale di p dV
 

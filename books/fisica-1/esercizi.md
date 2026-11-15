@@ -1552,7 +1552,7 @@ Sul primo punto la forza è $6\,\text{N}$ verso destra, dunque $a_1=6/2=3\,\text
 
 :::exercise{id="E7.22" chapter="7" difficulty="medio"}
 ## Domanda
-Un punto di massa $2\,\text{kg}$ si muove su una circonferenza centrata nell’origine. In un primo istante il raggio è $2\,\text{m}$ e la componente tangenziale della velocità è $6\,\text{m}/\text{s}$. In un secondo istante il raggio è $3\,\text{m}$. La forza è centrale. Determinare la componente tangenziale della velocità nel secondo istante.
+Un punto di massa $2\,\text{kg}$ si muove in un piano attorno all’origine. In un primo istante la sua distanza dall’origine è $2\,\text{m}$ e la componente della velocità perpendicolare al raggio vettore è $6\,\text{m}/\text{s}$. In un secondo istante la distanza è $3\,\text{m}$. La forza è centrale. Determinare la stessa componente della velocità nel secondo istante.
 
 :::hint
 In assenza di momento della forza rispetto all’origine, conserva il momento angolare del punto.
@@ -1604,7 +1604,7 @@ L’impulso verticale è $J_y=\int_0^3 4t\,dt=2t^2\big|_0^3=18\,\text{kg}\,\text
 
 :::exercise{id="E8.1" chapter="8" difficulty="facile"}
 ## Domanda
-Rispetto ad assi principali passanti per un punto $O$, il tensore d'inerzia di un corpo ha momenti principali $I_1=2\,\mathrm{kg\,m^2}$, $I_2=8\,\mathrm{kg\,m^2}$ e $I_3=4\,\mathrm{kg\,m^2}$. Scrivi l'equazione dell'ellissoide d'inerzia nella convenzione $I_1x^2+I_2y^2+I_3z^2=1$ e calcola le lunghezze dei suoi semiassi.
+Rispetto ad assi principali passanti per un punto $O$, il tensore d'inerzia di un corpo ha momenti principali $I_1=2\,\mathrm{kg\,m^2}$, $I_2=3\,\mathrm{kg\,m^2}$ e $I_3=4\,\mathrm{kg\,m^2}$. Scrivi l'equazione dell'ellissoide d'inerzia nella convenzione $I_1x^2+I_2y^2+I_3z^2=1$ e calcola le lunghezze dei suoi semiassi.
 
 :::hint
 Negli assi principali l'equazione è diagonale; il semiasse associato a $I_i$ ha lunghezza $1/\sqrt{I_i}$.
@@ -1613,13 +1613,13 @@ Negli assi principali l'equazione è diagonale; il semiasse associato a $I_i$ ha
 :::solution
 Nella convenzione assegnata, sostituendo i momenti principali si ottiene
 
-$$2x^2+8y^2+4z^2=1.$$
+$$2x^2+3y^2+4z^2=1.$$
 
 Portando l'equazione nella forma canonica dell'ellissoide,
 
-$$\frac{x^2}{1/2}+\frac{y^2}{1/8}+\frac{z^2}{1/4}=1.$$
+$$\frac{x^2}{1/2}+\frac{y^2}{1/3}+\frac{z^2}{1/4}=1.$$
 
-I semiassi sono quindi $1/\sqrt{2}$, $1/\sqrt{8}=1/(2\sqrt{2})$ e $1/2$, ciascuno con unità $(\mathrm{kg\,m^2})^{-1/2}$.
+I semiassi sono quindi $1/\sqrt{2}$, $1/\sqrt{3}$ e $1/2$, ciascuno con unità $(\mathrm{kg\,m^2})^{-1/2}$.
 :::
 :::
 
@@ -1659,18 +1659,18 @@ $$\boldsymbol{L}_O=(0,0,4)+(0,0,3)=(0,0,7)\,\mathrm{kg\,m^2/s}.$$
 
 :::exercise{id="E8.4" chapter="8" difficulty="medio"}
 ## Domanda
-In una base cartesiana, il tensore d'inerzia è $\mathbf{I}=\operatorname{diag}(3,3,12)\,\mathrm{kg\,m^2}$. Determina l'equazione dell'ellissoide $\boldsymbol{x}^{\mathsf T}\mathbf{I}\boldsymbol{x}=1$ e i suoi semiassi. Quale asse è l'asse maggiore?
+In una base cartesiana, il tensore d'inerzia è $\mathbf{I}=\operatorname{diag}(3,3,6)\,\mathrm{kg\,m^2}$. Determina l'equazione dell'ellissoide $\boldsymbol{x}^{\mathsf T}\mathbf{I}\boldsymbol{x}=1$ e i suoi semiassi. Quale asse è l'asse maggiore?
 
 :::hint
 Poiché la matrice è diagonale, i suoi elementi sono i momenti principali; confronta i reciproci delle loro radici quadrate.
 :::
 
 :::solution
-L'equazione è $3x^2+3y^2+12z^2=1$, cioè
+L'equazione è $3x^2+3y^2+6z^2=1$, cioè
 
-$$\frac{x^2}{1/3}+\frac{y^2}{1/3}+\frac{z^2}{1/12}=1.$$
+$$\frac{x^2}{1/3}+\frac{y^2}{1/3}+\frac{z^2}{1/6}=1.$$
 
-I semiassi lungo $x$ e $y$ hanno lunghezza $1/\sqrt{3}$, mentre quello lungo $z$ ha lunghezza $1/\sqrt{12}=1/(2\sqrt{3})$. I primi due sono maggiori, quindi l'ellissoide ha un asse maggiore nel piano $xy$ e una simmetria di rivoluzione attorno a $z$.
+I semiassi lungo $x$ e $y$ hanno lunghezza $1/\sqrt{3}$, mentre quello lungo $z$ ha lunghezza $1/\sqrt{6}$. I primi due sono maggiori, quindi l'ellissoide ha un asse maggiore nel piano $xy$ e una simmetria di rivoluzione attorno a $z$.
 :::
 :::
 
@@ -2302,7 +2302,7 @@ Usa $d\Phi/dr=g(r)$ con il verso radiale positivo verso l'esterno. Per il teorem
 :::
 
 :::solution
-Per il teorema dei gusci sferici, all'esterno della sfera il campo ha modulo $GM/r^2$ ed è diretto verso il centro. Pertanto $\Phi(R)=-\int_\infty^R GM/s^2\,ds=-GM/R$. All'interno, la componente radiale del campo è $g_r=-GMr/R^3$. Dalla relazione $g_r=-d\Phi/dr$ segue $d\Phi/dr=GMr/R^3$. Integrando da $R$ a $r$, si ottiene $\Phi(r)-\Phi(R)=\int_R^r GMs/R^3\,ds=GM(r^2-R^2)/(2R^3)$. Sostituendo $\Phi(R)=-GM/R$, risulta $\Phi(r)=-GM(3R^2-r^2)/(2R^3)$.
+Per il teorema dei gusci sferici, all'esterno della sfera il campo ha modulo $GM/r^2$ ed è diretto verso il centro. Pertanto $\Phi(R)=\int_\infty^R GM/s^2\,ds=-GM/R$. All'interno, la componente radiale del campo è $g_r=-GMr/R^3$. Dalla relazione $g_r=-d\Phi/dr$ segue $d\Phi/dr=GMr/R^3$. Integrando da $R$ a $r$, si ottiene $\Phi(r)-\Phi(R)=\int_R^r GMs/R^3\,ds=GM(r^2-R^2)/(2R^3)$. Sostituendo $\Phi(R)=-GM/R$, risulta $\Phi(r)=-GM(3R^2-r^2)/(2R^3)$.
 :::
 :::
 

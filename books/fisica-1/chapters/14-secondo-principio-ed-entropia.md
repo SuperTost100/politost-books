@@ -129,7 +129,7 @@ $$\eta = 1-\frac{|Q_{AB}|+|Q_{DA}|}{Q_{BC}} = 1-\frac{|-1{,}61\ \text{kJ}|+|-0{,
 
 ### Errori tipici
 
-**Errore tipico 14.1** (confondere $Q$ e $W$ con funzioni di stato). Scrivere $\Delta Q_{A\to B}$ o $\Delta W_{A\to B}$ al posto di $Q_{A\to B}$, $W_{A\to B}$ presuppone che calore e lavoro siano definiti punto per punto nello spazio degli stati e che se ne possa calcolare una variazione; questo è concettualmente sbagliato, perché solo l'energia interna è funzione di stato, mentre $\delta Q$ e $\delta W$ sono quantità infinitesime non associate a un differenziale esatto, già segnalato in [Primo principio ed energia interna](ref:chapter/13#p2).
+**Errore tipico 14.1** (confondere $Q$ e $W$ con funzioni di stato). Scrivere $\Delta Q_{A\to B}$ o $\Delta W_{A\to B}$ al posto di $Q_{A\to B}$, $W_{A\to B}$ presuppone che calore e lavoro siano definiti punto per punto nello spazio degli stati e che se ne possa calcolare una variazione; questo è concettualmente sbagliato, perché l'energia interna (come l'entropia) è funzione di stato, mentre $\delta Q$ e $\delta W$ sono quantità infinitesime non associate a un differenziale esatto, già segnalato in [Primo principio ed energia interna](ref:chapter/13#p2).
 
 **Errore tipico 14.2** (dimenticare il segno del lavoro dato dal verso di percorrenza). Calcolare l'area racchiusa da un ciclo senza controllare se è percorso in senso orario o antiorario porta a sbagliare il segno di $W$ e quindi a confondere una macchina termica con una macchina frigorifera.
 
