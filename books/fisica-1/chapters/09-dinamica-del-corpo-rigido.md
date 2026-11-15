@@ -361,9 +361,9 @@ $$a = g\,\frac{m-M\sin\theta}{m+\tfrac32 M}.$$
 
 Di conseguenza $F_{att} = \tfrac12 M a$ e $T = m(g-a)$.
 
-*Controllo (condizione di aderenza).* Affinché il moto sia effettivamente di puro rotolamento occorre $F_{att}\le \mu_s Mg\cos\theta$, cioè
+*Controllo (condizione di aderenza).* Affinché il moto sia effettivamente di puro rotolamento occorre $|F_{att}|\le \mu_s Mg\cos\theta$, cioè
 
-$$\tfrac12 M a \le \mu_s Mg\cos\theta \quad\Longrightarrow\quad \mu_s \ge \frac{m-M\sin\theta}{(2m+3M)\cos\theta} .$$
+$$\tfrac12 M |a| \le \mu_s Mg\cos\theta \quad\Longrightarrow\quad \mu_s \ge \frac{|m-M\sin\theta|}{(2m+3M)\cos\theta} .$$
 
 Se i dati numerici del problema non soddisfano questa disuguaglianza, il disco non può rotolare senza strisciare e il problema deve essere rifatto con attrito dinamico $F_{att}=\mu_d Mg\cos\theta$ noto a priori, al posto dell'incognita $F_{att}$.
 

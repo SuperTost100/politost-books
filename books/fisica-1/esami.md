@@ -565,7 +565,7 @@ $$F_{\mathrm{el}} = 0$$
 
 Indichiamo con $a$ l’accelerazione iniziale e la consideriamo verso destra, assumendo che il cilindro salga lungo il piano sinistro e la sfera scenda lungo il piano destro. Chiamiamo $T_1$ la tensione lato cilindro e $T_2$ la tensione lato sfera.
 
-Per muoversi di puro rotolamento, la sfera e il cilindro subiranno una forza d’attrito statico $f_s$ con il piano inclinato diretta in direzione opposta allo spostamento traslazionale.
+Per muoversi di puro rotolamento, la sfera e il cilindro subiranno una forza d’attrito statico $f_s$ con il piano inclinato diretta in direzione opposta all'accelerazione del centro di massa (all'istante iniziale, cioè allo spostamento traslazionale).
 
 Scriviamo ora le equazioni delle forze e dei momenti per la sfera, il cilindro e la carrucola:
 
@@ -664,7 +664,7 @@ $$F_{\mathrm{el}} = 0$$
 
 Indichiamo con $a$ l’accelerazione iniziale e la consideriamo verso destra, assumendo che il cilindro salga lungo il piano sinistro e la sfera scenda lungo il piano destro. Chiamiamo $T_1$ la tensione lato cilindro e $T_2$ la tensione lato sfera.
 
-Per muoversi di puro rotolamento, la sfera e il cilindro subiranno una forza d’attrito statico $f_s$ con il piano inclinato, diretta in direzione opposta allo spostamento traslazionale. Scriviamo le equazioni delle forze e dei momenti per la sfera, il cilindro e la carrucola:
+Per muoversi di puro rotolamento, la sfera e il cilindro subiranno una forza d’attrito statico $f_s$ con il piano inclinato, diretta in direzione opposta all'accelerazione del centro di massa (all'istante iniziale, cioè allo spostamento traslazionale). Scriviamo le equazioni delle forze e dei momenti per la sfera, il cilindro e la carrucola:
 
 $$\left\{
 \begin{aligned}

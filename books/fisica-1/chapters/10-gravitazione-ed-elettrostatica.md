@@ -202,7 +202,7 @@ $$\vec{G}(P) = \frac{\vec{F}}{m_0}$$
 
 dove $m_0$ deve essere sufficientemente piccola da non perturbare la distribuzione della massa sorgente, così che $\vec{F}$ sia effettivamente la sola forza dovuta a $M$.
 
-Usando la legge di gravitazione universale, il campo generato da una massa puntiforme $M$ (o da una distribuzione a simmetria sferica, come si vedrà nella sezione successiva) vale
+Usando la legge di gravitazione universale, il campo generato da una massa puntiforme $M$ (o, nei punti esterni, da una distribuzione a simmetria sferica, come si vedrà nella sezione successiva) vale
 
 :::formula{id="10.6" label="Campo gravitazionale di una massa puntiforme"}
 $$\vec{G}(P) = -G\frac{M}{r^2}\hat{u}_r$$

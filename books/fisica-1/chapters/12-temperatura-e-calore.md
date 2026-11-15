@@ -80,7 +80,7 @@ La sezione precedente ha introdotto l'equilibrio termico come uno dei tre requis
 
 **Principio zero della termodinamica**. Se un corpo A e un corpo B sono in equilibrio termico con un terzo corpo T, allora A e B sono in equilibrio termico tra loro. In modo equivalente, siano due sistemi ciascuno in equilibrio termico con un terzo sistema: i due sistemi di partenza sono anch'essi in equilibrio termico tra loro. Il principio zero è ciò che rende possibile l'uso di un termometro: il corpo T è il termometro stesso, e confrontare A e B con T equivale a confrontarli tra loro senza bisogno di metterli fisicamente a contatto.
 
-A questo si collega la distinzione tra pareti diatermiche e adiabatiche. Due sistemi messi a contatto tramite una parete che permette il passaggio di calore raggiungono inevitabilmente l'equilibrio termico; tale parete si dice diatermica. Una parete adiabatica, invece, è definita semplicemente come una parete che non permette alcuno scambio di calore tra i due sistemi che separa; un sistema circondato da pareti adiabatiche è detto esso stesso adiabatico. L'assenza di scambio di calore attraverso la parete non implica che i due sistemi non siano già in equilibrio termico, né esclude che possano diventarlo per altre vie: la parete adiabatica si limita a impedire che il calore sia il meccanismo attraverso cui tale equilibrio viene raggiunto o mantenuto. La temperatura è una grandezza scalare, proprietà di tutti i sistemi termodinamici in equilibrio, e due sistemi sono in equilibrio termico tra loro se e solo se hanno la stessa temperatura. L'uguaglianza delle temperature garantisce dunque soltanto l'equilibrio termico reciproco, non necessariamente l'equilibrio meccanico o chimico tra i due sistemi.
+A questo si collega la distinzione tra pareti diatermiche e adiabatiche. Due sistemi isolati dall'ambiente e messi a contatto tramite una parete che permette il passaggio di calore raggiungono inevitabilmente l'equilibrio termico; tale parete si dice diatermica. Una parete adiabatica, invece, è definita semplicemente come una parete che non permette alcuno scambio di calore tra i due sistemi che separa; un sistema circondato da pareti adiabatiche è detto esso stesso adiabatico. L'assenza di scambio di calore attraverso la parete non implica che i due sistemi non siano già in equilibrio termico, né esclude che possano diventarlo per altre vie: la parete adiabatica si limita a impedire che il calore sia il meccanismo attraverso cui tale equilibrio viene raggiunto o mantenuto. La temperatura è una grandezza scalare, proprietà di tutti i sistemi termodinamici in equilibrio, e due sistemi sono in equilibrio termico tra loro se e solo se hanno la stessa temperatura. L'uguaglianza delle temperature garantisce dunque soltanto l'equilibrio termico reciproco, non necessariamente l'equilibrio meccanico o chimico tra i due sistemi.
 
 ### Caratteristica termometrica e punto fisso
 
@@ -300,7 +300,7 @@ Con la convenzione $Q>0$ per il calore assorbito dal sistema, il segno di $Q$ di
 
 ### Bilancio termico e temperatura di equilibrio
 
-Consideriamo due corpi inizialmente a temperature diverse, posti in contatto termico in un contenitore adiabatico (nessun calore netto entra o esce dal sistema). Il corpo più caldo raggiungerà una temperatura di equilibrio inferiore a quella originale, il più freddo una temperatura superiore; sebbene la variazione di energia interna dell'insieme dei due corpi sia nulla, ciascun corpo singolarmente varia la propria energia interna, poiché il più caldo la cede al più freddo. Applicando il primo principio a ciascun corpo,
+Consideriamo due corpi inizialmente a temperature diverse, posti in contatto termico in un contenitore adiabatico (nessun calore netto entra o esce dal sistema) e senza scambi di lavoro. Il corpo più caldo raggiungerà una temperatura di equilibrio inferiore a quella originale, il più freddo una temperatura superiore; sebbene la variazione di energia interna dell'insieme dei due corpi sia nulla, ciascun corpo singolarmente varia la propria energia interna, poiché il più caldo la cede al più freddo. Applicando il primo principio a ciascun corpo,
 
 $$\Delta U_1 = Q_1 < 0, \qquad \Delta U_2 = Q_2 > 0,$$
 
@@ -394,7 +394,7 @@ Il passaggio di calore tra un solido a temperatura $T$ e il fluido circostante a
 $$Q = h\,(T-T_0)\,S\,t$$
 :::
 
-dove $S$ è la superficie di contatto fra il solido e il fluido, $t$ il tempo di scambio e $h$ la conducibilità termica esterna, un coefficiente che dipende dalla natura del fluido e dal tipo di moto convettivo: a titolo di esempio, per un filo caldo immerso in aria si ha $h \approx 10\ \mathrm{J/(m^2\cdot s\cdot K)}$.
+dove $S$ è la superficie di contatto fra il solido e il fluido, $t$ il tempo di scambio, abbastanza breve da poter considerare costante $T$, e $h$ la conducibilità termica esterna, un coefficiente che dipende dalla natura del fluido e dal tipo di moto convettivo: a titolo di esempio, per un filo caldo immerso in aria si ha $h \approx 10\ \mathrm{J/(m^2\cdot s\cdot K)}$.
 
 ### Irraggiamento: la legge di Stefan-Boltzmann
 

@@ -489,7 +489,7 @@ Il passaggio dall'aderenza allo scorrimento può essere riassunto osservando l'a
 
 ### Attrito viscoso
 
-**Definizione 3.9** (forza di attrito viscoso). Quando un corpo si muove all'interno di un fluido, oltre alle eventuali forze di attrito radente compare una forza di attrito viscoso $\vec{F}_v$, parallela alla velocità del corpo ma di verso opposto, con intensità proporzionale al modulo della velocità:
+**Definizione 3.9** (forza di attrito viscoso). Quando un corpo si muove all'interno di un fluido, oltre alle eventuali forze di attrito radente compare una forza di attrito viscoso $\vec{F}_v$, parallela alla velocità del corpo rispetto al fluido ma di verso opposto, con intensità che a basse velocità è proporzionale al modulo della velocità:
 
 $$
 \vec{F}_v = -\beta \vec{v} = -\kappa \eta\, \vec{v},
@@ -592,7 +592,7 @@ coerentemente con il fatto che la forza elastica è una forza conservativa. Ques
 
 ### Moto armonico di una massa su una molla
 
-Si consideri un punto materiale di massa $m$ attaccato all'estremo libero di una molla ideale di costante elastica $k$, con l'altro estremo fissato, vincolato a muoversi lungo l'asse della molla. Applicando la seconda legge della dinamica (vedi [principi della dinamica](ref:chapter/3#p2), {{formula:3.1}}) con $x = l - l_0$ spostamento dalla posizione di riposo,
+Si consideri un punto materiale di massa $m$ attaccato all'estremo libero di una molla ideale di costante elastica $k$, con l'altro estremo fissato, vincolato a muoversi senza attrito lungo l'asse orizzontale della molla. Applicando la seconda legge della dinamica (vedi [principi della dinamica](ref:chapter/3#p2), {{formula:3.1}}) con $x = l - l_0$ spostamento dalla posizione di riposo,
 
 $$-kx = ma = m\frac{d^2x}{dt^2} \quad \Longrightarrow \quad \frac{d^2x}{dt^2} = -\frac{k}{m}x \,$$
 

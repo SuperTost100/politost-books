@@ -2704,7 +2704,7 @@ Il sistema è il gas contenuto nel recipiente. Il recipiente è chiuso, quindi l
 
 :::exercise{id="E12.17" chapter="12" difficulty="medio"}
 ## Domanda
-Un gas è chiuso in un cilindro con pistone mobile e senza attrito. Il pistone è fermo, la pressione del gas è $1{,}20\times10^5\,\mathrm{Pa}$ e quella esterna è $1{,}00\times10^5\,\mathrm{Pa}$. Il gas e l’ambiente sono alla stessa temperatura. Il sistema è in equilibrio termodinamico? Motiva la risposta e determina la differenza di pressione che impedisce l’equilibrio meccanico.
+Un gas è chiuso in un cilindro con pistone mobile, di peso trascurabile e senza attrito. Il pistone è fermo, la pressione del gas è $1{,}20\times10^5\,\mathrm{Pa}$ e quella esterna è $1{,}00\times10^5\,\mathrm{Pa}$. Il gas e l’ambiente sono alla stessa temperatura. Il sistema è in equilibrio termodinamico? Motiva la risposta e determina la differenza di pressione che impedisce l’equilibrio meccanico.
 
 :::hint
 L’equilibrio termico richiede temperature uguali; per un pistone mobile senza attrito, l’equilibrio meccanico richiede anche pressioni uguali.
@@ -2821,7 +2821,7 @@ La variazione di temperatura è $\Delta T=300\,\text{K}$. Il lavoro compiuto dal
 
 :::exercise{id="E13.9" chapter="13" difficulty="difficile"}
 ## Domanda
-Una mole di gas ideale monoatomico passa dallo stato $A$, con $T_A=300\,\text{K}$ e volume $V_0$, allo stato $B$, con $T_B=600\,\text{K}$ e volume $2V_0$. Si confrontino due percorsi. Nel percorso $1$ il gas viene prima riscaldato a volume costante e poi espanso isotermicamente a $600\,\text{K}$. Nel percorso $2$ viene riscaldato a pressione costante. Calcolare per ciascun percorso $W$ e $Q$, usando $R=8{,}314\,\text{J mol}^{-1}\text{K}^{-1}$.
+Una mole di gas ideale monoatomico passa dallo stato $A$, con $T_A=300\,\text{K}$ e volume $V_0$, allo stato $B$, con $T_B=600\,\text{K}$ e volume $2V_0$. Si confrontino due percorsi. Nel percorso $1$ il gas viene prima riscaldato a volume costante e poi espanso isotermicamente e reversibilmente a $600\,\text{K}$. Nel percorso $2$ viene riscaldato a pressione costante. Calcolare per ciascun percorso $W$ e $Q$, usando $R=8{,}314\,\text{J mol}^{-1}\text{K}^{-1}$.
 
 :::hint
 La variazione di energia interna è uguale nei due percorsi. Calcola il lavoro delle singole tappe e ricava il calore dal primo principio, con $W$ positivo se compiuto dal gas.
