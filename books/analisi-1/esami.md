@@ -2165,7 +2165,7 @@ non è continua in $x=2$. L’immagine dell’intervallo $\lbrack 0,4\rbrack $ �
 
 **(c)**
 
-Il teorema dei valori intermedi vale su ciascuno dei due intervalli $\lbrack a,b\rbrack $ e $\lbrack c,d\rbrack $, poiché $f$ è continua su ciascuno di essi. In generale, però, non si estende a due punti appartenenti a componenti diverse: l’immagine dell’unione di due intervalli disgiunti non è necessariamente un intervallo, anche quando la funzione è continua.
+Il teorema dei valori intermedi vale su ciascuno dei due intervalli $\lbrack a,b\rbrack $ e $\lbrack c,d\rbrack $, se $f$ è continua su ciascuno di essi, come richiede il teorema. In generale, però, non si estende a due punti appartenenti a componenti diverse: l’immagine dell’unione di due intervalli disgiunti non è necessariamente un intervallo, anche quando la funzione è continua.
 
 Come controesempio, consideriamo la funzione proposta al punto precedente, ristretta all’insieme $A=\lbrack 0,1\rbrack \cup[3,4]$. La funzione è continua su ciascuna componente, e $f(A)=\{-1,1\}$. Prendendo un punto in $\lbrack 0,1\rbrack $ e uno in $\lbrack 3,4\rbrack $, i valori corrispondenti sono $-1$ e $1$, ma $f(A)$ non contiene l’intervallo $\lbrack -1,1\rbrack $.
 :::

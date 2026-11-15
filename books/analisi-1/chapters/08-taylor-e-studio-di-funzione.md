@@ -409,7 +409,7 @@ Metodo, passo per passo (si veda [Studio di funzione completo](ref:chapter/8#p4)
 
 Errori tipici:
 - Dimenticare di escludere dal dominio un punto che annulla il denominatore, o di controllare che un punto di non derivabilità appartenga davvero al dominio.
-- Dichiarare «punto angoloso» o «cuspide» senza calcolare i limiti di $f'$: serve la distinzione di [(7.5)](ref:formula/7.5) e [(7.6)](ref:formula/7.6).
+- Dichiarare «punto angoloso» o «cuspide» senza calcolare i limiti di $f'$ o del rapporto incrementale: serve la distinzione di [(7.5)](ref:formula/7.5) e [(7.6)](ref:formula/7.6).
 - Considerare massimo assoluto un massimo relativo senza confrontarlo con il comportamento della funzione agli estremi del dominio.
 - Derivare ignorando il valore assoluto: $f'$ va scritta caso per caso.
 
