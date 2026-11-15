@@ -303,7 +303,7 @@ la retta $y=L$ è un **asintoto orizzontale** nel verso considerato.
 Quando il limite a $+\infty$ (o a $-\infty$) è infinito, non c'è asintoto orizzontale, ma può esistere un asintoto obliquo.
 
 :::formula{id="8.7" label="Asintoto obliquo"}
-$$f(x) = mx + q + o(1), \qquad x \to +\infty \quad \left(\text{oppure } x \to -\infty\right), \qquad \text{dove} \qquad m = \lim_{x\to +\infty} \frac{f(x)}{x} \in \mathbb{R}\setminus\{0\}, \quad q = \lim_{x\to +\infty} \big(f(x) - mx\big) \in \mathbb{R}.$$
+$$f(x) = mx + q + o(1), \qquad x \to +\infty, \qquad \text{dove} \qquad m = \lim_{x\to +\infty} \frac{f(x)}{x} \in \mathbb{R}\setminus\{0\}, \quad q = \lim_{x\to +\infty} \big(f(x) - mx\big) \in \mathbb{R}.$$
 :::
 
 La retta $y = mx + q$ è l'**asintoto obliquo** di $f$ per $x \to +\infty$. Se $m = 0$ si ricade nel caso dell'asintoto orizzontale (quindi i due casi sono mutuamente esclusivi); se uno dei due limiti che definiscono $m$ o $q$ non esiste o è infinito, l'asintoto obliquo non esiste. Lo stesso procedimento si ripete, indipendentemente, per $x \to -\infty$: i coefficienti $m$ e $q$ possono essere diversi nei due versi.

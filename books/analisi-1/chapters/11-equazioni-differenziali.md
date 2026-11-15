@@ -625,7 +625,7 @@ perché ciascuna parentesi è nulla.
 3. Per la retta tangente non risolvere l'equazione: ricava $y'(x_0)$ dall'equazione e dal dato iniziale, poi scrivi $y=y(x_0)+y'(x_0)(x-x_0)$ ([Derivata e retta tangente](ref:chapter/7#p2)).
 4. Per l'integrale generale applica {{formula:11.5}}.
 
-**Errori tipici.** Risolvere l'equazione completa quando bastava la derivata nel punto. Dimenticare di cambiare segno al coefficiente passando da $y'+a(x)y=b(x)$ a $y'=-a(x)y+b(x)$. Applicare un metodo da variabili separabili a un'equazione lineare non omogenea.
+**Errori tipici.** Risolvere l'equazione completa quando bastava la derivata nel punto. Dimenticare di cambiare segno al coefficiente passando da $y'+a(x)y=b(x)$ a $y'=-a(x)y+b(x)$. Applicare un metodo da variabili separabili a un'equazione lineare non omogenea che non si scrive nella forma $y'=f(y)g(x)$.
 
 **Esempi.**
 - Esame del 29 gennaio 2020 - IIo turno, esercizio 2: definizione di integrale particolare di $y'+a(x)y=b(x)$ e ricerca dei valori $y_0$ che rendono $x_0$ un punto critico. Si risolve con il passo 2.

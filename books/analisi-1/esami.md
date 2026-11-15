@@ -263,7 +263,7 @@ $$
 \lim_{x\to-2^+} f_k(x)=f_k(-2)=\lim_{x\to-2^-}f_k(x)=-3
 $$
 
-per $k\geq1$. Per $k=0$, invece, il limite sinistro vale $-2$, mentre il limite destro vale $-3=f_0(-2)$. La funzione è dunque continua in $x=-2$ se e solo se $k\geq1$. Altrove la funzione è continua perché composizione di funzioni elementari continue.
+per $k\geq1$. Per $k=0$, invece, il limite sinistro vale $-2$, mentre il limite destro vale $-3\neq f_0(-2)$. La funzione è dunque continua in $x=-2$ se e solo se $k\geq1$. Altrove la funzione è continua perché composizione di funzioni elementari continue.
 
 2) Per $k\geq1$ si ha che $f'_k(x)=k(x+2)^{k-1}$ se $x<-2$. Ricordando il punto b), ne segue facilmente che
 
@@ -367,7 +367,7 @@ $$
 b_n=a_n(-1+\cos n\pi)=n\log n\bigl(-1+(-1)^n\bigr).
 $$
 
-Per ogni $n=2k$, con $n\ge2$, si ha che $b_n=b_{2k}=0$. Per ogni $n=2k+1$, con $n\ge3$, si ha che $b_n=b_{2k+1}=-(2k+1)\log(2k+1)$ e quindi
+Per ogni $n=2k$, con $n\ge2$, si ha che $b_n=b_{2k}=0$. Per ogni $n=2k+1$, con $n\ge3$, si ha che $b_n=b_{2k+1}=-2(2k+1)\log(2k+1)$ e quindi
 
 $$
 \lim_{k\to+\infty}b_{2k}=0\ne\lim_{k\to+\infty}b_{2k+1}=-\infty.
@@ -5842,7 +5842,7 @@ Entrambi i punti sono cuspidi. Gli zeri di $f$ sono $x=\pm\frac{1}{2}$. La deriv
 
 Dunque $f$ cresce su $(-\infty,-\frac{1}{2}\rbrack $, $\lbrack -a,0)$, $(0,a\rbrack $ e $\lbrack \frac{1}{2},+\infty)$; decresce su $\lbrack -\frac{1}{2},-a\rbrack $ e $\lbrack a,\frac{1}{2}\rbrack $. Ha massimi locali in $-\frac{1}{2}$ e $a$, e minimi locali in $-a$ e $\frac{1}{2}$. Nessuno di questi estremi è globale, perché la funzione non è limitata né superiormente né inferiormente. Il grafico è dispari, presenta un punto escluso nell’origine, cuspidi negli zeri $\pm\frac{1}{2}$ e rami illimitati.
 
-La funzione $g$ è continua su $\mathbb{R}$, quindi $G'(x)=g(x)$ per ogni $x\in\mathbb{R}$. I punti critici di $G$ sono $x=-\frac{1}{2}$, $x=0$ e $x=\frac{1}{2}$. Poiché $g(x)<0$ per $x<0$ e $g(x)>0$ per $x>0$, $x=0$ è un minimo globale di $G$. Nei punti $x=\pm\frac{1}{2}$ la derivata di $G$ non cambia segno, quindi non sono estremi.
+La funzione $g$ è continua su $\mathbb{R}$, quindi $G'(x)=g(x)$ per ogni $x\in\mathbb{R}$. I punti critici di $G$ sono $x=-\frac{1}{2}$, $x=0$ e $x=\frac{1}{2}$. Poiché $g(x)<0$ per $x<0$, $x\neq-\frac{1}{2}$, e $g(x)>0$ per $x>0$, $x\neq\frac{1}{2}$, $x=0$ è un minimo globale di $G$. Nei punti $x=\pm\frac{1}{2}$ la derivata di $G$ non cambia segno, quindi non sono estremi.
 :::
 :::
 
@@ -5909,6 +5909,6 @@ Ponendo $a=e^{-\frac{2}{3}}$, si ha $f'(x)=0$ per $x=\pm a$. La funzione è stre
 
 Per tracciare il grafico qualitativo, si può descrivere l’andamento per $x>0$ e rifletterlo rispetto all’origine. Per $x \to 0^+$ la funzione tende a $0$ con tangente verticale; cresce fino al massimo locale in $x=a$, poi decresce fino alla cuspide in $x=1$, dove tocca l’asse $x$. Dopo $x=1$ torna a crescere, restando positiva, e tende a $+\infty$ senza asintoti. Per simmetria, in $x=-1$ il grafico tocca l’asse $x$ con una cuspide ed è un massimo locale; tra $-1$ e $0$ presenta il minimo locale in $x=-a$. Il grafico ha due rami simmetrici rispetto all’origine.
 
-La funzione $g$ è continua su $\mathbb{R}$, quindi $G'(x)=g(x)$ per ogni $x \in \mathbb{R}$. I punti critici di $G$ sono $x=-1$, $x=0$ e $x=1$. Poiché $g(x)<0$ per $x<0$ e $g(x)>0$ per $x>0$, $G$ decresce su $(-\infty,0\rbrack $ e cresce su $\lbrack 0,+\infty)$. Pertanto $x=0$ è un minimo globale, mentre $x=\pm1$ non sono estremi locali né globali.
+La funzione $g$ è continua su $\mathbb{R}$, quindi $G'(x)=g(x)$ per ogni $x \in \mathbb{R}$. I punti critici di $G$ sono $x=-1$, $x=0$ e $x=1$. Poiché $g(x)<0$ per $x<0$, $x\neq-1$, e $g(x)>0$ per $x>0$, $x\neq1$, $G$ decresce su $(-\infty,0\rbrack $ e cresce su $\lbrack 0,+\infty)$. Pertanto $x=0$ è un minimo globale, mentre $x=\pm1$ non sono estremi locali né globali.
 :::
 :::
