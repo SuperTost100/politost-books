@@ -70,7 +70,7 @@ Uno **ione** è un atomo o un gruppo di atomi che ha acquistato o perso uno o pi
 
 Un **composto ionico** si forma generalmente quando un metallo reagisce con un non metallo: il metallo cede uno o più elettroni e diventa un catione, mentre il non metallo li acquista e diventa un anione; cationi e anioni si attraggono poi per forza elettrostatica (legge di Coulomb) formando il composto.
 
-Diversamente dai composti covalenti molecolari, nei composti ionici non esistono molecole discrete: gli ioni si dispongono in un reticolo cristallino tridimensionale in cui ogni ione è circondato da più ioni di carica opposta. Per questo motivo la formula di un composto ionico, come $\mathrm{NaCl}$, non è una formula molecolare ma una **formula minima**, detta anche **unità formula**: essa indica semplicemente il rapporto minimo tra cationi e anioni nel reticolo, e non corrisponde a nessuna molecola $\mathrm{NaCl}$ realmente esistente.
+Diversamente dai composti covalenti molecolari, nei composti ionici non esistono molecole discrete: gli ioni si dispongono in un reticolo cristallino tridimensionale in cui ogni ione è circondato da più ioni di carica opposta. Per questo motivo la formula di un composto ionico, come $\mathrm{NaCl}$, non è una formula molecolare ma un'**unità formula**, che di solito coincide con la **formula minima**: essa indica semplicemente il rapporto minimo tra cationi e anioni nel reticolo, e non corrisponde a nessuna molecola $\mathrm{NaCl}$ realmente esistente.
 
 **Teorema 3.1** (elettroneutralità dei composti ionici)
 
@@ -448,7 +448,7 @@ e la forza motrice della reazione è l'unione di uno ione $H^+$ proveniente dall
 
 Ogni sale è formato da un catione, che deriva dall'idrossido (un metallo, con carica pari al suo numero di ossidazione, oppure lo ione ammonio $NH_4^+$), e da un anione, che deriva dall'acido togliendo gli atomi di idrogeno ionizzabili (un anione semplice come $F^-$, $S^{2-}$, $Cl^-$, oppure un anione poliatomico come $CO_3^{2-}$, $NO_3^-$, $SO_3^{2-}$, $ClO_4^-$). La formula del sale si scrive quindi con le stesse regole già viste per i composti ionici in generale: si uniscono catione e anione nelle proporzioni che garantiscono l'elettroneutralità, come discusso nella sezione su [simboli, formule e ioni](ref:chapter/3#p2).
 
-I sali sono composti ionici e non sono costituiti da molecole discrete: la formula che si scrive è sempre una formula minima, cioè un'unità formula che indica solo il rapporto tra gli ioni nel reticolo. Non esiste, per esempio, la molecola $NaCl$, ma solo un reticolo di ioni $Na^+$ e $Cl^-$ in rapporto 1:1. In base alla composizione si distinguono sali binari (metallo più non metallo, derivati da un idracido), sali ternari (derivati da un ossiacido, contengono un ossoanione) e sali acidi (contengono ancora atomi di idrogeno residui).
+I sali sono composti ionici e non sono costituiti da molecole discrete: la formula che si scrive è un'unità formula, che indica solo il rapporto tra gli ioni nel reticolo. Non esiste, per esempio, la molecola $NaCl$, ma solo un reticolo di ioni $Na^+$ e $Cl^-$ in rapporto 1:1. In base alla composizione si distinguono sali binari (metallo più non metallo, derivati da un idracido), sali ternari (derivati da un ossiacido, contengono un ossoanione) e sali acidi (contengono ancora atomi di idrogeno residui).
 
 :::formula{id="3.8" label="Reazione di neutralizzazione (salificazione)"}
 $$HX_{(aq)} + MOH_{(aq)} \to MX_{(aq)} + H_2O_{(l)}$$
