@@ -262,7 +262,7 @@ Negli integrali doppi il cambio di variabile serve soprattutto a **semplificare 
 
 ### Il teorema del cambio di variabili
 
-**Definizione 4.3** (cambiamento di variabile). Siano $\mathcal{R}'$ e $\mathcal{R}$ regioni di $\mathbb{R}^n$ e $A'$ l'interno di $\mathcal{R}'$. Un campo vettoriale $\boldsymbol{\Phi}:\mathcal{R}'\to\mathcal{R}$ è un cambiamento di variabile se $\boldsymbol{\Phi}$ è continua in $\mathcal{R}'$ ed è una biiezione tra $\mathcal{R}'$ e $\mathcal{R}$, se è di classe $C^1$ in $A'$ e se la sua jacobiana $J\boldsymbol{\Phi}$ è non singolare in ogni punto di $A'$.
+**Definizione 4.3** (cambiamento di variabile). Siano $\mathcal{R}'$ e $\mathcal{R}$ regioni di $\mathbb{R}^n$ e $A'$ l'interno di $\mathcal{R}'$. Un campo vettoriale $\boldsymbol{\Phi}:\mathcal{R}'\to\mathcal{R}$ è un cambiamento di variabile se $\boldsymbol{\Phi}$ è continua in $\mathcal{R}'$ ed è una biiezione tra $\mathcal{R}'$ e $\mathcal{R}$, se è di classe $C^1$ in $A'$ con derivate parziali limitate e se la sua jacobiana $J\boldsymbol{\Phi}$ è non singolare in ogni punto di $A'$.
 
 **Teorema 4.3** (cambio di variabili negli integrali doppi). Siano $\Omega'$ e $\Omega$ regioni misurabili di $\mathbb{R}^2$ e $\boldsymbol{\Phi}:\Omega'\to\Omega$ un cambiamento di variabile, con componenti $x=\varphi(u,v)$, $y=\psi(u,v)$. Se $f$ è continua e limitata su $\Omega$, allora
 

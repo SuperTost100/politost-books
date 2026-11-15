@@ -639,7 +639,7 @@ $$\boldsymbol{\nu}(u_0,v_0)=\frac{\partial\boldsymbol{\sigma}}{\partial u}(u_0,v
 
 Il **versore normale** è $\mathbf{n}=\boldsymbol{\nu}/\|\boldsymbol{\nu}\|$. Per la regolarità $\boldsymbol{\nu}\neq\mathbf{0}$. Il prodotto vettoriale [(1.2)](ref:formula/1.2) è ortogonale a $\boldsymbol{\sigma}_u$ e $\boldsymbol{\sigma}_v$, perciò $\boldsymbol{\nu}$ è ortogonale al piano tangente.
 
-Le curve coordinate $u\mapsto\boldsymbol{\sigma}(u,v_0)$ e $v\mapsto\boldsymbol{\sigma}(u_0,v)$ giacciono su $\Sigma$ e hanno in $P_0$ tangenti $\boldsymbol{\sigma}_u$ e $\boldsymbol{\sigma}_v$. Il **piano tangente** in $P_0$ è il piano per $P_0$ generato da questi due vettori. Se $\Sigma$ è semplice, contiene la tangente a ogni curva regolare di $\Sigma$ passante per $P_0$. La sua equazione è
+Le curve coordinate $u\mapsto\boldsymbol{\sigma}(u,v_0)$ e $v\mapsto\boldsymbol{\sigma}(u_0,v)$ giacciono su $\Sigma$ e hanno in $P_0$ tangenti $\boldsymbol{\sigma}_u$ e $\boldsymbol{\sigma}_v$. Il **piano tangente** in $P_0$ è il piano per $P_0$ generato da questi due vettori. Contiene la tangente a ogni curva regolare $\boldsymbol{\sigma}(u(t),v(t))$, con $u,v$ di classe $C^1$ e $(u(t_0),v(t_0))=(u_0,v_0)$. La sua equazione è
 
 :::formula{id="3.27" label="Piano tangente a una superficie parametrica"}
 $$\boldsymbol{\nu}(u_0,v_0)\cdot(\mathbf{x}-P_0)=0$$
