@@ -129,7 +129,7 @@ Un esempio istruttivo è la funzione con un salto in $x_0=0$, per cui $\lim_{x\t
 :::image{src="assets/831bfb75-salto-unilateri.svg" alt="Funzione con salto in x=0 tra i valori 0 e 1" caption="Fig. 4.2 — Limite sinistro uguale a 0 e limite destro uguale a 1 in x=0: un punto di discontinuita di salto"}
 :::
 
-Un secondo esempio è $f(x) = 1/x$ per $x\neq 0$: si ha $\lim_{x\to 0^-} f(x) = -\infty$ e $\lim_{x\to 0^+} f(x) = +\infty$, entrambi infiniti, e questo tipo di comportamento caratterizza una discontinuità di seconda specie.
+Un secondo esempio è $f(x) = 1/x$ per $x\neq 0$: si ha $\lim_{x\to 0^-} f(x) = -\infty$ e $\lim_{x\to 0^+} f(x) = +\infty$, entrambi infiniti. Il punto $0$ non appartiene al dominio, ma se si assegna un valore $f(0)$ questo tipo di comportamento caratterizza una discontinuità di seconda specie.
 
 ### Verificare un limite con la definizione
 
