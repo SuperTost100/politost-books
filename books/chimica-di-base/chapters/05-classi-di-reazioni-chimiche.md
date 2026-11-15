@@ -42,7 +42,7 @@ Questi schemi riprendono direttamente le classi di composti e le reazioni di for
 
 Quando la combinazione avviene tra due elementi, il prodotto può essere un composto ionico binario, se si combinano un metallo e un non metallo, oppure un composto covalente, se si combinano due non metalli. La combinazione di un composto con un elemento porta invece a un composto più complesso, come in $\mathrm{PCl_3} + \mathrm{Cl_2} \to \mathrm{PCl_5}$.
 
-Nelle reazioni tra un elemento e l'ossigeno variano sempre i numeri di ossidazione (aumenta quello dell'elemento, diminuisce quello dell'ossigeno): queste sintesi rientrano quindi tra le reazioni di ossidoriduzione. Non tutte le sintesi sono però redox: la formazione di un idrossido a partire da un ossido basico e acqua, ad esempio, non comporta variazione di numeri di ossidazione.
+Nelle reazioni tra un elemento e l'ossigeno variano sempre i numeri di ossidazione (aumenta quello dell'elemento, diminuisce quello dell'ossigeno, tranne con il fluoro, che in $\mathrm{OF_2}$ porta l'ossigeno a $+2$): queste sintesi rientrano quindi tra le reazioni di ossidoriduzione. Non tutte le sintesi sono però redox: la formazione di un idrossido a partire da un ossido basico e acqua, ad esempio, non comporta variazione di numeri di ossidazione.
 
 ### Reazioni di decomposizione
 
@@ -104,7 +104,7 @@ Tra le reazioni redox meritano un cenno due sottoclassi importanti. Le reazioni 
 
 **Errore tipico 5.1.** Molti studenti scambiano i ruoli di ossidante e riducente: è l'agente ossidante a venire ridotto (acquista elettroni), mentre l'agente riducente viene ossidato (cede elettroni). Conviene sempre verificare il numero di ossidazione prima e dopo la reazione, piuttosto che affidarsi al nome della specie.
 
-Un secondo punto da chiarire riguarda il lessico: in senso stretto le basi, essendo composti ionici, si dissociano in acqua, mentre gli acidi, essendo composti covalenti, si ionizzano; nell'uso corrente, tuttavia, il termine "dissociazione" viene impiegato per entrambi i casi. Infine, per incrociare rapidamente i due criteri di classificazione di questa sezione, conviene ricordare la regola pratica: se una sostanza elementare compare tra reagenti o prodotti, la reazione è quasi sempre una redox (sintesi o decomposizione a partire da elementi, o scambio semplice); se invece reagenti e prodotti sono tutti composti e si limitano a scambiarsi ioni, come nelle metatesi, la reazione non è redox.
+Un secondo punto da chiarire riguarda il lessico: in senso stretto le basi ioniche, come gli idrossidi metallici, si dissociano in acqua, mentre gli acidi, essendo composti covalenti, si ionizzano; nell'uso corrente, tuttavia, il termine "dissociazione" viene impiegato per entrambi i casi. Infine, per incrociare rapidamente i due criteri di classificazione di questa sezione, conviene ricordare la regola pratica: se una sostanza elementare compare tra reagenti o prodotti, la reazione è quasi sempre una redox (sintesi o decomposizione a partire da elementi, o scambio semplice); se invece reagenti e prodotti sono tutti composti e si limitano a scambiarsi ioni, come nelle metatesi, la reazione non è redox.
 
 ## p3 | L'acqua come solvente e le reazioni di precipitazione
 

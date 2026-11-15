@@ -122,7 +122,7 @@ $$t=\frac{1}{k}\left(\frac{1}{\lbrack \mathrm{HI}\rbrack _t}-\frac{1}{\lbrack \m
 
 ### Effetto della temperatura sulla costante di velocità
 
-La [velocità di reazione](ref:chapter/15#p2) dipende dalla concentrazione dei reagenti attraverso la legge cinetica $v=k\lbrack A\rbrack ^x\lbrack B\rbrack ^y$, ma la costante $k$ non è affatto una vera costante: essa cambia con la temperatura. Raccogliendo dati di concentrazione e tempo per una stessa reazione condotta a diverse temperature, e ricavando $k$ da ciascun esperimento, si osserva che $k$ aumenta sempre al crescere della temperatura. La temperatura, quindi, non compare esplicitamente nella legge cinetica differenziale, ma ne modifica la velocità agendo sulla costante $k$.
+La [velocità di reazione](ref:chapter/15#p2) dipende dalla concentrazione dei reagenti attraverso la legge cinetica $v=k\lbrack A\rbrack ^x\lbrack B\rbrack ^y$, ma la costante $k$ non è affatto una vera costante: essa cambia con la temperatura. Raccogliendo dati di concentrazione e tempo per una stessa reazione condotta a diverse temperature, e ricavando $k$ da ciascun esperimento, si osserva che nella quasi totalità dei casi $k$ aumenta al crescere della temperatura. La temperatura, quindi, non compare esplicitamente nella legge cinetica differenziale, ma ne modifica la velocità agendo sulla costante $k$.
 
 Sperimentalmente il grafico di $k$ in funzione di $T$ è una curva esponenziale crescente, descritta dall'**equazione di Arrhenius**.
 

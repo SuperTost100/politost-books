@@ -347,7 +347,7 @@ Per quantificare la deviazione dall'idealità si definisce il fattore di comprim
 $$Z = \frac{PV}{RT}$$
 :::
 
-Per un gas ideale $Z = 1$ a qualunque pressione, perché $PV = nRT$ con $n = 1\ \text{mol}$. Se si riporta in un grafico $Z$ in funzione della pressione esterna per una mole di gas reale, la curva tipica (quella osservata per il metano, $\text{CH}_4$) scende sotto il valore $1$ a pressioni moderate per poi risalire proporzionalmente alla pressione quando questa diventa molto alta.
+dove $V$ è il volume di una mole di gas. Per un gas ideale $Z = 1$ a qualunque pressione, perché $PV = nRT$ con $n = 1\ \text{mol}$. Se si riporta in un grafico $Z$ in funzione della pressione esterna per una mole di gas reale, la curva tipica (quella osservata per il metano, $\text{CH}_4$) scende sotto il valore $1$ a pressioni moderate per poi risalire proporzionalmente alla pressione quando questa diventa molto alta.
 
 Questo andamento è il risultato di due effetti che si sovrappongono parzialmente.
 

@@ -400,7 +400,7 @@ $$\Delta H_{\text{effettiva}} = \frac{164.1\,\text{kJ}\cdot 0.15\,\text{mol}}{2\
 **Risposta** È possibile intervenire su più fattori:
 
 1. Aumentando la pressione, poiché la reazione bilanciata ha più moli gassose tra i reagenti che tra i prodotti.
-2. Aumentando la temperatura, dato che la variazione effettiva di entalpia di reazione è positiva, pari a $+12.31\,\text{kJ}$: la reazione è endotermica e assorbe calore.
+2. Aumentando la temperatura, dato che l'entalpia standard della reazione come scritta è positiva, pari a $+164.1\,\text{kJ}$: la reazione è endotermica e assorbe calore.
 3. Utilizzando un catalizzatore, che accelera sia la reazione diretta sia quella inversa e riduce il tempo necessario per raggiungere l’equilibrio, senza modificare la composizione all’equilibrio né la resa all’equilibrio.
 4. Rimuovendo il prodotto generato per favorire il consumo dei reagenti e la formazione di altro prodotto.
 
