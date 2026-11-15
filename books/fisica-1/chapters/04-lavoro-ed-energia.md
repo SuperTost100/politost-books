@@ -488,7 +488,7 @@ I risultati sono nella sezione [Forze conservative ed energia potenziale](ref:ch
 
 1. Dividere il problema in tre fasi: prima dell'urto, urto, dopo l'urto.
 2. Prima e dopo l'urto usare l'energia (tipo 1 o 2) per passare dalla quota o dalla molla alla velocità, o viceversa.
-3. Nell'urto usare solo la quantità di moto, [(7.20)](ref:formula/7.20), perché le forze impulsive sono interne e l'energia in generale non si conserva. Scegliere la direzione in cui il sistema non riceve impulsi esterni (con un filo occorre ragionare con attenzione, mentre con un perno vincolante si conserva il momento angolare rispetto al perno).
+3. Nell'urto usare solo la quantità di moto, [(7.20)](ref:formula/7.20), perché le forze impulsive sono interne e l'energia in generale non si conserva. Scegliere la direzione in cui il sistema non riceve impulsi esterni (con un filo occorre ragionare con attenzione, mentre con un perno vincolante si usa il momento angolare rispetto al perno, che si conserva se nessun'altra forza impulsiva esterna ha momento rispetto a esso).
 4. Calcolare l'energia persa nell'urto con la differenza delle energie cinetiche, come in [(7.21)](ref:formula/7.21), se il testo la chiede.
 5. Usare la velocità subito dopo l'urto come condizione iniziale per la fase successiva.
 

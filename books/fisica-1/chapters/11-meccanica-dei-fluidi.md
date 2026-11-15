@@ -249,13 +249,13 @@ Dall'equazione di continuità segue la conseguenza qualitativa più usata nelle 
 
 Vogliamo ora legare la velocità del fluido alla pressione e alla quota. Il risultato si ottiene applicando il [teorema dell'energia cinetica](ref:chapter/4#p3) a una porzione di fluido ideale che scorre in regime stazionario lungo un tubo di sezione variabile e non necessariamente orizzontale.
 
-**Teorema 11.4** (di Bernoulli). Sia un fluido ideale (incompressibile, non viscoso, $\eta = 0$) in moto in regime stazionario lungo un tubo di flusso, sottoposto alla sola forza peso (assunta uniforme) e privo di pompe, turbine o altri dispositivi che aggiungano o sottraggano energia al flusso. Allora lungo ogni tubo di flusso sottile (al limite, lungo ogni linea di corrente) vale
+**Teorema 11.4** (di Bernoulli). Sia un fluido ideale (incompressibile, non viscoso, $\eta = 0$) in moto in regime stazionario lungo un tubo di flusso, sottoposto alla sola forza peso (assunta uniforme) e privo di pompe, turbine o altri dispositivi che aggiungano o sottraggano energia al flusso. Allora lungo ogni linea di corrente vale
 
 :::formula{id="11.7" label="Teorema di Bernoulli"}
 $$p + \rho g y + \frac12 \rho v^2 = \text{costante}$$
 :::
 
-ossia la somma di pressione, densità di energia potenziale gravitazionale ($\rho g y$) e densità di energia cinetica ($\tfrac12 \rho v^2$) è costante lungo il condotto.
+ossia la somma di pressione, densità di energia potenziale gravitazionale ($\rho g y$) e densità di energia cinetica ($\tfrac12 \rho v^2$) è costante lungo la linea di corrente.
 
 **Dimostrazione richiesta all'esame.**
 

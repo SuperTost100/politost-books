@@ -300,7 +300,7 @@ Con la convenzione $Q>0$ per il calore assorbito dal sistema, il segno di $Q$ di
 
 ### Bilancio termico e temperatura di equilibrio
 
-Consideriamo due corpi inizialmente a temperature diverse, posti in contatto termico in un contenitore adiabatico (nessun calore netto entra o esce dal sistema) e senza scambi di lavoro. Il corpo più caldo raggiungerà una temperatura di equilibrio inferiore a quella originale, il più freddo una temperatura superiore; sebbene la variazione di energia interna dell'insieme dei due corpi sia nulla, ciascun corpo singolarmente varia la propria energia interna, poiché il più caldo la cede al più freddo. Applicando il primo principio a ciascun corpo,
+Consideriamo due corpi inizialmente a temperature diverse, posti in contatto termico in un contenitore adiabatico di capacità termica trascurabile (nessun calore netto entra o esce dal sistema) e senza scambi di lavoro. Il corpo più caldo raggiungerà una temperatura di equilibrio inferiore a quella originale, il più freddo una temperatura superiore; sebbene la variazione di energia interna dell'insieme dei due corpi sia nulla, ciascun corpo singolarmente varia la propria energia interna, poiché il più caldo la cede al più freddo. Applicando il primo principio a ciascun corpo,
 
 $$\Delta U_1 = Q_1 < 0, \qquad \Delta U_2 = Q_2 > 0,$$
 
@@ -349,7 +349,7 @@ Questo esempio mostra il metodo generale per i bilanci con cambiamento di fase: 
 
 **Errore tipico 12.6**
 
-Un errore frequente è scrivere direttamente $Q_1=c_1m_1(T_{eq}-T_1)$ senza prima verificare se durante lo scambio di calore avviene un cambiamento di fase: se la temperatura di equilibrio ipotizzata supera (o è inferiore a) la temperatura di transizione di una delle sostanze, bisogna scomporre il calcolo in più fasi (riscaldamento/raffreddamento più eventuale calore latente), come nel secondo esempio. Un secondo errore, segnalato anche a proposito del primo principio, è trattare $Q$ e $W$ come funzioni di stato scrivendo $\Delta Q_{A\to B}$ o $\Delta W_{A\to B}$: questa notazione presuppone che calore e lavoro siano definiti punto per punto nello spazio degli stati termodinamici, cosa falsa, poiché solo l'energia interna è una funzione di stato. Occorre quindi scrivere $Q_{A\to B}$ o semplicemente $Q$ per indicare il calore scambiato durante la trasformazione, mai una sua "variazione".
+Un errore frequente è scrivere direttamente $Q_1=c_1m_1(T_{eq}-T_1)$ senza prima verificare se durante lo scambio di calore avviene un cambiamento di fase: se la temperatura di equilibrio ipotizzata supera (o è inferiore a) la temperatura di transizione di una delle sostanze, bisogna scomporre il calcolo in più fasi (riscaldamento/raffreddamento più eventuale calore latente), come nel secondo esempio. Un secondo errore, segnalato anche a proposito del primo principio, è trattare $Q$ e $W$ come funzioni di stato scrivendo $\Delta Q_{A\to B}$ o $\Delta W_{A\to B}$: questa notazione presuppone che calore e lavoro siano definiti punto per punto nello spazio degli stati termodinamici, cosa falsa, poiché non sono funzioni di stato. Occorre quindi scrivere $Q_{A\to B}$ o semplicemente $Q$ per indicare il calore scambiato durante la trasformazione, mai una sua "variazione".
 
 ## p6 | Trasmissione del calore
 
@@ -394,7 +394,7 @@ Il passaggio di calore tra un solido a temperatura $T$ e il fluido circostante a
 $$Q = h\,(T-T_0)\,S\,t$$
 :::
 
-dove $S$ è la superficie di contatto fra il solido e il fluido, $t$ il tempo di scambio, abbastanza breve da poter considerare costante $T$, e $h$ la conducibilità termica esterna, un coefficiente che dipende dalla natura del fluido e dal tipo di moto convettivo: a titolo di esempio, per un filo caldo immerso in aria si ha $h \approx 10\ \mathrm{J/(m^2\cdot s\cdot K)}$.
+dove $S$ è la superficie di contatto fra il solido e il fluido, $t$ il tempo di scambio, abbastanza breve da poter considerare costanti $T$ e $T_0$, e $h$ la conducibilità termica esterna, un coefficiente che dipende dalla natura del fluido e dal tipo di moto convettivo: a titolo di esempio, per un filo caldo immerso in aria si ha $h \approx 10\ \mathrm{J/(m^2\cdot s\cdot K)}$.
 
 ### Irraggiamento: la legge di Stefan-Boltzmann
 
