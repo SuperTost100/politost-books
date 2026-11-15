@@ -6651,7 +6651,7 @@
       "layout": {
         "title": "Le leggi dei gas ideali",
         "xaxis": {
-          "title": "Volume V (Boyle e Charles) / temperatura T (Gay-Lussac)",
+          "title": "Volume V (Boyle) / temperatura T (Charles e Gay-Lussac)",
           "range": [
             0.2,
             5

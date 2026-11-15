@@ -481,14 +481,14 @@ Il riempimento degli orbitali molecolari segue le stesse regole viste per gli at
 $$OL = \frac{1}{2}\left(n_e - n_e^{*}\right)$$
 :::
 
-Valori di $OL$ positivi indicano che la molecola è più stabile degli atomi separati; in generale, più alto è $OL$, più forte è il legame, maggiore è l'energia di legame e minore la distanza internucleare. Anche un ordine di legame frazionario, purché positivo, può corrispondere a una specie effettivamente osservata, come nel caso dello ione He$_2^+$ discusso di seguito; se invece $OL = 0$, l'effetto stabilizzante degli elettroni di legame è esattamente annullato da quello degli elettroni di antilegame e la specie non si forma.
+Valori di $OL$ positivi indicano che la molecola è più stabile degli atomi separati; in generale, più alto è $OL$, più forte è il legame, maggiore è l'energia di legame e minore la distanza internucleare. Anche un ordine di legame frazionario, purché positivo, può corrispondere a una specie effettivamente osservata, come nel caso dello ione He$_2^+$ discusso di seguito; se invece $OL = 0$, l'effetto stabilizzante degli elettroni di legame è esattamente annullato da quello degli elettroni di antilegame e il modello non prevede alcun legame covalente.
 
 **Esempio svolto 9.10** (He$_2$ e He$_2^+$). Si vuole stabilire se può esistere la molecola He$_2$.
 
 1. Dati: ogni atomo di He ha 2 elettroni in $1s$, quindi la molecola ipotetica ha 4 elettroni molecolari da distribuire negli orbitali ottenuti dalla combinazione dei due $1s$, cioè $\sigma_{1s}$ e $\sigma_{1s}^{*}$.
 2. Strategia: riempire gli orbitali in ordine di energia crescente seguendo Aufbau e Pauli, poi calcolare $OL$ con {{formula:9.10}}.
 3. Calcolo: 2 elettroni occupano $\sigma_{1s}$ (legame) e gli altri 2 occupano $\sigma_{1s}^{*}$ (antilegame), quindi $OL = \frac{1}{2}(2-2) = 0$.
-4. Verifica e conclusione: $OL = 0$ significa che He$_2$ non è più stabile dei due atomi separati, in accordo con l'osservazione sperimentale che questa molecola non si forma in condizioni ordinarie (vicino allo zero assoluto si osserva solo un dimero legato in modo debolissimo). Lo ione He$_2^+$, invece, ha un elettrone in meno nell'orbitale di antilegame, quindi $OL = \frac{1}{2}(2-1) = 0,5$: essendo $OL>0$, lo ione è effettivamente osservato sperimentalmente, a conferma della capacità predittiva della teoria MO.
+4. Verifica e conclusione: $OL = 0$ significa che tra i due atomi di He non si forma un legame covalente, in accordo con l'osservazione sperimentale che He$_2$ non esiste come molecola in condizioni ordinarie. Lo ione He$_2^+$, invece, ha un elettrone in meno nell'orbitale di antilegame, quindi $OL = \frac{1}{2}(2-1) = 0,5$: essendo $OL>0$, lo ione è effettivamente osservato sperimentalmente, a conferma della capacità predittiva della teoria MO.
 
 ### Diagrammi MO per le molecole biatomiche omonucleari del secondo periodo
 
