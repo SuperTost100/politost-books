@@ -77,7 +77,7 @@ La semidispersione massima è $\delta_x = (12{,}3-11{,}9)/2 = 0{,}2$ cm.
 
 La somma dei quadrati degli scarti dalla media è $\sum_{i=1}^{5}(x_i-\bar{x})^2 = 0{,}10\ \text{cm}^2$, da cui l'errore standard empirico $s_x = \sqrt{0{,}10/4} \approx 0{,}16$ cm.
 
-Il risultato si scrive quindi $X = (12{,}10 \pm 0{,}16)$ cm usando l'errore standard, oppure $X = (12{,}1 \pm 0{,}2)$ cm usando la semidispersione massima come stima grossolana.
+Il risultato si scrive quindi $X = (12{,}10 \pm 0{,}07)$ cm usando l'incertezza sulla media $s_x/\sqrt{5} \approx 0{,}07$ cm, oppure $X = (12{,}1 \pm 0{,}2)$ cm usando la semidispersione massima come stima grossolana.
 
 Per misure indirette, cioè funzioni $f(x,y,z,\dots)$ di più grandezze misurate direttamente, l'errore si propaga tramite le derivate parziali
 
