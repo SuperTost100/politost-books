@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" role="img" aria-label="Diagramma dei livelli energetici: H2(g) + F2(g), 2 H(g) + 2 F(g), 2 HF(g)" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+<title>Diagramma dei livelli energetici: H2(g) + F2(g), 2 H(g) + 2 F(g), 2 HF(g)</title>
+<rect width="640" height="420" fill="#FFFFFF"/>
+<line x1="46" y1="374" x2="46" y2="30" stroke="#374151" stroke-width="1.6"/>
+<polygon points="46,20 41.5,31 50.5,31" fill="#374151"/>
+<text x="46" y="13" font-size="14" text-anchor="middle" fill="#111827" font-weight="600">H</text>
+<g stroke="#111827" stroke-width="2.6" stroke-linecap="round"><line x1="288.85" y1="212.07" x2="405.15" y2="212.07"/><line x1="288.85" y1="52" x2="405.15" y2="52"/><line x1="288.85" y1="356" x2="405.15" y2="356"/></g>
+
+<g stroke="#9CA3AF" stroke-width="1" stroke-dasharray="1.5 3" stroke-linecap="round"><line x1="405.15" y1="212.07" x2="423.15" y2="212.07"/><line x1="405.15" y1="52" x2="423.15" y2="52"/><line x1="405.15" y1="52" x2="423.15" y2="52"/><line x1="405.15" y1="356" x2="423.15" y2="356"/><line x1="405.15" y1="212.07" x2="431.15" y2="212.07"/><line x1="405.15" y1="356" x2="431.15" y2="356"/></g>
+<line x1="423.15" y1="212.07" x2="423.15" y2="60.5" stroke="#C2410C" stroke-width="1.8" stroke-linecap="round"/><polygon points="423.15,52 426.75,61 419.55,61" fill="#C2410C"/>
+<text x="415.15" y="136.54" font-size="11.82" text-anchor="end" fill="#C2410C" font-weight="600">legami rotti: 436 + 159 = 595 kJ</text>
+<line x1="423.15" y1="52" x2="423.15" y2="347.5" stroke="#1D4ED8" stroke-width="1.8" stroke-linecap="round"/><polygon points="423.15,356 419.55,347 426.75,347" fill="#1D4ED8"/>
+<text x="415.15" y="208.5" font-size="11.2" text-anchor="end" fill="#1D4ED8" font-weight="600">legami formati: 2 × 565 = 1130 kJ</text>
+<line x1="431.15" y1="212.07" x2="431.15" y2="347.5" stroke="#15803D" stroke-width="1.8" stroke-linecap="round"/><polygon points="431.15,356 427.55,347 434.75,347" fill="#15803D"/>
+<text x="439.15" y="288.54" font-size="12.5" fill="#15803D" font-weight="600">ΔH ≈ −535 kJ/mol</text>
+<text x="347" y="230.07" font-size="13" text-anchor="middle" fill="#111827">H<tspan dy="2.86" font-size="9.36">2</tspan><tspan dy="-2.86">(g) + F</tspan><tspan dy="2.86" font-size="9.36">2</tspan><tspan dy="-2.86">(g)</tspan></text>
+<text x="280.85" y="56.5" font-size="13" text-anchor="end" fill="#111827">2 H(g) + 2 F(g)</text>
+<text x="280.85" y="360.5" font-size="13" text-anchor="end" fill="#111827">2 HF(g)</text>
+</svg>

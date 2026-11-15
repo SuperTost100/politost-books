@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 82" width="160" height="82" role="img" aria-label="Structure of [Li+].[F-]" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+<title>Structure of [Li+].[F-]</title>
+<rect width="160" height="82" fill="#FFFFFF"/>
+<g transform="translate(45.91 41.6)">
+<g stroke="#111827" stroke-width="1.6" stroke-linecap="round" fill="none"></g>
+<g fill="#111827" font-size="17"><text x="0" y="6.12" text-anchor="middle">Li</text><text x="9.84" y="-5.1" font-size="12.5" text-anchor="start">+</text><text x="64" y="6.12" text-anchor="middle">F</text><text x="70.95" y="-5.1" font-size="12.5" text-anchor="start">−</text></g>
+<g fill="#111827"><circle cx="65.4" cy="13.83" r="1.9"/><circle cx="60.22" cy="13.38" r="1.9"/><circle cx="78.13" cy="3.72" r="1.9"/><circle cx="75.93" cy="8.43" r="1.9"/><circle cx="51.38" cy="6.07" r="1.9"/><circle cx="50.03" cy="1.05" r="1.9"/><circle cx="54.23" cy="-11.72" r="1.9"/><circle cx="58.74" cy="-14.32" r="1.9"/></g>
+</g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 123" width="640" height="123" role="img" aria-label="Diagramma a caselle degli orbitali di Mn2+" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+<title>Diagramma a caselle degli orbitali di Mn2+</title>
+<rect width="640" height="123" fill="#FFFFFF"/>
+<text x="320" y="32" font-size="20" text-anchor="middle" fill="#111827" font-weight="600">Mn<tspan dy="-7.6" font-size="14.4">2+</tspan></text>
+<g fill="#FFFFFF" stroke="#111827" stroke-width="1.6"><rect x="273.46" y="58" width="30" height="30"/><rect x="303.46" y="58" width="30" height="30"/><rect x="333.46" y="58" width="30" height="30"/><rect x="363.46" y="58" width="30" height="30"/><rect x="393.46" y="58" width="30" height="30"/></g>
+<g fill="none" stroke="#111827" color="#111827" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M288.46 83.5V68.5"/><path d="M288.46 62.5L284.96 68.5H291.96Z" fill="currentColor" stroke-width="1"/><path d="M318.46 83.5V68.5"/><path d="M318.46 62.5L314.96 68.5H321.96Z" fill="currentColor" stroke-width="1"/><path d="M348.46 83.5V68.5"/><path d="M348.46 62.5L344.96 68.5H351.96Z" fill="currentColor" stroke-width="1"/><path d="M378.46 83.5V68.5"/><path d="M378.46 62.5L374.96 68.5H381.96Z" fill="currentColor" stroke-width="1"/><path d="M408.46 83.5V68.5"/><path d="M408.46 62.5L404.96 68.5H411.96Z" fill="currentColor" stroke-width="1"/></g>
+<text x="236" y="79.5" font-size="18" text-anchor="middle" fill="#111827">[Ar]</text>
+<text x="348.46" y="107" font-size="14" text-anchor="middle" fill="#374151">3d</text>
+</svg>

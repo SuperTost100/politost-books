@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" width="160" height="120" role="img" aria-label="Structure of N(F)(F)F" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+<title>Structure of N(F)(F)F</title>
+<rect width="160" height="120" fill="#FFFFFF"/>
+<g transform="translate(40 59.52)">
+<g stroke="#111827" stroke-width="1.6" stroke-linecap="round" fill="none"><line x1="40" y1="-10.88" x2="40" y2="10.88"/><line x1="31.05" y1="-20" x2="8.95" y2="-20"/><line x1="48.95" y1="-20" x2="71.05" y2="-20"/></g>
+<g fill="#111827" font-size="17"><text x="40" y="-13.88" text-anchor="middle">N</text><text x="40" y="26.12" text-anchor="middle">F</text><text x="0" y="-13.88" text-anchor="middle">F</text><text x="80" y="-13.88" text-anchor="middle">F</text></g>
+<g fill="#111827"><circle cx="37.4" cy="-33.62" r="1.9"/><circle cx="42.6" cy="-33.62" r="1.9"/><circle cx="42.6" cy="33.62" r="1.9"/><circle cx="37.4" cy="33.62" r="1.9"/><circle cx="53.45" cy="17.4" r="1.9"/><circle cx="53.45" cy="22.6" r="1.9"/><circle cx="26.55" cy="22.6" r="1.9"/><circle cx="26.55" cy="17.4" r="1.9"/><circle cx="-13.45" cy="-17.4" r="1.9"/><circle cx="-13.45" cy="-22.6" r="1.9"/><circle cx="-2.6" cy="-33.62" r="1.9"/><circle cx="2.6" cy="-33.62" r="1.9"/><circle cx="2.6" cy="-6.38" r="1.9"/><circle cx="-2.6" cy="-6.38" r="1.9"/><circle cx="93.45" cy="-22.6" r="1.9"/><circle cx="93.45" cy="-17.4" r="1.9"/><circle cx="77.4" cy="-33.62" r="1.9"/><circle cx="82.6" cy="-33.62" r="1.9"/><circle cx="82.6" cy="-6.38" r="1.9"/><circle cx="77.4" cy="-6.38" r="1.9"/></g>
+</g>
+</svg>

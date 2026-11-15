@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 123" width="640" height="123" role="img" aria-label="Diagramma a caselle degli orbitali di Cr" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+<title>Diagramma a caselle degli orbitali di Cr</title>
+<rect width="640" height="123" fill="#FFFFFF"/>
+<text x="320" y="32" font-size="20" text-anchor="middle" fill="#111827" font-weight="600">Cr</text>
+<g fill="#FFFFFF" stroke="#111827" stroke-width="1.6"><rect x="249.46" y="58" width="30" height="30"/><rect x="297.46" y="58" width="30" height="30"/><rect x="327.46" y="58" width="30" height="30"/><rect x="357.46" y="58" width="30" height="30"/><rect x="387.46" y="58" width="30" height="30"/><rect x="417.46" y="58" width="30" height="30"/></g>
+<g fill="none" stroke="#111827" color="#111827" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M264.46 83.5V68.5"/><path d="M264.46 62.5L260.96 68.5H267.96Z" fill="currentColor" stroke-width="1"/><path d="M312.46 83.5V68.5"/><path d="M312.46 62.5L308.96 68.5H315.96Z" fill="currentColor" stroke-width="1"/><path d="M342.46 83.5V68.5"/><path d="M342.46 62.5L338.96 68.5H345.96Z" fill="currentColor" stroke-width="1"/><path d="M372.46 83.5V68.5"/><path d="M372.46 62.5L368.96 68.5H375.96Z" fill="currentColor" stroke-width="1"/><path d="M402.46 83.5V68.5"/><path d="M402.46 62.5L398.96 68.5H405.96Z" fill="currentColor" stroke-width="1"/><path d="M432.46 83.5V68.5"/><path d="M432.46 62.5L428.96 68.5H435.96Z" fill="currentColor" stroke-width="1"/></g>
+<text x="212" y="79.5" font-size="18" text-anchor="middle" fill="#111827">[Ar]</text>
+<text x="264.46" y="107" font-size="14" text-anchor="middle" fill="#374151">4s</text>
+<text x="372.46" y="107" font-size="14" text-anchor="middle" fill="#374151">3d</text>
+</svg>

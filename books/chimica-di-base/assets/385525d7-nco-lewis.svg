@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 82" width="160" height="82" role="img" aria-label="Structure of N#C[O-]" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+<title>Structure of N#C[O-]</title>
+<rect width="160" height="82" fill="#FFFFFF"/>
+<g transform="translate(39.66 41.6)">
+<g stroke="#111827" stroke-width="1.6" stroke-linecap="round" fill="none"><line x1="8.95" y1="-4.5" x2="31.05" y2="-4.5"/><line x1="8.95" y1="0" x2="31.05" y2="0"/><line x1="8.95" y1="4.5" x2="31.05" y2="4.5"/><line x1="48.95" y1="0" x2="71.05" y2="0"/></g>
+<g fill="#111827" font-size="17"><text x="0" y="6.12" text-anchor="middle">N</text><text x="40" y="6.12" text-anchor="middle">C</text><text x="80" y="6.12" text-anchor="middle">O</text><text x="86.95" y="-5.1" font-size="12.5" text-anchor="start">−</text></g>
+<g fill="#111827"><circle cx="-13.45" cy="2.6" r="1.9"/><circle cx="-13.45" cy="-2.6" r="1.9"/><circle cx="80.17" cy="14" r="1.9"/><circle cx="75.05" cy="13.1" r="1.9"/><circle cx="71.49" cy="-12.1" r="1.9"/><circle cx="76.2" cy="-14.3" r="1.9"/><circle cx="94.13" cy="3.72" r="1.9"/><circle cx="91.93" cy="8.43" r="1.9"/></g>
+</g>
+</svg>
