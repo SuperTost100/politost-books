@@ -15,7 +15,7 @@ const options = readOptions();
 // The books this PR changes, leaving out a change to the cover alone.
 const changed = options.base
   ? new Set(
-      git('diff', '--name-only', `${options.base}...HEAD`, '--', BOOKS_DIR)
+      git('diff', '--name-only', '--no-renames', `${options.base}...HEAD`, '--', BOOKS_DIR)
         .split('\n')
         .filter((path) => path && path.split('/')[2] !== COVER_FILE)
         .map((path) => path.split('/')[1]),
