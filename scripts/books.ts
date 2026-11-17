@@ -55,9 +55,12 @@ export function madeByBuilder(ptsbJson: string | null): boolean {
   }
 }
 
-/** Where a fix to a builder book goes instead: the builder's back-port, then a new publish. */
+/**
+ * What happens to a change to a builder book. A contributor outside the project cannot run the builder, so a maintainer
+ * carries the change into it and publishes the book again on the same branch.
+ */
 export function backportHint(folder: string, projectId = '<project id>'): string {
-  return `Content fixes go through the builder: run \`npm run backport -- --project ${projectId} --from <this checkout>/books/${folder} --dry-run\` in politost-smartbook-builder, then without --dry-run, and publish the book again with \`npm run publish-book\`.`;
+  return `This book is written in the PoliTost Smart Builder, which publishes the whole folder. Your change is not lost: a maintainer carries it into the builder and publishes the book again on this branch, and then this check passes. Maintainers: follow "Books from the builder" in CONTRIBUTING.md (back-port with --project ${projectId} --from <checkout>/books/${folder}).`;
 }
 
 export function readBuilderManifest(folder: string): { projectId?: string; files: Record<string, string> } | null {

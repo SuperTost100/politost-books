@@ -64,17 +64,25 @@ CI runs the same check, shows any error as an annotation on the book's `smartboo
 
 ## Books from the builder
 
-Analisi Matematica 1, Analisi Matematica 2, Chimica di base and Fisica 1 are written with the [PoliTost Smart Builder](https://github.com/SuperTost100/politost-smartbook-builder), which publishes them here with `npm run publish-book`. A book published this way has a `.builder.json` in its folder with the sha256 of every file. The builder writes the whole folder at each publish, so a fix made only here would be undone by the next one.
+Analisi Matematica 1, Analisi Matematica 2, Chimica di base and Fisica 1 are written with the [PoliTost Smart Builder](https://github.com/SuperTost100/politost-smartbook-builder), which publishes them here with `npm run publish-book`. A book published this way has a `.builder.json` in its folder that names the builder's export and lists the sha256 of every file. The builder writes the whole folder at each publish, so a fix made only here would be undone by the next one.
 
-Content fixes to these books therefore go through the builder:
+You can still fix these books with a pull request, as for any book. The `builder-sync` step of CI then fails, because the folder no longer matches its `.builder.json`, and a maintainer carries your fix into the builder and publishes the book again on your branch. You don't need to do anything else, and the packed book for the preview is still attached to the run.
 
-1. Make the fix in the book's folder of a politost-books checkout, as for any book.
-2. In politost-smartbook-builder, run the back-port dry run: `npm run backport -- --project <project id> --from <books checkout>/books/<book> --dry-run`. It lists the section, exercise, graph or caption each change maps to.
-3. Run it again without `--dry-run` to write the fix into the builder.
-4. Publish the book again with `npm run publish-book -- --project <project id> --books <books checkout>`, and open the pull request with what it wrote.
+The `builder-sync` step fails a pull request that changes a file of a book with a `.builder.json` so that it no longer matches, or that changes one of these books while it has no `.builder.json` yet (its `ptsb.json` names the builder as producer). Books written by hand, such as `books/esempio`, are not affected, and changing `cover.svg` alone is fine, because the cover belongs to this repository.
 
-The `builder-sync` step of CI fails a pull request that changes a file of a book with a `.builder.json` so that it no longer matches, or that changes one of these books while it has no `.builder.json` yet (its `ptsb.json` names the builder as producer). Books written by hand, such as `books/esempio`, are not affected, and changing `cover.svg` alone is fine, because the cover belongs to this repository.
+### For maintainers
+
+On the machine that runs the builder, with politost-smartbook-builder as the working directory:
+
+1. Check out the pull request in a politost-books clone: `gh pr checkout <number>`.
+2. Stop the builder service: `systemctl --user stop smartbuilder.service`. The back-port and the publish both take its data folder's lock.
+3. Run `npm run backport -- --project <project id> --from <clone>/books/<book> --dry-run` and read what each difference maps to.
+4. Run it again without `--dry-run` to write the fix into the builder.
+5. Run `npm run publish-book -- --project <project id> --books <clone> --dry-run`. A file it still lists as edited outside the builder did not back-port: make that fix in the builder by hand.
+6. Run it again without `--dry-run`. It stores a new export and writes the folder and its `.builder.json`.
+7. Start the service again: `systemctl --user start smartbuilder.service`.
+8. Commit what `publish-book` wrote on the pull request's branch and push it. `builder-sync` passes, and the pull request is merged as usual.
 
 ## Fixing someone else's book
 
-Open an issue or a pull request. For anything beyond a typo, say what's wrong and cite a source, so the book's authors can check it. A pull request on a book from the builder fails the `builder-sync` check: a maintainer back-ports it into the builder and publishes the book again.
+Open an issue or a pull request. For anything beyond a typo, say what's wrong and cite a source, so the book's authors can check it. A pull request on a book from the builder fails the `builder-sync` check until a maintainer has carried it into the builder, as described above.
