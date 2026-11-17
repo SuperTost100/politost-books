@@ -41,3 +41,12 @@ jobs:
           path: dist/books/*.ptsb
           if-no-files-found: ignore
           retention-days: 14
+      # A book the builder publishes is changed only by its publish: see "Books from the builder" in CONTRIBUTING.md.
+      # It runs last, so a pull request it fails still gets its preview package.
+      - name: builder-sync
+        run: |
+          if [ "${{ github.event_name }}" = pull_request ]; then
+            npm run builder-sync -- --base origin/${{ github.base_ref }}
+          else
+            npm run builder-sync
+          fi
