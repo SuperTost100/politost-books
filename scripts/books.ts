@@ -1,5 +1,6 @@
 import { execFileSync } from 'node:child_process';
-import { readFileSync, readdirSync, statSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { parseArgs } from 'node:util';
 
@@ -36,6 +37,49 @@ export function listBooks(): string[] {
   return readdirSync(BOOKS_DIR)
     .filter((name) => !name.startsWith('.') && statSync(join(BOOKS_DIR, name)).isDirectory())
     .sort();
+}
+
+/**
+ * The manifest the builder's `npm run publish-book` writes into a book folder: the sha256 of every
+ * file `collectFiles` returns. A book with one is written by the builder only.
+ */
+export const BUILDER_MANIFEST = '.builder.json';
+
+/** Whether a book's ptsb.json (its text, or null when there is none) names the builder as its producer. */
+export function madeByBuilder(ptsbJson: string | null): boolean {
+  if (ptsbJson === null) return false;
+  try {
+    return String((JSON.parse(ptsbJson) as { producer?: unknown }).producer ?? '').startsWith('politost-smart-builder/');
+  } catch {
+    return false; // Not JSON: the reader's own check reports it.
+  }
+}
+
+/** Where a fix to a builder book goes instead: the builder's back-port, then a new publish. */
+export function backportHint(folder: string, projectId = '<project id>'): string {
+  return `Content fixes go through the builder: run \`npm run backport -- --project ${projectId} --from <this checkout>/books/${folder} --dry-run\` in politost-smartbook-builder, then without --dry-run, and publish the book again with \`npm run publish-book\`.`;
+}
+
+export function readBuilderManifest(folder: string): { projectId?: string; files: Record<string, string> } | null {
+  const path = join(BOOKS_DIR, folder, BUILDER_MANIFEST);
+  if (!existsSync(path)) return null;
+  const manifest = JSON.parse(readFileSync(path, 'utf-8')) as { files?: unknown };
+  if (!manifest.files || typeof manifest.files !== 'object') throw new Error(`${path} has no "files" map`);
+  return manifest as { projectId?: string; files: Record<string, string> };
+}
+
+/**
+ * The files of a book that differ from its builder manifest, each as one message: changed, added
+ * by hand, or removed. An empty list means the folder is exactly what the builder published.
+ */
+export function builderSyncErrors(files: Record<string, Uint8Array>, manifest: { files: Record<string, string> }): string[] {
+  const errors: string[] = [];
+  for (const path of [...new Set([...Object.keys(files), ...Object.keys(manifest.files)])].sort()) {
+    if (!(path in manifest.files)) errors.push(`${path} was added outside the builder`);
+    else if (!(path in files)) errors.push(`${path} was removed outside the builder`);
+    else if (createHash('sha256').update(files[path]).digest('hex') !== manifest.files[path]) errors.push(`${path} was edited outside the builder`);
+  }
+  return errors;
 }
 
 /** Book folders with a file added, changed or removed since `base`. */

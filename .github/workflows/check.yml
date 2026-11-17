@@ -28,6 +28,14 @@ jobs:
           else
             npm run check
           fi
+      # A book the builder publishes is changed only by its publish: see "Books from the builder" in CONTRIBUTING.md.
+      - name: builder-sync
+        run: |
+          if [ "${{ github.event_name }}" = pull_request ]; then
+            npm run builder-sync -- --base origin/${{ github.base_ref }}
+          else
+            npm run builder-sync
+          fi
       - name: Pack the changed books
         if: github.event_name == 'pull_request'
         run: npm run build -- --only-changed --base origin/${{ github.base_ref }}
