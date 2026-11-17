@@ -3,8 +3,8 @@
  * match it file by file. With --base, a book this PR changes that came from the builder (its
  * ptsb.json names the builder as producer, here or on the base) must have one: its content is
  * fixed in politost-smartbook-builder and published from there, so the next export keeps the fix.
- * Books the PR does not touch pass whether or not they have a manifest, and so do books written
- * by hand, such as books/esempio. The cover is the repo's.
+ * Books the PR does not touch are not read, and books written by hand, such as books/esempio,
+ * pass. The cover is the repo's.
  */
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync } from 'node:fs';
@@ -34,7 +34,8 @@ function builderBook(folder: string): boolean {
   }
 }
 
-for (const folder of listBooks()) {
+// With --base only the books this PR changes are read; on main every book is.
+for (const folder of listBooks().filter((name) => !changed || changed.has(name))) {
   const manifestPath = join(BOOKS_DIR, folder, BUILDER_MANIFEST);
   let manifest;
   try {
@@ -45,7 +46,7 @@ for (const folder of listBooks()) {
     continue;
   }
   if (!manifest) {
-    if (changed?.has(folder) && builderBook(folder)) {
+    if (changed && builderBook(folder)) {
       annotate('error', join(BOOKS_DIR, folder, 'smartbook.json'), `books/${folder} has no ${BUILDER_MANIFEST}, so this change did not come from the builder. ${backportHint(folder)}`);
       failed++;
     }

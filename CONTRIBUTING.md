@@ -40,11 +40,10 @@ Rules this repo adds on top of the spec:
 ```bash
 npm ci
 npm run check
-npm run builder-sync
 npm run build
 ```
 
-`npm run check` prints `ok  <id>@<version>` for each valid book, or the errors with the file they come from. `npm run build` writes `dist/books/<id>@<version>.ptsb`.
+`npm run check` prints `ok  <id>@<version>` for each valid book, or the errors with the file they come from. `npm run build` writes `dist/books/<id>@<version>.ptsb`. To run the `builder-sync` step of CI as well, commit your changes and run `npm run builder-sync -- --base origin/main`: it compares the commits since `origin/main`, not the files you have not committed.
 
 To see the book as readers will:
 
