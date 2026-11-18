@@ -5,7 +5,7 @@ printable: true
 
 :::exercise{id="X1" type="esame" chapter="1" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Si considerino i seguenti campioni: ossigeno gassoso puro; acqua distillata; aria secca; una soluzione limpida ottenuta sciogliendo cloruro di sodio in acqua; granito formato da cristalli visibili di quarzo, feldspato e mica.
 
@@ -24,7 +24,7 @@ Risultato: ossigeno, sostanza pura elemento; acqua distillata, sostanza pura com
 
 :::exercise{id="X2" type="esame" chapter="1" difficulty="facile"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Una quantità di acqua pura, mantenuta alla pressione atmosferica, viene riscaldata da $-10\, ^\circ\mathrm{C}$ a $120\, ^\circ\mathrm{C}$ e poi raffreddata fino a $25\, ^\circ\mathrm{C}$. Si assuma che l’acqua fonda a $0\, ^\circ\mathrm{C}$ e bolla a $100\, ^\circ\mathrm{C}$.
 
@@ -43,7 +43,7 @@ Risultato: nel ciclo avvengono fusione, vaporizzazione e condensazione; gli stat
 
 :::exercise{id="X3" type="esame" chapter="2" difficulty="facile"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 In un recipiente chiuso, $14,0\,\mathrm{g}$ di ferro reagiscono completamente con $8,00\,\mathrm{g}$ di zolfo formando solfuro di ferro.
 
@@ -62,7 +62,7 @@ b) Il rapporto in massa tra ferro e zolfo nel prodotto è $14,0:8,00=7:4$. Quind
 
 :::exercise{id="X4" type="esame" chapter="2" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Il cloro naturale è formato dagli isotopi $^{35}\mathrm{Cl}$ e $^{37}\mathrm{Cl}$, presenti rispettivamente con abbondanze del $75,8\%$ e del $24,2\%$.
 
@@ -81,7 +81,7 @@ b) Il numero di protoni è il numero atomico: $Z=17$. Il numero di neutroni è l
 
 :::exercise{id="X5" type="esame" chapter="3" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Nel dicromato di potassio, di formula $\mathrm{K_2Cr_2O_7}$, determinare il numero di ossidazione del cromo. Verificare il risultato usando la carica dello ione dicromato $\mathrm{Cr_2O_7^{2-}}$.
 
@@ -106,7 +106,7 @@ da cui $2x-14=-2$, $2x=12$ e nuovamente $x=+6$.
 
 :::exercise{id="X6" type="esame" chapter="3" difficulty="facile"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 L’alluminio forma ioni $\mathrm{Al^{3+}}$ e il solfato è lo ione poliatomico $\mathrm{SO_4^{2-}}$.
 
@@ -449,7 +449,7 @@ $$P_f = \frac{n_{\mathrm{gas},f} R T_f}{V_f} = \frac{6{,}25\cdot 0{,}082057\cdot
 
 :::exercise{id="X13" type="esame" chapter="7" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 La combustione completa del metano gassoso è descritta dalla reazione $\mathrm{CH_4(g)+2O_2(g)\rightarrow CO_2(g)+2H_2O(l)}$. Le entalpie standard di formazione sono $\Delta H_f^\circ(\mathrm{CH_4(g)})=-74{,}8\,\mathrm{kJ\,mol^{-1}}$, $\Delta H_f^\circ(\mathrm{CO_2(g)})=-393{,}5\,\mathrm{kJ\,mol^{-1}}$ e $\Delta H_f^\circ(\mathrm{H_2O(l)})=-285{,}8\,\mathrm{kJ\,mol^{-1}}$; per $\mathrm{O_2(g)}$, $\Delta H_f^\circ=0$.
 
@@ -470,7 +470,7 @@ c) Le moli di metano sono $n=\frac{8{,}00\,\mathrm{g}}{16{,}04\,\mathrm{g\,mol^{
 
 :::exercise{id="X14" type="esame" chapter="7" difficulty="facile"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Un gas in un cilindro è il sistema termodinamico considerato. Durante una trasformazione il gas assorbe $1{,}25\,\mathrm{kJ}$ di calore e compie $0{,}40\,\mathrm{kJ}$ di lavoro sull’ambiente. L’energia interna iniziale del gas è $12{,}60\,\mathrm{kJ}$.
 
@@ -491,7 +491,7 @@ c) L’energia interna finale è $U_f=U_i+\Delta U=12{,}60\,\mathrm{kJ}+0{,}85\,
 
 :::exercise{id="X15" type="esame" chapter="8" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Il cloro ha numero atomico $Z=17$. Considera un atomo neutro di cloro nello stato fondamentale.
 
@@ -526,7 +526,7 @@ I risultati sono: configurazione $1s^2\,2s^2\,2p^6\,3s^2\,3p^5$, $5$ elettroni i
 
 :::exercise{id="X16" type="esame" chapter="9" difficulty="difficile"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Considera le molecole $\mathrm{C_2H_4}$, $\mathrm{C_2H_2}$ e $\mathrm{HCN}$.
 
@@ -567,7 +567,7 @@ La rotazione attorno a $\mathrm{C=C}$ in $\mathrm{C_2H_4}$ disallineerebbe gli o
 
 :::exercise{id="X17" type="esame" chapter="9" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Per ciascuna delle specie molecolari $\mathrm{NH_3}$, $\mathrm{BF_3}$ e $\mathrm{CO_2}$, disegna la struttura di Lewis e determina il numero sterico dell’atomo centrale, la geometria molecolare e la polarità. Giustifica la polarità considerando la disposizione dei legami e delle coppie elettroniche solitarie. Indica anche l’angolo di legame previsto, usando per l’ammoniaca il valore sperimentale approssimato di $107^\circ$.
 
@@ -610,7 +610,7 @@ La polarità molecolare dipende dalla somma vettoriale dei dipoli di legame: se 
 
 :::exercise{id="X18" type="esame" chapter="10" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Si considerino metano ($\mathrm{CH_4}$), clorometano ($\mathrm{CH_3Cl}$) e metanolo ($\mathrm{CH_3OH}$).
 
@@ -625,7 +625,7 @@ Nel clorometano la distribuzione degli atomi non è simmetrica e il legame $\mat
 
 Anche il metanolo è polare. Tra le sue molecole agiscono le forze di London e le interazioni dipolo-dipolo; inoltre, il gruppo $\mathrm{O-H}$ permette la formazione di legami a idrogeno tra le molecole.
 
-b) Le forze di London sono presenti in tutte e tre le sostanze. Nel metano sono le sole interazioni e risultano deboli. Nel clorometano si aggiungono le interazioni dipolo-dipolo. Nel metanolo, i legami a idrogeno rafforzano ulteriormente le attrazioni intermolecolari. Occorre dunque fornire più energia per separare le molecole passando dal metano al clorometano e poi al metanolo. L’ordine di temperatura di ebollizione crescente è $\mathrm{CH_4 < CH_3Cl < CH_3OH}$.
+b) Le forze di London sono presenti in tutte e tre le sostanze. Nel metano sono le sole interazioni e risultano deboli. Nel clorometano le forze di London sono più intense, perché la molecola è più grande e più polarizzabile, e si aggiungono le interazioni dipolo-dipolo. Nel metanolo, i legami a idrogeno rafforzano ulteriormente le attrazioni intermolecolari. Occorre dunque fornire più energia per separare le molecole passando dal metano al clorometano e poi al metanolo. L’ordine di temperatura di ebollizione crescente è $\mathrm{CH_4 < CH_3Cl < CH_3OH}$.
 :::
 :::
 
@@ -729,7 +729,7 @@ Lo zinco è anfotero. Anche $\mathrm{Zn(OH)_2}$ è anfotero e poco solubile: rea
 
 :::exercise{id="X21" type="esame" chapter="14" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Per la reazione di sintesi dell’ammoniaca, $\mathrm{N_2(g)+3H_2(g)\rightarrow 2NH_3(g)}$, si assumano $\Delta H^\circ=-92{,}2\ \mathrm{kJ\,mol^{-1}}$ e $\Delta S^\circ=-198{,}1\ \mathrm{J\,mol^{-1}\,K^{-1}}$. Si considerino costanti questi valori al variare della temperatura.
 
@@ -772,7 +772,7 @@ Poiché $\Delta G^\circ>0$, a $500\ \mathrm{K}$ la reazione non è spontanea nel
 
 :::exercise{id="X22" type="esame" chapter="17" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Un idrocarburo aciclico puro di massa $4{,}20\,\mathrm{g}$ viene bruciato completamente. Si ottengono $13{,}2\,\mathrm{g}$ di $\mathrm{CO_2}$ e $5{,}40\,\mathrm{g}$ di $\mathrm{H_2O}$. La massa molare dell’idrocarburo è $84{,}0\,\mathrm{g\,mol^{-1}}$. È noto inoltre che la molecola contiene un solo doppio legame carbonio-carbonio.
 
@@ -801,7 +801,7 @@ Risultato: formula minima $\mathrm{CH_2}$, formula molecolare $\mathrm{C_6H_{12}
 
 :::exercise{id="X23" type="esame" chapter="17" difficulty="facile"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Si considerino l’etanolo, $\mathrm{CH_3CH_2OH}$, e l’etene, $\mathrm{CH_2{=}CH_2}$.
 

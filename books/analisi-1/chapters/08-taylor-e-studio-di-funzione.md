@@ -240,7 +240,7 @@ Per la caratterizzazione puntuale di convessità/concavità in un singolo punto 
 
 Quanto ai punti di flesso: se $f$ è derivabile due volte in un intorno di $x_0$ ed $x_0$ è un punto di flesso, allora necessariamente $f''(x_0) = 0$ (condizione necessaria, analoga al teorema di Fermat per la derivata prima). Viceversa, una condizione sufficiente è che $f''$ cambi segno attraversando $x_0$: se $f''(x_0) = 0$ e $f''$ ha segno diverso a destra e a sinistra di $x_0$, allora $x_0$ è effettivamente un punto di flesso. Attenzione: $f''(x_0) = 0$ da solo **non basta**, esattamente come $f'(x_0) = 0$ da solo non basta a garantire un estremo; va sempre verificato (con il segno di $f''$ o con le derivate successive) che la concavità cambi effettivamente.
 
-:::image{src="assets/ad961d84-flesso-cubica.svg" alt="grafico di x al cubo con flesso a tangente orizzontale nell'origine" caption="Fig. 8.2 — f(x) = x^3: derivata prima e derivata seconda nulle in 0, ma f'''(0) diverso da 0: flesso ascendente a tangente orizzontale e cambio di convessità"}
+:::image{src="assets/ad961d84-flesso-cubica.svg" alt="grafico di x al cubo con flesso a tangente orizzontale nell'origine" caption="Fig. 8.2 — f(x) = x³: derivata prima e derivata seconda nulle in 0, ma f'''(0) diverso da 0: flesso ascendente a tangente orizzontale e cambio di convessità"}
 :::
 
 La funzione $f(x) = x^3$ riassume in un solo esempio entrambi i criteri: $f'(x) = 3x^2$, quindi $f'(0) = 0$ e $x_0 = 0$ è stazionario; $f''(x) = 6x$, quindi $f''(0) = 0$ e il test della derivata seconda non decide; passando a $f'''(x) = 6$, si trova $f'''(0) = 6 \neq 0$ con $n = 3$ dispari e positivo, quindi $0$ è un flesso ascendente a tangente orizzontale, coerentemente con il fatto che $f''$ cambia segno (negativa per $x<0$, positiva per $x>0$): $f$ passa da concava a convessa attraversando l'origine.
@@ -261,7 +261,7 @@ $$
 
 Siamo quindi nel caso $n=4$ (pari) con $f^{(4)}(5)>0$: per la formula {{formula:8.5}}, $x_0=5$ è un punto di minimo relativo, con valore $f(5)=-7$.
 
-:::image{src="assets/ad961d84-minimo-quartico.svg" alt="grafico di una quartica con minimo in x=5" caption="Fig. 8.3 — f(x) = -7 + 2(x-5)^4 vicino a x=5: tutte le derivate nulle fino all'ordine 3, quarta derivata positiva, quindi minimo relativo"}
+:::image{src="assets/ad961d84-minimo-quartico.svg" alt="grafico di una quartica con minimo in x=5" caption="Fig. 8.3 — f(x) = -7 + 2(x-5)⁴ vicino a x=5: tutte le derivate nulle fino all'ordine 3, quarta derivata positiva, quindi minimo relativo"}
 :::
 
 Osserviamo che qui il criterio del segno della derivata prima sarebbe stato meno immediato, perché non conosciamo $f$ esplicitamente lontano da $x_0$: il vantaggio del criterio con le derivate successive è proprio che utilizza solo informazioni locali in $x_0$, già disponibili dallo sviluppo di Taylor.
@@ -358,7 +358,7 @@ La derivata seconda è negativa su $\rbrack -\infty,-1\lbrack $ e $\rbrack 0,1\l
 
 Mettendo insieme asintoti, monotonia e convessità si ottiene il grafico qualitativo seguente.
 
-:::image{src="assets/ab4a5b0e-grafico-x3-su-x2-meno-1.svg" alt="Grafico di x al cubo diviso x al quadrato meno uno, con asintoti verticali in x=1 e x=-1 e asintoto obliquo y=x" caption="Fig. 8.4 — Studio completo di f(x) = x^3/(x^2-1): asintoti verticali in x=\pm 1, asintoto obliquo y=x, minimo relativo in x=\sqrt{3}, massimo relativo in x=-\sqrt{3}, flesso nell'origine"}
+:::image{src="assets/ab4a5b0e-grafico-x3-su-x2-meno-1.svg" alt="Grafico di x al cubo diviso x al quadrato meno uno, con asintoti verticali in x=1 e x=-1 e asintoto obliquo y=x" caption="Fig. 8.4 — Studio completo di f(x) = x³/(x²-1): asintoti verticali in x=\pm 1, asintoto obliquo y=x, minimo relativo in x=\sqrt{3}, massimo relativo in x=-\sqrt{3}, flesso nell'origine"}
 :::
 
 **Esempio 8.4 (con parametro).** Per $k>0$ fissato, si studi la funzione

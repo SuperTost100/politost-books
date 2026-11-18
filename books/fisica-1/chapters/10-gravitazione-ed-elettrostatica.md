@@ -32,7 +32,6 @@ Questa legge è una conseguenza del fatto che la forza gravitazionale è central
 **Terza legge di Keplero.** Il quadrato del periodo di rivoluzione $T$ di ogni pianeta è proporzionale al cubo del semiasse maggiore $r$ della sua orbita ellittica,
 
 $$
-
 T^2 = k r^3 ,
 $$
 

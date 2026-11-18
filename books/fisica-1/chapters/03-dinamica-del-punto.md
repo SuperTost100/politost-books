@@ -275,7 +275,7 @@ Soluzione letterale (primo modo, integrazione diretta). L'elongazione massima si
 
 $$J = \int_0^{t_{max}} F_{el}(t)\,dt = -\int_0^{\pi/(2\omega)} m v_0 \omega \sin(\omega t)\,dt = m v_0 \cos(\omega t)\Big|_0^{\pi/(2\omega)} = m v_0 (0 - 1) = -m v_0.$$
 
-:::image{src="assets/7b42e0ee-impulso-forza-elastica.svg" alt="Grafico della forza elastica in funzione del tempo, da zero a t_max, con area sottesa negativa" caption="Fig. 3.3 — Forza elastica F_el(t) nell'esempio svolto, da t=0 a t_max=π/20 s: l'area sotto la curva, negativa, è l'impulso J = −5 kg·m/s"}
+:::image{src="assets/7b42e0ee-impulso-forza-elastica.svg" alt="Grafico della forza elastica in funzione del tempo, da zero a t_max, con area sottesa negativa" caption="Fig. 3.3 — Forza elastica Fₑₗ(t) nell'esempio svolto, da t=0 a tₘₐₓ=π/20 s: l'area sotto la curva, negativa, è l'impulso J = −5 kg·m/s"}
 :::
 
 Soluzione letterale (secondo modo, teorema dell'impulso). In alternativa, applicando {{formula:3.8}},
@@ -555,7 +555,7 @@ $$
 
 Controllo: le unità (m/s)/(s⁻¹) = m sono corrette, e il risultato, inferiore alla distanza $v_0 \tau \approx 0{,}67$ m che la particella percorrerebbe se mantenesse per sempre la velocità iniziale per un tempo $\tau$, è plausibile poiché il moto è frenato.
 
-:::image{src="assets/ed85a843-velocita-decadimento-viscoso.svg" alt="Grafico della velocità v(t) = v0 exp(-gamma t) che decade esponenzialmente verso zero" caption="Fig. 3.7 — Decadimento esponenziale della velocità per una particella che entra in una regione viscosa, con v0 = 2 m/s e gamma = 3 s^-1."}
+:::image{src="assets/ed85a843-velocita-decadimento-viscoso.svg" alt="Grafico della velocità v(t) = v0 exp(-gamma t) che decade esponenzialmente verso zero" caption="Fig. 3.7 — Decadimento esponenziale della velocità per una particella che entra in una regione viscosa, con v0 = 2 m/s e gamma = 3 s⁻¹."}
 :::
 
 **Errore tipico 3.11.** Applicare al moto viscoso le formule del moto uniformemente accelerato (ad esempio $v = v_0 - a t$) è sbagliato, perché l'accelerazione $a = -\lambda v$ non è costante ma dipende dalla velocità istantanea: l'equazione del moto va risolta per separazione di variabili, come mostrato sopra, e non con le leggi del moto rettilineo uniformemente accelerato richiamate in [Moto rettilineo](ref:chapter/2#p2).

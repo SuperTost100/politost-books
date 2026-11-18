@@ -198,7 +198,6 @@ $$
 Il caso in cui il rapporto tende a $0$ si codifica con il **simbolo di Landau** "o piccolo": scriviamo
 
 $$
-
 f = o(g) \qquad x \to x_0
 $$
 
@@ -264,7 +263,6 @@ quindi $\sin x$ ha ordine $1$ rispetto a $x$, con parte principale $p(x) = x$, c
 **Esempio 6.5.** Determiniamo ordine e parte principale di $f(x) = 1 - \cos x$ per $x \to 0$. Proviamo con $\alpha = 2$, usando il limite notevole
 
 $$
-
 \lim_{x\to 0} \frac{1-\cos x}{x^2} = \frac{1}{2} \neq 0,
 $$
 
@@ -288,7 +286,6 @@ $$
 
 :::formula{id="6.11" label="Gerarchia degli infiniti"}
 $$
-
 (\log_a n)^p \ll n^q \ll c^n \ll n! \ll n^n, \qquad a>1,\ p>0,\ q>0,\ c>1
 $$
 :::

@@ -55,7 +55,7 @@ Le primitive immediate si ottengono leggendo "al contrario" la tabella delle der
 - $\int \dfrac{1}{1+x^2}\, dx = \arctan x + c$
 - $\int \dfrac{1}{\sqrt{1-x^2}}\, dx = \arcsin x + c$
 
-:::image{src="assets/a2a8b5f6-famiglia-primitive.svg" alt="Tre curve y = x^3/3 + c parallele verticalmente per c = -1, 0, 1" caption="Fig. 9.1 — Alcune primitive di f(x) = x^2: le curve sono traslate verticalmente l'una dall'altra della costante c."}
+:::image{src="assets/a2a8b5f6-famiglia-primitive.svg" alt="Tre curve y = x^3/3 + c parallele verticalmente per c = -1, 0, 1" caption="Fig. 9.1 — Alcune primitive di f(x) = x²: le curve sono traslate verticalmente l'una dall'altra della costante c."}
 :::
 
 ### Integrazione per sostituzione e per parti (scegliere la tecnica adatta)

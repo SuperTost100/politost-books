@@ -469,7 +469,7 @@ In questo sistema si introducono due versori mobili, il versore radiale $\hat{u}
 
 $$\hat{u}_r(t) = \cos\theta(t)\,\hat{u}_x + \sin\theta(t)\,\hat{u}_y, \qquad \hat{u}_\theta(t) = -\sin\theta(t)\,\hat{u}_x + \cos\theta(t)\,\hat{u}_y .$$
 
-:::image{src="assets/53b217de-versori-polari-punto.svg" alt="Diagramma dei versori radiale e trasverso in coordinate polari con punto O, punto P e segmenti che indicano le direzioni di u_r e u_θ" caption="Fig. 2.9 — Punto P individuato dalle coordinate polari r e θ: il versore radiale u_r è diretto come il segmento OP, il versore trasverso u_θ è perpendicolare a esso, nel verso di θ crescente."}
+:::image{src="assets/53b217de-versori-polari-punto.svg" alt="Diagramma dei versori radiale e trasverso in coordinate polari con punto O, punto P e segmenti che indicano le direzioni di u_r e u_θ" caption="Fig. 2.9 — Punto P individuato dalle coordinate polari r e θ: il versore radiale uᵣ è diretto come il segmento OP, il versore trasverso u_θ è perpendicolare a esso, nel verso di θ crescente."}
 :::
 
 Poiché $\theta(t)$ varia nel tempo, questi versori ruotano; derivandoli si trova, in accordo con le formule di Poisson già incontrate per un versore rotante,
@@ -856,7 +856,7 @@ Quando si calcola l'energia cinetica $E_k = \frac{1}{2}m|\vec{v}|^2$ di un proie
 
 Questo capitolo è comparso in 3 delle 6 sessioni d'esame passate. Il tipo che si incontra più spesso è il problema strutturato in cui un corpo si muove su una traiettoria circolare (il pendolo, dopo un urto o a partire dall'equilibrio). Una volta, invece, ha richiesto il moto armonico.
 
-Le domande disponibili sono troncate. Qui descrivo soltanto ciò che mostrano. La cinematica del punto non compare mai come esercizio a sé: è un passaggio dentro un problema più lungo, in cui si mescolano urti, energia e dinamica. Il test informatizzato e la prova scritta con due problemi a domande aperte sono quindi il luogo naturale di questi quesiti. Alla prova scritta si aggiungono domande aperte di teoria, che possono includere le dimostrazioni viste a lezione.
+La cinematica del punto non compare mai come esercizio a sé: è un passaggio dentro un problema più lungo, in cui si mescolano urti, energia e dinamica. Il test informatizzato e la prova scritta con due problemi a domande aperte sono quindi il luogo naturale di questi quesiti. Alla prova scritta si aggiungono domande aperte di teoria, che possono includere le dimostrazioni viste a lezione.
 
 ### Pendolo e moto circolare dentro un problema con urto
 

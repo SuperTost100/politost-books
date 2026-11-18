@@ -51,7 +51,7 @@ $$\lim_{n\to\infty}\|f_n-f\|_{\infty,A}=\lim_{n\to\infty}\sup_{x\in A}|f_n(x)-f(
 
 In altre parole, per ogni $\varepsilon>0$ esiste $N$ tale che $|f_n(x)-f(x)|<\varepsilon$ per ogni $n\ge N$ e **per ogni** $x\in A$ simultaneamente.
 
-Alcuni testi chiamano questa nozione convergenza totale, ed è il nome usato nelle fonti da cui questo corso attinge.
+Alcuni testi chiamano questa nozione convergenza totale. In questo libro quel nome indica invece una nozione più forte, definita per le serie in [Serie di funzioni](ref:chapter/7#p3), che implica la convergenza uniforme ma non equivale a essa.
 
 **Proposizione 7.1.** Se $f_n\rightrightarrows f$ in $A$, allora $f_n\to f$ puntualmente in $A$. Il viceversa è falso.
 

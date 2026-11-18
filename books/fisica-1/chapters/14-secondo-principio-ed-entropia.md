@@ -235,7 +235,7 @@ Il lavoro prodotto è
 
 $$W = \eta_R \, Q_{ass,R} = 0{,}50 \cdot 2\ \text{kJ} = 1\ \text{kJ}$$
 
-coerente con il valore riportato dalle fonti. Per la macchina irreversibile, che produce lo stesso lavoro $W = 1$ kJ con rendimento $\eta_I = 0{,}3$, il calore assorbito dalla sorgente calda è
+Per la macchina irreversibile, che produce lo stesso lavoro $W = 1$ kJ con rendimento $\eta_I = 0{,}3$, il calore assorbito dalla sorgente calda è
 
 $$Q_{ass,I} = \frac{W}{\eta_I} = \frac{1\ \text{kJ}}{0{,}3} \approx 3{,}33\ \text{kJ}$$
 
@@ -245,7 +245,7 @@ $$|Q_{ced,I}| = Q_{ass,I}(1-\eta_I) = 3{,}33\ \text{kJ} \cdot (1-0{,}3) \approx 
 
 *Controllo.* Si verifica immediatamente che $\eta_I = 0{,}3 < \eta_R = 0{,}50 = \eta_{max}$: la macchina irreversibile, come impone il teorema di Carnot, resta sempre sotto il limite fissato dalla macchina reversibile che opera tra le stesse sorgenti. Il controllo dimensionale è immediato: tutte le grandezze sono espresse in kJ o in rapporti adimensionali.
 
-:::image{src="assets/4c723236-rendimento-carnot-vs-t2.svg" alt="Grafico del rendimento massimo di Carnot in funzione di T2, con T1 = 300 K, e confronto con il rendimento di una macchina irreversibile" caption="Fig. 14.4 — Rendimento massimo di Carnot η_max = 1 − T1/T2 in funzione della temperatura della sorgente calda T2, con T1 = 300 K fissato come nell'esempio: al punto T2 = 600 K si legge η_R = η_max = 0,50, ben al di sopra del rendimento η_I = 0,30 della macchina irreversibile dell'esempio, che resta sempre sotto il limite di Carnot."}
+:::image{src="assets/4c723236-rendimento-carnot-vs-t2.svg" alt="Grafico del rendimento massimo di Carnot in funzione di T2, con T1 = 300 K, e confronto con il rendimento di una macchina irreversibile" caption="Fig. 14.4 — Rendimento massimo di Carnot ηₘₐₓ = 1 − T1/T2 in funzione della temperatura della sorgente calda T2, con T1 = 300 K fissato come nell'esempio: al punto T2 = 600 K si legge η_R = ηₘₐₓ = 0,50, ben al di sopra del rendimento η_I = 0,30 della macchina irreversibile dell'esempio, che resta sempre sotto il limite di Carnot."}
 :::
 
 ### Errore tipico
@@ -406,7 +406,7 @@ $$dS \ge \frac{\delta Q}{T}$$
 
 con l'uguaglianza nei tratti in cui la trasformazione è localmente reversibile, e la disuguaglianza stretta in quelli localmente irreversibili.
 
-:::image{src="assets/caf70116-inequality-ds-vs-deltaq-t.svg" alt="Due curve crescenti da A a B: S(x) sopra, integrale del calore ridotto irreversibile sotto" caption="Fig. 14.5 — Confronto qualitativo, lungo una trasformazione reale A→B, tra la variazione di entropia S(x) (curva continua) e il calore ridotto cumulato ∫(δQ/T)_irrev (curva tratteggiata): la seconda resta sempre al di sotto della prima, illustrando dS ≥ δQ/T, con uguaglianza solo nei tratti localmente reversibili."}
+:::image{src="assets/caf70116-inequality-ds-vs-deltaq-t.svg" alt="Due curve crescenti da A a B: S(x) sopra, integrale del calore ridotto irreversibile sotto" caption="Fig. 14.5 — Confronto qualitativo, lungo una trasformazione reale A→B, tra la variazione di entropia S(x) (curva continua) e il calore ridotto cumulato ∫(δQ/T)ᵢᵣᵣₑᵥ (curva tratteggiata): la seconda resta sempre al di sotto della prima, illustrando dS ≥ δQ/T, con uguaglianza solo nei tratti localmente reversibili."}
 :::
 
 Se il sistema è termicamente isolato, non scambia calore con l'esterno lungo la trasformazione reale, quindi $\delta Q=0$ nel termine di destra, e si ottiene

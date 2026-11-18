@@ -83,7 +83,7 @@ Questo risultato è ciò che renderà possibile, nella sezione sulla [prima equa
 
 $$\vec{M}_{i,j}^{(I)} = \vec{r}_i \times \vec{F}_{i,j} + \vec{r}_j \times \vec{F}_{j,i} = \vec{r}_i \times \vec{F}_{i,j} - \vec{r}_j \times \vec{F}_{i,j} = (\vec{r}_i - \vec{r}_j) \times \vec{F}_{i,j} = -\vec{r}_{i,j} \times \vec{F}_{i,j}.$$
 
-:::image{src="assets/406232d1-centralita-forze-interne.svg" alt="Diagramma vettoriale con un polo O e due punti P_i e P_j: i vettori posizione r_i e r_j partono da O, il vettore r_ij congiunge P_i a P_j ed è la retta d'azione delle forze interne centrali F_ij e F_ji." caption="Fig. 7.1 — Punti P_i e P_j rispetto a un polo O: i vettori posizione r_i e r_j individuano i due punti, mentre r_ij congiunge P_i a P_j. Se la forza interna F_ij è centrale, cioè diretta lungo la stessa retta di r_ij, il prodotto vettoriale r_ij × F_ij è nullo: per questo il momento della coppia interna si annulla."}
+:::image{src="assets/406232d1-centralita-forze-interne.svg" alt="Diagramma vettoriale con un polo O e due punti P_i e P_j: i vettori posizione r_i e r_j partono da O, il vettore r_ij congiunge P_i a P_j ed è la retta d'azione delle forze interne centrali F_ij e F_ji." caption="Fig. 7.1 — Punti Pᵢ e Pⱼ rispetto a un polo O: i vettori posizione rᵢ e rⱼ individuano i due punti, mentre rᵢⱼ congiunge Pᵢ a Pⱼ. Se la forza interna Fᵢⱼ è centrale, cioè diretta lungo la stessa retta di rᵢⱼ, il prodotto vettoriale rᵢⱼ × Fᵢⱼ è nullo: per questo il momento della coppia interna si annulla."}
 :::
 
 Poiché $\vec{r}_{i,j}$ è parallelo a $\vec{F}_{i,j}$, il prodotto vettoriale è nullo per ogni coppia di punti:
@@ -715,7 +715,7 @@ $$\frac{\Delta E_k'}{E_k'^{,in}} = e^2 - 1$$
 
 Per $e=1$ l'energia cinetica si conserva integralmente e si ritrova l'urto elastico; per $e=0$ si ha $v_{1,fin}'=v_{2,fin}'=0$ (nessuna velocità relativa residua rispetto al CM), ossia l'urto completamente anelastico, in cui tutta l'energia cinetica $E_k'$ calcolata nel riferimento del CM viene dissipata. Valori intermedi $0<e<1$ descrivono gli urti anelastici reali, in cui i corpi si separano ma con una velocità relativa inferiore a quella d'impatto.
 
-:::image{src="assets/e55426ce-energia-dissipata-vs-coefficiente-restituzione.svg" alt="Grafico di (E_k' finale meno E_k' iniziale) su E_k' iniziale uguale a e al quadrato meno uno, per e tra 0 e 1" caption="Fig. 7.8 — Variazione relativa di energia cinetica nel riferimento del centro di massa in funzione del coefficiente di restituzione e: per e=1 l'energia si conserva (urto elastico), per e=0 si dissipa tutta E_k' (urto completamente anelastico)."}
+:::image{src="assets/e55426ce-energia-dissipata-vs-coefficiente-restituzione.svg" alt="Grafico di (E_k' finale meno E_k' iniziale) su E_k' iniziale uguale a e al quadrato meno uno, per e tra 0 e 1" caption="Fig. 7.8 — Variazione relativa di energia cinetica nel riferimento del centro di massa in funzione del coefficiente di restituzione e: per e=1 l'energia si conserva (urto elastico), per e=0 si dissipa tutta Eₖ' (urto completamente anelastico)."}
 :::
 
 ### Urti obliqui

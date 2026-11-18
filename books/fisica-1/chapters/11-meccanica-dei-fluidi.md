@@ -28,7 +28,6 @@ dove $\rho$ è la densità locale. La caratteristica che distingue un fluido da 
 Sulla superficie di un elemento di fluido agiscono forze di volume (proporzionali a $dV$, come il peso $dF^{(V)} = g\,dm$) e forze di superficie (proporzionali a $dS$), che si scompongono in uno sforzo normale e in uno sforzo di taglio:
 
 $$
-
 p = \frac{dF_n(S)}{dS}, \qquad \tau = \frac{dF_t(S)}{dS}.
 $$
 
@@ -114,7 +113,6 @@ $$
 L'aria, dall'altro lato, esercita $F_{\text{aria}} = p_0 l h$. La forza netta sulla parete, somma algebrica delle due componenti, è dunque
 
 $$
-
 F_{\text{tot}} = F_{\text{acqua}} - F_{\text{aria}} = \rho g l \frac{h^2}{2}.
 $$
 
@@ -187,7 +185,6 @@ Schema delle forze sulla sfera immersa: peso $mg$ (verso il basso), forza elasti
 La condizione di equilibrio con il liquido è
 
 $$
-
 mg - k(\Delta z_0 - \Delta z) - F_A = 0.
 $$
 

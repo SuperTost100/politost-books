@@ -289,28 +289,22 @@ Calcola la massa molare dell'acqua, converti la massa in moli, poi ricava il num
 La massa molare dell'acqua è:
 
 $$
-M_{\mathrm{H_2O}}=2(1{,}008)+16{,}00=18{,}016\,\mathrm{g\,mol^{-1}}\approx18{,}02\,\mathrm{g\,mol^{-1}}.
+M_{\mathrm{H_2O}}=2(1{,}008)+16{,}00=18{,}016\,\mathrm{g\,mol^{-1}}.
 $$
 
-La quantità di acqua è:
+Il numero di molecole si ricava direttamente dai dati:
 
 $$
-n=\frac{9{,}00\,\mathrm{g}}{18{,}02\,\mathrm{g\,mol^{-1}}}=0{,}4994\,\mathrm{mol}.
+N_{\mathrm{molecole}}=\frac{9{,}00}{18{,}016}(6{,}022\times10^{23})\approx3{,}00833\times10^{23}.
 $$
 
-Il campione contiene:
+Ogni molecola di acqua contiene tre atomi. Pertanto:
 
 $$
-N_{\mathrm{molecole}}=(0{,}4994)(6{,}022\times10^{23})=3{,}008\times10^{23}\text{ molecole}.
+N_{\mathrm{atomi}}=3\frac{9{,}00}{18{,}016}(6{,}022\times10^{23})\approx9{,}02498\times10^{23}.
 $$
 
-Ogni molecola di acqua contiene tre atomi. Quindi:
-
-$$
-N_{\mathrm{atomi}}=3(3{,}008\times10^{23})=9{,}024\times10^{23}.
-$$
-
-A tre cifre significative, il numero totale è $9{,}02\times10^{23}$ atomi.
+A tre cifre significative, il numero totale di atomi è $9{,}02\times10^{23}$.
 :::
 :::
 
@@ -835,14 +829,14 @@ Sia $x$ il numero di ossidazione dell'ossigeno. La molecola è neutra, quindi $2
 
 :::exercise{id="E3.20" chapter="3" difficulty="facile"}
 ## Domanda
-Assegna il nome di Stock a $\mathrm{CaO}$ e $\mathrm{Ca(OH)_2}$ e indica la classe di appartenenza di ciascun composto.
+Assegna il nome secondo la nomenclatura di Stock a $\mathrm{CaO}$ e $\mathrm{Ca(OH)_2}$ e indica la classe di appartenenza di ciascun composto.
 
 :::hint
-Il calcio forma lo ione $\mathrm{Ca^{2+}}$; distingui l'ossido dalla presenza del gruppo idrossido.
+Il calcio forma lo ione $\mathrm{Ca^{2+}}$ e ha numero di ossidazione $+2$; distingui l'ossido dalla presenza del gruppo idrossido.
 :::
 
 :::solution
-$\mathrm{CaO}$ è formato da calcio e ossigeno, quindi è un ossido basico; il nome è ossido di calcio. $\mathrm{Ca(OH)_2}$ contiene due gruppi idrossido ed è un idrossido; il nome è idrossido di calcio.
+In entrambi i composti il calcio ha numero di ossidazione $+2$, l’unico che assume nei suoi composti: per questo, nella nomenclatura di Stock, il numero romano si omette. $\mathrm{CaO}$ si chiama ossido di calcio ed è un ossido basico, perché è l’ossido di un metallo e con l’acqua dà l’idrossido $\mathrm{Ca(OH)_2}$. $\mathrm{Ca(OH)_2}$ si chiama idrossido di calcio ed è un idrossido.
 :::
 :::
 
@@ -868,7 +862,7 @@ Bilancia prima l’alluminio e il cloro. Per bilanciare l’idrogeno, scegli un 
 :::
 
 :::solution
-Ponendo $2$ davanti a $\mathrm{AlCl_3}$ si hanno due atomi di alluminio nei prodotti; si pone quindi $2$ davanti a $\mathrm{Al}$. Servono sei molecole di $\mathrm{HCl}$ per fornire i sei atomi di cloro, e i sei atomi di idrogeno formano $3\,\mathrm{H_2}$.
+Ponendo $2$ davanti a $\mathrm{AlCl_3}$ si hanno due atomi di alluminio nei prodotti; si pone quindi $2$ davanti a $\mathrm{Al}$. Servono sei molecole di $\mathrm{HCl}$ per fornire i sei atomi di cloro, e i sei atomi di idrogeno formano $3\,\mathrm{H_2}$. L’equazione bilanciata è $\mathrm{2Al+6HCl\rightarrow 2AlCl_3+3H_2}$.
 :::
 :::
 
@@ -894,7 +888,11 @@ Determina prima la massa teorica di ossido di calcio usando il rapporto molare n
 :::
 
 :::solution
-Le moli iniziali di carbonato sono $25{,}0/100{,}09=0{,}2498\,\mathrm{mol}$. Il rapporto molare con $\mathrm{CaO}$ è $1:1$, quindi la massa teorica di ossido è $0{,}2498\times56{,}08=14{,}01\,\mathrm{g}$. La resa percentuale è $100\times(11{,}2/14{,}01)=79{,}94\%$, cioè $79{,}9\%$ con tre cifre significative.
+Le moli iniziali di carbonato sono $25{,}0/100{,}09\,\mathrm{mol}$. Il rapporto molare con $\mathrm{CaO}$ è $1:1$, quindi la massa teorica di ossido è $(25{,}0/100{,}09)\times56{,}08\,\mathrm{g}$. La resa percentuale si calcola senza arrotondamenti intermedi:
+
+$$100\times\frac{11{,}2\times100{,}09}{25{,}0\times56{,}08}=79{,}9578\%$$
+
+Con tre cifre significative, la resa percentuale è $80{,}0\%$.
 :::
 :::
 
@@ -907,7 +905,7 @@ Calcola le moli di ciascun reagente e confronta le quantità disponibili con i c
 :::
 
 :::solution
-Le quantità iniziali sono $n(\mathrm{Zn})=13{,}0/65{,}38=0{,}1988\,\mathrm{mol}$ e $n(\mathrm{HCl})=10{,}0/36{,}46=0{,}2743\,\mathrm{mol}$. Per consumare tutto lo zinco servirebbero $0{,}3976\,\mathrm{mol}$ di $\mathrm{HCl}$, quindi l’acido cloridrico è il reagente limitante. Dal rapporto $2\,\mathrm{HCl}:1\,\mathrm{H_2}$ si formano $0{,}1372\,\mathrm{mol}$ di idrogeno. Usando i valori non arrotondati, la massa prodotta è $\frac{10{,}0}{36{,}46}\cdot\frac{1}{2}\cdot 2{,}016=0{,}276\,\mathrm{g}$ a tre cifre significative. Lo zinco residuo si calcola come $13{,}0-\frac{10{,}0}{36{,}46}\cdot\frac{1}{2}\cdot65{,}38=4{,}03\,\mathrm{g}$ a tre cifre significative.
+Le quantità iniziali sono $n(\mathrm{Zn})=13{,}0/65{,}38=0{,}1988\,\mathrm{mol}$ e $n(\mathrm{HCl})=10{,}0/36{,}46=0{,}2743\,\mathrm{mol}$. Per consumare tutto lo zinco servirebbero $0{,}3977\,\mathrm{mol}$ di $\mathrm{HCl}$, quindi l’acido cloridrico è il reagente limitante. Dal rapporto $2\,\mathrm{HCl}:1\,\mathrm{H_2}$ si formano $0{,}1371\,\mathrm{mol}$ di idrogeno. Usando i valori non arrotondati, la massa prodotta è $\frac{10{,}0}{36{,}46}\cdot\frac{1}{2}\cdot 2{,}016=0{,}276\,\mathrm{g}$ a tre cifre significative. Lo zinco residuo si calcola come $13{,}0-\frac{10{,}0}{36{,}46}\cdot\frac{1}{2}\cdot65{,}38=4{,}03\,\mathrm{g}$ a tre cifre significative.
 :::
 :::
 
@@ -972,7 +970,7 @@ Bilancia prima l’azoto, che compare come molecola biatomica tra i reagenti. Co
 :::
 
 :::solution
-A sinistra ci sono due atomi di azoto, quindi si pone $2$ davanti a $\mathrm{NH_3}$. A destra si hanno così sei atomi di idrogeno, perciò si pone $3$ davanti a $\mathrm{H_2}$. L’equazione bilanciata ha coefficienti interi minimi.
+A sinistra ci sono due atomi di azoto, quindi si pone $2$ davanti a $\mathrm{NH_3}$. A destra si hanno così sei atomi di idrogeno, perciò si pone $3$ davanti a $\mathrm{H_2}$. L’equazione bilanciata, con coefficienti interi minimi, è $\mathrm{N_2+3H_2\rightarrow 2NH_3}$.
 :::
 :::
 
@@ -985,7 +983,7 @@ Rendi pari il numero di atomi di ossigeno nei due membri scegliendo un coefficie
 :::
 
 :::solution
-Per avere un numero pari di atomi di ossigeno nei prodotti si pone $2$ davanti a $\mathrm{Fe_2O_3}$, ottenendo sei atomi di ossigeno. Si pone quindi $3$ davanti a $\mathrm{O_2}$. Nei prodotti ci sono quattro atomi di ferro, quindi si pone $4$ davanti a $\mathrm{Fe}$.
+Per avere un numero pari di atomi di ossigeno nei prodotti si pone $2$ davanti a $\mathrm{Fe_2O_3}$, ottenendo sei atomi di ossigeno. Si pone quindi $3$ davanti a $\mathrm{O_2}$. Nei prodotti ci sono quattro atomi di ferro, quindi si pone $4$ davanti a $\mathrm{Fe}$. L'equazione bilanciata è $\mathrm{4Fe+3O_2\rightarrow 2Fe_2O_3}$.
 :::
 :::
 
@@ -1024,7 +1022,7 @@ Bilancia nell’ordine fosforo, calcio, silicio, ossigeno e carbonio. Il fosforo
 :::
 
 :::solution
-Per ottenere quattro atomi di fosforo si pongono $2$ unità di $\mathrm{Ca_3(PO_4)_2}$ per ogni unità di $\mathrm{P_4}$. Questo dà sei atomi di calcio, quindi si pone $6$ davanti a $\mathrm{CaSiO_3}$; di conseguenza servono $6\,\mathrm{SiO_2}$. A sinistra ci sono allora $16+12=28$ atomi di ossigeno. I sei silicati ne contengono $18$, quindi servono $10\,\mathrm{CO}$ per gli altri dieci; si pongono infine $10$ atomi di carbonio tra i reagenti. Il controllo degli atomi dà coefficienti bilanciati per tutti gli elementi.
+Per ottenere quattro atomi di fosforo si pongono $2$ unità di $\mathrm{Ca_3(PO_4)_2}$ per ogni unità di $\mathrm{P_4}$. Questo dà sei atomi di calcio, quindi si pone $6$ davanti a $\mathrm{CaSiO_3}$; di conseguenza servono $6\,\mathrm{SiO_2}$. A sinistra ci sono allora $16+12=28$ atomi di ossigeno. I sei silicati ne contengono $18$, quindi servono $10\,\mathrm{CO}$ per gli altri dieci; si pongono infine $10$ atomi di carbonio tra i reagenti. Il controllo degli atomi dà coefficienti bilanciati per tutti gli elementi. L’equazione bilanciata è $\mathrm{2Ca_3(PO_4)_2+6SiO_2+10C\rightarrow P_4+6CaSiO_3+10CO}$.
 :::
 :::
 
@@ -1037,24 +1035,11 @@ Bilancia prima gli atomi diversi da idrogeno e ossigeno. In ambiente acido, usa 
 :::
 
 :::solution
-Il manganese è già bilanciato. Si pongono $4\,\mathrm{H_2O}$ a destra per bilanciare i quattro ossigeni; servono quindi $8\,\mathrm{H^+}$ a sinistra per bilanciare l’idrogeno. La carica a sinistra, prima del ferro, è $-1+8=+7$; la carica del manganese a destra è $+2$. Servono dunque cinque ioni $\mathrm{Fe^{2+}}$ a sinistra e cinque ioni $\mathrm{Fe^{3+}}$ a destra: la carica totale in entrambi i membri è $+17$.
+Il manganese è già bilanciato. Si pongono $4\,\mathrm{H_2O}$ a destra per bilanciare i quattro ossigeni; servono quindi $8\,\mathrm{H^+}$ a sinistra per bilanciare l’idrogeno. La carica a sinistra, prima del ferro, è $-1+8=+7$; la carica del manganese a destra è $+2$. Servono dunque cinque ioni $\mathrm{Fe^{2+}}$ a sinistra e cinque ioni $\mathrm{Fe^{3+}}$ a destra: la carica totale in entrambi i membri è $+17$. L’equazione bilanciata è $\mathrm{MnO_4^-+5Fe^{2+}+8H^+\rightarrow Mn^{2+}+5Fe^{3+}+4H_2O}$.
 :::
 :::
 
 :::exercise{id="E4.15" chapter="4" difficulty="medio"}
-## Domanda
-Un composto contiene il $40{,}00\%$ in massa di carbonio, il $6{,}71\%$ di idrogeno e il $53{,}29\%$ di ossigeno. La sua massa molare è $180{,}16\,\mathrm{g\,mol^{-1}}$. Determina la formula empirica e la formula molecolare. Usa $\mathrm{C}=12{,}01$, $\mathrm{H}=1{,}008$ e $\mathrm{O}=16{,}00\,\mathrm{g\,mol^{-1}}$.
-
-:::hint
-Considera un campione di $100{,}00\,\mathrm{g}$ e trasforma le masse di ciascun elemento in moli. Dopo aver trovato i rapporti interi minimi, confronta la massa molare empirica con quella del composto.
-:::
-
-:::solution
-In $100{,}00\,\mathrm{g}$ di composto ci sono $40{,}00\,\mathrm{g}$ di carbonio, $6{,}71\,\mathrm{g}$ di idrogeno e $53{,}29\,\mathrm{g}$ di ossigeno. Le quantità di sostanza sono $n_{\mathrm C}=40{,}00/12{,}01=3{,}331\,\mathrm{mol}$, $n_{\mathrm H}=6{,}71/1{,}008=6{,}657\,\mathrm{mol}$ e $n_{\mathrm O}=53{,}29/16{,}00=3{,}331\,\mathrm{mol}$. Dividendo ciascun valore per il più piccolo, si ottiene il rapporto $1:2:1$ e quindi la formula empirica $\mathrm{CH_2O}$. La sua massa molare è $30{,}03\,\mathrm{g\,mol^{-1}}$. Il rapporto tra la massa molare del composto e quella empirica è $180{,}16/30{,}03\simeq 6$, perciò moltiplicando per 6 gli indici della formula empirica si ottiene la formula molecolare $\mathrm{C_6H_{12}O_6}$.
-:::
-:::
-
-:::exercise{id="E4.16" chapter="4" difficulty="medio"}
 ## Domanda
 Il carbonato di calcio si decompone secondo $\mathrm{CaCO_3\rightarrow CaO+CO_2}$. Calcola la massa di ossido di calcio che si forma dalla decomposizione completa di $25{,}0\,\mathrm{g}$ di $\mathrm{CaCO_3}$. Usa $M(\mathrm{CaCO_3})=100{,}09\,\mathrm{g\,mol^{-1}}$ e $M(\mathrm{CaO})=56{,}08\,\mathrm{g\,mol^{-1}}$.
 
@@ -1067,7 +1052,7 @@ Le moli di carbonato di calcio sono $25{,}0/100{,}09=0{,}2498\,\mathrm{mol}$. Il
 :::
 :::
 
-:::exercise{id="E4.17" chapter="4" difficulty="medio"}
+:::exercise{id="E4.16" chapter="4" difficulty="medio"}
 ## Domanda
 La combustione completa dell’etano produce diossido di carbonio e acqua. Bilancia l’equazione $\mathrm{C_2H_6+O_2\rightarrow CO_2+H_2O}$ con coefficienti interi minimi.
 
@@ -1076,20 +1061,24 @@ Bilancia nell’ordine carbonio, idrogeno e ossigeno. Se compare una frazione pe
 :::
 
 :::solution
-Due atomi di carbonio richiedono $2\,\mathrm{CO_2}$; sei atomi di idrogeno richiedono $3\,\mathrm{H_2O}$. Nei prodotti ci sono allora $4+3=7$ atomi di ossigeno, che corrispondono a $7/2\,\mathrm{O_2}$. Moltiplicando tutti i coefficienti per $2$ si ottengono i coefficienti interi minimi.
+Due atomi di carbonio richiedono $2\,\mathrm{CO_2}$; sei atomi di idrogeno richiedono $3\,\mathrm{H_2O}$. Nei prodotti ci sono allora $4+3=7$ atomi di ossigeno, che corrispondono a $7/2\,\mathrm{O_2}$. Moltiplicando tutti i coefficienti per $2$ si ottengono i coefficienti interi minimi. L’equazione bilanciata è $\mathrm{2C_2H_6+7O_2\rightarrow 4CO_2+6H_2O}$.
 :::
 :::
 
-:::exercise{id="E4.18" chapter="4" difficulty="difficile"}
+:::exercise{id="E4.17" chapter="4" difficulty="difficile"}
 ## Domanda
 L’alluminio reagisce con il cloro secondo $\mathrm{2Al+3Cl_2\rightarrow 2AlCl_3}$. Si fanno reagire $12{,}0\,\mathrm{g}$ di alluminio e $20{,}0\,\mathrm{g}$ di cloro; si isolano $20{,}0\,\mathrm{g}$ di cloruro di alluminio. Determina il reagente limitante e la resa percentuale. Usa $M(\mathrm{Al})=26{,}98$, $M(\mathrm{Cl_2})=70{,}90$ e $M(\mathrm{AlCl_3})=133{,}34\,\mathrm{g\,mol^{-1}}$.
 
 :::hint
-Confronta le moli disponibili con il rapporto stechiometrico $2:3$ per individuare il limitante. Calcola la massa teorica di prodotto da quel reagente prima di determinare la resa.
+Confronta le moli disponibili con il rapporto stechiometrico $2:3$ per individuare il reagente limitante. Calcola la massa teorica di prodotto usando i dati non arrotondati, poi determina la resa percentuale.
 :::
 
 :::solution
-Le moli iniziali sono $n(\mathrm{Al})=12{,}0/26{,}98=0{,}4448\,\mathrm{mol}$ e $n(\mathrm{Cl_2})=20{,}0/70{,}90=0{,}2821\,\mathrm{mol}$. Per consumare tutto l’alluminio servirebbero $0{,}6672\,\mathrm{mol}$ di cloro, quindi $\mathrm{Cl_2}$ è il reagente limitante. Dal rapporto $3\,\mathrm{Cl_2}:2\,\mathrm{AlCl_3}$ si ottengono teoricamente $(2/3)(0{,}2821)=0{,}1881\,\mathrm{mol}$ di prodotto, pari a $0{,}1881\times133{,}34=25{,}08\,\mathrm{g}$. La resa percentuale è $100\times(20{,}0/25{,}08)=79{,}74\%$, cioè $79{,}7\%$.
+Le moli iniziali sono $n(\mathrm{Al})=12{,}0/26{,}98=0{,}4448\,\mathrm{mol}$ e $n(\mathrm{Cl_2})=20{,}0/70{,}90=0{,}2821\,\mathrm{mol}$. Per consumare tutto l’alluminio servirebbero $0{,}6672\,\mathrm{mol}$ di cloro, quindi $\mathrm{Cl_2}$ è il reagente limitante. La massa teorica di $\mathrm{AlCl_3}$ si calcola direttamente senza arrotondare le moli intermedie:
+
+$$\frac{20{,}0}{70{,}90}\times\frac{2}{3}\times133{,}34=25{,}075693\ldots\,\mathrm{g}$$
+
+La resa percentuale è $100\times(20{,}0/25{,}075693\ldots)=79{,}7585\ldots\%$, cioè $79{,}8\%$ a tre cifre significative.
 :::
 :::
 
@@ -1181,7 +1170,7 @@ Scrivi la reazione ionica netta e individua il reagente limitante dal rapporto u
 La reazione ionica netta è $\mathrm{Ba^{2+}(aq) + SO_4^{2-}(aq) \rightarrow BaSO_4(s)}$.
 Le moli iniziali sono $n(\mathrm{Ba^{2+}})=0.1000\cdot0.120=0.0120\,\mathrm{mol}$ e $n(\mathrm{SO_4^{2-}})=0.2500\cdot0.0600=0.0150\,\mathrm{mol}$. Il bario è il reagente limitante e si formano $0.0120\,\mathrm{mol}$ di precipitato.
 La massa è $0.0120\cdot233.39=2.80068\,\mathrm{g}$, ossia $2.80\,\mathrm{g}$ a tre cifre significative.
-Non rimangono ioni $\mathrm{Ba^{2+}}$ nel modello di precipitazione quantitativa. Rimangono $0.0150-0.0120=0.00300\,\mathrm{mol}$ di $\mathrm{SO_4^{2-}}$. Con volume totale $0.3500\,\mathrm{L}$, $\lbrack \mathrm{SO_4^{2-}}\rbrack =0.00300/0.3500=0.00857\,\mathrm{mol\,L^{-1}}$.
+Non rimangono ioni $\mathrm{Ba^{2+}}$ nel modello di precipitazione quantitativa, quindi $\lbrack \mathrm{Ba^{2+}}\rbrack \approx0$. Rimangono $0.0150-0.0120=0.00300\,\mathrm{mol}$ di $\mathrm{SO_4^{2-}}$. Con volume totale $0.3500\,\mathrm{L}$, $\lbrack \mathrm{SO_4^{2-}}\rbrack =0.00300/0.3500=0.00857\,\mathrm{mol\,L^{-1}}$.
 :::
 :::
 
@@ -1630,9 +1619,9 @@ Scala l’equazione termochimica in base alle moli di idrogeno consumate; applic
 :::
 
 :::solution
-La reazione come scritta consuma $2\,\mathrm{mol}$ di idrogeno e produce $2\,\mathrm{mol}$ di acqua. Il fattore di scala per $3{,}00\,\mathrm{mol}$ di $\mathrm{H_2}$ è $3{,}00/2=1{,}50$. Pertanto:
+La reazione come scritta consuma $2\,\mathrm{mol}$ di idrogeno e produce $2\,\mathrm{mol}$ di acqua. Il fattore di scala per $3{,}00\,\mathrm{mol}$ di $\mathrm{H_2}$ è $3{,}00/2=1{,}50$. A pressione costante il calore scambiato è uguale a $\Delta H$, quindi:
 
-$$\Delta H=(1{,}50)(-571{,}6\,\mathrm{kJ})=-857{,}4\,\mathrm{kJ}$$
+$$q_p=\Delta H=(1{,}50)(-571{,}6\,\mathrm{kJ})=-857{,}4\,\mathrm{kJ}$$
 
 Il rapporto tra idrogeno e acqua è $1:1$, quindi si producono $3{,}00\,\mathrm{mol}$ di acqua. Il segno negativo indica calore ceduto dal sistema.
 :::
@@ -1640,22 +1629,18 @@ Il rapporto tra idrogeno e acqua è $1:1$, quindi si producono $3{,}00\,\mathrm{
 
 :::exercise{id="E7.3" chapter="7" difficulty="medio"}
 ## Domanda
-Per la reazione $\mathrm{N_2(g)+3H_2(g)\rightarrow 2NH_3(g)}$, a $298\,\mathrm{K}$ si ha $\Delta U=-91{,}8\,\mathrm{kJ}$ per la reazione come scritta. Calcola $\Delta H$. Usa $R=8{,}314\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
+Per la reazione $\mathrm{N_2(g)+3H_2(g)\rightarrow 2NH_3(g)}$, a $298\,\mathrm{K}$ si ha $\Delta U=-86{,}8\,\mathrm{kJ}$ per la reazione come scritta. Assumendo che tutti i gas si comportino idealmente, calcola $\Delta H$. Usa $R=8{,}314\,\mathrm{J\,mol^{-1}\,K^{-1}}$.
 
 :::hint
-Per una reazione tra gas ideali, usa la variazione del numero di moli gassose e mantieni coerenti le unità di energia.
+Per gas ideali, usa la variazione del numero di moli gassose e mantieni coerenti le unità di energia.
 :::
 
 :::solution
-Per la reazione, $\Delta n_{\mathrm{gas}}=2-(1+3)=-2$. La relazione tra variazioni di entalpia ed energia interna per i gas è {{formula:7.4}}:
+Assumendo che tutti i gas si comportino idealmente, si usa la relazione tra variazioni di entalpia ed energia interna {{formula:7.4}}. Per la reazione, $\Delta n_{\mathrm{gas}}=2-(1+3)=-2$.
 
 $$\Delta H=\Delta U+\Delta n_{\mathrm{gas}}RT$$
 
-Il termine correttivo vale $(-2)(8{,}314)(298)=-4956\,\mathrm{J}=-4{,}956\,\mathrm{kJ}$. Quindi:
-
-$$\Delta H=-91{,}8-4{,}956=-96{,}756\,\mathrm{kJ}$$
-
-Arrotondando a tre cifre significative, si ottiene $-96{,}8\,\mathrm{kJ}$.
+Il termine correttivo vale $(-2)(8{,}314)(298)=-4955\,\mathrm{J}=-4{,}955\,\mathrm{kJ}$. Quindi $\Delta H=-86{,}8-4{,}955=-91{,}755\,\mathrm{kJ}$. Arrotondando a tre cifre significative, si ottiene $-91{,}8\,\mathrm{kJ}$.
 :::
 :::
 
@@ -1919,7 +1904,7 @@ Un atomo neutro di sodio ha $11$ elettroni. Distribuiscili seguendo l’ordine d
 :::
 
 :::solution
-L’atomo neutro possiede $11$ elettroni. Si riempiono nell’ordine $1s$, $2s$, $2p$, $3s$: i primi due occupano $1s$, i successivi due $2s$, sei occupano $2p$ e l’ultimo occupa $3s$. La somma è $2+2+6+1=11$.
+L’atomo neutro possiede $11$ elettroni. Si riempiono nell’ordine $1s$, $2s$, $2p$, $3s$: i primi due occupano $1s$, i successivi due $2s$, sei occupano $2p$ e l’ultimo occupa $3s$. La somma è $2+2+6+1=11$. La configurazione elettronica completa è $1s^2\,2s^2\,2p^6\,3s^1$.
 :::
 :::
 
@@ -1984,7 +1969,7 @@ L’energia cinetica acquistata è $eV$. Ricava la quantità di moto dall’ener
 :::
 
 :::solution
-L’energia cinetica è $K=eV=(1{,}602\times10^{-19})(150)=2{,}403\times10^{-17}\,\mathrm{J}$. Dalla relazione $K=p^2/(2m_e)$ si ottiene $p=\sqrt{2m_eK}=\sqrt{2(9{,}109\times10^{-31})(2{,}403\times10^{-17})}=6{,}615\times10^{-24}\,\mathrm{kg\,m\,s^{-1}}$. Pertanto $\lambda=h/p=(6{,}626\times10^{-34})/(6{,}615\times10^{-24})=1{,}002\times10^{-10}\,\mathrm{m}$.
+L’energia cinetica è $K=eV=(1{,}602\times10^{-19})(150)=2{,}403\times10^{-17}\,\mathrm{J}$. Dalla relazione $K=p^2/(2m_e)$ si ottiene $p=\sqrt{2m_eK}=\sqrt{2(9{,}109\times10^{-31})(2{,}403\times10^{-17})}=6{,}6165\times10^{-24}\,\mathrm{kg\,m\,s^{-1}}$. Pertanto $\lambda=h/p=(6{,}626\times10^{-34})/(6{,}6165\times10^{-24})=1{,}001\times10^{-10}\,\mathrm{m}$.
 :::
 :::
 
@@ -2410,13 +2395,13 @@ Per ciascun liquido applica la forma a due punti dell’equazione di Clausius-Cl
 :::solution
 Per ciascun liquido si usa $\ln(P_2/P_1)=-(\Delta H_{\mathrm{vap}}/R)(1/T_2-1/T_1)$, con $P_1=1\,\mathrm{atm}$ alla temperatura normale di ebollizione. Per $A$, $T_1=350\,\mathrm{K}$, $T_2=330\,\mathrm{K}$ e $\Delta H_{\mathrm{vap}}=30000\,\mathrm{J\,mol^{-1}}$:
 
-$$\ln\left(\frac{P_A}{1\,\mathrm{atm}}\right)=-\frac{30000}{8{,}314}\left(\frac{1}{330}-\frac{1}{350}\right)=-0{,}624$$
+$$\ln\left(\frac{P_A}{1\,\mathrm{atm}}\right)=-\frac{30000}{8{,}314}\left(\frac{1}{330}-\frac{1}{350}\right)=-0{,}6248$$
 
-Da cui $P_A=e^{-0{,}624}\,\mathrm{atm}=0{,}536\,\mathrm{atm}$. Per $B$, $T_1=400\,\mathrm{K}$ e $\Delta H_{\mathrm{vap}}=40000\,\mathrm{J\,mol^{-1}}$:
+Da cui $P_A=e^{-0{,}6248}\,\mathrm{atm}=0{,}535\,\mathrm{atm}$. Per $B$, $T_1=400\,\mathrm{K}$ e $\Delta H_{\mathrm{vap}}=40000\,\mathrm{J\,mol^{-1}}$:
 
-$$\ln\left(\frac{P_B}{1\,\mathrm{atm}}\right)=-\frac{40000}{8{,}314}\left(\frac{1}{330}-\frac{1}{400}\right)=-2{,}55$$
+$$\ln\left(\frac{P_B}{1\,\mathrm{atm}}\right)=-\frac{40000}{8{,}314}\left(\frac{1}{330}-\frac{1}{400}\right)=-2{,}551$$
 
-Quindi $P_B=e^{-2{,}55}\,\mathrm{atm}=0{,}0781\,\mathrm{atm}$. Il rapporto è $P_A/P_B=0{,}536/0{,}0781=6{,}86$.
+Quindi $P_B=e^{-2{,}551}\,\mathrm{atm}=0{,}0780\,\mathrm{atm}$. Il rapporto è $P_A/P_B=0{,}5354/0{,}07797=6{,}87$.
 :::
 :::
 
@@ -3014,7 +2999,7 @@ Scrivi il quoziente di reazione per la reazione complessiva e applica l’equazi
 :::
 
 :::solution
-La reazione complessiva è $\mathrm{Zn+Cu^{2+}\to Zn^{2+}+Cu}$, quindi $Q=\lbrack \mathrm{Zn^{2+}}\rbrack /\lbrack \mathrm{Cu^{2+}}\rbrack =0{,}10/(1{,}0\times10^{-3})=100$. L’equazione di Nernst a $25\,^{\circ}\mathrm{C}$ dà $E=E^\circ-(0{,}05916\,\mathrm{V}/n)\log Q$. Sostituendo $n=2$ e $Q=100$, si ottiene $E=1{,}10-(0{,}05916/2)\log(100)=1{,}10-0{,}05916=1{,}04084\,\mathrm{V}$. A tre cifre significative, il potenziale della cella è $1{,}04\,\mathrm{V}$. {{formula:16.2}}
+La reazione complessiva è $\mathrm{Zn+Cu^{2+}\to Zn^{2+}+Cu}$, quindi $Q=\lbrack \mathrm{Zn^{2+}}\rbrack /\lbrack \mathrm{Cu^{2+}}\rbrack =0{,}10/(1{,}0\times10^{-3})=100$. L’equazione di Nernst {{formula:16.2}}, a $25\,^{\circ}\mathrm{C}$, dà $E=E^\circ-(0{,}05916\,\mathrm{V}/n)\log Q$. Sostituendo $n=2$ e $Q=100$, si ottiene $E=1{,}10-(0{,}05916/2)\log(100)=1{,}10-0{,}05916=1{,}04084\,\mathrm{V}$. A tre cifre significative, il potenziale della cella è $1{,}04\,\mathrm{V}$.
 :::
 :::
 
@@ -3066,7 +3051,7 @@ Per una mole di idrogeno, calcola $|\Delta G|=nFE$. Dividi poi questo valore per
 :::
 
 :::solution
-Per mole di $\mathrm{H_2}$ si trasferiscono $n=2$ moli di elettroni. Il lavoro elettrico massimo è $W_{\max}=nFE=(2)(96485)(1{,}23)=237353\,\mathrm{J\,mol^{-1}}=237{,}4\,\mathrm{kJ\,mol^{-1}}$. Il rendimento teorico è $\eta=W_{\max}/|\Delta H|=237{,}4/285{,}8=0{,}830$. In percentuale, $\eta=83{,}0\%$. {{formula:16.3}}
+Per mole di $\mathrm{H_2}$ si trasferiscono $n=2$ moli di elettroni. Il lavoro elettrico massimo è uguale a $|\Delta G|$ {{formula:16.3}}: $W_{\max}=|\Delta G|=nFE=(2)(96485)(1{,}23)=237353\,\mathrm{J\,mol^{-1}}=237{,}4\,\mathrm{kJ\,mol^{-1}}$. Il rendimento teorico è $\eta=W_{\max}/|\Delta H|=237{,}4/285{,}8=0{,}830$. In percentuale, $\eta=83{,}0\%$.
 :::
 :::
 
@@ -3209,7 +3194,7 @@ Conta i domini di legame attorno a ciascun carbonio e ricorda che un doppio lega
 :::
 
 :::solution
-Ogni carbonio dell'etene forma tre legami: due con gli atomi di idrogeno e uno con l'altro carbonio. Ha quindi tre domini di legame, è ibridato $sp^2$ e presenta geometria trigonale planare. Ciascun legame C–H è un legame $\sigma$ e il doppio legame C=C contiene un legame $\sigma$ e uno $\pi$. In totale ci sono quattro legami C–H $\sigma$ e un legame C–C $\sigma$, oltre a un legame $\pi$.
+Ogni carbonio dell'etene forma tre legami: due con gli atomi di idrogeno e uno con l'altro carbonio. Ha quindi tre domini di legame, è ibridato $sp^2$ e presenta geometria trigonale planare. Ciascun legame C–H è un legame $\sigma$ e il doppio legame C=C contiene un legame $\sigma$ e uno $\pi$. In totale ci sono cinque legami $\sigma$ (quattro C–H e uno C–C) e un legame $\pi$.
 :::
 :::
 

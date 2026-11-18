@@ -704,7 +704,7 @@ Le funzioni seno e coseno di frequenze diverse sono linearmente indipendenti. Pe
 
 $$2T\in 2\pi\mathbb{Z}, \qquad 3T\in 2\pi\mathbb{Z}.$$
 
-Scrivendo $2T=2\pi m$ e $3T=2\pi n$, con $m,n\in\mathbb{Z}$, si ottiene $T=\pi m=\frac{2\pi n}{3}$. Dall’uguaglianza $3m=2n$ segue che $m$ è pari, quindi $T$ è un multiplo intero di $2\pi$. Il minimo periodo positivo è dunque $2\pi$."}
+Scrivendo $2T=2\pi m$ e $3T=2\pi n$, con $m,n\in\mathbb{Z}$, si ottiene $T=\pi m=\frac{2\pi n}{3}$. Dall’uguaglianza $3m=2n$ segue che $m$ è pari, quindi $T$ è un multiplo intero di $2\pi$. Il minimo periodo positivo è dunque $2\pi$.
 :::
 :::
 
@@ -789,7 +789,7 @@ $$
 \min_{x>0} f(x) = f(1) = 2.
 $$
 
-Studiamo il comportamento agli estremi del dominio: $\lim_{x\to 0^+} f(x) = +\infty$ e $\lim_{x\to+\infty} f(x) = +\infty$. Non essendovi altri punti critici né quindi massimi locali, e divergendo $f$ a $+\infty$ in entrambi gli estremi, $f$ non è limitata superiormente.
+Studiamo il comportamento agli estremi del dominio: $\lim_{x\to 0^+} f(x) = +\infty$ e $\lim_{x\to+\infty} f(x) = +\infty$. Non essendovi altri punti critici né quindi massimi locali, e divergendo $f$ a $+\infty$ in entrambi gli estremi, $f$ non è limitata superiormente. È invece limitata inferiormente, perché $f(x)\ge f(1)=2$ per ogni $x>0$.
 :::
 :::
 
@@ -1577,7 +1577,7 @@ Per $-1 < x < 1$ si ha $x^2 - 1 < 0$, quindi $f(x) = 1 - x^2$ e $f'(x) = -2x$. P
 
 Nel punto $x=1$, la derivata destra è $f'_+(1)=2(1)=2$, mentre la derivata sinistra è $f'_-(1)=-2(1)=-2$. Le derivate laterali sono finite e distinte, quindi, per {{formula:7.5}}, $x=1$ è un punto angoloso.
 
-Nel punto $x=-1$, la derivata destra è $f'_+(-1)=-2(-1)=2$, mentre la derivata sinistra è $f'_-(-1)=2(-1)=-2$. Anche queste derivate laterali sono finite e distinte, quindi $x=-1$ è un punto angoloso.
+Nel punto $x=-1$, la derivata destra è $f'_+(-1)=-2(-1)=2$, mentre la derivata sinistra è $f'_-(-1)=2(-1)=-2$. Anche queste derivate laterali sono finite e distinte, quindi $x=-1$ è un punto angoloso. In entrambi i punti, quindi, $f$ non è derivabile.
 :::
 :::
 
@@ -1700,7 +1700,7 @@ Per $x\neq 0$ si ha $f'(x) = \frac{2}{3}x^{-1/3}$; si studi il segno e il limite
 :::
 
 :::solution
-Per $x \neq 0$, $f'(x) = \dfrac{2}{3} x^{-1/3} = \dfrac{2}{3\sqrt[3]{x}}$. Per $x \to 0^+$, $\sqrt[3]{x} \to 0^+$, quindi $f'(x) \to +\infty$. Per $x \to 0^-$, $\sqrt[3]{x} \to 0^-$, quindi $f'(x) \to -\infty$. Per classificare il punto, calcoliamo i rapporti incrementali laterali: poiché $f(0)=0$, per $x\neq 0$ si ha $\frac{f(x)-f(0)}{x}=x^{-1/3}$. Pertanto, per $x\to 0^+$ il rapporto tende a $+\infty$, mentre per $x\to 0^-$ tende a $-\infty$. Poiché i rapporti incrementali laterali divergono a infinito con segni opposti, $x=0$ è un punto di cuspide.
+Per $x \neq 0$, $f'(x) = \dfrac{2}{3} x^{-1/3} = \dfrac{2}{3\sqrt[3]{x}}$. Per $x \to 0^+$, $\sqrt[3]{x} \to 0^+$, quindi $f'(x) \to +\infty$. Per $x \to 0^-$, $\sqrt[3]{x} \to 0^-$, quindi $f'(x) \to -\infty$. Per classificare il punto, calcoliamo i rapporti incrementali laterali: poiché $f(0)=0$, per $x\neq 0$ si ha $\frac{f(x)-f(0)}{x}=x^{-1/3}$. Pertanto, per $x\to 0^+$ il rapporto tende a $+\infty$, mentre per $x\to 0^-$ tende a $-\infty$. Poiché i rapporti incrementali laterali divergono a infinito con segni opposti, $f$ non è derivabile in $0$ e $x=0$ è un punto di cuspide.
 :::
 :::
 

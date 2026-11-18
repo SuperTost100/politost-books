@@ -928,30 +928,46 @@ $$E_{\mathrm{in}} = T_0 \Delta S_{\mathrm{universo}} = 300 \cdot 19.73 \approx 5
 
 :::exercise{id="X1" type="esame" chapter="1" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
-Siano assegnati i vettori $\mathbf{u}=(2,-1,2)$ e $\mathbf{v}=(1,2,-2)$.\na) Calcolare il vettore $\mathbf{r}=2\mathbf{u}-\mathbf{v}$ e il suo modulo.\nb) Determinare il versore parallelo e concorde con $\mathbf{r}$.\nc) Calcolare l’angolo compreso tra $\mathbf{u}$ e $\mathbf{v}$, esprimendolo in forma esatta e in radianti con tre cifre decimali.
+Siano assegnati i vettori $\mathbf{u}=(2,-1,2)$ e $\mathbf{v}=(1,2,-2)$.
+
+- a) Calcolare il vettore $\mathbf{r}=2\mathbf{u}-\mathbf{v}$ e il suo modulo.
+- b) Determinare il versore parallelo e concorde con $\mathbf{r}$.
+- c) Calcolare l’angolo compreso tra $\mathbf{u}$ e $\mathbf{v}$, esprimendolo in forma esatta e in radianti con tre cifre decimali.
 
 :::solution
 a) Si calcolano separatamente il doppio di $\mathbf{u}$ e la differenza componente per componente:
-$\displaystyle \mathbf{r}=2(2,-1,2)-(1,2,-2)=(4,-2,4)-(1,2,-2)=(3,-4,6).$
+
+$$\mathbf{r}=2(2,-1,2)-(1,2,-2)=(4,-2,4)-(1,2,-2)=(3,-4,6).$$
+
 Il modulo è
-$\displaystyle |\mathbf{r}|=\sqrt{3^2+(-4)^2+6^2}=\sqrt{61}.$
+
+$$|\mathbf{r}|=\sqrt{3^2+(-4)^2+6^2}=\sqrt{61}.$$
+
 b) Il versore parallelo e concorde con $\mathbf{r}$ si ottiene dividendo il vettore per il suo modulo:
-$\displaystyle \widehat{\mathbf{r}}=\frac{\mathbf{r}}{|\mathbf{r}|}=\left(\frac{3}{\sqrt{61}},-\frac{4}{\sqrt{61}},\frac{6}{\sqrt{61}}\right).$
+
+$$\widehat{\mathbf{r}}=\frac{\mathbf{r}}{|\mathbf{r}|}=\left(\frac{3}{\sqrt{61}},-\frac{4}{\sqrt{61}},\frac{6}{\sqrt{61}}\right).$$
+
 c) I moduli dei vettori assegnati sono
-$\displaystyle |\mathbf{u}|=\sqrt{2^2+(-1)^2+2^2}=3,\qquad |\mathbf{v}|=\sqrt{1^2+2^2+(-2)^2}=3.$
+
+$$|\mathbf{u}|=\sqrt{2^2+(-1)^2+2^2}=3,\qquad |\mathbf{v}|=\sqrt{1^2+2^2+(-2)^2}=3.$$
+
 Il prodotto scalare vale
-$\displaystyle \mathbf{u}\cdot\mathbf{v}=2\cdot1+(-1)\cdot2+2\cdot(-2)=-4.$
+
+$$\mathbf{u}\cdot\mathbf{v}=2\cdot1+(-1)\cdot2+2\cdot(-2)=-4.$$
+
 Dalla relazione $\mathbf{u}\cdot\mathbf{v}=|\mathbf{u}||\mathbf{v}|\cos\theta$ segue
-$\displaystyle \cos\theta=\frac{-4}{3\cdot3}=-\frac{4}{9},\qquad \theta=\arccos\left(-\frac{4}{9}\right)\approx 2.031\text{ rad}.$
-Quindi $\mathbf{r}=(3,-4,6)$, $|\mathbf{r}|=\sqrt{61}$, $\widehat{\mathbf{r}}=\left(\frac{3}{\sqrt{61}},-\frac{4}{\sqrt{61}},\frac{6}{\sqrt{61}}\right)$ e l’angolo richiesto è $\arccos\left(-\frac{4}{9}\right)\approx2.031\text{ rad}$.
+
+$$\cos\theta=\frac{-4}{3\cdot3}=-\frac{4}{9},\qquad \theta=\arccos\left(-\frac{4}{9}\right)\approx 2{,}031\text{ rad}.$$
+
+Quindi $\mathbf{r}=(3,-4,6)$, $|\mathbf{r}|=\sqrt{61}$, $\widehat{\mathbf{r}}=\left(\frac{3}{\sqrt{61}},-\frac{4}{\sqrt{61}},\frac{6}{\sqrt{61}}\right)$ e l’angolo richiesto è $\arccos\left(-\frac{4}{9}\right)\approx2{,}031\text{ rad}$.
 :::
 :::
 
 :::exercise{id="X2" type="esame" chapter="2" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 La posizione di un punto che si muove lungo una retta è descritta, per $0\le t\le 4\,\mathrm{s}$, dalla legge oraria $x(t)=t^3-6t^2+9t$, con $x$ espresso in metri e $t$ in secondi.
 
@@ -982,7 +998,7 @@ Lo spostamento è $\Delta x=x(4)-x(0)=4\,\mathrm{m}$. Inoltre, $x(1)=4\,\mathrm{
 
 :::exercise{id="X3" type="esame" chapter="2" difficulty="difficile"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Un punto si muove di moto armonico semplice con pulsazione $\omega=2\pi\,\mathrm{rad/s}$. All’istante iniziale si trova in $x(0)=0{,}06\,\mathrm{m}$ e ha velocità $v(0)=-0{,}08\pi\,\mathrm{m/s}$.
 
@@ -1340,7 +1356,7 @@ Quindi $J'_x=+3{,}2\ \text{N·s}$ e $J'_y=0$. La reazione impulsiva del vincolo 
 
 :::exercise{id="X8" type="esame" chapter="8" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Una lamina rigida si muove nel piano. In un dato istante, i punti $A$ e $B$ hanno posizioni $\mathbf{r}_A=(0,0)\,\mathrm{m}$ e $\mathbf{r}_B=(0{,}40,0)\,\mathrm{m}$ e velocità $\mathbf{v}_A=(1,0)\,\mathrm{m/s}$ e $\mathbf{v}_B=(1,1{,}20)\,\mathrm{m/s}$. Si assuma che l’asse istantaneo di rotazione sia perpendicolare al piano.
 
@@ -1381,7 +1397,7 @@ Dalle componenti segue $x=0$ e $y=1/3\,\mathrm{m}$. La posizione del centro ista
 
 :::exercise{id="X9" type="esame" chapter="8" difficulty="facile"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Due aste sottili e uniformi, di densità lineare di massa $\lambda=2{,}0\,\mathrm{kg/m}$, sono saldate perpendicolarmente a un’estremità comune $O$. Le loro lunghezze sono $a=0{,}60\,\mathrm{m}$ e $b=0{,}80\,\mathrm{m}$. Calcolare il momento d’inerzia del sistema rispetto all’asse passante per $O$ e perpendicolare al piano delle aste.
 
@@ -1534,7 +1550,7 @@ $$
 
 :::exercise{id="X12" type="esame" chapter="12" difficulty="facile"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Un recipiente rigido e isolato termicamente dall’ambiente contiene due corpi, $A$ e $B$, separati da una parete che permette lo scambio di calore. Le capacità termiche dei corpi sono costanti e valgono rispettivamente $200\,\mathrm{J/K}$ e $300\,\mathrm{J/K}$. Inizialmente le temperature sono $80\,^{\circ}\mathrm{C}$ per $A$ e $20\,^{\circ}\mathrm{C}$ per $B$. Non avvengono cambiamenti di fase.
 
@@ -1555,7 +1571,7 @@ La condizione di equilibrio termico è dunque l’uguaglianza delle temperature 
 
 :::exercise{id="X13" type="esame" chapter="12" difficulty="medio"}
 ## Domanda
-**Esercizio in stile d'esame (generato)**
+**Esercizio in stile d'esame**
 
 Un termometro empirico usa una proprietà termometrica $x$ che varia linearmente con la temperatura Celsius. Quando è posto in equilibrio con ghiaccio fondente, indica $x=12$; quando è posto in equilibrio con acqua bollente alla pressione atmosferica, indica $x=92$. Si assuma che i due punti di calibrazione corrispondano rispettivamente a $0\,^{\circ}\mathrm{C}$ e $100\,^{\circ}\mathrm{C}$.
 

@@ -90,7 +90,7 @@ $$\ln\frac{P_2}{P_1} = -\frac{\Delta H_{vap}}{R}\left(\frac{1}{T_2}-\frac{1}{T_1
 
 **Ipotesi.** $\Delta H_{vap}$ è l'entalpia molare di vaporizzazione della sostanza, assunta costante nell'intervallo di temperatura considerato; le temperature $T_1, T_2$ vanno espresse in kelvin e $R$ nello stesso sistema di unità di $\Delta H_{vap}$ (tipicamente $R = 8,314 \text{ J/(mol·K)}$ con $\Delta H_{vap}$ in J/mol). Conoscendo tre delle quattro grandezze $P_1, T_1, P_2, T_2$ si calcola la quarta.
 
-:::image{src="assets/71c3886c-clausius-clapeyron-linea.svg" alt="Grafico di ln P in funzione di 1/T, una retta con pendenza negativa" caption="Fig. 10.3 — Linearizzazione di Clausius-Clapeyron: ln P in funzione di 1/T è una retta di pendenza -ΔH_vap/R."}
+:::image{src="assets/71c3886c-clausius-clapeyron-linea.svg" alt="Grafico di ln P in funzione di 1/T, una retta con pendenza negativa" caption="Fig. 10.3 — Linearizzazione di Clausius-Clapeyron: ln P in funzione di 1/T è una retta di pendenza -ΔHᵥₐₚ/R."}
 :::
 
 **Esempio svolto 10.2.** La pressione di vapore dell'etanolo è 115 mmHg a 34,9 °C e la sua entalpia di vaporizzazione è 38,6 kJ/mol. Calcolare la temperatura alla quale la pressione di vapore raggiunge 760 mmHg.
@@ -101,12 +101,12 @@ $$\ln\frac{P_2}{P_1} = -\frac{\Delta H_{vap}}{R}\left(\frac{1}{T_2}-\frac{1}{T_1
 
 $$\begin{aligned}
 \ln\frac{760}{115} &= -\frac{38\,600}{8,314}\left(\frac{1}{T_2}-\frac{1}{308,05}\right)\\
-1,8886 &= -4641,8\left(\frac{1}{T_2}-3,2461\times10^{-3}\right)\\
-\frac{1}{T_2} &= 3,2461\times10^{-3} - 4,0685\times10^{-4} = 2,8393\times10^{-3} \text{ K}^{-1}\\
-T_2 &= 352,2 \text{ K} = 79,1\ °\text{C}
+1,8884 &= -4642,8\left(\frac{1}{T_2}-3,2462\times10^{-3}\right)\\
+\frac{1}{T_2} &= 3,2462\times10^{-3} - 4,0674\times10^{-4} = 2,8395\times10^{-3} \text{ K}^{-1}\\
+T_2 &= 352,2 \text{ K} = 79,0\ °\text{C}
 \end{aligned}$$
 
-4. Verifica: $79 °\text{C}$ è un valore ragionevole, inferiore al punto di ebollizione del benzene e coerente con un liquido volatile; il risultato è coerente con il valore atteso di 79 °C.
+4. Verifica: il punto normale di ebollizione misurato dell'etanolo è $78,4\ °\text{C}$; il risultato si discosta di circa $0,6\ °\text{C}$, uno scarto compatibile con l'ipotesi di $\Delta H_{vap}$ costante nell'intervallo di temperatura.
 
 **Errore tipico 10.2.** Dimenticare di convertire le temperature in kelvin, o usare per $R$ un valore in L·atm/(mol·K) mentre $\Delta H_{vap}$ è espresso in J/mol: le unità di $R$ e di $\Delta H_{vap}$ devono essere coerenti.
 
@@ -123,7 +123,7 @@ Per la maggior parte delle sostanze la curva solido/liquido ha pendenza positiva
 
 L'**acqua** costituisce un'eccezione importante: poiché il ghiaccio è meno denso dell'acqua liquida (per l'effetto dei legami a idrogeno nella struttura cristallina), la curva solido/liquido ha pendenza negativa, cioè un aumento di pressione favorisce la fase liquida. Dal punto di vista del principio di Le Chatelier (già introdotto negli equilibri gassosi), aumentando la pressione su un sistema ghiaccio-acqua all'equilibrio, il sistema si sposta verso la fase che occupa meno volume (il liquido), e parte del ghiaccio fonde; per ristabilire l'equilibrio è necessario abbassare la temperatura. Per l'acqua si hanno i seguenti valori caratteristici: punto triplo a $P = 4,58 \text{ mmHg}$ ($\approx 0,006 \text{ atm}$) e $T = 0,01 \ °\text{C}$; punto critico a $P_{cr} = 218 \text{ atm}$ e $T_{cr} = 374 \ °\text{C}$.
 
-La **CO2** segue invece il comportamento comune: la curva solido/liquido ha pendenza positiva, perché il volume specifico del liquido è maggiore di quello del solido, e un aumento di pressione favorisce la fase solida (più compatta), richiedendo una temperatura più alta per fondere. Il punto triplo della CO2 si trova a $P = 5,1 \text{ atm}$ e $T \approx -57 \ °\text{C}$ (le fonti riportano anche $-56,6 \ °\text{C}$), mentre il punto critico è a $P_{cr} = 73 \text{ atm}$ e $T_{cr} = 31 \ °\text{C}$. Poiché il punto triplo si trova a una pressione (5,1 atm) superiore a quella atmosferica, a $P = 1 \text{ atm}$ la CO2 non può esistere allo stato liquido: il solido sublima direttamente in vapore, da cui il nome "ghiaccio secco", impiegato per il trasporto refrigerato e in applicazioni industriali e mediche.
+La **CO2** segue invece il comportamento comune: la curva solido/liquido ha pendenza positiva, perché il volume specifico del liquido è maggiore di quello del solido, e un aumento di pressione favorisce la fase solida (più compatta), richiedendo una temperatura più alta per fondere. Il punto triplo della CO2 si trova a $P = 5,1 \text{ atm}$ e $T \approx -57 \ °\text{C}$ (più precisamente $-56,6 \ °\text{C}$), mentre il punto critico è a $P_{cr} = 73 \text{ atm}$ e $T_{cr} = 31 \ °\text{C}$. Poiché il punto triplo si trova a una pressione (5,1 atm) superiore a quella atmosferica, a $P = 1 \text{ atm}$ la CO2 non può esistere allo stato liquido: il solido sublima direttamente in vapore, da cui il nome "ghiaccio secco", impiegato per il trasporto refrigerato e in applicazioni industriali e mediche.
 
 :::image{src="assets/71c3886c-diagramma-fase-acqua.svg" alt="Diagramma pressione-temperatura dell'acqua con regioni solida, liquida e gassosa, curve di equilibrio, punto triplo, punto critico e linea a 1 atm." caption="Fig. 10.4 — Diagramma pressione-temperatura dell'acqua: la curva solido-liquido ha pendenza negativa."}
 :::

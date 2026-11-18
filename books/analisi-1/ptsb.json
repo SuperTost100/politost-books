@@ -3,6 +3,6 @@
   "packageType": "smartbook",
   "encrypted": false,
   "access": "public",
-  "createdAt": "2026-11-03T09:52:50.539Z",
-  "producer": "politost-smart-builder/0.3.0"
+  "createdAt": "2026-11-18T01:19:24.054Z",
+  "producer": "politost-smart-builder/0.5.1-alpha"
 }

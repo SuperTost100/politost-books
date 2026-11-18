@@ -26,7 +26,6 @@ dove $\vec{r}=P-O$ è il vettore posizione di $P$ rispetto al polo $O$.
 Dalle proprietà del prodotto vettoriale, già introdotte nella sezione su [vettori e versori](ref:chapter/1#p3), $\vec{M}_O$ è perpendicolare sia a $\vec{r}$ sia a $\vec{F}$, quindi perpendicolare al piano individuato da $\vec{r}$ e da $\vec{F}$; il suo verso si stabilisce con la regola della mano destra. L'unità di misura nel SI è
 
 $$
-
 \lbrack M\rbrack  = \mathrm{N}\cdot\mathrm{m} = \mathrm{kg}\cdot\mathrm{m}^2\cdot\mathrm{s}^{-2}.
 $$
 
@@ -55,7 +54,6 @@ dove $\alpha$ è l'angolo tra $\vec{r}$ e $\vec{F}$.
 **Teorema 5.1** (Modulo del momento tramite il braccio). Con le notazioni precedenti,
 
 $$
-
 |\vec{M}_O| = bF.
 $$
 
@@ -338,7 +336,7 @@ $$E_m = \frac12 m v^2 - \frac{GMm}{r} = -\frac12\,\frac{GMm}{r}$$
 
 cioè, su un'orbita circolare, l'energia cinetica (positiva) è in valore assoluto pari alla metà dell'energia potenziale (negativa), e l'energia meccanica totale è negativa e pari alla metà di $E_p$. Più in generale, limitandoci al problema gravitazionale newtoniano con l'energia potenziale nulla all'infinito, $E_p(\infty)=0$, e alle traiettorie con momento angolare $L>0$, il segno di $E_m$ classifica il tipo di orbita: iperbolica se $E_m>0$, parabolica se $E_m=0$, ellittica se $E_m<0$. Il caso limite $L=0$, pure compatibile con il teorema di conservazione dimostrato sopra, corrisponde invece a un moto puramente radiale, che non descrive un'ordinaria orbita e può terminare in una collisione con il centro della forza; va quindi trattato separatamente e non rientra in questa classificazione.
 
-:::image{src="assets/f00793db-classificazione-orbite-energia.svg" alt="Diagramma con tre livelli di energia meccanica E_m: positivo per l'orbita iperbolica, nullo per la parabolica, negativo per l'ellittica." caption="Fig. 5.4 — Il segno dell'energia meccanica E_m classifica il tipo di orbita in un campo gravitazionale con energia potenziale nulla all'infinito, per momento angolare L>0: iperbolica, parabolica o ellittica."}
+:::image{src="assets/f00793db-classificazione-orbite-energia.svg" alt="Diagramma con tre livelli di energia meccanica E_m: positivo per l'orbita iperbolica, nullo per la parabolica, negativo per l'ellittica." caption="Fig. 5.4 — Il segno dell'energia meccanica Eₘ classifica il tipo di orbita in un campo gravitazionale con energia potenziale nulla all'infinito, per momento angolare L>0: iperbolica, parabolica o ellittica."}
 :::
 
 Per un'orbita ellittica, la conservazione del momento angolare collega velocità e distanza dal centro nei due punti estremi dell'orbita, afelio (distanza massima) e perielio (distanza minima), dove $\vec{r}$ e $\vec{v}$ sono ortogonali tra loro:
@@ -361,7 +359,7 @@ $$v_p = \sqrt{\frac{2GM\,r_a}{r_p(r_a+r_p)}}, \qquad v_a = \sqrt{\frac{2GM\,r_p}
 
 *Controllo.* Le dimensioni di $v_p$ e $v_a$ sono quelle di una velocità. Nel limite di orbita circolare, $r_p=r_a=r$, entrambe le espressioni si riducono a $v_p=v_a=\sqrt{GM/r}$, coerente con la velocità orbitale circolare già ricavata in [Gravitazione e leggi di Keplero](ref:chapter/10#p2). Inoltre $v_p>v_a$ poiché $r_a>r_p$, come richiesto dalla costanza della velocità areolare.
 
-:::image{src="assets/f00793db-orbita-ellittica-perielio-afelio.svg" alt="Ellisse con il Sole posto in uno dei due fuochi, con il punto di perielio più vicino e il punto di afelio più lontano evidenziati sull'asse maggiore." caption="Fig. 5.5 — Orbita ellittica con il Sole in un fuoco: il perielio è il punto di distanza minima r_p, l'afelio il punto di distanza massima r_a; in entrambi r e v sono ortogonali."}
+:::image{src="assets/f00793db-orbita-ellittica-perielio-afelio.svg" alt="Ellisse con il Sole posto in uno dei due fuochi, con il punto di perielio più vicino e il punto di afelio più lontano evidenziati sull'asse maggiore." caption="Fig. 5.5 — Orbita ellittica con il Sole in un fuoco: il perielio è il punto di distanza minima rₚ, l'afelio il punto di distanza massima rₐ; in entrambi r e v sono ortogonali."}
 :::
 
 ### Errori tipici

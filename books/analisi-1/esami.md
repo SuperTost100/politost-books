@@ -3976,7 +3976,7 @@ da cui si vede anche che $f$ non ha asintoti verticali. Siccome il dominio $(-2,
 
 **(b)**
 
-Dalla discussione in (a) vediamo che $\lim_{x\to0}f(x)=0\ne-2=f(0)$, pertanto $f$ non è continua in $0$. D’altra parte, su ciascuno degli intervalli aperti $(0,2)$ e $(-2,0)$, $f$ coincide con la funzione continua $x\mapsto-\sqrt[4]{x^2(2-|x|)}$, pertanto $f$ è continua su $(-2,0)\cup(0,2)$.
+Dalla discussione in (a) vediamo che $\lim_{x\to0}f(x)=0\ne-2=f(0)$, pertanto $f$ non è continua in $0$: la discontinuità è eliminabile, perché il limite esiste finito ma è diverso da $f(0)$. D’altra parte, su ciascuno degli intervalli aperti $(0,2)$ e $(-2,0)$, $f$ coincide con la funzione continua $x\mapsto-\sqrt[4]{x^2(2-|x|)}$, pertanto $f$ è continua su $(-2,0)\cup(0,2)$.
 
 Per analoghe ragioni $f$ è derivabile su $(-2,0)\cup(0,2)$, e dalle regole di derivazione vediamo che, per ogni $x\in(-2,0)\cup(0,2)$,
 

@@ -167,8 +167,6 @@ Per **lavoro** si intende lo spostamento di un oggetto contro una forza opponent
 
 $$L = F \cdot s$$
 
-in accordo con la formulazione equivalente riportata in altre fonti del corso.
-
 L'**energia** è l'attitudine a compiere lavoro, o più in generale la capacità di un corpo di compiere lavoro o di trasferire calore. Nel Sistema Internazionale l'unità di energia (e di lavoro) è il joule, la cui analisi dimensionale è
 
 $$J = \frac{\text{kg} \cdot \text{m}^2}{\text{s}^2}$$

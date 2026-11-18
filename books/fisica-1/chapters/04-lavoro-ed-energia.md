@@ -285,7 +285,7 @@ Questo criterio locale è spesso più comodo da verificare rispetto al calcolo d
 
 $$F_x = -\frac{\partial E_p}{\partial x}, \qquad F_y = -\frac{\partial E_p}{\partial y}, \qquad F_z = -\frac{\partial E_p}{\partial z} .$$
 
-Questa definizione è presa dalle fonti. In forma compatta, usando il gradiente, questa relazione si scrive
+In forma compatta, usando il gradiente, questa relazione si scrive
 
 :::formula{id="4.13" label="Forza come opposto del gradiente dell'energia potenziale"}
 $$\vec{F} = -\vec{\nabla} E_p$$
@@ -357,7 +357,7 @@ $$E_k(B) - E_k(A) = E_p(A) - E_p(B) \quad\Longrightarrow\quad E_k(A) + E_p(A) = 
 
 I punti $A$ e $B$ sono arbitrari, quindi $E_m = E_k + E_p$ ha lo stesso valore in ogni punto della traiettoria, cioè è costante durante il moto. $\square$
 
-Questo risultato è preso dalle fonti. Il lavoro ottenuto a spese di una diminuzione di energia potenziale si traduce in un corrispondente aumento di energia cinetica, e viceversa, proprio perché la loro somma resta costante. Quando, come avviene in generale, agiscono sia forze conservative sia forze non conservative (per esempio l'attrito), il lavoro totale si scompone in $W = W_c + W_{nc}$, e ripetendo il calcolo precedente si trova che la variazione di energia meccanica è uguale al lavoro delle sole forze non conservative,
+Il lavoro ottenuto a spese di una diminuzione di energia potenziale si traduce in un corrispondente aumento di energia cinetica, e viceversa, proprio perché la loro somma resta costante. Quando, come avviene in generale, agiscono sia forze conservative sia forze non conservative (per esempio l'attrito), il lavoro totale si scompone in $W = W_c + W_{nc}$, e ripetendo il calcolo precedente si trova che la variazione di energia meccanica è uguale al lavoro delle sole forze non conservative,
 
 $$W_{nc} = E_{k,B} - E_{k,A} - E_{p,A} + E_{p,B} = E_{m,B} - E_{m,A} ,$$
 
@@ -391,10 +391,10 @@ Controllo: le unità sono coerenti, poiché $\text{N}\cdot\text{s}^2/\text{kg} =
 
 Lo studio della funzione $E_p(x)$ permette anche di individuare le posizioni di equilibrio e il tipo di moto nelle loro vicinanze, senza risolvere l'equazione del moto. Poiché $F(x) = -dE_p/dx$, un punto $x_0$ è di equilibrio se e solo se $dE_p/dx$ si annulla in $x_0$, cioè se $E_p$ ha in quel punto un punto stazionario. Se in un intorno di $x_0$ risulta $dE_p/dx<0$ per $x<x_0$ e $dE_p/dx>0$ per $x>x_0$, la forza è sempre diretta verso $x_0$ non appena il punto materiale se ne allontana di poco, e l'equilibrio è stabile: per piccoli spostamenti il moto è oscillatorio attorno a $x_0$, come già visto per la forza elastica, il cui potenziale $\tfrac{1}{2}kx^2$ ha minimo isolato in $x=0$ e verifica ovunque questa condizione sul segno della derivata. Il solo fatto che $x_0$ sia un minimo locale stretto di $E_p$ non basta, in generale, a garantire questo comportamento della forza in tutto un intorno, perché il potenziale potrebbe presentare piccole oscillazioni con altri punti stazionari arbitrariamente vicini a $x_0$; la condizione che garantisce con certezza il richiamo verso $x_0$ è quella sul segno della derivata appena enunciata. Analogamente, se in un intorno di $x_0$ risulta $dE_p/dx>0$ per $x<x_0$ e $dE_p/dx<0$ per $x>x_0$, la forza si allontana da $x_0$ appena il punto materiale viene spostato, e l'equilibrio è instabile; anche in questo caso il solo essere $x_0$ un massimo locale stretto non basta da solo a garantire tale comportamento in ogni punto dell'intorno. Diverso è il caso in cui $E_p$ resta costante su un intero tratto, non un minimo isolato ma un tratto piatto del grafico: in tal caso ogni punto del tratto è una posizione di equilibrio, perché la derivata di $E_p$ vi è ovunque nulla, ma non esiste alcuna forza di richiamo né alcun moto oscillatorio attorno a una posizione precisa, dato che il punto materiale resta semplicemente fermo dove si trova, senza essere né respinto né riportato verso un punto particolare.
 
-:::image{src="assets/cfcb3087-equilibrio-stabile-instabile-indifferente.svg" alt="Curva con una buca, una gobba e un tratto orizzontale" caption="Fig. 4.1 — Energia potenziale E_p(x) qualitativa con tre tipi di equilibrio: minimo isolato (stabile), massimo isolato (instabile) e tratto piatto (indifferente, nessuna forza di richiamo)"}
+:::image{src="assets/cfcb3087-equilibrio-stabile-instabile-indifferente.svg" alt="Curva con una buca, una gobba e un tratto orizzontale" caption="Fig. 4.1 — Energia potenziale Eₚ(x) qualitativa con tre tipi di equilibrio: minimo isolato (stabile), massimo isolato (instabile) e tratto piatto (indifferente, nessuna forza di richiamo)"}
 :::
 
-:::image{src="assets/cfcb3087-energia-potenziale-pozzo.svg" alt="Energia potenziale a forma di parabola con minimo nell'origine" caption="Fig. 4.2 — Energia potenziale elastica E_p(x) = (1/2) k x^2: il minimo in x = 0 è una posizione di equilibrio stabile"}
+:::image{src="assets/cfcb3087-energia-potenziale-pozzo.svg" alt="Energia potenziale a forma di parabola con minimo nell'origine" caption="Fig. 4.2 — Energia potenziale elastica Eₚ(x) = (1/2) k x²: il minimo in x = 0 è una posizione di equilibrio stabile"}
 :::
 
 Un tipico errore è dimenticare che la condizione di equilibrio riguarda la derivata prima di $E_p$, non il suo valore: un punto in cui $E_p$ è grande ma costante (un tratto piatto del grafico) è comunque un punto di equilibrio, mentre un punto in cui $E_p$ è piccolo ma con pendenza diversa da zero non lo è. Un secondo errore, già segnalato a proposito del lavoro, è scrivere uguaglianze dimensionalmente incoerenti nei passaggi intermedi, per esempio confondendo un numero puro con una grandezza dotata di unità; ogni singola uguaglianza di una catena di passaggi deve avere senso dimensionale, non solo il primo e l'ultimo membro.
