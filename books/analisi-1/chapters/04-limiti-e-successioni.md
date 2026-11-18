@@ -111,7 +111,7 @@ $$\forall M>0\ \exists N>0 \text{ tale che } \forall x \in \operatorname{dom}(f)
 
 Nell'esempio $f(x)=2^x$ su tutto $\mathbb{R}$, si verifica facilmente che $\lim_{x\to+\infty} 2^x = +\infty$ (caso 4) mentre $\lim_{x\to-\infty} 2^x = 0$ (caso 3, con $\ell=0$).
 
-:::image{src="assets/831bfb75-esponenziale-limiti.svg" alt="Grafico di 2 elevato a x con asintoto orizzontale y=0" caption="Fig. 4.1 — La funzione 2^x diverge a +infinito per x che tende a +infinito e tende a 0 per x che tende a -infinito"}
+:::image{src="assets/831bfb75-esponenziale-limiti.svg" alt="Grafico di 2 elevato a x con asintoto orizzontale y=0" caption="Fig. 4.1 — La funzione 2ˣ diverge a +infinito per x che tende a +infinito e tende a 0 per x che tende a -infinito"}
 :::
 
 ### Limiti unilateri
@@ -265,7 +265,7 @@ $$
 \lim_{x \to 0} x^2 \sin\left(\frac{1}{x}\right) = 0.
 $$
 
-:::image{src="assets/f3b5ae8c-teorema-carabinieri-esempio.svg" alt="Grafico di x^2 sin(1/x) compreso tra le parabole -x^2 e x^2 vicino a x=0" caption="Fig. 4.3 — La funzione g(x) = x^2 sin(1/x) è schiacciata tra f(x) = -x^2 e h(x) = x^2 in un intorno di x = 0"}
+:::image{src="assets/f3b5ae8c-teorema-carabinieri-esempio.svg" alt="Grafico di x^2 sin(1/x) compreso tra le parabole -x^2 e x^2 vicino a x=0" caption="Fig. 4.3 — La funzione g(x) = x² sin(1/x) è schiacciata tra f(x) = -x² e h(x) = x² in un intorno di x = 0"}
 :::
 
 Questa tecnica è esattamente quella alla base della dimostrazione del limite notevole del seno [(6.6)](ref:formula/6.6), ripresa nella sezione sui [Limiti notevoli](ref:chapter/6#p2).
@@ -367,7 +367,7 @@ Le operazioni che **non** hanno senso in $\mathbb{R}^*$ sono le forme indetermin
 
 $$+\infty-\infty,\qquad 0\cdot\infty,\qquad \frac{0}{0},\qquad \frac{\infty}{\infty},\qquad 1^{\infty},\qquad 0^0,\qquad \infty^0.$$
 
-Le ultime tre si ottengono dalle potenze $f^g=e^{g\log f}$ e si riconducono a $0\cdot\infty$. Anche la forma $\frac{0}{0}$ compare esplicitamente nelle fonti.
+Le ultime tre si ottengono dalle potenze $f^g=e^{g\log f}$ e si riconducono a $0\cdot\infty$.
 
 "Indeterminata" non vuol dire "il limite non esiste". Vuol dire che i soli limiti di $f$ e $g$ non bastano: bisogna studiare le funzioni. Con $x\to+\infty$ si ha infatti:
 

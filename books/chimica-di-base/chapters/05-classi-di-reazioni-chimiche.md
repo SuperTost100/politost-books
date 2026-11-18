@@ -331,7 +331,7 @@ $$2\,\text{H}^+ + 2e^- \to \text{H}_2 \qquad (\text{riduzione, H}^+\text{ è l'o
 
 e, poiché i due elettroni ceduti coincidono con i due elettroni acquistati, somando le semireazioni si ritrova l'equazione ionica netta $\text{Fe} + 2\text{H}^+ \to \text{Fe}^{2+} + \text{H}_2$.
 
-**Errore tipico 5.6.** Prima di applicare qualunque metodo di bilanciamento conviene verificare che la reazione sia davvero una redox, calcolando i N.O. di tutti gli elementi: la presenza di una sostanza allo stato elementare tra reagenti o prodotti (N.O. = 0) è un segnale quasi certo, ma in generale occorre controllare ogni atomo, perché un elemento apparentemente "coinvolto" (come il cloro nell'esempio) può in realtà non cambiare N.O..
+**Errore tipico 5.6.** Prima di applicare qualunque metodo di bilanciamento conviene verificare che la reazione sia davvero una redox, calcolando i N.O. di tutti gli elementi: la presenza di una sostanza allo stato elementare tra reagenti o prodotti (N.O. = 0) è un segnale quasi certo, ma in generale occorre controllare ogni atomo, perché un elemento apparentemente "coinvolto" (come il cloro nell'esempio) può in realtà non cambiare N.O.
 
 ### Bilanciamento con il metodo ionico-elettronico
 

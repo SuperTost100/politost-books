@@ -302,7 +302,7 @@ Il secondo effetto, più sottile, è dovuto all’accelerazione di Coriolis $\ve
 
 $$\vec{a}' = \vec{g} + 2\omega v'\cos\phi\,\hat{u}_x'$$
 
-dove il termine in $2\omega v'\cos\phi$ è l'accelerazione di Coriolis, diretta lungo $+\hat{u}_x'$ (cioè verso est, essendo $\hat{u}_y'$ stato definito verso nord), responsabile di una caduta dei gravi deviata verso est rispetto alla verticale, come riportano le fonti del corso.
+dove il termine in $2\omega v'\cos\phi$ è l'accelerazione di Coriolis, diretta lungo $+\hat{u}_x'$ (cioè verso est, essendo $\hat{u}_y'$ stato definito verso nord), responsabile di una caduta dei gravi deviata verso est rispetto alla verticale.
 
 **Esempio 6.3** (deviazione verso est di un grave in caduta libera). Un corpo viene lasciato cadere da fermo da un'altezza $h$ a latitudine $\phi$. Si vuole stimare lo spostamento verso est accumulato durante la caduta, trascurando la resistenza dell'aria e il piccolo contributo centrifugo rispetto a quello di Coriolis (termine di ordine superiore).
 

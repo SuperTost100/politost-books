@@ -77,7 +77,7 @@ $$\int_1^{+\infty} \frac{1}{x^\alpha}\,dx = \begin{cases} \text{converge (e vale
 
 Questo risultato, cruciale quanto il comportamento della serie armonica generalizzata, va memorizzato: all'infinito l'integrale di $1/x^\alpha$ converge se e solo se l'esponente è **strettamente maggiore di 1**.
 
-:::image{src="assets/f41d430c-confronto-1-x-1-x2-infinito.svg" alt="Grafici di 1/x e 1/x^2 per x che va da 1 a più infinito" caption="Fig. 10.1 — Confronto tra 1/x (area divergente) e 1/x^2 (area convergente) su [1, +infinito["}
+:::image{src="assets/f41d430c-confronto-1-x-1-x2-infinito.svg" alt="Grafici di 1/x e 1/x^2 per x che va da 1 a più infinito" caption="Fig. 10.1 — Confronto tra 1/x (area divergente) e 1/x² (area convergente) su [1, +infinito["}
 :::
 
 La stessa soglia vale per ogni $a>0$. Infatti, per $M>a$, la differenza tra gli integrali troncati con estremo inferiore $a$ e $1$ è l'integrale di $x^{-\alpha}$ sull'intervallo compreso tra $a$ e $1$, con il segno determinato dall'ordine degli estremi. Tale intervallo è compatto e contenuto in $\rbrack 0,+\infty\lbrack $, dove $x^{-\alpha}$ è continua; la differenza è dunque finita e non modifica la convergenza o la divergenza all'infinito. Pertanto, $\int_a^{+\infty} \frac{1}{x^\alpha}\,dx$ converge se $\alpha>1$ e diverge se $\alpha\le 1$.

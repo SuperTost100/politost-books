@@ -442,7 +442,7 @@ $$\lim_{x\to x_0} \frac{f(x)}{g(x)} = \lim_{x\to x_0} \frac{f'(x)}{g'(x)}$$
 
 Il teorema vale anche sostituendo $x \to x_0$ con $x \to x_0^+$, $x \to x_0^-$, $x \to +\infty$ oppure $x \to -\infty$, con le opportune modifiche sull'intorno in cui valgono le ipotesi. Inoltre può essere applicato più volte in successione, a patto che a ogni passo le ipotesi del teorema continuino a essere verificate.
 
-**Osservazione 7.2.** Le fonti presentano l'enunciato in forme leggermente diverse: alcune richiedono $g'(x) \neq 0$ solo in un intorno di $x_0$ privato del punto stesso, altre lo richiedono su tutto $I \setminus \{x_0\}$. In pratica, nella risoluzione degli esercizi è sufficiente verificare che $g'(x) \neq 0$ in un intorno sufficientemente piccolo di $x_0$, perché il limite è un fenomeno locale.
+**Osservazione 7.2.** Il teorema si trova enunciato in forme leggermente diverse: alcune richiedono $g'(x) \neq 0$ solo in un intorno di $x_0$ privato del punto stesso, altre lo richiedono su tutto $I \setminus \{x_0\}$. In pratica, nella risoluzione degli esercizi è sufficiente verificare che $g'(x) \neq 0$ in un intorno sufficientemente piccolo di $x_0$, perché il limite è un fenomeno locale.
 
 ### Dimostrazione (caso $0/0$, con derivate continue in $x_0$)
 
@@ -488,7 +488,7 @@ $$\lim_{x\to +\infty} \frac{1/x}{1} = 0,$$
 
 quindi $\lim_{x\to +\infty} \frac{\log x}{x} = 0$, in accordo con la gerarchia degli infiniti già nota (si veda [Infiniti e infinitesimi](ref:chapter/6#p3)).
 
-:::image{src="assets/914c6d87-esempio-x-seno-x.svg" alt="Grafico di (x - sin x)/x^3 vicino a zero" caption="Fig. 7.7 — L'andamento di (x-sin x)/x^3 vicino a x=0: il limite vale 1/6, coerente con l'applicazione ripetuta di de l'Hôpital"}
+:::image{src="assets/914c6d87-esempio-x-seno-x.svg" alt="Grafico di (x - sin x)/x^3 vicino a zero" caption="Fig. 7.7 — L'andamento di (x-sin x)/x³ vicino a x=0: il limite vale 1/6, coerente con l'applicazione ripetuta di de l'Hôpital"}
 :::
 
 ### Quando de l'Hôpital non si applica (o non conviene)

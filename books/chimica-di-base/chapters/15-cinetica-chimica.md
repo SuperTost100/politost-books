@@ -46,7 +46,7 @@ L’unità di $k$ si ricava imponendo che la legge restituisca una velocità in 
 
 Il **metodo delle velocità iniziali** confronta esperimenti alla stessa temperatura e nelle stesse condizioni, variando la concentrazione iniziale di un solo reagente per volta. Per ogni prova si misura la pendenza iniziale della curva concentrazione-tempo. Nel rapporto tra due velocità iniziali, $k$ e le concentrazioni mantenute uguali si semplificano: resta l’effetto del reagente variato. Ottenuti gli ordini, si sostituiscono i dati di una prova nella legge per ricavare $k$.
 
-**Esempio svolto 15.1** (dati ipotetici). Per $\mathrm{2NO+2H_2\rightarrow N_2+2H_2O}$ si supponga di misurare, alla stessa temperatura, le seguenti velocità iniziali. La legge $v=k\lbrack \mathrm{NO}\rbrack ^2\lbrack \mathrm{H_2}\rbrack $ è anche un risultato sperimentale riportato nelle note del corso; qui i numeri sono scelti per mostrare come ricavarla.
+**Esempio svolto 15.1** (dati ipotetici). Per $\mathrm{2NO+2H_2\rightarrow N_2+2H_2O}$ si supponga di misurare, alla stessa temperatura, le seguenti velocità iniziali. La legge $v=k\lbrack \mathrm{NO}\rbrack ^2\lbrack \mathrm{H_2}\rbrack $ è quella osservata sperimentalmente per questa reazione; qui i numeri sono scelti per mostrare come ricavarla.
 
 1. **Dati.** Nella prova $1$, $\lbrack \mathrm{NO}\rbrack _0=0{,}100\ \mathrm{mol/L}$, $\lbrack \mathrm{H_2}\rbrack _0=0{,}100\ \mathrm{mol/L}$ e $v_{0,1}=2{,}00\times10^{-4}\ \mathrm{mol/(L\cdot s)}$. Nella prova $2$, solo $\lbrack \mathrm{NO}\rbrack _0$ raddoppia a $0{,}200\ \mathrm{mol/L}$ e $v_{0,2}=8{,}00\times10^{-4}\ \mathrm{mol/(L\cdot s)}$. Nella prova $3$, rispetto alla prova $1$ raddoppia solo $\lbrack \mathrm{H_2}\rbrack _0$ a $0{,}200\ \mathrm{mol/L}$ e $v_{0,3}=4{,}00\times10^{-4}\ \mathrm{mol/(L\cdot s)}$.
 2. **Strategia.** Si confrontano prima le prove $1$ e $2$ per isolare l’ordine in $\mathrm{NO}$, poi le prove $1$ e $3$ per isolare quello in $\mathrm{H_2}$.
@@ -157,7 +157,7 @@ $$\ln\frac{k_2}{k_1} = -\frac{E_a}{R}\left(\frac{1}{T_2}-\frac{1}{T_1}\right)$$
 
 Questa formula, risolta per $E_a$, permette di calcolare l'energia di attivazione da due sole misure della costante di velocità.
 
-:::image{src="assets/bc0be663-grafico-arrhenius.svg" alt="Grafico del logaritmo naturale della costante di velocità in funzione dell'inverso della temperatura assoluta, con retta decrescente" caption="Fig. 15.3 — Diagramma di Arrhenius: ln k in funzione di 1/T. La pendenza della retta è -E_a/R."}
+:::image{src="assets/bc0be663-grafico-arrhenius.svg" alt="Grafico del logaritmo naturale della costante di velocità in funzione dell'inverso della temperatura assoluta, con retta decrescente" caption="Fig. 15.3 — Diagramma di Arrhenius: ln k in funzione di 1/T. La pendenza della retta è -Eₐ/R."}
 :::
 
 **Esempio svolto 15.3.** Per una reazione si misura $k_1 = 3{,}0 \times 10^{-4}\ \text{s}^{-1}$ a $T_1 = 300\ \text{K}$ e $k_2 = 2{,}4 \times 10^{-3}\ \text{s}^{-1}$ a $T_2 = 320\ \text{K}$. Si vuole calcolare l'energia di attivazione.
@@ -258,4 +258,4 @@ La sintesi industriale dell’ammoniaca combina azoto e idrogeno su un catalizza
 
 La reazione è esotermica, con $\Delta H_r^\circ\simeq-91{,}8\ \mathrm{kJ/mol}$ per l’equazione scritta. Una temperatura più bassa favorisce l’ammoniaca all’equilibrio, ma rallenta la cinetica; una pressione più alta favorisce il lato con meno moli gassose, cioè i prodotti. Sono effetti di equilibrio e di velocità distinti, descritti anche nel [Principio di Le Châtelier](ref:chapter/12#p4).
 
-Un assetto riportato nel materiale del corso usa circa $450\ ^\circ\mathrm{C}$ e $230\ \mathrm{atm}$, con un letto catalitico fisso a base di ferro. All’uscita si raffredda la miscela per condensare l’ammoniaca e si ricircolano i gas rimasti: la separazione del prodotto e il riciclo contribuiscono alla produzione complessiva. Il catalizzatore rende praticabile una velocità adeguata alla temperatura scelta, ma non sposta da sé l’equilibrio.
+Un assetto industriale tipico usa circa $450\ ^\circ\mathrm{C}$ e $230\ \mathrm{atm}$, con un letto catalitico fisso a base di ferro. All’uscita si raffredda la miscela per condensare l’ammoniaca e si ricircolano i gas rimasti: la separazione del prodotto e il riciclo contribuiscono alla produzione complessiva. Il catalizzatore rende praticabile una velocità adeguata alla temperatura scelta, ma non sposta da sé l’equilibrio.

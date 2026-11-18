@@ -172,7 +172,7 @@ $$h\nu = E_2 - E_1 = R_h\left(\frac{1}{n_1^2}-\frac{1}{n_2^2}\right)$$
 
 espressione che, per $E_1 < 0$ ed $E_2$ più vicino a zero (ossia $n_2 > n_1$), riproduce esattamente l'equazione empirica di Rydberg. Questo è il grande risultato del modello: calcolando le differenze di energia fra i livelli previsti da Bohr si ottengono proprio le frequenze osservate sperimentalmente nello spettro dell'idrogeno.
 
-:::image{src="assets/7951e11d-livelli-energetici-bohr.svg" alt="Livelli energetici dell'atomo di idrogeno secondo il modello di Bohr" caption="Fig. 8.4 — Livelli energetici E_n = -R_h/n^2 per n = 1, 2, 3, 4, 5: l'energia è negativa, cresce (si avvicina a zero) con n e i livelli si addensano verso lo zero, limite per n che tende a infinito."}
+:::image{src="assets/7951e11d-livelli-energetici-bohr.svg" alt="Livelli energetici dell'atomo di idrogeno secondo il modello di Bohr" caption="Fig. 8.4 — Livelli energetici Eₙ = -Rₕ/n² per n = 1, 2, 3, 4, 5: l'energia è negativa, cresce (si avvicina a zero) con n e i livelli si addensano verso lo zero, limite per n che tende a infinito."}
 :::
 
 **Esempio svolto 8.3** (transizione $n = 3 \to n = 2$)
@@ -201,7 +201,7 @@ Uno sbaglio frequente è confondere il segno dell'energia: poiché $E_n$ è nega
 
 Il modello di Bohr ebbe il merito storico di collegare per la prima volta la struttura discreta dei livelli energetici alla comparsa di righe spettrali, spiegando correttamente lo spettro dell'idrogeno e permettendo di ricavarne esattamente i dati, comprese le serie di Lyman, Balmer e Paschen.
 
-Il modello presenta però limiti importanti, segnalati dagli stessi appunti del corso:
+Il modello presenta però limiti importanti:
 
 - è valido solo per l'idrogeno e per gli ioni idrogenoidi, cioè le specie con un solo elettrone (He$^+$, Li$^{2+}$, ...), perché non tiene conto delle repulsioni tra più elettroni né delle attrazioni aggiuntive nucleo-elettroni in atomi polielettronici; lo spettro dell'elio, ad esempio, presenta righe non previste dal modello;
 - non spiega l'intensità delle righe spettrali né la loro suddivisione in presenza di campi magnetici (effetto Zeeman);

@@ -189,7 +189,7 @@ Numeri: $|\vec{a}| = \sqrt{(3,0\ \text{m})^2 + (4,0\ \text{m})^2} = \sqrt{9,0 + 
 
 Controllo dimensionale: $a_x, a_y$ e $|\vec{a}|$ sono tutte lunghezze in metri, coerentemente con {{formula:1.5}}; l'angolo è adimensionale, come deve essere l'argomento dell'arcotangente.
 
-:::image{src="assets/48612b66-esempio-vettore-componenti.svg" alt="Vettore a nel piano xy con componenti 3,0 m e 4,0 m, modulo 5,0 m e angolo di 53° rispetto all'asse x" caption="Fig. 1.1 — Il vettore dell'esempio, con componenti a_x = 3,0 m e a_y = 4,0 m: il modulo è 5,0 m e l'angolo con l'asse x è circa 53°."}
+:::image{src="assets/48612b66-esempio-vettore-componenti.svg" alt="Vettore a nel piano xy con componenti 3,0 m e 4,0 m, modulo 5,0 m e angolo di 53° rispetto all'asse x" caption="Fig. 1.1 — Il vettore dell'esempio, con componenti aₓ = 3,0 m e a_y = 4,0 m: il modulo è 5,0 m e l'angolo con l'asse x è circa 53°."}
 :::
 
 ### Prodotto scalare e prodotto vettoriale

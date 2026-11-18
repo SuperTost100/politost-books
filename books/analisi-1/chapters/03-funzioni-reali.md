@@ -84,7 +84,7 @@ Questa seconda formulazione è quasi sempre la più comoda da usare negli eserci
 
 Una funzione si dice **biettiva** (o biunivoca) se e solo se è contemporaneamente iniettiva e suriettiva.
 
-:::image{src="assets/9715ac5f-x-quadro-non-iniettiva.svg" alt="Grafico di x al quadrato con una retta orizzontale che lo interseca in due punti" caption="Fig. 3.1 — La funzione x^2 su R non è iniettiva: la retta y = 4 interseca il grafico in due punti, x = -2 e x = 2"}
+:::image{src="assets/9715ac5f-x-quadro-non-iniettiva.svg" alt="Grafico di x al quadrato con una retta orizzontale che lo interseca in due punti" caption="Fig. 3.1 — La funzione x² su R non è iniettiva: la retta y = 4 interseca il grafico in due punti, x = -2 e x = 2"}
 :::
 
 **Esempio svolto completo.** Studiamo iniettività, suriettività e biettività di
@@ -227,7 +227,7 @@ $$
 
 Graficamente, se $G(f) = \{(x, f(x)) : x \in \operatorname{dom} f\}$ allora $G(f^{-1}) = \{(f(x), x) : x \in \operatorname{dom} f\}$: il grafico dell'inversa si ottiene scambiando le coordinate di ogni punto, quindi riflettendo $G(f)$ rispetto alla retta $y = x$.
 
-:::image{src="assets/a638d69c-funzione-inversa-simmetria.svg" alt="Grafici di f(x)=exp(x) e della sua inversa log(x), simmetrici rispetto alla retta y=x" caption="Fig. 3.3 — I grafici di y = e^x e y = log x sono simmetrici rispetto alla bisettrice y = x"}
+:::image{src="assets/a638d69c-funzione-inversa-simmetria.svg" alt="Grafici di f(x)=exp(x) e della sua inversa log(x), simmetrici rispetto alla retta y=x" caption="Fig. 3.3 — I grafici di y = eˣ e y = log x sono simmetrici rispetto alla bisettrice y = x"}
 :::
 
 **Esempio 3.6 (calcolo dell'inversa).** Sia $f(x) = ax + b$ con $a \neq 0$, definita e biettiva su $\mathbb{R}$. Per trovare $f^{-1}$ si pone $y = ax+b$ e si risolve rispetto a $x$:
@@ -510,7 +510,7 @@ Ogni punto di massimo (o minimo) assoluto è anche un punto di massimo (o minimo
 
 **Esempio 3.12.** Consideriamo $f(x) = x^3 - 3x + 2$ su $\lbrack -2, 2\rbrack $. Si verifica (con gli strumenti del calcolo differenziale) che $f$ ha un punto di massimo relativo in $x = -1$, con valore $f(-1) = 4$, e un punto di minimo relativo in $x = 1$, con valore $f(1) = 0$. Poiché agli estremi dell'intervallo si ha $f(-2) = 0$ e $f(2) = 4$, i valori $4$ e $0$ sono anche il massimo e il minimo assoluti di $f$ su $\lbrack -2,2\rbrack $; in questo caso essi sono raggiunti sia in punti interni che agli estremi, il che mostra che un punto di estremo relativo può coincidere con un punto di estremo assoluto ma non è garantito che accada.
 
-:::image{src="assets/72d81f23-massimi-minimi-cubica.svg" alt="Grafico di x al cubo meno 3x più 2 con massimo relativo in -1 e minimo relativo in 1" caption="Fig. 3.7 — Punto di massimo relativo in x = -1 e punto di minimo relativo in x = 1 per f(x) = x^3 - 3x + 2"}
+:::image{src="assets/72d81f23-massimi-minimi-cubica.svg" alt="Grafico di x al cubo meno 3x più 2 con massimo relativo in -1 e minimo relativo in 1" caption="Fig. 3.7 — Punto di massimo relativo in x = -1 e punto di minimo relativo in x = 1 per f(x) = x³ - 3x + 2"}
 :::
 
 Non tutte le funzioni hanno massimo e minimo assoluti: $f(x) = 1/x$ su $\rbrack 0,1\rbrack $ è illimitata superiormente e non ha massimo. Per una funzione continua su un intervallo chiuso e limitato la loro esistenza è garantita dal [teorema di Weierstrass](ref:chapter/5#p5), che si vedrà dopo aver introdotto la continuità.

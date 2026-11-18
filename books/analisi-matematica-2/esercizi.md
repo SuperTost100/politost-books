@@ -1429,7 +1429,7 @@ Derivate due volte con la regola della catena: $u_{xx}-u_{yy}$ si semplifica a u
 :::
 
 :::solution
-**1.** Come sopra, $u_x=v_s+v_t$ e $u_y=v_s-v_t$. Derivando ancora,
+**1.** Per la regola della catena, $u_x=v_s+v_t$ e $u_y=v_s-v_t$. Derivando ancora,
 
 $$u_{xx}=v_{ss}+2v_{st}+v_{tt},\qquad u_{yy}=v_{ss}-2v_{st}+v_{tt}.$$
 
@@ -4402,7 +4402,7 @@ $$\int_{-\pi}^{\pi}u(x)\cos 3x\,dx=\pi a_3=\frac{\pi}{6}.$$
 
 $$\int_{-\pi}^{\pi}e^{2\cos x}dx=2\pi\sum_{n\ge0}\frac1{(n!)^2}.$$
 
-Controllo numerico: la serie vale circa $1+1+\frac14+\frac1{36}+\frac1{576}\approx2.2796$.
+Controllo numerico: la serie vale circa $1+1+\frac14+\frac1{36}+\frac1{576}+\frac1{14400}+\dots\approx2{,}2796$.
 :::
 :::
 

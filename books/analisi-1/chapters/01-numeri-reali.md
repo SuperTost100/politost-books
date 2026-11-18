@@ -126,7 +126,7 @@ $$
 
 cioè $I$ "non ha buchi".
 
-In questo libro gli intervalli si indicano sempre con parentesi quadre, mai con la notazione $(a,b)$ usata in altri testi (incluse alcune dispense di riferimento, che impiegano appunto $(a,b)$):
+In questo libro gli intervalli si indicano sempre con parentesi quadre, mai con la notazione $(a,b)$ usata in altri testi:
 
 - $\lbrack a, b\rbrack  = \{x \in \mathbb{R} : a \le x \le b\}$, intervallo **chiuso**;
 - $\rbrack a, b\lbrack  = \{x \in \mathbb{R} : a < x < b\}$, intervallo **aperto**;

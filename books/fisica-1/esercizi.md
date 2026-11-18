@@ -247,7 +247,7 @@ Trova il tempo positivo imponendo quota nulla nella legge verticale. Usa poi il 
 :::
 
 :::solution
-La quota è $y(t)=15+16t-5t^2$. Ponendo $y(t)=0$ si ottiene $t^2-3.2t-3=0$, dunque $t=(16+\sqrt{556})/10=(8+\sqrt{139})/5\,\mathrm{s}$ per la radice positiva. La distanza orizzontale è $x=v_{0x}t=12(8+\sqrt{139})/5\,\mathrm{m}$. All’impatto la componente verticale della velocità è $v_y=16-10t=-2\sqrt{139}\,\mathrm{m/s}$, mentre quella orizzontale resta $12\,\mathrm{m/s}$. Il modulo della velocità è $\sqrt{12^2+(-2\sqrt{139})^2}=\sqrt{700}=10\sqrt7\,\mathrm{m/s}$.
+La quota è $y(t)=15+16t-5t^2$. Ponendo $y(t)=0$ si ottiene $t^2-3{,}2t-3=0$, dunque $t=(16+\sqrt{556})/10=(8+\sqrt{139})/5\,\mathrm{s}\approx3{,}96\,\mathrm{s}$ per la radice positiva. La distanza orizzontale è $x=v_{0x}t=12(8+\sqrt{139})/5\,\mathrm{m}\approx47{,}5\,\mathrm{m}$. All’impatto la componente verticale della velocità è $v_y=16-10t=-2\sqrt{139}\,\mathrm{m/s}$, mentre quella orizzontale resta $12\,\mathrm{m/s}$. Il modulo della velocità è $\sqrt{12^2+(-2\sqrt{139})^2}=\sqrt{700}=10\sqrt7\,\mathrm{m/s}\approx26{,}5\,\mathrm{m/s}$.
 :::
 :::
 
@@ -338,7 +338,7 @@ Scomponi la velocità iniziale nelle componenti orizzontale e verticale. Il temp
 :::
 
 :::solution
-Le componenti iniziali sono $v_{0x}=20\cos30^\circ=10\sqrt3\,\mathrm{m/s}$ e $v_{0y}=20\sin30^\circ=10\,\mathrm{m/s}$. La quota è $y(t)=10t-5t^2$; oltre all’istante iniziale, si annulla a $t=2\,\mathrm{s}$. La gittata è $R=v_{0x}t=10\sqrt3\cdot2=20\sqrt3\,\mathrm{m}$.
+Le componenti iniziali sono $v_{0x}=20\cos30^\circ=10\sqrt3\,\mathrm{m/s}$ e $v_{0y}=20\sin30^\circ=10\,\mathrm{m/s}$. La quota è $y(t)=10t-5t^2$; oltre all’istante iniziale, si annulla a $t=2\,\mathrm{s}$. La gittata è $R=v_{0x}t=10\sqrt3\cdot2=20\sqrt3\,\mathrm{m}\approx34{,}6\,\mathrm{m}$.
 :::
 :::
 
@@ -676,7 +676,7 @@ Per una forza costante, l’impulso è il prodotto della forza per l’intervall
 :::
 
 :::solution
-L’impulso è $J=F\Delta t=(5{,}0\,\mathrm{N})(0{,}40\,\mathrm{s})=2{,}0\,\mathrm{N\,s}$. Per il teorema dell’impulso, la variazione della quantità di moto è uguale all’impulso.
+L’impulso è $J=F\Delta t=(5{,}0\,\mathrm{N})(0{,}40\,\mathrm{s})=2{,}0\,\mathrm{N\,s}$. Per il teorema dell’impulso, la variazione della quantità di moto è uguale all’impulso: $\Delta p=J=2{,}0\,\mathrm{kg\,m/s}$.
 :::
 :::
 
@@ -865,22 +865,20 @@ L’energia potenziale gravitazionale aumenta di $58.8\,\text{J}$.
 
 :::exercise{id="E4.9" chapter="4" difficulty="difficile"}
 ## Domanda
-Un corpo di massa $3.0\,\text{kg}$ parte da fermo dalla posizione $x_0$, con $0<x_0<2.0\,\text{m}$, e si muove lungo l’asse $x$ sotto l’azione della forza $\vec F(x)=6x\,\text{N}\,\hat\imath$, con $x$ espresso in metri. Calcolare la velocità quando raggiunge $x=2.0\,\text{m}$.
+Un corpo di massa $3.0\,\mathrm{kg}$ parte da fermo dalla posizione $x_0=1.0\,\mathrm{m}$ e si muove lungo l’asse $x$ sotto l’azione della forza $\vec F(x)=6x\,\mathrm{N}\,\hat\imath$, con $x$ espresso in metri. Calcolare la velocità quando raggiunge $x=2.0\,\mathrm{m}$.
 
 :::hint
-Calcola il lavoro della forza integrando da $x_0$ a $2.0\,\text{m}$, poi applica il teorema dell’energia cinetica.
+Calcola il lavoro della forza integrando da $1.0\,\mathrm{m}$ a $2.0\,\mathrm{m}$, poi applica il teorema dell’energia cinetica.
 :::
 
 :::solution
-Il lavoro compiuto tra la posizione iniziale $x_0$ e $x=2.0\,\text{m}$ è
+Il lavoro compiuto tra la posizione iniziale e quella finale è
 
-$$W=\int_{x_0}^{2.0}6x\,dx=\left[3x^2\right]_{x_0}^{2.0}=12-3x_0^2\,\text{J}.$$
+$$W=\int_{1.0}^{2.0}6x\,dx=\left[3x^2\right]_{1.0}^{2.0}=9.0\,\mathrm{J}.$$
 
-Poiché il corpo parte da fermo, il teorema dell’energia cinetica dà $\frac12mv^2=W$. Con $m=3.0\,\text{kg}$ si ottiene
+Poiché il corpo parte da fermo, il teorema dell’energia cinetica dà $\frac12mv^2=W$. Con $m=3.0\,\mathrm{kg}$ si ottiene
 
-$$v=\sqrt{\frac{2W}{m}}=\sqrt{8-2x_0^2}\,\text{m/s}.$$
-
-La velocità dipende dalla posizione iniziale e non ha un valore numerico univoco senza specificare $x_0$. Se invece $x_0=0$, la forza iniziale è nulla e, partendo da fermo sotto la sola azione di questa forza, il corpo resta in $x=0$ e non raggiunge $x=2.0\,\text{m}$.
+$$v=\sqrt{\frac{2W}{m}}=\sqrt{6.0}\,\mathrm{m/s}\approx2.4\,\mathrm{m/s}.$$
 :::
 :::
 
@@ -1028,13 +1026,13 @@ $$N_w(5{,}0\ \text{m})\sin 53^\circ=(20g)(2{,}5\ \text{m})\cos 53^\circ+(60g)(3{
 
 Pertanto
 
-$$N_w=\frac{g\cos 53^\circ}{5{,}0\ \text{m}\sin 53^\circ}\bigl[(20\ \text{kg})(2{,}5\ \text{m})+(60\ \text{kg})(3{,}0\ \text{m})\bigr]\simeq339\ \text{N}.$$
+$$N_w=\frac{g\cos 53^\circ}{5{,}0\ \text{m}\sin 53^\circ}\bigl[(20\ \text{kg})(2{,}5\ \text{m})+(60\ \text{kg})(3{,}0\ \text{m})\bigr]\simeq339{,}7\ \text{N}.$$
 
-L’equilibrio orizzontale richiede che l’attrito al piede abbia modulo uguale a $N_w$ e sia diretto verso la parete: $f_s\simeq339\ \text{N}$. Dall’equilibrio verticale, la reazione normale del pavimento bilancia il peso totale:
+L’equilibrio orizzontale richiede che l’attrito al piede abbia modulo uguale a $N_w$ e sia diretto verso la parete: $f_s\simeq339{,}7\ \text{N}$. Dall’equilibrio verticale, la reazione normale del pavimento bilancia il peso totale:
 
 $$N_p=(20\ \text{kg}+60\ \text{kg})g=784\ \text{N}.$$
 
-L’attrito statico massimo vale $f_{s,\max}=\mu_sN_p=(0{,}50)(784\ \text{N})=392\ \text{N}$. Poiché $339\ \text{N}<392\ \text{N}$, l’attrito disponibile è sufficiente e l’equilibrio è possibile.
+L’attrito statico massimo vale $f_{s,\max}=\mu_sN_p=(0{,}50)(784\ \text{N})=392\ \text{N}$. Poiché $339{,}7\ \text{N}<392\ \text{N}$, l’attrito disponibile è sufficiente e l’equilibrio è possibile.
 :::
 :::
 
@@ -1105,30 +1103,7 @@ perciò $R_y=60\ \text{N}$, diretta verso l’alto.
 :::
 :::
 
-:::exercise{id="E6.1" chapter="6" difficulty="facile"}
-## Domanda
-Una persona di massa $60\,\mathrm{kg}$ si trova su una bilancia in un ascensore che accelera verso l'alto con accelerazione $1{,}5\,\mathrm{m/s^2}$. Calcola la lettura della bilancia, cioè la forza normale esercitata sulla persona. Usa $g=9{,}8\,\mathrm{m/s^2}$.
-
-:::hint
-Scrivi la seconda legge di Newton per la persona nel riferimento inerziale, prendendo verso l'alto come positivo. La bilancia misura la forza normale, non il peso gravitazionale.
-:::
-
-:::solution
-Le forze sulla persona sono la forza normale $N$ diretta verso l'alto e il peso $mg$ diretto verso il basso. Applicando la seconda legge di Newton lungo la verticale:
-
-$$
-N-mg=ma.
-$$
-
-Isoliamo la lettura della bilancia e sostituiamo i dati:
-
-$$
-N=m(g+a)=(60\,\mathrm{kg})(9{,}8\,\mathrm{m/s^2}+1{,}5\,\mathrm{m/s^2})=678\,\mathrm{N}.
-$$
-:::
-:::
-
-:::exercise{id="E6.2" chapter="6" difficulty="difficile"}
+:::exercise{id="E6.1" chapter="6" difficulty="difficile"}
 ## Domanda
 Una piattaforma ruota in senso antiorario attorno a un asse verticale fisso con velocità angolare costante $\omega=2\,\mathrm{rad/s}$. Un punto si trova a distanza $r=1{,}5\,\mathrm{m}$ dall'asse e in quell'istante si muove radialmente verso l'esterno rispetto alla piattaforma con velocità $0{,}4\,\mathrm{m/s}$ e accelerazione relativa nulla. Determina la velocità e l'accelerazione assolute del punto, espresse nelle direzioni radiale $\hat{\mathbf e}_r$ e tangenziale $\hat{\mathbf e}_\theta$, dove $\hat{\mathbf e}_\theta$ indica il verso antiorario.
 
@@ -1169,7 +1144,7 @@ $$
 :::
 :::
 
-:::exercise{id="E6.3" chapter="6" difficulty="facile"}
+:::exercise{id="E6.2" chapter="6" difficulty="facile"}
 ## Domanda
 Due automobili si muovono lungo una strada rettilinea nello stesso verso. Rispetto al suolo, la prima viaggia a $18\,\mathrm{m/s}$ e la seconda a $6\,\mathrm{m/s}$. Determina la velocità della seconda automobile rispetto alla prima e indica il verso del moto relativo.
 
@@ -1188,7 +1163,7 @@ Il segno negativo indica che, rispetto alla prima automobile, la seconda si muov
 :::
 :::
 
-:::exercise{id="E6.4" chapter="6" difficulty="difficile"}
+:::exercise{id="E6.3" chapter="6" difficulty="difficile"}
 ## Domanda
 Una piattaforma ruota in senso antiorario con velocità angolare costante $\omega=3\,\mathrm{rad/s}$. Un punto materiale di massa $2\,\mathrm{kg}$ si trova a distanza $r=2\,\mathrm{m}$ dall'asse e si muove radialmente verso l'esterno rispetto alla piattaforma a $4\,\mathrm{m/s}$. Calcola nel riferimento rotante la forza centrifuga apparente e la forza di Coriolis, specificando componenti e versi nelle direzioni $\hat{\mathbf e}_r$ e $\hat{\mathbf e}_\theta$, con $\hat{\mathbf e}_\theta$ nel verso antiorario. Determina anche il modulo della loro risultante apparente.
 
@@ -1217,7 +1192,7 @@ $$
 :::
 :::
 
-:::exercise{id="E6.5" chapter="6" difficulty="medio"}
+:::exercise{id="E6.4" chapter="6" difficulty="medio"}
 ## Domanda
 Una barca attraversa un fiume largo $120\,\mathrm{m}$. Rispetto all'acqua, la sua velocità è perpendicolare alle rive e ha modulo $5\,\mathrm{m/s}$. L'acqua scorre parallelamente alle rive a $3\,\mathrm{m/s}$. Assumendo costanti entrambe le velocità, determina il tempo di attraversamento, lo spostamento lungo la corrente e il modulo della velocità della barca rispetto alla riva.
 
@@ -1252,7 +1227,7 @@ $$
 :::
 :::
 
-:::exercise{id="E6.6" chapter="6" difficulty="medio"}
+:::exercise{id="E6.5" chapter="6" difficulty="medio"}
 ## Domanda
 Una giostra ruota uniformemente attorno a un asse verticale. Un passeggero di massa $50\,\mathrm{kg}$ si trova a $4\,\mathrm{m}$ dall'asse e la velocità angolare della giostra è $0{,}5\,\mathrm{rad/s}$. Determina il modulo e il verso della forza centrifuga apparente nel riferimento della giostra. Determina anche la forza orizzontale reale risultante sul passeggero nel riferimento inerziale.
 
@@ -2276,7 +2251,7 @@ Trova il potenziale in ciascun punto usando {{formula:10.11}}, poi moltiplica la
 :::
 
 :::solution
-Il potenziale di una massa puntiforme è $\Phi(r)=-GM/r$. La variazione di energia potenziale è $\Delta U=m\lbrack \Phi(r_f)-\Phi(r_i)\rbrack =GMm(1/r_i-1/r_f)$. Sostituendo i dati, $\Delta U=(6{,}67\times10^{-11})(5{,}0\times10^{12})(2{,}0)(1/(4{,}0\times10^3)-1/(2{,}0\times10^3))\,\mathrm{J}=-0{,}167\,\mathrm{J}$. Le due masse sono corrette: il valore negativo indica che l'energia potenziale diminuisce avvicinandosi alla massa $M$.
+Il potenziale di una massa puntiforme è $\Phi(r)=-GM/r$. La variazione di energia potenziale è $\Delta U=m\lbrack \Phi(r_f)-\Phi(r_i)\rbrack =GMm(1/r_i-1/r_f)$. Sostituendo i dati, $\Delta U=(6{,}67\times10^{-11})(5{,}0\times10^{12})(2{,}0)(1/(4{,}0\times10^3)-1/(2{,}0\times10^3))\,\mathrm{J}=-0{,}167\,\mathrm{J}$. Il valore negativo indica che l'energia potenziale diminuisce avvicinandosi alla massa $M$.
 :::
 :::
 
@@ -2373,14 +2348,14 @@ Per un'orbita circolare, $v=\sqrt{GM/r}$. Sostituendo i dati, $v=\sqrt{(6{,}67\t
 
 :::exercise{id="E11.1" chapter="11" difficulty="medio"}
 ## Domanda
-Un fluido ideale di densità $1000\,\mathrm{kg/m^3}$ scorre in un tubo orizzontale. In una sezione la velocità è $2{,}0\,\mathrm{m/s}$ e la pressione è $200\,\mathrm{kPa}$. In una seconda sezione la velocità è $8{,}0\,\mathrm{m/s}$. Determina la pressione nella seconda sezione.
+Un fluido ideale di densità $1000\,\mathrm{kg/m^3}$ scorre in modo stazionario in un tubo orizzontale. Le due sezioni considerate sono collegate dalla stessa linea di corrente. In una sezione la velocità è $2{,}0\,\mathrm{m/s}$ e la pressione è $200\,\mathrm{kPa}$. Nella seconda sezione la velocità è $8{,}0\,\mathrm{m/s}$. Determina la pressione nella seconda sezione.
 
 :::hint
-Applica Bernoulli tra le due sezioni. Poiché il tubo è orizzontale, i termini gravitazionali si cancellano.
+Applica Bernoulli tra le due sezioni, che appartengono alla stessa linea di corrente. Poiché il tubo è orizzontale, i termini gravitazionali si cancellano.
 :::
 
 :::solution
-Per Bernoulli tra le due sezioni orizzontali, $p_1+\frac12\rho v_1^2=p_2+\frac12\rho v_2^2$. Dunque $p_2=p_1+\frac12\rho(v_1^2-v_2^2)$. Sostituendo i valori, $p_2=200000\,\mathrm{Pa}+\frac12(1000\,\mathrm{kg/m^3})\lbrack (2{,}0\,\mathrm{m/s})^2-(8{,}0\,\mathrm{m/s})^2\rbrack =200000\,\mathrm{Pa}-60000\,\mathrm{Pa}=140000\,\mathrm{Pa}$.
+Per il moto stazionario lungo la stessa linea di corrente, l’equazione di Bernoulli tra le due sezioni orizzontali è $p_1+\frac12\rho v_1^2=p_2+\frac12\rho v_2^2$. Dunque $p_2=p_1+\frac12\rho(v_1^2-v_2^2)$. Convertendo $200\,\mathrm{kPa}$ in $200000\,\mathrm{Pa}$ e sostituendo i valori, $p_2=200000\,\mathrm{Pa}+\frac12(1000\,\mathrm{kg/m^3})\left[(2{,}0\,\mathrm{m/s})^2-(8{,}0\,\mathrm{m/s})^2\right]=200000\,\mathrm{Pa}-30000\,\mathrm{Pa}=170000\,\mathrm{Pa}=170\,\mathrm{kPa}$.
 :::
 :::
 
@@ -2432,7 +2407,7 @@ Considera un blocco di sezione trasversale $A$ e indica con $x$ la parte della s
 :::
 
 :::solution
-Il volume immerso nell’olio è $Ax$ e quello immerso nell’acqua è $A(H-x)$. L’equilibrio tra spinta e peso richiede $\rho_{\mathrm{o}}gAx+\rho_{\mathrm{a}}gA(H-x)=\rho_{\mathrm{b}}gAH$. Si semplificano $g$ e $A$; raccogliendo i termini si trova $x/H=(\rho_{\mathrm{a}}-\rho_{\mathrm{b}})/(\rho_{\mathrm{a}}-\rho_{\mathrm{o}})$. Sostituendo i dati, $x/H=(1000-900)/(1000-800)=1/2$. La frazione è compresa tra $0$ e $1$, quindi il blocco straddà effettivamente l’interfaccia come ipotizzato.
+Il volume immerso nell’olio è $Ax$ e quello immerso nell’acqua è $A(H-x)$. L’equilibrio tra spinta e peso richiede $\rho_{\mathrm{o}}gAx+\rho_{\mathrm{a}}gA(H-x)=\rho_{\mathrm{b}}gAH$. Si semplificano $g$ e $A$; raccogliendo i termini si trova $x/H=(\rho_{\mathrm{a}}-\rho_{\mathrm{b}})/(\rho_{\mathrm{a}}-\rho_{\mathrm{o}})$. Sostituendo i dati, $x/H=(1000-900)/(1000-800)=1/2$. La frazione è compresa tra $0$ e $1$, quindi il blocco si trova effettivamente a cavallo dell’interfaccia, come ipotizzato.
 :::
 :::
 
@@ -2704,14 +2679,14 @@ Il sistema è il gas contenuto nel recipiente. Il recipiente è chiuso, quindi l
 
 :::exercise{id="E12.17" chapter="12" difficulty="medio"}
 ## Domanda
-Un gas è chiuso in un cilindro con pistone mobile, di peso trascurabile e senza attrito. Il pistone è fermo, la pressione del gas è $1{,}20\times10^5\,\mathrm{Pa}$ e quella esterna è $1{,}00\times10^5\,\mathrm{Pa}$. Il gas e l’ambiente sono alla stessa temperatura. Il sistema è in equilibrio termodinamico? Motiva la risposta e determina la differenza di pressione che impedisce l’equilibrio meccanico.
+Un gas è chiuso in un cilindro con pistone mobile, di peso trascurabile e senza attrito. In un dato istante il pistone è ancora fermo, la pressione del gas è $1{,}20\times10^5\,\mathrm{Pa}$ e quella esterna è $1{,}00\times10^5\,\mathrm{Pa}$. Il gas e l’ambiente sono alla stessa temperatura. Il sistema è in equilibrio termodinamico? Motiva la risposta e determina la differenza di pressione che impedisce l’equilibrio meccanico.
 
 :::hint
 L’equilibrio termico richiede temperature uguali; per un pistone mobile senza attrito, l’equilibrio meccanico richiede anche pressioni uguali.
 :::
 
 :::solution
-Le temperature del gas e dell’ambiente sono uguali, quindi c’è equilibrio termico. La differenza di pressione è $\Delta p=p_{\mathrm{gas}}-p_{\mathrm{est}}=1{,}20\times10^5-1{,}00\times10^5=2{,}0\times10^4\,\mathrm{Pa}$. Poiché la differenza non è nulla, sul pistone agisce una forza risultante e l’equilibrio meccanico non sussiste. Di conseguenza il sistema non è in equilibrio termodinamico.
+Le temperature del gas e dell’ambiente sono uguali, quindi c’è equilibrio termico. La differenza di pressione è $\Delta p=p_{\mathrm{gas}}-p_{\mathrm{est}}=1{,}20\times10^5-1{,}00\times10^5=2{,}0\times10^4\,\mathrm{Pa}$. Poiché la differenza non è nulla, sul pistone agisce una forza risultante, che lo mette in moto, e l’equilibrio meccanico non sussiste. Di conseguenza il sistema non è in equilibrio termodinamico.
 :::
 :::
 
@@ -3052,7 +3027,7 @@ $$
 \Delta S_{\mathrm{gas,2}}=C_V\ln\left(\frac{600}{300}\right)=\frac{3}{2}R\ln2.
 $$
 
-Il gas assorbe $Q=C_V(600-300)=450R\,\mathrm{J}$ dalla sorgente a $600\,\mathrm{K}$, perciò la variazione di entropia della sorgente è $\Delta S_{\mathrm{sorgente,2}}=-Q/600=-\frac{3}{4}R$. La variazione totale di entropia del gas è
+Il gas assorbe $Q=nC_V\Delta T=(1\,\mathrm{mol})\cdot\frac{3}{2}R\cdot(300\,\mathrm{K})\approx3741\,\mathrm{J}$ dalla sorgente a $600\,\mathrm{K}$, perciò la variazione di entropia della sorgente è $\Delta S_{\mathrm{sorgente,2}}=-Q/600=-\frac{3}{4}R$. La variazione totale di entropia del gas è
 
 $$
 \Delta S_{\mathrm{gas}}=R\ln2+\frac{3}{2}R\ln2=\frac{5}{2}R\ln2\approx14.4\,\mathrm{J\,K^{-1}}.

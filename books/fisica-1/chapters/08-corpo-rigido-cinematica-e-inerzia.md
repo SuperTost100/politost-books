@@ -143,7 +143,7 @@ $$I_{CM} = \int_{-L/2}^{L/2} \lambda x^2\, dx = \lambda \left[\frac{x^3}{3}\righ
 $$I_{CM} = \frac{1}{12} M L^2$$
 :::
 
-Questo risultato è confermato dalle fonti del corso. Se invece l'asse passa per un estremo dell'asta, l'integrazione va da $0$ a $L$:
+Se invece l'asse passa per un estremo dell'asta, l'integrazione va da $0$ a $L$:
 
 $$I_p = \int_0^L \lambda x^2\, dx = \frac{1}{3} M L^2$$
 
@@ -151,7 +151,7 @@ $$I_p = \int_0^L \lambda x^2\, dx = \frac{1}{3} M L^2$$
 $$I_p = \frac{1}{3} M L^2$$
 :::
 
-coerente con il valore riportato nelle fonti per l'asta incernierata a un perno all'estremo. Si osservi che $I_p > I_{CM}$: spostare l'asse lontano dal centro di massa aumenta sempre il momento d'inerzia, come sarà formalizzato dal teorema di Huygens-Steiner nella sezione successiva.
+È il valore che si usa per l'asta incernierata a un perno all'estremo. Si osservi che $I_p > I_{CM}$: spostare l'asse lontano dal centro di massa aumenta sempre il momento d'inerzia, come sarà formalizzato dal teorema di Huygens-Steiner nella sezione successiva.
 
 **Anello sottile.** Se tutta la massa $M$ è distribuita a distanza $R$ dall'asse centrale (perpendicolare al piano dell'anello e passante per il suo centro), ogni elemento contribuisce con lo stesso $R^2$, per cui l'integrale si riduce a
 
@@ -169,7 +169,7 @@ $$I = \int_0^R r^2\, \sigma\, 2\pi r\, dr = 2\pi\sigma \frac{R^4}{4} = \frac{1}{
 $$I = \frac{1}{2} M R^2$$
 :::
 
-in accordo con le fonti, che riportano questo valore sia per il disco libero sia per il disco di un sistema puleggia-massa. Rispetto a un diametro passante per il centro, tenendo conto anche dell'eventuale spessore (lunghezza) $L$ del cilindro lungo l'asse, vale $I = \frac{1}{4}MR^2 + \frac{1}{12}ML^2$; per un disco sottile ($L\to 0$) si riduce a $I=\frac14 MR^2$.
+È il valore che si usa sia per il disco libero sia per il disco di un sistema puleggia-massa. Rispetto a un diametro passante per il centro, tenendo conto anche dell'eventuale spessore (lunghezza) $L$ del cilindro lungo l'asse, vale $I = \frac{1}{4}MR^2 + \frac{1}{12}ML^2$; per un disco sottile ($L\to 0$) si riduce a $I=\frac14 MR^2$.
 
 :::formula{id="8.9" label="Momento d'inerzia del disco rispetto a un diametro"}
 $$I_{\text{diametro}} = \frac{1}{4} M R^2 + \frac{1}{12} M L^2$$
@@ -202,7 +202,7 @@ valore utilizzato ad esempio nel rotolamento di una sfera su un piano inclinato.
 $$I = \frac{2}{3} M R^2$$
 :::
 
-coerentemente con le fonti del corso. In entrambi i casi il momento d'inerzia è lo stesso rispetto a qualunque diametro, per la simmetria sferica della distribuzione di massa.
+In entrambi i casi il momento d'inerzia è lo stesso rispetto a qualunque diametro, per la simmetria sferica della distribuzione di massa.
 
 ### Momento d'inerzia di corpi composti
 

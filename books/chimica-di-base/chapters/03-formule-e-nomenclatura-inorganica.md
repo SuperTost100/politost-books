@@ -318,7 +318,7 @@ Gli ossidi comuni dell'azoto comprendono specie neutre e acide, non una serie di
 
 **Definizione 3.4** (idrossido). Un idrossido è un composto ternario ionico formato dal catione di un metallo (gruppi 1, 2, o un metallo di transizione a basso N.O.) e dallo ione poliatomico idrossido $OH^-$, in cui l'ossigeno ha N.O. $-2$ e l'idrogeno $+1$, per una carica complessiva del gruppo di $-1$. La formula generale è $M_x(OH)_y$.
 
-:::image{src="assets/99cc2fbc-struttura-ione-idrossido.svg" alt="Struttura di Lewis dello ione idrossido con ossigeno legato a idrogeno, due coppie solitarie sull'ossigeno e carica negativa (OH^-)" caption="Fig. 3.4 — Struttura di Lewis dello ione idrossido OH^-: l'ossigeno porta due coppie solitarie, un legame covalente con l'idrogeno e la carica negativa"}
+:::image{src="assets/99cc2fbc-struttura-ione-idrossido.svg" alt="Struttura di Lewis dello ione idrossido con ossigeno legato a idrogeno, due coppie solitarie sull'ossigeno e carica negativa (OH^-)" caption="Fig. 3.4 — Struttura di Lewis dello ione idrossido OH⁻: l'ossigeno porta due coppie solitarie, un legame covalente con l'idrogeno e la carica negativa"}
 :::
 
 Gli idrossidi si formano dalla reazione di un ossido basico con l'acqua, secondo {{formula:3.5}}. In acqua molti idrossidi sono solubili e si dissociano liberando gli ioni costitutivi, ad esempio $Ca(OH)_2 \to Ca^{2+} + 2\,OH^-$; le sostanze che liberano ioni $OH^-$ in soluzione sono per definizione basi.
@@ -508,14 +508,14 @@ Si vuole scrivere la formula e il nome del sale che si ottiene facendo reagire a
 3. *Calcolo*: per avere elettroneutralità servono 3 ioni $Ca^{2+}$ (carica totale $+6$) e 2 ioni $PO_4^{3-}$ (carica totale $-6$), quindi la formula è $Ca_3(PO_4)_2$.
 4. *Verifica*: $3 \times (+2) + 2\times(-3) = 0$, la neutralità è rispettata; il nome tradizionale è ortofosfato di calcio, coerente con la desinenza -ico dell'acido di partenza che diventa -ato nel sale.
 
-:::image{src="assets/76139141-ione-fosfato.svg" alt="Struttura dello ione fosfato PO4 3- (PO4^3-)" caption="Fig. 3.6 — Struttura di Lewis dello ione ortofosfato PO4^3-, l'anione che si forma dall'acido fosforico e che compone il sale Ca3(PO4)2 dell'esempio"}
+:::image{src="assets/76139141-ione-fosfato.svg" alt="Struttura dello ione fosfato PO4 3- (PO4^3-)" caption="Fig. 3.6 — Struttura di Lewis dello ione ortofosfato PO4³-, l'anione che si forma dall'acido fosforico e che compone il sale Ca3(PO4)2 dell'esempio"}
 :::
 
 ### Sali acidi
 
 I sali acidi sono sali che derivano dalla neutralizzazione parziale di un acido poliprotico: nell'anione resta ancora almeno un atomo di idrogeno ionizzabile, per esempio nello ione $HSO_4^-$.
 
-:::image{src="assets/76139141-ione-idrogenosolfato.svg" alt="Struttura dello ione idrogenosolfato HSO4- (HSO4^-)" caption="Fig. 3.7 — Struttura di Lewis dello ione idrogenosolfato HSO4^-, l'anione tipico dei sali acidi derivati dall'acido solforico"}
+:::image{src="assets/76139141-ione-idrogenosolfato.svg" alt="Struttura dello ione idrogenosolfato HSO4- (HSO4^-)" caption="Fig. 3.7 — Struttura di Lewis dello ione idrogenosolfato HSO4⁻, l'anione tipico dei sali acidi derivati dall'acido solforico"}
 :::
 
 Nella nomenclatura:

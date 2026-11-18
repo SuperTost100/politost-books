@@ -8,7 +8,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "f(x) = |x| = sqrt(x^2)",
+          "name": "f(x) = |x| = √(x²)",
           "x": [
             -5,
             -4.975,
@@ -816,8 +816,8 @@
             5
           ],
           "line": {
-            "color": "#C2410C",
-            "width": 7
+            "color": "rgba(234,88,12,0.5)",
+            "width": 9
           }
         },
         {
@@ -1638,7 +1638,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "y = -x (ramo sinistro, x < 0)",
+          "name": "y = −x (ramo sinistro, x < 0)",
           "x": [
             -5,
             -4.975,
@@ -2480,7 +2480,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "f(x) = x^2 (non iniettiva: una retta orizzontale la interseca due volte)",
+          "name": "f(x) = x² (non iniettiva: una retta orizzontale la interseca due volte)",
           "x": [
             -2,
             -1.99,
@@ -3295,7 +3295,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "g(x) = x^3 (dispari, iniettiva e invertibile)",
+          "name": "g(x) = x³ (dispari, iniettiva e invertibile)",
           "x": [
             -2,
             -1.99,
@@ -4110,7 +4110,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "h(x) = (x-0.5)^3 + 0.5: traslazione di g(x) = x^3, resta invertibile",
+          "name": "h(x) = (x−0,5)³ + 0,5: traslazione di g(x) = x³, resta invertibile",
           "x": [
             -2,
             -1.99,
@@ -5750,8 +5750,8 @@
         "yaxis": {
           "title": "y",
           "range": [
-            -16,
-            16
+            -4,
+            6
           ]
         },
         "showlegend": true
@@ -5767,7 +5767,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "f(x) = x^2 (funzione pari)",
+          "name": "f(x) = x² (funzione pari)",
           "x": [
             -3,
             -2.985,
@@ -6582,7 +6582,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "g(x) = x^3 - x (funzione dispari)",
+          "name": "g(x) = x³ − x (funzione dispari)",
           "x": [
             -3,
             -2.985,
@@ -8212,7 +8212,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "M(x) = x - [x] (funzione periodica, mantissa)",
+          "name": "M(x) = x − [x] (funzione periodica, mantissa)",
           "x": [
             -3,
             -2.985,
@@ -10773,7 +10773,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "f(x) = x^3 - x - 1 (continua: ha uno zero in ]1,2[)",
+          "name": "f(x) = x³ − x − 1 (continua: ha uno zero in ]1,2[)",
           "x": [
             0.5,
             0.50425,
@@ -11588,7 +11588,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "g(x) = floor(x) - 0.5 (discontinua: salta l'asse x senza annullarsi)",
+          "name": "g(x) = ⌊x⌋ − 0,5 (discontinua: salta l'asse x senza annullarsi)",
           "x": [
             0.5,
             0.50425,
@@ -12434,7 +12434,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "sin(x)/x → 1",
+          "name": "sin(x)/x, che tende a 1",
           "x": [
             -0.9,
             -0.89025,
@@ -13251,7 +13251,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "(e^x−1)/x → 1",
+          "name": "(eˣ − 1)/x, che tende a 1",
           "x": [
             -0.9,
             -0.89025,
@@ -14068,7 +14068,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "log(1+x)/x → 1",
+          "name": "log(1 + x)/x, che tende a 1",
           "x": [
             -0.9,
             -0.89025,
@@ -14885,7 +14885,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "(1−cos x)/x² → 1/2",
+          "name": "(1 − cos x)/x², che tende a 1/2",
           "x": [
             -0.9,
             -0.89025,
@@ -15762,7 +15762,7 @@
   },
   {
     "id": "gerarchia-infiniti-confronto",
-    "title": "Gerarchie degli infiniti: log(x), x^2, e^x, x^x",
+    "title": "Gerarchie degli infiniti: log(x), x², eˣ, xˣ",
     "type": "plotly",
     "config": {
       "data": [
@@ -16584,7 +16584,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "y = x^2  (crescita polinomiale)",
+          "name": "y = x²  (crescita polinomiale)",
           "x": [
             0.1,
             0.11475,
@@ -17399,7 +17399,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "y = e^x  (crescita esponenziale)",
+          "name": "y = eˣ  (crescita esponenziale)",
           "x": [
             0.1,
             0.11475,
@@ -18214,7 +18214,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "y = x^x  (crescita sovra-esponenziale)",
+          "name": "y = xˣ  (crescita sovra-esponenziale)",
           "x": [
             0.1,
             0.11475,
@@ -19200,7 +19200,7 @@
         }
       ],
       "layout": {
-        "title": "Gerarchie degli infiniti: log(x), x^2, e^x, x^x",
+        "title": "Gerarchie degli infiniti: log(x), x², eˣ, xˣ",
         "xaxis": {
           "title": "x",
           "range": [
@@ -20043,7 +20043,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "Secante per x̄ = 2 (pendenza 3)",
+          "name": "Secante tra x₀ = 1 e 2 (pendenza 3)",
           "x": [
             -1,
             -0.99,
@@ -20858,7 +20858,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "Secante per x̄ = 1.5 (pendenza 2.5)",
+          "name": "Secante tra x₀ = 1 e 1,5 (pendenza 2,5)",
           "x": [
             -1,
             -0.99,
@@ -25802,7 +25802,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "T1(x) = x (retta tangente)",
+          "name": "T₁(x) = x (retta tangente)",
           "x": [
             -6,
             -5.97,
@@ -26617,7 +26617,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "T3(x) = x - x^3/6",
+          "name": "T₃(x) = x − x³/6",
           "x": [
             -6,
             -5.97,
@@ -27459,7 +27459,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "g(x) = x^3 (flesso ascendente a tangente orizzontale in x=0)",
+          "name": "g(x) = x³ (flesso ascendente a tangente orizzontale in x=0)",
           "x": [
             -2,
             -1.99,
@@ -28274,7 +28274,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "f(x) = x^4 (minimo relativo in x=0, n=4 pari)",
+          "name": "f(x) = x⁴ (minimo relativo in x=0, n=4 pari)",
           "x": [
             -2,
             -1.99,
@@ -29089,7 +29089,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "h(x) = -x^4 (massimo relativo in x=0, n=4 pari)",
+          "name": "h(x) = −x⁴ (massimo relativo in x=0, n=4 pari)",
           "x": [
             -2,
             -1.99,
@@ -38151,7 +38151,7 @@
           ]
         },
         "yaxis": {
-          "title": "1/(x^α*(1+x))",
+          "title": "1/(xᵅ·(1+x))",
           "range": [
             0,
             6
@@ -41430,7 +41430,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "y′ = y/x + x; y(1) = 3",
+          "name": "y′ = y/t + t; y(1) = 3",
           "x": [
             0.2,
             0.2045,
@@ -43087,7 +43087,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "Equilibrio y=1 per f(y)=y*(y-1)",
+          "name": "Equilibrio y=1 per f(y)=y·(y−1)",
           "x": [
             -3,
             -2.985,
@@ -43902,7 +43902,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "f(y)=y*(y-1), g(t)=1, y(0)=1/2",
+          "name": "f(y)=y·(y−1), g(t)=1, y(0)=1/2",
           "x": [
             -3,
             -2.985,
@@ -44717,7 +44717,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "f(y)=y*(y-1), g(t)=t, y(0)=1/2",
+          "name": "f(y)=y·(y−1), g(t)=t, y(0)=1/2",
           "x": [
             -3,
             -2.985,
@@ -45532,7 +45532,7 @@
         {
           "type": "scatter",
           "mode": "lines",
-          "name": "f(y)=y^2, g(t)=1, y(0)=1/5",
+          "name": "f(y)=y², g(t)=1, y(0)=1/5",
           "x": [
             -3,
             -2.985,

@@ -61,7 +61,7 @@ Un ultimo controllo è il verso della reazione: per una cella voltaica che funzi
 
 Nella [cella voltaica](ref:chapter/16#p2) gli elettroni passano dall’anodo, dove avviene l’ossidazione, al catodo, dove avviene la riduzione. La differenza di potenziale $E_{\mathrm{cella}}$ è positiva quando la reazione scritta procede spontaneamente e si misura in volt: $1\ \mathrm{V}=1\ \mathrm{J/C}$. Il potenziale varia con la composizione della cella; per confrontare celle diverse si usa il potenziale standard $E_{\mathrm{cella}}^\circ$.
 
-**Definizione 16.4** (potenziale standard di riduzione). Il valore $E^\circ$ di una semicella è riferito alla semireazione scritta come riduzione. È un valore relativo: per convenzione, l’elettrodo standard a idrogeno, $2\mathrm{H^+}_{(aq)}+2e^-\rightleftharpoons\mathrm{H_2}_{(g)}$, ha $E^\circ=0\ \mathrm{V}$. In questo capitolo le condizioni standard sono pressione di $1\ \mathrm{bar}$ e attività unitarie, approssimate per i soluti diluiti con concentrazioni di $1\ \mathrm{mol/L}$; i valori tabulati qui si riferiscono a $25\ ^\circ\mathrm{C}$. Negli appunti del corso l’elettrodo a idrogeno è descritto a $1\ \mathrm{atm}$: quando un esercizio adotta quella convenzione, la si mantiene nei dati.
+**Definizione 16.4** (potenziale standard di riduzione). Il valore $E^\circ$ di una semicella è riferito alla semireazione scritta come riduzione. È un valore relativo: per convenzione, l’elettrodo standard a idrogeno, $2\mathrm{H^+}_{(aq)}+2e^-\rightleftharpoons\mathrm{H_2}_{(g)}$, ha $E^\circ=0\ \mathrm{V}$. In questo capitolo le condizioni standard sono pressione di $1\ \mathrm{bar}$ e attività unitarie, approssimate per i soluti diluiti con concentrazioni di $1\ \mathrm{mol/L}$; i valori tabulati qui si riferiscono a $25\ ^\circ\mathrm{C}$. Una convenzione più vecchia, ancora diffusa, descrive l’elettrodo a idrogeno a $1\ \mathrm{atm}$: quando un esercizio la adotta, la si mantiene nei dati.
 
 Per individuare il verso spontaneo in condizioni standard, si confrontano i **potenziali di riduzione**: la semicella con $E^\circ$ maggiore funziona da catodo; l’altra da anodo. Entrambi i valori restano quelli tabulati come riduzioni, anche se all’anodo la semireazione viene invertita.
 
@@ -104,7 +104,7 @@ Se $c_{\mathrm{alta}}$ e $c_{\mathrm{bassa}}$ sono le concentrazioni degli ioni 
 
 Il **pHmetro** applica una misura di potenziale alla concentrazione idrogenionica. La membrana dell’elettrodo a vetro separa una soluzione interna a composizione nota dal campione; il suo potenziale dipende dalla differenza di attività degli ioni idronio sui due lati. Un elettrodo di riferimento, spesso $\mathrm{Ag/AgCl}$, fornisce un potenziale stabile. La sonda combinata contiene entrambi gli elettrodi.
 
-A $25\ ^\circ\mathrm{C}$ la risposta ideale della membrana cambia di circa $0,0592\ \mathrm{V}$ per unità di $\mathrm{pH}$. Il segno dipende da come si definisce la differenza di potenziale; inoltre il valore misurato comprende una costante strumentale. Perciò lo strumento viene calibrato con tamponi di $\mathrm{pH}$ noto prima di convertire il potenziale in $\mathrm{pH}$. La relazione $\Delta E=0,0592\,\mathrm{pH}$ riportata negli appunti è una forma semplificata riferita a una particolare scelta di zero e verso della misura. La definizione di $\mathrm{pH}$ è trattata in [Autoionizzazione dell’acqua e pH](ref:chapter/13#p3).
+A $25\ ^\circ\mathrm{C}$ la risposta ideale della membrana cambia di circa $0,0592\ \mathrm{V}$ per unità di $\mathrm{pH}$. Il segno dipende da come si definisce la differenza di potenziale; inoltre il valore misurato comprende una costante strumentale. Perciò lo strumento viene calibrato con tamponi di $\mathrm{pH}$ noto prima di convertire il potenziale in $\mathrm{pH}$. La relazione $\Delta E=0,0592\,\mathrm{pH}$ è una forma semplificata riferita a una particolare scelta di zero e verso della misura. La definizione di $\mathrm{pH}$ è trattata in [Autoionizzazione dell’acqua e pH](ref:chapter/13#p3).
 
 ### Potenziale, energia libera ed equilibrio
 
@@ -285,9 +285,9 @@ Se è nota l'efficienza di corrente $\eta$, definita come frazione della carica 
 
 **Esercizi.**
 
-- ★ Da $\mathrm{Ag^+}+e^-\to\mathrm{Ag}$, calcolare le moli di argento depositate dal passaggio di $96\,485\ \mathrm{C}$, assumendo efficienza unitaria.
-- ★★ Una corrente di $2{,}00\ \mathrm{A}$ attraversa per $30{,}0\ \mathrm{min}$ una cella in cui avviene soltanto $\mathrm{Cu^{2+}}+2e^-\to\mathrm{Cu}$. Calcolare la carica e la massa depositata usando $M_{\mathrm{Cu}}=63{,}55\ \mathrm{g/mol}$.
-- ★★★ Per ottenere $1{,}50\ \mathrm{g}$ di rame con $I=4{,}75\ \mathrm{A}$ e $\eta=0{,}80$, calcolare la carica totale e il tempo richiesti. Confrontare il tempo con quello dell'esempio svolto.
+- Da $\mathrm{Ag^+}+e^-\to\mathrm{Ag}$, calcolare le moli di argento depositate dal passaggio di $96\,485\ \mathrm{C}$, assumendo efficienza unitaria.
+- Una corrente di $2{,}00\ \mathrm{A}$ attraversa per $30{,}0\ \mathrm{min}$ una cella in cui avviene soltanto $\mathrm{Cu^{2+}}+2e^-\to\mathrm{Cu}$. Calcolare la carica e la massa depositata usando $M_{\mathrm{Cu}}=63{,}55\ \mathrm{g/mol}$.
+- Per ottenere $1{,}50\ \mathrm{g}$ di rame con $I=4{,}75\ \mathrm{A}$ e $\eta=0{,}80$, calcolare la carica totale e il tempo richiesti. Confrontare il tempo con quello dell'esempio svolto.
 
 ## p6 | Come viene chiesto all'esame
 

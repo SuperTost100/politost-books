@@ -338,7 +338,7 @@ $$I_{\max} = \,\rbrack -\infty, 1\lbrack .$$
 
 Per $t \to 1^-$ si ha $y(t) \to +\infty$: la soluzione esplode in tempo finito, e questo è il motivo per cui l'intervallo massimale è limitato superiormente, nonostante $f$ e $g$ siano funzioni continue (anzi, $C^\infty$) su tutto $\mathbb{R}$.
 
-:::image{src="assets/a7d25861-soluzione-esplosiva.svg" alt="grafico di 1/(1-x) con asintoto verticale in x=1" caption="Fig. 11.2 — Soluzione y(t) = 1/(1-t) del problema di Cauchy y' = y^2, y(0) = 1: l'intervallo massimale è ]-infinito, 1[ a causa dell'asintoto verticale in t=1"}
+:::image{src="assets/a7d25861-soluzione-esplosiva.svg" alt="grafico di 1/(1-x) con asintoto verticale in x=1" caption="Fig. 11.2 — Soluzione y(t) = 1/(1-t) del problema di Cauchy y' = y², y(0) = 1: l'intervallo massimale è ]-infinito, 1[ a causa dell'asintoto verticale in t=1"}
 :::
 
 ### Errori tipici
@@ -388,7 +388,6 @@ Applicando questo fatto ai tre casi precedenti, l'integrale generale dell'omogen
 
 :::formula{id="11.10" label="Integrale generale dell'equazione omogenea"}
 $$
-
 y_{om}(t) =
 \begin{cases}
 c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t} & \text{se } \Delta > 0 \\[4pt]
@@ -421,7 +420,6 @@ L'esistenza e l'unicità della soluzione del problema di Cauchy associato sono g
 **Teorema 11.7 (esistenza e unicità).** Se $f : I \to \mathbb{R}$ è continua, allora per ogni $t_0 \in I$ e per ogni $y_0, y_1 \in \mathbb{R}$ esiste un'unica soluzione del problema di Cauchy
 
 $$
-
 \begin{cases}
 y'' + a y' + b y = f(t) \\
 y(t_0) = y_0 \\

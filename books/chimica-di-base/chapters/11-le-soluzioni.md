@@ -81,7 +81,7 @@ $$c = k_H \, p_i \qquad (T \text{ costante})$$
 
 dove $c$ è la concentrazione del gas disciolto, $p_i$ la sua pressione parziale sopra la soluzione, e $k_H$ la **costante di Henry**, caratteristica di ciascuna coppia gas-solvente e dipendente dalla temperatura. Un aumento della pressione parziale del gas comprime il gas sovrastante e aumenta la frequenza con cui le sue molecole collidono con la superficie del liquido, aumentando così la quantità disciolta; viceversa un aumento di temperatura aumenta l'energia cinetica delle molecole di gas disciolte, che tendono a fuggire più facilmente dalla soluzione, diminuendo $k_H$.
 
-:::image{src="assets/fc091c84-legge-di-henry-plot.svg" alt="Grafico della concentrazione del gas disciolto in funzione della pressione parziale, retta passante per l'origine" caption="Fig. 11.1 — Andamento lineare previsto dalla legge di Henry: c = k_H p_i, a temperatura costante"}
+:::image{src="assets/fc091c84-legge-di-henry-plot.svg" alt="Grafico della concentrazione del gas disciolto in funzione della pressione parziale, retta passante per l'origine" caption="Fig. 11.1 — Andamento lineare previsto dalla legge di Henry: c = k_H pᵢ, a temperatura costante"}
 :::
 
 **Esempio svolto 11.1**. Un gas ha costante di Henry $k_H = 1,3 \times 10^{-3} \ \text{mol}/(\text{L}\cdot\text{atm})$ in acqua a 25 °C. Calcolare la concentrazione del gas disciolto quando la sua pressione parziale sopra la soluzione è $p_i = 0,80$ atm.

@@ -147,7 +147,7 @@ $$
 
 Per il dente di sega $f(x)=x$ su $(-\pi,\pi)$, che è dispari, un'integrazione per parti dà $b_k=\frac2\pi\int_0^\pi x\sin kx\,dx=\frac{2(-1)^{k+1}}{k}$.
 
-Se $f$ non è né pari né dispari, si può scrivere $f=f_p+f_d$ con $f_p(x)=\frac{f(x)+f(-x)}2$ pari e $f_d(x)=\frac{f(x)-f(-x)}2$ dispari: i coefficienti $a_k$ vengono da $f_p$ e i $b_k$ da $f_d$. Questa scomposizione non è nel testo di riferimento: segue direttamente dal teorema e dalla linearità dei coefficienti.
+Se $f$ non è né pari né dispari, si può scrivere $f=f_p+f_d$ con $f_p(x)=\frac{f(x)+f(-x)}2$ pari e $f_d(x)=\frac{f(x)-f(-x)}2$ dispari: i coefficienti $a_k$ vengono da $f_p$ e i $b_k$ da $f_d$. Questa scomposizione segue direttamente dal teorema e dalla linearità dei coefficienti.
 
 **Errore tipico 8.1.** Dimenticare che il termine costante ha un fattore diverso dagli altri: $a_0=\frac1{2\pi}\int_0^{2\pi}f$, mentre $a_k=\frac1\pi\int_0^{2\pi}f\cos kx$. Nel caso pari lo stesso errore si presenta come $a_0=\frac1\pi\int_0^\pi f$ (e non $\frac2\pi$), mentre per $k\ge1$ il fattore è $\frac2\pi$. Un controllo rapido: $a_0$ deve essere il valore medio di $f$ (per $|\sin x|$ vale $\frac2\pi\approx0{,}64$, tra $0$ e $1$).
 
