@@ -247,7 +247,7 @@ Confronta campioni sottoposti alle stesse condizioni, modificando soltanto la di
 :::
 
 :::solution
-Si possono riscaldare due campioni dello stesso metallo per lo stesso tempo e alla stessa temperatura, esponendone uno all'aria e mantenendo l'altro in un ambiente privo di ossigeno. La disponibilità di ossigeno è la variabile modificata; temperatura e durata del riscaldamento sono variabili da mantenere costanti. Se il campione esposto all'aria si scurisce e quello privo di ossigeno no, il risultato sostiene l'ipotesi. Un singolo confronto non dimostra che l'ipotesi sia universalmente vera, ma la mette alla prova.
+Ipotesi: il metallo si scurisce perché, quando viene riscaldato, reagisce con l'ossigeno dell'aria formando un ossido scuro; in assenza di ossigeno, a parità di riscaldamento, non si scurirebbe. Si possono riscaldare due campioni identici dello stesso metallo, uno esposto all'aria e l'altro in un ambiente privo di ossigeno, per lo stesso tempo e alla stessa temperatura. La disponibilità di ossigeno è la variabile modificata; temperatura e durata del riscaldamento sono variabili da mantenere costanti. Se si scurisce soltanto il campione esposto all'aria, il risultato sostiene l'ipotesi. Un singolo confronto non dimostra che l'ipotesi sia universalmente vera, ma la mette alla prova.
 :::
 :::
 
@@ -944,7 +944,7 @@ I volumi dei gas, misurati alla stessa temperatura e pressione, sono proporziona
 :::
 
 :::solution
-Il rapporto volumetrico stechiometrico è $2:1$: per consumare $150\,\mathrm{mL}$ di $\mathrm{SO_2}$ servono $75\,\mathrm{mL}$ di $\mathrm{O_2}$. Il diossido di zolfo è il reagente limitante e restano $100-75=25\,\mathrm{mL}$ equivalenti di ossigeno. Si formano $150\,\mathrm{mL}$ equivalenti di $\mathrm{SO_3}$, perché il rapporto tra $\mathrm{SO_2}$ consumato e $\mathrm{SO_3}$ prodotto è $1:1$. Il volume gassoso equivalente totale, alle condizioni iniziali di $1{,}00\,\mathrm{atm}$ e $298\,\mathrm{K}$, è quindi $175\,\mathrm{mL}$. Per la miscela finale nel recipiente rigido, $P_f=P_i(V_{\mathrm{eq}}/V_{\mathrm{rec}})(T_f/T_i)=(1{,}00\,\mathrm{atm})(0{,}175\,\mathrm{L}/0{,}500\,\mathrm{L})(350\,\mathrm{K}/298\,\mathrm{K})=0{,}4107\,\mathrm{atm}\approx 0{,}411\,\mathrm{atm}$. La pressione iniziale della miscela nel recipiente è $0{,}500\,\mathrm{atm}$, poiché i volumi complessivi immessi sono $250\,\mathrm{mL}$ misurati a $1{,}00\,\mathrm{atm}$ e $298\,\mathrm{K}$.
+Il rapporto volumetrico stechiometrico è $2:1$: per consumare $150\,\mathrm{mL}$ di $\mathrm{SO_2}$ servono $75\,\mathrm{mL}$ di $\mathrm{O_2}$. Il diossido di zolfo è il reagente limitante e restano $100-75=25\,\mathrm{mL}$ equivalenti di ossigeno. Si formano $150\,\mathrm{mL}$ equivalenti di $\mathrm{SO_3}$, perché il rapporto tra $\mathrm{SO_2}$ consumato e $\mathrm{SO_3}$ prodotto è $1:1$. Il volume gassoso equivalente totale, alle condizioni iniziali di $1{,}00\,\mathrm{atm}$ e $298\,\mathrm{K}$, è quindi $175\,\mathrm{mL}$. Per la miscela finale nel recipiente rigido, $P_f=P_i(V_{\mathrm{eq}}/V_{\mathrm{rec}})(T_f/T_i)=(1{,}00\,\mathrm{atm})(0{,}175\,\mathrm{L}/0{,}500\,\mathrm{L})(350\,\mathrm{K}/298\,\mathrm{K})=0{,}4111\,\mathrm{atm}\approx 0{,}411\,\mathrm{atm}$. La pressione iniziale della miscela nel recipiente è $0{,}500\,\mathrm{atm}$, poiché i volumi complessivi immessi sono $250\,\mathrm{mL}$ misurati a $1{,}00\,\mathrm{atm}$ e $298\,\mathrm{K}$.
 :::
 :::
 
@@ -1183,9 +1183,13 @@ Dissocia in ioni i composti solubili in acqua. Il cloruro d'argento è insolubil
 :::
 
 :::solution
-L'equazione molecolare è $\mathrm{AgNO_3(aq) + NaCl(aq) \rightarrow AgCl(s) + NaNO_3(aq)}$.
+L'equazione molecolare bilanciata è $\mathrm{AgNO_3(aq) + NaCl(aq) \rightarrow AgCl(s) + NaNO_3(aq)}$.
+
 Dissociando le specie acquose si ottiene l'equazione ionica completa: $\mathrm{Ag^+(aq) + NO_3^-(aq) + Na^+(aq) + Cl^-(aq) \rightarrow AgCl(s) + Na^+(aq) + NO_3^-(aq)}$.
+
 Gli ioni $\mathrm{Na^+}$ e $\mathrm{NO_3^-}$ compaiono invariati in entrambi i membri e si eliminano. L'equazione ionica netta è $\mathrm{Ag^+(aq) + Cl^-(aq) \rightarrow AgCl(s)}$.
+
+Il precipitato è $\mathrm{AgCl}$ (cloruro d'argento), un solido bianco; gli ioni spettatori sono $\mathrm{Na^+}$ e $\mathrm{NO_3^-}$.
 :::
 :::
 
@@ -1858,14 +1862,14 @@ Sodio, magnesio e alluminio sono consecutivi nel terzo periodo. Procedendo da so
 
 :::exercise{id="E8.4" chapter="8" difficulty="medio"}
 ## Domanda
-Per stimare la carica nucleare effettiva degli elettroni di valenza, usa $Z_{\mathrm{eff}}=Z-S$. Per silicio e fosforo sono forniti i seguenti valori: silicio, $Z=14$ e $S=10{,}2$; fosforo, $Z=15$ e $S=10{,}2$. Calcola le due cariche nucleari effettive e prevedi quale elemento ha la prima energia di ionizzazione maggiore, motivando la risposta.
+Per stimare la carica nucleare effettiva degli elettroni di valenza, usa $Z_{\mathrm{eff}}=Z-S$. Per silicio e fosforo sono forniti i seguenti valori: silicio, $Z=14$ e $S=9{,}85$; fosforo, $Z=15$ e $S=10{,}2$. Calcola le due cariche nucleari effettive e prevedi quale elemento ha la prima energia di ionizzazione maggiore, motivando la risposta.
 
 :::hint
 Applica la stima della carica nucleare effettiva {{formula:8.11}} e confronta l’attrazione esercitata sugli elettroni di valenza nello stesso periodo.
 :::
 
 :::solution
-Per il silicio, $Z_{\mathrm{eff}}=14-10{,}2=3{,}8$. Per il fosforo, $Z_{\mathrm{eff}}=15-10{,}2=4{,}8$. Gli elettroni rimossi nella prima ionizzazione dei due elementi appartengono allo stesso livello principale, ma nel fosforo risentono di una carica nucleare effettiva maggiore. Occorre quindi più energia per rimuovere un elettrone dal fosforo, e la sua prima energia di ionizzazione è maggiore.
+Per il silicio, $Z_{\mathrm{eff}}=14-9{,}85=4{,}15$. Per il fosforo, $Z_{\mathrm{eff}}=15-10{,}2=4{,}8$. Gli elettroni rimossi nella prima ionizzazione dei due elementi appartengono allo stesso livello principale, ma nel fosforo risentono di una carica nucleare effettiva maggiore. Occorre quindi più energia per rimuovere un elettrone dal fosforo, e la sua prima energia di ionizzazione è maggiore.
 :::
 :::
 
@@ -2588,14 +2592,14 @@ Sia $x$ la concentrazione di $\mathrm{H_2}$ e di $\mathrm{I_2}$ formata. Per la 
 
 :::exercise{id="E12.4" chapter="12" difficulty="difficile"}
 ## Domanda
-In un recipiente chiuso sono presenti entrambi i solidi della reazione $\mathrm{CaCO_3(s)\rightleftharpoons CaO(s)+CO_2(g)}$. A $500\,\mathrm{K}$ la miscela è all’equilibrio in un volume di $10{,}0\,\mathrm{L}$ e $K_p=0{,}25\,\mathrm{atm}$. Il recipiente viene compresso isotermicamente fino a $5{,}00\,\mathrm{L}$. Considerando ideale il gas e supponendo che entrambi i solidi restino presenti, determina il quoziente di reazione subito dopo la compressione, il verso dello spostamento e le moli di $\mathrm{CO_2}$ all’equilibrio finale. Usa $R=0{,}08206\,\mathrm{L\,atm\,mol^{-1}\,K^{-1}}$.
+In un recipiente chiuso sono presenti entrambi i solidi della reazione $\mathrm{CaCO_3(s)\rightleftharpoons CaO(s)+CO_2(g)}$. A $1100\,\mathrm{K}$ la miscela è all’equilibrio in un volume di $10{,}0\,\mathrm{L}$ e $K_p=1{,}0\,\mathrm{atm}$. Il recipiente viene compresso isotermicamente fino a $5{,}00\,\mathrm{L}$. Considerando ideale il gas e supponendo che entrambi i solidi restino presenti, determina il quoziente di reazione subito dopo la compressione, il verso dello spostamento e le moli di $\mathrm{CO_2}$ all’equilibrio finale. Usa $R=0{,}08206\,\mathrm{L\,atm\,mol^{-1}\,K^{-1}}$.
 
 :::hint
-I solidi non compaiono nell’espressione di $K_p$. Subito dopo la compressione la pressione del gas raddoppia; confronta il nuovo quoziente con $K_p$ e poi usa l’equazione dei gas ideali nello stato finale.
+I solidi non compaiono nell’espressione di $K_p$. Subito dopo la compressione la pressione del gas raddoppia; confronta il nuovo quoziente con $K_p$ e poi usa l’equazione dei gas ideali nello stato finale, dove la pressione parziale torna a $1{,}0\,\mathrm{atm}$.
 :::
 
 :::solution
-Poiché sono presenti entrambi i solidi, l’espressione della costante è $K_p=p_{\mathrm{CO_2}}$, quindi prima della compressione $p_{\mathrm{CO_2}}=0{,}25\,\mathrm{atm}$. A temperatura costante, dimezzare il volume raddoppia subito la pressione parziale del gas: $p_{\mathrm{CO_2}}=0{,}50\,\mathrm{atm}$. Il quoziente subito dopo la compressione è dunque $Q_p=0{,}50\,\mathrm{atm}$, maggiore di $K_p$. Per ristabilire l’equilibrio la reazione procede verso sinistra e consuma $\mathrm{CO_2}$. All’equilibrio finale la pressione parziale torna a $0{,}25\,\mathrm{atm}$, perché $Q_p=K_p$. Dall’equazione dei gas ideali si ricava $n_{\mathrm{CO_2}}=\frac{pV}{RT}=\frac{(0{,}25)(5{,}00)}{(0{,}08206)(500)}=0{,}0305\,\mathrm{mol}$.
+Poiché sono presenti entrambi i solidi, l’espressione della costante è $K_p=p_{\mathrm{CO_2}}$, quindi prima della compressione $p_{\mathrm{CO_2}}=1{,}0\,\mathrm{atm}$. A temperatura costante, dimezzare il volume raddoppia subito la pressione parziale del gas: $p_{\mathrm{CO_2}}=2{,}0\,\mathrm{atm}$. Il quoziente subito dopo la compressione è dunque $Q_p=2{,}0\,\mathrm{atm}$, maggiore di $K_p$. Per ristabilire l’equilibrio la reazione procede verso sinistra e consuma $\mathrm{CO_2}$. All’equilibrio finale la pressione parziale torna a $1{,}0\,\mathrm{atm}$, perché $Q_p=K_p$. Dall’equazione dei gas ideali si ricava $n_{\mathrm{CO_2}}=\frac{pV}{RT}=\frac{(1{,}0)(5{,}00)}{(0{,}08206)(1100)}=0{,}0554\,\mathrm{mol}$. Le condizioni sono compatibili con una pressione di equilibrio dell’ordine di $1\,\mathrm{atm}$ intorno a $1100\,\mathrm{K}$.
 :::
 :::
 

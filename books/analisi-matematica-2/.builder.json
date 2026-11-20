@@ -1,7 +1,7 @@
 {
   "projectId": "d3fc7eca-c1eb-4ddd-9868-fb75cea03758",
-  "exportId": "6838743d-4f22-49b2-9d45-2081791bb9b4",
-  "exportedAt": "2026-11-18T01:19:41.664Z",
+  "exportId": "9bf4af33-c262-4a10-9a34-0ca85a7ddbe6",
+  "exportedAt": "2026-11-20T22:55:02.045Z",
   "builderVersion": "0.5.1-alpha",
   "files": {
     "assets/103f5607-gradiente-curve-di-livello.svg": "3f40d5fc903a33948b20d175f9c1bf0d2cabae9a001ec69b5a0ccd65bb9b9f7e",
@@ -53,10 +53,10 @@
     "chapters/08-serie-di-fourier.md": "dd3ce27249537e416f1609f561884eaa6f12b3ce384281c1f75ca90ffea33aa5",
     "chapters/09-equazioni-differenziali-e-trasformata-di-laplace.md": "bf7551d10e6c8a6a01b0d77313ee6d8db5adee0b85bf0b05b49af75b7dec5738",
     "esami.md": "23b552f0bae89a40e7c8e596887980508d1fdcad7c1b054552a6fbd3efc1d7c6",
-    "esercizi.md": "1f19b867fb1bf02c0ea7ba94a1dea36ca16b3c745b9bc30f9e02384ad72d24a1",
+    "esercizi.md": "75a0b24e1248f34995e2c0a101eb6bc7d4dd933b3769e7f16c078c5fe7c59899",
     "grafici.json": "090bb07860e0ffa2b9fb38d9178f86f3a9c7d1ec2a9e7c5c381e38c10dfa6bea",
-    "ptsb.json": "399e2177223a421ef7bf1cdfac39270e546a428c068eb9387e93bd759b5299d6",
-    "smartbook.json": "704912b2d79c59e9981ac9af9c77111c4c003a7285d38aca5506a4822a512aee"
+    "ptsb.json": "0ae0827c455eb3d9b8dcf03db7c82ec794859ce3301ac0bd57174e461cd6d6b2",
+    "smartbook.json": "37d7ac72ecbb61c8e2cd0c493f710d5b142696deea204a8b1aeb5dfe91fc3459"
   },
   "findings": [
     "major unicode-math chapters/01-spazio-rn-e-funzioni-di-piu-variabili.md: ## p3 | Cenni di topologia di ℝⁿ",

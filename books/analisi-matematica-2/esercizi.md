@@ -3359,11 +3359,11 @@ $$\frac{a_{n+1}}{a_n}=\frac{(n+1)^2}{(2n+1)(2n+2)}=\frac{n+1}{2(2n+1)}\to\frac14
 
 quindi $R=4$.
 
-Agli estremi il modulo del termine generale è $b_n=a_n4^n$. Si ha
+Per $|x|<4$ la serie converge assolutamente. Agli estremi il modulo del termine generale è $b_n=a_n4^n$. Si ha
 
 $$\frac{b_{n+1}}{b_n}=4\cdot\frac{n+1}{2(2n+1)}=\frac{2(n+1)}{2n+1}>1,$$
 
-quindi $(b_n)$ è crescente con $b_0=1$: $b_n\ge1$ e il termine generale non tende a $0$, sia per $x=4$ sia per $x=-4$. La serie non converge agli estremi.
+quindi $(b_n)$ è crescente con $b_0=1$: $b_n\ge1$ e il termine generale non tende a $0$, sia per $x=4$ sia per $x=-4$. Per $|x|>4$ il termine generale non tende a $0$, perché il criterio del rapporto dà $\left|\frac{a_{n+1}x^{n+1}}{a_nx^n}\right|\to\frac{|x|}{4}>1$. La serie non converge agli estremi né per $|x|>4$. L'insieme di convergenza è dunque $(-4,4)$.
 :::
 :::
 

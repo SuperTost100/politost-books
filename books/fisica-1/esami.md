@@ -36,7 +36,7 @@ Urtano restando attaccati, quindi in modo completamente anelastico; possiamo per
 
 $$m_1a_1t+m_2a_2t=(m_1+m_2)v$$
 
-da cui si ottiene $v=2.57\ \frac{\mathrm{m}}{\mathrm{s}}$.
+da cui si ottiene $v\approx 2.56\ \frac{\mathrm{m}}{\mathrm{s}}$.
 
 2. La variazione di energia cinetica durante l’urto è data da
 
@@ -89,29 +89,29 @@ $$
 Dalla seconda equazione segue $T=\frac{3}{2}Ma-Mg\sin\theta$. Sostituendo nella prima si ricava
 
 $$
-a=g\frac{m\sin\theta-\mu m\cos\theta+M\sin\theta}{\frac{3}{2}M+m}=2.977\,\mathrm{m/s^2}.
+a=g\frac{m\sin\theta-\mu m\cos\theta+M\sin\theta}{\frac{3}{2}M+m}\approx 2.9779\,\mathrm{m/s^2}.
 $$
 
 L’attrito sul cilindro vale
 
 $$
-f_s=\frac{Ma}{2}=2.977\,\mathrm{N}.
+f_s=\frac{Ma}{2}\approx 2.9779\,\mathrm{N}.
 $$
 
 La forza con segno calcolata dalla convenzione di trazione è
 
 $$
-T=M\left(\frac{3}{2}a-g\sin\theta\right)=-0.879\,\mathrm{N}.
+T=M\left(\frac{3}{2}a-g\sin\theta\right)\approx -0.876\,\mathrm{N}.
 $$
 
-Il segno negativo indica che la barretta esercita una forza di $0.879\,\mathrm{N}$ in compressione, sotto l’ipotesi che il cilindro sia a monte del cubo.
+Il segno negativo indica che la barretta esercita una forza di $0.876\,\mathrm{N}$ in compressione, sotto l’ipotesi che il cilindro sia a monte del cubo.
 
 **b)**
 
 Per un moto con accelerazione costante e velocità iniziale nulla, dopo uno spostamento $x$ la velocità è $v=\sqrt{2ax}$. Per $x=1\,\mathrm{m}$ si ottiene
 
 $$
-v=\sqrt{2\cdot2.977\cdot1}=2.44\,\mathrm{m/s}.
+v=\sqrt{2\cdot2.9779\cdot1}\approx 2.44\,\mathrm{m/s}.
 $$
 
 **c)**
@@ -134,7 +134,7 @@ $$
 quindi $\tan\theta=3\mu$. Pertanto,
 
 $$
-\theta=\arctan(3\cdot0.33)=44.7^\circ.
+\theta=\arctan(3\cdot0.33)\approx 44.7^\circ.
 $$
 :::
 :::
@@ -770,7 +770,7 @@ Gli stati hanno le seguenti coordinate:
 - $C=(0.75V_A,16P_A/9)$.
 - $D\approx(V_A,1.128P_A)$.
 
-AB è una compressione isoterma reversibile, BC e DA sono trasformazioni isocore irreversibili. CD è un’espansione adiabatica irreversibile; poiché i dati non determinano una curva $P$-$V$ univoca, nel disegno si rappresenta solo come collegamento schematico tra C e D.
+Il ciclo si disegna percorrendo i punti nell'ordine $A\to B\to C\to D\to A$. AB è un tratto di iperbole isoterma (compressione reversibile, da $V_A$ a $0.75V_A$). BC è un segmento verticale a volume costante $0.75V_A$, verso l'alto. CD è un'espansione adiabatica irreversibile da C a D: poiché i dati non determinano una curva $P$-$V$ univoca, nel disegno si rappresenta solo come collegamento schematico tra C e D. DA è un segmento verticale a volume costante $V_A$, verso il basso.
 
 **b) Temperatura $T_D$**
 
@@ -784,19 +784,19 @@ $$W=\eta Q_{BC}=0.04\cdot2494\approx100\ \text{J}$$
 
 Il lavoro nella trasformazione AB è
 
-$$W_{AB}=nRT\ln\left(\frac{V_B}{V_A}\right)=2\cdot8.314\cdot300\cdot\ln(0.75)\approx-1436\ \text{J}$$
+$$W_{AB}=nRT\ln\left(\frac{V_B}{V_A}\right)=2\cdot8.314\cdot300\cdot\ln(0.75)\approx-1435\ \text{J}$$
 
 Poiché $W=W_{AB}+W_{CD}$,
 
-$$W_{CD}=W-W_{AB}=100-(-1436)=1536\ \text{J}$$
+$$W_{CD}=W-W_{AB}=100-(-1435)=1535\ \text{J}$$
 
 Per il primo principio applicato alla trasformazione adiabatica CD,
 
 $$Q=0\quad\Longrightarrow\quad W_{CD}=n c_V(T_C-T_D)$$
 
-$$1536=2\cdot\frac{3}{2}R(400-T_D)$$
+$$1535=2\cdot\frac{3}{2}R(400-T_D)$$
 
-$$T_D\approx338\ \text{K}$$
+$$T_D\approx338.5\ \text{K}$$
 
 **c) Variazione di entropia nella trasformazione CD**
 
@@ -804,7 +804,7 @@ La variazione di entropia del sistema, che coincide con quella dell’universo i
 
 $$\Delta S_{\mathrm{sist},CD}=n c_V\ln\left(\frac{T_D}{T_C}\right)+nR\ln\left(\frac{V_D}{V_C}\right)$$
 
-$$\Delta S=2\cdot\frac{3}{2}R\ln\left(\frac{338}{400}\right)+2R\ln\left(\frac{1}{0.75}\right)\approx0.60\ \text{J/K}$$
+$$\Delta S=2\cdot\frac{3}{2}R\ln\left(\frac{338.5}{400}\right)+2R\ln\left(\frac{1}{0.75}\right)\approx0.62\ \text{J/K}$$
 
 **d) Energia inutilizzabile**
 
@@ -822,7 +822,7 @@ La trasformazione AB è reversibile, quindi il contributo complessivo del gas e 
 
 La variazione di entropia dell’ambiente per la sorgente fredda nella trasformazione DA è
 
-$$\Delta S_{\mathrm{amb},DA}=-\frac{Q_{DA}}{T_A}$$
+$$\Delta S_{\mathrm{amb},DA}=-\frac{Q_{DA}}{T_A}\approx3.20\ \text{J/K}$$
 
 La variazione di entropia del sistema nella trasformazione isocora DA è
 
@@ -1222,7 +1222,7 @@ Da cui si ottiene la velocità del corpo prima dell’urto con la sbarretta.
 Dalla conservazione del momento angolare si ha:
 
 $$
- mv_0(l-d) = I\omega, \qquad I = \frac{Ml^2}{12} + M\left(\frac{l}{2}-d\right)^2 + m(l-d)^2
+mv_0(l-d) = I\omega, \qquad I = \frac{Ml^2}{12} + M\left(\frac{l}{2}-d\right)^2 + m(l-d)^2
 $$
 
 $$
@@ -1274,7 +1274,7 @@ h' = (l-d)(1-\cos\phi) = (l-d)\frac{\frac{1}{2}\lbrack I_d+m(l-d)^2\rbrack \omeg
 $$
 
 $$
-h' = 8.53\ \text{cm}
+h' \approx 8.55\ \text{cm} \approx 8.6\ \text{cm}
 $$
 
 **Metodo 2**
@@ -1631,9 +1631,9 @@ I calori scambiati sono
 
 $$Q_{AB}=nRT_A\ln\left(\frac{V_B}{V_A}\right)=-4160.50\ \text{J}$$
 
-$$Q_{DA}=nc_V(T_A-T_D)=-3963.37\ \text{J}$$
+$$Q_{DA}=nc_V(T_A-T_D)=-3963.38\ \text{J}$$
 
-Quindi $Q_{gh}=8123.87\ \text{J}$. La massa di ghiaccio che fonde per ciclo è
+Quindi $Q_{gh}=8123.88\ \text{J}$. La massa di ghiaccio che fonde per ciclo è
 
 $$m=\frac{Q_{gh}}{\lambda}=24.40\ \text{g}$$
 

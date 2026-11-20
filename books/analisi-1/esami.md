@@ -243,9 +243,12 @@ Possiamo concludere che:
 
 Infine, dal punto a), la funzione è inferiormente e superiormente illimitata; ne concludiamo che $f$ non ammette punti di massimo o minimo assoluti.
 
-d) Di seguito è riportato un grafico qualitativo di $f$.
+d) Il grafico qualitativo di $f$ si presenta così.
 
-[figure: Grafico qualitativo di $f$, con asintoto verticale $x=-1$ e asintoto orizzontale $y=-3$ per il ramo a sinistra; il ramo a destra ha un minimo nel punto $\left(\sqrt{e}-2,\,2e-3\right)$.]
+- Per $x\leq -2$ il grafico è la semiretta orizzontale $y=-3$, che è asintoto orizzontale per $x\to-\infty$.
+- In $(-2,-1)$ il grafico parte dal punto $(-2,-3)$ con tangente orizzontale, poiché $f'(-2)=0$, e decresce strettamente. Resta al di sotto di $y=-3$ e tende a $-\infty$ per $x\to-1^-$.
+- La retta $x=-1$ è asintoto verticale.
+- In $(-1,+\infty)$ il grafico parte da $+\infty$ per $x\to-1^+$ e decresce fino al punto di minimo locale $\left(\sqrt{e}-2,\,2e-3\right)$, con $2e-3\approx 2{,}44$. Poi cresce strettamente e tende a $+\infty$ per $x\to+\infty$, senza asintoto obliquo.
 
 e) Consideriamo la funzione
 
@@ -3198,49 +3201,6 @@ In conclusione, l'integrale converge per $\alpha>-\frac12$.
 
 :::exercise{id="X2024-4" type="esame" chapter="11" difficulty="medio"}
 ## Domanda
-**Esame del 31 gennaio 2024 - turno 1 - versione 1**
-
-**Esercizio 2**
-
-(a) Dare la definizione di soluzione del problema di Cauchy per un’equazione differenziale lineare del secondo ordine a coefficienti costanti.
-
-(b) Verificare che la funzione $\varphi(x)=\sin^2 x$ è soluzione su $\mathbb{R}$ dell’equazione differenziale
-
-$$y''+2y=2-2\sin^2 x.$$
-
-(c) Scrivere la soluzione generale dell’equazione su $\mathbb{R}$.
-
-:::solution
-**Soluzione**
-
-(a) Una soluzione del problema di Cauchy associato all’equazione differenziale lineare del secondo ordine
-
-$$y''+ay'+by=g(x)$$
-
-è una funzione $\varphi\in C^2(I)$ che soddisfa, per ogni $x\in I$,
-
-$$\varphi''(x)+a\varphi'(x)+b\varphi(x)=g(x),$$
-
-e i dati iniziali $\varphi(x_0)=\alpha$ e $\varphi'(x_0)=\beta$, dove $x_0\in I$, $\alpha,\beta\in\mathbb{R}$, $a,b\in\mathbb{R}$ e $g\in C^0(I)$.
-
-(b) Per $\varphi(x)=\sin^2 x$ si ha
-
-$$\varphi''(x)=2-4\sin^2 x.$$
-
-Quindi
-
-$$\varphi''(x)+2\varphi(x)=2-4\sin^2 x+2\sin^2 x=2-2\sin^2 x,$$
-
-e la funzione verifica l’equazione su $\mathbb{R}$.
-
-(c) L’equazione omogenea associata è $y''+2y=0$, la cui soluzione generale è $C_1\cos(\sqrt{2}x)+C_2\sin(\sqrt{2}x)$. Poiché $\sin^2 x$ è una soluzione particolare dell’equazione completa, la soluzione generale è
-
-$$y(x)=\sin^2 x+C_1\cos(\sqrt{2}x)+C_2\sin(\sqrt{2}x),\qquad C_1,C_2\in\mathbb{R}.$$
-:::
-:::
-
-:::exercise{id="X2024-5" type="esame" chapter="11" difficulty="medio"}
-## Domanda
 **Esame del 31 gennaio 2024 - turno 1 - versione 3**
 
 **Esercizio 2**
@@ -3290,7 +3250,7 @@ $$
 :::
 :::
 
-:::exercise{id="X2024-6" type="esame" chapter="11" difficulty="medio"}
+:::exercise{id="X2024-5" type="esame" chapter="11" difficulty="medio"}
 ## Domanda
 **Esame del 31 gennaio 2024 - turno 1**
 
@@ -3378,7 +3338,7 @@ $$
 :::
 :::
 
-:::exercise{id="X2024-7" type="esame" chapter="11" difficulty="medio"}
+:::exercise{id="X2024-6" type="esame" chapter="11" difficulty="medio"}
 ## Domanda
 **Esame del 31 gennaio 2024 - turno 1 - versione 2**
 
@@ -3411,7 +3371,7 @@ con $c_1,c_2\in\mathbb{R}$.
 :::
 :::
 
-:::exercise{id="X2024-8" type="esame" chapter="11" difficulty="medio"}
+:::exercise{id="X2024-7" type="esame" chapter="11" difficulty="medio"}
 ## Domanda
 **Esame del 31 gennaio 2024 - turno 1 - versione 4**
 
@@ -3450,7 +3410,7 @@ con $C_1,C_2\in\mathbb{R}$.
 :::
 :::
 
-:::exercise{id="X2024-9" type="esame" chapter="7" difficulty="facile"}
+:::exercise{id="X2024-8" type="esame" chapter="7" difficulty="facile"}
 ## Domanda
 **Esame del 16 febbraio 2024**
 
@@ -3493,7 +3453,7 @@ Per ogni $x \in (-2,2) \setminus \{0\}$, la formula della derivata mostra che $g
 :::
 :::
 
-:::exercise{id="X2024-10" type="esame" chapter="7" difficulty="facile"}
+:::exercise{id="X2024-9" type="esame" chapter="7" difficulty="facile"}
 ## Domanda
 **Esame del 16 febbraio 2024 - turno 1 - versione 2**
 
@@ -3556,40 +3516,7 @@ No: $g$ non è derivabile in $x=0$, che appartiene all’intervallo aperto $(-1,
 :::
 :::
 
-:::exercise{id="X2024-11" type="esame" chapter="7" difficulty="facile"}
-## Domanda
-**Esame del 16 febbraio 2024 - turno 1 - versione 1**
-
-**Esercizio 2**
-
-(a) Enunciare il teorema di Rolle.
-
-(b) Determinare se la funzione $g:\lbrack -2,2\rbrack \to\mathbb{R}$ data da
-
-$$g(x)=\sqrt{\cosh(x)-1}$$
-
-ha punti stazionari.
-
-(c) Determinare se la funzione $g$ definita in (b) soddisfa le ipotesi del teorema di Rolle.
-
-:::solution
-Le ipotesi del teorema di Rolle sono soddisfatte se una funzione è continua su un intervallo chiuso $\lbrack a,b\rbrack $, derivabile nell'intervallo aperto $(a,b)$ e assume valori uguali agli estremi, cioè $f(a)=f(b)$. In tal caso esiste almeno un punto $c\in(a,b)$ tale che $f'(c)=0$.
-
-(b) Si ha $g(0)=0$ e, per $x\ne 0$,
-
-$$g'(x)=\frac{\sinh x}{2\sqrt{\cosh x-1}}.$$
-
-La derivata è negativa per $x<0$ e positiva per $x>0$. In $x=0$ la funzione non è derivabile: usando $\cosh x-1\sim \frac{x^2}{2}$ per $x\to 0$, si ottiene $\sqrt{\cosh x-1}\sim \frac{|x|}{\sqrt{2}}$, da cui
-
-$$g'(x)\sim \frac{x}{2\cdot\frac{|x|}{\sqrt{2}}}=\frac{\operatorname{sign}(x)}{\sqrt{2}}.$$
-
-I limiti del rapporto incrementale in $0$ valgono quindi $-\frac{1}{\sqrt{2}}$ da sinistra e $\frac{1}{\sqrt{2}}$ da destra. Quindi $g$ non ha punti stazionari.
-
-(c) La funzione è continua su $\lbrack -2,2\rbrack $ e $g(-2)=g(2)$, ma non è derivabile in $0\in(-2,2)$. Non soddisfa quindi tutte le ipotesi del teorema di Rolle.
-:::
-:::
-
-:::exercise{id="X2024-12" type="esame" chapter="7" difficulty="medio"}
+:::exercise{id="X2024-10" type="esame" chapter="7" difficulty="medio"}
 ## Domanda
 **Esame del 16 febbraio 2024 - turno 1 - versione 3**
 
@@ -3634,7 +3561,7 @@ $$\Rightarrow g\ \text{non ha p.t. stazionari}$$
 :::
 :::
 
-:::exercise{id="X2024-13" type="esame" chapter="11" difficulty="medio"}
+:::exercise{id="X2024-11" type="esame" chapter="11" difficulty="medio"}
 ## Domanda
 **Esame del 11 aprile 2024**
 
@@ -3686,7 +3613,7 @@ Il termine esponenziale è limitato su $\mathbb{R}$ se e solo se $\alpha=0$. Poi
 :::
 :::
 
-:::exercise{id="X2024-14" type="esame" chapter="6" difficulty="medio"}
+:::exercise{id="X2024-12" type="esame" chapter="6" difficulty="medio"}
 ## Domanda
 **Esame del 21 giugno 2024 - turno U - versione 4**
 
@@ -3727,7 +3654,7 @@ Pertanto $h$ ha ordine di infinitesimo $12$ per $x\to-\infty$ rispetto al campio
 :::
 :::
 
-:::exercise{id="X2024-15" type="esame" chapter="6" difficulty="medio"}
+:::exercise{id="X2024-13" type="esame" chapter="6" difficulty="medio"}
 ## Domanda
 **Esame del 21 giugno 2024 - turno U - versione 3**
 
@@ -3756,7 +3683,7 @@ Dunque $h$ è un infinitesimo di ordine $6$ rispetto al campione $1/x$.
 :::
 :::
 
-:::exercise{id="X2024-16" type="esame" chapter="6" difficulty="medio"}
+:::exercise{id="X2024-14" type="esame" chapter="6" difficulty="medio"}
 ## Domanda
 **Esame del 21 giugno 2024 - turno U - versione 2**
 
@@ -3907,13 +3834,11 @@ Il punto di non derivabilità $x=3$ è un punto a tangente verticale essendo $\l
 
 (c) Determinare gli intervalli di monotonia e gli eventuali punti di massimo e di minimo locale di $f$, precisando se questi ultimi sono anche globali o meno.
 
-Si ha che $f'(x)=0$ per $x=5$. Inoltre, $f'(x)>0$ per $x<5$, $x\ne3$, mentre $f'(x)<0$ per $x>5$. La funzione è crescente su $(-\infty,5\rbrack $ e decrescente su $\lbrack 5,+\infty)$. Il punto $x=5$ è pertanto di massimo assoluto. Non essendoci altri punti in cui la monotonia cambia da decrescente a crescente, $f$ non ha punti di minimo locale.
+Si ha che $f'(x)=0$ per $x=5$. Inoltre, $f'(x)>0$ per $x<5$, $x\ne3$, mentre $f'(x)<0$ per $x>5$. La funzione è crescente su $(-\infty,5\rbrack $ e decrescente su $\lbrack 5,+\infty)$. Il punto $x=5$ è pertanto di massimo assoluto, con valore $f(5)=e^{-5/6}\sqrt[3]{2}\approx0{,}548$. Non essendoci altri punti in cui la monotonia cambia da decrescente a crescente, $f$ non ha punti di minimo locale.
 
 (d) Tracciare un grafico qualitativo di $f$.
 
-[figure: Grafico cartesiano della funzione $f$, crescente con tangente verticale in $x=3$, massimo in $x=5$ e tendente a $y=0$ per $x\to+\infty$.]
-
-Figura 1: Grafico di $f$.
+Il grafico è crescente da $-\infty$ fino al massimo assoluto nel punto $(5,f(5))$, dove $f(5)=e^{-5/6}\sqrt[3]{2}\approx0{,}548$. Attraversa l’asse delle ascisse nel punto $(3,0)$ con tangente verticale e flesso. Dopo il massimo è decrescente e tende a $y=0$ da valori positivi per $x\to+\infty$.
 
 (e) Scrivere se esistono e indicare i valori di estremo superiore, estremo inferiore, massimo e minimo dell’insieme
 
@@ -4032,7 +3957,13 @@ pertanto $0$ è anche punto di minimo globale, mentre $-4/3$ e $4/3$ non lo sono
 
 **(d)**
 
-[figure: Grafico simmetrico rispetto all’asse verticale, con due minimi e cuspide in corrispondenza dell’asse; cerchi vuoti agli estremi e alla cuspide, e un punto pieno sotto la cuspide sull’asse.]
+Il grafico qualitativo di $f$ ha queste caratteristiche.
+
+- È simmetrico rispetto all’asse verticale, perché $f$ è pari, ed è tutto contenuto nel semipiano $y\le0$ (tranne gli estremi esclusi).
+- Agli estremi del dominio $f$ tende a $0$ senza raggiungerlo: ci sono due punti vuoti (cerchi vuoti) in $(-2,0)$ e $(2,0)$. Qui la tangente è verticale, perché $f'(x)\to+\infty$ per $x\to2^-$ e $f'(x)\to-\infty$ per $x\to-2^+$.
+- Partendo da $(-2,0)$ il grafico scende fino al minimo locale in $x=-4/3$, di valore $-\sqrt[4]{32/27}\approx-1{,}04$, poi risale verso l’origine. Allo stesso modo, partendo dall’origine a destra scende fino al minimo locale in $x=4/3$, con lo stesso valore, e poi risale fino al punto vuoto $(2,0)$. I due minimi in $\pm4/3$ sono solo locali.
+- In $x=0$ il grafico ha una cuspide rivolta verso l’alto: per $x\to0$ si ha $f(x)\sim-2^{1/4}|x|^{1/2}$, quindi $f'(x)\to\mp\infty$ per $x\to0^\pm$, con tangente verticale. La cuspide termina nel punto vuoto $(0,0)$.
+- Sotto la cuspide, sull’asse verticale, c’è il punto isolato pieno $(0,-2)$, cioè $f(0)=-2$. È il minimo globale di $f$.
 
 **(e)**
 
@@ -4183,7 +4114,7 @@ Quanto al minimo, $f(x)>0$ per ogni $x$ nel dominio (si annulla solo nei limiti 
 
 **(d)**
 
-[figure: Grafico simmetrico rispetto all’asse $y$, con due archi sopra l’asse $x$, che terminano con cerchi aperti in $x=-2$, $x=0$ e $x=2$. In $x=0$ è indicato un punto pieno sopra l’origine.]
+Il grafico è simmetrico rispetto all’asse $y$ e presenta due archi sopra l’asse $x$, uno per $x<0$ e uno per $x>0$. Entrambi tendono a $0$ avvicinandosi ai punti esclusi $x=-2$, $x=0$ e $x=2$, dove il grafico ha cerchi aperti. Su ciascun arco la funzione cresce fino al massimo in $x=-4/3$ o $x=4/3$, rispettivamente, di ordinata $\sqrt[4]{32/27}$, poi decresce. In $x=-4/3$ e $x=4/3$ la tangente è orizzontale. Avvicinandosi a $x=0$ da sinistra l’arco decresce con tangente verticale; da destra cresce con tangente verticale, perciò nell’origine vi è una cuspide nel grafico dei due archi. Inoltre, il valore $f(0)=1$ è rappresentato dal punto isolato $(0,1)$.
 
 **(e)**
 
@@ -4260,11 +4191,9 @@ $$
 
 Il punto di non derivabilità $x=2$ è un punto a tangente verticale essendo $\lim_{x\to2}f'(x)=-\infty$.
 
-**(c)** Si ha che $f'(x)=0$ per $x=4$. Inoltre, $f'(x)>0$ per $x>4$, mentre $f'(x)<0$ per $x<4$, $x\ne2$. La funzione è decrescente su $(-\infty,4\rbrack $ e crescente su $\lbrack 4,+\infty)$. Il punto $x=4$ è pertanto di minimo assoluto.
+**(c)** Si ha che $f'(x)=0$ per $x=4$. Inoltre, $f'(x)>0$ per $x>4$, mentre $f'(x)<0$ per $x<4$, $x\ne2$. La funzione è decrescente su $(-\infty,4\rbrack $ e crescente su $\lbrack 4,+\infty)$. Il punto $x=4$ è pertanto di minimo globale, con valore $f(4)=-e^{-\frac{2}{5}}\sqrt[5]{2}$. La funzione non ha massimi locali né globali.
 
-**(d)** [figure: grafico cartesiano della funzione $f$, decrescente con tangente verticale in $x=2$, poi crescente dopo il minimo in $x=4$ e tendente a $y=0$ per $x\to+\infty$.]
-
-Figura 2: Grafico di $f$
+**(d)** Il grafico parte da valori che tendono a $+\infty$ per $x\to-\infty$ e decresce fino al punto $(2,0)$, dove presenta una tangente verticale. Prosegue decrescendo per $x>2$ fino al minimo globale $\left(4,-e^{-\frac{2}{5}}\sqrt[5]{2}\right)$; poi cresce e tende all’asintoto orizzontale $y=0$ dal basso per $x\to+\infty$.
 
 **(e)** Essendo $f$ crescente su $\lbrack 4,+\infty)$ e $x_n=\frac{1}{n}$ decrescente su $\mathbb{N}\setminus\{0\}$, la successione $a_n=f\left(4+\frac{1}{n}\right)$ è decrescente: pertanto
 
@@ -4696,13 +4625,17 @@ $$
 
 da cui segue che $\sqrt{2}$ non è un punto di minimo globale per $f$.
 
-**(d)** Il grafico di $f$ è composto da due rami, separati dalla retta verticale $x=0$, che non appartiene al dominio.
+**(d)** Il grafico è formato da due rami e ha punti esclusi nei limiti $\left(0,-\frac{\pi}{2}\right)$ e $\left(0,\frac{\pi}{2}\right)$.
 
-Sul ramo sinistro, $x\in(-\infty,0)$, la funzione è strettamente decrescente: proviene da $+\infty$ quando $x\to-\infty$ e scende fino al valore $-\frac{\pi}{2}$, che viene avvicinato ma non raggiunto quando $x\to0^-$. Il grafico si avvicina quindi asintoticamente alla retta orizzontale $y=-\frac{\pi}{2}$ in prossimità di $x=0$, pur non avendo asintoti orizzontali su tutto il ramo, poiché $f(x)\to+\infty$ per $x\to-\infty$.
+Sul ramo sinistro, $x\in(-\infty,0)$, la funzione è strettamente decrescente: scende da $+\infty$ quando $x\to-\infty$ fino al punto escluso $\left(0,-\frac{\pi}{2}\right)$.
 
-Sul ramo destro, $x\in(0,+\infty)$, la funzione parte da $+\frac{\pi}{2}$ per $x\to0^+$ (valore avvicinato ma non raggiunto), decresce strettamente fino al punto di minimo locale $x=\sqrt{2}$, dove assume il valore positivo $f(\sqrt{2})=\frac{1}{4}\log 5+\arctan\frac{1}{2}$, per poi crescere strettamente e tendere a $+\infty$ quando $x\to+\infty$.
+Sul ramo destro, $x\in(0,+\infty)$, la funzione parte dal punto escluso $\left(0,\frac{\pi}{2}\right)$, decresce fino al minimo locale
 
-Il salto tra i due rami in corrispondenza di $x=0$ va da $-\frac{\pi}{2}$ (limite da sinistra) a $+\frac{\pi}{2}$ (limite da destra), e nessuno dei due rami presenta asintoti obliqui, coerentemente con quanto trovato nel punto (a).
+$$
+\left(\sqrt{2},\frac{1}{4}\log 5+\arctan\frac{1}{2}\right),
+$$
+
+poi cresce e tende a $+\infty$ quando $x\to+\infty$. Questi andamenti costituiscono il grafico qualitativo richiesto.
 
 **(e)** Per $x>0$ si ha
 
@@ -5486,6 +5419,8 @@ B &= \{w = \rho e^{i\phi} : 1 \le \rho \le 4,\ -\frac{3\pi}{2} \le \phi \le -\fr
 &= \{w = \rho e^{i\phi} : 1 \le \rho \le 4,\ \frac{\pi}{2} \le \phi \le \frac{3\pi}{2}\}.
 \end{aligned}
 $$
+
+Dunque $B$ è la semicorona circolare $1 \le |w| \le 4$ contenuta nel semipiano $\operatorname{Re} w \le 0$, con argomenti $\phi \in \lbrack \frac{\pi}{2}, \frac{3\pi}{2}\rbrack $.
 :::
 :::
 
@@ -5673,10 +5608,10 @@ $$
 
 **(b)**
 
-La funzione è continua sul dominio $\mathbb{R}\setminus\{0\}$. È derivabile per $x\in\mathbb{R}\setminus\{0,\pm\frac{1}{2}\}$ e si ha
+La funzione è continua sul dominio $\mathbb{R}\setminus\{0\}$. È derivabile per $x\in\mathbb{R}\setminus\{0,\pm\frac{1}{2}\}$. La derivata è
 
 $$
-f'(x)=-(\log|2x|)^{\frac{2}{3}}-x\frac{2}{3}(\log|2x|)^{-\frac{1}{3}}\frac{1}{2x}\cdot 2=-(\log|2x|)^{\frac{2}{3}}-\frac{2}{3}(\log|2x|)^{-\frac{1}{3}}.
+f'(x)=-(\log|2x|)^{\frac{2}{3}}-\frac{2}{3}(\log|2x|)^{-\frac{1}{3}}.
 $$
 
 Abbiamo
@@ -5703,7 +5638,7 @@ Si ha che $f'(x)=0$ per $x=\pm\frac{1}{2}e^{-\frac{2}{3}}$. Inoltre, $f'(x)<0$ p
 
 **(d)**
 
-[figure: Grafico qualitativo di $f$, con estremi locali in $x=-\frac{1}{2}$, $x=-\frac{1}{2}e^{-\frac{2}{3}}$, $x=\frac{1}{2}e^{-\frac{2}{3}}$ e $x=\frac{1}{2}$.]
+Il grafico è simmetrico rispetto all’origine, perché $f$ è dispari, ed è definito per $x\neq 0$. Ha cuspidi in $x=-\frac{1}{2}$ e $x=\frac{1}{2}$, rispettivamente minimo e massimo locale, e punti di massimo e minimo locali in $x=-\frac{1}{2}e^{-\frac{2}{3}}$ e $x=\frac{1}{2}e^{-\frac{2}{3}}$. In corrispondenza dell’origine, dove il prolungamento continuo vale $0$, il grafico presenta una tangente verticale. La funzione tende a $+\infty$ per $x\to-\infty$ e a $-\infty$ per $x\to+\infty$; non ha estremi globali.
 
 **(e)**
 
@@ -5775,7 +5710,7 @@ Ponendo $a = e^{-\frac{2}{3}}$, si ha $f'(x) = 0$ per $x = \pm a$. La funzione �
 
 Nessuno di questi quattro punti è un estremo globale, poiché $f(x) \to +\infty$ per $x \to -\infty$ e $f(x) \to -\infty$ per $x \to +\infty$.
 
-Il grafico qualitativo è simmetrico rispetto all'origine. Nel semipiano sinistro scende da $+\infty$ fino alla cuspide $(-1,0)$, sale fino al massimo locale $(-a,a(2/3)^{2/3})$, poi scende verso l'origine. Nel semipiano destro scende dall'origine fino al minimo locale $(a,-a(2/3)^{2/3})$, sale fino alla cuspide $(1,0)$, poi scende verso $-\infty$. Il grafico passa per i punti $(-1,0)$ e $(1,0)$ e tende all'origine da entrambi i lati, senza che l'origine appartenga al dominio.
+Il grafico qualitativo è simmetrico rispetto all'origine: presenta due rami, con un punto vuoto in $(0,0)$, cuspidi in $(-1,0)$ e $(1,0)$ ed estremi regolari nelle ascisse $-a$ e $a$. Nel semipiano sinistro scende da $+\infty$ fino alla cuspide $(-1,0)$, sale fino al massimo locale $(-a,a(2/3)^{2/3})$, poi scende verso l'origine. Nel semipiano destro scende dall'origine fino al minimo locale $(a,-a(2/3)^{2/3})$, sale fino alla cuspide $(1,0)$, poi scende verso $-\infty$. Il grafico passa per i punti $(-1,0)$ e $(1,0)$ e tende all'origine da entrambi i lati, senza che l'origine appartenga al dominio.
 
 La funzione $g$ è continua su $\mathbb{R}$, quindi $G'(x) = g(x)$ per ogni $x \in \mathbb{R}$. I punti critici di $G$ sono $x = -1, 0, 1$. Si ha $g(x) > 0$ per $x < 0$ con $x \ne -1$ e $g(x) < 0$ per $x > 0$ con $x \ne 1$. Pertanto, $x = 0$ è un punto di massimo globale, mentre $x = \pm1$ non sono punti estremi di $G$.
 :::
@@ -5820,7 +5755,7 @@ $$
 
 Non esistono asintoti verticali, orizzontali o obliqui: infatti $f(x)/x=(\log|2x|)^{2/3}\to+\infty$ per $x\to\pm\infty$.
 
-La funzione è continua sul dominio. È derivabile per $x\in\mathbb{R}\setminus\{0,\pm\frac{1}{2}\}$. Ponendo $L=\log|2x|$, la derivata si può scrivere come
+La funzione è continua nel dominio; nell’origine presenta una discontinuità eliminabile. È derivabile per $x\in\mathbb{R}\setminus\{0,\pm\frac{1}{2}\}$. Ponendo $L=\log|2x|$, la derivata si può scrivere come
 
 $$
 f'(x)=\frac{L+\frac{2}{3}}{\sqrt[3]{L}}.
@@ -5840,7 +5775,7 @@ $$
 
 Entrambi i punti sono cuspidi. Gli zeri di $f$ sono $x=\pm\frac{1}{2}$. La derivata si annulla per $x=\pm a$, dove $a=\frac{1}{2}e^{-\frac{2}{3}}$. È positiva per $x< -\frac{1}{2}$, per $x\in(-a,0)$, per $x\in(0,a)$ e per $x>\frac{1}{2}$; è negativa per $x\in(-\frac{1}{2},-a)$ e per $x\in(a,\frac{1}{2})$.
 
-Dunque $f$ cresce su $(-\infty,-\frac{1}{2}\rbrack $, $\lbrack -a,0)$, $(0,a\rbrack $ e $\lbrack \frac{1}{2},+\infty)$; decresce su $\lbrack -\frac{1}{2},-a\rbrack $ e $\lbrack a,\frac{1}{2}\rbrack $. Ha massimi locali in $-\frac{1}{2}$ e $a$, e minimi locali in $-a$ e $\frac{1}{2}$. Nessuno di questi estremi è globale, perché la funzione non è limitata né superiormente né inferiormente. Il grafico è dispari, presenta un punto escluso nell’origine, cuspidi negli zeri $\pm\frac{1}{2}$ e rami illimitati.
+Dunque $f$ cresce su $(-\infty,-\frac{1}{2}\rbrack $, $\lbrack -a,0)$, $(0,a\rbrack $ e $\lbrack \frac{1}{2},+\infty)$; decresce su $\lbrack -\frac{1}{2},-a\rbrack $ e $\lbrack a,\frac{1}{2}\rbrack $. Ha massimi locali in $-\frac{1}{2}$ e $a$, e minimi locali in $-a$ e $\frac{1}{2}$. Nessuno di questi estremi è globale, perché la funzione non è limitata né superiormente né inferiormente. Il grafico è dispari su $\mathbb{R}\setminus\{0\}$, con punto escluso $(0,0)$, limiti $-\infty$ e $+\infty$ agli infiniti e nessun asintoto. Posto $a=\frac{1}{2}e^{-\frac{2}{3}}$, cresce su $(-\infty,-\frac{1}{2}\rbrack $, $\lbrack -a,0)$, $(0,a\rbrack $ e $\lbrack \frac{1}{2},+\infty)$ e decresce su $\lbrack -\frac{1}{2},-a\rbrack $ e $\lbrack a,\frac{1}{2}\rbrack $. Ha cuspidi e zeri in $\pm\frac{1}{2}$, massimi locali in $-\frac{1}{2}$ e $a$ e minimi locali in $-a$ e $\frac{1}{2}$.
 
 La funzione $g$ è continua su $\mathbb{R}$, quindi $G'(x)=g(x)$ per ogni $x\in\mathbb{R}$. I punti critici di $G$ sono $x=-\frac{1}{2}$, $x=0$ e $x=\frac{1}{2}$. Poiché $g(x)<0$ per $x<0$, $x\neq-\frac{1}{2}$, e $g(x)>0$ per $x>0$, $x\neq\frac{1}{2}$, $x=0$ è un minimo globale di $G$. Nei punti $x=\pm\frac{1}{2}$ la derivata di $G$ non cambia segno, quindi non sono estremi.
 :::

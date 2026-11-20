@@ -431,11 +431,11 @@ Usando $M_{\mathrm{ZnS}} \approx 97{,}44\,\mathrm{g\,mol^{-1}}$:
 
 $$n_{\mathrm{ZnS},i} = \frac{40}{97{,}44} \approx 0{,}411\,\mathrm{mol}$$
 
-Dalla reazione, $2$ moli di ZnS consumano $3$ moli di O₂. Per consumare tutto lo ZnS servono circa $0{,}617$ mol di O₂, quindi l’ossigeno è in eccesso e lo ZnS è il reagente limitante.
+Dalla reazione, $2$ moli di ZnS consumano $3$ moli di $\mathrm{O_2}$. Per consumare tutto lo ZnS servono circa $0{,}616\,\mathrm{mol}$ di $\mathrm{O_2}$, quindi l’ossigeno è in eccesso e lo ZnS è il reagente limitante.
 
 **Moli gassose finali**
 
-L’ossigeno consumato è $n_{\mathrm{O_2},c} = \frac{3}{2}n_{\mathrm{ZnS},i} \approx 0{,}617\,\mathrm{mol}$ e si producono $n_{\mathrm{SO_2}} = n_{\mathrm{ZnS},i} \approx 0{,}411\,\mathrm{mol}$. Pertanto:
+L’ossigeno consumato è $n_{\mathrm{O_2},c} = \frac{3}{2}n_{\mathrm{ZnS},i} \approx 0{,}616\,\mathrm{mol}$ e si producono $n_{\mathrm{SO_2}} = n_{\mathrm{ZnS},i} \approx 0{,}411\,\mathrm{mol}$. Pertanto:
 
 $$n_{\mathrm{gas},f} = n_{\mathrm{O_2},i} - n_{\mathrm{O_2},c} + n_{\mathrm{SO_2}} \approx 6{,}25\,\mathrm{mol}$$
 

@@ -1,7 +1,7 @@
 {
   "projectId": "18f4e4b5-a587-47a5-96e6-02bad03740e8",
-  "exportId": "a2439672-a6d8-4100-a3b4-0baa6dab2323",
-  "exportedAt": "2026-11-18T01:19:31.275Z",
+  "exportId": "0b66f56c-3d55-4809-bfd2-d35dba0b022f",
+  "exportedAt": "2026-11-20T22:54:52.606Z",
   "builderVersion": "0.5.1-alpha",
   "files": {
     "assets/0033b32f-profilo-velocita-laminare.svg": "2b664d01c55c5886f6846ef335ede7ac3f61fa8acb7679afdea231145fd3c7a5",
@@ -109,11 +109,11 @@
     "chapters/12-temperatura-e-calore.md": "facd3d55bcb58b2bacdb1f0a73228922176576ad6181abe2e97e7cd4abf03b55",
     "chapters/13-primo-principio-e-gas-ideali.md": "3d81760e1e0a75979d95240e50524e6d8ef7d1da9d50ebd03d1c405c78badf18",
     "chapters/14-secondo-principio-ed-entropia.md": "35d89ac2f66298a521f0dc534c0f934095da927a394610665c87bc62743bf49a",
-    "esami.md": "ee3af2807b144463a3ca348f349f5cb32302284fa79dc33c05c4298f9997e7eb",
-    "esercizi.md": "0bf3e886d6586140e73d6d87c76a82e52d5996e1d846cf1ec4651964cf5b478b",
+    "esami.md": "6361d705d548a33ddd3806f2760e36d3a637ec39676eba29b6135efcb65bf248",
+    "esercizi.md": "4543fa830f61138692e1675d3d8fc88cdf456074d708172c832c64fc8e42d51f",
     "grafici.json": "e2f39157cce11790d7c20c544fc7ec68095ea557b0dad4bd87058a0f7470e463",
-    "ptsb.json": "108fb3e12396d8970926fb13db1c412cb2d98160aaf53a4168d8457034b7720a",
-    "smartbook.json": "2f470472ad23ba7bb7a571b82142955ccba3457d80aca6dfa0b68e8e12a67ff5"
+    "ptsb.json": "e1676b58832650f8eb139ffb86e8367314a825d3169daa85b4ec1947cf958fd3",
+    "smartbook.json": "a05aecac15d2b314b352bce080df8092ccf919ebbcef978dd26afac8187c97d5"
   },
   "findings": [],
   "exercises": {

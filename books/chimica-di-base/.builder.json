@@ -1,7 +1,7 @@
 {
   "projectId": "fdf37a45-aa49-4187-86d5-f26d83a8db74",
-  "exportId": "57e222ac-977f-4f50-88c9-22420fde5d9e",
-  "exportedAt": "2026-11-18T01:19:37.032Z",
+  "exportId": "91d1d59a-d242-4f30-bce8-8bef7b7b5bb8",
+  "exportedAt": "2026-11-20T22:54:57.773Z",
   "builderVersion": "0.5.1-alpha",
   "files": {
     "assets/0001dc9b-energia-combustione.svg": "7f3eb2bc64003ca6ad2f755b959bd490819df64a8b2d7223c9bfe862cdcb082a",
@@ -119,11 +119,11 @@
     "chapters/15-cinetica-chimica.md": "8de3904cb5dcecfde81f09e8bf200c1462693e5e0cc74fe19d66f059c9c668a6",
     "chapters/16-elettrochimica.md": "9a32cbcde8f57e6c6d70fd2c7cea447566358d3507028dd2c9b4b0812c3b3888",
     "chapters/17-chimica-organica.md": "52067775593a7a4cb2e6737b084abff70dab070bd08491b37cdbb3c251aa5554",
-    "esami.md": "c1ec7f8ae4c42a22c19665605eada0b862044d34e6483d51033b57d99699f8db",
-    "esercizi.md": "ac1afecf75656fb89814c3533c93f6499445fcbb6bcd0e98cdc1337abd2cf406",
+    "esami.md": "7794f9a98004fbaaf5db7f0731b9016582dff7831063c88163476ea928f1225c",
+    "esercizi.md": "4afbea748cc61b17e498900d02aa070ecee31659ae7bea0634e6f9722427c296",
     "grafici.json": "db46bab99b65360ae30584ac64b1cb3b876e5a027a09608a5b6eb628cdee27e3",
-    "ptsb.json": "2ba8f6da6efaccb2263c26e5b6f6f381e82640b4cc5a8ff4eb279f7ccd6a2c3b",
-    "smartbook.json": "9aeccd533dc9c0eef9645362882ad2dc1a7a81227026c5a65a464ef09083e8ee"
+    "ptsb.json": "d93004087f05aa7201b0fc9701bb5b90040a0d7a4b428fc970b49659f98f2afe",
+    "smartbook.json": "ac3a9107658d9a9cc3e0b433cad0daca02d78a736766d818aae9b75fd3f0ac2d"
   },
   "findings": [],
   "exercises": {

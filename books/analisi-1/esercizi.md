@@ -1674,7 +1674,7 @@ Si scriva $f$ come funzione definita a tratti vicino a $x=2$ e si calcolino sepa
 :::
 
 :::solution
-Per $h$ vicino a $0$ si ha $f(2+h) - f(2) = |h| - 0 = |h|$. Il rapporto incrementale è $\dfrac{|h|}{h}$. Per $h \to 0^+$, $\dfrac{|h|}{h} = \dfrac{h}{h} = 1$, quindi $f'_+(2) = 1$. Per $h \to 0^-$, $\dfrac{|h|}{h} = \dfrac{-h}{h} = -1$, quindi $f'_-(2) = -1$. Le due derivate laterali esistono, sono finite ma distinte: per {{formula:7.5}}, $x=2$ è un punto angoloso per $f$.
+Per $h$ vicino a $0$ si ha $f(2+h) - f(2) = |h| - 0 = |h|$. Il rapporto incrementale è $\dfrac{|h|}{h}$. Per $h \to 0^+$, $\dfrac{|h|}{h} = \dfrac{h}{h} = 1$, quindi $f'_+(2) = 1$. Per $h \to 0^-$, $\dfrac{|h|}{h} = \dfrac{-h}{h} = -1$, quindi $f'_-(2) = -1$. Poiché le derivate laterali sono diverse, $f$ non è derivabile in $x=2$. Le due derivate laterali esistono, sono finite ma distinte: per {{formula:7.5}}, $x=2$ è un punto angoloso per $f$.
 :::
 :::
 
