@@ -1637,15 +1637,15 @@ $$\boldsymbol{L}_O=(0,0,4)+(0,0,3)=(0,0,7)\,\mathrm{kg\,m^2/s}.$$
 In una base cartesiana, il tensore d'inerzia è $\mathbf{I}=\operatorname{diag}(3,3,6)\,\mathrm{kg\,m^2}$. Determina l'equazione dell'ellissoide $\boldsymbol{x}^{\mathsf T}\mathbf{I}\boldsymbol{x}=1$ e i suoi semiassi. Quale asse è l'asse maggiore?
 
 :::hint
-Poiché la matrice è diagonale, i suoi elementi sono i momenti principali; confronta i reciproci delle loro radici quadrate.
+Poiché la matrice è diagonale, i suoi elementi sono i momenti principali; confronta i reciproci delle loro radici quadrate. Le coordinate hanno unità $\mathrm{kg^{-1/2}\,m^{-1}}$.
 :::
 
 :::solution
-L'equazione è $3x^2+3y^2+6z^2=1$, cioè
+L'equazione numerica, con le coordinate espresse in $\mathrm{kg^{-1/2}\,m^{-1}}$, è $3x^2+3y^2+6z^2=1$, cioè
 
 $$\frac{x^2}{1/3}+\frac{y^2}{1/3}+\frac{z^2}{1/6}=1.$$
 
-I semiassi lungo $x$ e $y$ hanno lunghezza $1/\sqrt{3}$, mentre quello lungo $z$ ha lunghezza $1/\sqrt{6}$. I primi due sono maggiori, quindi l'ellissoide ha un asse maggiore nel piano $xy$ e una simmetria di rivoluzione attorno a $z$.
+I semiassi sono $a_x=a_y=\frac{1}{\sqrt{3}}\,\mathrm{kg^{-1/2}\,m^{-1}}$ e $a_z=\frac{1}{\sqrt{6}}\,\mathrm{kg^{-1/2}\,m^{-1}}$. Ogni retta del piano $xy$ passante per l'origine è un asse maggiore; l'ellissoide è di rivoluzione attorno a $z$.
 :::
 :::
 

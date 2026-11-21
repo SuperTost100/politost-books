@@ -358,7 +358,7 @@ La derivata seconda è negativa su $\rbrack -\infty,-1\lbrack $ e $\rbrack 0,1\l
 
 Mettendo insieme asintoti, monotonia e convessità si ottiene il grafico qualitativo seguente.
 
-:::image{src="assets/ab4a5b0e-grafico-x3-su-x2-meno-1.svg" alt="Grafico di x al cubo diviso x al quadrato meno uno, con asintoti verticali in x=1 e x=-1 e asintoto obliquo y=x" caption="Fig. 8.4 — Studio completo di f(x) = x³/(x²-1): asintoti verticali in x=\pm 1, asintoto obliquo y=x, minimo relativo in x=\sqrt{3}, massimo relativo in x=-\sqrt{3}, flesso nell'origine"}
+:::image{src="assets/ab4a5b0e-grafico-x3-su-x2-meno-1-rb705d6.svg" alt="Grafico di x al cubo diviso x al quadrato meno uno, con asintoti verticali in x=1 e x=-1 e asintoto obliquo y=x" caption="Fig. 8.4 — Studio completo di f(x) = x³/(x²-1): asintoti verticali in x=±1, asintoto obliquo y=x, minimo relativo in x=√3, massimo relativo in x=−√3, flesso nell'origine"}
 :::
 
 **Esempio 8.4 (con parametro).** Per $k>0$ fissato, si studi la funzione
